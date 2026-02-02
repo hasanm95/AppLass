@@ -12,7 +12,7 @@ We live in a mobile-first world. 79% of smartphone users have made a purchase on
 
 On a desktop, the "Add to Cart" button is usually always visible. On a mobile phone, as the user scrolls down to read reviews or descriptions, the button disappears. If they decide to buy, they have to scroll all the way back up. That split-second of effort is enough to cause a "micro-abandonment."
 
-### The "Thumb Zone" Science
+## The "Thumb Zone" Science
 
 UX researchers map the phone screen into zones based on how easily a user can reach them with one hand.
 
@@ -23,12 +23,12 @@ Most Shopify themes put the cart button at the top (Danger Zone). A **Sticky Add
 
 ![Mobile UX thumb zone heat map](/v1/blogs/thumb-zone-heatmap.png)
 
-### Results You Can Expect
+## Results You Can Expect
 
 1. **Reduced Friction:** No scrolling required to buy.
 2. **Higher CTR:** Stickiness increases the visibility of your Call to Action (CTA).
 3. **Better Data:** FOMO Gen's sticky cart includes analytics, so you can see exactly how many clicks are coming from the sticky bar vs. the main button.
 
-### Action Plan
+## Action Plan
 
 Don't let mobile visitors bounce because they can't find the button. Install a sticky cart today. It is a "set and forget" optimization that pays dividends immediately.

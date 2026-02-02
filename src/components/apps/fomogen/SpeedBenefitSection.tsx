@@ -46,9 +46,9 @@ export function SpeedBenefitSection() {
                   <Zap className="h-6 w-6" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-slate-900">
+                  <h3 className="text-xl font-bold text-slate-900">
                     The Struggle
-                  </h4>
+                  </h3>
                   <p className="mt-2 font-medium text-slate-500">
                     {speedBenefit.struggle}
                   </p>
@@ -62,9 +62,9 @@ export function SpeedBenefitSection() {
                   <ShieldCheck className="h-6 w-6" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-slate-900">
+                  <h3 className="text-xl font-bold text-slate-900">
                     The Solution
-                  </h4>
+                  </h3>
                   <p className="mt-2 font-medium text-green-700 text-slate-500">
                     {speedBenefit.solution}
                   </p>
