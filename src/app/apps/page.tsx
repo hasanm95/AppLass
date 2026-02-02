@@ -46,6 +46,7 @@ export default function AppsPage() {
                     width={800}
                     height={450}
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    priority={PRODUCTS.indexOf(product) === 0}
                   />
                 </div>
 

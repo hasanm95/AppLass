@@ -1,6 +1,18 @@
-import * as Icons from "lucide-react";
+import {
+  ShoppingBag,
+  Clock,
+  Users,
+  HelpCircle,
+  type LucideIcon,
+} from "lucide-react";
 
-export type IconName = keyof typeof Icons;
+const ICON_MAP: Record<string, LucideIcon> = {
+  ShoppingBag,
+  Clock,
+  Users,
+};
+
+export type IconName = keyof typeof ICON_MAP;
 
 export interface Solution {
   title: string;
@@ -9,9 +21,7 @@ export interface Solution {
 }
 
 export function SolutionItem({ solution }: { solution: Solution }) {
-  const Icon =
-    (Icons[solution.iconName as keyof typeof Icons] as Icons.LucideIcon) ||
-    Icons.HelpCircle;
+  const Icon = ICON_MAP[solution.iconName] || HelpCircle;
 
   return (
     <div className="tilt-card glass-elite group rounded-[2.5rem] border border-slate-200/20 p-10 shadow-xl transition-all duration-500 hover:shadow-2xl">

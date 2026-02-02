@@ -1,6 +1,12 @@
 import { Section } from "@/components/common/Section";
 import { MINDFUL_GUARD_DATA } from "@/constants/mindful-guard-data";
-import * as Icons from "lucide-react";
+import { Shield, Zap, Lock, HelpCircle, type LucideIcon } from "lucide-react";
+
+const ICON_MAP: Record<string, LucideIcon> = {
+  Shield,
+  Zap,
+  Lock,
+};
 
 export function DifferentiatorsSection() {
   return (
@@ -18,10 +24,7 @@ export function DifferentiatorsSection() {
 
       <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
         {MINDFUL_GUARD_DATA.differentiators.map((feature, idx) => {
-          const Icon =
-            (Icons[
-              feature.iconName as keyof typeof Icons
-            ] as Icons.LucideIcon) || Icons.HelpCircle;
+          const Icon = ICON_MAP[feature.iconName] || HelpCircle;
           return (
             <div
               key={idx}
