@@ -35,8 +35,8 @@ export const metadata: Metadata = {
 
 export default function ScreenVeilPage() {
   return (
-    <div className="bg-white">
-      <Navbar />
+    <div className="bg-[#020617]">
+      <Navbar variant="dark" />
 
       {/* SoftwareApplication Schema */}
       <script
@@ -64,7 +64,7 @@ export default function ScreenVeilPage() {
         <FAQSection />
       </main>
 
-      <Footer />
+      <Footer variant="dark" />
       <StickyDownloadBar />
     </div>
   );
