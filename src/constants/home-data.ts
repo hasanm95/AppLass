@@ -46,6 +46,19 @@ export const PRODUCTS = [
     image: "/v1/apps/mindful-guard-feature.png",
     featured: false,
   },
+  {
+    id: "screenveil",
+    name: "ScreenVeil",
+    platform: "Android Platform",
+    tagline: "Screen Off Video Playback",
+    description:
+      "Save 60%+ battery on AMOLED. Listen to YouTube, podcasts, and music with your screen off. Zero permissions, total privacy.",
+    metrics: ["60% Battery Saved", "Zero Permissions"],
+    color: "green",
+    cta: "Download Free",
+    image: "/v1/apps/screenveil-feature.png",
+    featured: false,
+  },
 ];
 
 export const PILLARS = [
