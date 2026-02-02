@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  transpilePackages: ["next-image-export-optimizer"],
+  transpilePackages: ["next-image-export-optimizer", "tw-animate-css"],
   images: {
     loader: "custom",
     imageSizes: [16, 32, 64, 128, 256],

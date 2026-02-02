@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import "./tw-animate.css";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -69,17 +70,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        {/* Preconnect to external origins */}
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://www.google-analytics.com" />
+      {/* Preconnect to external origins - Hoisted by React 19 */}
+      <link rel="preconnect" href="https://www.googletagmanager.com" />
+      <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+      <link rel="preconnect" href="https://www.google-analytics.com" />
+      <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+      <link rel="preconnect" href="https://region1.google-analytics.com" />
+      <link rel="preconnect" href="https://stats.g.doubleclick.net" />
 
+      <body className={`${inter.variable} font-sans`}>
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-CKXH2GPBN3"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -104,8 +109,6 @@ export default function RootLayout({
             }),
           }}
         />
-      </head>
-      <body className={`${inter.variable} font-sans`}>
         {/* Skip to content link for accessibility */}
         <a href="#main-content" className="skip-link">
           Skip to main content

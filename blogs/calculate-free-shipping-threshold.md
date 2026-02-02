@@ -10,7 +10,7 @@ featured: false
 
 Free shipping is the #1 incentive for online shoppers. In fact, 75% of consumers expect free shipping on orders under $50. But if you offer free shipping on everything, you will go bankrupt. The secret is setting a **Free Shipping Threshold** that forces customers to add "one more thing" to their cart, boosting your Average Order Value (AOV).
 
-### The Math: How to Find Your Magic Number
+## The Math: How to Find Your Magic Number
 
 You shouldn't guess. You need to calculate a threshold that covers your shipping cost while feeling attainable to the customer.
 
@@ -30,7 +30,7 @@ You shouldn't guess. You need to calculate a threshold that covers your shipping
 
 Your Threshold should be **$60**. If you set it at $60, the extra profit from the upsell covers the shipping cost completely.
 
-### Gamifying the Experience
+## Gamifying the Experience
 
 Once you have your number (e.g., $60), you need to tell the customer. Don't just hide it in a policy page. Use a **Progressive Free Shipping Bar**.
 
@@ -40,6 +40,6 @@ Once you have your number (e.g., $60), you need to tell the customer. Don't just
 
 ![Progressive free shipping bar for Shopify](/v1/blogs/shipping-bar-states.png)
 
-### Conclusion
+## Conclusion
 
 Implementing a dynamic shipping bar is one of the fastest ways to lift your revenue by 30%. Use the formula above, set your goal in FOMO Gen, and watch your AOV climb.

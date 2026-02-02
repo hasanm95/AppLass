@@ -8,9 +8,9 @@ export function FAQSection() {
         <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-[#7C3AED] uppercase">
           Engineered FAQ
         </span>
-        <h3 className="text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">
+        <h2 className="text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">
           Technical Clarifications
-        </h3>
+        </h2>
       </div>
 
       <div className="mx-auto max-w-3xl space-y-6">
@@ -19,9 +19,9 @@ export function FAQSection() {
             key={idx}
             className="rounded-[2rem] border border-slate-100 bg-white p-8 shadow-sm transition-all hover:shadow-md"
           >
-            <h4 className="mb-4 text-lg font-bold text-slate-900">
+            <h3 className="mb-4 text-lg font-bold text-slate-900">
               {faq.question}
-            </h4>
+            </h3>
             <p className="leading-relaxed font-medium text-slate-500">
               {faq.answer}
             </p>

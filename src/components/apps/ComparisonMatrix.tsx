@@ -87,7 +87,7 @@ export function ComparisonMatrix() {
               className="overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm"
             >
               <div className="border-b border-slate-100 bg-slate-50 p-4">
-                <h4 className="font-bold text-slate-900">{spec.label}</h4>
+                <h3 className="font-bold text-slate-900">{spec.label}</h3>
               </div>
               <div className="divide-y divide-slate-100">
                 <div className="flex items-center justify-between bg-[#7C3AED]/5 p-4">

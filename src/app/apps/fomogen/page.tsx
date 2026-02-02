@@ -1,11 +1,31 @@
 import { Metadata } from "next";
 import { Navbar, Footer } from "@/components/common";
 import { FomoGenHero } from "@/components/apps/fomogen/FomoGenHero";
-import { CoreFeatures } from "@/components/apps/fomogen/CoreFeatures";
-import { SpeedBenefitSection } from "@/components/apps/fomogen/SpeedBenefitSection";
-import { TestimonialsSection } from "@/components/apps/fomogen/TestimonialsSection";
-import { PricingSection } from "@/components/apps/fomogen/PricingSection";
-import { FomoGenCTA } from "@/components/apps/fomogen/FomoGenCTA";
+import dynamic from "next/dynamic";
+
+const SpeedBenefitSection = dynamic(() =>
+  import("@/components/apps/fomogen/SpeedBenefitSection").then(
+    (mod) => mod.SpeedBenefitSection
+  )
+);
+const CoreFeatures = dynamic(() =>
+  import("@/components/apps/fomogen/CoreFeatures").then(
+    (mod) => mod.CoreFeatures
+  )
+);
+const TestimonialsSection = dynamic(() =>
+  import("@/components/apps/fomogen/TestimonialsSection").then(
+    (mod) => mod.TestimonialsSection
+  )
+);
+const PricingSection = dynamic(() =>
+  import("@/components/apps/fomogen/PricingSection").then(
+    (mod) => mod.PricingSection
+  )
+);
+const FomoGenCTA = dynamic(() =>
+  import("@/components/apps/fomogen/FomoGenCTA").then((mod) => mod.FomoGenCTA)
+);
 
 export const metadata: Metadata = {
   title: "FOMO Gen | #1 Free Social Proof, Urgency & Trust App for Shopify",
