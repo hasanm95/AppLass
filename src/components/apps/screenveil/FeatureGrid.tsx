@@ -1,6 +1,22 @@
 import { Section } from "@/components/common/Section";
 import { SCREENVEIL_DATA } from "@/constants/screenveil-data";
-import * as Icons from "lucide-react";
+import {
+  Pointer,
+  Moon,
+  Fingerprint,
+  Clock,
+  Play,
+  HelpCircle,
+  type LucideIcon,
+} from "lucide-react";
+
+const ICON_MAP: Record<string, LucideIcon> = {
+  Pointer,
+  Moon,
+  Fingerprint,
+  Clock,
+  Play,
+};
 
 export function FeatureGrid() {
   return (
@@ -19,10 +35,7 @@ export function FeatureGrid() {
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {SCREENVEIL_DATA.features.map((feature, idx) => {
-            const Icon =
-              (Icons[
-                feature.iconName as keyof typeof Icons
-              ] as Icons.LucideIcon) || Icons.HelpCircle;
+            const Icon = ICON_MAP[feature.iconName] || HelpCircle;
 
             return (
               <div

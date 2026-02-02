@@ -1,6 +1,11 @@
 import { Section } from "@/components/common/Section";
 import { SCREENVEIL_DATA } from "@/constants/screenveil-data";
-import * as Icons from "lucide-react";
+import { Battery, Hand, HelpCircle, type LucideIcon } from "lucide-react";
+
+const ICON_MAP: Record<string, LucideIcon> = {
+  Battery,
+  Hand,
+};
 
 export function PainPointsSection() {
   return (
@@ -34,10 +39,7 @@ export function PainPointsSection() {
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-12">
           {SCREENVEIL_DATA.painPoints.map((point, idx) => {
-            const Icon =
-              (Icons[
-                point.iconName as keyof typeof Icons
-              ] as Icons.LucideIcon) || Icons.HelpCircle;
+            const Icon = ICON_MAP[point.iconName] || HelpCircle;
 
             return (
               <div

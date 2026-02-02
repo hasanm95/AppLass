@@ -1,4 +1,16 @@
-import * as Icons from "lucide-react";
+import {
+  Zap,
+  Calculator,
+  Globe,
+  HelpCircle,
+  type LucideIcon,
+} from "lucide-react";
+
+const ICON_MAP: Record<string, LucideIcon> = {
+  Zap,
+  Calculator,
+  Globe,
+};
 
 export interface Pillar {
   title: string;
@@ -8,9 +20,7 @@ export interface Pillar {
 }
 
 export function PillarItem({ pillar }: { pillar: Pillar }) {
-  const Icon =
-    (Icons[pillar.iconName as keyof typeof Icons] as Icons.LucideIcon) ||
-    Icons.HelpCircle;
+  const Icon = ICON_MAP[pillar.iconName] || HelpCircle;
 
   return (
     <div className="tilt-card group flex flex-col items-start rounded-[2.5rem] border border-slate-100 bg-white p-12 shadow-sm transition-all duration-500 hover:border-blue-200/50 hover:shadow-2xl">

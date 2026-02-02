@@ -89,6 +89,7 @@ export function ScreenVeilHero() {
               fill
               className="object-cover"
               priority
+              fetchPriority="high"
             />
             {/* Overlay effect simulation */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20" />

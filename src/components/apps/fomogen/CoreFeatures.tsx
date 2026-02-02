@@ -1,7 +1,23 @@
 import { Section } from "@/components/common/Section";
 import { FOMOGEN_DATA } from "@/constants/fomogen-data";
-import * as Icons from "lucide-react";
+import {
+  ShoppingCart,
+  Timer,
+  ShoppingBag,
+  TrendingUp,
+  ShieldCheck,
+  HelpCircle,
+  type LucideIcon,
+} from "lucide-react";
 import ExportedImage from "next-image-export-optimizer";
+
+const ICON_MAP: Record<string, LucideIcon> = {
+  ShoppingCart,
+  Timer,
+  ShoppingBag,
+  TrendingUp,
+  ShieldCheck,
+};
 
 export function CoreFeatures() {
   return (
@@ -20,10 +36,7 @@ export function CoreFeatures() {
 
         <div className="grid grid-cols-1 gap-12 lg:gap-24">
           {FOMOGEN_DATA.features.map((feature, idx) => {
-            const Icon =
-              (Icons[
-                feature.iconName as keyof typeof Icons
-              ] as Icons.LucideIcon) || Icons.HelpCircle;
+            const Icon = ICON_MAP[feature.iconName] || HelpCircle;
             const isEven = idx % 2 === 0;
 
             return (

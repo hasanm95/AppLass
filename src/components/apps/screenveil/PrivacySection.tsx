@@ -1,6 +1,18 @@
 import { Section } from "@/components/common/Section";
 import { SCREENVEIL_DATA } from "@/constants/screenveil-data";
-import * as Icons from "lucide-react";
+import {
+  WifiOff,
+  ShieldCheck,
+  Layers,
+  HelpCircle,
+  type LucideIcon,
+} from "lucide-react";
+
+const ICON_MAP: Record<string, LucideIcon> = {
+  WifiOff,
+  ShieldCheck,
+  Layers,
+};
 
 export function PrivacySection() {
   return (
@@ -21,10 +33,7 @@ export function PrivacySection() {
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             {SCREENVEIL_DATA.privacy.features.map((feature, idx) => {
-              const Icon =
-                (Icons[
-                  feature.iconName as keyof typeof Icons
-                ] as Icons.LucideIcon) || Icons.HelpCircle;
+              const Icon = ICON_MAP[feature.iconName] || HelpCircle;
 
               return (
                 <div
@@ -44,7 +53,7 @@ export function PrivacySection() {
 
           {/* Trust badge */}
           <div className="mt-12 inline-flex items-center gap-3 rounded-full border border-green-500/20 bg-green-500/5 px-6 py-3">
-            <Icons.ShieldCheck className="h-5 w-5 text-green-500" />
+            <ShieldCheck className="h-5 w-5 text-green-500" />
             <span className="text-sm font-bold text-green-400">
               Your data stays on your device — where it belongs.
             </span>
