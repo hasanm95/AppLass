@@ -1,13 +1,43 @@
 import { Metadata } from "next";
 import { Navbar, Footer } from "@/components/common";
 import { ScreenVeilHero } from "@/components/apps/screenveil/ScreenVeilHero";
-import { PainPointsSection } from "@/components/apps/screenveil/PainPointsSection";
-import { FeatureGrid } from "@/components/apps/screenveil/FeatureGrid";
-import { TechnicalAdvantage } from "@/components/apps/screenveil/TechnicalAdvantage";
-import { PrivacySection } from "@/components/apps/screenveil/PrivacySection";
-import { TestimonialsSection } from "@/components/apps/screenveil/TestimonialsSection";
-import { FAQSection } from "@/components/apps/screenveil/FAQSection";
-import { StickyDownloadBar } from "@/components/apps/screenveil/StickyDownloadBar";
+import dynamic from "next/dynamic";
+
+const PainPointsSection = dynamic(() =>
+  import("@/components/apps/screenveil/PainPointsSection").then(
+    (mod) => mod.PainPointsSection
+  )
+);
+const FeatureGrid = dynamic(() =>
+  import("@/components/apps/screenveil/FeatureGrid").then(
+    (mod) => mod.FeatureGrid
+  )
+);
+const TechnicalAdvantage = dynamic(() =>
+  import("@/components/apps/screenveil/TechnicalAdvantage").then(
+    (mod) => mod.TechnicalAdvantage
+  )
+);
+const PrivacySection = dynamic(() =>
+  import("@/components/apps/screenveil/PrivacySection").then(
+    (mod) => mod.PrivacySection
+  )
+);
+const TestimonialsSection = dynamic(() =>
+  import("@/components/apps/screenveil/TestimonialsSection").then(
+    (mod) => mod.TestimonialsSection
+  )
+);
+const FAQSection = dynamic(() =>
+  import("@/components/apps/screenveil/FAQSection").then(
+    (mod) => mod.FAQSection
+  )
+);
+const StickyDownloadBar = dynamic(() =>
+  import("@/components/apps/screenveil/StickyDownloadBar").then(
+    (mod) => mod.StickyDownloadBar
+  )
+);
 import { SCREENVEIL_DATA } from "@/constants/screenveil-data";
 
 export const metadata: Metadata = {
