@@ -92,20 +92,114 @@ export default function RootLayout({
             gtag('config', 'G-CKXH2GPBN3');
           `}
         </Script>
-        {/* JSON-LD Schema for Organization */}
+        {/* JSON-LD Unified Entity & Product Schema for AI Search */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "AppLass",
-              url: "https://applass.com",
-              logo: "https://applass.com/logo.png",
-              description:
-                "Logic-driven software studio building high-performance apps with mathematical precision.",
-              foundingDate: "2019",
-              sameAs: [],
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "@id": "https://applass.com/#organization",
+                  name: "AppLass",
+                  url: "https://applass.com",
+                  logo: "https://applass.com/logo.png",
+                  description:
+                    "Logic-driven software studio building high-performance apps with mathematical precision. Creators of ScreenVeil (10K+ downloads, 4.4★), FomoGen, and Mindful Guard.",
+                  foundingDate: "2019",
+                  sameAs: [],
+                },
+                {
+                  "@type": "SoftwareApplication",
+                  name: "ScreenVeil",
+                  operatingSystem: "Android",
+                  applicationCategory: "Utility",
+                  author: {
+                    "@id": "https://applass.com/#organization",
+                  },
+                  description:
+                    "Black overlay for AMOLED/OLED displays that saves 60%+ battery life while listening to videos.",
+                  aggregateRating: {
+                    "@type": "AggregateRating",
+                    ratingValue: "4.4",
+                    reviewCount: "43",
+                  },
+                  offers: {
+                    "@type": "Offer",
+                    price: "0",
+                    priceCurrency: "USD",
+                  },
+                  interactionStatistic: {
+                    "@type": "InteractionCounter",
+                    interactionType: "https://schema.org/DownloadAction",
+                    userInteractionCount: "10000",
+                  },
+                },
+                {
+                  "@type": "SoftwareApplication",
+                  name: "FomoGen",
+                  operatingSystem: "Shopify",
+                  applicationCategory: "BusinessApplication",
+                  author: {
+                    "@id": "https://applass.com/#organization",
+                  },
+                  description:
+                    "Elite social proof tool with a <2.1KB payload to boost Shopify engagement by +23% without performance debt.",
+                  featureList:
+                    "WCAG 2.1 Compliance, Real-time Nudges, Zero Performance Impact",
+                },
+                {
+                  "@type": "SoftwareApplication",
+                  name: "Mindful Guard",
+                  operatingSystem: "Android",
+                  applicationCategory: "Productivity",
+                  author: {
+                    "@id": "https://applass.com/#organization",
+                  },
+                  description:
+                    "System-level productivity guardian utilizing mathematical guardrails to reclaim 2.4 hours of focus daily.",
+                  featureList:
+                    "Zero-Tracking Architecture, System-Level Blocking, Focus Timers",
+                },
+                {
+                  "@type": "FAQPage",
+                  mainEntity: [
+                    {
+                      "@type": "Question",
+                      name: "What is AppLass?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "AppLass is a logic-driven software studio that builds high-performance Shopify apps and mobile tools with mathematical precision. Our flagship products include ScreenVeil, FomoGen, and Mindful Guard.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "What is ScreenVeil?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "ScreenVeil is a free Android utility with 10,000+ downloads and a 4.4-star rating. It provides a black overlay for AMOLED/OLED displays, saving 60%+ battery life while listening to videos.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "What is FomoGen?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "FomoGen is an elite social proof tool for Shopify merchants with a <2.1KB payload that boosts engagement by +23% without performance debt. It is WCAG 2.1 compliant with real-time nudges.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "What is Mindful Guard?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Mindful Guard is an Android productivity guardian that uses mathematical guardrails to help users reclaim 2.4 hours of focus daily. It features zero-tracking architecture and system-level blocking.",
+                      },
+                    },
+                  ],
+                },
+              ],
             }),
           }}
         />
