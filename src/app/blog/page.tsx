@@ -24,7 +24,7 @@ export default function BlogArchivePage() {
       <Navbar />
       <div className="flex-1 bg-white pt-20">
         <BlogHero />
-        <section className="section border-y border-slate-100/50 bg-[#FAFBFD]">
+        <section className="section border-y border-slate-100/50 bg-[#FAFBFD] py-24">
           <div className="section-container">
             <div className="mb-16 flex flex-wrap gap-4">
               {categories.map((category) => (

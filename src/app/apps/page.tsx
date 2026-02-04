@@ -33,62 +33,64 @@ export default function AppsPage() {
         </Section>
 
         <Section className="py-24">
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
-            {PRODUCTS.map((product) => (
-              <div
-                key={product.id}
-                className="group relative flex flex-col overflow-hidden rounded-[3rem] border border-slate-200 bg-white transition-all hover:border-blue-500/30 hover:shadow-2xl"
-              >
-                <div className="aspect-[16/9] overflow-hidden bg-slate-50">
-                  <ExportedImage
-                    src={product.image}
-                    alt={`${product.name} - ${product.tagline}`}
-                    width={800}
-                    height={450}
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    priority={PRODUCTS.indexOf(product) === 0}
-                  />
-                </div>
+          <div className="section-container">
+            <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
+              {PRODUCTS.map((product) => (
+                <div
+                  key={product.id}
+                  className="group relative flex flex-col overflow-hidden rounded-[3rem] border border-slate-200 bg-white transition-all hover:border-blue-500/30 hover:shadow-2xl"
+                >
+                  <div className="aspect-[16/9] overflow-hidden bg-slate-50">
+                    <ExportedImage
+                      src={product.image}
+                      alt={`${product.name} - ${product.tagline}`}
+                      width={800}
+                      height={450}
+                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      priority={PRODUCTS.indexOf(product) === 0}
+                    />
+                  </div>
 
-                <div className="flex flex-1 flex-col p-10 lg:p-12">
-                  <div className="mb-6 flex items-center justify-between">
-                    <span className="text-[10px] font-black tracking-widest text-blue-800 uppercase">
-                      {product.platform}
-                    </span>
-                    <div className="flex gap-2">
-                      {product.metrics.map((metric, idx) => (
-                        <span
-                          key={idx}
-                          className="rounded-full bg-slate-50 px-3 py-1 text-[10px] font-bold text-slate-500"
+                  <div className="flex flex-1 flex-col p-10 lg:p-12">
+                    <div className="mb-6 flex items-center justify-between">
+                      <span className="text-[10px] font-black tracking-widest text-blue-800 uppercase">
+                        {product.platform}
+                      </span>
+                      <div className="flex gap-2">
+                        {product.metrics.map((metric, idx) => (
+                          <span
+                            key={idx}
+                            className="rounded-full bg-slate-50 px-3 py-1 text-[10px] font-bold text-slate-500"
+                          >
+                            {metric}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    <h2 className="mb-4 text-4xl font-black text-slate-900">
+                      {product.name}
+                    </h2>
+                    <p className="mb-8 text-lg leading-relaxed font-medium text-slate-500">
+                      {product.description}
+                    </p>
+
+                    <div className="mt-auto">
+                      <Button
+                        asChild
+                        className="h-14 w-full rounded-2xl bg-slate-900 text-lg font-bold text-white transition-all hover:bg-blue-600"
+                      >
+                        <Link
+                          href={`/apps/${product.id === "mindful" ? "mindful-guard" : product.id}`}
                         >
-                          {metric}
-                        </span>
-                      ))}
+                          View Product Details
+                        </Link>
+                      </Button>
                     </div>
                   </div>
-
-                  <h2 className="mb-4 text-4xl font-black text-slate-900">
-                    {product.name}
-                  </h2>
-                  <p className="mb-8 text-lg leading-relaxed font-medium text-slate-500">
-                    {product.description}
-                  </p>
-
-                  <div className="mt-auto">
-                    <Button
-                      asChild
-                      className="h-14 w-full rounded-2xl bg-slate-900 text-lg font-bold text-white transition-all hover:bg-blue-600"
-                    >
-                      <Link
-                        href={`/apps/${product.id === "mindful" ? "mindful-guard" : product.id}`}
-                      >
-                        View Product Details
-                      </Link>
-                    </Button>
-                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </Section>
       </div>

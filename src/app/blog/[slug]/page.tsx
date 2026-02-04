@@ -140,7 +140,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         </header>
 
         {/* Content Section */}
-        <section className="section group relative">
+        <section className="section group relative py-24">
           <div className="section-container">
             <div className="flex flex-col gap-16 lg:flex-row">
               {/* Main Content */}

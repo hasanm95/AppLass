@@ -91,7 +91,7 @@ export function Navbar({
       <nav
         role="navigation"
         aria-label="Main navigation"
-        className="container mx-auto px-4 md:px-8 lg:px-12"
+        className="section-container"
       >
         <div className="flex items-center justify-between">
           {/* Logo / Custom Branding */}

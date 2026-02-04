@@ -10,7 +10,7 @@ const METRICS = [
 export function SocialProof() {
   return (
     <Section className="border-y border-[var(--border)] bg-[var(--muted)]/50 py-12 md:py-16">
-      <div className="container mx-auto px-4 md:px-8 lg:px-12">
+      <div className="section-container">
         {/* Horizontal metrics strip */}
         <div className="flex flex-wrap items-center justify-between gap-8 md:gap-12">
           {/* Intro text */}

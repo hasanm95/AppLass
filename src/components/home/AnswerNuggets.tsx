@@ -10,7 +10,7 @@ export function AnswerNuggets() {
 
   return (
     <Section className="bg-[var(--muted)] py-16 md:py-24 lg:py-32">
-      <div className="container mx-auto px-4 md:px-8 lg:px-12">
+      <div className="section-container">
         {/* Section Header */}
         <div className="mb-16">
           <div className="mb-8 flex items-center gap-4">

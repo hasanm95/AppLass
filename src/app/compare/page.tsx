@@ -17,7 +17,7 @@ export default function CompareIndexPage() {
       <Navbar />
       <div className="pt-32">
         <Section className="bg-iridescent border-b border-slate-100 py-20 lg:py-32">
-          <div className="container mx-auto px-4 md:px-8 lg:px-12">
+          <div className="section-container">
             <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-blue-800 uppercase">
               Analytical Logic
             </span>
@@ -32,7 +32,7 @@ export default function CompareIndexPage() {
         </Section>
 
         <Section className="py-24">
-          <div className="container mx-auto grid grid-cols-1 gap-8 px-4 md:grid-cols-2 md:px-8 lg:px-12">
+          <div className="section-container grid grid-cols-1 gap-8 md:grid-cols-2">
             {comparisons.map((c) => (
               <Link
                 key={c.slug}
