@@ -9,19 +9,21 @@ export function AnswerNuggets() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <Section className="block-section bg-muted">
-      <div className="section-container">
+    <Section className="bg-[var(--muted)] py-16 md:py-24 lg:py-32">
+      <div className="container mx-auto px-4 md:px-8 lg:px-12">
         {/* Section Header */}
         <div className="mb-16">
           <div className="mb-8 flex items-center gap-4">
-            <span className="product-number">FAQ</span>
-            <span className="editorial-line flex-1" />
+            <span className="font-mono text-xs font-bold tracking-widest text-[var(--muted-foreground)]/50 uppercase">
+              FAQ
+            </span>
+            <span className="block h-px flex-1 bg-[var(--foreground)]/20" />
           </div>
 
-          <h2 className="text-display-sm mb-4">
+          <h2 className="mb-4 font-mono text-2xl leading-tight font-bold text-[var(--foreground)] md:text-3xl lg:text-4xl">
             Frequently Asked
             <br />
-            <span className="text-muted-foreground/40">Questions</span>
+            <span className="text-[var(--muted-foreground)]/40">Questions</span>
           </h2>
         </div>
 
@@ -32,27 +34,27 @@ export function AnswerNuggets() {
             return (
               <article
                 key={idx}
-                className="accordion-minimal group cursor-pointer"
+                className="group cursor-pointer border-b border-[var(--border)] py-6 first:border-t"
                 onClick={() => setOpenIndex(isOpen ? null : idx)}
               >
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex items-start gap-4">
-                    <span className="product-number mt-1">
+                    <span className="mt-1 font-mono text-xs font-bold tracking-widest text-[var(--muted-foreground)]/50 uppercase">
                       {String(idx + 1).padStart(2, "0")}
                     </span>
-                    <h3 className="group-hover:text-cta text-base font-semibold transition-colors">
+                    <h3 className="text-base font-semibold transition-colors group-hover:text-[var(--cta)]">
                       {faq.question}
                     </h3>
                   </div>
                   <button
-                    className="border-border group-hover:border-cta flex h-8 w-8 flex-shrink-0 items-center justify-center border transition-all duration-200"
+                    className="flex h-8 w-8 flex-shrink-0 items-center justify-center border border-[var(--border)] transition-all duration-200 group-hover:border-[var(--cta)]"
                     aria-expanded={isOpen}
                     aria-label={isOpen ? "Collapse answer" : "Expand answer"}
                   >
                     {isOpen ? (
-                      <Minus className="text-cta h-4 w-4" />
+                      <Minus className="h-4 w-4 text-[var(--cta)]" />
                     ) : (
-                      <Plus className="text-muted-foreground h-4 w-4" />
+                      <Plus className="h-4 w-4 text-[var(--muted-foreground)]" />
                     )}
                   </button>
                 </div>
@@ -65,7 +67,7 @@ export function AnswerNuggets() {
                   }`}
                 >
                   <div className="overflow-hidden pl-12">
-                    <p className="text-muted-foreground text-sm leading-relaxed">
+                    <p className="text-sm leading-relaxed text-[var(--muted-foreground)]">
                       {faq.answer}
                     </p>
                   </div>

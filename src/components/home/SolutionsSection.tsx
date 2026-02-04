@@ -10,26 +10,33 @@ const ICONS = {
 
 export function SolutionsSection() {
   return (
-    <Section id="solutions" className="block-section bg-card">
-      <div className="section-container">
+    <Section
+      id="solutions"
+      className="bg-[var(--card)] py-16 md:py-24 lg:py-32"
+    >
+      <div className="container mx-auto px-4 md:px-8 lg:px-12">
         {/* Section Header */}
         <div className="mb-16 md:mb-24">
           <div className="mb-8 flex items-center gap-4">
-            <span className="product-number">SOLUTIONS</span>
-            <span className="editorial-line flex-1" />
+            <span className="font-mono text-xs font-bold tracking-widest text-[var(--muted-foreground)]/50 uppercase">
+              SOLUTIONS
+            </span>
+            <span className="block h-px flex-1 bg-[var(--foreground)]/20" />
           </div>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            <h2 className="text-display-sm">
+            <h2 className="font-mono text-2xl leading-tight font-bold text-[var(--foreground)] md:text-3xl lg:text-4xl">
               Logical
               <br />
-              <span className="text-muted-foreground/40">Solutions.</span>
+              <span className="text-[var(--muted-foreground)]/40">
+                Solutions.
+              </span>
             </h2>
 
             <div className="flex items-end">
-              <p className="text-muted-foreground max-w-md text-lg leading-relaxed">
+              <p className="max-w-md text-lg leading-relaxed text-[var(--muted-foreground)]">
                 We don&apos;t just build features; we engineer{" "}
-                <span className="border-cta/40 text-foreground border-b-2 font-semibold">
+                <span className="border-b-2 border-[var(--cta)]/40 font-semibold text-[var(--foreground)]">
                   systemic improvements
                 </span>{" "}
                 that solve core business logic bottlenecks.
@@ -45,22 +52,26 @@ export function SolutionsSection() {
             return (
               <div
                 key={index}
-                className="group border-border bg-background hover:border-cta cursor-pointer border p-6 transition-all duration-200 md:p-8"
+                className="group cursor-pointer border border-[var(--border)] bg-[var(--background)] p-6 transition-all duration-200 hover:border-[var(--cta)] md:p-8"
               >
                 {/* Number */}
                 <div className="mb-6 flex items-center justify-between">
-                  <span className="product-number">0{index + 1}</span>
-                  <div className="border-border group-hover:border-cta group-hover:bg-cta/5 flex h-10 w-10 items-center justify-center border transition-all duration-200">
+                  <span className="font-mono text-xs font-bold tracking-widest text-[var(--muted-foreground)]/50 uppercase">
+                    0{index + 1}
+                  </span>
+                  <div className="flex h-10 w-10 items-center justify-center border border-[var(--border)] transition-all duration-200 group-hover:border-[var(--cta)] group-hover:bg-[var(--cta)]/5">
                     {Icon && (
-                      <Icon className="text-muted-foreground group-hover:text-cta h-5 w-5 transition-colors" />
+                      <Icon className="h-5 w-5 text-[var(--muted-foreground)] transition-colors group-hover:text-[var(--cta)]" />
                     )}
                   </div>
                 </div>
 
-                <span className="editorial-line mb-6" />
+                <span className="mb-6 block h-px w-16 bg-[var(--foreground)]/20" />
 
-                <h3 className="text-headline mb-3">{solution.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <h3 className="mb-3 font-mono text-lg font-bold text-[var(--foreground)] md:text-xl">
+                  {solution.title}
+                </h3>
+                <p className="text-sm leading-relaxed text-[var(--muted-foreground)]">
                   {solution.description}
                 </p>
               </div>

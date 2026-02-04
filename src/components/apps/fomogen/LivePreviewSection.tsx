@@ -20,7 +20,7 @@ export function LivePreviewSection() {
             <div className="relative">
               {/* Notification Preview Stack */}
               <div className="animate-float relative z-10">
-                <div className="glass-elite rounded-[2rem] border border-white/40 bg-white/60 p-6 shadow-2xl backdrop-blur-xl md:p-8">
+                <div className="rounded-[2rem] border border-white/40 bg-white/60 p-6 shadow-2xl backdrop-blur-xl md:p-8">
                   <div className="mb-4 flex items-center gap-4">
                     <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-green-600">
                       <ShoppingCart className="h-6 w-6 text-white" />
@@ -44,7 +44,7 @@ export function LivePreviewSection() {
 
               {/* Shipping Progress Bar Preview */}
               <div className="animate-float-delayed relative z-20 -mt-8 ml-8 md:ml-16">
-                <div className="glass-elite rounded-[2rem] border border-white/40 bg-white/80 p-6 shadow-2xl backdrop-blur-xl md:p-8">
+                <div className="rounded-[2rem] border border-white/40 bg-white/80 p-6 shadow-2xl backdrop-blur-xl md:p-8">
                   <div className="mb-4 flex items-center justify-between">
                     <span className="text-[10px] font-black tracking-widest text-green-600 uppercase">
                       Shipping Goal

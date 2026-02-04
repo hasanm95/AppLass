@@ -1,9 +1,6 @@
-"use client";
-
 import { Section } from "@/components/common/Section";
 import { PRODUCTS } from "@/constants/home-data";
-import Link from "next/link";
-import { ArrowRight, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import ExportedImage from "next-image-export-optimizer";
 
 export function ProductShowcase() {
@@ -11,58 +8,67 @@ export function ProductShowcase() {
   const otherProducts = PRODUCTS.slice(1);
 
   return (
-    <Section id="apps" className="block-section bg-background">
-      <div className="section-container">
+    <Section
+      id="apps"
+      className="bg-[var(--background)] py-16 md:py-24 lg:py-32"
+    >
+      <div className="container mx-auto px-4 md:px-8 lg:px-12">
         {/* Section Header */}
         <div className="mb-16 flex items-center gap-4 md:mb-20">
-          <span className="product-number">PRODUCTS</span>
-          <span className="editorial-line flex-1" />
+          <span className="font-mono text-xs font-bold tracking-widest text-[var(--muted-foreground)]/50 uppercase">
+            PRODUCTS
+          </span>
+          <span className="block h-px flex-1 bg-[var(--foreground)]/20" />
         </div>
 
         {/* Featured Product: ScreenVeil */}
         <div className="mb-16 md:mb-24">
           <div className="mb-6 flex items-center gap-4">
-            <span className="product-number">01</span>
-            <span className="editorial-line-accent" />
+            <span className="font-mono text-xs font-bold tracking-widest text-[var(--muted-foreground)]/50 uppercase">
+              01
+            </span>
+            <span className="block h-px w-24 bg-[var(--cta)]" />
           </div>
 
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Content */}
-            <div className="offset-card">
-              <span className="text-eyebrow mb-4 block text-green-600">
+            <div className="relative border-l-2 border-[var(--foreground)]/10 pl-6 transition-all duration-200 hover:border-l-[var(--cta)] md:pl-8">
+              <span className="mb-2 block font-mono text-[10px] font-bold tracking-[0.2em] text-[var(--muted-foreground)] uppercase">
                 {featuredProduct.platform}
               </span>
 
-              <h3 className="text-display-sm mb-4">{featuredProduct.name}</h3>
+              <h2 className="font-mono text-4xl font-bold text-[var(--foreground)] md:text-5xl">
+                {featuredProduct.name}
+              </h2>
 
-              <p className="mb-2 font-mono text-sm font-semibold text-green-600">
+              <p className="mb-4 font-mono text-lg font-semibold text-green-600">
                 {featuredProduct.tagline}
               </p>
 
-              <p className="text-muted-foreground mb-8 max-w-md text-lg leading-relaxed">
+              <p className="mb-8 max-w-md text-lg leading-relaxed text-[var(--muted-foreground)]">
                 {featuredProduct.description}
               </p>
 
-              {/* Stats */}
               <div className="mb-8 flex flex-wrap gap-6">
                 <div className="flex items-baseline gap-2">
-                  <span className="text-foreground font-mono text-2xl font-bold">
+                  <span className="font-mono text-2xl font-bold text-[var(--foreground)]">
                     {featuredProduct.stats?.downloads}
                   </span>
-                  <span className="text-muted-foreground text-sm">
+                  <span className="text-sm text-[var(--muted-foreground)]">
                     downloads
                   </span>
                 </div>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-foreground font-mono text-2xl font-bold">
+                  <span className="font-mono text-2xl font-bold text-[var(--foreground)]">
                     {featuredProduct.stats?.rating}★
                   </span>
-                  <span className="text-muted-foreground text-sm">rating</span>
+                  <span className="text-sm text-[var(--muted-foreground)]">
+                    rating
+                  </span>
                 </div>
               </div>
 
-              {/* CTA */}
-              <Link
+              <a
                 href={featuredProduct.ctaLink}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -70,21 +76,22 @@ export function ProductShowcase() {
               >
                 {featuredProduct.cta}
                 <ExternalLink className="h-4 w-4" />
-              </Link>
+              </a>
             </div>
 
-            {/* Product Visual */}
-            <div className="relative">
-              <div className="relative aspect-video overflow-hidden bg-slate-100">
+            {/* Image */}
+            <div className="relative flex items-center justify-center">
+              <div className="relative w-full overflow-hidden rounded-2xl border border-[var(--border)] bg-gradient-to-br from-green-50 to-green-100 p-12">
                 <ExportedImage
                   src={featuredProduct.image}
-                  alt={`${featuredProduct.name} interface`}
-                  fill
-                  className="object-cover"
+                  alt={featuredProduct.name}
+                  width={600}
+                  height={600}
+                  className="object-contain"
                 />
               </div>
               {/* Decorative corner */}
-              <div className="absolute -right-4 -bottom-4 h-16 w-16 border-2 border-green-600/30" />
+              <div className="absolute -right-4 -bottom-4 h-16 w-16 rounded-lg border-2 border-green-600/30" />
             </div>
           </div>
         </div>
@@ -93,35 +100,42 @@ export function ProductShowcase() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12">
           {otherProducts.map((product, idx) => {
             const isFomoGen = product.id === "fomogen";
-            const accentColor = isFomoGen ? "text-cta" : "text-primary";
+            const accentColor = isFomoGen
+              ? "text-[var(--cta)]"
+              : "text-[var(--primary)]";
 
             return (
               <div
                 key={product.id}
-                className="offset-card group cursor-pointer"
+                className="group relative cursor-pointer border-l-2 border-[var(--foreground)]/10 pl-6 transition-all duration-200 hover:border-l-[var(--cta)] md:pl-8"
               >
                 {/* Number */}
                 <div className="mb-6 flex items-center gap-4">
-                  <span className="product-number">0{idx + 2}</span>
-                  <span className="editorial-line group-hover:bg-cta transition-colors" />
+                  <span className="font-mono text-xs font-bold tracking-widest text-[var(--muted-foreground)]/50 uppercase">
+                    0{idx + 2}
+                  </span>
+                  <span className="block h-px w-16 bg-[var(--foreground)]/20 transition-colors group-hover:bg-[var(--cta)]" />
                 </div>
 
                 {/* Image */}
-                <div className="relative mb-6 aspect-video overflow-hidden bg-slate-100">
+                <div className="mb-6 overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--muted)]/30 p-6">
                   <ExportedImage
                     src={product.image}
-                    alt={`${product.name} interface`}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    alt={product.name}
+                    width={600}
+                    height={600}
+                    className="object-contain transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
 
                 {/* Content */}
-                <span className="text-eyebrow text-muted-foreground mb-2 block">
+                <span className="mb-2 block font-mono text-[10px] font-bold tracking-[0.2em] text-[var(--muted-foreground)] uppercase">
                   {product.platform}
                 </span>
 
-                <h3 className="text-headline mb-2">{product.name}</h3>
+                <h3 className="font-mono text-xl font-bold text-[var(--foreground)] md:text-2xl">
+                  {product.name}
+                </h3>
 
                 <p
                   className={`mb-4 font-mono text-sm font-semibold ${accentColor}`}
@@ -129,30 +143,20 @@ export function ProductShowcase() {
                   {product.tagline}
                 </p>
 
-                <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
+                <p className="mb-6 text-sm leading-relaxed text-[var(--muted-foreground)]">
                   {product.description}
                 </p>
 
-                {/* Metrics */}
-                <div className="mb-6 flex flex-wrap gap-4">
+                <div className="flex flex-wrap gap-2">
                   {product.metrics.map((metric, midx) => (
                     <span
                       key={midx}
-                      className="border-border text-foreground border px-3 py-1 font-mono text-xs font-semibold"
+                      className="border border-[var(--border)] px-3 py-1 font-mono text-xs font-semibold text-[var(--foreground)]"
                     >
                       {metric}
                     </span>
                   ))}
                 </div>
-
-                {/* CTA */}
-                <Link
-                  href={product.ctaLink}
-                  className={`inline-flex items-center gap-2 font-semibold transition-all group-hover:gap-3 ${accentColor}`}
-                >
-                  {product.cta}
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
               </div>
             );
           })}

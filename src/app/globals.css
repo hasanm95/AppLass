@@ -1,23 +1,17 @@
-/* Google Fonts Import - must be first */
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap");
-
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
 @custom-variant dark (&:is(.dark *));
 
 /* ================================================
-   AppLass Design System - VIBRANT & BLOCK-BASED
-   Bold, Energetic, Block Layout, Geometric Shapes
-   Typography: JetBrains Mono + IBM Plex Sans
+   AppLass Design System - CSS Variables Only
    ================================================ */
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, monospace;
-  --font-heading: "JetBrains Mono", ui-monospace, monospace;
+  --font-sans: var(--font-sans), system-ui, sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, monospace;
 
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
@@ -47,17 +41,17 @@
 :root {
   --radius: 0.75rem;
 
-  /* Vibrant & Block-based Palette */
+  /* Color Palette */
   --background: #f8fafc;
   --foreground: #1e293b;
 
   --card: #ffffff;
   --card-foreground: #1e293b;
 
-  --primary: #3b82f6; /* Bright Blue */
+  --primary: #3b82f6;
   --primary-foreground: #ffffff;
 
-  --secondary: #60a5fa; /* Light Blue */
+  --secondary: #60a5fa;
   --secondary-foreground: #1e293b;
 
   --muted: #e2e8f0;
@@ -66,7 +60,6 @@
   --accent: #f1f5f9;
   --accent-foreground: #1e293b;
 
-  /* NEW: Orange CTA for high energy */
   --cta: #f97316;
   --cta-foreground: #ffffff;
 
@@ -74,515 +67,49 @@
   --ring: #3b82f6;
 }
 
+/* Base Styles */
 @layer base {
   body {
-    @apply bg-background text-foreground antialiased;
-    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    background-color: var(--background);
+    color: var(--foreground);
     font-feature-settings:
       "rlig" 1,
       "calt" 1;
     letter-spacing: -0.01em;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "JetBrains Mono", ui-monospace, monospace;
-  }
-
-  /* Selection */
   ::selection {
     background-color: rgba(249, 115, 22, 0.2);
     color: #1e293b;
   }
 }
 
-@layer components {
-  /* ================================
-     BLOCK-BASED LAYOUT UTILITIES
-     ================================ */
-
-  /* Large section gaps (48px+) */
-  .block-section {
-    @apply py-16 md:py-24 lg:py-32;
-  }
-
-  /* Geometric container */
-  .section-container {
-    @apply container mx-auto px-4 md:px-8 lg:px-12;
-  }
-
-  /* Block card with sharp corners */
-  .block-card {
-    @apply border-border bg-card relative overflow-hidden rounded-lg border p-6 md:p-8;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .block-card:hover {
-    @apply border-primary/30 shadow-xl;
-    transform: translateY(-2px);
-  }
-
-  /* ================================
-     TYPOGRAPHY SYSTEM
-     ================================ */
-
-  /* Display headline - JetBrains Mono, large */
-  .text-display {
-    font-family: "JetBrains Mono", ui-monospace, monospace;
-    font-size: clamp(2.5rem, 8vw, 5rem);
-    font-weight: 700;
-    line-height: 0.95;
-    letter-spacing: -0.02em;
-    color: var(--foreground);
-  }
-
-  .text-display-sm {
-    font-family: "JetBrains Mono", ui-monospace, monospace;
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: -0.02em;
-    color: var(--foreground);
-  }
-
-  /* Headline styles */
-  .text-headline {
-    font-family: "JetBrains Mono", ui-monospace, monospace;
-    font-size: clamp(1.25rem, 3vw, 2rem);
-    font-weight: 600;
-    line-height: 1.2;
-    color: var(--foreground);
-  }
-
-  /* Eyebrow/label text */
-  .text-eyebrow {
-    @apply text-[10px] font-bold tracking-[0.2em] uppercase;
-    font-family: "JetBrains Mono", ui-monospace, monospace;
-  }
-
-  /* ================================
-     CTA BUTTON STYLES
-     ================================ */
-
-  .cta-button {
-    @apply inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 font-semibold transition-all duration-250;
-    background: var(--cta);
-    color: var(--cta-foreground);
-    cursor: pointer;
-  }
-
-  .cta-button:hover {
-    background: #ea580c; /* Darker orange */
-    transform: translateY(-2px);
-    box-shadow: 0 10px 40px -10px rgba(249, 115, 22, 0.4);
-  }
-
-  .cta-button:active {
-    transform: translateY(0);
-  }
-
-  .cta-button-secondary {
-    @apply border-foreground/20 inline-flex items-center justify-center gap-2 rounded-lg border-2 bg-transparent px-8 py-4 font-semibold transition-all duration-250;
-    color: var(--foreground);
-    cursor: pointer;
-  }
-
-  .cta-button-secondary:hover {
-    @apply border-primary bg-primary/5;
-  }
-
-  /* ================================
-     PATTERN BACKGROUNDS
-     ================================ */
-
-  /* Dot grid pattern */
-  .bg-dot-grid {
-    background-color: var(--background);
-    background-image: radial-gradient(#cbd5e1 1.5px, transparent 1.5px);
-    background-size: 24px 24px;
-  }
-
-  /* Line grid pattern */
-  .bg-line-grid {
-    background-color: var(--background);
-    background-image:
-      linear-gradient(#e2e8f0 1px, transparent 1px),
-      linear-gradient(90deg, #e2e8f0 1px, transparent 1px);
-    background-size: 48px 48px;
-  }
-
-  /* Geometric pattern */
-  .bg-geometric {
-    background-color: var(--background);
-    background-image:
-      linear-gradient(
-        30deg,
-        #e2e8f0 12%,
-        transparent 12.5%,
-        transparent 87%,
-        #e2e8f0 87.5%,
-        #e2e8f0
-      ),
-      linear-gradient(
-        150deg,
-        #e2e8f0 12%,
-        transparent 12.5%,
-        transparent 87%,
-        #e2e8f0 87.5%,
-        #e2e8f0
-      ),
-      linear-gradient(
-        30deg,
-        #e2e8f0 12%,
-        transparent 12.5%,
-        transparent 87%,
-        #e2e8f0 87.5%,
-        #e2e8f0
-      ),
-      linear-gradient(
-        150deg,
-        #e2e8f0 12%,
-        transparent 12.5%,
-        transparent 87%,
-        #e2e8f0 87.5%,
-        #e2e8f0
-      ),
-      linear-gradient(
-        60deg,
-        #f1f5f9 25%,
-        transparent 25.5%,
-        transparent 75%,
-        #f1f5f9 75%,
-        #f1f5f9
-      ),
-      linear-gradient(
-        60deg,
-        #f1f5f9 25%,
-        transparent 25.5%,
-        transparent 75%,
-        #f1f5f9 75%,
-        #f1f5f9
-      );
-    background-size: 80px 140px;
-    background-position:
-      0 0,
-      0 0,
-      40px 70px,
-      40px 70px,
-      0 0,
-      40px 70px;
-  }
-
-  /* ================================
-     GLASS & EFFECTS
-     ================================ */
-
-  .glass-card {
-    @apply border border-white/40 bg-white/80 shadow-xl backdrop-blur-xl;
-  }
-
-  /* Gradient glow effect */
-  .glow-orange {
-    box-shadow: 0 0 60px -15px rgba(249, 115, 22, 0.3);
-  }
-
-  .glow-blue {
-    box-shadow: 0 0 60px -15px rgba(59, 130, 246, 0.3);
-  }
-
-  /* ================================
-     METRIC CARDS
-     ================================ */
-
-  .metric-card {
-    @apply border-border bg-card flex flex-col items-center rounded-xl border p-6 text-center transition-all duration-250;
-    cursor: pointer;
-  }
-
-  .metric-card:hover {
-    @apply border-primary/30 shadow-lg;
-    transform: translateY(-4px);
-  }
-
-  .metric-value {
-    font-family: "JetBrains Mono", ui-monospace, monospace;
-    font-size: clamp(2rem, 5vw, 3rem);
-    font-weight: 700;
-    line-height: 1;
-    color: var(--foreground);
-  }
-
-  .metric-label {
-    @apply text-muted-foreground mt-2 text-sm font-medium;
-  }
-
-  /* ================================
-     3D & PERSPECTIVE
-     ================================ */
-
-  .perspective-1000 {
-    perspective: 1000px;
-  }
-
-  .tilt-card {
-    transition:
-      transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-      box-shadow 0.4s ease;
-    transform-style: preserve-3d;
-  }
-
-  .tilt-card:hover {
-    transform: rotateX(2deg) rotateY(2deg) translateZ(10px);
-    box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.1);
-  }
-
-  /* ================================
-     ACCESSIBILITY
-     ================================ */
-
-  .skip-link {
-    @apply sr-only transition-all focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-lg focus:px-6 focus:py-3 focus:font-bold focus:shadow-2xl focus:outline-none;
-    background: var(--cta);
-    color: var(--cta-foreground);
-  }
-
-  .skip-link:focus {
-    box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.2);
-  }
-
-  .section {
-    @apply overflow-hidden py-12 md:py-20 lg:py-28;
-  }
-
-  /* Focus ring for keyboard navigation */
-  .focus-ring {
-    @apply ring-primary ring-offset-background ring-2 ring-offset-2 outline-none;
-  }
-
-  /* ================================
-     EDITORIAL DESIGN SYSTEM
-     Bold typography, asymmetric layouts
-     ================================ */
-
-  /* Massive display text - editorial style */
-  .text-massive {
-    font-family: "JetBrains Mono", ui-monospace, monospace;
-    font-size: clamp(3rem, 12vw, 8rem);
-    font-weight: 700;
-    line-height: 0.9;
-    letter-spacing: -0.04em;
-    color: var(--foreground);
-  }
-
-  /* Section numbers - editorial */
-  .text-number {
-    font-family: "JetBrains Mono", ui-monospace, monospace;
-    font-size: clamp(0.75rem, 2vw, 1rem);
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    color: var(--muted-foreground);
-  }
-
-  /* Editorial horizontal line */
-  .editorial-line {
-    @apply bg-foreground/20 block h-px w-16;
-  }
-
-  .editorial-line-accent {
-    @apply bg-cta block h-px w-24;
-  }
-
-  /* Offset card - asymmetric styling */
-  .offset-card {
-    @apply border-foreground/10 relative border-l-2 pl-6 md:pl-8;
-    transition: all 200ms ease;
-  }
-
-  .offset-card:hover {
-    @apply border-l-cta;
-  }
-
-  /* Stats row compact */
-  .stats-row {
-    @apply flex flex-wrap items-baseline gap-8 text-sm;
-  }
-
-  .stats-row .stat-value {
-    font-family: "JetBrains Mono", ui-monospace, monospace;
-    @apply text-foreground text-2xl font-bold md:text-3xl;
-  }
-
-  .stats-row .stat-label {
-    @apply text-muted-foreground;
-  }
-
-  /* Minimal accordion */
-  .accordion-minimal {
-    @apply border-border border-b py-6;
-  }
-
-  .accordion-minimal:first-child {
-    @apply border-t;
-  }
-
-  /* Sharp button - no rounded corners */
-  .btn-sharp {
-    @apply border-foreground bg-foreground text-background inline-flex items-center justify-center gap-2 border-2 px-8 py-4 font-semibold transition-all duration-200;
-    cursor: pointer;
-  }
-
-  .btn-sharp:hover {
-    @apply text-foreground bg-transparent;
-  }
-
-  .btn-ghost-sharp {
-    @apply border-foreground/20 text-foreground inline-flex items-center justify-center gap-2 border-2 bg-transparent px-8 py-4 font-semibold transition-all duration-200;
-    cursor: pointer;
-  }
-
-  .btn-ghost-sharp:hover {
-    @apply border-foreground;
-  }
-
-  /* Diagonal section divider */
-  .section-diagonal {
-    position: relative;
-  }
-
-  .section-diagonal::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    background: var(--background);
-    clip-path: polygon(0 100%, 100% 0, 100% 100%);
-    z-index: 10;
-  }
-
-  /* Product number styling */
-  .product-number {
-    font-family: "JetBrains Mono", ui-monospace, monospace;
-    @apply text-muted-foreground/50 text-xs font-bold tracking-widest;
-  }
+/* Accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--cta);
+  color: var(--cta-foreground);
+  padding: 8px 16px;
+  z-index: 100;
+  font-weight: 600;
+  border-radius: 0 0 8px 0;
+  transition: top 0.2s;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.skip-link:focus {
+  top: 0;
+}
 
-  .mask-radial {
-    mask-image: radial-gradient(circle, black, transparent 80%);
-  }
-
-  /* Smooth transitions */
-  .transition-250 {
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  /* Reduced motion support */
-  @media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
-    }
-  }
-
-  /* Animated gradient text */
-  .gradient-text {
-    background: linear-gradient(135deg, #3b82f6 0%, #f97316 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  /* Diagonal stripe decoration */
-  .diagonal-stripe {
-    position: relative;
-  }
-
-  .diagonal-stripe::after {
-    content: "";
-    position: absolute;
-    bottom: -50px;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: inherit;
-    transform: skewY(-2deg);
-    z-index: -1;
-  }
-
-  /* Scanline animation */
-  .animate-scanline {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .animate-scanline::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(249, 115, 22, 0.15),
-      transparent
-    );
-    animation: scanline 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-  }
-
-  @keyframes scanline {
-    0% {
-      left: -100%;
-    }
-    100% {
-      left: 200%;
-    }
-  }
-
-  /* Fade in up animation */
-  .animate-fade-in-up {
-    animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  }
-
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* Pulse glow animation */
-  .animate-pulse-glow {
-    animation: pulseGlow 2s ease-in-out infinite;
-  }
-
-  @keyframes pulseGlow {
-    0%,
-    100% {
-      box-shadow: 0 0 20px -5px rgba(249, 115, 22, 0.3);
-    }
-    50% {
-      box-shadow: 0 0 40px -5px rgba(249, 115, 22, 0.5);
-    }
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

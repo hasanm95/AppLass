@@ -35,7 +35,7 @@ export function Footer({ variant = "light" }: FooterProps) {
         isDark ? "border-white/5 bg-[#020617]" : "border-slate-200 bg-white"
       )}
     >
-      <div className="section-container py-12 md:py-16">
+      <div className="container mx-auto px-4 py-12 md:px-8 md:py-16 lg:px-12">
         {/* Main footer content */}
         <div className="grid gap-8 md:grid-cols-4 lg:gap-12">
           {/* Brand column */}

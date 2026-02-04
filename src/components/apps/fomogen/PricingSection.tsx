@@ -23,7 +23,7 @@ export function PricingSection() {
           {FOMOGEN_DATA.pricing.tiers.map((tier, idx) => (
             <div
               key={idx}
-              className={`glass-elite group relative flex flex-col rounded-[2rem] p-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl md:rounded-[2.5rem] md:p-10 ${
+              className={`group relative flex flex-col rounded-[2rem] p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl md:rounded-[2.5rem] md:p-10 ${
                 tier.highlighted
                   ? "border-green-400 bg-white shadow-[0_40px_100px_-20px_rgba(33,196,93,0.1)] ring-4 ring-green-50"
                   : "border-white/40 bg-white/40 shadow-xl backdrop-blur-md"
