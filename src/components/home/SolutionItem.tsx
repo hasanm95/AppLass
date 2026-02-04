@@ -24,19 +24,20 @@ export function SolutionItem({ solution }: { solution: Solution }) {
   const Icon = ICON_MAP[solution.iconName] || HelpCircle;
 
   return (
-    <div className="tilt-card glass-elite group rounded-[2.5rem] border border-slate-200/20 p-10 shadow-xl transition-all duration-500 hover:shadow-2xl">
-      <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl border border-blue-100 bg-blue-50 transition-colors duration-500 group-hover:bg-blue-600 group-hover:text-white">
-        <Icon className="h-8 w-8" />
+    <div className="block-card group cursor-pointer">
+      <div className="bg-cta/10 text-cta group-hover:bg-cta mb-6 flex h-14 w-14 items-center justify-center rounded-xl transition-all duration-250 group-hover:text-white">
+        <Icon className="h-7 w-7" />
       </div>
-      <h3 className="mb-4 text-2xl font-bold tracking-tight text-slate-900">
-        {solution.title}
-      </h3>
-      <p className="mb-6 leading-relaxed font-medium text-slate-500">
+
+      <h3 className="text-headline mb-4">{solution.title}</h3>
+
+      <p className="text-muted-foreground mb-6 leading-relaxed">
         {solution.description}
       </p>
 
-      <div className="relative h-px w-full overflow-hidden bg-slate-100">
-        <div className="absolute top-0 left-0 h-full w-full -translate-x-full bg-blue-600 transition-transform duration-700 ease-in-out group-hover:translate-x-0" />
+      {/* Progress bar animation on hover */}
+      <div className="bg-border relative h-0.5 w-full overflow-hidden rounded-full">
+        <div className="bg-cta absolute top-0 left-0 h-full w-full -translate-x-full rounded-full transition-transform duration-500 ease-out group-hover:translate-x-0" />
       </div>
     </div>
   );

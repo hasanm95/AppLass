@@ -1,46 +1,78 @@
 import { Section } from "@/components/common/Section";
 import { PILLARS } from "@/constants/home-data";
-import { PillarItem } from "./PillarItem";
+import { Zap, Calculator, Globe } from "lucide-react";
+
+const ICONS = {
+  Zap,
+  Calculator,
+  Globe,
+};
 
 export function FoundersMoat() {
   return (
-    <Section
-      id="about"
-      className="perspective-1000 relative overflow-visible bg-[#FAFBFD]"
-    >
-      {/* Elite Background Decorative Grid */}
-      <div
-        className="mask-radial pointer-events-none absolute inset-x-0 top-0 h-96 opacity-[0.03]"
-        style={{
-          backgroundImage:
-            "linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)",
-          backgroundSize: "40px 40px",
-        }}
-      />
+    <Section id="about" className="block-section bg-muted relative">
+      <div className="section-container">
+        {/* Section Header */}
+        <div className="mb-16 md:mb-24">
+          <div className="mb-8 flex items-center gap-4">
+            <span className="product-number">PHILOSOPHY</span>
+            <span className="editorial-line flex-1" />
+          </div>
 
-      <div className="relative z-10 mb-24 flex flex-col items-end gap-12 md:mb-32 md:flex-row">
-        <div className="flex-1">
-          <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-blue-600 uppercase">
-            Internal Architecture
-          </span>
-          <h2 className="text-5xl leading-tight font-black tracking-tight text-slate-900 md:text-6xl">
-            Built Different by{" "}
-            <span className="text-slate-300 italic">Logic.</span>
-          </h2>
-        </div>
-        <div className="max-w-sm flex-none">
-          <p className="border-l-4 border-blue-600/20 pl-6 text-lg leading-relaxed font-medium text-slate-500 italic">
-            &quot;AppLass apps are developed using mathematical optimization
-            techniques to minimize JavaScript execution time.&quot; We engineer
-            waves of efficiency through first-principles.
-          </p>
-        </div>
-      </div>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <h2 className="text-display-sm">
+              Built Different
+              <br />
+              <span className="text-muted-foreground/40">by Logic.</span>
+            </h2>
 
-      <div className="relative z-10 grid gap-8 md:grid-cols-3">
-        {PILLARS.map((pillar, index) => (
-          <PillarItem key={index} pillar={pillar} />
-        ))}
+            <div className="flex items-end">
+              <p className="border-cta/30 text-muted-foreground max-w-md border-l-2 pl-6 text-lg leading-relaxed italic">
+                &quot;AppLass apps are developed using mathematical optimization
+                techniques to minimize JavaScript execution time.&quot;
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Pillars - Vertical Timeline Style */}
+        <div className="relative">
+          {/* Connecting Line */}
+          <div className="bg-border absolute top-0 bottom-0 left-4 hidden w-px md:block" />
+
+          <div className="space-y-8 md:space-y-12">
+            {PILLARS.map((pillar, index) => {
+              const Icon = ICONS[pillar.iconName as keyof typeof ICONS];
+              return (
+                <div
+                  key={index}
+                  className="group relative grid grid-cols-1 gap-6 md:grid-cols-[80px_1fr] md:gap-12"
+                >
+                  {/* Number & Icon */}
+                  <div className="flex items-start gap-4 md:flex-col md:items-center">
+                    <span className="product-number">0{index + 1}</span>
+                    <div className="border-border bg-card group-hover:border-cta group-hover:bg-cta/5 flex h-10 w-10 items-center justify-center border transition-all duration-200">
+                      {Icon && (
+                        <Icon className="text-muted-foreground group-hover:text-cta h-5 w-5 transition-colors" />
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="offset-card bg-card py-6">
+                    <span className="text-eyebrow text-muted-foreground mb-2 block">
+                      {pillar.label}
+                    </span>
+                    <h3 className="text-headline mb-3">{pillar.title}</h3>
+                    <p className="text-muted-foreground max-w-lg">
+                      {pillar.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </Section>
   );

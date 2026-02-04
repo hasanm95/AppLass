@@ -23,17 +23,21 @@ export function PillarItem({ pillar }: { pillar: Pillar }) {
   const Icon = ICON_MAP[pillar.iconName] || HelpCircle;
 
   return (
-    <div className="tilt-card group flex flex-col items-start rounded-[2.5rem] border border-slate-100 bg-white p-12 shadow-sm transition-all duration-500 hover:border-blue-200/50 hover:shadow-2xl">
-      <div className="mb-10 rounded-3xl border border-blue-100/50 bg-blue-50 p-5 text-blue-600 shadow-inner transition-colors duration-500 group-hover:bg-blue-600 group-hover:text-white">
+    <div className="block-card group cursor-pointer">
+      {/* Colored top border accent */}
+      <div className="from-primary to-cta absolute top-0 right-0 left-0 h-1 rounded-t-lg bg-gradient-to-r" />
+
+      <div className="bg-primary/10 text-primary group-hover:bg-cta mb-8 flex h-14 w-14 items-center justify-center rounded-xl transition-all duration-250 group-hover:text-white">
         <Icon className="h-6 w-6" />
       </div>
-      <span className="mb-3 text-[10px] font-black tracking-[0.2em] text-slate-400 uppercase">
+
+      <span className="text-eyebrow text-muted-foreground mb-3 block">
         {pillar.label}
       </span>
-      <h3 className="mb-6 text-3xl leading-tight font-black text-slate-900">
-        {pillar.title}
-      </h3>
-      <p className="text-sm leading-relaxed font-semibold text-slate-500">
+
+      <h3 className="text-headline mb-4">{pillar.title}</h3>
+
+      <p className="text-muted-foreground text-sm leading-relaxed">
         {pillar.description}
       </p>
     </div>

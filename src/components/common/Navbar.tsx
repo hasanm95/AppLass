@@ -98,7 +98,7 @@ export function Navbar({
           <div className="flex items-center gap-6">
             <Link
               href="/"
-              className="group focus-ring flex items-center gap-2 rounded-lg px-2"
+              className="group flex items-center gap-2 px-2"
               onClick={() => setIsMenuOpen(false)}
             >
               <ExportedImage
@@ -270,7 +270,7 @@ function NavLink({
     <a
       href={href}
       className={cn(
-        "focus-ring rounded-md py-1 text-sm font-bold transition-all",
+        "py-1 text-sm font-bold transition-all",
         isDark
           ? "text-slate-400 hover:text-white"
           : "text-slate-600 hover:text-slate-900"

@@ -1,14 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import "./tw-animate.css";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://applass.com"),
@@ -78,7 +71,7 @@ export default function RootLayout({
       <link rel="preconnect" href="https://region1.google-analytics.com" />
       <link rel="preconnect" href="https://stats.g.doubleclick.net" />
 
-      <body className={`${inter.variable} font-sans`}>
+      <body className="font-sans">
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-CKXH2GPBN3"
