@@ -56,7 +56,7 @@ export default function MindfulGuardPage() {
           __html: JSON.stringify(MINDFUL_GUARD_SCHEMA),
         }}
       />
-      <main className="flex-1">
+      <div className="flex-1">
         {/* Section 1: The Hero (Above the Fold) */}
         <MindfulHero />
 
@@ -71,7 +71,7 @@ export default function MindfulGuardPage() {
 
         {/* Section 5: Engineered FAQ (AI Snippet Bait) */}
         <FAQSection />
-      </main>
+      </div>
       <Footer />
     </>
   );

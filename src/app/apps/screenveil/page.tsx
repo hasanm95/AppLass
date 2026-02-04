@@ -84,7 +84,7 @@ export default function ScreenVeilPage() {
         }}
       />
 
-      <main className="flex-1 overflow-x-hidden">
+      <div className="flex-1 overflow-x-hidden">
         <ScreenVeilHero />
         <PainPointsSection />
         <FeatureGrid />
@@ -92,7 +92,7 @@ export default function ScreenVeilPage() {
         <PrivacySection />
         <TestimonialsSection />
         <FAQSection />
-      </main>
+      </div>
 
       <Footer variant="dark" />
       <StickyDownloadBar />

@@ -22,7 +22,7 @@ export default function BlogArchivePage() {
   return (
     <>
       <Navbar />
-      <main className="flex-1 bg-white pt-20">
+      <div className="flex-1 bg-white pt-20">
         <BlogHero />
         <section className="section border-y border-slate-100/50 bg-[#FAFBFD]">
           <div className="section-container">
@@ -58,7 +58,7 @@ export default function BlogArchivePage() {
             )}
           </div>
         </section>
-      </main>
+      </div>
       <Footer />
     </>
   );

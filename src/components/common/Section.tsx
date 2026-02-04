@@ -21,7 +21,7 @@ export function Section({
       aria-label={ariaLabel}
       className={cn("overflow-hidden py-12 md:py-20 lg:py-28", className)}
     >
-      {children}
+      <div className="section-container">{children}</div>
     </Component>
   );
 }
