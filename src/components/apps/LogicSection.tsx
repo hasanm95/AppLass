@@ -33,7 +33,7 @@ export function LogicSection() {
         </div>
 
         <div className="w-full max-w-2xl flex-1">
-          <div className="glass-elite relative aspect-square overflow-hidden rounded-[3rem] border border-slate-200/50 p-1 shadow-2xl">
+          <div className="relative aspect-square overflow-hidden rounded-[3rem] border border-slate-200/50 p-1 shadow-2xl">
             {/* Blueprint Decorative Overlay */}
             <div
               className="pointer-events-none absolute inset-0 opacity-[0.05]"

@@ -1,125 +1,111 @@
 "use client";
 
 import Link from "next/link";
-import { useRef, useEffect } from "react";
-import { Button } from "@/components/ui/button";
-import { useParallax } from "@/hooks/useParallax";
-import { useMagnetic } from "@/hooks/useMagnetic";
-import { rafThrottle } from "@/lib/utils";
-
-const HERO_LAYERS = [
-  { selector: ".parallax-badge", factor: 5, rotateFactor: 2 },
-  { selector: ".parallax-headline", factor: 15, rotateFactor: 5 },
-  { selector: ".parallax-subtext", factor: 10, rotateFactor: 3 },
-  { selector: ".parallax-cta", factor: 8, rotateFactor: 2 },
-];
+import { ArrowRight } from "lucide-react";
 
 export function Hero() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const lightRef = useRef<HTMLDivElement>(null);
-
-  useParallax(containerRef, HERO_LAYERS);
-  useMagnetic(containerRef, ".magnetic-btn");
-
-  useEffect(() => {
-    const handleMouseMove = rafThrottle((e: MouseEvent) => {
-      if (lightRef.current) {
-        lightRef.current.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-      }
-    });
-
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, []);
-
   return (
     <section
-      ref={containerRef}
-      className="bg-dot-grid perspective-1000 relative flex min-h-screen items-center justify-center overflow-hidden pt-20"
+      className="relative flex h-screen items-center overflow-hidden bg-[var(--background)] pt-20"
       aria-label="Introduction"
     >
-      {/* Interactive Light Follower */}
+      {/* Subtle grid background */}
       <div
-        ref={lightRef}
-        className="pointer-events-none fixed top-0 left-0 z-0 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 opacity-40 transition-opacity duration-1000"
-        style={{
-          background:
-            "radial-gradient(circle, rgba(0, 112, 243, 0.1) 0%, transparent 70%)",
-          willChange: "transform",
-        }}
-      />
-
-      {/* Decorative Elite Grid */}
-      <div
-        className="pointer-events-none absolute inset-0 opacity-[0.05]"
+        className="pointer-events-none absolute inset-0 opacity-30"
         style={{
           backgroundImage:
-            "linear-gradient(#e2e8f0 1px, transparent 1px), linear-gradient(90deg, #e2e8f0 1px, transparent 1px)",
+            "linear-gradient(#E2E8F0 1px, transparent 1px), linear-gradient(90deg, #E2E8F0 1px, transparent 1px)",
           backgroundSize: "80px 80px",
         }}
       />
 
-      <div className="section-container relative z-10 text-center">
-        <div className="animate-fade-in-up">
-          {/* Elite Badge */}
-          <div className="parallax-badge mb-12 inline-flex items-center gap-3 rounded-full border border-blue-100 bg-white/50 px-4 py-1.5 text-[10px] font-black tracking-[0.2em] text-blue-600 uppercase shadow-sm backdrop-blur-md">
-            <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-500 opacity-75"></span>
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-600"></span>
+      {/* Gradient fade */}
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[var(--background)] via-transparent to-[var(--background)]" />
+
+      <div className="section-container relative z-10 py-12 md:py-16">
+        <div className="max-w-5xl">
+          {/* Eyebrow */}
+          <div className="mb-8 flex items-center gap-4">
+            <span className="block h-px w-24 bg-[var(--cta)]" />
+            <span className="font-mono text-[10px] font-bold tracking-[0.2em] text-[var(--cta)] uppercase">
+              Elite Software Studio
             </span>
-            AppLass Software Studio
           </div>
 
-          {/* Massive Display Headline */}
-          <h1 className="parallax-headline text-display mb-10">
-            High-Performance Apps.
-            <br />
-            <span className="animate-scanline group relative inline-block text-slate-300">
-              Engineered for the Micro-second.
-              <div className="absolute -bottom-4 left-0 h-[6px] w-full rounded-full bg-blue-600/20 blur-sm transition-colors group-hover:bg-blue-600/40" />
+          {/* Massive Headline - Left Aligned */}
+          <h1 className="mb-4 font-mono text-4xl leading-[1.1] font-bold tracking-tight md:text-6xl lg:text-7xl">
+            <span className="block">High-Performance</span>
+            <span className="block text-[var(--primary)]">Apps.</span>
+            <span className="block text-[var(--muted-foreground)]/30">
+              Zero Bloat.
             </span>
           </h1>
 
-          {/* Subtext with Elite Contrast */}
-          <p className="parallax-subtext mx-auto mt-12 max-w-3xl text-xl leading-tight font-medium tracking-tight text-balance text-slate-500 md:text-2xl">
-            Stop letting bloated software slow down your growth.{" "}
-            <span className="text-slate-900">AppLass</span> builds elite-tier
-            Shopify and Mobile tools driven by{" "}
-            <span className="border-b-2 border-blue-600/30 text-slate-900">
-              mathematical precision
+          {/* Subheading */}
+          <p className="mb-8 max-w-2xl text-base leading-relaxed text-[var(--muted-foreground)] md:text-lg">
+            Stop letting bloated Shopify apps kill your conversions.{" "}
+            <span className="font-semibold text-[var(--foreground)]">
+              AppLass
             </span>{" "}
-            and 7 years of full-stack expertise.
+            builds elite-tier tools with{" "}
+            <span className="inline-flex items-center gap-1 border-b-2 border-[var(--cta)]/40 font-mono text-[var(--foreground)]">
+              &lt;2.1KB
+            </span>{" "}
+            payloads that keep your Core Web Vitals green.
           </p>
 
-          {/* Elite CTAs */}
-          <div className="parallax-cta mt-16 flex flex-col items-center justify-center gap-8 sm:flex-row">
-            <Button
-              size="lg"
-              className="magnetic-btn h-16 w-full rounded-2xl bg-slate-900 px-12 text-lg font-bold text-white shadow-2xl transition-all duration-500 hover:scale-110 hover:bg-blue-600 active:scale-95 sm:w-auto"
-              asChild
+          {/* Stats Row */}
+          <div className="mb-8 flex flex-wrap items-baseline gap-8 text-sm">
+            <div>
+              <span className="font-mono text-2xl font-bold text-[var(--foreground)] md:text-3xl">
+                10K+
+              </span>
+              <span className="ml-2 text-[var(--muted-foreground)]">
+                Downloads
+              </span>
+            </div>
+            <div className="h-6 w-px bg-[var(--border)]" />
+            <div>
+              <span className="font-mono text-2xl font-bold text-[var(--foreground)] md:text-3xl">
+                4.4★
+              </span>
+              <span className="ml-2 text-[var(--muted-foreground)]">
+                Rating
+              </span>
+            </div>
+            <div className="h-6 w-px bg-[var(--border)]" />
+            <div>
+              <span className="font-mono text-2xl font-bold text-[var(--foreground)] md:text-3xl">
+                &lt;2.1KB
+              </span>
+              <span className="ml-2 text-[var(--muted-foreground)]">
+                Payload
+              </span>
+            </div>
+          </div>
+
+          {/* CTAs */}
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+            <Link
+              href="/apps"
+              className="group inline-flex cursor-pointer items-center justify-center gap-2 border-2 border-[var(--foreground)] bg-[var(--foreground)] px-8 py-4 font-semibold text-[var(--background)] transition-all duration-200 hover:bg-transparent hover:text-[var(--foreground)]"
             >
-              <Link href="/apps">Explore our Apps</Link>
-            </Button>
-            <Button
-              size="lg"
-              variant="ghost"
-              className="magnetic-btn group h-16 w-full rounded-2xl px-12 text-lg font-bold text-slate-900 backdrop-blur-sm transition-all hover:bg-white/50 sm:w-auto"
-              asChild
+              See Our Apps
+              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+            </Link>
+            <Link
+              href="/blog"
+              className="group inline-flex cursor-pointer items-center justify-center gap-2 border-2 border-[var(--foreground)]/20 bg-transparent px-8 py-4 font-semibold text-[var(--foreground)] transition-all duration-200 hover:border-[var(--foreground)]"
             >
-              <Link href="/blog">
-                View the Logic Lab
-                <span className="ml-2 inline-block transition-transform group-hover:translate-x-2">
-                  →
-                </span>
-              </Link>
-            </Button>
+              Read the Logic Lab
+              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+            </Link>
           </div>
         </div>
       </div>
 
-      {/* Floating Decorative Elements (Parallax) */}
-      <div className="pointer-events-none absolute top-1/4 -right-20 h-80 w-80 animate-pulse rounded-full bg-blue-100/10 blur-[120px]" />
-      <div className="pointer-events-none absolute bottom-1/4 -left-20 h-80 w-80 animate-pulse rounded-full bg-blue-100/5 blur-[120px] delay-700" />
+      {/* Decorative vertical line */}
+      <div className="pointer-events-none absolute top-1/4 right-12 hidden h-48 w-px bg-gradient-to-b from-transparent via-[var(--cta)]/30 to-transparent lg:block" />
     </section>
   );
 }

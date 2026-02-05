@@ -40,7 +40,7 @@ export function SpeedBenefitSection() {
           </div>
 
           <div className="relative">
-            <div className="glass-elite relative z-10 flex flex-col gap-6 rounded-[2.5rem] border border-white/60 bg-white/40 p-8 shadow-2xl backdrop-blur-xl md:p-12">
+            <div className="relative z-10 flex flex-col gap-6 rounded-[2.5rem] border border-white/60 bg-white/40 p-8 shadow-2xl backdrop-blur-xl md:p-12">
               <div className="flex items-start gap-6">
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-slate-900 text-white">
                   <Zap className="h-6 w-6" />

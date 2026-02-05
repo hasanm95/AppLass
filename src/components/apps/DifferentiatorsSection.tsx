@@ -28,7 +28,7 @@ export function DifferentiatorsSection() {
           return (
             <div
               key={idx}
-              className="glass-elite group rounded-[2.5rem] border border-slate-200/20 bg-white p-10 transition-all duration-500 hover:shadow-2xl"
+              className="group rounded-[2.5rem] border border-slate-200/20 bg-white p-10 transition-all duration-500 hover:shadow-2xl"
             >
               <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl border border-purple-100 bg-purple-50 text-3xl transition-colors duration-500 group-hover:bg-[#7C3AED] group-hover:text-white">
                 {feature.icon ? (

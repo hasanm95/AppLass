@@ -1,6 +1,6 @@
 export { Hero } from "./Hero";
+export { SocialProof } from "./SocialProof";
+export { ProductShowcase } from "./ProductShowcase";
 export { FoundersMoat } from "./FoundersMoat";
-export { ProductGrid } from "./ProductGrid";
 export { SolutionsSection } from "./SolutionsSection";
-export { FomoGenFeatured } from "./FomoGenFeatured";
-export { TechnicalFAQ } from "./TechnicalFAQ";
+export { AnswerNuggets } from "./AnswerNuggets";

@@ -15,7 +15,7 @@ export default function CompareIndexPage() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      <main className="pt-32">
+      <div className="pt-32">
         <Section className="bg-iridescent border-b border-slate-100 py-20 lg:py-32">
           <div className="section-container">
             <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-blue-800 uppercase">
@@ -32,7 +32,7 @@ export default function CompareIndexPage() {
         </Section>
 
         <Section className="py-24">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div className="section-container grid grid-cols-1 gap-8 md:grid-cols-2">
             {comparisons.map((c) => (
               <Link
                 key={c.slug}
@@ -71,7 +71,7 @@ export default function CompareIndexPage() {
             </Link>
           </div>
         </Section>
-      </main>
+      </div>
       <Footer />
     </div>
   );

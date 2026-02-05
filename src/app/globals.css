@@ -4,15 +4,14 @@
 @custom-variant dark (&:is(.dark *));
 
 /* ================================================
-   AppLass Design System - ACADEMIC LOGIC
-   "Light Mode" — White, Wave Blue, Grid
+   AppLass Design System - CSS Variables Only
    ================================================ */
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-inter);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-sans), system-ui, sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, monospace;
 
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
@@ -29,6 +28,9 @@
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
 
+  --color-cta: var(--cta);
+  --color-cta-foreground: var(--cta-foreground);
+
   --color-border: var(--border);
   --color-ring: var(--ring);
 
@@ -39,190 +41,99 @@
 :root {
   --radius: 0.75rem;
 
-  /* Academic Logic Palette */
-  --background: #ffffff;
-  --foreground: #0f172a; /* Slate 900 */
+  /* Color Palette */
+  --background: #f8fafc;
+  --foreground: #1e293b;
 
   --card: #ffffff;
-  --card-foreground: #0f172a;
+  --card-foreground: #1e293b;
 
-  --primary: #0070f3; /* Wave Blue */
+  --primary: #3b82f6;
   --primary-foreground: #ffffff;
 
-  --secondary: #f8fafc;
-  --secondary-foreground: #0f172a;
+  --secondary: #60a5fa;
+  --secondary-foreground: #1e293b;
 
-  --muted: #f1f5f9;
+  --muted: #e2e8f0;
   --muted-foreground: #64748b;
 
   --accent: #f1f5f9;
-  --accent-foreground: #0f172a;
+  --accent-foreground: #1e293b;
+
+  --cta: #f97316;
+  --cta-foreground: #ffffff;
 
   --border: #e2e8f0;
-  --ring: #0070f3;
+  --ring: #3b82f6;
+
+  /* Container Settings */
+  --container-max-width: 80rem;
+  --container-px: 1rem;
 }
 
+@media (min-width: 768px) {
+  :root {
+    --container-px: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --container-px: 3rem;
+  }
+}
+
+/* Base Styles */
 @layer base {
   body {
-    @apply bg-background text-foreground antialiased selection:bg-emerald-500/20 selection:text-emerald-900;
+    background-color: var(--background);
+    color: var(--foreground);
     font-feature-settings:
       "rlig" 1,
-      "calt" 1,
-      "ss01" 1;
+      "calt" 1;
     letter-spacing: -0.01em;
   }
+
+  ::selection {
+    background-color: rgba(249, 115, 22, 0.2);
+    color: #1e293b;
+  }
 }
 
+/* Accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--cta);
+  color: var(--cta-foreground);
+  padding: 8px 16px;
+  z-index: 100;
+  font-weight: 600;
+  border-radius: 0 0 8px 0;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 @layer components {
-  /* Elite Mesh Background */
-  /* Academic Logic Grid Background */
-  .bg-dot-grid {
-    background-color: #ffffff;
-    background-image: radial-gradient(#e2e8f0 1.5px, transparent 1.5px);
-    background-size: 20px 20px;
-  }
-
-  /* Iridescent mesh kept as a subtle variant but updated to blue */
-  .bg-iridescent {
-    position: relative;
-    background-color: #ffffff;
-    overflow: hidden;
-  }
-
-  .bg-iridescent::before {
-    content: "";
-    position: absolute;
-    inset: -50%;
-    background:
-      radial-gradient(
-        circle at 50% 50%,
-        rgba(0, 112, 243, 0.05),
-        transparent 40%
-      ),
-      radial-gradient(
-        circle at 80% 20%,
-        rgba(13, 148, 136, 0.03),
-        transparent 40%
-      ),
-      radial-gradient(
-        circle at 20% 80%,
-        rgba(0, 112, 243, 0.02),
-        transparent 40%
-      );
-    filter: blur(80px);
-    animation: rotate-mesh 20s linear infinite;
-    z-index: 0;
-  }
-
-  @keyframes rotate-mesh {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-  /* 3D Transform Container */
-  .perspective-1000 {
-    perspective: 1000px;
-  }
-
-  .tilt-card {
-    transition:
-      transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-      box-shadow 0.4s ease;
-    transform-style: preserve-3d;
-  }
-
-  .tilt-card:hover {
-    transform: rotateX(2deg) rotateY(2deg) translateZ(10px);
-    box-shadow:
-      0 40px 80px -20px rgba(0, 0, 0, 0.1),
-      0 0 40px rgba(5, 150, 105, 0.05);
-  }
-
-  /* Elite Typography */
-  .text-display {
-    @apply leading-[0.95] font-bold tracking-tight text-slate-900;
-    font-size: clamp(2.5rem, 8vw, 7rem);
-  }
-
-  /* Diagonal Stripe Section */
-  .diagonal-stripe {
-    position: relative;
-  }
-
-  .diagonal-stripe::after {
-    content: "";
-    position: absolute;
-    bottom: -50px;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: inherit;
-    transform: skewY(-2deg);
-    z-index: -1;
-  }
-
-  /* Glass 2.0 */
-  .glass-elite {
-    @apply border border-white/40 bg-white/40 shadow-2xl backdrop-blur-2xl;
-    box-shadow:
-      inset 0 1px 1px rgba(255, 255, 255, 0.8),
-      0 20px 40px -10px rgba(0, 0, 0, 0.05);
-  }
-
-  /* Foundation Elite */
   .section-container {
-    @apply container mx-auto px-4 md:px-8 lg:px-12;
-  }
-
-  .skip-link {
-    @apply sr-only transition-all focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-xl focus:bg-emerald-600 focus:px-6 focus:py-3 focus:font-bold focus:text-white focus:shadow-2xl focus:ring-4 focus:ring-emerald-500/20 focus:outline-none;
-  }
-
-  .section {
-    @apply overflow-hidden py-12 md:py-20 lg:py-28;
-  }
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-  .mask-radial {
-    mask-image: radial-gradient(circle, black, transparent 80%);
-  }
-
-  /* Scanline Beam */
-  .animate-scanline {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .animate-scanline::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(5, 150, 105, 0.2),
-      transparent
-    );
-    animation: scanline 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-  }
-
-  @keyframes scanline {
-    0% {
-      left: -100%;
-    }
-    100% {
-      left: 200%;
-    }
+    width: 100%;
+    margin-inline: auto;
+    max-width: var(--container-max-width);
+    padding-inline: var(--container-px);
   }
 }

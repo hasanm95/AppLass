@@ -19,9 +19,9 @@ export function Section({
     <Component
       id={id}
       aria-label={ariaLabel}
-      className={cn("section", className)}
+      className={cn("overflow-hidden py-12 md:py-20 lg:py-28", className)}
     >
-      <div className="section-container">{children}</div>
+      {children}
     </Component>
   );
 }
@@ -42,15 +42,15 @@ export function SectionHeader({
   return (
     <div className={cn("mb-12 md:mb-16", centered && "text-center", className)}>
       {badge && (
-        <span className="bg-primary/10 text-primary mb-4 inline-block rounded-full px-3 py-1 text-xs font-medium tracking-wider uppercase">
+        <span className="mb-4 inline-block rounded-full bg-[var(--primary)]/10 px-3 py-1 text-xs font-medium tracking-wider text-[var(--primary)] uppercase">
           {badge}
         </span>
       )}
-      <h2 className="text-foreground text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">
+      <h2 className="font-mono text-3xl font-bold tracking-tight text-[var(--foreground)] md:text-4xl lg:text-5xl">
         {title}
       </h2>
       {description && (
-        <p className="text-muted-foreground mt-4 max-w-2xl text-lg">
+        <p className="mt-4 max-w-2xl text-lg text-[var(--muted-foreground)]">
           {description}
         </p>
       )}

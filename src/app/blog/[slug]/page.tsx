@@ -94,7 +94,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       />
       <ReadingProgressBar />
       <Navbar />
-      <main className="flex-1 bg-white pt-20">
+      <div className="flex-1 bg-white pt-20">
         {/* Iridescent Header Section */}
         <header className="bg-iridescent relative border-b border-slate-100 py-20 lg:py-32">
           <div className="section-container relative z-10">
@@ -140,7 +140,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         </header>
 
         {/* Content Section */}
-        <section className="section group relative">
+        <section className="section group relative py-24">
           <div className="section-container">
             <div className="flex flex-col gap-16 lg:flex-row">
               {/* Main Content */}
@@ -188,7 +188,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             </div>
           </div>
         </section>
-      </main>
+      </div>
       <Footer />
     </>
   );

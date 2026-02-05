@@ -18,7 +18,7 @@ export function DisplayOptions() {
           {FOMOGEN_DATA.displayOptions.categories.map((category, idx) => (
             <div
               key={idx}
-              className="glass-elite group rounded-[2rem] border border-white bg-white/60 p-8 backdrop-blur-md transition-all duration-500 hover:bg-white hover:shadow-2xl md:rounded-[2.5rem] md:p-10"
+              className="group rounded-[2rem] border border-white bg-white/60 p-8 backdrop-blur-md transition-all duration-500 hover:bg-white hover:shadow-2xl md:rounded-[2.5rem] md:p-10"
             >
               <h3 className="mb-6 text-xl font-bold tracking-tight text-slate-900 md:mb-8 md:text-2xl">
                 {category.title}

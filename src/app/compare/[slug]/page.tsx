@@ -94,7 +94,7 @@ export default async function ComparisonPage({ params }: PageProps) {
         }
       />
 
-      <main>
+      <div>
         <CompareHero
           headline={data.heroHeadline}
           subheadline={data.heroSubheadline}
@@ -117,7 +117,7 @@ export default async function ComparisonPage({ params }: PageProps) {
         />
 
         <CompareFooter />
-      </main>
+      </div>
 
       <Footer variant="light" />
     </div>

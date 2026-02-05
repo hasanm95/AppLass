@@ -90,14 +90,14 @@ export default function FomogenPage() {
         }}
       />
 
-      <main className="flex-1 overflow-x-hidden">
+      <div className="flex-1 overflow-x-hidden">
         <FomoGenHero />
         <SpeedBenefitSection />
         <CoreFeatures />
         <TestimonialsSection />
         <PricingSection />
         <FomoGenCTA />
-      </main>
+      </div>
 
       <Footer />
     </div>
