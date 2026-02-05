@@ -56,7 +56,7 @@ export const PRODUCTS = [
     },
     color: "blue",
     cta: "Add to Shopify",
-    ctaLink: "/apps/fomogen",
+    ctaLink: "https://apps.shopify.com/fomogen",
     image: "/v1/apps/fomogen-feature.png",
     featured: false,
   },
@@ -64,9 +64,9 @@ export const PRODUCTS = [
     id: "mindful",
     name: "Mindful Guard",
     platform: "Android Platform",
-    tagline: "Mathematical Focus Guardrails",
+    tagline: "Privacy-First Focus Guardrails",
     description:
-      "System-level productivity guardian using mathematical guardrails to enforce digital discipline. Reclaim an average of 2.4 hours of focus daily.",
+      "System-level productivity guardian built with a zero-tracking, privacy-first architecture. Reclaim an average of 2.4 hours of focus daily with 100% on-device data sovereignty.",
     metrics: ["2.4h Focus Reclaimed", "Zero-Tracking"],
     stats: {
       focusSaved: "2.4h",
@@ -74,7 +74,8 @@ export const PRODUCTS = [
     },
     color: "blue",
     cta: "Get on Play Store",
-    ctaLink: "/apps/mindful-guard",
+    ctaLink:
+      "https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard",
     image: "/v1/apps/mindful-guard-feature.png",
     featured: false,
   },
@@ -124,7 +125,7 @@ export const FAQS = [
   {
     question: "What is Mindful Guard?",
     answer:
-      "Mindful Guard is an Android productivity guardian that uses mathematical guardrails to enforce digital discipline. Users reclaim an average of 2.4 hours of focus daily with zero-tracking architecture. All data stays 100% on-device.",
+      "Mindful Guard is a privacy-focused Android productivity guardian that helps you reclaim an average of 2.4 hours of focus daily. Engineered with a zero-telemetry architecture, it ensures all your data stays 100% on-device, delivering digital discipline without compromise.",
   },
   {
     question: "Is AppLass software accessible?",

@@ -169,7 +169,7 @@ export default function RootLayout({
                     "@id": "https://applass.com/#organization",
                   },
                   description:
-                    "System-level productivity guardian utilizing mathematical guardrails to reclaim 2.4 hours of focus daily.",
+                    "Privacy-first Android productivity guardian that helps users reclaim 2.4 hours of focus daily with local-only architecture.",
                   featureList:
                     "Zero-Tracking Architecture, System-Level Blocking, Focus Timers",
                 },
@@ -205,7 +205,7 @@ export default function RootLayout({
                       name: "What is Mindful Guard?",
                       acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Mindful Guard is an Android productivity guardian that uses mathematical guardrails to help users reclaim 2.4 hours of focus daily. It features zero-tracking architecture and system-level blocking.",
+                        text: "Mindful Guard is a privacy-focused Android productivity guardian that helps users reclaim 2.4 hours of focus daily. It features a zero-telemetry, offline architecture and system-level blocking.",
                       },
                     },
                   ],

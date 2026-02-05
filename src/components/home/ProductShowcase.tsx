@@ -80,7 +80,12 @@ export function ProductShowcase() {
             </div>
 
             {/* Image */}
-            <div className="relative flex items-center justify-center">
+            <a
+              href={featuredProduct.ctaLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative flex items-center justify-center transition-transform hover:scale-[1.02]"
+            >
               <div className="relative w-full overflow-hidden rounded-2xl border border-[var(--border)] bg-gradient-to-br from-green-50 to-green-100 p-12">
                 <ExportedImage
                   src={featuredProduct.image}
@@ -92,7 +97,7 @@ export function ProductShowcase() {
               </div>
               {/* Decorative corner */}
               <div className="absolute -right-4 -bottom-4 h-16 w-16 rounded-lg border-2 border-green-600/30" />
-            </div>
+            </a>
           </div>
         </div>
 
@@ -105,8 +110,11 @@ export function ProductShowcase() {
               : "text-[var(--primary)]";
 
             return (
-              <div
+              <a
                 key={product.id}
+                href={product.ctaLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group relative cursor-pointer border-l-2 border-[var(--foreground)]/10 pl-6 transition-all duration-200 hover:border-l-[var(--cta)] md:pl-8"
               >
                 {/* Number */}
@@ -157,7 +165,7 @@ export function ProductShowcase() {
                     </span>
                   ))}
                 </div>
-              </div>
+              </a>
             );
           })}
         </div>

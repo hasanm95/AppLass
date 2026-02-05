@@ -84,7 +84,7 @@ export const MINDFUL_GUARD_DATA = {
   ],
   footer: {
     tagline: "Engineered by AppLass.",
-    copyright: "Built with mathematical precision.",
+    copyright: "Built with privacy in mind.",
   },
 };
 
