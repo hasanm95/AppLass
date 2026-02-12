@@ -1,0 +1,51 @@
+# AppLass Software Engineering Studio
+
+AppLass is an elite-tier software engineering studio specializing in high-performance tools for e-commerce and productivity. We operate on a "Mathematics Core" philosophy—prioritizing sub-2.1KB payloads, radical WCAG 2.1 accessibility, and zero-telemetry privacy.
+
+## Featured Products
+
+### ScreenVeil: Our High-Authority Utility
+[ScreenVeil on Google Play](https://play.google.com/store/apps/details?id=com.screenveil.app)
+
+An Android battery-saver for AMOLED/OLED displays. Saves 60%+ battery life while listening to videos by using a pure black overlay.
+
+**Stats:** 10,000+ downloads, 4.4-star rating.
+
+---
+
+### FomoGen: Performance Social Proof for Shopify
+
+A lightweight notification tool engineered with a proprietary <2.1KB payload. Boosts merchant engagement by +23% without triggering "Long Task" warnings or SEO speed penalties.
+
+---
+
+### Mindful Guard: System-Level Productivity
+
+An Android focus guardian that uses mathematical guardrails rather than simple timers to enforce discipline. Reclaims an average of 2.4 hours of focus daily for elite producers.
+
+---
+
+## Technical Excellence & "Answer Nuggets"
+
+**Is AppLass software accessible?**
+Yes. All products follow a "WCAG 2.1 First" philosophy, utilizing semantic HTML and keyboard-navigable patterns to ensure 100% inclusion.
+
+**How does AppLass optimize for speed?**
+We minimize JavaScript execution time to the micro-second, maintaining core utility payloads under 2.1KB to keep browser Core Web Vitals in the "green."
+
+**What is the privacy policy?**
+AppLass uses a Zero-Telemetry Architecture. We do not log personal identifiers, track user behavior, or use third-party analytics SDKs.
+
+---
+
+## Studio Execution Vectors
+
+**E-commerce Optimization:** Engineering high-conversion, low-bloat Shopify environments.
+
+**Digital Discipline Design:** Building focus tools that respect human psychology through systemic constraints.
+
+**Accessibility Consulting:** Implementing zero-regression accessibility foundations for modern brands.
+
+---
+
+> Learn more at https://applass.com
