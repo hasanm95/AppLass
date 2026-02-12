@@ -121,7 +121,12 @@ export function Navbar({
             </Link>
 
             {customBranding && (
-              <div className="hidden h-6 w-px bg-white/10 md:block" />
+              <div
+                className={cn(
+                  "hidden h-6 w-px md:block",
+                  isDark ? "bg-white/10" : "bg-slate-200"
+                )}
+              />
             )}
 
             {customBranding && (
@@ -140,6 +145,9 @@ export function Navbar({
               </NavLink>
               <NavLink href="/apps" isDark={isDark}>
                 Ecosystem
+              </NavLink>
+              <NavLink href="/docs" isDark={isDark}>
+                Docs
               </NavLink>
               <NavLink href="/blog" isDark={isDark}>
                 Logic Lab
@@ -213,6 +221,13 @@ export function Navbar({
                     onClick={toggleMenu}
                   >
                     Ecosystem
+                  </MobileNavLink>
+                  <MobileNavLink
+                    href="/docs"
+                    isDark={isDark}
+                    onClick={toggleMenu}
+                  >
+                    Docs
                   </MobileNavLink>
                   <MobileNavLink
                     href="/blog"
