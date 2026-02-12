@@ -57,6 +57,10 @@ I wanted a **Cognitive Firewall** built with mathematical precision. That's why 
 
 If you want a lifestyle app and don't mind the price, Opal is fine. If you need to block your laptop too, go with Freedom. But if you want a **private, powerful, and affordable** way to reclaim your focus on Android, it's time to try a different kind of logic.
 
+## Explore the Focus Ecosystem
+
+Compare more tools and strategies in our [Ultimate Guide to Digital Wellness](/pillar/digital-wellness).
+
 ---
 
 **Ready to make the switch?**

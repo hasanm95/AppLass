@@ -46,6 +46,10 @@ Since I started using this "logic-based" approach, I've reclaimed about **2.4 ho
 
 Stop trying to fight a super-computer with your bare hands. It's time to deploy a system that actually works.
 
+### Master Your Neural Architecture
+
+This article is part of our [Ultimate Guide to Digital Wellness](/pillar/digital-wellness). Explore the full pillar for more insights on monk mode and focus engineering.
+
 ---
 
 **Ready to enter Monk Mode 2.0?**

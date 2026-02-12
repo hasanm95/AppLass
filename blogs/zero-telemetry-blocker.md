@@ -44,6 +44,10 @@ True deep work requires a closed system. By choosing tools that respect your "Di
 
 Stop letting bloated algorithms dictate your attention span. It's time to move to a tool built with mathematical precision.
 
+## Privacy as a Foundation
+
+Zero-telemetry is a core requirement for true neutrality. Explore more in our [Ultimate Guide to Digital Wellness](/pillar/digital-wellness) pillar.
+
 ---
 
 **Explore more engineering insights:**

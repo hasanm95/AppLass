@@ -40,6 +40,10 @@ Once you have your number (e.g., $60), you need to tell the customer. Don't just
 
 ![Progressive free shipping bar for Shopify](/v1/blogs/shipping-bar-states.png)
 
+## Mastery of Margins
+
+Calculating thresholds is a core component of [E-commerce Performance](/pillar/ecommerce-performance). Explore the pillar for more ROI-focused logic.
+
 ## Conclusion
 
 Implementing a dynamic shipping bar is one of the fastest ways to lift your revenue by 30%. Use the formula above, set your goal in FOMO Gen, and watch your AOV climb.

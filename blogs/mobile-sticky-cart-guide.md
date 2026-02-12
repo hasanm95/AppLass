@@ -29,6 +29,10 @@ Most Shopify themes put the cart button at the top (Danger Zone). A **Sticky Add
 2. **Higher CTR:** Stickiness increases the visibility of your Call to Action (CTA).
 3. **Better Data:** FOMO Gen's sticky cart includes analytics, so you can see exactly how many clicks are coming from the sticky bar vs. the main button.
 
+## Beyond the Button
+
+Sticky carts are just the beginning. See the full conversion architecture in our [E-commerce Performance Pillar](/pillar/ecommerce-performance).
+
 ## Action Plan
 
 Don't let mobile visitors bounce because they can't find the button. Install a sticky cart today. It is a "set and forget" optimization that pays dividends immediately.

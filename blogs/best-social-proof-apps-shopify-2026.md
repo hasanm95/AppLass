@@ -85,6 +85,10 @@ Fomo remains the most flexible and integrated social proof platform. It tracks m
 **Cons:** Can be complex to set up; highest tier pricing for large volumes.
 **Price:** Free plan available (up to 1,000 notifications); paid tiers start at $25/month.
 
+## The Conversion Ecosystem
+
+This guide is part of our [Ultimate Guide to E-commerce Performance](/pillar/ecommerce-performance). Master the art of the sub-2.1KB conversion.
+
 ## Conclusion
 
 If you want the most visually stunning photo reviews, choose **Loox**. If you need a complete enterprise-scale integration engine, **Fomo** is the leader. But if you want a lightweight, speed-optimized tool that gives you Social Proof, Scarcity, and Cart Optimization for free, **FOMO Gen** is the smart choice for 2026.

@@ -39,6 +39,10 @@ By displaying a Sales Pop that says "Amanda from Texas purchased this 2 minutes 
 - **The Right Way:** Use tools that sync with your actual Shopify inventory.
 - **The Wrong Way:** Using "Fake" counters that always show "3 left" even when you have 1,000 units.
 
+## The Science of Psychological ROI
+
+Understand how FOMO fits into a broader [E-commerce Performance](/pillar/ecommerce-performance) strategy.
+
 ## Summary
 
 You don't need to manipulate customers. You just need to surface the truth. If your stock is low, tell them. If people are buying, show them. That is the essence of high-converting ethical marketing.

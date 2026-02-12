@@ -36,6 +36,10 @@ Low-Latency Performance: Built with the same precision as a high-frequency tradi
 
 As an accessibility-first studio, we’ve found that high-contrast, WCAG-compliant interfaces actually reduce cognitive load. A cleaner UI means less visual noise. When you use Mindful Guard, you aren't fighting a complex interface; you are using a tool that clears the path for your work.
 
+## The Path to Digital Wellness
+
+This post is a featured chapter in our [Ultimate Guide to Digital Wellness](/pillar/digital-wellness). Learn how to engineer your focus from first principles.
+
 ## Conclusion: Reclaim Your 3 Hours
 
 The math is simple. If you can save just 30 minutes a day from mindless scrolling, you reclaim 182 hours a year. That is over 4 full work weeks of "found" time.
