@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans, JetBrains_Mono } from "next/font/google";
-import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import "./tw-animate.css";
 
@@ -81,28 +81,8 @@ export default function RootLayout({
       lang="en"
       className={`${ibmPlexSans.variable} ${jetbrainsMono.variable}`}
     >
-      {/* Preconnect to external origins - Hoisted by React 19 */}
-      <link rel="preconnect" href="https://www.googletagmanager.com" />
-      <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-      <link rel="preconnect" href="https://www.google-analytics.com" />
-      <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-      <link rel="preconnect" href="https://region1.google-analytics.com" />
-      <link rel="preconnect" href="https://stats.g.doubleclick.net" />
-
       <body className="font-sans antialiased">
-        {/* Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-CKXH2GPBN3"
-          strategy="lazyOnload"
-        />
-        <Script id="google-analytics" strategy="lazyOnload">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-CKXH2GPBN3');
-          `}
-        </Script>
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ""} />
         {/* JSON-LD Unified Entity & Product Schema for AI Search */}
         <script
           type="application/ld+json"
