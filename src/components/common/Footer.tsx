@@ -6,6 +6,7 @@ const footerLinks = {
   solutions: [
     { label: "Fomogen", href: "/apps/fomogen" },
     { label: "Mindful Guard", href: "/apps/mindful-guard" },
+    { label: "ScreenVeil", href: "/apps/screenveil" },
   ],
   resources: [
     { label: "Our Ecosystem", href: "/apps" },

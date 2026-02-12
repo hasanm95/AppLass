@@ -26,21 +26,21 @@ export default function DocsHubPage() {
       id: "mindful",
       name: "Mindful Guard",
       tagline: "Digital Discipline",
-      icon: <Shield className="h-6 w-6 text-slate-400" />,
+      icon: <Shield className="h-6 w-6 text-blue-600" />,
       description:
         "Advanced heuristic filters for focus and intentional device usage.",
-      link: "#",
-      status: "Coming Soon",
+      link: "/docs/mindful-guard",
+      color: "slate",
     },
     {
       id: "screenveil",
       name: "ScreenVeil",
       tagline: "Background Architecture",
-      icon: <Smartphone className="h-6 w-6 text-slate-400" />,
+      icon: <Smartphone className="h-6 w-6 text-blue-600" />,
       description:
         "Low-level background process management for Android environments.",
-      link: "#",
-      status: "In Development",
+      link: "/docs/screenveil",
+      color: "blue",
     },
   ];
 
@@ -82,15 +82,9 @@ export default function DocsHubPage() {
                   </p>
                 </div>
               </div>
-              {system.status ? (
-                <span className="rounded-full bg-slate-100 px-4 py-1.5 text-[10px] font-black uppercase tracking-widest text-slate-400">
-                  {system.status}
-                </span>
-              ) : (
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-50 text-slate-400 transition-all group-hover:bg-blue-600 group-hover:text-white">
-                  <ArrowRight className="h-5 w-5" />
-                </div>
-              )}
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-50 text-slate-400 transition-all group-hover:bg-blue-600 group-hover:text-white">
+                <ArrowRight className="h-5 w-5" />
+              </div>
             </div>
 
             <p className="max-w-xl text-lg font-medium leading-relaxed text-slate-500">
