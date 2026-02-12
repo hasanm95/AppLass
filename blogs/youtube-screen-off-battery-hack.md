@@ -1,9 +1,9 @@
 ---
-title: "How to Play YouTube with the Screen Off: The Ultimate Battery Hack for Android (2026)"
+title: "YouTube Screen Off Hack: Save 40% Battery"
 date: "2026-02-02"
 category: "Battery Tips"
 author: "AppLass Team"
-excerpt: "Discover how to save up to 63% of your display's power consumption by using a true black overlay while streaming audio. The science-backed method for AMOLED and OLED screens."
+excerpt: "Play YouTube with your screen off and save massive battery life. Our 2026 guide shows you the exact workaround Google doesn't want you to know."
 thumbnail: "/v1/blogs/screenveil-youtube-battery.png"
 featured: true
 ---

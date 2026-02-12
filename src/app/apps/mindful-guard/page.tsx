@@ -22,10 +22,9 @@ const FAQSection = dynamic(() =>
 import { MINDFUL_GUARD_SCHEMA } from "@/constants/mindful-guard-data";
 
 export const metadata: Metadata = {
-  title:
-    "MindfulGuard: The Privacy-First Android App Blocker & Cognitive Firewall",
+  title: "Mindful Guard: The #1 Privacy-First Focus App [Android 2026]",
   description:
-    "Stop doomscrolling with strict logic. MindfulGuard is the offline-first, zero-telemetry app blocker engineered for deep work. No subscriptions. No tracking.",
+    "Stop digital distractions instantly. Mindful Guard is a 100% private, offline Pomodoro and app blocker for Android. Download for free today!",
   keywords: [
     "Android app blocker",
     "dopamine detox app",

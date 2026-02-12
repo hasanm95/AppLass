@@ -1,9 +1,9 @@
 ---
-title: 'The "Thumb Zone" Hack: Why Sticky Carts Boost Mobile Conversions'
+title: "How to Add a Sticky Cart to Shopify: 2026 Conversion Hack"
 date: "2026-01-24"
 category: "UX"
 author: "AppLass Team"
-excerpt: "Mobile conversion rates lag behind desktop due to friction. Learn how anchoring your buy button in the 'Safe Zone' captures micro-decisions."
+excerpt: "Don't lose sales to abandoned carts. Learn how a mobile sticky cart can boost your store's ROI. Step-by-step guide for Shopify developers."
 thumbnail: "/v1/blogs/thumb-zone-heatmap.png"
 featured: false
 ---
