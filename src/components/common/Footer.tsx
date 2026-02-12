@@ -6,16 +6,17 @@ const footerLinks = {
   solutions: [
     { label: "Fomogen", href: "/apps/fomogen" },
     { label: "Mindful Guard", href: "/apps/mindful-guard" },
+    { label: "ScreenVeil", href: "/apps/screenveil" },
   ],
   resources: [
     { label: "Our Ecosystem", href: "/apps" },
+    { label: "Documentation", href: "/docs" },
     { label: "The Methodology", href: "/about" },
-    { label: "Comparison Guides", href: "/compare" },
     { label: "The Logic Lab (Blog)", href: "/blog" },
   ],
   legal: [
-    { label: "Privacy Policy", href: "/about" }, // Placeholder until legal pages are created
-    { label: "Terms of Service", href: "/about" },
+    { label: "Privacy Policy", href: "/legal/fomogen/privacy" },
+    { label: "Terms of Service", href: "/legal/fomogen/terms" },
   ],
 };
 

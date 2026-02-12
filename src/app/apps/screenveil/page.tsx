@@ -41,9 +41,9 @@ const StickyDownloadBar = dynamic(() =>
 import { SCREENVEIL_DATA } from "@/constants/screenveil-data";
 
 export const metadata: Metadata = {
-  title: "ScreenVeil: Save 60% Battery with Screen Off Video Playback",
+  title: "ScreenVeil: The Safest Screen Filter for Total Digital Privacy",
   description:
-    "The ultimate AMOLED battery saver. Watch YouTube, Netflix, and podcasts with your screen off. Zero permissions, 100% privacy. Download ScreenVeil for Android.",
+    "Protect your data from prying eyes with ScreenVeil. A lightweight, secure screen overlay for Android. No data collection, 100% offline.",
   keywords: [
     "black screen video",
     "AMOLED battery saver",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     title: "ScreenVeil: Save 60% Battery with Screen Off Video Playback",
     description:
       "The ultimate AMOLED battery saver. Watch YouTube, Netflix, and podcasts with your screen off. Zero permissions, 100% privacy.",
-    images: ["/v1/apps/screenveil-og.png"],
+    images: ["/v1/apps/screenveil-feature.png"],
     url: "https://applass.com/apps/screenveil",
   },
 };

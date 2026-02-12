@@ -117,5 +117,5 @@ export const MINDFUL_GUARD_SCHEMA = {
   },
   downloadUrl:
     "https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard",
-  screenshot: "https://applass.com/images/mindfulguard-hero.jpg",
+  screenshot: "https://applass.com/v1/apps/mindful-guard-feature.png",
 };

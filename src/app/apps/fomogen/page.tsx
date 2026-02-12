@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Boost Your Shopify Sales with FOMO Gen",
     description:
       "The all-in-one app for Sales Popups, Stock Countdowns, Sticky Cart, and Trust Badges. Install for Free today!",
-    images: ["/apps/fomogen-og.png"],
+    images: ["/v1/apps/fomogen-feature.png"],
     url: "https://applass.com/apps/fomogen",
   },
 };
@@ -57,36 +57,62 @@ export default function FomogenPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
-            name: "FOMO Gen",
-            operatingSystem: "Shopify",
-            applicationCategory: "BusinessApplication",
-            offers: {
-              "@type": "Offer",
-              price: "0",
-              priceCurrency: "USD",
-              priceValidUntil: "2026-12-31",
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              name: "FOMO Gen",
+              operatingSystem: "Shopify",
+              applicationCategory: "BusinessApplication",
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "USD",
+                priceValidUntil: "2026-12-31",
+              },
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.9",
+                reviewCount: "12",
+                bestRating: "5",
+                worstRating: "1",
+              },
+              featureList:
+                "Social Proof Notifications, Stock Countdown Timer, Sticky Add-to-Cart, Free Shipping Bar",
+              screenshot: "https://applass.com/v1/apps/fomogen/comparison-hero.png",
+              image: "https://applass.com/v1/apps/fomogen-feature.png",
+              description:
+                "FOMO Gen is an all-in-one Shopify app for social proof, urgency, and trust signals.",
+              author: {
+                "@type": "Organization",
+                name: "Applass",
+                url: "https://applass.com",
+              },
             },
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "12",
-              bestRating: "5",
-              worstRating: "1",
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              name: "FOMO Gen",
+              description:
+                "All-in-one Shopify app for Sales Popups, Stock Countdowns, Sticky Cart, and Trust Badges.",
+              brand: {
+                "@type": "Brand",
+                name: "AppLass",
+              },
+              offers: {
+                "@type": "Offer",
+                price: "0.00",
+                priceCurrency: "USD",
+                availability: "https://schema.org/InStock",
+                url: "https://applass.com/apps/fomogen",
+              },
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.9",
+                reviewCount: "12",
+              },
             },
-            featureList:
-              "Social Proof Notifications, Stock Countdown Timer, Sticky Add-to-Cart, Free Shipping Bar",
-            screenshot: "https://applass.com/images/fomogen-dashboard.jpg",
-            description:
-              "FOMO Gen is an all-in-one Shopify app for social proof, urgency, and trust signals.",
-            author: {
-              "@type": "Organization",
-              name: "Applass",
-              url: "https://applass.com",
-            },
-          }),
+          ]),
         }}
       />
 

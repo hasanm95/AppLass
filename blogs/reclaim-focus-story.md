@@ -48,6 +48,10 @@ That is why I built [MindfulGuard](/apps/mindful-guard). I didn't want a "wellne
 
 I stopped trying to "try harder" and started using a system that does the work for me. By deploying a logical guardrail, I finally reclaimed my neural bandwidth.
 
+## Part of the Digital Wellness Framework
+
+Reclaiming your focus is a systemic challenge. See how this strategy fits into our [Ultimate Guide to Digital Wellness](/digital-wellness-2026-guide).
+
 ---
 
 **Ready to reclaim your focus?**

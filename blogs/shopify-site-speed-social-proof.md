@@ -32,6 +32,10 @@ Old apps use **Script Tags**. They force code into your `<head>`, slowing down t
 2. **Audit Your Apps:** Do you have one app for a sticky cart, another for badges, and another for popups? That is 3 separate HTTP requests.
 3. **Consolidate:** Moving to an all-in-one solution like FOMO Gen replaces multiple heavy scripts with one single, optimized resource.
 
+## Part of the Performance Pillar
+
+Site speed is just one variable. Explore the full [E-commerce Performance Pillar](/ecommerce-performance-2026-benchmarks) for a mathematical approach to sales.
+
 ## The Bottom Line
 
 Google considers Core Web Vitals a ranking factor. You cannot afford to sacrifice speed for features. You need an app that offers both.
