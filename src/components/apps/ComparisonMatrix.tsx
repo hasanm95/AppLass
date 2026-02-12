@@ -8,100 +8,103 @@ export function ComparisonMatrix() {
   const getIndicator = (value: string, isMindfulGuard: boolean) => {
     if (isMindfulGuard) {
       return (
-        <span className="flex items-center gap-2 font-bold text-[#7C3AED]">
-          <Check className="h-5 w-5" />
+        <span className="flex items-center gap-3 font-mono text-[11px] font-bold text-[#064E3B] uppercase tracking-wider">
+          <Check className="h-4 w-4 stroke-[3px]" />
           {value}
         </span>
       );
     }
     if (value.includes("High") || value.includes("$99")) {
       return (
-        <span className="flex items-center gap-2 text-red-500">
-          <X className="h-5 w-5" />
+        <span className="flex items-center gap-3 font-mono text-[11px] text-red-900/40 uppercase tracking-wider">
+          <X className="h-4 w-4" />
           {value}
         </span>
       );
     }
     return (
-      <span className="flex items-center gap-2 text-slate-500">
-        <Minus className="h-5 w-5" />
+      <span className="flex items-center gap-3 font-mono text-[11px] text-slate-400 uppercase tracking-wider">
+        <Minus className="h-4 w-4" />
         {value}
       </span>
     );
   };
 
   return (
-    <Section id="comparison" className="bg-white">
-      <div className="mx-auto max-w-5xl">
-        <div className="mb-16 text-center">
-          <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-[#7C3AED] uppercase">
-            Competitive Analysis
+    <Section id="comparison" className="bg-[#FBFBFA] border-b border-slate-200">
+      <div className="section-container">
+        <div className="mb-20">
+          <span className="mb-6 block font-mono text-[10px] font-bold tracking-[0.3em] text-[#064E3B] uppercase">
+            // Technical Validation Matrix
           </span>
-          <h2 className="text-3xl font-bold tracking-tight text-slate-900 md:text-4xl lg:text-5xl">
+          <h2 className="text-4xl font-black tracking-tighter text-slate-950 md:text-5xl lg:text-6xl">
             {comparison.title}
           </h2>
         </div>
 
-        {/* Desktop Table */}
-        <div className="hidden overflow-hidden rounded-[2rem] border border-slate-200 shadow-xl md:block">
-          <table className="w-full">
+        {/* Desktop Technical Table */}
+        <div className="hidden border-2 border-slate-950 bg-white md:block">
+          <table className="w-full border-collapse">
             <thead>
-              <tr className="bg-slate-50">
-                <th className="p-6 text-left text-sm font-bold tracking-wider text-slate-500 uppercase">
-                  Specification
+              <tr className="bg-slate-950">
+                <th className="p-8 text-left font-mono text-[10px] font-bold tracking-[0.2em] text-slate-400 uppercase">
+                  Technical Spec
                 </th>
-                <th className="bg-[#7C3AED]/5 p-6 text-left text-sm font-bold tracking-wider text-[#7C3AED] uppercase">
-                  MindfulGuard
+                <th className="bg-[#064E3B] p-8 text-left font-mono text-[10px] font-bold tracking-[0.2em] text-white uppercase">
+                  MindfulGuard (v2.6)
                 </th>
-                <th className="p-6 text-left text-sm font-bold tracking-wider text-slate-500 uppercase">
+                <th className="p-8 text-left font-mono text-[10px] font-bold tracking-[0.2em] text-slate-400 uppercase">
                   Opal
                 </th>
-                <th className="p-6 text-left text-sm font-bold tracking-wider text-slate-500 uppercase">
+                <th className="p-8 text-left font-mono text-[10px] font-bold tracking-[0.2em] text-slate-400 uppercase">
                   Freedom
                 </th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="divide-y divide-slate-100">
               {comparison.specs.map((spec, idx) => (
                 <tr
                   key={idx}
-                  className="border-t border-slate-100 transition-colors hover:bg-slate-50"
+                  className="transition-colors hover:bg-slate-50"
                 >
-                  <td className="p-6 font-bold text-slate-900">{spec.label}</td>
-                  <td className="bg-[#7C3AED]/5 p-6">
+                  <td className="p-8 font-black text-slate-950 tracking-tight">{spec.label}</td>
+                  <td className="bg-emerald-50/30 p-8 border-x border-emerald-900/10">
                     {getIndicator(spec.mindfulGuard, true)}
                   </td>
-                  <td className="p-6">{getIndicator(spec.opal, false)}</td>
-                  <td className="p-6">{getIndicator(spec.freedom, false)}</td>
+                  <td className="p-8">{getIndicator(spec.opal, false)}</td>
+                  <td className="p-8">{getIndicator(spec.freedom, false)}</td>
                 </tr>
               ))}
             </tbody>
           </table>
+          <div className="bg-slate-950 p-4 font-mono text-[8px] text-slate-600 uppercase tracking-[0.5em] text-center">
+            [ End of Specification Report - Protocol 88-Alpha ]
+          </div>
         </div>
 
-        {/* Mobile Cards */}
-        <div className="space-y-6 md:hidden">
+        {/* Mobile Specification Cards */}
+        <div className="space-y-4 md:hidden">
           {comparison.specs.map((spec, idx) => (
             <div
               key={idx}
-              className="overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm"
+              className="border-2 border-slate-950 bg-white"
             >
-              <div className="border-b border-slate-100 bg-slate-50 p-4">
-                <h3 className="font-bold text-slate-900">{spec.label}</h3>
+              <div className="bg-slate-950 p-4">
+                <h3 className="font-mono text-[10px] font-bold text-white uppercase tracking-widest">{spec.label}</h3>
               </div>
-              <div className="divide-y divide-slate-100">
-                <div className="flex items-center justify-between bg-[#7C3AED]/5 p-4">
-                  <span className="text-sm font-bold text-[#7C3AED]">
+              <div className="p-6 space-y-6">
+                <div className="flex items-center justify-between border-b border-emerald-900/10 pb-4">
+                  <span className="font-mono text-[9px] font-bold text-[#064E3B] uppercase">
                     MindfulGuard
                   </span>
                   {getIndicator(spec.mindfulGuard, true)}
                 </div>
-                <div className="flex items-center justify-between p-4">
-                  <span className="text-sm text-slate-500">Opal</span>
+                <div className="flex items-center justify-between border-b border-slate-100 pb-4">
+                  <span className="font-mono text-[9px] font-bold text-slate-400 uppercase tracking-widest">Opal</span>
                   {getIndicator(spec.opal, false)}
                 </div>
-                <div className="flex items-center justify-between p-4">
-                  <span className="text-sm text-slate-500">Freedom</span>
+                <div className="flex items-center justify-between">
+                  <span className="font-mono text-[9px] font-bold text-slate-400 uppercase tracking-widest">Freedom</span>
                   {getIndicator(spec.freedom, false)}
                 </div>
               </div>

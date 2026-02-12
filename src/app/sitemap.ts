@@ -18,11 +18,68 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   );
 
   // Specific App Landing Pages
-  const appRoutes = ["/apps/fomogen", "/apps/mindful-guard"].map((route) => ({
+  const appRoutes = [
+    "/apps/fomogen",
+    "/apps/mindful-guard",
+    "/apps/screenveil",
+  ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
     priority: 0.9,
+  }));
+
+  // Specialized Authority Pillars
+  const guideRoutes = [
+    "/digital-wellness-2026-guide",
+    "/ecommerce-performance-2026-benchmarks",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.85,
+  }));
+
+  // Legal and Policy pages
+  const legalRoutes = [
+    "/legal/fomogen/privacy",
+    "/legal/fomogen/terms",
+    "/legal/mindful-guard/privacy",
+    "/legal/mindful-guard/terms",
+    "/legal/screenveil/privacy",
+    "/legal/screenveil/terms",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.3,
+  }));
+
+  // Documentation Hub and Pages
+  const documentationRoutes = [
+    "/docs",
+    "/docs/fomogen",
+    "/docs/fomogen/configuration",
+    "/docs/fomogen/faq",
+    "/docs/fomogen/trust-badges",
+    "/docs/fomogen/features/countdown-timers",
+    "/docs/fomogen/features/exit-intent",
+    "/docs/fomogen/features/progress-indicators",
+    "/docs/fomogen/features/purchase-notifications",
+    "/docs/fomogen/features/quick-start",
+    "/docs/fomogen/features/social-proof-badges",
+    "/docs/fomogen/features/sticky-cart",
+    "/docs/fomogen/features/stock-alerts",
+    "/docs/mindful-guard",
+    "/docs/mindful-guard/installation",
+    "/docs/mindful-guard/strict-mode",
+    "/docs/screenveil",
+    "/docs/screenveil/amoled-efficiency",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
   }));
 
   // Dynamic blog posts
@@ -42,5 +99,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...appRoutes, ...blogRoutes, ...compareRoutes];
+  return [
+    ...staticRoutes,
+    ...appRoutes,
+    ...guideRoutes,
+    ...blogRoutes,
+    ...compareRoutes,
+    ...legalRoutes,
+    ...documentationRoutes,
+  ];
 }

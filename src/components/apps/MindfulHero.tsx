@@ -9,47 +9,52 @@ export function MindfulHero() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useParallax(containerRef, [
-    { selector: ".parallax-mindful-headline", factor: 20, rotateFactor: 5 },
-    { selector: ".parallax-mindful-subtext", factor: 10, rotateFactor: 3 },
-    { selector: ".parallax-mindful-cta", factor: 5, rotateFactor: 2 },
+    { selector: ".parallax-mindful-headline", factor: 15, rotateFactor: 2 },
+    { selector: ".parallax-mindful-subtext", factor: 8, rotateFactor: 1 },
+    { selector: ".parallax-mindful-cta", factor: 4, rotateFactor: 0 },
   ]);
 
   return (
     <section
       ref={containerRef}
-      className="perspective-1000 relative flex min-h-[90vh] items-center justify-center overflow-hidden bg-[#FAFBFD] pt-32 pb-20"
+      className="relative flex min-h-[95vh] items-center overflow-hidden bg-[#FBFBFA] pt-32 pb-20"
     >
-      {/* Dynamic Focus Purple Gradient */}
+      {/* Structural Grid Background */}
       <div
-        className="pointer-events-none absolute top-0 left-1/2 h-[600px] w-[1000px] -translate-x-1/2 opacity-10 blur-[120px]"
+        className="pointer-events-none absolute inset-0 opacity-[0.03]"
         style={{
-          background: "radial-gradient(circle, #7C3AED 0%, transparent 70%)",
+          backgroundImage: `linear-gradient(#064E3B 1px, transparent 1px), linear-gradient(90deg, #064E3B 1px, transparent 1px)`,
+          backgroundSize: "40px 40px",
         }}
       />
 
-      <div className="section-container relative z-10 text-center">
-        <div className="animate-fade-in-up">
-          <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-purple-100 bg-purple-50/50 px-4 py-1.5 text-[10px] font-black tracking-[0.2em] text-[#7C3AED] uppercase shadow-sm backdrop-blur-md">
-            Cognitive Firewall
+      {/* Stoic Accent Blur */}
+      <div className="pointer-events-none absolute top-[-10%] right-[-5%] h-[800px] w-[800px] rounded-full bg-[#064E3B]/5 blur-[120px]" />
+
+      <div className="section-container relative z-10">
+        <div className="flex flex-col gap-12 lg:flex-row lg:items-end lg:justify-between">
+          <div className="max-w-4xl animate-fade-in-up">
+            <div className="mb-8 inline-flex items-center gap-3 border border-emerald-900/10 bg-emerald-50/50 px-4 py-1.5 font-mono text-[11px] font-bold tracking-widest text-[#064E3B] uppercase">
+              // Neural Architecture Protection
+            </div>
+
+            <h1 className="parallax-mindful-headline text-slate-950 font-black tracking-tighter sm:text-7xl md:text-8xl lg:text-9xl">
+              {MINDFUL_GUARD_DATA.hero.headline.split(" ").slice(0, 2).join(" ")}
+              <br />
+              <span className="text-[#064E3B] underline decoration-emerald-900/10 underline-offset-8">
+                {MINDFUL_GUARD_DATA.hero.headline.split(" ").slice(2).join(" ")}
+              </span>
+            </h1>
+
+            <p className="parallax-mindful-subtext mt-12 max-w-2xl text-xl leading-snug font-medium text-slate-600 md:text-2xl">
+              {MINDFUL_GUARD_DATA.hero.subheadline}
+            </p>
           </div>
 
-          <h1 className="parallax-mindful-headline text-display mb-10 text-slate-900">
-            {MINDFUL_GUARD_DATA.hero.headline.split(" ").slice(0, 2).join(" ")}
-            <br />
-            <span className="group relative text-[#7C3AED] italic">
-              {MINDFUL_GUARD_DATA.hero.headline.split(" ").slice(2).join(" ")}
-              <div className="absolute -bottom-4 left-0 h-[6px] w-full rounded-full bg-[#7C3AED]/20 blur-sm transition-colors group-hover:bg-[#7C3AED]/40" />
-            </span>
-          </h1>
-
-          <p className="parallax-mindful-subtext mx-auto mt-12 max-w-3xl text-xl leading-tight font-medium tracking-tight text-balance text-slate-500 md:text-2xl">
-            {MINDFUL_GUARD_DATA.hero.subheadline}
-          </p>
-
-          <div className="parallax-mindful-cta mt-16 flex flex-col items-center justify-center gap-8 sm:flex-row">
+          <div className="parallax-mindful-cta flex shrink-0 flex-col gap-4 self-start lg:mb-12">
             <Button
               size="lg"
-              className="h-16 w-full rounded-2xl bg-[#7C3AED] px-12 text-lg font-bold text-white shadow-2xl shadow-purple-200 transition-all duration-500 hover:scale-110 hover:bg-[#6D28D9] active:scale-95 sm:w-auto"
+              className="h-16 w-full rounded-none bg-[#1E293B] px-12 text-base font-bold text-white transition-all duration-300 hover:bg-[#064E3B] sm:w-auto"
               asChild
             >
               <a href={MINDFUL_GUARD_DATA.hero.playStoreUrl}>
@@ -58,24 +63,23 @@ export function MindfulHero() {
             </Button>
             <Button
               size="lg"
-              variant="ghost"
-              className="group h-16 w-full rounded-2xl px-12 text-lg font-bold text-slate-900 backdrop-blur-sm transition-all hover:bg-white/80 sm:w-auto"
+              variant="outline"
+              className="h-16 w-full rounded-none border-2 border-slate-200 bg-transparent px-12 text-base font-bold text-slate-900 transition-all hover:border-[#064E3B] hover:bg-transparent hover:text-[#064E3B] sm:w-auto"
               asChild
             >
               <a href="#logic">
                 {MINDFUL_GUARD_DATA.hero.secondaryCTA}
-                <span className="ml-2 inline-block transition-transform group-hover:translate-y-2">
-                  ↓
-                </span>
               </a>
             </Button>
+            <div className="mt-4 font-mono text-[10px] text-slate-400 uppercase tracking-widest">
+              [ Offline Architecture Enabled ]
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Floating Decorative Elements */}
-      <div className="pointer-events-none absolute top-1/4 -right-20 h-80 w-80 animate-pulse rounded-full bg-purple-100/20 blur-[100px]" />
-      <div className="pointer-events-none absolute bottom-1/4 -left-20 h-80 w-80 animate-pulse rounded-full bg-blue-100/10 blur-[100px] delay-700" />
+      {/* Geometric Decorative Divider */}
+      <div className="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-transparent via-emerald-900/10 to-transparent" />
     </section>
   );
 }
