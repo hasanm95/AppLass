@@ -118,7 +118,7 @@ export const SCREENVEIL_DATA = {
       "@type": "SoftwareApplication",
       name: "ScreenVeil: Screen Off Video",
       operatingSystem: "Android",
-      applicationCategory: "UtilitiesApplication",
+      applicationCategory: "ProductivityApplication",
       offers: {
         "@type": "Offer",
         price: "0",
@@ -135,6 +135,8 @@ export const SCREENVEIL_DATA = {
         "Black Screen Overlay, AMOLED Battery Saver, Screen Off Playback, Floating Quick Access, Smart Unlock",
       description:
         "The ultimate AMOLED battery saver. Watch YouTube, Netflix, and podcasts with your screen off. Zero permissions, 100% privacy.",
+      screenshot: "https://applass.com/v1/apps/screenveil-feature.png",
+      image: "https://applass.com/v1/apps/screenveil-feature.png",
       author: {
         "@type": "Organization",
         name: "AppLass",

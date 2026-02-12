@@ -14,6 +14,7 @@ export interface MarkdownBlogPost {
   thumbnail: string;
   content: string;
   featured?: boolean;
+  faqs?: { question: string; answer: string }[];
 }
 
 export function getBlogPosts(): MarkdownBlogPost[] {
@@ -42,6 +43,7 @@ export function getBlogPosts(): MarkdownBlogPost[] {
         excerpt: data.excerpt,
         thumbnail: data.thumbnail,
         featured: data.featured || false,
+        faqs: data.faqs || [],
       } as MarkdownBlogPost;
     });
 
@@ -67,6 +69,7 @@ export function getBlogPostBySlug(slug: string): MarkdownBlogPost | null {
       excerpt: data.excerpt,
       thumbnail: data.thumbnail,
       featured: data.featured || false,
+      faqs: data.faqs || [],
     } as MarkdownBlogPost;
   } catch (e) {
     return null;

@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "MindfulGuard | Reclaim Your Neural Architecture",
     description:
       "The first Android app blocker engineered for privacy absolutists. 0ms latency. 100% Offline. Zero telemetry.",
-    images: ["/apps/mindful-guard-og.png"],
+    images: ["/v1/apps/mindful-guard-feature.png"],
     url: "https://applass.com/apps/mindful-guard",
   },
 };

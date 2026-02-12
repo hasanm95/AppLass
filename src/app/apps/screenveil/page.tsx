@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     title: "ScreenVeil: Save 60% Battery with Screen Off Video Playback",
     description:
       "The ultimate AMOLED battery saver. Watch YouTube, Netflix, and podcasts with your screen off. Zero permissions, 100% privacy.",
-    images: ["/v1/apps/screenveil-og.png"],
+    images: ["/v1/apps/screenveil-feature.png"],
     url: "https://applass.com/apps/screenveil",
   },
 };
