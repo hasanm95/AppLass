@@ -31,7 +31,7 @@ Most Shopify themes put the cart button at the top (Danger Zone). A **Sticky Add
 
 ## Beyond the Button
 
-Sticky carts are just the beginning. See the full conversion architecture in our [E-commerce Performance Pillar](/pillar/ecommerce-performance).
+Sticky carts are just the beginning. See the full conversion architecture in our [E-commerce Performance Pillar](/ecommerce-performance-2026-benchmarks).
 
 ## Action Plan
 

@@ -87,7 +87,7 @@ Fomo remains the most flexible and integrated social proof platform. It tracks m
 
 ## The Conversion Ecosystem
 
-This guide is part of our [Ultimate Guide to E-commerce Performance](/pillar/ecommerce-performance). Master the art of the sub-2.1KB conversion.
+This guide is part of our [Ultimate Guide to E-commerce Performance](/ecommerce-performance-2026-benchmarks). Master the art of the sub-2.1KB conversion.
 
 ## Conclusion
 

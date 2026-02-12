@@ -50,7 +50,7 @@ I stopped trying to "try harder" and started using a system that does the work f
 
 ## Part of the Digital Wellness Framework
 
-Reclaiming your focus is a systemic challenge. See how this strategy fits into our [Ultimate Guide to Digital Wellness](/pillar/digital-wellness).
+Reclaiming your focus is a systemic challenge. See how this strategy fits into our [Ultimate Guide to Digital Wellness](/digital-wellness-2026-guide).
 
 ---
 

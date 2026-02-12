@@ -42,7 +42,7 @@ Once you have your number (e.g., $60), you need to tell the customer. Don't just
 
 ## Mastery of Margins
 
-Calculating thresholds is a core component of [E-commerce Performance](/pillar/ecommerce-performance). Explore the pillar for more ROI-focused logic.
+Calculating thresholds is a core component of [E-commerce Performance](/ecommerce-performance-2026-benchmarks). Explore the pillar for more ROI-focused logic.
 
 ## Conclusion
 

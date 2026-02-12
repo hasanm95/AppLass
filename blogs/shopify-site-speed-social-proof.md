@@ -34,7 +34,7 @@ Old apps use **Script Tags**. They force code into your `<head>`, slowing down t
 
 ## Part of the Performance Pillar
 
-Site speed is just one variable. Explore the full [E-commerce Performance Pillar](/pillar/ecommerce-performance) for a mathematical approach to sales.
+Site speed is just one variable. Explore the full [E-commerce Performance Pillar](/ecommerce-performance-2026-benchmarks) for a mathematical approach to sales.
 
 ## The Bottom Line
 

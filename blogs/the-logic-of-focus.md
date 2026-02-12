@@ -38,7 +38,7 @@ As an accessibility-first studio, we’ve found that high-contrast, WCAG-complia
 
 ## The Path to Digital Wellness
 
-This post is a featured chapter in our [Ultimate Guide to Digital Wellness](/pillar/digital-wellness). Learn how to engineer your focus from first principles.
+This post is a featured chapter in our [Ultimate Guide to Digital Wellness](/digital-wellness-2026-guide). Learn how to engineer your focus from first principles.
 
 ## Conclusion: Reclaim Your 3 Hours
 

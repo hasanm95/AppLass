@@ -46,7 +46,7 @@ Stop letting bloated algorithms dictate your attention span. It's time to move t
 
 ## Privacy as a Foundation
 
-Zero-telemetry is a core requirement for true neutrality. Explore more in our [Ultimate Guide to Digital Wellness](/pillar/digital-wellness) pillar.
+Zero-telemetry is a core requirement for true neutrality. Explore more in our [Ultimate Guide to Digital Wellness](/digital-wellness-2026-guide) pillar.
 
 ---
 

@@ -48,7 +48,7 @@ Stop trying to fight a super-computer with your bare hands. It's time to deploy 
 
 ### Master Your Neural Architecture
 
-This article is part of our [Ultimate Guide to Digital Wellness](/pillar/digital-wellness). Explore the full pillar for more insights on monk mode and focus engineering.
+This article is part of our [Ultimate Guide to Digital Wellness](/digital-wellness-2026-guide). Explore the full pillar for more insights on monk mode and focus engineering.
 
 ---
 

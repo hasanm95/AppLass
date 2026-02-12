@@ -59,7 +59,7 @@ If you want a lifestyle app and don't mind the price, Opal is fine. If you need 
 
 ## Explore the Focus Ecosystem
 
-Compare more tools and strategies in our [Ultimate Guide to Digital Wellness](/pillar/digital-wellness).
+Compare more tools and strategies in our [Ultimate Guide to Digital Wellness](/digital-wellness-2026-guide).
 
 ---
 

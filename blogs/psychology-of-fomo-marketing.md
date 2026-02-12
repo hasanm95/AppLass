@@ -41,7 +41,7 @@ By displaying a Sales Pop that says "Amanda from Texas purchased this 2 minutes 
 
 ## The Science of Psychological ROI
 
-Understand how FOMO fits into a broader [E-commerce Performance](/pillar/ecommerce-performance) strategy.
+Understand how FOMO fits into a broader [E-commerce Performance](/ecommerce-performance-2026-benchmarks) strategy.
 
 ## Summary
 
