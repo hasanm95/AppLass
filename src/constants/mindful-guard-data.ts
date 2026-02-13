@@ -67,6 +67,11 @@ export const MINDFUL_GUARD_DATA = {
   },
   faqs: [
     {
+      question: "What is Mindful Guard?",
+      answer:
+        "Mindful Guard is a privacy-focused Android productivity guardian that helps users reclaim 2.4 hours of focus daily. It features a zero-telemetry, offline architecture and system-level blocking.",
+    },
+    {
       question: "Does MindfulGuard work on Xiaomi/Samsung/MIUI devices?",
       answer:
         'Yes. MindfulGuard is engineered with "Battery Optimization Exemption" protocols specifically to prevent aggressive Android skins like MIUI from killing the background process.',

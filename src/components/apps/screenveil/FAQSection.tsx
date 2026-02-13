@@ -4,12 +4,19 @@ import { useState } from "react";
 import { Section } from "@/components/common/Section";
 import { SCREENVEIL_DATA } from "@/constants/screenveil-data";
 import { ChevronDown } from "lucide-react";
+import { FAQSchema } from "@/components/common/FAQSchema";
 
 export function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
     <Section className="relative bg-slate-950 py-24 md:py-32">
+      <FAQSchema
+        items={SCREENVEIL_DATA.faq.map((item) => ({
+          question: item.question,
+          answer: item.answer,
+        }))}
+      />
       <div className="section-container relative z-10">
         <div className="mx-auto max-w-3xl">
           <div className="mb-16 text-center">

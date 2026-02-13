@@ -41,33 +41,11 @@ export default function EcommercePerformancePillar() {
     ]
   };
 
-  const productSchema = {
-    "@context": "https://schema.org/",
-    "@type": "SoftwareApplication",
-    "name": "FomoGen",
-    "operatingSystem": "Shopify",
-    "applicationCategory": "BusinessApplication",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "ratingCount": "12"
-    },
-    "offers": {
-      "@type": "Offer",
-      "price": "0.00",
-      "priceCurrency": "USD"
-    }
-  };
-
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-blue-100 selection:text-blue-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
       />
       <Navbar />
       

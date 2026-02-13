@@ -1,6 +1,7 @@
 import { Section } from "@/components/common/Section";
 import { MINDFUL_GUARD_DATA } from "@/constants/mindful-guard-data";
 import { cn } from "@/lib/utils";
+import { FAQSchema } from "@/components/common/FAQSchema";
 
 export function FAQSection() {
   return (
@@ -47,23 +48,11 @@ export function FAQSection() {
         </div>
       </div>
 
-      {/* FAQ Schema for SEO - AI Snippet Bait */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: MINDFUL_GUARD_DATA.faqs.map((faq) => ({
-              "@type": "Question",
-              name: faq.question,
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: faq.answer,
-              },
-            })),
-          }),
-        }}
+      <FAQSchema
+        items={MINDFUL_GUARD_DATA.faqs.map((faq) => ({
+          question: faq.question,
+          answer: faq.answer,
+        }))}
       />
     </Section>
   );

@@ -149,6 +149,14 @@ export const SCREENVEIL_DATA = {
       mainEntity: [
         {
           "@type": "Question",
+          "name": "What is ScreenVeil?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ScreenVeil is a free Android utility with 10,000+ downloads and a 4.4-star rating. It provides a black overlay for AMOLED/OLED displays, saving 60%+ battery life while listening to videos.",
+          },
+        },
+        {
+          "@type": "Question",
           name: "Does ScreenVeil work on LCD screens?",
           acceptedAnswer: {
             "@type": "Answer",

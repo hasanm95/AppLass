@@ -112,6 +112,28 @@ export default function FomogenPage() {
                 reviewCount: "12",
               },
             },
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What is FomoGen?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "FomoGen is an elite social proof tool for Shopify merchants with a <2.1KB payload that boosts engagement by +23% without performance debt. It is WCAG 2.1 compliant with real-time nudges."
+                  }
+                },
+                {
+                   "@type": "Question",
+                   "name": "Is FomoGen free?",
+                   "acceptedAnswer": {
+                     "@type": "Answer",
+                     "text": "Yes, FomoGen offers a powerful free plan for Shopify merchants to boost engagement with urgency and trust signals."
+                   }
+                }
+              ]
+            }
           ]),
         }}
       />
