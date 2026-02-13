@@ -69,6 +69,17 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/logo.png",
+  },
+};
+
+export const viewport = {
+  themeColor: "#020617",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -154,42 +165,17 @@ export default function RootLayout({
                     "Zero-Tracking Architecture, System-Level Blocking, Focus Timers",
                 },
                 {
-                  "@type": "FAQPage",
-                  mainEntity: [
+                  "@type": "BreadcrumbList",
+                  "@id": "https://applass.com/#breadcrumb",
+                  "itemListElement": [
                     {
-                      "@type": "Question",
-                      name: "What is AppLass?",
-                      acceptedAnswer: {
-                        "@type": "Answer",
-                        text: "AppLass is a logic-driven software studio that builds high-performance Shopify apps and mobile tools with mathematical precision. Our flagship products include ScreenVeil, FomoGen, and Mindful Guard.",
-                      },
-                    },
-                    {
-                      "@type": "Question",
-                      name: "What is ScreenVeil?",
-                      acceptedAnswer: {
-                        "@type": "Answer",
-                        text: "ScreenVeil is a free Android utility with 10,000+ downloads and a 4.4-star rating. It provides a black overlay for AMOLED/OLED displays, saving 60%+ battery life while listening to videos.",
-                      },
-                    },
-                    {
-                      "@type": "Question",
-                      name: "What is FomoGen?",
-                      acceptedAnswer: {
-                        "@type": "Answer",
-                        text: "FomoGen is an elite social proof tool for Shopify merchants with a <2.1KB payload that boosts engagement by +23% without performance debt. It is WCAG 2.1 compliant with real-time nudges.",
-                      },
-                    },
-                    {
-                      "@type": "Question",
-                      name: "What is Mindful Guard?",
-                      acceptedAnswer: {
-                        "@type": "Answer",
-                        text: "Mindful Guard is a privacy-focused Android productivity guardian that helps users reclaim 2.4 hours of focus daily. It features a zero-telemetry, offline architecture and system-level blocking.",
-                      },
-                    },
-                  ],
-                },
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://applass.com"
+                    }
+                  ]
+                }
               ],
             }),
           }}

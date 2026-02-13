@@ -1,6 +1,5 @@
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { CheckCircle2, AlertCircle, Zap, ArrowRight } from "lucide-react";
+import { CheckCircle2, AlertCircle, ArrowRight } from "lucide-react";
 
 export default function QuickStartPage() {
   return (

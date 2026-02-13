@@ -1,77 +1,99 @@
+import { Metadata } from "next";
+import { FAQSchema } from "@/components/common/FAQSchema";
+
+export const metadata: Metadata = {
+  title: "FomoGen FAQ | Technical Documentation & Support",
+  description: "Common questions about FomoGen implementation, features, and troubleshooting for Shopify merchants.",
+};
+
+const DOCUMENTATION_FAQS = [
+  {
+    category: "General",
+    items: [
+      {
+        q: "What is FOMO Generator?",
+        a: "FOMO Generator is a clinical social proof engine for Shopify. It coordinates 9 distinct urgency and scarcity modules — including purchase notifications, exit-intent logic, and stock telemetry — to maximize conversion performance.",
+      },
+      {
+        q: "Do I need coding skills?",
+        a: "Zero. All modules are managed through a unified visual dashboard. While we support custom CSS overrides for Professional plans, the engine is designed for plug-and-play architectural integration.",
+      },
+    ],
+  },
+  {
+    category: "Setup & Installation",
+    items: [
+      {
+        q: "Features aren't showing on my store. Why?",
+        a: "The most common cause is an inactive app bridge. Ensure FomoGen is toggled ON in Shopify Admin → Online Store → Themes → Customize → App Embeds.",
+        ui: (
+          <div className="space-y-4">
+            <p>
+              The most common cause is an inactive app bridge. Follow
+              this protocol:
+            </p>
+            <ol className="list-decimal pl-5 space-y-2 font-bold text-slate-900">
+              <li>Shopify Admin → Online Store → Themes</li>
+              <li>Customize → Theme Settings (Gear Icon)</li>
+              <li>App Embeds → Toggle &quot;FOMO Generator&quot; ON</li>
+              <li>Save changes</li>
+            </ol>
+          </div>
+        ),
+      },
+      {
+        q: "Does this work with my theme?",
+        a: "Yes. FOMO Generator uses Shopify 2.0 App Embeds, ensuring safe, collision-free injection across all modern Shopify themes.",
+      },
+    ],
+  },
+  {
+    category: "Billing & Support",
+    items: [
+      {
+        q: "Can I try before I buy?",
+        a: "Absolutely. Our Baseline tier offers core social proof modules with zero financial commitment, ideal for early-stage labs.",
+      },
+      {
+        q: "How do I contact support?",
+        a: "Access our Technical Lab directly through the dashboard 'Support' module or reach us at support@fomogenerator.com.",
+      },
+    ],
+  },
+];
+
 export default function FAQPage() {
+  const schemaItems = DOCUMENTATION_FAQS.flatMap((cat) => 
+    cat.items.map((item) => ({
+      question: item.q,
+      answer: item.a,
+    }))
+  );
+
   return (
     <div className="space-y-20">
+      <FAQSchema items={schemaItems} />
       <header>
-        <span className="mb-4 block text-[10px] font-black uppercase tracking-[0.3em] text-blue-600">
-          Knowledge Base
-        </span>
+          <span className="mb-6 block font-mono text-[10px] font-bold tracking-[0.3em] text-[#064E3B] uppercase">
+            Technical Clarifications
+          </span>
         <h1 className="text-display mb-6 text-slate-900">
           Common Questions<span className="text-slate-300">.</span>
         </h1>
         <p className="max-w-2xl text-xl font-medium leading-relaxed text-slate-500">
           Everything you need to know about FOMO Gen. If your question
-          isn't here, our technical lab is one email away.
+          isn&apos;t here, our technical lab is one email away.
         </p>
       </header>
 
       <div className="space-y-24">
-        {/* General */}
-        <FAQSection
-          title="General"
-          items={[
-            {
-              q: "What is FOMO Generator?",
-              a: "FOMO Generator is a clinical social proof engine for Shopify. It coordinates 9 distinct urgency and scarcity modules — including purchase notifications, exit-intent logic, and stock telemetry — to maximize conversion performance.",
-            },
-            {
-              q: "Do I need coding skills?",
-              a: "Zero. All modules are managed through a unified visual dashboard. While we support custom CSS overrides for Professional plans, the engine is designed for plug-and-play architectural integration.",
-            },
-          ]}
-        />
-
-        {/* Setup & Installation */}
-        <FAQSection
-          title="Setup & Installation"
-          items={[
-            {
-              q: "Features aren't showing on my store. Why?",
-              a: (
-                <div className="space-y-4">
-                  <p>
-                    The most common cause is an inactive app bridge. Follow
-                    this protocol:
-                  </p>
-                  <ol className="list-decimal pl-5 space-y-2 font-bold text-slate-900">
-                    <li>Shopify Admin → Online Store → Themes</li>
-                    <li>Customize → Theme Settings (Gear Icon)</li>
-                    <li>App Embeds → Toggle &quot;FOMO Generator&quot; ON</li>
-                    <li>Save changes</li>
-                  </ol>
-                </div>
-              ),
-            },
-            {
-              q: "Does this work with my theme?",
-              a: "Yes. FOMO Generator uses Shopify 2.0 App Embeds, ensuring safe, collision-free injection across all modern Shopify themes.",
-            },
-          ]}
-        />
-
-        {/* Billing & Support */}
-        <FAQSection
-          title="Billing & Support"
-          items={[
-            {
-              q: "Can I try before I buy?",
-              a: "Absolutely. Our Baseline tier offers core social proof modules with zero financial commitment, ideal for early-stage labs.",
-            },
-            {
-              q: "How do I contact support?",
-              a: "Access our Technical Lab directly through the dashboard 'Support' module or reach us at support@fomogenerator.com.",
-            },
-          ]}
-        />
+        {DOCUMENTATION_FAQS.map((category) => (
+          <FAQSection
+            key={category.category}
+            title={category.category}
+            items={category.items}
+          />
+        ))}
       </div>
     </div>
   );
@@ -82,7 +104,7 @@ function FAQSection({
   items,
 }: {
   title: string;
-  items: { q: string; a: React.ReactNode }[];
+  items: { q: string; a: string; ui?: React.ReactNode }[];
 }) {
   return (
     <section>
@@ -95,7 +117,7 @@ function FAQSection({
           >
             <h3 className="mb-4 text-lg font-black text-slate-900">{item.q}</h3>
             <div className="text-lg font-medium leading-relaxed text-slate-500">
-              {item.a}
+              {item.ui || item.a}
             </div>
           </div>
         ))}

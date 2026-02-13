@@ -1,7 +1,7 @@
-import { Metadata } from "next";
-import { Navbar, Footer } from "@/components/common";
+import { Navbar, Footer, FAQSchema } from "@/components/common";
 import { ScreenVeilHero } from "@/components/apps/screenveil/ScreenVeilHero";
 import dynamic from "next/dynamic";
+import { Metadata } from "next";
 
 const PainPointsSection = dynamic(() =>
   import("@/components/apps/screenveil/PainPointsSection").then(
@@ -67,22 +67,9 @@ export default function ScreenVeilPage() {
   return (
     <div className="bg-[#020617]">
       <Navbar variant="dark" />
+      <FAQSchema items={SCREENVEIL_DATA.faq} />
 
       {/* SoftwareApplication Schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(SCREENVEIL_DATA.schema.softwareApplication),
-        }}
-      />
-
-      {/* FAQPage Schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(SCREENVEIL_DATA.schema.faqPage),
-        }}
-      />
 
       <div className="flex-1 overflow-x-hidden">
         <ScreenVeilHero />

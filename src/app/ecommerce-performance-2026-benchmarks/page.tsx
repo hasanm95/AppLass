@@ -1,7 +1,7 @@
-import { Navbar, Footer, Section } from "@/components/common";
+import { Navbar, Footer, Section, FAQSchema } from "@/components/common";
 import { Metadata } from "next";
 import Link from "next/link";
-import { ShoppingBag, Gauge, Target, Sparkles, TrendingUp, CheckCircle2, Zap, BarChart3, MousePointer2 } from "lucide-react";
+import { Gauge, Sparkles, TrendingUp, CheckCircle2, Zap, BarChart3, MousePointer2 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Ecommerce Performance Guide 2026: Benchmarks & Conversion Hacks",
@@ -10,65 +10,24 @@ export const metadata: Metadata = {
 };
 
 export default function EcommercePerformancePillar() {
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is a good conversion rate for Shopify in 2026?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "While the average mobile conversion rate is approximately 1.2%, top-performing Shopify stores (the top 10%) achieve rates of 4.7% or higher."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How does site speed affect SEO rankings?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Google uses site speed (via Core Web Vitals) as a direct ranking factor. Faster stores not only rank higher but also see significantly lower bounce rates and higher repeat purchase rates."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Are social proof apps worth it for new stores?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Because shoppers who interact with reviews are 161% more likely to convert, social proof is the most effective way for new brands to build the 'reputation juice' needed to compete with established players."
-        }
-      }
-    ]
-  };
-
-  const productSchema = {
-    "@context": "https://schema.org/",
-    "@type": "SoftwareApplication",
-    "name": "FomoGen",
-    "operatingSystem": "Shopify",
-    "applicationCategory": "BusinessApplication",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "ratingCount": "12"
+  const faqItems = [
+    {
+      question: "What is a good conversion rate for Shopify in 2026?",
+      answer: "While the average mobile conversion rate is approximately 1.2%, top-performing Shopify stores (the top 10%) achieve rates of 4.7% or higher."
     },
-    "offers": {
-      "@type": "Offer",
-      "price": "0.00",
-      "priceCurrency": "USD"
+    {
+      question: "How does site speed affect SEO rankings?",
+      answer: "Google uses site speed (via Core Web Vitals) as a direct ranking factor. Faster stores not only rank higher but also see significantly lower bounce rates and higher repeat purchase rates."
+    },
+    {
+      question: "Are social proof apps worth it for new stores?",
+      answer: "Yes. Because shoppers who interact with reviews are 161% more likely to convert, social proof is the most effective way for new brands to build the 'reputation juice' needed to compete with established players."
     }
-  };
+  ];
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-blue-100 selection:text-blue-900">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
-      />
+      <FAQSchema items={faqItems} />
       <Navbar />
       
       <main className="pt-32">

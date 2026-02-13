@@ -69,9 +69,9 @@ export default function MindfulGuardPrivacyPage() {
                     <h3 className="text-2xl font-bold text-slate-800 mb-4">
                       What We Collect
                     </h3>
-                    <p className="max-w-2xl mx-auto text-slate-500">
+                    <p className="max-width-2xl mx-auto text-slate-500">
                       Mindful Guard operates on a{" "}
-                      <strong className="text-blue-600 uppercase tracking-tight">"privacy-first"</strong> principle.
+                      <strong className="text-blue-600 uppercase tracking-tight">&quot;privacy-first&quot;</strong> principle.
                       We collect minimal data necessary for app functionality.
                     </p>
                   </div>
@@ -145,7 +145,7 @@ export default function MindfulGuardPrivacyPage() {
                       Why We Need Accessibility Service Access
                     </h3>
                     <p className="text-amber-700 max-w-2xl mx-auto">
-                      Mindful Guard uses Android's Accessibility Service <strong>exclusively</strong> for app blocking functionality during your focus sessions.
+                      Mindful Guard uses Android&apos;s Accessibility Service <strong>exclusively</strong> for app blocking functionality during your focus sessions.
                     </p>
                   </div>
 

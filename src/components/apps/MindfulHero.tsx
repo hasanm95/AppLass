@@ -35,7 +35,7 @@ export function MindfulHero() {
         <div className="flex flex-col gap-12 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-4xl animate-fade-in-up">
             <div className="mb-8 inline-flex items-center gap-3 border border-emerald-900/10 bg-emerald-50/50 px-4 py-1.5 font-mono text-[11px] font-bold tracking-widest text-[#064E3B] uppercase">
-              // Neural Architecture Protection
+              Neural Architecture Protection
             </div>
 
             <h1 className="parallax-mindful-headline text-slate-950 font-black tracking-tighter sm:text-7xl md:text-8xl lg:text-9xl">

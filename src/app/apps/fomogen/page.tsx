@@ -1,7 +1,7 @@
-import { Metadata } from "next";
-import { Navbar, Footer } from "@/components/common";
+import { Navbar, Footer, FAQSchema } from "@/components/common";
 import { FomoGenHero } from "@/components/apps/fomogen/FomoGenHero";
 import dynamic from "next/dynamic";
+import { Metadata } from "next";
 
 const SpeedBenefitSection = dynamic(() =>
   import("@/components/apps/fomogen/SpeedBenefitSection").then(
@@ -49,11 +49,23 @@ export const metadata: Metadata = {
 };
 
 export default function FomogenPage() {
+  const faqItems = [
+    {
+      question: "What is FomoGen?",
+      answer: "FomoGen is an elite social proof tool for Shopify merchants with a <2.1KB payload that boosts engagement by +23% without performance debt. It is WCAG 2.1 compliant with real-time nudges."
+    },
+    {
+      question: "Is FomoGen free?",
+      answer: "Yes, FomoGen offers a powerful free plan for Shopify merchants to boost engagement with urgency and trust signals."
+    }
+  ];
+
   return (
     <div className="bg-white">
       <Navbar />
+      <FAQSchema items={faqItems} />
 
-      {/* Structured SEO Script */}
+      {/* SoftwareApplication & Product Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
