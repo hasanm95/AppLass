@@ -9,7 +9,7 @@ export function FAQSection() {
       <div className="section-container">
         <div className="mb-24">
           <span className="mb-6 block font-mono text-[10px] font-bold tracking-[0.3em] text-[#064E3B] uppercase">
-            // Technical Clarifications
+            Technical Clarifications
           </span>
           <h2 className="text-5xl font-black tracking-tighter text-slate-950 md:text-6xl">
             Frequently Asked

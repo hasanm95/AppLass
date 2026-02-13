@@ -35,7 +35,7 @@ export function ComparisonMatrix() {
       <div className="section-container">
         <div className="mb-20">
           <span className="mb-6 block font-mono text-[10px] font-bold tracking-[0.3em] text-[#064E3B] uppercase">
-            // Technical Validation Matrix
+            Technical Validation Matrix
           </span>
           <h2 className="text-4xl font-black tracking-tighter text-slate-950 md:text-5xl lg:text-6xl">
             {comparison.title}

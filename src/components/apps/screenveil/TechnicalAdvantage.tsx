@@ -1,6 +1,5 @@
 import { Section } from "@/components/common/Section";
 import { SCREENVEIL_DATA } from "@/constants/screenveil-data";
-import ExportedImage from "next-image-export-optimizer";
 
 export function TechnicalAdvantage() {
   return (

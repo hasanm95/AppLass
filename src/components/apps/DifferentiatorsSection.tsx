@@ -16,7 +16,7 @@ export function DifferentiatorsSection() {
         <div className="mb-24 flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
           <div className="max-w-3xl">
             <span className="mb-6 block font-mono text-[10px] font-bold tracking-[0.3em] text-[#064E3B] uppercase">
-              // The Strategic Moat
+              The Strategic Moat
             </span>
             <h2 className="text-6xl leading-[0.9] font-black tracking-tighter text-slate-950 md:text-7xl lg:text-8xl">
               Technical

@@ -1,7 +1,7 @@
+import { Navbar, Footer, FAQSchema } from "@/components/common";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { Navbar, Footer } from "@/components/common";
 import { ReadingProgressBar } from "@/components/blog/ReadingProgressBar";
 import { AppCallout } from "@/components/blog/AppCallout";
 import { getBlogPostBySlug, getBlogPosts } from "@/lib/blog";
@@ -86,33 +86,14 @@ export default async function BlogPostPage({ params }: PageProps) {
     },
   };
 
-  const faqJsonLd =
-    post.faqs && post.faqs.length > 0
-      ? {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: post.faqs.map((faq) => ({
-            "@type": "Question",
-            name: faq.question,
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: faq.answer,
-            },
-          })),
-        }
-      : null;
-
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      {faqJsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-        />
+      {post.faqs && post.faqs.length > 0 && (
+        <FAQSchema items={post.faqs as { question: string; answer: string }[]} />
       )}
       <ReadingProgressBar />
       <Navbar />

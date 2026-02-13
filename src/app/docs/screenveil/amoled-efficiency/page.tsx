@@ -1,4 +1,4 @@
-import { BatteryLow, Zap, Cpu } from "lucide-react";
+import { BatteryLow, Zap } from "lucide-react";
 
 export default function ScreenVeilEfficiencyPage() {
   return (

@@ -1,8 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { Zap, Shield, Smartphone, ArrowRight } from "lucide-react";
-import { Section } from "@/components/common/Section";
-import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Documentation | AppLass Logic Systems",

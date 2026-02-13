@@ -3,7 +3,6 @@ import { Navbar, Footer } from "@/components/common";
 import { Section } from "@/components/common/Section";
 import { PILLARS } from "@/constants/home-data";
 import { Zap, Calculator, Globe, Github, Linkedin, Shield, Search } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {

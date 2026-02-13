@@ -72,7 +72,7 @@ export function getBlogPostBySlug(slug: string): MarkdownBlogPost | null {
       faqs: data.faqs || [],
     } as MarkdownBlogPost;
   } catch (e) {
-    return null;
+    throw new Error("Blog post not found", e);
   }
 }
 

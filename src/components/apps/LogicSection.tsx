@@ -8,7 +8,7 @@ export function LogicSection() {
         <div className="flex flex-col gap-24 lg:flex-row lg:items-center">
           <div className="flex-1 lg:max-w-xl">
             <span className="mb-6 block font-mono text-[10px] font-bold tracking-[0.3em] text-[#064E3B] uppercase">
-              // Technical Logic
+              Technical Logic
             </span>
             <h2 className="mb-8 text-5xl leading-tight font-black tracking-tighter text-slate-950 md:text-6xl">
               {MINDFUL_GUARD_DATA.logic.title}

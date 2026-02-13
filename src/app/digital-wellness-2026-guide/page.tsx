@@ -1,7 +1,7 @@
-import { Navbar, Footer, Section } from "@/components/common";
+import { Navbar, Footer, Section, FAQSchema } from "@/components/common";
 import { Metadata } from "next";
 import Link from "next/link";
-import { Shield, Clock, Zap, Brain, Lock, Smartphone, Heart, Eye, Sun, Linkedin, Github } from "lucide-react";
+import { Shield, Clock, Zap, Brain, Lock, Smartphone, Eye, Sun, Linkedin, Github } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Digital Wellness Guide 2026: 7 Steps to Reclaim Your Focus [Expert Guide]",
@@ -10,43 +10,24 @@ export const metadata: Metadata = {
 };
 
 export default function DigitalWellnessPillar() {
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is digital wellness?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Digital wellness is the practice of maintaining a healthy relationship with technology. It involves managing screen time, protecting digital privacy, and ensuring that your device usage does not negatively impact your physical or mental health."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Are there free apps to reduce screen time on Android?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. While built-in tools like Google’s Digital Wellbeing provide basic tracking, third-party apps like Mindful Guard offer more advanced 'hard blocking' features for free, without the need for an account or internet connection."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How does screen time affect productivity?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Research indicates that it takes an average of 23 minutes to refocus on a task after being distracted by a digital notification. Unmanaged screen time fragments your attention and significantly increases the time needed to complete complex work."
-        }
-      }
-    ]
-  };
+  const faqItems = [
+    {
+      question: "What is digital wellness?",
+      answer: "Digital wellness is the practice of maintaining a healthy relationship with technology. It involves managing screen time, protecting digital privacy, and ensuring that your device usage does not negatively impact your physical or mental health."
+    },
+    {
+      question: "Are there free apps to reduce screen time on Android?",
+      answer: "Yes. While built-in tools like Google’s Digital Wellbeing provide basic tracking, third-party apps like Mindful Guard offer more advanced 'hard blocking' features for free, without the need for an account or internet connection."
+    },
+    {
+      question: "How does screen time affect productivity?",
+      answer: "Research indicates that it takes an average of 23 minutes to refocus on a task after being distracted by a digital notification. Unmanaged screen time fragments your attention and significantly increases the time needed to complete complex work."
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-blue-100 selection:text-blue-900">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      <FAQSchema items={faqItems} />
       <Navbar />
       
       <main className="pt-32">

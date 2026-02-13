@@ -74,15 +74,15 @@ export default function FAQPage() {
     <div className="space-y-20">
       <FAQSchema items={schemaItems} />
       <header>
-        <span className="mb-4 block text-[10px] font-black uppercase tracking-[0.3em] text-blue-600">
-          Knowledge Base
-        </span>
+          <span className="mb-6 block font-mono text-[10px] font-bold tracking-[0.3em] text-[#064E3B] uppercase">
+            Technical Clarifications
+          </span>
         <h1 className="text-display mb-6 text-slate-900">
           Common Questions<span className="text-slate-300">.</span>
         </h1>
         <p className="max-w-2xl text-xl font-medium leading-relaxed text-slate-500">
           Everything you need to know about FOMO Gen. If your question
-          isn't here, our technical lab is one email away.
+          isn&apos;t here, our technical lab is one email away.
         </p>
       </header>
 
