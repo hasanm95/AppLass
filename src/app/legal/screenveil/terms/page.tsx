@@ -96,10 +96,10 @@ export default function ScreenVeilTermsPage() {
                     protocols, please reach out to the engineering team.
                   </p>
                   <a
-                    href="mailto:support@applass.com"
+                    href="mailto:hasanmobarak25@gmail.com"
                     className="text-2xl font-black text-blue-600 hover:underline"
                   >
-                    support@applass.com
+                    hasanmobarak25@gmail.com
                   </a>
                 </section>
               </div>

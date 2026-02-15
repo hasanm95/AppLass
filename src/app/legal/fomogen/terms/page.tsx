@@ -117,10 +117,10 @@ export default function TermsPage() {
                     our legal lab team.
                   </p>
                   <a
-                    href="mailto:support@fomogenerator.com"
+                    href="mailto:hasanmobarak25@gmail.com"
                     className="text-xl font-black text-blue-600 hover:underline"
                   >
-                    support@fomogenerator.com
+                    hasanmobarak25@gmail.com
                   </a>
                 </section>
               </div>

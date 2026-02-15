@@ -99,7 +99,7 @@ export default function DocsPage() {
           asChild
           className="rounded-xl bg-slate-900 font-bold hover:bg-slate-800"
         >
-          <a href="mailto:support@fomogenerator.com">Contact Support</a>
+          <a href="mailto:hasanmobarak25@gmail.com">Contact Support</a>
         </Button>
       </div>
     </div>

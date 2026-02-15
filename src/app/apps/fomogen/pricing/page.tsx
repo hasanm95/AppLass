@@ -91,7 +91,7 @@ export default function PricingPage() {
       ],
       limitations: [],
       buttonText: "Contact Sales",
-      buttonLink: "mailto:support@fomogenerator.com",
+      buttonLink: "mailto:hasanmobarak25@gmail.com",
       popular: false,
       subLabel: "Perfect for $200K+/mo",
     },
