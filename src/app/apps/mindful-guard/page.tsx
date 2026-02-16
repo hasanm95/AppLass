@@ -1,23 +1,23 @@
 import { Metadata } from "next";
 import { Navbar, Footer } from "@/components/common";
-import { MindfulHero } from "@/components/apps/MindfulHero";
+import { MindfulHero } from "@/components/apps/mindful-guard/MindfulHero";
 import dynamic from "next/dynamic";
 
 const LogicSection = dynamic(() =>
-  import("@/components/apps/LogicSection").then((mod) => mod.LogicSection)
+  import("@/components/apps/mindful-guard/LogicSection").then((mod) => mod.LogicSection)
 );
 const DifferentiatorsSection = dynamic(() =>
-  import("@/components/apps/DifferentiatorsSection").then(
+  import("@/components/apps/mindful-guard/DifferentiatorsSection").then(
     (mod) => mod.DifferentiatorsSection
   )
 );
 const ComparisonMatrix = dynamic(() =>
-  import("@/components/apps/ComparisonMatrix").then(
+  import("@/components/apps/mindful-guard/ComparisonMatrix").then(
     (mod) => mod.ComparisonMatrix
   )
 );
 const FAQSection = dynamic(() =>
-  import("@/components/apps/FAQSection").then((mod) => mod.FAQSection)
+  import("@/components/apps/mindful-guard/FAQSection").then((mod) => mod.FAQSection)
 );
 import { MINDFUL_GUARD_SCHEMA } from "@/constants/mindful-guard-data";
 

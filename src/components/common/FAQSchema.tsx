@@ -2,13 +2,11 @@
 
 import React from "react";
 
-interface FAQItem {
-  question: string;
-  answer: string | React.ReactNode;
-}
-
 interface FAQSchemaProps {
-  items: FAQItem[];
+  items: readonly {
+    question: string;
+    answer: string;
+  }[];
 }
 
 export function FAQSchema({ items }: FAQSchemaProps) {

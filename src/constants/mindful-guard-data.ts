@@ -65,28 +65,6 @@ export const MINDFUL_GUARD_DATA = {
       },
     ],
   },
-  faqs: [
-    {
-      question: "What is Mindful Guard?",
-      answer:
-        "Mindful Guard is a privacy-focused Android productivity guardian that helps users reclaim 2.4 hours of focus daily. It features a zero-telemetry, offline architecture and system-level blocking.",
-    },
-    {
-      question: "Does MindfulGuard work on Xiaomi/Samsung/MIUI devices?",
-      answer:
-        'Yes. MindfulGuard is engineered with "Battery Optimization Exemption" protocols specifically to prevent aggressive Android skins like MIUI from killing the background process.',
-    },
-    {
-      question: "Is MindfulGuard safe for privacy?",
-      answer:
-        "Yes. MindfulGuard operates on a zero-telemetry architecture. It does not require internet access to function, ensuring your data never leaves your device.",
-    },
-    {
-      question: "How does Strict Mode work?",
-      answer:
-        "Strict Mode locks your chosen settings for a set duration. It prevents you from uninstalling the app or changing the schedule until the timer expires.",
-    },
-  ],
   footer: {
     tagline: "Engineered by AppLass.",
     copyright: "Built with privacy in mind.",
@@ -104,17 +82,36 @@ export const MINDFUL_GUARD_SCHEMA = {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
+    priceValidUntil: "2026-12-31",
     availability: "https://schema.org/InStock",
   },
   description:
     "A privacy-first Android app blocker that uses strict logic to prevent digital distractions without collecting user data.",
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "4.8",
-    ratingCount: "150",
+    ratingValue: "5.0",
+    reviewCount: "1",
+    bestRating: "5",
+    worstRating: "1",
   },
+  review: [
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Hasan M."
+      },
+      "reviewBody": "The only focus app that actually respects my privacy. Zero telemetry means total peace of mind."
+    }
+  ],
   featureList:
     "Zero-Telemetry Privacy, Offline Architecture, Strict Mode, Battery Optimization Exemption",
+  image: "https://applass.com/v1/apps/mindful-guard-feature.png",
   author: {
     "@type": "Organization",
     name: "AppLass",

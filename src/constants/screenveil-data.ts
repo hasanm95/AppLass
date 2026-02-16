@@ -99,19 +99,6 @@ export const SCREENVEIL_DATA = {
     },
   ],
 
-  faq: [
-    {
-      question: "Does ScreenVeil work on LCD screens?",
-      answer:
-        "Yes, it acts as a screen dimmer, but the maximum battery savings are achieved on AMOLED/OLED displays where pixels physically turn off.",
-    },
-    {
-      question: "How is this different from YouTube Premium?",
-      answer:
-        "ScreenVeil is a universal hardware-level utility. It works across all apps (Netflix, Prime, etc.) and provides a 'pocket mode' that prevents accidental touches while the video continues.",
-    },
-  ],
-
   schema: {
     softwareApplication: {
       "@context": "https://schema.org",
@@ -142,36 +129,6 @@ export const SCREENVEIL_DATA = {
         name: "AppLass",
         url: "https://applass.com",
       },
-    },
-    faqPage: {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          "name": "What is ScreenVeil?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "ScreenVeil is a free Android utility with 10,000+ downloads and a 4.4-star rating. It provides a black overlay for AMOLED/OLED displays, saving 60%+ battery life while listening to videos.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Does ScreenVeil work on LCD screens?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes, it acts as a screen dimmer, but the maximum battery savings are achieved on AMOLED/OLED displays where pixels physically turn off.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How is this different from YouTube Premium?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "ScreenVeil is a universal hardware-level utility. It works across all apps (Netflix, Prime, etc.) and provides a 'pocket mode' that prevents accidental touches while the video continues.",
-          },
-        },
-      ],
     },
   },
 };

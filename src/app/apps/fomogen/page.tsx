@@ -1,4 +1,4 @@
-import { Navbar, Footer, FAQSchema } from "@/components/common";
+import { Navbar, Footer, FAQRegistrySection } from "@/components/common";
 import { FomoGenHero } from "@/components/apps/fomogen/FomoGenHero";
 import dynamic from "next/dynamic";
 import { Metadata } from "next";
@@ -49,21 +49,11 @@ export const metadata: Metadata = {
 };
 
 export default function FomogenPage() {
-  const faqItems = [
-    {
-      question: "What is FomoGen?",
-      answer: "FomoGen is an elite social proof tool for Shopify merchants with a <2.1KB payload that boosts engagement by +23% without performance debt. It is WCAG 2.1 compliant with real-time nudges."
-    },
-    {
-      question: "Is FomoGen free?",
-      answer: "Yes, FomoGen offers a powerful free plan for Shopify merchants to boost engagement with urgency and trust signals."
-    }
-  ];
 
   return (
     <div className="bg-white">
       <Navbar />
-      <FAQSchema items={faqItems} />
+      <FAQRegistrySection registryKey="FOMOGEN" variant="centered" className="bg-white py-24" />
 
       {/* SoftwareApplication & Product Schema */}
       <script
@@ -81,13 +71,7 @@ export default function FomogenPage() {
                 price: "0",
                 priceCurrency: "USD",
                 priceValidUntil: "2026-12-31",
-              },
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.9",
-                reviewCount: "12",
-                bestRating: "5",
-                worstRating: "1",
+                availability: "https://schema.org/InStock",
               },
               featureList:
                 "Social Proof Notifications, Stock Countdown Timer, Sticky Add-to-Cart, Free Shipping Bar",
@@ -115,13 +99,9 @@ export default function FomogenPage() {
                 "@type": "Offer",
                 price: "0.00",
                 priceCurrency: "USD",
+                priceValidUntil: "2026-12-31",
                 availability: "https://schema.org/InStock",
                 url: "https://applass.com/apps/fomogen",
-              },
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.9",
-                reviewCount: "12",
               },
             },
           ]),
