@@ -2,6 +2,7 @@ import { Navbar, Footer, Section, FAQSchema } from "@/components/common";
 import { Metadata } from "next";
 import Link from "next/link";
 import { Shield, Clock, Zap, Brain, Lock, Smartphone, Eye, Sun, Linkedin, Github } from "lucide-react";
+import { FAQ_REGISTRY } from "@/constants/faq-registry";
 
 export const metadata: Metadata = {
   title: "Digital Wellness Guide 2026: 7 Steps to Reclaim Your Focus [Expert Guide]",
@@ -10,24 +11,9 @@ export const metadata: Metadata = {
 };
 
 export default function DigitalWellnessPillar() {
-  const faqItems = [
-    {
-      question: "What is digital wellness?",
-      answer: "Digital wellness is the practice of maintaining a healthy relationship with technology. It involves managing screen time, protecting digital privacy, and ensuring that your device usage does not negatively impact your physical or mental health."
-    },
-    {
-      question: "Are there free apps to reduce screen time on Android?",
-      answer: "Yes. While built-in tools like Google’s Digital Wellbeing provide basic tracking, third-party apps like Mindful Guard offer more advanced 'hard blocking' features for free, without the need for an account or internet connection."
-    },
-    {
-      question: "How does screen time affect productivity?",
-      answer: "Research indicates that it takes an average of 23 minutes to refocus on a task after being distracted by a digital notification. Unmanaged screen time fragments your attention and significantly increases the time needed to complete complex work."
-    }
-  ];
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-blue-100 selection:text-blue-900">
-      <FAQSchema items={faqItems} />
       <Navbar />
       
       <main className="pt-32">
@@ -226,27 +212,15 @@ export default function DigitalWellnessPillar() {
           <div className="section-container max-w-4xl">
             <h2 className="text-4xl font-black text-slate-900 mb-16 text-center">Frequently Asked Questions</h2>
             <div className="space-y-8">
-              {[
-                { 
-                  q: "What is digital wellness?", 
-                  a: "Digital wellness is the practice of maintaining a healthy relationship with technology. It involves managing screen time, protecting digital privacy, and ensuring that your device usage does not negatively impact your physical or mental health." 
-                },
-                { 
-                  q: "Are there free apps to reduce screen time on Android?", 
-                  a: "Yes. While built-in tools like Google’s Digital Wellbeing provide basic tracking, third-party apps like Mindful Guard offer more advanced 'hard blocking' features for free, without the need for an account or internet connection." 
-                },
-                { 
-                  q: "How does screen time affect productivity?", 
-                  a: "Research indicates that it takes an average of 23 minutes to refocus on a task after being distracted by a digital notification. Unmanaged screen time fragments your attention and significantly increases the time needed to complete complex work." 
-                }
-              ].map((faq, i) => (
+              {FAQ_REGISTRY.DIGITAL_WELLNESS.map((faq, i) => (
                 <div key={i} className="rounded-3xl border border-slate-100 p-10 hover:border-blue-500/20 transition-all">
-                  <h4 className="text-xl font-black text-slate-900 mb-4">{faq.q}</h4>
-                  <p className="text-slate-500 font-medium leading-relaxed">{faq.a}</p>
+                  <h4 className="text-xl font-black text-slate-900 mb-4">{faq.question}</h4>
+                  <p className="text-slate-500 font-medium leading-relaxed">{faq.answer}</p>
                 </div>
               ))}
             </div>
           </div>
+          <FAQSchema items={FAQ_REGISTRY.DIGITAL_WELLNESS} />
         </Section>
 
         {/* Author Bio Section */}

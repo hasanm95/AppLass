@@ -1,4 +1,4 @@
-import { Navbar, Footer, FAQSchema } from "@/components/common";
+import { Navbar, Footer } from "@/components/common";
 import { ScreenVeilHero } from "@/components/apps/screenveil/ScreenVeilHero";
 import dynamic from "next/dynamic";
 import { Metadata } from "next";
@@ -66,10 +66,7 @@ export const metadata: Metadata = {
 export default function ScreenVeilPage() {
   return (
     <div className="bg-[#020617]">
-      <Navbar variant="dark" />
-      <FAQSchema items={SCREENVEIL_DATA.faq} />
-
-      {/* SoftwareApplication Schema */}
+      <Navbar />
 
       <div className="flex-1 overflow-x-hidden">
         <ScreenVeilHero />

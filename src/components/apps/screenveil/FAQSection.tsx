@@ -2,21 +2,17 @@
 
 import { useState } from "react";
 import { Section } from "@/components/common/Section";
-import { SCREENVEIL_DATA } from "@/constants/screenveil-data";
-import { ChevronDown } from "lucide-react";
 import { FAQSchema } from "@/components/common/FAQSchema";
+import { FAQ_REGISTRY } from "@/constants/faq-registry";
+import { ChevronDown } from "lucide-react";
 
 export function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const items = FAQ_REGISTRY.SCREENVEIL;
 
   return (
     <Section className="relative bg-slate-950 py-24 md:py-32">
-      <FAQSchema
-        items={SCREENVEIL_DATA.faq.map((item) => ({
-          question: item.question,
-          answer: item.answer,
-        }))}
-      />
+      <FAQSchema items={items} />
       <div className="section-container relative z-10">
         <div className="mx-auto max-w-3xl">
           <div className="mb-16 text-center">
@@ -29,7 +25,7 @@ export function FAQSection() {
           </div>
 
           <div className="space-y-4">
-            {SCREENVEIL_DATA.faq.map((item, idx) => (
+            {items.map((item, idx) => (
               <div
                 key={idx}
                 className="overflow-hidden rounded-2xl border border-green-500/10 bg-slate-900/50 transition-all duration-300 hover:border-green-500/20"
@@ -42,7 +38,7 @@ export function FAQSection() {
                     {item.question}
                   </h3>
                   <ChevronDown
-                    className={`h-6 w-6 flex-shrink-0 text-green-500 transition-transform duration-300 ${
+                    className={`h-6 w-6 shrink-0 text-green-500 transition-transform duration-300 ${
                       openIndex === idx ? "rotate-180" : ""
                     }`}
                   />

@@ -2,6 +2,7 @@ import { Navbar, Footer, Section, FAQSchema } from "@/components/common";
 import { Metadata } from "next";
 import Link from "next/link";
 import { Gauge, Sparkles, TrendingUp, CheckCircle2, Zap, BarChart3, MousePointer2 } from "lucide-react";
+import { FAQ_REGISTRY } from "@/constants/faq-registry";
 
 export const metadata: Metadata = {
   title: "Ecommerce Performance Guide 2026: Benchmarks & Conversion Hacks",
@@ -10,24 +11,9 @@ export const metadata: Metadata = {
 };
 
 export default function EcommercePerformancePillar() {
-  const faqItems = [
-    {
-      question: "What is a good conversion rate for Shopify in 2026?",
-      answer: "While the average mobile conversion rate is approximately 1.2%, top-performing Shopify stores (the top 10%) achieve rates of 4.7% or higher."
-    },
-    {
-      question: "How does site speed affect SEO rankings?",
-      answer: "Google uses site speed (via Core Web Vitals) as a direct ranking factor. Faster stores not only rank higher but also see significantly lower bounce rates and higher repeat purchase rates."
-    },
-    {
-      question: "Are social proof apps worth it for new stores?",
-      answer: "Yes. Because shoppers who interact with reviews are 161% more likely to convert, social proof is the most effective way for new brands to build the 'reputation juice' needed to compete with established players."
-    }
-  ];
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-blue-100 selection:text-blue-900">
-      <FAQSchema items={faqItems} />
       <Navbar />
       
       <main className="pt-32">
@@ -198,27 +184,15 @@ export default function EcommercePerformancePillar() {
           <div className="section-container max-w-4xl">
             <h2 className="text-4xl font-black text-slate-900 mb-16 text-center">Frequently Asked Questions</h2>
             <div className="space-y-8">
-              {[
-                { 
-                  q: "What is a good conversion rate for Shopify in 2026?", 
-                  a: "While the average mobile conversion rate is approximately 1.2%, top-performing Shopify stores (the top 10%) achieve rates of 4.7% or higher." 
-                },
-                { 
-                  q: "How does site speed affect SEO rankings?", 
-                  a: "Google uses site speed (via Core Web Vitals) as a direct ranking factor. Faster stores not only rank higher but also see significantly lower bounce rates and higher repeat purchase rates." 
-                },
-                { 
-                  q: "Are social proof apps worth it for new stores?", 
-                  a: "Yes. Because shoppers who interact with reviews are 161% more likely to convert, social proof is the most effective way for new brands to build the 'reputation juice' needed to compete with established players." 
-                }
-              ].map((faq, i) => (
+              {FAQ_REGISTRY.ECOMMERCE_PERFORMANCE.map((faq, i) => (
                 <div key={i} className="rounded-3xl border border-slate-100 bg-white p-10 hover:border-blue-500/20 transition-all">
-                  <h4 className="text-xl font-black text-slate-900 mb-4">{faq.q}</h4>
-                  <p className="text-slate-500 font-medium leading-relaxed">{faq.a}</p>
+                  <h4 className="text-xl font-black text-slate-900 mb-4">{faq.question}</h4>
+                  <p className="text-slate-500 font-medium leading-relaxed">{faq.answer}</p>
                 </div>
               ))}
             </div>
           </div>
+          <FAQSchema items={FAQ_REGISTRY.ECOMMERCE_PERFORMANCE} />
         </Section>
 
         {/* CTA Anchor for FomoGen */}
