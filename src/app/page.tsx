@@ -1,4 +1,4 @@
-import { Navbar, Footer, FAQRegistrySection } from "@/components/common";
+import { Navbar, Footer } from "@/components/common";
 import {
   Hero,
   SocialProof,
@@ -26,11 +26,6 @@ export default function Home() {
       <FoundersMoat />
       <SolutionsSection />
       <AnswerNuggets />
-      <FAQRegistrySection
-        registryKey="HOME"
-        variant="grid"
-        className="py-24 bg-slate-50/30"
-      />
       <Footer />
     </>
   );
