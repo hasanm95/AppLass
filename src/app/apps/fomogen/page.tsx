@@ -53,7 +53,6 @@ export default function FomogenPage() {
   return (
     <div className="bg-white">
       <Navbar />
-      <FAQRegistrySection registryKey="FOMOGEN" variant="centered" className="bg-white py-24" />
 
       {/* SoftwareApplication & Product Schema */}
       <script
@@ -115,6 +114,7 @@ export default function FomogenPage() {
         <TestimonialsSection />
         <PricingSection />
         <FomoGenCTA />
+        <FAQRegistrySection registryKey="FOMOGEN" variant="centered" className="bg-white py-24" />
       </div>
 
       <Footer />
