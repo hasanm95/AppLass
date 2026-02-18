@@ -66,7 +66,7 @@ export const metadata: Metadata = {
 export default function ScreenVeilPage() {
   return (
     <div className="bg-[#020617]">
-      <Navbar />
+      <Navbar variant="dark" />
 
       <div className="flex-1 overflow-x-hidden">
         {/* SoftwareApplication Schema for SEO - triggers rich results with star ratings */}
