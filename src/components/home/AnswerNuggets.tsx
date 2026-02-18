@@ -5,33 +5,46 @@ import { FAQSchema } from "@/components/common/FAQSchema";
 import { FAQ_REGISTRY } from "@/constants/faq-registry";
 import { Plus, Minus } from "lucide-react";
 import { useState } from "react";
+import type { Dictionary } from "@/i18n/get-dictionary";
 
-export function AnswerNuggets() {
+interface AnswerNuggetsProps {
+  translations?: Dictionary["home"]["answerNuggets"];
+}
+
+export function AnswerNuggets({ translations }: AnswerNuggetsProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const t: Dictionary["home"]["answerNuggets"] = translations ?? {
+    sectionLabel: "FAQ",
+    headline: "Frequently Asked",
+    headlineAccent: "Questions",
+    expandAnswer: "Expand answer",
+    collapseAnswer: "Collapse answer",
+    items: [...FAQ_REGISTRY.HOME],
+  };
 
   return (
     <Section className="bg-muted py-16 md:py-24 lg:py-32">
-      <FAQSchema items={FAQ_REGISTRY.HOME} />
+      <FAQSchema items={t.items} />
       <div className="section-container">
         {/* Section Header */}
         <div className="mb-16">
           <div className="mb-8 flex items-center gap-4">
             <span className="font-mono text-xs font-bold tracking-widest text-(--muted-foreground)/50 uppercase">
-              FAQ
+              {t.sectionLabel}
             </span>
             <span className="block h-px flex-1 bg-(--foreground)/20" />
           </div>
 
           <h2 className="text-foreground mb-4 font-mono text-2xl leading-tight font-bold md:text-3xl lg:text-4xl">
-            Frequently Asked
+            {t.headline}
             <br />
-            <span className="text-(--muted-foreground)/40">Questions</span>
+            <span className="text-(--muted-foreground)/40">{t.headlineAccent}</span>
           </h2>
         </div>
 
-        {/* FAQ Accordion - Minimal Style */}
         <div className="grid grid-cols-1 gap-0 md:grid-cols-2 md:gap-x-12">
-          {FAQ_REGISTRY.HOME.map((faq, idx) => {
+          {t.items.map((faq: { question: string; answer: string }, idx: number) => {
             const isOpen = openIndex === idx;
             return (
               <article
@@ -51,7 +64,7 @@ export function AnswerNuggets() {
                   <button
                     className="border-border group-hover:border-cta flex h-8 w-8 shrink-0 items-center justify-center border transition-all duration-200"
                     aria-expanded={isOpen}
-                    aria-label={isOpen ? "Collapse answer" : "Expand answer"}
+                    aria-label={isOpen ? t.collapseAnswer : t.expandAnswer}
                   >
                     {isOpen ? (
                       <Minus className="text-cta h-4 w-4" />

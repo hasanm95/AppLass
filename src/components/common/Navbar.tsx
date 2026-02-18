@@ -5,23 +5,45 @@ import ExportedImage from "next-image-export-optimizer";
 import { useState, useEffect, useCallback, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
 import { MobileMenu } from "./mobile-menu";
+import { LanguageSwitcher } from "./LanguageSwitcher";
+import type { Dictionary } from "@/i18n/get-dictionary";
+import type { Locale } from "@/i18n/config";
 
 interface NavbarProps {
   variant?: "light" | "dark";
   customBranding?: React.ReactNode;
   customCTA?: React.ReactNode;
+  translations?: Dictionary["nav"];
+  currentLocale?: Locale;
 }
 
 export function Navbar({
   variant = "light",
   customBranding,
   customCTA,
+  translations,
+  currentLocale = "en",
 }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLangOpen, setIsLangOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+
+  const t = translations ?? {
+    home: "Home",
+    about: "About",
+    ecosystem: "Ecosystem",
+    docs: "Docs",
+    blog: "Logic Lab",
+    getInTouch: "Get in Touch",
+    brandName: "AppLass",
+    logoAlt: "AppLass Logo",
+    mobileMenuFooter: "AppLass Logic System",
+    openMenu: "Open menu",
+    closeMenu: "Close menu",
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -104,7 +126,7 @@ export function Navbar({
             >
               <ExportedImage
                 src="/logo.png"
-                alt="AppLass Logo"
+                alt={t.logoAlt}
                 width={32}
                 height={32}
                 className="h-8 w-8 rounded-lg object-contain"
@@ -116,7 +138,7 @@ export function Navbar({
                     isDark ? "text-white" : "text-slate-900"
                   )}
                 >
-                  AppLass
+                  {t.brandName}
                 </span>
               )}
             </Link>
@@ -139,19 +161,19 @@ export function Navbar({
           {!customBranding && (
             <div className="hidden items-center gap-10 md:flex">
               <NavLink href="/" isDark={isDark}>
-                Home
+                {t.home}
               </NavLink>
               <NavLink href="/about" isDark={isDark}>
-                About
+                {t.about}
               </NavLink>
               <NavLink href="/apps" isDark={isDark}>
-                Ecosystem
+                {t.ecosystem}
               </NavLink>
               <NavLink href="/docs" isDark={isDark}>
-                Docs
+                {t.docs}
               </NavLink>
               <NavLink href="/blog" isDark={isDark}>
-                Logic Lab
+                {t.blog}
               </NavLink>
             </div>
           )}
@@ -172,10 +194,24 @@ export function Navbar({
                       : "bg-slate-900 text-white hover:bg-slate-800"
                   )}
                 >
-                  <Link href="/about">Get in Touch</Link>
+                  <Link href="/about">{t.getInTouch}</Link>
                 </Button>
               )}
             </div>
+
+            {/* Language Switcher Button (Desktop) */}
+            <button
+              onClick={() => setIsLangOpen(true)}
+              className={cn(
+                "h-10 w-10 items-center justify-center rounded-xl border transition-all flex",
+                isDark
+                  ? "border-white/10 text-white hover:bg-white/10"
+                  : "border-slate-200 text-slate-900 hover:bg-slate-50"
+              )}
+              aria-label="Select Language"
+            >
+              <Globe size={18} />
+            </button>
 
             {/* Mobile Toggle Button */}
             <button
@@ -201,8 +237,16 @@ export function Navbar({
             customCTA={customCTA}
             toggleMenu={toggleMenu}
             isDark={isDark}
+            translations={t}
           />
         )}
+
+        {/* Language Switcher Sidebar */}
+        <LanguageSwitcher
+          isOpen={isLangOpen}
+          onClose={() => setIsLangOpen(false)}
+          currentLocale={currentLocale}
+        />
       </nav>
     </header>
   );

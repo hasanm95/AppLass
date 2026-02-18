@@ -4,6 +4,8 @@ import MobileNavLink from "./mobile-menu-nav-link";
 import { cn } from "@/lib/utils";
 import { RefObject } from "react";
 import { Portal } from "../ui/portal";
+import type { Dictionary } from "@/i18n/get-dictionary";
+import { Globe } from "lucide-react";
 
 type MobileMenuProps = {
   customBranding: React.ReactNode;
@@ -11,6 +13,7 @@ type MobileMenuProps = {
   toggleMenu: () => void;
   isDark: boolean;
   menuRef: RefObject<HTMLDivElement | null>;
+  translations?: Dictionary["nav"];
 };
 
 export function MobileMenu({
@@ -19,7 +22,16 @@ export function MobileMenu({
   toggleMenu,
   isDark,
   menuRef,
+  translations,
 }: MobileMenuProps) {
+  const t = translations ?? {
+    home: "Home",
+    about: "About",
+    ecosystem: "Ecosystem",
+    docs: "Docs",
+    blog: "Logic Lab",
+    getInTouch: "Get in Touch",
+  };
   return (
     <Portal>
       <div
@@ -34,24 +46,24 @@ export function MobileMenu({
           {!customBranding && (
             <>
               <MobileNavLink href="/" isDark={isDark} onClick={toggleMenu}>
-                Home
+                {t.home}
               </MobileNavLink>
               <MobileNavLink href="/about" isDark={isDark} onClick={toggleMenu}>
-                About
+                {t.about}
               </MobileNavLink>
               <MobileNavLink href="/apps" isDark={isDark} onClick={toggleMenu}>
-                Ecosystem
+                {t.ecosystem}
               </MobileNavLink>
               <MobileNavLink href="/docs" isDark={isDark} onClick={toggleMenu}>
-                Docs
+                {t.docs}
               </MobileNavLink>
               <MobileNavLink href="/blog" isDark={isDark} onClick={toggleMenu}>
-                Logic Lab
+                {t.blog}
               </MobileNavLink>
             </>
           )}
 
-          <div className="border-t border-slate-100 pt-8">
+          <div className="space-y-4 border-t border-slate-100 pt-8">
             {customCTA ? (
               <div onClick={toggleMenu}>{customCTA}</div>
             ) : (
@@ -66,7 +78,7 @@ export function MobileMenu({
                     : "bg-slate-900 text-white hover:bg-slate-800"
                 )}
               >
-                <Link href="/about">Get in Touch</Link>
+                <Link href="/about">{t.getInTouch}</Link>
               </Button>
             )}
           </div>
