@@ -3,7 +3,7 @@ import { SCREENVEIL_DATA } from "@/constants/screenveil-data";
 
 export function TechnicalAdvantage() {
   return (
-    <Section className="relative overflow-hidden bg-gradient-to-b from-black via-slate-950 to-black py-24 md:py-32">
+    <Section className="relative overflow-hidden bg-linear-to-b from-black via-slate-950 to-black py-24 md:py-32">
       {/* Background glow */}
       <div className="pointer-events-none absolute top-1/2 left-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-green-500/5 blur-[100px]" />
 
@@ -41,7 +41,7 @@ export function TechnicalAdvantage() {
               <div className="grid h-full grid-cols-2 gap-4">
                 {/* LCD Side */}
                 <div className="flex flex-col items-center justify-center rounded-2xl border border-slate-700 bg-slate-800/50 p-6">
-                  <div className="mb-4 h-24 w-24 rounded-xl bg-gradient-to-br from-slate-600 to-slate-700 shadow-inner">
+                  <div className="mb-4 h-24 w-24 rounded-xl bg-linear-to-br from-slate-600 to-slate-700 shadow-inner">
                     {/* Simulated backlight always on */}
                     <div className="flex h-full w-full items-center justify-center">
                       <div className="h-16 w-16 rounded-lg bg-white/20" />

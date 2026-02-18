@@ -191,6 +191,47 @@ export default async function BlogPostPage({ params }: PageProps) {
             </div>
           </div>
         </section>
+
+        {/* Visible FAQ Section — matches JSON-LD schema to avoid Google penalties */}
+        {post.faqs && post.faqs.length > 0 && (
+          <section id="faq" className="border-t border-slate-200 bg-[#FBFBFA] py-24">
+            <div className="section-container">
+              <div className="mb-24">
+                <span className="mb-6 block font-mono text-[10px] font-bold tracking-[0.3em] text-blue-600 uppercase">
+                  Technical Clarifications
+                </span>
+                <h2 className="text-5xl font-black tracking-tighter text-slate-950 md:text-6xl">
+                  Frequently Asked
+                  <br />
+                  <span className="text-slate-300">Questions</span>
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+                {post.faqs.map((faq, idx) => (
+                  <div
+                    key={idx}
+                    className="group relative border-2 border-slate-950 bg-white p-10 transition-all hover:bg-slate-50"
+                  >
+                    <div className="absolute top-4 right-4 font-mono text-[8px] text-slate-300 uppercase">
+                      [ Protocol.Entry_0{idx + 1} ]
+                    </div>
+                    <h3 className="mb-6 text-xl font-black leading-tight tracking-tight text-slate-950">
+                      {faq.question}
+                    </h3>
+                    <p className="font-medium leading-relaxed text-slate-600">
+                      {faq.answer}
+                    </p>
+                    <div className="mt-8 flex items-center gap-4">
+                      <div className="h-px flex-1 bg-slate-100" />
+                      <div className="h-2 w-2 bg-blue-600" />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
       </div>
       <Footer />
     </>

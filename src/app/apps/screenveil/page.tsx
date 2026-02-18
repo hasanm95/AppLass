@@ -69,6 +69,13 @@ export default function ScreenVeilPage() {
       <Navbar />
 
       <div className="flex-1 overflow-x-hidden">
+        {/* SoftwareApplication Schema for SEO - triggers rich results with star ratings */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(SCREENVEIL_DATA.schema.softwareApplication),
+          }}
+        />
         <ScreenVeilHero />
         <PainPointsSection />
         <FeatureGrid />
