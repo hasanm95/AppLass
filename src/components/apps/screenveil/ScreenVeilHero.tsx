@@ -82,7 +82,7 @@ export function ScreenVeilHero() {
 
         {/* Hero Mockup Image */}
         <div className="parallax-sv-image relative mx-auto w-full max-w-md lg:mx-0">
-          <div className="relative aspect-[9/16] overflow-hidden rounded-[2.5rem] border border-green-500/20 bg-slate-900 shadow-[0_40px_100px_-20px_rgba(0,255,0,0.2)] lg:rounded-[3rem]">
+          <div className="relative aspect-9/16 overflow-hidden rounded-[2.5rem] border border-green-500/20 bg-slate-900 shadow-[0_40px_100px_-20px_rgba(0,255,0,0.2)] lg:rounded-[3rem]">
             <ExportedImage
               src="/v1/apps/screenveil/hero-mockup.png"
               alt="ScreenVeil app showing black overlay over video playback"
@@ -92,7 +92,7 @@ export function ScreenVeilHero() {
               fetchPriority="high"
             />
             {/* Overlay effect simulation */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20" />
+            <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-black/20" />
             <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
               <div className="flex h-14 w-14 items-center justify-center rounded-full border border-green-500/50 bg-green-500/20 backdrop-blur-xl">
                 <div className="h-6 w-6 rounded-full bg-green-500" />

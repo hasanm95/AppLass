@@ -45,7 +45,7 @@ export default function AboutPage() {
           <div className="section-container">
             <div className="flex flex-col lg:flex-row items-center gap-20">
               <div className="lg:w-1/3 relative">
-                <div className="aspect-[4/5] rounded-[3rem] bg-slate-100 overflow-hidden relative">
+                <div className="aspect-4/5 rounded-[3rem] bg-slate-100 overflow-hidden relative">
                    {/* Placeholder for real image in next iteration if needed */}
                   <div className="absolute inset-0 flex items-center justify-center bg-slate-900 text-white/10 italic text-[10rem] font-black select-none pointer-events-none">
                     LOGIC
