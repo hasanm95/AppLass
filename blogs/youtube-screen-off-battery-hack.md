@@ -51,7 +51,7 @@ One of the biggest pain points of listening to videos on the go is the "ghost to
 
 ## How to Set It Up in 30 Seconds
 
-1. **Download:** Grab [ScreenVeil: Screen Off Video](https://play.google.com/store/apps/details?id=com.screenveil.app) from the Google Play Store.
+1. **Download:** Grab [ScreenVeil: Screen Off Video](https://play.google.com/store/apps/details?id=com.screenveil.app.app) from the Google Play Store.
 
 2. **Enable Overlay:** Grant the one-time "Appear on top" permission.
 
@@ -73,4 +73,4 @@ If you're also running a Shopify store, check out our [Mobile Sticky Cart Guide]
 
 **Ready to save your battery? Join 10,000+ Android users.**
 
-[⬇️ Install ScreenVeil Free](https://play.google.com/store/apps/details?id=com.screenveil.app) | [Learn More](/apps/screenveil) | [See Battery Science](/docs/screenveil/amoled-efficiency)
+[⬇️ Install ScreenVeil Free](https://play.google.com/store/apps/details?id=com.screenveil.app.app) | [Learn More](/apps/screenveil) | [See Battery Science](/docs/screenveil/amoled-efficiency)

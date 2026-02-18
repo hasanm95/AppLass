@@ -189,7 +189,7 @@ export default function PricingPage() {
       <Navbar
         customBranding={
           <div className="flex items-center gap-2">
-            <Zap className="h-5 w-5 text-blue-600 fill-blue-600" />
+            <Zap className="h-5 w-5 fill-blue-600 text-blue-600" />
             <span className="text-lg font-black tracking-tighter text-slate-900">
               FOMO<span className="text-blue-600">GEN</span>
             </span>
@@ -211,14 +211,14 @@ export default function PricingPage() {
           </div>
 
           <div className="section-container text-center">
-            <span className="mb-4 inline-block text-[10px] font-black uppercase tracking-[0.3em] text-blue-600">
+            <span className="mb-4 inline-block text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase">
               Growth Engine Pricing
             </span>
             <h1 className="text-display mx-auto max-w-4xl text-slate-900">
               Scale your store with <br />
               <span className="text-blue-600">mathematical precision.</span>
             </h1>
-            <p className="mx-auto mt-8 max-w-2xl text-xl font-medium leading-relaxed text-slate-500">
+            <p className="mx-auto mt-8 max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
               Simple, transparent pricing for stores of all sizes. No hidden
               fees, no revenue sharing. Just growth loops that convert.
             </p>
@@ -234,7 +234,7 @@ export default function PricingPage() {
                   key={index}
                   className={`group relative flex flex-col rounded-[2.5rem] border bg-white p-8 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/5 ${
                     plan.popular
-                      ? "border-blue-500 shadow-xl shadow-blue-500/10 ring-4 ring-blue-500/10"
+                      ? "border-blue-500 shadow-xl ring-4 shadow-blue-500/10 ring-blue-500/10"
                       : "border-slate-100"
                   }`}
                 >
@@ -263,7 +263,7 @@ export default function PricingPage() {
                       </span>
                     </div>
                     {plan.subLabel && (
-                      <p className="mt-4 text-[10px] font-black uppercase tracking-widest text-blue-600">
+                      <p className="mt-4 text-[10px] font-black tracking-widest text-blue-600 uppercase">
                         {plan.subLabel}
                       </p>
                     )}
@@ -274,15 +274,15 @@ export default function PricingPage() {
                     size="lg"
                     className={`mb-10 h-14 w-full rounded-2xl text-base font-bold transition-all ${
                       plan.popular
-                        ? "bg-blue-600 text-white hover:bg-blue-700 shadow-lg shadow-blue-500/30"
-                        : "bg-slate-900 text-white hover:bg-slate-800 shadow-lg shadow-slate-900/10"
+                        ? "bg-blue-600 text-white shadow-lg shadow-blue-500/30 hover:bg-blue-700"
+                        : "bg-slate-900 text-white shadow-lg shadow-slate-900/10 hover:bg-slate-800"
                     }`}
                   >
                     <Link href={plan.buttonLink}>{plan.buttonText}</Link>
                   </Button>
 
                   <div className="flex-grow">
-                    <h4 className="mb-6 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">
+                    <h4 className="mb-6 text-[10px] font-black tracking-[0.2em] text-slate-400 uppercase">
                       Engine Features
                     </h4>
                     <ul className="space-y-4">
@@ -321,22 +321,22 @@ export default function PricingPage() {
 
             <div className="overflow-hidden rounded-[2.5rem] border border-slate-100 bg-white shadow-xl shadow-slate-200/20">
               <div className="overflow-x-auto">
-                <table className="w-full text-left border-collapse">
+                <table className="w-full border-collapse text-left">
                   <thead>
                     <tr className="border-b border-slate-100 bg-slate-50/50">
-                      <th className="py-8 px-8 text-xs font-black uppercase tracking-widest text-slate-500">
+                      <th className="px-8 py-8 text-xs font-black tracking-widest text-slate-500 uppercase">
                         Capability
                       </th>
-                      <th className="py-8 px-8 text-center text-xs font-black uppercase tracking-widest text-slate-500">
+                      <th className="px-8 py-8 text-center text-xs font-black tracking-widest text-slate-500 uppercase">
                         Free
                       </th>
-                      <th className="py-8 px-8 text-center text-xs font-black uppercase tracking-widest text-blue-600">
+                      <th className="px-8 py-8 text-center text-xs font-black tracking-widest text-blue-600 uppercase">
                         Starter
                       </th>
-                      <th className="py-8 px-8 text-center text-xs font-black uppercase tracking-widest text-slate-500">
+                      <th className="px-8 py-8 text-center text-xs font-black tracking-widest text-slate-500 uppercase">
                         Growth
                       </th>
-                      <th className="py-8 px-8 text-center text-xs font-black uppercase tracking-widest text-slate-500">
+                      <th className="px-8 py-8 text-center text-xs font-black tracking-widest text-slate-500 uppercase">
                         Professional
                       </th>
                     </tr>
@@ -347,19 +347,19 @@ export default function PricingPage() {
                         key={index}
                         className="border-b border-slate-50 transition-colors hover:bg-slate-50/50"
                       >
-                        <td className="py-6 px-8 text-base font-bold text-slate-900">
+                        <td className="px-8 py-6 text-base font-bold text-slate-900">
                           {row.feature}
                         </td>
-                        <td className="py-6 px-8 text-center text-sm font-medium text-slate-500">
+                        <td className="px-8 py-6 text-center text-sm font-medium text-slate-500">
                           {row.free}
                         </td>
-                        <td className="py-6 px-8 text-center text-sm font-black text-slate-900">
+                        <td className="px-8 py-6 text-center text-sm font-black text-slate-900">
                           {row.starter}
                         </td>
-                        <td className="py-6 px-8 text-center text-sm font-medium text-slate-500">
+                        <td className="px-8 py-6 text-center text-sm font-medium text-slate-500">
                           {row.growth}
                         </td>
-                        <td className="py-6 px-8 text-center text-sm font-medium text-slate-500">
+                        <td className="px-8 py-6 text-center text-sm font-medium text-slate-500">
                           {row.pro}
                         </td>
                       </tr>
@@ -400,7 +400,7 @@ export default function PricingPage() {
                   <h3 className="mb-4 text-xl font-black text-white">
                     {faq.q}
                   </h3>
-                  <p className="text-lg font-medium text-slate-400 leading-relaxed">
+                  <p className="text-lg leading-relaxed font-medium text-slate-400">
                     {faq.a}
                   </p>
                 </div>
@@ -408,14 +408,14 @@ export default function PricingPage() {
             </div>
 
             <div className="mt-24 text-center">
-              <span className="text-[10px] font-black uppercase tracking-[0.4em] text-blue-500">
+              <span className="text-[10px] font-black tracking-[0.4em] text-blue-500 uppercase">
                 Performance Guaranteed
               </span>
               <div className="mt-8 flex flex-col items-center justify-center gap-6 sm:flex-row">
-                <div className="rounded-2xl bg-white/5 px-6 py-3 border border-white/10 text-sm font-bold">
+                <div className="rounded-2xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-bold">
                   <span className="text-blue-500">50% OFF</span> first 3 months
                 </div>
-                <div className="rounded-2xl bg-white/5 px-6 py-3 border border-white/10 text-sm font-bold">
+                <div className="rounded-2xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-bold">
                   Free migration assistance
                 </div>
               </div>

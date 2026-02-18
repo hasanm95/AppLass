@@ -3,7 +3,8 @@ import { FAQSchema } from "@/components/common/FAQSchema";
 
 export const metadata: Metadata = {
   title: "FomoGen FAQ | Technical Documentation & Support",
-  description: "Common questions about FomoGen implementation, features, and troubleshooting for Shopify merchants.",
+  description:
+    "Common questions about FomoGen implementation, features, and troubleshooting for Shopify merchants.",
 };
 
 const DOCUMENTATION_FAQS = [
@@ -29,10 +30,10 @@ const DOCUMENTATION_FAQS = [
         ui: (
           <div className="space-y-4">
             <p>
-              The most common cause is an inactive app bridge. Follow
-              this protocol:
+              The most common cause is an inactive app bridge. Follow this
+              protocol:
             </p>
-            <ol className="list-decimal pl-5 space-y-2 font-bold text-slate-900">
+            <ol className="list-decimal space-y-2 pl-5 font-bold text-slate-900">
               <li>Shopify Admin → Online Store → Themes</li>
               <li>Customize → Theme Settings (Gear Icon)</li>
               <li>App Embeds → Toggle &quot;FOMO Generator&quot; ON</li>
@@ -63,7 +64,7 @@ const DOCUMENTATION_FAQS = [
 ];
 
 export default function FAQPage() {
-  const schemaItems = DOCUMENTATION_FAQS.flatMap((cat) => 
+  const schemaItems = DOCUMENTATION_FAQS.flatMap((cat) =>
     cat.items.map((item) => ({
       question: item.q,
       answer: item.a,
@@ -74,13 +75,13 @@ export default function FAQPage() {
     <div className="space-y-20">
       <FAQSchema items={schemaItems} />
       <header>
-          <span className="mb-6 block font-mono text-[10px] font-bold tracking-[0.3em] text-[#064E3B] uppercase">
-            Technical Clarifications
-          </span>
+        <span className="mb-6 block font-mono text-[10px] font-bold tracking-[0.3em] text-[#064E3B] uppercase">
+          Technical Clarifications
+        </span>
         <h1 className="text-display mb-6 text-slate-900">
           Common Questions<span className="text-slate-300">.</span>
         </h1>
-        <p className="max-w-2xl text-xl font-medium leading-relaxed text-slate-500">
+        <p className="max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
           Everything you need to know about FOMO Gen. If your question
           isn&apos;t here, our technical lab is one email away.
         </p>
@@ -116,7 +117,7 @@ function FAQSection({
             className="group rounded-[2rem] border border-slate-100 bg-white p-8 transition-all hover:border-blue-100 hover:shadow-xl hover:shadow-blue-500/5 lg:p-10"
           >
             <h3 className="mb-4 text-lg font-black text-slate-900">{item.q}</h3>
-            <div className="text-lg font-medium leading-relaxed text-slate-500">
+            <div className="text-lg leading-relaxed font-medium text-slate-500">
               {item.ui || item.a}
             </div>
           </div>

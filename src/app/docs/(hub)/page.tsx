@@ -45,13 +45,13 @@ export default function DocsHubPage() {
   return (
     <div className="space-y-16">
       <header>
-        <span className="mb-4 block text-[10px] font-black uppercase tracking-[0.3em] text-blue-600">
+        <span className="mb-4 block text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase">
           Knowledge Base
         </span>
         <h1 className="text-display mb-6 text-slate-900">
           Logic Systems<span className="text-slate-300">.</span>
         </h1>
-        <p className="max-w-2xl text-xl font-medium leading-relaxed text-slate-500">
+        <p className="max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
           The central repository for AppLass engineering. Choose a logic system
           to view its technical implementation and deployment protocols.
         </p>
@@ -75,7 +75,7 @@ export default function DocsHubPage() {
                   <h3 className="text-xl font-black text-slate-900">
                     {system.name}
                   </h3>
-                  <p className="text-xs font-black uppercase tracking-widest text-blue-600">
+                  <p className="text-xs font-black tracking-widest text-blue-600 uppercase">
                     {system.tagline}
                   </p>
                 </div>
@@ -85,7 +85,7 @@ export default function DocsHubPage() {
               </div>
             </div>
 
-            <p className="max-w-xl text-lg font-medium leading-relaxed text-slate-500">
+            <p className="max-w-xl text-lg leading-relaxed font-medium text-slate-500">
               {system.description}
             </p>
           </Link>

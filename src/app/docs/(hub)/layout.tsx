@@ -10,9 +10,7 @@ export default function DocsLayout({
       <Navbar />
 
       <main className="flex-1">
-        <div className="section-container pt-32 pb-24">
-          {children}
-        </div>
+        <div className="section-container pt-32 pb-24">{children}</div>
       </main>
 
       <Footer />

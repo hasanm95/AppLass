@@ -13,7 +13,7 @@ export default function PrivacyPage() {
       <Navbar
         customBranding={
           <div className="flex items-center gap-2">
-            <Zap className="h-5 w-5 text-blue-600 fill-blue-600" />
+            <Zap className="h-5 w-5 fill-blue-600 text-blue-600" />
             <span className="text-lg font-black tracking-tighter text-slate-900">
               FOMO<span className="text-blue-600">GEN</span>
             </span>
@@ -22,11 +22,11 @@ export default function PrivacyPage() {
       />
 
       <main className="flex-grow">
-        <Section className="pb-32 pt-40 lg:pt-56">
+        <Section className="pt-40 pb-32 lg:pt-56">
           <div className="section-container">
             <div className="mx-auto max-w-4xl">
               <header className="mb-20">
-                <span className="mb-4 block text-[10px] font-black uppercase tracking-[0.3em] text-blue-600">
+                <span className="mb-4 block text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase">
                   Legal Documentation
                 </span>
                 <h1 className="text-display mb-6 text-slate-900">
@@ -37,7 +37,7 @@ export default function PrivacyPage() {
                 </p>
               </header>
 
-              <div className="space-y-16 text-lg font-medium leading-relaxed text-slate-600">
+              <div className="space-y-16 text-lg leading-relaxed font-medium text-slate-600">
                 <section>
                   <h2 className="mb-6 text-2xl font-black text-slate-900">
                     1. Introduction
@@ -61,9 +61,9 @@ export default function PrivacyPage() {
                     access certain types of information from your Shopify
                     account:
                   </p>
-                  <ul className="mt-6 space-y-4 list-none">
+                  <ul className="mt-6 list-none space-y-4">
                     <li className="flex gap-4">
-                      <span className="text-blue-600 font-black">/</span>
+                      <span className="font-black text-blue-600">/</span>
                       <p>
                         <strong className="text-slate-900">
                           Shop Information:
@@ -72,7 +72,7 @@ export default function PrivacyPage() {
                       </p>
                     </li>
                     <li className="flex gap-4">
-                      <span className="text-blue-600 font-black">/</span>
+                      <span className="font-black text-blue-600">/</span>
                       <p>
                         <strong className="text-slate-900">
                           Order Information:
@@ -84,14 +84,14 @@ export default function PrivacyPage() {
                       </p>
                     </li>
                     <li className="flex gap-4">
-                      <span className="text-blue-600 font-black">/</span>
+                      <span className="font-black text-blue-600">/</span>
                       <p>
                         <strong className="text-slate-900">
                           Product Information:
                         </strong>{" "}
-                        Product titles, images, and inventory levels to
-                        generate &quot;Stock Alerts&quot; and &quot;Low
-                        Stock&quot; counters.
+                        Product titles, images, and inventory levels to generate
+                        &quot;Stock Alerts&quot; and &quot;Low Stock&quot;
+                        counters.
                       </p>
                     </li>
                   </ul>
@@ -101,23 +101,33 @@ export default function PrivacyPage() {
                   <h2 className="mb-6 text-2xl font-black text-slate-900">
                     3. How We Use Your Information
                   </h2>
-                  <p>We use the collected information for the following purposes:</p>
-                  <ul className="mt-6 space-y-4 list-none">
+                  <p>
+                    We use the collected information for the following purposes:
+                  </p>
+                  <ul className="mt-6 list-none space-y-4">
                     <li className="flex gap-4">
-                      <span className="text-blue-600 font-black">/</span>
-                      <span>To provide and maintain the App&apos;s functionality (e.g., displaying popups).</span>
+                      <span className="font-black text-blue-600">/</span>
+                      <span>
+                        To provide and maintain the App&apos;s functionality
+                        (e.g., displaying popups).
+                      </span>
                     </li>
                     <li className="flex gap-4">
-                      <span className="text-blue-600 font-black">/</span>
-                      <span>To improve our services and develop new features.</span>
+                      <span className="font-black text-blue-600">/</span>
+                      <span>
+                        To improve our services and develop new features.
+                      </span>
                     </li>
                     <li className="flex gap-4">
-                      <span className="text-blue-600 font-black">/</span>
+                      <span className="font-black text-blue-600">/</span>
                       <span>To provide customer support.</span>
                     </li>
                     <li className="flex gap-4">
-                      <span className="text-blue-600 font-black">/</span>
-                      <span>To communicate with you regarding updates or changes to the App.</span>
+                      <span className="font-black text-blue-600">/</span>
+                      <span>
+                        To communicate with you regarding updates or changes to
+                        the App.
+                      </span>
                     </li>
                   </ul>
                 </section>
@@ -131,9 +141,9 @@ export default function PrivacyPage() {
                     information to outside parties. We may share information
                     only in the following limited circumstances:
                   </p>
-                  <ul className="mt-6 space-y-4 list-none">
+                  <ul className="mt-6 list-none space-y-4">
                     <li className="flex gap-4">
-                      <span className="text-blue-600 font-black">/</span>
+                      <span className="font-black text-blue-600">/</span>
                       <p>
                         <strong className="text-slate-900">
                           Service Providers:
@@ -144,7 +154,7 @@ export default function PrivacyPage() {
                       </p>
                     </li>
                     <li className="flex gap-4">
-                      <span className="text-blue-600 font-black">/</span>
+                      <span className="font-black text-blue-600">/</span>
                       <p>
                         <strong className="text-slate-900">
                           Legal Requirements:

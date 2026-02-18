@@ -4,7 +4,8 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms of Service - ScreenVeil",
-  description: "Terms and conditions for using ScreenVeil's hardware-level screen utility.",
+  description:
+    "Terms and conditions for using ScreenVeil's hardware-level screen utility.",
 };
 
 export default function ScreenVeilTermsPage() {
@@ -15,7 +16,7 @@ export default function ScreenVeilTermsPage() {
       <Navbar
         customBranding={
           <div className="flex items-center gap-2">
-            <Smartphone className="h-5 w-5 text-blue-600 fill-blue-600" />
+            <Smartphone className="h-5 w-5 fill-blue-600 text-blue-600" />
             <span className="text-lg font-black tracking-tighter text-slate-900 uppercase">
               Screen<span className="text-blue-600">Veil</span>
             </span>
@@ -24,11 +25,11 @@ export default function ScreenVeilTermsPage() {
       />
 
       <main className="flex-grow">
-        <Section className="pb-32 pt-40 lg:pt-56">
+        <Section className="pt-40 pb-32 lg:pt-56">
           <div className="section-container">
             <div className="mx-auto max-w-4xl">
               <header className="mb-20 text-center">
-                <span className="mb-4 block text-[10px] font-black uppercase tracking-[0.3em] text-blue-600">
+                <span className="mb-4 block text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase">
                   Legal Documentation
                 </span>
                 <h1 className="text-display mb-6 text-slate-900">
@@ -39,16 +40,16 @@ export default function ScreenVeilTermsPage() {
                 </p>
               </header>
 
-              <div className="space-y-16 text-lg font-medium leading-relaxed text-slate-600">
+              <div className="space-y-16 text-lg leading-relaxed font-medium text-slate-600">
                 <section>
                   <h2 className="mb-6 text-3xl font-black text-slate-900">
                     1. Hardware Implementation
                   </h2>
                   <p>
-                    ScreenVeil is a hardware-focused utility for Android. By using 
-                    the application, you acknowledge that it requires specific 
-                    system-level permissions to manage display behavior and background 
-                    services effectively.
+                    ScreenVeil is a hardware-focused utility for Android. By
+                    using the application, you acknowledge that it requires
+                    specific system-level permissions to manage display behavior
+                    and background services effectively.
                   </p>
                 </section>
 
@@ -57,20 +58,37 @@ export default function ScreenVeilTermsPage() {
                     2. Permission Protocols
                   </h2>
                   <p>
-                    ScreenVeil utilizes the following core protocols to provide its utility:
+                    ScreenVeil utilizes the following core protocols to provide
+                    its utility:
                   </p>
-                  <ul className="mt-6 space-y-4 list-none text-base">
+                  <ul className="mt-6 list-none space-y-4 text-base">
                     <li className="flex gap-4">
-                      <span className="text-blue-600 font-black">/</span>
-                      <p><strong className="text-slate-900">SYSTEM_ALERT_WINDOW:</strong> To render the screen filter overlay over other active applications.</p>
+                      <span className="font-black text-blue-600">/</span>
+                      <p>
+                        <strong className="text-slate-900">
+                          SYSTEM_ALERT_WINDOW:
+                        </strong>{" "}
+                        To render the screen filter overlay over other active
+                        applications.
+                      </p>
                     </li>
                     <li className="flex gap-4">
-                      <span className="text-blue-600 font-black">/</span>
-                      <p><strong className="text-slate-900">WAKE_LOCK:</strong> To maintain functionality during periods of display inactivity or dimmed states.</p>
+                      <span className="font-black text-blue-600">/</span>
+                      <p>
+                        <strong className="text-slate-900">WAKE_LOCK:</strong>{" "}
+                        To maintain functionality during periods of display
+                        inactivity or dimmed states.
+                      </p>
                     </li>
                     <li className="flex gap-4">
-                      <span className="text-blue-600 font-black">/</span>
-                      <p><strong className="text-slate-900">FOREGROUND_SERVICE:</strong> To ensure reliable operation while the user interacts with other applications.</p>
+                      <span className="font-black text-blue-600">/</span>
+                      <p>
+                        <strong className="text-slate-900">
+                          FOREGROUND_SERVICE:
+                        </strong>{" "}
+                        To ensure reliable operation while the user interacts
+                        with other applications.
+                      </p>
                     </li>
                   </ul>
                 </section>
@@ -80,9 +98,9 @@ export default function ScreenVeilTermsPage() {
                     3. Power Optimization
                   </h2>
                   <p>
-                    While ScreenVeil is engineered to reduce display power draw 
-                    on AMOLED devices, battery savings depend on hardware 
-                    architecture. AppLass does not guarantee specific power 
+                    While ScreenVeil is engineered to reduce display power draw
+                    on AMOLED devices, battery savings depend on hardware
+                    architecture. AppLass does not guarantee specific power
                     savings and provides the application &quot;as-is&quot;.
                   </p>
                 </section>
@@ -92,8 +110,8 @@ export default function ScreenVeilTermsPage() {
                     4. Contact the Logic Lab
                   </h2>
                   <p className="mb-10 text-slate-500">
-                    For technical or legal inquiries regarding our hardware utility 
-                    protocols, please reach out to the engineering team.
+                    For technical or legal inquiries regarding our hardware
+                    utility protocols, please reach out to the engineering team.
                   </p>
                   <a
                     href="mailto:hasanmobarak25@gmail.com"

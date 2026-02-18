@@ -55,7 +55,7 @@ ScreenVeil is fully optimized for **Android 16’s ART 16 Runtime**, ensuring th
 
 ## How to Get Started
 
-1. **Install ScreenVeil:** Grab [ScreenVeil: Screen Off Video](https://play.google.com/store/apps/details?id=com.screenveil.app) from the Google Play Store.
+1. **Install ScreenVeil:** Grab [ScreenVeil: Screen Off Video](https://play.google.com/store/apps/details?id=com.screenveil.app.app) from the Google Play Store.
 2. **Start Service:** Tap "Start Service" in the app to enable the floating button.
 3. **Veil It:** Open YouTube (or Netflix/Prime Video), hit Play, tap the floating button, and enjoy your audio in total darkness.
 
@@ -63,4 +63,4 @@ ScreenVeil is fully optimized for **Android 16’s ART 16 Runtime**, ensuring th
 
 ---
 
-[Install ScreenVeil](https://play.google.com/store/apps/details?id=com.screenveil.app) | [Learn More](/apps/screenveil)
+[Install ScreenVeil](https://play.google.com/store/apps/details?id=com.screenveil.app.app) | [Learn More](/apps/screenveil)

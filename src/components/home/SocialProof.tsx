@@ -42,7 +42,7 @@ export function SocialProof() {
 
           {/* Google Play Badge */}
           <a
-            href="https://play.google.com/store/apps/details?id=com.screenveil.app"
+            href="https://play.google.com/store/apps/details?id=com.screenveil.app.app"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex cursor-pointer items-center gap-3 border-2 border-[var(--border)] bg-[var(--card)] px-5 py-3 transition-all duration-200 hover:border-[var(--foreground)]"

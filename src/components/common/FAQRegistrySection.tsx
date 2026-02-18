@@ -21,7 +21,10 @@ export function FAQRegistrySection({
   const items = FAQ_REGISTRY[registryKey];
 
   return (
-    <Section id="faq" className={cn("bg-[#FBFBFA] border-t border-slate-200", className)}>
+    <Section
+      id="faq"
+      className={cn("border-t border-slate-200 bg-[#FBFBFA]", className)}
+    >
       <div className="section-container">
         <div className="mb-24">
           <span className="mb-6 block font-mono text-[10px] font-bold tracking-[0.3em] text-blue-600 uppercase">
@@ -34,11 +37,13 @@ export function FAQRegistrySection({
           </h2>
         </div>
 
-        <div className={cn(
-          "grid grid-cols-1 gap-8",
-          variant === "grid" && "lg:grid-cols-2",
-          variant === "centered" && "max-w-4xl mx-auto"
-        )}>
+        <div
+          className={cn(
+            "grid grid-cols-1 gap-8",
+            variant === "grid" && "lg:grid-cols-2",
+            variant === "centered" && "mx-auto max-w-4xl"
+          )}
+        >
           {items.map((faq, idx) => (
             <div
               key={idx}
@@ -51,14 +56,14 @@ export function FAQRegistrySection({
               <div className="absolute top-4 right-4 font-mono text-[8px] text-slate-300 uppercase">
                 [ Protocol.Entry_0{idx + 1} ]
               </div>
-              
-              <h3 className="mb-6 text-xl font-black tracking-tight text-slate-950 leading-tight">
+
+              <h3 className="mb-6 text-xl leading-tight font-black tracking-tight text-slate-950">
                 {faq.question}
               </h3>
-              <p className="font-medium text-slate-600 leading-relaxed">
+              <p className="leading-relaxed font-medium text-slate-600">
                 {faq.answer}
               </p>
-              
+
               <div className="mt-8 flex items-center gap-4">
                 <div className="h-px flex-1 bg-slate-100" />
                 <div className="h-2 w-2 bg-blue-600" />

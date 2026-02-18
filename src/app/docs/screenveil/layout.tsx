@@ -12,7 +12,7 @@ export default function ScreenVeilDocsLayout({
       <Navbar
         customBranding={
           <div className="flex items-center gap-2">
-            <Smartphone className="h-5 w-5 text-blue-600 fill-blue-600" />
+            <Smartphone className="h-5 w-5 fill-blue-600 text-blue-600" />
             <span className="text-lg font-black tracking-tighter text-slate-900 uppercase">
               Screen<span className="text-blue-600">Veil</span>
             </span>

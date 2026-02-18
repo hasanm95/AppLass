@@ -2,13 +2,13 @@ export default function CountdownTimersPage() {
   return (
     <div className="space-y-20">
       <header>
-        <span className="mb-4 block text-[10px] font-black uppercase tracking-[0.3em] text-blue-600">
+        <span className="mb-4 block text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase">
           Conversion Module
         </span>
         <h1 className="text-display mb-6 text-slate-900">
           Countdown Timers<span className="text-slate-300">.</span>
         </h1>
-        <p className="max-w-2xl text-xl font-medium leading-relaxed text-slate-500">
+        <p className="max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
           Engineered urgency. Deploy high-fidelity countdowns for flash sales,
           product drops, and localized sessions.
         </p>
@@ -17,7 +17,9 @@ export default function CountdownTimersPage() {
       <div className="space-y-24">
         {/* Timer Types */}
         <section>
-          <h2 className="mb-8 text-2xl font-black text-slate-900">Timer Types</h2>
+          <h2 className="mb-8 text-2xl font-black text-slate-900">
+            Timer Types
+          </h2>
           <div className="grid gap-6 md:grid-cols-2">
             <FeatureCard
               title="Fixed Date"
@@ -69,7 +71,7 @@ export default function CountdownTimersPage() {
           </h2>
           <ul className="space-y-6">
             <li className="flex gap-6 rounded-[2rem] border border-slate-100 p-8">
-              <span className="text-blue-600 font-black">/</span>
+              <span className="font-black text-blue-600">/</span>
               <div>
                 <h4 className="font-black text-slate-900">Sticky Top Bar</h4>
                 <p className="font-medium text-slate-500">
@@ -79,7 +81,7 @@ export default function CountdownTimersPage() {
               </div>
             </li>
             <li className="flex gap-6 rounded-[2rem] border border-slate-100 p-8">
-              <span className="text-blue-600 font-black">/</span>
+              <span className="font-black text-blue-600">/</span>
               <div>
                 <h4 className="font-black text-slate-900">Inline Product</h4>
                 <p className="font-medium text-slate-500">
@@ -93,13 +95,13 @@ export default function CountdownTimersPage() {
 
         {/* Efficiency Tip */}
         <div className="rounded-[2.5rem] bg-slate-900 p-12 text-white">
-          <h4 className="mb-4 text-sm font-black uppercase tracking-widest text-blue-400">
+          <h4 className="mb-4 text-sm font-black tracking-widest text-blue-400 uppercase">
             Conversion Protocol
           </h4>
-          <p className="text-xl font-medium leading-relaxed opacity-80">
-            Use <strong>Evergreen</strong> timers (e.g., 15 minutes) on abandoned
-            cart sequences or welcome flows to force immediate decision-making
-            from new acquisitions.
+          <p className="text-xl leading-relaxed font-medium opacity-80">
+            Use <strong>Evergreen</strong> timers (e.g., 15 minutes) on
+            abandoned cart sequences or welcome flows to force immediate
+            decision-making from new acquisitions.
           </p>
         </div>
       </div>
@@ -119,10 +121,10 @@ function FeatureCard({
   return (
     <div className="group rounded-[2.5rem] border border-slate-100 bg-white p-10 shadow-xl shadow-slate-200/20 transition-all hover:border-blue-100 hover:shadow-blue-500/5">
       <h3 className="mb-4 text-xl font-black text-slate-900">{title}</h3>
-      <p className="mb-8 text-lg font-medium leading-relaxed text-slate-500">
+      <p className="mb-8 text-lg leading-relaxed font-medium text-slate-500">
         {desc}
       </p>
-      <div className="inline-block rounded-full bg-slate-50 px-4 py-1 text-xs font-black uppercase tracking-wider text-slate-400 transition-colors group-hover:bg-blue-50 group-hover:text-blue-600">
+      <div className="inline-block rounded-full bg-slate-50 px-4 py-1 text-xs font-black tracking-wider text-slate-400 uppercase transition-colors group-hover:bg-blue-50 group-hover:text-blue-600">
         {meta}
       </div>
     </div>
@@ -144,7 +146,7 @@ function PriorityItem({
         {num}
       </span>
       <h4 className="mb-2 font-black text-slate-900">{title}</h4>
-      <p className="font-medium text-slate-500 leading-snug">{desc}</p>
+      <p className="leading-snug font-medium text-slate-500">{desc}</p>
     </div>
   );
 }

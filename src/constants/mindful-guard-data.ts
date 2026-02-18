@@ -97,17 +97,18 @@ export const MINDFUL_GUARD_SCHEMA = {
   review: [
     {
       "@type": "Review",
-      "reviewRating": {
+      reviewRating: {
         "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
+        ratingValue: "5",
+        bestRating: "5",
       },
-      "author": {
+      author: {
         "@type": "Person",
-        "name": "Hasan M."
+        name: "Hasan M.",
       },
-      "reviewBody": "The only focus app that actually respects my privacy. Zero telemetry means total peace of mind."
-    }
+      reviewBody:
+        "The only focus app that actually respects my privacy. Zero telemetry means total peace of mind.",
+    },
   ],
   featureList:
     "Zero-Telemetry Privacy, Offline Architecture, Strict Mode, Battery Optimization Exemption",

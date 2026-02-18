@@ -3,7 +3,10 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const DOCS_CONFIG: Record<string, { category: string; items: { name: string; href: string }[] }[]> = {
+const DOCS_CONFIG: Record<
+  string,
+  { category: string; items: { name: string; href: string }[] }[]
+> = {
   fomogen: [
     {
       category: "Getting Started",
@@ -17,12 +20,24 @@ const DOCS_CONFIG: Record<string, { category: string; items: { name: string; hre
     {
       category: "Features",
       items: [
-        { name: "Purchase Notifications", href: "/docs/fomogen/features/purchase-notifications" },
-        { name: "Countdown Timers", href: "/docs/fomogen/features/countdown-timers" },
+        {
+          name: "Purchase Notifications",
+          href: "/docs/fomogen/features/purchase-notifications",
+        },
+        {
+          name: "Countdown Timers",
+          href: "/docs/fomogen/features/countdown-timers",
+        },
         { name: "Stock Alerts", href: "/docs/fomogen/features/stock-alerts" },
-        { name: "Social Proof Badges", href: "/docs/fomogen/features/social-proof-badges" },
+        {
+          name: "Social Proof Badges",
+          href: "/docs/fomogen/features/social-proof-badges",
+        },
         { name: "Exit Intent", href: "/docs/fomogen/features/exit-intent" },
-        { name: "Progress Indicators", href: "/docs/fomogen/features/progress-indicators" },
+        {
+          name: "Progress Indicators",
+          href: "/docs/fomogen/features/progress-indicators",
+        },
         { name: "Sticky Cart", href: "/docs/fomogen/features/sticky-cart" },
         { name: "Trust Badges", href: "/docs/fomogen/trust-badges" },
       ],
@@ -57,7 +72,10 @@ const DOCS_CONFIG: Record<string, { category: string; items: { name: string; hre
       category: "Getting Started",
       items: [
         { name: "Introduction", href: "/docs/screenveil" },
-        { name: "Amoled Efficiency", href: "/docs/screenveil/amoled-efficiency" },
+        {
+          name: "Amoled Efficiency",
+          href: "/docs/screenveil/amoled-efficiency",
+        },
       ],
     },
     {
@@ -72,9 +90,9 @@ const DOCS_CONFIG: Record<string, { category: string; items: { name: string; hre
 
 export function DocsSidebar() {
   const pathname = usePathname();
-  
+
   // Determine which app we are looking at
-  const appKey = pathname.split("/").find(key => DOCS_CONFIG[key]);
+  const appKey = pathname.split("/").find((key) => DOCS_CONFIG[key]);
   const links = appKey ? DOCS_CONFIG[appKey] : DOCS_CONFIG.fomogen;
 
   return (
@@ -83,7 +101,7 @@ export function DocsSidebar() {
         <nav className="space-y-12">
           {links.map((section) => (
             <div key={section.category}>
-              <h3 className="mb-4 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">
+              <h3 className="mb-4 text-[10px] font-black tracking-[0.2em] text-slate-400 uppercase">
                 {section.category}
               </h3>
               <ul className="space-y-1">
