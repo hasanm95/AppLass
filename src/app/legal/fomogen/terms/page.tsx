@@ -9,7 +9,7 @@ export default function TermsPage() {
       <Navbar
         customBranding={
           <div className="flex items-center gap-2">
-            <Zap className="h-5 w-5 text-blue-600 fill-blue-600" />
+            <Zap className="h-5 w-5 fill-blue-600 text-blue-600" />
             <span className="text-lg font-black tracking-tighter text-slate-900">
               FOMO<span className="text-blue-600">GEN</span>
             </span>
@@ -18,11 +18,11 @@ export default function TermsPage() {
       />
 
       <main className="flex-grow">
-        <Section className="pb-32 pt-40 lg:pt-56">
+        <Section className="pt-40 pb-32 lg:pt-56">
           <div className="section-container">
             <div className="mx-auto max-w-4xl">
               <header className="mb-20">
-                <span className="mb-4 block text-[10px] font-black uppercase tracking-[0.3em] text-blue-600">
+                <span className="mb-4 block text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase">
                   Legal Documentation
                 </span>
                 <h1 className="text-display mb-6 text-slate-900">
@@ -33,7 +33,7 @@ export default function TermsPage() {
                 </p>
               </header>
 
-              <div className="space-y-16 text-lg font-medium leading-relaxed text-slate-600">
+              <div className="space-y-16 text-lg leading-relaxed font-medium text-slate-600">
                 <section>
                   <h2 className="mb-6 text-2xl font-black text-slate-900">
                     1. Acceptance of Terms

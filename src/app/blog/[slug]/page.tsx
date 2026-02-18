@@ -93,13 +93,15 @@ export default async function BlogPostPage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       {post.faqs && post.faqs.length > 0 && (
-        <FAQSchema items={post.faqs as { question: string; answer: string }[]} />
+        <FAQSchema
+          items={post.faqs as { question: string; answer: string }[]}
+        />
       )}
       <ReadingProgressBar />
       <Navbar />
       <div className="flex-1 bg-white pt-20">
         {/* Iridescent Header Section */}
-        <header className="bg-iridescent relative border-b border-slate-100 py-20 lg:py-32">
+        <header className="bg-iridescent relative border-b border-slate-100 pt-20 pb-15 lg:py-32">
           <div className="section-container relative z-10">
             <Link
               href="/blog"
@@ -119,7 +121,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               </span>
             </div>
 
-            <h1 className="mb-10 max-w-6xl text-8xl leading-[1.2] font-bold text-slate-900">
+            <h1 className="mb-10 max-w-6xl text-2xl leading-[1.2] font-bold text-slate-900 lg:text-8xl">
               {post.title}
             </h1>
 
@@ -143,7 +145,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         </header>
 
         {/* Content Section */}
-        <section className="section group relative py-24">
+        <section className="section group relative py-15 lg:py-24">
           <div className="section-container">
             <div className="flex flex-col gap-16 lg:flex-row">
               {/* Main Content */}
@@ -194,7 +196,10 @@ export default async function BlogPostPage({ params }: PageProps) {
 
         {/* Visible FAQ Section — matches JSON-LD schema to avoid Google penalties */}
         {post.faqs && post.faqs.length > 0 && (
-          <section id="faq" className="border-t border-slate-200 bg-[#FBFBFA] py-24">
+          <section
+            id="faq"
+            className="border-t border-slate-200 bg-[#FBFBFA] py-24"
+          >
             <div className="section-container">
               <div className="mb-24">
                 <span className="mb-6 block font-mono text-[10px] font-bold tracking-[0.3em] text-blue-600 uppercase">
@@ -216,10 +221,10 @@ export default async function BlogPostPage({ params }: PageProps) {
                     <div className="absolute top-4 right-4 font-mono text-[8px] text-slate-300 uppercase">
                       [ Protocol.Entry_0{idx + 1} ]
                     </div>
-                    <h3 className="mb-6 text-xl font-black leading-tight tracking-tight text-slate-950">
+                    <h3 className="mb-6 text-xl leading-tight font-black tracking-tight text-slate-950">
                       {faq.question}
                     </h3>
-                    <p className="font-medium leading-relaxed text-slate-600">
+                    <p className="leading-relaxed font-medium text-slate-600">
                       {faq.answer}
                     </p>
                     <div className="mt-8 flex items-center gap-4">

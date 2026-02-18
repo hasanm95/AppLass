@@ -5,22 +5,8 @@ import { FAQSchema } from "@/components/common/FAQSchema";
 import { FAQ_REGISTRY } from "@/constants/faq-registry";
 import { Plus, Minus } from "lucide-react";
 import { useState } from "react";
-import type { Dictionary } from "@/i18n/get-dictionary";
 
-const defaultAnswerNuggets = {
-  sectionLabel: "FAQ",
-  headline: "Frequently Asked",
-  headlineAccent: "Questions",
-  expandAnswer: "Expand answer",
-  collapseAnswer: "Collapse answer",
-};
-
-interface AnswerNuggetsProps {
-  translations?: Dictionary["home"]["answerNuggets"];
-}
-
-export function AnswerNuggets({ translations }: AnswerNuggetsProps) {
-  const t = translations ?? defaultAnswerNuggets;
+export function AnswerNuggets() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
@@ -31,15 +17,15 @@ export function AnswerNuggets({ translations }: AnswerNuggetsProps) {
         <div className="mb-16">
           <div className="mb-8 flex items-center gap-4">
             <span className="font-mono text-xs font-bold tracking-widest text-(--muted-foreground)/50 uppercase">
-              {t.sectionLabel}
+              FAQ
             </span>
             <span className="block h-px flex-1 bg-(--foreground)/20" />
           </div>
 
-          <h2 className="mb-4 font-mono text-2xl leading-tight font-bold text-foreground md:text-3xl lg:text-4xl">
-            {t.headline}
+          <h2 className="text-foreground mb-4 font-mono text-2xl leading-tight font-bold md:text-3xl lg:text-4xl">
+            Frequently Asked
             <br />
-            <span className="text-(--muted-foreground)/40">{t.headlineAccent}</span>
+            <span className="text-(--muted-foreground)/40">Questions</span>
           </h2>
         </div>
 
@@ -50,7 +36,7 @@ export function AnswerNuggets({ translations }: AnswerNuggetsProps) {
             return (
               <article
                 key={idx}
-                className="group cursor-pointer border-b border-border py-6 first:border-t"
+                className="group border-border cursor-pointer border-b py-6 first:border-t"
                 onClick={() => setOpenIndex(isOpen ? null : idx)}
               >
                 <div className="flex items-start justify-between gap-4">
@@ -58,19 +44,19 @@ export function AnswerNuggets({ translations }: AnswerNuggetsProps) {
                     <span className="mt-1 font-mono text-xs font-bold tracking-widest text-(--muted-foreground)/50 uppercase">
                       {String(idx + 1).padStart(2, "0")}
                     </span>
-                    <h3 className="text-base font-semibold transition-colors group-hover:text-cta">
+                    <h3 className="group-hover:text-cta text-base font-semibold transition-colors">
                       {faq.question}
                     </h3>
                   </div>
                   <button
-                    className="flex h-8 w-8 shrink-0 items-center justify-center border border-border transition-all duration-200 group-hover:border-cta"
+                    className="border-border group-hover:border-cta flex h-8 w-8 shrink-0 items-center justify-center border transition-all duration-200"
                     aria-expanded={isOpen}
-                    aria-label={isOpen ? t.collapseAnswer : t.expandAnswer}
+                    aria-label={isOpen ? "Collapse answer" : "Expand answer"}
                   >
                     {isOpen ? (
-                      <Minus className="h-4 w-4 text-cta" />
+                      <Minus className="text-cta h-4 w-4" />
                     ) : (
-                      <Plus className="h-4 w-4 text-muted-foreground" />
+                      <Plus className="text-muted-foreground h-4 w-4" />
                     )}
                   </button>
                 </div>
@@ -83,7 +69,7 @@ export function AnswerNuggets({ translations }: AnswerNuggetsProps) {
                   }`}
                 >
                   <div className="overflow-hidden pl-12">
-                    <p className="text-sm leading-relaxed text-muted-foreground">
+                    <p className="text-muted-foreground text-sm leading-relaxed">
                       {faq.answer}
                     </p>
                   </div>

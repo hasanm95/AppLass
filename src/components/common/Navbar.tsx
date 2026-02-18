@@ -6,36 +6,19 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
-import type { Dictionary } from "@/i18n/get-dictionary";
-
-const defaultNav = {
-  home: "Home",
-  about: "About",
-  ecosystem: "Ecosystem",
-  docs: "Docs",
-  blog: "Logic Lab",
-  getInTouch: "Get in Touch",
-  brandName: "AppLass",
-  logoAlt: "AppLass Logo",
-  mobileMenuFooter: "AppLass Logic System",
-  openMenu: "Open menu",
-  closeMenu: "Close menu",
-};
+import { MobileMenu } from "./mobile-menu";
 
 interface NavbarProps {
   variant?: "light" | "dark";
   customBranding?: React.ReactNode;
   customCTA?: React.ReactNode;
-  translations?: Dictionary["nav"];
 }
 
 export function Navbar({
   variant = "light",
   customBranding,
   customCTA,
-  translations,
 }: NavbarProps) {
-  const t = translations ?? defaultNav;
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -121,7 +104,7 @@ export function Navbar({
             >
               <ExportedImage
                 src="/logo.png"
-                alt={t.logoAlt}
+                alt="AppLass Logo"
                 width={32}
                 height={32}
                 className="h-8 w-8 rounded-lg object-contain"
@@ -133,7 +116,7 @@ export function Navbar({
                     isDark ? "text-white" : "text-slate-900"
                   )}
                 >
-                  {t.brandName}
+                  AppLass
                 </span>
               )}
             </Link>
@@ -156,19 +139,19 @@ export function Navbar({
           {!customBranding && (
             <div className="hidden items-center gap-10 md:flex">
               <NavLink href="/" isDark={isDark}>
-                {t.home}
+                Home
               </NavLink>
               <NavLink href="/about" isDark={isDark}>
-                {t.about}
+                About
               </NavLink>
               <NavLink href="/apps" isDark={isDark}>
-                {t.ecosystem}
+                Ecosystem
               </NavLink>
               <NavLink href="/docs" isDark={isDark}>
-                {t.docs}
+                Docs
               </NavLink>
               <NavLink href="/blog" isDark={isDark}>
-                {t.blog}
+                Logic Lab
               </NavLink>
             </div>
           )}
@@ -189,7 +172,7 @@ export function Navbar({
                       : "bg-slate-900 text-white hover:bg-slate-800"
                   )}
                 >
-                  <Link href="/about">{t.getInTouch}</Link>
+                  <Link href="/about">Get in Touch</Link>
                 </Button>
               )}
             </div>
@@ -198,7 +181,7 @@ export function Navbar({
             <button
               aria-expanded={isMenuOpen}
               aria-controls="mobile-menu"
-              aria-label={isMenuOpen ? t.closeMenu : t.openMenu}
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
               onClick={toggleMenu}
               className={cn(
                 "focus-ring flex h-10 w-10 items-center justify-center rounded-xl md:hidden",
@@ -212,78 +195,13 @@ export function Navbar({
 
         {/* Mobile Menu Overlay */}
         {isMenuOpen && (
-          <div
-            id="mobile-menu"
-            ref={menuRef}
-            className={cn(
-              "animate-in fade-in slide-in-from-top-4 fixed inset-0 top-[72px] z-40 flex flex-col p-8 shadow-inner duration-300 md:hidden",
-              isDark ? "bg-[#020617]" : "bg-white"
-            )}
-          >
-            <div className="flex flex-col gap-8">
-              {!customBranding && (
-                <>
-                  <MobileNavLink href="/" isDark={isDark} onClick={toggleMenu}>
-                    {t.home}
-                  </MobileNavLink>
-                  <MobileNavLink
-                    href="/about"
-                    isDark={isDark}
-                    onClick={toggleMenu}
-                  >
-                    {t.about}
-                  </MobileNavLink>
-                  <MobileNavLink
-                    href="/apps"
-                    isDark={isDark}
-                    onClick={toggleMenu}
-                  >
-                    {t.ecosystem}
-                  </MobileNavLink>
-                  <MobileNavLink
-                    href="/docs"
-                    isDark={isDark}
-                    onClick={toggleMenu}
-                  >
-                    {t.docs}
-                  </MobileNavLink>
-                  <MobileNavLink
-                    href="/blog"
-                    isDark={isDark}
-                    onClick={toggleMenu}
-                  >
-                    {t.blog}
-                  </MobileNavLink>
-                </>
-              )}
-
-              <div className="border-t border-slate-100 pt-8">
-                {customCTA ? (
-                  <div onClick={toggleMenu}>{customCTA}</div>
-                ) : (
-                  <Button
-                    asChild
-                    size="lg"
-                    onClick={toggleMenu}
-                    className={cn(
-                      "h-14 w-full rounded-2xl text-lg font-bold transition-all",
-                      isDark
-                        ? "bg-white text-slate-900 hover:bg-slate-100"
-                        : "bg-slate-900 text-white hover:bg-slate-800"
-                    )}
-                  >
-                    <Link href="/about">{t.getInTouch}</Link>
-                  </Button>
-                )}
-              </div>
-            </div>
-
-            <div className="mt-auto flex justify-center pb-12">
-              <span className="text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase">
-                {t.mobileMenuFooter}
-              </span>
-            </div>
-          </div>
+          <MobileMenu
+            menuRef={menuRef}
+            customBranding={customBranding}
+            customCTA={customCTA}
+            toggleMenu={toggleMenu}
+            isDark={isDark}
+          />
         )}
       </nav>
     </header>
@@ -300,7 +218,7 @@ function NavLink({
   isDark: boolean;
 }) {
   return (
-    <a
+    <Link
       href={href}
       className={cn(
         "py-1 text-sm font-bold transition-all",
@@ -310,31 +228,6 @@ function NavLink({
       )}
     >
       {children}
-    </a>
-  );
-}
-
-function MobileNavLink({
-  href,
-  children,
-  isDark,
-  onClick,
-}: {
-  href: string;
-  children: React.ReactNode;
-  isDark: boolean;
-  onClick: () => void;
-}) {
-  return (
-    <a
-      href={href}
-      onClick={onClick}
-      className={cn(
-        "text-4xl font-black tracking-tighter transition-all hover:translate-x-2",
-        isDark ? "text-white" : "text-slate-900"
-      )}
-    >
-      {children}
-    </a>
+    </Link>
   );
 }

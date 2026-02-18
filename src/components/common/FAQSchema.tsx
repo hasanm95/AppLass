@@ -14,7 +14,7 @@ export function FAQSchema({ items }: FAQSchemaProps) {
   // This is a simple strip-tags approach if answer is a component
   const getSchemaAnswer = (answer: string | React.ReactNode): string => {
     if (typeof answer === "string") return answer;
-    
+
     // Fallback for React elements - this is better than nothing
     // For specific docs like FomoGen, we might want to pass raw strings
     return "See page content for detailed answer.";

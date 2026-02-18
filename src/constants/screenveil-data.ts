@@ -8,7 +8,7 @@ export const SCREENVEIL_DATA = {
     primaryCTA: "Get it on Google Play",
     secondaryCTA: "Learn More",
     playStoreUrl:
-      "https://play.google.com/store/apps/details?id=com.screenveil",
+      "https://play.google.com/store/apps/details?id=com.screenveil.app",
     subtext: "10,000+ Downloads • 5.0 Star Rating • Zero Permissions",
   },
 

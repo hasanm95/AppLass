@@ -2,13 +2,13 @@ export default function StockAlertsPage() {
   return (
     <div className="space-y-20">
       <header>
-        <span className="mb-4 block text-[10px] font-black uppercase tracking-[0.3em] text-blue-600">
+        <span className="mb-4 block text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase">
           Scarcity Module
         </span>
         <h1 className="text-display mb-6 text-slate-900">
           Stock Alerts<span className="text-slate-300">.</span>
         </h1>
-        <p className="max-w-2xl text-xl font-medium leading-relaxed text-slate-500">
+        <p className="max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
           Inventory telemetry. Automate scarcity-driven conversion by surfacing
           real-time stock depletion events to high-intent shoppers.
         </p>
@@ -21,7 +21,7 @@ export default function StockAlertsPage() {
             Mechanism of Action
           </h2>
           <div className="rounded-[2.5rem] border border-slate-100 bg-[#FAFBFD] p-10 lg:p-14">
-            <p className="max-w-3xl text-lg font-medium leading-relaxed text-slate-600">
+            <p className="max-w-3xl text-lg leading-relaxed font-medium text-slate-600">
               The Stock Module maintains a low-latency connection with your
               Shopify inventory state. When SKU valuation drops below a
               configurable threshold, the engine injects a pulse-alert into the
@@ -29,7 +29,7 @@ export default function StockAlertsPage() {
               cycle through authentic scarcity.
             </p>
 
-            <div className="mt-12 overflow-hidden rounded-3xl border border-red-100 bg-red-50/50 p-8 text-center ring-4 ring-white shadow-xl shadow-red-500/5">
+            <div className="mt-12 overflow-hidden rounded-3xl border border-red-100 bg-red-50/50 p-8 text-center shadow-xl ring-4 shadow-red-500/5 ring-white">
               <span className="text-lg font-black text-red-600">
                 ⚠️ Only 3 left in stock!
               </span>
@@ -58,15 +58,15 @@ export default function StockAlertsPage() {
 
         {/* Operational Warning */}
         <div className="rounded-[2.5rem] bg-slate-900 p-12 text-white">
-          <h4 className="mb-4 text-sm font-black uppercase tracking-widest text-blue-400">
+          <h4 className="mb-4 text-sm font-black tracking-widest text-blue-400 uppercase">
             Inventory Protocol
           </h4>
-          <p className="text-xl font-medium leading-relaxed opacity-80">
-            <strong>Authenticity is Mandatory:</strong> Fomo Generator synchronizes with{" "}
-            <strong>REAL</strong> Shopify inventory values. Simulated scarcity (showing
-            low stock when inventory is high) is strictly inhibited to maintain
-            storefront integrity and compliance with consumer protection
-            guidelines.
+          <p className="text-xl leading-relaxed font-medium opacity-80">
+            <strong>Authenticity is Mandatory:</strong> Fomo Generator
+            synchronizes with <strong>REAL</strong> Shopify inventory values.
+            Simulated scarcity (showing low stock when inventory is high) is
+            strictly inhibited to maintain storefront integrity and compliance
+            with consumer protection guidelines.
           </p>
         </div>
       </div>
@@ -86,10 +86,10 @@ function FeatureCard({
   return (
     <div className="group rounded-[2.5rem] border border-slate-100 bg-white p-10 shadow-xl shadow-slate-200/20 transition-all hover:border-blue-100 hover:shadow-blue-500/5">
       <h3 className="mb-4 text-xl font-black text-slate-900">{title}</h3>
-      <p className="mb-8 text-lg font-medium leading-relaxed text-slate-500">
+      <p className="mb-8 text-lg leading-relaxed font-medium text-slate-500">
         {desc}
       </p>
-      <div className="inline-block rounded-full bg-slate-50 px-4 py-1 text-xs font-black uppercase tracking-wider text-slate-400 transition-colors group-hover:bg-blue-50 group-hover:text-blue-600">
+      <div className="inline-block rounded-full bg-slate-50 px-4 py-1 text-xs font-black tracking-wider text-slate-400 uppercase transition-colors group-hover:bg-blue-50 group-hover:text-blue-600">
         {meta}
       </div>
     </div>

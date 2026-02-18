@@ -16,7 +16,7 @@ export default function ScreenVeilPrivacyPage() {
       <Navbar
         customBranding={
           <div className="flex items-center gap-2">
-            <Smartphone className="h-5 w-5 text-blue-600 fill-blue-600" />
+            <Smartphone className="h-5 w-5 fill-blue-600 text-blue-600" />
             <span className="text-lg font-black tracking-tighter text-slate-900 uppercase">
               Screen<span className="text-blue-600">Veil</span>
             </span>
@@ -25,18 +25,18 @@ export default function ScreenVeilPrivacyPage() {
       />
 
       <main className="flex-grow">
-        <Section className="pb-32 pt-40 lg:pt-56">
+        <Section className="pt-40 pb-32 lg:pt-56">
           <div className="section-container">
             <div className="mx-auto max-w-4xl">
               {/* Header */}
               <header className="mb-20 text-center">
-                <span className="mb-4 block text-[10px] font-black uppercase tracking-[0.3em] text-blue-600">
+                <span className="mb-4 block text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase">
                   Legal Documentation
                 </span>
                 <h1 className="text-display mb-6 text-slate-900">
                   Privacy Policy<span className="text-slate-300">.</span>
                 </h1>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center text-sm font-bold text-slate-400">
+                <div className="flex flex-col justify-center gap-4 text-sm font-bold text-slate-400 sm:flex-row">
                   <span>Effective Date: {lastUpdated}</span>
                   <span className="hidden sm:inline">•</span>
                   <span>Last Updated: {lastUpdated}</span>
@@ -44,32 +44,38 @@ export default function ScreenVeilPrivacyPage() {
               </header>
 
               {/* Content */}
-              <div className="space-y-24 text-lg font-medium leading-relaxed text-slate-600">
+              <div className="space-y-24 text-lg leading-relaxed font-medium text-slate-600">
                 <section>
-                  <h2 className="text-3xl font-black text-slate-900 mb-8">Introduction</h2>
+                  <h2 className="mb-8 text-3xl font-black text-slate-900">
+                    Introduction
+                  </h2>
                   <div className="space-y-6">
                     <p>
-                      ScreenVeil is committed to protecting your privacy. This Privacy
-                      Policy explains how we collect, use, and safeguard your
-                      information when you use the ScreenVeil mobile application.
+                      ScreenVeil is committed to protecting your privacy. This
+                      Privacy Policy explains how we collect, use, and safeguard
+                      your information when you use the ScreenVeil mobile
+                      application.
                     </p>
                     <p>
                       ScreenVeil is a privacy-focused screen overlay application
-                      designed to help users protect their screen content from prying
-                      eyes by providing customizable screen overlays and privacy
-                      controls.
+                      designed to help users protect their screen content from
+                      prying eyes by providing customizable screen overlays and
+                      privacy controls.
                     </p>
                   </div>
                 </section>
 
                 <section>
-                  <h2 className="text-3xl font-black text-slate-900 mb-8">What We DON&apos;T Collect</h2>
-                  <div className="bg-green-50/50 border border-green-100 rounded-[2.5rem] p-12">
-                    <p className="text-green-900 font-bold mb-8 text-xl">
-                      ScreenVeil is designed with privacy as a core principle. We do not
-                      collect, store, or transmit any personal information, including:
+                  <h2 className="mb-8 text-3xl font-black text-slate-900">
+                    What We DON&apos;T Collect
+                  </h2>
+                  <div className="rounded-[2.5rem] border border-green-100 bg-green-50/50 p-12">
+                    <p className="mb-8 text-xl font-bold text-green-900">
+                      ScreenVeil is designed with privacy as a core principle.
+                      We do not collect, store, or transmit any personal
+                      information, including:
                     </p>
-                    <ul className="grid sm:grid-cols-2 gap-4 text-green-700 list-none text-base">
+                    <ul className="grid list-none gap-4 text-base text-green-700 sm:grid-cols-2">
                       {[
                         "Personal identification info",
                         "Screen content or screenshots",
@@ -79,7 +85,9 @@ export default function ScreenVeilPrivacyPage() {
                         "Contact lists or local files",
                       ].map((item, i) => (
                         <li key={i} className="flex gap-3">
-                          <span className="text-green-600 font-black shrink-0">·</span>
+                          <span className="shrink-0 font-black text-green-600">
+                            ·
+                          </span>
                           <span>{item}</span>
                         </li>
                       ))}
@@ -88,32 +96,43 @@ export default function ScreenVeilPrivacyPage() {
                 </section>
 
                 <section>
-                  <h2 className="text-3xl font-black text-slate-900 mb-8">How the App Works</h2>
+                  <h2 className="mb-8 text-3xl font-black text-slate-900">
+                    How the App Works
+                  </h2>
                   <p className="mb-10">
-                    The only information the App may access is processed locally for functional logic:
+                    The only information the App may access is processed locally
+                    for functional logic:
                   </p>
-                  <div className="grid md:grid-cols-2 gap-8">
-                    <div className="bg-blue-50/50 border border-blue-100 rounded-3xl p-8">
-                      <h4 className="text-xs font-black uppercase tracking-widest text-blue-600 mb-4">System Display</h4>
+                  <div className="grid gap-8 md:grid-cols-2">
+                    <div className="rounded-3xl border border-blue-100 bg-blue-50/50 p-8">
+                      <h4 className="mb-4 text-xs font-black tracking-widest text-blue-600 uppercase">
+                        System Display
+                      </h4>
                       <p className="text-sm font-bold text-slate-700">
-                        To provide overlay functionality, the App requires access to
-                        your device&apos;s display system to create screen overlays.
+                        To provide overlay functionality, the App requires
+                        access to your device&apos;s display system to create
+                        screen overlays.
                       </p>
                     </div>
-                    <div className="bg-blue-50/50 border border-blue-100 rounded-3xl p-8">
-                      <h4 className="text-xs font-black uppercase tracking-widest text-blue-600 mb-4">App Preferences</h4>
+                    <div className="rounded-3xl border border-blue-100 bg-blue-50/50 p-8">
+                      <h4 className="mb-4 text-xs font-black tracking-widest text-blue-600 uppercase">
+                        App Preferences
+                      </h4>
                       <p className="text-sm font-bold text-slate-700">
-                        Settings and preferences you configure within the App are
-                        stored locally on your device only.
+                        Settings and preferences you configure within the App
+                        are stored locally on your device only.
                       </p>
                     </div>
                   </div>
                 </section>
 
                 <section>
-                  <h2 className="text-3xl font-black text-slate-900 mb-8">Required Permissions</h2>
+                  <h2 className="mb-8 text-3xl font-black text-slate-900">
+                    Required Permissions
+                  </h2>
                   <p className="mb-10">
-                    ScreenVeil requires the following hardware-level permissions to function:
+                    ScreenVeil requires the following hardware-level permissions
+                    to function:
                   </p>
                   <div className="space-y-6">
                     {[
@@ -133,52 +152,85 @@ export default function ScreenVeilPrivacyPage() {
                         icon: "⚙️",
                       },
                     ].map((perm, i) => (
-                      <div key={i} className="flex items-center gap-6 p-8 border border-slate-100 rounded-3xl bg-slate-50/30">
-                        <div className="text-3xl shrink-0">{perm.icon}</div>
+                      <div
+                        key={i}
+                        className="flex items-center gap-6 rounded-3xl border border-slate-100 bg-slate-50/30 p-8"
+                      >
+                        <div className="shrink-0 text-3xl">{perm.icon}</div>
                         <div>
-                          <h4 className="font-black text-slate-900 uppercase tracking-tighter">{perm.title}</h4>
-                          <p className="text-base text-slate-500">{perm.desc}</p>
+                          <h4 className="font-black tracking-tighter text-slate-900 uppercase">
+                            {perm.title}
+                          </h4>
+                          <p className="text-base text-slate-500">
+                            {perm.desc}
+                          </p>
                         </div>
                       </div>
                     ))}
                   </div>
-                  <div className="bg-amber-50/50 border border-amber-100 rounded-3xl p-8 mt-8 flex gap-6 items-center">
-                     <Shield className="h-6 w-6 text-amber-600 shrink-0" />
-                    <p className="text-amber-800 text-sm font-medium">
-                      <strong>Important:</strong> These permissions are used solely for
-                      the App&apos;s core overlay functionality and are not used to
-                      collect or transmit any personal information.
+                  <div className="mt-8 flex items-center gap-6 rounded-3xl border border-amber-100 bg-amber-50/50 p-8">
+                    <Shield className="h-6 w-6 shrink-0 text-amber-600" />
+                    <p className="text-sm font-medium text-amber-800">
+                      <strong>Important:</strong> These permissions are used
+                      solely for the App&apos;s core overlay functionality and
+                      are not used to collect or transmit any personal
+                      information.
                     </p>
                   </div>
                 </section>
 
                 <section>
-                  <h2 className="text-3xl font-black text-slate-900 mb-8">Data Security</h2>
-                  <div className="grid md:grid-cols-2 gap-8">
+                  <h2 className="mb-8 text-3xl font-black text-slate-900">
+                    Data Security
+                  </h2>
+                  <div className="grid gap-8 md:grid-cols-2">
                     <div className="rounded-3xl border border-slate-100 p-8">
-                      <h4 className="text-xl font-black text-slate-900 mb-4">Local Storage</h4>
-                      <ul className="space-y-3 text-sm text-slate-500 list-none">
-                        <li className="flex gap-2"><span>•</span> All app data is stored locally on your device</li>
-                        <li className="flex gap-2"><span>•</span> We use Android&apos;s secure storage mechanisms</li>
-                        <li className="flex gap-2"><span>•</span> No data is stored on external servers</li>
+                      <h4 className="mb-4 text-xl font-black text-slate-900">
+                        Local Storage
+                      </h4>
+                      <ul className="list-none space-y-3 text-sm text-slate-500">
+                        <li className="flex gap-2">
+                          <span>•</span> All app data is stored locally on your
+                          device
+                        </li>
+                        <li className="flex gap-2">
+                          <span>•</span> We use Android&apos;s secure storage
+                          mechanisms
+                        </li>
+                        <li className="flex gap-2">
+                          <span>•</span> No data is stored on external servers
+                        </li>
                       </ul>
                     </div>
                     <div className="rounded-3xl border border-slate-100 p-8">
-                      <h4 className="text-xl font-black text-slate-900 mb-4">Security Measures</h4>
-                      <ul className="space-y-3 text-sm text-slate-500 list-none">
-                        <li className="flex gap-2"><span>•</span> Follows Android security best practices</li>
-                        <li className="flex gap-2"><span>•</span> Operates within Android&apos;s permission framework</li>
-                        <li className="flex gap-2"><span>•</span> No network connections for data collection</li>
+                      <h4 className="mb-4 text-xl font-black text-slate-900">
+                        Security Measures
+                      </h4>
+                      <ul className="list-none space-y-3 text-sm text-slate-500">
+                        <li className="flex gap-2">
+                          <span>•</span> Follows Android security best practices
+                        </li>
+                        <li className="flex gap-2">
+                          <span>•</span> Operates within Android&apos;s
+                          permission framework
+                        </li>
+                        <li className="flex gap-2">
+                          <span>•</span> No network connections for data
+                          collection
+                        </li>
                       </ul>
                     </div>
                   </div>
                 </section>
 
                 <section className="rounded-[2.5rem] border border-blue-100 bg-blue-50/30 p-12 text-center">
-                  <h2 className="mb-6 text-3xl font-black text-slate-900">Contact Engineering</h2>
-                  <p className="mb-10 text-slate-600 max-w-2xl mx-auto">
-                    If you have any questions, concerns, or suggestions regarding this
-                    Privacy Policy or the ScreenVeil App, please contact the logic lab.
+                  <h2 className="mb-6 text-3xl font-black text-slate-900">
+                    Contact Engineering
+                  </h2>
+                  <p className="mx-auto mb-10 max-w-2xl text-slate-600">
+                    If you have any questions, concerns, or suggestions
+                    regarding this Privacy Policy or the ScreenVeil App, please
+                    contact the logic lab.
                   </p>
                   <a
                     href="mailto:hasanmobarak25@gmail.com"
@@ -189,19 +241,29 @@ export default function ScreenVeilPrivacyPage() {
                 </section>
 
                 <section>
-                    <h2 className="text-3xl font-black text-slate-900 mb-8 text-center">Compliance</h2>
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
-                        <div className="p-4 bg-slate-50 rounded-2xl text-xs font-black uppercase tracking-widest text-slate-400">GDPR</div>
-                        <div className="p-4 bg-slate-50 rounded-2xl text-xs font-black uppercase tracking-widest text-slate-400">CCPA</div>
-                        <div className="p-4 bg-slate-50 rounded-2xl text-xs font-black uppercase tracking-widest text-slate-400">COPPA</div>
-                        <div className="p-4 bg-slate-50 rounded-2xl text-xs font-black uppercase tracking-widest text-slate-400">Android Privacy</div>
+                  <h2 className="mb-8 text-center text-3xl font-black text-slate-900">
+                    Compliance
+                  </h2>
+                  <div className="grid gap-4 text-center sm:grid-cols-2 lg:grid-cols-4">
+                    <div className="rounded-2xl bg-slate-50 p-4 text-xs font-black tracking-widest text-slate-400 uppercase">
+                      GDPR
                     </div>
+                    <div className="rounded-2xl bg-slate-50 p-4 text-xs font-black tracking-widest text-slate-400 uppercase">
+                      CCPA
+                    </div>
+                    <div className="rounded-2xl bg-slate-50 p-4 text-xs font-black tracking-widest text-slate-400 uppercase">
+                      COPPA
+                    </div>
+                    <div className="rounded-2xl bg-slate-50 p-4 text-xs font-black tracking-widest text-slate-400 uppercase">
+                      Android Privacy
+                    </div>
+                  </div>
                 </section>
 
-                <div className="pt-12 border-t border-slate-100 text-center">
+                <div className="border-t border-slate-100 pt-12 text-center">
                   <p className="text-sm text-slate-400 italic">
-                    This Privacy Policy is effective as of August 2025 and supersedes any
-                    previous privacy policies for ScreenVeil.
+                    This Privacy Policy is effective as of August 2025 and
+                    supersedes any previous privacy policies for ScreenVeil.
                   </p>
                 </div>
               </div>

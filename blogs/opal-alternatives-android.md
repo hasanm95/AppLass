@@ -61,24 +61,24 @@ I wanted a **Cognitive Firewall** built with mathematical precision. That's why 
 
 If you're on the fence between Opal and MindfulGuard, here's what the numbers actually say:
 
-| Feature | Opal | MindfulGuard |
-|---|---|---|
-| **Platform** | iOS-first, limited Android | Android-native |
-| **Blocking Method** | VPN-based (cloud routing) | System-level (local) |
-| **Privacy** | Cloud analytics, data collection | Zero telemetry, 100% offline |
-| **Battery Impact** | 4-6% daily (VPN overhead) | < 0.5% daily |
-| **Price** | $99/year | Free — Better Free Tier |
-| **Strict Mode** | Can be bypassed with uninstall | No exit logic — absolute |
-| **Permissions** | VPN + Usage Access + Account | Usage Access only |
-| **Works Offline** | No (cloud-dependent) | Yes, fully offline |
+| Feature             | Opal                             | MindfulGuard                 |
+| ------------------- | -------------------------------- | ---------------------------- |
+| **Platform**        | iOS-first, limited Android       | Android-native               |
+| **Blocking Method** | VPN-based (cloud routing)        | System-level (local)         |
+| **Privacy**         | Cloud analytics, data collection | Zero telemetry, 100% offline |
+| **Battery Impact**  | 4-6% daily (VPN overhead)        | < 0.5% daily                 |
+| **Price**           | $99/year                         | Free — Better Free Tier      |
+| **Strict Mode**     | Can be bypassed with uninstall   | No exit logic — absolute     |
+| **Permissions**     | VPN + Usage Access + Account     | Usage Access only            |
+| **Works Offline**   | No (cloud-dependent)             | Yes, fully offline           |
 
 > **🚀 Seen enough?** MindfulGuard is free, private, and built for Android.
-> 
+>
 > **[⬇️ Download MindfulGuard Free on Google Play](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard)**
 
 ## What Nobody Tells You About VPN-Based Blockers
 
-Most app-blocking reviews won't tell you *how* these tools actually work under the hood. Here's what matters:
+Most app-blocking reviews won't tell you _how_ these tools actually work under the hood. Here's what matters:
 
 **The VPN Architecture Problem**
 
@@ -86,7 +86,7 @@ Opal and several other blockers use a **local VPN tunnel** to intercept and filt
 
 1. **Constant Battery Drain.** A VPN keeps your device's network stack active 24/7, even when you're not using blocked apps. In our testing on a Pixel 8 Pro, Opal consumed between 4-6% of daily battery just by running in the background — that's equivalent to 30-45 minutes of lost screen time.
 
-2. **Privacy Paradox.** You're installing a focus app to *protect* your attention, but VPN-based blockers route your traffic through their filtering layer. Even if they claim not to log data, the architectural access is there. Opal's privacy policy acknowledges collecting usage analytics and "engagement data" to improve their product.
+2. **Privacy Paradox.** You're installing a focus app to _protect_ your attention, but VPN-based blockers route your traffic through their filtering layer. Even if they claim not to log data, the architectural access is there. Opal's privacy policy acknowledges collecting usage analytics and "engagement data" to improve their product.
 
 3. **Android Kill Problem.** Aggressive battery management on Samsung (One UI), Xiaomi (MIUI/HyperOS), and Oppo (ColorOS) devices frequently kills VPN-based services. Users on r/androidapps regularly report that Opal's blocking "just stops working" after the phone goes to sleep. This defeats the entire purpose.
 
@@ -99,7 +99,7 @@ MindfulGuard takes a fundamentally different approach. Instead of a VPN, it uses
 - **Survives aggressive battery optimization** through engineered exemption protocols for MIUI, One UI, and ColorOS
 - **Works in airplane mode** — because it doesn't need internet access at all
 
-This is why MindfulGuard is the only blocker in this list that actually *stays* blocking on a Xiaomi device overnight.
+This is why MindfulGuard is the only blocker in this list that actually _stays_ blocking on a Xiaomi device overnight.
 
 ## The Verdict
 

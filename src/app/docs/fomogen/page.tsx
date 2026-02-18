@@ -5,13 +5,13 @@ export default function DocsPage() {
   return (
     <div className="space-y-20">
       <header>
-        <span className="mb-4 block text-[10px] font-black uppercase tracking-[0.3em] text-blue-600">
+        <span className="mb-4 block text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase">
           User Guide
         </span>
         <h1 className="text-display mb-6 text-slate-900">
           Documentation<span className="text-slate-300">.</span>
         </h1>
-        <p className="max-w-2xl text-xl font-medium leading-relaxed text-slate-500">
+        <p className="max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
           High-performance Shopify engineering meets social psychology. Set up,
           optimize, and scale your growth loops with mathematical precision.
         </p>
@@ -91,7 +91,7 @@ export default function DocsPage() {
       {/* Support CTA */}
       <div className="rounded-[2.5rem] border border-slate-100 bg-[#FAFBFD] p-12">
         <h3 className="mb-4 text-2xl font-black text-slate-900">Need help?</h3>
-        <p className="mb-8 max-w-lg text-lg font-medium leading-relaxed text-slate-500">
+        <p className="mb-8 max-w-lg text-lg leading-relaxed font-medium text-slate-500">
           Can&apos;t find what you&apos;re looking for? Our logic lab team is
           available for deep support.
         </p>
@@ -118,7 +118,7 @@ function DocsCard({
   return (
     <Link
       href={href}
-      className="group rounded-3xl border border-slate-100 bg-white p-8 transition-all duration-500 hover:border-blue-500/20 hover:shadow-2xl hover:shadow-blue-500/5 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      className="group rounded-3xl border border-slate-100 bg-white p-8 transition-all duration-500 hover:border-blue-500/20 hover:shadow-2xl hover:shadow-blue-500/5 focus:ring-2 focus:ring-blue-500 focus:outline-none"
     >
       <h3 className="mb-3 text-lg font-black text-slate-900 transition-colors group-hover:text-blue-600">
         {title}
@@ -139,7 +139,7 @@ function FeatureGroup({
 }) {
   return (
     <div>
-      <h4 className="mb-6 text-xs font-black uppercase tracking-widest text-slate-400">
+      <h4 className="mb-6 text-xs font-black tracking-widest text-slate-400 uppercase">
         {title}
       </h4>
       <ul className="space-y-4">
@@ -147,7 +147,7 @@ function FeatureGroup({
           <li key={item.href}>
             <Link
               href={item.href}
-              className="text-lg font-bold text-slate-600 transition-all hover:text-blue-600 hover:pl-2"
+              className="text-lg font-bold text-slate-600 transition-all hover:pl-2 hover:text-blue-600"
             >
               {item.label}
             </Link>

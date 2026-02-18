@@ -2,13 +2,13 @@ export default function ConfigurationPage() {
   return (
     <div className="space-y-20">
       <header>
-        <span className="mb-4 block text-[10px] font-black uppercase tracking-[0.3em] text-blue-600">
+        <span className="mb-4 block text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase">
           Technical Reference
         </span>
         <h1 className="text-display mb-6 text-slate-900">
           Configuration<span className="text-slate-300">.</span>
         </h1>
-        <p className="max-w-2xl text-xl font-medium leading-relaxed text-slate-500">
+        <p className="max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
           Deep reference guide for tuning the FOMO engine. Every parameter is
           engineered for maximum performance and conversion stability.
         </p>
@@ -141,16 +141,16 @@ function ConfigSection({
       <h2 className="mb-8 text-2xl font-black text-slate-900">{title}</h2>
       <div className="overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-xl shadow-slate-200/20">
         <div className="overflow-x-auto">
-          <table className="w-full text-left border-collapse">
+          <table className="w-full border-collapse text-left">
             <thead>
               <tr className="border-b border-slate-100 bg-slate-50/50">
-                <th className="py-5 px-6 text-[10px] font-black uppercase tracking-widest text-slate-500">
+                <th className="px-6 py-5 text-[10px] font-black tracking-widest text-slate-500 uppercase">
                   Setting
                 </th>
-                <th className="py-5 px-6 text-[10px] font-black uppercase tracking-widest text-slate-500">
+                <th className="px-6 py-5 text-[10px] font-black tracking-widest text-slate-500 uppercase">
                   Default
                 </th>
-                <th className="py-5 px-6 text-[10px] font-black uppercase tracking-widest text-slate-500">
+                <th className="px-6 py-5 text-[10px] font-black tracking-widest text-slate-500 uppercase">
                   Description
                 </th>
               </tr>
@@ -158,13 +158,13 @@ function ConfigSection({
             <tbody className="divide-y divide-slate-50">
               {settings.map((s, i) => (
                 <tr key={i} className="transition-colors hover:bg-slate-50/50">
-                  <td className="py-5 px-6 text-sm font-bold text-slate-900">
+                  <td className="px-6 py-5 text-sm font-bold text-slate-900">
                     {s.name}
                   </td>
-                  <td className="py-5 px-6 text-sm font-mono text-blue-600">
+                  <td className="px-6 py-5 font-mono text-sm text-blue-600">
                     {s.default}
                   </td>
-                  <td className="py-5 px-6 text-sm font-medium text-slate-500">
+                  <td className="px-6 py-5 text-sm font-medium text-slate-500">
                     {s.desc}
                   </td>
                 </tr>

@@ -12,7 +12,7 @@ export default function FomoGenDocsLayout({
       <Navbar
         customBranding={
           <div className="flex items-center gap-2">
-            <Zap className="h-5 w-5 text-blue-600 fill-blue-600" />
+            <Zap className="h-5 w-5 fill-blue-600 text-blue-600" />
             <span className="text-lg font-black tracking-tighter text-slate-900">
               FOMO<span className="text-blue-600">GEN</span>
             </span>

@@ -167,15 +167,15 @@ export default function RootLayout({
                 {
                   "@type": "BreadcrumbList",
                   "@id": "https://applass.com/#breadcrumb",
-                  "itemListElement": [
+                  itemListElement: [
                     {
                       "@type": "ListItem",
-                      "position": 1,
-                      "name": "Home",
-                      "item": "https://applass.com"
-                    }
-                  ]
-                }
+                      position: 1,
+                      name: "Home",
+                      item: "https://applass.com",
+                    },
+                  ],
+                },
               ],
             }),
           }}

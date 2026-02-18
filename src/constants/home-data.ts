@@ -37,7 +37,7 @@ export const PRODUCTS = [
     },
     color: "green",
     cta: "Download Free",
-    ctaLink: "https://play.google.com/store/apps/details?id=com.screenveil.app",
+    ctaLink: "https://play.google.com/store/apps/details?id=com.screenveil.app.app",
     image: "/v1/apps/screenveil-feature.png",
     featured: true,
   },
@@ -104,4 +104,3 @@ export const PILLARS = [
     iconName: "Globe",
   },
 ];
-

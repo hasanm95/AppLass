@@ -4,7 +4,9 @@ import { MindfulHero } from "@/components/apps/mindful-guard/MindfulHero";
 import dynamic from "next/dynamic";
 
 const LogicSection = dynamic(() =>
-  import("@/components/apps/mindful-guard/LogicSection").then((mod) => mod.LogicSection)
+  import("@/components/apps/mindful-guard/LogicSection").then(
+    (mod) => mod.LogicSection
+  )
 );
 const DifferentiatorsSection = dynamic(() =>
   import("@/components/apps/mindful-guard/DifferentiatorsSection").then(
@@ -17,7 +19,9 @@ const ComparisonMatrix = dynamic(() =>
   )
 );
 const FAQSection = dynamic(() =>
-  import("@/components/apps/mindful-guard/FAQSection").then((mod) => mod.FAQSection)
+  import("@/components/apps/mindful-guard/FAQSection").then(
+    (mod) => mod.FAQSection
+  )
 );
 import { MINDFUL_GUARD_SCHEMA } from "@/constants/mindful-guard-data";
 

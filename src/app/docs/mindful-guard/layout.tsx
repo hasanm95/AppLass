@@ -12,7 +12,7 @@ export default function MindfulGuardDocsLayout({
       <Navbar
         customBranding={
           <div className="flex items-center gap-2">
-            <Shield className="h-5 w-5 text-slate-900 fill-slate-900" />
+            <Shield className="h-5 w-5 fill-slate-900 text-slate-900" />
             <span className="text-lg font-black tracking-tighter text-slate-900 uppercase">
               Mindful<span className="text-slate-400">Guard</span>
             </span>

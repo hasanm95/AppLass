@@ -29,7 +29,7 @@ export function DifferentiatorsSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-px bg-slate-200 md:grid-cols-3 border border-slate-200 shadow-2xl">
+        <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 shadow-2xl md:grid-cols-3">
           {MINDFUL_GUARD_DATA.differentiators.map((feature, idx) => {
             const Icon = ICON_MAP[feature.iconName] || HelpCircle;
             return (
@@ -43,25 +43,27 @@ export function DifferentiatorsSection() {
               >
                 {/* Hover Accent Bar */}
                 <div className="absolute top-0 left-0 h-1 w-0 bg-[#064E3B] transition-all duration-500 group-hover:w-full" />
-                
+
                 <div className="mb-10 flex h-16 w-16 items-center justify-center border border-slate-200 bg-slate-50 transition-all duration-500 group-hover:border-[#064E3B] group-hover:bg-[#064E3B] group-hover:text-white">
                   {feature.icon ? (
-                    <span className="text-3xl group-hover:hidden grayscale">{feature.icon}</span>
+                    <span className="text-3xl grayscale group-hover:hidden">
+                      {feature.icon}
+                    </span>
                   ) : null}
                   <Icon className="hidden h-8 w-8 group-hover:block" />
                   {!feature.icon && (
-                    <Icon className="h-8 w-8 group-hover:hidden text-slate-400" />
+                    <Icon className="h-8 w-8 text-slate-400 group-hover:hidden" />
                   )}
                 </div>
-                
+
                 <h3 className="mb-6 font-mono text-xs font-black tracking-[0.2em] text-[#064E3B] uppercase">
                   {feature.title}
                 </h3>
-                
-                <h4 className="mb-6 text-2xl font-black tracking-tight text-slate-900 leading-tight">
+
+                <h4 className="mb-6 text-2xl leading-tight font-black tracking-tight text-slate-900">
                   {feature.description}
                 </h4>
-                
+
                 <div className="mt-8 flex items-center gap-2 text-[9px] font-bold tracking-widest text-slate-300 uppercase">
                   <div className="h-px w-8 bg-slate-100" />
                   Verified Feature

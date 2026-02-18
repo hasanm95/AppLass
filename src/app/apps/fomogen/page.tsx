@@ -49,7 +49,6 @@ export const metadata: Metadata = {
 };
 
 export default function FomogenPage() {
-
   return (
     <div className="bg-white">
       <Navbar />
@@ -74,7 +73,8 @@ export default function FomogenPage() {
               },
               featureList:
                 "Social Proof Notifications, Stock Countdown Timer, Sticky Add-to-Cart, Free Shipping Bar",
-              screenshot: "https://applass.com/v1/apps/fomogen/comparison-hero.png",
+              screenshot:
+                "https://applass.com/v1/apps/fomogen/comparison-hero.png",
               image: "https://applass.com/v1/apps/fomogen-feature.png",
               description:
                 "FOMO Gen is an all-in-one Shopify app for social proof, urgency, and trust signals.",
@@ -114,7 +114,11 @@ export default function FomogenPage() {
         <TestimonialsSection />
         <PricingSection />
         <FomoGenCTA />
-        <FAQRegistrySection registryKey="FOMOGEN" variant="centered" className="bg-white py-24" />
+        <FAQRegistrySection
+          registryKey="FOMOGEN"
+          variant="centered"
+          className="bg-white py-24"
+        />
       </div>
 
       <Footer />

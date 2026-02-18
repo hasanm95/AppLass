@@ -33,13 +33,16 @@ export function MindfulHero() {
 
       <div className="section-container relative z-10">
         <div className="flex flex-col gap-12 lg:flex-row lg:items-end lg:justify-between">
-          <div className="max-w-4xl animate-fade-in-up">
+          <div className="animate-fade-in-up max-w-4xl">
             <div className="mb-8 inline-flex items-center gap-3 border border-emerald-900/10 bg-emerald-50/50 px-4 py-1.5 font-mono text-[11px] font-bold tracking-widest text-[#064E3B] uppercase">
               Neural Architecture Protection
             </div>
 
-            <h1 className="parallax-mindful-headline text-slate-950 font-black tracking-tighter sm:text-7xl md:text-8xl lg:text-9xl">
-              {MINDFUL_GUARD_DATA.hero.headline.split(" ").slice(0, 2).join(" ")}
+            <h1 className="parallax-mindful-headline font-black tracking-tighter text-slate-950 sm:text-7xl md:text-8xl lg:text-9xl">
+              {MINDFUL_GUARD_DATA.hero.headline
+                .split(" ")
+                .slice(0, 2)
+                .join(" ")}
               <br />
               <span className="text-[#064E3B] underline decoration-emerald-900/10 underline-offset-8">
                 {MINDFUL_GUARD_DATA.hero.headline.split(" ").slice(2).join(" ")}
@@ -67,11 +70,9 @@ export function MindfulHero() {
               className="h-16 w-full rounded-none border-2 border-slate-200 bg-transparent px-12 text-base font-bold text-slate-900 transition-all hover:border-[#064E3B] hover:bg-transparent hover:text-[#064E3B] sm:w-auto"
               asChild
             >
-              <a href="#logic">
-                {MINDFUL_GUARD_DATA.hero.secondaryCTA}
-              </a>
+              <a href="#logic">{MINDFUL_GUARD_DATA.hero.secondaryCTA}</a>
             </Button>
-            <div className="mt-4 font-mono text-[10px] text-slate-400 uppercase tracking-widest">
+            <div className="mt-4 font-mono text-[10px] tracking-widest text-slate-400 uppercase">
               [ Offline Architecture Enabled ]
             </div>
           </div>

@@ -5,13 +5,13 @@ export default function QuickStartPage() {
   return (
     <div className="space-y-20">
       <header>
-        <span className="mb-4 block text-[10px] font-black uppercase tracking-[0.3em] text-blue-600">
+        <span className="mb-4 block text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase">
           Onboarding
         </span>
         <h1 className="text-display mb-6 text-slate-900">
           Quick Start Guide<span className="text-slate-300">.</span>
         </h1>
-        <p className="max-w-2xl text-xl font-medium leading-relaxed text-slate-500">
+        <p className="max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
           Velocity to conversion. Activate the FOMO Engine and deploy your first
           conversion module in under 300 seconds.
         </p>
@@ -24,7 +24,7 @@ export default function QuickStartPage() {
             <h2 className="text-2xl font-black text-slate-900">
               Step 01: Activation
             </h2>
-            <span className="rounded-full bg-blue-50 px-4 py-1 text-[10px] font-black uppercase tracking-widest text-blue-600">
+            <span className="rounded-full bg-blue-50 px-4 py-1 text-[10px] font-black tracking-widest text-blue-600 uppercase">
               Est. 120s
             </span>
           </div>
@@ -32,7 +32,7 @@ export default function QuickStartPage() {
           <div className="mb-10 rounded-[2.5rem] bg-slate-900 p-10 text-white">
             <div className="mb-6 flex items-center gap-3 text-blue-400">
               <AlertCircle className="h-5 w-5" />
-              <span className="text-xs font-black uppercase tracking-widest">
+              <span className="text-xs font-black tracking-widest uppercase">
                 CRITICAL REQUIREMENT
               </span>
             </div>
@@ -70,7 +70,7 @@ export default function QuickStartPage() {
             <h2 className="text-2xl font-black text-slate-900">
               Step 02: Module Deployment
             </h2>
-            <span className="rounded-full bg-blue-50 px-4 py-1 text-[10px] font-black uppercase tracking-widest text-blue-600">
+            <span className="rounded-full bg-blue-50 px-4 py-1 text-[10px] font-black tracking-widest text-blue-600 uppercase">
               Est. 60s
             </span>
           </div>
@@ -105,7 +105,7 @@ export default function QuickStartPage() {
 
         {/* Diagnostic */}
         <div className="rounded-[2.5rem] border border-slate-100 bg-white p-12 shadow-xl shadow-slate-200/20">
-          <h4 className="mb-8 text-sm font-black uppercase tracking-widest text-blue-600">
+          <h4 className="mb-8 text-sm font-black tracking-widest text-blue-600 uppercase">
             Post-Deployment Diagnostic
           </h4>
           <ul className="space-y-4">
@@ -130,7 +130,7 @@ function StepItem({ num, text }: { num: string; text: string }) {
   return (
     <li className="flex gap-8">
       <span className="text-3xl font-black text-slate-200">{num}</span>
-      <p className="text-lg font-medium leading-relaxed text-slate-600">
+      <p className="text-lg leading-relaxed font-medium text-slate-600">
         {text}
       </p>
     </li>
@@ -155,7 +155,7 @@ function FeatureCard({
     >
       <div>
         <h3 className="mb-4 text-xl font-black text-slate-900">{title}</h3>
-        <p className="mb-8 text-lg font-medium leading-relaxed text-slate-500">
+        <p className="mb-8 text-lg leading-relaxed font-medium text-slate-500">
           {desc}
         </p>
       </div>
