@@ -6,6 +6,7 @@ import { RefObject } from "react";
 import { Portal } from "../ui/portal";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import { Globe } from "lucide-react";
+import type { Locale } from "@/i18n/config";
 
 type MobileMenuProps = {
   customBranding: React.ReactNode;
@@ -14,6 +15,7 @@ type MobileMenuProps = {
   isDark: boolean;
   menuRef: RefObject<HTMLDivElement | null>;
   translations?: Dictionary["nav"];
+  currentLocale?: Locale;
 };
 
 export function MobileMenu({
@@ -23,6 +25,7 @@ export function MobileMenu({
   isDark,
   menuRef,
   translations,
+  currentLocale = "en",
 }: MobileMenuProps) {
   const t = translations ?? {
     home: "Home",
@@ -45,19 +48,19 @@ export function MobileMenu({
         <div className="flex flex-col gap-8">
           {!customBranding && (
             <>
-              <MobileNavLink href="/" isDark={isDark} onClick={toggleMenu}>
+              <MobileNavLink href={`/${currentLocale}`} isDark={isDark} onClick={toggleMenu}>
                 {t.home}
               </MobileNavLink>
-              <MobileNavLink href="/about" isDark={isDark} onClick={toggleMenu}>
+              <MobileNavLink href={`/${currentLocale}/about`} isDark={isDark} onClick={toggleMenu}>
                 {t.about}
               </MobileNavLink>
-              <MobileNavLink href="/apps" isDark={isDark} onClick={toggleMenu}>
+              <MobileNavLink href={`/${currentLocale}/apps`} isDark={isDark} onClick={toggleMenu}>
                 {t.ecosystem}
               </MobileNavLink>
-              <MobileNavLink href="/docs" isDark={isDark} onClick={toggleMenu}>
+              <MobileNavLink href={`/${currentLocale}/docs`} isDark={isDark} onClick={toggleMenu}>
                 {t.docs}
               </MobileNavLink>
-              <MobileNavLink href="/blog" isDark={isDark} onClick={toggleMenu}>
+              <MobileNavLink href={`/${currentLocale}/blog`} isDark={isDark} onClick={toggleMenu}>
                 {t.blog}
               </MobileNavLink>
             </>
@@ -78,7 +81,7 @@ export function MobileMenu({
                     : "bg-slate-900 text-white hover:bg-slate-800"
                 )}
               >
-                <Link href="/about">{t.getInTouch}</Link>
+                <Link href={`/${currentLocale}/about`}>{t.getInTouch}</Link>
               </Button>
             )}
           </div>

@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans, JetBrains_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { i18nConfig } from "@/i18n/config";
 import "./globals.css";
 import "./tw-animate.css";
+
+export function generateStaticParams() {
+  return i18nConfig.locales.map((locale) => ({ locale }));
+}
 
 const ibmPlexSans = IBM_Plex_Sans({
   variable: "--font-sans",
@@ -82,14 +87,18 @@ export const viewport = {
   initialScale: 1,
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-}: Readonly<{
+  params,
+}: {
   children: React.ReactNode;
-}>) {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+
   return (
     <html
-      lang="en"
+      lang={locale}
       className={`${ibmPlexSans.variable} ${jetbrainsMono.variable}`}
     >
       <body className="font-sans antialiased">

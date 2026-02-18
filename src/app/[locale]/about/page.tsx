@@ -25,10 +25,15 @@ const iconMap = {
   Globe: Globe,
 };
 
-export default function AboutPage() {
+export default async function AboutPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
   return (
     <div className="min-h-screen bg-white">
-      <Navbar />
+      <Navbar currentLocale={locale as any} />
       <div className="pt-32">
         {/* Hero Methodology Section */}
         <Section className="bg-iridescent border-b border-slate-100 py-20 lg:py-32">

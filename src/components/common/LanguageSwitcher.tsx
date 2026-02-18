@@ -42,11 +42,17 @@ export function LanguageSwitcher({
     return () => window.removeEventListener("mousedown", handleClickOutside);
   }, [isOpen, onClose]);
 
+  const router = useRouter();
+  const pathname = usePathname();
+
   const switchLanguage = (locale: Locale) => {
-    // Note: Since we don't have route-based i18n middleware yet,
-    // this currently just simulates the UI. In a full implementation,
-    // we would redirect to the new locale-prefixed path.
-    console.log(`Switching to ${locale}`);
+    if (!pathname) return;
+
+    const segments = pathname.split("/");
+    segments[1] = locale;
+    const newPath = segments.join("/");
+    
+    router.push(newPath);
     onClose();
   };
 

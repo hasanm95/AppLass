@@ -120,7 +120,7 @@ export function Navbar({
           {/* Logo / Custom Branding */}
           <div className="flex items-center gap-6">
             <Link
-              href="/"
+              href={`/${currentLocale}`}
               className="group flex items-center gap-2 px-2"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -160,19 +160,19 @@ export function Navbar({
           {/* Navigation Links (Desktop) */}
           {!customBranding && (
             <div className="hidden items-center gap-10 md:flex">
-              <NavLink href="/" isDark={isDark}>
+              <NavLink href={`/${currentLocale}`} isDark={isDark}>
                 {t.home}
               </NavLink>
-              <NavLink href="/about" isDark={isDark}>
+              <NavLink href={`/${currentLocale}/about`} isDark={isDark}>
                 {t.about}
               </NavLink>
-              <NavLink href="/apps" isDark={isDark}>
+              <NavLink href={`/${currentLocale}/apps`} isDark={isDark}>
                 {t.ecosystem}
               </NavLink>
-              <NavLink href="/docs" isDark={isDark}>
+              <NavLink href={`/${currentLocale}/docs`} isDark={isDark}>
                 {t.docs}
               </NavLink>
-              <NavLink href="/blog" isDark={isDark}>
+              <NavLink href={`/${currentLocale}/blog`} isDark={isDark}>
                 {t.blog}
               </NavLink>
             </div>
@@ -194,7 +194,7 @@ export function Navbar({
                       : "bg-slate-900 text-white hover:bg-slate-800"
                   )}
                 >
-                  <Link href="/about">{t.getInTouch}</Link>
+                  <Link href={`/${currentLocale}/about`}>{t.getInTouch}</Link>
                 </Button>
               )}
             </div>
@@ -238,6 +238,7 @@ export function Navbar({
             toggleMenu={toggleMenu}
             isDark={isDark}
             translations={t}
+            currentLocale={currentLocale}
           />
         )}
 

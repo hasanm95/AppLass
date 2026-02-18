@@ -1,34 +1,25 @@
-import { Navbar, Footer } from "@/components/common";
-import {
-  Hero,
-  SocialProof,
-  ProductShowcase,
-  FoundersMoat,
-  SolutionsSection,
-  AnswerNuggets,
-} from "@/components/home";
-import { Metadata } from "next";
-import { getDictionary } from "@/i18n/get-dictionary";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Applass: Productivity & Privacy Solutions for the 2026 Digital World",
-  description:
-    "Home of Mindful Guard and ScreenVeil. Discover advanced Android focus tools and Shopify apps designed to protect your privacy and boost ROI.",
-};
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { i18nConfig } from "@/i18n/config";
 
-export default async function Home() {
-  const dictionary = await getDictionary("en");
+export default function RootPage() {
+  const router = useRouter();
+
+  useEffect(() => {
+    // Basic locale detection
+    const browserLang = navigator.language.split("-")[0];
+    const targetLocale = i18nConfig.locales.includes(browserLang as any)
+      ? browserLang
+      : i18nConfig.defaultLocale;
+
+    router.replace(`/${targetLocale}`);
+  }, [router]);
 
   return (
-    <>
-      <Navbar translations={dictionary.nav} currentLocale="en" />
-      <Hero translations={dictionary.home.hero} />
-      <SocialProof translations={dictionary.home.socialProof} />
-      <ProductShowcase translations={dictionary.home.productShowcase} />
-      <FoundersMoat translations={dictionary.home.foundersMoat} />
-      <SolutionsSection translations={dictionary.home.solutions} />
-      <AnswerNuggets translations={dictionary.home.answerNuggets} />
-      <Footer translations={dictionary.footer} />
-    </>
+    <div className="flex min-h-screen items-center justify-center bg-[#020617] text-white">
+      <div className="h-8 w-8 animate-spin rounded-full border-4 border-blue-600 border-t-transparent"></div>
+    </div>
   );
 }

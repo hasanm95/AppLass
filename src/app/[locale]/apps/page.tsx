@@ -12,10 +12,15 @@ export const metadata: Metadata = {
     "Explore our suite of logic-driven applications designed for elite performance and digital discipline.",
 };
 
-export default function AppsPage() {
+export default async function AppsPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
   return (
     <div className="min-h-screen bg-white">
-      <Navbar />
+      <Navbar currentLocale={locale as any} />
       <div className="pt-32">
         <Section className="bg-iridescent border-b border-slate-100 py-20 lg:py-32">
           <div className="section-container">
