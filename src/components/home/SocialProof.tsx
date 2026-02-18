@@ -1,13 +1,34 @@
 import { Section } from "@/components/common/Section";
+import type { Dictionary } from "@/i18n/get-dictionary";
 
-const METRICS = [
-  { value: "10K+", label: "Downloads" },
-  { value: "4.4★", label: "Play Store" },
-  { value: "<2.1KB", label: "Payload" },
-  { value: "Zero", label: "Telemetry" },
-];
+const defaultSocialProof = {
+  trustedBy: "Trusted by {count} users",
+  metrics: {
+    downloads: { value: "10K+", label: "Downloads" },
+    playStore: { value: "4.4★", label: "Play Store" },
+    payload: { value: "<2.1KB", label: "Payload" },
+    telemetry: { value: "Zero", label: "Telemetry" },
+  },
+  googlePlay: {
+    getItOn: "Get it on",
+    storeName: "Google Play",
+  },
+};
 
-export function SocialProof() {
+interface SocialProofProps {
+  translations?: Dictionary["home"]["socialProof"];
+}
+
+export function SocialProof({ translations }: SocialProofProps) {
+  const t = translations ?? defaultSocialProof;
+
+  const METRICS = [
+    { value: t.metrics.downloads.value, label: t.metrics.downloads.label },
+    { value: t.metrics.playStore.value, label: t.metrics.playStore.label },
+    { value: t.metrics.payload.value, label: t.metrics.payload.label },
+    { value: t.metrics.telemetry.value, label: t.metrics.telemetry.label },
+  ];
+
   return (
     <Section className="border-y border-[var(--border)] bg-[var(--muted)]/50 py-12 md:py-16">
       <div className="section-container">
@@ -17,11 +38,11 @@ export function SocialProof() {
           <div className="flex items-center gap-4">
             <span className="block h-px w-16 bg-[var(--foreground)]/20" />
             <span className="text-sm font-medium text-[var(--muted-foreground)]">
-              Trusted by{" "}
+              {t.trustedBy.replace("{count}", "10,000+").split("10,000+")[0]}
               <span className="font-bold text-[var(--foreground)]">
                 10,000+
-              </span>{" "}
-              users
+              </span>
+              {t.trustedBy.replace("{count}", "10,000+").split("10,000+")[1]}
             </span>
           </div>
 
@@ -56,10 +77,10 @@ export function SocialProof() {
             </svg>
             <div className="text-left">
               <span className="block text-[9px] font-bold tracking-wider text-[var(--muted-foreground)] uppercase">
-                Get it on
+                {t.googlePlay.getItOn}
               </span>
               <span className="block text-sm font-bold text-[var(--foreground)]">
-                Google Play
+                {t.googlePlay.storeName}
               </span>
             </div>
           </a>

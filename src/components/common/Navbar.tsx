@@ -6,18 +6,36 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
+import type { Dictionary } from "@/i18n/get-dictionary";
+
+const defaultNav = {
+  home: "Home",
+  about: "About",
+  ecosystem: "Ecosystem",
+  docs: "Docs",
+  blog: "Logic Lab",
+  getInTouch: "Get in Touch",
+  brandName: "AppLass",
+  logoAlt: "AppLass Logo",
+  mobileMenuFooter: "AppLass Logic System",
+  openMenu: "Open menu",
+  closeMenu: "Close menu",
+};
 
 interface NavbarProps {
   variant?: "light" | "dark";
   customBranding?: React.ReactNode;
   customCTA?: React.ReactNode;
+  translations?: Dictionary["nav"];
 }
 
 export function Navbar({
   variant = "light",
   customBranding,
   customCTA,
+  translations,
 }: NavbarProps) {
+  const t = translations ?? defaultNav;
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -103,7 +121,7 @@ export function Navbar({
             >
               <ExportedImage
                 src="/logo.png"
-                alt="AppLass Logo"
+                alt={t.logoAlt}
                 width={32}
                 height={32}
                 className="h-8 w-8 rounded-lg object-contain"
@@ -115,7 +133,7 @@ export function Navbar({
                     isDark ? "text-white" : "text-slate-900"
                   )}
                 >
-                  AppLass
+                  {t.brandName}
                 </span>
               )}
             </Link>
@@ -138,19 +156,19 @@ export function Navbar({
           {!customBranding && (
             <div className="hidden items-center gap-10 md:flex">
               <NavLink href="/" isDark={isDark}>
-                Home
+                {t.home}
               </NavLink>
               <NavLink href="/about" isDark={isDark}>
-                About
+                {t.about}
               </NavLink>
               <NavLink href="/apps" isDark={isDark}>
-                Ecosystem
+                {t.ecosystem}
               </NavLink>
               <NavLink href="/docs" isDark={isDark}>
-                Docs
+                {t.docs}
               </NavLink>
               <NavLink href="/blog" isDark={isDark}>
-                Logic Lab
+                {t.blog}
               </NavLink>
             </div>
           )}
@@ -171,7 +189,7 @@ export function Navbar({
                       : "bg-slate-900 text-white hover:bg-slate-800"
                   )}
                 >
-                  <Link href="/about">Get in Touch</Link>
+                  <Link href="/about">{t.getInTouch}</Link>
                 </Button>
               )}
             </div>
@@ -180,7 +198,7 @@ export function Navbar({
             <button
               aria-expanded={isMenuOpen}
               aria-controls="mobile-menu"
-              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              aria-label={isMenuOpen ? t.closeMenu : t.openMenu}
               onClick={toggleMenu}
               className={cn(
                 "focus-ring flex h-10 w-10 items-center justify-center rounded-xl md:hidden",
@@ -206,35 +224,35 @@ export function Navbar({
               {!customBranding && (
                 <>
                   <MobileNavLink href="/" isDark={isDark} onClick={toggleMenu}>
-                    Home
+                    {t.home}
                   </MobileNavLink>
                   <MobileNavLink
                     href="/about"
                     isDark={isDark}
                     onClick={toggleMenu}
                   >
-                    About
+                    {t.about}
                   </MobileNavLink>
                   <MobileNavLink
                     href="/apps"
                     isDark={isDark}
                     onClick={toggleMenu}
                   >
-                    Ecosystem
+                    {t.ecosystem}
                   </MobileNavLink>
                   <MobileNavLink
                     href="/docs"
                     isDark={isDark}
                     onClick={toggleMenu}
                   >
-                    Docs
+                    {t.docs}
                   </MobileNavLink>
                   <MobileNavLink
                     href="/blog"
                     isDark={isDark}
                     onClick={toggleMenu}
                   >
-                    Logic Lab
+                    {t.blog}
                   </MobileNavLink>
                 </>
               )}
@@ -254,7 +272,7 @@ export function Navbar({
                         : "bg-slate-900 text-white hover:bg-slate-800"
                     )}
                   >
-                    <Link href="/about">Get in Touch</Link>
+                    <Link href="/about">{t.getInTouch}</Link>
                   </Button>
                 )}
               </div>
@@ -262,7 +280,7 @@ export function Navbar({
 
             <div className="mt-auto flex justify-center pb-12">
               <span className="text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase">
-                AppLass Logic System
+                {t.mobileMenuFooter}
               </span>
             </div>
           </div>

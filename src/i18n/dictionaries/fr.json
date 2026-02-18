@@ -1,0 +1,158 @@
+{
+  "nav": {
+    "home": "",
+    "about": "",
+    "ecosystem": "",
+    "docs": "",
+    "blog": "",
+    "getInTouch": "",
+    "brandName": "AppLass",
+    "logoAlt": "",
+    "mobileMenuFooter": "",
+    "openMenu": "",
+    "closeMenu": ""
+  },
+  "footer": {
+    "tagline": "",
+    "sections": {
+      "solutions": "",
+      "resources": "",
+      "legal": ""
+    },
+    "links": {
+      "fomogen": "Fomogen",
+      "mindfulGuard": "Mindful Guard",
+      "screenveil": "ScreenVeil",
+      "ourEcosystem": "",
+      "documentation": "",
+      "theMethodology": "",
+      "theLogicLab": "",
+      "privacyPolicy": "",
+      "termsOfService": ""
+    },
+    "copyright": "",
+    "builtWith": ""
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "",
+      "headline": "",
+      "headlineAccent": "",
+      "headlineSubdued": "",
+      "subheading": "",
+      "stats": {
+        "downloads": { "value": "10K+", "label": "" },
+        "rating": { "value": "4.4★", "label": "" },
+        "payload": { "value": "<2.1KB", "label": "" }
+      },
+      "cta": {
+        "primary": "",
+        "secondary": ""
+      }
+    },
+    "socialProof": {
+      "trustedBy": "",
+      "metrics": {
+        "downloads": { "value": "10K+", "label": "" },
+        "playStore": { "value": "4.4★", "label": "" },
+        "payload": { "value": "<2.1KB", "label": "" },
+        "telemetry": { "value": "Zero", "label": "" }
+      },
+      "googlePlay": {
+        "getItOn": "",
+        "storeName": "Google Play"
+      }
+    },
+    "productShowcase": {
+      "sectionLabel": "",
+      "downloadsFeatured": "",
+      "ratingFeatured": ""
+    },
+    "foundersMoat": {
+      "sectionLabel": "",
+      "headline": "",
+      "headlineAccent": "",
+      "quote": ""
+    },
+    "solutions": {
+      "sectionLabel": "",
+      "headline": "",
+      "headlineAccent": "",
+      "description": "",
+      "descriptionHighlight": ""
+    },
+    "answerNuggets": {
+      "sectionLabel": "",
+      "headline": "",
+      "headlineAccent": "",
+      "expandAnswer": "",
+      "collapseAnswer": ""
+    }
+  },
+  "products": {
+    "screenveil": {
+      "name": "ScreenVeil",
+      "platform": "",
+      "tagline": "",
+      "description": "",
+      "cta": "",
+      "metrics": ["", ""]
+    },
+    "fomogen": {
+      "name": "FomoGen",
+      "platform": "",
+      "tagline": "",
+      "description": "",
+      "cta": "",
+      "metrics": ["", ""]
+    },
+    "mindfulGuard": {
+      "name": "Mindful Guard",
+      "platform": "",
+      "tagline": "",
+      "description": "",
+      "cta": "",
+      "metrics": ["", ""]
+    }
+  },
+  "pillars": {
+    "eliteExpertise": {
+      "title": "",
+      "label": "",
+      "description": ""
+    },
+    "logicalIntegrity": {
+      "title": "",
+      "label": "",
+      "description": ""
+    },
+    "radicalAccessibility": {
+      "title": "",
+      "label": "",
+      "description": ""
+    }
+  },
+  "solutionItems": {
+    "ecommerce": {
+      "title": "",
+      "description": ""
+    },
+    "digitalDiscipline": {
+      "title": "",
+      "description": ""
+    },
+    "accessibility": {
+      "title": "",
+      "description": ""
+    }
+  },
+  "metadata": {
+    "home": {
+      "title": "",
+      "description": ""
+    },
+    "siteName": "AppLass",
+    "ogTitle": "",
+    "ogDescription": ""
+  }
+}

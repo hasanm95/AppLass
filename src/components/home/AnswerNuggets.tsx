@@ -5,8 +5,22 @@ import { FAQSchema } from "@/components/common/FAQSchema";
 import { FAQ_REGISTRY } from "@/constants/faq-registry";
 import { Plus, Minus } from "lucide-react";
 import { useState } from "react";
+import type { Dictionary } from "@/i18n/get-dictionary";
 
-export function AnswerNuggets() {
+const defaultAnswerNuggets = {
+  sectionLabel: "FAQ",
+  headline: "Frequently Asked",
+  headlineAccent: "Questions",
+  expandAnswer: "Expand answer",
+  collapseAnswer: "Collapse answer",
+};
+
+interface AnswerNuggetsProps {
+  translations?: Dictionary["home"]["answerNuggets"];
+}
+
+export function AnswerNuggets({ translations }: AnswerNuggetsProps) {
+  const t = translations ?? defaultAnswerNuggets;
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
@@ -17,15 +31,15 @@ export function AnswerNuggets() {
         <div className="mb-16">
           <div className="mb-8 flex items-center gap-4">
             <span className="font-mono text-xs font-bold tracking-widest text-(--muted-foreground)/50 uppercase">
-              FAQ
+              {t.sectionLabel}
             </span>
             <span className="block h-px flex-1 bg-(--foreground)/20" />
           </div>
 
           <h2 className="mb-4 font-mono text-2xl leading-tight font-bold text-foreground md:text-3xl lg:text-4xl">
-            Frequently Asked
+            {t.headline}
             <br />
-            <span className="text-(--muted-foreground)/40">Questions</span>
+            <span className="text-(--muted-foreground)/40">{t.headlineAccent}</span>
           </h2>
         </div>
 
@@ -51,7 +65,7 @@ export function AnswerNuggets() {
                   <button
                     className="flex h-8 w-8 shrink-0 items-center justify-center border border-border transition-all duration-200 group-hover:border-cta"
                     aria-expanded={isOpen}
-                    aria-label={isOpen ? "Collapse answer" : "Expand answer"}
+                    aria-label={isOpen ? t.collapseAnswer : t.expandAnswer}
                   >
                     {isOpen ? (
                       <Minus className="h-4 w-4 text-cta" />

@@ -2,8 +2,20 @@ import { Section } from "@/components/common/Section";
 import { PRODUCTS } from "@/constants/home-data";
 import { ExternalLink } from "lucide-react";
 import ExportedImage from "next-image-export-optimizer";
+import type { Dictionary } from "@/i18n/get-dictionary";
 
-export function ProductShowcase() {
+const defaultProductShowcase = {
+  sectionLabel: "PRODUCTS",
+  downloadsFeatured: "downloads",
+  ratingFeatured: "rating",
+};
+
+interface ProductShowcaseProps {
+  translations?: Dictionary["home"]["productShowcase"];
+}
+
+export function ProductShowcase({ translations }: ProductShowcaseProps) {
+  const t = translations ?? defaultProductShowcase;
   const featuredProduct = PRODUCTS[0]; // ScreenVeil
   const otherProducts = PRODUCTS.slice(1);
 
@@ -16,7 +28,7 @@ export function ProductShowcase() {
         {/* Section Header */}
         <div className="mb-16 flex items-center gap-4 md:mb-20">
           <span className="font-mono text-xs font-bold tracking-widest text-[var(--muted-foreground)]/50 uppercase">
-            PRODUCTS
+            {t.sectionLabel}
           </span>
           <span className="block h-px flex-1 bg-[var(--foreground)]/20" />
         </div>
@@ -55,7 +67,7 @@ export function ProductShowcase() {
                     {featuredProduct.stats?.downloads}
                   </span>
                   <span className="text-sm text-[var(--muted-foreground)]">
-                    downloads
+                    {t.downloadsFeatured}
                   </span>
                 </div>
                 <div className="flex items-baseline gap-2">
@@ -63,7 +75,7 @@ export function ProductShowcase() {
                     {featuredProduct.stats?.rating}★
                   </span>
                   <span className="text-sm text-[var(--muted-foreground)]">
-                    rating
+                    {t.ratingFeatured}
                   </span>
                 </div>
               </div>

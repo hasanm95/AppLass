@@ -1,6 +1,14 @@
 import { Section } from "@/components/common/Section";
 import { PILLARS } from "@/constants/home-data";
 import { Zap, Calculator, Globe } from "lucide-react";
+import type { Dictionary } from "@/i18n/get-dictionary";
+
+const defaultFoundersMoat = {
+  sectionLabel: "PHILOSOPHY",
+  headline: "Built Different",
+  headlineAccent: "by Logic.",
+  quote: '"AppLass apps are developed using mathematical optimization techniques to minimize JavaScript execution time."',
+};
 
 const ICONS = {
   Zap,
@@ -8,7 +16,8 @@ const ICONS = {
   Globe,
 };
 
-export function FoundersMoat() {
+export function FoundersMoat({ translations }: { translations?: Dictionary["home"]["foundersMoat"] }) {
+  const t = translations ?? defaultFoundersMoat;
   return (
     <Section
       id="about"
@@ -19,24 +28,23 @@ export function FoundersMoat() {
         <div className="mb-16 md:mb-24">
           <div className="mb-8 flex items-center gap-4">
             <span className="font-mono text-xs font-bold tracking-widest text-[var(--muted-foreground)]/50 uppercase">
-              PHILOSOPHY
+              {t.sectionLabel}
             </span>
             <span className="block h-px flex-1 bg-[var(--foreground)]/20" />
           </div>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <h2 className="font-mono text-2xl leading-tight font-bold text-[var(--foreground)] md:text-3xl lg:text-4xl">
-              Built Different
+              {t.headline}
               <br />
               <span className="text-[var(--muted-foreground)]/40">
-                by Logic.
+                {t.headlineAccent}
               </span>
             </h2>
 
             <div className="flex items-end">
               <p className="max-w-md border-l-2 border-[var(--cta)]/30 pl-6 text-lg leading-relaxed text-[var(--muted-foreground)] italic">
-                &quot;AppLass apps are developed using mathematical optimization
-                techniques to minimize JavaScript execution time.&quot;
+                {t.quote}
               </p>
             </div>
           </div>

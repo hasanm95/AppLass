@@ -1,32 +1,59 @@
 import Link from "next/link";
 import ExportedImage from "next-image-export-optimizer";
 import { cn } from "@/lib/utils";
+import type { Dictionary } from "@/i18n/get-dictionary";
 
-const footerLinks = {
-  solutions: [
-    { label: "Fomogen", href: "/apps/fomogen" },
-    { label: "Mindful Guard", href: "/apps/mindful-guard" },
-    { label: "ScreenVeil", href: "/apps/screenveil" },
-  ],
-  resources: [
-    { label: "Our Ecosystem", href: "/apps" },
-    { label: "Documentation", href: "/docs" },
-    { label: "The Methodology", href: "/about" },
-    { label: "The Logic Lab (Blog)", href: "/blog" },
-  ],
-  legal: [
-    { label: "Privacy Policy", href: "/legal/fomogen/privacy" },
-    { label: "Terms of Service", href: "/legal/fomogen/terms" },
-  ],
+const defaultFooter = {
+  tagline:
+    "Logic-driven software where mathematical precision meets human-centric design.",
+  sections: {
+    solutions: "Solutions",
+    resources: "Resources",
+    legal: "Legal",
+  },
+  links: {
+    fomogen: "Fomogen",
+    mindfulGuard: "Mindful Guard",
+    screenveil: "ScreenVeil",
+    ourEcosystem: "Our Ecosystem",
+    documentation: "Documentation",
+    theMethodology: "The Methodology",
+    theLogicLab: "The Logic Lab (Blog)",
+    privacyPolicy: "Privacy Policy",
+    termsOfService: "Terms of Service",
+  },
+  copyright: "© {year} AppLass. All rights reserved.",
+  builtWith: "Built with ∞ logical precision",
 };
 
 interface FooterProps {
   variant?: "light" | "dark";
+  translations?: Dictionary["footer"];
 }
 
-export function Footer({ variant = "light" }: FooterProps) {
+export function Footer({ variant = "light", translations }: FooterProps) {
+  const t = translations ?? defaultFooter;
   const currentYear = new Date().getFullYear();
   const isDark = variant === "dark";
+
+  const footerLinks = {
+    solutions: [
+      { label: t.links.fomogen, href: "/apps/fomogen" },
+      { label: t.links.mindfulGuard, href: "/apps/mindful-guard" },
+      { label: t.links.screenveil, href: "/apps/screenveil" },
+    ],
+    resources: [
+      { label: t.links.ourEcosystem, href: "/apps" },
+      { label: t.links.documentation, href: "/docs" },
+      { label: t.links.theMethodology, href: "/about" },
+      { label: t.links.theLogicLab, href: "/blog" },
+    ],
+    legal: [
+      { label: t.links.privacyPolicy, href: "/legal/fomogen/privacy" },
+      { label: t.links.termsOfService, href: "/legal/fomogen/terms" },
+    ],
+  };
+
 
   return (
     <footer
@@ -63,8 +90,7 @@ export function Footer({ variant = "light" }: FooterProps) {
                 isDark ? "text-slate-400" : "text-slate-600"
               )}
             >
-              Logic-driven software where mathematical precision meets
-              human-centric design.
+              {t.tagline}
             </p>
           </div>
 
@@ -76,7 +102,7 @@ export function Footer({ variant = "light" }: FooterProps) {
                 isDark ? "text-white" : "text-slate-900"
               )}
             >
-              Solutions
+              {t.sections.solutions}
             </h3>
             <ul className="space-y-3">
               {footerLinks.solutions.map((link) => (
@@ -97,7 +123,7 @@ export function Footer({ variant = "light" }: FooterProps) {
                 isDark ? "text-white" : "text-slate-900"
               )}
             >
-              Resources
+              {t.sections.resources}
             </h3>
             <ul className="space-y-3">
               {footerLinks.resources.map((link) => (
@@ -118,7 +144,7 @@ export function Footer({ variant = "light" }: FooterProps) {
                 isDark ? "text-white" : "text-slate-900"
               )}
             >
-              Legal
+              {t.sections.legal}
             </h3>
             <ul className="space-y-3">
               {footerLinks.legal.map((link) => (
@@ -145,7 +171,7 @@ export function Footer({ variant = "light" }: FooterProps) {
               isDark ? "text-slate-500" : "text-slate-600"
             )}
           >
-            © {currentYear} AppLass. All rights reserved.
+            {t.copyright.replace("{year}", String(currentYear))}
           </p>
           <p
             className={cn(
@@ -153,11 +179,7 @@ export function Footer({ variant = "light" }: FooterProps) {
               isDark ? "text-slate-600" : "text-slate-400"
             )}
           >
-            Built with{" "}
-            <span className="text-blue-600" aria-label="precision">
-              ∞
-            </span>{" "}
-            logical precision
+            {t.builtWith}
           </p>
         </div>
       </div>
