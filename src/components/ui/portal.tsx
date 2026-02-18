@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 import { createPortal } from "react-dom";
 
 interface PortalProps {
@@ -8,18 +8,19 @@ interface PortalProps {
   containerId?: string;
 }
 
-export function Portal({ children, containerId }: PortalProps) {
-  const [mounted, setMounted] = useState(false);
+const subscribe = () => () => {};
 
-  useEffect(() => {
-    setMounted(true);
-    return () => setMounted(false);
-  }, []); // eslint-disable-line react-hooks/set-state-in-effect
+export function Portal({ children, containerId }: PortalProps) {
+  const mounted = useSyncExternalStore(
+    subscribe,
+    () => true,   // client snapshot
+    () => false,  // server snapshot
+  );
 
   if (!mounted) return null;
 
-  const container = containerId 
-    ? document.getElementById(containerId) 
+  const container = containerId
+    ? document.getElementById(containerId)
     : document.body;
 
   if (!container) return null;
