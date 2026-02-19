@@ -12,7 +12,7 @@ const DOCS_CONFIG: Record<
       category: "Getting Started",
       items: [
         { name: "Introduction", href: "/docs/fomogen" },
-        { name: "Quick Start", href: "/docs/fomogen/features/quick-start" },
+        { name: "Quick Start", href: "/docs/fomogen/quick-start" },
         { name: "Configuration", href: "/docs/fomogen/configuration" },
         { name: "FAQ", href: "/docs/fomogen/faq" },
       ],
@@ -22,23 +22,23 @@ const DOCS_CONFIG: Record<
       items: [
         {
           name: "Purchase Notifications",
-          href: "/docs/fomogen/features/purchase-notifications",
+          href: "/docs/fomogen/purchase-notifications",
         },
         {
           name: "Countdown Timers",
-          href: "/docs/fomogen/features/countdown-timers",
+          href: "/docs/fomogen/countdown-timers",
         },
-        { name: "Stock Alerts", href: "/docs/fomogen/features/stock-alerts" },
+        { name: "Stock Alerts", href: "/docs/fomogen/stock-alerts" },
         {
           name: "Social Proof Badges",
-          href: "/docs/fomogen/features/social-proof-badges",
+          href: "/docs/fomogen/social-proof-badges",
         },
-        { name: "Exit Intent", href: "/docs/fomogen/features/exit-intent" },
+        { name: "Exit Intent", href: "/docs/fomogen/exit-intent" },
         {
           name: "Progress Indicators",
-          href: "/docs/fomogen/features/progress-indicators",
+          href: "/docs/fomogen/progress-indicators",
         },
-        { name: "Sticky Cart", href: "/docs/fomogen/features/sticky-cart" },
+        { name: "Sticky Cart", href: "/docs/fomogen/sticky-cart" },
         { name: "Trust Badges", href: "/docs/fomogen/trust-badges" },
       ],
     },
