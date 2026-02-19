@@ -19,7 +19,7 @@ export default function DocsPage() {
 
       <div className="grid gap-6 sm:grid-cols-2">
         <DocsCard
-          href="/docs/fomogen/features/quick-start"
+          href="/docs/fomogen/quick-start"
           title="⚡ Quick Start"
           description="Go from zero to conversion-ready in under 5 minutes."
         />
@@ -41,11 +41,11 @@ export default function DocsPage() {
             items={[
               {
                 label: "Purchase Notifications",
-                href: "/docs/fomogen/features/purchase-notifications",
+                href: "/docs/fomogen/purchase-notifications",
               },
               {
                 label: "Social Proof Badges",
-                href: "/docs/fomogen/features/social-proof-badges",
+                href: "/docs/fomogen/social-proof-badges",
               },
               {
                 label: "Trust Badges",
@@ -59,15 +59,15 @@ export default function DocsPage() {
             items={[
               {
                 label: "Exit Intent Popups",
-                href: "/docs/fomogen/features/exit-intent",
+                href: "/docs/fomogen/exit-intent",
               },
               {
                 label: "Countdown Timers",
-                href: "/docs/fomogen/features/countdown-timers",
+                href: "/docs/fomogen/countdown-timers",
               },
               {
                 label: "Stock Alerts",
-                href: "/docs/fomogen/features/stock-alerts",
+                href: "/docs/fomogen/stock-alerts",
               },
             ]}
           />
@@ -77,11 +77,11 @@ export default function DocsPage() {
             items={[
               {
                 label: "Progress Indicators",
-                href: "/docs/fomogen/features/progress-indicators",
+                href: "/docs/fomogen/progress-indicators",
               },
               {
                 label: "Sticky Cart",
-                href: "/docs/fomogen/features/sticky-cart",
+                href: "/docs/fomogen/sticky-cart",
               },
             ]}
           />

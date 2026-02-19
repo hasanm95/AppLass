@@ -5,7 +5,7 @@ AppLass is an elite-tier software engineering studio specializing in high-perfor
 ## Featured Products
 
 ### ScreenVeil: Our High-Authority Utility
-[ScreenVeil on Google Play](https://play.google.com/store/apps/details?id=com.screenveil.app.app)
+[ScreenVeil on Google Play](https://play.google.com/store/apps/details?id=com.screenveil.app)
 
 An Android battery-saver for AMOLED/OLED displays. Saves 60%+ battery life while listening to videos by using a pure black overlay.
 

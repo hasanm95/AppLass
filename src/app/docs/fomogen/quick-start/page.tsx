@@ -79,25 +79,25 @@ export default function QuickStartPage() {
             <FeatureCard
               title="Boost AOV"
               desc="Visualize shipping thresholds to gamify the cart experience."
-              link="/docs/fomogen/features/progress-indicators"
+              link="/docs/fomogen/progress-indicators"
               cta="Deploy Bar"
             />
             <FeatureCard
               title="Social Trust"
               desc="Infect your store with authentic conversion telemetry."
-              link="/docs/fomogen/features/purchase-notifications"
+              link="/docs/fomogen/purchase-notifications"
               cta="Deploy Proof"
             />
             <FeatureCard
               title="Reduce Friction"
               desc="Maintain persistent CTAs via the fixed-layer sticky bar."
-              link="/docs/fomogen/features/sticky-cart"
+              link="/docs/fomogen/sticky-cart"
               cta="Deploy Utility"
             />
             <FeatureCard
               title="Drive Urgency"
               desc="Deploy high-latency stock alerts and countdown timers."
-              link="/docs/fomogen/features/stock-alerts"
+              link="/docs/fomogen/stock-alerts"
               cta="Deploy Scarcity"
             />
           </div>

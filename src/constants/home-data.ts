@@ -37,7 +37,7 @@ export const PRODUCTS = [
     },
     color: "green",
     cta: "Download Free",
-    ctaLink: "https://play.google.com/store/apps/details?id=com.screenveil.app.app",
+    ctaLink: "https://play.google.com/store/apps/details?id=com.screenveil.app",
     image: "/v1/apps/screenveil-feature.png",
     featured: true,
   },

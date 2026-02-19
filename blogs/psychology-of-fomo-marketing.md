@@ -14,7 +14,7 @@ faqs:
   - question: "Is FOMO marketing illegal?"
     answer: "It is legal if it uses truthful data. However, 'Fake Scarcity' (like timers that reset on refresh) can violate consumer protection laws and destroys long-term brand trust. FomoGen only displays real inventory data synced from your Shopify store."
   - question: "How many reviews do I need for a product to look trustworthy?"
-    answer: "Products with 5 or more reviews are 270% more likely to be purchased than those with zero reviews. Combine reviews with [FomoGen's social proof badges](/docs/fomogen/features/social-proof-badges) for maximum trust signals."
+    answer: "Products with 5 or more reviews are 270% more likely to be purchased than those with zero reviews. Combine reviews with [FomoGen's social proof badges](/docs/fomogen/social-proof-badges) for maximum trust signals."
 ---
 
 Have you ever booked a hotel room just because the website said, "Only 1 room left at this price!"? You didn't do that because you were logical. You did it because of a biological trigger called **Loss Aversion**.
