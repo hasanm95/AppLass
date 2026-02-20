@@ -6,16 +6,20 @@ import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { MobileMenu } from "./mobile-menu";
 
+import type { Dictionary } from "@/i18n/get-dictionary";
+
 interface NavbarProps {
   variant?: "light" | "dark";
   customBranding?: React.ReactNode;
   customCTA?: React.ReactNode;
+  translations?: Dictionary["nav"];
 }
 
 export function Navbar({
   variant = "light",
   customBranding,
   customCTA,
+  translations,
 }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -135,22 +139,22 @@ export function Navbar({
           </div>
 
           {/* Navigation Links (Desktop) */}
-          {!customBranding && (
+          {!customBranding && translations && (
             <div className="hidden items-center gap-10 md:flex">
               <NavLink href="/" isDark={isDark}>
-                Home
+                {translations.home}
               </NavLink>
               <NavLink href="/about" isDark={isDark}>
-                About
+                {translations.about}
               </NavLink>
               <NavLink href="/apps" isDark={isDark}>
-                Ecosystem
+                {translations.ecosystem}
               </NavLink>
               <NavLink href="/docs" isDark={isDark}>
-                Docs
+                {translations.docs}
               </NavLink>
               <NavLink href="/blog" isDark={isDark}>
-                Logic Lab
+                {translations.blog}
               </NavLink>
             </div>
           )}
@@ -171,7 +175,9 @@ export function Navbar({
                       : "bg-slate-900 text-white hover:bg-slate-800"
                   )}
                 >
-                  <a id="nav-cta" href="/about">Get in Touch</a>
+                  <a id="nav-cta" href="/about">
+                    {translations?.getInTouch || "Get in Touch"}
+                  </a>
                 </Button>
               )}
             </div>

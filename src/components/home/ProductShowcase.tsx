@@ -1,9 +1,13 @@
 import { Section } from "@/components/common/Section";
 import { PRODUCTS } from "@/constants/home-data";
 import { ExternalLink } from "lucide-react";
+import type { Dictionary } from "@/i18n/get-dictionary";
 
+interface ProductShowcaseProps {
+  translations?: Dictionary["home"]["productShowcase"];
+}
 
-export function ProductShowcase() {
+export function ProductShowcase({ translations }: ProductShowcaseProps) {
   const featuredProduct = PRODUCTS[0]; // ScreenVeil
   const otherProducts = PRODUCTS.slice(1);
 
@@ -16,7 +20,7 @@ export function ProductShowcase() {
         {/* Section Header */}
         <div className="mb-16 flex items-center gap-4 md:mb-20">
           <span className="font-mono text-xs font-bold tracking-widest text-[var(--muted-foreground)]/50 uppercase">
-            PRODUCTS
+            {translations?.sectionLabel || "PRODUCTS"}
           </span>
           <span className="block h-px flex-1 bg-[var(--foreground)]/20" />
         </div>

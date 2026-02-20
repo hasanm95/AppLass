@@ -1,6 +1,7 @@
 import { Section } from "@/components/common/Section";
 import { SOLUTIONS } from "@/constants/home-data";
 import { ShoppingBag, Clock, Users } from "lucide-react";
+import type { Dictionary } from "@/i18n/get-dictionary";
 
 const ICONS = {
   ShoppingBag,
@@ -8,7 +9,11 @@ const ICONS = {
   Users,
 };
 
-export function SolutionsSection() {
+interface SolutionsSectionProps {
+  translations?: Dictionary["home"]["solutions"];
+}
+
+export function SolutionsSection({ translations }: SolutionsSectionProps) {
   return (
     <Section
       id="solutions"
@@ -19,27 +24,39 @@ export function SolutionsSection() {
         <div className="mb-16 md:mb-24">
           <div className="mb-8 flex items-center gap-4">
             <span className="font-mono text-xs font-bold tracking-widest text-[var(--muted-foreground)]/50 uppercase">
-              SOLUTIONS
+              {translations?.sectionLabel || "SOLUTIONS"}
             </span>
             <span className="block h-px flex-1 bg-[var(--foreground)]/20" />
           </div>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <h2 className="font-mono text-2xl leading-tight font-bold text-[var(--foreground)] md:text-3xl lg:text-4xl">
-              Logical
+              {translations?.headline || "Logical"}
               <br />
               <span className="text-[var(--muted-foreground)]/40">
-                Solutions.
+                {translations?.headlineAccent || "Solutions."}
               </span>
             </h2>
 
             <div className="flex items-end">
               <p className="max-w-md text-lg leading-relaxed text-[var(--muted-foreground)]">
-                We don&apos;t just build features; we engineer{" "}
-                <span className="border-b-2 border-[var(--cta)]/40 font-semibold text-[var(--foreground)]">
-                  systemic improvements
-                </span>{" "}
-                that solve core business logic bottlenecks.
+                {translations?.description ? (
+                  <>
+                    {translations.description.split("{highlight}")[0]}
+                    <span className="border-b-2 border-[var(--cta)]/40 font-semibold text-[var(--foreground)]">
+                      {translations.descriptionHighlight}
+                    </span>
+                    {translations.description.split("{highlight}")[1]}
+                  </>
+                ) : (
+                  <>
+                    We don&apos;t just build features; we engineer{" "}
+                    <span className="border-b-2 border-[var(--cta)]/40 font-semibold text-[var(--foreground)]">
+                      systemic improvements
+                    </span>{" "}
+                    that solve core business logic bottlenecks.
+                  </>
+                )}
               </p>
             </div>
           </div>
