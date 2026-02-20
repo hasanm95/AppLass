@@ -1,7 +1,7 @@
 import { Section } from "@/components/common/Section";
 import { PRODUCTS } from "@/constants/home-data";
 import { ExternalLink } from "lucide-react";
-import ExportedImage from "next-image-export-optimizer";
+
 
 export function ProductShowcase() {
   const featuredProduct = PRODUCTS[0]; // ScreenVeil
@@ -87,7 +87,7 @@ export function ProductShowcase() {
               className="relative flex items-center justify-center transition-transform hover:scale-[1.02]"
             >
               <div className="relative w-full overflow-hidden rounded-2xl border border-[var(--border)] bg-gradient-to-br from-green-50 to-green-100 p-12">
-                <ExportedImage
+                <img
                   src={featuredProduct.image}
                   alt={featuredProduct.name}
                   width={600}
@@ -127,7 +127,7 @@ export function ProductShowcase() {
 
                 {/* Image */}
                 <div className="mb-6 overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--muted)]/30 p-6">
-                  <ExportedImage
+                  <img
                     src={product.image}
                     alt={product.name}
                     width={600}

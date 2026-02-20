@@ -9,7 +9,7 @@ import {
   HelpCircle,
   type LucideIcon,
 } from "lucide-react";
-import ExportedImage from "next-image-export-optimizer";
+
 
 const ICON_MAP: Record<string, LucideIcon> = {
   ShoppingCart,
@@ -50,11 +50,10 @@ export function CoreFeatures() {
                 <div className="relative w-full flex-1">
                   {feature.image ? (
                     <div className="relative aspect-video overflow-hidden rounded-[2rem] border border-slate-100 bg-slate-50 shadow-2xl md:rounded-[3rem]">
-                      <ExportedImage
+                      <img
                         src={feature.image}
                         alt={feature.title}
-                        fill
-                        className="object-cover"
+                        className="absolute inset-0 h-full w-full object-cover"
                       />
                     </div>
                   ) : (

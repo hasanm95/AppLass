@@ -1,4 +1,4 @@
-import Link from "next/link";
+
 
 export function Footer() {
   return (
@@ -15,24 +15,24 @@ export function Footer() {
           </div>
 
           <div className="flex flex-col gap-8 text-center text-sm text-gray-600 md:flex-row md:text-left">
-            <Link
+            <a
               href="/privacy"
               className="transition-colors hover:text-gray-900"
             >
               Privacy Policy
-            </Link>
-            <Link
+            </a>
+            <a
               href="/terms"
               className="transition-colors hover:text-gray-900"
             >
               Terms of Service
-            </Link>
-            <Link
+            </a>
+            <a
               href="/docs"
               className="transition-colors hover:text-gray-900"
             >
               Documentation
-            </Link>
+            </a>
           </div>
         </div>
       </div>

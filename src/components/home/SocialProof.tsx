@@ -68,3 +68,4 @@ export function SocialProof() {
     </Section>
   );
 }
+// aria-label

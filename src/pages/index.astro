@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar, Footer } from "@/components/common";
+import {
+  Hero,
+  SocialProof,
+  ProductShowcase,
+  FoundersMoat,
+  SolutionsSection,
+  AnswerNuggets,
+} from "@/components/home";
+
+const title = "Applass: Productivity & Privacy Solutions for the 2026 Digital World";
+const description = "Home of Mindful Guard and ScreenVeil. Discover advanced Android focus tools and Shopify apps designed to protect your privacy and boost ROI.";
+---
+
+<Layout title={title} description={description}>
+  <Navbar client:load />
+  <Hero client:load />
+  <SocialProof client:idle />
+  <ProductShowcase client:idle />
+  <FoundersMoat client:idle />
+  <SolutionsSection client:idle />
+  <AnswerNuggets client:idle />
+  <Footer />
+</Layout>

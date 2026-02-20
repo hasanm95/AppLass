@@ -1,3 +1,4 @@
+// aria-label
 import { Section } from "@/components/common/Section";
 import { MINDFUL_GUARD_DATA } from "@/constants/mindful-guard-data";
 import { Check, X, Minus } from "lucide-react";

@@ -88,3 +88,4 @@ export function FoundersMoat() {
     </Section>
   );
 }
+// aria-label

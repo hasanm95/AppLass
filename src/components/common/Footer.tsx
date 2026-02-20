@@ -1,7 +1,4 @@
-import Link from "next/link";
-import ExportedImage from "next-image-export-optimizer";
 import { cn } from "@/lib/utils";
-
 const footerLinks = {
   solutions: [
     { label: "Fomogen", href: "/apps/fomogen" },
@@ -41,14 +38,14 @@ export function Footer({ variant = "light" }: FooterProps) {
         <div className="grid gap-8 md:grid-cols-4 lg:gap-12">
           {/* Brand column */}
           <div className="md:col-span-1">
-            <Link
+            <a
               href="/"
               className={cn(
                 "inline-flex items-center gap-2 text-lg font-semibold",
                 isDark ? "text-white" : "text-slate-900"
               )}
             >
-              <ExportedImage
+              <img
                 src="/logo.png"
                 alt="AppLass"
                 width={24}
@@ -56,7 +53,7 @@ export function Footer({ variant = "light" }: FooterProps) {
                 className="h-6 w-6"
               />
               <span>AppLass</span>
-            </Link>
+            </a>
             <p
               className={cn(
                 "mt-4 max-w-xs text-sm",
@@ -175,7 +172,7 @@ function FooterLink({
   isDark: boolean;
 }) {
   return (
-    <Link
+    <a
       href={href}
       className={cn(
         "rounded-sm text-sm transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none",
@@ -185,6 +182,6 @@ function FooterLink({
       )}
     >
       {children}
-    </Link>
+    </a>
   );
 }

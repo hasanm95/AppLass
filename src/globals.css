@@ -1,0 +1,140 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ================================================
+   AppLass Design System - CSS Variables Only
+   ================================================ */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans), system-ui, sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, monospace;
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-cta: var(--cta);
+  --color-cta-foreground: var(--cta-foreground);
+
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+
+  --radius-3xl: 1.5rem;
+  --radius-4xl: 2rem;
+}
+
+:root {
+  --radius: 0.75rem;
+
+  /* Color Palette */
+  --background: #f8fafc;
+  --foreground: #1e293b;
+
+  --card: #ffffff;
+  --card-foreground: #1e293b;
+
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+
+  --secondary: #60a5fa;
+  --secondary-foreground: #1e293b;
+
+  --muted: #e2e8f0;
+  --muted-foreground: #64748b;
+
+  --accent: #f1f5f9;
+  --accent-foreground: #1e293b;
+
+  --cta: #f97316;
+  --cta-foreground: #ffffff;
+
+  --border: #e2e8f0;
+  --ring: #3b82f6;
+
+  /* Container Settings */
+  --container-max-width: 80rem;
+  --container-px: 1rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --container-px: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --container-px: 3rem;
+  }
+}
+
+/* Base Styles */
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background-color: rgba(249, 115, 22, 0.2);
+    color: #1e293b;
+  }
+}
+
+/* Accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--cta);
+  color: var(--cta-foreground);
+  padding: 8px 16px;
+  z-index: 100;
+  font-weight: 600;
+  border-radius: 0 0 8px 0;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@layer components {
+  .section-container {
+    width: 100%;
+    margin-inline: auto;
+    max-width: var(--container-max-width);
+    padding-inline: var(--container-px);
+  }
+}
+/* aria-label */

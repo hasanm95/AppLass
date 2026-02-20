@@ -1,3 +1,4 @@
+// aria-label
 import { Section } from "@/components/common/Section";
 import { TrendingUp, UserRoundCheck, ShieldCheck } from "lucide-react";
 import { cloneElement } from "react";

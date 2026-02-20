@@ -1,0 +1,176 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "ecosystem": "Ecosystem",
+    "docs": "Docs",
+    "blog": "Logic Lab",
+    "getInTouch": "Get in Touch",
+    "brandName": "AppLass",
+    "logoAlt": "AppLass Logo",
+    "mobileMenuFooter": "AppLass Logic System",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "footer": {
+    "tagline": "Logic-driven software where mathematical precision meets human-centric design.",
+    "sections": {
+      "solutions": "Solutions",
+      "resources": "Resources",
+      "legal": "Legal"
+    },
+    "links": {
+      "fomogen": "Fomogen",
+      "mindfulGuard": "Mindful Guard",
+      "screenveil": "ScreenVeil",
+      "ourEcosystem": "Our Ecosystem",
+      "documentation": "Documentation",
+      "theMethodology": "The Methodology",
+      "theLogicLab": "The Logic Lab (Blog)",
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service"
+    },
+    "copyright": "© {year} AppLass. All rights reserved.",
+    "builtWith": "Built with ∞ logical precision"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Elite Software Studio",
+      "headline": "High-Performance",
+      "headlineAccent": "Apps.",
+      "headlineSubdued": "Zero Bloat.",
+      "subheading": "Stop letting bloated Shopify apps kill your conversions. {brand} builds elite-tier tools with {payload} payloads that keep your Core Web Vitals green.",
+      "stats": {
+        "downloads": { "value": "10K+", "label": "Downloads" },
+        "rating": { "value": "4.4★", "label": "Rating" },
+        "payload": { "value": "<2.1KB", "label": "Payload" }
+      },
+      "cta": {
+        "primary": "See Our Apps",
+        "secondary": "Read the Logic Lab"
+      }
+    },
+    "socialProof": {
+      "trustedBy": "Trusted by {count} users",
+      "metrics": {
+        "downloads": { "value": "10K+", "label": "Downloads" },
+        "playStore": { "value": "4.4★", "label": "Play Store" },
+        "payload": { "value": "<2.1KB", "label": "Payload" },
+        "telemetry": { "value": "Zero", "label": "Telemetry" }
+      },
+      "googlePlay": {
+        "getItOn": "Get it on",
+        "storeName": "Google Play"
+      }
+    },
+    "productShowcase": {
+      "sectionLabel": "PRODUCTS",
+      "downloadsFeatured": "downloads",
+      "ratingFeatured": "rating"
+    },
+    "foundersMoat": {
+      "sectionLabel": "PHILOSOPHY",
+      "headline": "Built Different",
+      "headlineAccent": "by Logic.",
+      "quote": "\"AppLass apps are developed using mathematical optimization techniques to minimize JavaScript execution time.\""
+    },
+    "solutions": {
+      "sectionLabel": "SOLUTIONS",
+      "headline": "Logical",
+      "headlineAccent": "Solutions.",
+      "description": "We don't just build features; we engineer {highlight} that solve core business logic bottlenecks.",
+      "descriptionHighlight": "systemic improvements"
+    },
+    "answerNuggets": {
+      "sectionLabel": "FAQ",
+      "headline": "Frequently Asked",
+      "headlineAccent": "Questions",
+      "expandAnswer": "Expand answer",
+      "collapseAnswer": "Collapse answer",
+      "items": [
+        {
+          "question": "What is AppLass?",
+          "answer": "AppLass is an elite software engineering studio that builds high-performance Shopify apps and Android utilities. Founded in 2019, we use mathematical optimization to create sub-2.1KB payloads that keep Core Web Vitals green. Our flagship products include ScreenVeil, FomoGen, and Mindful Guard."
+        },
+        {
+          "question": "Is AppLass software accessible?",
+          "answer": "Yes. All AppLass products follow WCAG 2.1 guidelines with semantic HTML and keyboard-navigable patterns. We build for the 20% of users with disabilities to create a superior experience for the 100%."
+        },
+        {
+          "question": "How does AppLass optimize for speed?",
+          "answer": "We minimize JavaScript execution time to the micro-second using mathematical optimization. Core utility payloads stay under 2.1KB to ensure green Core Web Vitals scores."
+        },
+        {
+          "question": "What is AppLass's privacy policy?",
+          "answer": "AppLass uses Zero-Telemetry Architecture. We never log personal identifiers, track user behavior, or include third-party analytics SDKs. All data stays 100% on-device for maximum user privacy."
+        }
+      ]
+    }
+  },
+  "products": {
+    "screenveil": {
+      "name": "ScreenVeil",
+      "platform": "Android Platform",
+      "tagline": "Screen Off Video Playback",
+      "description": "Save 60%+ battery on AMOLED/OLED displays. Listen to YouTube, podcasts, and music with your screen off. Zero permissions, total privacy.",
+      "cta": "Download Free",
+      "metrics": ["10K+ Downloads", "4.4★ Rating"]
+    },
+    "fomogen": {
+      "name": "FomoGen",
+      "platform": "Shopify Ecosystem",
+      "tagline": "Social Proof Without the Speed Penalty",
+      "description": "Elite social proof with a proprietary <2.1KB payload. Boost engagement by +23% without triggering 'Long Task' warnings or SEO speed penalties.",
+      "cta": "Add to Shopify",
+      "metrics": ["+23% Engagement", "<2.1KB Payload"]
+    },
+    "mindfulGuard": {
+      "name": "Mindful Guard",
+      "platform": "Android Platform",
+      "tagline": "Privacy-First Focus Guardrails",
+      "description": "System-level productivity guardian built with a zero-tracking, privacy-first architecture. Reclaim an average of 2.4 hours of focus daily with 100% on-device data sovereignty.",
+      "cta": "Get on Play Store",
+      "metrics": ["2.4h Focus Reclaimed", "Zero-Tracking"]
+    }
+  },
+  "pillars": {
+    "eliteExpertise": {
+      "title": "Elite Expertise",
+      "label": "7 Years Full-Stack",
+      "description": "Deep experience building scalable systems for e-commerce and high-productivity mobile environments."
+    },
+    "logicalIntegrity": {
+      "title": "Logical Integrity",
+      "label": "Mathematics Core",
+      "description": "Every algorithm and interaction is modeled with mathematical precision to maximize performance and reliability."
+    },
+    "radicalAccessibility": {
+      "title": "Radical Accessibility",
+      "label": "WCAG 2.1 First",
+      "description": "Accessibility is not a feature; it's the foundation. We build software that respects every user's capabilities."
+    }
+  },
+  "solutionItems": {
+    "ecommerce": {
+      "title": "E-commerce Optimization",
+      "description": "Conversion engineering for modern brands. We solve the technical debt that slows down growth through mathematical optimization."
+    },
+    "digitalDiscipline": {
+      "title": "Digital Discipline Design",
+      "description": "Focus tools that respect human psychology through mathematical constraints and systemic guardrails. Engineered for the elite-tier producer."
+    },
+    "accessibility": {
+      "title": "Accessibility Consulting",
+      "description": "Transforming digital products to be inclusive from the core. Level up your WCAG score logically with a zero-regression foundation."
+    }
+  },
+  "metadata": {
+    "home": {
+      "title": "Applass: Productivity & Privacy Solutions for the 2026 Digital World",
+      "description": "Home of Mindful Guard and ScreenVeil. Discover advanced Android focus tools and Shopify apps designed to protect your privacy and boost ROI."
+    },
+    "siteName": "AppLass",
+    "ogTitle": "AppLass | Logic-Driven Software Studio",
+    "ogDescription": "Mathematical precision meets human-centric design. We build the Next Wave of digital performance."
+  }
+}

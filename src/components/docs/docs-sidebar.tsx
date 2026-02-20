@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 const DOCS_CONFIG: Record<
   string,
@@ -88,11 +86,9 @@ const DOCS_CONFIG: Record<
   ],
 };
 
-export function DocsSidebar() {
-  const pathname = usePathname();
-
+export function DocsSidebar({ pathname = "" }: { pathname?: string }) {
   // Determine which app we are looking at
-  const appKey = pathname.split("/").find((key) => DOCS_CONFIG[key]);
+  const appKey = pathname.split("/").find((key: string) => DOCS_CONFIG[key]);
   const links = appKey ? DOCS_CONFIG[appKey] : DOCS_CONFIG.fomogen;
 
   return (
@@ -109,7 +105,7 @@ export function DocsSidebar() {
                   const isActive = pathname === item.href;
                   return (
                     <li key={item.href}>
-                      <Link
+                      <a
                         href={item.href}
                         className={`flex items-center rounded-xl px-4 py-2.5 text-sm font-semibold transition-all duration-300 ${
                           isActive
@@ -118,7 +114,7 @@ export function DocsSidebar() {
                         }`}
                       >
                         {item.name}
-                      </Link>
+                      </a>
                     </li>
                   );
                 })}

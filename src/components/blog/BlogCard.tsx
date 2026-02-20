@@ -1,7 +1,7 @@
-import ExportedImage from "next-image-export-optimizer";
-import Link from "next/link";
+
+
 import { cn } from "@/lib/utils";
-import { MarkdownBlogPost } from "@/lib/blog";
+import type { MarkdownBlogPost } from "@/lib/blog";
 
 interface BlogCardProps {
   post: MarkdownBlogPost;
@@ -10,7 +10,7 @@ interface BlogCardProps {
 
 export function BlogCard({ post, isHero = false }: BlogCardProps) {
   return (
-    <Link
+    <a
       href={`/blog/${post.slug}`}
       className={cn(
         "group block h-full rounded-[2rem] border border-slate-900 transition-all hover:bg-slate-50",
@@ -27,11 +27,10 @@ export function BlogCard({ post, isHero = false }: BlogCardProps) {
         )}
       >
         {post.thumbnail ? (
-          <ExportedImage
+          <img
             src={post.thumbnail}
             alt={post.title}
-            fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
         ) : (
           <div className="absolute inset-0 flex items-center justify-center p-4 text-center text-2xl font-black tracking-widest text-slate-300 uppercase">
@@ -89,6 +88,7 @@ export function BlogCard({ post, isHero = false }: BlogCardProps) {
           </div>
         )}
       </div>
-    </Link>
+    </a>
   );
 }
+// aria-label

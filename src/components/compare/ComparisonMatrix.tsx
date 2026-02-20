@@ -1,6 +1,6 @@
 import { Section } from "@/components/common/Section";
 import { Check } from "lucide-react";
-import { ComparisonFeature } from "@/lib/compare";
+import type { ComparisonFeature } from "@/lib/compare";
 
 interface ComparisonMatrixProps {
   competitorName: string;
@@ -116,3 +116,4 @@ export function ComparisonMatrix({
     </Section>
   );
 }
+// aria-label

@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export function Hero() {
@@ -86,20 +85,20 @@ export function Hero() {
 
           {/* CTAs */}
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-            <Link
+            <a
               href="/apps"
               className="group inline-flex cursor-pointer items-center justify-center gap-2 border-2 border-[var(--foreground)] bg-[var(--foreground)] px-8 py-4 font-semibold text-[var(--background)] transition-all duration-200 hover:bg-transparent hover:text-[var(--foreground)]"
             >
               See Our Apps
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </Link>
-            <Link
+            </a>
+            <a
               href="/blog"
               className="group inline-flex cursor-pointer items-center justify-center gap-2 border-2 border-[var(--foreground)]/20 bg-transparent px-8 py-4 font-semibold text-[var(--foreground)] transition-all duration-200 hover:border-[var(--foreground)]"
             >
               Read the Logic Lab
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

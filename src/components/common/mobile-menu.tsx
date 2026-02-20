@@ -1,8 +1,7 @@
-import Link from "next/link";
 import { Button } from "../ui/button";
 import MobileNavLink from "./mobile-menu-nav-link";
 import { cn } from "@/lib/utils";
-import { RefObject } from "react";
+import type { RefObject } from "react";
 import { Portal } from "../ui/portal";
 
 type MobileMenuProps = {
@@ -66,7 +65,7 @@ export function MobileMenu({
                     : "bg-slate-900 text-white hover:bg-slate-800"
                 )}
               >
-                <Link href="/about">Get in Touch</Link>
+                <a href="/about">Get in Touch</a>
               </Button>
             )}
           </div>

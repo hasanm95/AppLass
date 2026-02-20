@@ -1,4 +1,4 @@
-import Link from "next/link";
+
 import { Button } from "@/components/ui/button";
 
 interface AppCalloutProps {
@@ -12,7 +12,7 @@ export function AppCallout({ appName }: AppCalloutProps) {
       sub: "Built for Focus.",
       desc: "Reclaim your digital focus with logical guardrails.",
       href: "/apps/mindful-guard",
-      color: "bg-[#7C3AED]",
+      color: "bg-[#10B981]",
     },
     FOMOgen: {
       title: "FOMOgen",
@@ -51,7 +51,7 @@ export function AppCallout({ appName }: AppCalloutProps) {
         className={`w-full ${data.color} h-12 rounded-xl font-bold text-white`}
         asChild
       >
-        <Link href={data.href}>Learn More</Link>
+        <a href={data.href}>Learn More</a>
       </Button>
     </div>
   );
