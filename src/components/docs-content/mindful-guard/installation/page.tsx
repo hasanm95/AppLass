@@ -1,6 +1,6 @@
 import { Zap, Download, ShieldCheck } from "lucide-react";
 
-export default function MindfulGuardInstallationPage({ lang }: { lang: string }) {
+export default function MindfulGuardInstallationPage({}: { lang?: string }) {
   return (
     <div className="space-y-12">
       <header>

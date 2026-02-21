@@ -1,4 +1,4 @@
-export default function PurchaseNotificationsPage({ lang }: { lang: string }) {
+export default function PurchaseNotificationsPage({}: { lang?: string }) {
   return (
     <div className="space-y-20">
       <header>

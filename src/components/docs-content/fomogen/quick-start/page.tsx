@@ -1,6 +1,6 @@
 import { CheckCircle2, AlertCircle, ArrowRight } from "lucide-react";
 
-export default function QuickStartPage({ lang }: { lang: string }) {
+export default function QuickStartPage({}: { lang?: string }) {
   return (
     <div className="space-y-20">
       <header>

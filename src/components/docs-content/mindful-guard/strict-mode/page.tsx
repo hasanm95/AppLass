@@ -1,6 +1,6 @@
 import { Lock, Timer, ShieldAlert } from "lucide-react";
 
-export default function MindfulGuardStrictModePage({ lang }: { lang: string }) {
+export default function MindfulGuardStrictModePage({}: { lang?: string }) {
   return (
     <div className="space-y-12">
       <header>

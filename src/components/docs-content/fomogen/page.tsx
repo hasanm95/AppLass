@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 
-export default function DocsPage({ lang }: { lang: string }) {
+export default function FomogenDocsPage({ lang }: { lang: string }) {
   return (
     <div className="space-y-20">
       <header>

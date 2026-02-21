@@ -1,4 +1,4 @@
-export default function ProgressIndicatorsPage({ lang }: { lang: string }) {
+export default function ProgressIndicatorsPage({}: { lang?: string }) {
   return (
     <div className="space-y-20">
       <header>

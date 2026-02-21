@@ -1,7 +1,7 @@
 import { Zap, Shield, Smartphone, ArrowRight } from "lucide-react";
 
 
-export default function DocsHubPage({ lang }: { lang: string }) {
+export default function DocsHubPage({}: { lang?: string }) {
   const systems = [
     {
       id: "fomogen",

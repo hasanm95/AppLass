@@ -1,4 +1,4 @@
-export default function TrustBadgesPage({ lang }: { lang: string }) {
+export default function TrustBadgesPage({}: { lang?: string }) {
   return (
     <div className="space-y-20">
       <header>

@@ -1,4 +1,4 @@
-export default function StickyCartPage({ lang }: { lang: string }) {
+export default function StickyCartPage({}: { lang?: string }) {
   return (
     <div className="space-y-20">
       <header>

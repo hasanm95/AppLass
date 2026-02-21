@@ -1,6 +1,6 @@
 import { BatteryLow, Zap } from "lucide-react";
 
-export default function ScreenVeilEfficiencyPage({ lang }: { lang: string }) {
+export default function ScreenVeilEfficiencyPage({}: { lang?: string }) {
   return (
     <div className="space-y-12">
       <header>

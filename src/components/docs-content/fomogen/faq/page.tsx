@@ -57,7 +57,7 @@ const DOCUMENTATION_FAQS = [
   },
 ];
 
-export default function FAQPage({ lang }: { lang: string }) {
+export default function FAQPage({}: { lang?: string }) {
   const schemaItems = DOCUMENTATION_FAQS.flatMap((cat) =>
     cat.items.map((item) => ({
       question: item.q,

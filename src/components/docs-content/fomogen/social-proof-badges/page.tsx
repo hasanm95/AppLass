@@ -1,4 +1,4 @@
-export default function SocialProofBadgesPage({ lang }: { lang: string }) {
+export default function SocialProofBadgesPage({}: { lang?: string }) {
   return (
     <div className="space-y-20">
       <header>

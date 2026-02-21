@@ -1,4 +1,4 @@
-export default function CountdownTimersPage({ lang }: { lang: string }) {
+export default function CountdownTimersPage({}: { lang?: string }) {
   return (
     <div className="space-y-20">
       <header>
