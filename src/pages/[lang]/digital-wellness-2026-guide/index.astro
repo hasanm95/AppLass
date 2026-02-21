@@ -25,11 +25,19 @@ export async function getStaticPaths() {
 const { lang } = Astro.params;
 const dict = await getDictionary(lang as any);
 
-const title = "Digital Wellness Guide 2026: 7 Steps to Reclaim Your Focus [Expert Guide]";
-const description = "Master your digital life in 2026. Learn how to combat digital burnout, audit your notifications, and use privacy-first tools like Mindful Guard to boost productivity.";
+const meta = dict.metadata?.digitalWellness || {};
 ---
 
-<Layout title={title} description={description} lang={lang}>
+<Layout 
+  title={meta.title || "Digital Wellness Guide 2026: 7 Steps to Reclaim Your Focus [Expert Guide]"}
+  description={meta.description || "Master your digital life in 2026. Learn how to combat digital burnout, audit your notifications, and use privacy-first tools like Mindful Guard to boost productivity."}
+  keywords={meta.keywords}
+  ogTitle={meta.ogTitle}
+  ogDescription={meta.ogDescription}
+  ogImage={meta.ogImage}
+  ogUrl={meta.ogUrl}
+  lang={lang}
+>
   <div class="min-h-screen bg-white font-sans selection:bg-blue-100 selection:text-blue-900">
     <Navbar client:load translations={dict.nav} />
 

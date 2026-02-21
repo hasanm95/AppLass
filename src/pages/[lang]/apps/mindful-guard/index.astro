@@ -17,11 +17,19 @@ export async function getStaticPaths() {
 const { lang } = Astro.params;
 const dict = await getDictionary(lang as any);
 
-const title = "Mindful Guard: The #1 Privacy-First Focus App [Android 2026]";
-const description = "Stop digital distractions instantly. Mindful Guard is a 100% private, offline Pomodoro and app blocker for Android. Download for free today!";
+const meta = dict.metadata?.mindfulGuard || {};
 ---
 
-<Layout title={title} description={description} lang={lang}>
+<Layout 
+  title={meta.title || "Mindful Guard: The #1 Privacy-First Focus App [Android 2026]"}
+  description={meta.description || "Stop digital distractions instantly. Mindful Guard is a 100% private, offline Pomodoro and app blocker for Android. Download for free today!"}
+  keywords={meta.keywords}
+  ogTitle={meta.ogTitle}
+  ogDescription={meta.ogDescription}
+  ogImage={meta.ogImage}
+  ogUrl={meta.ogUrl}
+  lang={lang}
+>
   <Navbar client:load translations={dict.nav} />
   {/* SoftwareApplication Schema for SEO - Critical for Google to display app details */}
   <script

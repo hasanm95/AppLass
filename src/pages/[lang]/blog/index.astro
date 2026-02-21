@@ -14,8 +14,7 @@ export async function getStaticPaths() {
 const { lang } = Astro.params;
 const dict = await getDictionary(lang as any);
 
-const title = "The Logic Lab | AppLass Blog";
-const description = "Deep dives into software engineering, mathematics, and digital productivity.";
+const meta = dict.metadata?.blog || {};
 
 const posts = getBlogPosts();
 const categories = getBlogCategories();
@@ -26,7 +25,16 @@ const otherPosts = posts.filter(
 );
 ---
 
-<Layout title={title} description={description} lang={lang}>
+<Layout 
+  title={meta.title || "The Logic Lab | AppLass Blog"}
+  description={meta.description || "Deep dives into software engineering, mathematics, and digital productivity."}
+  keywords={meta.keywords}
+  ogTitle={meta.ogTitle}
+  ogDescription={meta.ogDescription}
+  ogImage={meta.ogImage}
+  ogUrl={meta.ogUrl}
+  lang={lang}
+>
   <Navbar client:load translations={dict.nav} />
   <div class="flex-1 bg-white pt-20">
     <BlogHero client:load />

@@ -213,9 +213,12 @@
     }
   },
   "metadata": {
+    "siteName": "AppLass",
     "home": {
       "title": "Applass: Productivity & Privacy Solutions for the 2026 Digital World",
-      "description": "Home of Mindful Guard and ScreenVeil. Discover advanced Android focus tools and Shopify apps designed to protect your privacy and boost ROI."
+      "description": "Home of Mindful Guard and ScreenVeil. Discover advanced Android focus tools and Shopify apps designed to protect your privacy and boost ROI.",
+      "ogTitle": "AppLass | Logic-Driven Software Studio",
+      "ogDescription": "Mathematical precision meets human-centric design. We build the Next Wave of digital performance."
     },
     "about": {
       "title": "About | The AppLass Methodology",
@@ -225,9 +228,97 @@
       "title": "Our Apps | AppLass Ecosystem",
       "description": "Explore our suite of logic-driven applications designed for elite performance and digital discipline."
     },
-    "siteName": "AppLass",
-    "ogTitle": "AppLass | Logic-Driven Software Studio",
-    "ogDescription": "Mathematical precision meets human-centric design. We build the Next Wave of digital performance."
+    "fomogen": {
+      "title": "FOMO Gen | #1 Free Social Proof, Urgency & Trust App for Shopify",
+      "description": "Skyrocket your Shopify sales with FOMO Gen. The all-in-one app for Sales Popups, Stock Countdowns, Sticky Cart, and Trust Badges. Install for Free today!",
+      "keywords": "shopify social proof, sales pop, countdown timer, stock alert, trust badges, sticky cart",
+      "ogTitle": "Boost Your Shopify Sales with FOMO Gen",
+      "ogDescription": "The all-in-one app for Sales Popups, Stock Countdowns, Sticky Cart, and Trust Badges. Install for Free today!",
+      "ogImage": "https://applass.com/v1/apps/fomogen-feature.png",
+      "ogUrl": "https://applass.com/apps/fomogen"
+    },
+    "mindfulGuard": {
+      "title": "Mindful Guard: The #1 Privacy-First Focus App [Android 2026]",
+      "description": "Stop digital distractions instantly. Mindful Guard is a 100% private, offline Pomodoro and app blocker for Android. Download for free today!",
+      "keywords": "Android app blocker, dopamine detox app, focus timer android, privacy focus tool, stop phone addiction, cognitive firewall, zero telemetry, offline app blocker",
+      "ogTitle": "MindfulGuard | Reclaim Your Neural Architecture",
+      "ogDescription": "The first Android app blocker engineered for privacy absolutists. 0ms latency. 100% Offline. Zero telemetry.",
+      "ogImage": "https://applass.com/v1/apps/mindful-guard-feature.png",
+      "ogUrl": "https://applass.com/apps/mindful-guard"
+    },
+    "screenveil": {
+      "title": "ScreenVeil: The Safest Screen Filter for Total Digital Privacy",
+      "description": "Protect your data from prying eyes with ScreenVeil. A lightweight, secure screen overlay for Android. No data collection, 100% offline.",
+      "keywords": "black screen video, AMOLED battery saver, screen off playback, YouTube background audio, OLED efficiency, screen overlay utility, android battery saver, screen off youtube",
+      "ogTitle": "ScreenVeil: Save 60% Battery with Screen Off Video Playback",
+      "ogDescription": "The ultimate AMOLED battery saver. Watch YouTube, Netflix, and podcasts with your screen off. Zero permissions, 100% privacy.",
+      "ogImage": "https://applass.com/v1/apps/screenveil-feature.png",
+      "ogUrl": "https://applass.com/apps/screenveil"
+    },
+    "blog": {
+      "title": "The Logic Lab | AppLass Blog",
+      "description": "Deep dives into software engineering, mathematics, and digital productivity."
+    },
+    "compare": {
+      "title": "Comparison Guides | AppLass Analysis",
+      "description": "Logic-first product comparisons. Why elite teams choose AppLass over legacy alternatives."
+    },
+    "hubDocs": {
+      "title": "Documentation | AppLass Logic Systems",
+      "description": "Engineering references and deployment guides for the AppLass ecosystem."
+    },
+    "fomogenFaq": {
+      "title": "FomoGen FAQ | Technical Documentation & Support",
+      "description": "Common questions about FomoGen implementation, features, and troubleshooting for Shopify merchants."
+    },
+    "mindfulGuardDocs": {
+      "title": "Documentation | Mindful Guard Logic Systems",
+      "description": "Engineering references and configuration guides for Mindful Guard."
+    },
+    "screenveilDocs": {
+      "title": "Documentation | ScreenVeil Battery Architecture",
+      "description": "Technical references and battery optimization guides for ScreenVeil."
+    },
+    "ecommercePerformance": {
+      "title": "Ecommerce Performance Guide 2026: Benchmarks & Conversion Hacks",
+      "description": "Master ecommerce performance in 2026. Discover the latest Shopify speed benchmarks, social proof strategies that boost sales by 98%, and CRO tools like sticky carts."
+    },
+    "digitalWellness": {
+      "title": "Digital Wellness Guide 2026: 7 Steps to Reclaim Your Focus [Expert Guide]",
+      "description": "Master your digital life in 2026. Learn how to combat digital burnout, audit your notifications, and use privacy-first tools like Mindful Guard to boost productivity."
+    },
+    "legalMindfulGuardPrivacy": {
+      "title": "Privacy Policy - Mindful Guard",
+      "description": "Privacy Policy for Mindful Guard - Learn how we protect your privacy and handle your data with our privacy-first approach."
+    },
+    "legalMindfulGuardTerms": {
+      "title": "Terms of Service - Mindful Guard",
+      "description": "Terms and conditions for using Mindful Guard's cognitive firewall logic systems."
+    },
+    "legalScreenveilPrivacy": {
+      "title": "Privacy Policy - ScreenVeil",
+      "description": "ScreenVeil Privacy Policy - Learn how we protect your privacy with our no-data-collection approach."
+    },
+    "legalScreenveilTerms": {
+      "title": "Terms of Service - ScreenVeil",
+      "description": "Terms and conditions for using ScreenVeil's hardware-level screen utility."
+    },
+    "docsHome": {
+      "title": "Documentation Hub | AppLass",
+      "description": "Comprehensive guides, technical documentation, and integration instructions for the entire AppLass app ecosystem."
+    },
+    "fomogenPricing": {
+      "title": "FOMO Gen Pricing | Elite Social Proof for Shopify",
+      "description": "Transparent, performance-based pricing for AppLass FOMO Gen. No bait-and-switch. 100% ROI guarantee."
+    },
+    "legalFomogenPrivacy": {
+      "title": "Privacy Policy - FOMOGEN",
+      "description": "Privacy Policy for FOMOGEN - Learn how we collect, use, and protect your information as a Shopify merchant."
+    },
+    "legalFomogenTerms": {
+      "title": "Terms of Service - FOMOGEN",
+      "description": "Terms of Service for FOMOGEN Shopify App."
+    }
   },
   "fomogen": {
     "hero": {

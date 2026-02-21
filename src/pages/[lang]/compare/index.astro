@@ -14,11 +14,19 @@ export async function getStaticPaths() {
 const { lang } = Astro.params;
 const dict = await getDictionary(lang as any);
 
-const title = "Comparison Guides | AppLass Analysis";
-const description = "Logic-first product comparisons. Why elite teams choose AppLass over legacy alternatives.";
+const meta = dict.metadata?.compare || {};
 ---
 
-<Layout title={title} description={description} lang={lang}>
+<Layout 
+  title={meta.title || "Comparison Guides | AppLass Analysis"}
+  description={meta.description || "Logic-first product comparisons. Why elite teams choose AppLass over legacy alternatives."}
+  keywords={meta.keywords}
+  ogTitle={meta.ogTitle}
+  ogDescription={meta.ogDescription}
+  ogImage={meta.ogImage}
+  ogUrl={meta.ogUrl}
+  lang={lang}
+>
   <div class="min-h-screen bg-white">
     <Navbar client:load translations={dict.nav} />
     <div class="pt-32">

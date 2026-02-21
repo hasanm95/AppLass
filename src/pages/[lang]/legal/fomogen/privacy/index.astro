@@ -14,11 +14,19 @@ const { lang } = Astro.params;
 const dict = await getDictionary(lang as any);
 
 const lastUpdated = "February 20, 2026";
-const title = "Privacy Policy - FOMOGEN";
-const description = "Privacy Policy for FOMOGEN - Learn how we collect, use, and protect your information as a Shopify merchant.";
+const meta = dict.metadata?.legalFomogenPrivacy || {};
 ---
 
-<Layout title={title} description={description} lang={lang}>
+<Layout 
+  title={meta.title || "Privacy Policy - FOMOGEN"}
+  description={meta.description || "Privacy Policy for FOMOGEN - Learn how we collect, use, and protect your information as a Shopify merchant."}
+  keywords={meta.keywords}
+  ogTitle={meta.ogTitle}
+  ogDescription={meta.ogDescription}
+  ogImage={meta.ogImage}
+  ogUrl={meta.ogUrl}
+  lang={lang}
+>
   <div class="flex min-h-screen flex-col bg-white font-sans selection:bg-blue-100 selection:text-blue-900">
     <Navbar client:load translations={dict.nav}>
       <div slot="customBranding" class="flex items-center gap-2">

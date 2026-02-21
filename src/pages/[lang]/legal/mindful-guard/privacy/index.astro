@@ -14,11 +14,19 @@ const { lang } = Astro.params;
 const dict = await getDictionary(lang as any);
 
 const lastUpdated = "August 2025";
-const title = "Privacy Policy - Mindful Guard";
-const description = "Privacy Policy for Mindful Guard - Learn how we protect your privacy and handle your data with our privacy-first approach.";
+const meta = dict.metadata?.legalMindfulGuardPrivacy || {};
 ---
 
-<Layout title={title} description={description} lang={lang}>
+<Layout 
+  title={meta.title || "Privacy Policy - Mindful Guard"}
+  description={meta.description || "Privacy Policy for Mindful Guard - Learn how we protect your privacy and handle your data with our privacy-first approach."}
+  keywords={meta.keywords}
+  ogTitle={meta.ogTitle}
+  ogDescription={meta.ogDescription}
+  ogImage={meta.ogImage}
+  ogUrl={meta.ogUrl}
+  lang={lang}
+>
   <div class="flex min-h-screen flex-col bg-white font-sans selection:bg-slate-100 selection:text-slate-900">
     <Navbar client:load translations={dict.nav}>
       <div slot="customBranding" class="flex items-center gap-2">

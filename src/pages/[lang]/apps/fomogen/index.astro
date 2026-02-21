@@ -18,11 +18,19 @@ export async function getStaticPaths() {
 const { lang } = Astro.params;
 const dict = await getDictionary(lang as any);
 
-const title = "FOMO Gen: Fast Shopify Social Proof App [No Code 2026]";
-const description = "Add high-converting sales popups, countdowns, and sticky carts to Shopify. Zero impact on Core Web Vitals with our 2KB payload.";
+const meta = dict.metadata?.fomogen || {};
 ---
 
-<Layout title={title} description={description} lang={lang}>
+<Layout 
+  title={meta.title || "FOMO Gen: Fast Shopify Social Proof App [No Code 2026]"}
+  description={meta.description || "Add high-converting sales popups, countdowns, and sticky carts to Shopify. Zero impact on Core Web Vitals with our 2KB payload."}
+  keywords={meta.keywords}
+  ogTitle={meta.ogTitle}
+  ogDescription={meta.ogDescription}
+  ogImage={meta.ogImage}
+  ogUrl={meta.ogUrl}
+  lang={lang}
+>
   <div class="bg-white">
     <Navbar client:load translations={dict.nav} />
 

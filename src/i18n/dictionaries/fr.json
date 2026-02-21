@@ -148,13 +148,112 @@
     }
   },
   "metadata": {
+    "siteName": "AppLass",
     "home": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": ""
+    },
+    "about": {
       "title": "",
       "description": ""
     },
-    "siteName": "AppLass",
-    "ogTitle": "",
-    "ogDescription": ""
+    "apps": {
+      "title": "",
+      "description": ""
+    },
+    "fomogen": {
+      "title": "",
+      "description": "",
+      "keywords": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "ogImage": "https://applass.com/v1/apps/fomogen-feature.png",
+      "ogUrl": "https://applass.com/fr/apps/fomogen"
+    },
+    "mindfulGuard": {
+      "title": "",
+      "description": "",
+      "keywords": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "ogImage": "https://applass.com/v1/apps/mindful-guard-feature.png",
+      "ogUrl": "https://applass.com/fr/apps/mindful-guard"
+    },
+    "screenveil": {
+      "title": "",
+      "description": "",
+      "keywords": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "ogImage": "https://applass.com/v1/apps/screenveil-feature.png",
+      "ogUrl": "https://applass.com/fr/apps/screenveil"
+    },
+    "blog": {
+      "title": "",
+      "description": ""
+    },
+    "compare": {
+      "title": "",
+      "description": ""
+    },
+    "hubDocs": {
+      "title": "",
+      "description": ""
+    },
+    "fomogenFaq": {
+      "title": "",
+      "description": ""
+    },
+    "mindfulGuardDocs": {
+      "title": "",
+      "description": ""
+    },
+    "screenveilDocs": {
+      "title": "",
+      "description": ""
+    },
+    "ecommercePerformance": {
+      "title": "",
+      "description": ""
+    },
+    "digitalWellness": {
+      "title": "",
+      "description": ""
+    },
+    "legalMindfulGuardPrivacy": {
+      "title": "",
+      "description": ""
+    },
+    "legalMindfulGuardTerms": {
+      "title": "[FR] Terms of Service - Mindful Guard",
+      "description": "[FR] Terms and conditions for using Mindful Guard's cognitive firewall logic systems."
+    },
+    "legalScreenveilPrivacy": {
+      "title": "[FR] Privacy Policy - ScreenVeil",
+      "description": "[FR] ScreenVeil Privacy Policy - Learn how we protect your privacy with our no-data-collection approach."
+    },
+    "legalScreenveilTerms": {
+      "title": "[FR] Terms of Service - ScreenVeil",
+      "description": "[FR] Terms and conditions for using ScreenVeil's hardware-level screen utility."
+    },
+    "docsHome": {
+      "title": "[FR] Documentation Hub | AppLass",
+      "description": "[FR] Comprehensive guides, technical documentation, and integration instructions for the entire AppLass app ecosystem."
+    },
+    "fomogenPricing": {
+      "title": "[FR] FOMO Gen Pricing | Elite Social Proof for Shopify",
+      "description": "[FR] Transparent, performance-based pricing for AppLass FOMO Gen. No bait-and-switch. 100% ROI guarantee."
+    },
+    "legalFomogenPrivacy": {
+      "title": "[FR] Privacy Policy - FOMOGEN",
+      "description": "[FR] Privacy Policy for FOMOGEN - Learn how we collect, use, and protect your information as a Shopify merchant."
+    },
+    "legalFomogenTerms": {
+      "title": "[FR] Terms of Service - FOMOGEN",
+      "description": "[FR] Terms of Service for FOMOGEN Shopify App."
+    }
   },
   "mindfulGuard": {
     "hero": {

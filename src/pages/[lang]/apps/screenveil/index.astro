@@ -20,11 +20,19 @@ export async function getStaticPaths() {
 const { lang } = Astro.params;
 const dict = await getDictionary(lang as any);
 
-const title = "ScreenVeil: The Safest Screen Filter for Total Digital Privacy";
-const description = "Protect your data from prying eyes with ScreenVeil. A lightweight, secure screen overlay for Android. No data collection, 100% offline.";
+const meta = dict.metadata?.screenveil || {};
 ---
 
-<Layout title={title} description={description} lang={lang}>
+<Layout 
+  title={meta.title || "ScreenVeil: The Safest Screen Filter for Total Digital Privacy"}
+  description={meta.description || "Protect your data from prying eyes with ScreenVeil. A lightweight, secure screen overlay for Android. No data collection, 100% offline."}
+  keywords={meta.keywords}
+  ogTitle={meta.ogTitle}
+  ogDescription={meta.ogDescription}
+  ogImage={meta.ogImage}
+  ogUrl={meta.ogUrl}
+  lang={lang}
+>
   <div class="bg-[#020617]">
     <Navbar client:load translations={dict.nav} />
 

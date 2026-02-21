@@ -6,15 +6,27 @@ import '../tw-animate.css';
 interface Props {
   title?: string;
   description?: string;
+  keywords?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogImage?: string;
+  ogUrl?: string;
   lang?: string;
 }
 
 const defaultDescription = "At AppLass, we bridge the gap between complex mathematics and human-centric software. Stop letting bloated software slow down your growth. We build elite-tier Shopify and Mobile tools driven by mathematical precision.";
 const defaultTitle = "AppLass | High-Performance Software Engineering";
+const defaultKeywords = "software studio, Shopify apps, digital wellness, accessibility, WCAG, web development, AppLass";
+const defaultOgImage = "https://applass.com/og-image.png";
 
 const { 
   title = defaultTitle, 
   description = defaultDescription,
+  keywords = defaultKeywords,
+  ogTitle = title,
+  ogDescription = description,
+  ogImage = defaultOgImage,
+  ogUrl = "https://applass.com/",
   lang 
 } = Astro.props;
 
@@ -36,25 +48,25 @@ const documentLang = lang || getLangFromUrl(Astro.url);
     <title>{title}</title>
     <meta name="title" content={title} />
     <meta name="description" content={description} />
-    <meta name="keywords" content="software studio, Shopify apps, digital wellness, accessibility, WCAG, web development, AppLass" />
+    <meta name="keywords" content={keywords} />
     <meta name="author" content="AppLass" />
     <meta name="generator" content={Astro.generator} />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://applass.com/" />
-    <meta property="og:title" content="AppLass | Logic-Driven Software Studio" />
-    <meta property="og:description" content="Mathematical precision meets human-centric design. We build the Next Wave of digital performance." />
-    <meta property="og:image" content="https://applass.com/og-image.png" />
+    <meta property="og:url" content={ogUrl} />
+    <meta property="og:title" content={ogTitle} />
+    <meta property="og:description" content={ogDescription} />
+    <meta property="og:image" content={ogImage} />
     <meta property="og:site_name" content="AppLass" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content={documentLang === 'fr' ? 'fr_FR' : 'en_US'} />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://applass.com/" />
-    <meta property="twitter:title" content="AppLass | Logic-Driven Software Studio" />
-    <meta property="twitter:description" content="Mathematical precision meets human-centric design. We build high-performance apps for the modern web." />
-    <meta property="twitter:image" content="https://applass.com/og-image.png" />
+    <meta property="twitter:url" content={ogUrl} />
+    <meta property="twitter:title" content={ogTitle} />
+    <meta property="twitter:description" content={ogDescription} />
+    <meta property="twitter:image" content={ogImage} />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

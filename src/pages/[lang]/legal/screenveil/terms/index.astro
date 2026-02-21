@@ -14,11 +14,19 @@ const { lang } = Astro.params;
 const dict = await getDictionary(lang as any);
 
 const lastUpdated = "August 2025";
-const title = "Terms of Service - ScreenVeil";
-const description = "Terms and conditions for using ScreenVeil's hardware-level screen utility.";
+const meta = dict.metadata?.legalScreenveilTerms || {};
 ---
 
-<Layout title={title} description={description} lang={lang}>
+<Layout 
+  title={meta.title || "Terms of Service - ScreenVeil"}
+  description={meta.description || "Terms and conditions for using ScreenVeil's hardware-level screen utility."}
+  keywords={meta.keywords}
+  ogTitle={meta.ogTitle}
+  ogDescription={meta.ogDescription}
+  ogImage={meta.ogImage}
+  ogUrl={meta.ogUrl}
+  lang={lang}
+>
   <div class="flex min-h-screen flex-col bg-white font-sans selection:bg-blue-100 selection:text-blue-900">
     <Navbar client:load translations={dict.nav}>
       <div slot="customBranding" class="flex items-center gap-2">

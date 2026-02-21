@@ -1,12 +1,28 @@
 import type { Locale } from "./config";
-import type en from "./dictionaries/en.json";
+import rawEnDictionary from "./dictionaries/en.json";
 
-const dictionaries = {
-  en: () => import("./dictionaries/en.json").then((module) => module.default),
-  fr: () => import("./dictionaries/fr.json").then((module) => module.default as unknown as typeof en),
+export type SEOMetadata = {
+  title: string;
+  description: string;
+  keywords?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogImage?: string;
+  ogUrl?: string;
 };
 
-export type Dictionary = Awaited<ReturnType<(typeof dictionaries)["en"]>>;
+type EnDictionary = Omit<typeof rawEnDictionary, 'metadata'> & {
+  metadata: {
+    [K in keyof typeof rawEnDictionary.metadata]: K extends 'siteName' ? string : SEOMetadata;
+  };
+};
+
+const dictionaries = {
+  en: () => import("./dictionaries/en.json").then((module) => module.default as unknown as EnDictionary),
+  fr: () => import("./dictionaries/fr.json").then((module) => module.default as unknown as EnDictionary),
+};
+
+export type Dictionary = EnDictionary;
 
 export async function getDictionary(locale: Locale): Promise<Dictionary> {
   return dictionaries[locale]();

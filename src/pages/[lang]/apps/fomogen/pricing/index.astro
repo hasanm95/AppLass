@@ -13,11 +13,19 @@ export async function getStaticPaths() {
 const { lang } = Astro.params;
 const dict = await getDictionary(lang as any);
 
-const title = "FOMO Gen Pricing | Elite Social Proof for Shopify";
-const description = "Transparent, performance-based pricing for AppLass FOMO Gen. No bait-and-switch. 100% ROI guarantee.";
+const meta = dict.metadata?.fomogenPricing || {};
 ---
 
-<Layout title={title} description={description} lang={lang}>
+<Layout 
+  title={meta.title || "FOMO Gen Pricing | Elite Social Proof for Shopify"}
+  description={meta.description || "Transparent, performance-based pricing for AppLass FOMO Gen. No bait-and-switch. 100% ROI guarantee."}
+  keywords={meta.keywords}
+  ogTitle={meta.ogTitle}
+  ogDescription={meta.ogDescription}
+  ogImage={meta.ogImage}
+  ogUrl={meta.ogUrl}
+  lang={lang}
+>
   <div class="bg-white">
     <Navbar client:load translations={dict.nav} />
     

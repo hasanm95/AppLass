@@ -22,11 +22,19 @@ export async function getStaticPaths() {
 const { lang } = Astro.params;
 const dict = await getDictionary(lang as any);
 
-const title = "Ecommerce Performance Guide 2026: Benchmarks & Conversion Hacks";
-const description = "Master ecommerce performance in 2026. Discover the latest Shopify speed benchmarks, social proof strategies that boost sales by 98%, and CRO tools like sticky carts.";
+const meta = dict.metadata?.ecommercePerformance || {};
 ---
 
-<Layout title={title} description={description} lang={lang}>
+<Layout 
+  title={meta.title || "Ecommerce Performance Guide 2026: Benchmarks & Conversion Hacks"}
+  description={meta.description || "Master ecommerce performance in 2026. Discover the latest Shopify speed benchmarks, social proof strategies that boost sales by 98%, and CRO tools like sticky carts."}
+  keywords={meta.keywords}
+  ogTitle={meta.ogTitle}
+  ogDescription={meta.ogDescription}
+  ogImage={meta.ogImage}
+  ogUrl={meta.ogUrl}
+  lang={lang}
+>
   <div class="min-h-screen bg-white font-sans selection:bg-blue-100 selection:text-blue-900">
     <Navbar client:load translations={dict.nav} />
 

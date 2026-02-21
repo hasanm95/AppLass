@@ -22,8 +22,7 @@ export async function getStaticPaths() {
 const { lang } = Astro.params;
 const dict = await getDictionary(lang as any);
 
-const title = dict.metadata?.about?.title || "About | The AppLass Methodology";
-const description = dict.metadata?.about?.description || "Founder-led development derived from first principles. Mathematical integrity meets high-end digital craft. Meet the engineer behind the logic.";
+const meta = dict.metadata?.about || {};
 
 const iconMap = {
   Zap: Zap,
@@ -34,7 +33,16 @@ const iconMap = {
 const PILLAR_KEYS = ["eliteExpertise", "logicalIntegrity", "radicalAccessibility"] as const;
 ---
 
-<Layout title={title} description={description} lang={lang}>
+<Layout 
+  title={meta.title || "About | The AppLass Methodology"}
+  description={meta.description || "Founder-led development derived from first principles. Mathematical integrity meets high-end digital craft. Meet the engineer behind the logic."}
+  keywords={meta.keywords}
+  ogTitle={meta.ogTitle}
+  ogDescription={meta.ogDescription}
+  ogImage={meta.ogImage}
+  ogUrl={meta.ogUrl}
+  lang={lang}
+>
   <div class="min-h-screen bg-white">
     <Navbar client:load translations={dict.nav} />
     <div class="pt-32">
