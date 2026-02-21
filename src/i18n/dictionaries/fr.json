@@ -155,5 +155,151 @@
     "siteName": "AppLass",
     "ogTitle": "",
     "ogDescription": ""
+  },
+  "mindfulGuard": {
+    "hero": {
+      "headline": "",
+      "subheadline": "",
+      "primaryCTA": "",
+      "secondaryCTA": "",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard"
+    },
+    "logic": {
+      "title": "",
+      "description": ""
+    },
+    "differentiators": [
+      {
+        "title": "",
+        "description": ""
+      },
+      {
+        "title": "",
+        "description": ""
+      },
+      {
+        "title": "",
+        "description": ""
+      }
+    ],
+    "comparison": {
+      "title": "",
+      "headers": {
+        "privacy": "",
+        "pricing": "",
+        "tech": "",
+        "battery": ""
+      },
+      "columns": {
+        "competitors": {
+          "opal": "Opal",
+          "freedom": "Freedom"
+        }
+      },
+      "specs": [
+        {
+          "label": "",
+          "mindfulGuard": "",
+          "opal": "",
+          "freedom": ""
+        },
+        {
+          "label": "",
+          "mindfulGuard": "",
+          "opal": "",
+          "freedom": ""
+        },
+        {
+          "label": "",
+          "mindfulGuard": "",
+          "opal": "",
+          "freedom": ""
+        },
+        {
+          "label": "",
+          "mindfulGuard": "",
+          "opal": "",
+          "freedom": ""
+        }
+      ]
+    }
+  },
+  "screenveil": {
+    "hero": {
+      "tagline": "",
+      "headline": "",
+      "headlineAccent": "",
+      "subheadline": "",
+      "primaryCTA": "",
+      "secondaryCTA": "",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.screenveil.app",
+      "subtext": ""
+    },
+    "painPoints": [
+      {
+        "title": "",
+        "stat": "",
+        "description": ""
+      },
+      {
+        "title": "",
+        "stat": "",
+        "description": ""
+      }
+    ],
+    "features": [
+      {
+        "title": "",
+        "description": "",
+        "highlight": ""
+      },
+      {
+        "title": "",
+        "description": "",
+        "highlight": ""
+      },
+      {
+        "title": "",
+        "description": "",
+        "highlight": ""
+      },
+      {
+        "title": "",
+        "description": "",
+        "highlight": ""
+      },
+      {
+        "title": "",
+        "description": "",
+        "highlight": ""
+      }
+    ],
+    "technical": {
+      "headline": "",
+      "description": "",
+      "stat": "",
+      "statLabel": ""
+    },
+    "privacy": {
+      "headline": "",
+      "description": "",
+      "features": [
+        { "label": "" },
+        { "label": "" },
+        { "label": "" }
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "",
+        "author": "",
+        "platform": ""
+      },
+      {
+        "quote": "",
+        "author": "",
+        "platform": ""
+      }
+    ]
   }
 }

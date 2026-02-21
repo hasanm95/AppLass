@@ -146,6 +146,15 @@
       "cta": "Read the Docs"
     }
   },
+  "apps": {
+    "hero": {
+      "eyebrow": "AppLass Ecosystem",
+      "headline": "Our",
+      "headlineAccent": "Ecosystem.",
+      "description": "Proprietary systems built with technical discipline and a focus on measurable impact. Every tool is a derivation of logic."
+    },
+    "viewDetails": "View Product Details"
+  },
   "products": {
     "screenveil": {
       "name": "ScreenVeil",
@@ -212,8 +221,307 @@
       "title": "About | The AppLass Methodology",
       "description": "Founder-led development derived from first principles. Mathematical integrity meets high-end digital craft. Meet the engineer behind the logic."
     },
+    "apps": {
+      "title": "Our Apps | AppLass Ecosystem",
+      "description": "Explore our suite of logic-driven applications designed for elite performance and digital discipline."
+    },
     "siteName": "AppLass",
     "ogTitle": "AppLass | Logic-Driven Software Studio",
     "ogDescription": "Mathematical precision meets human-centric design. We build the Next Wave of digital performance."
+  },
+  "fomogen": {
+    "hero": {
+      "tagline": "High-Performance Social Proof",
+      "headline": "Stop Losing 98% of Your Traffic.",
+      "headlineAccent": "Turn Browsers into Buyers Instantly.",
+      "subheadline": "The all-in-one conversion toolkit: Social Proof, Stock Scarcity, Sticky Cart, and Free Shipping Bars. Replace 5 slow apps with one lightweight solution.",
+      "primaryCTA": "Install on Shopify — Free",
+      "secondaryCTA": "Explore the Logic",
+      "shopifyUrl": "https://apps.shopify.com/fomogen",
+      "subtext": "Free plan available • No coding required • 5-Star Support",
+      "stats": [
+        { "value": "<2.1KB", "label": "Payload" },
+        { "value": "0ms", "label": "Main Thread" },
+        { "value": "WCAG 2.1", "label": "Compliant" },
+        { "value": "Mobile", "label": "Optimized" }
+      ]
+    },
+    "speedBenefit": {
+      "title": "Is \"App Bloat\" Killing Your Store’s Speed?",
+      "body": "You know you need social proof to sell. But installing one app for Sales Pops, another for Countdown Timers, and a third for Sticky Carts destroys your site speed.",
+      "fact": "Fact: A 1-second delay in page load can drop conversions by up to 17%.",
+      "struggle": "Most \"all-in-one\" apps are expensive, complex, and slow down your theme.",
+      "solution": "FOMO Gen gives you the essential 5 conversion tools in a single, speed-optimized script."
+    },
+    "features": [
+      {
+        "id": "social-proof-notifications",
+        "title": "Social Proof Notifications",
+        "subtitle": "Show Them You’re Busy.",
+        "description": "Display recent purchases to build instant trust. 92% of consumers hesitate to buy without social proof. Eliminate that doubt.",
+        "highlight": "Build Trust"
+      },
+      {
+        "id": "scarcity-urgency",
+        "title": "Scarcity & Urgency",
+        "subtitle": "Trigger the \"Fear of Missing Out.\"",
+        "description": "Use Low Stock Countdowns (\"Only 2 left!\") and Timer Bars to push customers from \"browsing\" to \"buying\" right now.",
+        "highlight": "Drive Urgency"
+      },
+      {
+        "id": "sticky-add-to-cart",
+        "title": "Sticky Add-To-Cart",
+        "subtitle": "Capture Mobile Sales.",
+        "description": "Keep your Buy Button visible on every scroll. Reduce friction and make checkout accessible from anywhere on the page.",
+        "highlight": "Reduce Friction"
+      },
+      {
+        "id": "free-shipping-bar",
+        "title": "Progressive Free Shipping Bar",
+        "subtitle": "Boost Average Order Value (AOV).",
+        "description": "\"Spend $15 more for Free Shipping.\" Motivate customers to add more items to their cart with a dynamic progress bar.",
+        "highlight": "Increase AOV"
+      },
+      {
+        "id": "trust-badges",
+        "title": "Trust Badges",
+        "subtitle": "Secure the Checkout.",
+        "description": "Display verified payment seals (Visa, PayPal, SSL) to reduce cart abandonment anxiety.",
+        "highlight": "Build Confidence"
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "I uninstalled Vitals and Nudgify. FOMO Gen does exactly what I need without the lag.",
+        "author": "Beta Tester",
+        "niche": "Fashion Niche"
+      },
+      {
+        "quote": "My add-to-cart rate jumped 15% just by turning on the Sticky Cart.",
+        "author": "Beta Tester",
+        "niche": "Dropshipping Store"
+      }
+    ],
+    "pricing": {
+      "title": "Proprietary Pricing Tiers",
+      "subtitle": "Scale Logically",
+      "tiers": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "period": "/month",
+          "description": "Essential social proof for new brands.",
+          "features": [
+            "1 Active Campaign",
+            "100 Display Impressions/mo",
+            "Basic Customization",
+            "Up to 3 Trust Badges",
+            "Community Support"
+          ],
+          "cta": "Install Free"
+        },
+        {
+          "name": "Starter",
+          "price": "$9.99",
+          "period": "/month",
+          "description": "Everything needed to start scaling.",
+          "features": [
+            "3 Active Campaigns",
+            "2,500 Display Impressions/mo",
+            "Full Color & Font Control",
+            "Unlimited Trust Badges",
+            "Priority Email Support"
+          ],
+          "cta": "Start 7-Day Trial"
+        },
+        {
+          "name": "Growth",
+          "price": "$19.99",
+          "period": "/month",
+          "description": "Advanced targeting for high-volume stores.",
+          "features": [
+            "10 Active Campaigns",
+            "10,000 Display Impressions/mo",
+            "Geo-Targeting Controls",
+            "Device-Specific Rules",
+            "Advanced Analytics"
+          ],
+          "cta": "Start 7-Day Trial"
+        },
+        {
+          "name": "Elite",
+          "price": "$39.99",
+          "period": "/month",
+          "description": "Unlimited scale with dedicated support.",
+          "features": [
+            "Unlimited Campaigns",
+            "Unlimited Impressions",
+            "Custom CSS Integration",
+            "Early Beta Access",
+            "30-min Strategy Call"
+          ],
+          "cta": "Start 7-Day Trial"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Scale Your Sales?",
+      "subtitle": "Beta Launch",
+      "description": "Get the Professional Plan features for free while we are in Beta. One-click install from Shopify App Store. Works with any theme.",
+      "highlights": [
+        "Beta Features Included",
+        "No Coding Required",
+        "One-Click Install",
+        "5-Star Support"
+      ],
+      "primaryCTA": "Get FOMO Gen Now",
+      "shopifyUrl": "https://apps.shopify.com/fomogen"
+    }
+  },
+  "mindfulGuard": {
+    "hero": {
+      "headline": "Reclaim Your Neural Architecture.",
+      "subheadline": "The first Android app blocker engineered for privacy absolutists. 0ms latency. 100% Offline. Zero telemetry.",
+      "primaryCTA": "Deploy to Android",
+      "secondaryCTA": "View the Logic",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard"
+    },
+    "logic": {
+      "title": "Why do you need a Cognitive Firewall?",
+      "description": "Willpower is a finite resource. Social media algorithms are supercomputers designed to deplete it. MindfulGuard is not a 'wellness' app; it is a Cognitive Firewall that intercepts distraction attempts at the system level."
+    },
+    "differentiators": [
+      {
+        "title": "Zero-Telemetry",
+        "description": "We don't know what you block. Your data never leaves your device. Unlike VPN-based blockers, we run locally."
+      },
+      {
+        "title": "Native Efficiency",
+        "description": "Built for Android's specific battery protocols. Won't drain your battery or get killed by MIUI/OneUI optimizers."
+      },
+      {
+        "title": "Strict Mode",
+        "description": "No bypass. No '5 more minutes.' When the wall is up, it stays up until the timer hits zero."
+      }
+    ],
+    "comparison": {
+      "title": "The Logic Matrix: MindfulGuard vs. The Industry.",
+      "headers": {
+        "privacy": "Privacy Model",
+        "pricing": "Pricing",
+        "tech": "Blocking Tech",
+        "battery": "Battery Impact"
+      },
+      "columns": {
+        "competitors": {
+          "opal": "Opal",
+          "freedom": "Freedom"
+        }
+      },
+      "specs": [
+        {
+          "label": "Privacy Model",
+          "mindfulGuard": "Offline / Zero-Data",
+          "opal": "Cloud Analytics",
+          "freedom": "Cloud Sync"
+        },
+        {
+          "label": "Pricing",
+          "mindfulGuard": "Fair / Transparent",
+          "opal": "$99/year Subscription",
+          "freedom": "$39/year Subscription"
+        },
+        {
+          "label": "Blocking Tech",
+          "mindfulGuard": "Native Android API",
+          "opal": "VPN (High Latency)",
+          "freedom": "VPN / Cross-platform"
+        },
+        {
+          "label": "Battery Impact",
+          "mindfulGuard": "<1%",
+          "opal": "High",
+          "freedom": "Moderate"
+        }
+      ]
+    }
+  },
+  "screenveil": {
+    "hero": {
+      "tagline": "AMOLED Battery Saver",
+      "headline": "Listen to Video",
+      "headlineAccent": "with Your Screen Off.",
+      "subheadline": "Save over 60% battery on AMOLED devices. ScreenVeil overlays a pure black layer so you can enjoy YouTube, podcasts, and music without the battery drain or accidental touches.",
+      "primaryCTA": "Get it on Google Play",
+      "secondaryCTA": "Learn More",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.screenveil.app",
+      "subtext": "10,000+ Downloads • 5.0 Star Rating • Zero Permissions"
+    },
+    "painPoints": [
+      {
+        "title": "Battery Anxiety?",
+        "stat": "50-80%",
+        "description": "Power savings on OLED/AMOLED panels"
+      },
+      {
+        "title": "Accidental Touches?",
+        "stat": "100%",
+        "description": "Lock your screen in pocket without stopping the stream"
+      }
+    ],
+    "features": [
+      {
+        "title": "Floating Quick Access",
+        "description": "A draggable, one-tap button that stays accessible over any app. Activate ScreenVeil instantly without switching apps.",
+        "highlight": "Always Accessible"
+      },
+      {
+        "title": "Pure Black Overlay",
+        "description": "Specifically engineered for AMOLED/OLED screens where black pixels consume zero power. True black means true savings.",
+        "highlight": "Zero Power Draw"
+      },
+      {
+        "title": "Smart Unlock System",
+        "description": "Simple 'Touch to Reveal' controls to prevent ghost taps in your pocket. Double-tap or swipe to unlock instantly.",
+        "highlight": "Ghost-Tap Prevention"
+      },
+      {
+        "title": "Real-Time Clock",
+        "description": "View the time and date even while the screen is 'off'. Stay informed without breaking your focus or burning battery.",
+        "highlight": "Always Visible"
+      },
+      {
+        "title": "Universal Compatibility",
+        "description": "Seamlessly works with YouTube, Netflix, Spotify, and any media player. One app to rule them all.",
+        "highlight": "Works Everywhere"
+      }
+    ],
+    "technical": {
+      "headline": "The Physics of Battery Conservation.",
+      "description": "On OLED and AMOLED displays, each pixel is its own light source. By displaying 'True Black,' ScreenVeil instructs pixels to turn completely off. Research shows this can reduce display-related power draw by up to 63% at max brightness.",
+      "stat": "63%",
+      "statLabel": "Power Reduction"
+    },
+    "privacy": {
+      "headline": "Zero Permissions. Total Privacy.",
+      "description": "Unlike clones, ScreenVeil requires no internet access and no personal data. We only need the 'Overlay' permission to function. Your data stays on your device—where it belongs.",
+      "features": [
+        { "label": "No Internet Required" },
+        { "label": "Zero Data Collection" },
+        { "label": "Overlay Only" }
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "Perfect for those who have a phone with low battery and want to listen to podcasts on YouTube.",
+        "author": "Reddit User",
+        "platform": "r/Android"
+      },
+      {
+        "quote": "Finally, a simple utility that does one thing really well without complex setup or ads.",
+        "author": "Early Adopter",
+        "platform": "Play Store"
+      }
+    ]
   }
 }

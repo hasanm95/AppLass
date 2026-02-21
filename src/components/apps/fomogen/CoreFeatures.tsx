@@ -19,7 +19,9 @@ const ICON_MAP: Record<string, LucideIcon> = {
   ShieldCheck,
 };
 
-export function CoreFeatures() {
+type FeatureTranslation = { title: string; subtitle: string; description: string; highlight: string; };
+
+export function CoreFeatures({ translations }: { translations?: FeatureTranslation[] }) {
   return (
     <Section id="features" className="relative bg-white py-24 md:py-32">
       <div className="section-container relative z-10">
@@ -35,8 +37,9 @@ export function CoreFeatures() {
         </div>
 
         <div className="grid grid-cols-1 gap-12 lg:gap-24">
-          {FOMOGEN_DATA.features.map((feature, idx) => {
-            const Icon = ICON_MAP[feature.iconName] || HelpCircle;
+          {FOMOGEN_DATA.features.map((baseFeature, idx) => {
+            const feature = translations?.[idx] || baseFeature;
+            const Icon = ICON_MAP[baseFeature.iconName] || HelpCircle;
             const isEven = idx % 2 === 0;
 
             return (
@@ -48,10 +51,10 @@ export function CoreFeatures() {
               >
                 {/* Visual Section */}
                 <div className="relative w-full flex-1">
-                  {feature.image ? (
+                  {baseFeature.image ? (
                     <div className="relative aspect-video overflow-hidden rounded-[2rem] border border-slate-100 bg-slate-50 shadow-2xl md:rounded-[3rem]">
                       <img
-                        src={feature.image}
+                        src={baseFeature.image}
                         alt={feature.title}
                         className="absolute inset-0 h-full w-full object-cover"
                       />

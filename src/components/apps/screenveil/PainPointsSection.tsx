@@ -7,7 +7,13 @@ const ICON_MAP: Record<string, LucideIcon> = {
   Hand,
 };
 
-export function PainPointsSection() {
+interface PainPointsSectionProps {
+  translations?: any[];
+}
+
+export function PainPointsSection({ translations }: PainPointsSectionProps) {
+  const points = translations && translations.length > 0 ? translations : SCREENVEIL_DATA.painPoints;
+
   return (
     <Section className="relative bg-slate-950 py-20 md:py-28">
       {/* Subtle grid pattern */}
@@ -38,13 +44,14 @@ export function PainPointsSection() {
         </div>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-12">
-          {SCREENVEIL_DATA.painPoints.map((point, idx) => {
-            const Icon = ICON_MAP[point.iconName] || HelpCircle;
+          {points.map((point: any, idx: number) => {
+            const originalPoint = SCREENVEIL_DATA.painPoints[idx] || {};
+            const Icon = ICON_MAP[originalPoint.iconName || ""] || HelpCircle;
 
             return (
               <div
                 key={idx}
-                className="group relative overflow-hidden rounded-3xl border border-green-500/20 bg-gradient-to-br from-slate-900 to-slate-950 p-8 transition-all duration-500 hover:border-green-500/40 hover:shadow-2xl hover:shadow-green-500/10 md:p-12"
+                className="group relative overflow-hidden rounded-3xl border border-green-500/20 bg-linear-to-br from-slate-900 to-slate-950 p-8 transition-all duration-500 hover:border-green-500/40 hover:shadow-2xl hover:shadow-green-500/10 md:p-12"
               >
                 {/* Glow effect */}
                 <div className="pointer-events-none absolute -top-20 -right-20 h-40 w-40 rounded-full bg-green-500/10 blur-3xl transition-all duration-500 group-hover:bg-green-500/20" />

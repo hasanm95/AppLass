@@ -14,8 +14,8 @@ export async function getStaticPaths() {
 const { lang } = Astro.params;
 const dict = await getDictionary(lang as any);
 
-const title = "Our Apps | AppLass Ecosystem";
-const description = "Explore our suite of logic-driven applications designed for elite performance and digital discipline.";
+const title = dict.metadata?.apps?.title || "Our Apps | AppLass Ecosystem";
+const description = dict.metadata?.apps?.description || "Explore our suite of logic-driven applications designed for elite performance and digital discipline.";
 ---
 
 <Layout title={title} description={description} lang={lang}>
@@ -25,14 +25,13 @@ const description = "Explore our suite of logic-driven applications designed for
       <Section className="bg-iridescent border-b border-slate-100 py-20 lg:py-32">
         <div class="section-container">
           <span class="mb-6 block text-[10px] font-black tracking-[0.2em] text-blue-800 uppercase">
-            AppLass Ecosystem
+            {dict.apps?.hero?.eyebrow || "AppLass Ecosystem"}
           </span>
           <h1 class="text-display mb-8 max-w-4xl text-slate-900">
-            Our <span class="text-slate-300">Ecosystem.</span>
+            {dict.apps?.hero?.headline || "Our"} <span class="text-slate-300">{dict.apps?.hero?.headlineAccent || "Ecosystem."}</span>
           </h1>
           <p class="max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
-            Proprietary systems built with technical discipline and a focus on
-            measurable impact. Every tool is a derivation of logic.
+            {dict.apps?.hero?.description || "Proprietary systems built with technical discipline and a focus on measurable impact. Every tool is a derivation of logic."}
           </p>
         </div>
       </Section>
@@ -40,58 +39,63 @@ const description = "Explore our suite of logic-driven applications designed for
       <Section className="py-24">
         <div class="section-container">
           <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
-            {PRODUCTS.map((product) => (
-              <div
-                class="group relative flex flex-col overflow-hidden rounded-[3rem] border border-slate-200 bg-white transition-all hover:border-blue-500/30 hover:shadow-2xl"
-              >
-                <div class="aspect-[16/9] overflow-hidden bg-slate-50 relative">
-                  <img
-                    src={product.image}
-                    alt={`${product.name} - ${product.tagline}`}
-                    width={800}
-                    height={450}
-                    class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                </div>
+            {PRODUCTS.map((product) => {
+              const dictKey = product.id === "mindful" ? "mindfulGuard" : product.id;
+              const translation = (dict.products as any)?.[dictKey];
 
-                <div class="flex flex-1 flex-col p-10 lg:p-12">
-                  <div class="mb-6 flex items-center justify-between">
-                    <span class="text-[10px] font-black tracking-widest text-blue-800 uppercase">
-                      {product.platform}
-                    </span>
-                    <div class="flex gap-2">
-                      {product.metrics.map((metric) => (
-                        <span
-                          class="rounded-full bg-slate-50 px-3 py-1 text-[10px] font-bold text-slate-500"
+              return (
+                <div
+                  class="group relative flex flex-col overflow-hidden rounded-[3rem] border border-slate-200 bg-white transition-all hover:border-blue-500/30 hover:shadow-2xl"
+                >
+                  <div class="aspect-[16/9] overflow-hidden bg-slate-50 relative">
+                    <img
+                      src={product.image}
+                      alt={`${translation?.name || product.name} - ${translation?.tagline || product.tagline}`}
+                      width={800}
+                      height={450}
+                      class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                  </div>
+
+                  <div class="flex flex-1 flex-col p-10 lg:p-12">
+                    <div class="mb-6 flex items-center justify-between">
+                      <span class="text-[10px] font-black tracking-widest text-blue-800 uppercase">
+                        {translation?.platform || product.platform}
+                      </span>
+                      <div class="flex gap-2">
+                        {(translation?.metrics || product.metrics).map((metric: string) => (
+                          <span
+                            class="rounded-full bg-slate-50 px-3 py-1 text-[10px] font-bold text-slate-500"
+                          >
+                            {metric}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    <h2 class="mb-4 text-4xl font-black text-slate-900">
+                      {translation?.name || product.name}
+                    </h2>
+                    <p class="mb-8 text-lg leading-relaxed font-medium text-slate-500">
+                      {translation?.description || product.description}
+                    </p>
+
+                    <div class="mt-auto">
+                      <Button
+                        asChild
+                        className="h-14 w-full rounded-2xl bg-slate-900 text-lg font-bold text-white transition-all hover:bg-blue-600"
+                      >
+                        <a
+                          href={`/${lang}/apps/${product.id === "mindful" ? "mindful-guard" : product.id}`}
                         >
-                          {metric}
-                        </span>
-                      ))}
+                          {dict.apps?.viewDetails || "View Product Details"}
+                        </a>
+                      </Button>
                     </div>
                   </div>
-
-                  <h2 class="mb-4 text-4xl font-black text-slate-900">
-                    {product.name}
-                  </h2>
-                  <p class="mb-8 text-lg leading-relaxed font-medium text-slate-500">
-                    {product.description}
-                  </p>
-
-                  <div class="mt-auto">
-                    <Button
-                      asChild
-                      className="h-14 w-full rounded-2xl bg-slate-900 text-lg font-bold text-white transition-all hover:bg-blue-600"
-                    >
-                      <a
-                        href={`/${lang}/apps/${product.id === "mindful" ? "mindful-guard" : product.id}`}
-                      >
-                        View Product Details
-                      </a>
-                    </Button>
-                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </Section>

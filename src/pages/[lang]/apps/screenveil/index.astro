@@ -34,16 +34,16 @@ const description = "Protect your data from prying eyes with ScreenVeil. A light
         type="application/ld+json"
         set:html={JSON.stringify(SCREENVEIL_DATA.schema.softwareApplication)}
       />
-      <ScreenVeilHero client:load />
-      <PainPointsSection client:idle />
-      <FeatureGrid client:idle />
-      <TechnicalAdvantage client:idle />
-      <PrivacySection client:idle />
-      <TestimonialsSection client:idle />
+      <ScreenVeilHero client:load translations={dict.screenveil?.hero} />
+      <PainPointsSection client:idle translations={dict.screenveil?.painPoints} />
+      <FeatureGrid client:idle translations={dict.screenveil?.features} />
+      <TechnicalAdvantage client:idle translations={dict.screenveil?.technical} />
+      <PrivacySection client:idle translations={dict.screenveil?.privacy} />
+      <TestimonialsSection client:idle translations={dict.screenveil?.testimonials} />
       <FAQSection client:idle />
     </div>
 
     <Footer translations={dict.footer} variant="dark" />
-    <StickyDownloadBar client:idle />
+    <StickyDownloadBar client:idle translations={dict.screenveil?.hero} />
   </div>
 </Layout>

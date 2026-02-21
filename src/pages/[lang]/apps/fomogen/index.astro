@@ -86,12 +86,12 @@ const description = "Add high-converting sales popups, countdowns, and sticky ca
     />
 
     <div class="flex-1 overflow-x-hidden">
-      <FomoGenHero client:load />
-      <SpeedBenefitSection client:idle />
-      <CoreFeatures client:idle />
-      <TestimonialsSection client:idle />
-      <PricingSection client:idle />
-      <FomoGenCTA client:idle />
+      <FomoGenHero client:load translations={dict.fomogen?.hero} />
+      <SpeedBenefitSection client:idle translations={dict.fomogen?.speedBenefit} />
+      <CoreFeatures client:idle translations={dict.fomogen?.features} />
+      <TestimonialsSection client:idle translations={dict.fomogen?.testimonials} />
+      <PricingSection client:idle translations={dict.fomogen?.pricing} />
+      <FomoGenCTA client:idle translations={dict.fomogen?.cta} />
       <FAQRegistrySection
         client:idle
         registryKey="FOMOGEN"

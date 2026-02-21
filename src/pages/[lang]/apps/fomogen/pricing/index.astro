@@ -22,7 +22,7 @@ const description = "Transparent, performance-based pricing for AppLass FOMO Gen
     <Navbar client:load translations={dict.nav} />
     
     <div class="pt-32 pb-16">
-      <PricingSection client:idle />
+      <PricingSection client:idle translations={dict.fomogen?.pricing} />
       <FAQRegistrySection
         client:idle
         registryKey="FOMOGEN"
