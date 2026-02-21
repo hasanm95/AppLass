@@ -26,7 +26,7 @@ export function Section({
   );
 }
 
-export function SectionHeader({
+function SectionHeader({
   badge,
   title,
   description,

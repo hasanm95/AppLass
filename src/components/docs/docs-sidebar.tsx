@@ -93,7 +93,7 @@ export function DocsSidebar({ pathname = "", lang }: { pathname?: string; lang: 
   const links = appKey ? DOCS_CONFIG[appKey] : DOCS_CONFIG.fomogen;
 
   return (
-    <aside className="sticky top-20 hidden h-[calc(100vh-5rem)] w-72 flex-shrink-0 overflow-y-auto border-r border-slate-100 bg-white/50 pb-20 lg:block">
+    <aside className="sticky top-20 hidden h-[calc(100vh-5rem)] w-72 shrink-0 overflow-y-auto border-r border-slate-100 bg-white/50 pb-20 lg:block">
       <div className="p-8">
         <nav className="space-y-12">
           {links.map((section) => (

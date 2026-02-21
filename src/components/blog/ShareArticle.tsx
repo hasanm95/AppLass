@@ -38,7 +38,7 @@ export function ShareArticle({ title, slug }: ShareArticleProps) {
   };
 
   return (
-    <div className="rounded-[2rem] border border-slate-100 bg-slate-50/50 p-8">
+    <div className="rounded-4xl border border-slate-100 bg-slate-50/50 p-8">
       <h4 className="mb-4 text-sm font-black tracking-widest text-slate-900 uppercase">
         Share Article
       </h4>

@@ -13,11 +13,7 @@
     "@astrojs/check": "^0.9.6",
     "@astrojs/react": "^4.4.2",
     "@astrojs/sitemap": "^3.7.0",
-    "@radix-ui/react-accordion": "^1.2.12",
-    "@radix-ui/react-dialog": "^1.1.15",
-    "@radix-ui/react-label": "^2.1.8",
     "@radix-ui/react-slot": "^1.2.4",
-    "@radix-ui/react-switch": "^1.2.6",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.2.0",
     "@types/react": "^19.2.14",
@@ -34,11 +30,9 @@
     "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "@types/marked": "^5.0.2",
     "@types/node": "^25.3.0",
     "eslint": "^9.39.3",
     "eslint-plugin-astro": "^1.6.0",
-    "gray-matter": "^4.0.3",
-    "typescript-eslint": "^8.56.0"
+    "gray-matter": "^4.0.3"
   }
 }

@@ -1,7 +1,7 @@
 import type { Locale } from "./config";
 import rawEnDictionary from "./dictionaries/en.json";
 
-export type SEOMetadata = {
+type SEOMetadata = {
   title: string;
   description: string;
   keywords?: string;
