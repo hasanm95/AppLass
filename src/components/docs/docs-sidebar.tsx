@@ -86,9 +86,10 @@ const DOCS_CONFIG: Record<
   ],
 };
 
-export function DocsSidebar({ pathname = "" }: { pathname?: string }) {
-  // Determine which app we are looking at
-  const appKey = pathname.split("/").find((key: string) => DOCS_CONFIG[key]);
+export function DocsSidebar({ pathname = "", lang }: { pathname?: string; lang: string }) {
+  // Determine which app we are looking at by stripping the language prefix
+  const pathWithoutLang = pathname.replace(new RegExp(`^/${lang}`), '');
+  const appKey = pathWithoutLang.split("/").find((key: string) => DOCS_CONFIG[key]);
   const links = appKey ? DOCS_CONFIG[appKey] : DOCS_CONFIG.fomogen;
 
   return (
@@ -102,11 +103,12 @@ export function DocsSidebar({ pathname = "" }: { pathname?: string }) {
               </h3>
               <ul className="space-y-1">
                 {section.items.map((item) => {
-                  const isActive = pathname === item.href;
+                  const localizedHref = `/${lang}${item.href}`;
+                  const isActive = pathname === localizedHref;
                   return (
                     <li key={item.href}>
                       <a
-                        href={item.href}
+                        href={localizedHref}
                         className={`flex items-center rounded-xl px-4 py-2.5 text-sm font-semibold transition-all duration-300 ${
                           isActive
                             ? "bg-blue-600 text-white shadow-lg shadow-blue-500/20"
