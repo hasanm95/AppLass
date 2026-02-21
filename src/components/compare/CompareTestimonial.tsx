@@ -8,7 +8,7 @@ interface TestimonialProps {
   translations?: any;
 }
 
-export function CompareTestimonial({ quote, author, role, translations }: TestimonialProps) {
+export function CompareTestimonial({ quote, author, role }: TestimonialProps) {
   return (
     <Section className="bg-white py-24">
       <div className="section-container">

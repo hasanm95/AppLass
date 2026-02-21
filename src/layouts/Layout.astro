@@ -94,8 +94,8 @@ const documentLang = lang || getLangFromUrl(Astro.url);
     <!-- Google Analytics -->
     {import.meta.env.PUBLIC_GA_ID && (
       <>
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.PUBLIC_GA_ID}`}></script>
-        <script define:vars={{ gaId: import.meta.env.PUBLIC_GA_ID }}>
+        <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.PUBLIC_GA_ID}`}></script>
+        <script is:inline define:vars={{ gaId: import.meta.env.PUBLIC_GA_ID }}>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());

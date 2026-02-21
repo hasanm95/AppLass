@@ -44,6 +44,7 @@ const optimizedHero = await getImage({ src: screenveilHeroImg, format: "webp" })
       {/* SoftwareApplication Schema for SEO - triggers rich results with star ratings */}
       <script
         type="application/ld+json"
+        is:inline
         set:html={JSON.stringify(SCREENVEIL_DATA.schema.softwareApplication)}
       />
       <ScreenVeilHero client:load translations={dict.screenveil?.hero} heroImageSrc={optimizedHero.src} />

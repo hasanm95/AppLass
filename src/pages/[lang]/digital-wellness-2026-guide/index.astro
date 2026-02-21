@@ -11,8 +11,9 @@ import {
   Smartphone,
   Eye,
   Sun,
-  Linkedin,
-  Github,
+  FileText,
+  Linkedin as LinkedinIcon,
+  Github as GithubIcon,
 } from "lucide-react";
 import { FAQ_REGISTRY } from "@/constants/faq-registry";
 import { getDictionary } from "@/i18n/get-dictionary";
@@ -349,7 +350,7 @@ const meta = dict.metadata?.digitalWellness || {};
             Frequently Asked Questions
           </h2>
           <div class="space-y-8">
-            {FAQ_REGISTRY.DIGITAL_WELLNESS.map((faq, i) => (
+            {FAQ_REGISTRY.DIGITAL_WELLNESS.map((faq) => (
               <div class="rounded-3xl border border-slate-100 p-10 transition-all hover:border-blue-500/20">
                 <h4 class="mb-4 text-xl font-black text-slate-900">
                   {faq.question}
@@ -395,7 +396,7 @@ const meta = dict.metadata?.digitalWellness || {};
                 rel="noopener noreferrer"
                 class="text-slate-400 transition-colors hover:text-blue-600"
               >
-                <Linkedin size={20} />
+                <LinkedinIcon size={20} />
               </a>
               <a
                 href="https://github.com/hasanm95"
@@ -403,7 +404,7 @@ const meta = dict.metadata?.digitalWellness || {};
                 rel="noopener noreferrer"
                 class="text-slate-400 transition-colors hover:text-slate-900"
               >
-                <Github size={20} />
+                <GithubIcon size={20} />
               </a>
             </div>
           </div>

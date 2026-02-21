@@ -65,7 +65,7 @@ export function SpeedBenefitSection({ translations = FOMOGEN_DATA.speedBenefit }
                   <h3 className="text-xl font-bold text-slate-900">
                     The Solution
                   </h3>
-                  <p className="mt-2 font-medium text-green-700 text-slate-500">
+                  <p className="mt-2 font-medium text-slate-500">
                     {speedBenefit.solution}
                   </p>
                 </div>

@@ -54,7 +54,7 @@ export function CoreFeatures({ translations }: { translations?: FeatureTranslati
                 {/* Visual Section */}
                 <div className="relative w-full flex-1">
                   {finalImageSrc ? (
-                    <div className="relative aspect-video overflow-hidden rounded-[2rem] border border-slate-100 bg-slate-50 shadow-2xl md:rounded-[3rem]">
+                    <div className="relative aspect-video overflow-hidden rounded-4xl border border-slate-100 bg-slate-50 shadow-2xl md:rounded-[3rem]">
                       <img
                         src={finalImageSrc}
                         alt={feature.title}
@@ -64,7 +64,7 @@ export function CoreFeatures({ translations }: { translations?: FeatureTranslati
                       />
                     </div>
                   ) : (
-                    <div className="flex aspect-video items-center justify-center rounded-[2rem] border border-green-100 bg-green-50/30 md:rounded-[3rem]">
+                    <div className="flex aspect-video items-center justify-center rounded-4xl border border-green-100 bg-green-50/30 md:rounded-[3rem]">
                       <Icon className="h-24 w-24 text-green-600 opacity-20" />
                     </div>
                   )}

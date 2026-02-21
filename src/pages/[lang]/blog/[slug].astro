@@ -62,6 +62,7 @@ const jsonLd = {
 <Layout title={title} description={description} lang={lang}>
   <script
     type="application/ld+json"
+    is:inline
     set:html={JSON.stringify(jsonLd)}
   />
   {post.faqs && post.faqs.length > 0 && (

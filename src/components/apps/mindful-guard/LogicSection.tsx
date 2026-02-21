@@ -43,7 +43,7 @@ export function LogicSection({ translations }: LogicSectionProps) {
           </div>
 
           <div className="relative w-full lg:flex-1">
-            <div className="relative aspect-[4/3] overflow-hidden border-2 border-slate-950 bg-white p-8 shadow-[12px_12px_0px_0px_rgba(6,78,59,0.1)]">
+            <div className="relative aspect-4/3 overflow-hidden border-2 border-slate-950 bg-white p-8 shadow-[12px_12px_0px_0px_rgba(6,78,59,0.1)]">
               {/* Technical Blueprint Grid */}
               <div
                 className="pointer-events-none absolute inset-0 opacity-[0.05]"

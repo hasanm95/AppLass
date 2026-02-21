@@ -85,7 +85,7 @@ export function MindfulHero({ translations }: MindfulHeroProps) {
       </div>
 
       {/* Geometric Decorative Divider */}
-      <div className="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-transparent via-emerald-900/10 to-transparent" />
+      <div className="absolute bottom-0 left-0 h-1 w-full bg-linear-to-r from-transparent via-emerald-900/10 to-transparent" />
     </section>
   );
 }

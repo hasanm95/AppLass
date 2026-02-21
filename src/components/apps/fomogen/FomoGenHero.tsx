@@ -96,7 +96,7 @@ export function FomoGenHero({ translations = FOMOGEN_DATA.hero, heroImageSrc = "
               fetchPriority="high"
             />
             {/* Subtle Overlay Label */}
-            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/20 to-transparent p-8 text-center text-xs font-black tracking-widest text-white uppercase opacity-0 transition-opacity duration-500 hover:opacity-100">
+            <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/20 to-transparent p-8 text-center text-xs font-black tracking-widest text-white uppercase opacity-0 transition-opacity duration-500 hover:opacity-100">
               The FOMO Gen Advantage
             </div>
           </div>

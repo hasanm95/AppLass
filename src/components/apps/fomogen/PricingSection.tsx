@@ -13,7 +13,7 @@ export function PricingSection({ translations }: { translations?: PricingTransla
   return (
     <Section className="relative bg-white py-24 md:py-32">
       {/* Background Vignette */}
-      <div className="pointer-events-none absolute bottom-0 left-0 h-[600px] w-full bg-gradient-to-t from-green-50/50 to-transparent" />
+      <div className="pointer-events-none absolute bottom-0 left-0 h-[600px] w-full bg-linear-to-t from-green-50/50 to-transparent" />
 
       <div className="section-container relative z-10">
         <div className="mb-16 text-center md:mb-20">
@@ -31,7 +31,7 @@ export function PricingSection({ translations }: { translations?: PricingTransla
             return (
             <div
               key={idx}
-              className={`group relative flex flex-col rounded-[2rem] p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl md:rounded-[2.5rem] md:p-10 ${
+              className={`group relative flex flex-col rounded-4xl p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl md:rounded-[2.5rem] md:p-10 ${
                 baseTier.highlighted
                   ? "border-green-400 bg-white shadow-[0_40px_100px_-20px_rgba(33,196,93,0.1)] ring-4 ring-green-50"
                   : "border-white/40 bg-white/40 shadow-xl backdrop-blur-md"

@@ -46,7 +46,7 @@ export function FomoGenCTA({ translations = FOMOGEN_DATA.cta }: { translations?:
         <div className="mt-16 md:mt-20">
           <Button
             size="lg"
-            className="h-16 rounded-2xl bg-[#131111] px-12 text-lg font-bold text-white shadow-2xl shadow-slate-200 transition-all duration-500 hover:scale-110 hover:bg-black active:scale-95 md:h-20 md:rounded-[2rem] md:px-16 md:text-xl"
+            className="h-16 rounded-2xl bg-[#131111] px-12 text-lg font-bold text-white shadow-2xl shadow-slate-200 transition-all duration-500 hover:scale-110 hover:bg-black active:scale-95 md:h-20 md:rounded-4xl md:px-16 md:text-xl"
             asChild
           >
             <a href={FOMOGEN_DATA.cta.shopifyUrl}>

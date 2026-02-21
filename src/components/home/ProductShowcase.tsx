@@ -19,34 +19,34 @@ export function ProductShowcase({ translations, products, productImages = {} }: 
   return (
     <Section
       id="apps"
-      className="bg-[var(--background)] py-16 md:py-24 lg:py-32"
+      className="bg-background py-16 md:py-24 lg:py-32"
     >
       <div className="section-container">
         {/* Section Header */}
         <div className="mb-16 flex items-center gap-4 md:mb-20">
-          <span className="font-mono text-xs font-bold tracking-widest text-[var(--muted-foreground)]/50 uppercase">
+          <span className="font-mono text-xs font-bold tracking-widest text-(--muted-foreground)/50 uppercase">
             {translations?.sectionLabel || "PRODUCTS"}
           </span>
-          <span className="block h-px flex-1 bg-[var(--foreground)]/20" />
+          <span className="block h-px flex-1 bg-(--foreground)/20" />
         </div>
 
         {/* Featured Product: ScreenVeil */}
         <div className="mb-16 md:mb-24">
           <div className="mb-6 flex items-center gap-4">
-            <span className="font-mono text-xs font-bold tracking-widest text-[var(--muted-foreground)]/50 uppercase">
+            <span className="font-mono text-xs font-bold tracking-widest text-(--muted-foreground)/50 uppercase">
               01
             </span>
-            <span className="block h-px w-24 bg-[var(--cta)]" />
+            <span className="block h-px w-24 bg-cta" />
           </div>
 
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Content */}
-            <div className="relative border-l-2 border-[var(--foreground)]/10 pl-6 transition-all duration-200 hover:border-l-[var(--cta)] md:pl-8">
-              <span className="mb-2 block font-mono text-[10px] font-bold tracking-[0.2em] text-[var(--muted-foreground)] uppercase">
+            <div className="relative border-l-2 border-(--foreground)/10 pl-6 transition-all duration-200 hover:border-l-cta md:pl-8">
+              <span className="mb-2 block font-mono text-[10px] font-bold tracking-[0.2em] text-muted-foreground uppercase">
                 {featuredTranslation?.platform || featuredDataSource.platform}
               </span>
 
-              <h2 className="font-mono text-4xl font-bold text-[var(--foreground)] md:text-5xl">
+              <h2 className="font-mono text-4xl font-bold text-foreground md:text-5xl">
                 {featuredTranslation?.name || featuredDataSource.name}
               </h2>
 
@@ -54,24 +54,24 @@ export function ProductShowcase({ translations, products, productImages = {} }: 
                 {featuredTranslation?.tagline || featuredDataSource.tagline}
               </p>
 
-              <p className="mb-8 max-w-md text-lg leading-relaxed text-[var(--muted-foreground)]">
+              <p className="mb-8 max-w-md text-lg leading-relaxed text-muted-foreground">
                 {featuredTranslation?.description || featuredDataSource.description}
               </p>
 
               <div className="mb-8 flex flex-wrap gap-6">
                 <div className="flex items-baseline gap-2">
-                  <span className="font-mono text-2xl font-bold text-[var(--foreground)]">
+                  <span className="font-mono text-2xl font-bold text-foreground">
                     {featuredDataSource.stats?.downloads}
                   </span>
-                  <span className="text-sm text-[var(--muted-foreground)]">
+                  <span className="text-sm text-muted-foreground">
                     {translations?.downloadsFeatured || "downloads"}
                   </span>
                 </div>
                 <div className="flex items-baseline gap-2">
-                  <span className="font-mono text-2xl font-bold text-[var(--foreground)]">
+                  <span className="font-mono text-2xl font-bold text-foreground">
                     {featuredDataSource.stats?.rating}★
                   </span>
-                  <span className="text-sm text-[var(--muted-foreground)]">
+                  <span className="text-sm text-muted-foreground">
                     {translations?.ratingFeatured || "rating"}
                   </span>
                 </div>
@@ -96,7 +96,7 @@ export function ProductShowcase({ translations, products, productImages = {} }: 
               aria-label={`View ${featuredTranslation?.name || featuredDataSource.name}`}
               className="relative flex items-center justify-center transition-transform hover:scale-[1.02]"
             >
-              <div className="relative w-full overflow-hidden rounded-2xl border border-[var(--border)] bg-gradient-to-br from-green-50 to-green-100 p-12">
+              <div className="relative w-full overflow-hidden rounded-2xl border border-border bg-linear-to-br from-green-50 to-green-100 p-12">
                 <img
                   src={productImages[featuredDataSource.id] || featuredDataSource.image}
                   alt={featuredTranslation?.name || featuredDataSource.name}
@@ -130,18 +130,18 @@ export function ProductShowcase({ translations, products, productImages = {} }: 
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`View ${translation?.name || product.name}`}
-                className="group relative cursor-pointer border-l-2 border-[var(--foreground)]/10 pl-6 transition-all duration-200 hover:border-l-[var(--cta)] md:pl-8"
+                className="group relative cursor-pointer border-l-2 border-(--foreground)/10 pl-6 transition-all duration-200 hover:border-l-cta md:pl-8"
               >
                 {/* Number */}
                 <div className="mb-6 flex items-center gap-4">
-                  <span className="font-mono text-xs font-bold tracking-widest text-[var(--muted-foreground)]/50 uppercase">
+                  <span className="font-mono text-xs font-bold tracking-widest text-(--muted-foreground)/50 uppercase">
                     0{idx + 2}
                   </span>
-                  <span role="presentation" className="block h-px w-16 bg-[var(--foreground)]/20 transition-colors group-hover:bg-[var(--cta)]" />
+                  <span role="presentation" className="block h-px w-16 bg-(--foreground)/20 transition-colors group-hover:bg-cta" />
                 </div>
 
                 {/* Image */}
-                <div className="mb-6 overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--muted)]/30 p-6">
+                <div className="mb-6 overflow-hidden rounded-xl border border-border bg-(--muted)/30 p-6">
                   <img
                     src={productImages[product.id] || product.image}
                     alt={translation?.name || product.name}
@@ -152,11 +152,11 @@ export function ProductShowcase({ translations, products, productImages = {} }: 
                 </div>
 
                 {/* Content */}
-                <span className="mb-2 block font-mono text-[10px] font-bold tracking-[0.2em] text-[var(--muted-foreground)] uppercase">
+                <span className="mb-2 block font-mono text-[10px] font-bold tracking-[0.2em] text-muted-foreground uppercase">
                   {translation?.platform || product.platform}
                 </span>
 
-                <h3 className="font-mono text-xl font-bold text-[var(--foreground)] md:text-2xl">
+                <h3 className="font-mono text-xl font-bold text-foreground md:text-2xl">
                   {translation?.name || product.name}
                 </h3>
 
@@ -166,7 +166,7 @@ export function ProductShowcase({ translations, products, productImages = {} }: 
                   {translation?.tagline || product.tagline}
                 </p>
 
-                <p className="mb-6 text-sm leading-relaxed text-[var(--muted-foreground)]">
+                <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
                   {translation?.description || product.description}
                 </p>
 
@@ -174,7 +174,7 @@ export function ProductShowcase({ translations, products, productImages = {} }: 
                   {(translation?.metrics || product.metrics).map((metric, midx) => (
                     <span
                       key={midx}
-                      className="border border-[var(--border)] px-3 py-1 font-mono text-xs font-semibold text-[var(--foreground)]"
+                      className="border border-border px-3 py-1 font-mono text-xs font-semibold text-foreground"
                     >
                       {metric}
                     </span>
