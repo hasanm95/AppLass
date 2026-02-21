@@ -6,14 +6,15 @@ import type { MarkdownBlogPost } from "@/lib/blog";
 interface BlogCardProps {
   post: MarkdownBlogPost;
   isHero?: boolean;
+  lang?: string;
 }
 
-export function BlogCard({ post, isHero = false }: BlogCardProps) {
+export function BlogCard({ post, isHero = false, lang = "en" }: BlogCardProps) {
   return (
     <a
-      href={`/blog/${post.slug}`}
+      href={`/${lang}/blog/${post.slug}`}
       className={cn(
-        "group block h-full rounded-[2rem] border border-slate-900 transition-all hover:bg-slate-50",
+        "group block h-full rounded-4xl border border-slate-900 transition-all hover:bg-slate-50",
         isHero ? "gap-12 p-1 pt-1 lg:flex" : "p-8"
       )}
     >
@@ -22,8 +23,8 @@ export function BlogCard({ post, isHero = false }: BlogCardProps) {
         className={cn(
           "relative overflow-hidden rounded-[1.8rem] bg-slate-100 shadow-inner",
           isHero
-            ? "aspect-[16/9] lg:aspect-auto lg:flex-1"
-            : "mb-8 aspect-[16/9]"
+            ? "aspect-video lg:aspect-auto lg:flex-1"
+            : "mb-8 aspect-video"
         )}
       >
         {post.thumbnail ? (

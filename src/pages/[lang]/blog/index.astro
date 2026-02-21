@@ -16,12 +16,12 @@ const dict = await getDictionary(lang as any);
 
 const meta = dict.metadata?.blog || {};
 
-const posts = getBlogPosts();
-const categories = getBlogCategories();
+const posts = getBlogPosts(lang as string);
+const categories = getBlogCategories(lang as string);
 
-const featuredPost = posts.find((post) => post.featured) || posts[0];
+const featuredPost = posts.find((post: any) => post.featured) || posts[0];
 const otherPosts = posts.filter(
-  (post) => post.slug !== (featuredPost?.slug || "")
+  (post: any) => post.slug !== (featuredPost?.slug || "")
 );
 ---
 
@@ -50,17 +50,19 @@ const otherPosts = posts.filter(
           ))}
         </div>
 
-        {featuredPost && (
-          <div class="mb-20">
-            <BlogCard post={featuredPost} isHero={true} />
-          </div>
-        )}
-
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {otherPosts.map((post) => (
-            <BlogCard post={post} />
-          ))}
+        {/* Featured Post */}
+      {featuredPost && (
+        <div class="mb-12 lg:mb-20">
+          <BlogCard post={featuredPost} isHero={true} lang={lang} />
         </div>
+      )}
+
+      {/* Grid */}
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {otherPosts.map((post: any) => (
+          <BlogCard post={post} lang={lang} />
+        ))}
+      </div>
 
         {posts.length === 0 && (
           <div class="py-20 text-center">
