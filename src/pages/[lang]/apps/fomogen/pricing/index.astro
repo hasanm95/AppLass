@@ -1,0 +1,36 @@
+---
+import Layout from '../../../../../layouts/Layout.astro';
+import { Navbar, Footer } from "@/components/common";
+import { PricingSection } from "@/components/apps/fomogen/PricingSection";
+import { FAQRegistrySection } from "@/components/common/FAQRegistrySection";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { i18nConfig } from "@/i18n/config";
+
+export async function getStaticPaths() {
+  return i18nConfig.locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const dict = await getDictionary(lang as any);
+
+const title = "FOMO Gen Pricing | Elite Social Proof for Shopify";
+const description = "Transparent, performance-based pricing for AppLass FOMO Gen. No bait-and-switch. 100% ROI guarantee.";
+---
+
+<Layout title={title} description={description} lang={lang}>
+  <div class="bg-white">
+    <Navbar client:load translations={dict.nav} />
+    
+    <div class="pt-32 pb-16">
+      <PricingSection client:idle />
+      <FAQRegistrySection
+        client:idle
+        registryKey="FOMOGEN"
+        variant="centered"
+        className="bg-slate-50 py-24"
+      />
+    </div>
+
+    <Footer translations={dict.footer} />
+  </div>
+</Layout>

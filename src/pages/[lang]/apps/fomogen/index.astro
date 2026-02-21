@@ -1,0 +1,105 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import { Navbar, Footer } from "@/components/common";
+import { FomoGenHero } from "@/components/apps/fomogen/FomoGenHero";
+import { SpeedBenefitSection } from "@/components/apps/fomogen/SpeedBenefitSection";
+import { CoreFeatures } from "@/components/apps/fomogen/CoreFeatures";
+import { TestimonialsSection } from "@/components/apps/fomogen/TestimonialsSection";
+import { PricingSection } from "@/components/apps/fomogen/PricingSection";
+import { FomoGenCTA } from "@/components/apps/fomogen/FomoGenCTA";
+import { FAQRegistrySection } from "@/components/common/FAQRegistrySection";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { i18nConfig } from "@/i18n/config";
+
+export async function getStaticPaths() {
+  return i18nConfig.locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const dict = await getDictionary(lang as any);
+
+const title = "FOMO Gen: Fast Shopify Social Proof App [No Code 2026]";
+const description = "Add high-converting sales popups, countdowns, and sticky carts to Shopify. Zero impact on Core Web Vitals with our 2KB payload.";
+---
+
+<Layout title={title} description={description} lang={lang}>
+  <div class="bg-white">
+    <Navbar client:load translations={dict.nav} />
+
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: "FOMO Gen - Elite Social Proof",
+            operatingSystem: "Shopify",
+            applicationCategory: "BusinessApplication",
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              ratingCount: "135",
+            },
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "USD",
+              priceValidUntil: "2026-12-31",
+              availability: "https://schema.org/InStock",
+            },
+            featureList:
+              "Social Proof Notifications, Stock Countdown Timer, Sticky Add-to-Cart, Free Shipping Bar",
+            screenshot:
+              "https://applass.com/v1/apps/fomogen/comparison-hero.png",
+            image: "https://applass.com/v1/apps/fomogen-feature.png",
+            description:
+              "FOMO Gen is an all-in-one Shopify app for social proof, urgency, and trust signals.",
+            author: {
+              "@type": "Organization",
+              name: "Applass",
+              url: "https://applass.com",
+            },
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: "FOMO Gen",
+            description:
+              "All-in-one Shopify app for Sales Popups, Stock Countdowns, Sticky Cart, and Trust Badges.",
+            brand: {
+              "@type": "Brand",
+              name: "AppLass",
+            },
+            offers: {
+              "@type": "Offer",
+              price: "0.00",
+              priceCurrency: "USD",
+              priceValidUntil: "2026-12-31",
+              availability: "https://schema.org/InStock",
+              url: "https://applass.com/apps/fomogen",
+            },
+          },
+        ],
+      })}
+    />
+
+    <div class="flex-1 overflow-x-hidden">
+      <FomoGenHero client:load />
+      <SpeedBenefitSection client:idle />
+      <CoreFeatures client:idle />
+      <TestimonialsSection client:idle />
+      <PricingSection client:idle />
+      <FomoGenCTA client:idle />
+      <FAQRegistrySection
+        client:idle
+        registryKey="FOMOGEN"
+        variant="centered"
+        className="bg-white py-24"
+      />
+    </div>
+
+    <Footer translations={dict.footer} />
+  </div>
+</Layout>
