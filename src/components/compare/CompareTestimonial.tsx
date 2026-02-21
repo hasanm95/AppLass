@@ -5,9 +5,10 @@ interface TestimonialProps {
   quote: string;
   author: string;
   role: string;
+  translations?: any;
 }
 
-export function CompareTestimonial({ quote, author, role }: TestimonialProps) {
+export function CompareTestimonial({ quote, author, role, translations }: TestimonialProps) {
   return (
     <Section className="bg-white py-24">
       <div className="section-container">

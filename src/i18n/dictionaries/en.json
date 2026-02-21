@@ -523,5 +523,113 @@
         "platform": "Play Store"
       }
     ]
+  },
+  "compare": {
+    "index": {
+      "eyebrow": "Analytical Logic",
+      "headline": "Technical",
+      "headlineAccent": "Analysis.",
+      "subheadline": "Why elite teams are switching to our ecosystem. A cold, logic-first derivation of technical superiority.",
+      "cardEyebrow": "Product Comparison",
+      "vs": "vs",
+      "ctaHeadline": "Experience Logical Superiority.",
+      "ctaSubheadline": "Stop settling for technical debt. Switch to a foundation built on first principles.",
+      "ctaButton": "Explore Ecosystem"
+    },
+    "hero": {
+      "eyebrow": "Analytical Choice",
+      "button": "Make the Switch — Get Started Free"
+    },
+    "matrix": {
+      "title": "Logical Superiority",
+      "subtitle": "Quantifiable metrics don't lie. See the difference in architecture.",
+      "featureCol": "Feature"
+    },
+    "debt": {
+      "legacyTitle": "The Legacy Way",
+      "applassTitle": "The AppLass Way"
+    },
+    "highlights": [
+      {
+        "title": "SEO Impact",
+        "desc": "Faster load times and clean semantic HTML lead to better Google rankings and higher organic visibility."
+      },
+      {
+        "title": "Conversion Impact",
+        "desc": "Higher accessibility (WCAG 2.1) means your logic doesn't exclude 20% of the world's population."
+      },
+      {
+        "title": "Integrity First",
+        "desc": "Your data stays yours. Zero-telemetry architecture means we never log personal identifiers."
+      }
+    ],
+    "footer": {
+      "headline": "Experience Logical Superiority.",
+      "button": "Install Now — Free of Charge"
+    },
+    "fomogen-vs-nudgify": {
+      "heroHeadline": "The Logical Alternative to Nudgify.",
+      "heroSubheadline": "Why elite Shopify merchants are switching from bloated legacy social proof tools to FomoGen's logic-first architecture.",
+      "matrix": [
+        { "label": "Load Speed", "competitorValue": "1.2s+", "applassValue": "< 100ms" },
+        { "label": "Privacy", "competitorValue": "Cookies & Tracking", "applassValue": "Zero Telemetry" },
+        { "label": "Accessibility", "competitorValue": "Partial WCAG", "applassValue": "100% Compliant" },
+        { "label": "Script Size", "competitorValue": "450KB+", "applassValue": "4.2KB" },
+        { "label": "Pricing", "competitorValue": "Strict Tiers", "applassValue": "Logical Flat Rate" }
+      ],
+      "legacyWay": {
+        "title": "The Legacy Way",
+        "points": [
+          "Heavy JavaScript payloads that slow down storefronts.",
+          "Aggressive user tracking that compromises trust.",
+          "Complex dashboards with unnecessary feature bloat."
+        ]
+      },
+      "applassWay": {
+        "title": "The AppLass Way",
+        "points": [
+          "Mathematical precision for maximum performance.",
+          "Zero-telemetry privacy by default.",
+          "Clean, minimalist logic that just works."
+        ]
+      },
+      "testimonial": {
+        "quote": "We shaved 2 seconds off our Shopify load time just by switching from Nudgify to FomoGen. The math doesn't lie.",
+        "author": "Alex Rivera",
+        "role": "E-commerce Director"
+      }
+    },
+    "mindful-guard-vs-forest": {
+      "heroHeadline": "The Logical Alternative to Forest.",
+      "heroSubheadline": "Why elite developers are switching from gamified distractions to Mindful Guard's system-level discipline.",
+      "matrix": [
+        { "label": "Method", "competitorValue": "Gamified / Visual", "applassValue": "Logical Friction" },
+        { "label": "Battery Impact", "competitorValue": "6-8% Daily", "applassValue": "< 0.5% Daily" },
+        { "label": "Privacy", "competitorValue": "Cloud-Synced", "applassValue": "100% Local" },
+        { "label": "Focus Logic", "competitorValue": "Suggestive", "applassValue": "Absolute Guardrails" },
+        { "label": "Philosophy", "competitorValue": "Growth", "applassValue": "Elimination" }
+      ],
+      "legacyWay": {
+        "title": "The Legacy Way",
+        "points": [
+          "Using a 'game' to stop phone use is counter-intuitive.",
+          "Constant background sync drains device resources.",
+          "Features optimized for retention, not productivity."
+        ]
+      },
+      "applassWay": {
+        "title": "The AppLass Way",
+        "points": [
+          "Intentional friction switches brain to System 2 thinking.",
+          "Native C++ implementation for zero battery lag.",
+          "Absolute focus sessions with no 'exit' logic."
+        ]
+      },
+      "testimonial": {
+        "quote": "Mindful Guard is the first app that actually works. It doesn't ask me to be better; it forces me to be logical.",
+        "author": "Sarah Chen",
+        "role": "Lead Software Architect"
+      }
+    }
   }
 }

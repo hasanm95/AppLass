@@ -28,6 +28,9 @@ if (!data) {
   return Astro.redirect('/404');
 }
 
+const compareData: any = dict.compare;
+const compareDict = compareData?.[data.slug as string];
+
 const title = `${data.productName} vs ${data.competitorName} | AppLass`;
 const description = `Why elite teams are switching from ${data.competitorName} to ${data.productName}. A logic-first comparison.`;
 
@@ -35,8 +38,8 @@ const description = `Why elite teams are switching from ${data.competitorName} t
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: data.heroHeadline,
-  description: data.heroSubheadline,
+  headline: compareDict?.heroHeadline || data.heroHeadline,
+  description: compareDict?.heroSubheadline || data.heroSubheadline,
   author: {
     "@type": "Organization",
     name: "AppLass",
@@ -68,7 +71,7 @@ const jsonLd = {
         <span class="text-[10px] font-black tracking-widest text-blue-800 uppercase">
           {data.productName}
         </span>
-        <span class="text-[10px] font-medium text-slate-500">vs</span>
+        <span class="text-[10px] font-medium text-slate-500">{compareData?.index?.vs}</span>
         <span class="text-[10px] font-black tracking-widest text-slate-900 uppercase">
           {data.competitorName}
         </span>
@@ -83,34 +86,38 @@ const jsonLd = {
 
     <div>
       <CompareHero
-        headline={data.heroHeadline}
-        subheadline={data.heroSubheadline}
+        headline={compareDict?.heroHeadline || data.heroHeadline}
+        subheadline={compareDict?.heroSubheadline || data.heroSubheadline}
+        translations={compareData?.hero}
         client:load
       />
 
       <ComparisonMatrix
         competitorName={data.competitorName}
         productName={data.productName}
-        features={data.matrix}
+        features={compareDict?.matrix || data.matrix}
+        translations={compareData?.matrix}
         client:idle
       />
 
       <TechnicalDebt 
-        legacy={data.legacyWay} 
-        applass={data.applassWay} 
+        legacy={compareDict?.legacyWay || data.legacyWay} 
+        applass={compareDict?.applassWay || data.applassWay} 
+        translations={compareData?.debt}
         client:idle
       />
 
-      <ValueHighlights client:idle />
+      <ValueHighlights translations={compareData?.highlights} client:idle />
 
       <CompareTestimonial
-        quote={data.testimonial.quote}
-        author={data.testimonial.author}
-        role={data.testimonial.role}
+        quote={compareDict?.testimonial?.quote || data.testimonial.quote}
+        author={compareDict?.testimonial?.author || data.testimonial.author}
+        role={compareDict?.testimonial?.role || data.testimonial.role}
+        translations={compareDict?.testimonial}
         client:idle
       />
 
-      <CompareFooter client:idle />
+      <CompareFooter translations={compareData?.footer} client:idle />
     </div>
 
     <Footer variant="light" translations={dict.footer} />

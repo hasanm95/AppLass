@@ -25,14 +25,13 @@ const description = "Logic-first product comparisons. Why elite teams choose App
       <Section className="bg-iridescent border-b border-slate-100 py-20 lg:py-32" client:load>
         <div class="section-container">
           <span class="mb-6 block text-[10px] font-black tracking-[0.2em] text-blue-800 uppercase">
-            Analytical Logic
+            {dict.compare?.index?.eyebrow}
           </span>
           <h1 class="text-display mb-8 max-w-4xl text-slate-900">
-            Technical <span class="text-slate-300">Analysis.</span>
+            {dict.compare?.index?.headline} <span class="text-slate-300">{dict.compare?.index?.headlineAccent}</span>
           </h1>
           <p class="max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
-            Why elite teams are switching to our ecosystem. A cold,
-            logic-first derivation of technical superiority.
+            {dict.compare?.index?.subheadline}
           </p>
         </div>
       </Section>
@@ -46,10 +45,10 @@ const description = "Logic-first product comparisons. Why elite teams choose App
             >
               <div>
                 <span class="mb-2 block text-[10px] font-black tracking-widest text-slate-400 uppercase">
-                  Product Comparison
+                  {dict.compare?.index?.cardEyebrow}
                 </span>
                 <h2 class="text-3xl font-black text-slate-900">
-                  {c.productName} <span class="text-slate-300">vs</span>{" "}
+                  {c.productName} <span class="text-slate-300">{dict.compare?.index?.vs}</span>{" "}
                   {c.competitorName}
                 </h2>
               </div>
@@ -62,17 +61,16 @@ const description = "Logic-first product comparisons. Why elite teams choose App
 
         <div class="mt-24 rounded-[3rem] border border-slate-900 bg-slate-900 p-12 text-center text-white md:p-20">
           <h3 class="mb-8 text-4xl font-black md:text-5xl">
-            Experience Logical Superiority.
+            {dict.compare?.index?.ctaHeadline}
           </h3>
           <p class="mx-auto mb-12 max-w-2xl text-xl font-medium text-slate-400">
-            Stop settling for technical debt. Switch to a foundation built on
-            first principles.
+            {dict.compare?.index?.ctaSubheadline}
           </p>
           <a
             href={`/${lang}/apps`}
             class="inline-flex h-16 items-center justify-center rounded-2xl bg-blue-600 px-12 text-lg font-bold text-white transition-all hover:scale-105 hover:bg-blue-500"
           >
-            Explore Ecosystem
+            {dict.compare?.index?.ctaButton}
           </a>
         </div>
       </Section>

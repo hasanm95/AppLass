@@ -301,5 +301,113 @@
         "platform": ""
       }
     ]
+  },
+  "compare": {
+    "index": {
+      "eyebrow": "",
+      "headline": "",
+      "headlineAccent": "",
+      "subheadline": "",
+      "cardEyebrow": "",
+      "vs": "",
+      "ctaHeadline": "",
+      "ctaSubheadline": "",
+      "ctaButton": ""
+    },
+    "hero": {
+      "eyebrow": "",
+      "button": ""
+    },
+    "matrix": {
+      "title": "",
+      "subtitle": "",
+      "featureCol": ""
+    },
+    "debt": {
+      "legacyTitle": "",
+      "applassTitle": ""
+    },
+    "highlights": [
+      {
+        "title": "",
+        "desc": ""
+      },
+      {
+        "title": "",
+        "desc": ""
+      },
+      {
+        "title": "",
+        "desc": ""
+      }
+    ],
+    "footer": {
+      "headline": "",
+      "button": ""
+    },
+    "fomogen-vs-nudgify": {
+      "heroHeadline": "",
+      "heroSubheadline": "",
+      "matrix": [
+        { "label": "", "competitorValue": "", "applassValue": "" },
+        { "label": "", "competitorValue": "", "applassValue": "" },
+        { "label": "", "competitorValue": "", "applassValue": "" },
+        { "label": "", "competitorValue": "", "applassValue": "" },
+        { "label": "", "competitorValue": "", "applassValue": "" }
+      ],
+      "legacyWay": {
+        "title": "",
+        "points": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "applassWay": {
+        "title": "",
+        "points": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "testimonial": {
+        "quote": "",
+        "author": "Alex Rivera",
+        "role": ""
+      }
+    },
+    "mindful-guard-vs-forest": {
+      "heroHeadline": "",
+      "heroSubheadline": "",
+      "matrix": [
+        { "label": "", "competitorValue": "", "applassValue": "" },
+        { "label": "", "competitorValue": "", "applassValue": "" },
+        { "label": "", "competitorValue": "", "applassValue": "" },
+        { "label": "", "competitorValue": "", "applassValue": "" },
+        { "label": "", "competitorValue": "", "applassValue": "" }
+      ],
+      "legacyWay": {
+        "title": "",
+        "points": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "applassWay": {
+        "title": "",
+        "points": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "testimonial": {
+        "quote": "",
+        "author": "Sarah Chen",
+        "role": ""
+      }
+    }
   }
 }
