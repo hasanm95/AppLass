@@ -1,0 +1,82 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { Navbar, Footer } from "@/components/common";
+import { Section } from "@/components/common/Section";
+import { comparisons } from "@/lib/compare";
+import { ArrowRight } from "lucide-react";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { i18nConfig } from "@/i18n/config";
+
+export async function getStaticPaths() {
+  return i18nConfig.locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const dict = await getDictionary(lang as any);
+
+const title = "Comparison Guides | AppLass Analysis";
+const description = "Logic-first product comparisons. Why elite teams choose AppLass over legacy alternatives.";
+---
+
+<Layout title={title} description={description} lang={lang}>
+  <div class="min-h-screen bg-white">
+    <Navbar client:load translations={dict.nav} />
+    <div class="pt-32">
+      <Section className="bg-iridescent border-b border-slate-100 py-20 lg:py-32" client:load>
+        <div class="section-container">
+          <span class="mb-6 block text-[10px] font-black tracking-[0.2em] text-blue-800 uppercase">
+            Analytical Logic
+          </span>
+          <h1 class="text-display mb-8 max-w-4xl text-slate-900">
+            Technical <span class="text-slate-300">Analysis.</span>
+          </h1>
+          <p class="max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
+            Why elite teams are switching to our ecosystem. A cold,
+            logic-first derivation of technical superiority.
+          </p>
+        </div>
+      </Section>
+
+      <Section className="py-24" client:load>
+        <div class="section-container grid grid-cols-1 gap-8 md:grid-cols-2">
+          {comparisons.map((c) => (
+            <a
+              href={`/${lang}/compare/${c.slug}`}
+              class="group flex items-center justify-between rounded-[2.5rem] border border-slate-100 bg-[#FAFBFD] p-10 transition-all hover:border-blue-500/20 hover:bg-white hover:shadow-xl"
+            >
+              <div>
+                <span class="mb-2 block text-[10px] font-black tracking-widest text-slate-400 uppercase">
+                  Product Comparison
+                </span>
+                <h2 class="text-3xl font-black text-slate-900">
+                  {c.productName} <span class="text-slate-300">vs</span>{" "}
+                  {c.competitorName}
+                </h2>
+              </div>
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-100 text-slate-900 transition-all group-hover:bg-blue-600 group-hover:text-white">
+                <ArrowRight size={20} />
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <div class="mt-24 rounded-[3rem] border border-slate-900 bg-slate-900 p-12 text-center text-white md:p-20">
+          <h3 class="mb-8 text-4xl font-black md:text-5xl">
+            Experience Logical Superiority.
+          </h3>
+          <p class="mx-auto mb-12 max-w-2xl text-xl font-medium text-slate-400">
+            Stop settling for technical debt. Switch to a foundation built on
+            first principles.
+          </p>
+          <a
+            href={`/${lang}/apps`}
+            class="inline-flex h-16 items-center justify-center rounded-2xl bg-blue-600 px-12 text-lg font-bold text-white transition-all hover:scale-105 hover:bg-blue-500"
+          >
+            Explore Ecosystem
+          </a>
+        </div>
+      </Section>
+    </div>
+    <Footer translations={dict.footer} />
+  </div>
+</Layout>
