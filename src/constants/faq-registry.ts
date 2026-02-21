@@ -1,8 +1,3 @@
-interface FAQItem {
-  question: string;
-  answer: string;
-}
-
 export const FAQ_REGISTRY = {
   HOME: [
     {
