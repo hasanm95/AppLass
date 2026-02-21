@@ -107,6 +107,45 @@
       }
     }
   },
+  "about": {
+    "hero": {
+      "eyebrow": "The AppLass Methodology",
+      "headline": "The",
+      "headlineAccent": "Methodology.",
+      "description": "At AppLass, we bridge the gap between complex mathematics and human-centric software. From high-conversion Shopify tools to mindful mobile utilities, we build the 'Next Wave' of digital performance—zero bloat, maximum impact."
+    },
+    "bio": {
+      "imageText": "LOGIC",
+      "yearsExperience": "7+",
+      "experienceLabel": "Years Experience",
+      "eyebrow": "The Founder's Logic",
+      "headline": "Systemic Integrity",
+      "headlineAccent": "by Design.",
+      "paragraph1": "Software should be a derivation of logical truth. Founded by an engineer obsessed with performance optimization and accessibility, AppLass was born from a simple realization: the modern web is failing under the weight of its own bloat.",
+      "paragraph2": "With 7+ years of experience building mission-critical e-commerce infrastructure and high-productivity mobile environments, I deploy tools that solve for one variable:",
+      "paragraph2Highlight": "Impact."
+    },
+    "philosophy": {
+      "headline": "Built Different by Logic.",
+      "description": "We avoid the \"feature-first\" trap and focus on systemic integrity. Every line of code is measured against Core Web Vitals and human psychological constraints."
+    },
+    "authority": {
+      "headline": "Trusted by 20,000+",
+      "headlineAccent": "Digital Minimalists.",
+      "stats": {
+        "downloads": {
+          "value": "10K+",
+          "label": "ScreenVeil Android"
+        },
+        "rating": {
+          "value": "4.4★",
+          "label": "Global Rating"
+        }
+      },
+      "description": "AppLass software is regularly cited in productivity guides and tech audits for its zero-bloat approach and strict privacy protocols.",
+      "cta": "Read the Docs"
+    }
+  },
   "products": {
     "screenveil": {
       "name": "ScreenVeil",
@@ -168,6 +207,10 @@
     "home": {
       "title": "Applass: Productivity & Privacy Solutions for the 2026 Digital World",
       "description": "Home of Mindful Guard and ScreenVeil. Discover advanced Android focus tools and Shopify apps designed to protect your privacy and boost ROI."
+    },
+    "about": {
+      "title": "About | The AppLass Methodology",
+      "description": "Founder-led development derived from first principles. Mathematical integrity meets high-end digital craft. Meet the engineer behind the logic."
     },
     "siteName": "AppLass",
     "ogTitle": "AppLass | Logic-Driven Software Studio",
