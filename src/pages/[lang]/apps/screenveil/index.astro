@@ -12,6 +12,8 @@ import { StickyDownloadBar } from "@/components/apps/screenveil/StickyDownloadBa
 import { SCREENVEIL_DATA } from "@/constants/screenveil-data";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { i18nConfig } from "@/i18n/config";
+import { getImage } from "astro:assets";
+import screenveilHeroImg from "@/assets/apps/screenveil/hero-mockup.png";
 
 export async function getStaticPaths() {
   return i18nConfig.locales.map((lang) => ({ params: { lang } }));
@@ -21,6 +23,8 @@ const { lang } = Astro.params;
 const dict = await getDictionary(lang as any);
 
 const meta = dict.metadata?.screenveil || {};
+
+const optimizedHero = await getImage({ src: screenveilHeroImg, format: "webp" });
 ---
 
 <Layout 
@@ -42,7 +46,7 @@ const meta = dict.metadata?.screenveil || {};
         type="application/ld+json"
         set:html={JSON.stringify(SCREENVEIL_DATA.schema.softwareApplication)}
       />
-      <ScreenVeilHero client:load translations={dict.screenveil?.hero} />
+      <ScreenVeilHero client:load translations={dict.screenveil?.hero} heroImageSrc={optimizedHero.src} />
       <PainPointsSection client:idle translations={dict.screenveil?.painPoints} />
       <FeatureGrid client:idle translations={dict.screenveil?.features} />
       <TechnicalAdvantage client:idle translations={dict.screenveil?.technical} />

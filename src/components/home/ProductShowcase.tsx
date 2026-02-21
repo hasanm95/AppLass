@@ -6,9 +6,10 @@ import type { Dictionary } from "@/i18n/get-dictionary";
 interface ProductShowcaseProps {
   translations?: Dictionary["home"]["productShowcase"];
   products?: Dictionary["products"];
+  productImages?: Record<string, string>;
 }
 
-export function ProductShowcase({ translations, products }: ProductShowcaseProps) {
+export function ProductShowcase({ translations, products, productImages = {} }: ProductShowcaseProps) {
   // ScreenVeil is the featured product
   const featuredDataSource = PRODUCTS[0]; 
   const featuredTranslation = products?.screenveil;
@@ -96,7 +97,7 @@ export function ProductShowcase({ translations, products }: ProductShowcaseProps
             >
               <div className="relative w-full overflow-hidden rounded-2xl border border-[var(--border)] bg-gradient-to-br from-green-50 to-green-100 p-12">
                 <img
-                  src={featuredDataSource.image}
+                  src={productImages[featuredDataSource.id] || featuredDataSource.image}
                   alt={featuredTranslation?.name || featuredDataSource.name}
                   width={600}
                   height={600}
@@ -140,7 +141,7 @@ export function ProductShowcase({ translations, products }: ProductShowcaseProps
                 {/* Image */}
                 <div className="mb-6 overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--muted)]/30 p-6">
                   <img
-                    src={product.image}
+                    src={productImages[product.id] || product.image}
                     alt={translation?.name || product.name}
                     width={600}
                     height={600}

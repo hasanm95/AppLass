@@ -1,14 +1,18 @@
 
-
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { useParallax } from "@/hooks/useParallax";
+import { SCREENVEIL_DATA } from "@/constants/screenveil-data";
 
 interface ScreenVeilHeroProps {
-  translations?: any;
+  translations?: typeof SCREENVEIL_DATA.hero;
+  heroImageSrc?: string;
 }
 
-export function ScreenVeilHero({ translations }: ScreenVeilHeroProps) {
+export function ScreenVeilHero({
+  translations,
+  heroImageSrc = "/v1/apps/screenveil/hero-mockup.png"
+}: ScreenVeilHeroProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   
   const dict = translations || {
@@ -97,9 +101,9 @@ export function ScreenVeilHero({ translations }: ScreenVeilHeroProps) {
         <div className="parallax-sv-image relative mx-auto w-full max-w-md lg:mx-0">
           <div className="relative aspect-9/16 overflow-hidden rounded-[2.5rem] border border-green-500/20 bg-slate-900 shadow-[0_40px_100px_-20px_rgba(0,255,0,0.2)] lg:rounded-[3rem]">
             <img
-              src="/v1/apps/screenveil/hero-mockup.png"
-              alt="ScreenVeil app showing black overlay over video playback"
-              className="absolute inset-0 h-full w-full object-cover"
+              src={heroImageSrc}
+              alt="ScreenVeil Android App - Zero Battery Drain Screen Filter"
+              className="absolute inset-0 h-[105%] w-full object-cover"
               fetchPriority="high"
             />
             {/* Overlay effect simulation */}

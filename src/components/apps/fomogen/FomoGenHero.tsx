@@ -7,9 +7,10 @@ import { FOMOGEN_DATA } from "@/constants/fomogen-data";
 
 interface FomoGenHeroProps {
   translations?: typeof FOMOGEN_DATA.hero;
+  heroImageSrc?: string;
 }
 
-export function FomoGenHero({ translations = FOMOGEN_DATA.hero }: FomoGenHeroProps) {
+export function FomoGenHero({ translations = FOMOGEN_DATA.hero, heroImageSrc = "/v1/apps/fomogen/comparison-hero.png" }: FomoGenHeroProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useParallax(containerRef, [
@@ -87,7 +88,7 @@ export function FomoGenHero({ translations = FOMOGEN_DATA.hero }: FomoGenHeroPro
         <div className="parallax-fomo-image relative mx-auto w-full max-w-2xl lg:mx-0">
           <div className="relative aspect-square overflow-hidden rounded-[2.5rem] border border-slate-200 bg-slate-50 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] lg:rounded-[3rem]">
             <img
-              src="/v1/apps/fomogen/comparison-hero.png"
+              src={heroImageSrc}
               alt="Shopify store conversion rate optimization before and after using FOMO Gen"
               className="absolute inset-0 h-full w-full object-cover"
               fetchPriority="high"

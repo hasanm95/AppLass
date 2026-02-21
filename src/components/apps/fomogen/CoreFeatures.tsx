@@ -19,7 +19,7 @@ const ICON_MAP: Record<string, LucideIcon> = {
   ShieldCheck,
 };
 
-type FeatureTranslation = { title: string; subtitle: string; description: string; highlight: string; };
+type FeatureTranslation = { title: string; subtitle: string; description: string; highlight: string; imageSrc?: string; image?: string; };
 
 export function CoreFeatures({ translations }: { translations?: FeatureTranslation[] }) {
   return (
@@ -42,6 +42,8 @@ export function CoreFeatures({ translations }: { translations?: FeatureTranslati
             const Icon = ICON_MAP[baseFeature.iconName] || HelpCircle;
             const isEven = idx % 2 === 0;
 
+            const finalImageSrc = (feature as any).imageSrc || feature.image || baseFeature.image;
+
             return (
               <div
                 key={idx}
@@ -51,10 +53,10 @@ export function CoreFeatures({ translations }: { translations?: FeatureTranslati
               >
                 {/* Visual Section */}
                 <div className="relative w-full flex-1">
-                  {baseFeature.image ? (
+                  {finalImageSrc ? (
                     <div className="relative aspect-video overflow-hidden rounded-[2rem] border border-slate-100 bg-slate-50 shadow-2xl md:rounded-[3rem]">
                       <img
-                        src={baseFeature.image}
+                        src={finalImageSrc}
                         alt={feature.title}
                         className="absolute inset-0 h-full w-full object-cover"
                       />
