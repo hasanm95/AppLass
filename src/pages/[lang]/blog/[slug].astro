@@ -80,7 +80,7 @@ const jsonLd = {
           class="mb-12 inline-flex items-center gap-2 text-xs font-black tracking-widest text-blue-800 uppercase transition-transform hover:-translate-x-1"
         >
           <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-          Back to Archive
+          {lang === 'fr' ? 'Retour aux archives' : 'Back to Archive'}
         </a>
 
         <div class="mb-8 flex items-center gap-3">
@@ -109,7 +109,7 @@ const jsonLd = {
               {post.author}
             </p>
             <p class="text-xs font-bold text-slate-500">
-              Article Author
+              {lang === 'fr' ? 'Auteur de l\'article' : 'Article Author'}
             </p>
           </div>
         </div>
@@ -145,12 +145,12 @@ const jsonLd = {
         <div class="section-container">
           <div class="mb-24">
             <span class="mb-6 block font-mono text-[10px] font-bold tracking-[0.3em] text-blue-600 uppercase">
-              Technical Clarifications
+              {lang === 'fr' ? 'Précisions Techniques' : 'Technical Clarifications'}
             </span>
             <h2 class="text-5xl font-black tracking-tighter text-slate-950 md:text-6xl">
-              Frequently Asked
+              {lang === 'fr' ? 'Questions Fréquemment' : 'Frequently Asked'}
               <br />
-              <span class="text-slate-300">Questions</span>
+              <span class="text-slate-300">{lang === 'fr' ? 'Posées' : 'Questions'}</span>
             </h2>
           </div>
 

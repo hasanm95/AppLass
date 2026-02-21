@@ -93,6 +93,7 @@ export function ProductShowcase({ translations, products, productImages = {} }: 
               href={featuredDataSource.ctaLink}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={`View ${featuredTranslation?.name || featuredDataSource.name}`}
               className="relative flex items-center justify-center transition-transform hover:scale-[1.02]"
             >
               <div className="relative w-full overflow-hidden rounded-2xl border border-[var(--border)] bg-gradient-to-br from-green-50 to-green-100 p-12">
@@ -105,7 +106,7 @@ export function ProductShowcase({ translations, products, productImages = {} }: 
                 />
               </div>
               {/* Decorative corner */}
-              <div className="absolute -right-4 -bottom-4 h-16 w-16 rounded-lg border-2 border-green-600/30" />
+              <div role="presentation" className="absolute -right-4 -bottom-4 h-16 w-16 rounded-lg border-2 border-green-600/30" />
             </a>
           </div>
         </div>
@@ -128,6 +129,7 @@ export function ProductShowcase({ translations, products, productImages = {} }: 
                 href={product.ctaLink}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`View ${translation?.name || product.name}`}
                 className="group relative cursor-pointer border-l-2 border-[var(--foreground)]/10 pl-6 transition-all duration-200 hover:border-l-[var(--cta)] md:pl-8"
               >
                 {/* Number */}
@@ -135,7 +137,7 @@ export function ProductShowcase({ translations, products, productImages = {} }: 
                   <span className="font-mono text-xs font-bold tracking-widest text-[var(--muted-foreground)]/50 uppercase">
                     0{idx + 2}
                   </span>
-                  <span className="block h-px w-16 bg-[var(--foreground)]/20 transition-colors group-hover:bg-[var(--cta)]" />
+                  <span role="presentation" className="block h-px w-16 bg-[var(--foreground)]/20 transition-colors group-hover:bg-[var(--cta)]" />
                 </div>
 
                 {/* Image */}

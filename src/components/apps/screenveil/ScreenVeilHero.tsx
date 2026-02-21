@@ -103,6 +103,8 @@ export function ScreenVeilHero({
             <img
               src={heroImageSrc}
               alt="ScreenVeil Android App - Zero Battery Drain Screen Filter"
+              width={800}
+              height={1422}
               className="absolute inset-0 h-[105%] w-full object-cover"
               fetchPriority="high"
             />

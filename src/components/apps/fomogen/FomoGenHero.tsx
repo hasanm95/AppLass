@@ -90,6 +90,8 @@ export function FomoGenHero({ translations = FOMOGEN_DATA.hero, heroImageSrc = "
             <img
               src={heroImageSrc}
               alt="Shopify store conversion rate optimization before and after using FOMO Gen"
+              width={800}
+              height={800}
               className="absolute inset-0 h-full w-full object-cover"
               fetchPriority="high"
             />

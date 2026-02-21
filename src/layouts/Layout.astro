@@ -44,12 +44,21 @@ const documentLang = lang || getLangFromUrl(Astro.url);
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="apple-touch-icon" href="/logo.png" />
     
+    <!-- Canonical URL -->
+    <link rel="canonical" href={`https://applass.com${Astro.url.pathname}`} />
+    
+    <!-- Hreflang for i18n -->
+    <link rel="alternate" hreflang="en" href={`https://applass.com${Astro.url.pathname.replace(/^\/(en|fr)/, '/en')}`} />
+    <link rel="alternate" hreflang="fr" href={`https://applass.com${Astro.url.pathname.replace(/^\/(en|fr)/, '/fr')}`} />
+    <link rel="alternate" hreflang="x-default" href={`https://applass.com${Astro.url.pathname.replace(/^\/(en|fr)/, '/en')}`} />
+    
     <!-- Primary Meta Tags -->
     <title>{title}</title>
     <meta name="title" content={title} />
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords} />
     <meta name="author" content="AppLass" />
+    <meta name="robots" content="index, follow" />
     <meta name="generator" content={Astro.generator} />
 
     <!-- Open Graph / Facebook -->
@@ -60,6 +69,7 @@ const documentLang = lang || getLangFromUrl(Astro.url);
     <meta property="og:image" content={ogImage} />
     <meta property="og:site_name" content="AppLass" />
     <meta property="og:locale" content={documentLang === 'fr' ? 'fr_FR' : 'en_US'} />
+    <meta property="og:locale:alternate" content={documentLang === 'fr' ? 'en_US' : 'fr_FR'} />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -82,10 +92,10 @@ const documentLang = lang || getLangFromUrl(Astro.url);
     </style>
 
     <!-- Google Analytics -->
-    {import.meta.env.NEXT_PUBLIC_GA_ID && (
+    {import.meta.env.PUBLIC_GA_ID && (
       <>
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.NEXT_PUBLIC_GA_ID}`}></script>
-        <script define:vars={{ gaId: import.meta.env.NEXT_PUBLIC_GA_ID }}>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.PUBLIC_GA_ID}`}></script>
+        <script define:vars={{ gaId: import.meta.env.PUBLIC_GA_ID }}>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());

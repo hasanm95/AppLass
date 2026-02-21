@@ -58,6 +58,8 @@ export function CoreFeatures({ translations }: { translations?: FeatureTranslati
                       <img
                         src={finalImageSrc}
                         alt={feature.title}
+                        width={800}
+                        height={450}
                         className="absolute inset-0 h-full w-full object-cover"
                       />
                     </div>
