@@ -1,6 +1,5 @@
-import Link from "next/link";
-import ExportedImage from "next-image-export-optimizer";
 import { cn } from "@/lib/utils";
+import type { Dictionary } from "@/i18n/get-dictionary";
 
 const footerLinks = {
   solutions: [
@@ -22,9 +21,10 @@ const footerLinks = {
 
 interface FooterProps {
   variant?: "light" | "dark";
+  translations?: Dictionary["footer"];
 }
 
-export function Footer({ variant = "light" }: FooterProps) {
+export function Footer({ variant = "light", translations }: FooterProps) {
   const currentYear = new Date().getFullYear();
   const isDark = variant === "dark";
 
@@ -41,14 +41,14 @@ export function Footer({ variant = "light" }: FooterProps) {
         <div className="grid gap-8 md:grid-cols-4 lg:gap-12">
           {/* Brand column */}
           <div className="md:col-span-1">
-            <Link
+            <a
               href="/"
               className={cn(
                 "inline-flex items-center gap-2 text-lg font-semibold",
                 isDark ? "text-white" : "text-slate-900"
               )}
             >
-              <ExportedImage
+              <img
                 src="/logo.png"
                 alt="AppLass"
                 width={24}
@@ -56,15 +56,14 @@ export function Footer({ variant = "light" }: FooterProps) {
                 className="h-6 w-6"
               />
               <span>AppLass</span>
-            </Link>
+            </a>
             <p
               className={cn(
                 "mt-4 max-w-xs text-sm",
                 isDark ? "text-slate-400" : "text-slate-600"
               )}
             >
-              Logic-driven software where mathematical precision meets
-              human-centric design.
+              {translations?.tagline || "Logic-driven software where mathematical precision meets human-centric design."}
             </p>
           </div>
 
@@ -76,16 +75,24 @@ export function Footer({ variant = "light" }: FooterProps) {
                 isDark ? "text-white" : "text-slate-900"
               )}
             >
-              Solutions
+              {translations?.sections?.solutions || "Solutions"}
             </h3>
             <ul className="space-y-3">
-              {footerLinks.solutions.map((link) => (
-                <li key={link.label}>
-                  <FooterLink href={link.href} isDark={isDark}>
-                    {link.label}
-                  </FooterLink>
-                </li>
-              ))}
+              {footerLinks.solutions.map((link) => {
+                // Determine translation key based on URL/label
+                let labelKey: keyof NonNullable<typeof translations>["links"] | undefined;
+                if (link.href === "/apps/fomogen") labelKey = "fomogen";
+                else if (link.href === "/apps/mindful-guard") labelKey = "mindfulGuard";
+                else if (link.href === "/apps/screenveil") labelKey = "screenveil";
+                
+                return (
+                  <li key={link.label}>
+                    <FooterLink href={link.href} isDark={isDark}>
+                      {labelKey && translations?.links && labelKey in translations.links ? translations.links[labelKey as keyof typeof translations.links] : link.label}
+                    </FooterLink>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
@@ -97,16 +104,24 @@ export function Footer({ variant = "light" }: FooterProps) {
                 isDark ? "text-white" : "text-slate-900"
               )}
             >
-              Resources
+              {translations?.sections?.resources || "Resources"}
             </h3>
             <ul className="space-y-3">
-              {footerLinks.resources.map((link) => (
-                <li key={link.label}>
-                  <FooterLink href={link.href} isDark={isDark}>
-                    {link.label}
-                  </FooterLink>
-                </li>
-              ))}
+              {footerLinks.resources.map((link) => {
+                let labelKey: keyof NonNullable<typeof translations>["links"] | undefined;
+                if (link.href === "/apps") labelKey = "ourEcosystem";
+                else if (link.href === "/docs") labelKey = "documentation";
+                else if (link.href === "/about") labelKey = "theMethodology";
+                else if (link.href === "/blog") labelKey = "theLogicLab";
+                
+                return (
+                  <li key={link.label}>
+                    <FooterLink href={link.href} isDark={isDark}>
+                      {labelKey && translations?.links && labelKey in translations.links ? translations.links[labelKey as keyof typeof translations.links] : link.label}
+                    </FooterLink>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
@@ -118,16 +133,22 @@ export function Footer({ variant = "light" }: FooterProps) {
                 isDark ? "text-white" : "text-slate-900"
               )}
             >
-              Legal
+              {translations?.sections?.legal || "Legal"}
             </h3>
             <ul className="space-y-3">
-              {footerLinks.legal.map((link) => (
-                <li key={link.label}>
-                  <FooterLink href={link.href} isDark={isDark}>
-                    {link.label}
-                  </FooterLink>
-                </li>
-              ))}
+              {footerLinks.legal.map((link) => {
+                let labelKey: keyof NonNullable<typeof translations>["links"] | undefined;
+                if (link.href === "/legal/fomogen/privacy") labelKey = "privacyPolicy";
+                else if (link.href === "/legal/fomogen/terms") labelKey = "termsOfService";
+                
+                return (
+                  <li key={link.label}>
+                    <FooterLink href={link.href} isDark={isDark}>
+                      {labelKey && translations?.links && labelKey in translations.links ? translations.links[labelKey as keyof typeof translations.links] : link.label}
+                    </FooterLink>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
@@ -175,7 +196,7 @@ function FooterLink({
   isDark: boolean;
 }) {
   return (
-    <Link
+    <a
       href={href}
       className={cn(
         "rounded-sm text-sm transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none",
@@ -185,6 +206,6 @@ function FooterLink({
       )}
     >
       {children}
-    </Link>
+    </a>
   );
 }

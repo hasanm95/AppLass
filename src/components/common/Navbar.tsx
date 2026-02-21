@@ -1,23 +1,25 @@
-"use client";
 
-import Link from "next/link";
-import ExportedImage from "next-image-export-optimizer";
+
 import { useState, useEffect, useCallback, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { MobileMenu } from "./mobile-menu";
 
+import type { Dictionary } from "@/i18n/get-dictionary";
+
 interface NavbarProps {
   variant?: "light" | "dark";
   customBranding?: React.ReactNode;
   customCTA?: React.ReactNode;
+  translations?: Dictionary["nav"];
 }
 
 export function Navbar({
   variant = "light",
   customBranding,
   customCTA,
+  translations,
 }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -97,12 +99,13 @@ export function Navbar({
         <div className="flex items-center justify-between">
           {/* Logo / Custom Branding */}
           <div className="flex items-center gap-6">
-            <Link
+            <a
+              id="navbar-logo"
               href="/"
               className="group flex items-center gap-2 px-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              <ExportedImage
+              <img
                 src="/logo.png"
                 alt="AppLass Logo"
                 width={32}
@@ -119,7 +122,7 @@ export function Navbar({
                   AppLass
                 </span>
               )}
-            </Link>
+            </a>
 
             {customBranding && (
               <div
@@ -136,22 +139,22 @@ export function Navbar({
           </div>
 
           {/* Navigation Links (Desktop) */}
-          {!customBranding && (
+          {!customBranding && translations && (
             <div className="hidden items-center gap-10 md:flex">
               <NavLink href="/" isDark={isDark}>
-                Home
+                {translations.home}
               </NavLink>
               <NavLink href="/about" isDark={isDark}>
-                About
+                {translations.about}
               </NavLink>
               <NavLink href="/apps" isDark={isDark}>
-                Ecosystem
+                {translations.ecosystem}
               </NavLink>
               <NavLink href="/docs" isDark={isDark}>
-                Docs
+                {translations.docs}
               </NavLink>
               <NavLink href="/blog" isDark={isDark}>
-                Logic Lab
+                {translations.blog}
               </NavLink>
             </div>
           )}
@@ -172,7 +175,9 @@ export function Navbar({
                       : "bg-slate-900 text-white hover:bg-slate-800"
                   )}
                 >
-                  <Link href="/about">Get in Touch</Link>
+                  <a id="nav-cta" href="/about">
+                    {translations?.getInTouch || "Get in Touch"}
+                  </a>
                 </Button>
               )}
             </div>
@@ -218,7 +223,7 @@ function NavLink({
   isDark: boolean;
 }) {
   return (
-    <Link
+    <a
       href={href}
       className={cn(
         "py-1 text-sm font-bold transition-all",
@@ -228,6 +233,6 @@ function NavLink({
       )}
     >
       {children}
-    </Link>
+    </a>
   );
 }

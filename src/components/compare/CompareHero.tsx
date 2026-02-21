@@ -4,14 +4,15 @@ import { Button } from "@/components/ui/button";
 interface CompareHeroProps {
   headline: string;
   subheadline: string;
+  translations?: any;
 }
 
-export function CompareHero({ headline, subheadline }: CompareHeroProps) {
+export function CompareHero({ headline, subheadline, translations }: CompareHeroProps) {
   return (
     <Section className="bg-iridescent border-b border-slate-100 pt-32 pb-20">
       <div className="relative z-10 flex flex-col items-center text-center">
         <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-blue-800 uppercase">
-          Analytical Choice
+          {translations?.eyebrow || "Analytical Choice"}
         </span>
         <h1 className="text-display mb-8 max-w-5xl text-slate-900">
           {headline}
@@ -20,7 +21,7 @@ export function CompareHero({ headline, subheadline }: CompareHeroProps) {
           {subheadline}
         </p>
         <Button className="h-14 rounded-xl bg-slate-900 px-8 text-lg font-bold text-white hover:bg-slate-800">
-          Make the Switch — Get Started Free
+          {translations?.button || "Make the Switch — Get Started Free"}
         </Button>
       </div>
     </Section>

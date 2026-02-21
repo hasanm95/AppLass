@@ -2,9 +2,15 @@ import { Section } from "@/components/common/Section";
 import { SCREENVEIL_DATA } from "@/constants/screenveil-data";
 import { Quote } from "lucide-react";
 
-export function TestimonialsSection() {
+interface TestimonialsSectionProps {
+  translations?: any[];
+}
+
+export function TestimonialsSection({ translations }: TestimonialsSectionProps) {
+  const testimonials = translations && translations.length > 0 ? translations : SCREENVEIL_DATA.testimonials;
+
   return (
-    <Section className="relative bg-gradient-to-b from-black to-slate-950 py-24 md:py-32">
+    <Section className="relative bg-linear-to-b from-black to-slate-950 py-24 md:py-32">
       <div className="section-container relative z-10">
         <div className="mb-16 text-center">
           <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-green-500 uppercase">
@@ -16,7 +22,7 @@ export function TestimonialsSection() {
         </div>
 
         <div className="mx-auto grid max-w-4xl grid-cols-1 gap-8 md:grid-cols-2">
-          {SCREENVEIL_DATA.testimonials.map((testimonial, idx) => (
+          {testimonials.map((testimonial: any, idx: number) => (
             <div
               key={idx}
               className="group relative overflow-hidden rounded-3xl border border-green-500/10 bg-slate-900/50 p-8 transition-all duration-300 hover:border-green-500/30 md:p-10"
@@ -34,7 +40,7 @@ export function TestimonialsSection() {
               {/* Author */}
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-500/20 text-sm font-bold text-green-400">
-                  {testimonial.author.charAt(0)}
+                  {testimonial.author?.charAt?.(0) || "-"}
                 </div>
                 <div>
                   <p className="font-bold text-white">{testimonial.author}</p>

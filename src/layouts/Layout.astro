@@ -1,0 +1,169 @@
+---
+import { getLangFromUrl } from '../i18n/utils';
+import '../globals.css';
+import '../tw-animate.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  lang?: string;
+}
+
+const defaultDescription = "At AppLass, we bridge the gap between complex mathematics and human-centric software. Stop letting bloated software slow down your growth. We build elite-tier Shopify and Mobile tools driven by mathematical precision.";
+const defaultTitle = "AppLass | High-Performance Software Engineering";
+
+const { 
+  title = defaultTitle, 
+  description = defaultDescription,
+  lang 
+} = Astro.props;
+
+// Get language from URL if not explicitly provided
+const documentLang = lang || getLangFromUrl(Astro.url);
+---
+
+<!doctype html>
+<html lang={documentLang} class="font-sans antialiased">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#020617" />
+    
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+    
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta name="keywords" content="software studio, Shopify apps, digital wellness, accessibility, WCAG, web development, AppLass" />
+    <meta name="author" content="AppLass" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://applass.com/" />
+    <meta property="og:title" content="AppLass | Logic-Driven Software Studio" />
+    <meta property="og:description" content="Mathematical precision meets human-centric design. We build the Next Wave of digital performance." />
+    <meta property="og:image" content="https://applass.com/og-image.png" />
+    <meta property="og:site_name" content="AppLass" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://applass.com/" />
+    <meta property="twitter:title" content="AppLass | Logic-Driven Software Studio" />
+    <meta property="twitter:description" content="Mathematical precision meets human-centric design. We build high-performance apps for the modern web." />
+    <meta property="twitter:image" content="https://applass.com/og-image.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <style is:global>
+      :root {
+        /* We define font variables here so Tailwind can pick them up if configured */
+        --font-sans: 'IBM Plex Sans', system-ui, sans-serif;
+        --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+      }
+    </style>
+
+    <!-- Google Analytics -->
+    {import.meta.env.NEXT_PUBLIC_GA_ID && (
+      <>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.NEXT_PUBLIC_GA_ID}`}></script>
+        <script define:vars={{ gaId: import.meta.env.NEXT_PUBLIC_GA_ID }}>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', gaId);
+        </script>
+      </>
+    )}
+
+    <!-- JSON-LD Unified Entity & Product Schema -->
+    <script type="application/ld+json" is:inline>
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://applass.com/#organization",
+            "name": "AppLass",
+            "url": "https://applass.com",
+            "logo": "https://applass.com/logo.png",
+            "description": "Logic-driven software studio building high-performance apps with mathematical precision. Creators of ScreenVeil (10K+ downloads, 4.4★), FomoGen, and Mindful Guard.",
+            "foundingDate": "2019",
+            "sameAs": []
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "ScreenVeil",
+            "operatingSystem": "Android",
+            "applicationCategory": "Utility",
+            "author": {
+              "@id": "https://applass.com/#organization"
+            },
+            "description": "Black overlay for AMOLED/OLED displays that saves 60%+ battery life while listening to videos.",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.4",
+              "reviewCount": "43"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "interactionStatistic": {
+              "@type": "InteractionCounter",
+              "interactionType": "https://schema.org/DownloadAction",
+              "userInteractionCount": "10000"
+            }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "FomoGen",
+            "operatingSystem": "Shopify",
+            "applicationCategory": "BusinessApplication",
+            "author": {
+              "@id": "https://applass.com/#organization"
+            },
+            "description": "Elite social proof tool with a <2.1KB payload to boost Shopify engagement by +23% without performance debt.",
+            "featureList": "WCAG 2.1 Compliance, Real-time Nudges, Zero Performance Impact"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Mindful Guard",
+            "operatingSystem": "Android",
+            "applicationCategory": "Productivity",
+            "author": {
+              "@id": "https://applass.com/#organization"
+            },
+            "description": "Privacy-first Android productivity guardian that helps users reclaim 2.4 hours of focus daily with local-only architecture.",
+            "featureList": "Zero-Tracking Architecture, System-Level Blocking, Focus Timers"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://applass.com/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://applass.com"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <main id="main-content" class="relative flex min-h-screen flex-col">
+      <slot />
+    </main>
+  </body>
+</html>

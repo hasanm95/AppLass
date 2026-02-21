@@ -1,6 +1,7 @@
 import { Section } from "@/components/common/Section";
 import { PILLARS } from "@/constants/home-data";
 import { Zap, Calculator, Globe } from "lucide-react";
+import type { Dictionary } from "@/i18n/get-dictionary";
 
 const ICONS = {
   Zap,
@@ -8,7 +9,15 @@ const ICONS = {
   Globe,
 };
 
-export function FoundersMoat() {
+interface FoundersMoatProps {
+  translations?: Dictionary["home"]["foundersMoat"];
+  pillars?: Dictionary["pillars"];
+}
+
+export function FoundersMoat({ translations, pillars }: FoundersMoatProps) {
+  // Map our PILLARS array to the dictionary keys
+  const PILLAR_KEYS = ["eliteExpertise", "logicalIntegrity", "radicalAccessibility"] as const;
+
   return (
     <Section
       id="about"
@@ -19,24 +28,23 @@ export function FoundersMoat() {
         <div className="mb-16 md:mb-24">
           <div className="mb-8 flex items-center gap-4">
             <span className="font-mono text-xs font-bold tracking-widest text-[var(--muted-foreground)]/50 uppercase">
-              PHILOSOPHY
+              {translations?.sectionLabel || "PHILOSOPHY"}
             </span>
             <span className="block h-px flex-1 bg-[var(--foreground)]/20" />
           </div>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <h2 className="font-mono text-2xl leading-tight font-bold text-[var(--foreground)] md:text-3xl lg:text-4xl">
-              Built Different
+              {translations?.headline || "Built Different"}
               <br />
               <span className="text-[var(--muted-foreground)]/40">
-                by Logic.
+                {translations?.headlineAccent || "by Logic."}
               </span>
             </h2>
 
             <div className="flex items-end">
               <p className="max-w-md border-l-2 border-[var(--cta)]/30 pl-6 text-lg leading-relaxed text-[var(--muted-foreground)] italic">
-                &quot;AppLass apps are developed using mathematical optimization
-                techniques to minimize JavaScript execution time.&quot;
+                {translations?.quote || '"AppLass apps are developed using mathematical optimization techniques to minimize JavaScript execution time."'}
               </p>
             </div>
           </div>
@@ -50,6 +58,11 @@ export function FoundersMoat() {
           <div className="space-y-8 md:space-y-12">
             {PILLARS.map((pillar, index) => {
               const Icon = ICONS[pillar.iconName as keyof typeof ICONS];
+              
+              // Get the translation for this specific pillar
+              const dictKey = PILLAR_KEYS[index];
+              const translation = pillars?.[dictKey];
+
               return (
                 <div
                   key={index}
@@ -70,13 +83,13 @@ export function FoundersMoat() {
                   {/* Content */}
                   <div className="relative border-l-2 border-[var(--foreground)]/10 bg-[var(--card)] py-6 pl-6 transition-all duration-200 hover:border-l-[var(--cta)] md:pl-8">
                     <span className="mb-2 block font-mono text-[10px] font-bold tracking-[0.2em] text-[var(--muted-foreground)] uppercase">
-                      {pillar.label}
+                      {translation?.label || pillar.label}
                     </span>
                     <h3 className="mb-3 font-mono text-lg font-bold text-[var(--foreground)] md:text-xl">
-                      {pillar.title}
+                      {translation?.title || pillar.title}
                     </h3>
                     <p className="max-w-lg text-[var(--muted-foreground)]">
-                      {pillar.description}
+                      {translation?.description || pillar.description}
                     </p>
                   </div>
                 </div>
@@ -88,3 +101,5 @@ export function FoundersMoat() {
     </Section>
   );
 }
+
+// aria-label

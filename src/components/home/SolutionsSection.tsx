@@ -1,6 +1,7 @@
 import { Section } from "@/components/common/Section";
 import { SOLUTIONS } from "@/constants/home-data";
 import { ShoppingBag, Clock, Users } from "lucide-react";
+import type { Dictionary } from "@/i18n/get-dictionary";
 
 const ICONS = {
   ShoppingBag,
@@ -8,7 +9,15 @@ const ICONS = {
   Users,
 };
 
-export function SolutionsSection() {
+interface SolutionsSectionProps {
+  translations?: Dictionary["home"]["solutions"];
+  solutions?: Dictionary["solutionItems"];
+}
+
+export function SolutionsSection({ translations, solutions }: SolutionsSectionProps) {
+  // Map our SOLUTIONS array to the dictionary keys
+  const SOLUTION_KEYS = ["ecommerce", "digitalDiscipline", "accessibility"] as const;
+
   return (
     <Section
       id="solutions"
@@ -19,27 +28,39 @@ export function SolutionsSection() {
         <div className="mb-16 md:mb-24">
           <div className="mb-8 flex items-center gap-4">
             <span className="font-mono text-xs font-bold tracking-widest text-[var(--muted-foreground)]/50 uppercase">
-              SOLUTIONS
+              {translations?.sectionLabel || "SOLUTIONS"}
             </span>
             <span className="block h-px flex-1 bg-[var(--foreground)]/20" />
           </div>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <h2 className="font-mono text-2xl leading-tight font-bold text-[var(--foreground)] md:text-3xl lg:text-4xl">
-              Logical
+              {translations?.headline || "Logical"}
               <br />
               <span className="text-[var(--muted-foreground)]/40">
-                Solutions.
+                {translations?.headlineAccent || "Solutions."}
               </span>
             </h2>
 
             <div className="flex items-end">
               <p className="max-w-md text-lg leading-relaxed text-[var(--muted-foreground)]">
-                We don&apos;t just build features; we engineer{" "}
-                <span className="border-b-2 border-[var(--cta)]/40 font-semibold text-[var(--foreground)]">
-                  systemic improvements
-                </span>{" "}
-                that solve core business logic bottlenecks.
+                {translations?.description ? (
+                  <>
+                    {translations.description.split("{highlight}")[0]}
+                    <span className="border-b-2 border-[var(--cta)]/40 font-semibold text-[var(--foreground)]">
+                      {translations.descriptionHighlight}
+                    </span>
+                    {translations.description.split("{highlight}")[1]}
+                  </>
+                ) : (
+                  <>
+                    We don&apos;t just build features; we engineer{" "}
+                    <span className="border-b-2 border-[var(--cta)]/40 font-semibold text-[var(--foreground)]">
+                      systemic improvements
+                    </span>{" "}
+                    that solve core business logic bottlenecks.
+                  </>
+                )}
               </p>
             </div>
           </div>
@@ -49,6 +70,11 @@ export function SolutionsSection() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {SOLUTIONS.map((solution, index) => {
             const Icon = ICONS[solution.iconName as keyof typeof ICONS];
+            
+            // Get the translation for this specific solution item
+            const dictKey = SOLUTION_KEYS[index];
+            const translation = solutions?.[dictKey];
+
             return (
               <div
                 key={index}
@@ -69,10 +95,10 @@ export function SolutionsSection() {
                 <span className="mb-6 block h-px w-16 bg-[var(--foreground)]/20" />
 
                 <h3 className="mb-3 font-mono text-lg font-bold text-[var(--foreground)] md:text-xl">
-                  {solution.title}
+                  {translation?.title || solution.title}
                 </h3>
                 <p className="text-sm leading-relaxed text-[var(--muted-foreground)]">
-                  {solution.description}
+                  {translation?.description || solution.description}
                 </p>
               </div>
             );
@@ -82,3 +108,4 @@ export function SolutionsSection() {
     </Section>
   );
 }
+// aria-label

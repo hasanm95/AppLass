@@ -1,12 +1,18 @@
-"use client";
+
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { SCREENVEIL_DATA } from "@/constants/screenveil-data";
 import { Download } from "lucide-react";
 
-export function StickyDownloadBar() {
+interface StickyDownloadBarProps {
+  translations?: any;
+}
+
+export function StickyDownloadBar({ translations }: StickyDownloadBarProps) {
   const [isVisible, setIsVisible] = useState(false);
+  
+  const dict = translations || SCREENVEIL_DATA.hero;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,7 +42,7 @@ export function StickyDownloadBar() {
           className="h-12 rounded-xl bg-green-500 px-6 font-bold text-black shadow-lg shadow-green-500/30 transition-all hover:bg-green-400"
           asChild
         >
-          <a href={SCREENVEIL_DATA.hero.playStoreUrl}>
+          <a href={dict.playStoreUrl}>
             <Download className="mr-2 h-4 w-4" />
             Download
           </a>

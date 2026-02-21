@@ -2,7 +2,7 @@ import { Section } from "@/components/common/Section";
 import { FOMOGEN_DATA } from "@/constants/fomogen-data";
 import { Quote } from "lucide-react";
 
-export function TestimonialsSection() {
+export function TestimonialsSection({ translations = FOMOGEN_DATA.testimonials }: { translations?: typeof FOMOGEN_DATA.testimonials }) {
   return (
     <Section className="relative overflow-hidden bg-slate-950 py-24 md:py-32">
       {/* Dark theme accents */}
@@ -20,7 +20,7 @@ export function TestimonialsSection() {
         </div>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:mx-auto lg:max-w-5xl">
-          {FOMOGEN_DATA.testimonials.map((t, idx) => (
+          {translations.map((t, idx) => (
             <div
               key={idx}
               className="relative rounded-[2.5rem] border border-white/10 bg-white/5 p-10 transition-all duration-300 hover:border-green-500/30 hover:bg-white/[0.07] md:p-12"

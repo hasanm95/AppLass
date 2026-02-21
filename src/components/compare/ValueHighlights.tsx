@@ -1,9 +1,19 @@
+// aria-label
 import { Section } from "@/components/common/Section";
 import { TrendingUp, UserRoundCheck, ShieldCheck } from "lucide-react";
 import { cloneElement } from "react";
 
-export function ValueHighlights() {
-  const cards = [
+interface Highlight {
+  title: string;
+  desc: string;
+}
+
+interface ValueHighlightsProps {
+  translations?: Highlight[];
+}
+
+export function ValueHighlights({ translations }: ValueHighlightsProps) {
+  const defaultCards = [
     {
       icon: <TrendingUp className="h-8 w-8 text-blue-600" />,
       title: "SEO Impact",
@@ -21,6 +31,10 @@ export function ValueHighlights() {
     },
   ];
 
+  const cards = translations && translations.length === defaultCards.length
+    ? defaultCards.map((card, idx) => ({ ...card, title: translations[idx].title || card.title, desc: translations[idx].desc || card.desc }))
+    : defaultCards;
+
   return (
     <Section className="bg-white py-24">
       <div className="section-container">
@@ -33,8 +47,8 @@ export function ValueHighlights() {
               <div className="mb-8 w-fit rounded-2xl bg-blue-600/10 p-4 transition-colors group-hover:bg-blue-600/20">
                 {/* Use cloneElement to add aria-hidden */}
                 {cloneElement(card.icon as React.ReactElement, {
-                  ["aria-hidden" as string]: true,
-                })}
+                  "aria-hidden": true,
+                } as React.Attributes)}
               </div>
               <h4 className="mb-4 text-xl font-black text-slate-900">
                 {card.title}

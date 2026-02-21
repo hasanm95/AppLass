@@ -1,12 +1,17 @@
-"use client";
+
 
 import { Section } from "@/components/common/Section";
 import { FAQSchema } from "@/components/common/FAQSchema";
 import { FAQ_REGISTRY } from "@/constants/faq-registry";
 import { Plus, Minus } from "lucide-react";
 import { useState } from "react";
+import type { Dictionary } from "@/i18n/get-dictionary";
 
-export function AnswerNuggets() {
+interface AnswerNuggetsProps {
+  translations?: Dictionary["home"]["faq"];
+}
+
+export function AnswerNuggets({ translations }: AnswerNuggetsProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
@@ -17,15 +22,15 @@ export function AnswerNuggets() {
         <div className="mb-16">
           <div className="mb-8 flex items-center gap-4">
             <span className="font-mono text-xs font-bold tracking-widest text-(--muted-foreground)/50 uppercase">
-              FAQ
+              {translations?.sectionLabel || "FAQ"}
             </span>
             <span className="block h-px flex-1 bg-(--foreground)/20" />
           </div>
 
           <h2 className="text-foreground mb-4 font-mono text-2xl leading-tight font-bold md:text-3xl lg:text-4xl">
-            Frequently Asked
+            {translations?.headline || "Frequently Asked"}
             <br />
-            <span className="text-(--muted-foreground)/40">Questions</span>
+            <span className="text-(--muted-foreground)/40">{translations?.headlineAccent || "Questions"}</span>
           </h2>
         </div>
 
@@ -33,6 +38,10 @@ export function AnswerNuggets() {
         <div className="grid grid-cols-1 gap-0 md:grid-cols-2 md:gap-x-12">
           {FAQ_REGISTRY.HOME.map((faq, idx) => {
             const isOpen = openIndex === idx;
+            const faqId = (faq as any).id;
+            const faqQuestion = faqId && translations?.questions && faqId in translations.questions ? translations.questions[faqId as keyof typeof translations.questions]?.question : faq.question;
+            const faqAnswer = faqId && translations?.questions && faqId in translations.questions ? translations.questions[faqId as keyof typeof translations.questions]?.answer : faq.answer;
+            
             return (
               <article
                 key={idx}
@@ -45,7 +54,7 @@ export function AnswerNuggets() {
                       {String(idx + 1).padStart(2, "0")}
                     </span>
                     <h3 className="group-hover:text-cta text-base font-semibold transition-colors">
-                      {faq.question}
+                      {faqQuestion}
                     </h3>
                   </div>
                   <button
@@ -69,8 +78,8 @@ export function AnswerNuggets() {
                   }`}
                 >
                   <div className="overflow-hidden pl-12">
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      {faq.answer}
+                    <p className="text-muted-foreground text-sm leading-relaxed whitespace-pre-line">
+                      {faqAnswer}
                     </p>
                   </div>
                 </div>

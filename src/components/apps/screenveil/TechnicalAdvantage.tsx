@@ -1,7 +1,13 @@
 import { Section } from "@/components/common/Section";
 import { SCREENVEIL_DATA } from "@/constants/screenveil-data";
 
-export function TechnicalAdvantage() {
+interface TechnicalAdvantageProps {
+  translations?: any;
+}
+
+export function TechnicalAdvantage({ translations }: TechnicalAdvantageProps) {
+  const dict = translations || SCREENVEIL_DATA.technical;
+
   return (
     <Section className="relative overflow-hidden bg-linear-to-b from-black via-slate-950 to-black py-24 md:py-32">
       {/* Background glow */}
@@ -16,20 +22,20 @@ export function TechnicalAdvantage() {
             </span>
 
             <h2 className="mb-8 text-3xl leading-tight font-bold tracking-tight text-white md:text-5xl lg:text-6xl">
-              {SCREENVEIL_DATA.technical.headline}
+              {dict.headline}
             </h2>
 
             <p className="mb-10 text-lg leading-relaxed font-medium text-slate-400 md:text-xl">
-              {SCREENVEIL_DATA.technical.description}
+              {dict.description}
             </p>
 
             {/* Big stat */}
             <div className="inline-flex items-baseline gap-4 rounded-2xl border border-green-500/20 bg-green-500/5 px-8 py-6">
               <span className="text-6xl font-black text-green-400 md:text-7xl">
-                {SCREENVEIL_DATA.technical.stat}
+                {dict.stat}
               </span>
               <span className="text-lg font-bold text-slate-400">
-                {SCREENVEIL_DATA.technical.statLabel}
+                {dict.statLabel}
               </span>
             </div>
           </div>

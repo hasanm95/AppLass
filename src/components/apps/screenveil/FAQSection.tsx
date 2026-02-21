@@ -1,4 +1,4 @@
-"use client";
+
 
 import { useState } from "react";
 import { Section } from "@/components/common/Section";

@@ -2,8 +2,8 @@ import { Section } from "@/components/common/Section";
 import { FOMOGEN_DATA } from "@/constants/fomogen-data";
 import { Zap, AlertTriangle, ShieldCheck } from "lucide-react";
 
-export function SpeedBenefitSection() {
-  const { speedBenefit } = FOMOGEN_DATA;
+export function SpeedBenefitSection({ translations = FOMOGEN_DATA.speedBenefit }: { translations?: typeof FOMOGEN_DATA.speedBenefit }) {
+  const speedBenefit = translations;
 
   return (
     <Section className="relative overflow-hidden bg-slate-50 py-24 md:py-32">

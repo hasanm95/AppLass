@@ -1,0 +1,413 @@
+{
+  "nav": {
+    "home": "",
+    "about": "",
+    "ecosystem": "",
+    "docs": "",
+    "blog": "",
+    "getInTouch": "",
+    "brandName": "AppLass",
+    "logoAlt": "",
+    "mobileMenuFooter": "",
+    "openMenu": "",
+    "closeMenu": ""
+  },
+  "footer": {
+    "tagline": "",
+    "sections": {
+      "solutions": "",
+      "resources": "",
+      "legal": ""
+    },
+    "links": {
+      "fomogen": "Fomogen",
+      "mindfulGuard": "Mindful Guard",
+      "screenveil": "ScreenVeil",
+      "ourEcosystem": "",
+      "documentation": "",
+      "theMethodology": "",
+      "theLogicLab": "",
+      "privacyPolicy": "",
+      "termsOfService": ""
+    },
+    "copyright": "",
+    "builtWith": ""
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "",
+      "headline": "",
+      "headlineAccent": "",
+      "headlineSubdued": "",
+      "subheading": "",
+      "stats": {
+        "downloads": { "value": "10K+", "label": "" },
+        "rating": { "value": "4.4★", "label": "" },
+        "payload": { "value": "<2.1KB", "label": "" }
+      },
+      "cta": {
+        "primary": "",
+        "secondary": ""
+      }
+    },
+    "socialProof": {
+      "trustedBy": "",
+      "metrics": {
+        "downloads": { "value": "10K+", "label": "" },
+        "playStore": { "value": "4.4★", "label": "" },
+        "payload": { "value": "<2.1KB", "label": "" },
+        "telemetry": { "value": "Zero", "label": "" }
+      },
+      "googlePlay": {
+        "getItOn": "",
+        "storeName": "Google Play"
+      }
+    },
+    "productShowcase": {
+      "sectionLabel": "",
+      "downloadsFeatured": "",
+      "ratingFeatured": ""
+    },
+    "foundersMoat": {
+      "sectionLabel": "",
+      "headline": "",
+      "headlineAccent": "",
+      "quote": ""
+    },
+    "solutions": {
+      "sectionLabel": "",
+      "headline": "",
+      "headlineAccent": "",
+      "description": "",
+      "descriptionHighlight": ""
+    },
+    "answerNuggets": {
+      "sectionLabel": "",
+      "headline": "",
+      "headlineAccent": "",
+      "expandAnswer": "",
+      "collapseAnswer": "",
+      "items": []
+    }
+  },
+  "products": {
+    "screenveil": {
+      "name": "ScreenVeil",
+      "platform": "",
+      "tagline": "",
+      "description": "",
+      "cta": "",
+      "metrics": ["", ""]
+    },
+    "fomogen": {
+      "name": "FomoGen",
+      "platform": "",
+      "tagline": "",
+      "description": "",
+      "cta": "",
+      "metrics": ["", ""]
+    },
+    "mindfulGuard": {
+      "name": "Mindful Guard",
+      "platform": "",
+      "tagline": "",
+      "description": "",
+      "cta": "",
+      "metrics": ["", ""]
+    }
+  },
+  "pillars": {
+    "eliteExpertise": {
+      "title": "",
+      "label": "",
+      "description": ""
+    },
+    "logicalIntegrity": {
+      "title": "",
+      "label": "",
+      "description": ""
+    },
+    "radicalAccessibility": {
+      "title": "",
+      "label": "",
+      "description": ""
+    }
+  },
+  "solutionItems": {
+    "ecommerce": {
+      "title": "",
+      "description": ""
+    },
+    "digitalDiscipline": {
+      "title": "",
+      "description": ""
+    },
+    "accessibility": {
+      "title": "",
+      "description": ""
+    }
+  },
+  "metadata": {
+    "home": {
+      "title": "",
+      "description": ""
+    },
+    "siteName": "AppLass",
+    "ogTitle": "",
+    "ogDescription": ""
+  },
+  "mindfulGuard": {
+    "hero": {
+      "headline": "",
+      "subheadline": "",
+      "primaryCTA": "",
+      "secondaryCTA": "",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard"
+    },
+    "logic": {
+      "title": "",
+      "description": ""
+    },
+    "differentiators": [
+      {
+        "title": "",
+        "description": ""
+      },
+      {
+        "title": "",
+        "description": ""
+      },
+      {
+        "title": "",
+        "description": ""
+      }
+    ],
+    "comparison": {
+      "title": "",
+      "headers": {
+        "privacy": "",
+        "pricing": "",
+        "tech": "",
+        "battery": ""
+      },
+      "columns": {
+        "competitors": {
+          "opal": "Opal",
+          "freedom": "Freedom"
+        }
+      },
+      "specs": [
+        {
+          "label": "",
+          "mindfulGuard": "",
+          "opal": "",
+          "freedom": ""
+        },
+        {
+          "label": "",
+          "mindfulGuard": "",
+          "opal": "",
+          "freedom": ""
+        },
+        {
+          "label": "",
+          "mindfulGuard": "",
+          "opal": "",
+          "freedom": ""
+        },
+        {
+          "label": "",
+          "mindfulGuard": "",
+          "opal": "",
+          "freedom": ""
+        }
+      ]
+    }
+  },
+  "screenveil": {
+    "hero": {
+      "tagline": "",
+      "headline": "",
+      "headlineAccent": "",
+      "subheadline": "",
+      "primaryCTA": "",
+      "secondaryCTA": "",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.screenveil.app",
+      "subtext": ""
+    },
+    "painPoints": [
+      {
+        "title": "",
+        "stat": "",
+        "description": ""
+      },
+      {
+        "title": "",
+        "stat": "",
+        "description": ""
+      }
+    ],
+    "features": [
+      {
+        "title": "",
+        "description": "",
+        "highlight": ""
+      },
+      {
+        "title": "",
+        "description": "",
+        "highlight": ""
+      },
+      {
+        "title": "",
+        "description": "",
+        "highlight": ""
+      },
+      {
+        "title": "",
+        "description": "",
+        "highlight": ""
+      },
+      {
+        "title": "",
+        "description": "",
+        "highlight": ""
+      }
+    ],
+    "technical": {
+      "headline": "",
+      "description": "",
+      "stat": "",
+      "statLabel": ""
+    },
+    "privacy": {
+      "headline": "",
+      "description": "",
+      "features": [
+        { "label": "" },
+        { "label": "" },
+        { "label": "" }
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "",
+        "author": "",
+        "platform": ""
+      },
+      {
+        "quote": "",
+        "author": "",
+        "platform": ""
+      }
+    ]
+  },
+  "compare": {
+    "index": {
+      "eyebrow": "",
+      "headline": "",
+      "headlineAccent": "",
+      "subheadline": "",
+      "cardEyebrow": "",
+      "vs": "",
+      "ctaHeadline": "",
+      "ctaSubheadline": "",
+      "ctaButton": ""
+    },
+    "hero": {
+      "eyebrow": "",
+      "button": ""
+    },
+    "matrix": {
+      "title": "",
+      "subtitle": "",
+      "featureCol": ""
+    },
+    "debt": {
+      "legacyTitle": "",
+      "applassTitle": ""
+    },
+    "highlights": [
+      {
+        "title": "",
+        "desc": ""
+      },
+      {
+        "title": "",
+        "desc": ""
+      },
+      {
+        "title": "",
+        "desc": ""
+      }
+    ],
+    "footer": {
+      "headline": "",
+      "button": ""
+    },
+    "fomogen-vs-nudgify": {
+      "heroHeadline": "",
+      "heroSubheadline": "",
+      "matrix": [
+        { "label": "", "competitorValue": "", "applassValue": "" },
+        { "label": "", "competitorValue": "", "applassValue": "" },
+        { "label": "", "competitorValue": "", "applassValue": "" },
+        { "label": "", "competitorValue": "", "applassValue": "" },
+        { "label": "", "competitorValue": "", "applassValue": "" }
+      ],
+      "legacyWay": {
+        "title": "",
+        "points": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "applassWay": {
+        "title": "",
+        "points": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "testimonial": {
+        "quote": "",
+        "author": "Alex Rivera",
+        "role": ""
+      }
+    },
+    "mindful-guard-vs-forest": {
+      "heroHeadline": "",
+      "heroSubheadline": "",
+      "matrix": [
+        { "label": "", "competitorValue": "", "applassValue": "" },
+        { "label": "", "competitorValue": "", "applassValue": "" },
+        { "label": "", "competitorValue": "", "applassValue": "" },
+        { "label": "", "competitorValue": "", "applassValue": "" },
+        { "label": "", "competitorValue": "", "applassValue": "" }
+      ],
+      "legacyWay": {
+        "title": "",
+        "points": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "applassWay": {
+        "title": "",
+        "points": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "testimonial": {
+        "quote": "",
+        "author": "Sarah Chen",
+        "role": ""
+      }
+    }
+  }
+}

@@ -14,7 +14,13 @@ const ICON_MAP: Record<string, LucideIcon> = {
   Layers,
 };
 
-export function PrivacySection() {
+interface PrivacySectionProps {
+  translations?: any;
+}
+
+export function PrivacySection({ translations }: PrivacySectionProps) {
+  const dict = translations || SCREENVEIL_DATA.privacy;
+
   return (
     <Section className="relative bg-black py-24 md:py-32">
       <div className="section-container relative z-10">
@@ -24,16 +30,17 @@ export function PrivacySection() {
           </span>
 
           <h2 className="mb-8 text-4xl leading-tight font-bold tracking-tight text-white md:text-5xl lg:text-6xl">
-            {SCREENVEIL_DATA.privacy.headline}
+            {dict.headline}
           </h2>
 
           <p className="mx-auto mb-16 max-w-2xl text-lg leading-relaxed font-medium text-slate-400 md:text-xl">
-            {SCREENVEIL_DATA.privacy.description}
+            {dict.description}
           </p>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-            {SCREENVEIL_DATA.privacy.features.map((feature, idx) => {
-              const Icon = ICON_MAP[feature.iconName] || HelpCircle;
+            {dict.features?.map((feature: any, idx: number) => {
+              const originalFeature = SCREENVEIL_DATA.privacy.features[idx] || {};
+              const Icon = ICON_MAP[originalFeature.iconName || ""] || HelpCircle;
 
               return (
                 <div

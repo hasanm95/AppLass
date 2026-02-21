@@ -9,9 +9,10 @@ interface Way {
 interface TechnicalDebtProps {
   legacy: Way;
   applass: Way;
+  translations?: any;
 }
 
-export function TechnicalDebt({ legacy, applass }: TechnicalDebtProps) {
+export function TechnicalDebt({ legacy, applass, translations }: TechnicalDebtProps) {
   return (
     <Section className="bg-white py-24">
       <div className="section-container">
@@ -19,12 +20,12 @@ export function TechnicalDebt({ legacy, applass }: TechnicalDebtProps) {
           {/* Legacy Column */}
           <div className="bg-white p-12 lg:p-20">
             <h3 className="mb-12 text-sm font-black tracking-[0.2em] text-slate-500 uppercase">
-              The Legacy Way
+              {translations?.legacyTitle || legacy.title}
             </h3>
             <ul className="space-y-8">
               {legacy.points.map((point, idx) => (
                 <li key={idx} className="flex gap-4">
-                  <div className="mt-1 flex-shrink-0">
+                  <div className="mt-1 shrink-0">
                     <X
                       className="h-5 w-5 font-bold text-slate-400"
                       aria-hidden="true"
@@ -43,12 +44,12 @@ export function TechnicalDebt({ legacy, applass }: TechnicalDebtProps) {
             <div className="absolute top-0 right-0 h-96 w-96 translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-600/5 blur-[120px]" />
 
             <h3 className="mb-12 text-sm font-black tracking-[0.2em] text-blue-800 uppercase">
-              The AppLass Way
+              {translations?.applassTitle || applass.title}
             </h3>
             <ul className="relative z-10 space-y-8">
               {applass.points.map((point: string, idx: number) => (
                 <li key={idx} className="flex gap-4">
-                  <div className="mt-1 flex-shrink-0">
+                  <div className="mt-1 shrink-0">
                     <Zap
                       className="h-5 w-5 fill-blue-600 text-blue-700"
                       aria-hidden="true"

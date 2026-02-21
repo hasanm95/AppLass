@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import Link from "next/link";
 
 type MobileNavLinkProps = {
   href: string;
@@ -15,7 +14,7 @@ export default function MobileNavLink({
   isDark,
 }: MobileNavLinkProps) {
   return (
-    <Link
+    <a
       href={href}
       onClick={onClick}
       className={cn(
@@ -24,6 +23,6 @@ export default function MobileNavLink({
       )}
     >
       {children}
-    </Link>
+    </a>
   );
 }
