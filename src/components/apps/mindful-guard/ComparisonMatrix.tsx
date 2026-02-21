@@ -9,7 +9,6 @@ interface ComparisonMatrixProps {
 
 export function ComparisonMatrix({ translations }: ComparisonMatrixProps) {
   const comparison = translations || MINDFUL_GUARD_DATA.comparison;
-  const headers = comparison.headers || { privacy: "Privacy Model", pricing: "Pricing", tech: "Blocking Tech", battery: "Battery Impact" };
   // Keeping variable declared but let's actually make sure we're using it in the render if possible, or just ignore since maybe it's partially implemented. Wait, let me just remove it if it's not used, or prepend with underscore
   const competitors = comparison.columns?.competitors || { opal: "Opal", freedom: "Freedom" };
 
