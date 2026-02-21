@@ -5,11 +5,15 @@ import type { Dictionary } from "@/i18n/get-dictionary";
 
 interface ProductShowcaseProps {
   translations?: Dictionary["home"]["productShowcase"];
+  products?: Dictionary["products"];
 }
 
-export function ProductShowcase({ translations }: ProductShowcaseProps) {
-  const featuredProduct = PRODUCTS[0]; // ScreenVeil
-  const otherProducts = PRODUCTS.slice(1);
+export function ProductShowcase({ translations, products }: ProductShowcaseProps) {
+  // ScreenVeil is the featured product
+  const featuredDataSource = PRODUCTS[0]; 
+  const featuredTranslation = products?.screenveil;
+  
+  const otherDataSources = PRODUCTS.slice(1);
 
   return (
     <Section
@@ -38,62 +42,62 @@ export function ProductShowcase({ translations }: ProductShowcaseProps) {
             {/* Content */}
             <div className="relative border-l-2 border-[var(--foreground)]/10 pl-6 transition-all duration-200 hover:border-l-[var(--cta)] md:pl-8">
               <span className="mb-2 block font-mono text-[10px] font-bold tracking-[0.2em] text-[var(--muted-foreground)] uppercase">
-                {featuredProduct.platform}
+                {featuredTranslation?.platform || featuredDataSource.platform}
               </span>
 
               <h2 className="font-mono text-4xl font-bold text-[var(--foreground)] md:text-5xl">
-                {featuredProduct.name}
+                {featuredTranslation?.name || featuredDataSource.name}
               </h2>
 
               <p className="mb-4 font-mono text-lg font-semibold text-green-600">
-                {featuredProduct.tagline}
+                {featuredTranslation?.tagline || featuredDataSource.tagline}
               </p>
 
               <p className="mb-8 max-w-md text-lg leading-relaxed text-[var(--muted-foreground)]">
-                {featuredProduct.description}
+                {featuredTranslation?.description || featuredDataSource.description}
               </p>
 
               <div className="mb-8 flex flex-wrap gap-6">
                 <div className="flex items-baseline gap-2">
                   <span className="font-mono text-2xl font-bold text-[var(--foreground)]">
-                    {featuredProduct.stats?.downloads}
+                    {featuredDataSource.stats?.downloads}
                   </span>
                   <span className="text-sm text-[var(--muted-foreground)]">
-                    downloads
+                    {translations?.downloadsFeatured || "downloads"}
                   </span>
                 </div>
                 <div className="flex items-baseline gap-2">
                   <span className="font-mono text-2xl font-bold text-[var(--foreground)]">
-                    {featuredProduct.stats?.rating}★
+                    {featuredDataSource.stats?.rating}★
                   </span>
                   <span className="text-sm text-[var(--muted-foreground)]">
-                    rating
+                    {translations?.ratingFeatured || "rating"}
                   </span>
                 </div>
               </div>
 
               <a
-                href={featuredProduct.ctaLink}
+                href={featuredDataSource.ctaLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex cursor-pointer items-center gap-2 bg-green-600 px-6 py-3 font-semibold text-white transition-all duration-200 hover:bg-green-700"
               >
-                {featuredProduct.cta}
+                {featuredTranslation?.cta || featuredDataSource.cta}
                 <ExternalLink className="h-4 w-4" />
               </a>
             </div>
 
             {/* Image */}
             <a
-              href={featuredProduct.ctaLink}
+              href={featuredDataSource.ctaLink}
               target="_blank"
               rel="noopener noreferrer"
               className="relative flex items-center justify-center transition-transform hover:scale-[1.02]"
             >
               <div className="relative w-full overflow-hidden rounded-2xl border border-[var(--border)] bg-gradient-to-br from-green-50 to-green-100 p-12">
                 <img
-                  src={featuredProduct.image}
-                  alt={featuredProduct.name}
+                  src={featuredDataSource.image}
+                  alt={featuredTranslation?.name || featuredDataSource.name}
                   width={600}
                   height={600}
                   className="object-contain"
@@ -107,11 +111,15 @@ export function ProductShowcase({ translations }: ProductShowcaseProps) {
 
         {/* Other Products - Asymmetric Grid */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12">
-          {otherProducts.map((product, idx) => {
+          {otherDataSources.map((product, idx) => {
             const isFomoGen = product.id === "fomogen";
             const accentColor = isFomoGen
               ? "text-[var(--cta)]"
               : "text-[var(--primary)]";
+              
+            // Map the product ID to the correct key in the translation dictionary
+            const dictKey = product.id === "mindful" ? "mindfulGuard" : product.id as keyof NonNullable<typeof products>;
+            const translation = products?.[dictKey];
 
             return (
               <a
@@ -133,7 +141,7 @@ export function ProductShowcase({ translations }: ProductShowcaseProps) {
                 <div className="mb-6 overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--muted)]/30 p-6">
                   <img
                     src={product.image}
-                    alt={product.name}
+                    alt={translation?.name || product.name}
                     width={600}
                     height={600}
                     className="object-contain transition-transform duration-300 group-hover:scale-105"
@@ -142,25 +150,25 @@ export function ProductShowcase({ translations }: ProductShowcaseProps) {
 
                 {/* Content */}
                 <span className="mb-2 block font-mono text-[10px] font-bold tracking-[0.2em] text-[var(--muted-foreground)] uppercase">
-                  {product.platform}
+                  {translation?.platform || product.platform}
                 </span>
 
                 <h3 className="font-mono text-xl font-bold text-[var(--foreground)] md:text-2xl">
-                  {product.name}
+                  {translation?.name || product.name}
                 </h3>
 
                 <p
                   className={`mb-4 font-mono text-sm font-semibold ${accentColor}`}
                 >
-                  {product.tagline}
+                  {translation?.tagline || product.tagline}
                 </p>
 
                 <p className="mb-6 text-sm leading-relaxed text-[var(--muted-foreground)]">
-                  {product.description}
+                  {translation?.description || product.description}
                 </p>
 
                 <div className="flex flex-wrap gap-2">
-                  {product.metrics.map((metric, midx) => (
+                  {(translation?.metrics || product.metrics).map((metric, midx) => (
                     <span
                       key={midx}
                       className="border border-[var(--border)] px-3 py-1 font-mono text-xs font-semibold text-[var(--foreground)]"
@@ -177,3 +185,4 @@ export function ProductShowcase({ translations }: ProductShowcaseProps) {
     </Section>
   );
 }
+

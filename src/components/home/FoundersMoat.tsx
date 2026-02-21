@@ -11,9 +11,13 @@ const ICONS = {
 
 interface FoundersMoatProps {
   translations?: Dictionary["home"]["foundersMoat"];
+  pillars?: Dictionary["pillars"];
 }
 
-export function FoundersMoat({ translations }: FoundersMoatProps) {
+export function FoundersMoat({ translations, pillars }: FoundersMoatProps) {
+  // Map our PILLARS array to the dictionary keys
+  const PILLAR_KEYS = ["eliteExpertise", "logicalIntegrity", "radicalAccessibility"] as const;
+
   return (
     <Section
       id="about"
@@ -54,6 +58,11 @@ export function FoundersMoat({ translations }: FoundersMoatProps) {
           <div className="space-y-8 md:space-y-12">
             {PILLARS.map((pillar, index) => {
               const Icon = ICONS[pillar.iconName as keyof typeof ICONS];
+              
+              // Get the translation for this specific pillar
+              const dictKey = PILLAR_KEYS[index];
+              const translation = pillars?.[dictKey];
+
               return (
                 <div
                   key={index}
@@ -74,13 +83,13 @@ export function FoundersMoat({ translations }: FoundersMoatProps) {
                   {/* Content */}
                   <div className="relative border-l-2 border-[var(--foreground)]/10 bg-[var(--card)] py-6 pl-6 transition-all duration-200 hover:border-l-[var(--cta)] md:pl-8">
                     <span className="mb-2 block font-mono text-[10px] font-bold tracking-[0.2em] text-[var(--muted-foreground)] uppercase">
-                      {pillar.label}
+                      {translation?.label || pillar.label}
                     </span>
                     <h3 className="mb-3 font-mono text-lg font-bold text-[var(--foreground)] md:text-xl">
-                      {pillar.title}
+                      {translation?.title || pillar.title}
                     </h3>
                     <p className="max-w-lg text-[var(--muted-foreground)]">
-                      {pillar.description}
+                      {translation?.description || pillar.description}
                     </p>
                   </div>
                 </div>
@@ -92,4 +101,5 @@ export function FoundersMoat({ translations }: FoundersMoatProps) {
     </Section>
   );
 }
+
 // aria-label

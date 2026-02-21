@@ -11,9 +11,13 @@ const ICONS = {
 
 interface SolutionsSectionProps {
   translations?: Dictionary["home"]["solutions"];
+  solutions?: Dictionary["solutionItems"];
 }
 
-export function SolutionsSection({ translations }: SolutionsSectionProps) {
+export function SolutionsSection({ translations, solutions }: SolutionsSectionProps) {
+  // Map our SOLUTIONS array to the dictionary keys
+  const SOLUTION_KEYS = ["ecommerce", "digitalDiscipline", "accessibility"] as const;
+
   return (
     <Section
       id="solutions"
@@ -66,6 +70,11 @@ export function SolutionsSection({ translations }: SolutionsSectionProps) {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {SOLUTIONS.map((solution, index) => {
             const Icon = ICONS[solution.iconName as keyof typeof ICONS];
+            
+            // Get the translation for this specific solution item
+            const dictKey = SOLUTION_KEYS[index];
+            const translation = solutions?.[dictKey];
+
             return (
               <div
                 key={index}
@@ -86,10 +95,10 @@ export function SolutionsSection({ translations }: SolutionsSectionProps) {
                 <span className="mb-6 block h-px w-16 bg-[var(--foreground)]/20" />
 
                 <h3 className="mb-3 font-mono text-lg font-bold text-[var(--foreground)] md:text-xl">
-                  {solution.title}
+                  {translation?.title || solution.title}
                 </h3>
                 <p className="text-sm leading-relaxed text-[var(--muted-foreground)]">
-                  {solution.description}
+                  {translation?.description || solution.description}
                 </p>
               </div>
             );
