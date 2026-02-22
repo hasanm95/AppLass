@@ -38,7 +38,7 @@ const optimizedHero = await getImage({ src: screenveilHeroImg, format: "webp" })
   lang={lang}
 >
   <div class="bg-[#020617]">
-    <Navbar client:load translations={dict.nav} />
+    <Navbar client:load translations={dict.nav} currentLang={lang} />
 
     <div class="flex-1 overflow-x-hidden">
       {/* SoftwareApplication Schema for SEO - triggers rich results with star ratings */}

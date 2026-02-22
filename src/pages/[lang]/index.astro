@@ -47,7 +47,7 @@ const productImages = {
   ogUrl={meta.ogUrl}
   lang={lang}
 >
-  <Navbar client:load translations={dict.nav} />
+  <Navbar client:load translations={dict.nav} currentLang={lang} />
   <Hero client:load translations={dict.home?.hero} />
   <SocialProof client:idle translations={dict.home?.socialProof} />
   <ProductShowcase client:idle translations={dict.home?.productShowcase} products={dict.products} productImages={productImages} />

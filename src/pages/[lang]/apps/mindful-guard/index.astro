@@ -30,7 +30,7 @@ const meta = dict.metadata?.mindfulGuard || {};
   ogUrl={meta.ogUrl}
   lang={lang}
 >
-  <Navbar client:load translations={dict.nav} />
+  <Navbar client:load translations={dict.nav} currentLang={lang} />
   {/* SoftwareApplication Schema for SEO - Critical for Google to display app details */}
   <script
     type="application/ld+json"

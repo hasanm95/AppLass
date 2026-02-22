@@ -37,7 +37,7 @@ const meta = dict.metadata?.digitalWellness || {};
   lang={lang}
 >
   <div class="min-h-screen bg-white font-sans selection:bg-blue-100 selection:text-blue-900">
-    <Navbar client:load translations={dict.nav} />
+    <Navbar client:load translations={dict.nav} currentLang={lang} />
 
     <main class="pt-32">
       {/* Hero Section */}

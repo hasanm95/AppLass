@@ -35,7 +35,7 @@ const otherPosts = posts.filter(
   ogUrl={meta.ogUrl}
   lang={lang}
 >
-  <Navbar client:load translations={dict.nav} />
+  <Navbar client:load translations={dict.nav} currentLang={lang} />
   <div class="flex-1 bg-white pt-20">
     <BlogHero client:load />
     <section class="section border-y border-slate-100/50 bg-[#FAFBFD] py-24">

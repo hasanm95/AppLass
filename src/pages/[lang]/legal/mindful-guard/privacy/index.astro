@@ -28,7 +28,7 @@ const meta = dict.metadata?.legalMindfulGuardPrivacy || {};
   lang={lang}
 >
   <div class="flex min-h-screen flex-col bg-white font-sans selection:bg-slate-100 selection:text-slate-900">
-    <Navbar client:load translations={dict.nav}>
+    <Navbar client:load translations={dict.nav} currentLang={lang}>
       <div slot="customBranding" class="flex items-center gap-2">
         <Shield className="h-5 w-5 text-slate-900 fill-slate-900" />
         <span class="text-lg font-black tracking-tighter text-slate-900 uppercase">

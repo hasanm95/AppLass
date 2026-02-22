@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { MobileMenu } from "./mobile-menu";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 import type { Dictionary } from "@/i18n/get-dictionary";
 
@@ -13,6 +14,7 @@ interface NavbarProps {
   customBranding?: React.ReactNode;
   customCTA?: React.ReactNode;
   translations?: Dictionary["nav"];
+  currentLang?: string;
 }
 
 export function Navbar({
@@ -20,6 +22,7 @@ export function Navbar({
   customBranding,
   customCTA,
   translations,
+  currentLang = "en",
 }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -161,6 +164,14 @@ export function Navbar({
 
           {/* CTA & Mobile Toggle */}
           <div className="flex items-center gap-4">
+            {/* Language Switcher – Desktop */}
+            <LanguageSwitcher
+              currentLang={currentLang}
+              isDark={isDark}
+              variant="pill"
+              className="hidden md:flex"
+            />
+
             <div className="hidden md:block">
               {customCTA ? (
                 customCTA
@@ -206,6 +217,8 @@ export function Navbar({
             customCTA={customCTA}
             toggleMenu={toggleMenu}
             isDark={isDark}
+            currentLang={currentLang}
+            translations={translations}
           />
         )}
       </nav>

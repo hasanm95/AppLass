@@ -27,7 +27,7 @@ const meta = dict.metadata?.fomogenPricing || {};
   lang={lang}
 >
   <div class="bg-white">
-    <Navbar client:load translations={dict.nav} />
+    <Navbar client:load translations={dict.nav} currentLang={lang} />
     
     <div class="pt-32 pb-16">
       <PricingSection client:idle translations={dict.fomogen?.pricing} />

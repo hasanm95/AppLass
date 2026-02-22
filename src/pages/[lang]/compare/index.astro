@@ -28,7 +28,7 @@ const meta = dict.metadata?.compare || {};
   lang={lang}
 >
   <div class="min-h-screen bg-white">
-    <Navbar client:load translations={dict.nav} />
+    <Navbar client:load translations={dict.nav} currentLang={lang} />
     <div class="pt-32">
       <Section className="bg-iridescent border-b border-slate-100 py-20 lg:py-32" client:load>
         <div class="section-container">

@@ -54,7 +54,7 @@ const featuresData = (dict.fomogen?.features || []).map((feature: any, idx: numb
   lang={lang}
 >
   <div class="bg-white">
-    <Navbar client:load translations={dict.nav} />
+    <Navbar client:load translations={dict.nav} currentLang={lang} />
 
     <script
       type="application/ld+json"

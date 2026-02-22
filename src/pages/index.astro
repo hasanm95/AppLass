@@ -18,7 +18,7 @@ const description = dict.metadata?.home?.description || "Home of Mindful Guard a
 ---
 
 <Layout title={title} description={description} lang="en">
-  <Navbar client:load translations={dict.nav} />
+  <Navbar client:load translations={dict.nav} currentLang="en" />
   <Hero client:load translations={dict.home?.hero} />
   <SocialProof client:idle translations={dict.home?.socialProof} />
   <ProductShowcase client:idle translations={dict.home?.productShowcase} />

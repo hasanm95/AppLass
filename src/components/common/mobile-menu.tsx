@@ -1,8 +1,10 @@
 import { Button } from "../ui/button";
 import MobileNavLink from "./mobile-menu-nav-link";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 import { cn } from "@/lib/utils";
 import type { RefObject } from "react";
 import { Portal } from "../ui/portal";
+import type { Dictionary } from "@/i18n/get-dictionary";
 
 type MobileMenuProps = {
   customBranding: React.ReactNode;
@@ -10,6 +12,8 @@ type MobileMenuProps = {
   toggleMenu: () => void;
   isDark: boolean;
   menuRef: RefObject<HTMLDivElement | null>;
+  currentLang?: string;
+  translations?: Dictionary["nav"];
 };
 
 export function MobileMenu({
@@ -18,6 +22,8 @@ export function MobileMenu({
   toggleMenu,
   isDark,
   menuRef,
+  currentLang = "en",
+  translations,
 }: MobileMenuProps) {
   return (
     <Portal>
@@ -25,32 +31,41 @@ export function MobileMenu({
         id="mobile-menu"
         ref={menuRef}
         className={cn(
-          "animate-in fade-in slide-in-from-top-4 fixed inset-0 top-[72px] z-40 p-8 shadow-inner duration-300 md:hidden",
+          "animate-in fade-in slide-in-from-top-4 fixed inset-0 top-[72px] z-40 overflow-y-auto p-8 shadow-inner duration-300 md:hidden",
           isDark ? "bg-[#020617]" : "bg-white"
         )}
       >
         <div className="flex flex-col gap-8">
           {!customBranding && (
             <>
-              <MobileNavLink href="/" isDark={isDark} onClick={toggleMenu}>
-                Home
+              <MobileNavLink href={`/${currentLang}/`} isDark={isDark} onClick={toggleMenu}>
+                {translations?.home ?? "Home"}
               </MobileNavLink>
-              <MobileNavLink href="/about" isDark={isDark} onClick={toggleMenu}>
-                About
+              <MobileNavLink href={`/${currentLang}/about`} isDark={isDark} onClick={toggleMenu}>
+                {translations?.about ?? "About"}
               </MobileNavLink>
-              <MobileNavLink href="/apps" isDark={isDark} onClick={toggleMenu}>
-                Ecosystem
+              <MobileNavLink href={`/${currentLang}/apps`} isDark={isDark} onClick={toggleMenu}>
+                {translations?.ecosystem ?? "Ecosystem"}
               </MobileNavLink>
-              <MobileNavLink href="/docs" isDark={isDark} onClick={toggleMenu}>
-                Docs
+              <MobileNavLink href={`/${currentLang}/docs`} isDark={isDark} onClick={toggleMenu}>
+                {translations?.docs ?? "Docs"}
               </MobileNavLink>
-              <MobileNavLink href="/blog" isDark={isDark} onClick={toggleMenu}>
-                Logic Lab
+              <MobileNavLink href={`/${currentLang}/blog`} isDark={isDark} onClick={toggleMenu}>
+                {translations?.blog ?? "Logic Lab"}
               </MobileNavLink>
             </>
           )}
 
-          <div className="border-t border-slate-100 pt-8">
+          {/* Language Switcher – Mobile */}
+          <div className={cn("border-t pt-6", isDark ? "border-white/10" : "border-slate-100")}>
+            <LanguageSwitcher
+              currentLang={currentLang}
+              isDark={isDark}
+              variant="list"
+            />
+          </div>
+
+          <div className={cn("border-t pt-6", isDark ? "border-white/10" : "border-slate-100")}>
             {customCTA ? (
               <div onClick={toggleMenu}>{customCTA}</div>
             ) : (
@@ -65,7 +80,9 @@ export function MobileMenu({
                     : "bg-slate-900 text-white hover:bg-slate-800"
                 )}
               >
-                <a href="/about">Get in Touch</a>
+                <a href={`/${currentLang}/about`}>
+                  {translations?.getInTouch ?? "Get in Touch"}
+                </a>
               </Button>
             )}
           </div>
