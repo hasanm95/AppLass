@@ -2,9 +2,9 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
 import { MobileMenu } from "./mobile-menu";
-import { LanguageSwitcher } from "./LanguageSwitcher";
+import { LanguageSwitcherSidebar } from "./LanguageSwitcherSidebar";
 import { localePath } from "@/i18n/utils";
 import type { Dictionary } from "@/i18n/get-dictionary";
 
@@ -25,6 +25,7 @@ export function Navbar({
 }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -41,7 +42,10 @@ export function Navbar({
     if (!isMenuOpen) return;
 
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setIsMenuOpen(false);
+      if (e.key === "Escape") {
+        setIsMenuOpen(false);
+        setIsLangMenuOpen(false);
+      }
       if (e.key === "Tab" && menuRef.current) {
         const focusableElements = menuRef.current.querySelectorAll(
           'a[href], button, textarea, input[type="text"], input[type="radio"], input[type="checkbox"], select'
@@ -162,14 +166,21 @@ export function Navbar({
           )}
 
           {/* CTA & Mobile Toggle */}
-          <div className="flex items-center gap-4">
-            {/* Language Switcher – Desktop */}
-            <LanguageSwitcher
-              currentLang={currentLang}
-              isDark={isDark}
-              variant="pill"
-              className="hidden md:flex"
-            />
+          <div className="flex items-center gap-3 md:gap-4">
+            {/* Language Switcher Trigger */}
+            <button
+              aria-expanded={isLangMenuOpen}
+              aria-label="Select Language"
+              onClick={() => setIsLangMenuOpen(true)}
+              className={cn(
+                "flex h-10 w-10 items-center justify-center rounded-xl transition-colors",
+                isDark
+                  ? "text-slate-400 hover:bg-white/10 hover:text-white"
+                  : "text-slate-500 hover:bg-slate-100 hover:text-slate-900"
+              )}
+            >
+              <Globe size={20} />
+            </button>
 
             <div className="hidden md:block">
               {customCTA ? (
@@ -220,6 +231,14 @@ export function Navbar({
             translations={translations}
           />
         )}
+
+        {/* Global Language Switcher Sidebar */}
+        <LanguageSwitcherSidebar 
+          isOpen={isLangMenuOpen}
+          onClose={() => setIsLangMenuOpen(false)}
+          currentLang={currentLang}
+          isDark={isDark}
+        />
       </nav>
     </header>
   );

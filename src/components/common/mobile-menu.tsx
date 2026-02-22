@@ -1,6 +1,5 @@
 import { Button } from "../ui/button";
 import MobileNavLink from "./mobile-menu-nav-link";
-import { LanguageSwitcher } from "./LanguageSwitcher";
 import { cn } from "@/lib/utils";
 import type { RefObject } from "react";
 import { Portal } from "../ui/portal";
@@ -56,15 +55,6 @@ export function MobileMenu({
               </MobileNavLink>
             </>
           )}
-
-          {/* Language Switcher – Mobile */}
-          <div className={cn("border-t pt-6", isDark ? "border-white/10" : "border-slate-100")}>
-            <LanguageSwitcher
-              currentLang={currentLang}
-              isDark={isDark}
-              variant="list"
-            />
-          </div>
 
           <div className={cn("border-t pt-6", isDark ? "border-white/10" : "border-slate-100")}>
             {customCTA ? (

@@ -32,8 +32,6 @@ export function AppCallout({ appName, lang = "en" }: AppCalloutProps) {
     },
   }[appName];
 
-  console.log({lang});
-
   return (
     <div className="group relative overflow-hidden rounded-4xl border border-slate-900 bg-white p-8">
       <div
