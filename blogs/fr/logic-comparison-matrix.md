@@ -60,4 +60,4 @@ But if you're a developer, engineer, or student who needs a tool that actually w
 
 **Ready to make the rational choice?**
 
-[Install MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard) | [See the Full Breakdown](/apps/mindful-guard)
+[Install MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard) | [See the Full Breakdown](/fr/apps/mindful-guard)

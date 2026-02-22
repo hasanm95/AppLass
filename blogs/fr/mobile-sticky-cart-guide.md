@@ -14,7 +14,7 @@ faqs:
   - question: "Les paniers sticky fonctionnent-ils sur tous les thèmes Shopify ?"
     answer: "Oui. Le panier sticky de FomoGen est injecté comme une superposition légère qui fonctionne sur n'importe quel thème Shopify — Dawn, Debut, thèmes personnalisés et builds headless — sans modifier le code de votre thème."
   - question: "Quelle est la différence de taux de conversion entre mobile et desktop sur Shopify ?"
-    answer: "Le taux de conversion mobile moyen sur Shopify est de 2,1 % contre 3,5 % sur desktop. La cause principale est la friction — les utilisateurs mobiles perdent le bouton Ajouter au panier lorsqu'ils font défiler la page. Un panier sticky comble considérablement cet écart. Consultez les données complètes dans nos [Benchmarks de Performance E-commerce 2026](/ecommerce-performance-2026-benchmarks)."
+    answer: "Le taux de conversion mobile moyen sur Shopify est de 2,1 % contre 3,5 % sur desktop. La cause principale est la friction — les utilisateurs mobiles perdent le bouton Ajouter au panier lorsqu'ils font défiler la page. Un panier sticky comble considérablement cet écart. Consultez les données complètes dans nos [Benchmarks de Performance E-commerce 2026](/fr/ecommerce-performance-2026-benchmarks)."
 ---
 
 Nous vivons dans un monde mobile-first. 79 % des utilisateurs de smartphones ont effectué un achat sur leur appareil au cours des 6 derniers mois. Pourtant, les taux de conversion mobile (2,1 %) restent nettement inférieurs à ceux du desktop (3,5 %). Pourquoi ? **La friction.**
@@ -40,12 +40,12 @@ La plupart des thèmes Shopify placent le bouton panier en haut (Zone Dangereuse
 
 ## Au-delà du Bouton
 
-Les paniers sticky ne sont que le début. Découvrez l'architecture de conversion complète dans notre [Pilier de Performance E-commerce](/ecommerce-performance-2026-benchmarks).
+Les paniers sticky ne sont que le début. Découvrez l'architecture de conversion complète dans notre [Pilier de Performance E-commerce](/fr/ecommerce-performance-2026-benchmarks).
 
 ## Plan d'Action
 
 Ne laissez pas les visiteurs mobiles partir parce qu'ils ne trouvent pas le bouton. Un panier sticky est une optimisation "configurer et oublier" qui génère des bénéfices immédiats.
 
-> **🚀 Prêt à booster vos conversions ?** [FomoGen](/apps/fomogen) inclut un panier sticky intégré — ainsi que la preuve sociale, les comptes à rebours et les alertes de stock — le tout dans un payload inférieur à 2,1 Ko.
+> **🚀 Prêt à booster vos conversions ?** [FomoGen](/fr/apps/fomogen) inclut un panier sticky intégré — ainsi que la preuve sociale, les comptes à rebours et les alertes de stock — le tout dans un payload inférieur à 2,1 Ko.
 >
 > **[Installer FomoGen sur Shopify →](https://apps.shopify.com)**

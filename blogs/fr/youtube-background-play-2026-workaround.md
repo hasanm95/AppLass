@@ -25,7 +25,7 @@ Pendant des années, les utilisateurs avertis contournaient l'obligation "écran
 
 ## L'Avantage ScreenVeil : Efficacité au Niveau Matériel
 
-[ScreenVeil](/apps/screenveil) (com.screenveil.app) n'essaie pas de "pirater" l'application YouTube ni de contourner ses restrictions d'arrière-plan. À la place, il utilise une superposition sophistiquée d'Écran Noir qui se pose par-dessus votre vidéo active.
+[ScreenVeil](/fr/apps/screenveil) (com.screenveil.app) n'essaie pas de "pirater" l'application YouTube ni de contourner ses restrictions d'arrière-plan. À la place, il utilise une superposition sophistiquée d'Écran Noir qui se pose par-dessus votre vidéo active.
 
 Étant donné que l'application vidéo reste techniquement au premier plan et "active", les serveurs de Google ne déclenchent jamais la coupure en arrière-plan. Pendant ce temps, votre écran est physiquement éteint au niveau des pixels.
 
@@ -63,4 +63,4 @@ ScreenVeil est entièrement optimisé pour le **Runtime ART 16 d'Android 16**, g
 
 ---
 
-[Installer ScreenVeil](https://play.google.com/store/apps/details?id=com.screenveil.app) | [En Savoir Plus](/apps/screenveil)
+[Installer ScreenVeil](https://play.google.com/store/apps/details?id=com.screenveil.app) | [En Savoir Plus](/fr/apps/screenveil)

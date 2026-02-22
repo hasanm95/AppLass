@@ -87,7 +87,7 @@ Fomo reste la plateforme de preuve sociale la plus flexible et la plus intégré
 
 ## L'Écosystème de Conversion
 
-Ce guide fait partie de notre [Guide Ultime des Performances E-commerce](/ecommerce-performance-2026-benchmarks). Maîtrisez l'art de la conversion sous 2,1 Ko.
+Ce guide fait partie de notre [Guide Ultime des Performances E-commerce](/fr/ecommerce-performance-2026-benchmarks). Maîtrisez l'art de la conversion sous 2,1 Ko.
 
 ## Conclusion
 

@@ -22,13 +22,13 @@ J'ai passé des années à essayer des applications de bien-être "soft" comme O
 - **La Lourdeur :** Freedom donnait l'impression d'être une application desktop qui ne s'adaptait pas vraiment à mon téléphone Android, ce qui la rendait frustrante à utiliser.
 - **Les Signaux d'Alerte en Matière de Confidentialité :** Certaines applications utilisaient un VPN pour bloquer le trafic, ce qui m'inquiétait quant à mes données transitant par leurs serveurs.
 
-> **Voir l'analyse complète :** Notre [matrice de comparaison](/apps/mindful-guard#comparison) montre exactement comment MindfulGuard se positionne face à la concurrence.
+> **Voir l'analyse complète :** Notre [matrice de comparaison](/fr/apps/mindful-guard#comparison) montre exactement comment MindfulGuard se positionne face à la concurrence.
 
 ## Construire un "Pare-feu Cognitif"
 
-J'ai décidé d'arrêter de traiter la concentration comme un "sentiment" et de commencer à la traiter comme de l'ingénierie. Je voulais construire un système plus rapide que mes propres impulsions — un "[Pare-feu Cognitif](/apps/mindful-guard)" pour mon cerveau.
+J'ai décidé d'arrêter de traiter la concentration comme un "sentiment" et de commencer à la traiter comme de l'ingénierie. Je voulais construire un système plus rapide que mes propres impulsions — un "[Pare-feu Cognitif](/fr/apps/mindful-guard)" pour mon cerveau.
 
-C'est ainsi qu'est né [MindfulGuard](/apps/mindful-guard). Je ne voulais pas que ce soit juste un autre minuteur ; je voulais que ce soit une infrastructure qui fonctionne réellement sur les téléphones Android agressifs (comme Xiaomi ou Samsung) sans être tuée par les paramètres de batterie.
+C'est ainsi qu'est né [MindfulGuard](/fr/apps/mindful-guard). Je ne voulais pas que ce soit juste un autre minuteur ; je voulais que ce soit une infrastructure qui fonctionne réellement sur les téléphones Android agressifs (comme Xiaomi ou Samsung) sans être tuée par les paramètres de batterie.
 
 ## Les Trois Règles du Monk Mode 2.0
 
@@ -48,10 +48,10 @@ Arrêtez d'essayer de combattre un super-ordinateur à mains nues. Il est temps 
 
 ### Maîtrisez votre Architecture Neuronale
 
-Cet article fait partie de notre [Guide Ultime du Bien-être Numérique](/digital-wellness-2026-guide). Explorez le pilier complet pour plus d'insights sur le monk mode et l'ingénierie de la concentration.
+Cet article fait partie de notre [Guide Ultime du Bien-être Numérique](/fr/digital-wellness-2026-guide). Explorez le pilier complet pour plus d'insights sur le monk mode et l'ingénierie de la concentration.
 
 ---
 
 **Prêt à entrer dans le Monk Mode 2.0 ?**
 
-[Installer MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard) | [Explorer la Logique](/apps/mindful-guard)
+[Installer MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard) | [Explorer la Logique](/fr/apps/mindful-guard)

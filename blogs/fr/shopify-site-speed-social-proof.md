@@ -34,7 +34,7 @@ Les anciennes applications utilisent des **Script Tags**. Elles forcent l'insert
 
 ## Une Partie du Pilier de Performance
 
-La vitesse du site n'est qu'une variable. Explorez le [Pilier de Performance E-commerce](/ecommerce-performance-2026-benchmarks) complet pour une approche mathématique des ventes.
+La vitesse du site n'est qu'une variable. Explorez le [Pilier de Performance E-commerce](/fr/ecommerce-performance-2026-benchmarks) complet pour une approche mathématique des ventes.
 
 ## Conclusion
 

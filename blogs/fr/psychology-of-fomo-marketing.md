@@ -8,13 +8,13 @@ thumbnail: "/v1/blogs/valuation-matrix.png"
 featured: false
 faqs:
   - question: "Quelle est la base biologique du marketing FOMO ?"
-    answer: "Il est ancré dans l'Aversion à la Perte, où le cerveau perçoit la douleur de rater une opportunité comme deux fois plus puissante que le plaisir d'en gagner une. Des outils comme [FomoGen](/apps/fomogen) exploitent ce principe avec des notifications de rareté en temps réel synchronisées avec votre inventaire Shopify réel."
+    answer: "Il est ancré dans l'Aversion à la Perte, où le cerveau perçoit la douleur de rater une opportunité comme deux fois plus puissante que le plaisir d'en gagner une. Des outils comme [FomoGen](/fr/apps/fomogen) exploitent ce principe avec des notifications de rareté en temps réel synchronisées avec votre inventaire Shopify réel."
   - question: "La preuve sociale augmente-t-elle réellement les ventes Shopify ?"
-    answer: "Oui. Les données de 2026 montrent que les notifications de preuve sociale en temps réel peuvent augmenter les conversions d'un site jusqu'à 98 %. Consultez les benchmarks complets dans notre [Guide de Performance E-commerce 2026](/ecommerce-performance-2026-benchmarks)."
+    answer: "Oui. Les données de 2026 montrent que les notifications de preuve sociale en temps réel peuvent augmenter les conversions d'un site jusqu'à 98 %. Consultez les benchmarks complets dans notre [Guide de Performance E-commerce 2026](/fr/ecommerce-performance-2026-benchmarks)."
   - question: "Le marketing FOMO est-il illégal ?"
     answer: "Il est légal s'il utilise des données véridiques. Cependant, la 'Fausse Rareté' (comme les minuteurs qui se réinitialisent à chaque actualisation) peut violer les lois de protection des consommateurs et détruit la confiance à long terme envers la marque. FomoGen n'affiche que de vraies données d'inventaire synchronisées depuis votre boutique Shopify."
   - question: "Combien d'avis me faut-il pour qu'un produit paraisse digne de confiance ?"
-    answer: "Les produits ayant 5 avis ou plus ont 270 % plus de chances d'être achetés que ceux n'en ayant aucun. Combinez les avis avec les [badges de preuve sociale de FomoGen](/docs/fomogen/social-proof-badges) pour maximiser les signaux de confiance."
+    answer: "Les produits ayant 5 avis ou plus ont 270 % plus de chances d'être achetés que ceux n'en ayant aucun. Combinez les avis avec les [badges de preuve sociale de FomoGen](/fr/docs/fomogen/social-proof-badges) pour maximiser les signaux de confiance."
 ---
 
 Avez-vous déjà réservé une chambre d'hôtel simplement parce que le site indiquait "Plus qu'1 chambre disponible à ce prix !" ? Vous ne l'avez pas fait parce que vous étiez logique. Vous l'avez fait à cause d'un déclencheur biologique appelé **l'Aversion à la Perte**.
@@ -31,7 +31,7 @@ C'est pourquoi les outils de Compte à Rebours de Stock sont si efficaces.
 
 **La Statistique :** Les notifications de preuve sociale et de rareté en temps réel peuvent augmenter les conversions jusqu'à 98 %.
 
-**Comment l'utiliser :** Ne vous contentez pas d'afficher "En stock". Utilisez [FomoGen](/apps/fomogen) pour afficher un compteur dynamique : _"Dépêchez-vous ! Plus que 3 articles en stock."_
+**Comment l'utiliser :** Ne vous contentez pas d'afficher "En stock". Utilisez [FomoGen](/fr/apps/fomogen) pour afficher un compteur dynamique : _"Dépêchez-vous ! Plus que 3 articles en stock."_
 
 ![Matrice d'évaluation de la psychologie du marketing de rareté pour Shopify 2026](/v1/blogs/valuation-matrix.png)
 
@@ -50,10 +50,10 @@ En affichant un Sales Pop indiquant "Amanda du Texas a acheté ceci il y a 2 min
 
 ## La Science du ROI Psychologique
 
-Comprenez comment le FOMO s'inscrit dans une stratégie de [Performance E-commerce](/ecommerce-performance-2026-benchmarks) plus large.
+Comprenez comment le FOMO s'inscrit dans une stratégie de [Performance E-commerce](/fr/ecommerce-performance-2026-benchmarks) plus large.
 
 ## Résumé
 
 Vous n'avez pas besoin de manipuler vos clients. Vous avez juste besoin de mettre la vérité en lumière. Si votre stock est bas, dites-le. Si des gens achètent, montrez-le. C'est l'essence d'un marketing éthique à fort taux de conversion.
 
-**À lire ensuite :** Associez la psychologie FOMO à la bonne UX. Découvrez comment un [Panier Sticky Mobile](/blog/mobile-sticky-cart-guide) peut booster votre tunnel de conversion.
+**À lire ensuite :** Associez la psychologie FOMO à la bonne UX. Découvrez comment un [Panier Sticky Mobile](/fr/blog/mobile-sticky-cart-guide) peut booster votre tunnel de conversion.

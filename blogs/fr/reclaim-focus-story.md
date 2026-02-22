@@ -32,11 +32,11 @@ J'ai passé des mois à essayer des applications comme Opal et Freedom, mais ell
 
 En tant que développeur, je savais qu'il me fallait quelque chose construit avec une **précision mathématique** et une **confidentialité zéro-télémétrie**.
 
-> **Curieux de savoir comment les alternatives se comparent ?** Consultez notre [matrice de comparaison détaillée](/apps/mindful-guard#comparison) pour comprendre pourquoi les bloqueurs basés sur VPN sont insuffisants.
+> **Curieux de savoir comment les alternatives se comparent ?** Consultez notre [matrice de comparaison détaillée](/fr/apps/mindful-guard#comparison) pour comprendre pourquoi les bloqueurs basés sur VPN sont insuffisants.
 
 ## La Solution : Construire un "Pare-feu Cognitif"
 
-C'est pourquoi j'ai créé [MindfulGuard](/apps/mindful-guard). Je ne voulais pas une application de "bien-être" — je voulais un outil qui fonctionnerait avec la même logique qu'un pare-feu pour ordinateur.
+C'est pourquoi j'ai créé [MindfulGuard](/fr/apps/mindful-guard). Je ne voulais pas une application de "bien-être" — je voulais un outil qui fonctionnerait avec la même logique qu'un pare-feu pour ordinateur.
 
 - **Mode Logique Strict :** Une fois un blocage défini, il n'y a pas de "contournement". Il élimine les excuses et vous force à rester sur la bonne voie.
 - **Confidentialité Zéro-Suivi :** Vos données ne quittent jamais votre téléphone, car la concentration doit rester privée.
@@ -50,10 +50,10 @@ J'ai arrêté d'essayer de "faire plus d'efforts" et j'ai commencé à utiliser 
 
 ## Une Partie du Cadre du Bien-être Numérique
 
-Reprendre le contrôle de sa concentration est un défi systémique. Découvrez comment cette stratégie s'intègre dans notre [Guide Ultime du Bien-être Numérique](/digital-wellness-2026-guide).
+Reprendre le contrôle de sa concentration est un défi systémique. Découvrez comment cette stratégie s'intègre dans notre [Guide Ultime du Bien-être Numérique](/fr/digital-wellness-2026-guide).
 
 ---
 
 **Prêt à reprendre le contrôle de votre concentration ?**
 
-[Installer MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard) | [Découvrir son Fonctionnement](/apps/mindful-guard)
+[Installer MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard) | [Découvrir son Fonctionnement](/fr/apps/mindful-guard)

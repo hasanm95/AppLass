@@ -22,7 +22,7 @@ Chaque fois qu'une application envoie un "signal de vie" ou un rapport d'utilisa
 
 ## Le Manifeste Zéro-Télémétrie
 
-[MindfulGuard](/apps/mindful-guard) a été conçu avec une **architecture Zéro-Télémétrie et Offline-First**. Nous traitons votre attention comme une ressource système privée.
+[MindfulGuard](/fr/apps/mindful-guard) a été conçu avec une **architecture Zéro-Télémétrie et Offline-First**. Nous traitons votre attention comme une ressource système privée.
 
 | Fonctionnalité          | MindfulGuard        | Concurrents Standard          |
 | :---------------------- | :------------------ | :---------------------------- |
@@ -30,7 +30,7 @@ Chaque fois qu'une application envoie un "signal de vie" ou un rapport d'utilisa
 | **Dépendance Réseau**   | Entièrement Hors Ligne | Nécessite VPN/Synchronisation |
 | **Modèle de Confidentialité** | Zéro Suivi    | Basé sur les Données/Publicité |
 
-> **Vous voulez l'analyse complète ?** Consultez notre [comparaison Matrice Logique](/apps/mindful-guard#comparison) pour une analyse détaillée face à face.
+> **Vous voulez l'analyse complète ?** Consultez notre [comparaison Matrice Logique](/fr/apps/mindful-guard#comparison) pour une analyse détaillée face à face.
 
 ## Pourquoi la Confidentialité est Synonyme de Performance
 
@@ -46,10 +46,10 @@ Arrêtez de laisser des algorithmes surchargés dicter votre capacité d'attenti
 
 ## La Confidentialité comme Fondement
 
-Le zéro-télémétrie est une exigence fondamentale pour une véritable neutralité. Explorez davantage dans notre pilier [Guide Ultime du Bien-être Numérique](/digital-wellness-2026-guide).
+Le zéro-télémétrie est une exigence fondamentale pour une véritable neutralité. Explorez davantage dans notre pilier [Guide Ultime du Bien-être Numérique](/fr/digital-wellness-2026-guide).
 
 ---
 
 **Explorez plus d'insights en ingénierie :**
 
-[Explorer le Logic Lab (Tous les Articles)](/blog) | [Installer MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard)
+[Explorer le Logic Lab (Tous les Articles)](/fr/blog) | [Installer MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard)

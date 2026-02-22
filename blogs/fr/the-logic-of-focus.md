@@ -38,7 +38,7 @@ En tant que studio axé sur l'accessibilité, nous avons constaté que les inter
 
 ## Le Chemin vers le Bien-être Numérique
 
-Cet article est un chapitre vedette de notre [Guide Ultime du Bien-être Numérique](/digital-wellness-2026-guide). Apprenez à ingéniérer votre concentration à partir de premiers principes.
+Cet article est un chapitre vedette de notre [Guide Ultime du Bien-être Numérique](/fr/digital-wellness-2026-guide). Apprenez à ingéniérer votre concentration à partir de premiers principes.
 
 ## Conclusion : Récupérez vos 3 Heures
 
