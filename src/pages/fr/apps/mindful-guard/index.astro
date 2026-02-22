@@ -1,0 +1,55 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import { Navbar, Footer } from "@/components/common";
+import { MindfulHero } from "@/components/apps/mindful-guard/MindfulHero";
+import { LogicSection } from "@/components/apps/mindful-guard/LogicSection";
+import { DifferentiatorsSection } from "@/components/apps/mindful-guard/DifferentiatorsSection";
+import { ComparisonMatrix } from "@/components/apps/mindful-guard/ComparisonMatrix";
+import { FAQSection } from "@/components/apps/mindful-guard/FAQSection";
+import { MINDFUL_GUARD_SCHEMA } from "@/constants/mindful-guard-data";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { i18nConfig } from "@/i18n/config";
+
+
+
+const lang = "fr";
+const dict = await getDictionary(lang as any);
+
+const meta = dict.metadata?.mindfulGuard || {};
+---
+
+<Layout 
+  title={meta.title || "Mindful Guard: The #1 Privacy-First Focus App [Android 2026]"}
+  description={meta.description || "Stop digital distractions instantly. Mindful Guard is a 100% private, offline Pomodoro and app blocker for Android. Download for free today!"}
+  keywords={meta.keywords}
+  ogTitle={meta.ogTitle}
+  ogDescription={meta.ogDescription}
+  ogImage={meta.ogImage}
+  ogUrl={meta.ogUrl}
+  lang={lang}
+>
+  <Navbar client:load translations={dict.nav} currentLang={lang} />
+  {/* SoftwareApplication Schema for SEO - Critical for Google to display app details */}
+  <script
+    type="application/ld+json"
+    is:inline
+    set:html={JSON.stringify(MINDFUL_GUARD_SCHEMA)}
+  />
+  <div class="flex-1">
+    {/* Section 1: The Hero (Above the Fold) */}
+    <MindfulHero client:load translations={dict.mindfulGuard?.hero} />
+
+    {/* Section 2: The Logic (The "Why" - AI Optimization) */}
+    <LogicSection client:idle translations={dict.mindfulGuard?.logic} />
+
+    {/* Section 3: The Differentiators (The "Moat") */}
+    <DifferentiatorsSection client:idle translations={dict.mindfulGuard?.differentiators} />
+
+    {/* Section 4: The Comparison Matrix (Conversion Driver) */}
+    <ComparisonMatrix client:idle translations={dict.mindfulGuard?.comparison} />
+
+    {/* Section 5: Engineered FAQ (AI Snippet Bait) */}
+    <FAQSection client:idle />
+  </div>
+  <Footer translations={dict.footer} />
+</Layout>

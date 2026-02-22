@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { localePath } from "@/i18n/utils";
 
 export default function FomogenDocsPage({ lang }: { lang: string }) {
   return (
@@ -18,12 +19,12 @@ export default function FomogenDocsPage({ lang }: { lang: string }) {
 
       <div className="grid gap-6 sm:grid-cols-2">
         <DocsCard
-          href={`/${lang}/docs/fomogen/quick-start`}
+          href={localePath(lang, "/docs/fomogen/quick-start")}
           title="⚡ Quick Start"
           description="Go from zero to conversion-ready in under 5 minutes."
         />
         <DocsCard
-          href={`/${lang}/docs/fomogen/configuration`}
+          href={localePath(lang, "/docs/fomogen/configuration")}
           title="⚙️ Configuration"
           description="Global settings reference for advanced engine tuning."
         />
@@ -40,15 +41,15 @@ export default function FomogenDocsPage({ lang }: { lang: string }) {
             items={[
               {
                 label: "Purchase Notifications",
-                href: "/docs/fomogen/purchase-notifications",
+                href: localePath(lang, "/docs/fomogen/purchase-notifications"),
               },
               {
                 label: "Social Proof Badges",
-                href: "/docs/fomogen/social-proof-badges",
+                href: localePath(lang, "/docs/fomogen/social-proof-badges"),
               },
               {
                 label: "Trust Badges",
-                href: "/docs/fomogen/trust-badges",
+                href: localePath(lang, "/docs/fomogen/trust-badges"),
               },
             ]}
           />
@@ -58,15 +59,15 @@ export default function FomogenDocsPage({ lang }: { lang: string }) {
             items={[
               {
                 label: "Exit Intent Popups",
-                href: "/docs/fomogen/exit-intent",
+                href: localePath(lang, "/docs/fomogen/exit-intent"),
               },
               {
                 label: "Countdown Timers",
-                href: "/docs/fomogen/countdown-timers",
+                href: localePath(lang, "/docs/fomogen/countdown-timers"),
               },
               {
                 label: "Stock Alerts",
-                href: "/docs/fomogen/stock-alerts",
+                href: localePath(lang, "/docs/fomogen/stock-alerts"),
               },
             ]}
           />
@@ -76,11 +77,11 @@ export default function FomogenDocsPage({ lang }: { lang: string }) {
             items={[
               {
                 label: "Progress Indicators",
-                href: "/docs/fomogen/progress-indicators",
+                href: localePath(lang, "/docs/fomogen/progress-indicators"),
               },
               {
                 label: "Sticky Cart",
-                href: "/docs/fomogen/sticky-cart",
+                href: localePath(lang, "/docs/fomogen/sticky-cart"),
               },
             ]}
           />

@@ -1,32 +1,37 @@
 import { cn } from "@/lib/utils";
 import type { Dictionary } from "@/i18n/get-dictionary";
+import { localePath } from "@/i18n/utils";
 
-const footerLinks = {
-  solutions: [
-    { label: "Fomogen", href: "/apps/fomogen" },
-    { label: "Mindful Guard", href: "/apps/mindful-guard" },
-    { label: "ScreenVeil", href: "/apps/screenveil" },
-  ],
-  resources: [
-    { label: "Our Ecosystem", href: "/apps" },
-    { label: "Documentation", href: "/docs" },
-    { label: "The Methodology", href: "/about" },
-    { label: "The Logic Lab (Blog)", href: "/blog" },
-  ],
-  legal: [
-    { label: "Privacy Policy", href: "/legal/fomogen/privacy" },
-    { label: "Terms of Service", href: "/legal/fomogen/terms" },
-  ],
-};
+function getFooterLinks(lang: string) {
+  return {
+    solutions: [
+      { slug: "fomogen", label: "Fomogen", href: localePath(lang, '/apps/fomogen') },
+      { slug: "mindfulGuard", label: "Mindful Guard", href: localePath(lang, '/apps/mindful-guard') },
+      { slug: "screenveil", label: "ScreenVeil", href: localePath(lang, '/apps/screenveil') },
+    ],
+    resources: [
+      { slug: "ourEcosystem", label: "Our Ecosystem", href: localePath(lang, '/apps') },
+      { slug: "documentation", label: "Documentation", href: localePath(lang, '/docs') },
+      { slug: "theMethodology", label: "The Methodology", href: localePath(lang, '/about') },
+      { slug: "theLogicLab", label: "The Logic Lab (Blog)", href: localePath(lang, '/blog') },
+    ],
+    legal: [
+      { slug: "privacyPolicy", label: "Privacy Policy", href: localePath(lang, '/legal/fomogen/privacy') },
+      { slug: "termsOfService", label: "Terms of Service", href: localePath(lang, '/legal/fomogen/terms') },
+    ],
+  };
+}
 
 interface FooterProps {
   variant?: "light" | "dark";
   translations?: Dictionary["footer"];
+  currentLang?: string;
 }
 
-export function Footer({ variant = "light", translations }: FooterProps) {
+export function Footer({ variant = "light", translations, currentLang = "en" }: FooterProps) {
   const currentYear = new Date().getFullYear();
   const isDark = variant === "dark";
+  const footerLinks = getFooterLinks(currentLang);
 
   return (
     <footer
@@ -42,7 +47,7 @@ export function Footer({ variant = "light", translations }: FooterProps) {
           {/* Brand column */}
           <div className="md:col-span-1">
             <a
-              href="/"
+              href={localePath(currentLang, '/')}
               className={cn(
                 "inline-flex items-center gap-2 text-lg font-semibold",
                 isDark ? "text-white" : "text-slate-900"
@@ -79,12 +84,7 @@ export function Footer({ variant = "light", translations }: FooterProps) {
             </h3>
             <ul className="space-y-3">
               {footerLinks.solutions.map((link) => {
-                // Determine translation key based on URL/label
-                let labelKey: keyof NonNullable<typeof translations>["links"] | undefined;
-                if (link.href === "/apps/fomogen") labelKey = "fomogen";
-                else if (link.href === "/apps/mindful-guard") labelKey = "mindfulGuard";
-                else if (link.href === "/apps/screenveil") labelKey = "screenveil";
-                
+                const labelKey = link.slug as keyof NonNullable<typeof translations>["links"];
                 return (
                   <li key={link.label}>
                     <FooterLink href={link.href} isDark={isDark}>
@@ -108,12 +108,7 @@ export function Footer({ variant = "light", translations }: FooterProps) {
             </h3>
             <ul className="space-y-3">
               {footerLinks.resources.map((link) => {
-                let labelKey: keyof NonNullable<typeof translations>["links"] | undefined;
-                if (link.href === "/apps") labelKey = "ourEcosystem";
-                else if (link.href === "/docs") labelKey = "documentation";
-                else if (link.href === "/about") labelKey = "theMethodology";
-                else if (link.href === "/blog") labelKey = "theLogicLab";
-                
+                const labelKey = link.slug as keyof NonNullable<typeof translations>["links"];
                 return (
                   <li key={link.label}>
                     <FooterLink href={link.href} isDark={isDark}>
@@ -137,10 +132,7 @@ export function Footer({ variant = "light", translations }: FooterProps) {
             </h3>
             <ul className="space-y-3">
               {footerLinks.legal.map((link) => {
-                let labelKey: keyof NonNullable<typeof translations>["links"] | undefined;
-                if (link.href === "/legal/fomogen/privacy") labelKey = "privacyPolicy";
-                else if (link.href === "/legal/fomogen/terms") labelKey = "termsOfService";
-                
+                const labelKey = link.slug as keyof NonNullable<typeof translations>["links"];
                 return (
                   <li key={link.label}>
                     <FooterLink href={link.href} isDark={isDark}>

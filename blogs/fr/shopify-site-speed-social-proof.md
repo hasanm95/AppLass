@@ -1,5 +1,5 @@
 ---
-title: 'Votre Application de Preuve Sociale Nuit-elle à votre SEO ? Le Coût Caché de l'"App Bloat"'
+title: "Votre Application de Preuve Sociale Nuit-elle à votre SEO ? Le Coût Caché de l'\"App Bloat\""
 date: "2026-01-24"
 category: "Technique"
 author: "Équipe AppLass"

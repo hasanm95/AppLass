@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { localePath } from "@/i18n/utils";
 
 
 export default function MindfulGuardDocsPage({ lang }: { lang: string }) {
@@ -19,12 +20,12 @@ export default function MindfulGuardDocsPage({ lang }: { lang: string }) {
 
       <div className="grid gap-6 sm:grid-cols-2">
         <DocsCard
-          href={`/${lang}/docs/mindful-guard/installation`}
+          href={localePath(lang, "/docs/mindful-guard/installation")}
           title="⚡ Installation"
           description="Deploy the cognitive firewall to your Android device today."
         />
         <DocsCard
-          href={`/${lang}/docs/mindful-guard/strict-mode`}
+          href={localePath(lang, "/docs/mindful-guard/strict-mode")}
           title="🔒 Strict Mode"
           description="Learn how to lock down your device for maximum focus."
         />

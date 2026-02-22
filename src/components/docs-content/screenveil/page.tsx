@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { localePath } from "@/i18n/utils";
 
 
 export default function ScreenVeilDocsPage({ lang }: { lang: string }) {
@@ -20,7 +21,7 @@ export default function ScreenVeilDocsPage({ lang }: { lang: string }) {
 
       <div className="grid gap-6 sm:grid-cols-2">
         <DocsCard
-          href={`/${lang}/docs/screenveil/amoled-efficiency`}
+          href={localePath(lang, "/docs/screenveil/amoled-efficiency")}
           title="⚡ Amoled Efficiency"
           description="Deep dive into the physics of OLED power conservation."
         />

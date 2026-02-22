@@ -1,0 +1,76 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { Navbar, Footer } from "@/components/common";
+import { BlogHero } from "@/components/blog/BlogHero";
+import { BlogCard } from "@/components/blog/BlogCard";
+import { getBlogPosts, getBlogCategories } from "@/lib/blog";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { i18nConfig } from "@/i18n/config";
+
+
+
+const lang = "fr";
+const dict = await getDictionary(lang as any);
+
+const meta = dict.metadata?.blog || {};
+
+const posts = getBlogPosts(lang as string);
+const categories = getBlogCategories(lang as string);
+
+const featuredPost = posts.find((post: any) => post.featured) || posts[0];
+const otherPosts = posts.filter(
+  (post: any) => post.slug !== (featuredPost?.slug || "")
+);
+---
+
+<Layout 
+  title={meta.title || "The Logic Lab | AppLass Blog"}
+  description={meta.description || "Deep dives into software engineering, mathematics, and digital productivity."}
+  keywords={meta.keywords}
+  ogTitle={meta.ogTitle}
+  ogDescription={meta.ogDescription}
+  ogImage={meta.ogImage}
+  ogUrl={meta.ogUrl}
+  lang={lang}
+>
+  <Navbar client:load translations={dict.nav} currentLang={lang} />
+  <div class="flex-1 bg-white pt-20">
+    <BlogHero client:load />
+    <section class="section border-y border-slate-100/50 bg-[#FAFBFD] py-24">
+      <div class="section-container">
+        <div class="mb-16 flex flex-wrap gap-4">
+          {categories.map((category) => (
+            <button
+              class="rounded-full border border-slate-200 bg-white px-6 py-2 text-sm font-bold text-slate-500 transition-all hover:border-blue-600 hover:text-blue-600"
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+
+        {/* Featured Post */}
+      {featuredPost && (
+        <div class="mb-12 lg:mb-20">
+          <BlogCard post={featuredPost} isHero={true} lang={lang} />
+        </div>
+      )}
+
+      {/* Grid */}
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {otherPosts.map((post: any) => (
+          <BlogCard post={post} lang={lang} />
+        ))}
+      </div>
+
+        {posts.length === 0 && (
+          <div class="py-20 text-center">
+            <p class="font-bold text-slate-400">
+              No articles published yet. Check back soon.
+            </p>
+          </div>
+        )}
+      </div>
+    </section>
+  </div>
+  <Footer translations={dict.footer} />
+</Layout>

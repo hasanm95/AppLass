@@ -1,0 +1,134 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import { Navbar, Footer } from "@/components/common";
+import { FomoGenHero } from "@/components/apps/fomogen/FomoGenHero";
+import { SpeedBenefitSection } from "@/components/apps/fomogen/SpeedBenefitSection";
+import { CoreFeatures } from "@/components/apps/fomogen/CoreFeatures";
+import { TestimonialsSection } from "@/components/apps/fomogen/TestimonialsSection";
+import { PricingSection } from "@/components/apps/fomogen/PricingSection";
+import { FomoGenCTA } from "@/components/apps/fomogen/FomoGenCTA";
+import { FAQRegistrySection } from "@/components/common/FAQRegistrySection";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { i18nConfig } from "@/i18n/config";
+import { getImage } from "astro:assets";
+import fomogenHeroImg from "@/assets/apps/fomogen/comparison-hero.png";
+import socialProofUiImg from "@/assets/apps/fomogen/social-proof-ui.png";
+import scarcityUiImg from "@/assets/apps/fomogen/scarcity-ui.png";
+import stickyCartUiImg from "@/assets/apps/fomogen/sticky-cart-ui.png";
+import shippingBarUiImg from "@/assets/apps/fomogen/shipping-bar-ui.png";
+
+
+
+const lang = "fr";
+const dict = await getDictionary(lang as any);
+
+const meta = dict.metadata?.fomogen || {};
+
+// Optimize images for passing to React components
+const optimizedHero = await getImage({ src: fomogenHeroImg, format: "webp" });
+const optimizedSocialProof = await getImage({ src: socialProofUiImg, format: "webp" });
+const optimizedScarcity = await getImage({ src: scarcityUiImg, format: "webp" });
+const optimizedStickyCart = await getImage({ src: stickyCartUiImg, format: "webp" });
+const optimizedShippingBar = await getImage({ src: shippingBarUiImg, format: "webp" });
+
+// We must map the images to the features array, handling both translations and default data
+const featuresData = (dict.fomogen?.features || []).map((feature: any, idx: number) => {
+  const imageMap = [optimizedSocialProof.src, optimizedScarcity.src, optimizedStickyCart.src, optimizedShippingBar.src];
+  return {
+    ...feature,
+    imageSrc: imageMap[idx] || undefined
+  };
+});
+---
+
+<Layout 
+  title={meta.title || "FOMO Gen: Fast Shopify Social Proof App [No Code 2026]"}
+  description={meta.description || "Add high-converting sales popups, countdowns, and sticky carts to Shopify. Zero impact on Core Web Vitals with our 2KB payload."}
+  keywords={meta.keywords}
+  ogTitle={meta.ogTitle}
+  ogDescription={meta.ogDescription}
+  ogImage={meta.ogImage}
+  ogUrl={meta.ogUrl}
+  lang={lang}
+>
+  <div class="bg-white">
+    <Navbar client:load translations={dict.nav} currentLang={lang} />
+
+    <script
+      type="application/ld+json"
+      is:inline
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: "FOMO Gen - Elite Social Proof",
+            operatingSystem: "Shopify",
+            applicationCategory: "BusinessApplication",
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              ratingCount: "135",
+            },
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "USD",
+              priceValidUntil: "2026-12-31",
+              availability: "https://schema.org/InStock",
+            },
+            featureList:
+              "Social Proof Notifications, Stock Countdown Timer, Sticky Add-to-Cart, Free Shipping Bar",
+            screenshot:
+              "https://applass.com/v1/apps/fomogen/comparison-hero.png",
+            image: "https://applass.com/v1/apps/fomogen-feature.png",
+            description:
+              "FOMO Gen is an all-in-one Shopify app for social proof, urgency, and trust signals.",
+            author: {
+              "@type": "Organization",
+              name: "Applass",
+              url: "https://applass.com",
+            },
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: "FOMO Gen",
+            description:
+              "All-in-one Shopify app for Sales Popups, Stock Countdowns, Sticky Cart, and Trust Badges.",
+            brand: {
+              "@type": "Brand",
+              name: "AppLass",
+            },
+            offers: {
+              "@type": "Offer",
+              price: "0.00",
+              priceCurrency: "USD",
+              priceValidUntil: "2026-12-31",
+              availability: "https://schema.org/InStock",
+              url: "https://applass.com/apps/fomogen",
+            },
+          },
+        ],
+      })}
+    />
+
+    <div class="flex-1 overflow-x-hidden">
+      <FomoGenHero client:load translations={dict.fomogen?.hero} heroImageSrc={optimizedHero.src} />
+      <SpeedBenefitSection client:idle translations={dict.fomogen?.speedBenefit} />
+      <CoreFeatures client:idle translations={featuresData} />
+      <TestimonialsSection client:idle translations={dict.fomogen?.testimonials} />
+      <PricingSection client:idle translations={dict.fomogen?.pricing} />
+      <FomoGenCTA client:idle translations={dict.fomogen?.cta} />
+      <FAQRegistrySection
+        client:idle
+        registryKey="FOMOGEN"
+        variant="centered"
+        className="bg-white py-24"
+      />
+    </div>
+
+    <Footer translations={dict.footer} />
+  </div>
+</Layout>

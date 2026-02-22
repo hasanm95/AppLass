@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { localePath } from "@/i18n/utils";
 
 type LanguageSwitcherProps = {
   /** The current locale, e.g. "en" or "fr" */
@@ -40,7 +41,7 @@ export function LanguageSwitcher({
             return (
               <a
                 key={code}
-                href={`/${code}/`}
+                href={localePath(code, '/')}
                 aria-current={isActive ? "true" : undefined}
                 className={cn(
                   "flex items-center gap-2 rounded-xl px-5 py-3 text-sm font-bold transition-all",

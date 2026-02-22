@@ -1,0 +1,127 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { Navbar, Footer } from "@/components/common";
+import { getComparisonBySlug, comparisons } from "@/lib/compare";
+import { CompareHero } from "@/components/compare/CompareHero";
+import { ComparisonMatrix } from "@/components/compare/ComparisonMatrix";
+import { TechnicalDebt } from "@/components/compare/TechnicalDebt";
+import { ValueHighlights } from "@/components/compare/ValueHighlights";
+import { CompareTestimonial } from "@/components/compare/CompareTestimonial";
+import { CompareFooter } from "@/components/compare/CompareFooter";
+import { Button } from "@/components/ui/button";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { i18nConfig } from "@/i18n/config";
+
+export async function getStaticPaths() {
+  return i18nConfig.locales.flatMap((lang) => 
+    comparisons.map((c) => ({
+      params: { lang, slug: c.slug },
+    }))
+  );
+}
+
+const { slug } = Astro.params;
+const lang = "en";
+const dict = await getDictionary(lang as any);
+const data = getComparisonBySlug(slug as string);
+
+if (!data) {
+  return Astro.redirect('/404');
+}
+
+const compareData: any = dict.compare;
+const compareDict = compareData?.[data.slug as string];
+
+const title = `${data.productName} vs ${data.competitorName} | AppLass`;
+const description = `Why elite teams are switching from ${data.competitorName} to ${data.productName}. A logic-first comparison.`;
+
+// JSON-LD for Comparison/Product
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: compareDict?.heroHeadline || data.heroHeadline,
+  description: compareDict?.heroSubheadline || data.heroSubheadline,
+  author: {
+    "@type": "Organization",
+    name: "AppLass",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "AppLass",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://applass.com/logo.png",
+    },
+  },
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": `https://applass.com/${lang}/compare/${slug}`,
+  },
+};
+---
+
+<Layout title={title} description={description} lang={lang}>
+  <div class="min-h-screen bg-white">
+    <script
+      type="application/ld+json"
+      is:inline
+      set:html={JSON.stringify(jsonLd)}
+    />
+    
+    <Navbar variant="light" client:load translations={dict.nav} currentLang={lang}>
+      <div slot="customBranding" class="flex items-center gap-3">
+        <span class="text-[10px] font-black tracking-widest text-blue-800 uppercase">
+          {data.productName}
+        </span>
+        <span class="text-[10px] font-medium text-slate-500">{compareData?.index?.vs}</span>
+        <span class="text-[10px] font-black tracking-widest text-slate-900 uppercase">
+          {data.competitorName}
+        </span>
+      </div>
+      
+      <div slot="customCTA">
+        <Button className="h-9 rounded-lg bg-slate-900 px-6 text-[10px] font-bold tracking-widest text-white uppercase hover:bg-slate-800" client:idle>
+          Install Now
+        </Button>
+      </div>
+    </Navbar>
+
+    <div>
+      <CompareHero
+        headline={compareDict?.heroHeadline || data.heroHeadline}
+        subheadline={compareDict?.heroSubheadline || data.heroSubheadline}
+        translations={compareData?.hero}
+        client:load
+      />
+
+      <ComparisonMatrix
+        competitorName={data.competitorName}
+        productName={data.productName}
+        features={compareDict?.matrix || data.matrix}
+        translations={compareData?.matrix}
+        client:idle
+      />
+
+      <TechnicalDebt 
+        legacy={compareDict?.legacyWay || data.legacyWay} 
+        applass={compareDict?.applassWay || data.applassWay} 
+        translations={compareData?.debt}
+        client:idle
+      />
+
+      <ValueHighlights translations={compareData?.highlights} client:idle />
+
+      <CompareTestimonial
+        quote={compareDict?.testimonial?.quote || data.testimonial.quote}
+        author={compareDict?.testimonial?.author || data.testimonial.author}
+        role={compareDict?.testimonial?.role || data.testimonial.role}
+        translations={compareDict?.testimonial}
+        client:idle
+      />
+
+      <CompareFooter translations={compareData?.footer} client:idle />
+    </div>
+
+    <Footer variant="light" translations={dict.footer} />
+  </div>
+</Layout>

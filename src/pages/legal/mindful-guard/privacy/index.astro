@@ -1,0 +1,426 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import { Navbar, Footer } from "@/components/common";
+import { Section } from "@/components/common/Section";
+import { Shield } from "lucide-react";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { i18nConfig } from "@/i18n/config";
+
+
+
+const lang = "en";
+const dict = await getDictionary(lang as any);
+
+const lastUpdated = "August 2025";
+const meta = dict.metadata?.legalMindfulGuardPrivacy || {};
+---
+
+<Layout 
+  title={meta.title || "Privacy Policy - Mindful Guard"}
+  description={meta.description || "Privacy Policy for Mindful Guard - Learn how we protect your privacy and handle your data with our privacy-first approach."}
+  keywords={meta.keywords}
+  ogTitle={meta.ogTitle}
+  ogDescription={meta.ogDescription}
+  ogImage={meta.ogImage}
+  ogUrl={meta.ogUrl}
+  lang={lang}
+>
+  <div class="flex min-h-screen flex-col bg-white font-sans selection:bg-slate-100 selection:text-slate-900">
+    <Navbar client:load translations={dict.nav} currentLang={lang}>
+      <div slot="customBranding" class="flex items-center gap-2">
+        <Shield className="h-5 w-5 text-slate-900 fill-slate-900" />
+        <span class="text-lg font-black tracking-tighter text-slate-900 uppercase">
+          Mindful<span class="text-slate-400">Guard</span>
+        </span>
+      </div>
+    </Navbar>
+
+    <main class="grow">
+      <Section className="pb-32 pt-40 lg:pt-56" client:load>
+        <div class="section-container">
+          <div class="mx-auto max-w-4xl">
+            {/* Header */}
+            <header class="mb-20 text-center">
+              <span class="mb-4 block text-[10px] font-black uppercase tracking-[0.3em] text-slate-900">
+                Privacy Documentation
+              </span>
+              <h1 class="text-display mb-6 text-slate-900">
+                Privacy Policy<span class="text-slate-300">.</span>
+              </h1>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center text-sm font-bold text-slate-400">
+                <span>Last Updated: {lastUpdated}</span>
+                <span class="hidden sm:inline">•</span>
+                <span>Effective Date: {lastUpdated}</span>
+              </div>
+            </header>
+
+            {/* Main Content */}
+            <div class="space-y-24 text-lg font-medium leading-relaxed text-slate-600">
+              {/* Introduction */}
+              <div class="text-center">
+                <div class="max-w-3xl mx-auto p-12 bg-blue-50/50 rounded-[2.5rem] border border-blue-100">
+                  <p class="text-xl text-slate-700 leading-relaxed">
+                    Mindful Guard is committed to protecting your privacy. This
+                    Privacy Policy explains how we handle information in our
+                    productivity and focus management application.
+                  </p>
+                </div>
+              </div>
+
+              {/* Section 1: Data Collection */}
+              <section>
+                <div class="text-center mb-12">
+                  <h2 class="text-3xl font-black text-slate-900 mb-4">
+                    1. Data Collection
+                  </h2>
+                  <div class="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
+                </div>
+
+                <div class="mb-12 text-center">
+                  <h3 class="text-2xl font-bold text-slate-800 mb-4">
+                    What We Collect
+                  </h3>
+                  <p class="max-w-2xl mx-auto text-slate-500">
+                    Mindful Guard operates on a{" "}
+                    <strong class="text-blue-600 uppercase tracking-tight">"privacy-first"</strong> principle.
+                    We collect minimal data necessary for app functionality.
+                  </p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-8">
+                  {/* Data We Collect */}
+                  <div class="bg-green-50/50 p-10 rounded-[2.5rem] border border-green-100">
+                    <h4 class="text-xl font-black text-green-800 mb-8 flex items-center">
+                      <span class="text-green-600 mr-4 text-2xl">✓</span>
+                      Data Stored Locally
+                    </h4>
+                    <ul class="space-y-4 text-base text-green-700 list-none">
+                      <li class="flex gap-3">
+                        <span class="text-green-600 font-black shrink-0">·</span>
+                        <p><strong class="text-green-900">Timer Settings:</strong> Duration, labels, and scheduled times you configure</p>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="text-green-600 font-black shrink-0">·</span>
+                        <p><strong class="text-green-900">App Selection Data:</strong> Lists of apps you choose to block during focus sessions</p>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="text-green-600 font-black shrink-0">·</span>
+                        <p><strong class="text-green-900">Usage Preferences:</strong> Your notification settings, theme preferences, and accessibility configurations</p>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="text-green-600 font-black shrink-0">·</span>
+                        <p><strong class="text-green-900">Session History:</strong> Local records of your focus sessions for personal tracking and analytics</p>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="text-green-600 font-black shrink-0">·</span>
+                        <p><strong class="text-green-900">Background Scheduling:</strong> Timer schedules and automation preferences</p>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="text-green-600 font-black shrink-0">·</span>
+                        <p><strong class="text-green-900">App Inventory:</strong> Complete list of installed apps with metadata</p>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="text-green-600 font-black shrink-0">·</span>
+                        <p><strong class="text-green-900">Usage Analytics:</strong> Local app usage statistics including daily/weekly usage times</p>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="text-green-600 font-black shrink-0">·</span>
+                        <p><strong class="text-green-900">Performance Data:</strong> App performance metrics, logs, and optimization data stored temporarily</p>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="text-green-600 font-black shrink-0">·</span>
+                        <p><strong class="text-green-900">Cache Data:</strong> App icons, usage statistics cache, and discovery state for improved performance</p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Data We Don't Collect */}
+                  <div class="bg-red-50/50 p-10 rounded-[2.5rem] border border-red-100">
+                    <h4 class="text-xl font-black text-red-800 mb-8 flex items-center">
+                      <span class="text-red-600 mr-4 text-2xl">❌</span>
+                      Data We DO NOT Collect
+                    </h4>
+                    <ul class="space-y-4 text-base text-red-700 list-none">
+                      <li class="flex gap-3"><span class="text-red-600 font-black shrink-0">/</span><span>Personal identifying information</span></li>
+                      <li class="flex gap-3"><span class="text-red-600 font-black shrink-0">/</span><span>Usage data sent to external servers</span></li>
+                      <li class="flex gap-3"><span class="text-red-600 font-black shrink-0">/</span><span>Analytics or tracking data</span></li>
+                      <li class="flex gap-3"><span class="text-red-600 font-black shrink-0">/</span><span>Location information</span></li>
+                      <li class="flex gap-3"><span class="text-red-600 font-black shrink-0">/</span><span>Contact information</span></li>
+                      <li class="flex gap-3"><span class="text-red-600 font-black shrink-0">/</span><span>Device identifiers for tracking purposes</span></li>
+                      <li class="flex gap-3"><span class="text-red-600 font-black shrink-0">/</span><span>Any data from blocked applications</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              {/* Section 2: Accessibility Service */}
+              <section>
+                <div class="text-center mb-12">
+                  <h2 class="text-3xl font-black text-slate-900 mb-4">
+                    2. Accessibility Service Data Usage
+                  </h2>
+                  <div class="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
+                </div>
+
+                <div class="bg-amber-50/50 p-12 rounded-[2.5rem] border border-amber-100 mb-12 text-center">
+                  <h3 class="text-xl font-black text-amber-800 mb-6">
+                    Why We Need Accessibility Service Access
+                  </h3>
+                  <p class="text-amber-700 max-w-2xl mx-auto">
+                    Mindful Guard uses Android's Accessibility Service <strong>exclusively</strong> for app blocking functionality during your focus sessions.
+                  </p>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-8 mb-12">
+                  <div class="bg-slate-50 p-8 rounded-3xl">
+                    <h4 class="text-sm font-black uppercase tracking-widest text-slate-400 mb-6 underline decoration-slate-200 underline-offset-8">Technical Access</h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                      <li>Window State Changes</li>
+                      <li>Window Content</li>
+                      <li>App Interface Elements</li>
+                    </ul>
+                  </div>
+
+                  <div class="bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-2">
+                      <Shield className="h-4 w-4 text-blue-200" />
+                    </div>
+                    <h4 class="text-sm font-black uppercase tracking-widest text-blue-600 mb-6 underline decoration-blue-200 underline-offset-8">Actual Usage</h4>
+                    <ul class="space-y-3 text-sm text-blue-700 font-bold">
+                      <li>App Launch Detection</li>
+                      <li>App Package Identification</li>
+                      <li>App Blocking Enforcement</li>
+                      <li>Focus Session Management</li>
+                    </ul>
+                  </div>
+
+                  <div class="bg-slate-50 p-8 rounded-3xl">
+                    <h4 class="text-sm font-black uppercase tracking-widest text-red-400 mb-6 underline decoration-red-100 underline-offset-8">No Access Policy</h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                      <li>Personal content within apps</li>
+                      <li>User input data</li>
+                      <li>Screen content reading</li>
+                      <li>Cross-app personal info</li>
+                      <li>User behavior patterns</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="bg-blue-600 rounded-[2.5rem] p-12 text-white">
+                  <h4 class="text-xl font-black mb-10 text-center uppercase tracking-[0.2em]">Data Handling Principles</h4>
+                  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div>
+                      <div class="text-blue-200 text-xs font-black uppercase mb-2">Processing</div>
+                      <div class="font-bold">Local only</div>
+                    </div>
+                    <div>
+                      <div class="text-blue-200 text-xs font-black uppercase mb-2">Storage</div>
+                      <div class="font-bold">No permanent storage</div>
+                    </div>
+                    <div>
+                      <div class="text-blue-200 text-xs font-black uppercase mb-2">Transmission</div>
+                      <div class="font-bold">Zero network exit</div>
+                    </div>
+                    <div>
+                      <div class="text-blue-200 text-xs font-black uppercase mb-2">Purpose</div>
+                      <div class="font-bold">Blocking only</div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              {/* Section 3: Permissions */}
+              <section>
+                <div class="text-center mb-12">
+                  <h2 class="text-3xl font-black text-slate-900 mb-4">
+                    3. Permissions Explained
+                  </h2>
+                  <div class="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
+                </div>
+
+                <p class="text-center text-slate-500 mb-16 max-w-2xl mx-auto">
+                  Mindful Guard requests the following permissions for specific functionalities:
+                </p>
+
+                <div class="grid gap-8">
+                  <div class="bg-slate-50/50 p-10 rounded-3xl border border-slate-100 flex flex-col md:flex-row gap-8">
+                    <div class="text-4xl shrink-0">🔐</div>
+                    <div class="grid sm:grid-cols-3 gap-8 flex-1">
+                      <div>
+                        <h4 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-2">Accessibility Service</h4>
+                        <p class="text-slate-900 font-bold">Block selected apps during focus sessions</p>
+                      </div>
+                      <div>
+                        <h4 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">Access Type</h4>
+                        <p class="text-slate-600 text-sm">App launch events only</p>
+                      </div>
+                      <div>
+                        <h4 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">Usage Logic</h4>
+                        <p class="text-slate-600 text-sm">Local processing only, no data storage</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="bg-slate-50/50 p-10 rounded-3xl border border-slate-100 flex flex-col md:flex-row gap-8">
+                    <div class="text-4xl shrink-0">🔔</div>
+                    <div class="grid sm:grid-cols-3 gap-8 flex-1">
+                      <div>
+                        <h4 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-2">Notifications</h4>
+                        <p class="text-slate-900 font-bold">Display focus session status and timer updates</p>
+                      </div>
+                      <div>
+                        <h4 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">Access Type</h4>
+                        <p class="text-slate-600 text-sm">One-way push only</p>
+                      </div>
+                      <div>
+                        <h4 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">Usage Logic</h4>
+                        <p class="text-slate-600 text-sm">Keep you informed about active sessions</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="bg-slate-50/50 p-10 rounded-3xl border border-slate-100 flex flex-col md:flex-row gap-8">
+                    <div class="text-4xl shrink-0">📊</div>
+                    <div class="grid sm:grid-cols-3 gap-8 flex-1">
+                      <div>
+                        <h4 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-2">Usage Access</h4>
+                        <p class="text-slate-900 font-bold">Analyze app usage patterns for intelligent suggestions</p>
+                      </div>
+                      <div>
+                        <h4 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">Access Type</h4>
+                        <p class="text-slate-600 text-sm">Usage statistics metadata</p>
+                      </div>
+                      <div>
+                        <h4 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">Usage Logic</h4>
+                        <p class="text-slate-600 text-sm">Generate smart recommendations locally</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="bg-slate-50/50 p-10 rounded-3xl border border-slate-100 flex flex-col md:flex-row gap-8">
+                    <div class="text-4xl shrink-0">⏰</div>
+                    <div class="grid sm:grid-cols-3 gap-8 flex-1">
+                      <div>
+                        <h4 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-2">Alarms & Reminders</h4>
+                        <p class="text-slate-900 font-bold">Schedule precise timer start/stop times</p>
+                      </div>
+                      <div>
+                        <h4 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">Access Type</h4>
+                        <p class="text-slate-600 text-sm">System time hooks</p>
+                      </div>
+                      <div>
+                        <h4 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">Usage Logic</h4>
+                        <p class="text-slate-600 text-sm">Automated timer scheduling</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="bg-slate-50/50 p-10 rounded-3xl border border-slate-100 flex flex-col md:flex-row gap-8">
+                    <div class="text-4xl shrink-0">🌐</div>
+                    <div class="grid sm:grid-cols-3 gap-8 flex-1">
+                      <div>
+                        <h4 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-2">Network Permissions</h4>
+                        <p class="text-slate-900 font-bold">Required by development framework</p>
+                      </div>
+                      <div>
+                        <h4 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">Access Type</h4>
+                        <p class="text-slate-600 text-sm">Zero actual data transmission</p>
+                      </div>
+                      <div>
+                        <h4 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">Usage Logic</h4>
+                        <p class="text-slate-600 text-sm">Framework dependency only</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              {/* Section 4: Data Storage */}
+              <section>
+                <div class="text-center mb-12">
+                  <h2 class="text-3xl font-black text-slate-900 mb-4">
+                    4. Data Storage Architecture
+                  </h2>
+                  <div class="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
+                </div>
+
+                <div class="bg-green-50/50 p-12 rounded-[2.5rem] border border-green-100 mb-12">
+                  <h3 class="text-2xl font-black text-green-800 mb-8 text-center uppercase tracking-tighter">Local Storage Only</h3>
+                  <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-4">
+                      <p class="text-green-900 font-bold flex gap-3">
+                        <span class="shrink-0 text-green-600">✓</span>
+                        All data stays on your device exclusively.
+                      </p>
+                      <p class="text-green-700 font-medium flex gap-3">
+                        <span class="shrink-0 text-red-500">❌</span>
+                        Zero cloud synchronization or server-side backups.
+                      </p>
+                    </div>
+                    <div class="bg-white/50 p-8 rounded-3xl">
+                      <h4 class="text-xs font-black text-green-600 uppercase tracking-widest mb-4">Storage Targets</h4>
+                      <ul class="space-y-2 text-sm text-green-800 font-mono">
+                        <li>• SQLite: mindful_guard_v2.db</li>
+                        <li>• SharedPreferences: System settings</li>
+                        <li>• AsyncStorage: UI State cache</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-8">
+                  <div class="bg-slate-50 p-10 rounded-3xl">
+                    <h4 class="text-xl font-black text-slate-900 mb-6">Security Layer</h4>
+                    <ul class="space-y-4 text-sm text-slate-600 list-none">
+                      <li class="flex gap-3">
+                        <span class="text-blue-600 font-black">/</span>
+                        <p><strong class="text-slate-900">Encryption:</strong> Android Keystore backed encryption for sensitive settings.</p>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="text-blue-600 font-black">/</span>
+                        <p><strong class="text-slate-900">Sandboxing:</strong> App-specific directories prevent external access.</p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="bg-slate-50 p-10 rounded-3xl">
+                    <h4 class="text-xl font-black text-slate-900 mb-6">Retention Logic</h4>
+                    <ul class="space-y-4 text-sm text-slate-600 list-none">
+                      <li class="flex gap-3">
+                        <span class="text-blue-600 font-black">/</span>
+                        <p><strong class="text-slate-900">Auto-Purge:</strong> Build logs purged every 7 days automatically.</p>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="text-blue-600 font-black">/</span>
+                        <p><strong class="text-slate-900">Total Deletion:</strong> All data is wiped on app uninstallation.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              {/* Section 7: Contact Info Cleanup */}
+              <section class="rounded-[2.5rem] border border-blue-100 bg-blue-50/30 p-12 text-center">
+                <h2 class="mb-6 text-3xl font-black text-slate-900">
+                  5. Privacy Support
+                </h2>
+                <p class="mb-10 text-slate-600 max-w-2xl mx-auto">
+                  Mindful Guard is designed to be self-sovereign. If you have any 
+                  concerns about our privacy architecture, please reach out.
+                </p>
+                <a
+                  href="mailto:support@applass.com"
+                  class="text-2xl font-black text-blue-600 hover:underline"
+                >
+                  support@applass.com
+                </a>
+              </section>
+            </div>
+          </div>
+        </div>
+      </Section>
+    </main>
+
+    <Footer translations={dict.footer} />
+  </div>
+</Layout>

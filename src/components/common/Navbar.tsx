@@ -1,12 +1,11 @@
 
-
 import { useState, useEffect, useCallback, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { MobileMenu } from "./mobile-menu";
 import { LanguageSwitcher } from "./LanguageSwitcher";
-
+import { localePath } from "@/i18n/utils";
 import type { Dictionary } from "@/i18n/get-dictionary";
 
 interface NavbarProps {
@@ -104,7 +103,7 @@ export function Navbar({
           <div className="flex items-center gap-6">
             <a
               id="navbar-logo"
-              href="/"
+              href={localePath(currentLang, '/')}
               className="group flex items-center gap-2 px-2"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -144,19 +143,19 @@ export function Navbar({
           {/* Navigation Links (Desktop) */}
           {!customBranding && translations && (
             <div className="hidden items-center gap-10 md:flex">
-              <NavLink href="/" isDark={isDark}>
+              <NavLink href={localePath(currentLang, '/')} isDark={isDark}>
                 {translations.home}
               </NavLink>
-              <NavLink href="/about" isDark={isDark}>
+              <NavLink href={localePath(currentLang, '/about')} isDark={isDark}>
                 {translations.about}
               </NavLink>
-              <NavLink href="/apps" isDark={isDark}>
+              <NavLink href={localePath(currentLang, '/apps')} isDark={isDark}>
                 {translations.ecosystem}
               </NavLink>
-              <NavLink href="/docs" isDark={isDark}>
+              <NavLink href={localePath(currentLang, '/docs')} isDark={isDark}>
                 {translations.docs}
               </NavLink>
-              <NavLink href="/blog" isDark={isDark}>
+              <NavLink href={localePath(currentLang, '/blog')} isDark={isDark}>
                 {translations.blog}
               </NavLink>
             </div>
@@ -186,7 +185,7 @@ export function Navbar({
                       : "bg-slate-900 text-white hover:bg-slate-800"
                   )}
                 >
-                  <a id="nav-cta" href="/about">
+                  <a id="nav-cta" href={localePath(currentLang, '/about')}>
                     {translations?.getInTouch || "Get in Touch"}
                   </a>
                 </Button>

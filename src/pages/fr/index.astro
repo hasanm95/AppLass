@@ -1,0 +1,56 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { Navbar, Footer } from "@/components/common";
+import {
+  Hero,
+  SocialProof,
+  ProductShowcase,
+  FoundersMoat,
+  SolutionsSection,
+  AnswerNuggets,
+} from "@/components/home";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { i18nConfig } from "@/i18n/config";
+import { getImage } from 'astro:assets';
+
+import fomogenFeatureImg from '@/assets/apps/fomogen-feature.png';
+import mindfulGuardFeatureImg from '@/assets/apps/mindful-guard-feature.png';
+import screenveilFeatureImg from '@/assets/apps/screenveil-feature.png';
+
+
+
+const lang = "fr";
+const dict = await getDictionary(lang as any);
+
+const meta = dict.metadata?.home || {};
+
+const optimizedFomogenFeature = await getImage({ src: fomogenFeatureImg, format: 'webp' });
+const optimizedMindfulGuardFeature = await getImage({ src: mindfulGuardFeatureImg, format: 'webp' });
+const optimizedScreenveilFeature = await getImage({ src: screenveilFeatureImg, format: 'webp' });
+
+const productImages = {
+  fomogen: optimizedFomogenFeature.src,
+  mindful: optimizedMindfulGuardFeature.src,
+  screenveil: optimizedScreenveilFeature.src,
+};
+---
+
+<Layout 
+  title={meta.title || "AppLass: Productivity & Privacy Solutions"}
+  description={meta.description || "Home of Mindful Guard and ScreenVeil."}
+  keywords={meta.keywords}
+  ogTitle={meta.ogTitle}
+  ogDescription={meta.ogDescription}
+  ogImage={meta.ogImage}
+  ogUrl={meta.ogUrl}
+  lang={lang}
+>
+  <Navbar client:load translations={dict.nav} currentLang={lang} />
+  <Hero client:load translations={dict.home?.hero} />
+  <SocialProof client:idle translations={dict.home?.socialProof} />
+  <ProductShowcase client:idle translations={dict.home?.productShowcase} products={dict.products} productImages={productImages} />
+  <FoundersMoat client:idle translations={dict.home?.foundersMoat} pillars={dict.pillars} />
+  <SolutionsSection client:idle translations={dict.home?.solutions} solutions={dict.solutionItems} />
+  <AnswerNuggets client:idle translations={dict.home?.faq} />
+  <Footer translations={dict.footer} />
+</Layout>

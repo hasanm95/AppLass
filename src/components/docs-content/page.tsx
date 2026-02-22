@@ -1,7 +1,8 @@
 import { Zap, Shield, Smartphone, ArrowRight } from "lucide-react";
+import { localePath } from "@/i18n/utils";
 
 
-export default function DocsHubPage({}: { lang?: string }) {
+export default function DocsHubPage({ lang = "en" }: { lang?: string }) {
   const systems = [
     {
       id: "fomogen",
@@ -10,7 +11,7 @@ export default function DocsHubPage({}: { lang?: string }) {
       icon: <Zap className="h-6 w-6 text-blue-600" />,
       description:
         "High-performance Shopify growth loops and social psychology modules.",
-      link: "/docs/fomogen",
+      link: localePath(lang, "/docs/fomogen"),
       color: "blue",
     },
     {
@@ -20,7 +21,7 @@ export default function DocsHubPage({}: { lang?: string }) {
       icon: <Shield className="h-6 w-6 text-blue-600" />,
       description:
         "Advanced heuristic filters for focus and intentional device usage.",
-      link: "/docs/mindful-guard",
+      link: localePath(lang, "/docs/mindful-guard"),
       color: "slate",
     },
     {
@@ -30,7 +31,7 @@ export default function DocsHubPage({}: { lang?: string }) {
       icon: <Smartphone className="h-6 w-6 text-blue-600" />,
       description:
         "Low-level background process management for Android environments.",
-      link: "/docs/screenveil",
+      link: localePath(lang, "/docs/screenveil"),
       color: "blue",
     },
   ];

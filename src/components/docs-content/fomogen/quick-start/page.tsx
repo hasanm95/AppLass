@@ -1,6 +1,7 @@
 import { CheckCircle2, AlertCircle, ArrowRight } from "lucide-react";
+import { localePath } from "@/i18n/utils";
 
-export default function QuickStartPage({}: { lang?: string }) {
+export default function QuickStartPage({ lang = "en" }: { lang?: string }) {
   return (
     <div className="space-y-20">
       <header>
@@ -78,25 +79,25 @@ export default function QuickStartPage({}: { lang?: string }) {
             <FeatureCard
               title="Boost AOV"
               desc="Visualize shipping thresholds to gamify the cart experience."
-              link="/docs/fomogen/progress-indicators"
+              link={localePath(lang, "/docs/fomogen/progress-indicators")}
               cta="Deploy Bar"
             />
             <FeatureCard
               title="Social Trust"
               desc="Infect your store with authentic conversion telemetry."
-              link="/docs/fomogen/purchase-notifications"
+              link={localePath(lang, "/docs/fomogen/purchase-notifications")}
               cta="Deploy Proof"
             />
             <FeatureCard
               title="Reduce Friction"
               desc="Maintain persistent CTAs via the fixed-layer sticky bar."
-              link="/docs/fomogen/sticky-cart"
+              link={localePath(lang, "/docs/fomogen/sticky-cart")}
               cta="Deploy Utility"
             />
             <FeatureCard
               title="Drive Urgency"
               desc="Deploy high-latency stock alerts and countdown timers."
-              link="/docs/fomogen/stock-alerts"
+              link={localePath(lang, "/docs/fomogen/stock-alerts")}
               cta="Deploy Scarcity"
             />
           </div>

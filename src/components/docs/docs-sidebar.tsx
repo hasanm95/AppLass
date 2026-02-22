@@ -1,3 +1,4 @@
+import { localePath } from "@/i18n/utils";
 
 
 
@@ -103,7 +104,7 @@ export function DocsSidebar({ pathname = "", lang }: { pathname?: string; lang: 
               </h3>
               <ul className="space-y-1">
                 {section.items.map((item) => {
-                  const localizedHref = `/${lang}${item.href}`;
+                  const localizedHref = localePath(lang, item.href);
                   const isActive = pathname === localizedHref;
                   return (
                     <li key={item.href}>

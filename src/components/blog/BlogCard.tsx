@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import type { MarkdownBlogPost } from "@/lib/blog";
+import { localePath } from "@/i18n/utils";
 
 interface BlogCardProps {
   post: MarkdownBlogPost;
@@ -12,7 +13,7 @@ interface BlogCardProps {
 export function BlogCard({ post, isHero = false, lang = "en" }: BlogCardProps) {
   return (
     <a
-      href={`/${lang}/blog/${post.slug}`}
+      href={localePath(lang, `/blog/${post.slug}`)}
       className={cn(
         "group block h-full rounded-4xl border border-slate-900 transition-all hover:bg-slate-50",
         isHero ? "gap-12 p-1 pt-1 lg:flex" : "p-8"

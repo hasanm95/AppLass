@@ -2,12 +2,14 @@
 
 import type { Dictionary } from "@/i18n/get-dictionary";
 import { ArrowRight } from "lucide-react";
+import { localePath } from "@/i18n/utils";
 
 interface HeroProps {
   translations?: Dictionary["home"]["hero"];
+  currentLang?: string;
 }
 
-export function Hero({ translations }: HeroProps) {
+export function Hero({ translations, currentLang = "en" }: HeroProps) {
   return (
     <section
       className="relative flex h-screen items-center overflow-hidden bg-[var(--background)] pt-20"
@@ -105,14 +107,14 @@ export function Hero({ translations }: HeroProps) {
           {/* CTAs */}
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
             <a
-              href="/apps"
+              href={localePath(currentLang, '/apps')}
               className="group inline-flex cursor-pointer items-center justify-center gap-2 border-2 border-[var(--foreground)] bg-[var(--foreground)] px-8 py-4 font-semibold text-[var(--background)] transition-all duration-200 hover:bg-transparent hover:text-[var(--foreground)]"
             >
               {translations?.cta?.primary || "See Our Apps"}
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </a>
             <a
-              href="/blog"
+              href={localePath(currentLang, '/blog')}
               className="group inline-flex cursor-pointer items-center justify-center gap-2 border-2 border-[var(--foreground)]/20 bg-transparent px-8 py-4 font-semibold text-[var(--foreground)] transition-all duration-200 hover:border-[var(--foreground)]"
             >
               {translations?.cta?.secondary || "Read the Logic Lab"}

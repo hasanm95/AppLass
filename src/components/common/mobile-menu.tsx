@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import type { RefObject } from "react";
 import { Portal } from "../ui/portal";
 import type { Dictionary } from "@/i18n/get-dictionary";
+import { localePath } from "@/i18n/utils";
 
 type MobileMenuProps = {
   customBranding: React.ReactNode;
@@ -38,19 +39,19 @@ export function MobileMenu({
         <div className="flex flex-col gap-8">
           {!customBranding && (
             <>
-              <MobileNavLink href={`/${currentLang}/`} isDark={isDark} onClick={toggleMenu}>
+              <MobileNavLink href={localePath(currentLang, '/')} isDark={isDark} onClick={toggleMenu}>
                 {translations?.home ?? "Home"}
               </MobileNavLink>
-              <MobileNavLink href={`/${currentLang}/about`} isDark={isDark} onClick={toggleMenu}>
+              <MobileNavLink href={localePath(currentLang, '/about')} isDark={isDark} onClick={toggleMenu}>
                 {translations?.about ?? "About"}
               </MobileNavLink>
-              <MobileNavLink href={`/${currentLang}/apps`} isDark={isDark} onClick={toggleMenu}>
+              <MobileNavLink href={localePath(currentLang, '/apps')} isDark={isDark} onClick={toggleMenu}>
                 {translations?.ecosystem ?? "Ecosystem"}
               </MobileNavLink>
-              <MobileNavLink href={`/${currentLang}/docs`} isDark={isDark} onClick={toggleMenu}>
+              <MobileNavLink href={localePath(currentLang, '/docs')} isDark={isDark} onClick={toggleMenu}>
                 {translations?.docs ?? "Docs"}
               </MobileNavLink>
-              <MobileNavLink href={`/${currentLang}/blog`} isDark={isDark} onClick={toggleMenu}>
+              <MobileNavLink href={localePath(currentLang, '/blog')} isDark={isDark} onClick={toggleMenu}>
                 {translations?.blog ?? "Logic Lab"}
               </MobileNavLink>
             </>
@@ -80,7 +81,7 @@ export function MobileMenu({
                     : "bg-slate-900 text-white hover:bg-slate-800"
                 )}
               >
-                <a href={`/${currentLang}/about`}>
+                <a href={localePath(currentLang, '/about')}>
                   {translations?.getInTouch ?? "Get in Touch"}
                 </a>
               </Button>
