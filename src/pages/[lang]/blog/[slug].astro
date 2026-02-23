@@ -1,0 +1,22 @@
+---
+import { i18nConfig } from "@/i18n/config";
+import { getBlogPosts } from "@/lib/blog";
+import BlogPostPage from "@/page-templates/BlogPostPage.astro";
+
+export async function getStaticPaths() {
+  const nonDefaultLocales = i18nConfig.locales.filter(
+    (l) => l !== i18nConfig.defaultLocale
+  );
+  
+  return nonDefaultLocales.flatMap((lang) => {
+    const posts = getBlogPosts(lang);
+    return posts.map((post: any) => ({
+      params: { lang, slug: post.slug },
+    }));
+  });
+}
+
+const { lang, slug } = Astro.params;
+---
+
+<BlogPostPage lang={lang as any} slug={slug!} />

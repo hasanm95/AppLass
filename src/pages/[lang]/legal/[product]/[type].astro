@@ -1,0 +1,74 @@
+---
+import { i18nConfig } from "@/i18n/config";
+import { legalRegistry } from "@/lib/legal-registry";
+import LegalPage from "@/page-templates/LegalPage.astro";
+import { Zap, Shield, Smartphone } from "lucide-react";
+import { getDictionary } from "@/i18n/get-dictionary";
+
+export async function getStaticPaths() {
+  const nonDefaultLocales = i18nConfig.locales.filter(
+    (l) => l !== i18nConfig.defaultLocale
+  );
+  
+  const paths = [];
+  for (const lang of nonDefaultLocales) {
+    for (const key of Object.keys(legalRegistry)) {
+      const { product, type } = legalRegistry[key];
+      paths.push({
+        params: { lang, product, type },
+      });
+    }
+  }
+  return paths;
+}
+
+const { lang, product, type } = Astro.params;
+const key = `${product}/${type}`;
+const entry = legalRegistry[key];
+
+if (!entry) {
+  return Astro.redirect('/404');
+}
+
+const { component: Content, title, appName } = entry;
+const dict = await getDictionary(lang as any);
+
+// Map metadata key
+const metaKey = `legal${product.split('-').map((s: string) => s.charAt(0).toUpperCase() + s.slice(1)).join('')}${type.charAt(0).toUpperCase() + type.slice(1)}`;
+const meta = (dict.metadata as any)?.[metaKey] || {};
+---
+
+<LegalPage 
+  lang={lang as any}
+  title={title}
+  appName={appName}
+  description={meta.description}
+>
+  <div slot="branding" class="flex items-center gap-2">
+    {product === 'fomogen' && (
+      <>
+        <Zap className="h-5 w-5 text-blue-600 fill-blue-600" />
+        <span class="text-lg font-black tracking-tighter text-slate-900">
+          FOMO<span class="text-blue-600">GEN</span>
+        </span>
+      </>
+    )}
+    {product === 'mindful-guard' && (
+      <>
+        <Shield className="h-5 w-5 text-slate-900 fill-slate-900" />
+        <span class="text-lg font-black tracking-tighter text-slate-900 uppercase">
+          Mindful<span class="text-slate-400">Guard</span>
+        </span>
+      </>
+    )}
+    {product === 'screenveil' && (
+      <>
+        <Smartphone className="h-5 w-5 text-blue-600 fill-blue-600" />
+        <span class="text-lg font-black tracking-tighter text-slate-900 uppercase">
+          Screen<span class="text-blue-600">Veil</span>
+        </span>
+      </>
+    )}
+  </div>
+  <Content lastUpdated={entry.lastUpdated || "August 2025"} />
+</LegalPage>

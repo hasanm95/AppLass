@@ -1,0 +1,21 @@
+---
+import { i18nConfig } from "@/i18n/config";
+import DocsProductPage from "@/page-templates/DocsProductPage.astro";
+
+export async function getStaticPaths() {
+  const products = ['fomogen', 'mindful-guard', 'screenveil'];
+  const nonDefaultLocales = i18nConfig.locales.filter(
+    (l) => l !== i18nConfig.defaultLocale
+  );
+  
+  return nonDefaultLocales.flatMap((lang) => 
+    products.map((product) => ({
+      params: { lang, product },
+    }))
+  );
+}
+
+const { lang, product } = Astro.params;
+---
+
+<DocsProductPage lang={lang as any} product={product as any} />

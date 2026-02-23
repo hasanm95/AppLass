@@ -1,0 +1,15 @@
+---
+import { i18nConfig } from "@/i18n/config";
+import AppsFomogenPage from "@/page-templates/AppsFomogenPage.astro";
+
+export async function getStaticPaths() {
+  const nonDefaultLocales = i18nConfig.locales.filter(
+    (l) => l !== i18nConfig.defaultLocale
+  );
+  return nonDefaultLocales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+---
+
+<AppsFomogenPage lang={lang as any} />

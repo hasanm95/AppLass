@@ -1,0 +1,114 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar, Footer } from "@/components/common";
+import { Button } from "@/components/ui/button";
+import { PRODUCTS } from "@/constants/home-data";
+import { Section } from "@/components/common/Section";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { i18nConfig } from "@/i18n/config";
+import { localePath } from "@/i18n/utils";
+
+interface Props {
+  lang: typeof i18nConfig.locales[number];
+}
+
+const { lang } = Astro.props;
+const dict = await getDictionary(lang as any);
+
+const meta = dict.metadata?.apps || {};
+---
+
+<Layout 
+  title={meta.title || "Our Apps | AppLass Ecosystem"}
+  description={meta.description || "Explore our suite of logic-driven applications designed for elite performance and digital discipline."}
+  keywords={meta.keywords}
+  ogTitle={meta.ogTitle}
+  ogDescription={meta.ogDescription}
+  ogImage={meta.ogImage}
+  ogUrl={meta.ogUrl}
+  lang={lang}
+>
+  <div class="min-h-screen bg-white">
+    <Navbar client:load translations={dict.nav} currentLang={lang} />
+    <div class="pt-32">
+      <Section className="bg-iridescent border-b border-slate-100 py-20 lg:py-32" client:load>
+        <div class="section-container">
+          <span class="mb-6 block text-[10px] font-black tracking-[0.2em] text-blue-800 uppercase">
+            {dict.apps?.hero?.eyebrow || "AppLass Ecosystem"}
+          </span>
+          <h1 class="text-display mb-8 max-w-4xl text-slate-900">
+            {dict.apps?.hero?.headline || "Our"} <span class="text-slate-300">{dict.apps?.hero?.headlineAccent || "Ecosystem."}</span>
+          </h1>
+          <p class="max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
+            {dict.apps?.hero?.description || "Proprietary systems built with technical discipline and a focus on measurable impact. Every tool is a derivation of logic."}
+          </p>
+        </div>
+      </Section>
+
+      <Section className="py-24" client:load>
+        <div class="section-container">
+          <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
+            {PRODUCTS.map((product) => {
+              const dictKey = product.id === "mindful" ? "mindfulGuard" : product.id;
+              const translation = (dict.products as any)?.[dictKey];
+
+              return (
+                <div
+                  class="group relative flex flex-col overflow-hidden rounded-[3rem] border border-slate-200 bg-white transition-all hover:border-blue-500/30 hover:shadow-2xl"
+                >
+                  <div class="aspect-video overflow-hidden bg-slate-50 relative">
+                    <img
+                      src={product.image}
+                      alt={`${translation?.name || product.name} - ${translation?.tagline || product.tagline}`}
+                      width={800}
+                      height={450}
+                      class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                  </div>
+
+                  <div class="flex flex-1 flex-col p-10 lg:p-12">
+                    <div class="mb-6 flex items-center justify-between">
+                      <span class="text-[10px] font-black tracking-widest text-blue-800 uppercase">
+                        {translation?.platform || product.platform}
+                      </span>
+                      <div class="flex gap-2">
+                        {(translation?.metrics || product.metrics).map((metric: string) => (
+                          <span
+                            class="rounded-full bg-slate-50 px-3 py-1 text-[10px] font-bold text-slate-500"
+                          >
+                            {metric}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    <h2 class="mb-4 text-4xl font-black text-slate-900">
+                      {translation?.name || product.name}
+                    </h2>
+                    <p class="mb-8 text-lg leading-relaxed font-medium text-slate-500">
+                      {translation?.description || product.description}
+                    </p>
+
+                    <div class="mt-auto">
+                      <Button
+                        asChild
+                        className="h-14 w-full rounded-2xl bg-slate-900 text-lg font-bold text-white transition-all hover:bg-blue-600"
+                      >
+                        <a
+                          href={localePath(lang, `/apps/${product.id === "mindful" ? "mindful-guard" : product.id}`)}
+                        >
+                          {dict.apps?.viewDetails || "View Product Details"}
+                        </a>
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </Section>
+    </div>
+    <Footer translations={dict.footer} />
+  </div>
+</Layout>

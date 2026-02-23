@@ -1,125 +1,25 @@
 ---
-import Layout from '../../../../layouts/Layout.astro';
-import { Navbar, Footer } from "@/components/common";
-import { Section } from "@/components/common/Section";
+import LegalPage from "@/page-templates/LegalPage.astro";
+import Content from "@/components/legal/ScreenveilTerms.astro";
 import { Smartphone } from "lucide-react";
 import { getDictionary } from "@/i18n/get-dictionary";
-import { i18nConfig } from "@/i18n/config";
-
-
 
 const lang = "en";
-const dict = await getDictionary(lang as any);
-
-const lastUpdated = "August 2025";
+const dict = await getDictionary(lang);
 const meta = dict.metadata?.legalScreenveilTerms || {};
 ---
 
-<Layout 
-  title={meta.title || "Terms of Service - ScreenVeil"}
-  description={meta.description || "Terms and conditions for using ScreenVeil's hardware-level screen utility."}
-  keywords={meta.keywords}
-  ogTitle={meta.ogTitle}
-  ogDescription={meta.ogDescription}
-  ogImage={meta.ogImage}
-  ogUrl={meta.ogUrl}
+<LegalPage 
   lang={lang}
+  title="Terms of Service"
+  appName="ScreenVeil"
+  description={meta.description}
 >
-  <div class="flex min-h-screen flex-col bg-white font-sans selection:bg-blue-100 selection:text-blue-900">
-    <Navbar client:load translations={dict.nav} currentLang={lang}>
-      <div slot="customBranding" class="flex items-center gap-2">
-        <Smartphone className="h-5 w-5 text-blue-600 fill-blue-600" />
-        <span class="text-lg font-black tracking-tighter text-slate-900 uppercase">
-          Screen<span class="text-blue-600">Veil</span>
-        </span>
-      </div>
-    </Navbar>
-
-    <main class="grow">
-      <Section className="pb-32 pt-40 lg:pt-56" client:load>
-        <div class="section-container">
-          <div class="mx-auto max-w-4xl">
-            <header class="mb-20 text-center">
-              <span class="mb-4 block text-[10px] font-black uppercase tracking-[0.3em] text-blue-600">
-                Legal Documentation
-              </span>
-              <h1 class="text-display mb-6 text-slate-900">
-                Terms of Service<span class="text-slate-300">.</span>
-              </h1>
-              <p class="text-sm font-bold text-slate-400">
-                Last updated: {lastUpdated}
-              </p>
-            </header>
-
-            <div class="space-y-16 text-lg font-medium leading-relaxed text-slate-600">
-              <section>
-                <h2 class="mb-6 text-3xl font-black text-slate-900">
-                  1. Hardware Implementation
-                </h2>
-                <p>
-                  ScreenVeil is a hardware-focused utility for Android. By using 
-                  the application, you acknowledge that it requires specific 
-                  system-level permissions to manage display behavior and background 
-                  services effectively.
-                </p>
-              </section>
-
-              <section>
-                <h2 class="mb-6 text-3xl font-black text-slate-900">
-                  2. Permission Protocols
-                </h2>
-                <p>
-                  ScreenVeil utilizes the following core protocols to provide its utility:
-                </p>
-                <ul class="mt-6 space-y-4 list-none text-base">
-                  <li class="flex gap-4">
-                    <span class="text-blue-600 font-black">/</span>
-                    <p><strong class="text-slate-900">SYSTEM_ALERT_WINDOW:</strong> To render the screen filter overlay over other active applications.</p>
-                  </li>
-                  <li class="flex gap-4">
-                    <span class="text-blue-600 font-black">/</span>
-                    <p><strong class="text-slate-900">WAKE_LOCK:</strong> To maintain functionality during periods of display inactivity or dimmed states.</p>
-                  </li>
-                  <li class="flex gap-4">
-                    <span class="text-blue-600 font-black">/</span>
-                    <p><strong class="text-slate-900">FOREGROUND_SERVICE:</strong> To ensure reliable operation while the user interacts with other applications.</p>
-                  </li>
-                </ul>
-              </section>
-
-              <section>
-                <h2 class="mb-6 text-3xl font-black text-slate-900">
-                  3. Power Optimization
-                </h2>
-                <p>
-                  While ScreenVeil is engineered to reduce display power draw 
-                  on AMOLED devices, battery savings depend on hardware 
-                  architecture. AppLass does not guarantee specific power 
-                  savings and provides the application "as-is".
-                </p>
-              </section>
-
-              <section class="rounded-[2.5rem] border border-slate-100 bg-[#FAFBFD] p-12 text-center">
-                <h2 class="mb-6 text-2xl font-black text-slate-900">
-                  4. Contact the Logic Lab
-                </h2>
-                <p class="mb-10 text-slate-500">
-                  For technical or legal inquiries regarding our hardware utility 
-                  protocols, please reach out to the engineering team.
-                </p>
-                <a
-                  href="mailto:support@applass.com"
-                  class="text-2xl font-black text-blue-600 hover:underline"
-                >
-                  support@applass.com
-                </a>
-              </section>
-            </div>
-          </div>
-        </div>
-      </Section>
-    </main>
-
-    <Footer translations={dict.footer} />
+  <div slot="branding" class="flex items-center gap-2">
+    <Smartphone className="h-5 w-5 text-blue-600 fill-blue-600" />
+    <span class="text-lg font-black tracking-tighter text-slate-900 uppercase">
+      Screen<span class="text-blue-600">Veil</span>
+    </span>
   </div>
-</Layout>
+  <Content />
+</LegalPage>
