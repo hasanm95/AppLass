@@ -82,9 +82,8 @@ const featuresData = (dict.fomogen?.features || []).map((feature: any, idx: numb
             },
             featureList:
               "Social Proof Notifications, Stock Countdown Timer, Sticky Add-to-Cart, Free Shipping Bar",
-            screenshot:
-              "https://applass.com/v1/apps/fomogen/comparison-hero.png",
-            image: "https://applass.com/v1/apps/fomogen-feature.png",
+            screenshot: new URL(optimizedHero.src, Astro.site).toString(),
+            image: new URL((await getImage({ src: import('@/assets/apps/fomogen-feature.png') as any, format: 'webp' })).src, Astro.site).toString(),
             description:
               "FOMO Gen is an all-in-one Shopify app for social proof, urgency, and trust signals.",
             author: {

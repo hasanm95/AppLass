@@ -37,7 +37,7 @@ export const FOMOGEN_DATA = {
         "Display recent purchases to build instant trust. 92% of consumers hesitate to buy without social proof. Eliminate that doubt.",
       iconName: "ShoppingCart",
       highlight: "Build Trust",
-      image: "/v1/apps/fomogen/social-proof-ui.png",
+      imageSrc: "social-proof-ui.png",
     },
     {
       id: "scarcity-urgency",
@@ -47,7 +47,7 @@ export const FOMOGEN_DATA = {
         'Use Low Stock Countdowns ("Only 2 left!") and Timer Bars to push customers from "browsing" to "buying" right now.',
       iconName: "Timer",
       highlight: "Drive Urgency",
-      image: "/v1/apps/fomogen/scarcity-ui.png",
+      imageSrc: "scarcity-ui.png",
     },
     {
       id: "sticky-add-to-cart",
@@ -57,7 +57,7 @@ export const FOMOGEN_DATA = {
         "Keep your Buy Button visible on every scroll. Reduce friction and make checkout accessible from anywhere on the page.",
       iconName: "ShoppingBag",
       highlight: "Reduce Friction",
-      image: "/v1/apps/fomogen/sticky-cart-ui.png",
+      imageSrc: "sticky-cart-ui.png",
     },
     {
       id: "free-shipping-bar",
@@ -67,7 +67,7 @@ export const FOMOGEN_DATA = {
         '"Spend $15 more for Free Shipping." Motivate customers to add more items to their cart with a dynamic progress bar.',
       iconName: "TrendingUp",
       highlight: "Increase AOV",
-      image: "/v1/apps/fomogen/shipping-bar-ui.png",
+      imageSrc: "shipping-bar-ui.png",
     },
     {
       id: "trust-badges",

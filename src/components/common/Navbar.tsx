@@ -7,6 +7,7 @@ import { MobileMenu } from "./mobile-menu";
 import { LanguageSwitcherSidebar } from "./LanguageSwitcherSidebar";
 import { localePath } from "@/i18n/utils";
 import type { Dictionary } from "@/i18n/get-dictionary";
+import logoImage from "@/assets/logo.png";
 
 interface NavbarProps {
   variant?: "light" | "dark";
@@ -112,7 +113,7 @@ export function Navbar({
               onClick={() => setIsMenuOpen(false)}
             >
               <img
-                src="/logo.png"
+                src={logoImage.src}
                 alt="AppLass Logo"
                 width={32}
                 height={32}
