@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getImage } from 'astro:assets';
+import appLogoImg from '@/assets/logo.png';
 import { Navbar, Footer } from "@/components/common";
 import { getComparisonBySlug } from "@/lib/compare";
 import { CompareHero } from "@/components/compare/CompareHero";
@@ -54,6 +56,8 @@ const jsonLd = {
     "@id": `https://applass.com/${lang}/compare/${slug}`,
   },
 };
+const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
+
 ---
 
 <Layout title={title} description={description} lang={lang}>
@@ -64,7 +68,7 @@ const jsonLd = {
       set:html={JSON.stringify(jsonLd)}
     />
     
-    <Navbar variant="light" client:load translations={dict.nav} currentLang={lang}>
+    <Navbar variant="light" client:load translations={dict.nav} currentLang={lang} logoSrc={optimizedAppLogo.src}>
       <div slot="customBranding" class="flex items-center gap-3">
         <span class="text-[10px] font-black tracking-widest text-blue-800 uppercase">
           {data.productName}
@@ -118,6 +122,6 @@ const jsonLd = {
       <CompareFooter translations={compareData?.footer} client:idle />
     </div>
 
-    <Footer variant="light" translations={dict.footer} />
+    <Footer variant="light" translations={dict.footer}  logoSrc={optimizedAppLogo.src} />
   </div>
 </Layout>

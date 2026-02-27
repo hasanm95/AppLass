@@ -28,9 +28,10 @@ interface FooterProps {
   variant?: "light" | "dark";
   translations?: Dictionary["footer"];
   currentLang?: string;
+  logoSrc?: string;
 }
 
-export function Footer({ variant = "light", translations, currentLang = "en" }: FooterProps) {
+export function Footer({ variant = "light", translations, currentLang = "en", logoSrc }: FooterProps) {
   const currentYear = new Date().getFullYear();
   const isDark = variant === "dark";
   const footerLinks = getFooterLinks(currentLang);
@@ -55,13 +56,15 @@ export function Footer({ variant = "light", translations, currentLang = "en" }: 
                 isDark ? "text-white" : "text-slate-900"
               )}
             >
-              <img
-                src="/logo.png"
-                alt="AppLass"
-                width={24}
-                height={24}
+              {logoSrc && (
+                <img
+                  src={logoSrc}
+                  alt="AppLass"
+                  width={24}
+                  height={24}
                 className="h-6 w-6"
               />
+              )}
               <span>AppLass</span>
             </a>
             <p

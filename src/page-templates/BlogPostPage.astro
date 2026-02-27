@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getImage } from 'astro:assets';
+import appLogoImg from '@/assets/logo.png';
 import { Navbar, Footer } from "@/components/common";
 import { AppCallout } from "@/components/blog/AppCallout";
 import { ShareArticle } from "@/components/blog/ShareArticle";
@@ -53,6 +55,8 @@ const jsonLd = {
     "@id": `https://applass.com/${lang}/blog/${slug}`,
   },
 };
+const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
+
 ---
 
 <Layout title={title} description={description} lang={lang}>
@@ -67,7 +71,7 @@ const jsonLd = {
     />
   )}
   <ReadingProgressBar client:load />
-  <Navbar client:load translations={dict.nav} currentLang={lang} />
+  <Navbar client:load translations={dict.nav} currentLang={lang}  logoSrc={optimizedAppLogo.src} />
   
   <div class="flex-1 bg-white pt-20">
     <header class="bg-iridescent relative border-b border-slate-100 pt-20 pb-15 lg:py-32">
@@ -176,5 +180,5 @@ const jsonLd = {
       </section>
     )}
   </div>
-  <Footer translations={dict.footer} />
+  <Footer translations={dict.footer}  logoSrc={optimizedAppLogo.src} />
 </Layout>

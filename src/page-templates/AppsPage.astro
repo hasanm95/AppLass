@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getImage } from 'astro:assets';
+import appLogoImg from '@/assets/logo.png';
 import { Navbar, Footer } from "@/components/common";
 import { Button } from "@/components/ui/button";
 import { LinkButton } from "@/components/ui/link-button";
@@ -17,6 +19,8 @@ const { lang } = Astro.props;
 const dict = await getDictionary(lang as any);
 
 const meta = dict.metadata?.apps || {};
+const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
+
 ---
 
 <Layout 
@@ -30,7 +34,7 @@ const meta = dict.metadata?.apps || {};
   lang={lang}
 >
   <div class="min-h-screen bg-white">
-    <Navbar client:load translations={dict.nav} currentLang={lang} />
+    <Navbar client:load translations={dict.nav} currentLang={lang}  logoSrc={optimizedAppLogo.src} />
     <div class="pt-32">
       <Section className="bg-iridescent border-b border-slate-100 py-20 lg:py-32" client:load>
         <div class="section-container">
@@ -106,6 +110,6 @@ const meta = dict.metadata?.apps || {};
         </div>
       </Section>
     </div>
-    <Footer translations={dict.footer} />
+    <Footer translations={dict.footer}  logoSrc={optimizedAppLogo.src} />
   </div>
 </Layout>

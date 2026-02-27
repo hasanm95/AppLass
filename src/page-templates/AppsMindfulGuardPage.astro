@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getImage } from 'astro:assets';
+import appLogoImg from '@/assets/logo.png';
 import { Navbar, Footer } from "@/components/common";
 import { MindfulHero } from "@/components/apps/mindful-guard/MindfulHero";
 import { LogicSection } from "@/components/apps/mindful-guard/LogicSection";
@@ -18,6 +20,8 @@ const { lang } = Astro.props;
 const dict = await getDictionary(lang as any);
 
 const meta = dict.metadata?.mindfulGuard || {};
+const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
+
 ---
 
 <Layout 
@@ -30,7 +34,7 @@ const meta = dict.metadata?.mindfulGuard || {};
   ogUrl={meta.ogUrl}
   lang={lang}
 >
-  <Navbar client:load translations={dict.nav} currentLang={lang} />
+  <Navbar client:load translations={dict.nav} currentLang={lang}  logoSrc={optimizedAppLogo.src} />
   {/* SoftwareApplication Schema for SEO - Critical for Google to display app details */}
   <script
     type="application/ld+json"
@@ -53,5 +57,5 @@ const meta = dict.metadata?.mindfulGuard || {};
     {/* Section 5: Engineered FAQ (AI Snippet Bait) */}
     <FAQSection client:idle />
   </div>
-  <Footer translations={dict.footer} />
+  <Footer translations={dict.footer}  logoSrc={optimizedAppLogo.src} />
 </Layout>

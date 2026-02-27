@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getImage } from 'astro:assets';
+import appLogoImg from '@/assets/logo.png';
 import { Navbar, Footer, FAQSchema } from "@/components/common";
 import { Section } from "@/components/common/Section";
 import {
@@ -24,6 +26,8 @@ const { lang } = Astro.props;
 const dict = await getDictionary(lang as any);
 
 const meta = dict.metadata?.ecommercePerformance || {};
+const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
+
 ---
 
 <Layout 
@@ -37,7 +41,7 @@ const meta = dict.metadata?.ecommercePerformance || {};
   lang={lang}
 >
   <div class="min-h-screen bg-white font-sans selection:bg-blue-100 selection:text-blue-900">
-    <Navbar client:load translations={dict.nav} currentLang={lang} />
+    <Navbar client:load translations={dict.nav} currentLang={lang}  logoSrc={optimizedAppLogo.src} />
 
     <main class="pt-32">
       {/* Hero Section */}
@@ -341,6 +345,6 @@ const meta = dict.metadata?.ecommercePerformance || {};
       </Section>
     </main>
 
-    <Footer translations={dict.footer} />
+    <Footer translations={dict.footer}  logoSrc={optimizedAppLogo.src} />
   </div>
 </Layout>

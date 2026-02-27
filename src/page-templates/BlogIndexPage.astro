@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getImage } from 'astro:assets';
+import appLogoImg from '@/assets/logo.png';
 import { Navbar, Footer } from "@/components/common";
 import { BlogHero } from "@/components/blog/BlogHero";
 import { BlogCard } from "@/components/blog/BlogCard";
@@ -23,6 +25,8 @@ const featuredPost = posts.find((post: any) => post.featured) || posts[0];
 const otherPosts = posts.filter(
   (post: any) => post.slug !== (featuredPost?.slug || "")
 );
+const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
+
 ---
 <Layout
   title={meta.title || "The Logic Lab | AppLass Blog"}
@@ -34,7 +38,7 @@ const otherPosts = posts.filter(
   ogUrl={meta.ogUrl}
   lang={lang}
 >
-  <Navbar client:load translations={dict.nav} currentLang={lang} />
+  <Navbar client:load translations={dict.nav} currentLang={lang}  logoSrc={optimizedAppLogo.src} />
   <div class="flex-1 bg-white pt-20">
     <BlogHero client:load />
     <section class="section border-y border-slate-100/50 bg-[#FAFBFD] py-24">
@@ -70,5 +74,5 @@ const otherPosts = posts.filter(
       </div>
     </section>
   </div>
-  <Footer translations={dict.footer} />
+  <Footer translations={dict.footer}  logoSrc={optimizedAppLogo.src} />
 </Layout>

@@ -7,7 +7,6 @@ import { MobileMenu } from "./mobile-menu";
 import { LanguageSwitcherSidebar } from "./LanguageSwitcherSidebar";
 import { localePath } from "@/i18n/utils";
 import type { Dictionary } from "@/i18n/get-dictionary";
-import logoImage from "@/assets/logo.png";
 
 interface NavbarProps {
   variant?: "light" | "dark";
@@ -15,6 +14,7 @@ interface NavbarProps {
   customCTA?: React.ReactNode;
   translations?: Dictionary["nav"];
   currentLang?: string;
+  logoSrc?: string;
 }
 
 export function Navbar({
@@ -23,6 +23,7 @@ export function Navbar({
   customCTA,
   translations,
   currentLang = "en",
+  logoSrc,
 }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -113,7 +114,7 @@ export function Navbar({
               onClick={() => setIsMenuOpen(false)}
             >
               <img
-                src={logoImage.src}
+                src={logoSrc}
                 alt="AppLass Logo"
                 width={32}
                 height={32}
