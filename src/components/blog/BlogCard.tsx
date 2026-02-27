@@ -1,19 +1,21 @@
-import ExportedImage from "next-image-export-optimizer";
-import Link from "next/link";
+
+
 import { cn } from "@/lib/utils";
-import { MarkdownBlogPost } from "@/lib/blog";
+import type { MarkdownBlogPost } from "@/lib/blog";
+import { localePath } from "@/i18n/utils";
 
 interface BlogCardProps {
   post: MarkdownBlogPost;
   isHero?: boolean;
+  lang?: string;
 }
 
-export function BlogCard({ post, isHero = false }: BlogCardProps) {
+export function BlogCard({ post, isHero = false, lang = "en" }: BlogCardProps) {
   return (
-    <Link
-      href={`/blog/${post.slug}`}
+    <a
+      href={localePath(lang, `/blog/${post.slug}`)}
       className={cn(
-        "group block h-full rounded-[2rem] border border-slate-900 transition-all hover:bg-slate-50",
+        "group block h-full rounded-4xl border border-slate-900 transition-all hover:bg-slate-50",
         isHero ? "gap-12 p-1 pt-1 lg:flex" : "p-8"
       )}
     >
@@ -22,16 +24,15 @@ export function BlogCard({ post, isHero = false }: BlogCardProps) {
         className={cn(
           "relative overflow-hidden rounded-[1.8rem] bg-slate-100 shadow-inner",
           isHero
-            ? "aspect-[16/9] lg:aspect-auto lg:flex-1"
-            : "mb-8 aspect-[16/9]"
+            ? "aspect-video lg:aspect-auto lg:flex-1"
+            : "mb-8 aspect-video"
         )}
       >
         {post.thumbnail ? (
-          <ExportedImage
+          <img
             src={post.thumbnail}
             alt={post.title}
-            fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
         ) : (
           <div className="absolute inset-0 flex items-center justify-center p-4 text-center text-2xl font-black tracking-widest text-slate-300 uppercase">
@@ -89,6 +90,7 @@ export function BlogCard({ post, isHero = false }: BlogCardProps) {
           </div>
         )}
       </div>
-    </Link>
+    </a>
   );
 }
+// aria-label

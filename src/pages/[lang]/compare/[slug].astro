@@ -1,0 +1,21 @@
+---
+import { i18nConfig } from "@/i18n/config";
+import { comparisons } from "@/lib/compare";
+import CompareDetailPage from "@/page-templates/CompareDetailPage.astro";
+
+export async function getStaticPaths() {
+  const nonDefaultLocales = i18nConfig.locales.filter(
+    (l) => l !== i18nConfig.defaultLocale
+  );
+  
+  return nonDefaultLocales.flatMap((lang) => 
+    comparisons.map((c) => ({
+      params: { lang, slug: c.slug },
+    }))
+  );
+}
+
+const { lang, slug } = Astro.params;
+---
+
+<CompareDetailPage lang={lang as any} slug={slug!} />

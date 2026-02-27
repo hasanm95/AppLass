@@ -1,7 +1,6 @@
-"use client";
+import { localePath } from "@/i18n/utils";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+
 
 const DOCS_CONFIG: Record<
   string,
@@ -88,15 +87,14 @@ const DOCS_CONFIG: Record<
   ],
 };
 
-export function DocsSidebar() {
-  const pathname = usePathname();
-
-  // Determine which app we are looking at
-  const appKey = pathname.split("/").find((key) => DOCS_CONFIG[key]);
+export function DocsSidebar({ pathname = "", lang }: { pathname?: string; lang: string }) {
+  // Determine which app we are looking at by stripping the language prefix
+  const pathWithoutLang = pathname.replace(new RegExp(`^/${lang}`), '');
+  const appKey = pathWithoutLang.split("/").find((key: string) => DOCS_CONFIG[key]);
   const links = appKey ? DOCS_CONFIG[appKey] : DOCS_CONFIG.fomogen;
 
   return (
-    <aside className="sticky top-20 hidden h-[calc(100vh-5rem)] w-72 flex-shrink-0 overflow-y-auto border-r border-slate-100 bg-white/50 pb-20 lg:block">
+    <aside className="sticky top-20 hidden h-[calc(100vh-5rem)] w-72 shrink-0 overflow-y-auto border-r border-slate-100 bg-white/50 pb-20 lg:block">
       <div className="p-8">
         <nav className="space-y-12">
           {links.map((section) => (
@@ -106,11 +104,12 @@ export function DocsSidebar() {
               </h3>
               <ul className="space-y-1">
                 {section.items.map((item) => {
-                  const isActive = pathname === item.href;
+                  const localizedHref = localePath(lang, item.href);
+                  const isActive = pathname === localizedHref;
                   return (
                     <li key={item.href}>
-                      <Link
-                        href={item.href}
+                      <a
+                        href={localizedHref}
                         className={`flex items-center rounded-xl px-4 py-2.5 text-sm font-semibold transition-all duration-300 ${
                           isActive
                             ? "bg-blue-600 text-white shadow-lg shadow-blue-500/20"
@@ -118,7 +117,7 @@ export function DocsSidebar() {
                         }`}
                       >
                         {item.name}
-                      </Link>
+                      </a>
                     </li>
                   );
                 })}

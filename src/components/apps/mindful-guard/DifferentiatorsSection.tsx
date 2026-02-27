@@ -9,7 +9,14 @@ const ICON_MAP: Record<string, LucideIcon> = {
   Lock,
 };
 
-export function DifferentiatorsSection() {
+interface DifferentiatorsSectionProps {
+  translations?: any[];
+}
+
+export function DifferentiatorsSection({ translations }: DifferentiatorsSectionProps) {
+  // Use translations if available, otherwise fallback to the hardcoded data to preserve structure
+  const diffs = translations && translations.length > 0 ? translations : MINDFUL_GUARD_DATA.differentiators;
+
   return (
     <Section id="differentiators" className="bg-white">
       <div className="section-container">
@@ -30,8 +37,12 @@ export function DifferentiatorsSection() {
         </div>
 
         <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 shadow-2xl md:grid-cols-3">
-          {MINDFUL_GUARD_DATA.differentiators.map((feature, idx) => {
-            const Icon = ICON_MAP[feature.iconName] || HelpCircle;
+          {diffs.map((feature: any, idx: number) => {
+            // we still need to derive iconName from original constants since it's not in translations
+            const originalFeature = MINDFUL_GUARD_DATA.differentiators[idx] || {};
+            const Icon = ICON_MAP[originalFeature.iconName || ""] || HelpCircle;
+            const iconStr = originalFeature.icon;
+
             return (
               <div
                 key={idx}
@@ -45,13 +56,13 @@ export function DifferentiatorsSection() {
                 <div className="absolute top-0 left-0 h-1 w-0 bg-[#064E3B] transition-all duration-500 group-hover:w-full" />
 
                 <div className="mb-10 flex h-16 w-16 items-center justify-center border border-slate-200 bg-slate-50 transition-all duration-500 group-hover:border-[#064E3B] group-hover:bg-[#064E3B] group-hover:text-white">
-                  {feature.icon ? (
+                  {iconStr ? (
                     <span className="text-3xl grayscale group-hover:hidden">
-                      {feature.icon}
+                      {iconStr}
                     </span>
                   ) : null}
                   <Icon className="hidden h-8 w-8 group-hover:block" />
-                  {!feature.icon && (
+                  {!iconStr && (
                     <Icon className="h-8 w-8 text-slate-400 group-hover:hidden" />
                   )}
                 </div>

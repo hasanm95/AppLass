@@ -3,16 +3,22 @@ import { Button } from "@/components/ui/button";
 import { FOMOGEN_DATA } from "@/constants/fomogen-data";
 import { Check } from "lucide-react";
 
-export function PricingSection() {
+type PricingTranslation = {
+  subtitle: string;
+  tiers: { name: string; price: string; period: string; description: string; features: string[]; cta: string; }[];
+};
+
+export function PricingSection({ translations }: { translations?: PricingTranslation }) {
+  const data = translations || FOMOGEN_DATA.pricing;
   return (
     <Section className="relative bg-white py-24 md:py-32">
       {/* Background Vignette */}
-      <div className="pointer-events-none absolute bottom-0 left-0 h-[600px] w-full bg-gradient-to-t from-green-50/50 to-transparent" />
+      <div className="pointer-events-none absolute bottom-0 left-0 h-[600px] w-full bg-linear-to-t from-green-50/50 to-transparent" />
 
       <div className="section-container relative z-10">
         <div className="mb-16 text-center md:mb-20">
           <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-green-600 uppercase">
-            {FOMOGEN_DATA.pricing.subtitle}
+            {data.subtitle}
           </span>
           <h2 className="mb-10 text-4xl leading-[0.95] font-bold tracking-tight text-slate-900 md:text-5xl lg:text-8xl">
             Logical <span className="text-slate-300">Pricing.</span>
@@ -20,16 +26,18 @@ export function PricingSection() {
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 lg:grid-cols-4">
-          {FOMOGEN_DATA.pricing.tiers.map((tier, idx) => (
+          {FOMOGEN_DATA.pricing.tiers.map((baseTier, idx) => {
+            const tier = translations?.tiers?.[idx] || baseTier;
+            return (
             <div
               key={idx}
-              className={`group relative flex flex-col rounded-[2rem] p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl md:rounded-[2.5rem] md:p-10 ${
-                tier.highlighted
+              className={`group relative flex flex-col rounded-4xl p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl md:rounded-[2.5rem] md:p-10 ${
+                baseTier.highlighted
                   ? "border-green-400 bg-white shadow-[0_40px_100px_-20px_rgba(33,196,93,0.1)] ring-4 ring-green-50"
                   : "border-white/40 bg-white/40 shadow-xl backdrop-blur-md"
               }`}
             >
-              {tier.highlighted && (
+              {baseTier.highlighted && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-green-600 px-6 py-1.5 text-[10px] font-black tracking-widest text-white uppercase shadow-lg shadow-green-100">
                   Proprietary
                 </div>
@@ -66,7 +74,7 @@ export function PricingSection() {
 
               <Button
                 className={`h-14 w-full rounded-xl text-base font-bold transition-all duration-300 active:scale-95 md:h-16 md:rounded-2xl md:text-lg ${
-                  tier.highlighted
+                  baseTier.highlighted
                     ? "bg-[#131111] text-white shadow-xl shadow-slate-200 hover:bg-black"
                     : "bg-slate-100 text-slate-900 hover:bg-slate-200"
                 }`}
@@ -75,7 +83,8 @@ export function PricingSection() {
                 <a href={FOMOGEN_DATA.cta.shopifyUrl}>{tier.cta}</a>
               </Button>
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </Section>

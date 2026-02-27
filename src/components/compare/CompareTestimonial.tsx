@@ -5,6 +5,7 @@ interface TestimonialProps {
   quote: string;
   author: string;
   role: string;
+  translations?: any;
 }
 
 export function CompareTestimonial({ quote, author, role }: TestimonialProps) {

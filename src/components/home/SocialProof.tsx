@@ -1,13 +1,18 @@
 import { Section } from "@/components/common/Section";
+import type { Dictionary } from "@/i18n/get-dictionary";
 
 const METRICS = [
-  { value: "10K+", label: "Downloads" },
-  { value: "4.4★", label: "Play Store" },
-  { value: "<2.1KB", label: "Payload" },
-  { value: "Zero", label: "Telemetry" },
+  { id: "downloads", value: "10K+", label: "Downloads" },
+  { id: "playStore", value: "4.4★", label: "Play Store" },
+  { id: "payload", value: "<2.1KB", label: "Payload" },
+  { id: "telemetry", value: "Zero", label: "Telemetry" },
 ];
 
-export function SocialProof() {
+interface SocialProofProps {
+  translations?: Dictionary["home"]["socialProof"];
+}
+
+export function SocialProof({ translations }: SocialProofProps) {
   return (
     <Section className="border-y border-[var(--border)] bg-[var(--muted)]/50 py-12 md:py-16">
       <div className="section-container">
@@ -17,27 +22,40 @@ export function SocialProof() {
           <div className="flex items-center gap-4">
             <span className="block h-px w-16 bg-[var(--foreground)]/20" />
             <span className="text-sm font-medium text-[var(--muted-foreground)]">
-              Trusted by{" "}
-              <span className="font-bold text-[var(--foreground)]">
-                10,000+
-              </span>{" "}
-              users
+              {translations?.trustedBy ? (
+                <>
+                  {translations.trustedBy.split("{count}")[0]}
+                  <span className="font-bold text-[var(--foreground)]">10,000+</span>
+                  {translations.trustedBy.split("{count}")[1]}
+                </>
+              ) : (
+                <>
+                  Trusted by{" "}
+                  <span className="font-bold text-[var(--foreground)]">
+                    10,000+
+                  </span>{" "}
+                  users
+                </>
+              )}
             </span>
           </div>
 
           {/* Metrics */}
           <div className="flex flex-wrap items-center gap-8 md:gap-12">
-            {METRICS.map((metric, idx) => (
-              <div key={idx} className="flex flex-col">
-                <span className="font-mono text-2xl font-bold text-[var(--foreground)] md:text-3xl">
-                  {metric.value}
-                </span>
-                <span className="text-xs font-medium tracking-wide text-[var(--muted-foreground)] uppercase">
-                  {metric.label}
-                </span>
-                <span className="mt-2 block h-px w-16 bg-[var(--foreground)]/20" />
-              </div>
-            ))}
+            {METRICS.map((metric, idx) => {
+              const translationKey = metric.id as keyof NonNullable<typeof translations>["metrics"];
+              return (
+                <div key={idx} className="flex flex-col">
+                  <span className="font-mono text-2xl font-bold text-[var(--foreground)] md:text-3xl">
+                    {translations?.metrics?.[translationKey]?.value || metric.value}
+                  </span>
+                  <span className="text-xs font-medium tracking-wide text-[var(--muted-foreground)] uppercase">
+                    {translations?.metrics?.[translationKey]?.label || metric.label}
+                  </span>
+                  <span className="mt-2 block h-px w-16 bg-[var(--foreground)]/20" />
+                </div>
+              );
+            })}
           </div>
 
           {/* Google Play Badge */}
@@ -56,10 +74,10 @@ export function SocialProof() {
             </svg>
             <div className="text-left">
               <span className="block text-[9px] font-bold tracking-wider text-[var(--muted-foreground)] uppercase">
-                Get it on
+                {translations?.googlePlay?.getItOn || "Get it on"}
               </span>
               <span className="block text-sm font-bold text-[var(--foreground)]">
-                Google Play
+                {translations?.googlePlay?.storeName || "Google Play"}
               </span>
             </div>
           </a>
@@ -68,3 +86,4 @@ export function SocialProof() {
     </Section>
   );
 }
+// aria-label

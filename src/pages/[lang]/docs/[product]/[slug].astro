@@ -1,0 +1,30 @@
+---
+import { i18nConfig } from "@/i18n/config";
+import { docsRegistry } from "@/lib/docs-registry";
+import DocsArticlePage from "@/page-templates/DocsArticlePage.astro";
+
+export async function getStaticPaths() {
+  const nonDefaultLocales = i18nConfig.locales.filter(
+    (l) => l !== i18nConfig.defaultLocale
+  );
+  
+  return nonDefaultLocales.flatMap((lang) => 
+    Object.entries(docsRegistry).flatMap(([product, slugs]) => 
+      Object.keys(slugs).map((slug) => ({
+        params: { lang, product, slug },
+      }))
+    )
+  );
+}
+
+const { lang, product, slug } = Astro.params;
+const Content = docsRegistry[product!]?.[slug!];
+
+if (!Content) {
+  return Astro.redirect('/404');
+}
+---
+
+<DocsArticlePage lang={lang as any} product={product!}>
+  <Content lang={lang as string} />
+</DocsArticlePage>

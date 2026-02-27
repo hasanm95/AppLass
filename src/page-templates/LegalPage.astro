@@ -1,0 +1,59 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar, Footer } from "@/components/common";
+import { Section } from "@/components/common/Section";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { i18nConfig } from "@/i18n/config";
+
+interface Props {
+  lang: typeof i18nConfig.locales[number];
+  title: string;
+  description?: string;
+  appName: string;
+  appColor?: string;
+}
+
+const { lang, title, description, appName, appColor = "blue-600" } = Astro.props;
+const dict = await getDictionary(lang as any);
+const lastUpdated = "February 20, 2026";
+---
+
+<Layout 
+  title={`${title} - ${appName} | AppLass`}
+  description={description}
+  lang={lang}
+>
+  <div class="flex min-h-screen flex-col bg-white font-sans selection:bg-blue-100 selection:text-blue-900">
+    <Navbar client:load translations={dict.nav} currentLang={lang}>
+      <div slot="customBranding">
+        <slot name="branding" />
+      </div>
+    </Navbar>
+
+    <main class="grow">
+      <Section className="pb-32 pt-40 lg:pt-56" client:load>
+        <div class="section-container">
+          <div class="mx-auto max-w-4xl">
+            <header class="mb-20">
+              <span class="mb-4 block text-[10px] font-black uppercase tracking-[0.3em] text-blue-600">
+                Legal Documentation
+              </span>
+              <h1 class="text-display mb-6 text-slate-900">
+                {title}<span class="text-slate-300">.</span>
+              </h1>
+              <p class="text-lg font-bold text-slate-400">
+                Last updated: {lastUpdated}
+              </p>
+            </header>
+
+            <div class="space-y-16 text-lg font-medium leading-relaxed text-slate-600">
+              <slot />
+            </div>
+          </div>
+        </div>
+      </Section>
+    </main>
+
+    <Footer translations={dict.footer} />
+  </div>
+</Layout>

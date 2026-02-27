@@ -1,7 +1,12 @@
 import { Section } from "@/components/common/Section";
-import { MINDFUL_GUARD_DATA } from "@/constants/mindful-guard-data";
 
-export function LogicSection() {
+interface LogicSectionProps {
+  translations?: any;
+}
+
+export function LogicSection({ translations }: LogicSectionProps) {
+  const dict = translations || { title: "", description: "" };
+
   return (
     <Section id="logic" className="border-y border-slate-200 bg-[#FBFBFA]">
       <div className="section-container">
@@ -11,10 +16,10 @@ export function LogicSection() {
               Technical Logic
             </span>
             <h2 className="mb-8 text-5xl leading-tight font-black tracking-tighter text-slate-950 md:text-6xl">
-              {MINDFUL_GUARD_DATA.logic.title}
+              {dict.title}
             </h2>
             <p className="mb-12 text-xl leading-relaxed font-medium text-slate-600">
-              {MINDFUL_GUARD_DATA.logic.description}
+              {dict.description}
             </p>
 
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -38,7 +43,7 @@ export function LogicSection() {
           </div>
 
           <div className="relative w-full lg:flex-1">
-            <div className="relative aspect-[4/3] overflow-hidden border-2 border-slate-950 bg-white p-8 shadow-[12px_12px_0px_0px_rgba(6,78,59,0.1)]">
+            <div className="relative aspect-4/3 overflow-hidden border-2 border-slate-950 bg-white p-8 shadow-[12px_12px_0px_0px_rgba(6,78,59,0.1)]">
               {/* Technical Blueprint Grid */}
               <div
                 className="pointer-events-none absolute inset-0 opacity-[0.05]"

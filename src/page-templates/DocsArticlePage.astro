@@ -1,0 +1,17 @@
+---
+import DocsLayout from '@/layouts/DocsLayout.astro';
+import { i18nConfig } from '@/i18n/config';
+
+interface Props {
+  lang: typeof i18nConfig.locales[number];
+  product: string;
+  title?: string;
+  description?: string;
+}
+
+const { lang, product, title, description } = Astro.props;
+---
+
+<DocsLayout lang={lang as string} app={product as any} title={title} description={description}>
+  <slot />
+</DocsLayout>

@@ -1,9 +1,16 @@
+// aria-label
 import { Section } from "@/components/common/Section";
 import { MINDFUL_GUARD_DATA } from "@/constants/mindful-guard-data";
 import { Check, X, Minus } from "lucide-react";
 
-export function ComparisonMatrix() {
-  const { comparison } = MINDFUL_GUARD_DATA;
+interface ComparisonMatrixProps {
+  translations?: any;
+}
+
+export function ComparisonMatrix({ translations }: ComparisonMatrixProps) {
+  const comparison = translations || MINDFUL_GUARD_DATA.comparison;
+  // Keeping variable declared but let's actually make sure we're using it in the render if possible, or just ignore since maybe it's partially implemented. Wait, let me just remove it if it's not used, or prepend with underscore
+  const competitors = comparison.columns?.competitors || { opal: "Opal", freedom: "Freedom" };
 
   const getIndicator = (value: string, isMindfulGuard: boolean) => {
     if (isMindfulGuard) {
@@ -54,15 +61,15 @@ export function ComparisonMatrix() {
                   MindfulGuard (v2.6)
                 </th>
                 <th className="p-8 text-left font-mono text-[10px] font-bold tracking-[0.2em] text-slate-400 uppercase">
-                  Opal
+                  {competitors.opal}
                 </th>
                 <th className="p-8 text-left font-mono text-[10px] font-bold tracking-[0.2em] text-slate-400 uppercase">
-                  Freedom
+                  {competitors.freedom}
                 </th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
-              {comparison.specs.map((spec, idx) => (
+              {comparison.specs?.map((spec: any, idx: number) => (
                 <tr key={idx} className="transition-colors hover:bg-slate-50">
                   <td className="p-8 font-black tracking-tight text-slate-950">
                     {spec.label}
@@ -83,7 +90,7 @@ export function ComparisonMatrix() {
 
         {/* Mobile Specification Cards */}
         <div className="space-y-4 md:hidden">
-          {comparison.specs.map((spec, idx) => (
+          {comparison.specs?.map((spec: any, idx: number) => (
             <div key={idx} className="border-2 border-slate-950 bg-white">
               <div className="bg-slate-950 p-4">
                 <h3 className="font-mono text-[10px] font-bold tracking-widest text-white uppercase">
@@ -99,13 +106,13 @@ export function ComparisonMatrix() {
                 </div>
                 <div className="flex items-center justify-between border-b border-slate-100 pb-4">
                   <span className="font-mono text-[9px] font-bold tracking-widest text-slate-400 uppercase">
-                    Opal
+                    {competitors.opal}
                   </span>
                   {getIndicator(spec.opal, false)}
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="font-mono text-[9px] font-bold tracking-widest text-slate-400 uppercase">
-                    Freedom
+                    {competitors.freedom}
                   </span>
                   {getIndicator(spec.freedom, false)}
                 </div>

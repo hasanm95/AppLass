@@ -1,0 +1,25 @@
+---
+import LegalPage from "@/page-templates/LegalPage.astro";
+import Content from "@/components/legal/MindfulGuardPrivacy.astro";
+import { Shield } from "lucide-react";
+import { getDictionary } from "@/i18n/get-dictionary";
+
+const lang = "en";
+const dict = await getDictionary(lang);
+const meta = dict.metadata?.legalMindfulGuardPrivacy || {};
+---
+
+<LegalPage 
+  lang={lang}
+  title="Privacy Policy"
+  appName="Mindful Guard"
+  description={meta.description}
+>
+  <div slot="branding" class="flex items-center gap-2">
+    <Shield className="h-5 w-5 text-slate-900 fill-slate-900" />
+    <span class="text-lg font-black tracking-tighter text-slate-900 uppercase">
+      Mindful<span class="text-slate-400">Guard</span>
+    </span>
+  </div>
+  <Content lastUpdated="August 2025" />
+</LegalPage>

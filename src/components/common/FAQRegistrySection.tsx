@@ -1,6 +1,6 @@
 import { Section } from "@/components/common/Section";
 import { FAQSchema } from "@/components/common/FAQSchema";
-import { FAQ_REGISTRY, FAQRegistryKey } from "@/constants/faq-registry";
+import { FAQ_REGISTRY, type FAQRegistryKey } from "@/constants/faq-registry";
 import { cn } from "@/lib/utils";
 
 interface FAQRegistrySectionProps {

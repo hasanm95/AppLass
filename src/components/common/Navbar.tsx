@@ -1,26 +1,31 @@
-"use client";
 
-import Link from "next/link";
-import ExportedImage from "next-image-export-optimizer";
 import { useState, useEffect, useCallback, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
 import { MobileMenu } from "./mobile-menu";
+import { LanguageSwitcherSidebar } from "./LanguageSwitcherSidebar";
+import { localePath } from "@/i18n/utils";
+import type { Dictionary } from "@/i18n/get-dictionary";
 
 interface NavbarProps {
   variant?: "light" | "dark";
   customBranding?: React.ReactNode;
   customCTA?: React.ReactNode;
+  translations?: Dictionary["nav"];
+  currentLang?: string;
 }
 
 export function Navbar({
   variant = "light",
   customBranding,
   customCTA,
+  translations,
+  currentLang = "en",
 }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -37,7 +42,10 @@ export function Navbar({
     if (!isMenuOpen) return;
 
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setIsMenuOpen(false);
+      if (e.key === "Escape") {
+        setIsMenuOpen(false);
+        setIsLangMenuOpen(false);
+      }
       if (e.key === "Tab" && menuRef.current) {
         const focusableElements = menuRef.current.querySelectorAll(
           'a[href], button, textarea, input[type="text"], input[type="radio"], input[type="checkbox"], select'
@@ -97,12 +105,13 @@ export function Navbar({
         <div className="flex items-center justify-between">
           {/* Logo / Custom Branding */}
           <div className="flex items-center gap-6">
-            <Link
-              href="/"
+            <a
+              id="navbar-logo"
+              href={localePath(currentLang, '/')}
               className="group flex items-center gap-2 px-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              <ExportedImage
+              <img
                 src="/logo.png"
                 alt="AppLass Logo"
                 width={32}
@@ -119,7 +128,7 @@ export function Navbar({
                   AppLass
                 </span>
               )}
-            </Link>
+            </a>
 
             {customBranding && (
               <div
@@ -136,28 +145,43 @@ export function Navbar({
           </div>
 
           {/* Navigation Links (Desktop) */}
-          {!customBranding && (
+          {!customBranding && translations && (
             <div className="hidden items-center gap-10 md:flex">
-              <NavLink href="/" isDark={isDark}>
-                Home
+              <NavLink href={localePath(currentLang, '/')} isDark={isDark}>
+                {translations.home}
               </NavLink>
-              <NavLink href="/about" isDark={isDark}>
-                About
+              <NavLink href={localePath(currentLang, '/about')} isDark={isDark}>
+                {translations.about}
               </NavLink>
-              <NavLink href="/apps" isDark={isDark}>
-                Ecosystem
+              <NavLink href={localePath(currentLang, '/apps')} isDark={isDark}>
+                {translations.ecosystem}
               </NavLink>
-              <NavLink href="/docs" isDark={isDark}>
-                Docs
+              <NavLink href={localePath(currentLang, '/docs')} isDark={isDark}>
+                {translations.docs}
               </NavLink>
-              <NavLink href="/blog" isDark={isDark}>
-                Logic Lab
+              <NavLink href={localePath(currentLang, '/blog')} isDark={isDark}>
+                {translations.blog}
               </NavLink>
             </div>
           )}
 
           {/* CTA & Mobile Toggle */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 md:gap-4">
+            {/* Language Switcher Trigger */}
+            <button
+              aria-expanded={isLangMenuOpen}
+              aria-label="Select Language"
+              onClick={() => setIsLangMenuOpen(true)}
+              className={cn(
+                "flex h-10 w-10 items-center justify-center rounded-xl transition-colors",
+                isDark
+                  ? "text-slate-400 hover:bg-white/10 hover:text-white"
+                  : "text-slate-500 hover:bg-slate-100 hover:text-slate-900"
+              )}
+            >
+              <Globe size={20} />
+            </button>
+
             <div className="hidden md:block">
               {customCTA ? (
                 customCTA
@@ -172,7 +196,9 @@ export function Navbar({
                       : "bg-slate-900 text-white hover:bg-slate-800"
                   )}
                 >
-                  <Link href="/about">Get in Touch</Link>
+                  <a id="nav-cta" href={localePath(currentLang, '/about')}>
+                    {translations?.getInTouch || "Get in Touch"}
+                  </a>
                 </Button>
               )}
             </div>
@@ -201,8 +227,18 @@ export function Navbar({
             customCTA={customCTA}
             toggleMenu={toggleMenu}
             isDark={isDark}
+            currentLang={currentLang}
+            translations={translations}
           />
         )}
+
+        {/* Global Language Switcher Sidebar */}
+        <LanguageSwitcherSidebar 
+          isOpen={isLangMenuOpen}
+          onClose={() => setIsLangMenuOpen(false)}
+          currentLang={currentLang}
+          isDark={isDark}
+        />
       </nav>
     </header>
   );
@@ -218,7 +254,7 @@ function NavLink({
   isDark: boolean;
 }) {
   return (
-    <Link
+    <a
       href={href}
       className={cn(
         "py-1 text-sm font-bold transition-all",
@@ -228,6 +264,6 @@ function NavLink({
       )}
     >
       {children}
-    </Link>
+    </a>
   );
 }

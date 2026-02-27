@@ -1,0 +1,24 @@
+
+> verdant-visual@0.0.1 lint
+> eslint .
+
+
+/Users/hasanm025/practices/AppLass/.astro/content.d.ts
+  160:25  error  The `{}` ("empty object") type allows any non-nullish value, including literals like `0` and `""`.
+- If that's what you want, disable this lint rule with an inline comment or configure the 'allowObjectTypes' rule option.
+- If you want a type meaning "any object", you probably want `object` instead.
+- If you want a type meaning "any value", you probably want `unknown` instead  @typescript-eslint/no-empty-object-type
+  164:22  error  The `{}` ("empty object") type allows any non-nullish value, including literals like `0` and `""`.
+- If that's what you want, disable this lint rule with an inline comment or configure the 'allowObjectTypes' rule option.
+- If you want a type meaning "any object", you probably want `object` instead.
+- If you want a type meaning "any value", you probably want `unknown` instead  @typescript-eslint/no-empty-object-type
+
+/Users/hasanm025/practices/AppLass/.astro/types.d.ts
+  2:1  error  Do not use a triple slash reference for content.d.ts, use `import` style instead  @typescript-eslint/triple-slash-reference
+
+/Users/hasanm025/practices/AppLass/src/lib/utils.ts
+  11:1  warning  Unused eslint-disable directive (no problems were reported from '@typescript-eslint/no-explicit-any')
+
+✖ 4 problems (3 errors, 1 warning)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+

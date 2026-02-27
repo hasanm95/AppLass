@@ -1,0 +1,652 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "ecosystem": "Écosystème",
+    "docs": "Documentation",
+    "blog": "Logic Lab",
+    "getInTouch": "Contact",
+    "brandName": "AppLass",
+    "logoAlt": "Logo AppLass",
+    "mobileMenuFooter": "Système Logique AppLass",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  },
+  "footer": {
+    "tagline": "Logiciels guidés par la logique où la précision mathématique rencontre un design centré sur l’humain.",
+    "sections": {
+      "solutions": "Solutions",
+      "resources": "Ressources",
+      "legal": "Mentions légales"
+    },
+    "links": {
+      "fomogen": "Fomogen",
+      "mindfulGuard": "Mindful Guard",
+      "screenveil": "ScreenVeil",
+      "ourEcosystem": "Notre écosystème",
+      "documentation": "Documentation",
+      "digitalWellness": "Bien-être Numérique 2026",
+      "ecommercePerformance": "Performance E-commerce 2026",
+      "theMethodology": "La Méthodologie",
+      "theLogicLab": "Logic Lab (Blog)",
+      "privacyPolicy": "Politique de confidentialité",
+      "termsOfService": "Conditions d’utilisation"
+    },
+    "copyright": "© {year} AppLass. Tous droits réservés.",
+    "builtWith": "Conçu avec une précision logique ∞"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Studio logiciel d’élite",
+      "headline": "Applications",
+      "headlineAccent": "Haute Performance.",
+      "headlineSubdued": "Zéro superflu.",
+      "subheading": "Ne laissez plus des applications Shopify surchargées nuire à vos conversions. {brand} conçoit des outils de niveau élite avec des charges utiles de {payload} qui maintiennent vos Core Web Vitals au vert.",
+      "stats": {
+        "downloads": { "value": "10K+", "label": "Téléchargements" },
+        "rating": { "value": "4.4★", "label": "Note" },
+        "payload": { "value": "<2.1KB", "label": "Charge utile" }
+      },
+      "cta": {
+        "primary": "Voir nos applications",
+        "secondary": "Lire le Logic Lab"
+      }
+    },
+    "socialProof": {
+      "trustedBy": "Approuvé par {count} utilisateurs",
+      "metrics": {
+        "downloads": { "value": "10K+", "label": "Téléchargements" },
+        "playStore": { "value": "4.4★", "label": "Play Store" },
+        "payload": { "value": "<2.1KB", "label": "Charge utile" },
+        "telemetry": { "value": "Zéro", "label": "Télémétrie" }
+      },
+      "googlePlay": {
+        "getItOn": "Disponible sur",
+        "storeName": "Google Play"
+      }
+    },
+    "productShowcase": {
+      "sectionLabel": "PRODUITS",
+      "downloadsFeatured": "téléchargements",
+      "ratingFeatured": "note"
+    },
+    "foundersMoat": {
+      "sectionLabel": "PHILOSOPHIE",
+      "headline": "Conçu différemment",
+      "headlineAccent": "par la logique.",
+      "quote": "\"Les applications AppLass sont développées à l’aide de techniques d’optimisation mathématique afin de minimiser le temps d’exécution JavaScript.\""
+    },
+    "solutions": {
+      "sectionLabel": "SOLUTIONS",
+      "headline": "Solutions",
+      "headlineAccent": "Logiques.",
+      "description": "Nous ne développons pas simplement des fonctionnalités ; nous concevons des {highlight} qui résolvent les goulots d’étranglement fondamentaux de la logique métier.",
+      "descriptionHighlight": "améliorations systémiques"
+    },
+    "faq": {
+      "sectionLabel": "FAQ",
+      "headline": "Questions",
+      "headlineAccent": "Fréquentes",
+      "expandAnswer": "Afficher la réponse",
+      "collapseAnswer": "Masquer la réponse",
+      "questions": {
+        "what-is": {
+          "question": "Qu’est-ce qu’AppLass ?",
+          "answer": "AppLass est un studio d’ingénierie logicielle d’élite qui développe des applications Shopify haute performance et des utilitaires Android. Fondé en 2019, nous utilisons l’optimisation mathématique pour créer des charges utiles inférieures à 2.1KB qui maintiennent les Core Web Vitals au vert. Nos produits phares incluent ScreenVeil, FomoGen et Mindful Guard."
+        },
+        "accessibility": {
+          "question": "Les logiciels AppLass sont-ils accessibles ?",
+          "answer": "Oui. Tous les produits AppLass respectent les directives WCAG 2.1 avec un HTML sémantique et des schémas navigables au clavier. Nous concevons pour les 20 % d’utilisateurs en situation de handicap afin d’offrir une expérience supérieure aux 100 %."
+        },
+        "speed": {
+          "question": "Comment AppLass optimise-t-il la vitesse ?",
+          "answer": "Nous minimisons le temps d’exécution JavaScript à la microseconde grâce à l’optimisation mathématique. Les charges utiles principales restent sous 2.1KB afin de garantir des scores Core Web Vitals au vert."
+        },
+        "privacy": {
+          "question": "Quelle est la politique de confidentialité d’AppLass ?",
+          "answer": "AppLass utilise une architecture à Télémétrie Zéro. Nous n’enregistrons jamais d’identifiants personnels, ne suivons pas le comportement des utilisateurs et n’intégrons aucun SDK d’analyse tiers. Toutes les données restent 100 % sur l’appareil pour une confidentialité maximale."
+        }
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "La Méthodologie AppLass",
+      "headline": "La",
+      "headlineAccent": "Méthodologie.",
+      "description": "Chez AppLass, nous comblons le fossé entre les mathématiques complexes et le logiciel centré sur l’humain. Des outils Shopify à forte conversion aux utilitaires mobiles orientés concentration, nous construisons la « Nouvelle Vague » de performance numérique — zéro superflu, impact maximal."
+    },
+    "bio": {
+      "imageText": "LOGIQUE",
+      "yearsExperience": "7+",
+      "experienceLabel": "Années d’expérience",
+      "eyebrow": "La Logique du Fondateur",
+      "headline": "Intégrité Systémique",
+      "headlineAccent": "par Conception.",
+      "paragraph1": "Un logiciel devrait être la dérivation d’une vérité logique. Fondé par un ingénieur obsédé par l’optimisation des performances et l’accessibilité, AppLass est né d’un constat simple : le web moderne s’effondre sous le poids de son propre superflu.",
+      "paragraph2": "Avec plus de 7 ans d’expérience dans la construction d’infrastructures e-commerce critiques et d’environnements mobiles à haute productivité, je déploie des outils qui résolvent une seule variable :",
+      "paragraph2Highlight": "l’Impact."
+    },
+    "philosophy": {
+      "headline": "Conçu différemment par la logique.",
+      "description": "Nous évitons le piège du « feature-first » et privilégions l’intégrité systémique. Chaque ligne de code est évaluée selon les Core Web Vitals et les contraintes psychologiques humaines."
+    },
+    "authority": {
+      "headline": "Approuvé par plus de 20 000",
+      "headlineAccent": "Minimalistes Numériques.",
+      "stats": {
+        "downloads": {
+          "value": "10K+",
+          "label": "ScreenVeil Android"
+        },
+        "rating": {
+          "value": "4.4★",
+          "label": "Note Globale"
+        }
+      },
+      "description": "Les logiciels AppLass sont régulièrement cités dans des guides de productivité et des audits techniques pour leur approche sans superflu et leurs protocoles stricts de confidentialité.",
+      "cta": "Lire la documentation"
+    }
+  },
+  "apps": {
+    "hero": {
+      "eyebrow": "Écosystème AppLass",
+      "headline": "Notre",
+      "headlineAccent": "Écosystème.",
+      "description": "Systèmes propriétaires conçus avec discipline technique et focalisés sur un impact mesurable. Chaque outil est une dérivation de la logique."
+    },
+    "viewDetails": "Voir les détails du produit"
+  },
+  "products": {
+    "screenveil": {
+      "name": "ScreenVeil",
+      "platform": "Plateforme Android",
+      "tagline": "Lecture vidéo écran éteint",
+      "description": "Économisez plus de 60 % de batterie sur les écrans AMOLED/OLED. Écoutez YouTube, des podcasts et de la musique avec l’écran éteint. Zéro permission, confidentialité totale.",
+      "cta": "Télécharger gratuitement",
+      "metrics": ["10K+ Téléchargements", "Note 4.4★"]
+    },
+    "fomogen": {
+      "name": "FomoGen",
+      "platform": "Écosystème Shopify",
+      "tagline": "Preuve sociale sans pénalité de vitesse",
+      "description": "Preuve sociale d’élite avec une charge utile propriétaire <2.1KB. Augmentez l’engagement de +23 % sans déclencher d’avertissements « Long Task » ni de pénalités SEO liées à la vitesse.",
+      "cta": "Ajouter à Shopify",
+      "metrics": ["+23 % d’engagement", "<2.1KB Charge utile"]
+    },
+    "mindfulGuard": {
+      "name": "Mindful Guard",
+      "platform": "Plateforme Android",
+      "tagline": "Garde-fous de concentration axés confidentialité",
+      "description": "Gardien de productivité au niveau système, conçu avec une architecture sans suivi et axée sur la confidentialité. Récupérez en moyenne 2,4 heures de concentration par jour grâce à une souveraineté des données 100 % locale.",
+      "cta": "Disponible sur Play Store",
+      "metrics": ["2,4h de concentration récupérées", "Zéro suivi"]
+    }
+  },
+  "pillars": {
+    "eliteExpertise": {
+      "title": "Expertise d’Élite",
+      "label": "7 ans Full-Stack",
+      "description": "Expérience approfondie dans la conception de systèmes évolutifs pour l’e-commerce et les environnements mobiles à haute productivité."
+    },
+    "logicalIntegrity": {
+      "title": "Intégrité Logique",
+      "label": "Noyau Mathématique",
+      "description": "Chaque algorithme et chaque interaction sont modélisés avec une précision mathématique afin de maximiser performance et fiabilité."
+    },
+    "radicalAccessibility": {
+      "title": "Accessibilité Radicale",
+      "label": "WCAG 2.1 d’abord",
+      "description": "L’accessibilité n’est pas une fonctionnalité ; c’est la fondation. Nous développons des logiciels qui respectent les capacités de chaque utilisateur."
+    }
+  },
+  "solutionItems": {
+    "ecommerce": {
+      "title": "Optimisation E-commerce",
+      "description": "Ingénierie de conversion pour les marques modernes. Nous résolvons la dette technique qui freine la croissance grâce à l’optimisation mathématique."
+    },
+    "digitalDiscipline": {
+      "title": "Design de Discipline Numérique",
+      "description": "Outils de concentration respectant la psychologie humaine via des contraintes mathématiques et des garde-fous systémiques. Conçus pour les producteurs de niveau élite."
+    },
+    "accessibility": {
+      "title": "Conseil en Accessibilité",
+      "description": "Transformer les produits numériques pour les rendre inclusifs dès leur cœur. Améliorez logiquement votre score WCAG avec une base sans régression."
+    }
+  },
+  "fomogen": {
+    "hero": {
+      "tagline": "Preuve Sociale Haute Performance",
+      "headline": "Arrêtez de perdre 98 % de votre trafic.",
+      "headlineAccent": "Transformez instantanément vos visiteurs en acheteurs.",
+      "subheadline": "La boîte à outils de conversion tout-en-un : Preuve Sociale, Rareté de Stock, Panier Sticky et Barres de Livraison Gratuite. Remplacez 5 applications lentes par une solution légère et optimisée.",
+      "primaryCTA": "Installer sur Shopify — Gratuit",
+      "secondaryCTA": "Explorer la Logique",
+      "shopifyUrl": "https://apps.shopify.com/fomogen",
+      "subtext": "Plan gratuit disponible • Aucune ligne de code requise • Support 5 étoiles",
+      "stats": [
+        { "value": "<2.1KB", "label": "Charge utile" },
+        { "value": "0ms", "label": "Thread principal" },
+        { "value": "WCAG 2.1", "label": "Conforme" },
+        { "value": "Mobile", "label": "Optimisé" }
+      ]
+    },
+    "speedBenefit": {
+      "title": "Le « App Bloat » tue-t-il la vitesse de votre boutique ?",
+      "body": "Vous savez que la preuve sociale est essentielle pour vendre. Mais installer une application pour les notifications d’achat, une autre pour les comptes à rebours, et une troisième pour le panier sticky détruit la vitesse de votre site.",
+      "fact": "Fait : Un délai d’une seconde au chargement peut réduire les conversions jusqu’à 17 %.",
+      "struggle": "La plupart des applications « tout-en-un » sont coûteuses, complexes et ralentissent votre thème.",
+      "solution": "FOMO Gen vous offre les 5 outils de conversion essentiels dans un script unique optimisé pour la vitesse."
+    },
+    "features": [
+      {
+        "id": "social-proof-notifications",
+        "title": "Notifications de Preuve Sociale",
+        "subtitle": "Montrez que votre boutique est active.",
+        "description": "Affichez les achats récents pour instaurer une confiance instantanée. 92 % des consommateurs hésitent à acheter sans preuve sociale. Éliminez ce doute.",
+        "highlight": "Renforcer la confiance"
+      },
+      {
+        "id": "scarcity-urgency",
+        "title": "Rareté & Urgence",
+        "subtitle": "Déclenchez la « Peur de manquer ». ",
+        "description": "Utilisez des alertes de stock faible (« Plus que 2 en stock ! ») et des barres de compte à rebours pour pousser vos visiteurs à passer de la navigation à l’achat immédiatement.",
+        "highlight": "Créer l’urgence"
+      },
+      {
+        "id": "sticky-add-to-cart",
+        "title": "Bouton Panier Sticky",
+        "subtitle": "Capturez les ventes mobiles.",
+        "description": "Gardez votre bouton d’achat visible à chaque défilement. Réduisez la friction et rendez le paiement accessible partout sur la page.",
+        "highlight": "Réduire la friction"
+      },
+      {
+        "id": "free-shipping-bar",
+        "title": "Barre de Livraison Gratuite Progressive",
+        "subtitle": "Augmentez la valeur moyenne des commandes (AOV).",
+        "description": "« Plus que 15 € pour la livraison gratuite. » Incitez vos clients à ajouter davantage d’articles grâce à une barre de progression dynamique.",
+        "highlight": "Augmenter l’AOV"
+      },
+      {
+        "id": "trust-badges",
+        "title": "Badges de Confiance",
+        "subtitle": "Sécurisez le paiement.",
+        "description": "Affichez des sceaux de paiement vérifiés (Visa, PayPal, SSL) afin de réduire l’anxiété liée à l’abandon de panier.",
+        "highlight": "Renforcer la crédibilité"
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "J’ai désinstallé Vitals et Nudgify. FOMO Gen fait exactement ce dont j’ai besoin, sans latence.",
+        "author": "Testeur Bêta",
+        "niche": "Mode"
+      },
+      {
+        "quote": "Mon taux d’ajout au panier a augmenté de 15 % simplement en activant le Panier Sticky.",
+        "author": "Testeur Bêta",
+        "niche": "Boutique Dropshipping"
+      }
+    ],
+    "pricing": {
+      "title": "Paliers Tarifaires Propriétaires",
+      "subtitle": "Évoluez Logiquement",
+      "tiers": [
+        {
+          "name": "Gratuit",
+          "price": "$0",
+          "period": "/mois",
+          "description": "Preuve sociale essentielle pour les nouvelles marques.",
+          "features": [
+            "1 Campagne active",
+            "100 affichages/mois",
+            "Personnalisation basique",
+            "Jusqu’à 3 badges de confiance",
+            "Support communautaire"
+          ],
+          "cta": "Installer gratuitement"
+        },
+        {
+          "name": "Starter",
+          "price": "$9.99",
+          "period": "/mois",
+          "description": "Tout le nécessaire pour commencer à évoluer.",
+          "features": [
+            "3 Campagnes actives",
+            "2 500 affichages/mois",
+            "Contrôle complet des couleurs et polices",
+            "Badges de confiance illimités",
+            "Support email prioritaire"
+          ],
+          "cta": "Essai gratuit 7 jours"
+        },
+        {
+          "name": "Growth",
+          "price": "$19.99",
+          "period": "/mois",
+          "description": "Ciblage avancé pour boutiques à fort volume.",
+          "features": [
+            "10 Campagnes actives",
+            "10 000 affichages/mois",
+            "Contrôles de géociblage",
+            "Règles spécifiques par appareil",
+            "Analyses avancées"
+          ],
+          "cta": "Essai gratuit 7 jours"
+        },
+        {
+          "name": "Elite",
+          "price": "$39.99",
+          "period": "/mois",
+          "description": "Échelle illimitée avec support dédié.",
+          "features": [
+            "Campagnes illimitées",
+            "Affichages illimités",
+            "Intégration CSS personnalisée",
+            "Accès anticipé aux versions bêta",
+            "Appel stratégique de 30 minutes"
+          ],
+          "cta": "Essai gratuit 7 jours"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Prêt à accélérer vos ventes ?",
+      "subtitle": "Lancement Bêta",
+      "description": "Profitez gratuitement des fonctionnalités du Plan Professionnel pendant la phase bêta. Installation en un clic depuis le Shopify App Store. Compatible avec tous les thèmes.",
+      "highlights": [
+        "Fonctionnalités Bêta incluses",
+        "Aucune ligne de code requise",
+        "Installation en un clic",
+        "Support 5 étoiles"
+      ],
+      "primaryCTA": "Obtenir FOMO Gen maintenant",
+      "shopifyUrl": "https://apps.shopify.com/fomogen"
+    }
+  },
+  "mindfulGuard": {
+    "hero": {
+      "headline": "Reprenez le contrôle de votre architecture neuronale.",
+      "subheadline": "Le premier bloqueur d’applications Android conçu pour les absolutistes de la confidentialité. Latence 0ms. 100 % hors ligne. Zéro télémétrie.",
+      "primaryCTA": "Déployer sur Android",
+      "secondaryCTA": "Voir la Logique",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard"
+    },
+    "logic": {
+      "title": "Pourquoi avez-vous besoin d’un Pare-feu Cognitif ?",
+      "description": "La volonté est une ressource limitée. Les algorithmes des réseaux sociaux sont des supercalculateurs conçus pour l’épuiser. Mindful Guard n’est pas une application de « bien-être » ; c’est un Pare-feu Cognitif qui intercepte les tentatives de distraction au niveau système."
+    },
+    "differentiators": [
+      {
+        "title": "Zéro Télémétrie",
+        "description": "Nous ignorons ce que vous bloquez. Vos données ne quittent jamais votre appareil. Contrairement aux bloqueurs basés sur VPN, nous fonctionnons localement."
+      },
+      {
+        "title": "Efficacité Native",
+        "description": "Conçu selon les protocoles batterie spécifiques d’Android. N’épuise pas votre batterie et n’est pas désactivé par les optimiseurs MIUI/OneUI."
+      },
+      {
+        "title": "Mode Strict",
+        "description": "Aucun contournement. Aucun « 5 minutes de plus ». Lorsque le mur est activé, il reste en place jusqu’à la fin du minuteur."
+      }
+    ],
+    "comparison": {
+      "title": "La Matrice Logique : Mindful Guard vs. l’Industrie.",
+      "headers": {
+        "privacy": "Modèle de Confidentialité",
+        "pricing": "Tarification",
+        "tech": "Technologie de Blocage",
+        "battery": "Impact Batterie"
+      },
+      "columns": {
+        "competitors": {
+          "opal": "Opal",
+          "freedom": "Freedom"
+        }
+      },
+      "specs": [
+        {
+          "label": "Modèle de Confidentialité",
+          "mindfulGuard": "Hors ligne / Zéro donnée",
+          "opal": "Analytique Cloud",
+          "freedom": "Synchronisation Cloud"
+        },
+        {
+          "label": "Tarification",
+          "mindfulGuard": "Juste / Transparente",
+          "opal": "Abonnement 99$/an",
+          "freedom": "Abonnement 39$/an"
+        },
+        {
+          "label": "Technologie de Blocage",
+          "mindfulGuard": "API Android native",
+          "opal": "VPN (Haute latence)",
+          "freedom": "VPN / Multiplateforme"
+        },
+        {
+          "label": "Impact Batterie",
+          "mindfulGuard": "<1%",
+          "opal": "Élevé",
+          "freedom": "Modéré"
+        }
+      ]
+    }
+  },
+  "screenveil": {
+    "hero": {
+      "tagline": "Économiseur de Batterie AMOLED",
+      "headline": "Écoutez vos vidéos",
+      "headlineAccent": "écran éteint.",
+      "subheadline": "Économisez plus de 60 % de batterie sur les appareils AMOLED. ScreenVeil superpose une couche noire pure pour vous permettre d’écouter YouTube, des podcasts et de la musique sans consommation excessive ni contacts accidentels.",
+      "primaryCTA": "Disponible sur Google Play",
+      "secondaryCTA": "En savoir plus",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.screenveil.app",
+      "subtext": "10 000+ Téléchargements • Note 5.0 étoiles • Zéro permission"
+    },
+    "painPoints": [
+      {
+        "title": "Anxiété liée à la batterie ?",
+        "stat": "50-80%",
+        "description": "Économie d’énergie sur panneaux OLED/AMOLED"
+      },
+      {
+        "title": "Contacts accidentels ?",
+        "stat": "100%",
+        "description": "Verrouillez votre écran dans votre poche sans interrompre la lecture"
+      }
+    ],
+    "features": [
+      {
+        "title": "Accès Rapide Flottant",
+        "description": "Un bouton déplaçable à un seul appui, accessible au-dessus de n’importe quelle application. Activez ScreenVeil instantanément sans changer d’application.",
+        "highlight": "Toujours Accessible"
+      },
+      {
+        "title": "Superposition Noir Pur",
+        "description": "Spécialement conçu pour les écrans AMOLED/OLED où les pixels noirs ne consomment aucune énergie. Noir absolu = économie réelle.",
+        "highlight": "Zéro Consommation"
+      },
+      {
+        "title": "Système de Déverrouillage Intelligent",
+        "description": "Commandes simples « Toucher pour révéler » afin d’éviter les pressions fantômes dans votre poche. Double-tapez ou balayez pour déverrouiller instantanément.",
+        "highlight": "Prévention des pressions fantômes"
+      },
+      {
+        "title": "Horloge en Temps Réel",
+        "description": "Consultez l’heure et la date même lorsque l’écran est « éteint ». Restez informé sans compromettre votre concentration ni votre batterie.",
+        "highlight": "Toujours Visible"
+      },
+      {
+        "title": "Compatibilité Universelle",
+        "description": "Fonctionne parfaitement avec YouTube, Netflix, Spotify et tout lecteur multimédia. Une seule application pour tout gérer.",
+        "highlight": "Fonctionne Partout"
+      }
+    ],
+    "technical": {
+      "headline": "La Physique de la Conservation d’Énergie.",
+      "description": "Sur les écrans OLED et AMOLED, chaque pixel est sa propre source lumineuse. En affichant un « Noir Absolu », ScreenVeil ordonne aux pixels de s’éteindre complètement. Les recherches montrent que cela peut réduire la consommation d’énergie liée à l’affichage jusqu’à 63 % à luminosité maximale.",
+      "stat": "63%",
+      "statLabel": "Réduction d’Énergie"
+    },
+    "privacy": {
+      "headline": "Zéro Permission. Confidentialité Totale.",
+      "description": "Contrairement aux copies, ScreenVeil ne nécessite aucun accès internet ni donnée personnelle. Seule la permission « Superposition » est requise pour fonctionner. Vos données restent sur votre appareil — là où elles doivent être.",
+      "features": [
+        { "label": "Aucun Internet Requis" },
+        { "label": "Zéro Collecte de Données" },
+        { "label": "Superposition Uniquement" }
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "Parfait pour ceux qui ont peu de batterie et veulent écouter des podcasts sur YouTube.",
+        "author": "Utilisateur Reddit",
+        "platform": "r/Android"
+      },
+      {
+        "quote": "Enfin un utilitaire simple qui fait une chose parfaitement, sans configuration complexe ni publicité.",
+        "author": "Adoptant Précoce",
+        "platform": "Play Store"
+      }
+    ]
+  },
+  "compare": {
+    "index": {
+      "eyebrow": "Logique Analytique",
+      "headline": "Analyse",
+      "headlineAccent": "Technique.",
+      "subheadline": "Pourquoi les équipes d’élite migrent vers notre écosystème. Une démonstration froide, fondée sur la logique, de la supériorité technique.",
+      "cardEyebrow": "Comparatif Produit",
+      "vs": "vs",
+      "ctaHeadline": "Expérimentez la Supériorité Logique.",
+      "ctaSubheadline": "Ne vous contentez plus de dette technique. Passez à une fondation construite sur les premiers principes.",
+      "ctaButton": "Explorer l’Écosystème"
+    },
+    "hero": {
+      "eyebrow": "Choix Analytique",
+      "button": "Passer à l’action — Commencer gratuitement"
+    },
+    "matrix": {
+      "title": "Supériorité Logique",
+      "subtitle": "Les métriques quantifiables ne mentent pas. Observez la différence d’architecture.",
+      "featureCol": "Fonctionnalité"
+    },
+    "debt": {
+      "legacyTitle": "L’Approche Héritée",
+      "applassTitle": "L’Approche AppLass"
+    },
+    "highlights": [
+      {
+        "title": "Impact SEO",
+        "desc": "Des temps de chargement plus rapides et un HTML sémantique propre améliorent le classement Google et la visibilité organique."
+      },
+      {
+        "title": "Impact Conversion",
+        "desc": "Une accessibilité élevée (WCAG 2.1) garantit que votre logique n’exclut pas 20 % de la population mondiale."
+      },
+      {
+        "title": "Intégrité Avant Tout",
+        "desc": "Vos données vous appartiennent. L’architecture zéro-télémétrie signifie que nous n’enregistrons jamais d’identifiants personnels."
+      }
+    ],
+    "footer": {
+      "headline": "Expérimentez la Supériorité Logique.",
+      "button": "Installer maintenant — Gratuit"
+    },
+    "fomogen-vs-nudgify": {
+      "heroHeadline": "L’alternative logique à Nudgify.",
+      "heroSubheadline": "Pourquoi les marchands Shopify d’élite abandonnent les outils hérités surchargés au profit de l’architecture logique de FomoGen.",
+      "matrix": [
+        { "label": "Vitesse de chargement", "competitorValue": "1.2s+", "applassValue": "< 100ms" },
+        { "label": "Confidentialité", "competitorValue": "Cookies & Tracking", "applassValue": "Zéro Télémétrie" },
+        { "label": "Accessibilité", "competitorValue": "WCAG Partiel", "applassValue": "100 % Conforme" },
+        { "label": "Taille du script", "competitorValue": "450KB+", "applassValue": "4.2KB" },
+        { "label": "Tarification", "competitorValue": "Paliers stricts", "applassValue": "Tarif logique unique" }
+      ],
+      "legacyWay": {
+        "title": "L’Approche Héritée",
+        "points": [
+          "Charges JavaScript lourdes ralentissant les boutiques.",
+          "Suivi utilisateur agressif compromettant la confiance.",
+          "Tableaux de bord complexes avec superflu fonctionnel."
+        ]
+      },
+      "applassWay": {
+        "title": "L’Approche AppLass",
+        "points": [
+          "Précision mathématique pour performance maximale.",
+          "Confidentialité zéro-télémétrie par défaut.",
+          "Logique épurée et minimaliste qui fonctionne simplement."
+        ]
+      },
+      "testimonial": {
+        "quote": "Nous avons réduit de 2 secondes le temps de chargement Shopify simplement en passant de Nudgify à FomoGen. Les chiffres ne mentent pas.",
+        "author": "Alex Rivera",
+        "role": "Directeur E-commerce"
+      }
+    },
+    "mindful-guard-vs-forest": {
+      "heroHeadline": "L’alternative logique à Forest.",
+      "heroSubheadline": "Pourquoi les développeurs d’élite abandonnent la gamification des distractions pour la discipline systémique de Mindful Guard.",
+      "matrix": [
+        { "label": "Méthode", "competitorValue": "Gamifiée / Visuelle", "applassValue": "Friction Logique" },
+        { "label": "Impact Batterie", "competitorValue": "6-8 % par jour", "applassValue": "< 0.5 % par jour" },
+        { "label": "Confidentialité", "competitorValue": "Synchronisation Cloud", "applassValue": "100 % Local" },
+        { "label": "Logique de concentration", "competitorValue": "Suggestive", "applassValue": "Garde-fous Absolus" },
+        { "label": "Philosophie", "competitorValue": "Croissance", "applassValue": "Élimination" }
+      ],
+      "legacyWay": {
+        "title": "L’Approche Héritée",
+        "points": [
+          "Utiliser un « jeu » pour réduire l’usage du téléphone est contre-intuitif.",
+          "Synchronisation constante en arrière-plan consommant des ressources.",
+          "Fonctionnalités optimisées pour la rétention, pas la productivité."
+        ]
+      },
+      "applassWay": {
+        "title": "L’Approche AppLass",
+        "points": [
+          "Friction intentionnelle activant une réflexion analytique.",
+          "Implémentation native en C++ pour zéro latence batterie.",
+          "Sessions de concentration absolues sans logique d’échappement."
+        ]
+      },
+      "testimonial": {
+        "quote": "Mindful Guard est la première application qui fonctionne réellement. Elle ne me demande pas d’être meilleur ; elle m’oblige à être logique.",
+        "author": "Sarah Chen",
+        "role": "Architecte Logiciel Senior"
+      }
+    }
+  },
+  "metadata": {
+    "siteName": "AppLass",
+    "home": {
+      "title": "AppLass : Solutions de Productivité & Confidentialité pour le Monde Numérique 2026",
+      "description": "Accueil de Mindful Guard et ScreenVeil. Découvrez des outils Android avancés et des applications Shopify conçues pour protéger votre confidentialité et maximiser votre ROI.",
+      "ogTitle": "AppLass | Studio Logiciel Guidé par la Logique",
+      "ogDescription": "La précision mathématique rencontre un design centré sur l’humain. Nous construisons la nouvelle vague de performance numérique."
+    },
+    "about": {
+      "title": "À propos | La Méthodologie AppLass",
+      "description": "Développement dirigé par le fondateur, dérivé des premiers principes. Intégrité mathématique et excellence numérique. Découvrez l’ingénieur derrière la logique."
+    },
+    "apps": {
+      "title": "Nos Applications | Écosystème AppLass",
+      "description": "Explorez notre suite d’applications guidées par la logique, conçues pour performance d’élite et discipline numérique."
+    },
+    "blog": {
+      "title": "Logic Lab | Blog AppLass",
+      "description": "Analyses approfondies en ingénierie logicielle, mathématiques et productivité numérique."
+    },
+    "compare": {
+      "title": "Guides Comparatifs | Analyse AppLass",
+      "description": "Comparaisons fondées sur la logique. Pourquoi les équipes d’élite choisissent AppLass plutôt que les alternatives héritées."
+    },
+    "hubDocs": {
+      "title": "Documentation | Systèmes Logiques AppLass",
+      "description": "Références d’ingénierie et guides de déploiement pour l’écosystème AppLass."
+    }
+  }
+
+
+
+}

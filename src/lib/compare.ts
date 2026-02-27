@@ -5,7 +5,7 @@ export interface ComparisonFeature {
   isPositive?: boolean;
 }
 
-export interface ComparisonData {
+interface ComparisonData {
   slug: string;
   competitorName: string;
   productName: string;

@@ -1,13 +1,30 @@
-"use client";
 
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { useParallax } from "@/hooks/useParallax";
 import { SCREENVEIL_DATA } from "@/constants/screenveil-data";
-import ExportedImage from "next-image-export-optimizer";
 
-export function ScreenVeilHero() {
+interface ScreenVeilHeroProps {
+  translations?: typeof SCREENVEIL_DATA.hero;
+  heroImageSrc?: string;
+}
+
+export function ScreenVeilHero({
+  translations,
+  heroImageSrc = "/v1/apps/screenveil/hero-mockup.png"
+}: ScreenVeilHeroProps) {
   const containerRef = useRef<HTMLDivElement>(null);
+  
+  const dict = translations || {
+    tagline: "",
+    headline: "",
+    headlineAccent: "",
+    subheadline: "",
+    primaryCTA: "",
+    secondaryCTA: "",
+    playStoreUrl: "",
+    subtext: ""
+  };
 
   useParallax(containerRef, [
     { selector: ".parallax-sv-headline", factor: 20, rotateFactor: 5 },
@@ -34,20 +51,20 @@ export function ScreenVeilHero() {
         <div className="animate-fade-in-up text-center lg:text-left">
           <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-green-500/30 bg-green-500/10 px-4 py-2 text-[10px] font-black tracking-[0.2em] text-green-400 uppercase shadow-sm backdrop-blur-md md:mb-8">
             <span className="flex h-2 w-2 animate-pulse rounded-full bg-green-500" />
-            ⚡ {SCREENVEIL_DATA.hero.tagline}
+            ⚡ {dict.tagline}
           </div>
 
           <h1 className="parallax-sv-headline mb-8 text-4xl leading-[0.95] font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:mb-10 lg:text-[4.5rem]">
-            {SCREENVEIL_DATA.hero.headline}
+            {dict.headline}
             <br />
             <span className="group relative text-green-400 italic">
-              {SCREENVEIL_DATA.hero.headlineAccent}
+              {dict.headlineAccent}
               <div className="absolute -bottom-2 left-0 h-[4px] w-full rounded-full bg-green-500/40 blur-md transition-colors group-hover:bg-green-400/60 md:-bottom-4 md:h-[6px]" />
             </span>
           </h1>
 
           <p className="parallax-sv-subtext mx-auto mt-8 max-w-xl text-lg leading-tight font-medium tracking-tight text-balance text-slate-400 md:mt-12 md:max-w-2xl md:text-xl lg:mx-0 lg:max-w-xl">
-            {SCREENVEIL_DATA.hero.subheadline}
+            {dict.subheadline}
           </p>
 
           <div className="parallax-sv-cta mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row md:mt-16 md:gap-6 lg:justify-start">
@@ -56,8 +73,8 @@ export function ScreenVeilHero() {
               className="h-14 w-full rounded-xl bg-green-500 px-10 text-base font-bold text-black shadow-2xl shadow-green-500/30 transition-all duration-500 hover:scale-105 hover:bg-green-400 active:scale-95 sm:w-auto md:h-16 md:rounded-2xl md:px-12 md:text-lg"
               asChild
             >
-              <a href={SCREENVEIL_DATA.hero.playStoreUrl}>
-                {SCREENVEIL_DATA.hero.primaryCTA}
+              <a href={dict.playStoreUrl}>
+                {dict.primaryCTA}
               </a>
             </Button>
             <Button
@@ -67,7 +84,7 @@ export function ScreenVeilHero() {
               asChild
             >
               <a href="#features">
-                {SCREENVEIL_DATA.hero.secondaryCTA}
+                {dict.secondaryCTA}
                 <span className="ml-2 inline-block transition-transform group-hover:translate-x-2">
                   →
                 </span>
@@ -76,19 +93,19 @@ export function ScreenVeilHero() {
           </div>
 
           <p className="mt-8 text-sm font-bold text-slate-500 lg:mt-10">
-            {SCREENVEIL_DATA.hero.subtext}
+            {dict.subtext}
           </p>
         </div>
 
         {/* Hero Mockup Image */}
         <div className="parallax-sv-image relative mx-auto w-full max-w-md lg:mx-0">
           <div className="relative aspect-9/16 overflow-hidden rounded-[2.5rem] border border-green-500/20 bg-slate-900 shadow-[0_40px_100px_-20px_rgba(0,255,0,0.2)] lg:rounded-[3rem]">
-            <ExportedImage
-              src="/v1/apps/screenveil/hero-mockup.png"
-              alt="ScreenVeil app showing black overlay over video playback"
-              fill
-              className="object-cover"
-              priority
+            <img
+              src={heroImageSrc}
+              alt="ScreenVeil Android App - Zero Battery Drain Screen Filter"
+              width={800}
+              height={1422}
+              className="absolute inset-0 h-[105%] w-full object-cover"
               fetchPriority="high"
             />
             {/* Overlay effect simulation */}

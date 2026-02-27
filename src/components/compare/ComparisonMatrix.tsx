@@ -1,33 +1,34 @@
 import { Section } from "@/components/common/Section";
 import { Check } from "lucide-react";
-import { ComparisonFeature } from "@/lib/compare";
+import type { ComparisonFeature } from "@/lib/compare";
 
 interface ComparisonMatrixProps {
   competitorName: string;
   productName: string;
   features: ComparisonFeature[];
+  translations?: any;
 }
 
 export function ComparisonMatrix({
   competitorName,
   productName,
   features,
+  translations,
 }: ComparisonMatrixProps) {
   return (
     <Section className="bg-white py-24">
       <div className="mx-auto max-w-5xl">
         <div className="mb-16 text-center">
           <h2 className="text-4xl font-black tracking-tight text-slate-900">
-            Logical Superiority
+            {translations?.title || "Logical Superiority"}
           </h2>
           <p className="mt-4 font-medium text-slate-500">
-            Quantifiable metrics don&apos;t lie. See the difference in
-            architecture.
+            {translations?.subtitle || "Quantifiable metrics don't lie. See the difference in architecture."}
           </p>
         </div>
 
         {/* Desktop Table */}
-        <div className="hidden overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-xl md:block">
+        <div className="hidden overflow-hidden rounded-4xl border border-slate-200 bg-white shadow-xl md:block">
           <table className="w-full border-collapse text-left">
             <thead>
               <tr className="border-b border-slate-100 bg-slate-50/50">
@@ -35,7 +36,7 @@ export function ComparisonMatrix({
                   scope="col"
                   className="p-8 text-xs font-black tracking-widest text-slate-500 uppercase"
                 >
-                  Feature
+                  {translations?.featureCol || "Feature"}
                 </th>
                 <th
                   scope="col"
@@ -66,7 +67,7 @@ export function ComparisonMatrix({
                   <td className="p-8 text-sm font-medium text-slate-500">
                     {feature.competitorValue}
                   </td>
-                  <td className="bg-blue-500/[0.02] p-8 text-sm font-black text-slate-900">
+                  <td className="bg-blue-500/2 p-8 text-sm font-black text-slate-900">
                     <div className="flex items-center gap-3">
                       <Check
                         className="h-4 w-4 text-blue-600"
@@ -116,3 +117,4 @@ export function ComparisonMatrix({
     </Section>
   );
 }
+// aria-label

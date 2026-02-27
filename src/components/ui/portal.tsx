@@ -1,4 +1,4 @@
-"use client";
+
 
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
@@ -14,7 +14,7 @@ export function Portal({ children, containerId }: PortalProps) {
   useEffect(() => {
     setMounted(true);
     return () => setMounted(false);
-  }, []); // eslint-disable-line react-hooks/set-state-in-effect
+  }, []);
 
   if (!mounted) return null;
 

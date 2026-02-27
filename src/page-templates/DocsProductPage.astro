@@ -1,0 +1,26 @@
+---
+import DocsLayout from '@/layouts/DocsLayout.astro';
+import FomogenContent from '../components/docs-content/fomogen/page';
+import MindfulGuardContent from '../components/docs-content/mindful-guard/page';
+import ScreenveilContent from '../components/docs-content/screenveil/page';
+import { i18nConfig } from '@/i18n/config';
+
+interface Props {
+  lang: typeof i18nConfig.locales[number];
+  product: 'fomogen' | 'mindful-guard' | 'screenveil';
+}
+
+const { lang, product } = Astro.props;
+
+const contents = {
+  fomogen: FomogenContent,
+  'mindful-guard': MindfulGuardContent,
+  screenveil: ScreenveilContent,
+};
+
+const Content = contents[product];
+---
+
+<DocsLayout lang={lang as string} app={product}>
+  <Content lang={lang as string} />
+</DocsLayout>

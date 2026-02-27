@@ -17,18 +17,20 @@ export interface MarkdownBlogPost {
   faqs?: { question: string; answer: string }[];
 }
 
-export function getBlogPosts(): MarkdownBlogPost[] {
+export function getBlogPosts(lang: string = "en"): MarkdownBlogPost[] {
+  const dirPath = path.join(blogsDirectory, lang);
+
   // Ensure directory exists
-  if (!fs.existsSync(blogsDirectory)) {
+  if (!fs.existsSync(dirPath)) {
     return [];
   }
 
-  const fileNames = fs.readdirSync(blogsDirectory);
+  const fileNames = fs.readdirSync(dirPath);
   const allPostsData = fileNames
     .filter((fileName) => fileName.endsWith(".md"))
     .map((fileName) => {
       const slug = fileName.replace(/\.md$/, "");
-      const fullPath = path.join(blogsDirectory, fileName);
+      const fullPath = path.join(dirPath, fileName);
       const fileContents = fs.readFileSync(fullPath, "utf8");
 
       const { data, content } = matter(fileContents);
@@ -53,9 +55,9 @@ export function getBlogPosts(): MarkdownBlogPost[] {
   );
 }
 
-export function getBlogPostBySlug(slug: string): MarkdownBlogPost | null {
+export function getBlogPostBySlug(slug: string, lang: string = "en"): MarkdownBlogPost | null {
   try {
-    const fullPath = path.join(blogsDirectory, `${slug}.md`);
+    const fullPath = path.join(blogsDirectory, lang, `${slug}.md`);
     const fileContents = fs.readFileSync(fullPath, "utf8");
     const { data, content } = matter(fileContents);
 
@@ -72,12 +74,12 @@ export function getBlogPostBySlug(slug: string): MarkdownBlogPost | null {
       faqs: data.faqs || [],
     } as MarkdownBlogPost;
   } catch (e) {
-    throw new Error("Blog post not found", { cause: e });
+    throw new Error(`Blog post ${slug} not found in ${lang}`, { cause: e });
   }
 }
 
-export function getBlogCategories(): string[] {
-  const posts = getBlogPosts();
+export function getBlogCategories(lang: string = "en"): string[] {
+  const posts = getBlogPosts(lang);
   const categories = new Set(posts.map((post) => post.category));
   return ["All", ...Array.from(categories)];
 }

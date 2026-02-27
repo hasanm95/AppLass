@@ -1,18 +1,20 @@
-import Link from "next/link";
+
 import { Button } from "@/components/ui/button";
+import { localePath } from "@/i18n/utils";
 
 interface AppCalloutProps {
   appName: "Mindful Guard" | "FOMOgen" | "AppLass";
+  lang?: string;
 }
 
-export function AppCallout({ appName }: AppCalloutProps) {
+export function AppCallout({ appName, lang = "en" }: AppCalloutProps) {
   const data = {
     "Mindful Guard": {
       title: "Mindful Guard",
       sub: "Built for Focus.",
       desc: "Reclaim your digital focus with logical guardrails.",
       href: "/apps/mindful-guard",
-      color: "bg-[#7C3AED]",
+      color: "bg-[#10B981]",
     },
     FOMOgen: {
       title: "FOMOgen",
@@ -31,7 +33,7 @@ export function AppCallout({ appName }: AppCalloutProps) {
   }[appName];
 
   return (
-    <div className="group relative overflow-hidden rounded-[2rem] border border-slate-900 bg-white p-8">
+    <div className="group relative overflow-hidden rounded-4xl border border-slate-900 bg-white p-8">
       <div
         className={`absolute top-0 right-0 h-24 w-24 ${data.color} translate-x-12 -translate-y-12 rounded-full opacity-[0.03] blur-2xl transition-opacity group-hover:opacity-[0.1]`}
       />
@@ -51,7 +53,7 @@ export function AppCallout({ appName }: AppCalloutProps) {
         className={`w-full ${data.color} h-12 rounded-xl font-bold text-white`}
         asChild
       >
-        <Link href={data.href}>Learn More</Link>
+        <a href={localePath(lang, data.href)}>Learn More</a>
       </Button>
     </div>
   );

@@ -18,7 +18,13 @@ const ICON_MAP: Record<string, LucideIcon> = {
   Play,
 };
 
-export function FeatureGrid() {
+interface FeatureGridProps {
+  translations?: any[];
+}
+
+export function FeatureGrid({ translations }: FeatureGridProps) {
+  const features = translations && translations.length > 0 ? translations : SCREENVEIL_DATA.features;
+
   return (
     <Section id="features" className="relative bg-black py-24 md:py-32">
       <div className="section-container relative z-10">
@@ -34,13 +40,14 @@ export function FeatureGrid() {
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {SCREENVEIL_DATA.features.map((feature, idx) => {
-            const Icon = ICON_MAP[feature.iconName] || HelpCircle;
+          {features.map((feature: any, idx: number) => {
+            const originalFeature = SCREENVEIL_DATA.features[idx] || {};
+            const Icon = ICON_MAP[originalFeature.iconName || ""] || HelpCircle;
 
             return (
               <div
                 key={idx}
-                className={`group relative overflow-hidden rounded-3xl border border-green-500/10 bg-gradient-to-br from-slate-900/80 to-black p-8 transition-all duration-500 hover:border-green-500/30 hover:shadow-2xl hover:shadow-green-500/5 ${
+                className={`group relative overflow-hidden rounded-3xl border border-green-500/10 bg-linear-to-br from-slate-900/80 to-black p-8 transition-all duration-500 hover:border-green-500/30 hover:shadow-2xl hover:shadow-green-500/5 ${
                   idx === 0 ? "md:col-span-2 lg:col-span-1" : ""
                 }`}
               >

@@ -1,0 +1,14 @@
+---
+import { comparisons } from "@/lib/compare";
+import CompareDetailPage from "@/page-templates/CompareDetailPage.astro";
+
+export async function getStaticPaths() {
+  return comparisons.map((c) => ({
+    params: { slug: c.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+---
+
+<CompareDetailPage lang="en" slug={slug!} />
