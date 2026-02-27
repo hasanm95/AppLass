@@ -1,0 +1,70 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar, Footer } from "@/components/common";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { i18nConfig } from "@/i18n/config";
+
+interface Props {
+  lang: typeof i18nConfig.locales[number];
+}
+
+const { lang } = Astro.props;
+const dict = await getDictionary(lang as any);
+---
+
+<Layout 
+  title={(dict as any).notFound?.title || "404 Not Found | AppLass"}
+  description={(dict as any).notFound?.description || "Logical Vector Unavailable."}
+  lang={lang}
+  ogTitle={(dict as any).notFound?.title}
+  ogDescription={(dict as any).notFound?.description}
+>
+  <Navbar client:load translations={dict.nav} currentLang={lang} />
+  
+  <main class="grow flex flex-col items-center justify-center min-h-[70vh] px-4 pt-24 pb-16 text-center bg-slate-950">
+    <div class="animate-fade-in-up max-w-2xl mx-auto flex flex-col items-center relative z-10 w-full">
+      <div class="inline-block px-3 py-1 mb-6 text-xs font-semibold tracking-wider text-white/70 uppercase border border-white/10 rounded-full bg-white/5 backdrop-blur-sm">
+        {(dict as any).notFound?.headline || "404"}
+      </div>
+      
+      <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-6">
+        {(dict as any).notFound?.headline || "404"}
+        <span class="block text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-indigo-500 mt-2">
+          {(dict as any).notFound?.headlineAccent || "Logical Error."}
+        </span>
+      </h1>
+      
+      <p class="text-xl text-neutral-400 mb-10 max-w-lg mx-auto leading-relaxed">
+        {(dict as any).notFound?.subheadline || "The requested vector could not be resolved."}
+      </p>
+      
+      <a 
+        href={`/${lang === i18nConfig.defaultLocale ? '' : lang}`}
+        class="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white transition-all duration-200 bg-white/10 border border-white/20 rounded-full hover:bg-white/20 hover:scale-105 active:scale-95 group"
+      >
+        <span>{(dict as any).notFound?.backToHome || "Return to System Core"}</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2 transition-transform duration-200 group-hover:-translate-x-1" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+        </svg>
+      </a>
+      
+      {/* Visual Tech Element */}
+      <div class="mt-16 opacity-30 select-none hidden md:block w-full max-w-md mx-auto">
+        <div class="font-mono text-xs text-left text-blue-300/50 bg-black/40 p-4 rounded-lg border border-white/5 mx-auto">
+          <div class="text-red-400/70 mb-1">> FATAL: Vector resolving failed.</div>
+          <div class="mb-1">> Attempting recursive loop... [FAILED]</div>
+          <div class="mb-1">> System memory core purged.</div>
+          <div>> Process terminated with exit code 404.</div>
+        </div>
+      </div>
+    </div>
+    
+    {/* Minimalist Background Gradients */}
+    <div class="absolute inset-0 overflow-hidden pointer-events-none -z-10">
+      <div class="absolute -top-[20%] -right-[10%] w-[50%] h-[50%] rounded-full bg-blue-900/10 blur-[120px]"></div>
+      <div class="absolute -bottom-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-indigo-900/10 blur-[120px]"></div>
+    </div>
+  </main>
+
+  <Footer translations={dict.footer} />
+</Layout>

@@ -2,7 +2,6 @@
 import Layout from '../layouts/Layout.astro';
 import { Navbar, Footer } from "@/components/common";
 import { PricingSection } from "@/components/apps/fomogen/PricingSection";
-import { FAQRegistrySection } from "@/components/common/FAQRegistrySection";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { i18nConfig } from "@/i18n/config";
 
@@ -29,14 +28,8 @@ const meta = dict.metadata?.fomogenPricing || {};
   <div class="bg-white">
     <Navbar client:load translations={dict.nav} currentLang={lang} />
     
-    <div class="pt-32 pb-16">
+    <div class="pt-32 pb-0">
       <PricingSection client:idle translations={dict.fomogen?.pricing} />
-      <FAQRegistrySection
-        client:idle
-        registryKey="FOMOGEN"
-        variant="centered"
-        className="bg-slate-50 py-24"
-      />
     </div>
 
     <Footer translations={dict.footer} />
