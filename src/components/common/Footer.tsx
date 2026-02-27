@@ -12,6 +12,8 @@ function getFooterLinks(lang: string) {
     resources: [
       { slug: "ourEcosystem", label: "Our Ecosystem", href: localePath(lang, '/apps') },
       { slug: "documentation", label: "Documentation", href: localePath(lang, '/docs') },
+      { slug: "digitalWellness", label: "Digital Wellness 2026", href: localePath(lang, '/digital-wellness-2026-guide') },
+      { slug: "ecommercePerformance", label: "Ecommerce Performance 2026", href: localePath(lang, '/ecommerce-performance-2026-benchmarks') },
       { slug: "theMethodology", label: "The Methodology", href: localePath(lang, '/about') },
       { slug: "theLogicLab", label: "The Logic Lab (Blog)", href: localePath(lang, '/blog') },
     ],

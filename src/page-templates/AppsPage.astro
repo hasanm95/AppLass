@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import { Navbar, Footer } from "@/components/common";
 import { Button } from "@/components/ui/button";
+import { LinkButton } from "@/components/ui/link-button";
 import { PRODUCTS } from "@/constants/home-data";
 import { Section } from "@/components/common/Section";
 import { getDictionary } from "@/i18n/get-dictionary";
@@ -90,16 +91,12 @@ const meta = dict.metadata?.apps || {};
                     </p>
 
                     <div class="mt-auto">
-                      <Button
-                        asChild
+                      <LinkButton
+                        href={localePath(lang, `/apps/${product.id === "mindful" ? "mindful-guard" : product.id}`)}
                         className="h-14 w-full rounded-2xl bg-slate-900 text-lg font-bold text-white transition-all hover:bg-blue-600"
                       >
-                        <a
-                          href={localePath(lang, `/apps/${product.id === "mindful" ? "mindful-guard" : product.id}`)}
-                        >
-                          {dict.apps?.viewDetails || "View Product Details"}
-                        </a>
-                      </Button>
+                        {dict.apps?.viewDetails || "View Product Details"}
+                      </LinkButton>
                     </div>
                   </div>
                 </div>
