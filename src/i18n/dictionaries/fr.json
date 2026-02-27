@@ -645,8 +645,13 @@
       "title": "Documentation | Systèmes Logiques AppLass",
       "description": "Références d’ingénierie et guides de déploiement pour l’écosystème AppLass."
     }
+  },
+  "notFound": {
+    "title": "404 Page Inconnue | AppLass",
+    "description": "Le vecteur demandé n’a pas pu être résolu dans le domaine logique AppLass.",
+    "headline": "404",
+    "headlineAccent": "Erreur Logique.",
+    "subheadline": "Le vecteur demandé n’a pas pu être résolu. La ressource cible a été déplacée ou n’a jamais existé.",
+    "backToHome": "Retour au système central"
   }
-
-
-
 }

@@ -320,6 +320,14 @@
     "legalFomogenTerms": {
       "title": "Terms of Service - FOMOGEN",
       "description": "Terms of Service for FOMOGEN Shopify App."
+    },
+    "notFound": {
+      "title": "404 Not Found | AppLass",
+      "description": "The requested vector could not be resolved in the AppLass logical domain.",
+      "headline": "404",
+      "headlineAccent": "Logical Error.",
+      "subheadline": "The requested vector could not be resolved. The target resource has either been moved or never existed.",
+      "backToHome": "Return to System Core"
     }
   },
   "fomogen": {
