@@ -2,6 +2,9 @@
 import Layout from '../layouts/Layout.astro';
 import { getImage } from 'astro:assets';
 import appLogoImg from '@/assets/logo.png';
+import fomogenFeatureImg from '@/assets/apps/fomogen-feature.png';
+import mindfulGuardFeatureImg from '@/assets/apps/mindful-guard-feature.png';
+import screenveilFeatureImg from '@/assets/apps/screenveil-feature.png';
 import { Navbar, Footer } from "@/components/common";
 import { Button } from "@/components/ui/button";
 import { LinkButton } from "@/components/ui/link-button";
@@ -20,6 +23,15 @@ const dict = await getDictionary(lang as any);
 
 const meta = dict.metadata?.apps || {};
 const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
+const optimizedFomogen = await getImage({ src: fomogenFeatureImg, format: 'webp' });
+const optimizedMindful = await getImage({ src: mindfulGuardFeatureImg, format: 'webp' });
+const optimizedScreenveil = await getImage({ src: screenveilFeatureImg, format: 'webp' });
+
+const optimizedImages: Record<string, string> = {
+  fomogen: optimizedFomogen.src,
+  mindful: optimizedMindful.src,
+  screenveil: optimizedScreenveil.src,
+};
 
 ---
 
@@ -63,7 +75,7 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
                 >
                   <div class="aspect-video overflow-hidden bg-slate-50 relative">
                     <img
-                      src={product.image}
+                      src={optimizedImages[product.id] || optimizedScreenveil.src}
                       alt={`${translation?.name || product.name} - ${translation?.tagline || product.tagline}`}
                       width={800}
                       height={450}
