@@ -48,6 +48,15 @@ const optimizedOgImage = ogImage || (await getImage({ src: logoImage, format: 'w
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="apple-touch-icon" href={new URL(optimizedOgImage, Astro.site).href} />
 
+    <!-- Preload Fonts to prevent CLS -->
+    <link rel="preload" href="/fonts/ibm-plex-sans-v23-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/ibm-plex-sans-v23-latin-500.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/ibm-plex-sans-v23-latin-600.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/ibm-plex-sans-v23-latin-700.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/jetbrains-mono-v24-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/jetbrains-mono-v24-latin-600.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/jetbrains-mono-v24-latin-700.woff2" as="font" type="font/woff2" crossorigin />
+
     <!-- Canonical URL -->
     <link rel="canonical" href={`https://applass.com${Astro.url.pathname}`} />
 
