@@ -86,8 +86,8 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
             },
             featureList:
               "Social Proof Notifications, Stock Countdown Timer, Sticky Add-to-Cart, Free Shipping Bar",
-            screenshot: new URL(optimizedHero.src, Astro.site).toString(),
-            image: new URL((await getImage({ src: import('@/assets/apps/fomogen-feature.png') as any, format: 'webp' })).src, Astro.site).toString(),
+            screenshot: "https://applass.com/fomogen-screenshot.png",
+            image: "https://applass.com/fomogen-feature.png",
             description:
               "FOMO Gen is an all-in-one Shopify app for social proof, urgency, and trust signals.",
             author: {
