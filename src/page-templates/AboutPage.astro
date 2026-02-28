@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import { getImage } from 'astro:assets';
 import appLogoImg from '@/assets/logo.png';
-import { Navbar, Footer } from "@/components/common";
+import { Navbar, Footer, SubpageHero } from "@/components/common";
 import { Section } from "@/components/common/Section";
 import { PILLARS } from "@/constants/home-data";
 import {
@@ -50,19 +50,13 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
     <Navbar client:load translations={dict.nav} currentLang={lang}  logoSrc={optimizedAppLogo.src} />
     <div class="pt-32">
       {/* Hero Methodology Section */}
-      <Section className="bg-iridescent border-b border-slate-100 py-20 lg:py-32" client:load>
-        <div class="section-container text-center lg:text-left">
-          <span class="mb-6 block text-[10px] font-black tracking-[0.2em] text-blue-800 uppercase">
-            {dict.about?.hero?.eyebrow || "The AppLass Methodology"}
-          </span>
-          <h1 class="text-display mx-auto mb-8 max-w-4xl text-slate-900 lg:mx-0">
-            {dict.about?.hero?.headline || "The"} <span class="text-slate-300">{dict.about?.hero?.headlineAccent || "Methodology."}</span>
-          </h1>
-          <p class="mx-auto max-w-2xl text-xl leading-relaxed font-medium text-slate-500 lg:mx-0">
-            {dict.about?.hero?.description || "At AppLass, we bridge the gap between complex mathematics and human-centric software. From high-conversion Shopify tools to mindful mobile utilities, we build the 'Next Wave' of digital performance—zero bloat, maximum impact."}
-          </p>
-        </div>
-      </Section>
+      <SubpageHero
+        eyebrow={dict.about?.hero?.eyebrow || "The AppLass Methodology"}
+        headline={dict.about?.hero?.headline || "The"}
+        headlineAccent={dict.about?.hero?.headlineAccent || "Methodology."}
+        description={dict.about?.hero?.description || "At AppLass, we bridge the gap between complex mathematics and human-centric software. From high-conversion Shopify tools to mindful mobile utilities, we build the 'Next Wave' of digital performance—zero bloat, maximum impact."}
+        client:load
+      />
 
       {/* Founder Bio - E-E-A-T Signal */}
       <Section className="py-32" client:load>

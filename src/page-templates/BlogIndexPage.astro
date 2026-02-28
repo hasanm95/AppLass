@@ -2,8 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import { getImage } from 'astro:assets';
 import appLogoImg from '@/assets/logo.png';
-import { Navbar, Footer } from "@/components/common";
-import { BlogHero } from "@/components/blog/BlogHero";
+import { Navbar, Footer, SubpageHero } from "@/components/common";
 import { BlogCard } from "@/components/blog/BlogCard";
 import { getBlogPosts, getBlogCategories } from "@/lib/blog";
 import { getDictionary } from "@/i18n/get-dictionary";
@@ -40,7 +39,15 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
 >
   <Navbar client:load translations={dict.nav} currentLang={lang}  logoSrc={optimizedAppLogo.src} />
   <div class="flex-1 bg-white pt-20">
-    <BlogHero client:load />
+    <SubpageHero
+      eyebrow="The Logic Lab"
+      headline="Insights for the"
+      headlineAccent="Modern Engineer."
+      description="Deep dives into software engineering, mathematics, and digital productivity. We explore the systems that drive successful founders."
+      centered
+      bgClassName="bg-white"
+      client:load
+    />
     <section class="section border-y border-slate-100/50 bg-[#FAFBFD] py-24">
       <div class="section-container">
         <div class="mb-16 flex flex-wrap gap-4">
