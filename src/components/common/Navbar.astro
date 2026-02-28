@@ -1,0 +1,177 @@
+---
+import { cn } from "@/lib/utils";
+import { localePath } from "@/i18n/utils";
+import type { Dictionary } from "@/i18n/get-dictionary";
+
+// Import the interactive islands
+import { MobileMenuToggle } from "./MobileMenuToggle";
+import { LanguageToggle } from "./LanguageToggle";
+
+import { Image } from 'astro:assets';
+import appLogoImg from '@/assets/logo.png';
+
+interface Props {
+  variant?: "light" | "dark";
+  translations?: Dictionary["nav"];
+  currentLang?: string;
+  className?: string;
+}
+
+const {
+  variant = "light",
+  translations,
+  currentLang = "en",
+  className,
+} = Astro.props;
+
+const isDark = variant === "dark";
+
+// Check if slots are provided
+const hasCustomBranding = Astro.slots.has('customBranding');
+const hasCustomCTA = Astro.slots.has('customCTA');
+
+// We can render the customCTA slot to HTML if we need to pass it to React
+const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : undefined;
+---
+
+<header
+  id="navbar-header"
+  role="banner"
+  class={cn(
+    "fixed top-0 right-0 left-0 z-50 transition-all duration-700 bg-transparent py-8",
+    className
+  )}
+>
+  <nav
+    role="navigation"
+    aria-label="Main navigation"
+    class="section-container"
+  >
+    <div class="flex items-center justify-between">
+      {/* Logo / Custom Branding */}
+      <div class="flex items-center gap-6">
+        <a
+          id="navbar-logo"
+          href={localePath(currentLang, '/')}
+          class="group flex items-center gap-2 px-2"
+        >
+          <Image
+            src={appLogoImg}
+            alt="AppLass Logo"
+            width={32}
+            height={32}
+            format="webp"
+            class="h-8 w-8 rounded-lg object-contain"
+          />
+          {!hasCustomBranding && (
+            <span
+              class={cn(
+                "text-xl font-bold tracking-tight",
+                isDark ? "text-white" : "text-slate-900"
+              )}
+            >
+              AppLass
+            </span>
+          )}
+        </a>
+
+        {hasCustomBranding && (
+          <div
+            class={cn(
+              "hidden h-6 w-px md:block",
+              isDark ? "bg-white/10" : "bg-slate-200"
+            )}
+          />
+        )}
+
+        {hasCustomBranding && (
+          <div class="flex items-center"><slot name="customBranding" /></div>
+        )}
+      </div>
+
+      {/* Navigation Links (Desktop) */}
+      {!hasCustomBranding && translations && (
+        <div class="hidden items-center gap-10 md:flex">
+          <a href={localePath(currentLang, '/')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
+            {translations.home}
+          </a>
+          <a href={localePath(currentLang, '/about')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
+            {translations.about}
+          </a>
+          <a href={localePath(currentLang, '/apps')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
+            {translations.ecosystem}
+          </a>
+          <a href={localePath(currentLang, '/docs')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
+            {translations.docs}
+          </a>
+          <a href={localePath(currentLang, '/blog')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
+            {translations.blog}
+          </a>
+        </div>
+      )}
+
+      {/* CTA & Mobile Toggle */}
+      <div class="flex items-center gap-3 md:gap-4">
+        {/* Language Switcher Trigger (Interactive UI) */}
+        <LanguageToggle client:load isDark={isDark} currentLang={currentLang} />
+
+        <div class="hidden md:block">
+          {hasCustomCTA ? (
+            <slot name="customCTA" />
+          ) : (
+            <a 
+              id="nav-cta" 
+              href={localePath(currentLang, '/about')}
+              class={cn(
+                "inline-flex h-10 items-center justify-center rounded-xl px-6 text-sm font-semibold transition-all",
+                isDark
+                  ? "bg-white text-slate-900 hover:bg-slate-100"
+                  : "bg-slate-900 text-white hover:bg-slate-800"
+              )}
+            >
+              {translations?.getInTouch || "Get in Touch"}
+            </a>
+          )}
+        </div>
+
+        {/* Mobile Toggle Button (Interactive UI) */}
+        <MobileMenuToggle 
+          client:load 
+          isDark={isDark} 
+          currentLang={currentLang} 
+          translations={translations}
+          hasCustomBranding={hasCustomBranding}
+          customCTAHtml={customCTAHtml}
+        />
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script define:vars={{ isDark }}>
+  // Inline script runs automatically when injected into HTML
+  const header = document.getElementById('navbar-header');
+  
+  if (header) {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 10;
+      if (isScrolled) {
+        header.classList.remove('bg-transparent', 'py-8');
+        header.classList.add('py-4', 'shadow-2xl', 'backdrop-blur-xl');
+        if (isDark) {
+          header.classList.add('border-white/10', 'bg-[#020617]/80');
+        } else {
+          header.classList.add('border-slate-200/20', 'bg-white/80');
+        }
+      } else {
+        header.classList.add('bg-transparent', 'py-8');
+        header.classList.remove('py-4', 'shadow-2xl', 'backdrop-blur-xl', 'border-white/10', 'bg-[#020617]/80', 'border-slate-200/20', 'bg-white/80');
+      }
+    };
+    
+    // Initial check in case of mid-page reload
+    handleScroll();
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+  }
+</script>

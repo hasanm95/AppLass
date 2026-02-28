@@ -2,7 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import { getImage } from 'astro:assets';
 import appLogoImg from '@/assets/logo.png';
-import { Navbar, Footer, SubpageHero } from "@/components/common";
+import { Footer, SubpageHero } from "@/components/common";
+import Navbar from "@/components/common/Navbar.astro";
 import { BlogCard } from "@/components/blog/BlogCard";
 import { getBlogPosts, getBlogCategories } from "@/lib/blog";
 import { getDictionary } from "@/i18n/get-dictionary";
@@ -37,7 +38,7 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
   ogUrl={meta.ogUrl}
   lang={lang}
 >
-  <Navbar client:load translations={dict.nav} currentLang={lang}  logoSrc={optimizedAppLogo.src} />
+  <Navbar translations={dict.nav} currentLang={lang}  />
   <div class="flex-1 bg-white pt-20">
     <SubpageHero
       eyebrow="The Logic Lab"

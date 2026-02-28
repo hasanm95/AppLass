@@ -2,7 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import { getImage } from 'astro:assets';
 import appLogoImg from '@/assets/logo.png';
-import { Navbar, Footer } from "@/components/common";
+import { Footer } from "@/components/common";
+import Navbar from "@/components/common/Navbar.astro";
 import { MindfulHero } from "@/components/apps/mindful-guard/MindfulHero";
 import { LogicSection } from "@/components/apps/mindful-guard/LogicSection";
 import { DifferentiatorsSection } from "@/components/apps/mindful-guard/DifferentiatorsSection";
@@ -34,7 +35,7 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
   ogUrl={meta.ogUrl}
   lang={lang}
 >
-  <Navbar client:load translations={dict.nav} currentLang={lang}  logoSrc={optimizedAppLogo.src} />
+  <Navbar translations={dict.nav} currentLang={lang}  />
   {/* SoftwareApplication Schema for SEO - Critical for Google to display app details */}
   <script
     type="application/ld+json"
@@ -43,7 +44,7 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
   />
   <div class="flex-1">
     {/* Section 1: The Hero (Above the Fold) */}
-    <MindfulHero client:load translations={dict.mindfulGuard?.hero} />
+    <MindfulHero translations={dict.mindfulGuard?.hero} />
 
     {/* Section 2: The Logic (The "Why" - AI Optimization) */}
     <LogicSection client:idle translations={dict.mindfulGuard?.logic} />

@@ -2,7 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import { getImage } from 'astro:assets';
 import appLogoImg from '@/assets/logo.png';
-import { Navbar, Footer } from "@/components/common";
+import { Footer } from "@/components/common";
+import Navbar from "@/components/common/Navbar.astro";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { i18nConfig } from "@/i18n/config";
 
@@ -23,7 +24,7 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
   ogTitle={(dict as any).notFound?.title}
   ogDescription={(dict as any).notFound?.description}
 >
-  <Navbar client:load translations={dict.nav} currentLang={lang}  logoSrc={optimizedAppLogo.src} />
+  <Navbar translations={dict.nav} currentLang={lang}  />
   
   <main class="grow flex flex-col items-center justify-center min-h-[70vh] px-4 pt-24 pb-16 text-center bg-slate-950">
     <div class="animate-fade-in-up max-w-2xl mx-auto flex flex-col items-center relative z-10 w-full">

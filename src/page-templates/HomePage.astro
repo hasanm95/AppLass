@@ -1,7 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import appLogoImg from '@/assets/logo.png';
-import { Navbar, Footer } from "@/components/common";
+import { Footer } from "@/components/common";
+import Navbar from "@/components/common/Navbar.astro";
 import {
   Hero,
   SocialProof,
@@ -50,8 +51,8 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
   ogUrl={meta.ogUrl}
   lang={lang}
 >
-  <Navbar client:load translations={dict.nav} currentLang={lang}  logoSrc={optimizedAppLogo.src} />
-  <Hero client:load translations={dict.home?.hero} />
+  <Navbar translations={dict.nav} currentLang={lang}  />
+  <Hero translations={dict.home?.hero} />
   <SocialProof client:idle translations={dict.home?.socialProof} />
   <ProductShowcase client:idle translations={dict.home?.productShowcase} products={dict.products} productImages={productImages} />
   <FoundersMoat client:idle translations={dict.home?.foundersMoat} pillars={dict.pillars} />

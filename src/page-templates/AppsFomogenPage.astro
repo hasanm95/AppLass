@@ -1,7 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import appLogoImg from '@/assets/logo.png';
-import { Navbar, Footer } from "@/components/common";
+import { Footer } from "@/components/common";
+import Navbar from "@/components/common/Navbar.astro";
 import { FomoGenHero } from "@/components/apps/fomogen/FomoGenHero";
 import { SpeedBenefitSection } from "@/components/apps/fomogen/SpeedBenefitSection";
 import { CoreFeatures } from "@/components/apps/fomogen/CoreFeatures";
@@ -57,7 +58,7 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
   lang={lang}
 >
   <div class="bg-white">
-    <Navbar client:load translations={dict.nav} currentLang={lang}  logoSrc={optimizedAppLogo.src} />
+    <Navbar translations={dict.nav} currentLang={lang}  />
 
     <script
       type="application/ld+json"
@@ -119,7 +120,7 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
     />
 
     <div class="flex-1 overflow-x-hidden">
-      <FomoGenHero client:load translations={dict.fomogen?.hero} heroImageSrc={optimizedHero.src} />
+      <FomoGenHero translations={dict.fomogen?.hero} heroImageSrc={optimizedHero.src} />
       <SpeedBenefitSection client:idle translations={dict.fomogen?.speedBenefit} />
       <CoreFeatures client:idle translations={featuresData} />
       <TestimonialsSection client:idle translations={dict.fomogen?.testimonials} />
