@@ -32,6 +32,7 @@ const { Content } = await render(post.entry);
 const title = `${post.title} | AppLass Blog`;
 const description = post.excerpt;
 
+const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
@@ -48,7 +49,7 @@ const jsonLd = {
     name: "AppLass",
     logo: {
       "@type": "ImageObject",
-      url: "https://applass.com/logo.png",
+      url: new URL(optimizedAppLogo.src, Astro.site).href,
     },
   },
   mainEntityOfPage: {
@@ -56,7 +57,7 @@ const jsonLd = {
     "@id": `https://applass.com/${lang}/blog/${slug}`,
   },
 };
-const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
+
 
 ---
 

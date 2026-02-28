@@ -48,7 +48,7 @@ const optimizedOgImage = ogImage || (await getImage({ src: logoImage, format: 'w
     <meta name="theme-color" content="#020617" />
 
     <link rel="icon" href="/favicon.ico" sizes="any" />
-    <link rel="apple-touch-icon" href="/logo.png" />
+    <link rel="apple-touch-icon" href={new URL(optimizedOgImage, Astro.site).href} />
 
     <!-- Canonical URL -->
     <link rel="canonical" href={`https://applass.com${Astro.url.pathname}`} />
@@ -116,7 +116,7 @@ const optimizedOgImage = ogImage || (await getImage({ src: logoImage, format: 'w
             "@id": "https://applass.com/#organization",
             "name": "AppLass",
             "url": "https://applass.com",
-            "logo": "https://applass.com/logo.png",
+            "logo": new URL(optimizedOgImage, Astro.site).href,
             "description": "Logic-driven software studio building high-performance apps with mathematical precision. Creators of ScreenVeil (10K+ downloads, 4.4★), FomoGen, and Mindful Guard.",
             "foundingDate": "2019",
             "sameAs": []
