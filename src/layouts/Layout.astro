@@ -1,9 +1,8 @@
 ---
 import { getLangFromUrl } from '../i18n/utils';
 import '../globals.css';
+import '../fonts.css';
 import '../tw-animate.css';
-import { ClientRouter } from 'astro:transitions';
-import { i18nConfig } from '@/i18n/config';
 import { getImage } from 'astro:assets';
 import logoImage from '@/assets/logo.png';
 
@@ -21,7 +20,6 @@ interface Props {
 const defaultDescription = "At AppLass, we bridge the gap between complex mathematics and human-centric software. Stop letting bloated software slow down your growth. We build elite-tier Shopify and Mobile tools driven by mathematical precision.";
 const defaultTitle = "AppLass | High-Performance Software Engineering";
 const defaultKeywords = "software studio, Shopify apps, digital wellness, accessibility, WCAG, web development, AppLass";
-const defaultOgImage = "https://applass.com/og-image.png";
 
 const {
   title,
@@ -83,8 +81,6 @@ const optimizedOgImage = ogImage || (await getImage({ src: logoImage, format: 'w
     <meta property="twitter:image" content={ogImage} />
 
     <!-- Fonts -->
-    <link rel="stylesheet" href="/fonts.css" />
-    
     <style is:global>
       :root {
         /* We define font variables here so Tailwind can pick them up if configured */
