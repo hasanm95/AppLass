@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getImage } from 'astro:assets';
+import appLogoImg from '@/assets/logo.png';
 import { Navbar, Footer } from "@/components/common";
 import { AppCallout } from "@/components/blog/AppCallout";
 import { ShareArticle } from "@/components/blog/ShareArticle";
@@ -8,7 +10,7 @@ import { FAQSchema } from "@/components/common/FAQSchema";
 import { getBlogPostBySlug } from "@/lib/blog";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { i18nConfig } from "@/i18n/config";
-import { marked } from "marked";
+import { render } from "astro:content";
 import { ArrowLeft } from "lucide-react";
 import { localePath } from "@/i18n/utils";
 
@@ -19,22 +21,23 @@ interface Props {
 
 const { lang, slug } = Astro.props;
 const dict = await getDictionary(lang as any);
-const post = getBlogPostBySlug(slug as string, lang as string);
+const post = await getBlogPostBySlug(slug as string, lang as string);
 
-if (!post) {
+if (!post || !post.entry) {
   return Astro.redirect('/404');
 }
 
+const { Content } = await render(post.entry);
+
 const title = `${post.title} | AppLass Blog`;
 const description = post.excerpt;
-const parsedContent = marked.parse(post.content || "");
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   headline: post.title,
   description: post.excerpt,
-  image: post.thumbnail,
+  image: typeof post.thumbnail === 'object' ? post.thumbnail.src : post.thumbnail,
   datePublished: post.date,
   author: {
     "@type": "Person",
@@ -53,6 +56,8 @@ const jsonLd = {
     "@id": `https://applass.com/${lang}/blog/${slug}`,
   },
 };
+const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
+
 ---
 
 <Layout title={title} description={description} lang={lang}>
@@ -67,7 +72,7 @@ const jsonLd = {
     />
   )}
   <ReadingProgressBar client:load />
-  <Navbar client:load translations={dict.nav} currentLang={lang} />
+  <Navbar client:load translations={dict.nav} currentLang={lang}  logoSrc={optimizedAppLogo.src} />
   
   <div class="flex-1 bg-white pt-20">
     <header class="bg-iridescent relative border-b border-slate-100 pt-20 pb-15 lg:py-32">
@@ -119,8 +124,9 @@ const jsonLd = {
           <article class="lg:w-2/3">
             <div 
               class="prose prose-slate prose-lg prose-headings:font-black prose-headings:tracking-tight prose-headings:text-slate-900 prose-p:text-slate-600 prose-p:leading-relaxed prose-p:font-medium prose-strong:text-slate-900 prose-strong:font-black prose-a:text-blue-600 prose-a:font-bold hover:prose-a:text-blue-700 prose-img:rounded-4xl prose-img:border prose-img:border-slate-100 max-w-none"
-              set:html={parsedContent}
-            />
+            >
+              <Content />
+            </div>
           </article>
 
           <aside class="lg:w-1/3">
@@ -176,5 +182,5 @@ const jsonLd = {
       </section>
     )}
   </div>
-  <Footer translations={dict.footer} />
+  <Footer translations={dict.footer}  logoSrc={optimizedAppLogo.src} />
 </Layout>

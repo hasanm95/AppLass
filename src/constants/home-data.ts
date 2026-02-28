@@ -38,7 +38,7 @@ export const PRODUCTS = [
     color: "green",
     cta: "Download Free",
     ctaLink: "https://play.google.com/store/apps/details?id=com.screenveil.app",
-    image: "/v1/apps/screenveil-feature.png",
+    imageSrc: "screenveil-feature.png",
     featured: true,
   },
   {
@@ -57,7 +57,7 @@ export const PRODUCTS = [
     color: "blue",
     cta: "Add to Shopify",
     ctaLink: "https://apps.shopify.com/fomogen",
-    image: "/v1/apps/fomogen-feature.png",
+    imageSrc: "fomogen-feature.png",
     featured: false,
   },
   {
@@ -76,7 +76,7 @@ export const PRODUCTS = [
     cta: "Get on Play Store",
     ctaLink:
       "https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard",
-    image: "/v1/apps/mindful-guard-feature.png",
+    imageSrc: "mindful-guard-feature.png",
     featured: false,
   },
 ];

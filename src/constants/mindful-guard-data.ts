@@ -112,7 +112,7 @@ export const MINDFUL_GUARD_SCHEMA = {
   ],
   featureList:
     "Zero-Telemetry Privacy, Offline Architecture, Strict Mode, Battery Optimization Exemption",
-  image: "https://applass.com/v1/apps/mindful-guard-feature.png",
+  image: "https://applass.com/mindful-guard-feature.png",
   author: {
     "@type": "Organization",
     name: "AppLass",
@@ -120,5 +120,5 @@ export const MINDFUL_GUARD_SCHEMA = {
   },
   downloadUrl:
     "https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard",
-  screenshot: "https://applass.com/v1/apps/mindful-guard-feature.png",
+  screenshot: "https://applass.com/mindful-guard-feature.png",
 };

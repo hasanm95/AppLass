@@ -2,6 +2,10 @@
 import { getLangFromUrl } from '../i18n/utils';
 import '../globals.css';
 import '../tw-animate.css';
+import { ClientRouter } from 'astro:transitions';
+import { i18nConfig } from '@/i18n/config';
+import { getImage } from 'astro:assets';
+import logoImage from '@/assets/logo.png';
 
 interface Props {
   title?: string;
@@ -19,19 +23,21 @@ const defaultTitle = "AppLass | High-Performance Software Engineering";
 const defaultKeywords = "software studio, Shopify apps, digital wellness, accessibility, WCAG, web development, AppLass";
 const defaultOgImage = "https://applass.com/og-image.png";
 
-const { 
-  title = defaultTitle, 
-  description = defaultDescription,
-  keywords = defaultKeywords,
-  ogTitle = title,
-  ogDescription = description,
-  ogImage = defaultOgImage,
-  ogUrl = "https://applass.com/",
-  lang 
+const {
+  title,
+  description,
+  keywords,
+  ogTitle,
+  ogDescription,
+  ogImage,
+  ogUrl,
+  lang = 'en'
 } = Astro.props;
 
 // Get language from URL if not explicitly provided
 const documentLang = lang || getLangFromUrl(Astro.url);
+
+const optimizedOgImage = ogImage || (await getImage({ src: logoImage, format: 'webp', width: 1200 })).src;
 ---
 
 <!doctype html>
@@ -40,41 +46,39 @@ const documentLang = lang || getLangFromUrl(Astro.url);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#020617" />
-    
+
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="apple-touch-icon" href="/logo.png" />
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href={`https://applass.com${Astro.url.pathname}`} />
-    
+
     <!-- Hreflang for i18n -->
     <link rel="alternate" hreflang="en" href={`https://applass.com${Astro.url.pathname.replace(/^\/(en|fr)/, '/en')}`} />
     <link rel="alternate" hreflang="fr" href={`https://applass.com${Astro.url.pathname.replace(/^\/(en|fr)/, '/fr')}`} />
     <link rel="alternate" hreflang="x-default" href={`https://applass.com${Astro.url.pathname.replace(/^\/(en|fr)/, '/en')}`} />
-    
+
     <!-- Primary Meta Tags -->
-    <title>{title}</title>
-    <meta name="title" content={title} />
-    <meta name="description" content={description} />
-    <meta name="keywords" content={keywords} />
+    <title>{title || defaultTitle}</title>
+    <meta name="title" content={title || defaultTitle} />
+    <meta name="description" content={description || defaultDescription} />
+    <meta name="keywords" content={keywords || defaultKeywords} />
     <meta name="author" content="AppLass" />
     <meta name="robots" content="index, follow" />
     <meta name="generator" content={Astro.generator} />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={ogUrl} />
-    <meta property="og:title" content={ogTitle} />
-    <meta property="og:description" content={ogDescription} />
-    <meta property="og:image" content={ogImage} />
+    <meta property="og:url" content={ogUrl || Astro.url} />
+    <meta property="og:title" content={ogTitle || title || defaultTitle} />
+    <meta property="og:description" content={ogDescription || description || defaultDescription} />
+    <meta property="og:image" content={new URL(optimizedOgImage, Astro.site)} />
     <meta property="og:site_name" content="AppLass" />
     <meta property="og:locale" content={documentLang === 'fr' ? 'fr_FR' : 'en_US'} />
     <meta property="og:locale:alternate" content={documentLang === 'fr' ? 'en_US' : 'fr_FR'} />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={ogUrl} />
-    <meta property="twitter:title" content={ogTitle} />
     <meta property="twitter:description" content={ogDescription} />
     <meta property="twitter:image" content={ogImage} />
 

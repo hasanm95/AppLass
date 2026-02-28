@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Navbar, Footer } from "@/components/common";
+import { getImage } from 'astro:assets';
+import appLogoImg from '@/assets/logo.png';
+import { Navbar, Footer, SubpageHero } from "@/components/common";
 import { Section } from "@/components/common/Section";
 import { comparisons } from "@/lib/compare";
 import { ArrowRight } from "lucide-react";
@@ -16,6 +18,8 @@ const { lang } = Astro.props;
 const dict = await getDictionary(lang as any);
 
 const meta = dict.metadata?.compare || {};
+const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
+
 ---
 
 <Layout 
@@ -29,21 +33,16 @@ const meta = dict.metadata?.compare || {};
   lang={lang}
 >
   <div class="min-h-screen bg-white">
-    <Navbar client:load translations={dict.nav} currentLang={lang} />
+    <Navbar client:load translations={dict.nav} currentLang={lang}  logoSrc={optimizedAppLogo.src} />
     <div class="pt-32">
-      <Section className="bg-iridescent border-b border-slate-100 py-20 lg:py-32" client:load>
-        <div class="section-container">
-          <span class="mb-6 block text-[10px] font-black tracking-[0.2em] text-blue-800 uppercase">
-            {dict.compare?.index?.eyebrow}
-          </span>
-          <h1 class="text-display mb-8 max-w-4xl text-slate-900">
-            {dict.compare?.index?.headline} <span class="text-slate-300">{dict.compare?.index?.headlineAccent}</span>
-          </h1>
-          <p class="max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
-            {dict.compare?.index?.subheadline}
-          </p>
-        </div>
-      </Section>
+      <SubpageHero
+        eyebrow={dict.compare?.index?.eyebrow}
+        headline={dict.compare?.index?.headline}
+        headlineAccent={dict.compare?.index?.headlineAccent}
+        description={dict.compare?.index?.subheadline}
+        centered
+        client:load
+      />
 
       <Section className="py-24" client:load>
         <div class="section-container grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -84,6 +83,6 @@ const meta = dict.metadata?.compare || {};
         </div>
       </Section>
     </div>
-    <Footer translations={dict.footer} />
+    <Footer translations={dict.footer}  logoSrc={optimizedAppLogo.src} />
   </div>
 </Layout>

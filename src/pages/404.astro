@@ -1,0 +1,10 @@
+---
+import NotFoundPage from "@/page-templates/NotFoundPage.astro";
+import { i18nConfig } from "@/i18n/config";
+
+// Astro looks for 404.astro in the root of the src/pages directory for the fallback page.
+// We map it to the default system language.
+const lang = i18nConfig.defaultLocale;
+---
+
+<NotFoundPage lang={lang} />

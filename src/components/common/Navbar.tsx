@@ -14,6 +14,7 @@ interface NavbarProps {
   customCTA?: React.ReactNode;
   translations?: Dictionary["nav"];
   currentLang?: string;
+  logoSrc?: string;
 }
 
 export function Navbar({
@@ -22,6 +23,7 @@ export function Navbar({
   customCTA,
   translations,
   currentLang = "en",
+  logoSrc,
 }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -112,7 +114,7 @@ export function Navbar({
               onClick={() => setIsMenuOpen(false)}
             >
               <img
-                src="/logo.png"
+                src={logoSrc}
                 alt="AppLass Logo"
                 width={32}
                 height={32}

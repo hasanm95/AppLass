@@ -10,7 +10,7 @@ interface FomoGenHeroProps {
   heroImageSrc?: string;
 }
 
-export function FomoGenHero({ translations = FOMOGEN_DATA.hero, heroImageSrc = "/v1/apps/fomogen/comparison-hero.png" }: FomoGenHeroProps) {
+export function FomoGenHero({ translations = FOMOGEN_DATA.hero, heroImageSrc }: FomoGenHeroProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useParallax(containerRef, [

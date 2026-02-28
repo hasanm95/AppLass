@@ -1,7 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Navbar, Footer } from "@/components/common";
-import { BlogHero } from "@/components/blog/BlogHero";
+import { getImage } from 'astro:assets';
+import appLogoImg from '@/assets/logo.png';
+import { Navbar, Footer, SubpageHero } from "@/components/common";
 import { BlogCard } from "@/components/blog/BlogCard";
 import { getBlogPosts, getBlogCategories } from "@/lib/blog";
 import { getDictionary } from "@/i18n/get-dictionary";
@@ -16,13 +17,15 @@ const dict = await getDictionary(lang as any);
 
 const meta = dict.metadata?.blog || {};
 
-const posts = getBlogPosts(lang as string);
-const categories = getBlogCategories(lang as string);
+const posts = await getBlogPosts(lang as string);
+const categories = await getBlogCategories(lang as string);
 
 const featuredPost = posts.find((post: any) => post.featured) || posts[0];
 const otherPosts = posts.filter(
   (post: any) => post.slug !== (featuredPost?.slug || "")
 );
+const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
+
 ---
 <Layout
   title={meta.title || "The Logic Lab | AppLass Blog"}
@@ -34,9 +37,17 @@ const otherPosts = posts.filter(
   ogUrl={meta.ogUrl}
   lang={lang}
 >
-  <Navbar client:load translations={dict.nav} currentLang={lang} />
+  <Navbar client:load translations={dict.nav} currentLang={lang}  logoSrc={optimizedAppLogo.src} />
   <div class="flex-1 bg-white pt-20">
-    <BlogHero client:load />
+    <SubpageHero
+      eyebrow="The Logic Lab"
+      headline="Insights for the"
+      headlineAccent="Modern Engineer."
+      description="Deep dives into software engineering, mathematics, and digital productivity. We explore the systems that drive successful founders."
+      centered
+      bgClassName="bg-white"
+      client:load
+    />
     <section class="section border-y border-slate-100/50 bg-[#FAFBFD] py-24">
       <div class="section-container">
         <div class="mb-16 flex flex-wrap gap-4">
@@ -70,5 +81,5 @@ const otherPosts = posts.filter(
       </div>
     </section>
   </div>
-  <Footer translations={dict.footer} />
+  <Footer translations={dict.footer}  logoSrc={optimizedAppLogo.src} />
 </Layout>

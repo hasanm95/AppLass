@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getImage } from 'astro:assets';
+import appLogoImg from '@/assets/logo.png';
 import { Navbar, Footer } from "@/components/common";
 import { Section } from "@/components/common/Section";
 import { getDictionary } from "@/i18n/get-dictionary";
@@ -16,6 +18,8 @@ interface Props {
 const { lang, title, description, appName, appColor = "blue-600" } = Astro.props;
 const dict = await getDictionary(lang as any);
 const lastUpdated = "February 20, 2026";
+const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
+
 ---
 
 <Layout 
@@ -24,7 +28,7 @@ const lastUpdated = "February 20, 2026";
   lang={lang}
 >
   <div class="flex min-h-screen flex-col bg-white font-sans selection:bg-blue-100 selection:text-blue-900">
-    <Navbar client:load translations={dict.nav} currentLang={lang}>
+    <Navbar client:load translations={dict.nav} currentLang={lang} logoSrc={optimizedAppLogo.src}>
       <div slot="customBranding">
         <slot name="branding" />
       </div>
@@ -54,6 +58,6 @@ const lastUpdated = "February 20, 2026";
       </Section>
     </main>
 
-    <Footer translations={dict.footer} />
+    <Footer translations={dict.footer}  logoSrc={optimizedAppLogo.src} />
   </div>
 </Layout>

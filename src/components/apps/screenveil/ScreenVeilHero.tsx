@@ -11,7 +11,7 @@ interface ScreenVeilHeroProps {
 
 export function ScreenVeilHero({
   translations,
-  heroImageSrc = "/v1/apps/screenveil/hero-mockup.png"
+  heroImageSrc
 }: ScreenVeilHeroProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   

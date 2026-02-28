@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import appLogoImg from '@/assets/logo.png';
 import { Navbar, Footer } from "@/components/common";
 import { FomoGenHero } from "@/components/apps/fomogen/FomoGenHero";
 import { SpeedBenefitSection } from "@/components/apps/fomogen/SpeedBenefitSection";
@@ -41,6 +42,8 @@ const featuresData = (dict.fomogen?.features || []).map((feature: any, idx: numb
     imageSrc: imageMap[idx] || undefined
   };
 });
+const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
+
 ---
 
 <Layout 
@@ -54,7 +57,7 @@ const featuresData = (dict.fomogen?.features || []).map((feature: any, idx: numb
   lang={lang}
 >
   <div class="bg-white">
-    <Navbar client:load translations={dict.nav} currentLang={lang} />
+    <Navbar client:load translations={dict.nav} currentLang={lang}  logoSrc={optimizedAppLogo.src} />
 
     <script
       type="application/ld+json"
@@ -82,9 +85,8 @@ const featuresData = (dict.fomogen?.features || []).map((feature: any, idx: numb
             },
             featureList:
               "Social Proof Notifications, Stock Countdown Timer, Sticky Add-to-Cart, Free Shipping Bar",
-            screenshot:
-              "https://applass.com/v1/apps/fomogen/comparison-hero.png",
-            image: "https://applass.com/v1/apps/fomogen-feature.png",
+            screenshot: new URL(optimizedHero.src, Astro.site).toString(),
+            image: new URL((await getImage({ src: import('@/assets/apps/fomogen-feature.png') as any, format: 'webp' })).src, Astro.site).toString(),
             description:
               "FOMO Gen is an all-in-one Shopify app for social proof, urgency, and trust signals.",
             author: {
@@ -131,6 +133,6 @@ const featuresData = (dict.fomogen?.features || []).map((feature: any, idx: numb
       />
     </div>
 
-    <Footer translations={dict.footer} />
+    <Footer translations={dict.footer}  logoSrc={optimizedAppLogo.src} />
   </div>
 </Layout>

@@ -236,7 +236,7 @@
       "keywords": "shopify social proof, sales pop, countdown timer, stock alert, trust badges, sticky cart",
       "ogTitle": "Boost Your Shopify Sales with FOMO Gen",
       "ogDescription": "The all-in-one app for Sales Popups, Stock Countdowns, Sticky Cart, and Trust Badges. Install for Free today!",
-      "ogImage": "https://applass.com/v1/apps/fomogen-feature.png",
+      "ogImage": "https://applass.com/fomogen-feature.png",
       "ogUrl": "https://applass.com/apps/fomogen"
     },
     "mindfulGuard": {
@@ -245,7 +245,7 @@
       "keywords": "Android app blocker, dopamine detox app, focus timer android, privacy focus tool, stop phone addiction, cognitive firewall, zero telemetry, offline app blocker",
       "ogTitle": "MindfulGuard | Reclaim Your Neural Architecture",
       "ogDescription": "The first Android app blocker engineered for privacy absolutists. 0ms latency. 100% Offline. Zero telemetry.",
-      "ogImage": "https://applass.com/v1/apps/mindful-guard-feature.png",
+      "ogImage": "https://applass.com/mindful-guard-feature.png",
       "ogUrl": "https://applass.com/apps/mindful-guard"
     },
     "screenveil": {
@@ -254,7 +254,7 @@
       "keywords": "black screen video, AMOLED battery saver, screen off playback, YouTube background audio, OLED efficiency, screen overlay utility, android battery saver, screen off youtube",
       "ogTitle": "ScreenVeil: Save 60% Battery with Screen Off Video Playback",
       "ogDescription": "The ultimate AMOLED battery saver. Watch YouTube, Netflix, and podcasts with your screen off. Zero permissions, 100% privacy.",
-      "ogImage": "https://applass.com/v1/apps/screenveil-feature.png",
+      "ogImage": "https://applass.com/screenveil-feature.png",
       "ogUrl": "https://applass.com/apps/screenveil"
     },
     "blog": {
@@ -320,6 +320,14 @@
     "legalFomogenTerms": {
       "title": "Terms of Service - FOMOGEN",
       "description": "Terms of Service for FOMOGEN Shopify App."
+    },
+    "notFound": {
+      "title": "404 Not Found | AppLass",
+      "description": "The requested vector could not be resolved in the AppLass logical domain.",
+      "headline": "404",
+      "headlineAccent": "Logical Error.",
+      "subheadline": "The requested vector could not be resolved. The target resource has either been moved or never existed.",
+      "backToHome": "Return to System Core"
     }
   },
   "fomogen": {
