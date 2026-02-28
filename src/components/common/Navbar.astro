@@ -148,7 +148,7 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
   </nav>
 </header>
 
-<script define:vars={{ isDark }}>
+<script is:inline define:vars={{ isDark }}>
   // Inline script runs automatically when injected into HTML
   const header = document.getElementById('navbar-header');
   

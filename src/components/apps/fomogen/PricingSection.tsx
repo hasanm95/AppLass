@@ -9,7 +9,6 @@ type PricingTranslation = {
 };
 
 export function PricingSection({ translations }: { translations?: PricingTranslation }) {
-  const data = translations || FOMOGEN_DATA.pricing;
   return (
     <Section className="relative bg-white py-24 md:py-32">
       {/* Background Vignette */}

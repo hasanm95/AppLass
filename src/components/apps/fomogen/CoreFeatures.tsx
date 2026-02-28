@@ -42,7 +42,7 @@ export function CoreFeatures({ translations }: { translations?: FeatureTranslati
             const Icon = ICON_MAP[baseFeature.iconName] || HelpCircle;
             const isEven = idx % 2 === 0;
 
-            const finalImageSrc = (feature as any).imageSrc || feature.image || baseFeature.image;
+            const finalImageSrc = (feature as any).imageSrc || (feature as any).image || (baseFeature as any).imageSrc;
 
             return (
               <div

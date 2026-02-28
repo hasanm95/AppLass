@@ -13,10 +13,9 @@ interface Props {
   title: string;
   description?: string;
   appName: string;
-  appColor?: string;
 }
 
-const { lang, title, description, appName, appColor = "blue-600" } = Astro.props;
+const { lang, title, description, appName } = Astro.props;
 const dict = await getDictionary(lang as any);
 const lastUpdated = "February 20, 2026";
 const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });

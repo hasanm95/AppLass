@@ -98,7 +98,7 @@ export function ProductShowcase({ translations, products, productImages = {} }: 
             >
               <div className="relative w-full overflow-hidden rounded-2xl border border-border bg-linear-to-br from-green-50 to-green-100 p-12">
                 <img
-                  src={productImages[featuredDataSource.id] || featuredDataSource.image}
+                  src={productImages[featuredDataSource.id] || (featuredDataSource as any).imageSrc}
                   alt={featuredTranslation?.name || featuredDataSource.name}
                   width={600}
                   height={600}
@@ -143,7 +143,7 @@ export function ProductShowcase({ translations, products, productImages = {} }: 
                 {/* Image */}
                 <div className="mb-6 overflow-hidden rounded-xl border border-border bg-(--muted)/30 p-6">
                   <img
-                    src={productImages[product.id] || product.image}
+                    src={productImages[product.id] || (product as any).imageSrc}
                     alt={translation?.name || product.name}
                     width={600}
                     height={600}
