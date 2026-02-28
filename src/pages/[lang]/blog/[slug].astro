@@ -8,12 +8,14 @@ export async function getStaticPaths() {
     (l) => l !== i18nConfig.defaultLocale
   );
   
-  return nonDefaultLocales.flatMap((lang) => {
-    const posts = getBlogPosts(lang);
+  const paths = await Promise.all(nonDefaultLocales.map(async (lang) => {
+    const posts = await getBlogPosts(lang);
     return posts.map((post: any) => ({
       params: { lang, slug: post.slug },
     }));
-  });
+  }));
+
+  return paths.flat();
 }
 
 const { lang, slug } = Astro.params;

@@ -17,8 +17,8 @@ const dict = await getDictionary(lang as any);
 
 const meta = dict.metadata?.blog || {};
 
-const posts = getBlogPosts(lang as string);
-const categories = getBlogCategories(lang as string);
+const posts = await getBlogPosts(lang as string);
+const categories = await getBlogCategories(lang as string);
 
 const featuredPost = posts.find((post: any) => post.featured) || posts[0];
 const otherPosts = posts.filter(

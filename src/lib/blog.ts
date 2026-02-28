@@ -1,8 +1,4 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-
-const blogsDirectory = path.join(process.cwd(), "blogs");
+import { getCollection, getEntry, type CollectionEntry } from "astro:content";
 
 export interface MarkdownBlogPost {
   slug: string;
@@ -11,75 +7,65 @@ export interface MarkdownBlogPost {
   category: string;
   author: string;
   excerpt: string;
-  thumbnail: string;
+  thumbnail: { src: string; width: number; height: number; format: string } | string;
   content: string;
   featured?: boolean;
   faqs?: { question: string; answer: string }[];
+  entry?: CollectionEntry<'blog'>;
 }
 
-export function getBlogPosts(lang: string = "en"): MarkdownBlogPost[] {
-  const dirPath = path.join(blogsDirectory, lang);
+export async function getBlogPosts(lang: string = "en"): Promise<MarkdownBlogPost[]> {
+  const posts = await getCollection('blog', (entry: CollectionEntry<'blog'>) => entry.id.startsWith(`${lang}/`));
 
-  // Ensure directory exists
-  if (!fs.existsSync(dirPath)) {
-    return [];
-  }
-
-  const fileNames = fs.readdirSync(dirPath);
-  const allPostsData = fileNames
-    .filter((fileName) => fileName.endsWith(".md"))
-    .map((fileName) => {
-      const slug = fileName.replace(/\.md$/, "");
-      const fullPath = path.join(dirPath, fileName);
-      const fileContents = fs.readFileSync(fullPath, "utf8");
-
-      const { data, content } = matter(fileContents);
-
-      return {
-        slug,
-        content,
-        title: data.title,
-        date: data.date,
-        category: data.category,
-        author: data.author,
-        excerpt: data.excerpt,
-        thumbnail: data.thumbnail,
-        featured: data.featured || false,
-        faqs: data.faqs || [],
-      } as MarkdownBlogPost;
-    });
+  const allPostsData = posts.map((post: CollectionEntry<'blog'>) => {
+    const slug = post.id.replace(`${lang}/`, "");
+    return {
+      slug,
+      content: post.body || "",
+      title: post.data.title,
+      date: post.data.date,
+      category: post.data.category,
+      author: post.data.author,
+      excerpt: post.data.excerpt,
+      thumbnail: post.data.thumbnail || "",
+      featured: post.data.featured || false,
+      faqs: post.data.faqs || [],
+      entry: post,
+    } as MarkdownBlogPost;
+  });
 
   // Sort posts by date
-  return allPostsData.sort((a, b) =>
+  return allPostsData.sort((a: MarkdownBlogPost, b: MarkdownBlogPost) =>
     new Date(a.date) < new Date(b.date) ? 1 : -1
   );
 }
 
-export function getBlogPostBySlug(slug: string, lang: string = "en"): MarkdownBlogPost | null {
+export async function getBlogPostBySlug(slug: string, lang: string = "en"): Promise<MarkdownBlogPost | null> {
   try {
-    const fullPath = path.join(blogsDirectory, lang, `${slug}.md`);
-    const fileContents = fs.readFileSync(fullPath, "utf8");
-    const { data, content } = matter(fileContents);
+    const entry = await getEntry('blog', `${lang}/${slug}`);
+    
+    if (!entry) return null;
 
     return {
       slug,
-      content,
-      title: data.title,
-      date: data.date,
-      category: data.category,
-      author: data.author,
-      excerpt: data.excerpt,
-      thumbnail: data.thumbnail,
-      featured: data.featured || false,
-      faqs: data.faqs || [],
+      content: entry.body || "",
+      title: entry.data.title,
+      date: entry.data.date,
+      category: entry.data.category,
+      author: entry.data.author,
+      excerpt: entry.data.excerpt,
+      thumbnail: entry.data.thumbnail || "",
+      featured: entry.data.featured || false,
+      faqs: entry.data.faqs || [],
+      entry,
     } as MarkdownBlogPost;
   } catch (e) {
     throw new Error(`Blog post ${slug} not found in ${lang}`, { cause: e });
   }
 }
 
-export function getBlogCategories(lang: string = "en"): string[] {
-  const posts = getBlogPosts(lang);
+export async function getBlogCategories(lang: string = "en"): Promise<string[]> {
+  const posts = await getBlogPosts(lang);
   const categories = new Set(posts.map((post) => post.category));
   return ["All", ...Array.from(categories)];
 }

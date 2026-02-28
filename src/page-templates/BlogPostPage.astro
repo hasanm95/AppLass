@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import { getImage } from 'astro:assets';
 import appLogoImg from '@/assets/logo.png';
-import { Navbar, Footer, SubpageHero } from "@/components/common";
+import { Navbar, Footer } from "@/components/common";
 import { AppCallout } from "@/components/blog/AppCallout";
 import { ShareArticle } from "@/components/blog/ShareArticle";
 import { ReadingProgressBar } from "@/components/blog/ReadingProgressBar";
@@ -10,7 +10,7 @@ import { FAQSchema } from "@/components/common/FAQSchema";
 import { getBlogPostBySlug } from "@/lib/blog";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { i18nConfig } from "@/i18n/config";
-import { marked } from "marked";
+import { render } from "astro:content";
 import { ArrowLeft } from "lucide-react";
 import { localePath } from "@/i18n/utils";
 
@@ -21,22 +21,23 @@ interface Props {
 
 const { lang, slug } = Astro.props;
 const dict = await getDictionary(lang as any);
-const post = getBlogPostBySlug(slug as string, lang as string);
+const post = await getBlogPostBySlug(slug as string, lang as string);
 
-if (!post) {
+if (!post || !post.entry) {
   return Astro.redirect('/404');
 }
 
+const { Content } = await render(post.entry);
+
 const title = `${post.title} | AppLass Blog`;
 const description = post.excerpt;
-const parsedContent = marked.parse(post.content || "");
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   headline: post.title,
   description: post.excerpt,
-  image: post.thumbnail,
+  image: typeof post.thumbnail === 'object' ? post.thumbnail.src : post.thumbnail,
   datePublished: post.date,
   author: {
     "@type": "Person",
@@ -74,13 +75,8 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
   <Navbar client:load translations={dict.nav} currentLang={lang}  logoSrc={optimizedAppLogo.src} />
   
   <div class="flex-1 bg-white pt-20">
-    <SubpageHero
-      eyebrow={post.category}
-      headline={post.title}
-      headlineClassName="max-w-6xl text-2xl lg:text-8xl leading-[1.2] font-bold"
-      client:load
-    >
-      <div slot="children">
+    <header class="bg-iridescent relative border-b border-slate-100 pt-20 pb-15 lg:py-32">
+      <div class="section-container relative z-10">
         <a
           href={localePath(lang, "/blog")}
           class="mb-12 inline-flex items-center gap-2 text-xs font-black tracking-widest text-blue-800 uppercase transition-transform hover:-translate-x-1"
@@ -98,25 +94,29 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
             {post.date}
           </span>
         </div>
-      </div>
 
-      <div class="mt-10 flex items-center gap-4">
-        <div class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-900 text-xs font-bold text-white">
-          {post.author
-            .split(" ")
-            .map((n) => n[0])
-            .join("")}
-        </div>
-        <div>
-          <p class="text-sm font-black text-slate-900">
-            {post.author}
-          </p>
-          <p class="text-xs font-bold text-slate-500">
-            {lang === 'fr' ? 'Auteur de l\'article' : 'Article Author'}
-          </p>
+        <h1 class="mb-10 max-w-6xl text-2xl leading-[1.2] font-bold text-slate-900 lg:text-8xl">
+          {post.title}
+        </h1>
+
+        <div class="flex items-center gap-4">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-900 text-xs font-bold text-white">
+            {post.author
+              .split(" ")
+              .map((n) => n[0])
+              .join("")}
+          </div>
+          <div>
+            <p class="text-sm font-black text-slate-900">
+              {post.author}
+            </p>
+            <p class="text-xs font-bold text-slate-500">
+              {lang === 'fr' ? 'Auteur de l\'article' : 'Article Author'}
+            </p>
+          </div>
         </div>
       </div>
-    </SubpageHero>
+    </header>
 
     <section class="section group relative py-15 lg:py-24">
       <div class="section-container">
@@ -124,8 +124,9 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
           <article class="lg:w-2/3">
             <div 
               class="prose prose-slate prose-lg prose-headings:font-black prose-headings:tracking-tight prose-headings:text-slate-900 prose-p:text-slate-600 prose-p:leading-relaxed prose-p:font-medium prose-strong:text-slate-900 prose-strong:font-black prose-a:text-blue-600 prose-a:font-bold hover:prose-a:text-blue-700 prose-img:rounded-4xl prose-img:border prose-img:border-slate-100 max-w-none"
-              set:html={parsedContent}
-            />
+            >
+              <Content />
+            </div>
           </article>
 
           <aside class="lg:w-1/3">

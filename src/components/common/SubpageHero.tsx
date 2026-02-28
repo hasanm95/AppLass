@@ -10,7 +10,6 @@ interface SubpageHeroProps {
   className?: string;
   bgClassName?: string;
   headlineClassName?: string;
-  children?: React.ReactNode;
 }
 
 export function SubpageHero({
@@ -22,7 +21,6 @@ export function SubpageHero({
   className,
   bgClassName,
   headlineClassName,
-  children,
 }: SubpageHeroProps) {
   return (
     <Section
@@ -38,7 +36,6 @@ export function SubpageHero({
           centered ? "text-center" : "text-center lg:text-left"
         )}
       >
-        {children && <div className="mb-12">{children}</div>}
         <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-blue-800 uppercase">
           {eyebrow}
         </span>

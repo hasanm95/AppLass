@@ -30,7 +30,7 @@ export function BlogCard({ post, isHero = false, lang = "en" }: BlogCardProps) {
       >
         {post.thumbnail ? (
           <img
-            src={post.thumbnail}
+            src={typeof post.thumbnail === 'object' ? post.thumbnail.src : post.thumbnail}
             alt={post.title}
             className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
