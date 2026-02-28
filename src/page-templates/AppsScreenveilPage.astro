@@ -52,11 +52,11 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
         set:html={JSON.stringify(SCREENVEIL_DATA.schema.softwareApplication)}
       />
       <ScreenVeilHero translations={dict.screenveil?.hero} heroImageSrc={optimizedHero.src} />
-      <PainPointsSection client:idle translations={dict.screenveil?.painPoints} />
-      <FeatureGrid client:idle translations={dict.screenveil?.features} />
-      <TechnicalAdvantage client:idle translations={dict.screenveil?.technical} />
-      <PrivacySection client:idle translations={dict.screenveil?.privacy} />
-      <TestimonialsSection client:idle translations={dict.screenveil?.testimonials} />
+      <PainPointsSection translations={dict.screenveil?.painPoints} />
+      <FeatureGrid translations={dict.screenveil?.features} />
+      <TechnicalAdvantage translations={dict.screenveil?.technical} />
+      <PrivacySection translations={dict.screenveil?.privacy} />
+      <TestimonialsSection translations={dict.screenveil?.testimonials} />
       <FAQSection client:idle />
     </div>
 

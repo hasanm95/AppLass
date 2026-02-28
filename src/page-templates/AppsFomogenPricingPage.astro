@@ -34,7 +34,7 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
     <Navbar translations={dict.nav} currentLang={lang}  />
     
     <div class="pt-32 pb-0">
-      <PricingSection client:idle translations={dict.fomogen?.pricing} />
+      <PricingSection translations={dict.fomogen?.pricing} />
     </div>
 
     <Footer translations={dict.footer}  logoSrc={optimizedAppLogo.src} />

@@ -55,10 +55,9 @@ const optimizedImages: Record<string, string> = {
         headlineAccent={dict.apps?.hero?.headlineAccent || "Ecosystem."}
         description={dict.apps?.hero?.description || "Proprietary systems built with technical discipline and a focus on measurable impact. Every tool is a derivation of logic."}
         centered
-        client:load
       />
 
-      <Section className="py-24" client:load>
+      <Section className="py-24">
         <div class="section-container">
           <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
             {PRODUCTS.map((product) => {

@@ -53,10 +53,10 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
 >
   <Navbar translations={dict.nav} currentLang={lang}  />
   <Hero translations={dict.home?.hero} />
-  <SocialProof client:idle translations={dict.home?.socialProof} />
-  <ProductShowcase client:idle translations={dict.home?.productShowcase} products={dict.products} productImages={productImages} />
-  <FoundersMoat client:idle translations={dict.home?.foundersMoat} pillars={dict.pillars} />
-  <SolutionsSection client:idle translations={dict.home?.solutions} solutions={dict.solutionItems} />
+  <SocialProof translations={dict.home?.socialProof} />
+  <ProductShowcase translations={dict.home?.productShowcase} products={dict.products} productImages={productImages} />
+  <FoundersMoat translations={dict.home?.foundersMoat} pillars={dict.pillars} />
+  <SolutionsSection translations={dict.home?.solutions} solutions={dict.solutionItems} />
   <AnswerNuggets client:idle translations={dict.home?.faq} />
   <Footer translations={dict.footer} logoSrc={optimizedAppLogo.src} />
 </Layout>

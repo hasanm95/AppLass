@@ -42,10 +42,9 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
         headlineAccent={dict.compare?.index?.headlineAccent}
         description={dict.compare?.index?.subheadline}
         centered
-        client:load
       />
 
-      <Section className="py-24" client:load>
+      <Section className="py-24">
         <div class="section-container grid grid-cols-1 gap-8 md:grid-cols-2">
           {comparisons.map((c) => (
             <a

@@ -56,11 +56,10 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
         headline={dict.about?.hero?.headline || "The"}
         headlineAccent={dict.about?.hero?.headlineAccent || "Methodology."}
         description={dict.about?.hero?.description || "At AppLass, we bridge the gap between complex mathematics and human-centric software. From high-conversion Shopify tools to mindful mobile utilities, we build the 'Next Wave' of digital performance—zero bloat, maximum impact."}
-        client:load
       />
 
       {/* Founder Bio - E-E-A-T Signal */}
-      <Section className="py-16 lg:py-32" client:load>
+      <Section className="py-16 lg:py-32">
         <div class="section-container">
           <div class="flex flex-col items-center gap-12 lg:gap-20 lg:flex-row">
 
@@ -121,7 +120,7 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
       </Section>
 
       {/* Pillars Section */}
-      <Section className="bg-slate-50/50 py-16 lg:py-24" client:load>
+      <Section className="bg-slate-50/50 py-16 lg:py-24">
         <div class="section-container">
           <div class="mb-12 lg:mb-24 flex flex-col items-start gap-8 lg:gap-16 lg:flex-row">
             <div class="flex-1">
@@ -164,7 +163,7 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
       </Section>
 
       {/* Citing & Authority Signals */}
-      <Section className="py-20 lg:py-32" client:load>
+      <Section className="py-20 lg:py-32">
         <div class="section-container">
           <div class="relative flex flex-col items-center gap-12 lg:gap-16 overflow-hidden rounded-3xl lg:rounded-[3rem] bg-blue-600 p-8 lg:p-24 text-white lg:flex-row">
             <div class="z-10 flex-1">

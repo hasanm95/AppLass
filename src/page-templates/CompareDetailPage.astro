@@ -92,7 +92,6 @@ const jsonLd = {
         headline={compareDict?.heroHeadline || data.heroHeadline}
         subheadline={compareDict?.heroSubheadline || data.heroSubheadline}
         translations={compareData?.hero}
-        client:load
       />
 
       <ComparisonMatrix
@@ -100,27 +99,24 @@ const jsonLd = {
         productName={data.productName}
         features={compareDict?.matrix || data.matrix}
         translations={compareData?.matrix}
-        client:idle
       />
 
       <TechnicalDebt 
         legacy={compareDict?.legacyWay || data.legacyWay} 
         applass={compareDict?.applassWay || data.applassWay} 
         translations={compareData?.debt}
-        client:idle
       />
 
-      <ValueHighlights translations={compareData?.highlights} client:idle />
+      <ValueHighlights translations={compareData?.highlights} />
 
       <CompareTestimonial
         quote={compareDict?.testimonial?.quote || data.testimonial.quote}
         author={compareDict?.testimonial?.author || data.testimonial.author}
         role={compareDict?.testimonial?.role || data.testimonial.role}
         translations={compareDict?.testimonial}
-        client:idle
       />
 
-      <CompareFooter translations={compareData?.footer} client:idle />
+      <CompareFooter translations={compareData?.footer} />
     </div>
 
     <Footer variant="light" translations={dict.footer}  logoSrc={optimizedAppLogo.src} />
