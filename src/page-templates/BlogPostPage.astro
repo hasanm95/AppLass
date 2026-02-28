@@ -2,7 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import { getImage } from 'astro:assets';
 import appLogoImg from '@/assets/logo.png';
-import { Navbar, Footer } from "@/components/common";
+import { Footer } from "@/components/common";
+import Navbar from "@/components/common/Navbar.astro";
 import { AppCallout } from "@/components/blog/AppCallout";
 import { ShareArticle } from "@/components/blog/ShareArticle";
 import { ReadingProgressBar } from "@/components/blog/ReadingProgressBar";
@@ -32,6 +33,7 @@ const { Content } = await render(post.entry);
 const title = `${post.title} | AppLass Blog`;
 const description = post.excerpt;
 
+const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
@@ -48,7 +50,7 @@ const jsonLd = {
     name: "AppLass",
     logo: {
       "@type": "ImageObject",
-      url: "https://applass.com/logo.png",
+      url: new URL(optimizedAppLogo.src, Astro.site).href,
     },
   },
   mainEntityOfPage: {
@@ -56,7 +58,7 @@ const jsonLd = {
     "@id": `https://applass.com/${lang}/blog/${slug}`,
   },
 };
-const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
+
 
 ---
 
@@ -72,7 +74,7 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
     />
   )}
   <ReadingProgressBar client:load />
-  <Navbar client:load translations={dict.nav} currentLang={lang}  logoSrc={optimizedAppLogo.src} />
+  <Navbar translations={dict.nav} currentLang={lang}  />
   
   <div class="flex-1 bg-white pt-20">
     <header class="bg-iridescent relative border-b border-slate-100 pt-20 pb-15 lg:py-32">

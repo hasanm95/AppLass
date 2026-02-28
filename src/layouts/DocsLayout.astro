@@ -1,6 +1,7 @@
 ---
 import Layout from './Layout.astro';
-import { Navbar, Footer } from "@/components/common";
+import { Footer } from "@/components/common";
+import Navbar from "@/components/common/Navbar.astro";
 import { DocsSidebar } from "@/components/docs/docs-sidebar";
 import { Zap, Shield, Smartphone, BookOpen } from "lucide-react";
 import { getDictionary } from "@/i18n/get-dictionary";
@@ -46,7 +47,7 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
   lang={lang}
 >
   <div class="flex min-h-screen flex-col bg-white">
-    <Navbar client:load translations={dict.nav} currentLang={lang} logoSrc={optimizedAppLogo.src}>
+    <Navbar translations={dict.nav} currentLang={lang} >
       <div slot="customBranding" class="flex items-center gap-2">
         {app === 'fomogen' && (
           <>

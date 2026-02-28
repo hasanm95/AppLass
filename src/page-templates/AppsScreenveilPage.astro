@@ -1,7 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import appLogoImg from '@/assets/logo.png';
-import { Navbar, Footer } from "@/components/common";
+import { Footer } from "@/components/common";
+import Navbar from "@/components/common/Navbar.astro";
 import { ScreenVeilHero } from "@/components/apps/screenveil/ScreenVeilHero";
 import { PainPointsSection } from "@/components/apps/screenveil/PainPointsSection";
 import { FeatureGrid } from "@/components/apps/screenveil/FeatureGrid";
@@ -41,7 +42,7 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
   lang={lang}
 >
   <div class="bg-[#020617]">
-    <Navbar client:load translations={dict.nav} currentLang={lang} variant='dark'  logoSrc={optimizedAppLogo.src} />
+    <Navbar translations={dict.nav} currentLang={lang} variant='dark'  />
 
     <div class="flex-1 overflow-x-hidden">
       {/* SoftwareApplication Schema for SEO - triggers rich results with star ratings */}
@@ -50,7 +51,7 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
         is:inline
         set:html={JSON.stringify(SCREENVEIL_DATA.schema.softwareApplication)}
       />
-      <ScreenVeilHero client:load translations={dict.screenveil?.hero} heroImageSrc={optimizedHero.src} />
+      <ScreenVeilHero translations={dict.screenveil?.hero} heroImageSrc={optimizedHero.src} />
       <PainPointsSection client:idle translations={dict.screenveil?.painPoints} />
       <FeatureGrid client:idle translations={dict.screenveil?.features} />
       <TechnicalAdvantage client:idle translations={dict.screenveil?.technical} />

@@ -2,7 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import { getImage } from 'astro:assets';
 import appLogoImg from '@/assets/logo.png';
-import { Navbar, Footer, FAQSchema } from "@/components/common";
+import { Footer, FAQSchema } from "@/components/common";
+import Navbar from "@/components/common/Navbar.astro";
 import { Section } from "@/components/common/Section";
 import {
   Gauge,
@@ -41,7 +42,7 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
   lang={lang}
 >
   <div class="min-h-screen bg-white font-sans selection:bg-blue-100 selection:text-blue-900">
-    <Navbar client:load translations={dict.nav} currentLang={lang}  logoSrc={optimizedAppLogo.src} />
+    <Navbar translations={dict.nav} currentLang={lang}  />
 
     <main class="pt-32">
       {/* Hero Section */}

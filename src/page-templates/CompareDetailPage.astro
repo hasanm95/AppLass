@@ -2,7 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import { getImage } from 'astro:assets';
 import appLogoImg from '@/assets/logo.png';
-import { Navbar, Footer } from "@/components/common";
+import { Footer } from "@/components/common";
+import Navbar from "@/components/common/Navbar.astro";
 import { getComparisonBySlug } from "@/lib/compare";
 import { CompareHero } from "@/components/compare/CompareHero";
 import { ComparisonMatrix } from "@/components/compare/ComparisonMatrix";
@@ -33,6 +34,7 @@ const compareDict = compareData?.[data.slug as string];
 const title = `${data.productName} vs ${data.competitorName} | AppLass`;
 const description = `Why elite teams are switching from ${data.competitorName} to ${data.productName}. A logic-first comparison.`;
 
+const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
 // JSON-LD for Comparison/Product
 const jsonLd = {
   "@context": "https://schema.org",
@@ -48,7 +50,7 @@ const jsonLd = {
     name: "AppLass",
     logo: {
       "@type": "ImageObject",
-      url: "https://applass.com/logo.png",
+      url: new URL(optimizedAppLogo.src, Astro.site).href,
     },
   },
   mainEntityOfPage: {
@@ -56,7 +58,6 @@ const jsonLd = {
     "@id": `https://applass.com/${lang}/compare/${slug}`,
   },
 };
-const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
 
 ---
 
@@ -68,7 +69,7 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
       set:html={JSON.stringify(jsonLd)}
     />
     
-    <Navbar variant="light" client:load translations={dict.nav} currentLang={lang} logoSrc={optimizedAppLogo.src}>
+    <Navbar variant="light" translations={dict.nav} currentLang={lang} >
       <div slot="customBranding" class="flex items-center gap-3">
         <span class="text-[10px] font-black tracking-widest text-blue-800 uppercase">
           {data.productName}
