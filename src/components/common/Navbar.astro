@@ -1,10 +1,11 @@
 ---
 import { cn } from "@/lib/utils";
-import { localePath } from "@/i18n/utils";
+import { getLangFromUrl, localePath, useTranslations } from "@/i18n/utils";
 import type { Dictionary } from "@/i18n/get-dictionary";
+import { getDictionary } from "@/i18n/get-dictionary";
 
 // Import the interactive islands
-import { MobileMenuToggle } from "./MobileMenuToggle";
+import MobileMenu from "./MobileMenu.astro";
 import { LanguageToggle } from "./LanguageToggle";
 
 import { Image } from 'astro:assets';
@@ -12,28 +13,27 @@ import appLogoImg from '@/assets/logo.png';
 
 interface Props {
   variant?: "light" | "dark";
-  translations?: Dictionary["nav"];
-  currentLang?: string;
   className?: string;
-  commonTranslations?: Dictionary["common"];
 }
 
 const {
   variant = "light",
-  translations,
-  currentLang = "en",
   className,
-  commonTranslations,
 } = Astro.props;
+
+const currentLang = getLangFromUrl(Astro.url);
+const dict = await getDictionary(currentLang as any);
+const t = useTranslations(dict);
+
+// We still need the raw objects for passing to React client components
+const translations = dict.nav;
+const commonTranslations = dict.common;
 
 const isDark = variant === "dark";
 
 // Check if slots are provided
 const hasCustomBranding = Astro.slots.has('customBranding');
 const hasCustomCTA = Astro.slots.has('customCTA');
-
-// We can render the customCTA slot to HTML if we need to pass it to React
-const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : undefined;
 ---
 
 <header
@@ -59,7 +59,7 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
         >
           <Image
             src={appLogoImg}
-            alt={translations?.logoAlt || "AppLass Logo"}
+            alt={t('nav.logoAlt') || "AppLass Logo"}
             width={32}
             height={32}
             format="webp"
@@ -72,7 +72,7 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
                 isDark ? "text-white" : "text-slate-900"
               )}
             >
-              {translations?.brandName || "AppLass"}
+              {t('nav.brandName') || "AppLass"}
             </span>
           )}
         </a>
@@ -95,19 +95,19 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
       {!hasCustomBranding && translations && (
         <div class="hidden items-center gap-10 md:flex">
           <a href={localePath(currentLang, '/')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
-            {translations.home}
+            {t('nav.home')}
           </a>
           <a href={localePath(currentLang, '/about')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
-            {translations.about}
+            {t('nav.about')}
           </a>
           <a href={localePath(currentLang, '/apps')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
-            {translations.ecosystem}
+            {t('nav.ecosystem')}
           </a>
           <a href={localePath(currentLang, '/docs')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
-            {translations.docs}
+            {t('nav.docs')}
           </a>
           <a href={localePath(currentLang, '/blog')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
-            {translations.blog}
+            {t('nav.blog')}
           </a>
         </div>
       )}
@@ -131,20 +131,18 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
                   : "bg-slate-900 text-white hover:bg-slate-800"
               )}
             >
-              {translations?.getInTouch || "Get in Touch"}
+              {t('nav.getInTouch') || "Get in Touch"}
             </a>
           )}
         </div>
 
-        {/* Mobile Toggle Button (Interactive UI) */}
-        <MobileMenuToggle 
-          client:load 
+        {/* Mobile Toggle Button (Native Astro Web Component) */}
+        <MobileMenu 
           isDark={isDark} 
-          currentLang={currentLang} 
-          translations={translations}
           hasCustomBranding={hasCustomBranding}
-          customCTAHtml={customCTAHtml}
-        />
+        >
+          {hasCustomCTA && <slot name="customCTA" slot="customCTA" />}
+        </MobileMenu>
       </div>
     </div>
   </nav>

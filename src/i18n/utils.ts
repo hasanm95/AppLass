@@ -22,3 +22,12 @@ export function localePath(lang: string, path: string = '/') {
   if (lang === i18nConfig.defaultLocale) return normalized;
   return `/${lang}${normalized}`;
 }
+
+/**
+ * Creates a translation function `t('path.to.key')` from a loaded dictionary.
+ */
+export function useTranslations(dict: any) {
+  return function t(key: string): string | any {
+    return key.split('.').reduce((obj, k) => (obj || {})[k], dict) || key;
+  };
+}
