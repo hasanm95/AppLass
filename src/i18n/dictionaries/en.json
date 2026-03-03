@@ -328,6 +328,17 @@
       "headlineAccent": "Logical Error.",
       "subheadline": "The requested vector could not be resolved. The target resource has either been moved or never existed.",
       "backToHome": "Return to System Core"
+    },
+    "default": {
+      "title": "AppLass | High-Performance Software Engineering",
+      "description": "At AppLass, we bridge the gap between complex mathematics and human-centric software. Stop letting bloated software slow down your growth. We build elite-tier Shopify and Mobile tools driven by mathematical precision.",
+      "keywords": "software studio, Shopify apps, digital wellness, accessibility, WCAG, web development, AppLass"
+    },
+    "schema": {
+      "organizationDescription": "Logic-driven software studio building high-performance apps with mathematical precision. Creators of ScreenVeil (10K+ downloads, 4.4★), FomoGen, and Mindful Guard.",
+      "screenveilDescription": "Black overlay for AMOLED/OLED displays that saves 60%+ battery life while listening to videos.",
+      "fomogenDescription": "Elite social proof tool with a <2.1KB payload to boost Shopify engagement by +23% without performance debt.",
+      "mindfulGuardDescription": "Privacy-first Android productivity guardian that helps users reclaim 2.4 hours of focus daily with local-only architecture."
     }
   },
   "fomogen": {

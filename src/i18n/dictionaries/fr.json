@@ -653,5 +653,16 @@
     "headlineAccent": "Erreur Logique.",
     "subheadline": "Le vecteur demandé n’a pas pu être résolu. La ressource cible a été déplacée ou n’a jamais existé.",
     "backToHome": "Retour au système central"
+  },
+  "default": {
+    "title": "AppLass | Ingénierie Logicielle Haute Performance",
+    "description": "Chez AppLass, nous comblons le fossé entre les mathématiques complexes et le logiciel centré sur l’humain. Ne laissez plus des logiciels surchargés freiner votre croissance. Nous concevons des outils Shopify et mobiles de niveau élite pilotés par une précision mathématique.",
+    "keywords": "studio logiciel, applications Shopify, bien-être numérique, accessibilité, WCAG, développement web, AppLass"
+  },
+  "schema": {
+    "organizationDescription": "Studio logiciel guidé par la logique, concevant des applications haute performance avec une précision mathématique. Créateurs de ScreenVeil (plus de 10k téléchargements, note 4.4★), FomoGen et Mindful Guard.",
+    "screenveilDescription": "Superposition noire pour écrans AMOLED/OLED économisant plus de 60 % de batterie lors de l'écoute de vidéos.",
+    "fomogenDescription": "Outil de preuve sociale d'élite avec une charge utile inférieure à 2.1KB pour augmenter l'engagement Shopify de +23 % sans dette de performance.",
+    "mindfulGuardDescription": "Gardien de productivité Android axé sur la confidentialité, aidant les utilisateurs à récupérer 2,4 heures de concentration par jour grâce à une architecture locale uniquement."
   }
 }
