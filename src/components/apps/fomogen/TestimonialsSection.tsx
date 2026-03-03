@@ -2,7 +2,7 @@ import { Section } from "@/components/common/Section";
 import { FOMOGEN_DATA } from "@/constants/fomogen-data";
 import { Quote } from "lucide-react";
 
-export function TestimonialsSection({ translations = FOMOGEN_DATA.testimonials }: { translations?: typeof FOMOGEN_DATA.testimonials }) {
+export function TestimonialsSection({ translations = FOMOGEN_DATA.testimonials, labels }: { translations?: typeof FOMOGEN_DATA.testimonials; labels?: any }) {
   return (
     <Section className="relative overflow-hidden bg-slate-950 py-24 md:py-32">
       {/* Dark theme accents */}
@@ -11,11 +11,11 @@ export function TestimonialsSection({ translations = FOMOGEN_DATA.testimonials }
       <div className="section-container relative z-10">
         <div className="mb-20 text-center">
           <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-green-500 uppercase">
-            Social Proof
+            {labels?.socialProof || "Social Proof"}
           </span>
           <h2 className="text-4xl leading-[0.95] font-bold tracking-tight text-white md:text-5xl lg:text-7xl">
-            Trusted by <br />
-            <span className="font-italic text-slate-500">Smart Merchants.</span>
+            {labels?.trustedBy || "Trusted by"} <br />
+            <span className="font-italic text-slate-500">{labels?.smartMerchants || "Smart Merchants."}</span>
           </h2>
         </div>
 
@@ -45,7 +45,7 @@ export function TestimonialsSection({ translations = FOMOGEN_DATA.testimonials }
 
         <div className="mt-20 text-center">
           <p className="text-xs font-bold tracking-[0.3em] text-slate-600 uppercase">
-            Join 5,000+ Shopify Brands using AppLass tools.
+            {labels?.joinBrands || "Join 5,000+ Shopify Brands using AppLass tools."}
           </p>
         </div>
       </div>

@@ -2,7 +2,7 @@ import { Section } from "@/components/common/Section";
 import { FOMOGEN_DATA } from "@/constants/fomogen-data";
 import { Zap, AlertTriangle, ShieldCheck } from "lucide-react";
 
-export function SpeedBenefitSection({ translations = FOMOGEN_DATA.speedBenefit }: { translations?: typeof FOMOGEN_DATA.speedBenefit }) {
+export function SpeedBenefitSection({ translations = FOMOGEN_DATA.speedBenefit, labels }: { translations?: typeof FOMOGEN_DATA.speedBenefit; labels?: any }) {
   const speedBenefit = translations;
 
   return (
@@ -21,7 +21,7 @@ export function SpeedBenefitSection({ translations = FOMOGEN_DATA.speedBenefit }
           <div>
             <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-red-50 px-4 py-2 text-[10px] font-black tracking-widest text-red-600 uppercase">
               <AlertTriangle className="h-3 w-3" />
-              Efficiency Warning
+              {labels?.efficiencyWarning || "Efficiency Warning"}
             </div>
 
             <h2 className="text-4xl leading-[0.95] font-bold tracking-tight text-slate-900 md:text-5xl lg:text-7xl">
@@ -47,7 +47,7 @@ export function SpeedBenefitSection({ translations = FOMOGEN_DATA.speedBenefit }
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-slate-900">
-                    The Struggle
+                    {labels?.theStruggle || "The Struggle"}
                   </h3>
                   <p className="mt-2 font-medium text-slate-500">
                     {speedBenefit.struggle}
@@ -63,7 +63,7 @@ export function SpeedBenefitSection({ translations = FOMOGEN_DATA.speedBenefit }
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-slate-900">
-                    The Solution
+                    {labels?.theSolution || "The Solution"}
                   </h3>
                   <p className="mt-2 font-medium text-slate-500">
                     {speedBenefit.solution}

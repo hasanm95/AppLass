@@ -51,7 +51,7 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
   ogUrl={meta.ogUrl}
   lang={lang}
 >
-  <Navbar translations={dict.nav} currentLang={lang}  />
+  <Navbar translations={dict.nav} currentLang={lang} commonTranslations={dict.common} />
   <Hero translations={dict.home?.hero} />
   <SocialProof translations={dict.home?.socialProof} />
   <ProductShowcase translations={dict.home?.productShowcase} products={dict.products} productImages={productImages} />

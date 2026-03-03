@@ -34,7 +34,7 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
   lang={lang}
 >
   <div class="min-h-screen bg-white">
-    <Navbar translations={dict.nav} currentLang={lang}  />
+    <Navbar translations={dict.nav} currentLang={lang} commonTranslations={dict.common} />
     <div class="pt-32">
       <SubpageHero
         eyebrow={dict.compare?.index?.eyebrow}

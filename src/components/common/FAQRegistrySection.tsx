@@ -2,9 +2,11 @@ import { Section } from "@/components/common/Section";
 import { FAQSchema } from "@/components/common/FAQSchema";
 import { FAQ_REGISTRY, type FAQRegistryKey } from "@/constants/faq-registry";
 import { cn } from "@/lib/utils";
+import clsx from "clsx";
 
 interface FAQRegistrySectionProps {
-  registryKey: FAQRegistryKey;
+  registryKey?: FAQRegistryKey;
+  items?: { question: string; answer: string }[];
   className?: string;
   title?: string;
   subtitle?: string;
@@ -13,12 +15,13 @@ interface FAQRegistrySectionProps {
 
 export function FAQRegistrySection({
   registryKey,
+  items: propItems,
   className,
   title = "Frequently Asked Questions",
   subtitle = "Technical Clarifications",
   variant = "grid",
 }: FAQRegistrySectionProps) {
-  const items = FAQ_REGISTRY[registryKey];
+  const items = propItems || (registryKey ? FAQ_REGISTRY[registryKey] : []);
 
   return (
     <Section
@@ -26,7 +29,7 @@ export function FAQRegistrySection({
       className={cn("border-t border-slate-200 bg-[#FBFBFA]", className)}
     >
       <div className="section-container">
-        <div className="mb-24">
+        <div className={clsx("mb-24", variant === "centered" && "text-center")}>
           <span className="mb-6 block font-mono text-[10px] font-bold tracking-[0.3em] text-blue-600 uppercase">
             {subtitle}
           </span>

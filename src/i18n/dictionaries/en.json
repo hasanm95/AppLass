@@ -12,6 +12,9 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
   },
+  "common": {
+    "selectLanguage": "Select Language"
+  },
   "footer": {
     "tagline": "Logic-driven software where mathematical precision meets human-centric design.",
     "sections": {
@@ -328,6 +331,17 @@
       "headlineAccent": "Logical Error.",
       "subheadline": "The requested vector could not be resolved. The target resource has either been moved or never existed.",
       "backToHome": "Return to System Core"
+    },
+    "default": {
+      "title": "AppLass | High-Performance Software Engineering",
+      "description": "At AppLass, we bridge the gap between complex mathematics and human-centric software. Stop letting bloated software slow down your growth. We build elite-tier Shopify and Mobile tools driven by mathematical precision.",
+      "keywords": "software studio, Shopify apps, digital wellness, accessibility, WCAG, web development, AppLass"
+    },
+    "schema": {
+      "organizationDescription": "Logic-driven software studio building high-performance apps with mathematical precision. Creators of ScreenVeil (10K+ downloads, 4.4★), FomoGen, and Mindful Guard.",
+      "screenveilDescription": "Black overlay for AMOLED/OLED displays that saves 60%+ battery life while listening to videos.",
+      "fomogenDescription": "Elite social proof tool with a <2.1KB payload to boost Shopify engagement by +23% without performance debt.",
+      "mindfulGuardDescription": "Privacy-first Android productivity guardian that helps users reclaim 2.4 hours of focus daily with local-only architecture."
     }
   },
   "fomogen": {
@@ -476,7 +490,43 @@
         "5-Star Support"
       ],
       "primaryCTA": "Get FOMO Gen Now",
-      "shopifyUrl": "https://apps.shopify.com/fomogen"
+      "shopifyUrl": "https://apps.shopify.com/fomogen",
+      "noCreditCard": "No Credit Card Required • Beta Access"
+    },
+    "labels": {
+      "efficiencyWarning": "Efficiency Warning",
+      "theStruggle": "The Struggle",
+      "theSolution": "The Solution",
+      "platformPillars": "Platform Pillars",
+      "everythingYouNeed": "Everything You Need.",
+      "nothingYouDont": "Nothing You Don't.",
+      "socialProof": "Social Proof",
+      "trustedBy": "Trusted by",
+      "smartMerchants": "Smart Merchants.",
+      "joinBrands": "Join 5,000+ Shopify Brands using AppLass tools.",
+      "recommended": "Recommended",
+      "featuresIncluded": "Features Included",
+      "compareFeatures": "Compare Features",
+      "feature": "Feature",
+      "freePlan": "Free Plan",
+      "starterPlan": "Starter Plan",
+      "growthPlan": "Growth Plan",
+      "professionalPlan": "Professional",
+      "launchOffers": "Launch Offers Available"
+    },
+    "faq": {
+      "sectionLabel": "FAQ",
+      "headline": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "What is FomoGen?",
+          "answer": "FomoGen is an elite social proof tool for Shopify merchants with a <2.1KB payload that boosts engagement by +23% without performance debt. It is WCAG 2.1 compliant with real-time nudges."
+        },
+        {
+          "question": "Is FomoGen free?",
+          "answer": "Yes, FomoGen offers a powerful free plan for Shopify merchants to boost engagement with urgency and trust signals."
+        }
+      ]
     }
   },
   "mindfulGuard": {
@@ -543,6 +593,28 @@
           "mindfulGuard": "<1%",
           "opal": "High",
           "freedom": "Moderate"
+        }
+      ]
+    },
+    "faq": {
+      "sectionLabel": "FAQ",
+      "headline": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "What is Mindful Guard?",
+          "answer": "Mindful Guard is a privacy-focused Android productivity guardian that helps users reclaim 2.4 hours of focus daily. It features a zero-telemetry, offline architecture and system-level blocking."
+        },
+        {
+          "question": "Does MindfulGuard work on Xiaomi/Samsung/MIUI devices?",
+          "answer": "Yes. MindfulGuard is engineered with \"Battery Optimization Exemption\" protocols specifically to prevent aggressive Android skins like MIUI from killing the background process."
+        },
+        {
+          "question": "Is MindfulGuard safe for privacy?",
+          "answer": "Yes. MindfulGuard operates on a zero-telemetry architecture. It does not require internet access to function, ensuring your data never leaves your device."
+        },
+        {
+          "question": "How does Strict Mode work?",
+          "answer": "Strict Mode locks your chosen settings for a set duration. It prevents you from uninstalling the app or changing the schedule until the timer expires."
         }
       ]
     }

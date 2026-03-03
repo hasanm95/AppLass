@@ -11,9 +11,21 @@ type SEOMetadata = {
   ogUrl?: string;
 };
 
+type SchemaMetadata = {
+  organizationDescription: string;
+  screenveilDescription: string;
+  fomogenDescription: string;
+  mindfulGuardDescription: string;
+};
+
 type EnDictionary = Omit<typeof rawEnDictionary, 'metadata'> & {
-  metadata: {
-    [K in keyof typeof rawEnDictionary.metadata]: K extends 'siteName' ? string : SEOMetadata;
+  common: {
+    selectLanguage: string;
+  };
+  metadata: Record<string, SEOMetadata | any> & {
+    siteName: string;
+    default: SEOMetadata;
+    schema: SchemaMetadata;
   };
 };
 

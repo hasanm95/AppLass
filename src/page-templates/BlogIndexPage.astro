@@ -38,7 +38,7 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
   ogUrl={meta.ogUrl}
   lang={lang}
 >
-  <Navbar translations={dict.nav} currentLang={lang}  />
+  <Navbar translations={dict.nav} currentLang={lang} commonTranslations={dict.common} />
   <div class="flex-1 bg-white pt-20">
     <SubpageHero
       eyebrow="The Logic Lab"

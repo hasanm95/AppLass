@@ -163,20 +163,35 @@ export function Footer({ variant = "light", translations, currentLang = "en", lo
               isDark ? "text-slate-500" : "text-slate-600"
             )}
           >
-            © {currentYear} AppLass. All rights reserved.
+            {translations?.copyright.replace('{year}', currentYear.toString()) || `© ${currentYear} AppLass. All rights reserved.`}
           </p>
-          <p
+          <div
             className={cn(
               "text-xs",
               isDark ? "text-slate-600" : "text-slate-400"
             )}
           >
-            Built with{" "}
-            <span className="text-blue-600" aria-label="precision">
-              ∞
-            </span>{" "}
-            logical precision
-          </p>
+            {translations?.builtWith ? (
+              translations.builtWith.split('∞').map((part, i, arr) => (
+                <span key={i}>
+                  {part}
+                  {i < arr.length - 1 && (
+                    <span className="text-blue-600" aria-label="precision">
+                      ∞
+                    </span>
+                  )}
+                </span>
+              ))
+            ) : (
+              <>
+                Built with{" "}
+                <span className="text-blue-600" aria-label="precision">
+                  ∞
+                </span>{" "}
+                logical precision
+              </>
+            )}
+          </div>
         </div>
       </div>
     </footer>
