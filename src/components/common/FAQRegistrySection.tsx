@@ -4,7 +4,8 @@ import { FAQ_REGISTRY, type FAQRegistryKey } from "@/constants/faq-registry";
 import { cn } from "@/lib/utils";
 
 interface FAQRegistrySectionProps {
-  registryKey: FAQRegistryKey;
+  registryKey?: FAQRegistryKey;
+  items?: { question: string; answer: string }[];
   className?: string;
   title?: string;
   subtitle?: string;
@@ -13,12 +14,13 @@ interface FAQRegistrySectionProps {
 
 export function FAQRegistrySection({
   registryKey,
+  items: propItems,
   className,
   title = "Frequently Asked Questions",
   subtitle = "Technical Clarifications",
   variant = "grid",
 }: FAQRegistrySectionProps) {
-  const items = FAQ_REGISTRY[registryKey];
+  const items = propItems || (registryKey ? FAQ_REGISTRY[registryKey] : []);
 
   return (
     <Section

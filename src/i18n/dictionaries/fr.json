@@ -432,6 +432,28 @@
           "freedom": "Modéré"
         }
       ]
+    },
+    "faq": {
+      "sectionLabel": "FAQ",
+      "headline": "Foire Aux Questions",
+      "questions": [
+        {
+          "question": "Qu'est-ce que Mindful Guard ?",
+          "answer": "Mindful Guard est un gardien de productivité Android axé sur la confidentialité qui aide les utilisateurs à récupérer 2,4 heures de concentration par jour. Il dispose d'une architecture hors ligne sans télémétrie et d'un blocage au niveau système."
+        },
+        {
+          "question": "MindfulGuard fonctionne-t-il sur les appareils Xiaomi/Samsung/MIUI ?",
+          "answer": "Oui. MindfulGuard est conçu avec des protocoles d'« Exemption d'optimisation de la batterie » spécialement pour empêcher les surcouches Android agressives comme MIUI de désactiver le processus en arrière-plan."
+        },
+        {
+          "question": "MindfulGuard est-il sûr pour la confidentialité ?",
+          "answer": "Oui. MindfulGuard fonctionne sur une architecture sans télémétrie. Il ne nécessite aucun accès à Internet pour fonctionner, garantissant que vos données ne quittent jamais votre appareil."
+        },
+        {
+          "question": "Comment fonctionne le mode strict ?",
+          "answer": "Le mode strict verrouille vos paramètres choisis pour une durée déterminée. Il vous empêche de désinstaller l'application ou de modifier la planification jusqu'à l'expiration du minuteur."
+        }
+      ]
     }
   },
   "screenveil": {
@@ -635,6 +657,15 @@
     "apps": {
       "title": "Nos Applications | Écosystème AppLass",
       "description": "Explorez notre suite d’applications guidées par la logique, conçues pour performance d’élite et discipline numérique."
+    },
+    "mindfulGuard": {
+      "title": "Mindful Guard : L'application de concentration #1 axée sur la confidentialité [Android 2026]",
+      "description": "Stoppez les distractions numériques instantanément. Mindful Guard est un Pomodoro et bloqueur d'applications 100% privé et hors ligne pour Android. Téléchargez-le gratuitement dès aujourd'hui !",
+      "keywords": "bloqueur d'applications Android, application de détox de dopamine, minuteur de concentration android, outil de concentration de confidentialité, arrêter l'addiction au téléphone, pare-feu cognitif, zéro télémétrie, bloqueur d'applications hors ligne",
+      "ogTitle": "Mindful Guard | Reprenez le contrôle de votre architecture neuronale",
+      "ogDescription": "Le premier bloqueur d'applications Android conçu pour les absolutistes de la confidentialité. Latence 0ms. 100% Hors ligne. Zéro télémétrie.",
+      "ogImage": "https://applass.com/mindful-guard-feature.png",
+      "ogUrl": "https://applass.com/apps/mindful-guard"
     },
     "blog": {
       "title": "Logic Lab | Blog AppLass",
