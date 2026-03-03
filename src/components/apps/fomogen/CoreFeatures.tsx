@@ -21,18 +21,18 @@ const ICON_MAP: Record<string, LucideIcon> = {
 
 type FeatureTranslation = { title: string; subtitle: string; description: string; highlight: string; imageSrc?: string; image?: string; };
 
-export function CoreFeatures({ translations }: { translations?: FeatureTranslation[] }) {
+export function CoreFeatures({ translations, labels }: { translations?: FeatureTranslation[]; labels?: any }) {
   return (
     <Section id="features" className="relative bg-white py-24 md:py-32">
       <div className="section-container relative z-10">
         <div className="mb-20 text-center lg:text-left">
           <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-green-600 uppercase">
-            Platform Pillars
+            {labels?.platformPillars || "Platform Pillars"}
           </span>
           <h2 className="mb-10 text-4xl leading-[0.95] font-bold tracking-tight text-slate-900 md:text-5xl lg:text-8xl">
-            Everything You Need.
+            {labels?.everythingYouNeed || "Everything You Need."}
             <br />
-            <span className="text-slate-300">Nothing You Don&apos;t.</span>
+            <span className="text-slate-300">{labels?.nothingYouDont || "Nothing You Don't."}</span>
           </h2>
         </div>
 

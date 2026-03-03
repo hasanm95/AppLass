@@ -2,6 +2,7 @@ import { Section } from "@/components/common/Section";
 import { FAQSchema } from "@/components/common/FAQSchema";
 import { FAQ_REGISTRY, type FAQRegistryKey } from "@/constants/faq-registry";
 import { cn } from "@/lib/utils";
+import clsx from "clsx";
 
 interface FAQRegistrySectionProps {
   registryKey?: FAQRegistryKey;
@@ -28,7 +29,7 @@ export function FAQRegistrySection({
       className={cn("border-t border-slate-200 bg-[#FBFBFA]", className)}
     >
       <div className="section-container">
-        <div className="mb-24">
+        <div className={clsx("mb-24", variant === "centered" && "text-center")}>
           <span className="mb-6 block font-mono text-[10px] font-bold tracking-[0.3em] text-blue-600 uppercase">
             {subtitle}
           </span>

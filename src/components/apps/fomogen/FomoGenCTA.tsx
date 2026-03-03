@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { FOMOGEN_DATA } from "@/constants/fomogen-data";
 import { Check } from "lucide-react";
 
-export function FomoGenCTA({ translations = FOMOGEN_DATA.cta }: { translations?: typeof FOMOGEN_DATA.cta }) {
+export function FomoGenCTA({ translations = FOMOGEN_DATA.cta }: { translations?: typeof FOMOGEN_DATA.cta & { noCreditCard?: string } }) {
   return (
     <Section className="relative overflow-hidden bg-white py-24 md:py-32">
       <div
@@ -55,7 +55,7 @@ export function FomoGenCTA({ translations = FOMOGEN_DATA.cta }: { translations?:
           </Button>
 
           <p className="mt-8 text-xs font-bold tracking-widest text-slate-400 uppercase">
-            No Credit Card Required • Beta Access
+            {translations.noCreditCard || "No Credit Card Required • Beta Access"}
           </p>
         </div>
       </div>

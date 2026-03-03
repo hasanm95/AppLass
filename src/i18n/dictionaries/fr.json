@@ -363,7 +363,43 @@
         "Support 5 étoiles"
       ],
       "primaryCTA": "Obtenir FOMO Gen maintenant",
-      "shopifyUrl": "https://apps.shopify.com/fomogen"
+      "shopifyUrl": "https://apps.shopify.com/fomogen",
+      "noCreditCard": "Aucune carte de crédit requise • Accès Bêta"
+    },
+    "labels": {
+      "efficiencyWarning": "Avertissement d'Efficacité",
+      "theStruggle": "Le Problème",
+      "theSolution": "La Solution",
+      "platformPillars": "Piliers de la Plateforme",
+      "everythingYouNeed": "Tout ce dont vous avez besoin.",
+      "nothingYouDont": "Rien de superflu.",
+      "socialProof": "Preuve Sociale",
+      "trustedBy": "Approuvé par",
+      "smartMerchants": "les Marchands Intelligents.",
+      "joinBrands": "Rejoignez plus de 5 000 marques Shopify utilisant les outils AppLass.",
+      "recommended": "Recommandé",
+      "featuresIncluded": "Fonctionnalités Incluses",
+      "compareFeatures": "Comparer les Fonctionnalités",
+      "feature": "Fonctionnalité",
+      "freePlan": "Forfait Gratuit",
+      "starterPlan": "Forfait Starter",
+      "growthPlan": "Forfait Croissance",
+      "professionalPlan": "Professionnel",
+      "launchOffers": "Offres de Lancement Disponibles"
+    },
+    "faq": {
+      "sectionLabel": "FAQ",
+      "headline": "Foire Aux Questions",
+      "questions": [
+        {
+          "question": "Qu'est-ce que FomoGen ?",
+          "answer": "FomoGen est un outil de preuve sociale d'élite pour les marchands Shopify avec une charge utile <2.1KB qui augmente l'engagement de +23 % sans dette de performance. Il est conforme aux normes WCAG 2.1 avec des incitations en temps réel."
+        },
+        {
+          "question": "FomoGen est-il gratuit ?",
+          "answer": "Oui, FomoGen propose un forfait gratuit puissant pour les marchands Shopify afin d'augmenter l'engagement avec des signaux d'urgence et de confiance."
+        }
+      ]
     }
   },
   "mindfulGuard": {

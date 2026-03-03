@@ -8,6 +8,7 @@ import { SpeedBenefitSection } from "@/components/apps/fomogen/SpeedBenefitSecti
 import { CoreFeatures } from "@/components/apps/fomogen/CoreFeatures";
 import { TestimonialsSection } from "@/components/apps/fomogen/TestimonialsSection";
 import { PricingSection } from "@/components/apps/fomogen/PricingSection";
+import { PricingMatrix } from "@/components/apps/fomogen/PricingMatrix";
 import { FomoGenCTA } from "@/components/apps/fomogen/FomoGenCTA";
 import { FAQRegistrySection } from "@/components/common/FAQRegistrySection";
 import { getDictionary } from "@/i18n/get-dictionary";
@@ -84,12 +85,10 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
               priceValidUntil: "2026-12-31",
               availability: "https://schema.org/InStock",
             },
-            featureList:
-              "Social Proof Notifications, Stock Countdown Timer, Sticky Add-to-Cart, Free Shipping Bar",
+            featureList: featuresData.map((f: any) => f.title).join(", "),
             screenshot: "https://applass.com/fomogen-screenshot.png",
             image: "https://applass.com/fomogen-feature.png",
-            description:
-              "FOMO Gen is an all-in-one Shopify app for social proof, urgency, and trust signals.",
+            description: dict.metadata?.schema?.fomogenDescription || "FOMO Gen is an all-in-one Shopify app for social proof, urgency, and trust signals.",
             author: {
               "@type": "Organization",
               name: "Applass",
@@ -100,8 +99,7 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
             "@context": "https://schema.org",
             "@type": "Product",
             name: "FOMO Gen",
-            description:
-              "All-in-one Shopify app for Sales Popups, Stock Countdowns, Sticky Cart, and Trust Badges.",
+            description: dict.metadata?.fomogen?.description || "All-in-one Shopify app for Sales Popups, Stock Countdowns, Sticky Cart, and Trust Badges.",
             brand: {
               "@type": "Brand",
               name: "AppLass",
@@ -121,16 +119,20 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
 
     <div class="flex-1 overflow-x-hidden">
       <FomoGenHero translations={dict.fomogen?.hero} heroImageSrc={optimizedHero.src} />
-      <SpeedBenefitSection translations={dict.fomogen?.speedBenefit} />
-      <CoreFeatures translations={featuresData} />
-      <TestimonialsSection translations={dict.fomogen?.testimonials} />
-      <PricingSection translations={dict.fomogen?.pricing} />
+      <SpeedBenefitSection translations={dict.fomogen?.speedBenefit} labels={dict.fomogen?.labels} />
+      <CoreFeatures translations={featuresData} labels={dict.fomogen?.labels} />
+      <TestimonialsSection translations={dict.fomogen?.testimonials} labels={dict.fomogen?.labels} />
+      <PricingSection translations={dict.fomogen?.pricing} labels={dict.fomogen?.labels} />
+      <PricingMatrix labels={dict.fomogen?.labels} />
       <FomoGenCTA translations={dict.fomogen?.cta} />
       <FAQRegistrySection
         client:idle
         registryKey="FOMOGEN"
         variant="centered"
         className="bg-white py-24"
+        items={dict.fomogen?.faq?.questions}
+        title={dict.fomogen?.faq?.headline}
+        subtitle={dict.fomogen?.faq?.sectionLabel}
       />
     </div>
 

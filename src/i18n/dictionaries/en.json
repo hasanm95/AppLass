@@ -490,7 +490,43 @@
         "5-Star Support"
       ],
       "primaryCTA": "Get FOMO Gen Now",
-      "shopifyUrl": "https://apps.shopify.com/fomogen"
+      "shopifyUrl": "https://apps.shopify.com/fomogen",
+      "noCreditCard": "No Credit Card Required • Beta Access"
+    },
+    "labels": {
+      "efficiencyWarning": "Efficiency Warning",
+      "theStruggle": "The Struggle",
+      "theSolution": "The Solution",
+      "platformPillars": "Platform Pillars",
+      "everythingYouNeed": "Everything You Need.",
+      "nothingYouDont": "Nothing You Don't.",
+      "socialProof": "Social Proof",
+      "trustedBy": "Trusted by",
+      "smartMerchants": "Smart Merchants.",
+      "joinBrands": "Join 5,000+ Shopify Brands using AppLass tools.",
+      "recommended": "Recommended",
+      "featuresIncluded": "Features Included",
+      "compareFeatures": "Compare Features",
+      "feature": "Feature",
+      "freePlan": "Free Plan",
+      "starterPlan": "Starter Plan",
+      "growthPlan": "Growth Plan",
+      "professionalPlan": "Professional",
+      "launchOffers": "Launch Offers Available"
+    },
+    "faq": {
+      "sectionLabel": "FAQ",
+      "headline": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "What is FomoGen?",
+          "answer": "FomoGen is an elite social proof tool for Shopify merchants with a <2.1KB payload that boosts engagement by +23% without performance debt. It is WCAG 2.1 compliant with real-time nudges."
+        },
+        {
+          "question": "Is FomoGen free?",
+          "answer": "Yes, FomoGen offers a powerful free plan for Shopify merchants to boost engagement with urgency and trust signals."
+        }
+      ]
     }
   },
   "mindfulGuard": {
