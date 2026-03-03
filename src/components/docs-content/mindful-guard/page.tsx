@@ -42,7 +42,7 @@ export default function MindfulGuardDocsPage({ lang }: { lang: string }) {
           asChild
           className="rounded-xl bg-slate-900 font-bold hover:bg-slate-800"
         >
-          <a href="mailto:hasanmobarak25@gmail.com">Contact Support</a>
+          <a href="mailto:support@applass.com">Contact Support</a>
         </Button>
       </div>
     </div>

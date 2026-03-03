@@ -51,7 +51,7 @@ const DOCUMENTATION_FAQS = [
       },
       {
         q: "How do I contact support?",
-        a: "Access our Technical Lab directly through the dashboard 'Support' module or reach us at hasanmobarak25@gmail.com.",
+        a: "Access our Technical Lab directly through the dashboard 'Support' module or reach us at support@applass.com.",
       },
     ],
   },
