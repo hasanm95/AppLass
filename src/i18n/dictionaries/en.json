@@ -12,6 +12,9 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
   },
+  "common": {
+    "selectLanguage": "Select Language"
+  },
   "footer": {
     "tagline": "Logic-driven software where mathematical precision meets human-centric design.",
     "sections": {

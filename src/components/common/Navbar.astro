@@ -15,6 +15,7 @@ interface Props {
   translations?: Dictionary["nav"];
   currentLang?: string;
   className?: string;
+  commonTranslations?: Dictionary["common"];
 }
 
 const {
@@ -22,6 +23,7 @@ const {
   translations,
   currentLang = "en",
   className,
+  commonTranslations,
 } = Astro.props;
 
 const isDark = variant === "dark";
@@ -57,7 +59,7 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
         >
           <Image
             src={appLogoImg}
-            alt="AppLass Logo"
+            alt={translations?.logoAlt || "AppLass Logo"}
             width={32}
             height={32}
             format="webp"
@@ -70,7 +72,7 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
                 isDark ? "text-white" : "text-slate-900"
               )}
             >
-              AppLass
+              {translations?.brandName || "AppLass"}
             </span>
           )}
         </a>
@@ -113,7 +115,7 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
       {/* CTA & Mobile Toggle */}
       <div class="flex items-center gap-3 md:gap-4">
         {/* Language Switcher Trigger (Interactive UI) */}
-        <LanguageToggle client:load isDark={isDark} currentLang={currentLang} />
+        <LanguageToggle client:load isDark={isDark} currentLang={currentLang} dictionary={commonTranslations} />
 
         <div class="hidden md:block">
           {hasCustomCTA ? (

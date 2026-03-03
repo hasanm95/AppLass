@@ -42,7 +42,7 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
   lang={lang}
 >
   <div class="min-h-screen bg-white font-sans selection:bg-blue-100 selection:text-blue-900">
-    <Navbar translations={dict.nav} currentLang={lang}  />
+    <Navbar translations={dict.nav} currentLang={lang} commonTranslations={dict.common} />
 
     <main class="pt-32">
       {/* Hero Section */}

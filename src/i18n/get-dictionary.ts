@@ -19,15 +19,11 @@ type SchemaMetadata = {
 };
 
 type EnDictionary = Omit<typeof rawEnDictionary, 'metadata'> & {
-  metadata: {
+  common: {
+    selectLanguage: string;
+  };
+  metadata: Record<string, SEOMetadata | any> & {
     siteName: string;
-    home: SEOMetadata;
-    about: SEOMetadata;
-    apps: SEOMetadata;
-    blog: SEOMetadata;
-    compare: SEOMetadata;
-    hubDocs: SEOMetadata;
-    notFound: SEOMetadata;
     default: SEOMetadata;
     schema: SchemaMetadata;
   };

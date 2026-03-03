@@ -58,7 +58,7 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
   lang={lang}
 >
   <div class="bg-white">
-    <Navbar translations={dict.nav} currentLang={lang}  />
+    <Navbar translations={dict.nav} currentLang={lang} commonTranslations={dict.common} />
 
     <script
       type="application/ld+json"

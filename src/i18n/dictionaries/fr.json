@@ -12,6 +12,9 @@
     "openMenu": "Ouvrir le menu",
     "closeMenu": "Fermer le menu"
   },
+  "common": {
+    "selectLanguage": "Choisissez la langue"
+  },
   "footer": {
     "tagline": "Logiciels guidés par la logique où la précision mathématique rencontre un design centré sur l’humain.",
     "sections": {
