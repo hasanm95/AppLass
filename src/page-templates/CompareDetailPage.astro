@@ -1,8 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { getImage } from 'astro:assets';
-import appLogoImg from '@/assets/logo.png';
-import { Footer } from "@/components/common";
+import Footer from "@/components/common/Footer.astro";
 import Navbar from "@/components/common/Navbar.astro";
 import { getComparisonBySlug } from "@/lib/compare";
 import { CompareHero } from "@/components/compare/CompareHero";
@@ -34,7 +32,6 @@ const compareDict = compareData?.[data.slug as string];
 const title = `${data.productName} vs ${data.competitorName} | AppLass`;
 const description = `Why elite teams are switching from ${data.competitorName} to ${data.productName}. A logic-first comparison.`;
 
-const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
 // JSON-LD for Comparison/Product
 const jsonLd = {
   "@context": "https://schema.org",
@@ -119,6 +116,6 @@ const jsonLd = {
       <CompareFooter translations={compareData?.footer} />
     </div>
 
-    <Footer variant="light" translations={dict.footer}  logoSrc={optimizedAppLogo.src} />
+    <Footer variant="light" />
   </div>
 </Layout>

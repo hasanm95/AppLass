@@ -1,8 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { getImage } from 'astro:assets';
-import appLogoImg from '@/assets/logo.png';
-import { Footer, SubpageHero } from "@/components/common";
+import Footer from "@/components/common/Footer.astro";
+import SubpageHero from "@/components/common/SubpageHero.astro";
 import Navbar from "@/components/common/Navbar.astro";
 import Section from "@/components/common/Section.astro";
 import { comparisons } from "@/lib/compare";
@@ -19,7 +18,6 @@ const { lang } = Astro.props;
 const dict = await getDictionary(lang as any);
 
 const meta = dict.metadata?.compare || {};
-const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
 
 ---
 
@@ -83,6 +81,6 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
         </div>
       </Section>
     </div>
-    <Footer translations={dict.footer}  logoSrc={optimizedAppLogo.src} />
+    <Footer />
   </div>
 </Layout>

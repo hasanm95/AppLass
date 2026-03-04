@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import appLogoImg from '@/assets/logo.png';
-import { Footer } from "@/components/common";
+import Footer from "@/components/common/Footer.astro";
 import Navbar from "@/components/common/Navbar.astro";
 import {
   Hero,
@@ -37,7 +36,6 @@ const productImages = {
   mindful: optimizedMindfulGuardFeature.src,
   screenveil: optimizedScreenveilFeature.src,
 };
-const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
 
 ---
 
@@ -58,5 +56,5 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
   <FoundersMoat translations={dict.home?.foundersMoat} pillars={dict.pillars} />
   <SolutionsSection translations={dict.home?.solutions} solutions={dict.solutionItems} />
   <AnswerNuggets client:idle translations={dict.home?.faq} />
-  <Footer translations={dict.footer} logoSrc={optimizedAppLogo.src} />
+  <Footer />
 </Layout>

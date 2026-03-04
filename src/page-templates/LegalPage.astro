@@ -1,11 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { getImage } from 'astro:assets';
-import appLogoImg from '@/assets/logo.png';
-import { Footer } from "@/components/common";
+import Footer from "@/components/common/Footer.astro";
 import Navbar from "@/components/common/Navbar.astro";
 import Section from "@/components/common/Section.astro";
-import { getDictionary } from "@/i18n/get-dictionary";
 import { i18nConfig } from "@/i18n/config";
 
 interface Props {
@@ -16,9 +13,7 @@ interface Props {
 }
 
 const { lang, title, description, appName } = Astro.props;
-const dict = await getDictionary(lang as any);
 const lastUpdated = "February 20, 2026";
-const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
 
 ---
 
@@ -58,6 +53,6 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
       </Section>
     </main>
 
-    <Footer translations={dict.footer}  logoSrc={optimizedAppLogo.src} />
+    <Footer />
   </div>
 </Layout>

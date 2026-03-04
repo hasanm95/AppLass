@@ -1,11 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { getImage } from 'astro:assets';
-import appLogoImg from '@/assets/logo.png';
 import fomogenFeatureImg from '@/assets/apps/fomogen-feature.png';
 import mindfulGuardFeatureImg from '@/assets/apps/mindful-guard-feature.png';
 import screenveilFeatureImg from '@/assets/apps/screenveil-feature.png';
-import { Footer, SubpageHero } from "@/components/common";
+import Footer from "@/components/common/Footer.astro";
+import SubpageHero from "@/components/common/SubpageHero.astro";
 import Navbar from "@/components/common/Navbar.astro";
 import { LinkButton } from "@/components/ui/link-button";
 import { PRODUCTS } from "@/constants/home-data";
@@ -22,7 +22,6 @@ const { lang } = Astro.props;
 const dict = await getDictionary(lang as any);
 
 const meta = dict.metadata?.apps || {};
-const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
 const optimizedFomogen = await getImage({ src: fomogenFeatureImg, format: 'webp' });
 const optimizedMindful = await getImage({ src: mindfulGuardFeatureImg, format: 'webp' });
 const optimizedScreenveil = await getImage({ src: screenveilFeatureImg, format: 'webp' });
@@ -116,6 +115,6 @@ const optimizedImages: Record<string, string> = {
         </div>
       </Section>
     </div>
-    <Footer translations={dict.footer}  logoSrc={optimizedAppLogo.src} />
+    <Footer />
   </div>
 </Layout>
