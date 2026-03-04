@@ -1,0 +1,151 @@
+---
+import Section from "@/components/common/Section.astro";
+import { MINDFUL_GUARD_DATA } from "@/constants/mindful-guard-data";
+import { Check, X, Minus } from "lucide-react";
+
+interface Props {
+  translations?: any;
+}
+
+const { translations } = Astro.props;
+const comparison = translations || MINDFUL_GUARD_DATA.comparison;
+const competitors = comparison.columns?.competitors || { opal: "Opal", freedom: "Freedom" };
+
+---
+
+<Section id="comparison" className="border-b border-slate-200 bg-[#FBFBFA]">
+  <div class="section-container">
+    <div class="mb-20">
+      <span class="mb-6 block font-mono text-[10px] font-bold tracking-[0.3em] text-[#064E3B] uppercase">
+        Technical Validation Matrix
+      </span>
+      <h2 class="text-4xl font-black tracking-tighter text-slate-950 md:text-5xl lg:text-6xl">
+        {comparison.title}
+      </h2>
+    </div>
+
+    {/* Desktop Technical Table */}
+    <div class="hidden border-2 border-slate-950 bg-white md:block">
+      <table class="w-full border-collapse">
+        <thead>
+          <tr class="bg-slate-950">
+            <th class="p-8 text-left font-mono text-[10px] font-bold tracking-[0.2em] text-slate-400 uppercase">
+              Technical Spec
+            </th>
+            <th class="bg-[#064E3B] p-8 text-left font-mono text-[10px] font-bold tracking-[0.2em] text-white uppercase">
+              MindfulGuard (v2.6)
+            </th>
+            <th class="p-8 text-left font-mono text-[10px] font-bold tracking-[0.2em] text-slate-400 uppercase">
+              {competitors.opal}
+            </th>
+            <th class="p-8 text-left font-mono text-[10px] font-bold tracking-[0.2em] text-slate-400 uppercase">
+              {competitors.freedom}
+            </th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-100">
+          {comparison.specs?.map((spec: any) => (
+            <tr class="transition-colors hover:bg-slate-50">
+              <td class="p-8 font-black tracking-tight text-slate-950">
+                {spec.label}
+              </td>
+              <td class="border-x border-emerald-900/10 bg-emerald-50/30 p-8">
+                {true ? (
+                  <span class="flex items-center gap-3 font-mono text-[11px] font-bold tracking-wider text-[#064E3B] uppercase">
+                    <Check className="h-4 w-4 stroke-[3px]" />
+                    {spec.mindfulGuard}
+                  </span>
+                ) : null}
+              </td>
+              <td class="p-8">
+                {spec.opal.includes("High") || spec.opal.includes("$99") ? (
+                  <span class="flex items-center gap-3 font-mono text-[11px] tracking-wider text-red-900/40 uppercase">
+                    <X className="h-4 w-4" />
+                    {spec.opal}
+                  </span>
+                ) : (
+                  <span class="flex items-center gap-3 font-mono text-[11px] tracking-wider text-slate-400 uppercase">
+                    <Minus className="h-4 w-4" />
+                    {spec.opal}
+                  </span>
+                )}
+              </td>
+              <td class="p-8">
+                {spec.freedom.includes("High") || spec.freedom.includes("$99") ? (
+                  <span class="flex items-center gap-3 font-mono text-[11px] tracking-wider text-red-900/40 uppercase">
+                    <X className="h-4 w-4" />
+                    {spec.freedom}
+                  </span>
+                ) : (
+                  <span class="flex items-center gap-3 font-mono text-[11px] tracking-wider text-slate-400 uppercase">
+                    <Minus className="h-4 w-4" />
+                    {spec.freedom}
+                  </span>
+                )}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <div class="bg-slate-950 p-4 text-center font-mono text-[8px] tracking-[0.5em] text-slate-600 uppercase">
+        [ End of Specification Report - Protocol 88-Alpha ]
+      </div>
+    </div>
+
+    {/* Mobile Specification Cards */}
+    <div class="space-y-4 md:hidden">
+      {comparison.specs?.map((spec: any) => (
+        <div class="border-2 border-slate-950 bg-white">
+          <div class="bg-slate-950 p-4">
+            <h3 class="font-mono text-[10px] font-bold tracking-widest text-white uppercase">
+              {spec.label}
+            </h3>
+          </div>
+          <div class="space-y-6 p-6">
+            <div class="flex items-center justify-between border-b border-emerald-900/10 pb-4">
+              <span class="font-mono text-[9px] font-bold text-[#064E3B] uppercase">
+                MindfulGuard
+              </span>
+              <span class="flex items-center gap-3 font-mono text-[11px] font-bold tracking-wider text-[#064E3B] uppercase">
+                <Check className="h-4 w-4 stroke-[3px]" />
+                {spec.mindfulGuard}
+              </span>
+            </div>
+            <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+              <span class="font-mono text-[9px] font-bold tracking-widest text-slate-400 uppercase">
+                {competitors.opal}
+              </span>
+              {spec.opal.includes("High") || spec.opal.includes("$99") ? (
+                <span class="flex items-center gap-3 font-mono text-[11px] tracking-wider text-red-900/40 uppercase">
+                  <X className="h-4 w-4" />
+                  {spec.opal}
+                </span>
+              ) : (
+                <span class="flex items-center gap-3 font-mono text-[11px] tracking-wider text-slate-400 uppercase">
+                  <Minus className="h-4 w-4" />
+                  {spec.opal}
+                </span>
+              )}
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="font-mono text-[9px] font-bold tracking-widest text-slate-400 uppercase">
+                {competitors.freedom}
+              </span>
+              {spec.freedom.includes("High") || spec.freedom.includes("$99") ? (
+                <span class="flex items-center gap-3 font-mono text-[11px] tracking-wider text-red-900/40 uppercase">
+                  <X className="h-4 w-4" />
+                  {spec.freedom}
+                </span>
+              ) : (
+                <span class="flex items-center gap-3 font-mono text-[11px] tracking-wider text-slate-400 uppercase">
+                  <Minus className="h-4 w-4" />
+                  {spec.freedom}
+                </span>
+              )}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</Section>
