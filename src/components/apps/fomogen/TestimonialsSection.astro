@@ -3,13 +3,14 @@ import Section from "@/components/common/Section.astro";
 import { FOMOGEN_DATA } from "@/constants/fomogen-data";
 import { Quote } from "lucide-react";
 
-interface Props {
-  translations?: typeof FOMOGEN_DATA.testimonials;
-  labels?: any;
-}
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { getDictionary } from "@/i18n/get-dictionary";
 
-const translations = Astro.props.translations || FOMOGEN_DATA.testimonials;
-const { labels } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const dict = await getDictionary(lang as any);
+const t = useTranslations(dict);
+const translations = t('fomogen.testimonials') || FOMOGEN_DATA.testimonials;
+const labels = t('fomogen.labels');
 ---
 
 <Section className="relative overflow-hidden bg-slate-950 py-24 md:py-32">
@@ -28,7 +29,7 @@ const { labels } = Astro.props;
     </div>
 
     <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:mx-auto lg:max-w-5xl">
-      {translations.map((t) => (
+      {translations.map((t: { quote: string; author: string; niche: string; }) => (
         <div class="relative rounded-[2.5rem] border border-white/10 bg-white/5 p-10 transition-all duration-300 hover:border-green-500/30 hover:bg-white/[0.07] md:p-12">
           <Quote className="absolute top-10 right-10 h-12 w-12 text-green-500/20" />
 

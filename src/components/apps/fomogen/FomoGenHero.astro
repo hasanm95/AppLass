@@ -1,14 +1,17 @@
 ---
 import { Button } from "@/components/ui/button";
 import { FOMOGEN_DATA } from "@/constants/fomogen-data";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+import fomogenHeroImg from "@/assets/apps/fomogen/comparison-hero.png";
 
-interface Props {
-  translations?: typeof FOMOGEN_DATA.hero;
-  heroImageSrc?: string;
-}
-
-const translations = Astro.props.translations || FOMOGEN_DATA.hero;
-const heroImageSrc = Astro.props.heroImageSrc;
+const lang = getLangFromUrl(Astro.url);
+const dict = await getDictionary(lang as any);
+const t = useTranslations(dict);
+const translations = t('fomogen.hero') || FOMOGEN_DATA.hero;
+const heroImageSrc: ImageMetadata = fomogenHeroImg;
 ---
 
 <section
@@ -76,7 +79,7 @@ const heroImageSrc = Astro.props.heroImageSrc;
     {/* Before/After Comparison Image */}
     <div class="parallax-fomo-image relative mx-auto w-full max-w-2xl lg:mx-0">
       <div class="relative aspect-square overflow-hidden rounded-[2.5rem] border border-slate-200 bg-slate-50 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] lg:rounded-[3rem]">
-        <img
+        <Image
           src={heroImageSrc}
           alt="Shopify store conversion rate optimization before and after using FOMO Gen"
           width={800}

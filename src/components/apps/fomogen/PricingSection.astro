@@ -9,12 +9,14 @@ type PricingTranslation = {
   tiers: { name: string; price: string; period: string; description: string; features: string[]; cta: string; }[];
 };
 
-interface Props {
-  translations?: PricingTranslation;
-  labels?: any;
-}
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { getDictionary } from "@/i18n/get-dictionary";
 
-const { translations, labels } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const dict = await getDictionary(lang as any);
+const t = useTranslations(dict);
+const translations = t('fomogen.pricing') as PricingTranslation;
+const labels = t('fomogen.labels');
 ---
 
 <Section className="relative bg-white py-24 md:py-32">

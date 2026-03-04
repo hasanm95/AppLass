@@ -12,12 +12,7 @@ import FomoGenCTA from "@/components/apps/fomogen/FomoGenCTA.astro";
 import FAQRegistrySection from "@/components/common/FAQRegistrySection.astro";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { i18nConfig } from "@/i18n/config";
-import { getImage } from "astro:assets";
-import fomogenHeroImg from "@/assets/apps/fomogen/comparison-hero.png";
-import socialProofUiImg from "@/assets/apps/fomogen/social-proof-ui.png";
-import scarcityUiImg from "@/assets/apps/fomogen/scarcity-ui.png";
-import stickyCartUiImg from "@/assets/apps/fomogen/sticky-cart-ui.png";
-import shippingBarUiImg from "@/assets/apps/fomogen/shipping-bar-ui.png";
+import { useTranslations } from "@/i18n/utils";
 
 interface Props {
   lang: typeof i18nConfig.locales[number];
@@ -25,24 +20,11 @@ interface Props {
 
 const { lang } = Astro.props;
 const dict = await getDictionary(lang as any);
+const t = useTranslations(dict);
 
-const meta = dict.metadata?.fomogen || {};
+const meta = t('metadata.fomogen') || {};
 
-// Optimize images for passing to React components
-const optimizedHero = await getImage({ src: fomogenHeroImg, format: "webp" });
-const optimizedSocialProof = await getImage({ src: socialProofUiImg, format: "webp" });
-const optimizedScarcity = await getImage({ src: scarcityUiImg, format: "webp" });
-const optimizedStickyCart = await getImage({ src: stickyCartUiImg, format: "webp" });
-const optimizedShippingBar = await getImage({ src: shippingBarUiImg, format: "webp" });
-
-// We must map the images to the features array, handling both translations and default data
-const featuresData = (dict.fomogen?.features || []).map((feature: any, idx: number) => {
-  const imageMap = [optimizedSocialProof.src, optimizedScarcity.src, optimizedStickyCart.src, optimizedShippingBar.src];
-  return {
-    ...feature,
-    imageSrc: imageMap[idx] || undefined
-  };
-});
+// Remove featuresData processing as CoreFeatures will handle it directly
 
 ---
 
@@ -83,10 +65,10 @@ const featuresData = (dict.fomogen?.features || []).map((feature: any, idx: numb
               priceValidUntil: "2026-12-31",
               availability: "https://schema.org/InStock",
             },
-            featureList: featuresData.map((f: any) => f.title).join(", "),
+            featureList: t('fomogen.features')?.map((f: any) => f.title).join(", ") || "",
             screenshot: "https://applass.com/fomogen-screenshot.png",
             image: "https://applass.com/fomogen-feature.png",
-            description: dict.metadata?.schema?.fomogenDescription || "FOMO Gen is an all-in-one Shopify app for social proof, urgency, and trust signals.",
+            description: t('metadata.schema.fomogenDescription') || "FOMO Gen is an all-in-one Shopify app for social proof, urgency, and trust signals.",
             author: {
               "@type": "Organization",
               name: "Applass",
@@ -97,7 +79,7 @@ const featuresData = (dict.fomogen?.features || []).map((feature: any, idx: numb
             "@context": "https://schema.org",
             "@type": "Product",
             name: "FOMO Gen",
-            description: dict.metadata?.fomogen?.description || "All-in-one Shopify app for Sales Popups, Stock Countdowns, Sticky Cart, and Trust Badges.",
+            description: t('metadata.fomogen.description') || "All-in-one Shopify app for Sales Popups, Stock Countdowns, Sticky Cart, and Trust Badges.",
             brand: {
               "@type": "Brand",
               name: "AppLass",
@@ -116,21 +98,21 @@ const featuresData = (dict.fomogen?.features || []).map((feature: any, idx: numb
     />
 
     <div class="flex-1 overflow-x-hidden">
-      <FomoGenHero translations={dict.fomogen?.hero} heroImageSrc={optimizedHero.src} />
-      <SpeedBenefitSection translations={dict.fomogen?.speedBenefit} labels={dict.fomogen?.labels} />
-      <CoreFeatures translations={featuresData} labels={dict.fomogen?.labels} />
-      <TestimonialsSection translations={dict.fomogen?.testimonials} labels={dict.fomogen?.labels} />
-      <PricingSection translations={dict.fomogen?.pricing} labels={dict.fomogen?.labels} />
-      <PricingMatrix labels={dict.fomogen?.labels} />
-      <FomoGenCTA translations={dict.fomogen?.cta} />
+      <FomoGenHero />
+      <SpeedBenefitSection />
+      <CoreFeatures />
+      <TestimonialsSection />
+      <PricingSection />
+      <PricingMatrix />
+      <FomoGenCTA />
       <FAQRegistrySection
         client:idle
         registryKey="FOMOGEN"
         variant="centered"
         className="bg-white py-24"
-        items={dict.fomogen?.faq?.questions}
-        title={dict.fomogen?.faq?.headline}
-        subtitle={dict.fomogen?.faq?.sectionLabel}
+        items={t('fomogen.faq.questions')}
+        title={t('fomogen.faq.headline')}
+        subtitle={t('fomogen.faq.sectionLabel')}
       />
     </div>
 

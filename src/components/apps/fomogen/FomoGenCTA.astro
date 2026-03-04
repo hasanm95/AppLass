@@ -4,11 +4,13 @@ import { Button } from "@/components/ui/button";
 import { FOMOGEN_DATA } from "@/constants/fomogen-data";
 import { Check } from "lucide-react";
 
-interface Props {
-  translations?: typeof FOMOGEN_DATA.cta & { noCreditCard?: string };
-}
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { getDictionary } from "@/i18n/get-dictionary";
 
-const translations = (Astro.props.translations || FOMOGEN_DATA.cta) as typeof FOMOGEN_DATA.cta & { noCreditCard?: string };
+const lang = getLangFromUrl(Astro.url);
+const dict = await getDictionary(lang as any);
+const t = useTranslations(dict);
+const translations = (t('fomogen.cta') || FOMOGEN_DATA.cta) as typeof FOMOGEN_DATA.cta & { noCreditCard?: string };
 ---
 
 <Section className="relative overflow-hidden bg-white py-24 md:py-32">

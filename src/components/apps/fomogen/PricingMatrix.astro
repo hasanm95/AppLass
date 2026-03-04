@@ -2,11 +2,13 @@
 import { FOMOGEN_DATA } from "@/constants/fomogen-data";
 import Section from "@/components/common/Section.astro";
 
-interface Props {
-  labels?: any;
-}
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { getDictionary } from "@/i18n/get-dictionary";
 
-const { labels } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const dict = await getDictionary(lang as any);
+const t = useTranslations(dict);
+const labels = t('fomogen.labels');
 ---
 
 <Section className="relative bg-white pb-24 md:pb-32">

@@ -3,14 +3,14 @@ import Section from "@/components/common/Section.astro";
 import { FOMOGEN_DATA } from "@/constants/fomogen-data";
 import { Zap, AlertTriangle, ShieldCheck } from "lucide-react";
 
-interface Props {
-  translations?: typeof FOMOGEN_DATA.speedBenefit;
-  labels?: any;
-}
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { getDictionary } from "@/i18n/get-dictionary";
 
-const translations = Astro.props.translations || FOMOGEN_DATA.speedBenefit;
-const { labels } = Astro.props;
-const speedBenefit = translations;
+const lang = getLangFromUrl(Astro.url);
+const dict = await getDictionary(lang as any);
+const t = useTranslations(dict);
+const speedBenefit = t('fomogen.speedBenefit') || FOMOGEN_DATA.speedBenefit;
+const labels = t('fomogen.labels');
 ---
 
 <Section className="relative overflow-hidden bg-slate-50 py-24 md:py-32">
