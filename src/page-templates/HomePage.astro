@@ -2,14 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 import Footer from "@/components/common/Footer.astro";
 import Navbar from "@/components/common/Navbar.astro";
-import {
-  Hero,
-  SocialProof,
-  ProductShowcase,
-  FoundersMoat,
-  SolutionsSection,
-  AnswerNuggets,
-} from "@/components/home";
+import Hero from "@/components/home/Hero.astro";
+import SocialProof from "@/components/home/SocialProof.astro";
+import ProductShowcase from "@/components/home/ProductShowcase.astro";
+import FoundersMoat from "@/components/home/FoundersMoat.astro";
+import SolutionsSection from "@/components/home/SolutionsSection.astro";
+import { AnswerNuggets } from "@/components/home";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { i18nConfig } from "@/i18n/config";
 import { getImage } from 'astro:assets';
