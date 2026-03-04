@@ -12,7 +12,7 @@ import { PRODUCTS } from "@/constants/home-data";
 import Section from "@/components/common/Section.astro";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { i18nConfig } from "@/i18n/config";
-import { localePath } from "@/i18n/utils";
+import { localePath, useTranslations } from "@/i18n/utils";
 
 interface Props {
   lang: typeof i18nConfig.locales[number];
@@ -20,6 +20,7 @@ interface Props {
 
 const { lang } = Astro.props;
 const dict = await getDictionary(lang as any);
+const t = useTranslations(dict);
 
 const meta = dict.metadata?.apps || {};
 const optimizedFomogen = await getImage({ src: fomogenFeatureImg, format: 'webp' });
@@ -48,10 +49,10 @@ const optimizedImages: Record<string, string> = {
     <Navbar    />
     <div class="pt-32">
       <SubpageHero
-        eyebrow={dict.apps?.hero?.eyebrow || "AppLass Ecosystem"}
-        headline={dict.apps?.hero?.headline || "Our"}
-        headlineAccent={dict.apps?.hero?.headlineAccent || "Ecosystem."}
-        description={dict.apps?.hero?.description || "Proprietary systems built with technical discipline and a focus on measurable impact. Every tool is a derivation of logic."}
+        eyebrow={t('apps.hero.eyebrow') || "AppLass Ecosystem"}
+        headline={t('apps.hero.headline') || "Our"}
+        headlineAccent={t('apps.hero.headlineAccent') || "Ecosystem."}
+        description={t('apps.hero.description') || "Proprietary systems built with technical discipline and a focus on measurable impact. Every tool is a derivation of logic."}
         centered
       />
 
@@ -60,7 +61,7 @@ const optimizedImages: Record<string, string> = {
           <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
             {PRODUCTS.map((product) => {
               const dictKey = product.id === "mindful" ? "mindfulGuard" : product.id;
-              const translation = (dict.products as any)?.[dictKey];
+              const translation = t(`products.${dictKey}`);
 
               return (
                 <div
@@ -104,7 +105,7 @@ const optimizedImages: Record<string, string> = {
                         href={localePath(lang, `/apps/${product.id === "mindful" ? "mindful-guard" : product.id}`)}
                         className="h-14 w-full rounded-2xl bg-slate-900 text-lg font-bold text-white transition-all hover:bg-blue-600"
                       >
-                        {dict.apps?.viewDetails || "View Product Details"}
+                        {t('apps.viewDetails') || "View Product Details"}
                       </LinkButton>
                     </div>
                   </div>
