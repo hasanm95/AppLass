@@ -14,8 +14,10 @@ interface Props {
 
 const { lang } = Astro.props;
 const dict = await getDictionary(lang as any);
+const { useTranslations } = await import("@/i18n/utils");
+const t = useTranslations(dict);
 
-const meta = dict.metadata?.blog || {};
+const meta = t('metadata.blog') || dict.metadata?.blog || {};
 
 const posts = await getBlogPosts(lang as string);
 const categories = await getBlogCategories(lang as string);
@@ -39,10 +41,10 @@ const otherPosts = posts.filter(
   <Navbar    />
   <div class="flex-1 bg-white pt-20">
     <SubpageHero
-      eyebrow="The Logic Lab"
-      headline="Insights for the"
-      headlineAccent="Modern Engineer."
-      description="Deep dives into software engineering, mathematics, and digital productivity. We explore the systems that drive successful founders."
+      eyebrow={t('blog.hero.eyebrow') || "The Logic Lab"}
+      headline={t('blog.hero.headline') || "Insights for the"}
+      headlineAccent={t('blog.hero.headlineAccent') || "Modern Engineer."}
+      description={t('blog.hero.description') || "Deep dives into software engineering, mathematics, and digital productivity."}
       centered
       bgClassName="bg-white"
     />
@@ -60,19 +62,28 @@ const otherPosts = posts.filter(
         {/* Featured Post */}
         {featuredPost && (
           <div class="mb-12 lg:mb-20">
-            <BlogCard post={featuredPost} isHero={true} lang={lang} />
+            <BlogCard 
+              post={featuredPost} 
+              isHero={true} 
+              lang={lang} 
+              authorLabel={t('blog.card.articleAuthor')} 
+            />
           </div>
         )}
         {/* Grid */}
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {otherPosts.map((post: any) => (
-            <BlogCard post={post} lang={lang} />
+            <BlogCard 
+              post={post} 
+              lang={lang} 
+              authorLabel={t('blog.card.articleAuthor')} 
+            />
           ))}
         </div>
         {posts.length === 0 && (
           <div class="py-20 text-center">
             <p class="font-bold text-slate-400">
-              No articles published yet. Check back soon.
+              {t('blog.noArticles') || "No articles published yet. Check back soon."}
             </p>
           </div>
         )}

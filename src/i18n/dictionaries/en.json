@@ -13,7 +13,9 @@
     "closeMenu": "Close menu"
   },
   "common": {
-    "selectLanguage": "Select Language"
+    "selectLanguage": "Select Language",
+    "learnMore": "Learn More",
+    "poweredByLogic": "Powered by Logic"
   },
   "footer": {
     "tagline": "Logic-driven software where mathematical precision meets human-centric design.",
@@ -372,6 +374,43 @@
       "screenveilDescription": "Black overlay for AMOLED/OLED displays that saves 60%+ battery life while listening to videos.",
       "fomogenDescription": "Elite social proof tool with a <2.1KB payload to boost Shopify engagement by +23% without performance debt.",
       "mindfulGuardDescription": "Privacy-first Android productivity guardian that helps users reclaim 2.4 hours of focus daily with local-only architecture."
+    }
+  },
+  "blog": {
+    "hero": {
+      "eyebrow": "The Logic Lab",
+      "headline": "Insights for the",
+      "headlineAccent": "Modern Engineer.",
+      "description": "Deep dives into software engineering, mathematics, and digital productivity. We explore the systems that drive successful founders."
+    },
+    "noArticles": "No articles published yet. Check back soon.",
+    "post": {
+      "backToArchive": "Back to Archive",
+      "articleAuthor": "Article Author",
+      "technicalClarifications": "Technical Clarifications",
+      "frequentlyAsked": "Frequently Asked",
+      "questions": "Questions",
+      "shareArticle": "Share Article",
+      "shareOnTwitter": "Share on Twitter",
+      "shareOnLinkedIn": "Share on LinkedIn",
+      "copyLink": "Copy Link"
+    },
+    "card": {
+      "articleAuthor": "Article Author"
+    },
+    "appCallout": {
+      "mindfulGuard": {
+        "sub": "Built for Focus.",
+        "desc": "Reclaim your digital focus with logical guardrails."
+      },
+      "fomogen": {
+        "sub": "Sales Simplified.",
+        "desc": "The #1 Shopify app for social proof automation."
+      },
+      "applass": {
+        "sub": "First Principles.",
+        "desc": "Get engineering insights delivered to your inbox."
+      }
     }
   },
   "fomogen": {

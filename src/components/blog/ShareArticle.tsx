@@ -7,9 +7,15 @@ import { cn } from "@/lib/utils";
 interface ShareArticleProps {
   title: string;
   slug: string;
+  labels?: {
+    shareArticle: string;
+    shareOnTwitter: string;
+    shareOnLinkedIn: string;
+    copyLink: string;
+  };
 }
 
-export function ShareArticle({ title, slug }: ShareArticleProps) {
+export function ShareArticle({ title, slug, labels }: ShareArticleProps) {
   const [copied, setCopied] = useState(false);
   const url = `https://applass.com/blog/${slug}`;
 
@@ -40,20 +46,20 @@ export function ShareArticle({ title, slug }: ShareArticleProps) {
   return (
     <div className="rounded-4xl border border-slate-100 bg-slate-50/50 p-8">
       <h4 className="mb-4 text-sm font-black tracking-widest text-slate-900 uppercase">
-        Share Article
+        {labels?.shareArticle || "Share Article"}
       </h4>
       <div className="flex gap-4">
         <button
           onClick={shareOnTwitter}
           className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 transition-all hover:border-blue-600 hover:text-blue-600"
-          title="Share on Twitter"
+          title={labels?.shareOnTwitter || "Share on Twitter"}
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
         </button>
         <button
           onClick={shareOnLinkedIn}
           className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 transition-all hover:border-blue-600 hover:text-blue-600"
-          title="Share on LinkedIn"
+          title={labels?.shareOnLinkedIn || "Share on LinkedIn"}
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
         </button>
@@ -63,7 +69,7 @@ export function ShareArticle({ title, slug }: ShareArticleProps) {
             "flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white transition-all hover:border-blue-600 hover:text-blue-600",
             copied ? "border-green-500 text-green-500" : "text-slate-500"
           )}
-          title="Copy Link"
+          title={labels?.copyLink || "Copy Link"}
         >
           {copied ? (
             <Check className="h-4 w-4" />

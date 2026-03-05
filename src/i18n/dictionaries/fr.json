@@ -13,7 +13,9 @@
     "closeMenu": "Fermer le menu"
   },
   "common": {
-    "selectLanguage": "Choisissez la langue"
+    "selectLanguage": "Choisissez la langue",
+    "learnMore": "En savoir plus",
+    "poweredByLogic": "Propulsé par la Logique"
   },
   "footer": {
     "tagline": "Logiciels guidés par la logique où la précision mathématique rencontre un design centré sur l’humain.",
@@ -816,6 +818,43 @@
     "title": "AppLass | Ingénierie Logicielle Haute Performance",
     "description": "Chez AppLass, nous comblons le fossé entre les mathématiques complexes et le logiciel centré sur l’humain. Ne laissez plus des logiciels surchargés freiner votre croissance. Nous concevons des outils Shopify et mobiles de niveau élite pilotés par une précision mathématique.",
     "keywords": "studio logiciel, applications Shopify, bien-être numérique, accessibilité, WCAG, développement web, AppLass"
+  },
+  "blog": {
+    "hero": {
+      "eyebrow": "Le Logic Lab",
+      "headline": "Des idées pour l'",
+      "headlineAccent": "Ingénieur Moderne.",
+      "description": "Plongées profondes dans l'ingénierie logicielle, les mathématiques et la productivité numérique. Nous explorons les systèmes qui animent les fondateurs à succès."
+    },
+    "noArticles": "Aucun article publié pour le moment. Revenez bientôt.",
+    "post": {
+      "backToArchive": "Retour aux archives",
+      "articleAuthor": "Auteur de l'article",
+      "technicalClarifications": "Précisions Techniques",
+      "frequentlyAsked": "Questions Fréquemment",
+      "questions": "Posées",
+      "shareArticle": "Partager l'article",
+      "shareOnTwitter": "Partager sur Twitter",
+      "shareOnLinkedIn": "Partager sur LinkedIn",
+      "copyLink": "Copier le lien"
+    },
+    "card": {
+      "articleAuthor": "Auteur de l'article"
+    },
+    "appCallout": {
+      "mindfulGuard": {
+        "sub": "Conçu pour la concentration.",
+        "desc": "Reprenez votre concentration numérique avec des garde-fous logiques."
+      },
+      "fomogen": {
+        "sub": "Ventes Simplifiées.",
+        "desc": "L'application Shopify n°1 pour l'automatisation de la preuve sociale."
+      },
+      "applass": {
+        "sub": "Premiers Principes.",
+        "desc": "Recevez des informations d'ingénierie directement dans votre boîte de réception."
+      }
+    }
   },
   "schema": {
     "organizationDescription": "Studio logiciel guidé par la logique, concevant des applications haute performance avec une précision mathématique. Créateurs de ScreenVeil (plus de 10k téléchargements, note 4.4★), FomoGen et Mindful Guard.",
