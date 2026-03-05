@@ -1,12 +1,13 @@
 ---
 import Section from "@/components/common/Section.astro";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
-interface Props {
-  translations?: any;
-}
+const lang = getLangFromUrl(Astro.url);
+const dictMap = await getDictionary(lang as any);
+const t = useTranslations(dictMap);
 
-const { translations } = Astro.props;
-const dict = translations || { title: "", description: "" };
+const dict = t('mindfulGuard.logic') || { title: "", description: "" };
 ---
 
 <Section id="logic" className="border-y border-slate-200 bg-[#FBFBFA]">

@@ -10,6 +10,7 @@ import FAQRegistrySection from "@/components/common/FAQRegistrySection.astro";
 import { MINDFUL_GUARD_SCHEMA } from "@/constants/mindful-guard-data";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { i18nConfig } from "@/i18n/config";
+import { useTranslations } from "@/i18n/utils";
 
 interface Props {
   lang: typeof i18nConfig.locales[number];
@@ -17,8 +18,9 @@ interface Props {
 
 const { lang } = Astro.props;
 const dict = await getDictionary(lang as any);
+const t = useTranslations(dict);
 
-const meta = dict.metadata?.mindfulGuard || {};
+const meta = t('metadata.mindfulGuard') || {};
 
 ---
 
@@ -41,24 +43,24 @@ const meta = dict.metadata?.mindfulGuard || {};
   />
   <div class="flex-1">
     {/* Section 1: The Hero (Above the Fold) */}
-    <MindfulHero translations={dict.mindfulGuard?.hero} />
+    <MindfulHero />
 
     {/* Section 2: The Logic (The "Why" - AI Optimization) */}
-    <LogicSection translations={dict.mindfulGuard?.logic} />
+    <LogicSection />
 
     {/* Section 3: The Differentiators (The "Moat") */}
-    <DifferentiatorsSection translations={dict.mindfulGuard?.differentiators} />
+    <DifferentiatorsSection />
 
     {/* Section 4: The Comparison Matrix (Conversion Driver) */}
-    <ComparisonMatrix translations={dict.mindfulGuard?.comparison} />
+    <ComparisonMatrix />
 
     {/* Section 5: Engineered FAQ (AI Snippet Bait) */}
     <FAQRegistrySection
       client:idle
       registryKey="MINDFUL_GUARD"
-      items={dict.mindfulGuard?.faq?.questions}
-      title={dict.mindfulGuard?.faq?.headline}
-      subtitle={dict.mindfulGuard?.faq?.sectionLabel}
+      items={t('mindfulGuard.faq.questions')}
+      title={t('mindfulGuard.faq.headline')}
+      subtitle={t('mindfulGuard.faq.sectionLabel')}
       variant="fragmented"
       className="bg-[#FBFBFA]"
     />

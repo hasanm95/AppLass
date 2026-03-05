@@ -2,12 +2,14 @@
 import Section from "@/components/common/Section.astro";
 import { MINDFUL_GUARD_DATA } from "@/constants/mindful-guard-data";
 import { Check, X, Minus } from "lucide-react";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
-interface Props {
-  translations?: any;
-}
+const lang = getLangFromUrl(Astro.url);
+const dictMap = await getDictionary(lang as any);
+const t = useTranslations(dictMap);
 
-const { translations } = Astro.props;
+const translations = t('mindfulGuard.comparison');
 const comparison = translations || MINDFUL_GUARD_DATA.comparison;
 const competitors = comparison.columns?.competitors || { opal: "Opal", freedom: "Freedom" };
 
