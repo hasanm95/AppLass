@@ -10,6 +10,8 @@ import {
   HelpCircle,
   type LucideIcon,
 } from "lucide-react";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
 const ICON_MAP: Record<string, LucideIcon> = {
   Pointer,
@@ -19,11 +21,11 @@ const ICON_MAP: Record<string, LucideIcon> = {
   Play,
 };
 
-interface Props {
-  translations?: any[];
-}
+const lang = getLangFromUrl(Astro.url);
+const dict = await getDictionary(lang as any);
+const t = useTranslations(dict);
 
-const { translations } = Astro.props;
+const translations = t('screenveil.features');
 const features = translations && translations.length > 0 ? translations : SCREENVEIL_DATA.features;
 ---
 

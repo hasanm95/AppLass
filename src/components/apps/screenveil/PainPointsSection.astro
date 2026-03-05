@@ -2,17 +2,19 @@
 import Section from "@/components/common/Section.astro";
 import { SCREENVEIL_DATA } from "@/constants/screenveil-data";
 import { Battery, Hand, HelpCircle, type LucideIcon } from "lucide-react";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
 const ICON_MAP: Record<string, LucideIcon> = {
   Battery,
   Hand,
 };
 
-interface Props {
-  translations?: any[];
-}
+const lang = getLangFromUrl(Astro.url);
+const dict = await getDictionary(lang as any);
+const t = useTranslations(dict);
 
-const { translations } = Astro.props;
+const translations = t('screenveil.painPoints');
 const points = translations && translations.length > 0 ? translations : SCREENVEIL_DATA.painPoints;
 ---
 

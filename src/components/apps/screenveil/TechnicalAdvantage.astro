@@ -1,12 +1,14 @@
 ---
 import Section from "@/components/common/Section.astro";
 import { SCREENVEIL_DATA } from "@/constants/screenveil-data";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
-interface Props {
-  translations?: any;
-}
+const lang = getLangFromUrl(Astro.url);
+const dictMap = await getDictionary(lang as any);
+const t = useTranslations(dictMap);
 
-const { translations } = Astro.props;
+const translations = t('screenveil.technical');
 const dict = translations || SCREENVEIL_DATA.technical;
 ---
 

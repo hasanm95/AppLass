@@ -14,7 +14,6 @@ import { SCREENVEIL_DATA } from "@/constants/screenveil-data";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { i18nConfig } from "@/i18n/config";
 import { getImage } from "astro:assets";
-import screenveilHeroImg from "@/assets/apps/screenveil/hero-mockup.png";
 
 interface Props {
   lang: typeof i18nConfig.locales[number];
@@ -24,8 +23,6 @@ const { lang } = Astro.props;
 const dict = await getDictionary(lang as any);
 
 const meta = dict.metadata?.screenveil || {};
-
-const optimizedHero = await getImage({ src: screenveilHeroImg, format: "webp" });
 
 ---
 
@@ -49,12 +46,12 @@ const optimizedHero = await getImage({ src: screenveilHeroImg, format: "webp" })
         is:inline
         set:html={JSON.stringify(SCREENVEIL_DATA.schema.softwareApplication)}
       />
-      <ScreenVeilHero translations={dict.screenveil?.hero} heroImageSrc={optimizedHero.src} />
-      <PainPointsSection translations={dict.screenveil?.painPoints} />
-      <FeatureGrid translations={dict.screenveil?.features} />
-      <TechnicalAdvantage translations={dict.screenveil?.technical} />
-      <PrivacySection translations={dict.screenveil?.privacy} />
-      <TestimonialsSection translations={dict.screenveil?.testimonials} />
+      <ScreenVeilHero />
+      <PainPointsSection />
+      <FeatureGrid />
+      <TechnicalAdvantage />
+      <PrivacySection />
+      <TestimonialsSection />
       <FAQSection client:idle />
     </div>
 
