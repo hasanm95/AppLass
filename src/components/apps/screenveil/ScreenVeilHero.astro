@@ -4,6 +4,7 @@ import { getDictionary } from "@/i18n/get-dictionary";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 import { Image } from "astro:assets";
 import screenveilHeroImg from "@/assets/apps/screenveil/hero-mockup.png";
+import { LinkButton } from "@/components/ui/link-button";
 
 
 const { heroImageSrc } = Astro.props;
@@ -57,28 +58,24 @@ const dict = t('screenveil.hero') || {
       </p>
 
       <div class="parallax-sv-cta mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row md:mt-16 md:gap-6 lg:justify-start">
-        <Button
+        <LinkButton
           size="lg"
           className="h-14 w-full rounded-xl bg-green-500 px-10 text-base font-bold text-black shadow-2xl shadow-green-500/30 transition-all duration-500 hover:scale-105 hover:bg-green-400 active:scale-95 sm:w-auto md:h-16 md:rounded-2xl md:px-12 md:text-lg"
-          asChild
+          href={dict.playStoreUrl}
         >
-          <a href={dict.playStoreUrl}>
-            {dict.primaryCTA}
-          </a>
-        </Button>
-        <Button
+          {dict.primaryCTA}
+        </LinkButton>
+        <LinkButton
           size="lg"
           variant="ghost"
           className="group h-14 w-full rounded-xl px-10 text-base font-bold text-white transition-all hover:bg-white/10 sm:w-auto md:h-16 md:rounded-2xl md:px-12 md:text-lg"
-          asChild
+          href="#features"
         >
-          <a href="#features">
             {dict.secondaryCTA}
             <span class="ml-2 inline-block transition-transform group-hover:translate-x-2">
               →
             </span>
-          </a>
-        </Button>
+        </LinkButton>
       </div>
 
       <p class="mt-8 text-sm font-bold text-slate-500 lg:mt-10">

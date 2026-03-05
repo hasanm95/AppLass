@@ -13,10 +13,9 @@ import {
   BarChart3,
   MousePointer2,
 } from "lucide-react";
-import { FAQ_REGISTRY } from "@/constants/faq-registry";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { i18nConfig } from "@/i18n/config";
-import { localePath } from "@/i18n/utils";
+import { localePath, useTranslations } from "@/i18n/utils";
 
 interface Props {
   lang: typeof i18nConfig.locales[number];
@@ -24,8 +23,10 @@ interface Props {
 
 const { lang } = Astro.props;
 const dict = await getDictionary(lang as any);
+const t = useTranslations(lang);
 
 const meta = dict.metadata?.ecommercePerformance || {};
+const faqItems = dict.faqRegistry?.ECOMMERCE_PERFORMANCE || [];
 
 ---
 
@@ -47,26 +48,22 @@ const meta = dict.metadata?.ecommercePerformance || {};
       <Section className="bg-iridescent border-b border-slate-100 py-12 lg:py-32">
         <div class="section-container">
           <span class="mb-4 lg:mb-6 block text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase">
-            Authority Pillar
+            {t("ecommerceGuide.hero.eyebrow")}
           </span>
           <div class="mb-4 lg:mb-6 flex items-center gap-2">
             <CheckCircle2 className="h-4 w-4 text-emerald-600" />
             <span class="text-xs font-bold text-slate-500 italic">
-              Tested By Experts & Verified for 2026
+              {t("ecommerceGuide.hero.verification")}
             </span>
           </div>
           <h1 class="text-4xl md:text-5xl lg:text-display mb-6 lg:mb-8 max-w-5xl text-slate-900">
-            The 2026 Guide to Ecommerce Performance
+            {t("ecommerceGuide.hero.headline")}
             <span class="text-slate-300">
-              : Speed, Trust, and Conversion.
+              {t("ecommerceGuide.hero.headlineAccent")}
             </span>
           </h1>
           <p class="max-w-3xl text-xl leading-relaxed font-medium text-slate-600">
-            In 2026, ecommerce performance is no longer just about
-            "having a fast site." It is the bridge between a
-            visitor's first impression and a completed checkout. Brands
-            that fail to meet modern performance benchmarks are effectively
-            "leaving money on the table."
+            {t("ecommerceGuide.hero.description")}
           </p>
         </div>
       </Section>
@@ -76,12 +73,10 @@ const meta = dict.metadata?.ecommercePerformance || {};
         <div class="section-container">
           <div class="mb-12 lg:mb-20">
             <h2 class="mb-4 lg:mb-6 text-3xl lg:text-4xl font-black text-slate-900">
-              1. Technical Speed: The 2026 Performance Benchmarks
+              {t("ecommerceGuide.technicalSpeed.title")}
             </h2>
             <p class="max-w-2xl text-lg leading-relaxed font-medium text-slate-500">
-              Google's Core Web Vitals remain the gold standard. In 2026,
-              a delay of just one second can drop your conversion rate by 7%.
-              Hit these specific targets to stay competitive:
+              {t("ecommerceGuide.technicalSpeed.description")}
             </p>
           </div>
 
@@ -91,13 +86,13 @@ const meta = dict.metadata?.ecommercePerformance || {};
                 <div class="rounded-xl bg-blue-100 p-2 lg:p-3 text-blue-600">
                   <Gauge size={24} />
                 </div>
-                <h4 class="font-black text-slate-900">LCP</h4>
+                <h4 class="font-black text-slate-900">{t("ecommerceGuide.technicalSpeed.lcp.title")}</h4>
               </div>
               <span class="mb-2 block text-2xl lg:text-3xl font-black text-slate-900">
-                &le; 2.5s
+                {t("ecommerceGuide.technicalSpeed.lcp.value")}
               </span>
               <p class="text-sm font-medium text-slate-500">
-                Measures how fast your main product image or headline loads.
+                {t("ecommerceGuide.technicalSpeed.lcp.desc")}
               </p>
             </div>
             
@@ -106,14 +101,13 @@ const meta = dict.metadata?.ecommercePerformance || {};
                 <div class="rounded-xl bg-rose-100 p-2 lg:p-3 text-rose-600">
                   <Zap size={24} />
                 </div>
-                <h4 class="font-black text-slate-900">INP</h4>
+                <h4 class="font-black text-slate-900">{t("ecommerceGuide.technicalSpeed.inp.title")}</h4>
               </div>
               <span class="mb-2 block text-2xl lg:text-3xl font-black text-slate-900">
-                &le; 200ms
+                {t("ecommerceGuide.technicalSpeed.inp.value")}
               </span>
               <p class="text-sm font-medium text-slate-500">
-                Measures how quickly your site reacts when an user clicks
-                "Add to Cart."
+                {t("ecommerceGuide.technicalSpeed.inp.desc")}
               </p>
             </div>
             
@@ -122,14 +116,13 @@ const meta = dict.metadata?.ecommercePerformance || {};
                 <div class="rounded-xl bg-amber-100 p-2 lg:p-3 text-amber-600">
                   <Sparkles size={24} />
                 </div>
-                <h4 class="font-black text-slate-900">CLS</h4>
+                <h4 class="font-black text-slate-900">{t("ecommerceGuide.technicalSpeed.cls.title")}</h4>
               </div>
               <span class="mb-2 block text-2xl lg:text-3xl font-black text-slate-900">
-                &lt; 0.1
+                {t("ecommerceGuide.technicalSpeed.cls.value")}
               </span>
               <p class="text-sm font-medium text-slate-500">
-                Ensures your page elements don't "jump" around
-                while loading.
+                {t("ecommerceGuide.technicalSpeed.cls.desc")}
               </p>
             </div>
           </div>
@@ -137,22 +130,20 @@ const meta = dict.metadata?.ecommercePerformance || {};
           <div class="relative overflow-hidden rounded-3xl lg:rounded-[3rem] bg-blue-600 p-8 lg:p-16 text-white">
             <div class="relative z-10 max-w-2xl">
               <h3 class="mb-4 lg:mb-6 flex items-center gap-3 text-xl lg:text-2xl font-black">
-                <TrendingUp className="text-blue-200" /> Pro Tip: Audit your
-                "App Bloat."
+                <TrendingUp className="text-blue-200" /> {t("ecommerceGuide.technicalSpeed.proTip.title")}
               </h3>
               <p class="mb-6 lg:mb-8 text-lg lg:text-xl leading-relaxed font-medium text-blue-100">
-                Most Shopify stores run 8&ndash;12 apps, each slowing down
-                JavaScript execution. Aim for a{" "}
+                {t("ecommerceGuide.technicalSpeed.proTip.description").split("lean stack of 6–10 high-value apps")[0]}
                 <strong class="text-white underline decoration-blue-400">
-                  lean stack of 6&ndash;10 high-value apps
+                  lean stack of 6–10 high-value apps
                 </strong>{" "}
-                to maintain a loading time of 1.5&ndash;3 seconds.
+                {t("ecommerceGuide.technicalSpeed.proTip.description").split("lean stack of 6–10 high-value apps")[1]}
               </p>
               <a
                 href={localePath(lang, "/blog/shopify-site-speed-social-proof")}
                 class="inline-flex h-12 items-center rounded-full bg-white px-8 text-sm font-black text-blue-600 transition-all hover:bg-slate-100"
               >
-                Site Speed Audit Guide
+                {t("ecommerceGuide.technicalSpeed.proTip.cta")}
               </a>
             </div>
             <BarChart3
@@ -169,40 +160,36 @@ const meta = dict.metadata?.ecommercePerformance || {};
           <div class="flex flex-col items-center gap-12 lg:gap-20 lg:flex-row">
             <div class="lg:w-1/2">
               <h2 class="mb-6 lg:mb-8 text-3xl lg:text-4xl font-black text-slate-900">
-                2. Psychological Trust: The Power of Social Proof
+                {t("ecommerceGuide.psychologicalTrust.title")}
               </h2>
               <p class="mb-8 lg:mb-10 text-lg lg:text-xl leading-relaxed font-medium text-slate-600">
-                Once a user lands on your site, you have seconds to prove you
-                are trustworthy. Social proof is the most effective lever for
-                driving immediate sales in 2026.
+                {t("ecommerceGuide.psychologicalTrust.description")}
               </p>
               <div class="space-y-4 lg:space-y-6">
                 <div class="flex gap-4 lg:gap-6 rounded-2xl lg:rounded-3xl border border-slate-100 bg-white p-6 lg:p-8 shadow-sm transition-all hover:border-blue-500/20">
                   <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-50 text-lg font-black text-blue-600">
-                    98%
+                    {t("ecommerceGuide.psychologicalTrust.lift.value")}
                   </div>
                   <div>
                     <h4 class="mb-2 font-black text-slate-900">
-                      The 98% Lift
+                      {t("ecommerceGuide.psychologicalTrust.lift.title")}
                     </h4>
                     <p class="font-medium text-slate-500">
-                      Sales-based social proof notifications have been shown
-                      to boost website conversions by up to 98%.
+                      {t("ecommerceGuide.psychologicalTrust.lift.desc")}
                     </p>
                   </div>
                 </div>
                 
                 <div class="flex gap-4 lg:gap-6 rounded-2xl lg:rounded-3xl border border-slate-100 bg-white p-6 lg:p-8 shadow-sm transition-all hover:border-rose-500/20">
                   <div class="flex h-10 w-10 lg:h-12 lg:w-12 shrink-0 items-center justify-center rounded-xl lg:rounded-2xl bg-rose-50 text-base lg:text-lg font-black text-rose-600">
-                    270%
+                    {t("ecommerceGuide.psychologicalTrust.threshold.value")}
                   </div>
                   <div>
                     <h4 class="mb-2 font-black text-slate-900">
-                      The Review Threshold
+                      {t("ecommerceGuide.psychologicalTrust.threshold.title")}
                     </h4>
                     <p class="font-medium text-slate-500">
-                      Products with 5 or more reviews are 270% more likely to
-                      be purchased than those with no reviews.
+                      {t("ecommerceGuide.psychologicalTrust.threshold.desc")}
                     </p>
                   </div>
                 </div>
@@ -214,18 +201,18 @@ const meta = dict.metadata?.ecommercePerformance || {};
                 <Sparkles className="h-12 w-12 lg:h-16 lg:w-16 text-amber-500" />
               </div>
               <h3 class="mb-4 lg:mb-6 text-2xl lg:text-3xl font-black text-slate-900">
-                Visual Trust Logic
+                {t("ecommerceGuide.psychologicalTrust.visualTrust.title")}
               </h3>
               <p class="mb-6 lg:mb-8 text-base lg:text-lg leading-relaxed font-medium text-slate-500">
-                Including customer photos or video testimonials in reviews can
-                increase purchase likelihood by{" "}
-                <strong class="text-blue-600">137%</strong>.
+                {t("ecommerceGuide.psychologicalTrust.visualTrust.description").split("137%")[0]}
+                <strong class="text-blue-600">137%</strong>
+                {t("ecommerceGuide.psychologicalTrust.visualTrust.description").split("137%")[1]}.
               </p>
               <a
                 href={localePath(lang, "/blog/best-social-proof-apps-shopify-2026")}
                 class="flex items-center gap-2 font-black text-blue-600 underline-offset-4 hover:underline"
               >
-                Review Best Social Proof Apps <MousePointer2 size={16} />
+                {t("ecommerceGuide.psychologicalTrust.visualTrust.cta")} <MousePointer2 size={16} />
               </a>
             </div>
           </div>
@@ -237,46 +224,41 @@ const meta = dict.metadata?.ecommercePerformance || {};
         <div class="section-container">
           <div class="mx-auto mb-12 lg:mb-20 max-w-3xl text-center">
             <h2 class="mb-6 lg:mb-8 text-3xl lg:text-5xl font-black text-slate-900">
-              3. Frictionless Conversion: CRO Hacks for 2026
+              {t("ecommerceGuide.frictionlessConversion.title")}
             </h2>
             <p class="text-lg lg:text-xl font-medium text-slate-500">
-              To turn traffic into revenue, remove every possible barrier in
-              the mobile journey.
+              {t("ecommerceGuide.frictionlessConversion.description")}
             </p>
           </div>
           <div class="grid grid-cols-1 gap-6 lg:gap-8 md:grid-cols-3">
             <div class="rounded-3xl lg:rounded-[3rem] bg-slate-900 p-8 lg:p-12 text-white">
               <h4 class="mb-4 lg:mb-6 text-xl lg:text-2xl font-black">
-                The Mobile Sticky Cart
+                {t("ecommerceGuide.frictionlessConversion.stickyCart.title")}
               </h4>
               <p class="mb-10 leading-relaxed font-medium text-slate-400">
-                Ensures the "Checkout" button is always within
-                thumb-reach, significantly increasing ROI for Shopify
-                developers.
+                {t("ecommerceGuide.frictionlessConversion.stickyCart.desc")}
               </p>
               <a
                 href={localePath(lang, "/blog/mobile-sticky-cart-guide")}
                 class="font-black text-blue-400 hover:underline"
               >
-                Read the Guide
+                {t("ecommerceGuide.frictionlessConversion.stickyCart.cta")}
               </a>
             </div>
             
             <div class="rounded-3xl lg:rounded-[3rem] border border-slate-100 bg-slate-50 p-8 lg:p-12">
               <h4 class="mb-4 lg:mb-6 text-xl lg:text-2xl font-black text-slate-900">
-                The Three-Click Rule
+                {t("ecommerceGuide.frictionlessConversion.threeClickRule.title")}
               </h4>
               <p class="mb-10 leading-relaxed font-medium text-slate-500">
-                A user should be able to get from your homepage to any product
-                in three clicks or less.
+                {t("ecommerceGuide.frictionlessConversion.threeClickRule.desc")}
               </p>
             </div>
             
             <div class="rounded-3xl lg:rounded-[3rem] bg-blue-600 p-8 lg:p-12 text-white">
-              <h4 class="mb-4 lg:mb-6 text-xl lg:text-2xl font-black">Urgency Nudges</h4>
+              <h4 class="mb-4 lg:mb-6 text-xl lg:text-2xl font-black">{t("ecommerceGuide.frictionlessConversion.urgencyNudges.title")}</h4>
               <p class="mb-10 leading-relaxed font-medium text-blue-100">
-                Visual countdown timers create a sense of FOMO that encourages
-                immediate action at checkout.
+                {t("ecommerceGuide.frictionlessConversion.urgencyNudges.desc")}
               </p>
             </div>
           </div>
@@ -287,10 +269,10 @@ const meta = dict.metadata?.ecommercePerformance || {};
       <Section className="border-y border-slate-100 bg-slate-50/30 py-12 lg:py-24">
         <div class="section-container max-w-4xl">
           <h2 class="mb-10 lg:mb-16 text-center text-3xl lg:text-4xl font-black text-slate-900">
-            Frequently Asked Questions
+            {t("ecommerceGuide.faq.headline")}
           </h2>
           <div class="space-y-6 lg:space-y-8">
-            {FAQ_REGISTRY.ECOMMERCE_PERFORMANCE.map((faq) => (
+            {faqItems.map((faq: any) => (
               <div class="rounded-2xl lg:rounded-3xl border border-slate-100 bg-white p-6 lg:p-10 transition-all hover:border-blue-500/20">
                 <h4 class="mb-3 lg:mb-4 text-lg lg:text-xl font-black text-slate-900">
                   {faq.question}
@@ -302,7 +284,7 @@ const meta = dict.metadata?.ecommercePerformance || {};
             ))}
           </div>
         </div>
-        <FAQSchema items={FAQ_REGISTRY.ECOMMERCE_PERFORMANCE} />
+        <FAQSchema items={faqItems} />
       </Section>
 
       {/* CTA Anchor for FomoGen */}
@@ -311,11 +293,10 @@ const meta = dict.metadata?.ecommercePerformance || {};
           <div class="relative overflow-hidden rounded-3xl lg:rounded-[4rem] bg-blue-600 p-8 lg:p-24 text-center text-white shadow-2xl">
             <div class="relative z-10">
               <h2 class="mb-6 lg:mb-8 text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter">
-                Deploy FomoGen.
+                {t("ecommerceGuide.cta.headline")}
               </h2>
               <p class="mx-auto mb-8 lg:mb-12 max-w-2xl text-lg lg:text-xl font-medium text-blue-100">
-                The technical implementation of 2026 performance benchmarks.
-                Sub-2.1KB payload, zero speed debt, maximum trust.
+                {t("ecommerceGuide.cta.description")}
               </p>
               <div class="flex flex-col items-center justify-center gap-6 sm:flex-row">
                 <a
@@ -324,13 +305,13 @@ const meta = dict.metadata?.ecommercePerformance || {};
                   rel="noopener noreferrer"
                   class="inline-flex h-16 items-center rounded-full bg-white px-12 text-lg font-black text-blue-600 shadow-xl transition-all hover:bg-slate-50"
                 >
-                  Add to Shopify
+                  {t("ecommerceGuide.cta.primary")}
                 </a>
                 <a
                   href={localePath(lang, "/about")}
                   class="inline-flex h-16 items-center rounded-full bg-blue-700 px-12 text-lg font-black text-white transition-all hover:bg-blue-800"
                 >
-                  Meet the Engineer
+                  {t("ecommerceGuide.cta.secondary")}
                 </a>
               </div>
             </div>

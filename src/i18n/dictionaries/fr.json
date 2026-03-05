@@ -856,6 +856,178 @@
       }
     }
   },
+  "ecommerceGuide": {
+    "hero": {
+      "eyebrow": "Pilier d'Autorité",
+      "verification": "Testé par des experts & Vérifié pour 2026",
+      "headline": "Le Guide 2026 de la Performance Ecommerce",
+      "headlineAccent": " : Vitesse, Confiance et Conversion.",
+      "description": "En 2026, la performance e-commerce ne se résume plus à \"avoir un site rapide\". C'est le pont entre la première impression d'un visiteur et un passage en caisse finalisé. Les marques qui ne respectent pas les références de performance modernes \"laissent de l'argent sur la table\"."
+    },
+    "technicalSpeed": {
+      "title": "1. Vitesse Technique : Les Références de Performance 2026",
+      "description": "Les Core Web Vitals de Google restent la référence absolue. En 2026, un délai d'une seule seconde peut faire chuter votre taux de conversion de 7 %. Atteignez ces objectifs spécifiques pour rester compétitif :",
+      "lcp": {
+        "title": "LCP",
+        "value": "≤ 2.5s",
+        "desc": "Mesure la vitesse à laquelle l'image principale de votre produit ou votre titre se charge."
+      },
+      "inp": {
+        "title": "INP",
+        "value": "≤ 200ms",
+        "desc": "Mesure la rapidité avec laquelle votre site réagit lorsqu'un utilisateur clique sur \"Ajouter au panier\"."
+      },
+      "cls": {
+        "title": "CLS",
+        "value": "< 0.1",
+        "desc": "Garantit que les éléments de votre page ne \"sautent\" pas pendant le chargement."
+      },
+      "proTip": {
+        "title": "Conseil de Pro : Auditez votre \"App Bloat.\"",
+        "description": "La plupart des boutiques Shopify utilisent 8 à 12 applications, chacune ralentissant l'exécution du JavaScript. Visez une pile légère de 6 à 10 applications à haute valeur ajoutée pour maintenir un temps de chargement de 1,5 à 3 secondes.",
+        "cta": "Guide d'Audit de Vitesse"
+      }
+    },
+    "psychologicalTrust": {
+      "title": "2. Confiance Psychologique : Le Pouvoir de la Preuve Sociale",
+      "description": "Une fois qu'un utilisateur arrive sur votre site, vous avez quelques secondes pour prouver que vous êtes digne de confiance. La preuve sociale est le levier le plus efficace pour stimuler les ventes immédiates en 2026.",
+      "lift": {
+        "value": "98%",
+        "title": "Le Gain de 98 %",
+        "desc": "Il a été démontré que les notifications de preuve sociale basées sur les ventes augmentent les conversions sur site jusqu'à 98 %."
+      },
+      "threshold": {
+        "value": "270%",
+        "title": "Le Seuil des Avis",
+        "desc": "Les produits ayant 5 avis ou plus sont 270 % plus susceptibles d'être achetés que ceux n'ayant aucun avis."
+      },
+      "visualTrust": {
+        "title": "Logique de Confiance Visuelle",
+        "description": "L'inclusion de photos de clients ou de témoignages vidéo dans les avis peut augmenter la probabilité d'achat de 137 %.",
+        "cta": "Consulter les Meilleures Apps de Preuve Sociale"
+      }
+    },
+    "frictionlessConversion": {
+      "title": "3. Conversion sans Friction : Hacks CRO pour 2026",
+      "description": "Pour transformer le trafic en revenus, supprimez tous les obstacles possibles dans le parcours mobile.",
+      "stickyCart": {
+        "title": "Le Panier Collant Mobile",
+        "desc": "Garantit que le bouton \"Paiement\" est toujours à portée de pouce, augmentant considérablement le ROI pour les développeurs Shopify.",
+        "cta": "Lire le Guide"
+      },
+      "threeClickRule": {
+        "title": "La Règle des Trois Clics",
+        "desc": "Un utilisateur doit pouvoir accéder à n'importe quel produit depuis votre page d'accueil en trois clics ou moins."
+      },
+      "urgencyNudges": {
+        "title": "Nudges d'Urgence",
+        "desc": "Les comptes à rebours visuels créent un sentiment de FOMO qui encourage une action immédiate au moment du paiement."
+      }
+    },
+    "faq": {
+      "headline": "Questions Fréquemment Posées"
+    },
+    "cta": {
+      "headline": "Déployez FomoGen.",
+      "description": "L'implémentation technique des références de performance 2026. Charge utile inférieure à 2,1 Ko, zéro dette de vitesse, confiance maximale.",
+      "primary": "Ajouter à Shopify",
+      "secondary": "Rencontrez l'Ingénieur"
+    }
+  },
+  "digitalWellness": {
+    "hero": {
+      "eyebrow": "Pilier d'Autorité",
+      "headline": "Le Guide Ultime du Bien-être Numérique en 2026",
+      "headlineAccent": " : Maîtrisez votre Concentration et votre Confidentialité.",
+      "description": "En 2026, le professionnel moyen passe plus de 11 heures par jour devant des écrans. Si la technologie nous a rendus plus connectés que jamais, elle a également conduit à un \"Grand Découplage\" de notre attention, où les notifications constantes fragmentent notre concentration et mènent au burn-out numérique.",
+      "quote": "Le bien-être numérique ne se résume plus seulement à \"utiliser moins son téléphone\". C'est une approche holistique de la santé physique, de la gestion de la charge cognitive et de la confidentialité numérique."
+    },
+    "cognitiveLoad": {
+      "title": "1. Gestion de la Charge Cognitive",
+      "description": "Trouver le Signal dans le Bruit. Nos cerveaux n'ont pas été conçus pour traiter plus de 100 notifications par heure. Pour maintenir une performance de pointe, vous devez traiter votre attention comme une ressource finie.",
+      "notificationAuditing": {
+        "title": "Audit des Notifications",
+        "description": "Classez vos alertes en trois niveaux pour protéger votre bande passante neuronale :",
+        "level1": {
+          "label": "Niveau 1 (Critique) :",
+          "desc": "Comprend les alertes de la famille et du serveur pour une réponse immédiate."
+        },
+        "level2": {
+          "label": "Niveau 2 (Actif) :",
+          "desc": "Doivent être traitées par lots toutes les 2 heures."
+        },
+        "level3": {
+          "label": "Niveau 3 (Passif) :",
+          "desc": "Réseaux sociaux et newsletters — à désactiver entièrement."
+        }
+      },
+      "deepWork": {
+        "title": "Mise en œuvre de blocs de \"Travail Profond\"",
+        "description": "Consacrez au moins deux heures chaque matin à des tâches complexes sans aucune interruption numérique. Cela signifie ni Slack, ni e-mail, ni téléphone."
+      }
+    },
+    "physicalSetup": {
+      "eyebrow": "Santé Physique",
+      "title": "2. L'Installation Physique : Ergonomie 2026",
+      "rule90": {
+        "title": "La Règle des 90 Degrés",
+        "desc": "Gardez les coudes parallèles au bureau et les genoux à un angle de 90 degrés avec les pieds à plat sur le sol."
+      },
+      "rule20": {
+        "title": "Santé Oculaire 20-20-20",
+        "desc": "Toutes les 20 minutes, regardez quelque chose à 20 pieds (6 mètres) pendant au moins 20 secondes pour éviter la fatigue."
+      },
+      "blueLight": {
+        "title": "Atténuation de la Lumière Bleue",
+        "desc": "Désactivez tous les appareils émettant de la lumière bleue 60 minutes avant de dormir pour une production naturelle de mélatonine."
+      }
+    },
+    "essentialTools": {
+      "title": "3. Outils Essentiels pour la Concentration et la Confidentialité",
+      "description": "Pour atteindre le bien-être numérique, vous avez besoin d'outils qui respectent vos données tout en protégeant votre temps.",
+      "mindfulGuard": {
+        "eyebrow": "Confidentialité d'Abord",
+        "title": "Mindful Guard",
+        "description": "Une application de concentration de pointe privilégiant la confidentialité, qui combine un minuteur Pomodoro avec un blocage strict des applications. Contrairement à de nombreux concurrents, elle fonctionne 100 % hors ligne, sans collecte de données.",
+        "cta": "Découvrir Mindful Guard"
+      },
+      "screenVeil": {
+        "title": "ScreenVeil",
+        "description": "Un filtre d'écran léger pour Android conçu pour protéger vos données des regards indiscrets dans les espaces publics tout en réduisant la fatigue oculaire grâce à des superpositions personnalisables.",
+        "cta": "En savoir plus sur ScreenVeil"
+      },
+      "opalAlternatives": {
+        "title": "Alternatives à Opal",
+        "description": "Pour les utilisateurs d'Android recherchant les fonctionnalités de l'application Opal sur iOS, plusieurs alternatives haute performance proposent désormais des analyses poussées de vos déclencheurs et schémas comportementaux.",
+        "cta": "Lire la comparaison"
+      }
+    },
+    "recoveryProtocol": {
+      "eyebrow": "Le Pouvoir de la Déconnexion",
+      "title": "4. Le Protocole de Récupération \"Hors Ligne\"",
+      "weekendAirGap": {
+        "title": "L'Air-Gap du Week-end",
+        "desc": "Réservez au moins quatre heures chaque dimanche où tous les appareils sont éteints et rangés dans une autre pièce."
+      },
+      "tactileHobbies": {
+        "title": "Loisirs Tactiles",
+        "desc": "Pratiquez des activités non numériques comme le jardinage ou la lecture sur papier pour réinitialiser vos récepteurs de dopamine."
+      },
+      "natureBreak": {
+        "title": "La Pause Nature",
+        "desc": "Passez 15 minutes à la lumière directe du soleil avant 10h00 pour réguler votre rythme circadien."
+      },
+      "quote": "\"La structure détermine la fonction. Pour maintenir une productivité à long terme, vous devez vous déconnecter intentionnellement.\""
+    },
+    "faq": {
+      "headline": "Questions Fréquemment Posées"
+    },
+    "author": {
+      "name": "Hasan M.",
+      "bio": "Fondateur d'AppLass et Ingénieur Principal axé sur l'optimisation mathématique et la discipline numérique. Plus de 7 ans d'expérience dans l'architecture logicielle basée sur les premiers principes.",
+      "cta": "Voir la bio complète"
+    }
+  },
   "schema": {
     "organizationDescription": "Studio logiciel guidé par la logique, concevant des applications haute performance avec une précision mathématique. Créateurs de ScreenVeil (plus de 10k téléchargements, note 4.4★), FomoGen et Mindful Guard.",
     "screenveilDescription": "Superposition noire pour écrans AMOLED/OLED économisant plus de 60 % de batterie lors de l'écoute de vidéos.",
