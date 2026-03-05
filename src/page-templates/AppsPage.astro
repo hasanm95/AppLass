@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { getImage } from 'astro:assets';
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
 import fomogenFeatureImg from '@/assets/apps/fomogen-feature.png';
 import mindfulGuardFeatureImg from '@/assets/apps/mindful-guard-feature.png';
 import screenveilFeatureImg from '@/assets/apps/screenveil-feature.png';
@@ -22,15 +23,12 @@ const { lang } = Astro.props;
 const dict = await getDictionary(lang as any);
 const t = useTranslations(dict);
 
-const meta = dict.metadata?.apps || {};
-const optimizedFomogen = await getImage({ src: fomogenFeatureImg, format: 'webp' });
-const optimizedMindful = await getImage({ src: mindfulGuardFeatureImg, format: 'webp' });
-const optimizedScreenveil = await getImage({ src: screenveilFeatureImg, format: 'webp' });
+const meta = t('metadata.apps') || dict.metadata?.apps || {};
 
-const optimizedImages: Record<string, string> = {
-  fomogen: optimizedFomogen.src,
-  mindful: optimizedMindful.src,
-  screenveil: optimizedScreenveil.src,
+const imageMap: Record<string, ImageMetadata> = {
+  fomogen: fomogenFeatureImg,
+  mindful: mindfulGuardFeatureImg,
+  screenveil: screenveilFeatureImg,
 };
 
 ---
@@ -68,8 +66,8 @@ const optimizedImages: Record<string, string> = {
                   class="group relative flex flex-col overflow-hidden rounded-[3rem] border border-slate-200 bg-white transition-all hover:border-blue-500/30 hover:shadow-2xl"
                 >
                   <div class="aspect-video overflow-hidden bg-slate-50 relative">
-                    <img
-                      src={optimizedImages[product.id] || optimizedScreenveil.src}
+                    <Image
+                      src={imageMap[product.id] || screenveilFeatureImg}
                       alt={`${translation?.name || product.name} - ${translation?.tagline || product.tagline}`}
                       width={800}
                       height={450}
