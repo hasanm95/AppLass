@@ -39,9 +39,17 @@ const defaultKeywords = localize("software studio, Shopify apps, digital wellnes
 const optimizedOgImage = ogImage || (await getImage({ src: logoImage, format: 'webp', width: 1200 })).src;
 
 // Properly construct language-specific URLs for SEO indexing
-const basePath = Astro.url.pathname.replace(/^\/(en|fr)(\/|$)/, '/');
+let basePath = Astro.url.pathname.replace(/^\/(en|fr)(\/|$)/, '/');
+if (!basePath.endsWith('/')) {
+  basePath += '/';
+}
 const enUrl = `https://applass.com${basePath}`;
 const frUrl = `https://applass.com/fr${basePath === '/' ? '' : basePath}`;
+
+const canonicalPath = Astro.url.pathname.endsWith('/') 
+  ? Astro.url.pathname 
+  : `${Astro.url.pathname}/`;
+const canonicalUrl = `https://applass.com${canonicalPath}`;
 ---
 
 <!doctype html>
@@ -67,7 +75,7 @@ const frUrl = `https://applass.com/fr${basePath === '/' ? '' : basePath}`;
     <link rel="preload" href="/fonts/jetbrains-mono-v24-latin-700.woff2" as="font" type="font/woff2" crossorigin />
 
     <!-- Canonical URL -->
-    <link rel="canonical" href={`https://applass.com${Astro.url.pathname}`} />
+    <link rel="canonical" href={canonicalUrl} />
 
     <!-- Hreflang for i18n -->
     <link rel="alternate" hreflang="en" href={enUrl} />
