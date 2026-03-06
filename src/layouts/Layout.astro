@@ -37,6 +37,19 @@ const defaultTitle = localize("AppLass | High-Performance Software Engineering")
 const defaultKeywords = localize("software studio, Shopify apps, digital wellness, accessibility, WCAG, web development, AppLass");
 
 const optimizedOgImage = ogImage || (await getImage({ src: logoImage, format: 'webp', width: 1200 })).src;
+
+// Properly construct language-specific URLs for SEO indexing
+let basePath = Astro.url.pathname.replace(/^\/(en|fr)(\/|$)/, '/');
+if (!basePath.endsWith('/')) {
+  basePath += '/';
+}
+const enUrl = `https://applass.com${basePath}`;
+const frUrl = `https://applass.com/fr${basePath === '/' ? '' : basePath}`;
+
+const canonicalPath = Astro.url.pathname.endsWith('/') 
+  ? Astro.url.pathname 
+  : `${Astro.url.pathname}/`;
+const canonicalUrl = `https://applass.com${canonicalPath}`;
 ---
 
 <!doctype html>
@@ -62,12 +75,12 @@ const optimizedOgImage = ogImage || (await getImage({ src: logoImage, format: 'w
     <link rel="preload" href="/fonts/jetbrains-mono-v24-latin-700.woff2" as="font" type="font/woff2" crossorigin />
 
     <!-- Canonical URL -->
-    <link rel="canonical" href={`https://applass.com${Astro.url.pathname}`} />
+    <link rel="canonical" href={canonicalUrl} />
 
     <!-- Hreflang for i18n -->
-    <link rel="alternate" hreflang="en" href={`https://applass.com${Astro.url.pathname.replace(/^\/(en|fr)/, '/en')}`} />
-    <link rel="alternate" hreflang="fr" href={`https://applass.com${Astro.url.pathname.replace(/^\/(en|fr)/, '/fr')}`} />
-    <link rel="alternate" hreflang="x-default" href={`https://applass.com${Astro.url.pathname.replace(/^\/(en|fr)/, '/en')}`} />
+    <link rel="alternate" hreflang="en" href={enUrl} />
+    <link rel="alternate" hreflang="fr" href={frUrl} />
+    <link rel="alternate" hreflang="x-default" href={enUrl} />
 
     <!-- Primary Meta Tags -->
     <title>{title || defaultTitle}</title>

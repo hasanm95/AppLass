@@ -1,0 +1,96 @@
+---
+import FAQSchema from "@/components/common/FAQSchema.astro";
+import { localize } from "@/i18n/localize";
+
+const DOCUMENTATION_FAQS = [
+  {
+    category: localize("General"),
+    items: [
+      {
+        question: localize("What is FOMO Gen?"),
+        answer: localize("FOMO Gen is a clinical social proof engine for Shopify. It coordinates 9 distinct urgency and scarcity modules — including purchase notifications, exit-intent logic, and stock telemetry — to maximize conversion performance."),
+      },
+      {
+        question: localize("Do I need coding skills?"),
+        answer: localize("Zero. All modules are managed through a unified visual dashboard. While we support custom CSS overrides for Professional plans, the engine is designed for plug-and-play architectural integration."),
+      },
+    ],
+  },
+  {
+    category: localize("Setup & Installation"),
+    items: [
+      {
+        question: localize("Features aren't showing on my store. Why?"),
+        answer: localize("The most common cause is an inactive app bridge. Ensure FomoGen is toggled ON in Shopify Admin → Online Store → Themes → Customize → App Embeds."),
+        ui: `
+          <div class="space-y-4">
+            <p>${localize("The most common cause is an inactive app bridge. Follow this protocol:")}</p>
+            <ol class="list-decimal space-y-2 pl-5 font-bold text-slate-900">
+              <li>${localize("Shopify Admin → Online Store → Themes")}</li>
+              <li>${localize("Customize → Theme Settings (Gear Icon)")}</li>
+              <li>${localize("App Embeds → Toggle 'FOMO Gen' ON")}</li>
+              <li>${localize("Save changes")}</li>
+            </ol>
+          </div>
+        `,
+      },
+      {
+        question: localize("Does this work with my theme?"),
+        answer: localize("Yes. FOMO Gen uses Shopify 2.0 App Embeds, ensuring safe, collision-free injection across all modern Shopify themes."),
+      },
+    ],
+  },
+  {
+    category: localize("Billing & Support"),
+    items: [
+      {
+        question: localize("Can I try before I buy?"),
+        answer: localize("Absolutely. Our Baseline tier offers core social proof modules with zero financial commitment, ideal for early-stage labs."),
+      },
+      {
+        question: localize("How do I contact support?"),
+        answer: localize("Access our Technical Lab directly through the dashboard 'Support' module or reach us at support@applass.com."),
+      },
+    ],
+  },
+];
+
+const schemaItems = DOCUMENTATION_FAQS.flatMap((cat) =>
+  cat.items.map((item) => ({
+    question: item.question,
+    answer: item.answer,
+  }))
+);
+---
+<div class="space-y-20">
+  <FAQSchema items={schemaItems} />
+  <header>
+    <span class="mb-6 block font-mono text-[10px] font-bold tracking-[0.3em] text-[#064E3B] uppercase">
+      {localize("Technical Clarifications")}
+    </span>
+    <h1 class="text-display mb-6 text-slate-900">
+      {localize("Common Questions")}<span class="text-slate-300">.</span>
+    </h1>
+    <p class="max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
+      {localize("Everything you need to know about FOMO Gen. If your question isn't here, our technical lab is one email away.")}
+    </p>
+  </header>
+
+  <div class="space-y-24">
+    {DOCUMENTATION_FAQS.map((category) => (
+      <section>
+        <h2 class="mb-8 text-2xl font-black text-slate-900">{category.category}</h2>
+        <div class="space-y-6">
+          {category.items.map((item) => (
+            <div class="group rounded-4xl border border-slate-100 bg-white p-8 transition-all hover:border-blue-100 hover:shadow-xl hover:shadow-blue-500/5 lg:p-10">
+              <h3 class="mb-4 text-lg font-black text-slate-900">{item.question}</h3>
+              <div class="text-lg leading-relaxed font-medium text-slate-500">
+                {item.ui ? <Fragment set:html={item.ui} /> : item.answer}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</div>

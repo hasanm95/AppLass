@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Footer from "@/components/common/Footer.astro";
-import SubpageHero from "@/components/common/SubpageHero.astro";
 import Navbar from "@/components/common/Navbar.astro";
 import Section from "@/components/common/Section.astro";
 import { comparisons } from "@/lib/compare";
@@ -22,8 +21,11 @@ setLocale(lang);
 const meta = {
   title: localize("Comparison Guides | AppLass Analysis"),
   description: localize("Logic-first product comparisons. Why elite teams choose AppLass over legacy alternatives."),
+  keywords: localize("applass vs, software comparison, technical analysis, shopify app alternatives"),
   ogTitle: localize("Comparison Guides | AppLass Analysis"),
-  ogDescription: localize("Logic-first product comparisons and technical analysis.")
+  ogDescription: localize("Logic-first product comparisons and technical analysis."),
+  ogImage: "https://applass.com/og-image.jpg",
+  ogUrl: `https://applass.com/${lang}/compare`
 };
 
 ---

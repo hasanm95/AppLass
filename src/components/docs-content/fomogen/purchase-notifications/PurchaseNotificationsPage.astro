@@ -1,0 +1,106 @@
+---
+import { localize } from "@/i18n/localize";
+
+interface Props {
+  lang?: string;
+}
+
+const { lang = "en" } = Astro.props;
+
+const settings = [
+  {
+    name: localize("Temporal Pool"),
+    default: "30 Days",
+    logic: localize("Lookback depth for calculating active purchase clusters.")
+  },
+  {
+    name: localize("Anonymization"),
+    default: "F. Name + Init.",
+    logic: localize("Balances social validation with customer GDPR/CCPA privacy.")
+  },
+  {
+    name: localize("Cycle Delay"),
+    default: "10 Seconds",
+    logic: localize("Temporal distance between notifications to avoid UI fatigue.")
+  }
+];
+---
+
+<div class="space-y-20">
+  <header>
+    <span class="mb-4 block text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase">
+      {localize("Social Proof Module")}
+    </span>
+    <h1 class="text-display mb-6 text-slate-900">
+      {localize("Purchase Notifications")}<span class="text-slate-300">.</span>
+    </h1>
+    <p class="max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
+      {localize("Trust telemetry. Surface historical conversion data to validate your store's credibility through real-time peer activity.")}
+    </p>
+  </header>
+
+  <div class="space-y-24">
+    {/* Overview */}
+    <section>
+      <h2 class="mb-8 text-2xl font-black text-slate-900">
+        {localize("Mechanism of Action")}
+      </h2>
+      <div class="rounded-[2.5rem] border border-slate-100 bg-[#FAFBFD] p-10 lg:p-14">
+        <p class="max-w-3xl text-lg leading-relaxed font-medium text-slate-600">
+          {localize("The Notification Engine synchronizes with your Shopify order database to extract anonymized event data. These events are transformed into non-intrusive visual signals that activate the \"wisdom of the crowd\" psychological trigger.")}
+        </p>
+      </div>
+    </section>
+
+    {/* Configuration Matrix */}
+    <section>
+      <h2 class="mb-8 text-2xl font-black text-slate-900">
+        {localize("Configuration Matrix")}
+      </h2>
+      <div class="overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-xl shadow-slate-200/20">
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-left">
+            <thead>
+              <tr class="border-b border-slate-100 bg-slate-50/50">
+                <th class="px-8 py-5 text-[10px] font-black tracking-widest text-slate-500 uppercase">
+                  {localize("Setting")}
+                </th>
+                <th class="px-8 py-5 text-[10px] font-black tracking-widest text-slate-500 uppercase">
+                  {localize("Default")}
+                </th>
+                <th class="px-8 py-5 text-[10px] font-black tracking-widest text-slate-500 uppercase">
+                  {localize("Logic")}
+                </th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-50">
+              {settings.map((s) => (
+                <tr class="transition-colors hover:bg-slate-50/50">
+                  <td class="px-8 py-5 text-sm font-bold text-slate-900">
+                    {s.name}
+                  </td>
+                  <td class="px-8 py-5 font-mono text-sm text-blue-600">
+                    {s.default}
+                  </td>
+                  <td class="px-8 py-5 text-sm font-medium text-slate-500">
+                    {s.logic}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    {/* Efficiency Tip */}
+    <div class="rounded-[2.5rem] bg-slate-900 p-12 text-white">
+      <h4 class="mb-4 text-sm font-black tracking-widest text-blue-400 uppercase">
+        {localize("Trust Protocol")}
+      </h4>
+      <p class="text-xl leading-relaxed font-medium opacity-80">
+        <strong>{localize("Authenticity is Paramount:")}</strong> {localize("FOMO Generator strictly inhibits simulated purchases. Only real synchronized Shopify order telemetry is permitted to maintain storefront integrity and legal compliance.")}
+      </p>
+    </div>
+  </div>
+</div>

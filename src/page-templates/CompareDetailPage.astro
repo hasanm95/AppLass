@@ -3,12 +3,12 @@ import Layout from '../layouts/Layout.astro';
 import Footer from "@/components/common/Footer.astro";
 import Navbar from "@/components/common/Navbar.astro";
 import { getComparisonBySlug } from "@/lib/compare";
-import { CompareHero } from "@/components/compare/CompareHero";
-import { ComparisonMatrix } from "@/components/compare/ComparisonMatrix";
-import { TechnicalDebt } from "@/components/compare/TechnicalDebt";
-import { ValueHighlights } from "@/components/compare/ValueHighlights";
-import { CompareTestimonial } from "@/components/compare/CompareTestimonial";
-import { CompareFooter } from "@/components/compare/CompareFooter";
+import CompareHero from "@/components/compare/CompareHero.astro";
+import ComparisonMatrix from "@/components/compare/ComparisonMatrix.astro";
+import TechnicalDebt from "@/components/compare/TechnicalDebt.astro";
+import ValueHighlights from "@/components/compare/ValueHighlights.astro";
+import CompareTestimonial from "@/components/compare/CompareTestimonial.astro";
+import CompareFooter from "@/components/compare/CompareFooter.astro";
 import { Button } from "@/components/ui/button";
 import { localize } from "@/i18n/localize";
 import { i18nConfig } from "@/i18n/config";
@@ -90,53 +90,28 @@ const jsonLd = {
       <CompareHero
         headline={data.heroHeadline}
         subheadline={data.heroSubheadline}
-        translations={{
-          eyebrow: localize("Logical Derivation")
-        }}
       />
 
       <ComparisonMatrix
         competitorName={data.competitorName}
         productName={data.productName}
         features={data.matrix}
-        translations={{
-          headline: localize("Technical Matrix"),
-          feature: localize("Feature"),
-          advantage: localize("Advantage")
-        }}
       />
 
       <TechnicalDebt 
         legacy={data.legacyWay} 
         applass={data.applassWay} 
-        translations={{
-          headline: localize("Structural Comparison")
-        }}
       />
 
-      <ValueHighlights translations={{
-        headline: localize("The AppLass Edge"),
-        speed: localize("Sub-100ms Speed"),
-        privacy: localize("Absolute Privacy"),
-        efficiency: localize("Zero Battery Lag"),
-        speedDesc: localize("Deriving performance from mathematical optimization."),
-        privacyDesc: localize("Your data stays local. No cloud, no tracking, no risk."),
-        efficiencyDesc: localize("Native implementation for maximum hardware efficiency.")
-      }} />
+      <ValueHighlights />
 
       <CompareTestimonial
         quote={data.testimonial.quote}
         author={data.testimonial.author}
         role={data.testimonial.role}
-        translations={{
-          headline: localize("The Verdict")
-        }}
       />
 
-      <CompareFooter translations={{
-        headline: localize("Logic-First Software."),
-        cta: localize("Build Your Ecosystem")
-      }} />
+      <CompareFooter />
     </div>
 
     <Footer variant="light" />

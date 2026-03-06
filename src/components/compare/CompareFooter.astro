@@ -1,0 +1,15 @@
+---
+import Section from "@/components/common/Section.astro";
+import { LinkButton } from "../ui/link-button";
+import { localize } from "@/i18n/localize";
+---
+<Section className="border-t border-slate-100 bg-white py-32 text-center">
+  <div class="section-container">
+    <h2 class="text-display mb-12 text-slate-900">
+      {localize("Experience Logical Superiority.")}
+    </h2>
+    <LinkButton href="https://apps.shopify.com/fomogen" target="_blank" rel="noopener noreferrer" className="h-20 rounded-2xl bg-slate-900 px-12 text-2xl font-black text-white hover:bg-slate-800">
+      {localize("Install Now — Free of Charge")}
+    </LinkButton>
+  </div>
+</Section>

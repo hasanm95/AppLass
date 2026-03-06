@@ -1,6 +1,6 @@
 ---
 import DocsLayout from '@/layouts/DocsLayout.astro';
-import Content from '../components/docs-content/page';
+import DocsHubContent from '../components/docs-content/DocsHubPage.astro';
 import { i18nConfig } from '@/i18n/config';
 import { localize } from '@/i18n/localize';
 
@@ -27,5 +27,5 @@ const meta = {
   title={meta.title}
   description={meta.description}
 >
-  <Content lang={lang as string} />
+  <DocsHubContent lang={lang as string} />
 </DocsLayout>

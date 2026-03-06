@@ -1,0 +1,141 @@
+---
+import { Button } from "@/components/ui/button";
+import { localePath } from "@/i18n/utils";
+import { localize } from "@/i18n/localize";
+
+interface Props {
+  lang: string;
+}
+
+const { lang } = Astro.props;
+
+const featureGroups = [
+  {
+    title: localize("Social Proof & Trust"),
+    items: [
+      {
+        label: localize("Purchase Notifications"),
+        href: localePath(lang, "/docs/fomogen/purchase-notifications"),
+      },
+      {
+        label: localize("Social Proof Badges"),
+        href: localePath(lang, "/docs/fomogen/social-proof-badges"),
+      },
+      {
+        label: localize("Trust Badges"),
+        href: localePath(lang, "/docs/fomogen/trust-badges"),
+      },
+    ]
+  },
+  {
+    title: localize("Urgency & Scarcity"),
+    items: [
+      {
+        label: localize("Exit Intent Popups"),
+        href: localePath(lang, "/docs/fomogen/exit-intent"),
+      },
+      {
+        label: localize("Countdown Timers"),
+        href: localePath(lang, "/docs/fomogen/countdown-timers"),
+      },
+      {
+        label: localize("Stock Alerts"),
+        href: localePath(lang, "/docs/fomogen/stock-alerts"),
+      },
+    ]
+  },
+  {
+    title: localize("Performance Loops"),
+    items: [
+      {
+        label: localize("Progress Indicators"),
+        href: localePath(lang, "/docs/fomogen/progress-indicators"),
+      },
+      {
+        label: localize("Sticky Cart"),
+        href: localePath(lang, "/docs/fomogen/sticky-cart"),
+      },
+    ]
+  }
+];
+---
+<div class="space-y-20">
+  <header>
+    <span class="mb-4 block text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase">
+      {localize("User Guide")}
+    </span>
+    <h1 class="text-display mb-6 text-slate-900">
+      {localize("Documentation")}<span class="text-slate-300">.</span>
+    </h1>
+    <p class="max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
+      {localize("High-performance Shopify engineering meets social psychology. Set up, optimize, and scale your growth loops with mathematical precision.")}
+    </p>
+  </header>
+
+  <div class="grid gap-6 sm:grid-cols-2">
+    <a
+      href={localePath(lang, "/docs/fomogen/quick-start")}
+      class="group rounded-3xl border border-slate-100 bg-white p-8 transition-all duration-500 hover:border-blue-500/20 hover:shadow-2xl hover:shadow-blue-500/5 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+    >
+      <h3 class="mb-3 text-lg font-black text-slate-900 transition-colors group-hover:text-blue-600">
+        ⚡ {localize("Quick Start")}
+      </h3>
+      <p class="font-medium text-slate-500 transition-colors group-hover:text-slate-600">
+        {localize("Go from zero to conversion-ready in under 5 minutes.")}
+      </p>
+    </a>
+    <a
+      href={localePath(lang, "/docs/fomogen/configuration")}
+      class="group rounded-3xl border border-slate-100 bg-white p-8 transition-all duration-500 hover:border-blue-500/20 hover:shadow-2xl hover:shadow-blue-500/5 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+    >
+      <h3 class="mb-3 text-lg font-black text-slate-900 transition-colors group-hover:text-blue-600">
+        ⚙️ {localize("Configuration")}
+      </h3>
+      <p class="font-medium text-slate-500 transition-colors group-hover:text-slate-600">
+        {localize("Global settings reference for advanced engine tuning.")}
+      </p>
+    </a>
+  </div>
+
+  <section>
+    <h2 class="mb-12 text-2xl font-black text-slate-900">
+      {localize("Engine Components")}
+    </h2>
+
+    <div class="grid gap-12 md:grid-cols-3">
+      {featureGroups.map((group) => (
+        <div>
+          <h4 class="mb-6 text-xs font-black tracking-widest text-slate-400 uppercase">
+            {group.title}
+          </h4>
+          <ul class="space-y-4">
+            {group.items.map((item) => (
+              <li>
+                <a
+                  href={item.href}
+                  class="text-lg font-bold text-slate-600 transition-all hover:pl-2 hover:text-blue-600"
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  {/* Support CTA */}
+  <div class="rounded-[2.5rem] border border-slate-100 bg-[#FAFBFD] p-12">
+    <h3 class="mb-4 text-2xl font-black text-slate-900">{localize("Need help?")}</h3>
+    <p class="mb-8 max-w-lg text-lg leading-relaxed font-medium text-slate-500">
+      {localize("Can't find what you're looking for? Our logic lab team is available for deep support.")}
+    </p>
+    <Button
+      className="rounded-xl bg-slate-900 font-bold hover:bg-slate-800"
+      client:idle
+    >
+      <a href="mailto:support@applass.com">{localize("Contact Support")}</a>
+    </Button>
+  </div>
+</div>

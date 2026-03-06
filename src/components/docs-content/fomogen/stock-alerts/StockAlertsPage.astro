@@ -1,0 +1,86 @@
+---
+import { localize } from "@/i18n/localize";
+
+interface Props {
+  lang?: string;
+}
+
+const { lang = "en" } = Astro.props;
+
+const features = [
+  {
+    title: localize("Threshold Sensitivity"),
+    desc: localize("Define the exact inventory count (e.g., < 10) that triggers the alert visibility. Automatically suppresses once stock is replenished."),
+    meta: localize("Logic: Real-Time Sync")
+  },
+  {
+    title: localize("Visual Signaling"),
+    desc: localize("Select from multiple alert semantics: 'Low Stock', 'Limited Edition', or 'Final Allocation'. Supports pulse and shake animations."),
+    meta: localize("Logic: Dynamic UI")
+  }
+];
+---
+
+<div class="space-y-20">
+  <header>
+    <span class="mb-4 block text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase">
+      {localize("Scarcity Module")}
+    </span>
+    <h1 class="text-display mb-6 text-slate-900">
+      {localize("Stock Alerts")}<span class="text-slate-300">.</span>
+    </h1>
+    <p class="max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
+      {localize("Inventory telemetry. Automate scarcity-driven conversion by surfacing real-time stock depletion events to high-intent shoppers.")}
+    </p>
+  </header>
+
+  <div class="space-y-24">
+    {/* Mechanism */}
+    <section>
+      <h2 class="mb-8 text-2xl font-black text-slate-900">
+        {localize("Mechanism of Action")}
+      </h2>
+      <div class="rounded-[2.5rem] border border-slate-100 bg-[#FAFBFD] p-10 lg:p-14">
+        <p class="max-w-3xl text-lg leading-relaxed font-medium text-slate-600">
+          {localize("The Stock Module maintains a low-latency connection with your Shopify inventory state. When SKU valuation drops below a configurable threshold, the engine injects a pulse-alert into the PDP (Product Detail Page), accelerating the checkout decision cycle through authentic scarcity.")}
+        </p>
+
+        <div class="mt-12 overflow-hidden rounded-3xl border border-red-100 bg-red-50/50 p-8 text-center shadow-xl ring-4 shadow-red-500/5 ring-white">
+          <span class="text-lg font-black text-red-600">
+            ⚠️ {localize("Only 3 left in stock!")}
+          </span>
+        </div>
+      </div>
+    </section>
+
+    {/* Configuration Matrix */}
+    <section>
+      <h2 class="mb-8 text-2xl font-black text-slate-900">
+        {localize("Configuration Matrix")}
+      </h2>
+      <div class="grid gap-6 md:grid-cols-2">
+        {features.map((feature) => (
+          <div class="group rounded-[2.5rem] border border-slate-100 bg-white p-10 shadow-xl shadow-slate-200/20 transition-all hover:border-blue-100 hover:shadow-blue-500/5">
+            <h3 class="mb-4 text-xl font-black text-slate-900">{feature.title}</h3>
+            <p class="mb-8 text-lg leading-relaxed font-medium text-slate-500">
+              {feature.desc}
+            </p>
+            <div class="inline-block rounded-full bg-slate-50 px-4 py-1 text-xs font-black tracking-wider text-slate-400 uppercase transition-colors group-hover:bg-blue-50 group-hover:text-blue-600">
+              {feature.meta}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    {/* Operational Warning */}
+    <div class="rounded-[2.5rem] bg-slate-900 p-12 text-white">
+      <h4 class="mb-4 text-sm font-black tracking-widest text-blue-400 uppercase">
+        {localize("Inventory Protocol")}
+      </h4>
+      <p class="text-xl leading-relaxed font-medium opacity-80">
+        <strong>{localize("Authenticity is Mandatory:")}</strong> {localize("Fomo Generator synchronizes with REAL Shopify inventory values. Simulated scarcity (showing low stock when inventory is high) is strictly inhibited to maintain storefront integrity and compliance with consumer protection guidelines.")}
+      </p>
+    </div>
+  </div>
+</div>
