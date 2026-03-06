@@ -47,19 +47,19 @@ const otherDataSources = products.slice(1);
         {/* Content */}
         <div class="relative border-l-2 border-foreground/10 pl-6 transition-all duration-200 hover:border-l-cta md:pl-8">
           <span class="mb-2 block font-mono text-[10px] font-bold tracking-[0.2em] text-muted-foreground uppercase">
-            {localize(featuredDataSource.platform)}
+            {featuredDataSource.platform}
           </span>
 
           <h2 class="font-mono text-4xl font-bold text-foreground md:text-5xl">
-            {localize(featuredDataSource.name)}
+            {featuredDataSource.name}
           </h2>
 
           <p class="mb-4 font-mono text-lg font-semibold text-green-600">
-            {localize(featuredDataSource.tagline)}
+            {featuredDataSource.tagline}
           </p>
 
           <p class="mb-8 max-w-md text-lg leading-relaxed text-muted-foreground">
-            {localize(featuredDataSource.description)}
+            {featuredDataSource.description}
           </p>
 
           <div class="mb-8 flex flex-wrap gap-6">
@@ -87,7 +87,7 @@ const otherDataSources = products.slice(1);
             rel="noopener noreferrer"
             class="inline-flex cursor-pointer items-center gap-2 bg-green-600 px-6 py-3 font-semibold text-white transition-all duration-200 hover:bg-green-700"
           >
-            {localize(featuredDataSource.cta)}
+            {featuredDataSource.cta}
             <ExternalLink className="h-4 w-4" />
           </a>
         </div>
@@ -102,8 +102,8 @@ const otherDataSources = products.slice(1);
         >
           <div class="relative w-full overflow-hidden rounded-2xl border border-border bg-linear-to-br from-green-50 to-green-100 p-12">
             <Image
-              src={productImages[featuredDataSource.id]}
-              alt={localize(featuredDataSource.name)}
+              src={productImages[featuredDataSource.id as keyof typeof productImages]}
+              alt={featuredDataSource.name}
               width={600}
               height={600}
               class="object-contain"
@@ -144,8 +144,8 @@ const otherDataSources = products.slice(1);
             {/* Image */}
             <div class="mb-6 overflow-hidden rounded-xl border border-border bg-muted/30 p-6">
               <Image
-                src={productImages[product.id]}
-                alt={localize(product.name)}
+                src={productImages[product.id as keyof typeof productImages]}
+                alt={product.name}
                 width={600}
                 height={600}
                 class="object-contain transition-transform duration-300 group-hover:scale-105"
@@ -154,21 +154,21 @@ const otherDataSources = products.slice(1);
 
             {/* Content */}
             <span class="mb-2 block font-mono text-[10px] font-bold tracking-[0.2em] text-muted-foreground uppercase">
-              {localize(product.platform)}
+              {product.platform}
             </span>
 
             <h3 class="font-mono text-xl font-bold text-foreground md:text-2xl">
-              {localize(product.name)}
+              {product.name}
             </h3>
 
             <p
               class={`mb-4 font-mono text-sm font-semibold ${accentColor}`}
             >
-              {localize(product.tagline)}
+              {product.tagline}
             </p>
 
             <p class="mb-6 text-sm leading-relaxed text-muted-foreground">
-              {localize(product.description)}
+              {product.description}
             </p>
 
             <div class="flex flex-wrap gap-2">
@@ -176,7 +176,7 @@ const otherDataSources = products.slice(1);
                 <span
                   class="border border-border px-3 py-1 font-mono text-xs font-semibold text-foreground"
                 >
-                  {localize(metric)}
+                  {metric}
                 </span>
               ))}
             </div>

@@ -19,6 +19,16 @@ const Localize: React.FC<LocalizeProps> = ({
   shouldUnescape 
 }) => {
   const normalized = i18n_default_text.replace(/\s+/g, ' ').trim();
+  
+  // Configure interpolation to respect shouldUnescape
+  const tOptions = {
+    ...options,
+    interpolation: {
+      escapeValue: shouldUnescape ? false : true,
+      ...options?.interpolation,
+    }
+  };
+
   return (
     <Trans
       i18n={i18n}
@@ -26,8 +36,7 @@ const Localize: React.FC<LocalizeProps> = ({
       defaults={normalized}
       values={values}
       components={components}
-      tOptions={options}
-      shouldUnescape={shouldUnescape}
+      tOptions={tOptions}
     />
   );
 };
