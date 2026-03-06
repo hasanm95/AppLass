@@ -22,7 +22,6 @@ interface Props {
 
 const { lang } = Astro.props;
 const dict = await getDictionary(lang as any);
-
 const meta = dict.metadata?.home || {};
 
 const optimizedFomogenFeature = await getImage({ src: fomogenFeatureImg, format: 'webp' });
@@ -48,11 +47,11 @@ const productImages = {
   lang={lang}
 >
   <Navbar    />
-  <Hero translations={dict.home?.hero} />
-  <SocialProof translations={dict.home?.socialProof} />
-  <ProductShowcase translations={dict.home?.productShowcase} products={dict.products} productImages={productImages} />
-  <FoundersMoat translations={dict.home?.foundersMoat} pillars={dict.pillars} />
-  <SolutionsSection translations={dict.home?.solutions} solutions={dict.solutionItems} />
-  <AnswerNuggets client:idle translations={dict.home?.faq} />
+  <Hero />
+  <SocialProof />
+  <ProductShowcase productImages={productImages} />
+  <FoundersMoat />
+  <SolutionsSection />
+  <AnswerNuggets />
   <Footer />
 </Layout>

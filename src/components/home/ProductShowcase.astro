@@ -2,17 +2,19 @@
 import Section from "@/components/common/Section.astro";
 import { PRODUCTS } from "@/constants/home-data";
 import { ExternalLink } from "lucide-react";
-import type { Dictionary } from "@/i18n/get-dictionary";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { getLangFromUrl } from "@/i18n/utils";
 
 interface Props {
-  translations?: Dictionary["home"]["productShowcase"];
-  products?: Dictionary["products"];
   productImages?: Record<string, string>;
 }
 
-type ProductKey = keyof NonNullable<Props["products"]>;
+const { productImages = {} } = Astro.props;
 
-const { translations, products, productImages = {} } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const dict = await getDictionary(lang as any);
+const translations = dict.home?.productShowcase;
+const products = dict.products;
 
 // ScreenVeil is the featured product
 const featuredDataSource = PRODUCTS[0]; 
@@ -125,7 +127,7 @@ const otherDataSources = PRODUCTS.slice(1);
           
         // Map the product ID to the correct key in the translation dictionary
         const dictKey = product.id === "mindful" ? "mindfulGuard" : product.id;
-        const translation = products?.[dictKey as ProductKey];
+        const translation = products?.[dictKey as keyof typeof products];
 
         return (
           <a

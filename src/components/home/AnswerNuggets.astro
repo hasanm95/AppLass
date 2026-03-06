@@ -1,0 +1,11 @@
+---
+import { AnswerNuggets as AnswerNuggetsReact } from "./AnswerNuggets";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { getLangFromUrl } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const dict = await getDictionary(lang as any);
+const translations = dict.home?.faq;
+---
+
+<AnswerNuggetsReact client:idle translations={translations} />

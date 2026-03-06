@@ -1,14 +1,11 @@
 ---
-import type { Dictionary } from "@/i18n/get-dictionary";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { getLangFromUrl, localePath } from "@/i18n/utils";
 import { ArrowRight } from "lucide-react";
-import { localePath } from "@/i18n/utils";
 
-interface Props {
-  translations?: Dictionary["home"]["hero"];
-  currentLang?: string;
-}
-
-const { translations, currentLang = "en" } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const dict = await getDictionary(lang as any);
+const translations = dict.home?.hero;
 ---
 
 <section
@@ -107,14 +104,14 @@ const { translations, currentLang = "en" } = Astro.props;
       {/* CTAs */}
       <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
         <a
-          href={localePath(currentLang, '/apps')}
+          href={localePath(lang, '/apps')}
           class="group inline-flex cursor-pointer items-center justify-center gap-2 border-2 border-foreground bg-foreground px-8 py-4 font-semibold text-background transition-all duration-200 hover:bg-transparent hover:text-foreground"
         >
           {translations?.cta?.primary || "See Our Apps"}
           <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
         </a>
         <a
-          href={localePath(currentLang, '/blog')}
+          href={localePath(lang, '/blog')}
           class="group inline-flex cursor-pointer items-center justify-center gap-2 border-2 border-(--foreground)/20 bg-transparent px-8 py-4 font-semibold text-foreground transition-all duration-200 hover:border-foreground"
         >
           {translations?.cta?.secondary || "Read the Logic Lab"}

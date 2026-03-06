@@ -1,6 +1,7 @@
 ---
 import Section from "@/components/common/Section.astro";
-import type { Dictionary } from "@/i18n/get-dictionary";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { getLangFromUrl } from "@/i18n/utils";
 
 const METRICS = [
   { id: "downloads", value: "10K+", label: "Downloads" },
@@ -9,13 +10,11 @@ const METRICS = [
   { id: "telemetry", value: "Zero", label: "Telemetry" },
 ];
 
-interface Props {
-  translations?: Dictionary["home"]["socialProof"];
-}
+const lang = getLangFromUrl(Astro.url);
+const dict = await getDictionary(lang as any);
+const translations = dict.home?.socialProof;
 
-type MetricKey = keyof NonNullable<Props["translations"]>["metrics"];
-
-const { translations } = Astro.props;
+type MetricKey = "downloads" | "playStore" | "payload" | "telemetry";
 ---
 
 <Section className="border-y border-border bg-(--muted)/50 py-12 md:py-16">

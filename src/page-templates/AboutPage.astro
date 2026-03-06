@@ -4,7 +4,7 @@ import Footer from "@/components/common/Footer.astro";
 import SubpageHero from "@/components/common/SubpageHero.astro";
 import Navbar from "@/components/common/Navbar.astro";
 import Section from "@/components/common/Section.astro";
-import { PILLARS } from "@/constants/home-data";
+import { getHomePillars } from "@/constants/home-data";
 import {
   Zap,
   Calculator,
@@ -31,8 +31,6 @@ const iconMap = {
   Calculator: Calculator,
   Globe: Globe,
 };
-
-const PILLAR_KEYS = ["eliteExpertise", "logicalIntegrity", "radicalAccessibility"] as const;
 
 ---
 
@@ -135,10 +133,8 @@ const PILLAR_KEYS = ["eliteExpertise", "logicalIntegrity", "radicalAccessibility
           </div>
 
           <div class="grid grid-cols-1 gap-12 lg:grid-cols-3">
-            {PILLARS.map((pillar, idx) => {
+            {getHomePillars(t).map((pillar) => {
               const Icon = iconMap[pillar.iconName as keyof typeof iconMap];
-              const dictKey = PILLAR_KEYS[idx];
-              const translation = t(`pillars.${dictKey}`);
               
               return (
                 <div class="group rounded-[2.5rem] border border-slate-100 bg-white p-8 lg:p-12 transition-all hover:border-blue-500/20 hover:shadow-2xl hover:shadow-blue-500/5">
@@ -146,13 +142,13 @@ const PILLAR_KEYS = ["eliteExpertise", "logicalIntegrity", "radicalAccessibility
                     {Icon && <Icon size={32} />}
                   </div>
                   <span class="mb-4 block text-[10px] font-black tracking-widest text-slate-400 uppercase">
-                    {translation?.label || pillar.label}
+                    {pillar.label}
                   </span>
                   <h3 class="mb-6 text-2xl font-black text-slate-900">
-                    {translation?.title || pillar.title}
+                    {pillar.title}
                   </h3>
                   <p class="text-base lg:text-lg leading-relaxed font-medium text-slate-500">
-                    {translation?.description || pillar.description}
+                    {pillar.description}
                   </p>
                 </div>
               );

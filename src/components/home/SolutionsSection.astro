@@ -2,7 +2,8 @@
 import Section from "@/components/common/Section.astro";
 import { SOLUTIONS } from "@/constants/home-data";
 import { ShoppingBag, Clock, Users } from "lucide-react";
-import type { Dictionary } from "@/i18n/get-dictionary";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { getLangFromUrl } from "@/i18n/utils";
 
 const ICONS = {
   ShoppingBag,
@@ -10,12 +11,10 @@ const ICONS = {
   Users,
 };
 
-interface Props {
-  translations?: Dictionary["home"]["solutions"];
-  solutions?: Dictionary["solutionItems"];
-}
-
-const { translations, solutions } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const dict = await getDictionary(lang as any);
+const translations = dict.home?.solutions;
+const solutions = dict.solutionItems;
 
 // Map our SOLUTIONS array to the dictionary keys
 const SOLUTION_KEYS = ["ecommerce", "digitalDiscipline", "accessibility"] as const;

@@ -81,26 +81,39 @@ export const PRODUCTS = [
   },
 ];
 
-export const PILLARS = [
+export type TFunction = (key: string) => any;
+
+export interface Pillar {
+  key: string;
+  title: string;
+  label: string;
+  description: string;
+  iconName: string;
+}
+
+export const getHomePillars = (t: TFunction): Pillar[] => [
   {
-    title: "Elite Expertise",
-    label: "7 Years Full-Stack",
+    key: "eliteExpertise",
+    title: t("pillars.eliteExpertise.title") || "Elite Expertise",
+    label: t("pillars.eliteExpertise.label") || "7 Years Full-Stack",
     description:
-      "Deep experience building scalable systems for e-commerce and high-productivity mobile environments.",
+      t("pillars.eliteExpertise.description") || "Deep experience building scalable systems for e-commerce and high-productivity mobile environments.",
     iconName: "Zap",
   },
   {
-    title: "Logical Integrity",
-    label: "Mathematics Core",
+    key: "logicalIntegrity",
+    title: t("pillars.logicalIntegrity.title") || "Logical Integrity",
+    label: t("pillars.logicalIntegrity.label") || "Mathematics Core",
     description:
-      "Every algorithm and interaction is modeled with mathematical precision to maximize performance and reliability.",
+      t("pillars.logicalIntegrity.description") || "Every algorithm and interaction is modeled with mathematical precision to maximize performance and reliability.",
     iconName: "Calculator",
   },
   {
-    title: "Radical Accessibility",
-    label: "WCAG 2.1 First",
+    key: "radicalAccessibility",
+    title: t("pillars.radicalAccessibility.title") || "Radical Accessibility",
+    label: t("pillars.radicalAccessibility.label") || "WCAG 2.1 First",
     description:
-      "Accessibility is not a feature; it's the foundation. We build software that respects every user's capabilities.",
+      t("pillars.radicalAccessibility.description") || "Accessibility is not a feature; it's the foundation. We build software that respects every user's capabilities.",
     iconName: "Globe",
   },
 ];
