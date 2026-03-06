@@ -1,0 +1,167 @@
+---
+import { localize } from "@/i18n/localize";
+
+interface Props {
+  lang?: string;
+}
+
+const { lang = "en" } = Astro.props;
+
+const sections = [
+  {
+    title: localize("Progress Indicators"),
+    settings: [
+      {
+        name: localize("Indicator Type"),
+        default: "Text with {amount}",
+        desc: localize("Dynamic message format using interpolation variables."),
+      },
+      {
+        name: localize("Threshold Amount"),
+        default: "-",
+        desc: localize("Numerical goal required to activate success state."),
+      },
+      {
+        name: localize("Display Position"),
+        default: "Cart",
+        desc: localize("Anchor point within the Shopify DOM structure."),
+      },
+    ]
+  },
+  {
+    title: localize("Purchase Notifications"),
+    settings: [
+      {
+        name: localize("Notification Position"),
+        default: "Bottom Left",
+        desc: localize("Screen-relative coordinate for popup emergence."),
+      },
+      {
+        name: localize("Display Duration"),
+        default: "5s",
+        desc: localize("Temporal window before notification exit animation."),
+      },
+      {
+        name: localize("Delay Between"),
+        default: "10s",
+        desc: localize("Cool-down period between sequential display events."),
+      },
+    ]
+  },
+  {
+    title: localize("Countdown Timers"),
+    settings: [
+      {
+        name: localize("Timer Type"),
+        default: "Fixed",
+        desc: localize("Logic branch: Static end-date or relative session timer."),
+      },
+      {
+        name: localize("Display Position"),
+        default: "Above Add-to-Cart",
+        desc: localize("Visual injection point on the product detail page."),
+      },
+      {
+        name: localize("Priority"),
+        default: "5",
+        desc: localize("Weighted execution order for overlapping campaign rules."),
+      },
+    ]
+  },
+  {
+    title: localize("Visitor Activity"),
+    settings: [
+      {
+        name: localize("Display Format"),
+        default: "Real-time",
+        desc: localize("Statistical smoothing: Exact count, range, or qualitative."),
+      },
+      {
+        name: localize("Min Threshold"),
+        default: "3",
+        desc: localize("Lower bound of viewers required for visibility toggle."),
+      },
+      {
+        name: localize("Update Interval"),
+        default: "30s",
+        desc: localize("Frequency of background polling for live traffic data."),
+      },
+    ]
+  },
+  {
+    title: localize("Stock Alerts"),
+    settings: [
+      {
+        name: localize("Stock Threshold"),
+        default: "5",
+        desc: localize("Inventory level that triggers the scarcity logic loop."),
+      },
+      {
+        name: localize("Alert Type"),
+        default: "Low Stock",
+        desc: localize("Semantic style: Scarcity, Limited Edition, or Out of Stock."),
+      },
+      {
+        name: localize("Update Frequency"),
+        default: "15 min",
+        desc: localize("Shopify API sync rate for inventory reconciliation."),
+      },
+    ]
+  }
+];
+---
+<div class="space-y-20">
+  <header>
+    <span class="mb-4 block text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase">
+      {localize("Technical Reference")}
+    </span>
+    <h1 class="text-display mb-6 text-slate-900">
+      {localize("Configuration")}<span class="text-slate-300">.</span>
+    </h1>
+    <p class="max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
+      {localize("Deep reference guide for tuning the FOMO engine. Every parameter is engineered for maximum performance and conversion stability.")}
+    </p>
+  </header>
+
+  <div class="space-y-24">
+    {sections.map((section) => (
+      <section>
+        <h2 class="mb-8 text-2xl font-black text-slate-900">{section.title}</h2>
+        <div class="overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-xl shadow-slate-200/20">
+          <div class="overflow-x-auto">
+            <table class="w-full border-collapse text-left">
+              <thead>
+                <tr class="border-b border-slate-100 bg-slate-50/50">
+                  <th class="px-6 py-5 text-[10px] font-black tracking-widest text-slate-500 uppercase">
+                    {localize("Setting")}
+                  </th>
+                  <th class="px-6 py-5 text-[10px] font-black tracking-widest text-slate-500 uppercase">
+                    {localize("Default")}
+                  </th>
+                  <th class="px-6 py-5 text-[10px] font-black tracking-widest text-slate-500 uppercase">
+                    {localize("Description")}
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-50">
+                {section.settings.map((s) => (
+                  <tr class="transition-colors hover:bg-slate-50/50">
+                    <td class="px-6 py-5 text-sm font-bold text-slate-900">
+                      {s.name}
+                    </td>
+                    <td class="px-6 py-5 font-mono text-sm text-blue-600">
+                      {s.default}
+                    </td>
+                    <td class="px-6 py-5 text-sm font-medium text-slate-500">
+                      {s.desc}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    ))}
+  </div>
+</div>

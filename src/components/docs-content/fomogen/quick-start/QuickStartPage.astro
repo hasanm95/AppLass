@@ -1,0 +1,178 @@
+---
+import { CheckCircle2, AlertCircle, ArrowRight } from "lucide-react";
+import { localePath } from "@/i18n/utils";
+import { localize } from "@/i18n/localize";
+
+interface Props {
+  lang?: string;
+}
+
+const { lang = "en" } = Astro.props;
+
+const diagnostics = [
+  localize("Clear browser cache or utilize Incognito/Private mode."),
+  localize("Verify the 'Enable' toggle is active within the module settings."),
+  localize("Check for mobile responsiveness and z-index collisions."),
+];
+---
+<div class="space-y-20">
+  <header>
+    <span class="mb-4 block text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase">
+      {localize("Onboarding")}
+    </span>
+    <h1 class="text-display mb-6 text-slate-900">
+      {localize("Quick Start Guide")}<span class="text-slate-300">.</span>
+    </h1>
+    <p class="max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
+      {localize("Velocity to conversion. Activate the FOMO Engine and deploy your first conversion module in under 300 seconds.")}
+    </p>
+  </header>
+
+  <div class="space-y-24">
+    {/* Step 1: Activation */}
+    <section>
+      <div class="mb-8 flex items-center justify-between">
+        <h2 class="text-2xl font-black text-slate-900">
+          {localize("Step 01: Activation")}
+        </h2>
+        <span class="rounded-full bg-blue-50 px-4 py-1 text-[10px] font-black tracking-widest text-blue-600 uppercase">
+          {localize("Est. 120s")}
+        </span>
+      </div>
+
+      <div class="mb-10 rounded-[2.5rem] bg-slate-900 p-10 text-white">
+        <div class="mb-6 flex items-center gap-3 text-blue-400">
+          <AlertCircle className="h-5 w-5" aria-hidden="true" />
+          <span class="text-xs font-black tracking-widest uppercase">
+            {localize("CRITICAL REQUIREMENT")}
+          </span>
+        </div>
+        <p class="text-lg font-medium opacity-80">
+          {localize("The App Extension must be enabled in your Shopify Theme Editor for logic injection to occur on the storefront.")}
+        </p>
+      </div>
+
+      <div class="rounded-[2.5rem] border border-slate-100 bg-[#FAFBFD] p-10 lg:p-14">
+        <ul class="space-y-8">
+          <li class="flex gap-8">
+            <span class="text-3xl font-black text-slate-200">01</span>
+            <p class="text-lg leading-relaxed font-medium text-slate-600">
+              {localize("Navigate to 'FOMO Gen' within your Shopify Admin dashboard.")}
+            </p>
+          </li>
+          <li class="flex gap-8">
+            <span class="text-3xl font-black text-slate-200">02</span>
+            <p class="text-lg leading-relaxed font-medium text-slate-600">
+              {localize("Select 'Enable in Theme Editor' from the primary status banner.")}
+            </p>
+          </li>
+          <li class="flex gap-8">
+            <span class="text-3xl font-black text-slate-200">03</span>
+            <p class="text-lg leading-relaxed font-medium text-slate-600">
+              {localize("Toggle 'FOMO Gen' ON in the App Embeds sidebar.")}
+            </p>
+          </li>
+          <li class="flex gap-8">
+            <span class="text-3xl font-black text-slate-200">04</span>
+            <p class="text-lg leading-relaxed font-medium text-slate-600">
+              {localize("Commit changes by selecting 'Save' in the top-right header.")}
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    {/* Step 2: Goal Selection */}
+    <section>
+      <div class="mb-8 flex items-center justify-between">
+        <h2 class="text-2xl font-black text-slate-900">
+          {localize("Step 02: Module Deployment")}
+        </h2>
+        <span class="rounded-full bg-blue-50 px-4 py-1 text-[10px] font-black tracking-widest text-blue-600 uppercase">
+          {localize("Est. 60s")}
+        </span>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-2">
+        <a
+          href={localePath(lang, "/docs/fomogen/progress-indicators")}
+          class="group flex flex-col justify-between rounded-[2.5rem] border border-slate-100 bg-white p-10 shadow-xl shadow-slate-200/20 transition-all hover:border-blue-100 hover:shadow-blue-500/5"
+        >
+          <div>
+            <h3 class="mb-4 text-xl font-black text-slate-900">{localize("Boost AOV")}</h3>
+            <p class="mb-8 text-lg leading-relaxed font-medium text-slate-500">
+              {localize("Visualize shipping thresholds to gamify the cart experience.")}
+            </p>
+          </div>
+          <div class="flex items-center gap-2 font-black text-blue-600">
+            <span>{localize("Deploy Bar")}</span>
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+          </div>
+        </a>
+
+        <a
+          href={localePath(lang, "/docs/fomogen/purchase-notifications")}
+          class="group flex flex-col justify-between rounded-[2.5rem] border border-slate-100 bg-white p-10 shadow-xl shadow-slate-200/20 transition-all hover:border-blue-100 hover:shadow-blue-500/5"
+        >
+          <div>
+            <h3 class="mb-4 text-xl font-black text-slate-900">{localize("Social Trust")}</h3>
+            <p class="mb-8 text-lg leading-relaxed font-medium text-slate-500">
+              {localize("Infect your store with authentic conversion telemetry.")}
+            </p>
+          </div>
+          <div class="flex items-center gap-2 font-black text-blue-600">
+            <span>{localize("Deploy Proof")}</span>
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+          </div>
+        </a>
+
+        <a
+          href={localePath(lang, "/docs/fomogen/sticky-cart")}
+          class="group flex flex-col justify-between rounded-[2.5rem] border border-slate-100 bg-white p-10 shadow-xl shadow-slate-200/20 transition-all hover:border-blue-100 hover:shadow-blue-500/5"
+        >
+          <div>
+            <h3 class="mb-4 text-xl font-black text-slate-900">{localize("Reduce Friction")}</h3>
+            <p class="mb-8 text-lg leading-relaxed font-medium text-slate-500">
+              {localize("Maintain persistent CTAs via the fixed-layer sticky bar.")}
+            </p>
+          </div>
+          <div class="flex items-center gap-2 font-black text-blue-600">
+            <span>{localize("Deploy Utility")}</span>
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+          </div>
+        </a>
+
+        <a
+          href={localePath(lang, "/docs/fomogen/stock-alerts")}
+          class="group flex flex-col justify-between rounded-[2.5rem] border border-slate-100 bg-white p-10 shadow-xl shadow-slate-200/20 transition-all hover:border-blue-100 hover:shadow-blue-500/5"
+        >
+          <div>
+            <h3 class="mb-4 text-xl font-black text-slate-900">{localize("Drive Urgency")}</h3>
+            <p class="mb-8 text-lg leading-relaxed font-medium text-slate-500">
+              {localize("Deploy high-latency stock alerts and countdown timers.")}
+            </p>
+          </div>
+          <div class="flex items-center gap-2 font-black text-blue-600">
+            <span>{localize("Deploy Scarcity")}</span>
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+          </div>
+        </a>
+      </div>
+    </section>
+
+    {/* Diagnostic */}
+    <div class="rounded-[2.5rem] border border-slate-100 bg-white p-12 shadow-xl shadow-slate-200/20">
+      <h4 class="mb-8 text-sm font-black tracking-widest text-blue-600 uppercase">
+        {localize("Post-Deployment Diagnostic")}
+      </h4>
+      <ul class="space-y-4">
+        {diagnostics.map((check) => (
+          <li class="flex items-center gap-4 text-slate-600">
+            <CheckCircle2 className="h-5 w-5 text-blue-500" aria-hidden="true" />
+            <span class="font-medium">{check}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</div>

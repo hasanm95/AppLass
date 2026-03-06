@@ -1,0 +1,110 @@
+---
+import { localize } from "@/i18n/localize";
+
+interface Props {
+  lang?: string;
+}
+
+const { lang = "en" } = Astro.props;
+
+const badges = [
+  localize("Free Shipping"),
+  localize("SSL Secure"),
+  localize("Money Back"),
+  localize("Recycled"),
+  localize("Cruelty Free"),
+  localize("Eco Friendly"),
+  localize("Secure Pay"),
+  localize("Fast Delivery"),
+];
+
+const features = [
+  {
+    title: localize("Spatial Layouts"),
+    desc: localize("Align badges in horizontal rows, responsive grids, or kinetic carousels to match your theme's density."),
+    meta: localize("Logic: Grid Engine")
+  },
+  {
+    title: localize("Anchor Positions"),
+    desc: localize("Optimized for 'Below Price' or 'Above Add to Cart' triggers to maximize psychological impact."),
+    meta: localize("Logic: Contextual Injection")
+  }
+];
+---
+
+<div class="space-y-20">
+  <header>
+    <span class="mb-4 block text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase">
+      {localize("Authority Module")}
+    </span>
+    <h1 class="text-display mb-6 text-slate-900">
+      {localize("Trust Badges")}<span class="text-slate-300">.</span>
+    </h1>
+    <p class="max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
+      {localize("Credential validation. Display high-fidelity security seals, payment gateways, and performance guarantees to eliminate checkout friction.")}
+    </p>
+  </header>
+
+  <div class="space-y-24">
+    {/* Mechanism */}
+    <section>
+      <h2 class="mb-8 text-2xl font-black text-slate-900">
+        {localize("Mechanism of Action")}
+      </h2>
+      <div class="rounded-[2.5rem] border border-slate-100 bg-[#FAFBFD] p-10 lg:p-14">
+        <p class="max-w-3xl text-lg leading-relaxed font-medium text-slate-600">
+          {localize("The Trust Module provides a library of pre-rendered vector assets designed to signal security and reliability. By anchoring these symbols near high-friction touchpoints (like the CTA or price valuation), the engine reduces perceived transactional risk.")}
+        </p>
+      </div>
+    </section>
+
+    {/* Badge Library */}
+    <section>
+      <h2 class="mb-8 text-2xl font-black text-slate-900">
+        {localize("Asset Library")}
+      </h2>
+      <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+        {badges.map((badge) => (
+          <div class="flex items-center justify-center rounded-2xl border border-slate-100 bg-white p-4 py-6 shadow-sm shadow-slate-200/20 transition-all hover:shadow-md">
+            <span class="text-xs font-black tracking-tight text-slate-400 uppercase">
+              {badge}
+            </span>
+          </div>
+        ))}
+      </div>
+      <p class="mt-8 text-sm font-medium text-slate-400">
+        {localize("Supports custom SVG/PNG uploads for proprietary certifications.")}
+      </p>
+    </section>
+
+    {/* Configuration Matrix */}
+    <section>
+      <h2 class="mb-8 text-2xl font-black text-slate-900">
+        {localize("Deployment Matrix")}
+      </h2>
+      <div class="grid gap-6 md:grid-cols-2">
+        {features.map((feature) => (
+          <div class="group rounded-[2.5rem] border border-slate-100 bg-white p-10 shadow-xl shadow-slate-200/20 transition-all hover:border-blue-100 hover:shadow-blue-500/5">
+            <h3 class="mb-4 text-xl font-black text-slate-900">{feature.title}</h3>
+            <p class="mb-8 text-lg leading-relaxed font-medium text-slate-500">
+              {feature.desc}
+            </p>
+            <div class="inline-block rounded-full bg-slate-50 px-4 py-1 text-xs font-black tracking-wider text-slate-400 uppercase transition-colors group-hover:bg-blue-50 group-hover:text-blue-600">
+              {feature.meta}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    {/* Efficiency Tip */}
+    <div class="rounded-[2.5rem] bg-slate-900 p-12 text-white">
+      <h4 class="mb-4 text-sm font-black tracking-widest text-blue-400 uppercase">
+        {localize("Conversion Strategy")}
+      </h4>
+      <p class="text-xl leading-relaxed font-medium opacity-80">
+        <strong>{localize("Less is More:")}</strong> {localize("Strategic restraint (3-5 badges) maintains a premium aesthetic. Clustering too many signals can trigger \"over-validation,\" which inadvertently increases user skepticism.")}
+      </p>
+    </div>
+  </div>
+</div>
