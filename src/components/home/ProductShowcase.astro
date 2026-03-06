@@ -18,6 +18,7 @@ const productImages = {
 const products = getProducts();
 const featuredDataSource = products[0]; 
 const otherDataSources = products.slice(1);
+
 ---
 
 <Section
@@ -101,7 +102,7 @@ const otherDataSources = products.slice(1);
         >
           <div class="relative w-full overflow-hidden rounded-2xl border border-border bg-linear-to-br from-green-50 to-green-100 p-12">
             <Image
-              src={productImages[featuredDataSource.id] || (featuredDataSource as any).imageSrc}
+              src={productImages[featuredDataSource.id]}
               alt={localize(featuredDataSource.name)}
               width={600}
               height={600}
@@ -142,8 +143,8 @@ const otherDataSources = products.slice(1);
 
             {/* Image */}
             <div class="mb-6 overflow-hidden rounded-xl border border-border bg-muted/30 p-6">
-              <img
-                src={productImages[product.id] || (product as any).imageSrc}
+              <Image
+                src={productImages[product.id]}
                 alt={localize(product.name)}
                 width={600}
                 height={600}

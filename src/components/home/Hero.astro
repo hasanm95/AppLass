@@ -2,12 +2,19 @@
 import { localize } from "@/i18n/localize";
 import { getLangFromUrl, localePath } from "@/i18n/utils";
 import { ArrowRight } from "lucide-react";
+import Localize from "@/components/i18n/Localize";
+import React from 'react';
 
 const lang = getLangFromUrl(Astro.url);
+
+const h_components = [
+  React.createElement('span', { className: 'font-semibold text-foreground' }, 'AppLass'),
+  React.createElement('span', { className: 'inline-flex items-center gap-1 border-b-2 border-(--cta)/40 font-mono text-foreground' }, '<2.1KB')
+];
 ---
 
 <section
-  class="relative flex h-screen items-center overflow-hidden bg-background pt-20"
+  class="relative flex min-h-screen md:h-screen items-center overflow-hidden bg-background pt-20"
   aria-label="Introduction"
 >
   {/* Subtle grid background */}
@@ -44,14 +51,13 @@ const lang = getLangFromUrl(Astro.url);
 
       {/* Subheading */}
       <p class="mb-8 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
-        {localize("Stop letting bloated Shopify apps kill your conversions. {brand} builds elite-tier tools with {payload} payloads that keep your Core Web Vitals green.", {
-          brand: <span class="font-semibold text-foreground">AppLass</span>,
-          payload: (
-            <span class="inline-flex items-center gap-1 border-b-2 border-(--cta)/40 font-mono text-foreground">
-              &lt;2.1KB
-            </span>
-          )
-        })}
+        <Localize 
+          i18n_default_text="Stop letting bloated Shopify apps kill your conversions. <0>AppLass</0> builds elite-tier tools with <1>&lt;2.1KB</1> payloads that keep your Core Web Vitals green."
+          components={[
+            React.createElement('span', { className: 'font-semibold text-foreground' }),
+            React.createElement('span', { className: 'inline-flex items-center gap-1 border-b-2 border-(--cta)/40 font-mono text-foreground' })
+          ]}
+        />
       </p>
 
       {/* Stats Row */}

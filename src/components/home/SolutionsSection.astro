@@ -3,6 +3,8 @@ import Section from "@/components/common/Section.astro";
 import { getSolutions } from "@/constants/home-data";
 import { ShoppingBag, Clock, Users } from "lucide-react";
 import { localize } from "@/i18n/localize";
+import Localize from "@/components/i18n/Localize";
+import React from 'react';
 
 const ICONS = {
   ShoppingBag,
@@ -11,6 +13,10 @@ const ICONS = {
 };
 
 const solutionsData = getSolutions();
+
+const s_components = [
+  React.createElement('span', { className: 'border-b-2 border-cta/40 font-semibold text-foreground' })
+];
 ---
 
 <Section
@@ -38,13 +44,10 @@ const solutionsData = getSolutions();
 
         <div class="flex items-end">
           <p class="max-w-md text-lg leading-relaxed text-muted-foreground">
-            {localize("We don't just build features; we engineer {highlight} that solve core business logic bottlenecks.", {
-              highlight: (
-                <span class="border-b-2 border-cta/40 font-semibold text-foreground">
-                  {localize("systemic improvements")}
-                </span>
-              )
-            })}
+            <Localize 
+              i18n_default_text="We don't just build features; we engineer <0>systemic improvements</0> that solve core business logic bottlenecks."
+              components={s_components}
+            />
           </p>
         </div>
       </div>
