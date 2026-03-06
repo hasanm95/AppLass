@@ -21,8 +21,11 @@ setLocale(lang);
 const meta = {
   title: localize("Applass: Productivity & Privacy Solutions for the 2026 Digital World"),
   description: localize("Home of Mindful Guard and ScreenVeil. Discover advanced Android focus tools and Shopify apps designed to protect your privacy and boost ROI."),
+  keywords: localize("privacy apps, productivity tools, Shopify apps, digital wellness, Android utilities, Mindful Guard, ScreenVeil, AppLass"),
   ogTitle: localize("AppLass | Logic-Driven Software Studio"),
-  ogDescription: localize("Mathematical precision meets human-centric design. We build the Next Wave of digital performance.")
+  ogDescription: localize("Mathematical precision meets human-centric design. We build the Next Wave of digital performance."),
+  ogImage: "https://applass.com/og-home.png",
+  ogUrl: `https://applass.com/${lang}`
 };
 
 ---
@@ -30,8 +33,11 @@ const meta = {
 <Layout 
   title={meta.title}
   description={meta.description}
+  keywords={meta.keywords}
   ogTitle={meta.ogTitle}
   ogDescription={meta.ogDescription}
+  ogImage={meta.ogImage}
+  ogUrl={meta.ogUrl}
   lang={lang}
 >
   <Navbar    />

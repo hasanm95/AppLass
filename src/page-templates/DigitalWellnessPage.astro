@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { FAQSchema } from "@/components/common/FAQSchema";
+import FAQSchema from "@/components/common/FAQSchema.astro";
 import Footer from "@/components/common/Footer.astro";
 import Navbar from "@/components/common/Navbar.astro";
 import Section from "@/components/common/Section.astro";
@@ -31,8 +31,11 @@ setLocale(lang);
 const meta = {
   title: localize("Digital Wellness Guide 2026: 7 Steps to Reclaim Your Focus [Expert Guide]"),
   description: localize("Master your digital life in 2026. Learn how to combat digital burnout, audit your notifications, and use privacy-first tools like Mindful Guard to boost productivity."),
+  keywords: localize("digital wellness, focus app, notification audit, cognitive load, privacy focus tool, mindful guard, stop phone addiction, digital burnout guide"),
   ogTitle: localize("Digital Wellness Guide 2026"),
-  ogDescription: localize("7 steps to reclaiming your biological focus in a fragmented world.")
+  ogDescription: localize("7 steps to reclaiming your biological focus in a fragmented world."),
+  ogImage: "https://applass.com/og-digital-wellness.png",
+  ogUrl: "https://applass.com/blog/guide-digital-wellness-2026"
 };
 const faqItems = getFaqRegistry().DIGITAL_WELLNESS;
 

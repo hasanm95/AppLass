@@ -20,8 +20,11 @@ setLocale(lang);
 const meta = {
   title: localize("The Logic Lab | AppLass Blog"),
   description: localize("Deep dives into software engineering, mathematics, and digital productivity."),
+  keywords: localize("software engineering blog, technical blog, productivity guide, Shopify development, privacy apps review"),
   ogTitle: localize("The Logic Lab | AppLass Blog"),
-  ogDescription: localize("Deep dives into software engineering and digital productivity.")
+  ogDescription: localize("Deep dives into software engineering and digital productivity."),
+  ogImage: "https://applass.com/og-blog.png",
+  ogUrl: `https://applass.com/${lang}/blog`
 };
 
 const posts = await getBlogPosts(lang as string);

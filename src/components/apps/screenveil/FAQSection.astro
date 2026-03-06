@@ -1,0 +1,103 @@
+---
+import Section from "@/components/common/Section.astro";
+import FAQSchema from "@/components/common/FAQSchema.astro";
+import { getFaqRegistry } from "@/constants/faq-registry";
+import { getScreenveilData } from "@/constants/screenveil-data";
+import { ChevronDown } from "lucide-react";
+
+const items = getFaqRegistry().SCREENVEIL;
+const labels = getScreenveilData().labels;
+---
+
+<Section className="relative bg-slate-950 py-24 md:py-32">
+  <FAQSchema items={items} />
+  <div class="section-container relative z-10">
+    <div class="mx-auto max-w-3xl">
+      <div class="mb-16 text-center">
+        <span class="mb-6 block text-[10px] font-black tracking-[0.2em] text-green-500 uppercase">
+          {labels.faqTag}
+        </span>
+        <h2 class="text-3xl leading-tight font-bold tracking-tight text-white md:text-5xl">
+          {labels.faqTitle}
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+        {items.map((item, idx) => (
+          <div
+            class="faq-item overflow-hidden rounded-2xl border border-green-500/10 bg-slate-900/50 transition-all duration-300 hover:border-green-500/20"
+            data-index={idx}
+          >
+            <button
+              class="faq-trigger flex w-full items-center justify-between p-6 text-left md:p-8"
+              aria-expanded={idx === 0 ? "true" : "false"}
+            >
+              <h3 class="pr-4 text-base font-bold text-white md:text-xl">
+                {item.question}
+              </h3>
+              <ChevronDown
+                className={`chevron-icon h-6 w-6 shrink-0 text-green-500 transition-transform duration-300 ${
+                  idx === 0 ? "rotate-180" : ""
+                }`}
+              />
+            </button>
+
+            <div
+              class={`faq-content overflow-hidden transition-all duration-300 ${
+                idx === 0 ? "max-h-96" : "max-h-0"
+              }`}
+            >
+              <p class="px-6 pb-6 text-base leading-relaxed font-medium text-slate-400 md:px-8 md:pb-8 md:text-lg">
+                {item.answer}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</Section>
+
+<script>
+  function initFAQ() {
+    const items = document.querySelectorAll('.faq-item');
+    
+    items.forEach(item => {
+      const trigger = item.querySelector('.faq-trigger');
+      const content = item.querySelector('.faq-content') as HTMLElement;
+      const chevron = item.querySelector('.chevron-icon');
+
+      trigger?.addEventListener('click', () => {
+        const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+        
+        // Close others
+        items.forEach(other => {
+          if (other !== item) {
+            const otherTrigger = other.querySelector('.faq-trigger');
+            const otherContent = other.querySelector('.faq-content') as HTMLElement;
+            const otherChevron = other.querySelector('.chevron-icon');
+            
+            otherTrigger?.setAttribute('aria-expanded', 'false');
+            if (otherContent) otherContent.style.maxHeight = '0';
+            otherChevron?.classList.remove('rotate-180');
+          }
+        });
+
+        // Toggle current
+        if (isExpanded) {
+          trigger.setAttribute('aria-expanded', 'false');
+          if (content) content.style.maxHeight = '0';
+          chevron?.classList.remove('rotate-180');
+        } else {
+          trigger.setAttribute('aria-expanded', 'true');
+          if (content) content.style.maxHeight = content.scrollHeight + 'px';
+          chevron?.classList.add('rotate-180');
+        }
+      });
+    });
+  }
+
+  // Init on load and after swap
+  initFAQ();
+  document.addEventListener('astro:after-swap', initFAQ);
+</script>
