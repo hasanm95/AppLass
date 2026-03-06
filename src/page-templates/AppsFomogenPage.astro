@@ -23,8 +23,13 @@ import { getFomoGenData } from "@/constants/fomogen-data";
 const fomoData = getFomoGenData();
 
 const meta = {
-  title: localize("FOMO Gen: Fast Shopify Social Proof App [No Code 2026]"),
-  description: localize("Add high-converting sales popups, countdowns, and sticky carts to Shopify. Zero impact on Core Web Vitals with our 2KB payload.")
+  title: localize("FOMO Gen | #1 Free Social Proof, Urgency & Trust App for Shopify"),
+  description: localize("Skyrocket your Shopify sales with FOMO Gen. The all-in-one app for Sales Popups, Stock Countdowns, Sticky Cart, and Trust Badges. Install for Free today!"),
+  keywords: localize("shopify social proof, sales pop, countdown timer, stock alert, trust badges, sticky cart"),
+  ogTitle: localize("Boost Your Shopify Sales with FOMO Gen"),
+  ogDescription: localize("The all-in-one app for Sales Popups, Stock Countdowns, Sticky Cart, and Trust Badges. Install for Free today!"),
+  ogImage: "https://applass.com/fomogen-feature.png",
+  ogUrl: "https://applass.com/apps/fomogen"
 };
 
 ---
@@ -32,6 +37,11 @@ const meta = {
 <Layout 
   title={meta.title}
   description={meta.description}
+  keywords={meta.keywords}
+  ogTitle={meta.ogTitle}
+  ogDescription={meta.ogDescription}
+  ogImage={meta.ogImage}
+  ogUrl={meta.ogUrl}
   lang={lang}
 >
   <div class="bg-white">

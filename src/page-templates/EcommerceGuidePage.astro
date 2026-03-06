@@ -27,14 +27,16 @@ const { lang } = Astro.props;
 const meta = {
   title: localize("Ecommerce Performance Guide 2026: Benchmarks & Conversion Hacks"),
   description: localize("Master ecommerce performance in 2026. Discover the latest Shopify speed benchmarks, social proof strategies that boost sales by 98%, and CRO tools like sticky carts."),
+  ogTitle: localize("Ecommerce Performance Guide 2026"),
+  ogDescription: localize("Technical benchmarks and conversion hooks for modern Shopify merchants.")
 };
 const faqItems = getFaqRegistry().ECOMMERCE_PERFORMANCE;
 
 ---
 
 <Layout 
-  title={meta.title || "Ecommerce Performance Guide 2026: Benchmarks & Conversion Hacks"}
-  description={meta.description || "Master ecommerce performance in 2026. Discover the latest Shopify speed benchmarks, social proof strategies that boost sales by 98%, and CRO tools like sticky carts."}
+  title={meta.title}
+  description={meta.description}
   keywords={meta.keywords}
   ogTitle={meta.ogTitle}
   ogDescription={meta.ogDescription}

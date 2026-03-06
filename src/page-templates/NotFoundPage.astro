@@ -11,14 +11,19 @@ interface Props {
 
 const { lang } = Astro.props;
 
+const meta = {
+  title: localize("404: Logic Not Found"),
+  description: localize("The derivation you are looking for does not exist in this namespace.")
+};
+
 ---
 
 <Layout 
-  title={localize("404 Not Found | AppLass")}
-  description={localize("Logical Vector Unavailable.")}
+  title={meta.title}
+  description={meta.description}
   lang={lang}
-  ogTitle={localize("404 Not Found | AppLass")}
-  ogDescription={localize("Logical Vector Unavailable.")}
+  ogTitle={meta.title}
+  ogDescription={meta.description}
 >
   <Navbar    />
   

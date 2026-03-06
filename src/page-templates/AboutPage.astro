@@ -24,7 +24,9 @@ const { lang } = Astro.props;
 
 const meta = {
   title: localize("About | The AppLass Methodology"),
-  description: localize("Founder-led development derived from first principles. Mathematical integrity meets high-end digital craft. Meet the engineer behind the logic.")
+  description: localize("Founder-led development derived from first principles. Mathematical integrity meets high-end digital craft. Meet the engineer behind the logic."),
+  ogTitle: localize("About | AppLass Methodology"),
+  ogDescription: localize("Founder-led development derived from first principles. Mathematical integrity meets high-end digital craft.")
 };
 
 const iconMap = {
@@ -36,8 +38,8 @@ const iconMap = {
 ---
 
 <Layout 
-  title={meta.title || "About | The AppLass Methodology"}
-  description={meta.description || "Founder-led development derived from first principles. Mathematical integrity meets high-end digital craft. Meet the engineer behind the logic."}
+  title={meta.title}
+  description={meta.description}
   keywords={meta.keywords}
   ogTitle={meta.ogTitle}
   ogDescription={meta.ogDescription}

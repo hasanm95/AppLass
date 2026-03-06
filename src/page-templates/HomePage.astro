@@ -18,14 +18,20 @@ interface Props {
 
 const { lang } = Astro.props;
 setLocale(lang);
-
-
+const meta = {
+  title: localize("Applass: Productivity & Privacy Solutions for the 2026 Digital World"),
+  description: localize("Home of Mindful Guard and ScreenVeil. Discover advanced Android focus tools and Shopify apps designed to protect your privacy and boost ROI."),
+  ogTitle: localize("AppLass | Logic-Driven Software Studio"),
+  ogDescription: localize("Mathematical precision meets human-centric design. We build the Next Wave of digital performance.")
+};
 
 ---
 
 <Layout 
-  title={localize("AppLass: Productivity & Privacy Solutions")}
-  description={localize("Home of Mindful Guard and ScreenVeil.")}
+  title={meta.title}
+  description={meta.description}
+  ogTitle={meta.ogTitle}
+  ogDescription={meta.ogDescription}
   lang={lang}
 >
   <Navbar    />

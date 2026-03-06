@@ -19,13 +19,15 @@ const { lang } = Astro.props;
 const meta = {
   title: localize("Comparison Guides | AppLass Analysis"),
   description: localize("Logic-first product comparisons. Why elite teams choose AppLass over legacy alternatives."),
+  ogTitle: localize("Comparison Guides | AppLass Analysis"),
+  ogDescription: localize("Logic-first product comparisons and technical analysis.")
 };
 
 ---
 
 <Layout 
-  title={meta.title || "Comparison Guides | AppLass Analysis"}
-  description={meta.description || "Logic-first product comparisons. Why elite teams choose AppLass over legacy alternatives."}
+  title={meta.title}
+  description={meta.description}
   keywords={meta.keywords}
   ogTitle={meta.ogTitle}
   ogDescription={meta.ogDescription}

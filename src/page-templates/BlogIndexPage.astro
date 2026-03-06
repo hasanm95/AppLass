@@ -17,6 +17,8 @@ const { lang } = Astro.props;
 const meta = {
   title: localize("The Logic Lab | AppLass Blog"),
   description: localize("Deep dives into software engineering, mathematics, and digital productivity."),
+  ogTitle: localize("The Logic Lab | AppLass Blog"),
+  ogDescription: localize("Deep dives into software engineering and digital productivity.")
 };
 
 const posts = await getBlogPosts(lang as string);
@@ -29,8 +31,8 @@ const otherPosts = posts.filter(
 
 ---
 <Layout
-  title={meta.title || "The Logic Lab | AppLass Blog"}
-  description={meta.description || "Deep dives into software engineering, mathematics, and digital productivity."}
+  title={meta.title}
+  description={meta.description}
   keywords={meta.keywords}
   ogTitle={meta.ogTitle}
   ogDescription={meta.ogDescription}
