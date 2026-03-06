@@ -1,7 +1,9 @@
----
 import { getDictionary } from "@/i18n/get-dictionary";
 import { getLangFromUrl, localePath } from "@/i18n/utils";
+import { localize } from "@/i18n/localize"; // [TEST]
 import { ArrowRight } from "lucide-react";
+
+const testTranslation = localize("Test CRC32 Localization"); // [TEST]
 
 const lang = getLangFromUrl(Astro.url);
 const dict = await getDictionary(lang as any);
