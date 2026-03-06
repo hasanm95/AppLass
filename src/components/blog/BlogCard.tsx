@@ -8,9 +8,15 @@ interface BlogCardProps {
   post: MarkdownBlogPost;
   isHero?: boolean;
   lang?: string;
+  authorLabel?: string;
 }
 
-export function BlogCard({ post, isHero = false, lang = "en" }: BlogCardProps) {
+export function BlogCard({ 
+  post, 
+  isHero = false, 
+  lang = "en",
+  authorLabel = "Article Author" 
+}: BlogCardProps) {
   return (
     <a
       href={localePath(lang, `/blog/${post.slug}`)}
@@ -85,7 +91,7 @@ export function BlogCard({ post, isHero = false, lang = "en" }: BlogCardProps) {
             </div>
             <div>
               <p className="text-sm font-black text-slate-900">{post.author}</p>
-              <p className="text-xs font-bold text-slate-400">Article Author</p>
+              <p className="text-xs font-bold text-slate-400">{authorLabel}</p>
             </div>
           </div>
         )}

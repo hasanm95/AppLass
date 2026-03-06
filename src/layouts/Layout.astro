@@ -5,7 +5,7 @@ import '../fonts.css';
 import '../tw-animate.css';
 import { getImage } from 'astro:assets';
 import logoImage from '@/assets/logo.png';
-import { getDictionary } from '@/i18n/get-dictionary';
+import { localize } from '@/i18n/localize';
 
 interface Props {
   title?: string;
@@ -26,16 +26,15 @@ const {
   ogDescription,
   ogImage,
   ogUrl,
-  lang = 'en'
+  lang
 } = Astro.props;
 
 // Get language from URL if not explicitly provided
 const documentLang = lang || getLangFromUrl(Astro.url);
-const dict = await getDictionary(documentLang as any);
 
-const defaultDescription = dict.metadata?.default?.description || "At AppLass, we bridge the gap between complex mathematics and human-centric software. Stop letting bloated software slow down your growth. We build elite-tier Shopify and Mobile tools driven by mathematical precision.";
-const defaultTitle = dict.metadata?.default?.title || "AppLass | High-Performance Software Engineering";
-const defaultKeywords = dict.metadata?.default?.keywords || "software studio, Shopify apps, digital wellness, accessibility, WCAG, web development, AppLass";
+const defaultDescription = localize("At AppLass, we bridge the gap between complex mathematics and human-centric software. Stop letting bloated software slow down your growth. We build elite-tier Shopify and Mobile tools driven by mathematical precision.");
+const defaultTitle = localize("AppLass | High-Performance Software Engineering");
+const defaultKeywords = localize("software studio, Shopify apps, digital wellness, accessibility, WCAG, web development, AppLass");
 
 const optimizedOgImage = ogImage || (await getImage({ src: logoImage, format: 'webp', width: 1200 })).src;
 ---
@@ -85,7 +84,7 @@ const optimizedOgImage = ogImage || (await getImage({ src: logoImage, format: 'w
     <meta property="og:title" content={ogTitle || title || defaultTitle} />
     <meta property="og:description" content={ogDescription || description || defaultDescription} />
     <meta property="og:image" content="https://applass.com/logo.png" />
-    <meta property="og:site_name" content={dict.metadata?.siteName || "AppLass"} />
+    <meta property="og:site_name" content={localize("AppLass")} />
     <meta property="og:locale" content={documentLang === 'fr' ? 'fr_FR' : 'en_US'} />
     <meta property="og:locale:alternate" content={documentLang === 'fr' ? 'en_US' : 'fr_FR'} />
 
@@ -123,10 +122,10 @@ const optimizedOgImage = ogImage || (await getImage({ src: logoImage, format: 'w
         {
           "@type": "Organization",
           "@id": "https://applass.com/#organization",
-          "name": dict.metadata?.siteName || "AppLass",
+          "name": localize("AppLass"),
           "url": "https://applass.com",
           "logo": "https://applass.com/logo.png",
-          "description": dict.metadata?.schema?.organizationDescription || "Logic-driven software studio building high-performance apps with mathematical precision. Creators of ScreenVeil (10K+ downloads, 4.4★), FomoGen, and Mindful Guard.",
+          "description": localize("Logic-driven software studio building high-performance apps with mathematical precision. Creators of ScreenVeil (10K+ downloads, 4.4★), FomoGen, and Mindful Guard."),
           "foundingDate": "2019",
           "sameAs": []
         },
@@ -138,7 +137,7 @@ const optimizedOgImage = ogImage || (await getImage({ src: logoImage, format: 'w
           "author": {
             "@id": "https://applass.com/#organization"
           },
-          "description": dict.metadata?.schema?.screenveilDescription || "Black overlay for AMOLED/OLED displays that saves 60%+ battery life while listening to videos.",
+          "description": localize("Black overlay for AMOLED/OLED displays that saves 60%+ battery life while listening to videos."),
           "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.4",
@@ -163,8 +162,8 @@ const optimizedOgImage = ogImage || (await getImage({ src: logoImage, format: 'w
           "author": {
             "@id": "https://applass.com/#organization"
           },
-          "description": dict.metadata?.schema?.fomogenDescription || "Elite social proof tool with a <2.1KB payload to boost Shopify engagement by +23% without performance debt.",
-          "featureList": "WCAG 2.1 Compliance, Real-time Nudges, Zero Performance Impact"
+          "description": localize("Elite social proof tool with a <2.1KB payload to boost Shopify engagement by +23% without performance debt."),
+          "featureList": localize("WCAG 2.1 Compliance, Real-time Nudges, Zero Performance Impact")
         },
         {
           "@type": "SoftwareApplication",
@@ -174,8 +173,8 @@ const optimizedOgImage = ogImage || (await getImage({ src: logoImage, format: 'w
           "author": {
             "@id": "https://applass.com/#organization"
           },
-          "description": dict.metadata?.schema?.mindfulGuardDescription || "Privacy-first Android productivity guardian that helps users reclaim 2.4 hours of focus daily with local-only architecture.",
-          "featureList": "Zero-Tracking Architecture, System-Level Blocking, Focus Timers"
+          "description": localize("Privacy-first Android productivity guardian that helps users reclaim 2.4 hours of focus daily with local-only architecture."),
+          "featureList": localize("Zero-Tracking Architecture, System-Level Blocking, Focus Timers")
         },
         {
           "@type": "BreadcrumbList",
@@ -184,7 +183,7 @@ const optimizedOgImage = ogImage || (await getImage({ src: logoImage, format: 'w
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "Home",
+              "name": localize("Home"),
               "item": "https://applass.com"
             }
           ]

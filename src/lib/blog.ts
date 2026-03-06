@@ -64,8 +64,10 @@ export async function getBlogPostBySlug(slug: string, lang: string = "en"): Prom
   }
 }
 
+import { localize } from "@/i18n/localize";
+
 export async function getBlogCategories(lang: string = "en"): Promise<string[]> {
   const posts = await getBlogPosts(lang);
-  const categories = new Set(posts.map((post) => post.category));
-  return ["All", ...Array.from(categories)];
+  const categories = new Set(posts.map((post) => localize(post.category)));
+  return [localize("All"), ...Array.from(categories)];
 }

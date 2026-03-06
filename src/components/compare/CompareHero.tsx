@@ -1,5 +1,5 @@
 import { Section } from "@/components/common/Section";
-import { Button } from "@/components/ui/button";
+import { LinkButton } from "../ui/link-button";
 
 interface CompareHeroProps {
   headline: string;
@@ -20,9 +20,9 @@ export function CompareHero({ headline, subheadline, translations }: CompareHero
         <p className="mx-auto mb-12 max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
           {subheadline}
         </p>
-        <Button className="h-14 rounded-xl bg-slate-900 px-8 text-lg font-bold text-white hover:bg-slate-800">
+        <LinkButton href="https://apps.shopify.com/fomogen" target="_blank" rel="noopener noreferrer" className="h-14 rounded-xl bg-slate-900 px-8 text-lg font-bold text-white hover:bg-slate-800">
           {translations?.button || "Make the Switch — Get Started Free"}
-        </Button>
+        </LinkButton>
       </div>
     </Section>
   );

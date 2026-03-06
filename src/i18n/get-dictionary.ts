@@ -27,6 +27,14 @@ type EnDictionary = Omit<typeof rawEnDictionary, 'metadata'> & {
     default: SEOMetadata;
     schema: SchemaMetadata;
   };
+  faqRegistry: {
+    HOME: { id?: string; question: string; answer: string }[];
+    SCREENVEIL: { question: string; answer: string }[];
+    FOMOGEN: { question: string; answer: string }[];
+    MINDFUL_GUARD: { question: string; answer: string }[];
+    DIGITAL_WELLNESS: { question: string; answer: string }[];
+    ECOMMERCE_PERFORMANCE: { question: string; answer: string }[];
+  };
 };
 
 const dictionaries = {

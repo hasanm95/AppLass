@@ -44,7 +44,7 @@ export function StickyDownloadBar({ translations }: StickyDownloadBarProps) {
         >
           <a href={dict.playStoreUrl}>
             <Download className="mr-2 h-4 w-4" />
-            Download
+            {translations?.downloadNow || "Download Now"}
           </a>
         </Button>
       </div>

@@ -1,8 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { getImage } from 'astro:assets';
-import appLogoImg from '@/assets/logo.png';
-import { Footer } from "@/components/common";
+import Footer from "@/components/common/Footer.astro";
 import Navbar from "@/components/common/Navbar.astro";
 import { getComparisonBySlug } from "@/lib/compare";
 import { CompareHero } from "@/components/compare/CompareHero";
@@ -12,7 +10,7 @@ import { ValueHighlights } from "@/components/compare/ValueHighlights";
 import { CompareTestimonial } from "@/components/compare/CompareTestimonial";
 import { CompareFooter } from "@/components/compare/CompareFooter";
 import { Button } from "@/components/ui/button";
-import { getDictionary } from "@/i18n/get-dictionary";
+import { localize } from "@/i18n/localize";
 import { i18nConfig } from "@/i18n/config";
 
 interface Props {
@@ -21,26 +19,27 @@ interface Props {
 }
 
 const { lang, slug } = Astro.props;
-const dict = await getDictionary(lang as any);
+
+import { setLocale } from "@/i18n";
+setLocale(lang);
 const data = getComparisonBySlug(slug as string);
 
 if (!data) {
   return Astro.redirect('/404');
 }
 
-const compareData: any = dict.compare;
-const compareDict = compareData?.[data.slug as string];
-
 const title = `${data.productName} vs ${data.competitorName} | AppLass`;
-const description = `Why elite teams are switching from ${data.competitorName} to ${data.productName}. A logic-first comparison.`;
+const description = localize("Why elite teams are switching from {{competitor}} to {{product}}. A logic-first comparison.", {
+  competitor: data.competitorName,
+  product: data.productName
+});
 
-const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
 // JSON-LD for Comparison/Product
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: compareDict?.heroHeadline || data.heroHeadline,
-  description: compareDict?.heroSubheadline || data.heroSubheadline,
+  headline: data.heroHeadline,
+  description: data.heroSubheadline,
   author: {
     "@type": "Organization",
     name: "AppLass",
@@ -69,12 +68,12 @@ const jsonLd = {
       set:html={JSON.stringify(jsonLd)}
     />
     
-    <Navbar variant="light" translations={dict.nav} currentLang={lang} commonTranslations={dict.common} >
+    <Navbar variant="light"    >
       <div slot="customBranding" class="flex items-center gap-3">
         <span class="text-[10px] font-black tracking-widest text-blue-800 uppercase">
           {data.productName}
         </span>
-        <span class="text-[10px] font-medium text-slate-500">{compareData?.index?.vs}</span>
+        <span class="text-[10px] font-medium text-slate-500">{localize("vs")}</span>
         <span class="text-[10px] font-black tracking-widest text-slate-900 uppercase">
           {data.competitorName}
         </span>
@@ -82,43 +81,64 @@ const jsonLd = {
       
       <div slot="customCTA">
         <Button className="h-9 rounded-lg bg-slate-900 px-6 text-[10px] font-bold tracking-widest text-white uppercase hover:bg-slate-800" client:idle>
-          Install Now
+          {localize("Install Now")}
         </Button>
       </div>
     </Navbar>
 
     <div>
       <CompareHero
-        headline={compareDict?.heroHeadline || data.heroHeadline}
-        subheadline={compareDict?.heroSubheadline || data.heroSubheadline}
-        translations={compareData?.hero}
+        headline={data.heroHeadline}
+        subheadline={data.heroSubheadline}
+        translations={{
+          eyebrow: localize("Logical Derivation")
+        }}
       />
 
       <ComparisonMatrix
         competitorName={data.competitorName}
         productName={data.productName}
-        features={compareDict?.matrix || data.matrix}
-        translations={compareData?.matrix}
+        features={data.matrix}
+        translations={{
+          headline: localize("Technical Matrix"),
+          feature: localize("Feature"),
+          advantage: localize("Advantage")
+        }}
       />
 
       <TechnicalDebt 
-        legacy={compareDict?.legacyWay || data.legacyWay} 
-        applass={compareDict?.applassWay || data.applassWay} 
-        translations={compareData?.debt}
+        legacy={data.legacyWay} 
+        applass={data.applassWay} 
+        translations={{
+          headline: localize("Structural Comparison")
+        }}
       />
 
-      <ValueHighlights translations={compareData?.highlights} />
+      <ValueHighlights translations={{
+        headline: localize("The AppLass Edge"),
+        speed: localize("Sub-100ms Speed"),
+        privacy: localize("Absolute Privacy"),
+        efficiency: localize("Zero Battery Lag"),
+        speedDesc: localize("Deriving performance from mathematical optimization."),
+        privacyDesc: localize("Your data stays local. No cloud, no tracking, no risk."),
+        efficiencyDesc: localize("Native implementation for maximum hardware efficiency.")
+      }} />
 
       <CompareTestimonial
-        quote={compareDict?.testimonial?.quote || data.testimonial.quote}
-        author={compareDict?.testimonial?.author || data.testimonial.author}
-        role={compareDict?.testimonial?.role || data.testimonial.role}
-        translations={compareDict?.testimonial}
+        quote={data.testimonial.quote}
+        author={data.testimonial.author}
+        role={data.testimonial.role}
+        translations={{
+          headline: localize("The Verdict")
+        }}
       />
 
-      <CompareFooter translations={compareData?.footer} />
+      <CompareFooter translations={{
+        headline: localize("Logic-First Software."),
+        cta: localize("Build Your Ecosystem")
+      }} />
     </div>
 
-    <Footer variant="light" translations={dict.footer}  logoSrc={optimizedAppLogo.src} />
+    <Footer variant="light" />
   </div>
 </Layout>

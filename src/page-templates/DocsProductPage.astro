@@ -4,6 +4,7 @@ import FomogenContent from '../components/docs-content/fomogen/page';
 import MindfulGuardContent from '../components/docs-content/mindful-guard/page';
 import ScreenveilContent from '../components/docs-content/screenveil/page';
 import { i18nConfig } from '@/i18n/config';
+import { localize } from '@/i18n/localize';
 
 interface Props {
   lang: typeof i18nConfig.locales[number];
@@ -12,15 +13,39 @@ interface Props {
 
 const { lang, product } = Astro.props;
 
+import { setLocale } from "@/i18n";
+setLocale(lang);
+
 const contents = {
   fomogen: FomogenContent,
   'mindful-guard': MindfulGuardContent,
   screenveil: ScreenveilContent,
 };
 
+const productMeta = {
+  fomogen: {
+    title: localize("FomoGen Documentation | Shopify Integration Guide"),
+    description: localize("Technical references and deployment guides for FomoGen social proof on Shopify.")
+  },
+  'mindful-guard': {
+    title: localize("Mindful Guard Documentation | Productivity Architecture"),
+    description: localize("Engineering references and configuration guides for Mindful Guard.")
+  },
+  'screenveil': {
+    title: localize("ScreenVeil Documentation | Battery Optimization"),
+    description: localize("Technical references and battery optimization guides for ScreenVeil.")
+  }
+};
+
+const meta = productMeta[product as keyof typeof productMeta];
 const Content = contents[product];
 ---
 
-<DocsLayout lang={lang as string} app={product}>
+<DocsLayout 
+  lang={lang as string} 
+  app={product}
+  title={meta.title}
+  description={meta.description}
+>
   <Content lang={lang as string} />
 </DocsLayout>

@@ -13,7 +13,9 @@
     "closeMenu": "Close menu"
   },
   "common": {
-    "selectLanguage": "Select Language"
+    "selectLanguage": "Select Language",
+    "learnMore": "Learn More",
+    "poweredByLogic": "Powered by Logic"
   },
   "footer": {
     "tagline": "Logic-driven software where mathematical precision meets human-centric design.",
@@ -46,9 +48,18 @@
       "headlineSubdued": "Zero Bloat.",
       "subheading": "Stop letting bloated Shopify apps kill your conversions. {brand} builds elite-tier tools with {payload} payloads that keep your Core Web Vitals green.",
       "stats": {
-        "downloads": { "value": "10K+", "label": "Downloads" },
-        "rating": { "value": "4.4★", "label": "Rating" },
-        "payload": { "value": "<2.1KB", "label": "Payload" }
+        "downloads": {
+          "value": "10K+",
+          "label": "Downloads"
+        },
+        "rating": {
+          "value": "4.4★",
+          "label": "Rating"
+        },
+        "payload": {
+          "value": "<2.1KB",
+          "label": "Payload"
+        }
       },
       "cta": {
         "primary": "See Our Apps",
@@ -58,10 +69,22 @@
     "socialProof": {
       "trustedBy": "Trusted by {count} users",
       "metrics": {
-        "downloads": { "value": "10K+", "label": "Downloads" },
-        "playStore": { "value": "4.4★", "label": "Play Store" },
-        "payload": { "value": "<2.1KB", "label": "Payload" },
-        "telemetry": { "value": "Zero", "label": "Telemetry" }
+        "downloads": {
+          "value": "10K+",
+          "label": "Downloads"
+        },
+        "playStore": {
+          "value": "4.4★",
+          "label": "Play Store"
+        },
+        "payload": {
+          "value": "<2.1KB",
+          "label": "Payload"
+        },
+        "telemetry": {
+          "value": "Zero",
+          "label": "Telemetry"
+        }
       },
       "googlePlay": {
         "getItOn": "Get it on",
@@ -167,7 +190,10 @@
       "tagline": "Screen Off Video Playback",
       "description": "Save 60%+ battery on AMOLED/OLED displays. Listen to YouTube, podcasts, and music with your screen off. Zero permissions, total privacy.",
       "cta": "Download Free",
-      "metrics": ["10K+ Downloads", "4.4★ Rating"]
+      "metrics": [
+        "10K+ Downloads",
+        "4.4★ Rating"
+      ]
     },
     "fomogen": {
       "name": "FomoGen",
@@ -175,7 +201,10 @@
       "tagline": "Social Proof Without the Speed Penalty",
       "description": "Elite social proof with a proprietary <2.1KB payload. Boost engagement by +23% without triggering 'Long Task' warnings or SEO speed penalties.",
       "cta": "Add to Shopify",
-      "metrics": ["+23% Engagement", "<2.1KB Payload"]
+      "metrics": [
+        "+23% Engagement",
+        "<2.1KB Payload"
+      ]
     },
     "mindfulGuard": {
       "name": "Mindful Guard",
@@ -183,7 +212,10 @@
       "tagline": "Privacy-First Focus Guardrails",
       "description": "System-level productivity guardian built with a zero-tracking, privacy-first architecture. Reclaim an average of 2.4 hours of focus daily with 100% on-device data sovereignty.",
       "cta": "Get on Play Store",
-      "metrics": ["2.4h Focus Reclaimed", "Zero-Tracking"]
+      "metrics": [
+        "2.4h Focus Reclaimed",
+        "Zero-Tracking"
+      ]
     }
   },
   "pillars": {
@@ -344,6 +376,215 @@
       "mindfulGuardDescription": "Privacy-first Android productivity guardian that helps users reclaim 2.4 hours of focus daily with local-only architecture."
     }
   },
+  "blog": {
+    "hero": {
+      "eyebrow": "The Logic Lab",
+      "headline": "Insights for the",
+      "headlineAccent": "Modern Engineer.",
+      "description": "Deep dives into software engineering, mathematics, and digital productivity. We explore the systems that drive successful founders."
+    },
+    "noArticles": "No articles published yet. Check back soon.",
+    "post": {
+      "backToArchive": "Back to Archive",
+      "articleAuthor": "Article Author",
+      "technicalClarifications": "Technical Clarifications",
+      "frequentlyAsked": "Frequently Asked",
+      "questions": "Questions",
+      "shareArticle": "Share Article",
+      "shareOnTwitter": "Share on Twitter",
+      "shareOnLinkedIn": "Share on LinkedIn",
+      "copyLink": "Copy Link"
+    },
+    "card": {
+      "articleAuthor": "Article Author"
+    },
+    "appCallout": {
+      "mindfulGuard": {
+        "sub": "Built for Focus.",
+        "desc": "Reclaim your digital focus with logical guardrails."
+      },
+      "fomogen": {
+        "sub": "Sales Simplified.",
+        "desc": "The #1 Shopify app for social proof automation."
+      },
+      "applass": {
+        "sub": "First Principles.",
+        "desc": "Get engineering insights delivered to your inbox."
+      }
+    }
+  },
+  "ecommerceGuide": {
+    "hero": {
+      "eyebrow": "Authority Pillar",
+      "verification": "Tested By Experts & Verified for 2026",
+      "headline": "The 2026 Guide to Ecommerce Performance",
+      "headlineAccent": ": Speed, Trust, and Conversion.",
+      "description": "In 2026, ecommerce performance is no longer just about \"having a fast site.\" It is the bridge between a visitor's first impression and a completed checkout. Brands that fail to meet modern performance benchmarks are effectively \"leaving money on the table.\""
+    },
+    "technicalSpeed": {
+      "title": "1. Technical Speed: The 2026 Performance Benchmarks",
+      "description": "Google's Core Web Vitals remain the gold standard. In 2026, a delay of just one second can drop your conversion rate by 7%. Hit these specific targets to stay competitive:",
+      "lcp": {
+        "title": "LCP",
+        "value": "≤ 2.5s",
+        "desc": "Measures how fast your main product image or headline loads."
+      },
+      "inp": {
+        "title": "INP",
+        "value": "≤ 200ms",
+        "desc": "Measures how quickly your site reacts when an user clicks \"Add to Cart.\""
+      },
+      "cls": {
+        "title": "CLS",
+        "value": "< 0.1",
+        "desc": "Ensures your page elements don't \"jump\" around while loading."
+      },
+      "proTip": {
+        "title": "Pro Tip: Audit your \"App Bloat.\"",
+        "description": "Most Shopify stores run 8–12 apps, each slowing down JavaScript execution. Aim for a lean stack of 6–10 high-value apps to maintain a loading time of 1.5–3 seconds.",
+        "cta": "Site Speed Audit Guide"
+      }
+    },
+    "psychologicalTrust": {
+      "title": "2. Psychological Trust: The Power of Social Proof",
+      "description": "Once a user lands on your site, you have seconds to prove you are trustworthy. Social proof is the most effective lever for driving immediate sales in 2026.",
+      "lift": {
+        "value": "98%",
+        "title": "The 98% Lift",
+        "desc": "Sales-based social proof notifications have been shown to boost website conversions by up to 98%."
+      },
+      "threshold": {
+        "value": "270%",
+        "title": "The Review Threshold",
+        "desc": "Products with 5 or more reviews are 270% more likely to be purchased than those with no reviews."
+      },
+      "visualTrust": {
+        "title": "Visual Trust Logic",
+        "description": "Including customer photos or video testimonials in reviews can increase purchase likelihood by 137%.",
+        "cta": "Review Best Social Proof Apps"
+      }
+    },
+    "frictionlessConversion": {
+      "title": "3. Frictionless Conversion: CRO Hacks for 2026",
+      "description": "To turn traffic into revenue, remove every possible barrier in the mobile journey.",
+      "stickyCart": {
+        "title": "The Mobile Sticky Cart",
+        "desc": "Ensures the \"Checkout\" button is always within thumb-reach, significantly increasing ROI for Shopify developers.",
+        "cta": "Read the Guide"
+      },
+      "threeClickRule": {
+        "title": "The Three-Click Rule",
+        "desc": "A user should be able to get from your homepage to any product in three clicks or less."
+      },
+      "urgencyNudges": {
+        "title": "Urgency Nudges",
+        "desc": "Visual countdown timers create a sense of FOMO that encourages immediate action at checkout."
+      }
+    },
+    "faq": {
+      "headline": "Frequently Asked Questions"
+    },
+    "cta": {
+      "headline": "Deploy FomoGen.",
+      "description": "The technical implementation of 2026 performance benchmarks. Sub-2.1KB payload, zero speed debt, maximum trust.",
+      "primary": "Add to Shopify",
+      "secondary": "Meet the Engineer"
+    }
+  },
+  "digitalWellness": {
+    "hero": {
+      "eyebrow": "Authority Pillar",
+      "headline": "The Ultimate Guide to Digital Wellness in 2026",
+      "headlineAccent": ": Master Your Focus and Privacy.",
+      "description": "In 2026, the average professional spends more than 11 hours a day interacting with screens. While technology has made us more connected than ever, it has also led to a \"Great Decoupling\" of our attention, where constant notifications fragment our focus and lead to digital burnout.",
+      "quote": "Digital wellness is no longer just about \"using your phone less.\" It is a holistic approach to physical health, cognitive load management, and digital privacy."
+    },
+    "cognitiveLoad": {
+      "title": "1. Cognitive Load Management",
+      "description": "Finding the Signal in the Noise. Our brains were not built to process 100+ notifications per hour. To maintain peak performance, you must treat your attention as a finite resource.",
+      "notificationAuditing": {
+        "title": "Notification Auditing",
+        "description": "Categorize your alerts into three levels to protect your neural bandwidth:",
+        "level1": {
+          "label": "Level 1 (Critical):",
+          "desc": "Includes family and server alerts for immediate response."
+        },
+        "level2": {
+          "label": "Level 2 (Active):",
+          "desc": "Should be batched every 2 hours."
+        },
+        "level3": {
+          "label": "Level 3 (Passive):",
+          "desc": "Social media and newsletters—disable entirely."
+        }
+      },
+      "deepWork": {
+        "title": "Implementation of \"Deep Work\" Blocks",
+        "description": "Dedicate at least two hours every morning to high-complexity tasks with zero digital interruptions. This means no Slack, no email, and no phone."
+      }
+    },
+    "physicalSetup": {
+      "eyebrow": "Physical Health",
+      "title": "2. The Physical Setup: 2026 Ergonomics",
+      "rule90": {
+        "title": "The 90-Degree Rule",
+        "desc": "Keep elbows parallel to the desk and knees at a 90-degree angle with feet flat on the floor."
+      },
+      "rule20": {
+        "title": "20-20-20 Eye Health",
+        "desc": "Every 20 minutes, look at something 20 feet away for at least 20 seconds to prevent strain."
+      },
+      "blueLight": {
+        "title": "Blue Light Mitigation",
+        "desc": "Disable all blue-light-emitting devices 60 minutes before sleep for natural melatonin production."
+      }
+    },
+    "essentialTools": {
+      "title": "3. Essential Tools for Focus and Privacy",
+      "description": "To achieve digital wellness, you need tools that respect your data while protecting your time.",
+      "mindfulGuard": {
+        "eyebrow": "Privacy First",
+        "title": "Mindful Guard",
+        "description": "A leading privacy-first focus app that combines a Pomodoro timer with strict app blocking. Unlike many competitors, it works 100% offline with no data collection.",
+        "cta": "View Mindful Guard"
+      },
+      "screenVeil": {
+        "title": "ScreenVeil",
+        "description": "A lightweight screen filter for Android designed to protect your data from prying eyes in public spaces while reducing eye strain through customizable overlays.",
+        "cta": "Learn about ScreenVeil"
+      },
+      "opalAlternatives": {
+        "title": "Opal Alternatives",
+        "description": "For Android users looking for the functionality of iOS's Opal, several high-performance alternatives now offer deep analytics into your triggers and patterns.",
+        "cta": "Read the comparison"
+      }
+    },
+    "recoveryProtocol": {
+      "eyebrow": "The Power of Disconnect",
+      "title": "4. The \"Offline\" Recovery Protocol",
+      "weekendAirGap": {
+        "title": "The Weekend Air-Gap",
+        "desc": "Designate at least four hours every Sunday where all devices are powered off and stored in a different room."
+      },
+      "tactileHobbies": {
+        "title": "Tactile Hobbies",
+        "desc": "Engage in non-digital activities like gardening or paper-based reading to reset your dopamine receptors."
+      },
+      "natureBreak": {
+        "title": "The Nature Break",
+        "desc": "Spend 15 minutes in direct sunlight before 10:00 AM to regulate your circadian rhythm."
+      },
+      "quote": "\"Structure determines function. To maintain long-term productivity, you must intentionally disconnect.\""
+    },
+    "faq": {
+      "headline": "Frequently Asked Questions"
+    },
+    "author": {
+      "name": "Hasan M.",
+      "bio": "Founder of AppLass and Lead Engineer focused on mathematical optimization and digital discipline. With 7+ years of experience in first-principles software architecture.",
+      "cta": "View Full Bio"
+    }
+  },
   "fomogen": {
     "hero": {
       "tagline": "High-Performance Social Proof",
@@ -355,10 +596,22 @@
       "shopifyUrl": "https://apps.shopify.com/fomogen",
       "subtext": "Free plan available • No coding required • 5-Star Support",
       "stats": [
-        { "value": "<2.1KB", "label": "Payload" },
-        { "value": "0ms", "label": "Main Thread" },
-        { "value": "WCAG 2.1", "label": "Compliant" },
-        { "value": "Mobile", "label": "Optimized" }
+        {
+          "value": "<2.1KB",
+          "label": "Payload"
+        },
+        {
+          "value": "0ms",
+          "label": "Main Thread"
+        },
+        {
+          "value": "WCAG 2.1",
+          "label": "Compliant"
+        },
+        {
+          "value": "Mobile",
+          "label": "Optimized"
+        }
       ]
     },
     "speedBenefit": {
@@ -679,9 +932,15 @@
       "headline": "Zero Permissions. Total Privacy.",
       "description": "Unlike clones, ScreenVeil requires no internet access and no personal data. We only need the 'Overlay' permission to function. Your data stays on your device—where it belongs.",
       "features": [
-        { "label": "No Internet Required" },
-        { "label": "Zero Data Collection" },
-        { "label": "Overlay Only" }
+        {
+          "label": "No Internet Required"
+        },
+        {
+          "label": "Zero Data Collection"
+        },
+        {
+          "label": "Overlay Only"
+        }
       ]
     },
     "testimonials": [
@@ -744,11 +1003,31 @@
       "heroHeadline": "The Logical Alternative to Nudgify.",
       "heroSubheadline": "Why elite Shopify merchants are switching from bloated legacy social proof tools to FomoGen's logic-first architecture.",
       "matrix": [
-        { "label": "Load Speed", "competitorValue": "1.2s+", "applassValue": "< 100ms" },
-        { "label": "Privacy", "competitorValue": "Cookies & Tracking", "applassValue": "Zero Telemetry" },
-        { "label": "Accessibility", "competitorValue": "Partial WCAG", "applassValue": "100% Compliant" },
-        { "label": "Script Size", "competitorValue": "450KB+", "applassValue": "4.2KB" },
-        { "label": "Pricing", "competitorValue": "Strict Tiers", "applassValue": "Logical Flat Rate" }
+        {
+          "label": "Load Speed",
+          "competitorValue": "1.2s+",
+          "applassValue": "< 100ms"
+        },
+        {
+          "label": "Privacy",
+          "competitorValue": "Cookies & Tracking",
+          "applassValue": "Zero Telemetry"
+        },
+        {
+          "label": "Accessibility",
+          "competitorValue": "Partial WCAG",
+          "applassValue": "100% Compliant"
+        },
+        {
+          "label": "Script Size",
+          "competitorValue": "450KB+",
+          "applassValue": "4.2KB"
+        },
+        {
+          "label": "Pricing",
+          "competitorValue": "Strict Tiers",
+          "applassValue": "Logical Flat Rate"
+        }
       ],
       "legacyWay": {
         "title": "The Legacy Way",
@@ -776,11 +1055,31 @@
       "heroHeadline": "The Logical Alternative to Forest.",
       "heroSubheadline": "Why elite developers are switching from gamified distractions to Mindful Guard's system-level discipline.",
       "matrix": [
-        { "label": "Method", "competitorValue": "Gamified / Visual", "applassValue": "Logical Friction" },
-        { "label": "Battery Impact", "competitorValue": "6-8% Daily", "applassValue": "< 0.5% Daily" },
-        { "label": "Privacy", "competitorValue": "Cloud-Synced", "applassValue": "100% Local" },
-        { "label": "Focus Logic", "competitorValue": "Suggestive", "applassValue": "Absolute Guardrails" },
-        { "label": "Philosophy", "competitorValue": "Growth", "applassValue": "Elimination" }
+        {
+          "label": "Method",
+          "competitorValue": "Gamified / Visual",
+          "applassValue": "Logical Friction"
+        },
+        {
+          "label": "Battery Impact",
+          "competitorValue": "6-8% Daily",
+          "applassValue": "< 0.5% Daily"
+        },
+        {
+          "label": "Privacy",
+          "competitorValue": "Cloud-Synced",
+          "applassValue": "100% Local"
+        },
+        {
+          "label": "Focus Logic",
+          "competitorValue": "Suggestive",
+          "applassValue": "Absolute Guardrails"
+        },
+        {
+          "label": "Philosophy",
+          "competitorValue": "Growth",
+          "applassValue": "Elimination"
+        }
       ],
       "legacyWay": {
         "title": "The Legacy Way",
@@ -804,5 +1103,99 @@
         "role": "Lead Software Architect"
       }
     }
+  },
+  "faqRegistry": {
+    "HOME": [
+      {
+        "id": "what-is",
+        "question": "What is AppLass?",
+        "answer": "AppLass is an elite software engineering studio that builds high-performance Shopify apps and Android utilities. Founded in 2019, we use mathematical optimization to create sub-2.1KB payloads that keep Core Web Vitals green. Our flagship products include ScreenVeil, FomoGen, and Mindful Guard."
+      },
+      {
+        "id": "accessibility",
+        "question": "Is AppLass software accessible?",
+        "answer": "Yes. All AppLass products follow WCAG 2.1 guidelines with semantic HTML and keyboard-navigable patterns. We build for the 20% of users with disabilities to create a superior experience for the 100%."
+      },
+      {
+        "id": "speed",
+        "question": "How does AppLass optimize for speed?",
+        "answer": "We minimize JavaScript execution time to the micro-second using mathematical optimization. Core utility payloads stay under 2.1KB to ensure green Core Web Vitals scores."
+      },
+      {
+        "id": "privacy",
+        "question": "What is AppLass's privacy policy?",
+        "answer": "AppLass uses Zero-Telemetry Architecture. We never log personal identifiers, track user behavior, or include third-party analytics SDKs. All data stays 100% on-device for maximum user privacy."
+      }
+    ],
+    "SCREENVEIL": [
+      {
+        "question": "Does ScreenVeil work on LCD screens?",
+        "answer": "Yes, it acts as a screen dimmer, but the maximum battery savings are achieved on AMOLED/OLED displays where pixels physically turn off."
+      },
+      {
+        "question": "How is this different from YouTube Premium?",
+        "answer": "ScreenVeil is a universal hardware-level utility. It works across all apps (Netflix, Prime, etc.) and provides a 'pocket mode' that prevents accidental touches while the video continues."
+      },
+      {
+        "question": "What is ScreenVeil?",
+        "answer": "ScreenVeil is a free Android utility with 10,000+ downloads and a 4.4-star rating. It provides a black overlay for AMOLED/OLED displays, saving 60%+ battery life while listening to videos."
+      }
+    ],
+    "FOMOGEN": [
+      {
+        "question": "What is FomoGen?",
+        "answer": "FomoGen is an elite social proof tool for Shopify merchants with a <2.1KB payload that boosts engagement by +23% without performance debt. It is WCAG 2.1 compliant with real-time nudges."
+      },
+      {
+        "question": "Is FomoGen free?",
+        "answer": "Yes, FomoGen offers a powerful free plan for Shopify merchants to boost engagement with urgency and trust signals."
+      }
+    ],
+    "MINDFUL_GUARD": [
+      {
+        "question": "What is Mindful Guard?",
+        "answer": "Mindful Guard is a privacy-focused Android productivity guardian that helps users reclaim 2.4 hours of focus daily. It features a zero-telemetry, offline architecture and system-level blocking."
+      },
+      {
+        "question": "Does MindfulGuard work on Xiaomi/Samsung/MIUI devices?",
+        "answer": "Yes. MindfulGuard is engineered with \"Battery Optimization Exemption\" protocols specifically to prevent aggressive Android skins like MIUI from killing the background process."
+      },
+      {
+        "question": "Is MindfulGuard safe for privacy?",
+        "answer": "Yes. MindfulGuard operates on a zero-telemetry architecture. It does not require internet access to function, ensuring your data never leaves your device."
+      },
+      {
+        "question": "How does Strict Mode work?",
+        "answer": "Strict Mode locks your chosen settings for a set duration. It prevents you from uninstalling the app or changing the schedule until the timer expires."
+      }
+    ],
+    "DIGITAL_WELLNESS": [
+      {
+        "question": "What is digital wellness?",
+        "answer": "Digital wellness is the practice of maintaining a healthy relationship with technology. It involves managing screen time, protecting digital privacy, and ensuring that your device usage does not negatively impact your physical or mental health."
+      },
+      {
+        "question": "Are there free apps to reduce screen time on Android?",
+        "answer": "Yes. While built-in tools like Google’s Digital Wellbeing provide basic tracking, third-party apps like Mindful Guard offer more advanced 'hard blocking' features for free, without the need for an account or internet connection."
+      },
+      {
+        "question": "How does screen time affect productivity?",
+        "answer": "Research indicates that it takes an average of 23 minutes to refocus on a task after being distracted by a digital notification. Unmanaged screen time fragments your attention and significantly increases the time needed to complete complex work."
+      }
+    ],
+    "ECOMMERCE_PERFORMANCE": [
+      {
+        "question": "What is a good conversion rate for Shopify in 2026?",
+        "answer": "While the average mobile conversion rate is approximately 1.2%, top-performing Shopify stores (the top 10%) achieve rates of 4.7% or higher."
+      },
+      {
+        "question": "How does site speed affect SEO rankings?",
+        "answer": "Google uses site speed (via Core Web Vitals) as a direct ranking factor. Faster stores not only rank higher but also see significantly lower bounce rates and higher repeat purchase rates."
+      },
+      {
+        "question": "Are social proof apps worth it for new stores?",
+        "answer": "Yes. Because shoppers who interact with reviews are 161% more likely to convert, social proof is the most effective way for new brands to build the 'reputation juice' needed to compete with established players."
+      }
+    ]
   }
 }

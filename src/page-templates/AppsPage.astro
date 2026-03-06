@@ -1,16 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { getImage } from 'astro:assets';
-import appLogoImg from '@/assets/logo.png';
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
 import fomogenFeatureImg from '@/assets/apps/fomogen-feature.png';
 import mindfulGuardFeatureImg from '@/assets/apps/mindful-guard-feature.png';
 import screenveilFeatureImg from '@/assets/apps/screenveil-feature.png';
-import { Footer, SubpageHero } from "@/components/common";
+import Footer from "@/components/common/Footer.astro";
+import SubpageHero from "@/components/common/SubpageHero.astro";
 import Navbar from "@/components/common/Navbar.astro";
 import { LinkButton } from "@/components/ui/link-button";
-import { PRODUCTS } from "@/constants/home-data";
-import { Section } from "@/components/common/Section";
-import { getDictionary } from "@/i18n/get-dictionary";
+import { getProducts } from "@/constants/home-data";
+import Section from "@/components/common/Section.astro";
+import { localize } from "@/i18n/localize";
 import { i18nConfig } from "@/i18n/config";
 import { localePath } from "@/i18n/utils";
 
@@ -19,18 +20,24 @@ interface Props {
 }
 
 const { lang } = Astro.props;
-const dict = await getDictionary(lang as any);
 
-const meta = dict.metadata?.apps || {};
-const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
-const optimizedFomogen = await getImage({ src: fomogenFeatureImg, format: 'webp' });
-const optimizedMindful = await getImage({ src: mindfulGuardFeatureImg, format: 'webp' });
-const optimizedScreenveil = await getImage({ src: screenveilFeatureImg, format: 'webp' });
+import { setLocale } from "@/i18n";
+setLocale(lang);
 
-const optimizedImages: Record<string, string> = {
-  fomogen: optimizedFomogen.src,
-  mindful: optimizedMindful.src,
-  screenveil: optimizedScreenveil.src,
+const meta = {
+  title: localize("Our Apps | AppLass Ecosystem"),
+  description: localize("Explore our suite of logic-driven applications designed for elite performance and digital discipline."),
+  keywords: localize("Shopify apps, Android utilities, focus apps, privacy tools, FomoGen, ScreenVeil, Mindful Guard"),
+  ogTitle: localize("Our Apps | AppLass Ecosystem"),
+  ogDescription: localize("Explore our suite of logic-driven applications designed for elite performance."),
+  ogImage: "https://applass.com/og-apps.png",
+  ogUrl: `https://applass.com/${lang}/apps`
+};
+
+const imageMap: Record<string, ImageMetadata> = {
+  fomogen: fomogenFeatureImg,
+  mindful: mindfulGuardFeatureImg,
+  screenveil: screenveilFeatureImg,
 };
 
 ---
@@ -46,31 +53,28 @@ const optimizedImages: Record<string, string> = {
   lang={lang}
 >
   <div class="min-h-screen bg-white">
-    <Navbar translations={dict.nav} currentLang={lang} commonTranslations={dict.common} />
+    <Navbar    />
     <div class="pt-32">
       <SubpageHero
-        eyebrow={dict.apps?.hero?.eyebrow || "AppLass Ecosystem"}
-        headline={dict.apps?.hero?.headline || "Our"}
-        headlineAccent={dict.apps?.hero?.headlineAccent || "Ecosystem."}
-        description={dict.apps?.hero?.description || "Proprietary systems built with technical discipline and a focus on measurable impact. Every tool is a derivation of logic."}
+        eyebrow={localize("AppLass Ecosystem")}
+        headline={localize("Our")}
+        headlineAccent={localize("Ecosystem.")}
+        description={localize("Proprietary systems built with technical discipline and a focus on measurable impact. Every tool is a derivation of logic.")}
         centered
       />
 
       <Section className="py-24">
         <div class="section-container">
           <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
-            {PRODUCTS.map((product) => {
-              const dictKey = product.id === "mindful" ? "mindfulGuard" : product.id;
-              const translation = (dict.products as any)?.[dictKey];
-
+            {getProducts().map((product) => {
               return (
                 <div
                   class="group relative flex flex-col overflow-hidden rounded-[3rem] border border-slate-200 bg-white transition-all hover:border-blue-500/30 hover:shadow-2xl"
                 >
                   <div class="aspect-video overflow-hidden bg-slate-50 relative">
-                    <img
-                      src={optimizedImages[product.id] || optimizedScreenveil.src}
-                      alt={`${translation?.name || product.name} - ${translation?.tagline || product.tagline}`}
+                    <Image
+                      src={imageMap[product.id] || screenveilFeatureImg}
+                      alt={`${product.name} - ${product.tagline}`}
                       width={800}
                       height={450}
                       class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -80,10 +84,10 @@ const optimizedImages: Record<string, string> = {
                   <div class="flex flex-1 flex-col p-10 lg:p-12">
                     <div class="mb-6 flex items-center justify-between">
                       <span class="text-[10px] font-black tracking-widest text-blue-800 uppercase">
-                        {translation?.platform || product.platform}
+                        {product.platform}
                       </span>
                       <div class="flex gap-2">
-                        {(translation?.metrics || product.metrics).map((metric: string) => (
+                        {product.metrics.map((metric: string) => (
                           <span
                             class="rounded-full bg-slate-50 px-3 py-1 text-[10px] font-bold text-slate-500"
                           >
@@ -94,10 +98,10 @@ const optimizedImages: Record<string, string> = {
                     </div>
 
                     <h2 class="mb-4 text-4xl font-black text-slate-900">
-                      {translation?.name || product.name}
+                      {product.name}
                     </h2>
                     <p class="mb-8 text-lg leading-relaxed font-medium text-slate-500">
-                      {translation?.description || product.description}
+                      {product.description}
                     </p>
 
                     <div class="mt-auto">
@@ -105,7 +109,7 @@ const optimizedImages: Record<string, string> = {
                         href={localePath(lang, `/apps/${product.id === "mindful" ? "mindful-guard" : product.id}`)}
                         className="h-14 w-full rounded-2xl bg-slate-900 text-lg font-bold text-white transition-all hover:bg-blue-600"
                       >
-                        {dict.apps?.viewDetails || "View Product Details"}
+                        {localize("View Product Details")}
                       </LinkButton>
                     </div>
                   </div>
@@ -116,6 +120,6 @@ const optimizedImages: Record<string, string> = {
         </div>
       </Section>
     </div>
-    <Footer translations={dict.footer}  logoSrc={optimizedAppLogo.src} />
+    <Footer />
   </div>
 </Layout>

@@ -1,0 +1,25 @@
+---
+interface Props {
+  items: readonly {
+    question: string;
+    answer: string;
+  }[];
+}
+
+const { items } = Astro.props;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: items.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer, // Astro handles strings direct from registry
+    },
+  })),
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

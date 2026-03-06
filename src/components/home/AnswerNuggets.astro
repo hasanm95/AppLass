@@ -1,0 +1,123 @@
+---
+import Section from "@/components/common/Section.astro";
+import FAQSchema from "@/components/common/FAQSchema.astro";
+import { getFaqRegistry } from "@/constants/faq-registry";
+import { Plus, Minus } from "lucide-react";
+import { localize } from "@/i18n/localize";
+
+const faqData = getFaqRegistry().HOME;
+---
+
+<Section className="bg-muted py-16 md:py-24 lg:py-32">
+  <FAQSchema items={faqData} />
+  <div class="section-container">
+    {/* Section Header */}
+    <div class="mb-16">
+      <div class="mb-8 flex items-center gap-4">
+        <span class="font-mono text-xs font-bold tracking-widest text-muted-foreground/50 uppercase">
+          {localize("FAQ")}
+        </span>
+        <span class="block h-px flex-1 bg-foreground/20" />
+      </div>
+
+      <h2 class="text-foreground mb-4 font-mono text-2xl leading-tight font-bold md:text-3xl lg:text-4xl">
+        {localize("Frequently Asked")}
+        <br />
+        <span class="text-muted-foreground/40">
+          {localize("Questions")}
+        </span>
+      </h2>
+    </div>
+
+    {/* FAQ Accordion - Minimal Style */}
+    <div class="grid grid-cols-1 gap-0 md:grid-cols-2 md:gap-x-12">
+      {faqData.map((faq, idx) => (
+        <article
+          class="faq-item group border-border cursor-pointer border-b py-6 last:border-b-0 md:last:border-b md:even:border-b first:border-t"
+          data-index={idx}
+        >
+          <div class="flex items-start justify-between gap-4">
+            <div class="flex items-start gap-4">
+              <span class="mt-1 font-mono text-xs font-bold tracking-widest text-muted-foreground/50 uppercase">
+                {String(idx + 1).padStart(2, "0")}
+              </span>
+              <h3 class="group-hover:text-cta text-base font-semibold transition-colors">
+                {faq.question}
+              </h3>
+            </div>
+            <button
+              class="faq-trigger border-border group-hover:border-cta flex h-8 w-8 shrink-0 items-center justify-center border transition-all duration-200"
+              aria-expanded="false"
+              aria-label="Expand answer"
+            >
+              <Plus className="plus-icon text-muted-foreground h-4 w-4" />
+              <Minus className="minus-icon text-cta h-4 w-4 hidden" />
+            </button>
+          </div>
+
+          <div class="faq-content grid transition-all duration-300 grid-rows-[0fr] opacity-0 overflow-hidden">
+            <div class="min-h-0 pl-12 pt-4">
+              <p class="text-muted-foreground text-sm leading-relaxed whitespace-pre-line">
+                {faq.answer}
+              </p>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</Section>
+
+<script>
+  function initFAQ() {
+    const items = document.querySelectorAll('.faq-item');
+    
+    items.forEach(item => {
+      const trigger = item.querySelector('.faq-trigger');
+      const content = item.querySelector('.faq-content');
+      const plusIcon = item.querySelector('.plus-icon');
+      const minusIcon = item.querySelector('.minus-icon');
+
+      item.addEventListener('click', () => {
+        const isExpanded = trigger?.getAttribute('aria-expanded') === 'true';
+        
+        // Close others in same column or all? Usually minimal style close others is better or independent.
+        // Independent for this style:
+        
+        if (isExpanded) {
+          trigger?.setAttribute('aria-expanded', 'false');
+          content?.classList.replace('grid-rows-[1fr]', 'grid-rows-[0fr]');
+          content?.classList.replace('opacity-100', 'opacity-0');
+          plusIcon?.classList.remove('hidden');
+          minusIcon?.classList.add('hidden');
+        } else {
+          // Optional: Close others
+          document.querySelectorAll('.faq-item').forEach(other => {
+            if (other !== item) {
+              const otherTrigger = other.querySelector('.faq-trigger');
+              const otherContent = other.querySelector('.faq-content');
+              const otherPlus = other.querySelector('.plus-icon');
+              const otherMinus = other.querySelector('.minus-icon');
+              
+              otherTrigger?.setAttribute('aria-expanded', 'false');
+              otherContent?.classList.replace('grid-rows-[1fr]', 'grid-rows-[0fr]');
+              otherContent?.classList.replace('opacity-100', 'opacity-0');
+              otherPlus?.classList.remove('hidden');
+              otherMinus?.classList.add('hidden');
+            }
+          });
+
+          trigger?.setAttribute('aria-expanded', 'true');
+          content?.classList.replace('grid-rows-[0fr]', 'grid-rows-[1fr]');
+          content?.classList.replace('opacity-0', 'opacity-100');
+          plusIcon?.classList.add('hidden');
+          minusIcon?.classList.remove('hidden');
+        }
+      });
+    });
+  }
+
+  // Init on load and after swap
+  initFAQ();
+  document.addEventListener('astro:after-swap', initFAQ);
+</script>

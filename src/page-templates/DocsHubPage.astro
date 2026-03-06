@@ -2,27 +2,30 @@
 import DocsLayout from '@/layouts/DocsLayout.astro';
 import Content from '../components/docs-content/page';
 import { i18nConfig } from '@/i18n/config';
-import { getDictionary } from '@/i18n/get-dictionary';
+import { localize } from '@/i18n/localize';
 
 interface Props {
   lang: typeof i18nConfig.locales[number];
 }
 
 const { lang } = Astro.props;
-const dict = await getDictionary(lang as any);
-const meta = dict.metadata?.docsHome || {};
+
+import { setLocale } from "@/i18n";
+setLocale(lang);
+
+const meta = {
+  title: localize("Documentation Hub | AppLass"),
+  description: localize("Comprehensive guides, technical documentation, and integration instructions for the entire AppLass app ecosystem."),
+  ogTitle: localize("AppLass Documentation Hub"),
+  ogDescription: localize("Technical references and deployment guides for AppLass logic systems.")
+};
 ---
 
 <DocsLayout 
   lang={lang as string} 
   app="hub"
-  title={meta.title || "Documentation Hub | AppLass"}
-  description={meta.description || "Comprehensive guides, technical documentation, and integration instructions for the entire AppLass app ecosystem."}
-  keywords={meta.keywords}
-  ogTitle={meta.ogTitle}
-  ogDescription={meta.ogDescription}
-  ogImage={meta.ogImage}
-  ogUrl={meta.ogUrl}
+  title={meta.title}
+  description={meta.description}
 >
   <Content lang={lang as string} />
 </DocsLayout>

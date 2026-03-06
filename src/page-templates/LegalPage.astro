@@ -1,12 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { getImage } from 'astro:assets';
-import appLogoImg from '@/assets/logo.png';
-import { Footer } from "@/components/common";
+import Footer from "@/components/common/Footer.astro";
 import Navbar from "@/components/common/Navbar.astro";
-import { Section } from "@/components/common/Section";
-import { getDictionary } from "@/i18n/get-dictionary";
+import Section from "@/components/common/Section.astro";
 import { i18nConfig } from "@/i18n/config";
+import { localize } from "@/i18n/localize";
 
 interface Props {
   lang: typeof i18nConfig.locales[number];
@@ -16,9 +14,10 @@ interface Props {
 }
 
 const { lang, title, description, appName } = Astro.props;
-const dict = await getDictionary(lang as any);
-const lastUpdated = "February 20, 2026";
-const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
+
+import { setLocale } from "@/i18n";
+setLocale(lang);
+const lastUpdated = localize("February 20, 2026");
 
 ---
 
@@ -28,7 +27,7 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
   lang={lang}
 >
   <div class="flex min-h-screen flex-col bg-white font-sans selection:bg-blue-100 selection:text-blue-900">
-    <Navbar translations={dict.nav} currentLang={lang} commonTranslations={dict.common} >
+    <Navbar    >
       <div slot="customBranding">
         <slot name="branding" />
       </div>
@@ -40,13 +39,13 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
           <div class="mx-auto max-w-4xl">
             <header class="mb-20">
               <span class="mb-4 block text-[10px] font-black uppercase tracking-[0.3em] text-blue-600">
-                Legal Documentation
+                {localize("Legal Documentation")}
               </span>
               <h1 class="text-display mb-6 text-slate-900">
                 {title}<span class="text-slate-300">.</span>
               </h1>
               <p class="text-lg font-bold text-slate-400">
-                Last updated: {lastUpdated}
+                {localize("Last updated")}: {lastUpdated}
               </p>
             </header>
 
@@ -58,6 +57,6 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
       </Section>
     </main>
 
-    <Footer translations={dict.footer}  logoSrc={optimizedAppLogo.src} />
+    <Footer />
   </div>
 </Layout>

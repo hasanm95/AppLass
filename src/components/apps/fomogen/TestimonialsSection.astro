@@ -1,0 +1,53 @@
+---
+import Section from "@/components/common/Section.astro";
+import { getFomoGenData } from "@/constants/fomogen-data";
+import { Quote } from "lucide-react";
+
+const fomoData = getFomoGenData();
+const testimonials = fomoData.testimonials;
+const labels = fomoData.labels;
+---
+
+<Section className="relative overflow-hidden bg-slate-950 py-24 md:py-32">
+  {/* Dark theme accents */}
+  <div class="pointer-events-none absolute top-0 left-1/4 h-[500px] w-[500px] bg-green-500/10 blur-[120px]" />
+
+  <div class="section-container relative z-10">
+    <div class="mb-20 text-center">
+      <span class="mb-6 block text-[10px] font-black tracking-[0.2em] text-green-500 uppercase">
+        {labels?.socialProof || "Social Proof"}
+      </span>
+      <h2 class="text-4xl leading-[0.95] font-bold tracking-tight text-white md:text-5xl lg:text-7xl">
+        {labels?.trustedBy || "Trusted by"} <br />
+        <span class="font-italic text-slate-500">{labels?.smartMerchants || "Smart Merchants."}</span>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:mx-auto lg:max-w-5xl">
+      {testimonials.map((t: { quote: string; author: string; niche: string; }) => (
+        <div class="relative rounded-[2.5rem] border border-white/10 bg-white/5 p-10 transition-all duration-300 hover:border-green-500/30 hover:bg-white/[0.07] md:p-12">
+          <Quote className="absolute top-10 right-10 h-12 w-12 text-green-500/20" />
+
+          <p class="relative z-10 text-2xl leading-relaxed font-medium text-slate-200 lg:text-3xl">
+            &quot;{t.quote}&quot;
+          </p>
+
+          <div class="mt-12">
+            <p class="text-sm font-black tracking-widest text-green-500 uppercase">
+              {t.author}
+            </p>
+            <p class="mt-1 text-xs font-bold tracking-widest text-slate-500 uppercase">
+              {t.niche}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-20 text-center">
+      <p class="text-xs font-bold tracking-[0.3em] text-slate-600 uppercase">
+        {labels?.joinBrands || "Join 5,000+ Shopify Brands using AppLass tools."}
+      </p>
+    </div>
+  </div>
+</Section>

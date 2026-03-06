@@ -1,0 +1,24 @@
+---
+import { cn } from "@/lib/utils";
+
+export interface Props {
+  id?: string;
+  className?: string;
+  as?: "section" | "article" | "div";
+  ariaLabel?: string;
+}
+
+const {
+  id,
+  className,
+  as: Component = "section",
+  ariaLabel,
+} = Astro.props;
+---
+<Component
+  id={id}
+  aria-label={ariaLabel}
+  class={cn("overflow-hidden py-12 md:py-20 lg:py-28", className)}
+>
+  <slot />
+</Component>

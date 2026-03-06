@@ -1,12 +1,9 @@
 ---
 import Layout from './Layout.astro';
-import { Footer } from "@/components/common";
+import Footer from "@/components/common/Footer.astro";
 import Navbar from "@/components/common/Navbar.astro";
 import { DocsSidebar } from "@/components/docs/docs-sidebar";
 import { Zap, Shield, Smartphone, BookOpen } from "lucide-react";
-import { getDictionary } from "@/i18n/get-dictionary";
-import { getImage } from 'astro:assets';
-import appLogoImg from '@/assets/logo.png';
 
 interface Props {
   lang: string;
@@ -32,8 +29,6 @@ const {
   ogUrl
 } = Astro.props;
 
-const dict = await getDictionary(lang as any);
-const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width: 64, height: 64 });
 ---
 
 <Layout 
@@ -47,7 +42,7 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
   lang={lang}
 >
   <div class="flex min-h-screen flex-col bg-white">
-    <Navbar translations={dict.nav} currentLang={lang} >
+    <Navbar   >
       <div slot="customBranding" class="flex items-center gap-2">
         {app === 'fomogen' && (
           <>
@@ -101,6 +96,6 @@ const optimizedAppLogo = await getImage({ src: appLogoImg, format: 'webp', width
       </div>
     )}
 
-    <Footer translations={dict.footer} logoSrc={optimizedAppLogo.src} />
+    <Footer />
   </div>
 </Layout>

@@ -2,16 +2,15 @@ import { useState } from "react";
 import { Globe } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { LanguageSwitcherSidebar } from "./LanguageSwitcherSidebar";
-import type { Dictionary } from "@/i18n/get-dictionary";
+import { Localize } from "@/components/Localize";
+import { localize } from "@/i18n/localize";
 
 export function LanguageToggle({ 
   isDark, 
-  currentLang, 
-  dictionary 
+  currentLang 
 }: { 
   isDark: boolean; 
   currentLang: string;
-  dictionary?: Dictionary["common"];
 }) {
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
 
@@ -19,7 +18,7 @@ export function LanguageToggle({
     <>
       <button
         aria-expanded={isLangMenuOpen}
-        aria-label={dictionary?.selectLanguage || "Select Language"}
+        aria-label={localize("Select Language")}
         onClick={() => setIsLangMenuOpen(true)}
         className={cn(
           "flex h-10 w-10 items-center justify-center rounded-xl transition-colors",
@@ -36,7 +35,6 @@ export function LanguageToggle({
         onClose={() => setIsLangMenuOpen(false)}
         currentLang={currentLang}
         isDark={isDark}
-        dictionary={dictionary}
       />
     </>
   );

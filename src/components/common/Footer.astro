@@ -1,0 +1,201 @@
+---
+import { getLangFromUrl, localePath } from "@/i18n/utils";
+import { localize } from "@/i18n/localize";
+import { Image } from 'astro:assets';
+import appLogoImg from '@/assets/logo.png';
+import clsx from "clsx";
+
+interface Props {
+  variant?: "light" | "dark";
+}
+
+const { variant = "light" } = Astro.props;
+const currentLang = getLangFromUrl(Astro.url);
+
+const currentYear = new Date().getFullYear();
+const isDark = variant === "dark";
+
+function getFooterLinks(lang: string) {
+  return {
+    solutions: [
+      { slug: "fomogen", label: localize("Fomogen"), href: localePath(lang, '/apps/fomogen') },
+      { slug: "mindfulGuard", label: localize("Mindful Guard"), href: localePath(lang, '/apps/mindful-guard') },
+      { slug: "screenveil", label: localize("ScreenVeil"), href: localePath(lang, '/apps/screenveil') },
+    ],
+    resources: [
+      { slug: "ourEcosystem", label: localize("Our Ecosystem"), href: localePath(lang, '/apps') },
+      { slug: "documentation", label: localize("Documentation"), href: localePath(lang, '/docs') },
+      { slug: "digitalWellness", label: localize("Digital Wellness 2026"), href: localePath(lang, '/digital-wellness-2026-guide') },
+      { slug: "ecommercePerformance", label: localize("Ecommerce Performance 2026"), href: localePath(lang, '/ecommerce-performance-2026-benchmarks') },
+      { slug: "theMethodology", label: localize("The Methodology"), href: localePath(lang, '/about') },
+      { slug: "theLogicLab", label: localize("The Logic Lab (Blog)"), href: localePath(lang, '/blog') },
+    ],
+    legal: [
+      { slug: "privacyPolicy", label: localize("Privacy Policy"), href: localePath(lang, '/legal/fomogen/privacy') },
+      { slug: "termsOfService", label: localize("Terms of Service"), href: localePath(lang, '/legal/fomogen/terms') },
+    ],
+  };
+}
+
+const footerLinks = getFooterLinks(currentLang);
+---
+
+<footer
+  role="contentinfo"
+  class={clsx(
+    "border-t",
+    isDark ? "border-white/5 bg-[#020617]" : "border-slate-200 bg-white"
+  )}
+>
+  <div class="section-container py-12 md:py-16">
+    {/* Main footer content */}
+    <div class="grid gap-8 md:grid-cols-4 lg:gap-12">
+      {/* Brand column */}
+      <div class="md:col-span-1">
+        <a
+          href={localePath(currentLang, '/')}
+          class={clsx(
+            "inline-flex items-center gap-2 text-lg font-semibold",
+            isDark ? "text-white" : "text-slate-900"
+          )}
+        >
+          <Image
+            src={appLogoImg}
+            alt="AppLass"
+            width={24}
+            height={24}
+            format="webp"
+            class="h-6 w-6 rounded-md object-contain"
+          />
+          <span>AppLass</span>
+        </a>
+        <p
+          class={clsx(
+            "mt-4 max-w-xs text-sm",
+            isDark ? "text-slate-400" : "text-slate-600"
+          )}
+        >
+          {localize("Logic-driven software where mathematical precision meets human-centric design.")}
+        </p>
+      </div>
+
+      {/* Solutions */}
+      <div>
+        <h3
+          class={clsx(
+            "mb-4 text-sm font-semibold",
+            isDark ? "text-white" : "text-slate-900"
+          )}
+        >
+          {localize("Solutions")}
+        </h3>
+        <ul class="space-y-3">
+          {footerLinks.solutions.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                class={clsx(
+                  "rounded-sm text-sm transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none",
+                  isDark
+                    ? "text-slate-400 hover:text-white focus:ring-blue-600 focus:ring-offset-[#020617]"
+                    : "text-slate-600 hover:text-slate-900 focus:ring-slate-400 focus:ring-offset-white"
+                )}
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Resources */}
+      <div>
+        <h3
+          class={clsx(
+            "mb-4 text-sm font-semibold",
+            isDark ? "text-white" : "text-slate-900"
+          )}
+        >
+          {localize("Resources")}
+        </h3>
+        <ul class="space-y-3">
+          {footerLinks.resources.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                class={clsx(
+                  "rounded-sm text-sm transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none",
+                  isDark
+                    ? "text-slate-400 hover:text-white focus:ring-blue-600 focus:ring-offset-[#020617]"
+                    : "text-slate-600 hover:text-slate-900 focus:ring-slate-400 focus:ring-offset-white"
+                )}
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Legal */}
+      <div>
+        <h3
+          class={clsx(
+            "mb-4 text-sm font-semibold",
+            isDark ? "text-white" : "text-slate-900"
+          )}
+        >
+          {localize("Legal")}
+        </h3>
+        <ul class="space-y-3">
+          {footerLinks.legal.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                class={clsx(
+                  "rounded-sm text-sm transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none",
+                  isDark
+                    ? "text-slate-400 hover:text-white focus:ring-blue-600 focus:ring-offset-[#020617]"
+                    : "text-slate-600 hover:text-slate-900 focus:ring-slate-400 focus:ring-offset-white"
+                )}
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+
+    {/* Bottom bar */}
+    <div
+      class={clsx(
+        "mt-12 flex flex-col items-center justify-between gap-4 border-t pt-8 sm:flex-row",
+        isDark ? "border-white/5" : "border-slate-200"
+      )}
+    >
+      <p
+        class={clsx(
+          "text-sm",
+          isDark ? "text-slate-500" : "text-slate-600"
+        )}
+      >
+        {localize("© {year} AppLass. All rights reserved.", { year: currentYear.toString() })}
+      </p>
+      <div
+        class={clsx(
+          "text-xs",
+          isDark ? "text-slate-600" : "text-slate-400"
+        )}
+      >
+        {localize("Built with {infinity} logical precision", {
+          infinity: (
+            <span class="text-blue-600" aria-label="precision">
+              ∞
+            </span>
+          )
+        })}
+      </div>
+    </div>
+  </div>
+</footer>

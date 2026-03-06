@@ -2,18 +2,16 @@ import { useState, useCallback, useRef, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { MobileMenu } from "./mobile-menu";
-import type { Dictionary } from "@/i18n/get-dictionary";
+import { localize } from "@/i18n/localize";
 
 export function MobileMenuToggle({
   isDark,
   currentLang,
-  translations,
   hasCustomBranding,
   customCTAHtml
 }: {
   isDark: boolean;
   currentLang: string;
-  translations?: Dictionary["nav"];
   hasCustomBranding?: boolean;
   customCTAHtml?: string;
 }) {
@@ -67,7 +65,7 @@ export function MobileMenuToggle({
       <button
         aria-expanded={isMenuOpen}
         aria-controls="mobile-menu"
-        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        aria-label={isMenuOpen ? localize("Close menu") : localize("Open menu")}
         onClick={toggleMenu}
         className={cn(
           "focus-ring flex h-10 w-10 items-center justify-center rounded-xl md:hidden",
@@ -85,7 +83,6 @@ export function MobileMenuToggle({
           toggleMenu={toggleMenu}
           isDark={isDark}
           currentLang={currentLang}
-          translations={translations}
         />
       )}
     </>

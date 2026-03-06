@@ -1,0 +1,81 @@
+---
+import Section from "@/components/common/Section.astro";
+import { getMindfulGuardData } from "@/constants/mindful-guard-data";
+import { Shield, Zap, Lock, HelpCircle, type LucideIcon } from "lucide-react";
+import { cn } from "@/lib/utils";
+
+const ICON_MAP: Record<string, LucideIcon> = {
+  Shield,
+  Zap,
+  Lock,
+};
+
+const mindfulData = getMindfulGuardData();
+const diffs = mindfulData.differentiators;
+const labels = mindfulData.labels;
+---
+
+<Section id="differentiators" className="bg-white">
+  <div class="section-container">
+    <div class="mb-24 flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
+      <div class="max-w-3xl">
+        <span class="mb-6 block font-mono text-[10px] font-bold tracking-[0.3em] text-[#064E3B] uppercase">
+          {labels.strategicMoat}
+        </span>
+        <h2 class="text-6xl leading-[0.9] font-black tracking-tighter text-slate-950 md:text-7xl lg:text-8xl">
+          {labels.technicalAdvantages}
+          <br />
+          <span class="text-slate-300">{labels.technicalAdvantagesAccent}</span>
+        </h2>
+      </div>
+      <div class="font-mono text-[11px] font-bold tracking-widest text-slate-400 uppercase">
+        {labels.deploymentSpecs}
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 shadow-2xl md:grid-cols-3">
+      {diffs.map((feature: any, idx: number) => {
+        const Icon = ICON_MAP[feature.iconName || ""] || HelpCircle;
+        const iconStr = feature.icon;
+
+        return (
+          <div
+            class={cn(
+              "group relative bg-white p-12 transition-all duration-500 hover:z-10 hover:bg-slate-50",
+              idx === 1 && "md:mt-12 md:-mb-12", // Asymmetric stagger
+              idx === 2 && "md:mt-24 md:-mb-24" // Asymmetric stagger
+            )}
+          >
+            {/* Hover Accent Bar */}
+            <div class="absolute top-0 left-0 h-1 w-0 bg-[#064E3B] transition-all duration-500 group-hover:w-full" />
+
+            <div class="mb-10 flex h-16 w-16 items-center justify-center border border-slate-200 bg-slate-50 transition-all duration-500 group-hover:border-[#064E3B] group-hover:bg-[#064E3B] group-hover:text-white">
+              {iconStr ? (
+                <span class="text-3xl grayscale group-hover:hidden">
+                  {iconStr}
+                </span>
+              ) : null}
+              <Icon className="hidden h-8 w-8 group-hover:block" />
+              {!iconStr && (
+                <Icon className="h-8 w-8 text-slate-400 group-hover:hidden" />
+              )}
+            </div>
+
+            <h3 class="mb-6 font-mono text-xs font-black tracking-[0.2em] text-[#064E3B] uppercase">
+              {feature.title}
+            </h3>
+
+            <h4 class="mb-6 text-2xl leading-tight font-black tracking-tight text-slate-900">
+              {feature.description}
+            </h4>
+
+            <div class="mt-8 flex items-center gap-2 text-[9px] font-bold tracking-widest text-slate-300 uppercase">
+              <div class="h-px w-8 bg-slate-100" />
+              {labels.verifiedFeature}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</Section>

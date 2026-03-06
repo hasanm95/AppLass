@@ -1,7 +1,7 @@
 ---
 import { cn } from "@/lib/utils";
-import { localePath } from "@/i18n/utils";
-import type { Dictionary } from "@/i18n/get-dictionary";
+import { getLangFromUrl, localePath } from "@/i18n/utils";
+import { localize } from "@/i18n/localize";
 
 // Import the interactive islands
 import { MobileMenuToggle } from "./MobileMenuToggle";
@@ -12,20 +12,15 @@ import appLogoImg from '@/assets/logo.png';
 
 interface Props {
   variant?: "light" | "dark";
-  translations?: Dictionary["nav"];
-  currentLang?: string;
   className?: string;
-  commonTranslations?: Dictionary["common"];
 }
 
 const {
   variant = "light",
-  translations,
-  currentLang = "en",
   className,
-  commonTranslations,
 } = Astro.props;
 
+const currentLang = getLangFromUrl(Astro.url);
 const isDark = variant === "dark";
 
 // Check if slots are provided
@@ -59,7 +54,7 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
         >
           <Image
             src={appLogoImg}
-            alt={translations?.logoAlt || "AppLass Logo"}
+            alt={localize("AppLass Logo")}
             width={32}
             height={32}
             format="webp"
@@ -72,7 +67,7 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
                 isDark ? "text-white" : "text-slate-900"
               )}
             >
-              {translations?.brandName || "AppLass"}
+              {localize("AppLass")}
             </span>
           )}
         </a>
@@ -92,22 +87,22 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
       </div>
 
       {/* Navigation Links (Desktop) */}
-      {!hasCustomBranding && translations && (
+      {!hasCustomBranding && (
         <div class="hidden items-center gap-10 md:flex">
           <a href={localePath(currentLang, '/')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
-            {translations.home}
+            {localize("Home")}
           </a>
           <a href={localePath(currentLang, '/about')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
-            {translations.about}
+            {localize("About")}
           </a>
           <a href={localePath(currentLang, '/apps')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
-            {translations.ecosystem}
+            {localize("Ecosystem")}
           </a>
           <a href={localePath(currentLang, '/docs')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
-            {translations.docs}
+            {localize("Docs")}
           </a>
           <a href={localePath(currentLang, '/blog')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
-            {translations.blog}
+            {localize("Logic Lab")}
           </a>
         </div>
       )}
@@ -115,7 +110,7 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
       {/* CTA & Mobile Toggle */}
       <div class="flex items-center gap-3 md:gap-4">
         {/* Language Switcher Trigger (Interactive UI) */}
-        <LanguageToggle client:load isDark={isDark} currentLang={currentLang} dictionary={commonTranslations} />
+        <LanguageToggle client:load isDark={isDark} currentLang={currentLang} />
 
         <div class="hidden md:block">
           {hasCustomCTA ? (
@@ -131,17 +126,16 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
                   : "bg-slate-900 text-white hover:bg-slate-800"
               )}
             >
-              {translations?.getInTouch || "Get in Touch"}
+              {localize("Get in Touch")}
             </a>
           )}
         </div>
 
-        {/* Mobile Toggle Button (Interactive UI) */}
+        {/* Mobile Toggle Button (Native Astro Web Component) */}
         <MobileMenuToggle 
           client:load 
           isDark={isDark} 
           currentLang={currentLang} 
-          translations={translations}
           hasCustomBranding={hasCustomBranding}
           customCTAHtml={customCTAHtml}
         />

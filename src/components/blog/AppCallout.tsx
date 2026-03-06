@@ -5,28 +5,34 @@ import { localePath } from "@/i18n/utils";
 interface AppCalloutProps {
   appName: "Mindful Guard" | "FOMOgen" | "AppLass";
   lang?: string;
+  labels?: {
+    learnMore: string;
+    poweredByLogic: string;
+    sub: string;
+    desc: string;
+  };
 }
 
-export function AppCallout({ appName, lang = "en" }: AppCalloutProps) {
+export function AppCallout({ appName, lang = "en", labels }: AppCalloutProps) {
   const data = {
     "Mindful Guard": {
       title: "Mindful Guard",
-      sub: "Built for Focus.",
-      desc: "Reclaim your digital focus with logical guardrails.",
+      sub: labels?.sub || "Built for Focus.",
+      desc: labels?.desc || "Reclaim your digital focus with logical guardrails.",
       href: "/apps/mindful-guard",
       color: "bg-[#10B981]",
     },
     FOMOgen: {
       title: "FOMOgen",
-      sub: "Sales Simplified.",
-      desc: "The #1 Shopify app for social proof automation.",
+      sub: labels?.sub || "Sales Simplified.",
+      desc: labels?.desc || "The #1 Shopify app for social proof automation.",
       href: "/apps/fomogen",
       color: "bg-blue-600",
     },
     AppLass: {
       title: "The Logic Lab",
-      sub: "First Principles.",
-      desc: "Get engineering insights delivered to your inbox.",
+      sub: labels?.sub || "First Principles.",
+      desc: labels?.desc || "Get engineering insights delivered to your inbox.",
       href: "#subscribe",
       color: "bg-slate-900",
     },
@@ -39,7 +45,7 @@ export function AppCallout({ appName, lang = "en" }: AppCalloutProps) {
       />
 
       <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-slate-500 uppercase">
-        Powered by Logic
+        {labels?.poweredByLogic || "Powered by Logic"}
       </span>
 
       <h4 className="mb-2 text-2xl font-black text-slate-900">{data.title}</h4>
@@ -53,7 +59,7 @@ export function AppCallout({ appName, lang = "en" }: AppCalloutProps) {
         className={`w-full ${data.color} h-12 rounded-xl font-bold text-white`}
         asChild
       >
-        <a href={localePath(lang, data.href)}>Learn More</a>
+        <a href={localePath(lang, data.href)}>{labels?.learnMore || "Learn More"}</a>
       </Button>
     </div>
   );
