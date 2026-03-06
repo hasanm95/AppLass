@@ -19,6 +19,9 @@ interface Props {
 }
 
 const { lang } = Astro.props;
+
+import { setLocale } from "@/i18n";
+setLocale(lang);
 const screenveilData = getScreenveilData();
 const screenveilSchema = getScreenveilSchema();
 

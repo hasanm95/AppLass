@@ -22,11 +22,17 @@ interface Props {
 
 const { lang } = Astro.props;
 
+import { setLocale } from "@/i18n";
+setLocale(lang);
+
 const meta = {
   title: localize("About | The AppLass Methodology"),
   description: localize("Founder-led development derived from first principles. Mathematical integrity meets high-end digital craft. Meet the engineer behind the logic."),
-  ogTitle: localize("About | AppLass Methodology"),
-  ogDescription: localize("Founder-led development derived from first principles. Mathematical integrity meets high-end digital craft.")
+  keywords: localize("software architecture, performance optimization, mathematical software, first principles development, Shopify expert, Android developer, AppLass methodology"),
+  ogTitle: localize("The AppLass Methodology | Logic-Driven Development"),
+  ogDescription: localize("Deriving digital performance from first principles. Explore the methodology behind high-conversion Shopify tools and mindful mobile utilities."),
+  ogImage: "https://applass.com/og-about.png",
+  ogUrl: "https://applass.com/about"
 };
 
 const iconMap = {

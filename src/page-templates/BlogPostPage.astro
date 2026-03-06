@@ -19,6 +19,9 @@ interface Props {
 }
 
 const { lang, slug } = Astro.props;
+
+import { setLocale } from "@/i18n";
+setLocale(lang);
 const post = await getBlogPostBySlug(slug as string, lang as string);
 
 if (!post || !post.entry) {

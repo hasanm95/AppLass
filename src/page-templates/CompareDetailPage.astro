@@ -19,6 +19,9 @@ interface Props {
 }
 
 const { lang, slug } = Astro.props;
+
+import { setLocale } from "@/i18n";
+setLocale(lang);
 const data = getComparisonBySlug(slug as string);
 
 if (!data) {

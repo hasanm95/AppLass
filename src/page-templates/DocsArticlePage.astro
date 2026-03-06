@@ -10,6 +10,9 @@ interface Props {
 }
 
 const { lang, product, title, description } = Astro.props;
+
+import { setLocale } from "@/i18n";
+setLocale(lang);
 ---
 
 <DocsLayout lang={lang as string} app={product as any} title={title} description={description}>

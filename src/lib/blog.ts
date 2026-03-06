@@ -68,6 +68,6 @@ import { localize } from "@/i18n/localize";
 
 export async function getBlogCategories(lang: string = "en"): Promise<string[]> {
   const posts = await getBlogPosts(lang);
-  const categories = new Set(posts.map((post) => post.category));
+  const categories = new Set(posts.map((post) => localize(post.category)));
   return [localize("All"), ...Array.from(categories)];
 }

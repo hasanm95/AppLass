@@ -21,11 +21,17 @@ interface Props {
 
 const { lang } = Astro.props;
 
+import { setLocale } from "@/i18n";
+setLocale(lang);
+
 const meta = {
   title: localize("Our Apps | AppLass Ecosystem"),
   description: localize("Explore our suite of logic-driven applications designed for elite performance and digital discipline."),
+  keywords: "",
   ogTitle: localize("Our Apps | AppLass Ecosystem"),
-  ogDescription: localize("Explore our suite of logic-driven applications designed for elite performance.")
+  ogDescription: localize("Explore our suite of logic-driven applications designed for elite performance."),
+  ogImage: "",
+  ogUrl: ""
 };
 
 const imageMap: Record<string, ImageMetadata> = {
@@ -68,7 +74,7 @@ const imageMap: Record<string, ImageMetadata> = {
                   <div class="aspect-video overflow-hidden bg-slate-50 relative">
                     <Image
                       src={imageMap[product.id] || screenveilFeatureImg}
-                      alt={`${localize(product.name)} - ${localize(product.tagline)}`}
+                      alt={`${product.name} - ${product.tagline}`}
                       width={800}
                       height={450}
                       class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -78,24 +84,24 @@ const imageMap: Record<string, ImageMetadata> = {
                   <div class="flex flex-1 flex-col p-10 lg:p-12">
                     <div class="mb-6 flex items-center justify-between">
                       <span class="text-[10px] font-black tracking-widest text-blue-800 uppercase">
-                        {localize(product.platform)}
+                        {product.platform}
                       </span>
                       <div class="flex gap-2">
                         {product.metrics.map((metric: string) => (
                           <span
                             class="rounded-full bg-slate-50 px-3 py-1 text-[10px] font-bold text-slate-500"
                           >
-                            {localize(metric)}
+                            {metric}
                           </span>
                         ))}
                       </div>
                     </div>
 
                     <h2 class="mb-4 text-4xl font-black text-slate-900">
-                      {localize(product.name)}
+                      {product.name}
                     </h2>
                     <p class="mb-8 text-lg leading-relaxed font-medium text-slate-500">
-                      {localize(product.description)}
+                      {product.description}
                     </p>
 
                     <div class="mt-auto">

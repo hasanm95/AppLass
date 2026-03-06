@@ -11,6 +11,9 @@ interface Props {
 
 const { lang } = Astro.props;
 
+import { setLocale } from "@/i18n";
+setLocale(lang);
+
 const meta = {
   title: localize("404: Logic Not Found"),
   description: localize("The derivation you are looking for does not exist in this namespace.")

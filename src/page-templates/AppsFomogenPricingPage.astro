@@ -12,6 +12,9 @@ interface Props {
 
 const { lang } = Astro.props;
 
+import { setLocale } from "@/i18n";
+setLocale(lang);
+
 const meta = {
   title: localize("FOMO Gen Pricing | Elite Social Proof for Shopify"),
   description: localize("Transparent, performance-based pricing for AppLass FOMO Gen. No bait-and-switch. 100% ROI guarantee.")

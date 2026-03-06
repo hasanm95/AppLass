@@ -16,6 +16,9 @@ interface Props {
 
 const { lang } = Astro.props;
 
+import { setLocale } from "@/i18n";
+setLocale(lang);
+
 const meta = {
   title: localize("Comparison Guides | AppLass Analysis"),
   description: localize("Logic-first product comparisons. Why elite teams choose AppLass over legacy alternatives."),

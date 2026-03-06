@@ -18,6 +18,9 @@ interface Props {
 }
 const { lang } = Astro.props;
 
+import { setLocale } from "@/i18n";
+setLocale(lang);
+
 import { getFomoGenData } from "@/constants/fomogen-data";
 
 const fomoData = getFomoGenData();
@@ -30,6 +33,58 @@ const meta = {
   ogDescription: localize("The all-in-one app for Sales Popups, Stock Countdowns, Sticky Cart, and Trust Badges. Install for Free today!"),
   ogImage: "https://applass.com/fomogen-feature.png",
   ogUrl: "https://applass.com/apps/fomogen"
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      name: localize("FOMO Gen - Elite Social Proof"),
+      operatingSystem: "Shopify",
+      applicationCategory: "BusinessApplication",
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.9",
+        ratingCount: "135",
+      },
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "USD",
+        priceValidUntil: "2026-12-31",
+        availability: "https://schema.org/InStock",
+      },
+      featureList: fomoData.features.map((f) => f.title).join(", "),
+      screenshot: "https://applass.com/fomogen-screenshot.png",
+      image: "https://applass.com/fomogen-feature.png",
+      description: localize("FOMO Gen is an all-in-one Shopify app for social proof, urgency, and trust signals."),
+      author: {
+        "@type": "Organization",
+        name: localize("Applass"),
+        url: "https://applass.com",
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      name: localize("FOMO Gen"),
+      description: localize("All-in-one Shopify app for Sales Popups, Stock Countdowns, Sticky Cart, and Trust Badges."),
+      brand: {
+        "@type": "Brand",
+        name: localize("AppLass"),
+      },
+      offers: {
+        "@type": "Offer",
+        price: "0.00",
+        priceCurrency: "USD",
+        priceValidUntil: "2026-12-31",
+        availability: "https://schema.org/InStock",
+        url: "https://applass.com/apps/fomogen",
+      },
+    },
+  ],
 };
 
 ---
@@ -50,57 +105,7 @@ const meta = {
     <script
       type="application/ld+json"
       is:inline
-      set:html={JSON.stringify({
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
-            name: "FOMO Gen - Elite Social Proof",
-            operatingSystem: "Shopify",
-            applicationCategory: "BusinessApplication",
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              ratingCount: "135",
-            },
-            offers: {
-              "@type": "Offer",
-              price: "0",
-              priceCurrency: "USD",
-              priceValidUntil: "2026-12-31",
-              availability: "https://schema.org/InStock",
-            },
-            featureList: fomoData.features.map((f) => f.title).join(", "),
-            screenshot: "https://applass.com/fomogen-screenshot.png",
-            image: "https://applass.com/fomogen-feature.png",
-            description: localize("FOMO Gen is an all-in-one Shopify app for social proof, urgency, and trust signals."),
-            author: {
-              "@type": "Organization",
-              name: localize("Applass"),
-              url: "https://applass.com",
-            },
-          },
-          {
-            "@context": "https://schema.org",
-            "@type": "Product",
-            name: localize("FOMO Gen"),
-            description: localize("All-in-one Shopify app for Sales Popups, Stock Countdowns, Sticky Cart, and Trust Badges."),
-            brand: {
-              "@type": "Brand",
-              name: localize("AppLass"),
-            },
-            offers: {
-              "@type": "Offer",
-              price: "0.00",
-              priceCurrency: "USD",
-              priceValidUntil: "2026-12-31",
-              availability: "https://schema.org/InStock",
-              url: "https://applass.com/apps/fomogen",
-            },
-          },
-        ],
-      })}
+      set:html={JSON.stringify(jsonLd)}
     />
 
     <div class="flex-1 overflow-x-hidden">

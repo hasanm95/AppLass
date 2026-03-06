@@ -14,6 +14,9 @@ interface Props {
 }
 
 const { lang, title, description, appName } = Astro.props;
+
+import { setLocale } from "@/i18n";
+setLocale(lang);
 const lastUpdated = localize("February 20, 2026");
 
 ---

@@ -1,6 +1,7 @@
 ---
 import { Button } from "@/components/ui/button";
 import { getFomoGenData } from "@/constants/fomogen-data";
+import { localize } from "@/i18n/localize";
 import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
 import fomogenHeroImg from "@/assets/apps/fomogen/comparison-hero.png";
@@ -84,7 +85,7 @@ const heroImageSrc: ImageMetadata = fomogenHeroImg;
         />
         {/* Subtle Overlay Label */}
         <div class="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/20 to-transparent p-8 text-center text-xs font-black tracking-widest text-white uppercase opacity-0 transition-opacity duration-500 hover:opacity-100">
-          The FOMO Gen Advantage
+          {localize("The FOMO Gen Advantage")}
         </div>
       </div>
 

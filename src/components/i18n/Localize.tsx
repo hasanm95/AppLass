@@ -18,11 +18,12 @@ const Localize: React.FC<LocalizeProps> = ({
   options, 
   shouldUnescape 
 }) => {
+  const normalized = i18n_default_text.replace(/\s+/g, ' ').trim();
   return (
     <Trans
       i18n={i18n}
-      i18nKey={crc32.str(i18n_default_text).toString()}
-      defaults={i18n_default_text}
+      i18nKey={crc32.str(normalized).toString()}
+      defaults={normalized}
       values={values}
       components={components}
       tOptions={options}

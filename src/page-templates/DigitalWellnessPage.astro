@@ -25,6 +25,9 @@ interface Props {
 
 const { lang } = Astro.props;
 
+import { setLocale } from "@/i18n";
+setLocale(lang);
+
 const meta = {
   title: localize("Digital Wellness Guide 2026: 7 Steps to Reclaim Your Focus [Expert Guide]"),
   description: localize("Master your digital life in 2026. Learn how to combat digital burnout, audit your notifications, and use privacy-first tools like Mindful Guard to boost productivity."),
