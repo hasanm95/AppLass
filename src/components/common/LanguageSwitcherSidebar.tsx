@@ -3,14 +3,13 @@ import { localePath } from "@/i18n/utils";
 import { Portal } from "../ui/portal";
 import { X } from "lucide-react";
 import { useEffect, useState } from "react";
-import type { Dictionary } from "@/i18n/get-dictionary";
+import { Localize } from "@/components/Localize";
 
 type Props = {
   isOpen: boolean;
   onClose: () => void;
   currentLang: string;
   isDark: boolean;
-  dictionary?: Dictionary["common"];
 };
 
 const LOCALES = [
@@ -18,7 +17,7 @@ const LOCALES = [
   { code: "fr", label: "FR", fullLabel: "Français", flag: "🇫🇷" },
 ] as const;
 
-export function LanguageSwitcherSidebar({ isOpen, onClose, currentLang, isDark, dictionary }: Props) {
+export function LanguageSwitcherSidebar({ isOpen, onClose, currentLang, isDark }: Props) {
   const [currentPath, setCurrentPath] = useState("/");
 
   useEffect(() => {
@@ -53,7 +52,7 @@ export function LanguageSwitcherSidebar({ isOpen, onClose, currentLang, isDark, 
         >
           <div className="flex items-center justify-between p-6 border-b border-slate-100 dark:border-white/10">
             <h2 className={cn("text-lg font-black tracking-tight", isDark ? "text-white" : "text-slate-900")}>
-              {dictionary?.selectLanguage || (currentLang === 'fr' ? 'Choisissez la langue' : 'Select Language')}
+              <Localize>Select Language</Localize>
             </h2>
             <button 
               onClick={onClose}

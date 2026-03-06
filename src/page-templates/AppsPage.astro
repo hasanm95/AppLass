@@ -9,7 +9,7 @@ import Footer from "@/components/common/Footer.astro";
 import SubpageHero from "@/components/common/SubpageHero.astro";
 import Navbar from "@/components/common/Navbar.astro";
 import { LinkButton } from "@/components/ui/link-button";
-import { PRODUCTS } from "@/constants/home-data";
+import { getProducts } from "@/constants/home-data";
 import Section from "@/components/common/Section.astro";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { i18nConfig } from "@/i18n/config";
@@ -57,7 +57,7 @@ const imageMap: Record<string, ImageMetadata> = {
       <Section className="py-24">
         <div class="section-container">
           <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
-            {PRODUCTS.map((product) => {
+            {getProducts().map((product) => {
               const dictKey = product.id === "mindful" ? "mindfulGuard" : product.id;
               const translation = t(`products.${dictKey}`);
 

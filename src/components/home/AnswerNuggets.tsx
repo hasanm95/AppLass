@@ -1,60 +1,55 @@
 
-
 import { Section } from "@/components/common/Section";
 import { FAQSchema } from "@/components/common/FAQSchema";
-import { FAQ_REGISTRY } from "@/constants/faq-registry";
+import { getFaqRegistry } from "@/constants/faq-registry";
 import { Plus, Minus } from "lucide-react";
 import { useState } from "react";
-import type { Dictionary } from "@/i18n/get-dictionary";
+import { Localize } from "@/components/Localize";
 
-interface AnswerNuggetsProps {
-  translations?: Dictionary["home"]["faq"];
-}
-
-export function AnswerNuggets({ translations }: AnswerNuggetsProps) {
+export function AnswerNuggets() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const faqData = getFaqRegistry().HOME;
 
   return (
     <Section className="bg-muted py-16 md:py-24 lg:py-32">
-      <FAQSchema items={FAQ_REGISTRY.HOME} />
+      <FAQSchema items={faqData} />
       <div className="section-container">
         {/* Section Header */}
         <div className="mb-16">
           <div className="mb-8 flex items-center gap-4">
-            <span className="font-mono text-xs font-bold tracking-widest text-(--muted-foreground)/50 uppercase">
-              {translations?.sectionLabel || "FAQ"}
+            <span className="font-mono text-xs font-bold tracking-widest text-muted-foreground/50 uppercase">
+              <Localize>FAQ</Localize>
             </span>
-            <span className="block h-px flex-1 bg-(--foreground)/20" />
+            <span className="block h-px flex-1 bg-foreground/20" />
           </div>
 
           <h2 className="text-foreground mb-4 font-mono text-2xl leading-tight font-bold md:text-3xl lg:text-4xl">
-            {translations?.headline || "Frequently Asked"}
+            <Localize>Frequently Asked</Localize>
             <br />
-            <span className="text-(--muted-foreground)/40">{translations?.headlineAccent || "Questions"}</span>
+            <span className="text-muted-foreground/40">
+              <Localize>Questions</Localize>
+            </span>
           </h2>
         </div>
 
         {/* FAQ Accordion - Minimal Style */}
         <div className="grid grid-cols-1 gap-0 md:grid-cols-2 md:gap-x-12">
-          {FAQ_REGISTRY.HOME.map((faq, idx) => {
+          {faqData.map((faq, idx) => {
             const isOpen = openIndex === idx;
-            const faqId = (faq as any).id;
-            const faqQuestion = faqId && translations?.questions && faqId in translations.questions ? translations.questions[faqId as keyof typeof translations.questions]?.question : faq.question;
-            const faqAnswer = faqId && translations?.questions && faqId in translations.questions ? translations.questions[faqId as keyof typeof translations.questions]?.answer : faq.answer;
             
             return (
               <article
                 key={idx}
-                className="group border-border cursor-pointer border-b py-6 first:border-t"
+                className="group border-border cursor-pointer border-b py-6 last:border-b-0 md:last:border-b md:even:border-b first:border-t"
                 onClick={() => setOpenIndex(isOpen ? null : idx)}
               >
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex items-start gap-4">
-                    <span className="mt-1 font-mono text-xs font-bold tracking-widest text-(--muted-foreground)/50 uppercase">
+                    <span className="mt-1 font-mono text-xs font-bold tracking-widest text-muted-foreground/50 uppercase">
                       {String(idx + 1).padStart(2, "0")}
                     </span>
                     <h3 className="group-hover:text-cta text-base font-semibold transition-colors">
-                      {faqQuestion}
+                      {faq.question}
                     </h3>
                   </div>
                   <button
@@ -79,7 +74,7 @@ export function AnswerNuggets({ translations }: AnswerNuggetsProps) {
                 >
                   <div className="overflow-hidden pl-12">
                     <p className="text-muted-foreground text-sm leading-relaxed whitespace-pre-line">
-                      {faqAnswer}
+                      {faq.answer}
                     </p>
                   </div>
                 </div>

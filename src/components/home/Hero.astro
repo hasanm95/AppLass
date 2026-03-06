@@ -1,13 +1,9 @@
-import { getDictionary } from "@/i18n/get-dictionary";
+---
+import { localize } from "@/i18n/localize";
 import { getLangFromUrl, localePath } from "@/i18n/utils";
-import { localize } from "@/i18n/localize"; // [TEST]
 import { ArrowRight } from "lucide-react";
 
-const testTranslation = localize("Test CRC32 Localization"); // [TEST]
-
 const lang = getLangFromUrl(Astro.url);
-const dict = await getDictionary(lang as any);
-const translations = dict.home?.hero;
 ---
 
 <section
@@ -33,72 +29,57 @@ const translations = dict.home?.hero;
       <div class="mb-8 flex items-center gap-4">
         <span class="block h-px w-24 bg-cta" />
         <span class="font-mono text-[10px] font-bold tracking-[0.2em] text-cta uppercase">
-          {translations?.eyebrow || "Elite Software Studio"}
+          {localize("Elite Software Studio")}
         </span>
       </div>
 
       {/* Massive Headline - Left Aligned */}
       <h1 class="mb-4 font-mono text-4xl leading-[1.1] font-bold tracking-tight md:text-6xl lg:text-7xl">
-        <span class="block">{translations?.headline || "High-Performance"}</span>
-        <span class="block text-primary">{translations?.headlineAccent || "Apps."}</span>
+        <span class="block">{localize("High-Performance")}</span>
+        <span class="block text-primary">{localize("Apps.")}</span>
         <span class="block text-muted-foreground/30">
-          {translations?.headlineSubdued || "Zero Bloat."}
+          {localize("Zero Bloat.")}
         </span>
       </h1>
 
       {/* Subheading */}
       <p class="mb-8 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
-        {translations?.subheading ? (
-          <>
-            {translations.subheading.split("{brand}")[0]}
-            <span class="font-semibold text-foreground">AppLass</span>
-            {translations.subheading.split("{brand}")[1].split("{payload}")[0]}
+        {localize("Stop letting bloated Shopify apps kill your conversions. {brand} builds elite-tier tools with {payload} payloads that keep your Core Web Vitals green.", {
+          brand: <span class="font-semibold text-foreground">AppLass</span>,
+          payload: (
             <span class="inline-flex items-center gap-1 border-b-2 border-(--cta)/40 font-mono text-foreground">
               &lt;2.1KB
             </span>
-            {translations.subheading.split("{payload}")[1]}
-          </>
-        ) : (
-          <>
-            Stop letting bloated Shopify apps kill your conversions.{" "}
-            <span class="font-semibold text-foreground">
-              AppLass
-            </span>{" "}
-            builds elite-tier tools with{" "}
-            <span class="inline-flex items-center gap-1 border-b-2 border-(--cta)/40 font-mono text-foreground">
-              &lt;2.1KB
-            </span>{" "}
-            payloads that keep your Core Web Vitals green.
-          </>
-        )}
+          )
+        })}
       </p>
 
       {/* Stats Row */}
       <div class="mb-8 flex flex-wrap items-baseline gap-8 text-sm">
         <div>
           <span class="font-mono text-2xl font-bold text-foreground md:text-3xl">
-            {translations?.stats?.downloads?.value || "10K+"}
+            {localize("10K+")}
           </span>
           <span class="ml-2 text-muted-foreground">
-            {translations?.stats?.downloads?.label || "Downloads"}
+            {localize("Downloads")}
           </span>
         </div>
         <div class="h-6 w-px bg-border" />
         <div>
           <span class="font-mono text-2xl font-bold text-foreground md:text-3xl">
-            {translations?.stats?.rating?.value || "4.4★"}
+            {localize("4.4★")}
           </span>
           <span class="ml-2 text-muted-foreground">
-            {translations?.stats?.rating?.label || "Rating"}
+            {localize("Rating")}
           </span>
         </div>
         <div class="h-6 w-px bg-border" />
         <div>
           <span class="font-mono text-2xl font-bold text-foreground md:text-3xl">
-            {translations?.stats?.payload?.value || "<2.1KB"}
+            {localize("<2.1KB")}
           </span>
           <span class="ml-2 text-muted-foreground">
-            {translations?.stats?.payload?.label || "Payload"}
+            {localize("Payload")}
           </span>
         </div>
       </div>
@@ -109,14 +90,14 @@ const translations = dict.home?.hero;
           href={localePath(lang, '/apps')}
           class="group inline-flex cursor-pointer items-center justify-center gap-2 border-2 border-foreground bg-foreground px-8 py-4 font-semibold text-background transition-all duration-200 hover:bg-transparent hover:text-foreground"
         >
-          {translations?.cta?.primary || "See Our Apps"}
+          {localize("See Our Apps")}
           <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
         </a>
         <a
           href={localePath(lang, '/blog')}
           class="group inline-flex cursor-pointer items-center justify-center gap-2 border-2 border-(--foreground)/20 bg-transparent px-8 py-4 font-semibold text-foreground transition-all duration-200 hover:border-foreground"
         >
-          {translations?.cta?.secondary || "Read the Logic Lab"}
+          {localize("Read the Logic Lab")}
           <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
         </a>
       </div>

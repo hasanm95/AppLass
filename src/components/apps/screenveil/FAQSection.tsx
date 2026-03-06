@@ -3,12 +3,12 @@
 import { useState } from "react";
 import { Section } from "@/components/common/Section";
 import { FAQSchema } from "@/components/common/FAQSchema";
-import { FAQ_REGISTRY } from "@/constants/faq-registry";
+import { getFaqRegistry } from "@/constants/faq-registry";
 import { ChevronDown } from "lucide-react";
 
 export function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-  const items = FAQ_REGISTRY.SCREENVEIL;
+  const items = getFaqRegistry().SCREENVEIL;
 
   return (
     <Section className="relative bg-slate-950 py-24 md:py-32">

@@ -9,6 +9,11 @@ i18n.init({
     en: { translation: en },
     fr: { translation: fr },
   },
+  interpolation: {
+    escapeValue: false,
+    prefix: '{',
+    suffix: '}',
+  },
 });
 
 export const setLocale = (locale: string) => i18n.changeLanguage(locale);

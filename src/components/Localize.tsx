@@ -1,12 +1,11 @@
+import type { ReactNode } from 'react';
 import { localize } from '../i18n/localize';
 
 interface Props {
-  i18n_default_text: string;
+  children: string;
   values?: Record<string, unknown>;
 }
 
-const Localize = ({ i18n_default_text, values }: Props) => (
-  <>{localize(i18n_default_text, values)}</>
+export const Localize = ({ children, values }: Props) => (
+  <>{localize(children, values)}</>
 );
-
-export default Localize;

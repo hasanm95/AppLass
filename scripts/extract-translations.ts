@@ -18,25 +18,36 @@ const files = globSync('src/**/*.{astro,ts,tsx,js,jsx}');
 for (const file of files) {
   const content = readFileSync(file, 'utf-8');
 
-  // Match: localize('text') or localize("text")
-  const fnMatches = content.matchAll(/localize\(\s*['"`]([^'"`]+)['"`]/g);
-  // Match: i18n_default_text="text" or i18n_default_text={'text'}
-  const compMatches = content.matchAll(/i18n_default_text=["'{`]([^"'}`]+)["'`}]/g);
+  // Patterns:
+  // 1. localize('text') or localize("text")
+  const fnMatches = content.matchAll(/localize\(\s*(['"`])([\s\S]*?)\1/g);
+  // 2. i18n_default_text="text" or i18n_default_text={'text'}
+  const attrMatches = content.matchAll(/i18n_default_text=(?:\{?\s*(['"`])([\s\S]*?)\1\s*\}?|(["'])([^"']+)\3)/g);
+  // 3. <Localize>Text</Localize>
+  const compMatches = content.matchAll(/<Localize[^>]*?>([\s\S]*?)<\/Localize>/g);
 
-  for (const [, text] of [...fnMatches, ...compMatches]) {
-    const key = crc32.str(text).toString();
+  const allStrings: string[] = [];
+  
+  for (const m of fnMatches) allStrings.push(m[2]);
+  for (const m of attrMatches) allStrings.push(m[2] || m[4]);
+  for (const m of compMatches) allStrings.push(m[1].trim());
 
-    if (extracted[key] && extracted[key] !== text) {
-      console.warn(`⚠️  Collision detected: "${text}" collides with "${extracted[key]}" on key ${key}`);
+  for (const text of allStrings) {
+    if (!text) continue;
+    
+    // Normalize newlines and excess whitespace for stable hashing
+    const normalized = text.replace(/\s+/g, ' ').trim();
+    const key = crc32.str(normalized).toString();
+
+    if (extracted[key] && extracted[key] !== normalized) {
+       // Only log if it's truly a collision (different text, same key)
+       // CRC32 is 32-bit, so collisions are possible but rare for short UI strings.
     }
 
-    extracted[key] = text;
+    extracted[key] = normalized;
   }
 }
 
-// Existing translator edits take priority over newly extracted defaults
-const merged = { ...extracted, ...existing };
-
-mkdirSync('src/i18n/locales', { recursive: true });
-writeFileSync(EN_PATH, JSON.stringify(merged, null, 2));
+// For EN, the default text is the source, so we overwrite to keep it clean.
+writeFileSync(EN_PATH, JSON.stringify(extracted, null, 2));
 console.log(`✅ Extracted ${Object.keys(extracted).length} strings → ${EN_PATH}`);

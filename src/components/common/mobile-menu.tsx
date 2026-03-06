@@ -3,8 +3,8 @@ import MobileNavLink from "./mobile-menu-nav-link";
 import { cn } from "@/lib/utils";
 import type { RefObject } from "react";
 import { Portal } from "../ui/portal";
-import type { Dictionary } from "@/i18n/get-dictionary";
 import { localePath } from "@/i18n/utils";
+import { Localize } from "@/components/Localize";
 
 type MobileMenuProps = {
   customBranding: React.ReactNode;
@@ -13,7 +13,6 @@ type MobileMenuProps = {
   isDark: boolean;
   menuRef: RefObject<HTMLDivElement | null>;
   currentLang?: string;
-  translations?: Dictionary["nav"];
 };
 
 export function MobileMenu({
@@ -23,7 +22,6 @@ export function MobileMenu({
   isDark,
   menuRef,
   currentLang = "en",
-  translations,
 }: MobileMenuProps) {
   return (
     <Portal>
@@ -39,19 +37,19 @@ export function MobileMenu({
           {!customBranding && (
             <>
               <MobileNavLink href={localePath(currentLang, '/')} isDark={isDark} onClick={toggleMenu}>
-                {translations?.home ?? "Home"}
+                <Localize>Home</Localize>
               </MobileNavLink>
               <MobileNavLink href={localePath(currentLang, '/about')} isDark={isDark} onClick={toggleMenu}>
-                {translations?.about ?? "About"}
+                <Localize>About</Localize>
               </MobileNavLink>
               <MobileNavLink href={localePath(currentLang, '/apps')} isDark={isDark} onClick={toggleMenu}>
-                {translations?.ecosystem ?? "Ecosystem"}
+                <Localize>Ecosystem</Localize>
               </MobileNavLink>
               <MobileNavLink href={localePath(currentLang, '/docs')} isDark={isDark} onClick={toggleMenu}>
-                {translations?.docs ?? "Docs"}
+                <Localize>Docs</Localize>
               </MobileNavLink>
               <MobileNavLink href={localePath(currentLang, '/blog')} isDark={isDark} onClick={toggleMenu}>
-                {translations?.blog ?? "Logic Lab"}
+                <Localize>Logic Lab</Localize>
               </MobileNavLink>
             </>
           )}
@@ -72,7 +70,7 @@ export function MobileMenu({
                 )}
               >
                 <a href={localePath(currentLang, '/about')}>
-                  {translations?.getInTouch ?? "Get in Touch"}
+                  <Localize>Get in Touch</Localize>
                 </a>
               </Button>
             )}

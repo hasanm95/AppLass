@@ -1,6 +1,6 @@
 import { Section } from "@/components/common/Section";
 import { FAQSchema } from "@/components/common/FAQSchema";
-import { FAQ_REGISTRY, type FAQRegistryKey } from "@/constants/faq-registry";
+import { getFaqRegistry, type FAQRegistryKey } from "@/constants/faq-registry";
 import { cn } from "@/lib/utils";
 import clsx from "clsx";
 
@@ -21,7 +21,7 @@ export function FAQRegistrySection({
   subtitle = "Technical Clarifications",
   variant = "grid",
 }: FAQRegistrySectionProps) {
-  const items = propItems || (registryKey ? FAQ_REGISTRY[registryKey] : []);
+  const items = propItems || (registryKey ? getFaqRegistry()[registryKey] : []);
 
   return (
     <Section

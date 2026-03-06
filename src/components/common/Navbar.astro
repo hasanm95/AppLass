@@ -1,7 +1,7 @@
 ---
 import { cn } from "@/lib/utils";
-import { getLangFromUrl, localePath, useTranslations } from "@/i18n/utils";
-import { getDictionary } from "@/i18n/get-dictionary";
+import { getLangFromUrl, localePath } from "@/i18n/utils";
+import { localize } from "@/i18n/localize";
 
 // Import the interactive islands
 import { MobileMenuToggle } from "./MobileMenuToggle";
@@ -21,13 +21,6 @@ const {
 } = Astro.props;
 
 const currentLang = getLangFromUrl(Astro.url);
-const dict = await getDictionary(currentLang as any);
-const t = useTranslations(dict);
-
-// We still need the raw objects for passing to React client components
-const translations = dict.nav;
-const commonTranslations = dict.common;
-
 const isDark = variant === "dark";
 
 // Check if slots are provided
@@ -61,7 +54,7 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
         >
           <Image
             src={appLogoImg}
-            alt={t('nav.logoAlt') || "AppLass Logo"}
+            alt={localize("AppLass Logo")}
             width={32}
             height={32}
             format="webp"
@@ -74,7 +67,7 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
                 isDark ? "text-white" : "text-slate-900"
               )}
             >
-              {t('nav.brandName') || "AppLass"}
+              {localize("AppLass")}
             </span>
           )}
         </a>
@@ -94,22 +87,22 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
       </div>
 
       {/* Navigation Links (Desktop) */}
-      {!hasCustomBranding && translations && (
+      {!hasCustomBranding && (
         <div class="hidden items-center gap-10 md:flex">
           <a href={localePath(currentLang, '/')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
-            {t('nav.home')}
+            {localize("Home")}
           </a>
           <a href={localePath(currentLang, '/about')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
-            {t('nav.about')}
+            {localize("About")}
           </a>
           <a href={localePath(currentLang, '/apps')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
-            {t('nav.ecosystem')}
+            {localize("Ecosystem")}
           </a>
           <a href={localePath(currentLang, '/docs')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
-            {t('nav.docs')}
+            {localize("Docs")}
           </a>
           <a href={localePath(currentLang, '/blog')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
-            {t('nav.blog')}
+            {localize("Logic Lab")}
           </a>
         </div>
       )}
@@ -117,7 +110,7 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
       {/* CTA & Mobile Toggle */}
       <div class="flex items-center gap-3 md:gap-4">
         {/* Language Switcher Trigger (Interactive UI) */}
-        <LanguageToggle client:load isDark={isDark} currentLang={currentLang} dictionary={commonTranslations} />
+        <LanguageToggle client:load isDark={isDark} currentLang={currentLang} />
 
         <div class="hidden md:block">
           {hasCustomCTA ? (
@@ -133,7 +126,7 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
                   : "bg-slate-900 text-white hover:bg-slate-800"
               )}
             >
-              {t('nav.getInTouch') || "Get in Touch"}
+              {localize("Get in Touch")}
             </a>
           )}
         </div>
@@ -143,7 +136,6 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
           client:load 
           isDark={isDark} 
           currentLang={currentLang} 
-          translations={translations}
           hasCustomBranding={hasCustomBranding}
           customCTAHtml={customCTAHtml}
         />

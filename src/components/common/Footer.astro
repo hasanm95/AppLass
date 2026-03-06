@@ -1,6 +1,6 @@
 ---
-import { getLangFromUrl, localePath, useTranslations } from "@/i18n/utils";
-import { getDictionary } from "@/i18n/get-dictionary";
+import { getLangFromUrl, localePath } from "@/i18n/utils";
+import { localize } from "@/i18n/localize";
 import { Image } from 'astro:assets';
 import appLogoImg from '@/assets/logo.png';
 import clsx from "clsx";
@@ -11,8 +11,6 @@ interface Props {
 
 const { variant = "light" } = Astro.props;
 const currentLang = getLangFromUrl(Astro.url);
-const dict = await getDictionary(currentLang as any);
-const t = useTranslations(dict);
 
 const currentYear = new Date().getFullYear();
 const isDark = variant === "dark";
@@ -20,21 +18,21 @@ const isDark = variant === "dark";
 function getFooterLinks(lang: string) {
   return {
     solutions: [
-      { slug: "fomogen", label: "Fomogen", href: localePath(lang, '/apps/fomogen') },
-      { slug: "mindfulGuard", label: "Mindful Guard", href: localePath(lang, '/apps/mindful-guard') },
-      { slug: "screenveil", label: "ScreenVeil", href: localePath(lang, '/apps/screenveil') },
+      { slug: "fomogen", label: localize("Fomogen"), href: localePath(lang, '/apps/fomogen') },
+      { slug: "mindfulGuard", label: localize("Mindful Guard"), href: localePath(lang, '/apps/mindful-guard') },
+      { slug: "screenveil", label: localize("ScreenVeil"), href: localePath(lang, '/apps/screenveil') },
     ],
     resources: [
-      { slug: "ourEcosystem", label: "Our Ecosystem", href: localePath(lang, '/apps') },
-      { slug: "documentation", label: "Documentation", href: localePath(lang, '/docs') },
-      { slug: "digitalWellness", label: "Digital Wellness 2026", href: localePath(lang, '/digital-wellness-2026-guide') },
-      { slug: "ecommercePerformance", label: "Ecommerce Performance 2026", href: localePath(lang, '/ecommerce-performance-2026-benchmarks') },
-      { slug: "theMethodology", label: "The Methodology", href: localePath(lang, '/about') },
-      { slug: "theLogicLab", label: "The Logic Lab (Blog)", href: localePath(lang, '/blog') },
+      { slug: "ourEcosystem", label: localize("Our Ecosystem"), href: localePath(lang, '/apps') },
+      { slug: "documentation", label: localize("Documentation"), href: localePath(lang, '/docs') },
+      { slug: "digitalWellness", label: localize("Digital Wellness 2026"), href: localePath(lang, '/digital-wellness-2026-guide') },
+      { slug: "ecommercePerformance", label: localize("Ecommerce Performance 2026"), href: localePath(lang, '/ecommerce-performance-2026-benchmarks') },
+      { slug: "theMethodology", label: localize("The Methodology"), href: localePath(lang, '/about') },
+      { slug: "theLogicLab", label: localize("The Logic Lab (Blog)"), href: localePath(lang, '/blog') },
     ],
     legal: [
-      { slug: "privacyPolicy", label: "Privacy Policy", href: localePath(lang, '/legal/fomogen/privacy') },
-      { slug: "termsOfService", label: "Terms of Service", href: localePath(lang, '/legal/fomogen/terms') },
+      { slug: "privacyPolicy", label: localize("Privacy Policy"), href: localePath(lang, '/legal/fomogen/privacy') },
+      { slug: "termsOfService", label: localize("Terms of Service"), href: localePath(lang, '/legal/fomogen/terms') },
     ],
   };
 }
@@ -77,7 +75,7 @@ const footerLinks = getFooterLinks(currentLang);
             isDark ? "text-slate-400" : "text-slate-600"
           )}
         >
-          {t('footer.tagline') || "Logic-driven software where mathematical precision meets human-centric design."}
+          {localize("Logic-driven software where mathematical precision meets human-centric design.")}
         </p>
       </div>
 
@@ -89,7 +87,7 @@ const footerLinks = getFooterLinks(currentLang);
             isDark ? "text-white" : "text-slate-900"
           )}
         >
-          {t('footer.sections.solutions') || "Solutions"}
+          {localize("Solutions")}
         </h3>
         <ul class="space-y-3">
           {footerLinks.solutions.map((link) => (
@@ -103,7 +101,7 @@ const footerLinks = getFooterLinks(currentLang);
                     : "text-slate-600 hover:text-slate-900 focus:ring-slate-400 focus:ring-offset-white"
                 )}
               >
-                {t(`footer.links.${link.slug}`) || link.label}
+                {link.label}
               </a>
             </li>
           ))}
@@ -118,7 +116,7 @@ const footerLinks = getFooterLinks(currentLang);
             isDark ? "text-white" : "text-slate-900"
           )}
         >
-          {t('footer.sections.resources') || "Resources"}
+          {localize("Resources")}
         </h3>
         <ul class="space-y-3">
           {footerLinks.resources.map((link) => (
@@ -132,7 +130,7 @@ const footerLinks = getFooterLinks(currentLang);
                     : "text-slate-600 hover:text-slate-900 focus:ring-slate-400 focus:ring-offset-white"
                 )}
               >
-                {t(`footer.links.${link.slug}`) || link.label}
+                {link.label}
               </a>
             </li>
           ))}
@@ -147,7 +145,7 @@ const footerLinks = getFooterLinks(currentLang);
             isDark ? "text-white" : "text-slate-900"
           )}
         >
-          {t('footer.sections.legal') || "Legal"}
+          {localize("Legal")}
         </h3>
         <ul class="space-y-3">
           {footerLinks.legal.map((link) => (
@@ -161,7 +159,7 @@ const footerLinks = getFooterLinks(currentLang);
                     : "text-slate-600 hover:text-slate-900 focus:ring-slate-400 focus:ring-offset-white"
                 )}
               >
-                {t(`footer.links.${link.slug}`) || link.label}
+                {link.label}
               </a>
             </li>
           ))}
@@ -182,7 +180,7 @@ const footerLinks = getFooterLinks(currentLang);
           isDark ? "text-slate-500" : "text-slate-600"
         )}
       >
-        {(t('footer.copyright') || `© ${currentYear} AppLass. All rights reserved.`).replace('{year}', currentYear.toString())}
+        {localize("© {year} AppLass. All rights reserved.", { year: currentYear.toString() })}
       </p>
       <div
         class={clsx(
@@ -190,26 +188,13 @@ const footerLinks = getFooterLinks(currentLang);
           isDark ? "text-slate-600" : "text-slate-400"
         )}
       >
-        {t('footer.builtWith') ? (
-          t('footer.builtWith').split('∞').map((part: string, i: number, arr: string[]) => (
-            <Fragment key={i}>
-              {part}
-              {i < arr.length - 1 && (
-                <span class="text-blue-600" aria-label="precision">
-                  ∞
-                </span>
-              )}
-            </Fragment>
-          ))
-        ) : (
-          <Fragment>
-            Built with{" "}
+        {localize("Built with {infinity} logical precision", {
+          infinity: (
             <span class="text-blue-600" aria-label="precision">
               ∞
-            </span>{" "}
-            logical precision
-          </Fragment>
-        )}
+            </span>
+          )
+        })}
       </div>
     </div>
   </div>

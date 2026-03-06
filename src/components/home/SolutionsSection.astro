@@ -1,9 +1,8 @@
 ---
 import Section from "@/components/common/Section.astro";
-import { SOLUTIONS } from "@/constants/home-data";
+import { getSolutions } from "@/constants/home-data";
 import { ShoppingBag, Clock, Users } from "lucide-react";
-import { getDictionary } from "@/i18n/get-dictionary";
-import { getLangFromUrl } from "@/i18n/utils";
+import { localize } from "@/i18n/localize";
 
 const ICONS = {
   ShoppingBag,
@@ -11,13 +10,7 @@ const ICONS = {
   Users,
 };
 
-const lang = getLangFromUrl(Astro.url);
-const dict = await getDictionary(lang as any);
-const translations = dict.home?.solutions;
-const solutions = dict.solutionItems;
-
-// Map our SOLUTIONS array to the dictionary keys
-const SOLUTION_KEYS = ["ecommerce", "digitalDiscipline", "accessibility"] as const;
+const solutionsData = getSolutions();
 ---
 
 <Section
@@ -28,40 +21,30 @@ const SOLUTION_KEYS = ["ecommerce", "digitalDiscipline", "accessibility"] as con
     {/* Section Header */}
     <div class="mb-16 md:mb-24">
       <div class="mb-8 flex items-center gap-4">
-        <span class="font-mono text-xs font-bold tracking-widest text-(--muted-foreground)/50 uppercase">
-          {translations?.sectionLabel || "SOLUTIONS"}
-        </span>
-        <span class="block h-px flex-1 bg-(--foreground)/20" />
+        <span class="font-mono text-xs font-bold tracking-widest text-muted-foreground/50 uppercase">
+        {localize("SOLUTIONS")}
+      </span>
+      <span class="block h-px flex-1 bg-foreground/20" />
       </div>
 
       <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
         <h2 class="font-mono text-2xl leading-tight font-bold text-foreground md:text-3xl lg:text-4xl">
-          {translations?.headline || "Logical"}
+          {localize("Logical")}
           <br />
-          <span class="text-(--muted-foreground)/40">
-            {translations?.headlineAccent || "Solutions."}
+          <span class="text-muted-foreground/40">
+            {localize("Solutions.")}
           </span>
         </h2>
 
         <div class="flex items-end">
           <p class="max-w-md text-lg leading-relaxed text-muted-foreground">
-            {translations?.description ? (
-              <>
-                {translations.description.split("{highlight}")[0]}
-                <span class="border-b-2 border-(--cta)/40font-semibold text-foreground">
-                  {translations.descriptionHighlight}
+            {localize("We don't just build features; we engineer {highlight} that solve core business logic bottlenecks.", {
+              highlight: (
+                <span class="border-b-2 border-cta/40 font-semibold text-foreground">
+                  {localize("systemic improvements")}
                 </span>
-                {translations.description.split("{highlight}")[1]}
-              </>
-            ) : (
-              <>
-                We don&apos;t just build features; we engineer{" "}
-                <span class="border-b-2 border-(--cta)/40font-semibold text-foreground">
-                  systemic improvements
-                </span>{" "}
-                that solve core business logic bottlenecks.
-              </>
-            )}
+              )
+            })}
           </p>
         </div>
       </div>
@@ -69,12 +52,8 @@ const SOLUTION_KEYS = ["ecommerce", "digitalDiscipline", "accessibility"] as con
 
     {/* Solutions Grid */}
     <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
-      {SOLUTIONS.map((solution, index) => {
+      {solutionsData.map((solution, index) => {
         const Icon = ICONS[solution.iconName as keyof typeof ICONS];
-        
-        // Get the translation for this specific solution item
-        const dictKey = SOLUTION_KEYS[index];
-        const translation = solutions?.[dictKey];
 
         return (
           <div
@@ -82,7 +61,7 @@ const SOLUTION_KEYS = ["ecommerce", "digitalDiscipline", "accessibility"] as con
           >
             {/* Number */}
             <div class="mb-6 flex items-center justify-between">
-              <span class="font-mono text-xs font-bold tracking-widest text-(--muted-foreground)/50 uppercase">
+              <span class="font-mono text-xs font-bold tracking-widest text-muted-foreground/50 uppercase">
                 0{index + 1}
               </span>
               <div class="flex h-10 w-10 items-center justify-center border border-border transition-all duration-200 group-hover:border-cta group-hover:bg-cta/5">
@@ -92,13 +71,13 @@ const SOLUTION_KEYS = ["ecommerce", "digitalDiscipline", "accessibility"] as con
               </div>
             </div>
 
-            <span class="mb-6 block h-px w-16 bg-(--foreground)/20" />
+            <span class="mb-6 block h-px w-16 bg-foreground/20" />
 
             <h3 class="mb-3 font-mono text-lg font-bold text-foreground md:text-xl">
-              {translation?.title || solution.title}
+              {solution.title}
             </h3>
             <p class="text-sm leading-relaxed text-muted-foreground">
-              {translation?.description || solution.description}
+              {solution.description}
             </p>
           </div>
         );
