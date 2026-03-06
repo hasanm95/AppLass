@@ -3,17 +3,19 @@ import Layout from '../layouts/Layout.astro';
 import Footer from "@/components/common/Footer.astro";
 import Navbar from "@/components/common/Navbar.astro";
 import PricingSection from "@/components/apps/fomogen/PricingSection.astro";
-import { getDictionary } from "@/i18n/get-dictionary";
 import { i18nConfig } from "@/i18n/config";
+import { localize } from "@/i18n/localize";
 
 interface Props {
   lang: typeof i18nConfig.locales[number];
 }
 
 const { lang } = Astro.props;
-const dict = await getDictionary(lang as any);
 
-const meta = dict.metadata?.fomogenPricing || {};
+const meta = {
+  title: localize("FOMO Gen Pricing | Elite Social Proof for Shopify"),
+  description: localize("Transparent, performance-based pricing for AppLass FOMO Gen. No bait-and-switch. 100% ROI guarantee.")
+};
 
 ---
 
@@ -31,7 +33,7 @@ const meta = dict.metadata?.fomogenPricing || {};
     <Navbar    />
     
     <div class="pt-32 pb-0">
-      <PricingSection translations={dict.fomogen?.pricing} />
+      <PricingSection />
     </div>
 
     <Footer />

@@ -1,19 +1,10 @@
 ---
 import { Button } from "@/components/ui/button";
-import { getDictionary } from "@/i18n/get-dictionary";
-import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { getMindfulGuardData } from "@/constants/mindful-guard-data";
 
-const lang = getLangFromUrl(Astro.url);
-const dictMap = await getDictionary(lang as any);
-const t = useTranslations(dictMap);
-
-const dict = t('mindfulGuard.hero') || {
-  headline: "",
-  subheadline: "",
-  primaryCTA: "",
-  secondaryCTA: "",
-  playStoreUrl: "",
-};
+const mindfulData = getMindfulGuardData();
+const dict = mindfulData.hero;
+const labels = mindfulData.labels;
 ---
 
 <section
@@ -35,7 +26,7 @@ const dict = t('mindfulGuard.hero') || {
     <div class="flex flex-col gap-12 lg:flex-row lg:items-end lg:justify-between">
       <div class="animate-fade-in-up max-w-4xl">
         <div class="mb-8 inline-flex items-center gap-3 border border-emerald-900/10 bg-emerald-50/50 px-4 py-1.5 font-mono text-[11px] font-bold tracking-widest text-[#064E3B] uppercase">
-          Neural Architecture Protection
+          {labels.neuralProtection}
         </div>
 
         <h1 class="parallax-mindful-headline font-black tracking-tighter text-slate-950 sm:text-7xl md:text-8xl lg:text-9xl">
@@ -68,7 +59,7 @@ const dict = t('mindfulGuard.hero') || {
           <a href="#logic">{dict.secondaryCTA}</a>
         </Button>
         <div class="mt-4 font-mono text-[10px] tracking-widest text-slate-400 uppercase">
-          [ Offline Architecture Enabled ]
+          {labels.offlineArchitecture}
         </div>
       </div>
     </div>

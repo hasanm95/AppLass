@@ -6,12 +6,12 @@ import { AppCallout } from "@/components/blog/AppCallout";
 import { ShareArticle } from "@/components/blog/ShareArticle";
 import { ReadingProgressBar } from "@/components/blog/ReadingProgressBar";
 import { FAQSchema } from "@/components/common/FAQSchema";
+import { localize } from "@/i18n/localize";
 import { getBlogPostBySlug } from "@/lib/blog";
 import { i18nConfig } from "@/i18n/config";
 import { render } from "astro:content";
 import { ArrowLeft } from "lucide-react";
-import { localePath, useTranslations } from "@/i18n/utils";
-import { getDictionary } from "@/i18n/get-dictionary";
+import { localePath } from "@/i18n/utils";
 
 interface Props {
   lang: typeof i18nConfig.locales[number];
@@ -19,8 +19,6 @@ interface Props {
 }
 
 const { lang, slug } = Astro.props;
-const dict = await getDictionary(lang as any);
-const t = useTranslations(dict);
 const post = await getBlogPostBySlug(slug as string, lang as string);
 
 if (!post || !post.entry) {
@@ -82,7 +80,7 @@ const jsonLd = {
           class="mb-12 inline-flex items-center gap-2 text-xs font-black tracking-widest text-blue-800 uppercase transition-transform hover:-translate-x-1"
         >
           <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-          {t('blog.post.backToArchive') || 'Back to Archive'}
+          {localize("Back to Archive")}
         </a>
 
         <div class="mb-8 flex items-center gap-3">
@@ -111,7 +109,7 @@ const jsonLd = {
               {post.author}
             </p>
             <p class="text-xs font-bold text-slate-500">
-              {t('blog.post.articleAuthor') || 'Article Author'}
+              {localize("Article Author")}
             </p>
           </div>
         </div>
@@ -135,30 +133,30 @@ const jsonLd = {
                 appName="Mindful Guard" 
                 lang={lang} 
                 labels={{
-                  learnMore: t('common.learnMore'),
-                  poweredByLogic: t('common.poweredByLogic'),
-                  sub: t('blog.appCallout.mindfulGuard.sub'),
-                  desc: t('blog.appCallout.mindfulGuard.desc')
+                  learnMore: localize("Learn More"),
+                  poweredByLogic: localize("Powered by Logic"),
+                  sub: localize("System-Level Focus for Android."),
+                  desc: localize("Block biological distractions at the source. Native performance, absolute privacy.")
                 }}
               />
               <AppCallout 
                 appName="FOMOgen" 
                 lang={lang} 
                 labels={{
-                  learnMore: t('common.learnMore'),
-                  poweredByLogic: t('common.poweredByLogic'),
-                  sub: t('blog.appCallout.fomogen.sub'),
-                  desc: t('blog.appCallout.fomogen.desc')
+                  learnMore: localize("Learn More"),
+                  poweredByLogic: localize("Powered by Logic"),
+                  sub: localize("The Elite Social Proof Engine."),
+                  desc: localize("Mathematical social proof for Shopify. Built for sub-100ms load times.")
                 }}
               />
               <ShareArticle 
                 title={post.title} 
                 slug={slug as string} 
                 labels={{
-                  shareArticle: t('blog.post.shareArticle'),
-                  shareOnTwitter: t('blog.post.shareOnTwitter'),
-                  shareOnLinkedIn: t('blog.post.shareOnLinkedIn'),
-                  copyLink: t('blog.post.copyLink')
+                  shareArticle: localize("Share Article"),
+                  shareOnTwitter: localize("Twitter / X"),
+                  shareOnLinkedIn: localize("LinkedIn"),
+                  copyLink: localize("Copy Link")
                 }}
                 client:idle 
               />
@@ -176,12 +174,12 @@ const jsonLd = {
         <div class="section-container">
           <div class="mb-24">
             <span class="mb-6 block font-mono text-[10px] font-bold tracking-[0.3em] text-blue-600 uppercase">
-              {t('blog.post.technicalClarifications') || 'Technical Clarifications'}
+              {localize("Technical Clarifications")}
             </span>
             <h2 class="text-5xl font-black tracking-tighter text-slate-950 md:text-6xl">
-              {t('blog.post.frequentlyAsked') || 'Frequently Asked'}
+              {localize("Frequently Asked")}
               <br />
-              <span class="text-slate-300">{t('blog.post.questions') || 'Questions'}</span>
+              <span class="text-slate-300">{localize("Questions")}</span>
             </h2>
           </div>
 

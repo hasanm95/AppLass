@@ -1,290 +1,403 @@
-export const FOMOGEN_DATA = {
+import { localize } from "@/i18n/localize";
+
+export const getFomoGenData = () => ({
   hero: {
-    tagline: "High-Performance Social Proof",
-    headline: "Stop Losing 98% of Your Traffic.",
-    headlineAccent: "Turn Browsers into Buyers Instantly.",
-    subheadline:
-      "The all-in-one conversion toolkit: Social Proof, Stock Scarcity, Sticky Cart, and Free Shipping Bars. Replace 5 slow apps with one lightweight solution.",
-    primaryCTA: "Install on Shopify — Free",
-    secondaryCTA: "Explore the Logic",
+    tagline: localize("High-Performance Social Proof"),
+    headline: localize("Stop Losing 98% of Your Traffic."),
+    headlineAccent: localize("Turn Browsers into Buyers Instantly."),
+    subheadline: localize(
+      "The all-in-one conversion toolkit: Social Proof, Stock Scarcity, Sticky Cart, and Free Shipping Bars. Replace 5 slow apps with one lightweight solution."
+    ),
+    primaryCTA: localize("Install on Shopify — Free"),
+    secondaryCTA: localize("Explore the Logic"),
     shopifyUrl: "https://apps.shopify.com/fomogen",
-    subtext: "Free plan available • No coding required • 5-Star Support",
+    subtext: localize("Free plan available • No coding required • 5-Star Support"),
     stats: [
-      { value: "<2.1KB", label: "Payload" },
-      { value: "0ms", label: "Main Thread" },
-      { value: "WCAG 2.1", label: "Compliant" },
-      { value: "Mobile", label: "Optimized" },
+      { value: "<2.1KB", label: localize("Payload") },
+      { value: "0ms", label: localize("Main Thread") },
+      { value: "WCAG 2.1", label: localize("Compliant") },
+      { value: "Mobile", label: localize("Optimized") },
     ],
   },
 
   speedBenefit: {
-    title: 'Is "App Bloat" Killing Your Store’s Speed?',
-    body: "You know you need social proof to sell. But installing one app for Sales Pops, another for Countdown Timers, and a third for Sticky Carts destroys your site speed.",
-    fact: "Fact: A 1-second delay in page load can drop conversions by up to 17%.",
-    struggle:
-      'Most "all-in-one" apps are expensive, complex, and slow down your theme.',
-    solution:
-      "FOMO Gen gives you the essential 5 conversion tools in a single, speed-optimized script.",
+    title: localize('Is "App Bloat" Killing Your Store’s Speed?'),
+    body: localize(
+      "You know you need social proof to sell. But installing one app for Sales Pops, another for Countdown Timers, and a third for Sticky Carts destroys your site speed."
+    ),
+    fact: localize("Fact: A 1-second delay in page load can drop conversions by up to 17%."),
+    struggle: localize(
+      'Most "all-in-one" apps are expensive, complex, and slow down your theme.'
+    ),
+    solution: localize(
+      "FOMO Gen gives you the essential 5 conversion tools in a single, speed-optimized script."
+    ),
   },
 
-  // 5 Core Pillars from new content strategy
   features: [
     {
       id: "social-proof-notifications",
-      title: "Social Proof Notifications",
-      subtitle: "Show Them You’re Busy.",
-      description:
-        "Display recent purchases to build instant trust. 92% of consumers hesitate to buy without social proof. Eliminate that doubt.",
+      title: localize("Social Proof Notifications"),
+      subtitle: localize("Show Them You’re Busy."),
+      description: localize(
+        "Display recent purchases to build instant trust. 92% of consumers hesitate to buy without social proof. Eliminate that doubt."
+      ),
       iconName: "ShoppingCart",
-      highlight: "Build Trust",
+      highlight: localize("Build Trust"),
       imageSrc: "social-proof-ui.png",
     },
     {
       id: "scarcity-urgency",
-      title: "Scarcity & Urgency",
-      subtitle: 'Trigger the "Fear of Missing Out."',
-      description:
-        'Use Low Stock Countdowns ("Only 2 left!") and Timer Bars to push customers from "browsing" to "buying" right now.',
+      title: localize("Scarcity & Urgency"),
+      subtitle: localize('Trigger the "Fear of Missing Out."'),
+      description: localize(
+        'Use Low Stock Countdowns ("Only 2 left!") and Timer Bars to push customers from "browsing" to "buying" right now.'
+      ),
       iconName: "Timer",
-      highlight: "Drive Urgency",
+      highlight: localize("Drive Urgency"),
       imageSrc: "scarcity-ui.png",
     },
     {
       id: "sticky-add-to-cart",
-      title: "Sticky Add-To-Cart",
-      subtitle: "Capture Mobile Sales.",
-      description:
-        "Keep your Buy Button visible on every scroll. Reduce friction and make checkout accessible from anywhere on the page.",
+      title: localize("Sticky Add-To-Cart"),
+      subtitle: localize("Capture Mobile Sales."),
+      description: localize(
+        "Keep your Buy Button visible on every scroll. Reduce friction and make checkout accessible from anywhere on the page."
+      ),
       iconName: "ShoppingBag",
-      highlight: "Reduce Friction",
+      highlight: localize("Reduce Friction"),
       imageSrc: "sticky-cart-ui.png",
     },
     {
       id: "free-shipping-bar",
-      title: "Progressive Free Shipping Bar",
-      subtitle: "Boost Average Order Value (AOV).",
-      description:
-        '"Spend $15 more for Free Shipping." Motivate customers to add more items to their cart with a dynamic progress bar.',
+      title: localize("Progressive Free Shipping Bar"),
+      subtitle: localize("Boost Average Order Value (AOV)."),
+      description: localize(
+        '"Spend $15 more for Free Shipping." Motivate customers to add more items to their cart with a dynamic progress bar.'
+      ),
       iconName: "TrendingUp",
-      highlight: "Increase AOV",
+      highlight: localize("Increase AOV"),
       imageSrc: "shipping-bar-ui.png",
     },
     {
       id: "trust-badges",
-      title: "Trust Badges",
-      subtitle: "Secure the Checkout.",
-      description:
-        "Display verified payment seals (Visa, PayPal, SSL) to reduce cart abandonment anxiety.",
+      title: localize("Trust Badges"),
+      subtitle: localize("Secure the Checkout."),
+      description: localize(
+        "Display verified payment seals (Visa, PayPal, SSL) to reduce cart abandonment anxiety."
+      ),
       iconName: "ShieldCheck",
-      highlight: "Build Confidence",
+      highlight: localize("Build Confidence"),
     },
   ],
 
   testimonials: [
     {
-      quote:
-        "I uninstalled Vitals and Nudgify. FOMO Gen does exactly what I need without the lag.",
-      author: "Beta Tester",
-      niche: "Fashion Niche",
+      quote: localize(
+        "I uninstalled Vitals and Nudgify. FOMO Gen does exactly what I need without the lag."
+      ),
+      author: localize("Beta Tester"),
+      niche: localize("Fashion Niche"),
     },
     {
-      quote:
-        "My add-to-cart rate jumped 15% just by turning on the Sticky Cart.",
-      author: "Beta Tester",
-      niche: "Dropshipping Store",
+      quote: localize(
+        "My add-to-cart rate jumped 15% just by turning on the Sticky Cart."
+      ),
+      author: localize("Beta Tester"),
+      niche: localize("Dropshipping Store"),
     },
   ],
 
   pricing: {
-    title: "Simple, Transparent Pricing",
-    subtitle: "Supercharge your store",
-    description: "From free to enterprise, we have a plan that grows with you. No hidden fees, no revenue sharing.",
+    title: localize("Simple, Transparent Pricing"),
+    subtitle: localize("Supercharge your store"),
+    description: localize(
+      "From free to enterprise, we have a plan that grows with you. No hidden fees, no revenue sharing."
+    ),
     tiers: [
       {
-        name: "Free Plan",
+        name: localize("Free Plan"),
         price: "$0",
-        period: "Forever",
-        description: "Test all features with basic limits.",
+        period: localize("Forever"),
+        description: localize("Test all features with basic limits."),
         features: [
-          "1 Active Campaign",
-          "100 Notifications/mo",
-          "50 Social Proof Badges/mo",
-          "1 Active Timer",
-          "1 Active Stock Alert",
-          "Basic Exit Intent",
-          "Basic Sticky Cart",
-          "3 Trust Badges",
+          localize("1 Active Campaign"),
+          localize("100 Notifications/mo"),
+          localize("50 Social Proof Badges/mo"),
+          localize("1 Active Timer"),
+          localize("1 Active Stock Alert"),
+          localize("Basic Exit Intent"),
+          localize("Basic Sticky Cart"),
+          localize("3 Trust Badges"),
         ],
         limitations: [
-          '"Powered by FOMO Gen" branding',
-          "Limited customization",
-          "Basic targeting only",
+          localize('"Powered by FOMO Gen" branding'),
+          localize("Limited customization"),
+          localize("Basic targeting only"),
         ],
-        cta: "Install for Free",
+        cta: localize("Install for Free"),
         highlighted: false,
       },
       {
-        name: "Starter Plan",
+        name: localize("Starter Plan"),
         price: "$9.99",
-        period: "per month",
-        description: "Best value for small to medium stores.",
+        period: localize("per month"),
+        description: localize("Best value for small to medium stores."),
         features: [
-          "Everything in Free, plus:",
-          "3 Active Campaigns",
-          "2,500 Notifications/mo",
-          "1,000 Social Proof Badges/mo",
-          "3 Active Timers & Stock Alerts",
-          "Full Customization",
-          "Remove Branding",
-          "Product/Collection Targeting",
-          "Priority Email Support",
+          localize("Everything in Free, plus:"),
+          localize("3 Active Campaigns"),
+          localize("2,500 Notifications/mo"),
+          localize("1,000 Social Proof Badges/mo"),
+          localize("3 Active Timers & Stock Alerts"),
+          localize("Full Customization"),
+          localize("Remove Branding"),
+          localize("Product/Collection Targeting"),
+          localize("Priority Email Support"),
         ],
         limitations: [],
-        cta: "Install to Start Trial",
+        cta: localize("Install to Start Trial"),
         highlighted: true,
-        subLabel: "Perfect for $5K - $50K/mo",
+        subLabel: localize("Perfect for $5K - $50K/mo"),
       },
       {
-        name: "Growth Plan",
+        name: localize("Growth Plan"),
         price: "$19.99",
-        period: "per month",
-        description: "For growing stores. Higher limits + advanced targeting.",
+        period: localize("per month"),
+        description: localize("For growing stores. Higher limits + advanced targeting."),
         features: [
-          "Everything in Starter, plus:",
-          "10 Active Campaigns",
-          "10,000 Notifications/mo",
-          "5,000 Social Proof Badges/mo",
-          "10 Active Timers & Stock Alerts",
-          "Advanced Geo-Targeting",
-          "Device Targeting",
-          "Customer Segmentation",
-          "<24h Priority Support",
+          localize("Everything in Starter, plus:"),
+          localize("10 Active Campaigns"),
+          localize("10,000 Notifications/mo"),
+          localize("5,000 Social Proof Badges/mo"),
+          localize("10 Active Timers & Stock Alerts"),
+          localize("Advanced Geo-Targeting"),
+          localize("Device Targeting"),
+          localize("Customer Segmentation"),
+          localize("<24h Priority Support"),
         ],
         limitations: [],
-        cta: "Install to Start Trial",
+        cta: localize("Install to Start Trial"),
         highlighted: false,
-        subLabel: "Perfect for $50K - $200K/mo",
+        subLabel: localize("Perfect for $50K - $200K/mo"),
       },
       {
-        name: "Professional Plan",
+        name: localize("Professional Plan"),
         price: "$39.99",
-        period: "per month",
-        description: "For high-volume stores. Unlimited everything.",
+        period: localize("per month"),
+        description: localize("For high-volume stores. Unlimited everything."),
         features: [
-          "Everything in Growth, plus:",
-          "Unlimited Everything",
-          "Custom CSS Overrides",
-          "Dedicated Support (<12h)",
-          "Migration Assistance",
-          "Early Access Features",
-          "Onboarding Call (Optional)",
+          localize("Everything in Growth, plus:"),
+          localize("Unlimited Everything"),
+          localize("Custom CSS Overrides"),
+          localize("Dedicated Support (<12h)"),
+          localize("Migration Assistance"),
+          localize("Early Access Features"),
+          localize("Onboarding Call (Optional)"),
         ],
         limitations: [],
-        cta: "Contact Sales",
+        cta: localize("Contact Sales"),
         highlighted: false,
-        subLabel: "Perfect for $200K+/mo",
+        subLabel: localize("Perfect for $200K+/mo"),
       },
     ],
     matrix: [
-      { feature: "Progress Indicators", free: "1", starter: "3", growth: "10", pro: "Unlimited" },
-      { feature: "Purchase Notifications", free: "100/mo", starter: "2,500/mo", growth: "10,000/mo", pro: "Unlimited" },
-      { feature: "Social Proof Badges", free: "50/mo", starter: "1,000/mo", growth: "5,000/mo", pro: "Unlimited" },
-      { feature: "Countdown Timers", free: "1", starter: "3", growth: "10", pro: "Unlimited" },
-      { feature: "Stock Alerts", free: "1", starter: "3", growth: "10", pro: "Unlimited" },
-      { feature: "Exit Intent", free: "1 config", starter: "Full Customization", growth: "Full Customization", pro: "Full Customization" },
-      { feature: "Sticky Add-to-Cart", free: "Basic", starter: "Full Customization", growth: "Full Customization", pro: "Full Customization" },
-      { feature: "Trust Badges", free: "3 badges", starter: "Unlimited + Custom", growth: "Unlimited + Custom", pro: "Unlimited + Custom" },
-      { feature: "Colors/Styling", free: "Limited", starter: "Full", growth: "Full", pro: "Full + CSS" },
-      { feature: "Targeting", free: "Basic", starter: "Product/Collection", growth: "Geo/Device/Segment", pro: "All + Custom" },
-      { feature: "Remove Branding", free: "❌", starter: "✅", growth: "✅", pro: "✅" },
-      { feature: "Support", free: "Email", starter: "Priority Email", growth: "Priority (<24h)", pro: "Dedicated (<12h)" },
+      {
+        feature: localize("Progress Indicators"),
+        free: "1",
+        starter: "3",
+        growth: "10",
+        pro: localize("Unlimited"),
+      },
+      {
+        feature: localize("Purchase Notifications"),
+        free: "100/mo",
+        starter: "2,500/mo",
+        growth: "10,000/mo",
+        pro: localize("Unlimited"),
+      },
+      {
+        feature: localize("Social Proof Badges"),
+        free: "50/mo",
+        starter: "1,000/mo",
+        growth: "5,000/mo",
+        pro: localize("Unlimited"),
+      },
+      {
+        feature: localize("Countdown Timers"),
+        free: "1",
+        starter: "3",
+        growth: "10",
+        pro: localize("Unlimited"),
+      },
+      {
+        feature: localize("Stock Alerts"),
+        free: "1",
+        starter: "3",
+        growth: "10",
+        pro: localize("Unlimited"),
+      },
+      {
+        feature: localize("Exit Intent"),
+        free: localize("1 config"),
+        starter: localize("Full Customization"),
+        growth: localize("Full Customization"),
+        pro: localize("Full Customization"),
+      },
+      {
+        feature: localize("Sticky Add-to-Cart"),
+        free: localize("Basic"),
+        starter: localize("Full Customization"),
+        growth: localize("Full Customization"),
+        pro: localize("Full Customization"),
+      },
+      {
+        feature: localize("Trust Badges"),
+        free: localize("3 badges"),
+        starter: localize("Unlimited + Custom"),
+        growth: localize("Unlimited + Custom"),
+        pro: localize("Unlimited + Custom"),
+      },
+      {
+        feature: localize("Colors/Styling"),
+        free: localize("Limited"),
+        starter: localize("Full"),
+        growth: localize("Full"),
+        pro: localize("Full + CSS"),
+      },
+      {
+        feature: localize("Targeting"),
+        free: localize("Basic"),
+        starter: localize("Product/Collection"),
+        growth: localize("Geo/Device/Segment"),
+        pro: localize("All + Custom"),
+      },
+      { feature: localize("Remove Branding"), free: "❌", starter: "✅", growth: "✅", pro: "✅" },
+      {
+        feature: localize("Support"),
+        free: localize("Email"),
+        starter: localize("Priority Email"),
+        growth: localize("Priority (<24h)"),
+        pro: localize("Dedicated (<12h)"),
+      },
     ],
     faqs: [
       {
-        q: "Do I need a credit card for the free trial?",
-        a: "No, you can start the 14-day free trial on any paid plan without a credit card. You'll only be charged if you choose to continue after the trial."
+        q: localize("Do I need a credit card for the free trial?"),
+        a: localize(
+          "No, you can start the 14-day free trial on any paid plan without a credit card. You'll only be charged if you choose to continue after the trial."
+        ),
       },
       {
-        q: "Can I change plans anytime?",
-        a: "Yes, you can upgrade, downgrade, or cancel your plan at any time. Changes take effect immediately."
+        q: localize("Can I change plans anytime?"),
+        a: localize(
+          "Yes, you can upgrade, downgrade, or cancel your plan at any time. Changes take effect immediately."
+        ),
       },
       {
-        q: "What happens if I exceed my display limits?",
-        a: "We'll notify you when you're close to your limit. Your campaigns will pause until the next billing cycle or until you upgrade to a higher plan."
-      }
+        q: localize("What happens if I exceed my display limits?"),
+        a: localize(
+          "We'll notify you when you're close to your limit. Your campaigns will pause until the next billing cycle or until you upgrade to a higher plan."
+        ),
+      },
     ],
     launchOffers: [
-      { highlight: "50% OFF", text: "first 3 months" },
-      { highlight: "Migration Offer:", text: "Free setup assistance" }
-    ]
+      { highlight: localize("50% OFF"), text: localize("first 3 months") },
+      { highlight: localize("Migration Offer:"), text: localize("Free setup assistance") },
+    ],
   },
 
   displayOptions: {
-    title: "Customization Architecture",
-    subtitle: "Make It Yours",
+    title: localize("Customization Architecture"),
+    subtitle: localize("Make It Yours"),
     categories: [
       {
-        title: "Display Modalities",
+        title: localize("Display Modalities"),
         items: [
-          "Dynamic Pop-ups",
-          "Sticky Banners",
-          "Announcement Bars",
-          "Inline Widgets",
-          "Cart Page Proof",
-          "Product Anchors",
+          localize("Dynamic Pop-ups"),
+          localize("Sticky Banners"),
+          localize("Announcement Bars"),
+          localize("Inline Widgets"),
+          localize("Cart Page Proof"),
+          localize("Product Anchors"),
         ],
       },
       {
-        title: "Timing Logic",
+        title: localize("Timing Logic"),
         items: [
-          "Fixed End Dates",
-          "Recurring Cycles",
-          "Per-Visit Resets",
-          "Fixed Minute Delays",
-          "One-Time Sessions",
-          "Shipping Thresholds",
+          localize("Fixed End Dates"),
+          localize("Recurring Cycles"),
+          localize("Per-Visit Resets"),
+          localize("Fixed Minute Delays"),
+          localize("One-Time Sessions"),
+          localize("Shipping Thresholds"),
         ],
       },
       {
-        title: "Styling Components",
+        title: localize("Styling Components"),
         items: [
-          "Proprietary CSS",
-          "Green-Teal Gradients",
-          "Tactile Typography",
-          "Custom Positions",
-          "Elite Animations",
-          "Mobile-First Rendering",
+          localize("Proprietary CSS"),
+          localize("Green-Teal Gradients"),
+          localize("Tactile Typography"),
+          localize("Custom Positions"),
+          localize("Elite Animations"),
+          localize("Mobile-First Rendering"),
         ],
       },
     ],
   },
 
   cta: {
-    title: "Ready to Scale Your Sales?",
-    subtitle: "Beta Launch",
-    description:
-      "Get the Professional Plan features for free while we are in Beta. One-click install from Shopify App Store. Works with any theme.",
+    title: localize("Ready to Scale Your Sales?"),
+    subtitle: localize("Beta Launch"),
+    description: localize(
+      "Get the Professional Plan features for free while we are in Beta. One-click install from Shopify App Store. Works with any theme."
+    ),
     highlights: [
-      "Beta Features Included",
-      "No Coding Required",
-      "One-Click Install",
-      "5-Star Support",
+      localize("Beta Features Included"),
+      localize("No Coding Required"),
+      localize("One-Click Install"),
+      localize("5-Star Support"),
     ],
-    primaryCTA: "Get FOMO Gen Now",
+    primaryCTA: localize("Get FOMO Gen Now"),
     shopifyUrl: "https://apps.shopify.com/fomogen",
+    noCreditCard: localize("No Credit Card Required • Beta Access"),
+  },
+
+  labels: {
+    platformPillars: localize("Platform Pillars"),
+    everythingYouNeed: localize("Everything You Need."),
+    nothingYouDont: localize("Nothing You Don't."),
+    efficiencyWarning: localize("Efficiency Warning"),
+    theStruggle: localize("The Struggle"),
+    theSolution: localize("The Solution"),
+    socialProof: localize("Social Proof"),
+    trustedBy: localize("Trusted by"),
+    smartMerchants: localize("Smart Merchants."),
+    joinBrands: localize("Join 5,000+ Shopify Brands using AppLass tools."),
+    recommended: localize("Recommended"),
+    featuresIncluded: localize("Features Included"),
+    compareFeatures: localize("Compare Features"),
+    feature: localize("Feature"),
+    freePlan: localize("Free Plan"),
+    starterPlan: localize("Starter Plan"),
+    growthPlan: localize("Growth Plan"),
+    professionalPlan: localize("Professional"),
+    launchOffers: localize("Launch Offers Available"),
   },
 
   livePreview: {
     notification: {
-      name: "Sarah from New York",
-      action: "just purchased",
-      product: "Premium Focus Gear",
-      time: "2 minutes ago",
+      name: localize("Sarah from New York"),
+      action: localize("just purchased"),
+      product: localize("Premium Focus Gear"),
+      time: localize("2 minutes ago"),
     },
     progress: {
       current: 85,
       target: 100,
-      message: "You're $15 away from FREE shipping!",
+      message: localize("You're {value} away from FREE shipping!"),
     },
   },
-};
+});
+
+export const FOMOGEN_DATA = getFomoGenData();

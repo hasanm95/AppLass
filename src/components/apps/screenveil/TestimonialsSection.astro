@@ -1,26 +1,21 @@
 ---
 import Section from "@/components/common/Section.astro";
-import { SCREENVEIL_DATA } from "@/constants/screenveil-data";
+import { getScreenveilData } from "@/constants/screenveil-data";
 import { Quote } from "lucide-react";
-import { getDictionary } from "@/i18n/get-dictionary";
-import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
-const lang = getLangFromUrl(Astro.url);
-const dict = await getDictionary(lang as any);
-const t = useTranslations(dict);
-
-const translations = t('screenveil.testimonials');
-const testimonials = translations && translations.length > 0 ? translations : SCREENVEIL_DATA.testimonials;
+const screenveilData = getScreenveilData();
+const testimonials = screenveilData.testimonials;
+const labels = screenveilData.labels;
 ---
 
 <Section className="relative bg-linear-to-b from-black to-slate-950 py-24 md:py-32">
   <div class="section-container relative z-10">
     <div class="mb-16 text-center">
       <span class="mb-6 block text-[10px] font-black tracking-[0.2em] text-green-500 uppercase">
-        User Love
+        {labels.userLoveTag}
       </span>
       <h2 class="text-3xl leading-tight font-bold tracking-tight text-white md:text-5xl">
-        What Users Are Saying
+        {labels.whatUsersAreSaying}
       </h2>
     </div>
 

@@ -10,19 +10,22 @@ import PrivacySection from "@/components/apps/screenveil/PrivacySection.astro";
 import TestimonialsSection from "@/components/apps/screenveil/TestimonialsSection.astro";
 import { FAQSection } from "@/components/apps/screenveil/FAQSection";
 import { StickyDownloadBar } from "@/components/apps/screenveil/StickyDownloadBar";
-import { SCREENVEIL_DATA } from "@/constants/screenveil-data";
-import { getDictionary } from "@/i18n/get-dictionary";
+import { getScreenveilData, getScreenveilSchema } from "@/constants/screenveil-data";
 import { i18nConfig } from "@/i18n/config";
-import { getImage } from "astro:assets";
+import { localize } from "@/i18n/localize";
 
 interface Props {
   lang: typeof i18nConfig.locales[number];
 }
 
 const { lang } = Astro.props;
-const dict = await getDictionary(lang as any);
+const screenveilData = getScreenveilData();
+const screenveilSchema = getScreenveilSchema();
 
-const meta = dict.metadata?.screenveil || {};
+const meta = {
+  title: localize("ScreenVeil: The Safest Screen Filter for Total Digital Privacy"),
+  description: localize("Protect your data from prying eyes with ScreenVeil. A lightweight, secure screen overlay for Android. No data collection, 100% offline.")
+};
 
 ---
 
@@ -44,7 +47,7 @@ const meta = dict.metadata?.screenveil || {};
       <script
         type="application/ld+json"
         is:inline
-        set:html={JSON.stringify(SCREENVEIL_DATA.schema.softwareApplication)}
+        set:html={JSON.stringify(screenveilSchema)}
       />
       <ScreenVeilHero />
       <PainPointsSection />
@@ -56,6 +59,6 @@ const meta = dict.metadata?.screenveil || {};
     </div>
 
     <Footer variant="dark" />
-    <StickyDownloadBar client:idle translations={dict.screenveil?.hero} />
+    <StickyDownloadBar client:idle translations={screenveilData.hero} />
   </div>
 </Layout>

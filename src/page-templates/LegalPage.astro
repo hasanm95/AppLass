@@ -4,6 +4,7 @@ import Footer from "@/components/common/Footer.astro";
 import Navbar from "@/components/common/Navbar.astro";
 import Section from "@/components/common/Section.astro";
 import { i18nConfig } from "@/i18n/config";
+import { localize } from "@/i18n/localize";
 
 interface Props {
   lang: typeof i18nConfig.locales[number];
@@ -13,7 +14,7 @@ interface Props {
 }
 
 const { lang, title, description, appName } = Astro.props;
-const lastUpdated = "February 20, 2026";
+const lastUpdated = localize("February 20, 2026");
 
 ---
 
@@ -35,13 +36,13 @@ const lastUpdated = "February 20, 2026";
           <div class="mx-auto max-w-4xl">
             <header class="mb-20">
               <span class="mb-4 block text-[10px] font-black uppercase tracking-[0.3em] text-blue-600">
-                Legal Documentation
+                {localize("Legal Documentation")}
               </span>
               <h1 class="text-display mb-6 text-slate-900">
                 {title}<span class="text-slate-300">.</span>
               </h1>
               <p class="text-lg font-bold text-slate-400">
-                Last updated: {lastUpdated}
+                {localize("Last updated")}: {lastUpdated}
               </p>
             </header>
 

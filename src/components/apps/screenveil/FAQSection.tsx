@@ -4,11 +4,13 @@ import { useState } from "react";
 import { Section } from "@/components/common/Section";
 import { FAQSchema } from "@/components/common/FAQSchema";
 import { getFaqRegistry } from "@/constants/faq-registry";
+import { getScreenveilData } from "@/constants/screenveil-data";
 import { ChevronDown } from "lucide-react";
 
 export function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const items = getFaqRegistry().SCREENVEIL;
+  const labels = getScreenveilData().labels;
 
   return (
     <Section className="relative bg-slate-950 py-24 md:py-32">
@@ -17,10 +19,10 @@ export function FAQSection() {
         <div className="mx-auto max-w-3xl">
           <div className="mb-16 text-center">
             <span className="mb-6 block text-[10px] font-black tracking-[0.2em] text-green-500 uppercase">
-              FAQ
+              {labels.faqTag}
             </span>
             <h2 className="text-3xl leading-tight font-bold tracking-tight text-white md:text-5xl">
-              Frequently Asked Questions
+              {labels.faqTitle}
             </h2>
           </div>
 

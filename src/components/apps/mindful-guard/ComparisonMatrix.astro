@@ -1,17 +1,12 @@
 ---
 import Section from "@/components/common/Section.astro";
-import { MINDFUL_GUARD_DATA } from "@/constants/mindful-guard-data";
+import { getMindfulGuardData } from "@/constants/mindful-guard-data";
 import { Check, X, Minus } from "lucide-react";
-import { getDictionary } from "@/i18n/get-dictionary";
-import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
-const lang = getLangFromUrl(Astro.url);
-const dictMap = await getDictionary(lang as any);
-const t = useTranslations(dictMap);
-
-const translations = t('mindfulGuard.comparison');
-const comparison = translations || MINDFUL_GUARD_DATA.comparison;
-const competitors = comparison.columns?.competitors || { opal: "Opal", freedom: "Freedom" };
+const mindfulData = getMindfulGuardData();
+const comparison = mindfulData.comparison;
+const competitors = comparison.competitors;
+const labels = mindfulData.labels;
 
 ---
 
@@ -19,7 +14,7 @@ const competitors = comparison.columns?.competitors || { opal: "Opal", freedom: 
   <div class="section-container">
     <div class="mb-20">
       <span class="mb-6 block font-mono text-[10px] font-bold tracking-[0.3em] text-[#064E3B] uppercase">
-        Technical Validation Matrix
+        {labels.technicalValidationMatrix}
       </span>
       <h2 class="text-4xl font-black tracking-tighter text-slate-950 md:text-5xl lg:text-6xl">
         {comparison.title}
@@ -32,10 +27,10 @@ const competitors = comparison.columns?.competitors || { opal: "Opal", freedom: 
         <thead>
           <tr class="bg-slate-950">
             <th class="p-8 text-left font-mono text-[10px] font-bold tracking-[0.2em] text-slate-400 uppercase">
-              Technical Spec
+              {labels.technicalSpec}
             </th>
             <th class="bg-[#064E3B] p-8 text-left font-mono text-[10px] font-bold tracking-[0.2em] text-white uppercase">
-              MindfulGuard (v2.6)
+              {labels.mindfulGuardVersion}
             </th>
             <th class="p-8 text-left font-mono text-[10px] font-bold tracking-[0.2em] text-slate-400 uppercase">
               {competitors.opal}
@@ -90,7 +85,7 @@ const competitors = comparison.columns?.competitors || { opal: "Opal", freedom: 
         </tbody>
       </table>
       <div class="bg-slate-950 p-4 text-center font-mono text-[8px] tracking-[0.5em] text-slate-600 uppercase">
-        [ End of Specification Report - Protocol 88-Alpha ]
+        {labels.endOfSpecificationReport}
       </div>
     </div>
 

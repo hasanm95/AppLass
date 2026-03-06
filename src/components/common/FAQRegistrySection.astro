@@ -1,13 +1,12 @@
 ---
 import Section from "@/components/common/Section.astro";
-import type { Dictionary } from "@/i18n/get-dictionary";
-import { getLangFromUrl, useTranslations } from "@/i18n/utils";
-import { getDictionary } from "@/i18n/get-dictionary";
+import { getFaqRegistry, type FAQRegistryKey } from "@/constants/faq-registry";
 import { FAQSchema } from "@/components/common/FAQSchema";
+import { localize } from "@/i18n/localize";
 import clsx from "clsx";
 
 interface Props {
-  registryKey?: keyof Dictionary["faqRegistry"];
+  registryKey?: FAQRegistryKey;
   items?: { question: string; answer: string }[];
   className?: string;
   title?: string;
@@ -19,22 +18,17 @@ const {
   registryKey,
   items: propItems,
   className,
-  title = "Frequently Asked Questions",
-  subtitle = "Technical Clarifications",
+  title,
+  subtitle,
   variant = "grid",
 } = Astro.props;
 
-const currentLang = getLangFromUrl(Astro.url);
-const dict = await getDictionary(currentLang as any);
-const t = useTranslations(dict);
-
 // For backwards compatibility with pages that still supply props, propItems wins,
 // otherwise get from dictionary via provided global registry key
-const items = propItems || (registryKey ? dict.faqRegistry[registryKey] : []);
+const items = propItems || (registryKey ? getFaqRegistry()[registryKey] : []);
 
-// Fallback label fetch logic (if not explicitly overridden by props)
-const tTitle = title === "Frequently Asked Questions" ? (t('fomogen.faq.headline') || "Frequently Asked Questions") : title;
-const tSubtitle = subtitle === "Technical Clarifications" ? (t('fomogen.faq.sectionLabel') || "Technical Clarifications") : subtitle;
+const tTitle = title || localize("Frequently Asked Questions");
+const tSubtitle = subtitle || localize("Technical Clarifications");
 
 ---
 

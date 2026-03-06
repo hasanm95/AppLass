@@ -1,16 +1,10 @@
 ---
 import Section from "@/components/common/Section.astro";
 import { Button } from "@/components/ui/button";
-import { FOMOGEN_DATA } from "@/constants/fomogen-data";
+import { getFomoGenData } from "@/constants/fomogen-data";
 import { Check } from "lucide-react";
 
-import { getLangFromUrl, useTranslations } from "@/i18n/utils";
-import { getDictionary } from "@/i18n/get-dictionary";
-
-const lang = getLangFromUrl(Astro.url);
-const dict = await getDictionary(lang as any);
-const t = useTranslations(dict);
-const translations = (t('fomogen.cta') || FOMOGEN_DATA.cta) as typeof FOMOGEN_DATA.cta & { noCreditCard?: string };
+const translations = getFomoGenData().cta;
 ---
 
 <Section className="relative overflow-hidden bg-white py-24 md:py-32">
@@ -55,7 +49,7 @@ const translations = (t('fomogen.cta') || FOMOGEN_DATA.cta) as typeof FOMOGEN_DA
         className="h-16 rounded-2xl bg-[#131111] px-12 text-lg font-bold text-white shadow-2xl shadow-slate-200 transition-all duration-500 hover:scale-110 hover:bg-black active:scale-95 md:h-20 md:rounded-4xl md:px-16 md:text-xl"
         asChild
       >
-        <a href={FOMOGEN_DATA.cta.shopifyUrl}>
+        <a href={translations.shopifyUrl}>
           {translations.primaryCTA}
         </a>
       </Button>

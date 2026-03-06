@@ -1,16 +1,11 @@
 ---
 import { Button } from "@/components/ui/button";
-import { FOMOGEN_DATA } from "@/constants/fomogen-data";
-import { getDictionary } from "@/i18n/get-dictionary";
-import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { getFomoGenData } from "@/constants/fomogen-data";
 import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
 import fomogenHeroImg from "@/assets/apps/fomogen/comparison-hero.png";
 
-const lang = getLangFromUrl(Astro.url);
-const dict = await getDictionary(lang as any);
-const t = useTranslations(dict);
-const translations = t('fomogen.hero') || FOMOGEN_DATA.hero;
+const translations = getFomoGenData().hero;
 const heroImageSrc: ImageMetadata = fomogenHeroImg;
 ---
 
@@ -52,7 +47,7 @@ const heroImageSrc: ImageMetadata = fomogenHeroImg;
           className="h-14 w-full rounded-xl bg-[#131111] px-10 text-base font-bold text-white shadow-2xl shadow-slate-200 transition-all duration-500 hover:scale-105 hover:bg-black active:scale-95 sm:w-auto md:h-16 md:rounded-2xl md:px-12 md:text-lg"
           asChild
         >
-          <a href={FOMOGEN_DATA.hero.shopifyUrl}>
+        <a href={translations.shopifyUrl}>
             {translations.primaryCTA}
           </a>
         </Button>

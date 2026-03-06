@@ -12,19 +12,20 @@ import {
   Shield,
   Search,
 } from "lucide-react";
-import { getDictionary } from "@/i18n/get-dictionary";
+import { localize } from "@/i18n/localize";
 import { i18nConfig } from "@/i18n/config";
-import { localePath, useTranslations } from "@/i18n/utils";
+import { localePath } from "@/i18n/utils";
 
 interface Props {
   lang: typeof i18nConfig.locales[number];
 }
 
 const { lang } = Astro.props;
-const dict = await getDictionary(lang as any);
-const t = useTranslations(dict);
 
-const meta = dict.metadata?.about || {};
+const meta = {
+  title: localize("About | The AppLass Methodology"),
+  description: localize("Founder-led development derived from first principles. Mathematical integrity meets high-end digital craft. Meet the engineer behind the logic.")
+};
 
 const iconMap = {
   Zap: Zap,
@@ -49,10 +50,10 @@ const iconMap = {
     <div class="pt-20 lg:pt-32">
       {/* Hero Methodology Section */}
       <SubpageHero
-        eyebrow={t('about.hero.eyebrow') || "The AppLass Methodology"}
-        headline={t('about.hero.headline') || "The"}
-        headlineAccent={t('about.hero.headlineAccent') || "Methodology."}
-        description={t('about.hero.description') || "At AppLass, we bridge the gap between complex mathematics and human-centric software. From high-conversion Shopify tools to mindful mobile utilities, we build the 'Next Wave' of digital performance—zero bloat, maximum impact."}
+        eyebrow={localize("The AppLass Methodology")}
+        headline={localize("The")}
+        headlineAccent={localize("Methodology.")}
+        description={localize("At AppLass, we bridge the gap between complex mathematics and human-centric software. From high-conversion Shopify tools to mindful mobile utilities, we build the 'Next Wave' of digital performance—zero bloat, maximum impact.")}
       />
 
       {/* Founder Bio - E-E-A-T Signal */}
@@ -64,33 +65,33 @@ const iconMap = {
               <div class="relative aspect-4/5 overflow-hidden rounded-[3rem] bg-slate-100">
                 {/* Placeholder for real image in next iteration if needed */}
                 <div class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-900 text-[8rem] sm:text-[10rem] font-black text-white/10 italic select-none">
-                  {t('about.bio.imageText') || "LOGIC"}
+                  {localize("LOGIC")}
                 </div>
               </div>
               {/* Float Badge */}
               <div class="absolute -right-6 -bottom-6 rounded-3xl bg-blue-600 p-8 text-white shadow-2xl lg:-right-10">
-                <span class="block text-3xl font-black">{t('about.bio.yearsExperience') || "7+"}</span>
+                <span class="block text-3xl font-black">{localize("7+")}</span>
                 <span class="text-xs font-bold tracking-widest text-blue-100 uppercase">
-                  {t('about.bio.experienceLabel') || "Years Experience"}
+                  {localize("Years Experience")}
                 </span>
               </div>
             </div>
 
             <div class="flex-1 space-y-10">
               <span class="block text-[10px] font-black tracking-widest text-slate-400 uppercase">
-                {t('about.bio.eyebrow') || "The Founder's Logic"}
+                {localize("The Founder's Logic")}
               </span>
               <h2 class="text-3xl lg:text-5xl leading-[1.1] font-black text-slate-900">
-                {t('about.bio.headline') || "Systemic Integrity"} <br />
-                <span class="text-slate-300">{t('about.bio.headlineAccent') || "by Design."}</span>
+                {localize("Systemic Integrity")} <br />
+                <span class="text-slate-300">{localize("by Design.")}</span>
               </h2>
               <div class="max-w-2xl space-y-6 text-lg lg:text-xl leading-relaxed font-medium text-slate-600">
                 <p>
-                  {t('about.bio.paragraph1') || "Software should be a derivation of logical truth. Founded by an engineer obsessed with performance optimization and accessibility, AppLass was born from a simple realization: the modern web is failing under the weight of its own bloat."}
+                  {localize("Software should be a derivation of logical truth. Founded by an engineer obsessed with performance optimization and accessibility, AppLass was born from a simple realization: the modern web is failing under the weight of its own bloat.")}
                 </p>
                 <p>
-                  {t('about.bio.paragraph2') || "With 7+ years of experience building mission-critical e-commerce infrastructure and high-productivity mobile environments, I deploy tools that solve for one variable:"}
-                  <strong>{t('about.bio.paragraph2Highlight') || "Impact."}</strong>
+                  {localize("With 7+ years of experience building mission-critical e-commerce infrastructure and high-productivity mobile environments, I deploy tools that solve for one variable:")}
+                  <strong>{localize("Impact.")}</strong>
                 </p>
               </div>
               <div class="flex gap-6">
@@ -122,18 +123,18 @@ const iconMap = {
           <div class="mb-12 lg:mb-24 flex flex-col items-start gap-8 lg:gap-16 lg:flex-row">
             <div class="flex-1">
               <h2 class="text-4xl lg:text-5xl font-black text-slate-900">
-                {t('about.philosophy.headline') || "Built Different by Logic."}
+                {localize("Built Different by Logic.")}
               </h2>
             </div>
             <div class="flex-1">
               <p class="text-lg lg:text-xl leading-relaxed font-medium text-slate-600">
-                {t('about.philosophy.description') || 'We avoid the "feature-first" trap and focus on systemic integrity. Every line of code is measured against Core Web Vitals and human psychological constraints.'}
+                {localize('We avoid the "feature-first" trap and focus on systemic integrity. Every line of code is measured against Core Web Vitals and human psychological constraints.')}
               </p>
             </div>
           </div>
 
           <div class="grid grid-cols-1 gap-12 lg:grid-cols-3">
-            {getHomePillars(t).map((pillar) => {
+            {getHomePillars().map((pillar) => {
               const Icon = iconMap[pillar.iconName as keyof typeof iconMap];
               
               return (
@@ -163,24 +164,24 @@ const iconMap = {
           <div class="relative flex flex-col items-center gap-12 lg:gap-16 overflow-hidden rounded-3xl lg:rounded-[3rem] bg-blue-600 p-8 lg:p-24 text-white lg:flex-row">
             <div class="z-10 flex-1">
               <h2 class="mb-8 text-3xl lg:text-5xl leading-tight font-black">
-                {t('about.authority.headline') || "Trusted by 20,000+"} <br />
-                {t('about.authority.headlineAccent') || "Digital Minimalists."}
+                {localize("Trusted by 20,000+")} <br />
+                {localize("Digital Minimalists.")}
               </h2>
               <div class="mb-12 grid grid-cols-2 gap-8">
                 <div>
                   <span class="mb-2 block text-4xl font-black tracking-tighter">
-                    {t('about.authority.stats.downloads.value') || "10K+"}
+                    {localize("10K+")}
                   </span>
                   <span class="text-xs font-bold tracking-widest text-blue-200 uppercase">
-                    {t('about.authority.stats.downloads.label') || "ScreenVeil Android"}
+                    {localize("ScreenVeil Android")}
                   </span>
                 </div>
                 <div>
                   <span class="mb-2 block text-4xl font-black tracking-tighter">
-                    {t('about.authority.stats.rating.value') || "4.4★"}
+                    {localize("4.4★")}
                   </span>
                   <span class="text-xs font-bold tracking-widest text-blue-200 uppercase">
-                    {t('about.authority.stats.rating.label') || "Global Rating"}
+                    {localize("Global Rating")}
                   </span>
                 </div>
               </div>
@@ -198,13 +199,13 @@ const iconMap = {
             </div>
             <div class="z-10 lg:w-1/3">
               <p class="mb-10 text-lg lg:text-xl leading-relaxed font-medium text-blue-100">
-                {t('about.authority.description') || "AppLass software is regularly cited in productivity guides and tech audits for its zero-bloat approach and strict privacy protocols."}
+                {localize("AppLass software is regularly cited in productivity guides and tech audits for its zero-bloat approach and strict privacy protocols.")}
               </p>
               <a
                 href={localePath(lang, "/docs")}
                 class="inline-flex h-14 items-center rounded-full bg-white px-10 font-black text-blue-600 shadow-xl transition-all hover:bg-slate-50"
               >
-                {t('about.authority.cta') || "Read the Docs"}
+                {localize("Read the Docs")}
               </a>
             </div>
             {/* Abs Decorative Circle */}

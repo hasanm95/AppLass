@@ -1,6 +1,6 @@
 ---
 import Section from "@/components/common/Section.astro";
-import { SCREENVEIL_DATA } from "@/constants/screenveil-data";
+import { getScreenveilData } from "@/constants/screenveil-data";
 import {
   WifiOff,
   ShieldCheck,
@@ -8,8 +8,6 @@ import {
   HelpCircle,
   type LucideIcon,
 } from "lucide-react";
-import { getDictionary } from "@/i18n/get-dictionary";
-import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
 const ICON_MAP: Record<string, LucideIcon> = {
   WifiOff,
@@ -17,19 +15,16 @@ const ICON_MAP: Record<string, LucideIcon> = {
   Layers,
 };
 
-const lang = getLangFromUrl(Astro.url);
-const dictMap = await getDictionary(lang as any);
-const t = useTranslations(dictMap);
-
-const translations = t('screenveil.privacy');
-const dict = translations || SCREENVEIL_DATA.privacy;
+const screenveilData = getScreenveilData();
+const dict = screenveilData.privacy;
+const labels = screenveilData.labels;
 ---
 
 <Section className="relative bg-black py-24 md:py-32">
   <div class="section-container relative z-10">
     <div class="mx-auto max-w-4xl text-center">
       <span class="mb-6 block text-[10px] font-black tracking-[0.2em] text-green-500 uppercase">
-        Privacy First
+        {labels.privacyFirstTag}
       </span>
 
       <h2 class="mb-8 text-4xl leading-tight font-bold tracking-tight text-white md:text-5xl lg:text-6xl">
@@ -42,8 +37,7 @@ const dict = translations || SCREENVEIL_DATA.privacy;
 
       <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
         {dict.features?.map((feature: any, idx: number) => {
-          const originalFeature = SCREENVEIL_DATA.privacy.features[idx] || {};
-          const Icon = ICON_MAP[originalFeature.iconName || ""] || HelpCircle;
+          const Icon = ICON_MAP[feature.iconName || ""] || HelpCircle;
 
           return (
             <div class="group flex flex-col items-center rounded-2xl border border-green-500/10 bg-slate-900/50 p-8 transition-all duration-300 hover:border-green-500/30">
@@ -62,7 +56,7 @@ const dict = translations || SCREENVEIL_DATA.privacy;
       <div class="mt-12 inline-flex items-center gap-3 rounded-full border border-green-500/20 bg-green-500/5 px-6 py-3">
         <ShieldCheck className="h-5 w-5 text-green-500" />
         <span class="text-sm font-bold text-green-400">
-          Your data stays on your device — where it belongs.
+          {labels.dataBelongsToYou}
         </span>
       </div>
     </div>

@@ -1,7 +1,6 @@
 ---
 import { Button } from "@/components/ui/button";
-import { getDictionary } from "@/i18n/get-dictionary";
-import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { getScreenveilData } from "@/constants/screenveil-data";
 import { Image } from "astro:assets";
 import screenveilHeroImg from "@/assets/apps/screenveil/hero-mockup.png";
 import { LinkButton } from "@/components/ui/link-button";
@@ -9,20 +8,7 @@ import { LinkButton } from "@/components/ui/link-button";
 
 const { heroImageSrc } = Astro.props;
 
-const lang = getLangFromUrl(Astro.url);
-const dictMap = await getDictionary(lang as any);
-const t = useTranslations(dictMap);
-
-const dict = t('screenveil.hero') || {
-  tagline: "",
-  headline: "",
-  headlineAccent: "",
-  subheadline: "",
-  primaryCTA: "",
-  secondaryCTA: "",
-  playStoreUrl: "",
-  subtext: ""
-};
+const dict = getScreenveilData().hero;
 ---
 
 <section

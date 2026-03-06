@@ -1,13 +1,10 @@
 ---
 import Section from "@/components/common/Section.astro";
-import { getDictionary } from "@/i18n/get-dictionary";
-import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { getMindfulGuardData } from "@/constants/mindful-guard-data";
 
-const lang = getLangFromUrl(Astro.url);
-const dictMap = await getDictionary(lang as any);
-const t = useTranslations(dictMap);
-
-const dict = t('mindfulGuard.logic') || { title: "", description: "" };
+const mindfulData = getMindfulGuardData();
+const dict = mindfulData.logic;
+const labels = mindfulData.labels;
 ---
 
 <Section id="logic" className="border-y border-slate-200 bg-[#FBFBFA]">
@@ -15,7 +12,7 @@ const dict = t('mindfulGuard.logic') || { title: "", description: "" };
     <div class="flex flex-col gap-24 lg:flex-row lg:items-center">
       <div class="flex-1 lg:max-w-xl">
         <span class="mb-6 block font-mono text-[10px] font-bold tracking-[0.3em] text-[#064E3B] uppercase">
-          Technical Logic
+          {labels.technicalLogic}
         </span>
         <h2 class="mb-8 text-5xl leading-tight font-black tracking-tighter text-slate-950 md:text-6xl">
           {dict.title}
@@ -27,18 +24,18 @@ const dict = t('mindfulGuard.logic') || { title: "", description: "" };
         <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
           <div class="border-l-2 border-[#064E3B] bg-emerald-50/30 p-6">
             <p class="mb-2 font-mono text-[10px] font-bold tracking-widest text-[#064E3B] uppercase">
-              [ System Level ]
+              {labels.systemLevel}
             </p>
             <p class="leading-tight font-bold text-slate-900">
-              Intercepts Distractions via Protocol Level
+              {labels.interceptsDistractions}
             </p>
           </div>
           <div class="border-l-2 border-slate-900 bg-slate-50 p-6">
             <p class="mb-2 font-mono text-[10px] font-bold tracking-widest text-slate-900 uppercase">
-              [ Cognitive Load ]
+              {labels.cognitiveLoad}
             </p>
             <p class="leading-tight font-bold text-slate-900">
-              Zero Willpower Depletion Architecture
+              {labels.zeroWillpowerArchitecture}
             </p>
           </div>
         </div>
@@ -65,13 +62,13 @@ const dict = t('mindfulGuard.logic') || { title: "", description: "" };
               {/* Nodes */}
               <div class="relative z-10 flex h-full w-full items-center justify-around">
                 <div class="flex h-16 w-16 items-center justify-center border-2 border-slate-950 bg-white font-mono text-xs font-bold">
-                  INPUT
+                  {labels.input}
                 </div>
-                <div class="flex h-24 w-24 items-center justify-center border-2 border-[#064E3B] bg-[#064E3B] font-mono text-xs font-bold text-white shadow-[6px_6px_0px_0px_rgba(6,78,59,0.2)]">
-                  FILTER
+                <div class="flex h-24 w-24 items-center justify-center border-2 border-[#064E3B] bg-[#064E3B] font-mono text-xs font-bold text-white shadow-[6px_6px_0_0_rgba(6,78,59,0.2)]">
+                  {labels.filter}
                 </div>
                 <div class="flex h-16 w-16 items-center justify-center border-2 border-slate-950 bg-white font-mono text-xs font-bold">
-                  FOCUS
+                  {labels.focus}
                 </div>
               </div>
 
@@ -81,7 +78,7 @@ const dict = t('mindfulGuard.logic') || { title: "", description: "" };
             </div>
 
             <div class="mt-8 font-mono text-[9px] font-bold tracking-[0.4em] text-slate-400 uppercase">
-              Logical Flow: Interception Pipeline v2.6
+              {labels.logicalFlow}
             </div>
           </div>
         </div>

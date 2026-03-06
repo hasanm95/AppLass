@@ -1,6 +1,6 @@
 ---
 import Section from "@/components/common/Section.astro";
-import { FOMOGEN_DATA } from "@/constants/fomogen-data";
+import { getFomoGenData } from "@/constants/fomogen-data";
 import {
   ShoppingCart,
   Timer,
@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { Image } from "astro:assets";
+import { localize } from "@/i18n/localize";
 
 const ICON_MAP: Record<string, LucideIcon> = {
   ShoppingCart,
@@ -20,20 +21,16 @@ const ICON_MAP: Record<string, LucideIcon> = {
   ShieldCheck,
 };
 
-import { getLangFromUrl, useTranslations } from "@/i18n/utils";
-import { getDictionary } from "@/i18n/get-dictionary";
 import socialProofUiImg from "@/assets/apps/fomogen/social-proof-ui.png";
 import scarcityUiImg from "@/assets/apps/fomogen/scarcity-ui.png";
 import stickyCartUiImg from "@/assets/apps/fomogen/sticky-cart-ui.png";
 import shippingBarUiImg from "@/assets/apps/fomogen/shipping-bar-ui.png";
 
-const lang = getLangFromUrl(Astro.url);
-const dict = await getDictionary(lang as any);
-const t = useTranslations(dict);
-const labels = t('fomogen.labels');
+const fomoData = getFomoGenData();
+const labels = fomoData.labels;
 
 const imageMap = [socialProofUiImg, scarcityUiImg, stickyCartUiImg, shippingBarUiImg];
-const translations = (t('fomogen.features') || []).map((feature: any, idx: number) => ({
+const features = fomoData.features.map((feature, idx) => ({
   ...feature,
   imageSrc: imageMap[idx] || undefined
 }));
@@ -53,12 +50,11 @@ const translations = (t('fomogen.features') || []).map((feature: any, idx: numbe
     </div>
 
     <div class="grid grid-cols-1 gap-12 lg:gap-24">
-      {FOMOGEN_DATA.features.map((baseFeature, idx) => {
-        const feature = translations?.[idx] || baseFeature;
-        const Icon = ICON_MAP[baseFeature.iconName] || HelpCircle;
+      {features.map((feature, idx) => {
+        const Icon = ICON_MAP[feature.iconName] || HelpCircle;
         const isEven = idx % 2 === 0;
 
-        const finalImageSrc = (feature as any).imageSrc || (feature as any).image || (baseFeature as any).imageSrc;
+        const finalImageSrc = feature.imageSrc;
 
         return (
           <div

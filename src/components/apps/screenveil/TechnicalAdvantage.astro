@@ -1,15 +1,10 @@
 ---
 import Section from "@/components/common/Section.astro";
-import { SCREENVEIL_DATA } from "@/constants/screenveil-data";
-import { getDictionary } from "@/i18n/get-dictionary";
-import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { getScreenveilData } from "@/constants/screenveil-data";
 
-const lang = getLangFromUrl(Astro.url);
-const dictMap = await getDictionary(lang as any);
-const t = useTranslations(dictMap);
-
-const translations = t('screenveil.technical');
-const dict = translations || SCREENVEIL_DATA.technical;
+const screenveilData = getScreenveilData();
+const dict = screenveilData.technical;
+const labels = screenveilData.labels;
 ---
 
 <Section className="relative overflow-hidden bg-linear-to-b from-black via-slate-950 to-black py-24 md:py-32">
@@ -21,7 +16,7 @@ const dict = translations || SCREENVEIL_DATA.technical;
       {/* Content */}
       <div class="text-center lg:text-left">
         <span class="mb-6 block text-[10px] font-black tracking-[0.2em] text-green-500 uppercase">
-          The Science
+          {labels.technicalScienceTag}
         </span>
 
         <h2 class="mb-8 text-3xl leading-tight font-bold tracking-tight text-white md:text-5xl lg:text-6xl">
@@ -60,12 +55,12 @@ const dict = translations || SCREENVEIL_DATA.technical;
                 LCD
               </span>
               <span class="text-center text-xs font-medium text-slate-500">
-                Backlight always on
+                {labels.backlightAlwaysOn}
               </span>
               <div class="mt-4 flex items-center gap-2">
                 <div class="h-2 w-2 rounded-full bg-red-500" />
                 <span class="text-xs font-bold text-red-400">
-                  High Power
+                  {labels.highPower}
                 </span>
               </div>
             </div>
@@ -82,12 +77,12 @@ const dict = translations || SCREENVEIL_DATA.technical;
                 AMOLED
               </span>
               <span class="text-center text-xs font-medium text-slate-500">
-                Pixels turn off
+                {labels.pixelsTurnOff}
               </span>
               <div class="mt-4 flex items-center gap-2">
                 <div class="h-2 w-2 rounded-full bg-green-500" />
                 <span class="text-xs font-bold text-green-400">
-                  Zero Power
+                  {labels.zeroPower}
                 </span>
               </div>
             </div>

@@ -10,30 +10,28 @@ import PricingSection from "@/components/apps/fomogen/PricingSection.astro";
 import PricingMatrix from "@/components/apps/fomogen/PricingMatrix.astro";
 import FomoGenCTA from "@/components/apps/fomogen/FomoGenCTA.astro";
 import FAQRegistrySection from "@/components/common/FAQRegistrySection.astro";
-import { getDictionary } from "@/i18n/get-dictionary";
+import { localize } from "@/i18n/localize";
 import { i18nConfig } from "@/i18n/config";
-import { useTranslations } from "@/i18n/utils";
 
 interface Props {
   lang: typeof i18nConfig.locales[number];
 }
-
 const { lang } = Astro.props;
-const dict = await getDictionary(lang as any);
-const t = useTranslations(dict);
 
-const meta = t('metadata.fomogen') || {};
+import { getFomoGenData } from "@/constants/fomogen-data";
+
+const fomoData = getFomoGenData();
+
+const meta = {
+  title: localize("FOMO Gen: Fast Shopify Social Proof App [No Code 2026]"),
+  description: localize("Add high-converting sales popups, countdowns, and sticky carts to Shopify. Zero impact on Core Web Vitals with our 2KB payload.")
+};
 
 ---
 
 <Layout 
-  title={meta.title || "FOMO Gen: Fast Shopify Social Proof App [No Code 2026]"}
-  description={meta.description || "Add high-converting sales popups, countdowns, and sticky carts to Shopify. Zero impact on Core Web Vitals with our 2KB payload."}
-  keywords={meta.keywords}
-  ogTitle={meta.ogTitle}
-  ogDescription={meta.ogDescription}
-  ogImage={meta.ogImage}
-  ogUrl={meta.ogUrl}
+  title={meta.title}
+  description={meta.description}
   lang={lang}
 >
   <div class="bg-white">
@@ -63,24 +61,24 @@ const meta = t('metadata.fomogen') || {};
               priceValidUntil: "2026-12-31",
               availability: "https://schema.org/InStock",
             },
-            featureList: t('fomogen.features')?.map((f: any) => f.title).join(", ") || "",
+            featureList: fomoData.features.map((f) => f.title).join(", "),
             screenshot: "https://applass.com/fomogen-screenshot.png",
             image: "https://applass.com/fomogen-feature.png",
-            description: t('metadata.schema.fomogenDescription') || "FOMO Gen is an all-in-one Shopify app for social proof, urgency, and trust signals.",
+            description: localize("FOMO Gen is an all-in-one Shopify app for social proof, urgency, and trust signals."),
             author: {
               "@type": "Organization",
-              name: "Applass",
+              name: localize("Applass"),
               url: "https://applass.com",
             },
           },
           {
             "@context": "https://schema.org",
             "@type": "Product",
-            name: "FOMO Gen",
-            description: t('metadata.fomogen.description') || "All-in-one Shopify app for Sales Popups, Stock Countdowns, Sticky Cart, and Trust Badges.",
+            name: localize("FOMO Gen"),
+            description: localize("All-in-one Shopify app for Sales Popups, Stock Countdowns, Sticky Cart, and Trust Badges."),
             brand: {
               "@type": "Brand",
-              name: "AppLass",
+              name: localize("AppLass"),
             },
             offers: {
               "@type": "Offer",
@@ -107,9 +105,6 @@ const meta = t('metadata.fomogen') || {};
         registryKey="FOMOGEN"
         variant="centered"
         className="bg-white py-24"
-        items={t('fomogen.faq.questions')}
-        title={t('fomogen.faq.headline')}
-        subtitle={t('fomogen.faq.sectionLabel')}
       />
     </div>
 

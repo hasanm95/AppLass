@@ -11,19 +11,20 @@ import Navbar from "@/components/common/Navbar.astro";
 import { LinkButton } from "@/components/ui/link-button";
 import { getProducts } from "@/constants/home-data";
 import Section from "@/components/common/Section.astro";
-import { getDictionary } from "@/i18n/get-dictionary";
+import { localize } from "@/i18n/localize";
 import { i18nConfig } from "@/i18n/config";
-import { localePath, useTranslations } from "@/i18n/utils";
+import { localePath } from "@/i18n/utils";
 
 interface Props {
   lang: typeof i18nConfig.locales[number];
 }
 
 const { lang } = Astro.props;
-const dict = await getDictionary(lang as any);
-const t = useTranslations(dict);
 
-const meta = t('metadata.apps') || dict.metadata?.apps || {};
+const meta = {
+  title: localize("Our Apps | AppLass Ecosystem"),
+  description: localize("Explore our suite of logic-driven applications designed for elite performance and digital discipline.")
+};
 
 const imageMap: Record<string, ImageMetadata> = {
   fomogen: fomogenFeatureImg,
@@ -47,10 +48,10 @@ const imageMap: Record<string, ImageMetadata> = {
     <Navbar    />
     <div class="pt-32">
       <SubpageHero
-        eyebrow={t('apps.hero.eyebrow') || "AppLass Ecosystem"}
-        headline={t('apps.hero.headline') || "Our"}
-        headlineAccent={t('apps.hero.headlineAccent') || "Ecosystem."}
-        description={t('apps.hero.description') || "Proprietary systems built with technical discipline and a focus on measurable impact. Every tool is a derivation of logic."}
+        eyebrow={localize("AppLass Ecosystem")}
+        headline={localize("Our")}
+        headlineAccent={localize("Ecosystem.")}
+        description={localize("Proprietary systems built with technical discipline and a focus on measurable impact. Every tool is a derivation of logic.")}
         centered
       />
 
@@ -58,9 +59,6 @@ const imageMap: Record<string, ImageMetadata> = {
         <div class="section-container">
           <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
             {getProducts().map((product) => {
-              const dictKey = product.id === "mindful" ? "mindfulGuard" : product.id;
-              const translation = t(`products.${dictKey}`);
-
               return (
                 <div
                   class="group relative flex flex-col overflow-hidden rounded-[3rem] border border-slate-200 bg-white transition-all hover:border-blue-500/30 hover:shadow-2xl"
@@ -68,7 +66,7 @@ const imageMap: Record<string, ImageMetadata> = {
                   <div class="aspect-video overflow-hidden bg-slate-50 relative">
                     <Image
                       src={imageMap[product.id] || screenveilFeatureImg}
-                      alt={`${translation?.name || product.name} - ${translation?.tagline || product.tagline}`}
+                      alt={`${localize(product.name)} - ${localize(product.tagline)}`}
                       width={800}
                       height={450}
                       class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -78,24 +76,24 @@ const imageMap: Record<string, ImageMetadata> = {
                   <div class="flex flex-1 flex-col p-10 lg:p-12">
                     <div class="mb-6 flex items-center justify-between">
                       <span class="text-[10px] font-black tracking-widest text-blue-800 uppercase">
-                        {translation?.platform || product.platform}
+                        {localize(product.platform)}
                       </span>
                       <div class="flex gap-2">
-                        {(translation?.metrics || product.metrics).map((metric: string) => (
+                        {product.metrics.map((metric: string) => (
                           <span
                             class="rounded-full bg-slate-50 px-3 py-1 text-[10px] font-bold text-slate-500"
                           >
-                            {metric}
+                            {localize(metric)}
                           </span>
                         ))}
                       </div>
                     </div>
 
                     <h2 class="mb-4 text-4xl font-black text-slate-900">
-                      {translation?.name || product.name}
+                      {localize(product.name)}
                     </h2>
                     <p class="mb-8 text-lg leading-relaxed font-medium text-slate-500">
-                      {translation?.description || product.description}
+                      {localize(product.description)}
                     </p>
 
                     <div class="mt-auto">
@@ -103,7 +101,7 @@ const imageMap: Record<string, ImageMetadata> = {
                         href={localePath(lang, `/apps/${product.id === "mindful" ? "mindful-guard" : product.id}`)}
                         className="h-14 w-full rounded-2xl bg-slate-900 text-lg font-bold text-white transition-all hover:bg-blue-600"
                       >
-                        {t('apps.viewDetails') || "View Product Details"}
+                        {localize("View Product Details")}
                       </LinkButton>
                     </div>
                   </div>

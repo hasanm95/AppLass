@@ -1,21 +1,16 @@
 ---
 import Section from "@/components/common/Section.astro";
-import { SCREENVEIL_DATA } from "@/constants/screenveil-data";
+import { getScreenveilData } from "@/constants/screenveil-data";
 import { Battery, Hand, HelpCircle, type LucideIcon } from "lucide-react";
-import { getDictionary } from "@/i18n/get-dictionary";
-import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
 const ICON_MAP: Record<string, LucideIcon> = {
   Battery,
   Hand,
 };
 
-const lang = getLangFromUrl(Astro.url);
-const dict = await getDictionary(lang as any);
-const t = useTranslations(dict);
-
-const translations = t('screenveil.painPoints');
-const points = translations && translations.length > 0 ? translations : SCREENVEIL_DATA.painPoints;
+const screenveilData = getScreenveilData();
+const points = screenveilData.painPoints;
+const labels = screenveilData.labels;
 ---
 
 <Section className="relative bg-slate-950 py-20 md:py-28">
@@ -34,22 +29,19 @@ const points = translations && translations.length > 0 ? translations : SCREENVE
   <div class="section-container relative z-10">
     <div class="mb-16 text-center">
       <span class="mb-6 block text-[10px] font-black tracking-[0.2em] text-green-500 uppercase">
-        The Problem
+        {labels.problemTag}
       </span>
       <h2 class="mb-6 text-3xl leading-tight font-bold tracking-tight text-white md:text-5xl lg:text-6xl">
-        Stop Wasting Energy.
+        {labels.problemTitle}
       </h2>
       <p class="mx-auto max-w-2xl text-lg font-medium text-slate-400 md:text-xl">
-        Modern screens are the #1 battery drainer. When you stream video
-        just for the audio, you&apos;re burning through your charge for
-        pixels you aren&apos;t even watching.
+        {labels.problemDescription}
       </p>
     </div>
 
     <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-12">
       {points.map((point: any, idx: number) => {
-        const originalPoint = SCREENVEIL_DATA.painPoints[idx] || {};
-        const Icon = ICON_MAP[originalPoint.iconName || ""] || HelpCircle;
+        const Icon = ICON_MAP[point.iconName || ""] || HelpCircle;
 
         return (
           <div class="group relative overflow-hidden rounded-3xl border border-green-500/20 bg-linear-to-br from-slate-900 to-slate-950 p-8 transition-all duration-500 hover:border-green-500/40 hover:shadow-2xl hover:shadow-green-500/10 md:p-12">

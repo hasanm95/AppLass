@@ -27,129 +27,131 @@ interface ComparisonData {
   };
 }
 
+import { localize } from "@/i18n/localize";
+
 export const comparisons: ComparisonData[] = [
   {
     slug: "fomogen-vs-nudgify",
     competitorName: "Nudgify",
     productName: "FomoGen",
-    heroHeadline: "The Logical Alternative to Nudgify.",
+    heroHeadline: localize("The Logical Alternative to Nudgify."),
     heroSubheadline:
-      "Why elite Shopify merchants are switching from bloated legacy social proof tools to FomoGen's logic-first architecture.",
+      localize("Why elite Shopify merchants are switching from bloated legacy social proof tools to FomoGen's logic-first architecture."),
     matrix: [
       {
-        label: "Load Speed",
+        label: localize("Load Speed"),
         competitorValue: "1.2s+",
         applassValue: "< 100ms",
         isPositive: true,
       },
       {
-        label: "Privacy",
-        competitorValue: "Cookies & Tracking",
-        applassValue: "Zero Telemetry",
+        label: localize("Privacy"),
+        competitorValue: localize("Cookies & Tracking"),
+        applassValue: localize("Zero Telemetry"),
         isPositive: true,
       },
       {
-        label: "Accessibility",
-        competitorValue: "Partial WCAG",
-        applassValue: "100% Compliant",
+        label: localize("Accessibility"),
+        competitorValue: localize("Partial WCAG"),
+        applassValue: localize("100% Compliant"),
         isPositive: true,
       },
       {
-        label: "Script Size",
+        label: localize("Script Size"),
         competitorValue: "450KB+",
         applassValue: "4.2KB",
         isPositive: true,
       },
       {
-        label: "Pricing",
-        competitorValue: "Strict Tiers",
-        applassValue: "Logical Flat Rate",
+        label: localize("Pricing"),
+        competitorValue: localize("Strict Tiers"),
+        applassValue: localize("Logical Flat Rate"),
         isPositive: true,
       },
     ],
     legacyWay: {
-      title: "The Legacy Way",
+      title: localize("The Legacy Way"),
       points: [
-        "Heavy JavaScript payloads that slow down storefronts.",
-        "Aggressive user tracking that compromises trust.",
-        "Complex dashboards with unnecessary feature bloat.",
+        localize("Heavy JavaScript payloads that slow down storefronts."),
+        localize("Aggressive user tracking that compromises trust."),
+        localize("Complex dashboards with unnecessary feature bloat."),
       ],
     },
     applassWay: {
-      title: "The AppLass Way",
+      title: localize("The AppLass Way"),
       points: [
-        "Mathematical precision for maximum performance.",
-        "Zero-telemetry privacy by default.",
-        "Clean, minimalist logic that just works.",
+        localize("Mathematical precision for maximum performance."),
+        localize("Zero-telemetry privacy by default."),
+        localize("Clean, minimalist logic that just works."),
       ],
     },
     testimonial: {
       quote:
-        "We shaved 2 seconds off our Shopify load time just by switching from Nudgify to FomoGen. The math doesn't lie.",
+        localize("We shaved 2 seconds off our Shopify load time just by switching from Nudgify to FomoGen. The math doesn't lie."),
       author: "Alex Rivera",
-      role: "E-commerce Director",
+      role: localize("E-commerce Director"),
     },
   },
   {
     slug: "mindful-guard-vs-forest",
     competitorName: "Forest",
     productName: "Mindful Guard",
-    heroHeadline: "The Logical Alternative to Forest.",
+    heroHeadline: localize("The Logical Alternative to Forest."),
     heroSubheadline:
-      "Why elite developers are switching from gamified distractions to Mindful Guard's system-level discipline.",
+      localize("Why elite developers are switching from gamified distractions to Mindful Guard's system-level discipline."),
     matrix: [
       {
-        label: "Method",
-        competitorValue: "Gamified / Visual",
-        applassValue: "Logical Friction",
+        label: localize("Method"),
+        competitorValue: localize("Gamified / Visual"),
+        applassValue: localize("Logical Friction"),
         isPositive: true,
       },
       {
-        label: "Battery Impact",
-        competitorValue: "6-8% Daily",
-        applassValue: "< 0.5% Daily",
+        label: localize("Battery Impact"),
+        competitorValue: localize("6-8% Daily"),
+        applassValue: localize("< 0.5% Daily"),
         isPositive: true,
       },
       {
-        label: "Privacy",
-        competitorValue: "Cloud-Synced",
-        applassValue: "100% Local",
+        label: localize("Privacy"),
+        competitorValue: localize("Cloud-Synced"),
+        applassValue: localize("100% Local"),
         isPositive: true,
       },
       {
-        label: "Focus Logic",
-        competitorValue: "Suggestive",
-        applassValue: "Absolute Guardrails",
+        label: localize("Focus Logic"),
+        competitorValue: localize("Suggestive"),
+        applassValue: localize("Absolute Guardrails"),
         isPositive: true,
       },
       {
-        label: "Philosophy",
-        competitorValue: "Growth",
-        applassValue: "Elimination",
+        label: localize("Philosophy"),
+        competitorValue: localize("Growth"),
+        applassValue: localize("Elimination"),
         isPositive: true,
       },
     ],
     legacyWay: {
-      title: "The Legacy Way",
+      title: localize("The Legacy Way"),
       points: [
-        "Using a 'game' to stop phone use is counter-intuitive.",
-        "Constant background sync drains device resources.",
-        "Features optimized for retention, not productivity.",
+        localize("Using a 'game' to stop phone use is counter-intuitive."),
+        localize("Constant background sync drains device resources."),
+        localize("Features optimized for retention, not productivity."),
       ],
     },
     applassWay: {
-      title: "The AppLass Way",
+      title: localize("The AppLass Way"),
       points: [
-        "Intentional friction switches brain to System 2 thinking.",
-        "Native C++ implementation for zero battery lag.",
-        "Absolute focus sessions with no 'exit' logic.",
+        localize("Intentional friction switches brain to System 2 thinking."),
+        localize("Native C++ implementation for zero battery lag."),
+        localize("Absolute focus sessions with no 'exit' logic."),
       ],
     },
     testimonial: {
       quote:
-        "Mindful Guard is the first app that actually works. It doesn't ask me to be better; it forces me to be logical.",
+        localize("Mindful Guard is the first app that actually works. It doesn't ask me to be better; it forces me to be logical."),
       author: "Sarah Chen",
-      role: "Lead Software Architect",
+      role: localize("Lead Software Architect"),
     },
   },
 ];

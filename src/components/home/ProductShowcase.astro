@@ -3,12 +3,16 @@ import Section from "@/components/common/Section.astro";
 import { getProducts } from "@/constants/home-data";
 import { ExternalLink } from "lucide-react";
 import { localize } from "@/i18n/localize";
+import { Image } from "astro:assets";
+import fomogenFeatureImg from '@/assets/apps/fomogen-feature.png';
+import mindfulGuardFeatureImg from '@/assets/apps/mindful-guard-feature.png';
+import screenveilFeatureImg from '@/assets/apps/screenveil-feature.png';
 
-interface Props {
-  productImages?: Record<string, string>;
-}
-
-const { productImages = {} } = Astro.props;
+const productImages = {
+  fomogen: fomogenFeatureImg,
+  mindful: mindfulGuardFeatureImg,
+  screenveil: screenveilFeatureImg,
+};
 
 // ScreenVeil is the featured product
 const products = getProducts();
@@ -96,7 +100,7 @@ const otherDataSources = products.slice(1);
           class="relative flex items-center justify-center transition-transform hover:scale-[1.02]"
         >
           <div class="relative w-full overflow-hidden rounded-2xl border border-border bg-linear-to-br from-green-50 to-green-100 p-12">
-            <img
+            <Image
               src={productImages[featuredDataSource.id] || (featuredDataSource as any).imageSrc}
               alt={localize(featuredDataSource.name)}
               width={600}
