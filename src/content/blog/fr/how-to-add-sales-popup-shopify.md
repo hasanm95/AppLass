@@ -47,9 +47,7 @@ Vous n'avez pas besoin du budget d'Amazon pour faire ça. Il vous faut juste la 
 
 ---
 
-<!-- IMAGE PROMPT: A clean split-screen illustration showing a Shopify product page. Left side: no popup, empty looking, visitor shown with a confused/hesitant expression. Right side: same page with a small bottom-left sales notification popup showing "James de Lyon vient d'acheter ceci", visitor shown looking confident and clicking Add to Cart. Flat design style, brand colors green and dark navy. -->
-<!-- ALT: Page produit Shopify avant et après l'ajout d'une notification de vente montrant l'effet sur la confiance de l'acheteur -->
-<!-- FILENAME: sales-popup-before-after-shopify.png -->
+![Page produit Shopify avant et après l'ajout d'une notification de vente montrant l'effet sur la confiance de l'acheteur](../../../assets/blogs/sales-popup-before-after-shopify.png)
 
 ---
 
@@ -96,9 +94,7 @@ Vous pouvez modifier :
 
 Gardez ça simple. N'entassez pas trop de texte dans le widget.
 
-<!-- IMAGE PROMPT: A screenshot-style mockup of the FomoGen dashboard showing the Social Proof Notifications campaign setup screen. Should show fields for position (bottom-left selected), display delay slider set to 4 seconds, and a live preview of the popup on the right side showing "Emma de Paris vient d'acheter ce produit — il y a 6 min". Clean UI, dark sidebar, white content area. -->
-<!-- ALT: Tableau de bord FomoGen montrant comment configurer une notification de vente pour Shopify -->
-<!-- FILENAME: fomogen-social-proof-setup-dashboard.png -->
+![Tableau de bord FomoGen montrant comment configurer une notification de vente pour Shopify](../../../assets/blogs/fomogen-social-proof-setup-dashboard.png)
 
 ### Étape 5 : Définir Votre Fenêtre de Commandes
 
@@ -139,9 +135,7 @@ FomoGen supporte les deux. Une fois que votre volume de commandes augmente, pass
 
 ---
 
-<!-- IMAGE PROMPT: A mobile phone mockup showing a Shopify product page for a clothing item (generic t-shirt, no brand), with a small popup notification in the bottom-left corner that reads "Alex de Bordeaux vient d'acheter ceci — il y a 6 minutes" with a tiny product thumbnail. The rest of the page shows the product image and price. Clean, realistic mobile UI. -->
-<!-- ALT: Boutique Shopify mobile montrant une notification de vente sur une page produit -->
-<!-- FILENAME: sales-popup-mobile-shopify-product-page.png -->
+![Boutique Shopify mobile montrant une notification de vente sur une page produit](../../../assets/blogs/sales-popup-mobile-shopify-product-page.png)
 
 ---
 

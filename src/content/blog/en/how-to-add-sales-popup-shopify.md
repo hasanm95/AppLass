@@ -47,9 +47,8 @@ You don't need Amazon's budget to do this. You just need the right Shopify app.
 
 ---
 
-<!-- IMAGE PROMPT: A clean split-screen illustration showing a Shopify product page. Left side: no popup, empty looking, visitor shown with a confused/hesitant expression. Right side: same page with a small bottom-left sales notification popup showing "James from London just purchased this", visitor shown looking confident and clicking Add to Cart. Flat design style, brand colors green and dark navy. -->
-<!-- ALT: Shopify product page before and after adding a sales notification popup showing the effect on buyer confidence -->
-<!-- FILENAME: sales-popup-before-after-shopify.png -->
+![Shopify product page before and after adding a sales notification popup showing the effect on buyer confidence](../../../assets/blogs/sales-popup-before-after-shopify.png)
+
 
 ---
 
@@ -96,9 +95,7 @@ You can change:
 
 Keep it clean. Don't jam too much text into the widget.
 
-<!-- IMAGE PROMPT: A screenshot-style mockup of the FomoGen dashboard showing the Social Proof Notifications campaign setup screen. Should show fields for position (bottom-left selected), display delay slider set to 4 seconds, and a live preview of the popup on the right side. Clean UI, dark sidebar, white content area. -->
-<!-- ALT: FomoGen dashboard showing how to set up a sales notification popup for Shopify -->
-<!-- FILENAME: fomogen-social-proof-setup-dashboard.png -->
+![FomoGen dashboard showing how to set up a sales notification popup for Shopify](../../../assets/blogs/fomogen-social-proof-setup-dashboard.png)
 
 ### Step 5: Set Your Order Window
 
@@ -139,9 +136,7 @@ FomoGen supports both. Once your order volume picks up, switch to the sales noti
 
 ---
 
-<!-- IMAGE PROMPT: A mobile phone mockup showing a Shopify product page for a clothing item (generic t-shirt, no brand), with a small popup notification in the bottom-left corner that reads "Alex from Toronto just purchased this — 6 minutes ago" with a tiny product thumbnail. The rest of the page shows the product image and price. Clean, realistic mobile UI. -->
-<!-- ALT: Mobile Shopify store showing a sales notification popup on a product page -->
-<!-- FILENAME: sales-popup-mobile-shopify-product-page.png -->
+![Mobile Shopify store showing a sales notification popup on a product page](../../../assets/blogs/sales-popup-mobile-shopify-product-page.png)
 
 ---
 
