@@ -2,12 +2,6 @@
 import { BatteryLow, Zap } from "lucide-react";
 import { localize } from "@/i18n/localize";
 
-interface Props {
-  lang?: string;
-}
-
-const { lang = "en" } = Astro.props;
-
 const stats = [
   {
     title: localize("Max Battery Saved"),

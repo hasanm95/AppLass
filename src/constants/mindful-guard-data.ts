@@ -2,18 +2,18 @@ import { localize } from "@/i18n/localize";
 
 export const getMindfulGuardData = () => ({
   hero: {
-    headline: localize("Reclaim Your Neural Architecture."),
+    headline: localize("Block Distracting Apps on Android. No Tracking. No Internet. No Excuses."),
     subheadline: localize(
-      "The first Android app blocker engineered for privacy absolutists. 0ms latency. 100% Offline. Zero telemetry."
+      "Mindful Guard is the privacy-first Android app blocker built for people who refuse to trade their data for focus. 100% offline. Zero telemetry. Strict Mode that actually holds."
     ),
-    primaryCTA: localize("Deploy to Android"),
+    primaryCTA: localize("Download Free on Google Play"),
     secondaryCTA: localize("View the Logic"),
     playStoreUrl: "https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard",
   },
   logic: {
-    title: localize("Why do you need a Cognitive Firewall?"),
+    title: localize("Why do you need an App Blocker?"),
     description: localize(
-      "Willpower is a finite resource. Social media algorithms are supercomputers designed to deplete it. MindfulGuard is not a 'wellness' app; it is a Cognitive Firewall that intercepts distraction attempts at the system level."
+      "Willpower is a finite resource. Social media algorithms are supercomputers designed to deplete it. MindfulGuard is not a 'wellness' app; it is an App Blocker that intercepts distraction attempts at the system level."
     ),
   },
   differentiators: [
@@ -83,26 +83,26 @@ export const getMindfulGuardData = () => ({
     sectionLabel: localize("Section Label"),
     faqHeadline: localize("FAQ Headline"),
     faqQuestions: localize("FAQ Questions"),
-    neuralProtection: localize("Neural Architecture Protection"),
-    offlineArchitecture: localize("[ Offline Architecture Enabled ]"),
+    neuralProtection: localize("Focus and Attention Protection"),
+    offlineArchitecture: localize("100% Offline"),
     technicalLogic: localize("Technical Logic"),
-    systemLevel: localize("[ System Level ]"),
-    interceptsDistractions: localize("Intercepts Distractions via Protocol Level"),
-    cognitiveLoad: localize("[ Cognitive Load ]"),
-    zeroWillpowerArchitecture: localize("Zero Willpower Depletion Architecture"),
+    systemLevel: localize(""),
+    interceptsDistractions: localize("Blocks apps at the system level before they reach your screen"),
+    cognitiveLoad: localize(""),
+    zeroWillpowerArchitecture: localize("No willpower needed — the app holds the line for you"),
     input: localize("INPUT"),
     filter: localize("FILTER"),
     focus: localize("FOCUS"),
-    logicalFlow: localize("Logical Flow: Interception Pipeline v2.6"),
+    logicalFlow: localize(""),
     strategicMoat: localize("The Strategic Moat"),
     technicalAdvantages: localize("Technical"),
     technicalAdvantagesAccent: localize("Advantages."),
-    deploymentSpecs: localize("[ Deployment Specs v4.0 ]"),
+    deploymentSpecs: localize(""),
     verifiedFeature: localize("Verified Feature"),
     technicalValidationMatrix: localize("Technical Validation Matrix"),
     technicalSpec: localize("Technical Spec"),
     mindfulGuardVersion: localize("MindfulGuard (v2.6)"),
-    endOfSpecificationReport: localize("[ End of Specification Report - Protocol 88-Alpha ]"),
+    endOfSpecificationReport: localize(""),
   }
 });
 
@@ -111,54 +111,17 @@ export const MINDFUL_GUARD_DATA = getMindfulGuardData();
 export const getMindfulGuardSchema = () => ({
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  name: "MindfulGuard",
-  operatingSystem: "Android",
-  applicationCategory: "ProductivityApplication",
-  offers: {
+  "name": "Mindful Guard",
+  "operatingSystem": "Android",
+  "applicationCategory": "UtilitiesApplication",
+  "offers": {
     "@type": "Offer",
-    price: "0",
-    priceCurrency: "USD",
-    priceValidUntil: "2026-12-31",
-    availability: "https://schema.org/InStock",
+    "price": "0",
+    "priceCurrency": "USD"
   },
-  description: localize(
-    "A privacy-first Android app blocker that uses strict logic to prevent digital distractions without collecting user data."
-  ),
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "5.0",
-    reviewCount: "1",
-    bestRating: "5",
-    worstRating: "1",
-  },
-  review: [
-    {
-      "@type": "Review",
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: "5",
-        bestRating: "5",
-      },
-      author: {
-        "@type": "Person",
-        name: "Hasan M.",
-      },
-      reviewBody: localize(
-        "The only focus app that actually respects my privacy. Zero telemetry means total peace of mind."
-      ),
-    },
-  ],
-  featureList: localize(
-    "Zero-Telemetry Privacy, Offline Architecture, Strict Mode, Battery Optimization Exemption"
-  ),
-  image: "https://applass.com/mindful-guard-feature.png",
-  author: {
-    "@type": "Organization",
-    name: localize("AppLass"),
-    url: "https://applass.com",
-  },
-  downloadUrl: "https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard",
-  screenshot: "https://applass.com/mindful-guard-feature.png",
+  "description": "Mindful Guard is a privacy-first Android app blocker with zero telemetry and no internet requirement. Blocks distracting apps at the system level using native Android APIs. No VPN. No cloud. 100% on-device.",
+  "url": "https://applass.com/apps/mindful-guard/",
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard"
 });
 
 export const MINDFUL_GUARD_SCHEMA = getMindfulGuardSchema();

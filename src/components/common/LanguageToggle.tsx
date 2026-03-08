@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Globe } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { LanguageSwitcherSidebar } from "./LanguageSwitcherSidebar";
-import { Localize } from "@/components/Localize";
 import { localize } from "@/i18n/localize";
 
 export function LanguageToggle({ 

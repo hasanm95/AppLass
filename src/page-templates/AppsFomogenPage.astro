@@ -21,13 +21,11 @@ const { lang } = Astro.props;
 import { setLocale } from "@/i18n";
 setLocale(lang);
 
-import { getFomoGenData } from "@/constants/fomogen-data";
 
-const fomoData = getFomoGenData();
 
 const meta = {
-  title: localize("FOMO Gen | #1 Free Social Proof, Urgency & Trust App for Shopify"),
-  description: localize("Skyrocket your Shopify sales with FOMO Gen. The all-in-one app for Sales Popups, Stock Countdowns, Sticky Cart, and Trust Badges. Install for Free today!"),
+  title: "FomoGen: Lightweight Shopify Social Proof App – Core Web Vitals Safe",
+  description: "FomoGen adds social proof, scarcity timers, sticky cart & free shipping bars to your Shopify store in a single <2.1KB script. Boost conversions without hurting site speed. Free plan available.",
   keywords: localize("shopify social proof, sales pop, countdown timer, stock alert, trust badges, sticky cart"),
   ogTitle: localize("Boost Your Shopify Sales with FOMO Gen"),
   ogDescription: localize("The all-in-one app for Sales Popups, Stock Countdowns, Sticky Cart, and Trust Badges. Install for Free today!"),
@@ -37,54 +35,18 @@ const meta = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      name: localize("FOMO Gen - Elite Social Proof"),
-      operatingSystem: "Shopify",
-      applicationCategory: "BusinessApplication",
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        ratingCount: "135",
-      },
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "USD",
-        priceValidUntil: "2026-12-31",
-        availability: "https://schema.org/InStock",
-      },
-      featureList: fomoData.features.map((f) => f.title).join(", "),
-      screenshot: "https://applass.com/fomogen-screenshot.png",
-      image: "https://applass.com/fomogen-feature.png",
-      description: localize("FOMO Gen is an all-in-one Shopify app for social proof, urgency, and trust signals."),
-      author: {
-        "@type": "Organization",
-        name: localize("Applass"),
-        url: "https://applass.com",
-      },
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      name: localize("FOMO Gen"),
-      description: localize("All-in-one Shopify app for Sales Popups, Stock Countdowns, Sticky Cart, and Trust Badges."),
-      brand: {
-        "@type": "Brand",
-        name: localize("AppLass"),
-      },
-      offers: {
-        "@type": "Offer",
-        price: "0.00",
-        priceCurrency: "USD",
-        priceValidUntil: "2026-12-31",
-        availability: "https://schema.org/InStock",
-        url: "https://applass.com/apps/fomogen",
-      },
-    },
-  ],
+  "@type": "SoftwareApplication",
+  "name": "FomoGen",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Shopify",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "FomoGen is a lightweight Shopify social proof app with a sub-2.1KB payload. Adds sales notifications, scarcity timers, sticky cart, and free shipping bars without hurting Core Web Vitals scores.",
+  "url": "https://applass.com/apps/fomogen/",
+  "downloadUrl": "https://apps.shopify.com/fomogen"
 };
 
 ---

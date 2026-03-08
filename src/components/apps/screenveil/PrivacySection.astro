@@ -36,7 +36,7 @@ const labels = screenveilData.labels;
       </p>
 
       <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
-        {dict.features?.map((feature: any, idx: number) => {
+        {dict.features?.map((feature) => {
           const Icon = ICON_MAP[feature.iconName || ""] || HelpCircle;
 
           return (

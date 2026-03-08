@@ -40,7 +40,7 @@ const labels = screenveilData.labels;
     </div>
 
     <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-12">
-      {points.map((point: any, idx: number) => {
+      {points.map((point) => {
         const Icon = ICON_MAP[point.iconName || ""] || HelpCircle;
 
         return (

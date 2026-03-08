@@ -3,6 +3,7 @@ import Section from "@/components/common/Section.astro";
 import { Button } from "@/components/ui/button";
 import { getFomoGenData } from "@/constants/fomogen-data";
 import { Check } from "lucide-react";
+import { localize } from "@/i18n/localize";
 
 const translations = getFomoGenData().cta;
 ---
@@ -57,6 +58,12 @@ const translations = getFomoGenData().cta;
       <p class="mt-8 text-xs font-bold tracking-widest text-slate-400 uppercase">
         {translations.noCreditCard || "No Credit Card Required • Beta Access"}
       </p>
+
+      <div class="mt-20 pt-10 border-t border-slate-200 text-center">
+        <p class="text-slate-500 font-medium">
+            {localize("Explore:")} <a href="/" class="text-green-600 hover:text-green-500 transition-colors underline underline-offset-4 font-bold">Home</a> • <a href="/apps/screenveil" class="text-green-600 hover:text-green-500 transition-colors underline underline-offset-4 font-bold">ScreenVeil</a> • <a href="/apps/mindful-guard" class="text-green-600 hover:text-green-500 transition-colors underline underline-offset-4 font-bold">Mindful Guard</a>
+        </p>
+      </div>
     </div>
   </div>
 </Section>

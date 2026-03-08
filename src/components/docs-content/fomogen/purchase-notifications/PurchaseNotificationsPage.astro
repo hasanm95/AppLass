@@ -1,12 +1,6 @@
 ---
 import { localize } from "@/i18n/localize";
 
-interface Props {
-  lang?: string;
-}
-
-const { lang = "en" } = Astro.props;
-
 const settings = [
   {
     name: localize("Temporal Pool"),

@@ -9,6 +9,8 @@ import TechnicalAdvantage from "@/components/apps/screenveil/TechnicalAdvantage.
 import PrivacySection from "@/components/apps/screenveil/PrivacySection.astro";
 import TestimonialsSection from "@/components/apps/screenveil/TestimonialsSection.astro";
 import FAQSection from "@/components/apps/screenveil/FAQSection.astro";
+import CompetitorComparison from "@/components/apps/screenveil/CompetitorComparison.astro";
+import ScreenVeilClosingCTA from "@/components/apps/screenveil/ScreenVeilClosingCTA.astro";
 import { StickyDownloadBar } from "@/components/apps/screenveil/StickyDownloadBar";
 import { getScreenveilData, getScreenveilSchema } from "@/constants/screenveil-data";
 import { i18nConfig } from "@/i18n/config";
@@ -26,8 +28,8 @@ const screenveilData = getScreenveilData();
 const screenveilSchema = getScreenveilSchema();
 
 const meta = {
-  title: localize("ScreenVeil: The Safest Screen Filter for Total Digital Privacy"),
-  description: localize("Protect your data from prying eyes with ScreenVeil. A lightweight, secure screen overlay for Android. No data collection, 100% offline."),
+  title: "Play YouTube With Screen Off – AMOLED Battery Saver | ScreenVeil",
+  description: "ScreenVeil saves 60%+ battery on AMOLED/OLED Android devices. Play YouTube, podcasts & music with your screen off. Zero permissions. 10,000+ downloads. Free.",
   keywords: localize("black screen video, AMOLED battery saver, screen off playback, YouTube background audio, OLED efficiency, screen overlay utility, android battery saver, screen off youtube"),
   ogTitle: localize("ScreenVeil: Save 60% Battery with Screen Off Video Playback"),
   ogDescription: localize("The ultimate AMOLED battery saver. Watch YouTube, Netflix, and podcasts with your screen off. Zero permissions, 100% privacy."),
@@ -63,7 +65,9 @@ const meta = {
       <TechnicalAdvantage />
       <PrivacySection />
       <TestimonialsSection />
+      <CompetitorComparison />
       <FAQSection />
+      <ScreenVeilClosingCTA />
     </div>
 
     <Footer variant="dark" />

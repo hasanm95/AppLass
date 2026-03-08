@@ -3,15 +3,15 @@ import { localize } from "@/i18n/localize";
 export const getScreenveilData = () => ({
   hero: {
     tagline: localize("AMOLED Battery Saver"),
-    headline: localize("Listen to Video"),
-    headlineAccent: localize("with Your Screen Off."),
+    headline: localize("Play YouTube"),
+    headlineAccent: localize("With Your Screen Off. Save 60% Battery on AMOLED."),
     subheadline: localize(
       "Save over 60% battery on AMOLED devices. ScreenVeil overlays a pure black layer so you can enjoy YouTube, podcasts, and music without the battery drain or accidental touches."
     ),
     primaryCTA: localize("Get it on Google Play"),
     secondaryCTA: localize("Learn More"),
     playStoreUrl: "https://play.google.com/store/apps/details?id=com.screenveil.app",
-    subtext: localize("10,000+ Downloads • 5.0 Star Rating • Zero Permissions"),
+    subtext: localize("10,000+ Downloads • 4.4★ Rating • Zero Permissions"),
   },
 
   painPoints: [
@@ -115,7 +115,7 @@ export const getScreenveilData = () => ({
     technicalHeadline: localize("Technical Physics"),
     privacyHeadline: localize("Privacy First"),
     downloadNow: localize("Download Now"),
-    starRating: localize("5.0 Star Rating"),
+    starRating: localize("4.4★ Rating"),
     alwaysAccessible: localize("Always Accessible"),
     problemTag: localize("The Problem"),
     problemTitle: localize("Stop Wasting Energy."),
@@ -142,34 +142,22 @@ export const SCREENVEIL_DATA = getScreenveilData();
 export const getScreenveilSchema = () => ({
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  name: "ScreenVeil: Screen Off Video",
-  operatingSystem: "Android",
-  applicationCategory: "ProductivityApplication",
-  offers: {
+  "name": "ScreenVeil",
+  "operatingSystem": "Android",
+  "applicationCategory": "UtilitiesApplication",
+  "offers": {
     "@type": "Offer",
-    price: "0",
-    priceCurrency: "USD",
+    "price": "0",
+    "priceCurrency": "USD"
   },
-  aggregateRating: {
+  "aggregateRating": {
     "@type": "AggregateRating",
-    ratingValue: "5.0",
-    reviewCount: "150",
-    bestRating: "5",
-    worstRating: "1",
+    "ratingValue": "4.4",
+    "ratingCount": "10000"
   },
-  featureList: localize(
-    "Black Screen Overlay, AMOLED Battery Saver, Screen Off Playback, Floating Quick Access, Smart Unlock"
-  ),
-  description: localize(
-    "The ultimate AMOLED battery saver. Watch YouTube, Netflix, and podcasts with your screen off. Zero permissions, 100% privacy."
-  ),
-  screenshot: "https://applass.com/screenveil-feature.png",
-  image: "https://applass.com/screenveil-feature.png",
-  author: {
-    "@type": "Organization",
-    name: localize("AppLass"),
-    url: "https://applass.com",
-  },
+  "description": "ScreenVeil overlays a pure black layer on AMOLED/OLED screens so you can play YouTube and audio with your screen off, saving 60%+ battery. Zero permissions. Zero data collection.",
+  "url": "https://applass.com/apps/screenveil/",
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.screenveil.app"
 });
 
 export const SCREENVEIL_SCHEMA = getScreenveilSchema();

@@ -35,19 +35,43 @@ export const getFaqRegistry = () => ({
     {
       question: localize("Does ScreenVeil work on LCD screens?"),
       answer: localize(
-        "Yes, it acts as a screen dimmer, but the maximum battery savings are achieved on AMOLED/OLED displays where pixels physically turn off."
+        "Yes. On LCD displays ScreenVeil acts as a screen dimmer and reduces brightness-related battery drain. Maximum savings of 60%+ are achieved on AMOLED/OLED displays, where black pixels physically power off."
       ),
     },
     {
-      question: localize("How is this different from YouTube Premium?"),
+      question: localize("How is ScreenVeil different from YouTube Premium?"),
       answer: localize(
-        "ScreenVeil is a universal hardware-level utility. It works across all apps (Netflix, Prime, etc.) and provides a 'pocket mode' that prevents accidental touches while the video continues."
+        "YouTube Premium only covers YouTube. ScreenVeil is a system-level utility that works across every app — Netflix, Spotify, Twitch, podcast players, and more. It also adds pocket mode to block accidental touches while your screen is covered."
       ),
     },
     {
       question: localize("What is ScreenVeil?"),
       answer: localize(
-        "ScreenVeil is a free Android utility with 10,000+ downloads and a 4.4-star rating. It provides a black overlay for AMOLED/OLED displays, saving 60%+ battery life while listening to videos."
+        "ScreenVeil is a free Android app with 10,000+ downloads and a 4.4-star rating. It overlays a pure black layer on AMOLED/OLED screens so pixels physically turn off, saving 60%+ battery while you listen to YouTube, podcasts, or any audio."
+      ),
+    },
+    {
+      question: localize("Does ScreenVeil require root access?"),
+      answer: localize(
+        "No. ScreenVeil requires only the standard Android Overlay permission to function. No root, no ADB, no special setup. Install and activate in under 30 seconds."
+      ),
+    },
+    {
+      question: localize("Will ScreenVeil get killed by battery optimizers on Samsung or Xiaomi devices?"),
+      answer: localize(
+        "ScreenVeil is engineered to handle aggressive battery management on MIUI, OneUI, and OxygenOS. We recommend adding ScreenVeil to your device's battery optimization whitelist for uninterrupted session performance."
+      ),
+    },
+    {
+      question: localize("Is ScreenVeil safe? What data does it collect?"),
+      answer: localize(
+        "ScreenVeil collects zero personal data. It requires no internet access and contains no third-party analytics SDKs. The only permission it needs is \"Display over other apps\" — nothing else."
+      ),
+    },
+    {
+      question: localize("Does ScreenVeil work with Bluetooth headphones and earbuds?"),
+      answer: localize(
+        "Yes. ScreenVeil only controls the display layer — audio routing is handled entirely by Android. It works with all Bluetooth devices, wired headphones, speakers, and car audio systems."
       ),
     },
   ],
@@ -55,13 +79,43 @@ export const getFaqRegistry = () => ({
     {
       question: localize("What is FomoGen?"),
       answer: localize(
-        "FomoGen is an elite social proof tool for Shopify merchants with a <2.1KB payload that boosts engagement by +23% without performance debt. It is WCAG 2.1 compliant with real-time nudges."
+        "FomoGen is a Shopify conversion app that adds social proof notifications, scarcity timers, sticky add-to-cart, free shipping bars, and trust badges in a single install. The entire script payload is under 2.1KB, making it safe for Core Web Vitals and Lighthouse scores."
       ),
     },
     {
       question: localize("Is FomoGen free?"),
       answer: localize(
-        "Yes, FomoGen offers a powerful free plan for Shopify merchants to boost engagement with urgency and trust signals."
+        "Yes. FomoGen has a free plan that includes 1 active campaign, 100 monthly notifications, and core conversion tools. Paid plans start at $9.99/month for higher limits and full customization."
+      ),
+    },
+    {
+      question: localize("Will FomoGen slow down my Shopify store?"),
+      answer: localize(
+        "No. FomoGen is engineered specifically to avoid speed penalties. Its payload is under 2.1KB — smaller than most product images. It will not trigger Shopify Speed Score penalties or Google's \"Long Task\" warnings."
+      ),
+    },
+    {
+      question: localize("How is FomoGen different from Vitals or Nudgify?"),
+      answer: localize(
+        "Vitals bundles 40+ features most merchants never use, adding significant script weight. Nudgify relies on cloud rendering with noticeable latency. FomoGen gives you the 5 highest-converting tools only, delivered in a fraction of the payload."
+      ),
+    },
+    {
+      question: localize("Does FomoGen work with all Shopify themes?"),
+      answer: localize(
+        "Yes. FomoGen installs via Shopify's App Block system and is compatible with all Online Store 2.0 themes including Dawn, Refresh, Sense, and all major paid themes. No code editing required."
+      ),
+    },
+    {
+      question: localize("Is FomoGen GDPR and CCPA compliant?"),
+      answer: localize(
+        "Yes. FomoGen does not collect personal shopper data. Social proof notifications use anonymized purchase signals only. No cookies are set without consent, and the app includes a privacy-safe mode for EU storefronts."
+      ),
+    },
+    {
+      question: localize("Can I show real purchase data in the social proof notifications?"),
+      answer: localize(
+        "Yes. FomoGen connects to your Shopify order data to display real recent purchases. You can configure display rules including time delay, geolocation filtering, and product collection targeting."
       ),
     },
   ],
@@ -69,25 +123,49 @@ export const getFaqRegistry = () => ({
     {
       question: localize("What is Mindful Guard?"),
       answer: localize(
-        "Mindful Guard is a privacy-focused Android productivity guardian that helps users reclaim 2.4 hours of focus daily. It features a zero-telemetry, offline architecture and system-level blocking."
+        "Mindful Guard is a privacy-first Android app blocker built on a zero-telemetry, fully offline architecture. It offers a generous Free tier (3 sessions/day) and premium plans for unlimited access, helping users reclaim an average of 2.4 hours of daily focus time."
       ),
     },
     {
-      question: localize("Does MindfulGuard work on Xiaomi/Samsung/MIUI devices?"),
+      question: localize("Does Mindful Guard work on Xiaomi, Samsung, or MIUI devices?"),
       answer: localize(
-        'Yes. MindfulGuard is engineered with "Battery Optimization Exemption" protocols specifically to prevent aggressive Android skins like MIUI from killing the background process.'
+        "Yes. Mindful Guard is specifically engineered to handle aggressive battery management from Android skins including MIUI, OneUI, and HyperOS. Add it to your battery optimization whitelist for uninterrupted blocking sessions."
       ),
     },
     {
-      question: localize("Is MindfulGuard safe for privacy?"),
+      question: localize("Is Mindful Guard safe for privacy?"),
       answer: localize(
-        "Yes. MindfulGuard operates on a zero-telemetry architecture. It does not require internet access to function, ensuring your data never leaves your device."
+        "Mindful Guard requires no internet connection to function and contains zero third-party analytics SDKs. Your block lists, schedules, and usage data never leave your device. Unlike VPN-based blockers (Opal, Freedom), there is no cloud component at all."
       ),
     },
     {
       question: localize("How does Strict Mode work?"),
       answer: localize(
-        "Strict Mode locks your chosen settings for a set duration. It prevents you from uninstalling the app or changing the schedule until the timer expires."
+        "Strict Mode locks your settings for a chosen duration. Once active, you cannot change your block list, disable the app, or uninstall it until the timer expires. It is designed for people who know they will try to bypass their own rules — and want a hard stop."
+      ),
+    },
+    {
+      question: localize("Does Mindful Guard use a VPN?"),
+      answer: localize(
+        "No. VPN-based blockers route your traffic through an external server, which creates latency, drains battery, and sends usage data off-device. Mindful Guard uses Android's native Accessibility API to block apps locally with 0ms latency and zero battery overhead."
+      ),
+    },
+    {
+      question: localize("Which apps can Mindful Guard block?"),
+      answer: localize(
+        "Mindful Guard can block any installed Android app — Instagram, TikTok, YouTube, Twitter/X, Reddit, games, browsers, or any custom app. You choose exactly which apps to block and when."
+      ),
+    },
+    {
+      question: localize("Does Mindful Guard track my screen time or usage?"),
+      answer: localize(
+        "Any analytics Mindful Guard generates are stored exclusively on your device and are never transmitted anywhere. We have no server-side visibility into how you use the app."
+      ),
+    },
+    {
+      question: localize("How is Mindful Guard different from Android's built-in Digital Wellbeing?"),
+      answer: localize(
+        "Android's Digital Wellbeing can be bypassed in seconds from Settings. Mindful Guard's Strict Mode cannot be bypassed — not even by going to Settings or attempting an uninstall. It also provides more granular scheduling and works on devices where Digital Wellbeing is disabled by manufacturers."
       ),
     },
   ],

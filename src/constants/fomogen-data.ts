@@ -3,10 +3,10 @@ import { localize } from "@/i18n/localize";
 export const getFomoGenData = () => ({
   hero: {
     tagline: localize("High-Performance Social Proof"),
-    headline: localize("Stop Losing 98% of Your Traffic."),
-    headlineAccent: localize("Turn Browsers into Buyers Instantly."),
+    headline: localize("The Shopify Social Proof App"),
+    headlineAccent: localize("That Won't Slow Your Store Down."),
     subheadline: localize(
-      "The all-in-one conversion toolkit: Social Proof, Stock Scarcity, Sticky Cart, and Free Shipping Bars. Replace 5 slow apps with one lightweight solution."
+      "Replace 5 bloated conversion apps with one <2.1KB script. Social proof, scarcity timers, sticky cart, and free shipping bars — all in one install."
     ),
     primaryCTA: localize("Install on Shopify — Free"),
     secondaryCTA: localize("Explore the Logic"),
@@ -25,7 +25,7 @@ export const getFomoGenData = () => ({
     body: localize(
       "You know you need social proof to sell. But installing one app for Sales Pops, another for Countdown Timers, and a third for Sticky Carts destroys your site speed."
     ),
-    fact: localize("Fact: A 1-second delay in page load can drop conversions by up to 17%."),
+    fact: localize("Every extra kilobyte your store loads is a customer you're risking. FomoGen's entire payload is under 2.1KB — lighter than a single product thumbnail."),
     struggle: localize(
       'Most "all-in-one" apps are expensive, complex, and slow down your theme.'
     ),
@@ -94,16 +94,16 @@ export const getFomoGenData = () => ({
   testimonials: [
     {
       quote: localize(
-        "I uninstalled Vitals and Nudgify. FOMO Gen does exactly what I need without the lag."
+        "I uninstalled Vitals and Nudgify. FomoGen does exactly what I need without the lag."
       ),
-      author: localize("Beta Tester"),
-      niche: localize("Fashion Niche"),
+      author: localize("Shopify Merchant"),
+      niche: localize("Fashion & Apparel Store"),
     },
     {
       quote: localize(
         "My add-to-cart rate jumped 15% just by turning on the Sticky Cart."
       ),
-      author: localize("Beta Tester"),
+      author: localize("Shopify Merchant"),
       niche: localize("Dropshipping Store"),
     },
   ],

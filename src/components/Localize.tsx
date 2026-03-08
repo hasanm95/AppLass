@@ -1,4 +1,3 @@
-import type { ReactNode } from 'react';
 import { localize } from '../i18n/localize';
 
 interface Props {

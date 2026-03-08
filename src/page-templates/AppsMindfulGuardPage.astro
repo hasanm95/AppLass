@@ -7,7 +7,10 @@ import LogicSection from "@/components/apps/mindful-guard/LogicSection.astro";
 import DifferentiatorsSection from "@/components/apps/mindful-guard/DifferentiatorsSection.astro";
 import ComparisonMatrix from "@/components/apps/mindful-guard/ComparisonMatrix.astro";
 import FAQRegistrySection from "@/components/common/FAQRegistrySection.astro";
-import { getMindfulGuardSchema, getMindfulGuardData } from "@/constants/mindful-guard-data";
+import MindfulStatsBar from "@/components/apps/mindful-guard/MindfulStatsBar.astro";
+import MindfulPricing from "@/components/apps/mindful-guard/MindfulPricing.astro";
+import MindfulClosingCTA from "@/components/apps/mindful-guard/MindfulClosingCTA.astro";
+import { getMindfulGuardSchema } from "@/constants/mindful-guard-data";
 import { i18nConfig } from "@/i18n/config";
 import { localize } from "@/i18n/localize";
 
@@ -20,11 +23,10 @@ const { lang } = Astro.props;
 import { setLocale } from "@/i18n";
 setLocale(lang);
 const mindfulSchema = getMindfulGuardSchema();
-const mindfulData = getMindfulGuardData();
 
 const meta = {
-  title: localize("Mindful Guard: The #1 Privacy-First Focus App [Android 2026]"),
-  description: localize("Stop digital distractions instantly. Mindful Guard is a 100% private, offline Pomodoro and app blocker for Android. Download for free today!"),
+  title: "Mindful Guard: Privacy-First Screen Time App for Android (No Tracking)",
+  description: "Mindful Guard blocks distracting apps on Android with zero telemetry and no internet required. 100% on-device. No VPN. Reclaim 2.4 hours of daily focus. Free to download.",
   keywords: localize("Android app blocker, dopamine detox app, focus timer android, privacy focus tool, stop phone addiction, cognitive firewall, zero telemetry, offline app blocker"),
   ogTitle: localize("MindfulGuard | Reclaim Your Neural Architecture"),
   ogDescription: localize("The first Android app blocker engineered for privacy absolutists. 0ms latency. 100% Offline. Zero telemetry."),
@@ -55,6 +57,9 @@ const meta = {
     {/* Section 1: The Hero (Above the Fold) */}
     <MindfulHero />
  
+    {/* Stats Bar */}
+    <MindfulStatsBar />
+
     {/* Section 2: The Logic (The "Why" - AI Optimization) */}
     <LogicSection />
  
@@ -64,12 +69,18 @@ const meta = {
     {/* Section 4: The Comparison Matrix (Conversion Driver) */}
     <ComparisonMatrix />
  
+    {/* Pricing Section */}
+    <MindfulPricing />
+
     {/* Section 5: Engineered FAQ (AI Snippet Bait) */}
     <FAQRegistrySection
       registryKey="MINDFUL_GUARD"
       variant="fragmented"
       className="bg-[#FBFBFA]"
     />
+
+    {/* Closing CTA */}
+    <MindfulClosingCTA />
   </div>
   <Footer />
 </Layout>

@@ -121,7 +121,7 @@ const canonicalUrl = `https://applass.com${canonicalPath}`;
         <script type="text/partytown" src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.PUBLIC_GA_ID}`}></script>
         <script type="text/partytown" define:vars={{ gaId: import.meta.env.PUBLIC_GA_ID }}>
           window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
+          function gtag(...args){dataLayer.push(args);}
           gtag('js', new Date());
           gtag('config', gaId);
         </script>
