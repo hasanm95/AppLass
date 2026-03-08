@@ -1,0 +1,37 @@
+---
+import Section from "@/components/common/Section.astro";
+import { localize } from "@/i18n/localize";
+import { LinkButton } from "@/components/ui/link-button";
+---
+
+<Section className="relative bg-black py-24 md:py-32">
+  <div class="section-container relative z-10">
+    <div class="mx-auto max-w-3xl text-center">
+      <h2 class="mb-6 text-4xl leading-tight font-bold tracking-tight text-white md:text-5xl lg:text-6xl">
+        {localize("Download ScreenVeil Free.")}
+      </h2>
+      <p class="mb-10 text-lg leading-relaxed text-slate-400 md:text-xl">
+        {localize("Join 10,000+ Android users saving 60%+ battery daily. Zero permissions. Zero data collection. One tap to activate.")}
+      </p>
+      
+      <div class="flex flex-col items-center justify-center gap-6">
+        <LinkButton
+          size="lg"
+          className="h-16 rounded-2xl bg-green-500 px-12 text-lg font-bold text-black shadow-2xl shadow-green-500/30 transition-all duration-500 hover:scale-105 hover:bg-green-400 active:scale-95"
+          href="https://play.google.com/store/apps/details?id=com.screenveil.app"
+        >
+          {localize("Get it on Google Play")}
+        </LinkButton>
+        <p class="text-sm font-medium text-slate-500">
+          {localize("Free forever • AMOLED optimized • Zero permissions")}
+        </p>
+      </div>
+
+      <div class="mt-20 pt-10 border-t border-slate-800 text-center">
+        <p class="text-slate-500 font-medium">
+            {localize("Explore:")} <a href="/" class="text-green-500 hover:text-green-400 transition-colors underline underline-offset-4 font-bold">Home</a> • <a href="/apps/fomogen" class="text-green-500 hover:text-green-400 transition-colors underline underline-offset-4 font-bold">FomoGen</a> • <a href="/apps/mindful-guard" class="text-green-500 hover:text-green-400 transition-colors underline underline-offset-4 font-bold">Mindful Guard</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</Section>
