@@ -11,6 +11,7 @@ import partytown from "@astrojs/partytown";
 // https://astro.build/config
 export default defineConfig({
   site: "https://applass.com",
+  trailingSlash: "never",
   integrations: [react(), sitemap(), partytown()],
   i18n: {
     defaultLocale: "en",
