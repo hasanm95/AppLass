@@ -3,8 +3,6 @@ import { getLangFromUrl } from '../i18n/utils';
 import '../globals.css';
 import '../fonts.css';
 import '../tw-animate.css';
-import { getImage } from 'astro:assets';
-import logoImage from '@/assets/logo.png';
 import { localize } from '@/i18n/localize';
 
 interface Props {
@@ -36,7 +34,7 @@ const defaultDescription = localize("At AppLass, we bridge the gap between compl
 const defaultTitle = localize("AppLass | High-Performance Software Engineering");
 const defaultKeywords = localize("software studio, Shopify apps, digital wellness, accessibility, WCAG, web development, AppLass");
 
-const optimizedOgImage = ogImage || (await getImage({ src: logoImage, format: 'webp', width: 1200 })).src;
+const optimizedOgImage = ogImage || "https://applass.com/logo.png";
 
 // Properly construct language-specific URLs for SEO indexing
 let basePath = Astro.url.pathname.replace(/^\/(en|fr)(\/|$)/, '/');
@@ -96,7 +94,7 @@ const canonicalUrl = `https://applass.com${canonicalPath}`;
     <meta property="og:url" content={ogUrl || Astro.url} />
     <meta property="og:title" content={ogTitle || title || defaultTitle} />
     <meta property="og:description" content={ogDescription || description || defaultDescription} />
-    <meta property="og:image" content="https://applass.com/logo.png" />
+    <meta property="og:image" content={optimizedOgImage} />
     <meta property="og:site_name" content={localize("AppLass")} />
     <meta property="og:locale" content={documentLang === 'fr' ? 'fr_FR' : 'en_US'} />
     <meta property="og:locale:alternate" content={documentLang === 'fr' ? 'en_US' : 'fr_FR'} />
@@ -118,9 +116,10 @@ const canonicalUrl = `https://applass.com${canonicalPath}`;
     <!-- Google Analytics -->
     {import.meta.env.PUBLIC_GA_ID && (
       <>
-        <script type="text/partytown" src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.PUBLIC_GA_ID}`}></script>
-        <script type="text/partytown" define:vars={{ gaId: import.meta.env.PUBLIC_GA_ID }}>
+        <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.PUBLIC_GA_ID}`}></script>
+        <script is:inline define:vars={{ gaId: import.meta.env.PUBLIC_GA_ID }}>
           window.dataLayer = window.dataLayer || [];
+          // eslint-disable-next-line prefer-rest-params
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', gaId);

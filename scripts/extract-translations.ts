@@ -4,13 +4,6 @@ import crc32 from 'crc-32';
 
 const EN_PATH = 'src/i18n/locales/en.json';
 
-let existing: Record<string, string> = {};
-try {
-  existing = JSON.parse(readFileSync(EN_PATH, 'utf-8'));
-} catch {
-  existing = {};
-}
-
 const extracted: Record<string, string> = {};
 
 const files = globSync('src/**/*.{astro,ts,tsx,js,jsx}');
