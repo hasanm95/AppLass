@@ -1,0 +1,52 @@
+---
+---
+<div
+  class="fixed top-0 left-0 z-100 h-1 w-full bg-slate-100"
+  role="progressbar"
+  aria-label="Reading progress"
+  aria-valuemin="0"
+  aria-valuemax="100"
+  aria-valuenow="0"
+  id="reading-progress-container"
+>
+  <div
+    id="reading-progress-bar"
+    class="h-full bg-blue-600 shadow-[0_0_10px_rgba(0,112,243,0.5)] transition-all duration-200 ease-out"
+    style="width: 0%"
+  ></div>
+</div>
+
+<script>
+  function setupProgressBar() {
+    const container = document.getElementById('reading-progress-container');
+    const bar = document.getElementById('reading-progress-bar');
+    
+    if (!container || !bar) return;
+
+    const updateProgress = () => {
+      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (scrollHeight > 0) {
+        const progress = (window.scrollY / scrollHeight) * 100;
+        container.setAttribute('aria-valuenow', Math.round(progress).toString());
+        bar.style.width = `${progress}%`;
+      } else {
+        container.setAttribute('aria-valuenow', '0');
+        bar.style.width = '0%';
+      }
+    };
+
+    window.addEventListener("scroll", updateProgress);
+    window.addEventListener("resize", updateProgress);
+    
+    // Initial call
+    updateProgress();
+    
+    // Clean up on page leave if using View Transitions
+    document.addEventListener('astro:before-preparation', () => {
+      window.removeEventListener("scroll", updateProgress);
+      window.removeEventListener("resize", updateProgress);
+    }, { once: true });
+  }
+
+  setupProgressBar();
+</script>

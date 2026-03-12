@@ -2,9 +2,9 @@
 import Layout from '../layouts/Layout.astro';
 import Footer from "@/components/common/Footer.astro";
 import Navbar from "@/components/common/Navbar.astro";
-import { AppCallout } from "@/components/blog/AppCallout";
-import { ShareArticle } from "@/components/blog/ShareArticle";
-import { ReadingProgressBar } from "@/components/blog/ReadingProgressBar";
+import AppCallout from "@/components/blog/AppCallout.astro";
+import ShareArticle from "@/components/blog/ShareArticle.astro";
+import ReadingProgressBar from "@/components/blog/ReadingProgressBar.astro";
 import FAQSchema from "@/components/common/FAQSchema.astro";
 import { localize } from "@/i18n/localize";
 import { getBlogPostBySlug } from "@/lib/blog";
@@ -72,7 +72,7 @@ const jsonLd = {
       items={post.faqs as { question: string; answer: string }[]}
     />
   )}
-  <ReadingProgressBar client:load />
+  <ReadingProgressBar />
   <Navbar    />
   
   <div class="flex-1 bg-white pt-20">
@@ -161,7 +161,6 @@ const jsonLd = {
                   shareOnLinkedIn: localize("LinkedIn"),
                   copyLink: localize("Copy Link")
                 }}
-                client:idle 
               />
             </div>
           </aside>

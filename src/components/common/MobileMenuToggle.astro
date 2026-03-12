@@ -1,0 +1,184 @@
+---
+import { localePath } from "@/i18n/utils";
+import { localize } from "@/i18n/localize";
+
+interface Props {
+  isDark: boolean;
+  currentLang: string;
+  hasCustomBranding?: boolean;
+  customCTAHtml?: string | undefined;
+}
+
+const { isDark, currentLang, hasCustomBranding, customCTAHtml } = Astro.props;
+---
+
+<mobile-menu-toggle class="contents">
+  <button
+    type="button"
+    class:list={[
+      "mobile-toggle-btn focus-ring flex h-10 w-10 items-center justify-center rounded-xl md:hidden transition-colors",
+      isDark ? "text-white" : "text-slate-900"
+    ]}
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+    aria-label={localize("Open menu")}
+  >
+    <svg class="menu-icon block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+    <svg class="close-icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+  </button>
+
+  <div
+    id="mobile-menu"
+    class:list={[
+      "mobile-menu-content fixed inset-0 top-[72px] z-40 overflow-y-auto p-8 shadow-inner transition-all duration-300 md:hidden invisible opacity-0 -translate-y-4 data-[state=open]:visible data-[state=open]:opacity-100 data-[state=open]:translate-y-0",
+      isDark ? "bg-[#020617]" : "bg-white"
+    ]}
+  >
+    <div class="flex flex-col gap-8">
+      {!hasCustomBranding && (
+        <>
+          <a href={localePath(currentLang, '/')} class:list={["mobile-nav-link text-4xl font-black tracking-tighter transition-all hover:translate-x-2 block", isDark ? "text-white" : "text-slate-900"]}>
+            {localize("Home")}
+          </a>
+          <a href={localePath(currentLang, '/about')} class:list={["mobile-nav-link text-4xl font-black tracking-tighter transition-all hover:translate-x-2 block", isDark ? "text-white" : "text-slate-900"]}>
+            {localize("About")}
+          </a>
+          <a href={localePath(currentLang, '/apps')} class:list={["mobile-nav-link text-4xl font-black tracking-tighter transition-all hover:translate-x-2 block", isDark ? "text-white" : "text-slate-900"]}>
+            {localize("Ecosystem")}
+          </a>
+          <a href={localePath(currentLang, '/docs')} class:list={["mobile-nav-link text-4xl font-black tracking-tighter transition-all hover:translate-x-2 block", isDark ? "text-white" : "text-slate-900"]}>
+            {localize("Docs")}
+          </a>
+          <a href={localePath(currentLang, '/blog')} class:list={["mobile-nav-link text-4xl font-black tracking-tighter transition-all hover:translate-x-2 block", isDark ? "text-white" : "text-slate-900"]}>
+            {localize("Logic Lab")}
+          </a>
+        </>
+      )}
+
+      <div class:list={["border-t pt-6", isDark ? "border-white/10" : "border-slate-100"]}>
+        {customCTAHtml ? (
+          <div class="mobile-nav-link w-full [&>button]:w-full [&>a]:w-full" set:html={customCTAHtml} />
+        ) : (
+          <a
+            href={localePath(currentLang, '/about')}
+            class:list={[
+              "mobile-nav-link inline-flex h-14 w-full items-center justify-center rounded-2xl text-lg font-bold transition-all",
+              isDark
+                ? "bg-white text-slate-900 hover:bg-slate-100"
+                : "bg-slate-900 text-white hover:bg-slate-800"
+            ]}
+          >
+            {localize("Get in Touch")}
+          </a>
+        )}
+      </div>
+    </div>
+  </div>
+</mobile-menu-toggle>
+
+<script>
+  class MobileMenuToggle extends HTMLElement {
+    #isOpen = false;
+
+    connectedCallback() {
+      const toggleBtn = this.querySelector('.mobile-toggle-btn');
+      const menuContent = this.querySelector('.mobile-menu-content');
+      const menuIcon = this.querySelector('.menu-icon');
+      const closeIcon = this.querySelector('.close-icon');
+      const navLinks = this.querySelectorAll('.mobile-nav-link');
+
+      if (!toggleBtn || !menuContent || !menuIcon || !closeIcon) return;
+
+      const openMenu = () => {
+        this.#isOpen = true;
+        menuContent.setAttribute('data-state', 'open');
+        toggleBtn.setAttribute('aria-expanded', 'true');
+        toggleBtn.setAttribute('aria-label', 'Close menu');
+        
+        menuIcon.classList.add('hidden');
+        menuIcon.classList.remove('block');
+        closeIcon.classList.add('block');
+        closeIcon.classList.remove('hidden');
+
+        document.body.style.overflow = 'hidden';
+      };
+
+      const closeMenu = () => {
+        this.#isOpen = false;
+        menuContent.setAttribute('data-state', 'closed');
+        toggleBtn.setAttribute('aria-expanded', 'false');
+        toggleBtn.setAttribute('aria-label', 'Open menu');
+        
+        closeIcon.classList.add('hidden');
+        closeIcon.classList.remove('block');
+        menuIcon.classList.add('block');
+        menuIcon.classList.remove('hidden');
+
+        document.body.style.overflow = '';
+      };
+
+      toggleBtn.addEventListener('click', () => {
+        if (this.#isOpen) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      // Close menu when clicking a link
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (this.#isOpen) closeMenu();
+        });
+      });
+
+      // Handle focus trap and escape key
+      this.ownerDocument.addEventListener('keydown', (e) => {
+        if (!this.#isOpen) return;
+        
+        if (e.key === 'Escape') {
+          closeMenu();
+          if (toggleBtn instanceof HTMLElement) {
+            toggleBtn.focus();
+          }
+        }
+        
+        if (e.key === 'Tab') {
+          const focusableElements = menuContent.querySelectorAll<HTMLElement>(
+            'a[href], button, textarea, input[type="text"], input[type="radio"], input[type="checkbox"], select'
+          );
+          
+          if (focusableElements.length === 0) return;
+          
+          const firstElement = focusableElements[0] as HTMLElement;
+          const lastElement = focusableElements[focusableElements.length - 1] as HTMLElement;
+
+          if (e.shiftKey) {
+            if (this.ownerDocument.activeElement === firstElement || this.ownerDocument.activeElement === toggleBtn) {
+              lastElement.focus();
+              e.preventDefault();
+            }
+          } else {
+            if (this.ownerDocument.activeElement === lastElement) {
+              if (toggleBtn instanceof HTMLElement) {
+                toggleBtn.focus();
+              } else {
+                firstElement.focus();
+              }
+              e.preventDefault();
+            }
+          }
+        }
+      });
+      
+      // Handle resizing cleanly
+      window.addEventListener('resize', () => {
+        if (window.innerWidth >= 768 && this.#isOpen) { // md breakpoint
+          closeMenu();
+        }
+      });
+    }
+  }
+
+  customElements.define('mobile-menu-toggle', MobileMenuToggle);
+</script>

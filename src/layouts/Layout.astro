@@ -38,15 +38,16 @@ const optimizedOgImage = ogImage || "https://applass.com/logo.png";
 
 // Properly construct language-specific URLs for SEO indexing
 let basePath = Astro.url.pathname.replace(/^\/(en|fr)(\/|$)/, '/');
-if (!basePath.endsWith('/')) {
-  basePath += '/';
+if (basePath !== '/' && basePath.endsWith('/')) {
+  basePath = basePath.slice(0, -1);
 }
 const enUrl = `https://applass.com${basePath}`;
-const frUrl = `https://applass.com/fr${basePath === '/' ? '' : basePath}`;
+const frUrl = basePath === '/' ? 'https://applass.com/fr' : `https://applass.com/fr${basePath}`;
 
-const canonicalPath = Astro.url.pathname.endsWith('/') 
-  ? Astro.url.pathname 
-  : `${Astro.url.pathname}/`;
+let canonicalPath = Astro.url.pathname;
+if (canonicalPath !== '/' && canonicalPath.endsWith('/')) {
+  canonicalPath = canonicalPath.slice(0, -1);
+}
 const canonicalUrl = `https://applass.com${canonicalPath}`;
 ---
 
@@ -91,7 +92,7 @@ const canonicalUrl = `https://applass.com${canonicalPath}`;
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={ogUrl || Astro.url} />
+    <meta property="og:url" content={ogUrl || canonicalUrl} />
     <meta property="og:title" content={ogTitle || title || defaultTitle} />
     <meta property="og:description" content={ogDescription || description || defaultDescription} />
     <meta property="og:image" content={optimizedOgImage} />
