@@ -165,4 +165,4 @@ Une fois que vous avez configuré votre notification de vente, retournez dans Fo
 
 ---
 
-**À lire ensuite :** Découvrez comment [calculer le bon seuil de livraison gratuite](/blog/calculate-free-shipping-threshold/) pour votre boutique — et comment l'afficher dynamiquement sous forme de barre de progression qui augmente votre panier moyen.
+**À lire ensuite :** Découvrez comment [calculer le bon seuil de livraison gratuite](/blog/calculate-free-shipping-threshold) pour votre boutique — et comment l'afficher dynamiquement sous forme de barre de progression qui augmente votre panier moyen.

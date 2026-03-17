@@ -166,4 +166,4 @@ Once you've set up your sales notification, head back to FomoGen and enable a **
 
 ---
 
-**Next up:** Learn how to [calculate the perfect free shipping threshold](/blog/calculate-free-shipping-threshold/) for your store — and how to show it dynamically as a progress bar that increases your average order value.
+**Next up:** Learn how to [calculate the perfect free shipping threshold](/blog/calculate-free-shipping-threshold) for your store — and how to show it dynamically as a progress bar that increases your average order value.

@@ -54,7 +54,9 @@ const jsonLd = {
   },
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": `https://applass.com/${lang}/compare/${slug}`,
+    "@id": lang === "en"
+      ? `https://applass.com/compare/${slug}`
+      : `https://applass.com/${lang}/compare/${slug}`,
   },
 };
 

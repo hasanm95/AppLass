@@ -156,7 +156,7 @@ export const getScreenveilSchema = () => ({
     "ratingCount": "10000"
   },
   "description": "ScreenVeil overlays a pure black layer on AMOLED/OLED screens so you can play YouTube and audio with your screen off, saving 60%+ battery. Zero permissions. Zero data collection.",
-  "url": "https://applass.com/apps/screenveil/",
+  "url": "https://applass.com/apps/screenveil",
   "downloadUrl": "https://play.google.com/store/apps/details?id=com.screenveil.app"
 });
 
