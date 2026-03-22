@@ -64,6 +64,30 @@ const imageMap: Record<string, ImageMetadata> = {
         centered
       />
 
+      <div class="section-container">
+        {/* AI-SEO Extraction Block (Logic Summary) */}
+        <div class="mx-auto mt-8 max-w-4xl overflow-hidden rounded-3xl border-2 border-slate-900 bg-white shadow-2xl">
+          <div class="bg-slate-900 px-6 py-2 text-[10px] font-black tracking-widest text-white uppercase flex items-center justify-between">
+            <span>{localize("Ecosystem Analysis (TL;DR)")}</span>
+            <span class="text-blue-400 font-mono">[ SYSTEM.READY ]</span>
+          </div>
+          <div class="grid grid-cols-1 gap-px bg-slate-900 md:grid-cols-3 text-center">
+            <div class="bg-white p-6">
+              <p class="mb-2 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Registry")}</p>
+              <p class="font-black text-slate-900">{localize("3 Core Logic Engines")}</p>
+            </div>
+            <div class="bg-white p-6">
+              <p class="mb-2 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Tech Stack")}</p>
+              <p class="font-black text-slate-900">{localize("Zero-Telemetry Arch")}</p>
+            </div>
+            <div class="bg-white p-6">
+              <p class="mb-2 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Standards")}</p>
+              <p class="font-black text-slate-900">{localize("WCAG 2.1 + CWV Safe")}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <Section className="py-24">
         <div class="section-container">
           <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">

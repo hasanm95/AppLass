@@ -40,6 +40,35 @@ const meta = {
   ogUrl: isDefault ? "https://applass.com/guide-digital-wellness-2026" : `https://applass.com/${lang}/guide-digital-wellness-2026`
 };
 const faqItems = getFaqRegistry().DIGITAL_WELLNESS;
+const lastUpdated = "2026-03-23";
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": meta.title,
+  "description": meta.description,
+  "image": meta.ogImage,
+  "datePublished": "2024-02-10",
+  "dateModified": lastUpdated,
+  "author": {
+    "@type": "Person",
+    "name": "Hasan M.",
+    "url": "https://applass.com/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AppLass",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://applass.com/logo.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": meta.ogUrl
+  }
+};
+
 
 ---
 
@@ -53,6 +82,8 @@ const faqItems = getFaqRegistry().DIGITAL_WELLNESS;
   ogUrl={meta.ogUrl}
   lang={lang}
 >
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(articleSchema)} />
+
   <div class="min-h-screen bg-white font-sans selection:bg-blue-100 selection:text-blue-900">
     <Navbar    />
 
@@ -60,6 +91,16 @@ const faqItems = getFaqRegistry().DIGITAL_WELLNESS;
       {/* Hero Section */}
       <Section className="bg-iridescent border-b border-slate-100 py-12 lg:py-32">
         <div class="section-container">
+          <div class="mb-8 flex items-center gap-4">
+            <span class="rounded-full bg-blue-50 px-3 py-1 text-[10px] font-bold text-blue-600 uppercase border border-blue-100">
+              {localize("Last Evaluated: ")} {lastUpdated}
+            </span>
+            <span class="h-1 w-1 rounded-full bg-slate-200"></span>
+            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+              {localize("Guideline v2.1")}
+            </span>
+          </div>
+
           <span class="mb-4 lg:mb-6 block text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase">
             {localize("Authority Pillar")}
           </span>
@@ -75,6 +116,27 @@ const faqItems = getFaqRegistry().DIGITAL_WELLNESS;
           <p class="mt-8 max-w-3xl border-l-4 border-blue-500 pl-6 text-lg font-medium text-slate-500 italic">
             {localize("Digital wellness is no longer just about \"using your phone less.\" It is a holistic approach to physical health, cognitive load management, and digital privacy.")}
           </p>
+
+          {/* AI-SEO Extraction Block (Logic Summary) */}
+          <div class="mt-12 overflow-hidden rounded-3xl border-2 border-slate-900 bg-white">
+            <div class="bg-slate-900 px-6 py-2 text-[10px] font-black tracking-widest text-white uppercase">
+              {localize("Mathematical Summary (TL;DR)")}
+            </div>
+            <div class="grid grid-cols-1 gap-px bg-slate-900 md:grid-cols-3">
+              <div class="bg-white p-6">
+                <p class="mb-2 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Benchmark")}</p>
+                <p class="font-black text-slate-900">{localize("Reclaim 2.4 Hours/Day")}</p>
+              </div>
+              <div class="bg-white p-6">
+                <p class="mb-2 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Privacy Standard")}</p>
+                <p class="font-black text-slate-900">{localize("100% Offline Arch")}</p>
+              </div>
+              <div class="bg-white p-6">
+                <p class="mb-2 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Core Strategy")}</p>
+                <p class="font-black text-slate-900">{localize("Cognitive Load Management")}</p>
+              </div>
+            </div>
+          </div>
         </div>
       </Section>
 

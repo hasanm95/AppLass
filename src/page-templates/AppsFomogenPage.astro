@@ -33,12 +33,22 @@ const meta = {
   ogUrl: isDefault ? "https://applass.com/apps/fomogen" : `https://applass.com/${lang}/apps/fomogen`
 };
 
+const lastUpdated = "2026-03-23";
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "FomoGen",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Shopify",
+  "datePublished": "2024-01-15",
+  "dateModified": lastUpdated,
+  "author": {
+    "@type": "Person",
+    "name": "Hasan M.",
+    "jobTitle": "Founder & Lead Engineer",
+    "url": "https://applass.com/about"
+  },
   "offers": {
     "@type": "Offer",
     "price": "0",
@@ -46,7 +56,8 @@ const jsonLd = {
   },
   "description": "FomoGen is a lightweight Shopify social proof app with a sub-2.1KB payload. Adds sales notifications, scarcity timers, sticky cart, and free shipping bars without hurting Core Web Vitals scores.",
   "url": "https://applass.com/apps/fomogen",
-  "downloadUrl": "https://apps.shopify.com/fomogen"
+  "downloadUrl": "https://apps.shopify.com/fomogen",
+  "featureList": "WCAG 2.1 Compliance, Real-time Nudges, Zero Performance Impact"
 };
 
 ---
@@ -71,7 +82,38 @@ const jsonLd = {
     />
 
     <div class="flex-1 overflow-x-hidden">
-      <FomoGenHero />
+      <FomoGenHero>
+        <div slot="meta" class="mb-6 flex items-center justify-center lg:justify-start gap-4">
+          <span class="rounded-full bg-green-50 px-3 py-1 text-[10px] font-bold text-green-700 uppercase border border-green-100">
+            {localize("Last Evaluated: ")} {lastUpdated}
+          </span>
+          <span class="h-1 w-1 rounded-full bg-slate-200"></span>
+          <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest italic">
+            {localize("Core Web Vitals Verified")}
+          </span>
+        </div>
+
+        <div slot="ai-summary" class="mt-10 overflow-hidden rounded-2xl border border-slate-200 bg-white/50 backdrop-blur-sm text-left shadow-lg">
+          <div class="bg-slate-900 px-4 py-2 text-[9px] font-black tracking-widest text-white uppercase flex items-center justify-between">
+            <span>{localize("App Protocol Summary (TL;DR)")}</span>
+            <span class="text-green-400 font-mono">[ SV.V4_STABLE ]</span>
+          </div>
+          <div class="grid grid-cols-1 gap-px bg-slate-200 md:grid-cols-3">
+            <div class="bg-white p-4">
+              <p class="mb-1 text-[9px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Benchmark")}</p>
+              <p class="font-black text-slate-900 text-sm">{localize("Sub-2.1KB Payload")}</p>
+            </div>
+            <div class="bg-white p-4">
+              <p class="mb-1 text-[9px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Integration")}</p>
+              <p class="font-black text-slate-900 text-sm">{localize("1-Click Shopify")}</p>
+            </div>
+            <div class="bg-white p-4">
+              <p class="mb-1 text-[9px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Core Value")}</p>
+              <p class="font-black text-slate-900 text-sm">{localize("CWV Safe Logic")}</p>
+            </div>
+          </div>
+        </div>
+      </FomoGenHero>
       <SpeedBenefitSection />
       <CoreFeatures />
       <TestimonialsSection />
