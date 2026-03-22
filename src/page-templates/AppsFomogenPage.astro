@@ -21,7 +21,7 @@ const { lang } = Astro.props;
 import { setLocale } from "@/i18n";
 setLocale(lang);
 
-
+const isDefault = lang === "en";
 
 const meta = {
   title: "FomoGen: Lightweight Shopify Social Proof App – Core Web Vitals Safe",
@@ -30,7 +30,7 @@ const meta = {
   ogTitle: localize("Boost Your Shopify Sales with FOMO Gen"),
   ogDescription: localize("The all-in-one app for Sales Popups, Stock Countdowns, Sticky Cart, and Trust Badges. Install for Free today!"),
   ogImage: "https://applass.com/fomogen-feature.png",
-  ogUrl: "https://applass.com/apps/fomogen"
+  ogUrl: isDefault ? "https://applass.com/apps/fomogen" : `https://applass.com/${lang}/apps/fomogen`
 };
 
 const jsonLd = {

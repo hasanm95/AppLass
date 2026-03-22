@@ -25,6 +25,8 @@ const { lang } = Astro.props;
 import { setLocale } from "@/i18n";
 setLocale(lang);
 
+const isDefault = lang === "en";
+
 const meta = {
   title: localize("About | The AppLass Methodology"),
   description: localize("Founder-led development derived from first principles. Mathematical integrity meets high-end digital craft. Meet the engineer behind the logic."),
@@ -32,7 +34,7 @@ const meta = {
   ogTitle: localize("The AppLass Methodology | Logic-Driven Development"),
   ogDescription: localize("Deriving digital performance from first principles. Explore the methodology behind high-conversion Shopify tools and mindful mobile utilities."),
   ogImage: "https://applass.com/og-about.png",
-  ogUrl: "https://applass.com/about"
+  ogUrl: isDefault ? "https://applass.com/about" : `https://applass.com/${lang}/about`
 };
 
 const iconMap = {

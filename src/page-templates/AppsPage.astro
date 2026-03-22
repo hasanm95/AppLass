@@ -23,6 +23,7 @@ const { lang } = Astro.props;
 
 import { setLocale } from "@/i18n";
 setLocale(lang);
+const isDefault = lang === "en"; 
 
 const meta = {
   title: localize("Our Apps | AppLass Ecosystem"),
@@ -31,7 +32,7 @@ const meta = {
   ogTitle: localize("Our Apps | AppLass Ecosystem"),
   ogDescription: localize("Explore our suite of logic-driven applications designed for elite performance."),
   ogImage: "https://applass.com/og-apps.png",
-  ogUrl: `https://applass.com/${lang}/apps`
+  ogUrl: isDefault ? "https://applass.com/apps" : `https://applass.com/${lang}/apps`
 };
 
 const imageMap: Record<string, ImageMetadata> = {

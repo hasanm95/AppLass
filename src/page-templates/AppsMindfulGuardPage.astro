@@ -22,6 +22,8 @@ const { lang } = Astro.props;
 
 import { setLocale } from "@/i18n";
 setLocale(lang);
+
+const isDefault = lang === "en";
 const mindfulSchema = getMindfulGuardSchema();
 
 const meta = {
@@ -31,7 +33,7 @@ const meta = {
   ogTitle: localize("MindfulGuard | Reclaim Your Neural Architecture"),
   ogDescription: localize("The first Android app blocker engineered for privacy absolutists. 0ms latency. 100% Offline. Zero telemetry."),
   ogImage: "https://applass.com/mindful-guard-feature.png",
-  ogUrl: "https://applass.com/apps/mindful-guard"
+  ogUrl: isDefault ? "https://applass.com/apps/mindful-guard" : `https://applass.com/${lang}/apps/mindful-guard`
 };
 
 ---

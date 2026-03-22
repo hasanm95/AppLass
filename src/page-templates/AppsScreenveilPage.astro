@@ -24,6 +24,8 @@ const { lang } = Astro.props;
 
 import { setLocale } from "@/i18n";
 setLocale(lang);
+
+const isDefault = lang === "en";
 const screenveilData = getScreenveilData();
 const screenveilSchema = getScreenveilSchema();
 
@@ -34,7 +36,7 @@ const meta = {
   ogTitle: localize("ScreenVeil: Save 60% Battery with Screen Off Video Playback"),
   ogDescription: localize("The ultimate AMOLED battery saver. Watch YouTube, Netflix, and podcasts with your screen off. Zero permissions, 100% privacy."),
   ogImage: "https://applass.com/screenveil-feature.png",
-  ogUrl: "https://applass.com/apps/screenveil"
+  ogUrl: isDefault ? "https://applass.com/apps/screenveil" : `https://applass.com/${lang}/apps/screenveil`
 };
 
 ---

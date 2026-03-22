@@ -27,6 +27,8 @@ const { lang } = Astro.props;
 import { setLocale } from "@/i18n";
 setLocale(lang);
 
+const isDefault = lang === "en";
+
 const meta = {
   title: localize("Ecommerce Performance Guide 2026: Benchmarks & Conversion Hacks"),
   description: localize("Master ecommerce performance in 2026. Discover the latest Shopify speed benchmarks, social proof strategies that boost sales by 98%, and CRO tools like sticky carts."),
@@ -34,7 +36,7 @@ const meta = {
   ogTitle: localize("Ecommerce Performance Guide 2026 | AppLass Authority Pillar"),
   ogDescription: localize("Technical benchmarks and conversion hooks for modern Shopify merchants. Achieve sub-2 second load times and +98% engagement."),
   ogImage: "https://applass.com/og-ecommerce-guide.png",
-  ogUrl: "https://applass.com/blog/ecommerce-performance-2026-benchmarks"
+  ogUrl: isDefault ? "https://applass.com/ecommerce-performance-2026-benchmarks" : `https://applass.com/${lang}/ecommerce-performance-2026-benchmarks`
 };
 const faqItems = getFaqRegistry().ECOMMERCE_PERFORMANCE;
 
