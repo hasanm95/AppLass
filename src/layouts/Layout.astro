@@ -120,6 +120,7 @@ const canonicalUrl = `https://applass.com${canonicalPath}`;
     <!-- Google Analytics -->
     {import.meta.env.PUBLIC_GA_ID && (
       <>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
         <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.PUBLIC_GA_ID}`}></script>
         <script is:inline define:vars={{ gaId: import.meta.env.PUBLIC_GA_ID }}>
           window.dataLayer = window.dataLayer || [];

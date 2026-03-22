@@ -40,9 +40,20 @@ const jsonLd = {
   description: post.excerpt,
   image: typeof post.thumbnail === 'object' ? post.thumbnail.src : post.thumbnail,
   datePublished: post.date,
+  dateModified: post.date,
   author: {
     "@type": "Person",
     name: post.author,
+    url: "https://applass.com/about",
+    jobTitle: "Founder & Lead Engineer",
+    worksFor: {
+      "@type": "Organization",
+      name: "AppLass"
+    },
+    sameAs: [
+      "https://www.linkedin.com/in/hasanm025/",
+      "https://github.com/hasanm95"
+    ]
   },
   publisher: {
     "@type": "Organization",
