@@ -29,6 +29,7 @@ const heroImageSrc: ImageMetadata = fomogenHeroImg;
         ⚡ {translations.tagline}
       </div>
 
+      <slot name="meta" />
       <h1 class="parallax-fomo-headline mb-8 text-4xl leading-[0.95] font-bold tracking-tight text-slate-900 sm:text-5xl md:text-6xl lg:mb-10 lg:text-[4.5rem]">
         {translations.headline}
         <br />
@@ -48,7 +49,7 @@ const heroImageSrc: ImageMetadata = fomogenHeroImg;
           className="h-14 w-full rounded-xl bg-[#131111] px-10 text-base font-bold text-white shadow-2xl shadow-slate-200 transition-all duration-500 hover:scale-105 hover:bg-black active:scale-95 sm:w-auto md:h-16 md:rounded-2xl md:px-12 md:text-lg"
           asChild
         >
-        <a href={translations.shopifyUrl}>
+        <a href={translations.shopifyUrl} target="_blank" rel="noopener noreferrer">
             {translations.primaryCTA}
           </a>
         </Button>
@@ -70,6 +71,7 @@ const heroImageSrc: ImageMetadata = fomogenHeroImg;
       <p class="mt-8 text-sm font-bold text-slate-400 lg:mt-10">
         {translations.subtext}
       </p>
+      <slot name="ai-summary" />
     </div>
 
     {/* Before/After Comparison Image */}

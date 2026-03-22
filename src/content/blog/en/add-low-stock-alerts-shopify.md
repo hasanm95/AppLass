@@ -158,4 +158,4 @@ FomoGen has all three in a single install. The free plan lets you run one campai
 
 ---
 
-**Related:** Now that you've got urgency covered, read how to [add a free shipping bar to your Shopify store](/blog/free-shipping-bar-shopify/) to give customers the final nudge they need to top up their cart and complete the purchase.
+<!-- **Related:** Now that you've got urgency covered, read how to [add a free shipping bar to your Shopify store](/blog/free-shipping-bar-shopify) to give customers the final nudge they need to top up their cart and complete the purchase. -->

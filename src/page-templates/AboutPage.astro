@@ -25,6 +25,8 @@ const { lang } = Astro.props;
 import { setLocale } from "@/i18n";
 setLocale(lang);
 
+const isDefault = lang === "en";
+
 const meta = {
   title: localize("About | The AppLass Methodology"),
   description: localize("Founder-led development derived from first principles. Mathematical integrity meets high-end digital craft. Meet the engineer behind the logic."),
@@ -32,7 +34,22 @@ const meta = {
   ogTitle: localize("The AppLass Methodology | Logic-Driven Development"),
   ogDescription: localize("Deriving digital performance from first principles. Explore the methodology behind high-conversion Shopify tools and mindful mobile utilities."),
   ogImage: "https://applass.com/og-about.png",
-  ogUrl: "https://applass.com/about"
+  ogUrl: isDefault ? "https://applass.com/about" : `https://applass.com/${lang}/about`
+};
+
+const lastUpdated = "2026-03-23";
+
+const aboutSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "AppLass",
+    "url": "https://applass.com",
+    "logo": "https://applass.com/logo.png",
+    "description": meta.description
+  },
+  "dateModified": lastUpdated
 };
 
 const iconMap = {
@@ -55,7 +72,13 @@ const iconMap = {
 >
   <div class="min-h-screen bg-white">
     <Navbar    />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(aboutSchema)} />
     <div class="pt-20 lg:pt-32">
+      <div class="section-container mt-8 flex items-center gap-4">
+        <span class="rounded-full bg-slate-50 px-3 py-1 text-[10px] font-bold text-slate-600 uppercase border border-slate-100">
+          {localize("Last Evaluated: ")} {lastUpdated}
+        </span>
+      </div>
       {/* Hero Methodology Section */}
       <SubpageHero
         eyebrow={localize("The AppLass Methodology")}
@@ -63,6 +86,30 @@ const iconMap = {
         headlineAccent={localize("Methodology.")}
         description={localize("At AppLass, we bridge the gap between complex mathematics and human-centric software. From high-conversion Shopify tools to mindful mobile utilities, we build the 'Next Wave' of digital performance—zero bloat, maximum impact.")}
       />
+
+      <div class="section-container">
+        {/* AI-SEO Extraction Block (Logic Summary) */}
+        <div class="mt-8 overflow-hidden rounded-3xl border-2 border-slate-900 bg-white shadow-2xl">
+          <div class="bg-slate-900 px-6 py-2 text-[10px] font-black tracking-widest text-white uppercase flex items-center justify-between">
+            <span>{localize("Methodology Analysis (TL;DR)")}</span>
+            <span class="text-blue-400 font-mono">[ PROTOCOL.X1 ]</span>
+          </div>
+          <div class="grid grid-cols-1 gap-px bg-slate-900 md:grid-cols-3">
+            <div class="bg-white p-6">
+              <p class="mb-2 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Philosophy")}</p>
+              <p class="font-black text-slate-900">{localize("First Principles Logic")}</p>
+            </div>
+            <div class="bg-white p-6">
+              <p class="mb-2 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Metric")}</p>
+              <p class="font-black text-slate-900">{localize("Zero Technical Debt")}</p>
+            </div>
+            <div class="bg-white p-6">
+              <p class="mb-2 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Objective")}</p>
+              <p class="font-black text-slate-900">{localize("Human-Centric Impact")}</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Founder Bio - E-E-A-T Signal */}
       <Section className="py-16 lg:py-32">
@@ -121,6 +168,25 @@ const iconMap = {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </Section>
+  
+      {/* Internal Authority Cluster */}
+      <Section className="bg-slate-50 py-16 lg:py-32">
+        <div class="section-container">
+          <div class="mb-12">
+            <h2 class="text-3xl font-black text-slate-900">{localize("Authority Hubs")}</h2>
+          </div>
+          <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+            <a href={localePath(lang, "/ecommerce-performance-2026-benchmarks")} class="group rounded-3xl border border-slate-200 bg-white p-8 transition-all hover:border-blue-500/20 hover:shadow-xl">
+               <h4 class="mb-2 font-black text-slate-900 text-xl">{localize("Ecommerce Performance 2026")}</h4>
+               <p class="text-slate-500 font-medium">{localize("Mathematical benchmarks and speed protocols for Shopify merchants.")} &rarr;</p>
+            </a>
+            <a href={localePath(lang, "/digital-wellness-2026-guide")} class="group rounded-3xl border border-slate-200 bg-white p-8 transition-all hover:border-blue-500/20 hover:shadow-xl">
+               <h4 class="mb-2 font-black text-slate-900 text-xl">{localize("Digital Wellness Guide 2026")}</h4>
+               <p class="text-slate-500 font-medium">{localize("Cognitive load management and privacy-first focus strategies.")} &rarr;</p>
+            </a>
           </div>
         </div>
       </Section>
