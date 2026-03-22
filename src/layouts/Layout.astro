@@ -102,9 +102,11 @@ const canonicalUrl = `https://applass.com${canonicalPath}`;
     <meta property="og:locale:alternate" content={documentLang === 'fr' ? 'en_US' : 'fr_FR'} />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:description" content={ogDescription || description || defaultDescription} />
-    <meta property="twitter:image" content={optimizedOgImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={ogUrl || canonicalUrl} />
+    <meta name="twitter:title" content={ogTitle || title || defaultTitle} />
+    <meta name="twitter:description" content={ogDescription || description || defaultDescription} />
+    <meta name="twitter:image" content={optimizedOgImage} />
 
     <!-- Fonts -->
     <style is:global>
