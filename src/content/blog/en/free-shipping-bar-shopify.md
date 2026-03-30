@@ -47,9 +47,7 @@ That's why the bar works better than just writing "Free shipping on orders over 
 
 ---
 
-<!-- IMAGE PROMPT: A clean e-commerce illustration showing a customer at a laptop with a Shopify store open. At the top of the store is a green progress bar showing "You're $14 away from FREE shipping! 🎉" with the bar about 70% filled. The customer has a happy, motivated expression. Simple flat design, warm colors. -->
-<!-- ALT: Shopify store showing a free shipping progress bar at 70% with a customer about to add more items to cart -->
-<!-- FILENAME: free-shipping-progress-bar-customer-motivation.png -->
+![Shopify store showing a free shipping progress bar at 70% with a customer about to add more items to cart](../../../assets/blogs/free-shipping-progress-bar-customer-motivation.png)
 
 ---
 
@@ -105,9 +103,7 @@ Hit **Save** and toggle the bar to **Active**. Open your store in a new tab and 
 
 ---
 
-<!-- IMAGE PROMPT: A three-panel mobile phone mockup showing the free shipping bar at different stages. Panel 1: bar is empty/just started, showing "Spend $50 for free shipping". Panel 2: bar is 65% full, showing "Only $17 away from free shipping!". Panel 3: bar is completely full in green, showing "You've unlocked FREE shipping! 🎉". Clean UI, green progress bar, white background. -->
-<!-- ALT: Three stages of a Shopify free shipping progress bar from empty to complete on mobile -->
-<!-- FILENAME: free-shipping-bar-three-stages-mobile.png -->
+![Three stages of a Shopify free shipping progress bar from empty to complete on mobile](../../../assets/blogs/free-shipping-bar-three-stages-mobile.png)
 
 ---
 
@@ -157,9 +153,7 @@ At 100 orders a month, if even 30% of customers top up their cart, that's $195/m
 
 ---
 
-<!-- IMAGE PROMPT: A clean infographic-style illustration showing a cart with two scenarios side by side. Left side labeled "Without Free Shipping Bar" shows a cart at $44 with a sad face and a $6.99 shipping fee at checkout. Right side labeled "With Free Shipping Bar" shows the same cart topped up to $57 with a happy face, a $0 shipping line, and a +$13 product highlighted. Clean flat design, dark background, white and green text. -->
-<!-- ALT: Infographic comparing Shopify average order value with and without a free shipping progress bar -->
-<!-- FILENAME: free-shipping-bar-aov-comparison-infographic.png -->
+![Infographic comparing Shopify average order value with and without a free shipping progress bar](../../../assets/blogs/free-shipping-bar-aov-comparison-infographic.png)
 
 ---
 
@@ -175,4 +169,4 @@ Once your free shipping bar is live, go back into FomoGen and turn on your **Sal
 
 ---
 
-**Related:** Learn how to pair your free shipping bar with [low stock alerts](/blog/add-low-stock-alerts-shopify/) that create urgency on your best-selling products — the two tools work together to push browsing customers into buying mode.
+<!-- **Related:** Learn how to pair your free shipping bar with [low stock alerts](/blog/add-low-stock-alerts-shopify/) that create urgency on your best-selling products — the two tools work together to push browsing customers into buying mode. -->
