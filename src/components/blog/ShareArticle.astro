@@ -1,0 +1,100 @@
+---
+interface Props {
+  title: string;
+  slug: string;
+  labels?: {
+    shareArticle: string;
+    shareOnTwitter: string;
+    shareOnLinkedIn: string;
+    copyLink: string;
+  };
+}
+
+const { title, slug, labels } = Astro.props;
+const url = `https://applass.com/blog/${slug}`;
+---
+
+<div class="rounded-4xl border border-slate-100 bg-slate-50/50 p-8">
+  <h4 class="mb-4 text-sm font-black tracking-widest text-slate-900 uppercase">
+    {labels?.shareArticle || "Share Article"}
+  </h4>
+  <div class="flex gap-4">
+    <button
+      class="share-twitter flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 transition-all hover:border-blue-600 hover:text-blue-600"
+      title={labels?.shareOnTwitter || "Share on Twitter"}
+      data-title={title}
+      data-url={url}
+      aria-label={labels?.shareOnTwitter || "Share on Twitter"}
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+    </button>
+    <button
+      class="share-linkedin flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 transition-all hover:border-blue-600 hover:text-blue-600"
+      title={labels?.shareOnLinkedIn || "Share on LinkedIn"}
+      data-url={url}
+      aria-label={labels?.shareOnLinkedIn || "Share on LinkedIn"}
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+    </button>
+    <button
+      class="share-copy group flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 transition-all hover:border-blue-600 hover:text-blue-600 [&.copied]:border-green-500 [&.copied]:text-green-500"
+      title={labels?.copyLink || "Copy Link"}
+      data-url={url}
+      aria-label={labels?.copyLink || "Copy Link"}
+    >
+      <div class="flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 block group-[.copied]:hidden"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 hidden group-[.copied]:block"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+    </button>
+  </div>
+</div>
+
+<script>
+  function initShareButtons() {
+    const twitterButtons = document.querySelectorAll('.share-twitter:not([data-initialized])');
+    const linkedinButtons = document.querySelectorAll('.share-linkedin:not([data-initialized])');
+    const copyButtons = document.querySelectorAll('.share-copy:not([data-initialized])');
+
+    twitterButtons.forEach(btn => {
+      btn.setAttribute('data-initialized', 'true');
+      btn.addEventListener('click', (e) => {
+        const target = e.currentTarget as HTMLButtonElement;
+        const title = target.dataset.title || '';
+        const url = target.dataset.url || '';
+        window.open(
+          `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`,
+          "_blank"
+        );
+      });
+    });
+
+    linkedinButtons.forEach(btn => {
+      btn.setAttribute('data-initialized', 'true');
+      btn.addEventListener('click', (e) => {
+        const target = e.currentTarget as HTMLButtonElement;
+        const url = target.dataset.url || '';
+        window.open(
+          `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`,
+          "_blank"
+        );
+      });
+    });
+
+    copyButtons.forEach(btn => {
+      btn.setAttribute('data-initialized', 'true');
+      btn.addEventListener('click', (e) => {
+        const target = e.currentTarget as HTMLButtonElement;
+        const url = target.dataset.url || '';
+        navigator.clipboard.writeText(url).then(() => {
+           target.classList.add('copied');
+           setTimeout(() => {
+             target.classList.remove('copied');
+           }, 2000);
+        });
+      });
+    });
+  }
+
+  initShareButtons();
+</script>

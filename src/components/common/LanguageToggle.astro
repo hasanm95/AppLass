@@ -1,0 +1,160 @@
+---
+import { localePath } from "@/i18n/utils";
+import { localize } from "@/i18n/localize";
+
+interface Props {
+  isDark: boolean;
+  currentLang: string;
+}
+
+const { isDark, currentLang } = Astro.props;
+
+const LOCALES = [
+  { code: "en", label: "EN", fullLabel: "English", flag: "🇺🇸" },
+  { code: "fr", label: "FR", fullLabel: "Français", flag: "🇫🇷" },
+] as const;
+
+const currentPath = Astro.url.pathname;
+const pathWithoutLang = currentPath.startsWith(`/${currentLang}/`) || currentPath === `/${currentLang}` 
+  ? currentPath.replace(new RegExp(`^/${currentLang}`), "")
+  : currentPath;
+
+const targetPath = pathWithoutLang || "/";
+---
+
+<lang-toggle class="contents">
+  <button
+    type="button"
+    class:list={[
+      "lang-toggle-btn flex h-10 w-10 items-center justify-center rounded-xl transition-colors",
+      isDark
+        ? "text-slate-400 hover:bg-white/10 hover:text-white"
+        : "text-slate-500 hover:bg-slate-100 hover:text-slate-900"
+    ]}
+    aria-expanded="false"
+    aria-label={localize("Select Language")}
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+  </button>
+
+  <div 
+    class="lang-sidebar-portal fixed inset-0 z-100 flex justify-end invisible pointer-events-none data-[state=open]:visible data-[state=open]:pointer-events-auto transition-[visibility] duration-300"
+  >
+    {/* Backdrop */}
+    <div 
+      class="lang-sidebar-backdrop absolute inset-0 bg-slate-900/20 backdrop-blur-sm opacity-0 transition-opacity duration-300 data-[state=open]:opacity-100"
+    />
+    
+    {/* Sidebar */}
+    <div 
+      class:list={[
+        "lang-sidebar-content relative w-full h-full flex flex-col shadow-2xl transition-transform duration-300 translate-x-full data-[state=open]:translate-x-0 max-w-sm",
+        isDark ? "bg-[#020617] border-l border-white/10" : "bg-white border-l border-slate-200"
+      ]}
+    >
+      <div class="flex items-center justify-between p-6 border-b border-slate-100 dark:border-white/10">
+        <h2 class:list={["text-lg font-black tracking-tight", isDark ? "text-white" : "text-slate-900"]}>
+          {localize("Select Language")}
+        </h2>
+        <button 
+          class:list={["lang-sidebar-close p-2 rounded-xl transition-colors", isDark ? "hover:bg-white/10 text-slate-400" : "hover:bg-slate-100 text-slate-500"]}
+          aria-label={localize("Close")}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="p-6 flex flex-col gap-3">
+        {LOCALES.map(({ code, fullLabel, flag }) => {
+          const isActive = currentLang === code;
+          return (
+            <a
+              href={localePath(code, targetPath)}
+              aria-current={isActive ? "true" : undefined}
+              class:list={[
+                "flex items-center justify-between rounded-xl px-5 py-4 font-medium transition-all group",
+                isActive
+                  ? isDark 
+                    ? "bg-white text-slate-900 shadow-md" 
+                    : "bg-slate-900 text-white shadow-md"
+                  : isDark
+                    ? "text-slate-400 hover:bg-white/10 hover:text-white"
+                    : "text-slate-600 bg-slate-50 hover:bg-slate-100 hover:text-slate-900"
+              ]}
+            >
+              <div class="flex items-center gap-4">
+                <span class="text-2xl grayscale transition-all group-hover:grayscale-0">{flag}</span>
+                <span class="font-bold">{fullLabel}</span>
+              </div>
+              {isActive && (
+                <div class:list={["h-2 w-2 rounded-full", isDark ? "bg-slate-900" : "bg-white"]} />
+              )}
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  </div>
+</lang-toggle>
+
+<script>
+  class LangToggle extends HTMLElement {
+    #isOpen = false;
+
+    connectedCallback() {
+      const toggleBtn = this.querySelector('.lang-toggle-btn');
+      const closeBtn = this.querySelector('.lang-sidebar-close');
+      const backdrop = this.querySelector('.lang-sidebar-backdrop');
+      const portal = this.querySelector('.lang-sidebar-portal');
+      const content = this.querySelector('.lang-sidebar-content');
+
+      if (!toggleBtn || !closeBtn || !backdrop || !portal || !content) return;
+
+      const openSidebar = () => {
+        this.#isOpen = true;
+        portal.setAttribute('data-state', 'open');
+        backdrop.setAttribute('data-state', 'open');
+        content.setAttribute('data-state', 'open');
+        toggleBtn.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+        
+        // Focus close button on opening
+        if (closeBtn instanceof HTMLElement) {
+          closeBtn.focus();
+        }
+      };
+
+      const closeSidebar = () => {
+        this.#isOpen = false;
+        portal.setAttribute('data-state', 'closed');
+        backdrop.setAttribute('data-state', 'closed');
+        content.setAttribute('data-state', 'closed');
+        toggleBtn.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+        if (toggleBtn instanceof HTMLElement) {
+          toggleBtn.focus();
+        }
+      };
+
+      toggleBtn.addEventListener('click', () => {
+        if (this.#isOpen) {
+          closeSidebar();
+        } else {
+          openSidebar();
+        }
+      });
+
+      closeBtn.addEventListener('click', closeSidebar);
+      backdrop.addEventListener('click', closeSidebar);
+
+      // Handle Escape key
+      this.ownerDocument.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && this.#isOpen) {
+          closeSidebar();
+        }
+      });
+    }
+  }
+
+  customElements.define('lang-toggle', LangToggle);
+</script>

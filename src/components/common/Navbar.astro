@@ -4,8 +4,8 @@ import { getLangFromUrl, localePath } from "@/i18n/utils";
 import { localize } from "@/i18n/localize";
 
 // Import the interactive islands
-import { MobileMenuToggle } from "./MobileMenuToggle";
-import { LanguageToggle } from "./LanguageToggle";
+import MobileMenuToggle from "./MobileMenuToggle.astro";
+import LanguageToggle from "./LanguageToggle.astro";
 
 import { Image } from 'astro:assets';
 import appLogoImg from '@/assets/logo.png';
@@ -109,8 +109,8 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
 
       {/* CTA & Mobile Toggle */}
       <div class="flex items-center gap-3 md:gap-4">
-        {/* Language Switcher Trigger (Interactive UI) */}
-        <LanguageToggle client:load isDark={isDark} currentLang={currentLang} />
+        {/* Language Switcher Trigger (Native) */}
+        <LanguageToggle isDark={isDark} currentLang={currentLang} />
 
         <div class="hidden md:block">
           {hasCustomCTA ? (
@@ -133,7 +133,6 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
 
         {/* Mobile Toggle Button (Native Astro Web Component) */}
         <MobileMenuToggle 
-          client:load 
           isDark={isDark} 
           currentLang={currentLang} 
           hasCustomBranding={hasCustomBranding}

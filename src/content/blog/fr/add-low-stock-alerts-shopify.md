@@ -45,9 +45,7 @@ Quand c'est vrai, en revanche, c'est l'un des outils de conversion les plus effi
 
 ---
 
-<!-- IMAGE PROMPT: Side-by-side product page comparison. Left side: a plain Shopify product page for a generic watch with standard "Add to Cart" button, no urgency signals. Right side: same product page with a red/orange "⚡ Plus que 3 en stock — commandez vite !" badge below the price and above the Add to Cart button. Customer figure on the left looks passive; customer figure on the right looks engaged and clicking. Clean flat illustration style. -->
-<!-- ALT: Page produit Shopify avant et après l'ajout d'une alerte de stock bas montrant la différence d'urgence -->
-<!-- FILENAME: low-stock-alert-before-after-product-page.png -->
+![Page produit Shopify avant et après l'ajout d'une alerte de stock bas montrant la différence d'urgence](../../../assets/blogs/low-stock-alert-before-after-product-page.png)
 
 ---
 
@@ -104,9 +102,8 @@ Ouvrez une de vos pages produit dans un nouvel onglet. Si ce produit a un invent
 
 ---
 
-<!-- IMAGE PROMPT: A clean mobile phone mockup showing a Shopify product page for a generic pair of sneakers. Below the product price (89€) and above the "Add to Cart" button, there's a small badge with an orange background reading "⚡ Plus que 3 en stock — commandez vite !" in white text. The Add to Cart button is highlighted. Realistic mobile UI, white background. -->
-<!-- ALT: Page produit Shopify mobile montrant une alerte de stock bas lisant "Plus que 3 en stock — commandez vite" au-dessus du bouton ajouter au panier -->
-<!-- FILENAME: low-stock-alert-mobile-product-page-shopify.png -->
+![Page produit Shopify mobile montrant une alerte de stock bas lisant "Plus que 3 en stock — commandez vite" au-dessus du bouton ajouter au panier](../../../assets/blogs/low-stock-alert-mobile-product-page-shopify.png)
+
 
 ---
 
@@ -140,9 +137,7 @@ Si un client parcourt 10 produits et que chacun affiche une alerte de stock faib
 
 ---
 
-<!-- IMAGE PROMPT: A simple infographic showing three product cards with different stock levels and appropriate threshold settings. Card 1: "Produit à fort volume" with 15 units shown, threshold badge says "Seuil recommandé: 15–20 unités". Card 2: "Produit à volume moyen" with 8 units shown, badge says "Seuil recommandé: 8–12 unités". Card 3: "Produit premium/limité" with 3 units shown, badge says "Seuil recommandé: 3–5 unités". Clean flat design, three distinct color-coded cards. -->
-<!-- ALT: Infographie montrant les seuils d'alerte de stock bas recommandés pour les produits Shopify à fort volume, volume moyen et premium -->
-<!-- FILENAME: low-stock-threshold-guide-product-types.png -->
+![Infographie montrant les seuils d'alerte de stock bas recommandés pour les produits Shopify à fort volume, volume moyen et premium](../../../assets/blogs/low-stock-threshold-guide-product-types.png)
 
 ---
 
@@ -164,4 +159,4 @@ FomoGen a les trois en une seule installation. Le plan gratuit vous permet de la
 
 ---
 
-**À lire ensuite :** Maintenant que vous avez l'urgence couverte, lisez comment [ajouter une barre de livraison gratuite à votre boutique Shopify](/blog/free-shipping-bar-shopify/) pour donner aux clients le dernier coup de pouce dont ils ont besoin pour gonfler leur panier et finaliser l'achat.
+<!-- **À lire ensuite :** Maintenant que vous avez l'urgence couverte, lisez comment [ajouter une barre de livraison gratuite à votre boutique Shopify](/blog/free-shipping-bar-shopify/) pour donner aux clients le dernier coup de pouce dont ils ont besoin pour gonfler leur panier et finaliser l'achat. -->

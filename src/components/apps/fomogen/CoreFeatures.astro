@@ -67,7 +67,7 @@ const features = fomoData.features.map((feature, idx) => ({
                 <div class="relative aspect-video overflow-hidden rounded-4xl border border-slate-100 bg-slate-50 shadow-2xl md:rounded-[3rem]">
                   <Image
                     src={finalImageSrc}
-                    alt={feature.title}
+                    alt={`${feature.title} - ${feature.subtitle} [App Protocol Feature]`}
                     width={800}
                     height={450}
                     class="absolute inset-0 h-full w-full object-cover"

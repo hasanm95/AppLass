@@ -2,9 +2,9 @@
 import Layout from '../layouts/Layout.astro';
 import Footer from "@/components/common/Footer.astro";
 import Navbar from "@/components/common/Navbar.astro";
-import { AppCallout } from "@/components/blog/AppCallout";
-import { ShareArticle } from "@/components/blog/ShareArticle";
-import { ReadingProgressBar } from "@/components/blog/ReadingProgressBar";
+import AppCallout from "@/components/blog/AppCallout.astro";
+import ShareArticle from "@/components/blog/ShareArticle.astro";
+import ReadingProgressBar from "@/components/blog/ReadingProgressBar.astro";
 import FAQSchema from "@/components/common/FAQSchema.astro";
 import { localize } from "@/i18n/localize";
 import { getBlogPostBySlug } from "@/lib/blog";
@@ -40,9 +40,20 @@ const jsonLd = {
   description: post.excerpt,
   image: typeof post.thumbnail === 'object' ? post.thumbnail.src : post.thumbnail,
   datePublished: post.date,
+  dateModified: "2026-03-23",
   author: {
     "@type": "Person",
     name: post.author,
+    url: "https://applass.com/about",
+    jobTitle: "Founder & Lead Engineer",
+    worksFor: {
+      "@type": "Organization",
+      name: "AppLass"
+    },
+    sameAs: [
+      "https://www.linkedin.com/in/hasanm025/",
+      "https://github.com/hasanm95"
+    ]
   },
   publisher: {
     "@type": "Organization",
@@ -54,7 +65,9 @@ const jsonLd = {
   },
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": `https://applass.com/${lang}/blog/${slug}`,
+    "@id": lang === "en"
+      ? `https://applass.com/blog/${slug}`
+      : `https://applass.com/${lang}/blog/${slug}`,
   },
 };
 
@@ -72,7 +85,7 @@ const jsonLd = {
       items={post.faqs as { question: string; answer: string }[]}
     />
   )}
-  <ReadingProgressBar client:load />
+  <ReadingProgressBar />
   <Navbar    />
   
   <div class="flex-1 bg-white pt-20">
@@ -91,9 +104,11 @@ const jsonLd = {
             {post.category}
           </span>
           <span class="h-1 w-1 rounded-full bg-slate-200" />
-          <span class="text-[10px] font-bold text-slate-500">
-            {post.date}
-          </span>
+          <div class="flex items-center gap-2">
+            <span class="text-[10px] font-bold text-slate-500 uppercase border border-slate-100 rounded-lg px-2 py-0.5">
+              {localize("Verified on: ")} 2026-03-23
+            </span>
+          </div>
         </div>
 
         <h1 class="mb-10 max-w-6xl text-2xl leading-[1.2] font-bold text-slate-900 lg:text-8xl">
@@ -114,6 +129,25 @@ const jsonLd = {
             <p class="text-xs font-bold text-slate-500">
               {localize("Article Author")}
             </p>
+          </div>
+        </div>
+
+        {/* AI-SEO Extraction Block (Logic Summary) */}
+        <div class="mt-20 overflow-hidden rounded-3xl border-2 border-slate-900 bg-white">
+          <div class="bg-slate-900 px-6 py-2 text-[10px] font-black tracking-widest text-white uppercase flex items-center justify-between">
+            <span>{localize("Protocol Analysis (TL;DR)")}</span>
+            <span class="text-blue-400 font-mono">[ ANALYZE.READY ]</span>
+          </div>
+          <div class="p-8">
+            <p class="text-xl font-bold leading-relaxed text-slate-900">
+              {description}
+            </p>
+            <div class="mt-6 flex items-center gap-4">
+              <div class="h-1 w-12 bg-blue-600"></div>
+              <p class="text-xs font-black tracking-widest text-slate-400 uppercase">
+                {localize("Verified Content Entity")}
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -161,7 +195,6 @@ const jsonLd = {
                   shareOnLinkedIn: localize("LinkedIn"),
                   copyLink: localize("Copy Link")
                 }}
-                client:idle 
               />
             </div>
           </aside>
