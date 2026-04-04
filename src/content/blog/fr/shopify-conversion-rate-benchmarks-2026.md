@@ -45,9 +45,7 @@ Gardez ça à l'esprit en regardant les benchmarks ci-dessous — vous n'essayez
 
 ---
 
-<!-- IMAGE PROMPT: A clean horizontal bar chart showing conversion rate benchmarks by industry. Bars arranged from highest to lowest: Cadeaux & Spécialités (4.5–5.0%), Beauté & Soins (4.5–4.9%), Alimentation & Boissons (3.0–4.5%), Santé & Bien-être (3.0–3.5%), Mode & Vêtements (2.5–3.1%), Maison & Jardin (2.1–2.8%), Électronique & Tech (1.4–2.3%), Articles de Sport (1.8–2.5%), Bijoux (1.2–2.0%), Luxe & Premium (1.0–1.5%). Each bar has a gradient fill from orange to green. Title: "Benchmarks Taux de Conversion Shopify par Niche 2026". Clean white background, minimal grid lines. -->
-<!-- ALT: Graphique à barres montrant les benchmarks de taux de conversion Shopify par niche pour 2026, allant du luxe à 1% aux cadeaux et à la beauté à 4,5–5% -->
-<!-- FILENAME: shopify-conversion-rate-benchmark-by-niche-2026.png -->
+![Graphique à barres montrant les benchmarks de taux de conversion Shopify par niche pour 2026, allant du luxe à 1% aux cadeaux et à la beauté à 4,5–5%](../../../assets/blogs/shopify-conversion-rate-benchmark-by-niche-2026.png)
 
 ---
 
@@ -105,9 +103,7 @@ Si votre taux mobile est bien inférieur à votre taux bureau, votre expérience
 
 ---
 
-<!-- IMAGE PROMPT: A dashboard-style graphic showing three conversion rate metrics side by side for a hypothetical Shopify store: "Taux Global: 1,8%", "Taux Mobile: 1,1%", "Taux Bureau: 3,4%". Below each number is a small arrow indicator — the mobile number has a red downward arrow, the overall has a yellow sideways arrow, and desktop has a green upward arrow. Clean, minimal UI design like a Shopify analytics card. Dark background with white text and colored metric indicators. -->
-<!-- ALT: Analytique Shopify montrant la différence entre les taux de conversion global, mobile et bureau pour une boutique exemple -->
-<!-- FILENAME: shopify-conversion-rate-mobile-vs-desktop-dashboard.png -->
+![Analytique Shopify montrant la différence entre les taux de conversion global, mobile et bureau pour une boutique exemple](../../../assets/blogs/shopify-conversion-rate-mobile-vs-desktop-dashboard.png)
 
 ---
 
@@ -149,9 +145,7 @@ Vous faites les bases correctement. Pour entrer dans le top 20 % de votre niche,
 
 ---
 
-<!-- IMAGE PROMPT: A clean three-tier pyramid infographic labeled "Priorités CRO Shopify". Bottom tier (widest): "Fondation — Vitesse de page, paiement fonctionnel, informations produit de base". Middle tier: "Confiance & Friction — Preuve sociale, panier sticky, frais de livraison visibles". Top tier (narrow): "Optimisation — Textes, visuels, ciblage pubs, personnalisation". Each tier has a different color: red/orange at bottom, yellow in middle, green at top. Simple flat design on white background. -->
-<!-- ALT: Pyramide à trois niveaux montrant l'ordre de priorité de l'optimisation du taux de conversion Shopify, des corrections de base à l'optimisation avancée -->
-<!-- FILENAME: shopify-cro-priority-pyramid-2026.png -->
+![Pyramide à trois niveaux montrant l'ordre de priorité de l'optimisation du taux de conversion Shopify, des corrections de base à l'optimisation avancée](../../../assets/blogs/shopify-cro-priority-pyramid-2026.png)
 
 ---
 

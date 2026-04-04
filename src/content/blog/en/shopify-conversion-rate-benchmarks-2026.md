@@ -45,9 +45,7 @@ Keep this in mind as you look at the benchmarks below — you're not trying to h
 
 ---
 
-<!-- IMAGE PROMPT: A clean horizontal bar chart showing conversion rate benchmarks by industry. Bars arranged from highest to lowest: Gifts & Specialty (4.5–5.0%), Beauty & Personal Care (4.5–4.9%), Food & Beverage (3.0–4.5%), Health & Wellness (3.0–3.5%), Fashion & Apparel (2.5–3.1%), Home & Garden (2.1–2.8%), Electronics & Tech (1.4–2.3%), Sporting Goods (1.8–2.5%), Jewelry (1.2–2.0%), Luxury & Premium (1.0–1.5%). Each bar has a gradient fill from orange to green. Title: "Shopify Conversion Rate Benchmarks by Niche 2026". Clean white background, minimal grid lines. -->
-<!-- ALT: Bar chart showing Shopify conversion rate benchmarks by niche for 2026, ranging from luxury at 1% to gifts and beauty at 4.5-5% -->
-<!-- FILENAME: shopify-conversion-rate-benchmark-by-niche-2026.png -->
+![Bar chart showing Shopify conversion rate benchmarks by niche for 2026, ranging from luxury at 1% to gifts and beauty at 4.5-5%](../../../assets/blogs/shopify-conversion-rate-benchmark-by-niche-2026.png)
 
 ---
 
@@ -105,9 +103,7 @@ If your mobile rate is far below your desktop rate, your mobile experience has f
 
 ---
 
-<!-- IMAGE PROMPT: A dashboard-style graphic showing three conversion rate metrics side by side for a hypothetical Shopify store: "Overall CR: 1.8%", "Mobile CR: 1.1%", "Desktop CR: 3.4%". Below each number is a small arrow indicator — the mobile number has a red downward arrow, the overall has a yellow sideways arrow, and desktop has a green upward arrow. Clean, minimal UI design like a Shopify analytics card. Dark background with white text and colored metric indicators. -->
-<!-- ALT: Shopify analytics showing the difference between overall, mobile, and desktop conversion rates for a sample store -->
-<!-- FILENAME: shopify-conversion-rate-mobile-vs-desktop-dashboard.png -->
+![Shopify analytics showing the difference between overall, mobile, and desktop conversion rates for a sample store](../../../assets/blogs/shopify-conversion-rate-mobile-vs-desktop-dashboard.png)
 
 ---
 
@@ -149,9 +145,7 @@ You're doing the fundamentals right. To break into the top 20% of your niche, lo
 
 ---
 
-<!-- IMAGE PROMPT: A clean three-tier pyramid infographic labeled "Shopify CRO Priority Stack". Bottom tier (widest): "Foundation — Page speed, working checkout, basic product info". Middle tier: "Trust & Friction — Social proof, sticky cart, visible shipping costs". Top tier (narrow): "Optimization — Copy, imagery, ad targeting, personalization". Each tier has a different color: red/orange at bottom, yellow in middle, green at top. Simple flat design on white background. -->
-<!-- ALT: Three-tier pyramid showing the priority order of Shopify conversion rate optimization from foundation fixes to advanced optimization -->
-<!-- FILENAME: shopify-cro-priority-pyramid-2026.png -->
+![Three-tier pyramid showing the priority order of Shopify conversion rate optimization from foundation fixes to advanced optimization](../../../assets/blogs/shopify-cro-priority-pyramid-2026.png)
 
 ---
 
