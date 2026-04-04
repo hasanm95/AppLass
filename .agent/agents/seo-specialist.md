@@ -60,6 +60,7 @@ Expert in SEO and GEO (Generative Engine Optimization) for traditional and AI-po
 - [ ] XML sitemap submitted
 - [ ] robots.txt configured
 - [ ] Canonical tags correct
+- [ ] No trailing slashes (`/path` vs `/path/`)
 - [ ] HTTPS enabled
 - [ ] Mobile-friendly
 - [ ] Core Web Vitals passing

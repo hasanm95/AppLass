@@ -40,6 +40,7 @@ allowed-tools: Read, Glob, Grep
 | XML sitemap    | Help crawling      |
 | robots.txt     | Control access     |
 | Canonical tags | Prevent duplicates |
+| No trailing slashes | Prevent 301 redirects |
 | HTTPS          | Security signal    |
 
 ### Performance
