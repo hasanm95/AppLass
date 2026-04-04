@@ -159,4 +159,4 @@ FomoGen a les trois en une seule installation. Le plan gratuit vous permet de la
 
 ---
 
-**À lire ensuite :** Maintenant que vous avez l'urgence couverte, lisez comment [ajouter une barre de livraison gratuite à votre boutique Shopify](/blog/free-shipping-bar-shopify/) pour donner aux clients le dernier coup de pouce dont ils ont besoin pour gonfler leur panier et finaliser l'achat.
+**À lire ensuite :** Maintenant que vous avez l'urgence couverte, lisez comment [ajouter une barre de livraison gratuite à votre boutique Shopify](/fr/blog/free-shipping-bar-shopify/) pour donner aux clients le dernier coup de pouce dont ils ont besoin pour gonfler leur panier et finaliser l'achat.
