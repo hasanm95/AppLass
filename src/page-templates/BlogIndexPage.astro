@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Footer from "@/components/common/Footer.astro";
 import SubpageHero from "@/components/common/SubpageHero.astro";
 import Navbar from "@/components/common/Navbar.astro";
-import { BlogCard } from "@/components/blog/BlogCard";
+import BlogCard from "@/components/blog/BlogCard.astro";
 import { getBlogPosts, getBlogCategories } from "@/lib/blog";
 import { localize } from "@/i18n/localize";
 import { i18nConfig } from "@/i18n/config";
@@ -17,6 +17,8 @@ const { lang } = Astro.props;
 import { setLocale } from "@/i18n";
 setLocale(lang);
 
+const isDefault = lang === "en";
+
 const meta = {
   title: localize("The Logic Lab | AppLass Blog"),
   description: localize("Deep dives into software engineering, mathematics, and digital productivity."),
@@ -24,7 +26,7 @@ const meta = {
   ogTitle: localize("The Logic Lab | AppLass Blog"),
   ogDescription: localize("Deep dives into software engineering and digital productivity."),
   ogImage: "https://applass.com/og-blog.png",
-  ogUrl: `https://applass.com/${lang}/blog`
+  ogUrl: isDefault ? "https://applass.com/blog" : `https://applass.com/${lang}/blog`
 };
 
 const posts = await getBlogPosts(lang as string);

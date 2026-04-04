@@ -22,7 +22,20 @@ const { lang } = Astro.props;
 
 import { setLocale } from "@/i18n";
 setLocale(lang);
-const mindfulSchema = getMindfulGuardSchema();
+
+const isDefault = lang === "en";
+const lastUpdated = "2026-03-23";
+const mindfulSchema = {
+  ...getMindfulGuardSchema(),
+  "datePublished": "2024-02-15",
+  "dateModified": lastUpdated,
+  "author": {
+    "@type": "Person",
+    "name": "Hasan M.",
+    "jobTitle": "Founder & Lead Engineer",
+    "url": "https://applass.com/about"
+  }
+};
 
 const meta = {
   title: "Mindful Guard: Privacy-First Screen Time App for Android (No Tracking)",
@@ -31,7 +44,7 @@ const meta = {
   ogTitle: localize("MindfulGuard | Reclaim Your Neural Architecture"),
   ogDescription: localize("The first Android app blocker engineered for privacy absolutists. 0ms latency. 100% Offline. Zero telemetry."),
   ogImage: "https://applass.com/mindful-guard-feature.png",
-  ogUrl: "https://applass.com/apps/mindful-guard"
+  ogUrl: isDefault ? "https://applass.com/apps/mindful-guard" : `https://applass.com/${lang}/apps/mindful-guard`
 };
 
 ---
@@ -55,7 +68,38 @@ const meta = {
   />
   <div class="flex-1">
     {/* Section 1: The Hero (Above the Fold) */}
-    <MindfulHero />
+    <MindfulHero>
+      <div slot="meta" class="mb-6 flex items-center justify-center lg:justify-start gap-4">
+        <span class="rounded-full bg-emerald-50 px-3 py-1 text-[10px] font-bold text-emerald-700 uppercase border border-emerald-100 backdrop-blur-md">
+          {localize("Last Evaluated: ")} {lastUpdated}
+        </span>
+        <span class="h-1 w-1 rounded-full bg-slate-200"></span>
+        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest italic">
+          {localize("Privacy Architecture Verified")}
+        </span>
+      </div>
+
+      <div slot="ai-summary" class="mt-10 overflow-hidden rounded-2xl border border-emerald-900/10 bg-white/50 backdrop-blur-sm text-left shadow-lg">
+        <div class="bg-[#064E3B] px-4 py-2 text-[9px] font-black tracking-widest text-white uppercase flex items-center justify-between">
+          <span>{localize("App Protocol Summary (TL;DR)")}</span>
+          <span class="text-emerald-400 font-mono">[ MG.V2_SECURE ]</span>
+        </div>
+        <div class="grid grid-cols-1 gap-px bg-emerald-900/10 md:grid-cols-3">
+          <div class="bg-white p-4">
+            <p class="mb-1 text-[9px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Benchmark")}</p>
+            <p class="font-black text-slate-900 text-sm">{localize("+2.4h Daily Focus")}</p>
+          </div>
+          <div class="bg-white p-4">
+            <p class="mb-1 text-[9px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Architecture")}</p>
+            <p class="font-black text-slate-900 text-sm">{localize("100% On-Device")}</p>
+          </div>
+          <div class="bg-white p-4">
+            <p class="mb-1 text-[9px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Privacy")}</p>
+            <p class="font-black text-slate-900 text-sm">{localize("Zero Telemetry")}</p>
+          </div>
+        </div>
+      </div>
+    </MindfulHero>
  
     {/* Stats Bar */}
     <MindfulStatsBar />

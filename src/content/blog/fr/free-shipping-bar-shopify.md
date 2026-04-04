@@ -47,9 +47,7 @@ C'est pourquoi la barre fonctionne mieux que d'écrire juste "Livraison gratuite
 
 ---
 
-<!-- IMAGE PROMPT: A clean e-commerce illustration showing a customer at a laptop with a Shopify store open. At the top of the store is a green progress bar showing "Plus que 14 € pour la LIVRAISON GRATUITE ! 🎉" with the bar about 70% filled. The customer has a happy, motivated expression. Simple flat design, warm colors. -->
-<!-- ALT: Boutique Shopify montrant une barre de progression livraison gratuite à 70% avec un client sur le point d'ajouter des articles -->
-<!-- FILENAME: free-shipping-progress-bar-customer-motivation.png -->
+![Boutique Shopify montrant une barre de progression livraison gratuite à 70% avec un client sur le point d'ajouter des articles](../../../assets/blogs/free-shipping-progress-bar-customer-motivation.png)
 
 ---
 
@@ -105,9 +103,7 @@ Appuyez sur **Sauvegarder** et basculez la barre sur **Actif**. Ouvrez votre bou
 
 ---
 
-<!-- IMAGE PROMPT: A three-panel mobile phone mockup showing the free shipping bar at different stages. Panel 1: bar is empty/just started, showing "Commandez pour 50 € et obtenez la livraison gratuite". Panel 2: bar is 65% full, showing "Plus que 17 € pour la livraison gratuite!". Panel 3: bar is completely full in green, showing "Livraison GRATUITE débloquée ! 🎉". Clean UI, green progress bar, white background. -->
-<!-- ALT: Les trois étapes d'une barre de progression livraison gratuite Shopify sur mobile, de vide à complète -->
-<!-- FILENAME: free-shipping-bar-three-stages-mobile.png -->
+![Les trois étapes d'une barre de progression livraison gratuite Shopify sur mobile, de vide à complète](../../../assets/blogs/free-shipping-bar-three-stages-mobile.png)
 
 ---
 
@@ -157,9 +153,7 @@ Sur 100 commandes par mois, si même 30 % des clients gonflent leur panier, ça 
 
 ---
 
-<!-- IMAGE PROMPT: A clean infographic-style illustration showing a cart with two scenarios side by side. Left side labeled "Sans Barre de Livraison Gratuite" shows a cart at 44€ with a sad face and a 5.99€ shipping fee at checkout. Right side labeled "Avec Barre de Livraison Gratuite" shows the same cart topped up to 57€ with a happy face, a 0€ shipping line, and a +13€ product highlighted. Clean flat design, dark background, white and green text. -->
-<!-- ALT: Infographie comparant le panier moyen Shopify avec et sans une barre de progression de livraison gratuite -->
-<!-- FILENAME: free-shipping-bar-aov-comparison-infographic.png -->
+![Infographie comparant le panier moyen Shopify avec et sans une barre de progression de livraison gratuite](../../../assets/blogs/free-shipping-bar-aov-comparison-infographic.png)
 
 ---
 
@@ -175,4 +169,4 @@ Une fois votre barre de livraison gratuite en ligne, revenez dans FomoGen et act
 
 ---
 
-**À lire ensuite :** Découvrez comment associer votre barre de livraison gratuite avec des [alertes de stock bas](/blog/add-low-stock-alerts-shopify/) qui créent une urgence sur vos meilleurs produits — les deux outils fonctionnent ensemble pour pousser les visiteurs hésitants à passer à l'achat.
+<!-- **À lire ensuite :** Découvrez comment associer votre barre de livraison gratuite avec des [alertes de stock bas](/blog/add-low-stock-alerts-shopify/) qui créent une urgence sur vos meilleurs produits — les deux outils fonctionnent ensemble pour pousser les visiteurs hésitants à passer à l'achat. -->

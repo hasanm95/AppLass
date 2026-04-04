@@ -1,1 +1,0 @@
-export { FAQSchema } from "./FAQSchema";

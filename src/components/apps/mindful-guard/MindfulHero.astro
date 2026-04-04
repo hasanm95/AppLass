@@ -29,6 +29,7 @@ const labels = mindfulData.labels;
           {labels.neuralProtection}
         </div>
 
+        <slot name="meta" />
         <h1 class="parallax-mindful-headline font-black tracking-tighter text-slate-950 text-4xl sm:text-6xl md:text-7xl lg:text-8xl">
           {dict.headline?.split(" ").slice(0, 2).join(" ")}{" "}
           <br />
@@ -40,6 +41,7 @@ const labels = mindfulData.labels;
         <p class="parallax-mindful-subtext mt-12 max-w-2xl text-xl leading-snug font-medium text-slate-600 md:text-2xl">
           {dict.subheadline}
         </p>
+        <slot name="ai-summary" />
       </div>
 
       <div class="parallax-mindful-cta flex shrink-0 flex-col gap-4 self-start lg:mb-12">

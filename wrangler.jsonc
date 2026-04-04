@@ -1,0 +1,8 @@
+{
+  "name": "applass",
+  "compatibility_date": "2026-03-09",
+  "assets": {
+    "directory": "./dist/",
+    "html_handling": "drop-trailing-slash"
+  }
+}

@@ -6,12 +6,12 @@ import tailwindcss from '@tailwindcss/vite';
 
 import sitemap from "@astrojs/sitemap";
 
-import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://applass.com",
-  integrations: [react(), sitemap(), partytown()],
+  trailingSlash: "never",
+  integrations: [react(), sitemap()],
   i18n: {
     defaultLocale: "en",
     locales: ["en", "fr"],
@@ -20,7 +20,10 @@ export default defineConfig({
     }
   },
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [
+      // @ts-expect-error - Vite plugin types mismatch between Tailwind CSS v4 and Astro's bundled Vite
+      tailwindcss(),
+    ]
   },
   build: {
     inlineStylesheets: "always",

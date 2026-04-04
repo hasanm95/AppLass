@@ -120,7 +120,7 @@ export const getMindfulGuardSchema = () => ({
     "priceCurrency": "USD"
   },
   "description": "Mindful Guard is a privacy-first Android app blocker with zero telemetry and no internet requirement. Blocks distracting apps at the system level using native Android APIs. No VPN. No cloud. 100% on-device.",
-  "url": "https://applass.com/apps/mindful-guard/",
+  "url": "https://applass.com/apps/mindful-guard",
   "downloadUrl": "https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard"
 });
 

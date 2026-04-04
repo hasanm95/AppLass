@@ -45,9 +45,7 @@ When it's real, though, it's one of the most effective conversion tools you have
 
 ---
 
-<!-- IMAGE PROMPT: Side-by-side product page comparison. Left side: a plain Shopify product page for a generic watch with standard "Add to Cart" button, no urgency signals. Right side: same product page with a red/orange "Only 3 left in stock" badge below the price, and a small stock meter showing low inventory. Customer figure on the left looks passive; customer figure on the right looks engaged and clicking. Clean flat illustration style. -->
-<!-- ALT: Shopify product page before and after adding a low stock alert showing the difference in urgency -->
-<!-- FILENAME: low-stock-alert-before-after-product-page.png -->
+![Shopify product page before and after adding a low stock alert showing the difference in urgency](../../../assets/blogs/low-stock-alert-before-after-product-page.png)
 
 ---
 
@@ -104,9 +102,7 @@ Open one of your product pages in a new tab. If that product has inventory below
 
 ---
 
-<!-- IMAGE PROMPT: A clean mobile phone mockup showing a Shopify product page for a generic pair of sneakers. Below the product price ($89) and above the "Add to Cart" button, there's a small badge with an orange background reading "⚡ Only 3 left — order soon!" in white text. The Add to Cart button is highlighted and appears to be in focus. Realistic mobile UI, white background. -->
-<!-- ALT: Mobile Shopify product page showing a low stock alert badge reading "Only 3 left — order soon" above the add to cart button -->
-<!-- FILENAME: low-stock-alert-mobile-product-page-shopify.png -->
+![Mobile Shopify product page showing a low stock alert badge reading "Only 3 left — order soon" above the add to cart button](../../../assets/blogs/low-stock-alert-mobile-product-page-shopify.png)
 
 ---
 
@@ -140,9 +136,7 @@ If a customer browses 10 products and every single one shows a low stock warning
 
 ---
 
-<!-- IMAGE PROMPT: A simple infographic showing three product cards with different stock levels and appropriate threshold settings. Card 1: "High-volume product" with 15 units shown, threshold badge says "15–20 unit threshold recommended". Card 2: "Mid-volume product" with 8 units shown, badge says "8–12 unit threshold recommended". Card 3: "Premium/limited product" with 3 units shown, badge says "3–5 unit threshold recommended". Clean flat design, three distinct color-coded cards. -->
-<!-- ALT: Infographic showing the recommended low stock alert thresholds for high-volume, mid-volume, and premium Shopify products -->
-<!-- FILENAME: low-stock-threshold-guide-product-types.png -->
+![Infographic showing the recommended low stock alert thresholds for high-volume, mid-volume, and premium Shopify products](../../../assets/blogs/low-stock-threshold-guide-product-types.png)
 
 ---
 
@@ -164,4 +158,4 @@ FomoGen has all three in a single install. The free plan lets you run one campai
 
 ---
 
-**Related:** Now that you've got urgency covered, read how to [add a free shipping bar to your Shopify store](/blog/free-shipping-bar-shopify/) to give customers the final nudge they need to top up their cart and complete the purchase.
+<!-- **Related:** Now that you've got urgency covered, read how to [add a free shipping bar to your Shopify store](/blog/free-shipping-bar-shopify) to give customers the final nudge they need to top up their cart and complete the purchase. -->
