@@ -169,4 +169,4 @@ Once your free shipping bar is live, go back into FomoGen and turn on your **Sal
 
 ---
 
-<!-- **Related:** Learn how to pair your free shipping bar with [low stock alerts](/blog/add-low-stock-alerts-shopify/) that create urgency on your best-selling products — the two tools work together to push browsing customers into buying mode. -->
+**Related:** Learn how to pair your free shipping bar with [low stock alerts](/blog/add-low-stock-alerts-shopify) that create urgency on your best-selling products — the two tools work together to push browsing customers into buying mode.
