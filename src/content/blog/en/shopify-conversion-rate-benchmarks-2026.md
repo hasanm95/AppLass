@@ -153,7 +153,7 @@ You're doing the fundamentals right. To break into the top 20% of your niche, lo
 
 **For social proof and trust:** [FomoGen](/apps/fomogen) — adds sales notifications, stock alerts, and trust badges. Free plan available.
 
-**For mobile friction:** FomoGen's sticky add-to-cart bar keeps the buy button visible on every scroll. See the full guide in our [Mobile Sticky Cart post](/blog/mobile-sticky-cart-guide/).
+**For mobile friction:** FomoGen's sticky add-to-cart bar keeps the buy button visible on every scroll. See the full guide in our [Mobile Sticky Cart post](/blog/mobile-sticky-cart-guide).
 
 **For free shipping:** FomoGen's shipping bar shows customers exactly how close they are to free shipping, increasing AOV at the same time as conversion rate.
 
@@ -167,4 +167,4 @@ The biggest mistake merchants make is trying to fix everything at once. Pick the
 
 ---
 
-**Related:** Understand why your visitors aren't buying even after you've fixed the basics — read our post on [why Shopify visitors leave without buying and what to do about it](/blog/why-shopify-visitors-dont-buy/).
+**Related:** Understand why your visitors aren't buying even after you've fixed the basics — read our post on [why Shopify visitors leave without buying and what to do about it](/blog/why-shopify-visitors-dont-buy).

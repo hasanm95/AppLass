@@ -169,4 +169,4 @@ Une fois votre barre de livraison gratuite en ligne, revenez dans FomoGen et act
 
 ---
 
-**À lire ensuite :** Découvrez comment associer votre barre de livraison gratuite avec des [alertes de stock bas](/fr/blog/add-low-stock-alerts-shopify/) qui créent une urgence sur vos meilleurs produits — les deux outils fonctionnent ensemble pour pousser les visiteurs hésitants à passer à l'achat.
+**À lire ensuite :** Découvrez comment associer votre barre de livraison gratuite avec des [alertes de stock bas](/fr/blog/add-low-stock-alerts-shopify) qui créent une urgence sur vos meilleurs produits — les deux outils fonctionnent ensemble pour pousser les visiteurs hésitants à passer à l'achat.

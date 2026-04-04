@@ -153,7 +153,7 @@ Vous faites les bases correctement. Pour entrer dans le top 20 % de votre niche,
 
 **Pour la preuve sociale et la confiance :** [FomoGen](/apps/fomogen) — ajoute des notifications de vente, des alertes de stock et des badges de confiance. Plan gratuit disponible.
 
-**Pour la friction mobile :** La barre panier sticky de FomoGen garde le bouton d'achat visible à chaque défilement. Voir le guide complet dans notre article sur le [Panier Sticky Mobile](/fr/blog/mobile-sticky-cart-guide/).
+**Pour la friction mobile :** La barre panier sticky de FomoGen garde le bouton d'achat visible à chaque défilement. Voir le guide complet dans notre article sur le [Panier Sticky Mobile](/fr/blog/mobile-sticky-cart-guide).
 
 **Pour la livraison gratuite :** La barre de livraison de FomoGen montre aux clients exactement à combien ils sont de la livraison gratuite, augmentant le panier moyen en même temps que le taux de conversion.
 
@@ -167,4 +167,4 @@ La plus grande erreur que font les marchands, c'est d'essayer de tout corriger e
 
 ---
 
-**À lire ensuite :** Comprenez pourquoi vos visiteurs ne font pas d'achat même après avoir corrigé les bases — lisez notre article sur [pourquoi les visiteurs Shopify partent sans acheter](/fr/blog/why-shopify-visitors-dont-buy/).
+**À lire ensuite :** Comprenez pourquoi vos visiteurs ne font pas d'achat même après avoir corrigé les bases — lisez notre article sur [pourquoi les visiteurs Shopify partent sans acheter](/fr/blog/why-shopify-visitors-dont-buy).
