@@ -2,18 +2,17 @@
 import LegalPage from "@/page-templates/LegalPage.astro";
 import Content from "@/components/legal/MindfulGuardPrivacy.astro";
 import { Shield } from "lucide-react";
-import { getDictionary } from "@/i18n/get-dictionary";
+import { localize } from "@/i18n/localize";
 
 const lang = "en";
-const dict = await getDictionary(lang);
-const meta = dict.metadata?.legalMindfulGuardPrivacy || {};
+const description = localize("Privacy Policy for Mindful Guard - Discover our zero-telemetry approach and how we protect your offline focus data on Android.");
 ---
 
 <LegalPage 
   lang={lang}
   title="Privacy Policy"
   appName="Mindful Guard"
-  description={meta.description}
+  description={description}
 >
   <div slot="branding" class="flex items-center gap-2">
     <Shield className="h-5 w-5 text-slate-900 fill-slate-900" />

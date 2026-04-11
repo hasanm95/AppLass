@@ -2,12 +2,16 @@ import { localize } from "@/i18n/localize";
 
 export const getMindfulGuardData = () => ({
   hero: {
-    headline: localize("Block Distracting Apps on Android. No Tracking. No Internet. No Excuses."),
+    // TASK 4A: Hero/CTA Options
+    // Option 1 (Live): Free Android App Blocker to Stop Mindless Scrolling
+    // Option 2: Reclaim Your Attention with Mindful Guard's Unbreakable Blocking
+    // Option 3: The Privacy-First App Blocker for Android Deep Work
+    headline: localize("Free Android App Blocker to Stop Mindless Scrolling"),
     subheadline: localize(
-      "Mindful Guard is the privacy-first Android app blocker built for people who refuse to trade their data for focus. 100% offline. Zero telemetry. Strict Mode that actually holds."
+      "Get your time back with a completely free, Android-native focus app. Unlike expensive $99/year alternatives, it collects zero data and works entirely offline."
     ),
-    primaryCTA: localize("Download Free on Google Play"),
-    secondaryCTA: localize("View the Logic"),
+    primaryCTA: localize("Download for Free"),
+    secondaryCTA: localize("See how it works"),
     playStoreUrl: "https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard",
   },
   logic: {
@@ -18,30 +22,31 @@ export const getMindfulGuardData = () => ({
   },
   differentiators: [
     {
-      title: localize("Zero-Telemetry"),
+      title: localize("Complete Privacy"),
       description: localize(
-        "We don't know what you block. Your data never leaves your device. Unlike VPN-based blockers, we run locally."
+        "Your data never leaves your phone because our architecture requires no internet permissions. Everything runs 100% offline so you can block apps securely without worrying about your habits being tracked."
       ),
       icon: "🛡️",
       iconName: "Shield",
     },
     {
-      title: localize("Native Efficiency"),
+      title: localize("Saves Battery Life"),
       description: localize(
-        "Built for Android's specific battery protocols. Won't drain your battery or get killed by MIUI/OneUI optimizers."
+        "Built specifically for Android to work without a battery-draining VPN or background network tunnel. It runs quietly in the background and respects system sleep cycles to keep your battery healthy all day."
       ),
       icon: "⚡",
       iconName: "Zap",
     },
     {
-      title: localize("Strict Mode"),
+      title: localize("Unbreakable Blocks"),
       description: localize(
-        "No bypass. No '5 more minutes.' When the wall is up, it stays up until the timer hits zero."
+        "Stop cheating yourself with weak timers that are easily bypassed when your willpower fails. Once a block starts, there are no 'add 5 minutes' buttons to let you doomscroll through your work hours."
       ),
       icon: "🔒",
       iconName: "Lock",
     },
   ],
+
   comparison: {
     title: localize("The Logic Matrix: MindfulGuard vs. The Industry."),
     competitors: {

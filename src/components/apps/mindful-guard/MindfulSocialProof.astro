@@ -1,0 +1,80 @@
+---
+import Section from "@/components/common/Section.astro";
+import { localize } from "@/i18n/localize";
+import { Star } from "lucide-react";
+
+// DEVELOPER NOTE: Real reviews from Google Play console.
+---
+
+<Section className="bg-white py-20 border-t border-emerald-900/10">
+  <div class="section-container">
+    <div class="mb-12 text-center max-w-2xl mx-auto flex flex-col items-center">
+      <!-- We only use verifiable claims -->
+      <div class="flex gap-1 mb-4 text-emerald-500">
+        <Star className="h-5 w-5 fill-current" />
+        <Star className="h-5 w-5 fill-current" />
+        <Star className="h-5 w-5 fill-current" />
+        <Star className="h-5 w-5 fill-current" />
+        <Star className="h-5 w-5 fill-current" />
+      </div>
+      <h2 class="text-3xl font-black tracking-tight text-slate-900 md:text-4xl">
+        {localize("Rated highly by people returning to reality")}
+      </h2>
+      <p class="mt-4 text-lg text-slate-600">
+        {localize("MindfulGuard's completely offline strict mode is designed for those who refuse to compromise on privacy.")}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {/* Testimonial 1 */}
+      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-8 shadow-sm">
+        <div class="flex gap-1 mb-4 text-amber-400">
+          <Star className="h-4 w-4 fill-current" />
+          <Star className="h-4 w-4 fill-current" />
+          <Star className="h-4 w-4 fill-current" />
+          <Star className="h-4 w-4 fill-current" />
+          <Star className="h-4 w-4 fill-current" />
+        </div>
+        <p class="mb-6 italic text-slate-700">{localize("[REAL REVIEW: Excellent focus app for studying. The Pomodoro-style focus sessions and custom app lists make it easy to block distractions and concentrate better.]")}</p>
+        <div class="mt-auto">
+          <p class="font-bold text-slate-900">{localize("[REAL USER NAME: Hasnat Rabby]")}</p>
+          <p class="text-xs font-medium uppercase tracking-widest text-slate-400 mt-1">{localize("[VERIFIED ON: GOOGLE PLAY]")}</p>
+        </div>
+      </div>
+
+      {/* Testimonial 2 */}
+      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-8 shadow-sm">
+        <div class="flex gap-1 mb-4 text-amber-400">
+          <Star className="h-4 w-4 fill-current" />
+          <Star className="h-4 w-4 fill-current" />
+          <Star className="h-4 w-4 fill-current" />
+          <Star className="h-4 w-4 fill-current" />
+          <Star className="h-4 w-4 fill-current" />
+        </div>
+        <p class="mb-6 italic text-slate-700">{localize("[REAL REVIEW: I’ve tried many focus apps, but Mindful Guard is the most reliable app blocker for Android. The scheduled app blocking feature helps me stay focused during work hours, and I love that it’s privacy-friendly with no ads or tracking.]")}</p>
+        <div class="mt-auto">
+          <p class="font-bold text-slate-900">{localize("[REAL USER NAME: Waseka Niha]")}</p>
+          <p class="text-xs font-medium uppercase tracking-widest text-slate-400 mt-1">{localize("[VERIFIED ON: GOOGLE PLAY]")}</p>
+        </div>
+      </div>
+
+      {/* Testimonial 3 */}
+      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-8 shadow-sm">
+        <div class="flex gap-1 mb-4 text-amber-400">
+          <Star className="h-4 w-4 fill-current" />
+          <Star className="h-4 w-4 fill-current" />
+          <Star className="h-4 w-4 fill-current" />
+          <Star className="h-4 w-4 fill-current" />
+          <Star className="h-4 w-4 fill-current" />
+        </div>
+        <p class="mb-6 italic text-slate-700">{localize("[REAL REVIEW: it's a very nice concept, some users might get worried about the feature of locking their phone]")}</p>
+        <div class="mt-auto">
+          <p class="font-bold text-slate-900">{localize("[REAL USER NAME: Vijay Moirangthem]")}</p>
+          <p class="text-xs font-medium uppercase tracking-widest text-slate-400 mt-1">{localize("[VERIFIED ON: GOOGLE PLAY]")}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</Section>
+

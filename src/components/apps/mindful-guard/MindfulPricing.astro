@@ -6,10 +6,13 @@ import { Check } from "lucide-react";
 ---
 <Section className="bg-[#FBFBFA] py-24 md:py-32 border-t border-slate-200">
   <div class="section-container">
-    <div class="mb-16 text-center">
+    <div class="mb-16 text-center max-w-2xl mx-auto">
       <h2 class="text-4xl font-black tracking-tight text-slate-900 md:text-5xl">
         {localize("Simple Pricing. No Subscription Traps.")}
       </h2>
+      <p class="mt-4 text-lg text-slate-600">
+        {localize("Opal charges $99/year. AppBlock limits your schedules. We believe focus should be accessible.")}
+      </p>
     </div>
     
     <div class="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
@@ -19,17 +22,21 @@ import { Check } from "lucide-react";
           <h3 class="text-xl font-bold text-slate-900">{localize("Free")}</h3>
           <div class="mt-4 flex items-baseline text-4xl font-black text-slate-900">
             $0
-            <span class="ml-2 text-sm font-bold text-slate-500">{localize("forever")}</span>
           </div>
+          <p class="mt-2 text-slate-500 font-medium">{localize("No credit card required")}</p>
         </div>
         <ul class="mb-10 flex-1 space-y-4">
           <li class="flex items-start gap-3 text-slate-600 font-medium">
             <Check className="mt-1 h-5 w-5 shrink-0 text-slate-900" />
-            {localize("3 sessions per day")}
+            {localize("3 focus sessions")}
           </li>
           <li class="flex items-start gap-3 text-slate-600 font-medium">
             <Check className="mt-1 h-5 w-5 shrink-0 text-slate-900" />
-            {localize("5 apps block per session")}
+            {localize("2 schedules")}
+          </li>
+          <li class="flex items-start gap-3 text-slate-600 font-medium">
+            <Check className="mt-1 h-5 w-5 shrink-0 text-slate-900" />
+            {localize("5 apps block")}
           </li>
           <li class="flex items-start gap-3 text-slate-600 font-medium">
             <Check className="mt-1 h-5 w-5 shrink-0 text-slate-900" />
@@ -38,16 +45,16 @@ import { Check } from "lucide-react";
         </ul>
         <LinkButton
           href="https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard"
-          className="w-full h-14 rounded-2xl bg-slate-900 px-8 text-base font-bold text-white transition-all hover:bg-slate-800"
+          className="w-full h-14 rounded-2xl bg-slate-100 text-slate-900 px-8 text-base font-bold transition-all hover:bg-slate-200"
         >
-          {localize("Download Free")}
+          {localize("Continue with Free Version")}
         </LinkButton>
       </div>
 
-      {/* Focus Pro (Recommended) */}
-      <div class="relative flex flex-col rounded-3xl border-2 border-blue-600 bg-white p-8 shadow-xl md:-mt-8 md:mb-8 z-10">
-        <div class="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-blue-600 px-4 py-1 text-xs font-black tracking-widest text-white uppercase shadow-sm">
-          {localize("Recommended")}
+      {/* Pro Monthly */}
+      <div class="relative flex flex-col rounded-3xl border-2 border-[#064E3B] bg-white p-8 shadow-xl md:-mt-8 md:mb-8 z-10">
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-[#064E3B] px-4 py-1 text-xs font-black tracking-widest text-white uppercase shadow-sm">
+          {localize("Pro Monthly")}
         </div>
         <div class="mb-8">
           <h3 class="text-xl font-bold text-slate-900">{localize("Monthly")}</h3>
@@ -55,34 +62,35 @@ import { Check } from "lucide-react";
             $2.99
             <span class="ml-2 text-sm font-bold text-slate-500">{localize("/ month")}</span>
           </div>
+          <p class="mt-2 text-emerald-600 font-bold">{localize("7 days trial")}</p>
         </div>
         <ul class="mb-10 flex-1 space-y-4">
           <li class="flex items-start gap-3 text-slate-600 font-medium">
-            <Check className="mt-1 h-5 w-5 shrink-0 text-blue-600" />
+            <Check className="mt-1 h-5 w-5 shrink-0 text-[#064E3B]" />
             {localize("Unlimited focus sessions")}
           </li>
           <li class="flex items-start gap-3 text-slate-600 font-medium">
-            <Check className="mt-1 h-5 w-5 shrink-0 text-blue-600" />
-            {localize("Block unlimited apps")}
-          </li>
-          <li class="flex items-start gap-3 text-slate-600 font-medium">
-            <Check className="mt-1 h-5 w-5 shrink-0 text-blue-600" />
+            <Check className="mt-1 h-5 w-5 shrink-0 text-[#064E3B]" />
             {localize("Unlimited schedules")}
           </li>
           <li class="flex items-start gap-3 text-slate-600 font-medium">
-            <Check className="mt-1 h-5 w-5 shrink-0 text-blue-600" />
+            <Check className="mt-1 h-5 w-5 shrink-0 text-[#064E3B]" />
+            {localize("Block unlimited apps")}
+          </li>
+          <li class="flex items-start gap-3 text-slate-600 font-medium">
+            <Check className="mt-1 h-5 w-5 shrink-0 text-[#064E3B]" />
             {localize("100% offline")}
           </li>
         </ul>
         <LinkButton
           href="https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard"
-          className="w-full h-14 rounded-2xl bg-blue-600 px-8 text-base font-bold text-white shadow-lg shadow-blue-500/30 transition-all hover:scale-[1.02] hover:bg-blue-700"
+          className="w-full h-14 rounded-2xl bg-[#064E3B] px-8 text-base font-bold text-white shadow-lg shadow-emerald-900/30 transition-all hover:scale-[1.02] hover:bg-emerald-900"
         >
-          {localize("Start Free Trial")}
+          {localize("Start Trial")}
         </LinkButton>
       </div>
 
-      {/* Yearly */}
+      {/* Pro Yearly */}
       <div class="relative flex flex-col rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition-all hover:shadow-md">
         <div class="mb-8">
           <h3 class="text-xl font-bold text-slate-900">{localize("Yearly")}</h3>
@@ -90,25 +98,30 @@ import { Check } from "lucide-react";
             $19.99
             <span class="ml-2 text-sm font-bold text-slate-500">{localize("/ year")}</span>
           </div>
+          <p class="mt-2 text-emerald-600 font-bold">{localize("7 days trial")}</p>
         </div>
         <ul class="mb-10 flex-1 space-y-4">
           <li class="flex items-start gap-3 text-slate-600 font-medium">
             <Check className="mt-1 h-5 w-5 shrink-0 text-slate-900" />
-            {localize("Everything in Monthly")}
+            {localize("Everything in Pro")}
           </li>
           <li class="flex items-start gap-3 text-slate-600 font-medium">
             <Check className="mt-1 h-5 w-5 shrink-0 text-slate-900" />
-            {localize("Save 44% annually")}
+            {localize("Unlimited features")}
+          </li>
+          <li class="flex items-start gap-3 text-slate-600 font-medium">
+            <Check className="mt-1 h-5 w-5 shrink-0 text-slate-900" />
+            {localize("Best Value")}
           </li>
         </ul>
         <LinkButton
           href="https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard"
           className="w-full h-14 rounded-2xl bg-slate-900 px-8 text-base font-bold text-white transition-all hover:bg-slate-800"
         >
-          {localize("Get Yearly Access")}
+          {localize("Start Trial")}
         </LinkButton>
       </div>
-
     </div>
   </div>
 </Section>
+

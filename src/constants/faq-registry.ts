@@ -168,6 +168,30 @@ export const getFaqRegistry = () => ({
         "Android's Digital Wellbeing can be bypassed in seconds from Settings. Mindful Guard's Strict Mode cannot be bypassed — not even by going to Settings or attempting an uninstall. It also provides more granular scheduling and works on devices where Digital Wellbeing is disabled by manufacturers."
       ),
     },
+    {
+      question: localize("Mindful Guard vs ScreenVeil: What is the difference?"),
+      answer: localize(
+        "Mindful Guard is an app blocker designed to stop you from opening distracting apps entirely. ScreenVeil is a battery-saving utility that places a black overlay on your screen so you can listen to background audio without draining power."
+      ),
+    },
+    {
+      question: localize("What is a zero telemetry blocker?"),
+      answer: localize(
+        "Zero telemetry means the app does not collect, record, or transmit any data about which apps you block or how long you use your phone. Everything stays 100% locally on your device without communicating with cloud servers."
+      ),
+    },
+    {
+      question: localize("Mindful Guard vs Forest: Which should I choose?"),
+      answer: localize(
+        "Forest uses gamification (growing virtual trees) to encourage focus, but you can still easily exit the app and kill your tree. Mindful Guard uses a Strict Mode that forcibly prevents you from opening blocked apps, even if your willpower drops."
+      ),
+    },
+    {
+      question: localize("Does Opal drain battery on Android?"),
+      answer: localize(
+        "Yes, Opal uses a local VPN to block apps, forcing your phone's network stack to stay active 24/7. Mindful Guard completely avoids VPNs, using native Android systems instead to drop battery drain to almost zero."
+      ),
+    },
   ],
   DIGITAL_WELLNESS: [
     {

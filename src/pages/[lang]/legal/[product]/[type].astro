@@ -3,7 +3,6 @@ import { i18nConfig } from "@/i18n/config";
 import { legalRegistry } from "@/lib/legal-registry";
 import LegalPage from "@/page-templates/LegalPage.astro";
 import { Zap, Shield, Smartphone } from "lucide-react";
-import { getDictionary } from "@/i18n/get-dictionary";
 
 export async function getStaticPaths() {
   const nonDefaultLocales = i18nConfig.locales.filter(
@@ -30,19 +29,14 @@ if (!entry) {
   return Astro.redirect('/404');
 }
 
-const { component: Content, title, appName } = entry;
-const dict = await getDictionary(lang as any);
-
-// Map metadata key
-const metaKey = `legal${product.split('-').map((s: string) => s.charAt(0).toUpperCase() + s.slice(1)).join('')}${type.charAt(0).toUpperCase() + type.slice(1)}`;
-const meta = (dict.metadata as any)?.[metaKey] || {};
+const { component: Content, title, appName, description } = entry;
 ---
 
 <LegalPage 
   lang={lang as any}
   title={title}
   appName={appName}
-  description={meta.description}
+  description={description}
 >
   <div slot="branding" class="flex items-center gap-2">
     {product === 'fomogen' && (

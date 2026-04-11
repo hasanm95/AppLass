@@ -2,18 +2,17 @@
 import LegalPage from "@/page-templates/LegalPage.astro";
 import Content from "@/components/legal/FomogenPrivacy.astro";
 import { Zap } from "lucide-react";
-import { getDictionary } from "@/i18n/get-dictionary";
+import { localize } from "@/i18n/localize";
 
 const lang = "en";
-const dict = await getDictionary(lang);
-const meta = dict.metadata?.legalFomogenPrivacy || {};
+const description = localize("Privacy Policy for FOMOGEN - Learn how we collect, use, and protect your information as a Shopify merchant.");
 ---
 
 <LegalPage 
   lang={lang}
   title="Privacy Policy"
   appName="FOMOGEN"
-  description={meta.description}
+  description={description}
 >
   <div slot="branding" class="flex items-center gap-2">
     <Zap className="h-5 w-5 text-blue-600 fill-blue-600" />
