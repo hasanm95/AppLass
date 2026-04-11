@@ -1,6 +1,7 @@
 ---
 title: "Lecture YouTube en Arrière-plan 2026 : Ce qui Fonctionne Encore"
 date: "2026-04-11"
+dateModified: "2026-04-11"
 category: "Tech Tips"
 author: "AppLass Team"
 excerpt: "Google a officiellement bloqué la lecture en arrière-plan sur les navigateurs mobiles au début de cette année. Voici les méthodes honnêtes qui fonctionnent encore vraiment en 2026."

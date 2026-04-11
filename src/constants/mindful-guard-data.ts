@@ -62,7 +62,7 @@ export const getMindfulGuardData = () => ({
       },
       {
         label: localize("Pricing"),
-        mindfulGuard: localize("Fair / Transparent"),
+        mindfulGuard: localize("Free / $2.99/mo"),
         opal: localize("$99/year Subscription"),
         freedom: localize("$39/year Subscription"),
       },

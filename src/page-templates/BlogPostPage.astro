@@ -40,7 +40,7 @@ const jsonLd = {
   description: post.excerpt,
   image: typeof post.thumbnail === 'object' ? post.thumbnail.src : post.thumbnail,
   datePublished: post.date,
-  dateModified: "2026-03-23",
+  dateModified: post.dateModified || "2026-03-23",
   author: {
     "@type": "Person",
     name: post.author,
@@ -106,7 +106,7 @@ const jsonLd = {
           <span class="h-1 w-1 rounded-full bg-slate-200" />
           <div class="flex items-center gap-2">
             <span class="text-[10px] font-bold text-slate-500 uppercase border border-slate-100 rounded-lg px-2 py-0.5">
-              {localize("Verified on: ")} 2026-03-23
+              {localize("Verified on: ")} {post.dateModified || "2026-03-23"}
             </span>
           </div>
         </div>

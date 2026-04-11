@@ -1,6 +1,7 @@
 ---
 title: "YouTube Background Play 2026: What Still Works"
 date: "2026-04-11"
+dateModified: "2026-04-11"
 category: "Tech Tips"
 author: "AppLass Team"
 excerpt: "Google officially blocked background play in mobile browsers early this year. Here are the honest methods that actually still work in 2026."

@@ -11,6 +11,7 @@ export interface MarkdownBlogPost {
   content: string;
   featured?: boolean;
   faqs?: { question: string; answer: string }[];
+  dateModified?: string;
   entry?: CollectionEntry<'blog'>;
 }
 
@@ -30,6 +31,7 @@ export async function getBlogPosts(lang: string = "en"): Promise<MarkdownBlogPos
       thumbnail: post.data.thumbnail || "",
       featured: post.data.featured || false,
       faqs: post.data.faqs || [],
+      dateModified: post.data.dateModified,
       entry: post,
     } as MarkdownBlogPost;
   });
@@ -57,6 +59,7 @@ export async function getBlogPostBySlug(slug: string, lang: string = "en"): Prom
       thumbnail: entry.data.thumbnail || "",
       featured: entry.data.featured || false,
       faqs: entry.data.faqs || [],
+      dateModified: entry.data.dateModified,
       entry,
     } as MarkdownBlogPost;
   } catch (e) {

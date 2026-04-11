@@ -5,6 +5,7 @@ title: "Free Opal Alternatives for Android (No $99/yr Paywall)"
 # Option 2: 5 Best Apps Like Opal for Android: Tested & Reviewed (2026) - Authority Focus
 # Option 3: Stop Paying for Focus: The Best Free Opal Alternatives on Android - Benefit Focus
 date: "2026-04-11"
+dateModified: "2026-04-11"
 category: "App Reviews"
 author: "AppLass Team"
 excerpt: "Looking for apps like Opal for Android but want to skip the $99/year subscription? We tested the top 2026 distract-blockers for privacy and battery efficiency."
