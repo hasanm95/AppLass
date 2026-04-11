@@ -13,9 +13,9 @@ for (const file of files) {
 
   // Patterns:
   // 1. localize('text') or localize("text")
-  const fnMatches = content.matchAll(/localize\(\s*(['"`])([\s\S]*?)\1/g);
+  const fnMatches = content.matchAll(/localize\(\s*(['"`])((?:\\.|(?!\1).)*)\1/g);
   // 2. i18n_default_text="text" or i18n_default_text={'text'}
-  const attrMatches = content.matchAll(/i18n_default_text=(?:\{?\s*(['"`])([\s\S]*?)\1\s*\}?|(["'])([^"']+)\3)/g);
+  const attrMatches = content.matchAll(/i18n_default_text=(?:\{?\s*(['"`])((?:\\.|(?!\1).)*)\1\s*\}?|(["'])((?:\\.|(?!\3).)*)\3)/g);
   // 3. <Localize>Text</Localize>
   const compMatches = content.matchAll(/<Localize[^>]*?>([\s\S]*?)<\/Localize>/g);
 

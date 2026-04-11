@@ -1,5 +1,4 @@
-
-
+import { localize } from "@/i18n/localize";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { SCREENVEIL_DATA } from "@/constants/screenveil-data";
@@ -35,7 +34,7 @@ export function StickyDownloadBar({ translations }: StickyDownloadBarProps) {
       <div className="mx-auto flex max-w-lg items-center justify-between gap-4">
         <div className="flex-1">
           <p className="text-sm font-bold text-white">ScreenVeil</p>
-          <p className="text-xs text-slate-400">Free • 5.0 ★</p>
+          <p className="text-xs text-slate-400">{localize("Free")} • 4.4 ★</p>
         </div>
         <Button
           size="lg"

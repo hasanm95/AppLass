@@ -6,13 +6,12 @@ import Navbar from "@/components/common/Navbar.astro";
 import Section from "@/components/common/Section.astro";
 import {
   Shield,
-  Clock,
   Zap,
   Brain,
-  Lock,
   Smartphone,
   Eye,
   Sun,
+Pointer,
 } from "lucide-react";
 import { localize } from "@/i18n/localize";
 import { i18nConfig } from "@/i18n/config";
@@ -140,264 +139,137 @@ const articleSchema = {
         </div>
       </Section>
 
-      {/* Cognitive Load Management */}
+      {/* The 7-Step Guide */}
       <Section className="py-12 lg:py-24">
         <div class="section-container">
-          <div class="flex flex-col items-center gap-12 lg:gap-20 lg:flex-row">
-            <div class="lg:w-1/3">
-              <div class="mb-6 lg:mb-8 flex h-12 w-12 lg:h-14 lg:w-14 items-center justify-center rounded-2xl bg-blue-600 text-white">
-                <Brain className="h-6 w-6 lg:h-8 lg:w-8" />
-              </div>
-              <h2 class="mb-4 lg:mb-6 text-3xl lg:text-4xl font-black text-slate-900">
-                {localize("1. Cognitive Load Management")}
-              </h2>
-              <p class="text-lg leading-relaxed font-medium text-slate-500">
-                {localize("Finding the Signal in the Noise. Our brains were not built to process 100+ notifications per hour. To maintain peak performance, you must treat your attention as a finite resource.")}
-              </p>
-            </div>
-            <div class="flex-1 space-y-12">
-              <div class="rounded-3xl lg:rounded-[2.5rem] border border-slate-100 bg-slate-50 p-6 lg:p-12 transition-all hover:shadow-xl">
-                <h3 class="mb-4 lg:mb-6 text-xl lg:text-2xl font-black text-slate-900">
-                  {localize("Notification Auditing")}
-                </h3>
-                <p class="mb-8 font-medium text-slate-600">
-                  {localize("Categorize your alerts into three levels to protect your neural bandwidth:")}
-                </p>
-                <ul class="space-y-6">
-                  <li class="flex gap-4">
-                    <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-rose-100 text-xs font-black text-rose-600">
-                      1
-                    </div>
-                    <p class="font-bold text-slate-700">
-                      <span class="text-rose-600">
-                        {localize("Level 1 (Critical):")}
-                      </span>{" "}
-                      {localize("Includes family and server alerts for immediate response.")}
-                    </p>
-                  </li>
-                  <li class="flex gap-4">
-                    <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-amber-100 text-xs font-black text-amber-600">
-                      2
-                    </div>
-                    <p class="font-bold text-slate-700">
-                      <span class="text-amber-600">
-                        {localize("Level 2 (Active):")}
-                      </span>{" "}
-                      {localize("Should be batched every 2 hours.")}
-                    </p>
-                  </li>
-                  <li class="flex gap-4">
-                    <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-100 text-xs font-black text-blue-600">
-                      3
-                    </div>
-                    <p class="font-bold text-slate-700">
-                      <span class="text-blue-600">
-                        {localize("Level 3 (Passive):")}
-                      </span>{" "}
-                      {localize("Social media and newsletters—disable entirely.")}
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="rounded-3xl lg:rounded-[2.5rem] border border-blue-100 bg-blue-50/50 p-6 lg:p-12">
-                <h3 class="mb-4 lg:mb-6 text-xl lg:text-2xl font-black text-slate-900">
-                  {localize("Implementation of \"Deep Work\" Blocks")}
-                </h3>
-                <p class="leading-relaxed font-medium text-slate-600">
-                  {localize("Dedicate at least two hours every morning to high-complexity tasks with zero digital interruptions. This means")}
-                  <strong class="text-slate-900">
-                    {` ${localize("no Slack, no email, and no phone.")}`}
-                  </strong>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Section>
-
-      {/* Physical Setup */}
-      <Section className="bg-slate-50/50 py-12 lg:py-24">
-        <div class="section-container text-center">
-          <span class="mb-2 lg:mb-4 block text-[10px] font-black tracking-widest text-emerald-600 uppercase">
-            {localize("Physical Space")}
-          </span>
-          <h2 class="mb-10 lg:mb-16 text-3xl lg:text-5xl font-black text-slate-900">
-            {localize("2. The Physical Setup: 2026 Ergonomics")}
-          </h2>
-          <div class="grid grid-cols-1 gap-6 lg:gap-8 md:grid-cols-3">
-            <div class="rounded-3xl lg:rounded-[2.5rem] border border-slate-100 bg-white p-6 lg:p-12 shadow-sm transition-transform hover:-translate-y-2">
-              <div class="mb-6 lg:mb-8 flex justify-center">
-                <div class="rounded-2xl bg-emerald-50 p-4 text-emerald-600">
-                  <Zap size={32} />
-                </div>
-              </div>
-              <h4 class="mb-2 lg:mb-4 text-lg lg:text-xl font-black text-slate-900">{localize("The 90% Rule")}</h4>
-              <p class="text-base font-medium text-slate-500">{localize("90% of phone usage occurs within reaching distance. Keep your device in another room during high-focus sessions.")}</p>
-            </div>
+          <div class="space-y-24 lg:space-y-32">
             
-            <div class="rounded-3xl lg:rounded-[2.5rem] border border-slate-100 bg-white p-6 lg:p-12 shadow-sm transition-transform hover:-translate-y-2">
-              <div class="mb-6 lg:mb-8 flex justify-center">
-                <div class="rounded-2xl bg-emerald-50 p-4 text-emerald-600">
-                  <Eye size={32} />
-                </div>
+            {/* Step 1 */}
+            <div class="flex flex-col items-start gap-10 lg:flex-row lg:gap-20">
+              <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-blue-600 text-white shadow-xl shadow-blue-500/20">
+                <Brain className="h-8 w-8" />
               </div>
-              <h4 class="mb-2 lg:mb-4 text-lg lg:text-xl font-black text-slate-900">{localize("The 20-20-20 Rule")}</h4>
-              <p class="text-base font-medium text-slate-500">{localize("Every 20 minutes, look at something 20 feet away for 20 seconds. This prevents 'Screen Apnea' and eye strain.")}</p>
-            </div>
-            
-            <div class="rounded-3xl lg:rounded-[2.5rem] border border-slate-100 bg-white p-6 lg:p-12 shadow-sm transition-transform hover:-translate-y-2">
-              <div class="mb-6 lg:mb-8 flex justify-center">
-                <div class="rounded-2xl bg-emerald-50 p-4 text-emerald-600">
-                  <Sun size={32} />
-                </div>
-              </div>
-              <h4 class="mb-2 lg:mb-4 text-lg lg:text-xl font-black text-slate-900">{localize("Blue Light Protocol")}</h4>
-              <p class="text-base font-medium text-slate-500">{localize("Enable grayscale mode and blue light filters 120 minutes before sleep to protect your circadian rhythm.")}</p>
-            </div>
-          </div>
-        </div>
-      </Section>
-
-      {/* Essential Tools */}
-      <Section className="py-12 lg:py-24">
-        <div class="section-container">
-          <div class="mx-auto mb-12 lg:mb-20 max-w-3xl text-center">
-            <h2 class="mb-6 lg:mb-8 text-3xl lg:text-5xl font-black text-slate-900">
-              {localize("Essential Focus Tools (Free)")}
-            </h2>
-            <p class="text-lg lg:text-xl font-medium text-slate-500">
-              {localize("You don't need a $2,000 'Minimalist Phone' to reclaim your time. Use these zero-telemetry utilities for Android.")}
-            </p>
-          </div>
-          <div class="space-y-6 lg:space-y-8">
-            <div class="group flex flex-col items-center gap-10 lg:gap-16 rounded-3xl lg:rounded-[3rem] border border-slate-100 bg-[#FAFBFD] p-6 lg:p-20 transition-all hover:border-blue-500/20 lg:flex-row">
               <div class="flex-1">
-                <div class="mb-4 lg:mb-6 flex items-center gap-3">
-                  <Shield className="h-5 w-5 lg:h-6 lg:w-6 text-blue-600" />
-                  <span class="text-xs font-black tracking-widest text-blue-600 uppercase">
-                    {localize("Productivity Guardian")}
-                  </span>
-                </div>
-                <h3 class="mb-4 lg:mb-6 text-2xl lg:text-4xl font-black text-slate-900">
-                  {localize("Mindful Guard")}
-                </h3>
-                <p class="mb-8 text-lg leading-relaxed font-medium text-slate-500">
-                  {localize("Strict Mode allows you to hard-block distracting apps at the system level. It features a zero-telemetry architecture and is")}
-                  <strong class="text-slate-900">
-                    {` ${localize("100% offline with no data collection.")}`}
-                  </strong>
+                <h2 class="mb-6 text-3xl font-black text-slate-900 lg:text-4xl">
+                  {localize("STEP 1 — Audit Your Neural Bandwidth")}
+                </h2>
+                <p class="mb-8 text-xl leading-relaxed font-medium text-slate-600">
+                  {localize("Every notification is a \"micro-withdrawal\" from your attention bank. Categorize your apps into three levels:")}
                 </p>
-                <a
-                  href={localePath(lang, "/apps/mindful-guard")}
-                  class="inline-flex h-14 items-center rounded-full bg-blue-600 px-10 font-black text-white transition-all hover:bg-blue-700"
-                >
-                  {localize("Get Mindful Guard")}
-                </a>
-              </div>
-              <div class="flex aspect-square items-center justify-center rounded-3xl lg:rounded-[2.5rem] border border-slate-50 bg-white p-8 lg:p-12 shadow-inner lg:w-1/3 w-full">
-                <Shield className="h-24 w-24 lg:h-32 lg:w-32 text-blue-600" />
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+                   <div class="rounded-2xl border border-rose-100 bg-rose-50/30 p-6">
+                      <p class="mb-1 text-[10px] font-black tracking-widest text-rose-600 uppercase">{localize("Level 1")}</p>
+                      <p class="font-bold text-slate-800">{localize("Critical:")} <span class="text-slate-500 font-medium">{localize("Immediate family, emergency calls, server alerts.")}</span></p>
+                   </div>
+                   <div class="rounded-2xl border border-amber-100 bg-amber-50/30 p-6">
+                      <p class="mb-1 text-[10px] font-black tracking-widest text-amber-600 uppercase">{localize("Level 2")}</p>
+                      <p class="font-bold text-slate-800">{localize("Batch:")} <span class="text-slate-500 font-medium">{localize("Slack, Email, WhatsApp. Check these 3x daily.")}</span></p>
+                   </div>
+                   <div class="rounded-2xl border border-blue-100 bg-blue-50/30 p-6">
+                      <p class="mb-1 text-[10px] font-black tracking-widest text-blue-600 uppercase">{localize("Level 3")}</p>
+                      <p class="font-bold text-slate-800">{localize("Kill:")} <span class="text-slate-500 font-medium">{localize("Instagram, TikTok, News. Disable notifications entirely.")}</span></p>
+                   </div>
+                </div>
               </div>
             </div>
 
-            <div class="grid grid-cols-1 gap-6 lg:gap-8 lg:grid-cols-2">
-              <div class="rounded-3xl lg:rounded-[2.5rem] border border-slate-100 bg-white p-6 lg:p-12">
-                <h4 class="mb-4 lg:mb-6 flex items-center gap-3 lg:gap-4 text-xl lg:text-2xl font-black text-slate-900">
-                  <Smartphone className="text-blue-600" /> {localize("ScreenVeil Android")}
-                </h4>
-                <p class="mb-10 leading-relaxed font-medium text-slate-500">
-                  {localize("Dim your screen to 1% to reduce distractions and save 60% battery life while listening to deep work playlists.")}
-                </p>
-                <a
-                  href={localePath(lang, "/apps/screenveil")}
-                  class="font-black text-blue-600 hover:underline"
-                >
-                  {localize("Learn More")} &rarr;
-                </a>
+            {/* Step 2 */}
+            <div class="flex flex-col items-start gap-10 lg:flex-row lg:gap-20">
+              <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-indigo-600 text-white shadow-xl shadow-indigo-500/20">
+                <Shield className="h-8 w-8" />
               </div>
-              <div class="rounded-3xl lg:rounded-[2.5rem] border border-slate-100 bg-white p-6 lg:p-12">
-                <h4 class="mb-4 lg:mb-6 flex items-center gap-3 lg:gap-4 text-xl lg:text-2xl font-black text-slate-900">
-                  <Lock className="text-emerald-600" /> {localize("Non-Account Options")}
-                </h4>
-                <p class="mb-10 leading-relaxed font-medium text-slate-500">
-                  {localize("Looking for Opal alternatives that don't require an account or cloud sync? Explore our list of top privacy-focused blockers.")}
+              <div class="flex-1">
+                <h2 class="mb-6 text-3xl font-black text-slate-900 lg:text-4xl">
+                  {localize("STEP 2 — Deploy a \"Cognitive Firewall\"")}
+                </h2>
+                <p class="mb-8 text-xl leading-relaxed font-medium text-slate-600">
+                  {localize("Your willpower is finite. Use a tool like ")}
+                  <a href={localePath(lang, "/apps/mindful-guard")} class="text-indigo-600 font-black underline hover:text-indigo-700">{localize("Mindful Guard")}</a>
+                  {localize(" to create unbreakable focus sessions. Once a session starts, the app physically prevents you from opening distractions. No \"add 5 minutes\" buttons. No bypasses.")}
                 </p>
-                <a
-                  href={localePath(lang, "/blog/opal-alternatives-android")}
-                  class="font-black text-emerald-600 hover:underline"
-                >
-                  {localize("Read Guide")} &rarr;
-                </a>
               </div>
             </div>
-          </div>
-        </div>
-      </Section>
 
-      {/* Offline Recovery Protocol */}
-      <Section className="relative mx-4 mb-12 lg:mb-24 overflow-hidden rounded-3xl lg:rounded-[4rem] bg-slate-900 py-12 lg:py-24 text-white">
-        <div class="section-container relative z-10">
-          <div class="flex flex-col items-center gap-12 lg:gap-20 lg:flex-row">
-            <div class="flex-1">
-              <span class="mb-4 lg:mb-6 block text-[10px] font-black tracking-widest text-blue-400 uppercase">
-                {localize("Advanced Strategy")}
-              </span>
-              <h2 class="mb-8 lg:mb-12 text-3xl lg:text-5xl font-black">
-                {localize("4. The \"Offline\"")} <br class="hidden lg:block" /> {localize("Recovery Protocol")}
-              </h2>
-              <div class="space-y-8">
-                <div class="flex gap-6">
-                  <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-blue-400/30 bg-blue-600/20 text-xs font-black text-blue-400">
-                    /
-                  </div>
-                  <div>
-                    <h4 class="mb-2 text-xl font-black">{localize("Weekend Air-Gap")}</h4>
-                    <p class="leading-relaxed font-medium text-slate-400">
-                      {localize("Designate at least four hours every Sunday where all devices are powered off and stored in a different room.")}
-                    </p>
-                  </div>
-                </div>
-                
-                <div class="flex gap-6">
-                  <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-blue-400/30 bg-blue-600/20 text-xs font-black text-blue-400">
-                    /
-                  </div>
-                  <div>
-                    <h4 class="mb-2 text-xl font-black">{localize("Tactile Hobbies")}</h4>
-                    <p class="leading-relaxed font-medium text-slate-400">
-                      {localize("Engage in non-digital activities like gardening or paper-based reading to reset your dopamine receptors.")}
-                    </p>
-                  </div>
-                </div>
-                
-                <div class="flex gap-6">
-                  <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-blue-400/30 bg-blue-600/20 text-xs font-black text-blue-400">
-                    /
-                  </div>
-                  <div>
-                    <h4 class="mb-2 text-xl font-black">{localize("The Nature Break")}</h4>
-                    <p class="leading-relaxed font-medium text-slate-400">
-                      {localize("Spend 15 minutes in direct sunlight before 10:00 AM to regulate your circadian rhythm.")}
-                    </p>
-                  </div>
-                </div>
+            {/* Step 3 */}
+            <div class="flex flex-col items-start gap-10 lg:flex-row lg:gap-20">
+              <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-emerald-600 text-white shadow-xl shadow-emerald-500/20">
+                <Smartphone className="h-8 w-8" />
               </div>
-            </div>
-            <div class="lg:w-1/3 w-full">
-              <div class="rounded-3xl lg:rounded-[3rem] bg-blue-600 p-8 lg:p-12 text-center shadow-2xl">
-                <Clock className="mx-auto mb-6 lg:mb-8 h-12 w-12 lg:h-16 lg:w-16 text-white" />
-                <p class="mb-0 lg:mb-8 text-lg lg:text-xl leading-relaxed font-bold text-white">
-                  {localize("\"Structure determines function. To maintain long-term productivity, you must intentionally disconnect.\"")}
+              <div class="flex-1">
+                <h2 class="mb-6 text-3xl font-black text-slate-900 lg:text-4xl">
+                  {localize("STEP 3 — The Screen Off Protocol")}
+                </h2>
+                <p class="mb-8 text-xl leading-relaxed font-medium text-slate-600">
+                  {localize("Background audio is the #1 cause of \"incidental\" screen time. If you use YouTube for podcasts or music, use ")}
+                  <a href={localePath(lang, "/apps/screenveil")} class="text-emerald-600 font-black underline hover:text-emerald-700">{localize("ScreenVeil")}</a>
+                  {localize(" to black out your pixels. This removes the visual temptation to \"just check one more thumbnail\" while saving 60% battery.")}
                 </p>
               </div>
             </div>
+
+            {/* Step 4 */}
+            <div class="flex flex-col items-start gap-10 lg:flex-row lg:gap-20">
+              <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-amber-600 text-white shadow-xl shadow-amber-500/20">
+                <Pointer className="h-8 w-8" />
+              </div>
+              <div class="flex-1">
+                <h2 class="mb-6 text-3xl font-black text-slate-900 lg:text-4xl">
+                  {localize("STEP 4 — The 90% Proximity Rule")}
+                </h2>
+                <p class="mb-8 text-xl leading-relaxed font-medium text-slate-600">
+                  {localize("Research shows that 90% of phone usage occurs because the device is within arm's reach. During deep work, physically move your phone to another room. The \"friction of movement\" is often enough to stop a mindless check.")}
+                </p>
+              </div>
+            </div>
+
+            {/* Step 5 */}
+            <div class="flex flex-col items-start gap-10 lg:flex-row lg:gap-20">
+              <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-violet-600 text-white shadow-xl shadow-violet-500/20">
+                <Eye className="h-8 w-8" />
+              </div>
+              <div class="flex-1">
+                <h2 class="mb-6 text-3xl font-black text-slate-900 lg:text-4xl">
+                  {localize("STEP 5 — Circadian Display Management")}
+                </h2>
+                <p class="mb-8 text-xl leading-relaxed font-medium text-slate-600">
+                  {localize("Blue light at night suppresses melatonin. Switch your phone to Grayscale Mode 90 minutes before bed. Removing the vibrant colors makes the device psychologically \"boring,\" making it easier to put down.")}
+                </p>
+              </div>
+            </div>
+
+            {/* Step 6 */}
+            <div class="flex flex-col items-start gap-10 lg:flex-row lg:gap-20">
+              <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-rose-600 text-white shadow-xl shadow-rose-500/20">
+                <Sun className="h-8 w-8" />
+              </div>
+              <div class="flex-1">
+                <h2 class="mb-6 text-3xl font-black text-slate-900 lg:text-4xl">
+                  {localize("STEP 6 — The \"Analog\" First Hour")}
+                </h2>
+                <p class="mb-8 text-xl leading-relaxed font-medium text-slate-600">
+                  {localize("Do not check your phone for the first 60 minutes of your day. This protects your brain's \"alpha wave\" state and prevents you from starting your day in a reactive mode.")}
+                </p>
+              </div>
+            </div>
+
+            {/* Step 7 */}
+            <div class="flex flex-col items-start gap-10 lg:flex-row lg:gap-20">
+              <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-slate-900 text-white shadow-xl shadow-slate-900/20">
+                <Zap className="h-8 w-8" />
+              </div>
+              <div class="flex-1">
+                <h2 class="mb-6 text-3xl font-black text-slate-900 lg:text-4xl">
+                  {localize("STEP 7 — Weekly Digital Air-Gap")}
+                </h2>
+                <p class="mb-8 text-xl leading-relaxed font-medium text-slate-600">
+                  {localize("Designate \"Sunday Afternoons\" as no-tech zones. Power off all devices for 4 hours. Reconnect with the physical world through reading, gardening, or movement to reset your dopamine baseline.")}
+                </p>
+              </div>
+            </div>
+
           </div>
         </div>
-        {/* Decorative Mesh */}
-        <div
-          class="pointer-events-none absolute inset-0 z-0 opacity-20"
-          style="background-image: linear-gradient(to right, #1e293b 1px, transparent 1px), linear-gradient(to bottom, #1e293b 1px, transparent 1px); background-size: 6rem 6rem;"
-        />
-      </Section>
+      </Section>n>
 
       {/* FAQs */}
       <Section className="py-12 lg:py-24">

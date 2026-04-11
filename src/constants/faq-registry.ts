@@ -3,24 +3,27 @@ import { localize } from "@/i18n/localize";
 export const getFaqRegistry = () => ({
   HOME: [
     {
-      id: "what-is",
       question: localize("What is AppLass?"),
       answer: localize(
-        "AppLass is an elite software engineering studio that builds high-performance Shopify apps and Android utilities. Founded in 2019, we use mathematical optimization to create sub-2.1KB payloads that keep Core Web Vitals green. Our flagship products include ScreenVeil, FomoGen, and Mindful Guard."
+        "AppLass is an elite software engineering studio. We build high-performance Shopify apps and Android utilities that prioritize mathematical precision and user privacy. Our goal is to eliminate digital 'bloat' and help you reclaim your performance."
       ),
     },
     {
-      id: "accessibility",
-      question: localize("Is AppLass software accessible?"),
-      answer: localize(
-        "Yes. All AppLass products follow WCAG 2.1 guidelines with semantic HTML and keyboard-navigable patterns. We build for the 20% of users with disabilities to create a superior experience for the 100%."
-      ),
-    },
-    {
-      id: "speed",
       question: localize("How does AppLass optimize for speed?"),
       answer: localize(
-        "We minimize JavaScript execution time to the micro-second using mathematical optimization. Core utility payloads stay under 2.1KB to ensure green Core Web Vitals scores."
+        "We use a first-principles approach to coding. Our Shopify apps, like FomoGen, have a payload of less than 2.1KB — meaning they load faster than a single product image. We avoid third-party tracking and heavy libraries to keep your site at peak performance."
+      ),
+    },
+    {
+      question: localize("Are your apps accessible?"),
+      answer: localize(
+        "Yes. Accessibility is not a feature; it's our foundation. Every tool we build is designed to be WCAG 2.1 compliant, ensuring that your digital experience is inclusive of all users regardless of their physical capabilities."
+      ),
+    },
+    {
+      question: localize("How do I contact support?"),
+      answer: localize(
+        "You can reach our engineering lab directly at support@applass.com. Because our tools are built for precision, we offer direct developer support to ensure your integration is seamless."
       ),
     },
     {
@@ -47,7 +50,31 @@ export const getFaqRegistry = () => ({
     {
       question: localize("What is ScreenVeil?"),
       answer: localize(
-        "ScreenVeil is a free Android app with 10,000+ downloads and a 4.4-star rating. It overlays a pure black layer on AMOLED/OLED screens so pixels physically turn off, saving 60%+ battery while you listen to YouTube, podcasts, or any audio."
+        "ScreenVeil is a free Android app with 10,000+ downloads and a 4.4-star rating. It overlays a pure black layer on AMOLED/OLED screens so pixels physically turn off, saving 60% battery while you listen to YouTube, podcasts, or any audio."
+      ),
+    },
+    {
+      question: localize("How do I play YouTube in the background like Premium?"),
+      answer: localize(
+        "Simply open the YouTube app, start your video, and activate ScreenVeil from your notification shade or the floating button. Your screen will go black, but the audio will continue to play. For more details, see our full guide on <a href='/blog/youtube-background-play-2026-workaround' class='text-green-500 underline'>YouTube Background Play in 2026</a>."
+      ),
+    },
+    {
+      question: localize("Why does ScreenVeil need 'Display over other apps' permission?"),
+      answer: localize(
+        "This is the only way Android allows an app to place a layer over other apps (like YouTube or Netflix). We use this to draw the pure black 'Veil' over your screen. ScreenVeil does not require internet, camera, or contact permissions."
+      ),
+    },
+    {
+      question: localize("Will this work while my phone is in my pocket?"),
+      answer: localize(
+        "Yes. ScreenVeil includes a 'Pocket Guard' feature that blocks all touch inputs while the veil is active. This prevents accidental skipping, pausing, or 'ghost dialing' while your phone is in your pocket or bag."
+      ),
+    },
+    {
+      question: localize("Does ScreenVeil drain battery?"),
+      answer: localize(
+        "No. ScreenVeil is engineered for extreme efficiency. It uses 0% CPU while active. By turning off the pixels on AMOLED screens, it actually saves up to 60% of your total device power draw during video playback."
       ),
     },
     {
@@ -79,43 +106,49 @@ export const getFaqRegistry = () => ({
     {
       question: localize("What is FomoGen?"),
       answer: localize(
-        "FomoGen is a Shopify conversion app that adds social proof notifications, scarcity timers, sticky add-to-cart, free shipping bars, and trust badges in a single install. The entire script payload is under 2.1KB, making it safe for Core Web Vitals and Lighthouse scores."
-      ),
-    },
-    {
-      question: localize("Is FomoGen free?"),
-      answer: localize(
-        "Yes. FomoGen has a free plan that includes 1 active campaign, 100 monthly notifications, and core conversion tools. Paid plans start at $9.99/month for higher limits and full customization."
+        "FomoGen is an elite social proof engine for Shopify. It coordinates 9 distinct urgency and scarcity modules — including purchase notifications, exit-intent logic, and stock telemetry — to maximize conversion performance."
       ),
     },
     {
       question: localize("Will FomoGen slow down my Shopify store?"),
       answer: localize(
-        "No. FomoGen is engineered specifically to avoid speed penalties. Its payload is under 2.1KB — smaller than most product images. It will not trigger Shopify Speed Score penalties or Google's \"Long Task\" warnings."
+        "No. Every extra kilobyte your store loads is a customer you risk losing. FomoGen's total payload is under 2.1KB — lighter than a single product thumbnail. It is engineered to keep your Core Web Vitals in the green."
       ),
     },
     {
       question: localize("How is FomoGen different from Vitals or Nudgify?"),
       answer: localize(
-        "Vitals bundles 40+ features most merchants never use, adding significant script weight. Nudgify relies on cloud rendering with noticeable latency. FomoGen gives you the 5 highest-converting tools only, delivered in a fraction of the payload."
+        "Vitals bundles 40+ features that most merchants never use, adding massive script weight. Nudgify relies on cloud-rendering with noticeable latency. FomoGen gives you the 5 highest-converting tools in one speed-optimized script."
       ),
     },
     {
       question: localize("Does FomoGen work with all Shopify themes?"),
       answer: localize(
-        "Yes. FomoGen installs via Shopify's App Block system and is compatible with all Online Store 2.0 themes including Dawn, Refresh, Sense, and all major paid themes. No code editing required."
+        "Yes. FomoGen installs via Shopify's App Block system and is compatible with all Online Store 2.0 themes, including Dawn, Refresh, Sense, and all major paid themes. No code editing required."
       ),
     },
     {
       question: localize("Is FomoGen GDPR and CCPA compliant?"),
       answer: localize(
-        "Yes. FomoGen does not collect personal shopper data. Social proof notifications use anonymized purchase signals only. No cookies are set without consent, and the app includes a privacy-safe mode for EU storefronts."
+        "Yes. FomoGen does not collect personal shopper data. Social proof notifications use anonymized purchase signals only. No cookies are set without consent, and the app includes a privacy-safe mode for EU stores."
       ),
     },
     {
-      question: localize("Can I show real purchase data in the social proof notifications?"),
+      question: localize("Can I show real purchase data?"),
       answer: localize(
         "Yes. FomoGen connects to your Shopify order data to display real recent purchases. You can configure display rules including time delay, geolocation filtering, and product collection targeting."
+      ),
+    },
+    {
+      question: localize("Do I need coding skills?"),
+      answer: localize(
+        "No. FomoGen is designed for non-technical merchants. You can customize every color, position, and timing logic via a simple visual dashboard inside your Shopify admin."
+      ),
+    },
+    {
+      question: localize("How do I contact support?"),
+      answer: localize(
+        "Access our Technical Lab directly via the 'Support' module in your dashboard or reach out to us at support@applass.com."
       ),
     },
   ],
@@ -201,15 +234,39 @@ export const getFaqRegistry = () => ({
       ),
     },
     {
-      question: localize("Are there free apps to reduce screen time on Android?"),
+      question: localize("How does screen time affect productivity?"),
       answer: localize(
-        "Yes. While built-in tools like Google’s Digital Wellbeing provide basic tracking, third-party apps like Mindful Guard offer more advanced 'hard blocking' features for free, without the need for an account or internet connection."
+        "Research indicates it takes an average of 23 minutes to refocus on a task after being distracted by a digital notification. Unmanaged screen time fragments your attention and significantly increases the time required to complete deep, complex work."
       ),
     },
     {
-      question: localize("How does screen time affect productivity?"),
+      question: localize("Are free apps to help reduce screen time on Android?"),
       answer: localize(
-        "Research indicates that it takes an average of 23 minutes to refocus on a task after being distracted by a digital notification. Unmanaged screen time fragments your attention and significantly increases the time needed to complete complex work."
+        "Yes. While many apps require subscriptions, utilities like Mindful Guard offer powerful system-level blocking for free. Additionally, built-in tools like Android's 'Digital Wellbeing' provide basic tracking, though they are often easier to bypass than dedicated focus apps."
+      ),
+    },
+    {
+      question: localize("What is 'Screen Apnea'?"),
+      answer: localize(
+        "Screen Apnea is the tendency to hold your breath or breathe shallowly while working at a screen. This triggers a stress response in the body. Using the 20-20-20 rule and intentional breathing breaks helps mitigate this physiological strain."
+      ),
+    },
+    {
+      question: localize("Why do I need an app block instead of just willpower?"),
+      answer: localize(
+        "Social media algorithms are engineered by thousands of engineers to keep you scrolling. Willpower is a finite resource that depletes throughout the day. Using a 'hard' block like Mindful Guard removes the decision-making process entirely, protecting your focus automatically."
+      ),
+    },
+    {
+      question: localize("Is Mindful Guard safe for privacy?"),
+      answer: localize(
+        "Yes. Mindful Guard is 100% offline. It does not require an account, does not use a VPN, and never transmits your usage data to any server. Your focus sessions stay on your device."
+      ),
+    },
+    {
+      question: localize("How do I start a digital detox?"),
+      answer: localize(
+        "Start small. Begin with Step 6 of our guide: The Analog First Hour. Once you've mastered the first 60 minutes of your day without a screen, progress to Step 1 (Notification Audit) and eventually Step 7 (The Weekly Air-Gap)."
       ),
     },
   ],

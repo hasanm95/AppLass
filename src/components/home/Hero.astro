@@ -38,22 +38,16 @@ const lang = getLangFromUrl(Astro.url);
 
       {/* Massive Headline - Left Aligned */}
       <h1 class="mb-4 font-mono text-4xl leading-[1.1] font-bold tracking-tight md:text-6xl lg:text-7xl">
-        <span class="block">{localize("High-Performance")}</span>
-        <span class="block text-primary">{localize("Apps.")}</span>
+        <span class="block">{localize("Mathematical Precision")}</span>
+        <span class="block text-primary">{localize("Meets Human-Centric")}</span>
         <span class="block text-muted-foreground/30">
-          {localize("Zero Bloat.")}
+          {localize("Design.")}
         </span>
       </h1>
 
       {/* Subheading */}
       <p class="mb-8 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
-        <Localize 
-          i18n_default_text="Stop letting bloated Shopify apps kill your conversions. <0>AppLass</0> builds elite-tier tools with <1>under 2.1kb</1> payloads that keep your Core Web Vitals green."
-          components={[
-            React.createElement('span', { className: 'font-semibold text-foreground' }),
-            React.createElement('span', { className: 'inline-flex items-center gap-1 border-b-2 border-(--cta)/40 font-mono text-foreground' })
-          ]}
-        />
+        {localize("Stop letting bloated software slow your growth. We engineer top-tier Shopify and mobile tools, guided by first-principles precision.")}
       </p>
 
       {/* Stats Row */}

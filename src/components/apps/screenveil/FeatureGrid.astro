@@ -1,4 +1,5 @@
 ---
+import { localize } from "@/i18n/localize";
 import Section from "@/components/common/Section.astro";
 import { getScreenveilData } from "@/constants/screenveil-data";
 import {
@@ -30,6 +31,9 @@ const labels = screenveilData.labels;
       <span class="mb-6 block text-[10px] font-black tracking-[0.2em] text-green-500 uppercase">
         {labels.coreFeaturesTag}
       </span>
+      <p class="mb-12 max-w-2xl mx-auto text-lg leading-relaxed font-medium text-slate-400">
+        {localize("ScreenVeil is completely free. We do not sell your data, we do not show ads, and we do not require any permissions other than the display overlay.")}
+      </p>
       <h2 class="mb-6 text-4xl leading-[0.95] font-bold tracking-tight text-white md:text-5xl lg:text-7xl">
         {labels.featuresHeadline}
         <br />

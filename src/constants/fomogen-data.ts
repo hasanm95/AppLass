@@ -96,14 +96,14 @@ export const getFomoGenData = () => ({
       quote: localize(
         "I uninstalled Vitals and Nudgify. FomoGen does exactly what I need without the lag."
       ),
-      author: localize("Shopify Merchant"),
+      author: localize("Verified Merchant"),
       niche: localize("Fashion & Apparel Store"),
     },
     {
       quote: localize(
         "My add-to-cart rate jumped 15% just by turning on the Sticky Cart."
       ),
-      author: localize("Shopify Merchant"),
+      author: localize("Verified Merchant"),
       niche: localize("Dropshipping Store"),
     },
   ],
@@ -348,19 +348,19 @@ export const getFomoGenData = () => ({
 
   cta: {
     title: localize("Ready to Scale Your Sales?"),
-    subtitle: localize("Beta Launch"),
+    subtitle: localize("Limited Time Launch Offer"),
     description: localize(
-      "Get the Professional Plan features for free while we are in Beta. One-click install from Shopify App Store. Works with any theme."
+      "Unlock the high-conversion toolset used by elite Shopify brands. Save 44% with our annual plan."
     ),
     highlights: [
-      localize("Beta Features Included"),
-      localize("No Coding Required"),
-      localize("One-Click Install"),
+      localize("$9.99/mo (Standard)"),
+      localize("$59/yr ($4.92/mo)"),
+      localize("Zero Speed Penalty"),
       localize("5-Star Support"),
     ],
     primaryCTA: localize("Get FOMO Gen Now"),
     shopifyUrl: "https://apps.shopify.com/fomogen",
-    noCreditCard: localize("No Credit Card Required • Beta Access"),
+    noCreditCard: localize("No Credit Card Required • Limited Time Offer"),
   },
 
   labels: {
