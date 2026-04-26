@@ -20,7 +20,10 @@ export function getLangFromUrl(url: URL) {
 export function localePath(lang: string, path: string = '/') {
   const normalized = path === '' ? '/' : path.startsWith('/') ? path : `/${path}`;
   if (lang === i18nConfig.defaultLocale) return normalized;
-  return `/${lang}${normalized}`;
+  
+  // Avoid trailing slash for root localized paths (e.g., return /fr instead of /fr/)
+  const pathPart = normalized === '/' ? '' : normalized;
+  return `/${lang}${pathPart}`;
 }
 
 /**
