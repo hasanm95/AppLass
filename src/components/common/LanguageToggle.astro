@@ -49,10 +49,10 @@ const targetPath = pathWithoutLang || "/";
     <div 
       class:list={[
         "lang-sidebar-content relative w-full h-full flex flex-col shadow-2xl transition-transform duration-300 translate-x-full data-[state=open]:translate-x-0 max-w-sm",
-        isDark ? "bg-[#020617] border-l border-white/10" : "bg-white border-l border-slate-200"
+        isDark ? "bg-[#020617] border-l border-white/10" : "bg-white/90 border-l border-white/40"
       ]}
     >
-      <div class="flex items-center justify-between p-6 border-b border-slate-100 dark:border-white/10">
+      <div data-is-dark={isDark} class="flex items-center justify-between p-6 border-b data-[is-dark=false]:border-slate-100 data-[is-dark=true]:border-white/10">
         <h2 class:list={["text-lg font-black tracking-tight", isDark ? "text-white" : "text-slate-900"]}>
           {localize("Select Language")}
         </h2>
@@ -75,7 +75,7 @@ const targetPath = pathWithoutLang || "/";
                 "flex items-center justify-between rounded-xl px-5 py-4 font-medium transition-all group",
                 isActive
                   ? isDark 
-                    ? "bg-white text-slate-900 shadow-md" 
+                    ? "bg-white/90 text-slate-900 shadow-md" 
                     : "bg-slate-900 text-white shadow-md"
                   : isDark
                     ? "text-slate-400 hover:bg-white/10 hover:text-white"
