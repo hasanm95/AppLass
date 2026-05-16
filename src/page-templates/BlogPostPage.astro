@@ -71,10 +71,17 @@ const jsonLd = {
   },
 };
 
+const ogImageUrl = post.ogImage || (typeof post.thumbnail === 'object' ? post.thumbnail.src : post.thumbnail);
 
 ---
 
-<Layout title={title} description={description} lang={lang}>
+<Layout 
+  title={title} 
+  description={description} 
+  keywords={post.keywords}
+  ogImage={ogImageUrl}
+  lang={lang}
+>
   <script
     type="application/ld+json"
     is:inline

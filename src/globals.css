@@ -137,4 +137,16 @@
     padding-inline: var(--container-px);
   }
 }
-/* aria-label */
+
+/* Prose Table Responsiveness */
+.prose table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.prose table th,
+.prose table td {
+  min-width: 120px;
+}
