@@ -2,39 +2,52 @@
 import { localePath } from "@/i18n/utils";
 
 interface Props {
-  appName: "Mindful Guard" | "FOMOgen" | "AppLass";
+  appName: "Mindful Guard" | "FOMOgen" | "AppLass" | "ScreenVeil";
   lang?: string;
   labels?: {
-    learnMore: string;
-    poweredByLogic: string;
-    sub: string;
-    desc: string;
+    learnMore?: string;
+    poweredByLogic?: string;
+    sub?: string;
+    desc?: string;
   };
 }
 
 const { appName, lang = "en", labels } = Astro.props;
 
+const isFr = lang === "fr";
+
 const data = {
   "Mindful Guard": {
     title: "Mindful Guard",
-    sub: labels?.sub || "Built for Focus.",
-    desc: labels?.desc || "Reclaim your digital focus with logical guardrails.",
+    sub: labels?.sub || (isFr ? "Conçu pour la concentration." : "Built for Focus."),
+    desc: labels?.desc || (isFr ? "Retrouvez votre concentration numérique avec des garde-fous logiques." : "Reclaim your digital focus with logical guardrails."),
     href: "/apps/mindful-guard",
     color: "bg-[#10B981]",
+    external: false,
   },
   FOMOgen: {
     title: "FOMOgen",
-    sub: labels?.sub || "Sales Simplified.",
-    desc: labels?.desc || "The #1 Shopify app for social proof automation.",
+    sub: labels?.sub || (isFr ? "Les ventes simplifiées." : "Sales Simplified."),
+    desc: labels?.desc || (isFr ? "L'application Shopify #1 pour l'automatisation des preuves sociales." : "The #1 Shopify app for social proof automation."),
     href: "/apps/fomogen",
     color: "bg-blue-600",
+    external: false,
   },
   AppLass: {
     title: "The Logic Lab",
-    sub: labels?.sub || "First Principles.",
-    desc: labels?.desc || "Get engineering insights delivered to your inbox.",
+    sub: labels?.sub || (isFr ? "Principes fondamentaux." : "First Principles."),
+    desc: labels?.desc || (isFr ? "Recevez des analyses d'ingénierie directement dans votre boîte de réception." : "Get engineering insights delivered to your inbox."),
     href: "#subscribe",
     color: "bg-slate-900",
+    external: false,
+  },
+  ScreenVeil: {
+    title: "ScreenVeil",
+    sub: labels?.sub || (isFr ? "Écran éteint pour les vidéos sur Android." : "Screen Off Video for Android."),
+    desc: labels?.desc || (isFr ? "La superposition noire permet de continuer à écouter l'audio tout en économisant plus de 60 % de batterie sur AMOLED. Plus de 10 000 téléchargements · 4,4 ★ · Gratuit à vie." : "Black overlay keeps audio playing while saving 60%+ battery on AMOLED. 10,000+ downloads · 4.4 ★ · Free forever."),
+    href: "https://play.google.com/store/apps/details?id=com.screenveil.app",
+    color: "bg-[#22d3ee]",
+    external: true,
   },
 }[appName];
 ---
@@ -45,7 +58,7 @@ const data = {
   ></div>
 
   <span class="mb-6 block text-[10px] font-black tracking-[0.2em] text-slate-500 uppercase">
-    {labels?.poweredByLogic || "Powered by Logic"}
+    {labels?.poweredByLogic || (appName === "ScreenVeil" ? (isFr ? "Présenté dans cet article" : "Featured in this article") : (isFr ? "Développé par la logique" : "Powered by Logic"))}
   </span>
 
   <h4 class="mb-2 text-2xl font-black text-slate-900">{data.title}</h4>
@@ -56,9 +69,12 @@ const data = {
   </p>
 
   <a
-    href={localePath(lang, data.href)}
+    href={data.external ? data.href : localePath(lang, data.href)}
+    target={data.external ? "_blank" : undefined}
+    rel={data.external ? "noopener noreferrer" : undefined}
     class={`inline-flex h-12 w-full items-center justify-center rounded-xl font-bold text-white transition-opacity hover:opacity-90 ${data.color}`}
+    style={appName === "ScreenVeil" ? "color: #0f172a;" : undefined}
   >
-    {labels?.learnMore || "Learn More"}
+    {labels?.learnMore || (appName === "ScreenVeil" ? (isFr ? "Télécharger Gratuitement" : "Download Free") : (isFr ? "En savoir plus" : "Learn More"))}
   </a>
 </div>

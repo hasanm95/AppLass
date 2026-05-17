@@ -20,6 +20,8 @@ const blog = defineCollection({
       question: z.string(),
       answer: z.string()
     })).optional().default([]),
+    breadcrumbName: z.string().optional(),
+    sidebarApps: z.array(z.string()).optional().default([]),
   }),
 });
 

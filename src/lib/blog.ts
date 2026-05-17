@@ -13,6 +13,11 @@ export interface MarkdownBlogPost {
   faqs?: { question: string; answer: string }[];
   dateModified?: string;
   entry?: CollectionEntry<'blog'>;
+  keywords?: string;
+  tags?: string[];
+  breadcrumbName?: string;
+  sidebarApps?: string[];
+  ogImage?: string;
 }
 
 export async function getBlogPosts(lang: string = "en"): Promise<MarkdownBlogPost[]> {
@@ -33,6 +38,11 @@ export async function getBlogPosts(lang: string = "en"): Promise<MarkdownBlogPos
       faqs: post.data.faqs || [],
       dateModified: post.data.dateModified,
       entry: post,
+      keywords: post.data.keywords,
+      tags: post.data.tags || [],
+      breadcrumbName: post.data.breadcrumbName,
+      sidebarApps: post.data.sidebarApps || [],
+      ogImage: post.data.ogImage,
     } as MarkdownBlogPost;
   });
 
@@ -61,6 +71,11 @@ export async function getBlogPostBySlug(slug: string, lang: string = "en"): Prom
       faqs: entry.data.faqs || [],
       dateModified: entry.data.dateModified,
       entry,
+      keywords: entry.data.keywords,
+      tags: entry.data.tags || [],
+      breadcrumbName: entry.data.breadcrumbName,
+      sidebarApps: entry.data.sidebarApps || [],
+      ogImage: entry.data.ogImage,
     } as MarkdownBlogPost;
   } catch (e) {
     throw new Error(`Blog post ${slug} not found in ${lang}`, { cause: e });
