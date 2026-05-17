@@ -34,8 +34,13 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
 <header
   id="navbar-header"
   role="banner"
+  data-is-sticky={false}
+  data-is-dark={isDark}
   class={cn(
-    "fixed top-0 right-0 left-0 z-50 transition-all duration-700 bg-transparent py-8",
+    "fixed top-0 right-0 left-0 z-50 transition-all duration-700 bg-transparent",
+    "data-[is-sticky=false]:py-8",
+    "data-[is-sticky=true]:py-4 data-[is-sticky=true]:shadow-2xl data-[is-sticky=true]:data-[is-dark=true]:border-white/10 data-[is-sticky=true]:data-[is-dark=true]:bg-[#020617]/80",
+    "data-[is-sticky=true]:data-[is-dark=false]:border-slate-200/20 data-[is-sticky=true]:data-[is-dark=false]:bg-white/90",
     className
   )}
 >
@@ -151,16 +156,9 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
     const handleScroll = () => {
       const isScrolled = window.scrollY > 10;
       if (isScrolled) {
-        header.classList.remove('bg-transparent', 'py-8');
-        header.classList.add('py-4', 'shadow-2xl', 'backdrop-blur-xl');
-        if (isDark) {
-          header.classList.add('border-white/10', 'bg-[#020617]/80');
-        } else {
-          header.classList.add('border-slate-200/20', 'bg-white/80');
-        }
+        header.dataset.isSticky = "true";
       } else {
-        header.classList.add('bg-transparent', 'py-8');
-        header.classList.remove('py-4', 'shadow-2xl', 'backdrop-blur-xl', 'border-white/10', 'bg-[#020617]/80', 'border-slate-200/20', 'bg-white/80');
+        header.dataset.isSticky = "false";
       }
     };
     

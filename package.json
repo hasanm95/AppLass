@@ -11,6 +11,7 @@
     "extract-i18n": "tsx scripts/extract-translations.ts"
   },
   "dependencies": {
+    "@astrojs/mdx": "^5.0.6",
     "@astrojs/react": "^4.4.2",
     "@astrojs/sitemap": "^3.7.0",
     "@radix-ui/react-slot": "^1.2.4",

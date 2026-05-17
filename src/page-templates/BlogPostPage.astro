@@ -71,10 +71,56 @@ const jsonLd = {
   },
 };
 
+const ogImageUrl = post.ogImage || (typeof post.thumbnail === 'object' ? post.thumbnail.src : post.thumbnail);
+
+const isFr = lang === "fr";
+const breadcrumbs = [
+  {
+    name: isFr ? "Accueil" : "Home",
+    item: isFr ? "https://applass.com/fr" : "https://applass.com"
+  },
+  {
+    name: "Blog",
+    item: isFr ? "https://applass.com/fr/blog" : "https://applass.com/blog"
+  },
+  {
+    name: post.breadcrumbName || post.title,
+    item: isFr
+      ? `https://applass.com/fr/blog/${slug}`
+      : `https://applass.com/blog/${slug}`
+  }
+];
+
+const appMapping: Record<string, "ScreenVeil" | "Mindful Guard" | "FOMOgen"> = {
+  "screenveil": "ScreenVeil",
+  "screen-veil": "ScreenVeil",
+  "mindfulguard": "Mindful Guard",
+  "mindful-guard": "Mindful Guard",
+  "fomogen": "FOMOgen",
+};
+
+const normalizedSidebarApps = (post.sidebarApps && post.sidebarApps.length > 0
+  ? post.sidebarApps.map(app => appMapping[app.toLowerCase()] || app)
+  : ["ScreenVeil", "Mindful Guard"]
+) as ("ScreenVeil" | "Mindful Guard" | "FOMOgen")[];
 
 ---
 
-<Layout title={title} description={description} lang={lang}>
+<Layout 
+  title={title} 
+  description={description} 
+  keywords={post.keywords}
+  ogImage={ogImageUrl}
+  lang={lang}
+  ogType="article"
+  articleMeta={{
+    publishedTime: post.date ? `${post.date}T00:00:00Z` : undefined,
+    modifiedTime: post.dateModified ? `${post.dateModified}T00:00:00Z` : undefined,
+    author: post.author,
+    tags: post.tags || [],
+  }}
+  breadcrumbs={breadcrumbs}
+>
   <script
     type="application/ld+json"
     is:inline
@@ -166,26 +212,45 @@ const jsonLd = {
 
           <aside class="lg:w-1/3">
             <div class="sticky top-32 flex flex-col gap-8">
-              <AppCallout 
-                appName="Mindful Guard" 
-                lang={lang} 
-                labels={{
-                  learnMore: localize("Learn More"),
-                  poweredByLogic: localize("Powered by Logic"),
-                  sub: localize("System-Level Focus for Android."),
-                  desc: localize("Block biological distractions at the source. Native performance, absolute privacy.")
-                }}
-              />
-              <AppCallout 
-                appName="FOMOgen" 
-                lang={lang} 
-                labels={{
-                  learnMore: localize("Learn More"),
-                  poweredByLogic: localize("Powered by Logic"),
-                  sub: localize("The Elite Social Proof Engine."),
-                  desc: localize("Mathematical social proof for Shopify. Built for sub-100ms load times.")
-                }}
-              />
+              {normalizedSidebarApps.map(appName => {
+                if (appName === "ScreenVeil") {
+                  return (
+                    <AppCallout 
+                      appName="ScreenVeil" 
+                      lang={lang} 
+                    />
+                  );
+                }
+                if (appName === "Mindful Guard") {
+                  return (
+                    <AppCallout 
+                      appName="Mindful Guard" 
+                      lang={lang} 
+                      labels={{
+                        learnMore: localize("Learn More"),
+                        poweredByLogic: localize("Powered by Logic"),
+                        sub: localize("System-Level Focus for Android."),
+                        desc: localize("Block biological distractions at the source. Native performance, absolute privacy.")
+                      }}
+                    />
+                  );
+                }
+                if (appName === "FOMOgen") {
+                  return (
+                    <AppCallout 
+                      appName="FOMOgen" 
+                      lang={lang} 
+                      labels={{
+                        learnMore: localize("Learn More"),
+                        poweredByLogic: localize("Powered by Logic"),
+                        sub: localize("The Elite Social Proof Engine."),
+                        desc: localize("Mathematical social proof for Shopify. Built for sub-100ms load times.")
+                      }}
+                    />
+                  );
+                }
+                return null;
+              })}
               <ShareArticle 
                 title={post.title} 
                 slug={slug as string} 
