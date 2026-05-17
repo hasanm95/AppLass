@@ -21,9 +21,10 @@ const data = {
     title: "Mindful Guard",
     sub: labels?.sub || (isFr ? "Conçu pour la concentration." : "Built for Focus."),
     desc: labels?.desc || (isFr ? "Retrouvez votre concentration numérique avec des garde-fous logiques." : "Reclaim your digital focus with logical guardrails."),
-    href: "/apps/mindful-guard",
+    href: "https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard",
     color: "bg-[#10B981]",
-    external: false,
+    learnMoreText: isFr ? "Télécharger sur le Play Store" : "Download on Play Store",
+    external: true,
   },
   FOMOgen: {
     title: "FOMOgen",
@@ -31,6 +32,7 @@ const data = {
     desc: labels?.desc || (isFr ? "L'application Shopify #1 pour l'automatisation des preuves sociales." : "The #1 Shopify app for social proof automation."),
     href: "/apps/fomogen",
     color: "bg-blue-600",
+    learnMoreText: isFr ? "En Savoir Plus" : "Learn More",
     external: false,
   },
   AppLass: {
@@ -39,6 +41,7 @@ const data = {
     desc: labels?.desc || (isFr ? "Recevez des analyses d'ingénierie directement dans votre boîte de réception." : "Get engineering insights delivered to your inbox."),
     href: "#subscribe",
     color: "bg-slate-900",
+    learnMoreText: isFr ? "S'abonner" : "Subscribe",
     external: false,
   },
   ScreenVeil: {
@@ -47,6 +50,7 @@ const data = {
     desc: labels?.desc || (isFr ? "La superposition noire permet de continuer à écouter l'audio tout en économisant plus de 60 % de batterie sur AMOLED. Plus de 10 000 téléchargements · 4,4 ★ · Gratuit à vie." : "Black overlay keeps audio playing while saving 60%+ battery on AMOLED. 10,000+ downloads · 4.4 ★ · Free forever."),
     href: "https://play.google.com/store/apps/details?id=com.screenveil.app",
     color: "bg-[#22d3ee]",
+    learnMoreText: isFr ? "Télécharger sur le Play Store" : "Download on Play Store",
     external: true,
   },
 }[appName];
@@ -75,6 +79,6 @@ const data = {
     class={`inline-flex h-12 w-full items-center justify-center rounded-xl font-bold text-white transition-opacity hover:opacity-90 ${data.color}`}
     style={appName === "ScreenVeil" ? "color: #0f172a;" : undefined}
   >
-    {labels?.learnMore || (appName === "ScreenVeil" ? (isFr ? "Télécharger Gratuitement" : "Download Free") : (isFr ? "En savoir plus" : "Learn More"))}
+    {data.learnMoreText}
   </a>
 </div>

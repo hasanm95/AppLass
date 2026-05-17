@@ -1,0 +1,115 @@
+---
+// src/components/blog/MindfulGuardCTA.astro
+interface Props {
+  lang?: string;
+}
+
+const { lang = "en" } = Astro.props;
+const isFr = lang === "fr";
+
+const content = {
+  badge: isFr ? "App Android Gratuit · Sans Abonnement" : "Free Android App · No Subscription",
+  title: isFr ? "Mindful Guard — Concentration au Niveau Système" : "Mindful Guard — System-Level Focus",
+  desc: isFr 
+    ? "Bloquez les distractions au niveau du système (OS). Zéro VPN, zéro télémétrie, zéro consommation de batterie. Fonctionne hors ligne · Mode Strict · Gratuit à vie." 
+    : "Block distractions at the OS level. Zero VPN, zero telemetry, zero battery drain. Works offline · Strict Mode · Free forever.",
+  btn: isFr ? "Installer gratuitement" : "Install free",
+};
+---
+
+<a
+  href="https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="mindfulguard-cta"
+  aria-label={isFr ? "Télécharger Mindful Guard sur Google Play — application de concentration Android gratuite" : "Download Mindful Guard on Google Play — free Android focus app"}
+>
+  <div class="mindfulguard-cta__left">
+    <span class="mindfulguard-cta__badge">{content.badge}</span>
+    <span class="mindfulguard-cta__title">{content.title}</span>
+    <span class="mindfulguard-cta__desc">
+      {content.desc}
+    </span>
+  </div>
+  <div class="mindfulguard-cta__right" aria-hidden="true">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/>
+      <path d="m10 8 6 4-6 4V8z"/>
+    </svg>
+    <span>{content.btn}</span>
+  </div>
+</a>
+
+<style>
+  .mindfulguard-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    margin: 2rem 0;
+    border: 1px solid #10b98133;
+    border-left: 3px solid #10b981;
+    border-radius: 0.5rem;
+    background: linear-gradient(135deg, #052e16 0%, #064e2a 100%);
+    text-decoration: none;
+    transition: border-color 0.15s, background 0.15s;
+  }
+
+  .mindfulguard-cta:hover {
+    border-color: #10b98199;
+    background: linear-gradient(135deg, #052e16 0%, #065f33 100%);
+  }
+
+  .mindfulguard-cta__left {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .mindfulguard-cta__badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #10b981;
+  }
+
+  .mindfulguard-cta__title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f1f5f9;
+    line-height: 1.3;
+  }
+
+  .mindfulguard-cta__desc {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    line-height: 1.4;
+    margin-top: 2px;
+  }
+
+  .mindfulguard-cta__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: #10b981;
+    font-size: 0.75rem;
+    font-weight: 600;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 480px) {
+    .mindfulguard-cta {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .mindfulguard-cta__right {
+      flex-direction: row;
+      gap: 8px;
+    }
+  }
+</style>
