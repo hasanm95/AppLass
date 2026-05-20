@@ -1,11 +1,15 @@
 ---
 title: "Why I Stopped Fighting My Own Brain (And How I Reclaimed 2.4 Hours)"
 date: "2026-01-26"
-category: "Engineering Focus"
+updatedAt: "2026-05-19"
+category: "Android Apps"
+keywords: "reclaim focus, dopamine loop, cognitive firewall app, stop phone addiction android, mindful guard android"
 author: "AppLass Team"
 excerpt: "I used to spend my mornings fighting my phone instead of building my business. Here is how I used 'Strict Logic' to win the war for my attention."
 thumbnail: "../../../assets/blogs/my-focus-story.png"
 featured: true
+sidebarApps:
+  - mindful-guard
 ---
 
 I used to wake up every morning with a big goal: I wanted to build something great for the AppLass ecosystem. But by 10:00 AM, I would usually find myself stuck in a "dopamine loop," scrolling through feeds I didn't even care about.

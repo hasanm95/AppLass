@@ -1,10 +1,14 @@
 ---
 title: "La Logique de la Concentration : Pourquoi la Plupart des Applications de Détox Numérique Échouent"
 date: "12 Jan 2026"
-category: "Productivité"
+updatedAt: "2026-05-19"
+category: "Applications Android"
+keywords: "applications détox numérique, application friction intentionnelle, logique de concentration, solutions addiction téléphone, mindful guard android"
 author: "Fondateur Mathématicien"
 featured: true
 excerpt: "Reprenez le contrôle de votre temps en intégrant une friction intentionnelle dans votre vie numérique. Pourquoi la volonté est un échec systémique."
+sidebarApps:
+  - mindful-guard
 ---
 
 ## La Logique de la Concentration : Pourquoi la Plupart des Applications de Détox Numérique Échouent (et Comment y Remédier)

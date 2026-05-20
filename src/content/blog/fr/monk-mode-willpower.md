@@ -1,11 +1,15 @@
 ---
 title: "Monk Mode 2.0 : Pourquoi votre volonté ne suffit pas (et ce que j'ai construit à la place)"
 date: "2026-01-26"
-category: "Productivité"
+updatedAt: "2026-05-19"
+category: "Applications Android"
+keywords: "application monk mode android, application détox dopamine, comment faire monk mode, mindful guard android"
 author: "Équipe AppLass"
 excerpt: "J'ai essayé de me forcer dans le 'Monk Mode' pendant des mois et j'ai échoué. Ce n'était pas parce que j'étais paresseux — c'était parce que mon cerveau était littéralement trop lent pour stopper mes habitudes."
 thumbnail: "../../../assets/blogs/monk-mode-logic.png"
 featured: true
+sidebarApps:
+  - mindful-guard
 ---
 
 Pendant longtemps, j'ai cru que le "Monk Mode" consistait simplement à être plus fort mentalement. Je me disais que si je le _voulais_ vraiment, je pourrais arrêter de regarder mon téléphone. Mais je continuais à échouer. En plein milieu d'un grand projet, sans même y penser, mon pouce était déjà en train d'ouvrir une application.

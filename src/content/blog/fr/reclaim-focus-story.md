@@ -1,11 +1,15 @@
 ---
 title: "Pourquoi j'ai arrêté de combattre mon propre cerveau (et comment j'ai récupéré 2,4 heures)"
 date: "2026-01-26"
-category: "Ingénierie de la Concentration"
+updatedAt: "2026-05-19"
+category: "Applications Android"
+keywords: "retrouver concentration, boucle dopamine, pare-feu cognitif, arrêter addiction téléphone android, mindful guard android"
 author: "Équipe AppLass"
 excerpt: "J'avais l'habitude de passer mes matinées à lutter contre mon téléphone au lieu de développer mon activité. Voici comment j'ai utilisé la 'Logique Stricte' pour gagner la guerre de mon attention."
 thumbnail: "../../../assets/blogs/my-focus-story.png"
 featured: true
+sidebarApps:
+  - mindful-guard
 ---
 
 Chaque matin, je me réveillais avec un grand objectif : construire quelque chose d'important pour l'écosystème AppLass. Mais dès 10h00, je me retrouvais généralement piégé dans une "boucle dopaminergique", à faire défiler des fils d'actualité qui ne m'intéressaient même pas.

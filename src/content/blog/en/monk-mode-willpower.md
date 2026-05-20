@@ -1,11 +1,15 @@
 ---
 title: "Monk Mode 2.0: Why Your Willpower Isn't Enough (and What I Built Instead)"
 date: "2026-01-26"
-category: "Productivity"
+updatedAt: "2026-05-19"
+category: "Android Apps"
+keywords: "monk mode app android, dopamine detox app, how to do monk mode, mindful guard android"
 author: "AppLass Team"
 excerpt: "I tried to force myself into 'Monk Mode' for months and failed. It wasn't because I was lazy—it was because my brain was literally too slow to stop my habits."
 thumbnail: "../../../assets/blogs/monk-mode-logic.png"
 featured: true
+sidebarApps:
+  - mindful-guard
 ---
 
 For a long time, I thought "Monk Mode" was just about being tougher. I told myself that if I just _wanted_ it enough, I could stop checking my phone. But I kept failing. I'd be in the middle of a big project, and without even thinking, my thumb would already be opening an app.

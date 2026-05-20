@@ -1,11 +1,15 @@
 ---
 title: "La Télémétrie est une Distraction : Le Cas pour une Productivité Zéro-Données"
 date: "2026-01-26"
-category: "Confidentialité"
+updatedAt: "2026-05-19"
+category: "Applications Android"
+keywords: "bloqueur application sans télémétrie, application concentration hors ligne android, outils productivité confidentialité, mindful guard android"
 author: "Équipe AppLass"
 excerpt: "La plupart des outils de productivité suivent chacun de vos mouvements. Nous défendons l'idée que la vraie concentration est impossible sans une confidentialité absolue et une architecture offline-first."
 thumbnail: "../../../assets/blogs/zero-telemetry.png"
 featured: false
+sidebarApps:
+  - mindful-guard
 ---
 
 Dans l'économie moderne des applications, le "gratuit" s'accompagne généralement d'un coût caché : vos données. Ironiquement, de nombreuses applications conçues pour vous aider à "vous concentrer" sont elles-mêmes gourmandes en données, synchronisées dans le cloud et pingent constamment des serveurs en arrière-plan.

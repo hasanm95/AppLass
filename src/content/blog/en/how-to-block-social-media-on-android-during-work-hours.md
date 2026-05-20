@@ -1,11 +1,15 @@
 ---
 title: "How to Block Social Media on Android During Work Hours Only"
 date: "2026-04-24"
-category: "How-To"
+updatedAt: "2026-05-19"
+category: "Android Apps"
+keywords: "block social media android, schedule app blocker android, block apps during work hours, mindful guard android"
 author: "AppLass Team"
 excerpt: "Permanently deleting social media never sticks. The fix that actually works is schedule-based blocking — apps lock themselves during work hours and unlock automatically when you're done. Here's how to set it up in under 5 minutes."
 thumbnail: "../../../assets/blogs/block-social-media-work-hours-android.png"
 featured: false
+sidebarApps:
+  - mindful-guard
 faqs:
   - question: "Can Android block apps on a schedule natively?"
     answer: "Not effectively. Android's built-in Digital Wellbeing lets you set daily time limits, but it doesn't support hour-based schedule blocking. Worse, it shows an 'Ignore for today' button that's trivially easy to tap. For genuine schedule-based blocking — where Instagram is simply unavailable from 9 AM to 5 PM — you need a third-party app like Mindful Guard."
