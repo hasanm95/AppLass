@@ -1,0 +1,115 @@
+---
+// src/components/blog/CartTimeCTA.astro
+interface Props {
+  lang?: string;
+}
+
+const { lang = "en" } = Astro.props;
+const isFr = lang === "fr";
+
+const content = {
+  badge: isFr ? "Application Shopify · Essai Gratuit" : "Shopify App · Free Trial Available",
+  title: "CartTime — High-Conversion Checkout Timers",
+  desc: isFr
+    ? "Réduisez l'abandon de panier avec des compteurs de réservation et des alertes de stock bas. Entièrement personnalisable et optimisé pour le mobile."
+    : "Slash cart abandonment using customizable cart reservation timers, checkout count-down bars, and low-stock alerts. Fully responsive and speed-optimized.",
+  btn: isFr ? "Voir sur Shopify" : "Install Free",
+};
+---
+
+<a
+  href="https://apps.shopify.com/carttime"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="carttime-cta"
+  aria-label="Install CartTime Free on Shopify Store"
+>
+  <div class="carttime-cta__left">
+    <span class="carttime-cta__badge">{content.badge}</span>
+    <span class="carttime-cta__title">{content.title}</span>
+    <span class="carttime-cta__desc">
+      {content.desc}
+    </span>
+  </div>
+  <div class="carttime-cta__right" aria-hidden="true">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/>
+      <path d="m10 8 6 4-6 4V8z"/>
+    </svg>
+    <span>{content.btn}</span>
+  </div>
+</a>
+
+<style>
+  .carttime-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    margin: 2rem 0;
+    border: 1px solid #f9731633;
+    border-left: 3px solid #f97316;
+    border-radius: 0.5rem;
+    background: linear-gradient(135deg, #0f172a 0%, #301704 100%);
+    text-decoration: none;
+    transition: border-color 0.15s, background 0.15s;
+  }
+
+  .carttime-cta:hover {
+    border-color: #f9731699;
+    background: linear-gradient(135deg, #0f172a 0%, #472105 100%);
+  }
+
+  .carttime-cta__left {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .carttime-cta__badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #f97316;
+  }
+
+  .carttime-cta__title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f1f5f9;
+    line-height: 1.3;
+  }
+
+  .carttime-cta__desc {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    line-height: 1.4;
+    margin-top: 2px;
+  }
+
+  .carttime-cta__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: #f97316;
+    font-size: 0.75rem;
+    font-weight: 600;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 480px) {
+    .carttime-cta {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .carttime-cta__right {
+      flex-direction: row;
+      gap: 8px;
+    }
+  }
+</style>
