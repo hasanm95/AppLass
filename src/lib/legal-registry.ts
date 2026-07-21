@@ -1,3 +1,5 @@
+import AriselyPrivacy from '@/components/legal/AriselyPrivacy.astro';
+import AriselyTerms from '@/components/legal/AriselyTerms.astro';
 import FomogenPrivacy from '@/components/legal/FomogenPrivacy.astro';
 import FomogenTerms from '@/components/legal/FomogenTerms.astro';
 import MindfulPrivacy from '@/components/legal/MindfulGuardPrivacy.astro';
@@ -8,6 +10,24 @@ import ScreenveilTerms from '@/components/legal/ScreenveilTerms.astro';
 import { localize } from '@/i18n/localize';
 
 export const legalRegistry: Record<string, any> = {
+  'arisely/privacy': {
+    component: AriselyPrivacy,
+    title: 'Privacy Policy',
+    appName: 'Arisely',
+    product: 'arisely',
+    type: 'privacy',
+    lastUpdated: 'July 2026',
+    description: localize("Privacy Policy for Arisely - Learn why our Android alarm clock app collects zero data and keeps everything on your device.")
+  },
+  'arisely/terms': {
+    component: AriselyTerms,
+    title: 'Terms of Service',
+    appName: 'Arisely',
+    product: 'arisely',
+    type: 'terms',
+    lastUpdated: 'July 2026',
+    description: localize("Terms of Service for Arisely - Understand the user agreement for our Android alarm clock app.")
+  },
   'fomogen/privacy': {
     component: FomogenPrivacy,
     title: 'Privacy Policy',

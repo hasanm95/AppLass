@@ -2,7 +2,7 @@
 import { i18nConfig } from "@/i18n/config";
 import { legalRegistry } from "@/lib/legal-registry";
 import LegalPage from "@/page-templates/LegalPage.astro";
-import { Zap, Shield, Smartphone } from "lucide-react";
+import { Zap, Shield, Smartphone, AlarmClock } from "lucide-react";
 
 export async function getStaticPaths() {
   const nonDefaultLocales = i18nConfig.locales.filter(
@@ -60,6 +60,14 @@ const { component: Content, title, appName, description } = entry;
         <Smartphone className="h-5 w-5 text-blue-600 fill-blue-600" />
         <span class="text-lg font-black tracking-tighter text-slate-900 uppercase">
           Screen<span class="text-blue-600">Veil</span>
+        </span>
+      </>
+    )}
+    {product === 'arisely' && (
+      <>
+        <AlarmClock className="h-5 w-5 text-indigo-600" />
+        <span class="text-lg font-black tracking-tighter text-slate-900 uppercase">
+          Arise<span class="text-indigo-600">ly</span>
         </span>
       </>
     )}

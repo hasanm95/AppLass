@@ -1,0 +1,24 @@
+---
+import LegalPage from "@/page-templates/LegalPage.astro";
+import Content from "@/components/legal/AriselyTerms.astro";
+import { AlarmClock } from "lucide-react";
+import { localize } from "@/i18n/localize";
+
+const lang = "en";
+const description = localize("Terms of Service for Arisely - Understand the user agreement for our Android alarm clock app.");
+---
+
+<LegalPage
+  lang={lang}
+  title="Terms of Service"
+  appName="Arisely"
+  description={description}
+>
+  <div slot="branding" class="flex items-center gap-2">
+    <AlarmClock className="h-5 w-5 text-indigo-600" />
+    <span class="text-lg font-black tracking-tighter text-slate-900 uppercase">
+      Arise<span class="text-indigo-600">ly</span>
+    </span>
+  </div>
+  <Content />
+</LegalPage>

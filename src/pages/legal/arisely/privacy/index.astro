@@ -1,0 +1,24 @@
+---
+import LegalPage from "@/page-templates/LegalPage.astro";
+import Content from "@/components/legal/AriselyPrivacy.astro";
+import { AlarmClock } from "lucide-react";
+import { localize } from "@/i18n/localize";
+
+const lang = "en";
+const description = localize("Privacy Policy for Arisely - Learn why our Android alarm clock app collects zero data and keeps everything on your device.");
+---
+
+<LegalPage
+  lang={lang}
+  title="Privacy Policy"
+  appName="Arisely"
+  description={description}
+>
+  <div slot="branding" class="flex items-center gap-2">
+    <AlarmClock className="h-5 w-5 text-indigo-600" />
+    <span class="text-lg font-black tracking-tighter text-slate-900 uppercase">
+      Arise<span class="text-indigo-600">ly</span>
+    </span>
+  </div>
+  <Content lastUpdated="July 2026" />
+</LegalPage>
