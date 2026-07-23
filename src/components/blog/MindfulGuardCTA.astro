@@ -1,11 +1,16 @@
 ---
 // src/components/blog/MindfulGuardCTA.astro
+import { playUrl } from "@/lib/utils";
+
 interface Props {
   lang?: string;
+  /** utm_campaign for Play install attribution, e.g. the post slug. */
+  campaign?: string;
 }
 
-const { lang = "en" } = Astro.props;
+const { lang = "en", campaign = "blog-cta" } = Astro.props;
 const isFr = lang === "fr";
+const href = playUrl(campaign, "blog");
 
 const content = {
   badge: isFr ? "App Android Gratuit · Sans Abonnement" : "Free Android App · No Subscription",
@@ -18,7 +23,7 @@ const content = {
 ---
 
 <a
-  href="https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard"
+  href={href}
   target="_blank"
   rel="noopener noreferrer"
   class="mindfulguard-cta"

@@ -56,4 +56,4 @@ Zero-telemetry is a core requirement for true neutrality. Explore more in our [U
 
 **Explore more engineering insights:**
 
-[Explore the Logic Lab (All Articles)](/blog) | [Install MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard)
+[Explore the Logic Lab (All Articles)](/blog) | [Install MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dzero-telemetry-blocker%26utm_content%3Dinline)

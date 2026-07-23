@@ -1,4 +1,5 @@
 import { localize } from "@/i18n/localize";
+import { playUrl } from "@/lib/utils";
 
 export const getSolutions = () => [
   {
@@ -82,8 +83,7 @@ export const getProducts = () => [
     },
     color: "blue",
     cta: localize("Get on Play Store"),
-    ctaLink:
-      "https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard",
+    ctaLink: playUrl("home"),
     imageSrc: "mindful-guard-feature.png",
     featured: false,
   },

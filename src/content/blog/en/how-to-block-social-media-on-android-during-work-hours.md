@@ -65,7 +65,7 @@ The neuroscience here is straightforward. Habit loops are triggered by cues — 
 
 ### Step 1: Download Mindful Guard
 
-Install [Mindful Guard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard) from the Google Play Store. It's free to download and requires no account, no sign-up, and no email address.
+Install [Mindful Guard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dhow-to-block-social-media-on-android-during-work-hours%26utm_content%3Dinline) from the Google Play Store. It's free to download and requires no account, no sign-up, and no email address.
 
 ### Step 2: Grant Usage Access
 
@@ -189,9 +189,9 @@ The more accurate framing: your environment determines your behavior more than y
 
 Schedule-based blocking changes the path of least resistance during the hours that matter. It's not a motivational tool. It's an architectural one. And unlike motivation, architecture doesn't have bad days.
 
-> **Ready to protect your work hours?** [Mindful Guard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard) is free, fully on-device, and takes less than 5 minutes to set up. Zero data collected. Zero subscriptions required.
+> **Ready to protect your work hours?** [Mindful Guard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dhow-to-block-social-media-on-android-during-work-hours%26utm_content%3Dinline) is free, fully on-device, and takes less than 5 minutes to set up. Zero data collected. Zero subscriptions required.
 >
-> **[Download Mindful Guard on Google Play →](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard)**
+> **[Download Mindful Guard on Google Play →](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dhow-to-block-social-media-on-android-during-work-hours%26utm_content%3Dinline)**
 
 ---
 

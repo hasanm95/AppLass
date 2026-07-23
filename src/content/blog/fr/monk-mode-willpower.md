@@ -58,4 +58,4 @@ Cet article fait partie de notre [Guide Ultime du Bien-être Numérique](/fr/dig
 
 **Prêt à entrer dans le Monk Mode 2.0 ?**
 
-[Installer MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard) | [Explorer la Logique](/fr/apps/mindful-guard)
+[Installer MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dmonk-mode-willpower%26utm_content%3Dinline) | [Explorer la Logique](/fr/apps/mindful-guard)

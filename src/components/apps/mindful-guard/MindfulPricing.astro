@@ -3,6 +3,7 @@ import Section from "@/components/common/Section.astro";
 import { localize } from "@/i18n/localize";
 import { LinkButton } from "@/components/ui/link-button";
 import { Check } from "lucide-react";
+import { playUrl } from "@/lib/utils";
 ---
 <Section className="bg-[#FBFBFA] py-24 md:py-32 border-t border-slate-200">
   <div class="section-container">
@@ -44,7 +45,7 @@ import { Check } from "lucide-react";
           </li>
         </ul>
         <LinkButton
-          href="https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard"
+          href={playUrl("app-pricing-free")}
           className="w-full h-14 rounded-2xl bg-slate-100 text-slate-900 px-8 text-base font-bold transition-all hover:bg-slate-200"
         >
           {localize("Continue with Free Version")}
@@ -83,7 +84,7 @@ import { Check } from "lucide-react";
           </li>
         </ul>
         <LinkButton
-          href="https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard"
+          href={playUrl("app-pricing-monthly")}
           className="w-full h-14 rounded-2xl bg-[#064E3B] px-8 text-base font-bold text-white shadow-lg shadow-emerald-900/30 transition-all hover:scale-[1.02] hover:bg-emerald-900"
         >
           {localize("Start Trial")}
@@ -115,7 +116,7 @@ import { Check } from "lucide-react";
           </li>
         </ul>
         <LinkButton
-          href="https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard"
+          href={playUrl("app-pricing-yearly")}
           className="w-full h-14 rounded-2xl bg-slate-900 px-8 text-base font-bold text-white transition-all hover:bg-slate-800"
         >
           {localize("Start Trial")}

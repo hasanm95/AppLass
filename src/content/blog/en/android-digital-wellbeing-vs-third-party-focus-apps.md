@@ -180,9 +180,9 @@ Mindful Guard is that system. It's not a replacement for Digital Wellbeing's rep
 
 The goal isn't to find the perfect app. It's to build an environment where focused work is the path of least resistance. These two tools, used together, get you closer to that environment than either one alone.
 
-> **Ready to add real enforcement to your focus setup?** [Mindful Guard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard) is free, requires no account, and takes under 5 minutes to configure. Zero data collected. Entirely on-device.
+> **Ready to add real enforcement to your focus setup?** [Mindful Guard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dandroid-digital-wellbeing-vs-third-party-focus-apps%26utm_content%3Dinline) is free, requires no account, and takes under 5 minutes to configure. Zero data collected. Entirely on-device.
 >
-> **[Download Mindful Guard Free on Google Play →](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard)**
+> **[Download Mindful Guard Free on Google Play →](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dandroid-digital-wellbeing-vs-third-party-focus-apps%26utm_content%3Dinline)**
 
 ---
 

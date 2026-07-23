@@ -56,4 +56,4 @@ Le zéro-télémétrie est une exigence fondamentale pour une véritable neutral
 
 **Explorez plus d'insights en ingénierie :**
 
-[Explorer le Logic Lab (Tous les Articles)](/fr/blog) | [Installer MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard)
+[Explorer le Logic Lab (Tous les Articles)](/fr/blog) | [Installer MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dzero-telemetry-blocker%26utm_content%3Dinline)

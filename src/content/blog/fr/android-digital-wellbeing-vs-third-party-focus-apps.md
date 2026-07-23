@@ -180,9 +180,9 @@ Mindful Guard est ce système. Ce n'est pas un remplacement pour les fonctionnal
 
 L'objectif n'est pas de trouver l'application parfaite. C'est de construire un environnement où le travail concentré est le chemin de moindre résistance. Ces deux outils, utilisés ensemble, vous rapprochent de cet environnement plus que l'un ou l'autre seul.
 
-> **Prêt à ajouter une vraie application à votre configuration de concentration ?** [Mindful Guard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard) est gratuit, ne nécessite aucun compte et prend moins de 5 minutes à configurer. Zéro donnée collectée. Entièrement sur l'appareil.
+> **Prêt à ajouter une vraie application à votre configuration de concentration ?** [Mindful Guard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dandroid-digital-wellbeing-vs-third-party-focus-apps%26utm_content%3Dinline) est gratuit, ne nécessite aucun compte et prend moins de 5 minutes à configurer. Zéro donnée collectée. Entièrement sur l'appareil.
 >
-> **[Télécharger Mindful Guard Gratuitement sur Google Play →](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard)**
+> **[Télécharger Mindful Guard Gratuitement sur Google Play →](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dandroid-digital-wellbeing-vs-third-party-focus-apps%26utm_content%3Dinline)**
 
 ---
 

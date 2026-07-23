@@ -1,5 +1,6 @@
 ---
 import { localePath } from "@/i18n/utils";
+import { playUrl } from "@/lib/utils";
 
 interface Props {
   appName: "Mindful Guard" | "FOMOgen" | "AppLass" | "ScreenVeil";
@@ -21,7 +22,7 @@ const data = {
     title: "Mindful Guard",
     sub: labels?.sub || (isFr ? "Conçu pour la concentration." : "Built for Focus."),
     desc: labels?.desc || (isFr ? "Retrouvez votre concentration numérique avec des garde-fous logiques." : "Reclaim your digital focus with logical guardrails."),
-    href: "https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard",
+    href: playUrl("blog-callout", "blog"),
     color: "bg-[#10B981]",
     learnMoreText: isFr ? "Télécharger sur le Play Store" : "Download on Play Store",
     external: true,

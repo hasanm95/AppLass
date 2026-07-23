@@ -1,4 +1,5 @@
 import { localize } from "@/i18n/localize";
+import { playUrl } from "@/lib/utils";
 
 export const getMindfulGuardData = () => ({
   hero: {
@@ -11,7 +12,7 @@ export const getMindfulGuardData = () => ({
     ),
     primaryCTA: localize("Download for Free"),
     secondaryCTA: localize("See how it works"),
-    playStoreUrl: "https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard",
+    playStoreUrl: playUrl("app-landing-hero"),
   },
   logic: {
     title: localize("Why do you need an App Blocker?"),

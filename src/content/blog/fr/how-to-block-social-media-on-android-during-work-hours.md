@@ -65,7 +65,7 @@ La neuroscience ici est simple. Les boucles d'habitudes sont déclenchées par d
 
 ### Étape 1 : Télécharger Mindful Guard
 
-Installez [Mindful Guard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard) depuis le Google Play Store. C'est gratuit, sans compte, sans inscription et sans adresse e-mail.
+Installez [Mindful Guard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dhow-to-block-social-media-on-android-during-work-hours%26utm_content%3Dinline) depuis le Google Play Store. C'est gratuit, sans compte, sans inscription et sans adresse e-mail.
 
 ### Étape 2 : Accorder l'Accès à l'Utilisation
 
@@ -189,9 +189,9 @@ Le cadrage plus précis : votre environnement détermine votre comportement plus
 
 Le blocage programmé change le chemin de moindre résistance pendant les heures qui comptent. Ce n'est pas un outil de motivation. C'est un outil architectural. Et contrairement à la motivation, l'architecture n'a pas de mauvais jours.
 
-> **Prêt à protéger vos heures de travail ?** [Mindful Guard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard) est gratuit, entièrement sur l'appareil et prend moins de 5 minutes à configurer. Zéro donnée collectée. Zéro abonnement requis.
+> **Prêt à protéger vos heures de travail ?** [Mindful Guard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dhow-to-block-social-media-on-android-during-work-hours%26utm_content%3Dinline) est gratuit, entièrement sur l'appareil et prend moins de 5 minutes à configurer. Zéro donnée collectée. Zéro abonnement requis.
 >
-> **[Télécharger Mindful Guard sur Google Play →](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard)**
+> **[Télécharger Mindful Guard sur Google Play →](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dhow-to-block-social-media-on-android-during-work-hours%26utm_content%3Dinline)**
 
 ---
 

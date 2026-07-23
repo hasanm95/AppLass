@@ -60,4 +60,4 @@ Reprendre le contrôle de sa concentration est un défi systémique. Découvrez 
 
 **Prêt à reprendre le contrôle de votre concentration ?**
 
-[Installer MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard) | [Découvrir son Fonctionnement](/fr/apps/mindful-guard)
+[Installer MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dreclaim-focus-story%26utm_content%3Dinline) | [Découvrir son Fonctionnement](/fr/apps/mindful-guard)

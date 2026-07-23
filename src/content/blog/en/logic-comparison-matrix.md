@@ -54,4 +54,4 @@ But if you are a developer, an engineer, or a student who needs a tool that "act
 
 **Ready to deploy the logical choice?**
 
-[Install MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard) | [See the Full Breakdown](/apps/mindful-guard)
+[Install MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dlogic-comparison-matrix%26utm_content%3Dinline) | [See the Full Breakdown](/apps/mindful-guard)

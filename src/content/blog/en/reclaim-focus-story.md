@@ -60,4 +60,4 @@ Reclaiming your focus is a systemic challenge. See how this strategy fits into o
 
 **Ready to reclaim your focus?**
 
-[Install MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard) | [Learn How It Works](/apps/mindful-guard)
+[Install MindfulGuard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dreclaim-focus-story%26utm_content%3Dinline) | [Learn How It Works](/apps/mindful-guard)
