@@ -2,13 +2,12 @@ import { localize } from "@/i18n/localize";
 
 export const getMindfulGuardData = () => ({
   hero: {
-    // TASK 4A: Hero/CTA Options
-    // Option 1 (Live): Free Android App Blocker to Stop Mindless Scrolling
-    // Option 2: Reclaim Your Attention with Mindful Guard's Unbreakable Blocking
-    // Option 3: The Privacy-First App Blocker for Android Deep Work
-    headline: localize("Free Android App Blocker to Stop Mindless Scrolling"),
+    // Positioning: lead with the differentiated hook (Reel/Shorts blocking),
+    // keep "free" + "Android" + "app blocker" in the H1 for search intent.
+    // Prior headline (generic app-blocker angle): "Free Android App Blocker to Stop Mindless Scrolling"
+    headline: localize("Block Reels, Shorts & TikTok on Android — Free App Blocker"),
     subheadline: localize(
-      "Get your time back with a completely free, Android-native focus app. Unlike expensive $99/year alternatives, it collects zero data and works entirely offline."
+      "Set daily and per-session limits on Instagram Reels, YouTube Shorts, TikTok, Facebook Reels, and Snapchat Spotlight. Native Android blocking that survives restarts — 100% offline, zero data collected, and free to start."
     ),
     primaryCTA: localize("Download for Free"),
     secondaryCTA: localize("See how it works"),
@@ -22,20 +21,20 @@ export const getMindfulGuardData = () => ({
   },
   differentiators: [
     {
+      title: localize("Reel & Shorts Guard"),
+      description: localize(
+        "Cap Instagram Reels, YouTube Shorts, TikTok, Facebook Reels, and Snapchat Spotlight with daily or per-session limits. The infinite feed finally gets a hard stop — while the rest of the app stays usable."
+      ),
+      icon: "🎬",
+      iconName: "Clapperboard",
+    },
+    {
       title: localize("Complete Privacy"),
       description: localize(
         "Your data never leaves your phone because our architecture requires no internet permissions. Everything runs 100% offline so you can block apps securely without worrying about your habits being tracked."
       ),
       icon: "🛡️",
       iconName: "Shield",
-    },
-    {
-      title: localize("Saves Battery Life"),
-      description: localize(
-        "Built specifically for Android to work without a battery-draining VPN or background network tunnel. It runs quietly in the background and respects system sleep cycles to keep your battery healthy all day."
-      ),
-      icon: "⚡",
-      iconName: "Zap",
     },
     {
       title: localize("Unbreakable Blocks"),
@@ -124,7 +123,7 @@ export const getMindfulGuardSchema = () => ({
     "price": "0",
     "priceCurrency": "USD"
   },
-  "description": "Mindful Guard is a privacy-first Android app blocker with zero telemetry and no internet requirement. Blocks distracting apps at the system level using native Android APIs. No VPN. No cloud. 100% on-device.",
+  "description": "Mindful Guard is a privacy-first Android app blocker and Reel Guard. It blocks distracting apps and limits short-form video — Instagram Reels, YouTube Shorts, TikTok, Facebook Reels, and Snapchat Spotlight — with daily and per-session limits. Zero telemetry, no internet requirement, blocking at the system level via native Android APIs. No VPN. No cloud. 100% on-device.",
   "url": "https://applass.com/apps/mindful-guard",
   "downloadUrl": "https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard"
 });

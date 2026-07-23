@@ -1,13 +1,14 @@
 ---
 import Section from "@/components/common/Section.astro";
 import { getMindfulGuardData } from "@/constants/mindful-guard-data";
-import { Shield, Zap, Lock, HelpCircle, type LucideIcon } from "lucide-react";
+import { Shield, Zap, Lock, Clapperboard, HelpCircle, type LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const ICON_MAP: Record<string, LucideIcon> = {
   Shield,
   Zap,
   Lock,
+  Clapperboard,
 };
 
 const mindfulData = getMindfulGuardData();
