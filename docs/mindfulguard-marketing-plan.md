@@ -120,6 +120,6 @@ per week for steady crawl freshness and to double down on early winners.
 - [ ] §5 review flywheel + UTM referrers
 
 ### Open follow-ups
-- [ ] Thumbnail image for P1 (currently `featured: false`, no `thumbnail` — add art in `src/assets/blogs/`, then set `featured: true`)
+- [x] Thumbnail for P1 — hand-built vector `block-reels-shorts-android.png` (1024×1024), post now `featured: true` — 2026-07-23 (Higgsfield workspace was out of credits; swap in a photoreal render later if desired)
 - [ ] French translations for the repositioned landing-page copy + an FR version of P1 (`src/content/blog/fr/`); EN falls back cleanly until then
 - [ ] Add UTM install-referrer params to the landing-page + blog Play CTAs (§6)
