@@ -22,3 +22,7 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# locally-installed agent skill (not part of the app)
+.agents/skills/ui-ux-pro-max/
+.claude/skills/ui-ux-pro-max/
