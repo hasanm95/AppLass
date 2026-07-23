@@ -116,7 +116,8 @@ per week for steady crawl freshness and to double down on early winners.
 - [x] §3 Landing page reposition (hero + meta + schema + Reel Guard differentiator) — 2026-07-23
 - [x] §2 P1 pillar post: `how-to-block-reels-and-shorts-on-android-2026.mdx` (BlogPosting + FAQPage schema, 3 CTAs) — 2026-07-23
 - [ ] §2 S1–S5 spokes (one per week, staggered)
-- [ ] §2 C2–C3 comparison pages, C1 optimization
+- [x] §2 C1 optimization: rewrote `opal-alternatives-android.mdx` — retitled to head term "Best Opal Alternatives for Android (2026)", added direct-answer TL;DR + comparison table + MindfulGuard as #1 list item, refreshed FAQs/date for AI-Overview citation — 2026-07-23
+- [ ] §2 C2–C3 comparison pages (Freedom alternative, Best free Reels/Shorts blockers)
 - [ ] §5 review flywheel + UTM referrers
 
 ### Open follow-ups
