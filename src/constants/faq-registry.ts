@@ -156,31 +156,31 @@ export const getFaqRegistry = () => ({
     {
       question: localize("What is Mindful Guard?"),
       answer: localize(
-        "Mindful Guard is a privacy-first Android app blocker built on a zero-telemetry, fully offline architecture. It offers a generous Free tier (3 sessions/day) and premium plans for unlimited access, helping users reclaim an average of 2.4 hours of daily focus time."
+        "Mindful Guard is a free Android app blocker that stops Reels, Shorts, TikTok, and any other app you choose. It's built 100% offline with zero telemetry, so nothing about how you use it ever leaves your phone. The free tier gives you 3 focus sessions a day; premium unlocks unlimited. Most people get back about 2.4 hours of focus time daily."
       ),
     },
     {
       question: localize("Does Mindful Guard work on Xiaomi, Samsung, or MIUI devices?"),
       answer: localize(
-        "Yes. Mindful Guard is specifically engineered to handle aggressive battery management from Android skins including MIUI, OneUI, and HyperOS. Add it to your battery optimization whitelist for uninterrupted blocking sessions."
+        "Yes. MIUI, OneUI, and HyperOS are known for aggressively killing background apps to save battery — Mindful Guard is built to survive that. Add it to your battery optimization whitelist and your blocking sessions will run uninterrupted."
       ),
     },
     {
       question: localize("Is Mindful Guard safe for privacy?"),
       answer: localize(
-        "Mindful Guard requires no internet connection to function and contains zero third-party analytics SDKs. Your block lists, schedules, and usage data never leave your device. Unlike VPN-based blockers (Opal, Freedom), there is no cloud component at all."
+        "Yes. Mindful Guard doesn't need an internet connection to work, and it has zero third-party analytics SDKs. Your block lists, schedules, and usage data stay on your phone — period. Unlike VPN-based blockers like Opal or Freedom, there's no cloud component at all."
       ),
     },
     {
       question: localize("How does Strict Mode work?"),
       answer: localize(
-        "Strict Mode locks your settings for a chosen duration. Once active, you cannot change your block list, disable the app, or uninstall it until the timer expires. It is designed for people who know they will try to bypass their own rules — and want a hard stop."
+        "Strict Mode locks your settings for a duration you choose. Once it's on, you can't change your block list, disable the app, or uninstall it until the timer runs out. It's built for the moments you know your future self will try to cheat."
       ),
     },
     {
       question: localize("Does Mindful Guard use a VPN?"),
       answer: localize(
-        "No. VPN-based blockers route your traffic through an external server, which creates latency, drains battery, and sends usage data off-device. Mindful Guard uses Android's native Accessibility API to block apps locally with 0ms latency and zero battery overhead."
+        "No. VPN-based blockers route your traffic through an external server — that adds lag, drains your battery, and sends usage data off your device. Mindful Guard blocks apps locally using Android's native Accessibility API, so there's no latency and no battery hit."
       ),
     },
     {
@@ -192,13 +192,13 @@ export const getFaqRegistry = () => ({
     {
       question: localize("Does Mindful Guard track my screen time or usage?"),
       answer: localize(
-        "Any analytics Mindful Guard generates are stored exclusively on your device and are never transmitted anywhere. We have no server-side visibility into how you use the app."
+        "Any stats Mindful Guard shows you — streaks, time saved, sessions completed — are calculated and stored only on your device. We never see any of it; there's no server for it to go to."
       ),
     },
     {
       question: localize("How is Mindful Guard different from Android's built-in Digital Wellbeing?"),
       answer: localize(
-        "Android's Digital Wellbeing can be bypassed in seconds from Settings. Mindful Guard's Strict Mode cannot be bypassed — not even by going to Settings or attempting an uninstall. It also provides more granular scheduling and works on devices where Digital Wellbeing is disabled by manufacturers."
+        "Android's Digital Wellbeing is easy to bypass — a few taps in Settings and it's off. Mindful Guard's Strict Mode can't be turned off that way, not even by uninstalling. It also gives you more granular scheduling and works on devices where manufacturers have disabled Digital Wellbeing entirely."
       ),
     },
     {
@@ -210,13 +210,13 @@ export const getFaqRegistry = () => ({
     {
       question: localize("What is a zero telemetry blocker?"),
       answer: localize(
-        "Zero telemetry means the app does not collect, record, or transmit any data about which apps you block or how long you use your phone. Everything stays 100% locally on your device without communicating with cloud servers."
+        "Zero telemetry means exactly what it sounds like: the app doesn't collect, record, or transmit any data about which apps you block or how long you use your phone. Everything stays on your device — nothing ever talks to a cloud server."
       ),
     },
     {
       question: localize("Mindful Guard vs Forest: Which should I choose?"),
       answer: localize(
-        "Forest uses gamification (growing virtual trees) to encourage focus, but you can still easily exit the app and kill your tree. Mindful Guard uses a Strict Mode that forcibly prevents you from opening blocked apps, even if your willpower drops."
+        "Forest gamifies focus by growing virtual trees, but you can still just exit the app and kill your tree whenever you want. Mindful Guard's Strict Mode physically prevents you from opening blocked apps — even on the days your willpower gives out."
       ),
     },
     {

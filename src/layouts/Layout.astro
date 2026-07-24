@@ -4,6 +4,7 @@ import '../globals.css';
 import '../fonts.css';
 import '../tw-animate.css';
 import { localize } from '@/i18n/localize';
+import { getMindfulGuardSchema } from '@/constants/mindful-guard-data';
 
 interface Props {
   title?: string;
@@ -70,6 +71,10 @@ const defaultBreadcrumbs = [
 ];
 
 const finalBreadcrumbs = breadcrumbs || defaultBreadcrumbs;
+
+// Single source of truth for Mindful Guard's schema fields (avoids drift between
+// this global @graph entry and the page-specific schema in mindful-guard-data.ts).
+const mindfulGuardSchema = getMindfulGuardSchema();
 
 ---
 
@@ -215,12 +220,13 @@ const finalBreadcrumbs = breadcrumbs || defaultBreadcrumbs;
         {
           "@type": "SoftwareApplication",
           "name": "Mindful Guard",
-          "operatingSystem": "Android",
-          "applicationCategory": "Productivity",
+          "operatingSystem": mindfulGuardSchema.operatingSystem,
+          "applicationCategory": mindfulGuardSchema.applicationCategory,
           "author": {
             "@id": "https://applass.com/#organization"
           },
-          "description": localize("Privacy-first Android productivity guardian that helps users reclaim 2.4 hours of focus daily with local-only architecture."),
+          "description": mindfulGuardSchema.description,
+          "aggregateRating": mindfulGuardSchema.aggregateRating,
           "featureList": localize("Zero-Tracking Architecture, System-Level Blocking, Focus Timers")
         },
         {

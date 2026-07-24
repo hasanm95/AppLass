@@ -1,5 +1,5 @@
 ---
-import { Button } from "@/components/ui/button";
+import { LinkButton } from "@/components/ui/link-button";
 import { getMindfulGuardData } from "@/constants/mindful-guard-data";
 
 const mindfulData = getMindfulGuardData();
@@ -8,7 +8,7 @@ const labels = mindfulData.labels;
 ---
 
 <section
-  class="relative flex min-h-[95vh] items-center overflow-hidden bg-[#FBFBFA] pt-32 pb-20"
+  class="relative flex items-center overflow-hidden bg-[#FBFBFA] pt-28 pb-10 sm:pt-24 sm:pb-14 md:pt-28 md:pb-16 lg:pt-20 lg:pb-14 2xl:min-h-[90vh] 2xl:pt-32 2xl:pb-20"
 >
   {/* Structural Grid Background */}
   <div
@@ -23,45 +23,45 @@ const labels = mindfulData.labels;
   <div class="pointer-events-none absolute top-[-10%] right-[-5%] h-[800px] w-[800px] rounded-full bg-[#064E3B]/5 blur-[120px]" />
 
   <div class="section-container relative z-10">
-    <div class="flex flex-col gap-12 lg:flex-row lg:items-end lg:justify-between">
+    <div class="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between lg:gap-8 2xl:gap-12">
       <div class="animate-fade-in-up max-w-4xl">
-        <div class="mb-8 inline-flex items-center gap-3 border border-emerald-900/10 bg-emerald-50/50 px-4 py-1.5 font-mono text-[11px] font-bold tracking-widest text-[#064E3B] uppercase">
+        <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-emerald-900/10 bg-emerald-50/60 px-4 py-1.5 text-xs font-bold text-[#15803D] sm:mb-6 md:mb-8">
           {labels.neuralProtection}
         </div>
 
         <slot name="meta" />
-        <h1 class="parallax-mindful-headline font-black tracking-tighter text-slate-950 text-4xl sm:text-6xl md:text-7xl lg:text-8xl">
+        <h1 class="parallax-mindful-headline font-black tracking-tight text-slate-950 text-3xl sm:text-5xl md:text-6xl 2xl:text-7xl">
           {dict.headline?.split(" ").slice(0, 2).join(" ")}{" "}
           <br />
-          <span class="text-[#064E3B] underline decoration-emerald-900/10 underline-offset-8">
+          <span class="text-[#15803D]">
             {dict.headline?.split(" ").slice(2).join(" ")}
           </span>
         </h1>
 
-        <p class="parallax-mindful-subtext mt-12 max-w-2xl text-xl leading-snug font-medium text-slate-600 md:text-2xl">
+        <p class="parallax-mindful-subtext mt-5 max-w-2xl text-base leading-snug font-medium text-slate-600 sm:mt-6 sm:text-lg md:mt-8 md:text-xl">
           {dict.subheadline}
         </p>
         <slot name="ai-summary" />
       </div>
 
-      <div class="parallax-mindful-cta flex shrink-0 flex-col gap-4 self-start lg:mb-12">
-        <Button
+      <div class="parallax-mindful-cta flex shrink-0 flex-col gap-3 self-start sm:gap-4 lg:mb-4 2xl:mb-12">
+        <LinkButton
           size="lg"
-          className="h-16 w-full rounded-none bg-[#1E293B] px-12 text-base font-bold text-white transition-all duration-300 hover:bg-[#064E3B] sm:w-auto"
-          asChild
+          href={dict.playStoreUrl}
+          className="h-12 w-full rounded-2xl bg-[#16A34A] px-8 text-base font-bold text-white shadow-lg shadow-emerald-900/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#15803D] sm:h-16 sm:w-auto sm:px-12"
         >
-          <a href={dict.playStoreUrl}>{dict.primaryCTA}</a>
-        </Button>
-        <Button
+          {dict.primaryCTA}
+        </LinkButton>
+        <LinkButton
           size="lg"
           variant="outline"
-          className="h-16 w-full rounded-none border-2 border-slate-200 bg-transparent px-12 text-base font-bold text-slate-900 transition-all hover:border-[#064E3B] hover:bg-transparent hover:text-[#064E3B] sm:w-auto"
-          asChild
+          href="#logic"
+          className="h-12 w-full rounded-2xl border-2 border-slate-200 bg-transparent px-8 text-base font-bold text-slate-900 transition-all hover:border-[#16A34A] hover:bg-transparent hover:text-[#16A34A] sm:h-16 sm:w-auto sm:px-12"
         >
-          <a href="#logic">{dict.secondaryCTA}</a>
-        </Button>
-        <div class="mt-4 font-mono text-[10px] tracking-widest text-slate-400 uppercase">
-          {labels.offlineArchitecture}
+          {dict.secondaryCTA}
+        </LinkButton>
+        <div class="mt-3 text-xs font-semibold tracking-wide text-slate-400 sm:mt-4">
+          {labels.offlineArchitecture} · free to start
         </div>
       </div>
     </div>

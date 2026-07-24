@@ -5,20 +5,20 @@ import { LinkButton } from "@/components/ui/link-button";
 import { playUrl } from "@/lib/utils";
 ---
 
-<Section className="relative bg-slate-100 py-24 md:py-32">
+<Section className="relative bg-slate-100 py-10 sm:py-14 md:py-16 lg:py-20 2xl:py-28">
   <div class="section-container relative z-10">
     <div class="mx-auto max-w-3xl text-center">
-      <h2 class="mb-6 text-4xl leading-tight font-black tracking-tight text-slate-900 md:text-5xl lg:text-6xl">
+      <h2 class="mb-3 text-2xl leading-tight font-black tracking-tight text-slate-900 sm:mb-4 sm:text-3xl md:mb-6 md:text-4xl 2xl:text-5xl">
         {localize("Download Mindful Guard Free.")}
       </h2>
-      <p class="mb-10 text-lg leading-relaxed font-medium text-slate-600 md:text-xl">
-        {localize("The only Android focus app that blocks distractions without watching you do it. 100% offline. Zero telemetry. Built for privacy absolutists and deep work practitioners.")}
+      <p class="mb-6 text-base leading-relaxed font-medium text-slate-600 sm:mb-8 sm:text-lg md:mb-10 md:text-xl">
+        {localize("The only Android focus app that blocks distractions without watching you do it. 100% offline. Zero telemetry. Built for anyone tired of losing hours to the scroll.")}
       </p>
-      
-      <div class="flex flex-col items-center justify-center gap-6">
+
+      <div class="flex flex-col items-center justify-center gap-4 sm:gap-6">
         <LinkButton
           size="lg"
-          className="h-16 rounded-2xl bg-blue-600 px-12 text-lg font-bold text-white shadow-xl shadow-blue-500/30 transition-all duration-500 hover:-translate-y-1 hover:bg-blue-700 active:translate-y-0"
+          className="h-12 rounded-2xl bg-[#16A34A] px-8 text-base font-bold text-white shadow-xl shadow-emerald-900/25 transition-all duration-500 hover:-translate-y-1 hover:bg-[#15803D] active:translate-y-0 sm:h-16 sm:px-12 sm:text-lg"
           href={playUrl("app-landing-closing")}
           target="_blank"
           rel="noopener noreferrer"
@@ -30,9 +30,9 @@ import { playUrl } from "@/lib/utils";
         </p>
       </div>
 
-      <div class="mt-20 pt-10 border-t border-slate-300 text-center">
+      <div class="mt-10 pt-6 border-t border-slate-300 text-center sm:mt-14 sm:pt-8 md:mt-20 md:pt-10">
         <p class="text-slate-500 font-medium">
-            {localize("Explore:")} <a href="/" class="text-blue-600 hover:text-blue-800 transition-colors underline underline-offset-4 font-bold">Home</a> • <a href="/apps/screenveil" class="text-blue-600 hover:text-blue-800 transition-colors underline underline-offset-4 font-bold">ScreenVeil</a> • <a href="/apps/fomogen" class="text-blue-600 hover:text-blue-800 transition-colors underline underline-offset-4 font-bold">FomoGen</a>
+            {localize("Explore:")} <a href="/" class="text-[#15803D] hover:text-[#166534] transition-colors underline underline-offset-4 font-bold">Home</a> • <a href="/apps/screenveil" class="text-[#15803D] hover:text-[#166534] transition-colors underline underline-offset-4 font-bold">ScreenVeil</a> • <a href="/apps/fomogen" class="text-[#15803D] hover:text-[#166534] transition-colors underline underline-offset-4 font-bold">FomoGen</a>
         </p>
       </div>
     </div>

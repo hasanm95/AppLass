@@ -6,28 +6,28 @@ import { Star } from "lucide-react";
 // DEVELOPER NOTE: Real reviews from Google Play console.
 ---
 
-<Section className="bg-white py-20 border-t border-emerald-900/10">
+<Section className="bg-white border-t border-emerald-900/10 py-10 sm:py-14 md:py-16 2xl:py-20">
   <div class="section-container">
-    <div class="mb-12 text-center max-w-2xl mx-auto flex flex-col items-center">
+    <div class="mb-8 text-center max-w-2xl mx-auto flex flex-col items-center sm:mb-10 md:mb-12">
       <!-- We only use verifiable claims -->
-      <div class="flex gap-1 mb-4 text-emerald-500">
-        <Star className="h-5 w-5 fill-current" />
-        <Star className="h-5 w-5 fill-current" />
-        <Star className="h-5 w-5 fill-current" />
-        <Star className="h-5 w-5 fill-current" />
-        <Star className="h-5 w-5 fill-current" />
+      <div class="flex gap-1 mb-3 text-emerald-500 sm:mb-4">
+        <Star className="h-4 w-4 fill-current sm:h-5 sm:w-5" />
+        <Star className="h-4 w-4 fill-current sm:h-5 sm:w-5" />
+        <Star className="h-4 w-4 fill-current sm:h-5 sm:w-5" />
+        <Star className="h-4 w-4 fill-current sm:h-5 sm:w-5" />
+        <Star className="h-4 w-4 fill-current sm:h-5 sm:w-5" />
       </div>
-      <h2 class="text-3xl font-black tracking-tight text-slate-900 md:text-4xl">
+      <h2 class="text-2xl font-black tracking-tight text-slate-900 sm:text-3xl md:text-4xl">
         {localize("Rated highly by people returning to reality")}
       </h2>
-      <p class="mt-4 text-lg text-slate-600">
+      <p class="mt-3 text-base text-slate-600 sm:mt-4 sm:text-lg">
         {localize("MindfulGuard's completely offline strict mode is designed for those who refuse to compromise on privacy.")}
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
       {/* Testimonial 1 */}
-      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-8 shadow-sm">
+      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm sm:p-8">
         <div class="flex gap-1 mb-4 text-amber-400">
           <Star className="h-4 w-4 fill-current" />
           <Star className="h-4 w-4 fill-current" />
@@ -43,7 +43,7 @@ import { Star } from "lucide-react";
       </div>
 
       {/* Testimonial 2 */}
-      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-8 shadow-sm">
+      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm sm:p-8">
         <div class="flex gap-1 mb-4 text-amber-400">
           <Star className="h-4 w-4 fill-current" />
           <Star className="h-4 w-4 fill-current" />
@@ -59,7 +59,7 @@ import { Star } from "lucide-react";
       </div>
 
       {/* Testimonial 3 */}
-      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-8 shadow-sm">
+      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm sm:p-8">
         <div class="flex gap-1 mb-4 text-amber-400">
           <Star className="h-4 w-4 fill-current" />
           <Star className="h-4 w-4 fill-current" />
@@ -73,8 +73,56 @@ import { Star } from "lucide-react";
           <p class="text-xs font-medium uppercase tracking-widest text-slate-400 mt-1">{localize("GOOGLE PLAY")}</p>
         </div>
       </div>
-    </div>
 
+      {/* Testimonial 4 */}
+      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm sm:p-8">
+        <div class="flex gap-1 mb-4 text-amber-400">
+          <Star className="h-4 w-4 fill-current" />
+          <Star className="h-4 w-4 fill-current" />
+          <Star className="h-4 w-4 fill-current" />
+          <Star className="h-4 w-4 fill-current" />
+          <Star className="h-4 w-4 fill-current" />
+        </div>
+        <p class="mb-6 italic text-slate-700">{localize("It's very helpful to keep focus on work. If someone spends his valuable time on social media or any other entertaining platform, this app will help him to keep avoid them. It's Recommended.")}</p>
+        <div class="mt-auto">
+          <p class="font-bold text-slate-900">{localize("Borhan")}</p>
+          <p class="text-xs font-medium uppercase tracking-widest text-slate-400 mt-1">{localize("GOOGLE PLAY")}</p>
+        </div>
+      </div>
+
+      {/* Testimonial 5 */}
+      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm sm:p-8">
+        <div class="flex gap-1 mb-4 text-amber-400">
+          <Star className="h-4 w-4 fill-current" />
+          <Star className="h-4 w-4 fill-current" />
+          <Star className="h-4 w-4 fill-current" />
+          <Star className="h-4 w-4 fill-current" />
+          <Star className="h-4 w-4 fill-current" />
+        </div>
+        <p class="mb-6 italic text-slate-700">{localize("Fantastic app. Does what it suppose to do really good. Works great over apps.")}</p>
+        <div class="mt-auto">
+          <p class="font-bold text-slate-900">{localize("Safyat")}</p>
+          <p class="text-xs font-medium uppercase tracking-widest text-slate-400 mt-1">{localize("GOOGLE PLAY")}</p>
+        </div>
+      </div>
+
+      {/* Testimonial 6 */}
+      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm sm:p-8">
+        <div class="flex gap-1 mb-4 text-amber-400">
+          <Star className="h-4 w-4 fill-current" />
+          <Star className="h-4 w-4 fill-current" />
+          <Star className="h-4 w-4 fill-current" />
+          <Star className="h-4 w-4 fill-current" />
+          <Star className="h-4 w-4 fill-current" />
+        </div>
+        <p class="mb-6 italic text-slate-700">{localize("Mindful Guard has genuinely helped me cut down on my Reels addiction. It's been a great tool for building healthier phone habits.")}</p>
+        <div class="mt-auto">
+          <p class="font-bold text-slate-900">{localize("Hasibul")}</p>
+          <p class="text-xs font-medium uppercase tracking-widest text-slate-400 mt-1">{localize("GOOGLE PLAY")}</p>
+        </div>
+      </div>
+
+    </div>
   </div>
 </Section>
 

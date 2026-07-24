@@ -3,21 +3,20 @@ import { playUrl } from "@/lib/utils";
 
 export const getMindfulGuardData = () => ({
   hero: {
-    // Positioning: lead with the differentiated hook (Reel/Shorts blocking),
-    // keep "free" + "Android" + "app blocker" in the H1 for search intent.
-    // Prior headline (generic app-blocker angle): "Free Android App Blocker to Stop Mindless Scrolling"
-    headline: localize("Block Reels, Shorts & TikTok on Android — Free App Blocker"),
+    // Warm & human rebrand (2026-07-24): hook is human, SEO terms live in the subheadline.
+    // Prior headline (clinical angle): "Block Reels, Shorts & TikTok on Android — Free App Blocker"
+    headline: localize("Get Your Hours Back From The Scroll"),
     subheadline: localize(
-      "Set daily and per-session limits on Instagram Reels, YouTube Shorts, TikTok, Facebook Reels, and Snapchat Spotlight. Native Android blocking that survives restarts — 100% offline, zero data collected, and free to start."
+      "Block Instagram Reels, YouTube Shorts, TikTok, Facebook Reels, and Snapchat Spotlight on Android. Set a daily limit that actually holds — 100% offline, zero data collected, free to start."
     ),
     primaryCTA: localize("Download for Free"),
     secondaryCTA: localize("See how it works"),
     playStoreUrl: playUrl("app-landing-hero"),
   },
   logic: {
-    title: localize("Why do you need an App Blocker?"),
+    title: localize("Willpower isn't the problem. The feed is."),
     description: localize(
-      "Willpower is a finite resource. Social media algorithms are supercomputers designed to deplete it. MindfulGuard is not a 'wellness' app; it is an App Blocker that intercepts distraction attempts at the system level."
+      "Willpower runs out. Social feeds are built by teams whose only job is to keep you scrolling past it. MindfulGuard doesn't ask for more self-control — it blocks the app before you get the chance to give in."
     ),
   },
   differentiators: [
@@ -26,29 +25,26 @@ export const getMindfulGuardData = () => ({
       description: localize(
         "Cap Instagram Reels, YouTube Shorts, TikTok, Facebook Reels, and Snapchat Spotlight with daily or per-session limits. The infinite feed finally gets a hard stop — while the rest of the app stays usable."
       ),
-      icon: "🎬",
       iconName: "Clapperboard",
     },
     {
       title: localize("Complete Privacy"),
       description: localize(
-        "Your data never leaves your phone because our architecture requires no internet permissions. Everything runs 100% offline so you can block apps securely without worrying about your habits being tracked."
+        "Your data never leaves your phone. There's no internet permission to leak it through — everything runs 100% offline, so your habits stay yours."
       ),
-      icon: "🛡️",
       iconName: "Shield",
     },
     {
       title: localize("Unbreakable Blocks"),
       description: localize(
-        "Stop cheating yourself with weak timers that are easily bypassed when your willpower fails. Once a block starts, there are no 'add 5 minutes' buttons to let you doomscroll through your work hours."
+        "No 'add 5 more minutes' button. Once a block starts, it holds — even on the days your willpower doesn't show up."
       ),
-      icon: "🔒",
       iconName: "Lock",
     },
   ],
 
   comparison: {
-    title: localize("The Logic Matrix: MindfulGuard vs. The Industry."),
+    title: localize("How MindfulGuard compares"),
     competitors: {
       opal: "Opal",
       freedom: "Freedom",
@@ -62,7 +58,7 @@ export const getMindfulGuardData = () => ({
       },
       {
         label: localize("Pricing"),
-        mindfulGuard: localize("Free / $2.99/mo"),
+        mindfulGuard: localize("Free / $3.99/mo"),
         opal: localize("$99/year Subscription"),
         freedom: localize("$39/year Subscription"),
       },
@@ -81,32 +77,32 @@ export const getMindfulGuardData = () => ({
     ],
   },
   footer: {
-    tagline: localize("Engineered by AppLass."),
-    copyright: localize("Built with privacy in mind."),
+    tagline: localize("Made by AppLass."),
+    copyright: localize("Built to be private."),
   },
   labels: {
     sectionLabel: localize("Section Label"),
     faqHeadline: localize("FAQ Headline"),
     faqQuestions: localize("FAQ Questions"),
-    neuralProtection: localize("Focus and Attention Protection"),
+    neuralProtection: localize("Digital wellbeing, done right"),
     offlineArchitecture: localize("100% Offline"),
     technicalLogic: localize("Technical Logic"),
     systemLevel: localize(""),
-    interceptsDistractions: localize("Blocks apps at the system level before they reach your screen"),
+    interceptsDistractions: localize("Stops the app before it even opens"),
     cognitiveLoad: localize(""),
-    zeroWillpowerArchitecture: localize("No willpower needed — the app holds the line for you"),
+    zeroWillpowerArchitecture: localize("No willpower needed — the block holds itself"),
     input: localize("INPUT"),
     filter: localize("FILTER"),
     focus: localize("FOCUS"),
     logicalFlow: localize(""),
     strategicMoat: localize("The Strategic Moat"),
-    technicalAdvantages: localize("Technical"),
-    technicalAdvantagesAccent: localize("Advantages."),
+    technicalAdvantages: localize("Why it"),
+    technicalAdvantagesAccent: localize("holds up."),
     deploymentSpecs: localize(""),
-    verifiedFeature: localize("Verified Feature"),
+    verifiedFeature: localize("Verified"),
     technicalValidationMatrix: localize("Technical Validation Matrix"),
-    technicalSpec: localize("Technical Spec"),
-    mindfulGuardVersion: localize("MindfulGuard (v2.6)"),
+    technicalSpec: localize("What matters"),
+    mindfulGuardVersion: localize("MindfulGuard"),
     endOfSpecificationReport: localize(""),
   }
 });
@@ -123,6 +119,11 @@ export const getMindfulGuardSchema = () => ({
     "@type": "Offer",
     "price": "0",
     "priceCurrency": "USD"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "8"
   },
   "description": "Mindful Guard is a privacy-first Android app blocker and Reel Guard. It blocks distracting apps and limits short-form video — Instagram Reels, YouTube Shorts, TikTok, Facebook Reels, and Snapchat Spotlight — with daily and per-session limits. Zero telemetry, no internet requirement, blocking at the system level via native Android APIs. No VPN. No cloud. 100% on-device.",
   "url": "https://applass.com/apps/mindful-guard",

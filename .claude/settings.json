@@ -20,5 +20,14 @@
         ]
       }
     ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(adb devices*)",
+      "Bash(graphify query *)",
+      "Bash(npm view *)",
+      "Bash(graphify --help)",
+      "Bash(graphify explain *)"
+    ]
   }
 }
