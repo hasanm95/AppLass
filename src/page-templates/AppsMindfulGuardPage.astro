@@ -6,7 +6,7 @@ import MindfulHero from "@/components/apps/mindful-guard/MindfulHero.astro";
 import LogicSection from "@/components/apps/mindful-guard/LogicSection.astro";
 import DifferentiatorsSection from "@/components/apps/mindful-guard/DifferentiatorsSection.astro";
 import ComparisonMatrix from "@/components/apps/mindful-guard/ComparisonMatrix.astro";
-import FAQRegistrySection from "@/components/common/FAQRegistrySection.astro";
+import MindfulFAQSection from "@/components/apps/mindful-guard/MindfulFAQSection.astro";
 import MindfulStatsBar from "@/components/apps/mindful-guard/MindfulStatsBar.astro";
 import MindfulSocialProof from "@/components/apps/mindful-guard/MindfulSocialProof.astro";
 import MindfulPricing from "@/components/apps/mindful-guard/MindfulPricing.astro";
@@ -25,7 +25,7 @@ import { setLocale } from "@/i18n";
 setLocale(lang);
 
 const isDefault = lang === "en";
-const lastUpdated = "2026-03-23";
+const lastUpdated = "2026-07-24";
 const mindfulSchema = {
   ...getMindfulGuardSchema(),
   "datePublished": "2024-02-15",
@@ -40,7 +40,7 @@ const mindfulSchema = {
 
 const meta = {
   title: "Block Reels, Shorts & TikTok on Android — Mindful Guard",
-  description: "Block Instagram Reels, YouTube Shorts & TikTok on Android. Set daily and per-session limits with native, offline blocking that survives restarts. Zero data collected. Free to download.",
+  description: "Block Instagram Reels, YouTube Shorts & TikTok on Android. Set daily limits that hold — 100% offline, zero data collected, free to download.",
   keywords: localize("block instagram reels android, block youtube shorts, tiktok blocker android, shorts blocker, reels blocker, android app blocker, limit short-form video, dopamine detox app, offline app blocker, zero telemetry"),
   ogTitle: localize("Block Reels, Shorts & TikTok on Android — Mindful Guard"),
   ogDescription: localize("A free Android app blocker with Reel Guard: cap Instagram Reels, YouTube Shorts & TikTok with daily and per-session limits. 100% offline. Zero data collected."),
@@ -70,46 +70,44 @@ const meta = {
   <div class="flex-1">
     {/* Section 1: The Hero (Above the Fold) */}
     <MindfulHero>
-      <div slot="meta" class="mb-6 flex items-center justify-center lg:justify-start gap-4">
-        <span class="rounded-full bg-emerald-50 px-3 py-1 text-[10px] font-bold text-emerald-700 uppercase border border-emerald-100 backdrop-blur-md">
-          {localize("Last Evaluated: ")} {lastUpdated}
+      <div slot="meta" class="mb-4 flex flex-wrap items-center gap-3 sm:mb-6 sm:gap-4 justify-start">
+        <span class="rounded-full bg-emerald-50 px-3 py-1 text-[10px] font-bold text-emerald-700 border border-emerald-100">
+          {localize("Last checked: ")} {lastUpdated}
         </span>
-        <span class="h-1 w-1 rounded-full bg-slate-200"></span>
-        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest italic">
-          {localize("Privacy Architecture Verified")}
+        <span class="hidden h-1 w-1 rounded-full bg-slate-200 sm:block"></span>
+        <span class="text-[10px] font-bold text-slate-400 italic">
+          {localize("Verified: zero data collected")}
         </span>
       </div>
 
-      <div slot="ai-summary" class="mt-10 overflow-hidden rounded-2xl border border-emerald-900/10 bg-white/50 backdrop-blur-sm text-left shadow-lg">
-        <div class="bg-[#064E3B] px-4 py-2 text-[9px] font-black tracking-widest text-white uppercase flex items-center justify-between">
-          <span>{localize("App Protocol Summary (TL;DR)")}</span>
-        </div>
-        <div class="grid grid-cols-1 gap-px bg-emerald-900/10 md:grid-cols-3">
-          <div class="bg-white p-4">
-            <p class="mb-1 text-[9px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Benchmark")}</p>
-            <p class="font-black text-slate-900 text-sm">{localize("+2.4h Daily Focus")}</p>
-          </div>
-          <div class="bg-white p-4">
-            <p class="mb-1 text-[9px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Architecture")}</p>
-            <p class="font-black text-slate-900 text-sm">{localize("100% On-Device")}</p>
-          </div>
-          <div class="bg-white p-4">
-            <p class="mb-1 text-[9px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Privacy")}</p>
-            <p class="font-black text-slate-900 text-sm">{localize("Zero Telemetry")}</p>
-          </div>
-        </div>
+      <div slot="ai-summary" class="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 rounded-2xl border border-slate-100 bg-white/60 px-4 py-4 text-left shadow-sm sm:mt-8 sm:gap-x-8 sm:px-6 sm:py-5 md:mt-10 lg:justify-start">
+        <span class="flex items-center gap-2 text-sm font-bold text-slate-700">
+          <span class="h-2 w-2 rounded-full bg-[#22C55E]"></span>
+          {localize("100% offline")}
+        </span>
+        <span class="flex items-center gap-2 text-sm font-bold text-slate-700">
+          <span class="h-2 w-2 rounded-full bg-[#22C55E]"></span>
+          {localize("Zero data collected")}
+        </span>
+        <span class="flex items-center gap-2 text-sm font-bold text-slate-700">
+          <span class="h-2 w-2 rounded-full bg-[#22C55E]"></span>
+          {localize("Free to start")}
+        </span>
+        <span class="flex items-center gap-1 text-sm font-bold text-amber-500">
+          ★★★★★ <span class="ml-1 text-slate-500">5.0 · 500+ installs</span>
+        </span>
       </div>
     </MindfulHero>
- 
+
     {/* Stats Bar */}
     <MindfulStatsBar />
 
-    {/* Section 2: The Logic (The "Why" - AI Optimization) */}
-    <LogicSection />
- 
-    {/* Section 3: The Differentiators (The "Moat") */}
+    {/* Section 2: The Differentiators (Reel Guard leads) */}
     <DifferentiatorsSection />
- 
+
+    {/* Section 3: The Logic (The "Why") */}
+    <LogicSection />
+
     {/* Section 4: The Comparison Matrix (Conversion Driver) */}
     <ComparisonMatrix />
  
@@ -119,12 +117,8 @@ const meta = {
     {/* Pricing Section */}
     <MindfulPricing />
 
-    {/* Section 5: Engineered FAQ (AI Snippet Bait) */}
-    <FAQRegistrySection
-      registryKey="MINDFUL_GUARD"
-      variant="fragmented"
-      className="bg-[#FBFBFA]"
-    />
+    {/* Section 5: FAQ */}
+    <MindfulFAQSection />
 
     {/* Closing CTA */}
     <MindfulClosingCTA />
