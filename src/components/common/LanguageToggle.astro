@@ -1,6 +1,7 @@
 ---
 import { localePath } from "@/i18n/utils";
 import { localize } from "@/i18n/localize";
+import { i18nConfig, localeMeta } from "@/i18n/config";
 
 interface Props {
   isDark: boolean;
@@ -9,10 +10,7 @@ interface Props {
 
 const { isDark, currentLang } = Astro.props;
 
-const LOCALES = [
-  { code: "en", label: "EN", fullLabel: "English", flag: "🇺🇸" },
-  { code: "fr", label: "FR", fullLabel: "Français", flag: "🇫🇷" },
-] as const;
+const LOCALES = i18nConfig.locales.map((code) => ({ code, ...localeMeta[code] }));
 
 const currentPath = Astro.url.pathname;
 const pathWithoutLang = currentPath.startsWith(`/${currentLang}/`) || currentPath === `/${currentLang}` 
@@ -64,30 +62,37 @@ const targetPath = pathWithoutLang || "/";
         </button>
       </div>
 
-      <div class="p-6 flex flex-col gap-3">
-        {LOCALES.map(({ code, fullLabel, flag }) => {
+      <div class:list={["flex flex-col divide-y", isDark ? "divide-white/10" : "divide-slate-100"]}>
+        {LOCALES.map(({ code, fullLabel, englishName }) => {
           const isActive = currentLang === code;
           return (
             <a
               href={localePath(code, targetPath)}
               aria-current={isActive ? "true" : undefined}
-              class:list={[
-                "flex items-center justify-between rounded-xl px-5 py-4 font-medium transition-all group",
-                isActive
-                  ? isDark 
-                    ? "bg-white/90 text-slate-900 shadow-md" 
-                    : "bg-slate-900 text-white shadow-md"
-                  : isDark
-                    ? "text-slate-400 hover:bg-white/10 hover:text-white"
-                    : "text-slate-600 bg-slate-50 hover:bg-slate-100 hover:text-slate-900"
-              ]}
+              class="group flex items-center justify-between px-6 py-4 transition-colors"
             >
-              <div class="flex items-center gap-4">
-                <span class="text-2xl grayscale transition-all group-hover:grayscale-0">{flag}</span>
-                <span class="font-bold">{fullLabel}</span>
+              <div class="flex items-baseline gap-2.5 transition-transform duration-150 group-hover:translate-x-1">
+                <span
+                  class:list={[
+                    "text-base leading-tight transition-all",
+                    isActive
+                      ? isDark ? "font-black text-white" : "font-black text-slate-900"
+                      : isDark ? "font-medium text-slate-400 group-hover:text-white" : "font-medium text-slate-500 group-hover:text-slate-900"
+                  ]}
+                >
+                  {fullLabel}
+                </span>
+                <span class:list={["text-xs", isDark ? "text-slate-600" : "text-slate-400"]}>
+                  {englishName}
+                </span>
               </div>
               {isActive && (
-                <div class:list={["h-2 w-2 rounded-full", isDark ? "bg-slate-900" : "bg-white"]} />
+                <svg
+                  class:list={["h-4 w-4 shrink-0", isDark ? "text-white" : "text-slate-900"]}
+                  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                >
+                  <path d="M20 6 9 17l-5-5"/>
+                </svg>
               )}
             </a>
           );

@@ -8,7 +8,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "lint": "eslint .",
-    "extract-i18n": "tsx scripts/extract-translations.ts"
+    "extract-i18n": "tsx scripts/extract-translations.ts",
+    "translate-i18n": "tsx scripts/translate-i18n.ts"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.14",

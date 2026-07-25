@@ -1,6 +1,7 @@
 ---
 // src/components/blog/MindfulGuardCTA.astro
 import { playUrl } from "@/lib/utils";
+import { localize } from "@/i18n/localize";
 
 interface Props {
   lang?: string;
@@ -9,16 +10,13 @@ interface Props {
 }
 
 const { lang = "en", campaign = "blog-cta" } = Astro.props;
-const isFr = lang === "fr";
 const href = playUrl(campaign, "blog");
 
 const content = {
-  badge: isFr ? "App Android Gratuit · Sans Abonnement" : "Free Android App · No Subscription",
-  title: isFr ? "Mindful Guard — Concentration au Niveau Système" : "Mindful Guard — System-Level Focus",
-  desc: isFr 
-    ? "Bloquez les distractions au niveau du système (OS). Zéro VPN, zéro télémétrie, zéro consommation de batterie. Fonctionne hors ligne · Mode Strict · Gratuit à vie." 
-    : "Block distractions at the OS level. Zero VPN, zero telemetry, zero battery drain. Works offline · Strict Mode · Free forever.",
-  btn: isFr ? "Installer gratuitement" : "Install free",
+  badge: localize("Free Android App · No Subscription"),
+  title: localize("Mindful Guard — System-Level Focus"),
+  desc: localize("Block distractions at the OS level. Zero VPN, zero telemetry, zero battery drain. Works offline · Strict Mode · Free forever."),
+  btn: localize("Install free"),
 };
 ---
 
@@ -27,7 +25,7 @@ const content = {
   target="_blank"
   rel="noopener noreferrer"
   class="mindfulguard-cta"
-  aria-label={isFr ? "Télécharger Mindful Guard sur Google Play — application de concentration Android gratuite" : "Download Mindful Guard on Google Play — free Android focus app"}
+  aria-label={localize("Download Mindful Guard on Google Play — free Android focus app")}
 >
   <div class="mindfulguard-cta__left">
     <span class="mindfulguard-cta__badge">{content.badge}</span>

@@ -1,6 +1,7 @@
 ---
 import { localePath } from "@/i18n/utils";
 import { playUrl } from "@/lib/utils";
+import { localize } from "@/i18n/localize";
 
 interface Props {
   appName: "Mindful Guard" | "FOMOgen" | "AppLass" | "ScreenVeil";
@@ -15,43 +16,41 @@ interface Props {
 
 const { appName, lang = "en", labels } = Astro.props;
 
-const isFr = lang === "fr";
-
 const data = {
   "Mindful Guard": {
     title: "Mindful Guard",
-    sub: labels?.sub || (isFr ? "Conçu pour la concentration." : "Built for Focus."),
-    desc: labels?.desc || (isFr ? "Retrouvez votre concentration numérique avec des garde-fous logiques." : "Reclaim your digital focus with logical guardrails."),
+    sub: labels?.sub || localize("Built for Focus."),
+    desc: labels?.desc || localize("Reclaim your digital focus with logical guardrails."),
     href: playUrl("blog-callout", "blog"),
     color: "bg-[#10B981]",
-    learnMoreText: isFr ? "Télécharger sur le Play Store" : "Download on Play Store",
+    learnMoreText: localize("Download on Play Store"),
     external: true,
   },
   FOMOgen: {
     title: "FOMOgen",
-    sub: labels?.sub || (isFr ? "Les ventes simplifiées." : "Sales Simplified."),
-    desc: labels?.desc || (isFr ? "L'application Shopify #1 pour l'automatisation des preuves sociales." : "The #1 Shopify app for social proof automation."),
+    sub: labels?.sub || localize("Sales Simplified."),
+    desc: labels?.desc || localize("The #1 Shopify app for social proof automation."),
     href: "/apps/fomogen",
     color: "bg-blue-600",
-    learnMoreText: isFr ? "En Savoir Plus" : "Learn More",
+    learnMoreText: localize("Learn More"),
     external: false,
   },
   AppLass: {
     title: "The Logic Lab",
-    sub: labels?.sub || (isFr ? "Principes fondamentaux." : "First Principles."),
-    desc: labels?.desc || (isFr ? "Recevez des analyses d'ingénierie directement dans votre boîte de réception." : "Get engineering insights delivered to your inbox."),
+    sub: labels?.sub || localize("First Principles."),
+    desc: labels?.desc || localize("Get engineering insights delivered to your inbox."),
     href: "#subscribe",
     color: "bg-slate-900",
-    learnMoreText: isFr ? "S'abonner" : "Subscribe",
+    learnMoreText: localize("Subscribe"),
     external: false,
   },
   ScreenVeil: {
     title: "ScreenVeil",
-    sub: labels?.sub || (isFr ? "Écran éteint pour les vidéos sur Android." : "Screen Off Video for Android."),
-    desc: labels?.desc || (isFr ? "La superposition noire permet de continuer à écouter l'audio tout en économisant plus de 60 % de batterie sur AMOLED. Plus de 10 000 téléchargements · 4,4 ★ · Gratuit à vie." : "Black overlay keeps audio playing while saving 60%+ battery on AMOLED. 10,000+ downloads · 4.4 ★ · Free forever."),
+    sub: labels?.sub || localize("Screen Off Video for Android."),
+    desc: labels?.desc || localize("Black overlay keeps audio playing while saving 60%+ battery on AMOLED. 10,000+ downloads · 4.4 ★ · Free forever."),
     href: "https://play.google.com/store/apps/details?id=com.screenveil.app",
     color: "bg-[#22d3ee]",
-    learnMoreText: isFr ? "Télécharger sur le Play Store" : "Download on Play Store",
+    learnMoreText: localize("Download on Play Store"),
     external: true,
   },
 }[appName];
@@ -63,7 +62,7 @@ const data = {
   ></div>
 
   <span class="mb-6 block text-[10px] font-black tracking-[0.2em] text-slate-500 uppercase">
-    {labels?.poweredByLogic || (appName === "ScreenVeil" ? (isFr ? "Présenté dans cet article" : "Featured in this article") : (isFr ? "Développé par la logique" : "Powered by Logic"))}
+    {labels?.poweredByLogic || (appName === "ScreenVeil" ? localize("Featured in this article") : localize("Powered by Logic"))}
   </span>
 
   <h4 class="mb-2 text-2xl font-black text-slate-900">{data.title}</h4>

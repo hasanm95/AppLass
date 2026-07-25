@@ -1,19 +1,18 @@
 ---
 // src/components/blog/FomogenCTA.astro
+import { localize } from "@/i18n/localize";
+
 interface Props {
   lang?: string;
 }
 
 const { lang = "en" } = Astro.props;
-const isFr = lang === "fr";
 
 const content = {
-  badge: isFr ? "Application Shopify · Plan Gratuit" : "Shopify App · Free Plan Available",
+  badge: localize("Shopify App · Free Plan Available"),
   title: "FOMOgen — Real-Time Social Proof",
-  desc: isFr
-    ? "Augmentez vos ventes avec des notifications d'achat en temps réel, des compteurs de visiteurs et des barres de livraison gratuite. Moins de 2.1KB, zéro ralentissement."
-    : "Boost Shopify conversion rates with real-time recent sales notifications, live visitor counters, and dynamic free shipping bars. Under 2.1KB payload, zero page speed impact.",
-  btn: isFr ? "Voir sur Shopify" : "Install Free",
+  desc: localize("Boost Shopify conversion rates with real-time recent sales notifications, live visitor counters, and dynamic free shipping bars. Under 2.1KB payload, zero page speed impact."),
+  btn: localize("Install Free"),
 };
 ---
 

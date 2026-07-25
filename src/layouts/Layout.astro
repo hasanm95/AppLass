@@ -1,10 +1,11 @@
 ---
-import { getLangFromUrl } from '../i18n/utils';
+import { getLangFromUrl, localePath } from '../i18n/utils';
 import '../globals.css';
 import '../fonts.css';
 import '../tw-animate.css';
 import { localize } from '@/i18n/localize';
 import { getMindfulGuardSchema } from '@/constants/mindful-guard-data';
+import { i18nConfig, localeMeta, isRtl } from '@/i18n/config';
 
 interface Props {
   title?: string;
@@ -49,12 +50,16 @@ const defaultKeywords = localize("software studio, Shopify apps, digital wellnes
 const optimizedOgImage = ogImage || "https://applass.com/og-image.png";
 
 // Properly construct language-specific URLs for SEO indexing
-let basePath = Astro.url.pathname.replace(/^\/(en|fr)(\/|$)/, '/');
+const localePrefixPattern = new RegExp(`^/(${i18nConfig.locales.join('|')})(/|$)`);
+let basePath = Astro.url.pathname.replace(localePrefixPattern, '/');
 if (basePath !== '/' && basePath.endsWith('/')) {
   basePath = basePath.slice(0, -1);
 }
+const hreflangAlternates = i18nConfig.locales.map((locale) => ({
+  locale,
+  url: `https://applass.com${localePath(locale, basePath)}`,
+}));
 const enUrl = `https://applass.com${basePath}`;
-const frUrl = basePath === '/' ? 'https://applass.com/fr' : `https://applass.com/fr${basePath}`;
 
 let canonicalPath = Astro.url.pathname;
 if (canonicalPath !== '/' && canonicalPath.endsWith('/')) {
@@ -62,11 +67,15 @@ if (canonicalPath !== '/' && canonicalPath.endsWith('/')) {
 }
 const canonicalUrl = `https://applass.com${canonicalPath}`;
 
-const isFr = documentLang === 'fr';
+const currentOgLocale = localeMeta[documentLang as keyof typeof localeMeta]?.ogLocale || 'en_US';
+const alternateOgLocales = i18nConfig.locales
+  .filter((l) => l !== documentLang)
+  .map((l) => localeMeta[l].ogLocale);
+
 const defaultBreadcrumbs = [
   {
-    name: isFr ? "Accueil" : "Home",
-    item: isFr ? "https://applass.com/fr" : "https://applass.com"
+    name: localize("Home"),
+    item: `https://applass.com${localePath(documentLang, '/')}`
   }
 ];
 
@@ -79,7 +88,7 @@ const mindfulGuardSchema = getMindfulGuardSchema();
 ---
 
 <!doctype html>
-<html lang={documentLang} class="font-sans antialiased">
+<html lang={documentLang} dir={isRtl(documentLang) ? "rtl" : "ltr"} class="font-sans antialiased">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -104,8 +113,9 @@ const mindfulGuardSchema = getMindfulGuardSchema();
     <link rel="canonical" href={canonicalUrl} />
 
     <!-- Hreflang for i18n -->
-    <link rel="alternate" hreflang="en" href={enUrl} />
-    <link rel="alternate" hreflang="fr" href={frUrl} />
+    {hreflangAlternates.map(({ locale, url }) => (
+      <link rel="alternate" hreflang={locale} href={url} />
+    ))}
     <link rel="alternate" hreflang="x-default" href={enUrl} />
 
     <!-- Primary Meta Tags -->
@@ -132,8 +142,10 @@ const mindfulGuardSchema = getMindfulGuardSchema();
     <meta property="og:description" content={ogDescription || description || defaultDescription} />
     <meta property="og:image" content={optimizedOgImage} />
     <meta property="og:site_name" content={localize("AppLass")} />
-    <meta property="og:locale" content={documentLang === 'fr' ? 'fr_FR' : 'en_US'} />
-    <meta property="og:locale:alternate" content={documentLang === 'fr' ? 'en_US' : 'fr_FR'} />
+    <meta property="og:locale" content={currentOgLocale} />
+    {alternateOgLocales.map((ogLocale) => (
+      <meta property="og:locale:alternate" content={ogLocale} />
+    ))}
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />

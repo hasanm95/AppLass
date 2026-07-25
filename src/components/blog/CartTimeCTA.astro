@@ -1,19 +1,18 @@
 ---
 // src/components/blog/CartTimeCTA.astro
+import { localize } from "@/i18n/localize";
+
 interface Props {
   lang?: string;
 }
 
 const { lang = "en" } = Astro.props;
-const isFr = lang === "fr";
 
 const content = {
-  badge: isFr ? "Application Shopify · Essai Gratuit" : "Shopify App · Free Trial Available",
+  badge: localize("Shopify App · Free Trial Available"),
   title: "CartTime — High-Conversion Checkout Timers",
-  desc: isFr
-    ? "Réduisez l'abandon de panier avec des compteurs de réservation et des alertes de stock bas. Entièrement personnalisable et optimisé pour le mobile."
-    : "Slash cart abandonment using customizable cart reservation timers, checkout count-down bars, and low-stock alerts. Fully responsive and speed-optimized.",
-  btn: isFr ? "Voir sur Shopify" : "Install Free",
+  desc: localize("Slash cart abandonment using customizable cart reservation timers, checkout count-down bars, and low-stock alerts. Fully responsive and speed-optimized."),
+  btn: localize("Install Free"),
 };
 ---
 
