@@ -152,6 +152,13 @@ const targetPath = pathWithoutLang || "/";
       closeBtn.addEventListener('click', closeSidebar);
       backdrop.addEventListener('click', closeSidebar);
 
+      // Manual pick always wins over geo-detection on future visits.
+      this.querySelectorAll('a[href]').forEach((link) => {
+        link.addEventListener('click', () => {
+          document.cookie = 'pref_lang=1; path=/; max-age=31536000; SameSite=Lax';
+        });
+      });
+
       // Handle Escape key
       this.ownerDocument.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && this.#isOpen) {
