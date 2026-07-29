@@ -675,7 +675,7 @@
     "semantic_hash": ""
   },
   "src/i18n/locales/en.json": {
-    "mtime": 1785289595.8106227,
+    "mtime": 1784973570.9216018,
     "ast_hash": "ba35dad34a113a7f23e7f0bdb1c81c90",
     "semantic_hash": ""
   },
@@ -705,8 +705,8 @@
     "semantic_hash": ""
   },
   "src/lib/blog.ts": {
-    "mtime": 1785289547.0535314,
-    "ast_hash": "00b89448e02f7ed53c5671686eff8308",
+    "mtime": 1779016498.170442,
+    "ast_hash": "5fe71fb6df19e51badef7658cf093675",
     "semantic_hash": ""
   },
   "src/lib/compare.ts": {
@@ -855,8 +855,8 @@
     "semantic_hash": ""
   },
   "src/pages/[lang]/blog/[slug].astro": {
-    "mtime": 1785289553.416251,
-    "ast_hash": "51c96738ed6a6c8845daf03d1c6c911c",
+    "mtime": 1772529301.7707758,
+    "ast_hash": "6cdec7a17289653a725db3e36c6b177b",
     "semantic_hash": ""
   },
   "src/pages/[lang]/blog/index.astro": {
@@ -2537,116 +2537,6 @@
   "worker/index.ts": {
     "mtime": 1785094433.8860185,
     "ast_hash": "28708548db001bcedec47dcce8282c9e",
-    "semantic_hash": ""
-  },
-  "src/content/blog/zh/add-low-stock-alerts-shopify.md": {
-    "mtime": 1785101185.219086,
-    "ast_hash": "6fa670838a64d1c0b2d6d8abb66a56da",
-    "semantic_hash": ""
-  },
-  "src/content/blog/zh/android-digital-wellbeing-vs-third-party-focus-apps.md": {
-    "mtime": 1785101309.2084615,
-    "ast_hash": "f890bdc8f370e7eb2a72006212eb15fa",
-    "semantic_hash": ""
-  },
-  "src/content/blog/zh/best-app-to-block-social-media-on-android-in-2026.mdx": {
-    "mtime": 1785101426.6355908,
-    "ast_hash": "39641943c7a83e050e3f654fc7fa9578",
-    "semantic_hash": ""
-  },
-  "src/content/blog/zh/best-social-proof-apps-shopify-2026.md": {
-    "mtime": 1785101476.0421886,
-    "ast_hash": "329d476b8a4266fc171108f74cf2f4ef",
-    "semantic_hash": ""
-  },
-  "src/content/blog/zh/calculate-free-shipping-threshold.md": {
-    "mtime": 1785101492.7341678,
-    "ast_hash": "9ec8556e36b6207f23fdec4fa66f9fe6",
-    "semantic_hash": ""
-  },
-  "src/content/blog/zh/free-shipping-bar-shopify.md": {
-    "mtime": 1785101578.638111,
-    "ast_hash": "feea620dd076b3712dde4453a42ed1b0",
-    "semantic_hash": ""
-  },
-  "src/content/blog/zh/how-to-add-sales-popup-shopify.md": {
-    "mtime": 1785101661.9829345,
-    "ast_hash": "db3684a94d962c869a71796ae1e2ac46",
-    "semantic_hash": ""
-  },
-  "src/content/blog/zh/how-to-block-reels-and-shorts-on-android-2026.mdx": {
-    "mtime": 1785101769.3108613,
-    "ast_hash": "51eedc9bd71834a1a480178cd522cc44",
-    "semantic_hash": ""
-  },
-  "src/content/blog/zh/how-to-block-social-media-on-android-during-work-hours.md": {
-    "mtime": 1785101879.1461906,
-    "ast_hash": "a4d5348745830fd36459b66c0c271f68",
-    "semantic_hash": ""
-  },
-  "src/content/blog/zh/logic-comparison-matrix.md": {
-    "mtime": 1785101906.4002252,
-    "ast_hash": "f32706df37308b622ea3204b9bb2cb20",
-    "semantic_hash": ""
-  },
-  "src/content/blog/zh/mobile-sticky-cart-guide.md": {
-    "mtime": 1785101939.9970071,
-    "ast_hash": "6e20d2b7256285511e5c26dd9b041707",
-    "semantic_hash": ""
-  },
-  "src/content/blog/zh/monk-mode-willpower.md": {
-    "mtime": 1785101971.7268207,
-    "ast_hash": "38ca1285a39c140b423c586b8444e194",
-    "semantic_hash": ""
-  },
-  "src/content/blog/zh/opal-alternatives-android.mdx": {
-    "mtime": 1785102111.106506,
-    "ast_hash": "1f5c565c04046d7ecc244f5aef2b206a",
-    "semantic_hash": ""
-  },
-  "src/content/blog/zh/psychology-of-fomo-marketing.md": {
-    "mtime": 1785102142.831443,
-    "ast_hash": "d39db009ad7e60bb45d8c31ccc061f53",
-    "semantic_hash": ""
-  },
-  "src/content/blog/zh/reclaim-focus-story.md": {
-    "mtime": 1785102171.931009,
-    "ast_hash": "90f0bbb62367bb66d0d87e41602cd425",
-    "semantic_hash": ""
-  },
-  "src/content/blog/zh/shopify-conversion-rate-2026.mdx": {
-    "mtime": 1785102269.740595,
-    "ast_hash": "380a95870b36957071284a3c6c81376c",
-    "semantic_hash": ""
-  },
-  "src/content/blog/zh/shopify-conversion-rate-benchmarks-2026.md": {
-    "mtime": 1785102379.2320306,
-    "ast_hash": "6a6a108229caba8a10dff24745748a7d",
-    "semantic_hash": ""
-  },
-  "src/content/blog/zh/shopify-site-speed-social-proof.md": {
-    "mtime": 1785102400.182501,
-    "ast_hash": "d0098f825088e1c1d87c977310873cea",
-    "semantic_hash": ""
-  },
-  "src/content/blog/zh/the-logic-of-focus.md": {
-    "mtime": 1785102427.575863,
-    "ast_hash": "129fa0e707d39e5f21c47d2b81d0a181",
-    "semantic_hash": ""
-  },
-  "src/content/blog/zh/youtube-background-play-2026-workaround.mdx": {
-    "mtime": 1785102512.5799704,
-    "ast_hash": "30c8dcd84915802928a132adfea6db55",
-    "semantic_hash": ""
-  },
-  "src/content/blog/zh/youtube-screen-off-battery-hack.md": {
-    "mtime": 1785102568.785975,
-    "ast_hash": "307c517afb96efe53f6f2c34b900885f",
-    "semantic_hash": ""
-  },
-  "src/content/blog/zh/zero-telemetry-blocker.md": {
-    "mtime": 1785102594.2885766,
-    "ast_hash": "10af9820bdf627d57c112ce6bbdd0c11",
     "semantic_hash": ""
   }
 }

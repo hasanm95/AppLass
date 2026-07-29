@@ -13,8 +13,8 @@ const CONCURRENCY = 4;
 const BLOG_DIR = 'src/content/blog';
 const DEFAULT_LOCALE = i18nConfig.defaultLocale;
 
-// LibreTranslate language codes match our locale codes 1:1 (en, ar, zh, es, id, pt, fr, ja, ru, de).
-const SUPPORTED = new Set(['zh', 'es', 'ar', 'id', 'pt', 'fr', 'ja', 'ru', 'de']);
+// LibreTranslate language codes match our locale codes 1:1 (en, ar, zh, es, id, pt, fr, ja, ru, de, bn).
+const SUPPORTED = new Set(['zh', 'es', 'ar', 'id', 'pt', 'fr', 'ja', 'ru', 'de', 'bn']);
 
 // Protect {vars}, `inline code`, and the (url) part of [text](url) / ![alt](url) from translation.
 const VAR_RE = /\{[^}]+\}|`[^`]*`|\]\([^)]*\)/g;

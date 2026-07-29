@@ -7,15 +7,19 @@ export async function getStaticPaths() {
   const nonDefaultLocales = i18nConfig.locales.filter(
     (l) => l !== i18nConfig.defaultLocale
   );
-  
-  const paths = await Promise.all(nonDefaultLocales.map(async (lang) => {
-    const posts = await getBlogPosts(lang);
-    return posts.map((post: any) => ({
-      params: { lang, slug: post.slug },
-    }));
-  }));
 
-  return paths.flat();
+  // Build a path for every English slug in every locale, even if that
+  // locale's translation is missing — BlogPostPage falls back to the
+  // English post rather than 404ing when a translation doesn't exist.
+  const englishPosts = await getBlogPosts(i18nConfig.defaultLocale);
+
+  const paths = nonDefaultLocales.flatMap((lang) =>
+    englishPosts.map((post) => ({
+      params: { lang, slug: post.slug },
+    }))
+  );
+
+  return paths;
 }
 
 const { lang, slug } = Astro.params;

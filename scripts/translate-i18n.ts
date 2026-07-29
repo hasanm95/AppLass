@@ -10,8 +10,8 @@ const CONCURRENCY = 4;
 
 const EN_PATH = 'src/i18n/locales/en.json';
 
-// LibreTranslate language codes match our locale codes 1:1 (en, ar, zh, es, id, pt, fr, ja, ru, de).
-const SUPPORTED = new Set(['zh', 'es', 'ar', 'id', 'pt', 'fr', 'ja', 'ru', 'de']);
+// LibreTranslate language codes match our locale codes 1:1 (en, ar, zh, es, id, pt, fr, ja, ru, de, bn).
+const SUPPORTED = new Set(['zh', 'es', 'ar', 'id', 'pt', 'fr', 'ja', 'ru', 'de', 'bn']);
 
 const VAR_RE = /\{[^}]+\}/g;
 

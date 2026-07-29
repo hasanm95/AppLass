@@ -3,7 +3,7 @@ export interface Env {
 }
 
 const DEFAULT_LOCALE = "en";
-const LOCALES = ["en", "zh", "es", "ar", "id", "pt", "fr", "ja", "ru", "de"] as const;
+const LOCALES = ["en", "zh", "es", "ar", "id", "pt", "fr", "ja", "ru", "de", "bn"] as const;
 type Locale = (typeof LOCALES)[number];
 
 // Dominant language per country, used only as a geo default for first-time visitors.
@@ -33,6 +33,8 @@ const COUNTRY_TO_LOCALE: Record<string, Locale> = {
   RU: "ru", BY: "ru", KZ: "ru", KG: "ru", TJ: "ru",
 
   DE: "de", AT: "de", LI: "de",
+
+  BD: "bn",
 };
 
 const BOT_UA_RE =

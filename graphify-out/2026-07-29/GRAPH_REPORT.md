@@ -1,7 +1,7 @@
 # Graph Report - AppLass  (2026-07-27)
 
 ## Corpus Check
-- 437 files · ~1,765,275 words
+- 437 files · ~1,765,353 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3798ec53`
+- Built from commit: `552f4ef2`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -433,7 +433,7 @@ Nodes (34): 10. Component Extraction, 11. Anti-Patterns, 12. Performance Princip
 
 ### Community 23 - "Mobile Testing Patterns"
 Cohesion: 0.10
-Nodes (20): 1. Testing Tool Selection, 2. Testing Pyramid for Mobile, 3. What to Test at Each Level, 6. Performance Testing, 7. Accessibility Testing, 🚫 AI MOBILE TESTING ANTI-PATTERNS, Component Tests (RNTL / flutter_test), Decision Tree (+12 more)
+Nodes (20): 1. Testing Tool Selection, 2. Testing Pyramid for Mobile, 3. What to Test at Each Level, 4. Platform-Specific Testing, 8. CI/CD Integration, 🚫 AI MOBILE TESTING ANTI-PATTERNS, Component Tests (RNTL / flutter_test), Decision Tree (+12 more)
 
 ### Community 24 - "Project Planner - Smart Project Planning"
 Cohesion: 0.06
@@ -961,7 +961,7 @@ Nodes (8): check_page(), find_pages(), is_page_file(), main(), Path, Check if th
 
 ### Community 156 - "Vulnerability Scanner"
 Cohesion: 0.22
-Nodes (9): 10. Anti-Patterns, 5. Risk Prioritization, 7. Scanning Methodology, CVSS + Context, Phase-Based Approach, Prioritization Decision Tree, 📋 Reference Files, 🔧 Runtime Scripts (+1 more)
+Nodes (9): 10. Anti-Patterns, 4. Attack Surface Mapping, 7. Scanning Methodology, Phase-Based Approach, Prioritization Matrix, 📋 Reference Files, 🔧 Runtime Scripts, Vulnerability Scanner (+1 more)
 
 ### Community 157 - "/preview - Preview Management"
 Cohesion: 0.22
@@ -1405,7 +1405,7 @@ Nodes (3): 3. Supply Chain Security (A03), Attack Surface, Defense Principles
 
 ### Community 269 - "4. Attack Surface Mapping"
 Cohesion: 0.67
-Nodes (3): 4. Attack Surface Mapping, Prioritization Matrix, What to Map
+Nodes (3): 6. Performance Testing, What to Measure, When to Performance Test
 
 ### Community 270 - "6. Exceptional Conditions (A10 - New)"
 Cohesion: 0.67
@@ -1429,7 +1429,7 @@ Nodes (7): @/components/home/SocialProof.astro, @/components/home/SolutionsSecti
 
 ### Community 280 - "tailwindcss"
 Cohesion: 0.67
-Nodes (3): 4. Platform-Specific Testing, Platform Testing Strategy, What Differs Between iOS and Android?
+Nodes (3): 7. Accessibility Testing, How to Test, What to Verify
 
 ### Community 281 - "tsx"
 Cohesion: 0.67
@@ -1437,7 +1437,7 @@ Nodes (3): 5. Offline & Network Testing, How to Test Network Conditions, Offline
 
 ### Community 282 - "@types/react"
 Cohesion: 0.67
-Nodes (3): 8. CI/CD Integration, Device Farm Options, What to Run Where
+Nodes (3): 5. Risk Prioritization, CVSS + Context, Prioritization Decision Tree
 
 ### Community 297 - "2. State Management Selection"
 Cohesion: 0.50

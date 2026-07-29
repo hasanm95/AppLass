@@ -54,8 +54,12 @@ export async function getBlogPosts(lang: string = "en"): Promise<MarkdownBlogPos
 
 export async function getBlogPostBySlug(slug: string, lang: string = "en"): Promise<MarkdownBlogPost | null> {
   try {
-    const entry = await getEntry('blog', `${lang}/${slug}`);
-    
+    let entry = await getEntry('blog', `${lang}/${slug}`);
+
+    if (!entry && lang !== "en") {
+      entry = await getEntry('blog', `en/${slug}`);
+    }
+
     if (!entry) return null;
 
     return {
@@ -78,7 +82,8 @@ export async function getBlogPostBySlug(slug: string, lang: string = "en"): Prom
       ogImage: entry.data.ogImage,
     } as MarkdownBlogPost;
   } catch (e) {
-    throw new Error(`Blog post ${slug} not found in ${lang}`, { cause: e });
+    console.error(`Error loading blog post ${slug} for ${lang}`, e);
+    return null;
   }
 }
 

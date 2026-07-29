@@ -1,16 +1,16 @@
-# Graph Report - AppLass  (2026-07-27)
+# Graph Report - AppLass  (2026-07-29)
 
 ## Corpus Check
-- 437 files · ~1,765,275 words
+- 459 files · ~1,770,873 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4073 nodes · 4621 edges · 303 communities (286 shown, 17 thin omitted)
+- 4288 nodes · 4814 edges · 326 communities (309 shown, 17 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 9 edges (avg confidence: 0.6)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3798ec53`
+- Built from commit: `552f4ef2`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -309,6 +309,29 @@
 - clsx
 - @tailwindcss/typography
 - typescript
+- zh/the-logic-of-focus.md
+- zh/youtube-background-play-2026-workaround.mdx
+- 为何建筑问题
+- 2. Font Pairing Principles
+- zh/monk-mode-willpower.md
+- zh/psychology-of-fomo-marketing.md
+- zh/reclaim-focus-story.md
+- zh/shopify-site-speed-social-proof.md
+- zh/zero-telemetry-blocker.md
+- 3. SVG Animations
+- 1. Modular Scale Principles
+- 3. Dark Mode Design
+- zh/calculate-free-shipping-threshold.md
+- zh/mobile-sticky-cart-guide.md
+- 3. Line Height Principles
+- 4. Line Length Principles
+- 8. Hierarchy Principles
+- 9. Readability Psychology
+- 10. Quick Reference
+- 5. Semantic Colors
+- 6. Dynamic Color (Android)
+- 8. Color Anti-Patterns
+- @astrojs/check
 
 ## God Nodes (most connected - your core abstractions)
 1. `@/i18n/localize` - 84 edges
@@ -337,7 +360,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (303 total, 17 thin omitted)
+## Communities (326 total, 17 thin omitted)
 
 ### Community 0 - "@/i18n/localize"
 Cohesion: 0.07
@@ -388,16 +411,16 @@ Cohesion: 0.05
 Nodes (43): 1. Push Notifications, 2. Offline Sync & Conflict Resolution, 3. Mobile API Optimization, 4. App Versioning, 5. Authentication for Mobile, 6. Error Handling for Mobile, 7. Media & Binary Handling, 8. Security for Mobile (+35 more)
 
 ### Community 12 - "Typography System Reference"
-Cohesion: 0.05
-Nodes (41): 10. Typography Selection Checklist, 1. Modular Scale Principles, 2. Font Pairing Principles, 3. Line Height Principles, 4. Line Length Principles, 5. Responsive Typography Principles, 6. Weight and Emphasis Principles, 7. Letter Spacing (Tracking) (+33 more)
+Cohesion: 0.14
+Nodes (14): 10. Typography Selection Checklist, 5. Responsive Typography Principles, 6. Weight and Emphasis Principles, 7. Letter Spacing (Tracking), Adjustment Guidelines, Anti-Patterns, Avoid, Creating Contrast (+6 more)
 
 ### Community 13 - "Animation Guidelines Reference"
-Cohesion: 0.14
-Nodes (14): 10. Animation Decision Checklist, 1. Duration Principles, 3. Micro-Interaction Principles, 7. Hover Effects Principles, Animation Guidelines Reference, Anti-Patterns, Button States, Choosing Duration (+6 more)
+Cohesion: 0.05
+Nodes (39): 10. Animation Decision Checklist, 1. Duration Principles, 2. Easing Principles, 3. Micro-Interaction Principles, 4. Loading States Principles, 5. Page Transitions Principles, 6. Scroll Animation Principles, 7. Hover Effects Principles (+31 more)
 
 ### Community 14 - "Mobile Color System Reference"
-Cohesion: 0.05
-Nodes (38): 10. Quick Reference, 1. Mobile Color Fundamentals, 2. OLED Considerations, 3. Dark Mode Design, 4. Outdoor Visibility, 5. Semantic Colors, 6. Dynamic Color (Android), 7. Color Accessibility (+30 more)
+Cohesion: 0.11
+Nodes (18): 1. Mobile Color Fundamentals, 2. OLED Considerations, 4. Outdoor Visibility, 7. Color Accessibility, 9. Color System Checklist, Battery Savings with OLED, Before Choosing Colors, Before Release (+10 more)
 
 ### Community 15 - "Mobile Typography Reference"
 Cohesion: 0.05
@@ -432,8 +455,8 @@ Cohesion: 0.06
 Nodes (34): 10. Component Extraction, 11. Anti-Patterns, 12. Performance Principles, 1. Tailwind v4 Architecture, 2. CSS-Based Configuration, 3. Container Queries (v4 Native), 4. Responsive Design, 5. Dark Mode (+26 more)
 
 ### Community 23 - "Mobile Testing Patterns"
-Cohesion: 0.10
-Nodes (20): 1. Testing Tool Selection, 2. Testing Pyramid for Mobile, 3. What to Test at Each Level, 6. Performance Testing, 7. Accessibility Testing, 🚫 AI MOBILE TESTING ANTI-PATTERNS, Component Tests (RNTL / flutter_test), Decision Tree (+12 more)
+Cohesion: 0.06
+Nodes (33): 1. Testing Tool Selection, 2. Testing Pyramid for Mobile, 3. What to Test at Each Level, 4. Platform-Specific Testing, 5. Offline & Network Testing, 6. Performance Testing, 7. Accessibility Testing, 8. CI/CD Integration (+25 more)
 
 ### Community 24 - "Project Planner - Smart Project Planning"
 Cohesion: 0.06
@@ -545,7 +568,7 @@ Nodes (17): @/components/common/Footer.astro, currentLang, currentYear, footerLi
 
 ### Community 51 - "devDependencies"
 Cohesion: 0.08
-Nodes (25): @astrojs/check, crc-32, eslint-plugin-astro, glob, gray-matter, devDependencies, @astrojs/check, crc-32 (+17 more)
+Nodes (25): crc-32, eslint-plugin-astro, glob, gray-matter, devDependencies, crc-32, eslint-plugin-astro, glob (+17 more)
 
 ### Community 52 - "MindfulGuard Landing Page — Rebrand Plan"
 Cohesion: 0.09
@@ -713,7 +736,7 @@ Nodes (15): 1. README Structure, 2. API Documentation Structure, 3. Code Comment
 
 ### Community 93 - "Motion Graphics Reference"
 Cohesion: 0.12
-Nodes (16): 10. Quick Reference, 3. SVG Animations, 6. Scroll-Driven Animations, 7. Performance Principles, 8. Motion Graphics Decision Tree, 9. Anti-Patterns, Best Practices, GPU vs CPU Animation (+8 more)
+Nodes (16): 10. Quick Reference, 5. Particle Effects, 6. Scroll-Driven Animations, 7. Performance Principles, 8. Motion Graphics Decision Tree, 9. Anti-Patterns, Best Practices, GPU vs CPU Animation (+8 more)
 
 ### Community 94 - "i18n & Localization"
 Cohesion: 0.12
@@ -961,7 +984,7 @@ Nodes (8): check_page(), find_pages(), is_page_file(), main(), Path, Check if th
 
 ### Community 156 - "Vulnerability Scanner"
 Cohesion: 0.22
-Nodes (9): 10. Anti-Patterns, 5. Risk Prioritization, 7. Scanning Methodology, CVSS + Context, Phase-Based Approach, Prioritization Decision Tree, 📋 Reference Files, 🔧 Runtime Scripts (+1 more)
+Nodes (9): 10. Anti-Patterns, 4. Attack Surface Mapping, 7. Scanning Methodology, Phase-Based Approach, Prioritization Matrix, 📋 Reference Files, 🔧 Runtime Scripts, Vulnerability Scanner (+1 more)
 
 ### Community 157 - "/preview - Preview Management"
 Cohesion: 0.22
@@ -1052,8 +1075,8 @@ Cohesion: 0.25
 Nodes (7): Comparaison rapide, En résumé, Méthode 1 — ScreenVeil (gratuit, fonctionne avec n'importe quelle app) ⚡ Recommandé, Méthode 2 — NewPipe (gratuit, open-source), Méthode 3 — Firefox Mobile avec Video Background Play Fix, Méthode 4 — YouTube Premium Lite (7,99 $/mois), Pourquoi tout a cassé en janvier 2026
 
 ### Community 179 - "🔴 BUILD VERIFICATION (MANDATORY Before "Done")"
-Cohesion: 0.40
-Nodes (5): 6. Scroll Animation Principles, Animation Properties, Performance, Progressive Reveal, Trigger Points
+Cohesion: 0.10
+Nodes (20): 1. 页面负载速度缓慢(特别是在移动上), 2026年尼切基准, 2. 产品页上没有社会证明, 3. 离职时的意外运费, 4. 购买按钮在手机上消失, 5. 交通质量差, 为什么转换率如此之大, 健康与健康:3.0-3.5% (+12 more)
 
 ### Community 180 - "Project Scaffolding"
 Cohesion: 0.29
@@ -1196,8 +1219,8 @@ Cohesion: 0.33
 Nodes (5): La Confidentialité comme Fondement, Le Coût de Performance des Analytics, Le Manifeste Zéro-Télémétrie, Pourquoi la Confidentialité est Synonyme de Performance, Reprenez le Contrôle de votre Architecture Neuronale
 
 ### Community 217 - "Development Decision Process"
-Cohesion: 0.50
-Nodes (4): 2. Easing Principles, The Pattern, What Easing Does, When to Use Each
+Cohesion: 0.12
+Nodes (16): "今日的无知"问题, 仍然通过的通知, 何为数字福利 其实是好, 你该用哪一个?, 勤勤守者如何填补空白, 多个调度配置文件, 头对头比较, 数字福利落空之处 (+8 more)
 
 ### Community 218 - "API Style Selection (2025)"
 Cohesion: 0.40
@@ -1248,20 +1271,20 @@ Cohesion: 0.40
 Nodes (4): N+1 Problem, Optimization Priorities, Query Analysis Mindset, Query Optimization
 
 ### Community 230 - "5. E-commerce Guidelines {#e-commerce}"
-Cohesion: 0.50
-Nodes (4): 4. Loading States Principles, Progress Indicators, Skeleton Screens, Types by Context
+Cohesion: 0.14
+Nodes (13): 一步步:与FomoGen一起加入自由航运吧, 为什么自由航运吧 工作如此良好, 如何计算自由航运的门槛, 将它与更好的结果的社会证据叠在一起, 数学的真实示例, 步骤1:安装FomoGen, 步骤 3: 设定您的阈值, 步骤 4: 写您的信件 (+5 more)
 
 ### Community 231 - "7. Landing Page Guidelines {#landing-page}"
-Cohesion: 0.50
-Nodes (4): 5. Page Transitions Principles, Common Patterns, Direction Matching, Transition Strategy
+Cohesion: 0.14
+Nodes (13): 一步一步:用 FomoGen 添加销售弹出, 为什么你的访客需要看别人买东西, 多好的销售通知弹出, 如果你还没有很多命令怎么办, 对等最大效果的恐惧, 正确时机, 步骤1:安装FomoGen, 步骤3:创建你的第一次竞选 (+5 more)
 
 ### Community 232 - "8. Portfolio Guidelines {#portfolio}"
-Cohesion: 0.50
-Nodes (4): 8. Feedback Animation Principles, Error States, Success States, Timing
+Cohesion: 0.15
+Nodes (12): 何为不做, "只有X左传"背后的心理学, 如何在 FomoGen 中添加低库存提醒, 步骤1:安装FomoGen, 步骤2: 前往紧缺( E), 步骤6:选择要应用到哪些产品, 步骤 3: 设置您的库存阈值, 步骤 4: 写您的提醒信件 (+4 more)
 
 ### Community 233 - "9. Pre-Design Checklists"
-Cohesion: 0.50
-Nodes (4): 9. Performance Principles, Optimization Strategies, Respecting User Preferences, What's Cheap to Animate
+Cohesion: 0.15
+Nodes (12): 哪些应用程序需要屏蔽- 哪些需要单独离开, 在一切都失败时为什么基于时间表的封锁工作, 堆叠最大影响的时间表, 如何在Android上的工作时间封锁社交媒体, 更深的点:系统击败意志力, 步骤1:下载思维守护, 步骤2:给予使用权, 步骤4:选择要屏蔽的应用程序 (+4 more)
 
 ### Community 234 - "1. Lottie Animations"
 Cohesion: 0.40
@@ -1272,8 +1295,8 @@ Cohesion: 0.40
 Nodes (5): 2. GSAP (GreenSock), Core Concepts, Principles, What Makes GSAP Different, When to Use GSAP
 
 ### Community 236 - "5. Particle Effects"
-Cohesion: 0.40
-Nodes (5): 5. Particle Effects, Libraries, Principles, Types of Particle Systems, When to Use
+Cohesion: 0.17
+Nodes (11): 1. 觉悟卫队—— 总体最佳—— 顶级选手, 2026年封锁Android上社交媒体的最佳应用, 2. AppBlock - 最佳定位屏蔽, 3. 自由——同时屏蔽手机+笔记本电脑的最佳方法, 4. 一个Sec——最有利于提高认识(不是硬阻塞), 5. 数字福祉 -- -- 最佳自由起点(附有主要说明), 为何大部分Android社交媒体封杀失败, 具体封锁TikTok怎么样? (+3 more)
 
 ### Community 237 - "6. User Persona Quick Reference"
 Cohesion: 0.40
@@ -1360,8 +1383,8 @@ Cohesion: 0.06
 Nodes (35): content, content, ./MobileMenuToggle.astro, @/components/common/Navbar.astro, ../components/docs-content/DocsHubPage.astro, @/components/docs-content/fomogen/configuration/ConfigurationPage.astro, ../../../../components/docs-content/fomogen/countdown-timers/CountdownTimersPage.astro, ../../../../components/docs-content/fomogen/exit-intent/ExitIntentPage.astro (+27 more)
 
 ### Community 258 - "10. Quick Reference"
-Cohesion: 0.50
-Nodes (4): Before PR, Before Release, 📝 MOBILE TESTING CHECKLIST, What to Skip (Consciously)
+Cohesion: 0.18
+Nodes (10): AppBlock( 重定制的最好), 一个Sec( 注意摩擦的最佳方法), 为Android保持关注(严格时间预算最佳), 为何Opal在Android上排出电池(VPN问题), 如何选择正确的 Opal 选项, 探索重点生态系统, 数字福利(内在基础最佳), 智囊团(最佳安卓-原生替代品——免费和私人) (+2 more)
 
 ### Community 259 - "7. Project Type Templates"
 Cohesion: 0.50
@@ -1404,8 +1427,8 @@ Cohesion: 0.67
 Nodes (3): 3. Supply Chain Security (A03), Attack Surface, Defense Principles
 
 ### Community 269 - "4. Attack Surface Mapping"
-Cohesion: 0.67
-Nodes (3): 4. Attack Surface Mapping, Prioritization Matrix, What to Map
+Cohesion: 0.20
+Nodes (9): 1. [FOMO GEN](https://apps.shopify.com/fomogen)(最佳总价值和速度), 2. [Loox](https://apps.shopify.com/loox)(视觉信托建设者), 3. [说明](https://apps.shopify.com/nudgify)(UX选择), 4. [Vitals](https://apps.shopify.com/vitals)(重量级), 5. [ Rocke 出售品编号:Pop](https://apps.shopify.com/window-shoppers)(遗产选择), 6. [SnapNoti](https://apps.shopify.com/snapnoti)("全能"轻量级), 7. [Fomo](https://apps.shopify.com/fomo)(企业基准), 结论 (+1 more)
 
 ### Community 270 - "6. Exceptional Conditions (A10 - New)"
 Cohesion: 0.67
@@ -1428,16 +1451,16 @@ Cohesion: 0.22
 Nodes (7): @/components/home/SocialProof.astro, @/components/home/SolutionsSection.astro, ICONS, s_components, solutionsData, LocalizeProps, getSolutions()
 
 ### Community 280 - "tailwindcss"
-Cohesion: 0.67
-Nodes (3): 4. Platform-Specific Testing, Platform Testing Strategy, What Differs Between iOS and Android?
+Cohesion: 0.20
+Nodes (9): 1%的CVR改进值是多少, 2026年换算率基准, Fix 3 — 审计您的应用程序堆栈, 用于速度杀手, 为何大多数店铺不畅销, 从平均到前20%的最快路径, 修复5——回收废弃的车, 修补 2 —— 添加推车紧急性并加倒计时器, 修补 4 ——优化产品页面布局 (+1 more)
 
 ### Community 281 - "tsx"
-Cohesion: 0.67
-Nodes (3): 5. Offline & Network Testing, How to Test Network Conditions, Offline Scenarios to Test
+Cohesion: 0.22
+Nodes (8): 1. 普遍兼容性, 2. 零豁免隐私, 30秒后如何设置, 3. 智能“套件模式”保护, 为什么ScreenVeil是2026年的Go-to工具, 判决:值得吗?, 拯救汁液的科学:为什么"真黑"重要, 推动您的商店太
 
 ### Community 282 - "@types/react"
 Cohesion: 0.67
-Nodes (3): 8. CI/CD Integration, Device Farm Options, What to Run Where
+Nodes (3): 5. Risk Prioritization, CVSS + Context, Prioritization Decision Tree
 
 ### Community 297 - "2. State Management Selection"
 Cohesion: 0.50
@@ -1447,20 +1470,112 @@ Nodes (4): 2. State Management Selection, Flutter State Decision, React Native S
 Cohesion: 0.50
 Nodes (3): name, type, version
 
+### Community 301 - "@tailwindcss/typography"
+Cohesion: 0.25
+Nodes (7): A. 每日和每次会议限制的实际运作情况, 一步一步:在两分钟内建立里尔卫队, 为什么屏蔽Reels和Shorts比屏蔽应用程序更难, 在Android上屏蔽短片的三种方式, 底线, 快速比较, 按平台划分
+
+### Community 303 - "zh/the-logic-of-focus.md"
+Cohesion: 0.25
+Nodes (7): 为了恢复你的时间 你不需要更多的意志力 你需要更好的逻辑护栏., 为何要注重无障碍事项, 数字健康之路, 智卫逻辑的三大支柱:, 焦点的逻辑:为什么大多数数字解毒Apps失败(以及如何修复), 结论: 恢复您的3小时, 进入思维护卫:工程故意护卫
+
+### Community 304 - "zh/youtube-background-play-2026-workaround.mdx"
+Cohesion: 0.25
+Nodes (7): 为什么2026年1月一切都坏了, 底线, 快速比较, 方法1 — ScreenVeil( 免费, 与任何app合作) QQ 建议, 方法2——新Pipe(免费,开源), 方法4——YouTube Premium Lite(7.99美元/月), 方法 3 — Firefox 移动, 带视频背景播放修正
+
+### Community 305 - "为何建筑问题"
+Cohesion: 0.29
+Nodes (6): 为何建筑问题, "意志"陷阱, 我的最后建议, 电池排水池, 逻辑矩阵, 隐私问题
+
+### Community 306 - "2. Font Pairing Principles"
+Cohesion: 0.33
+Nodes (6): 2. Font Pairing Principles, Avoid, Pairing Strategies, Safe Pairing Patterns, What Makes Fonts Work Together, What to Look For
+
+### Community 307 - "zh/monk-mode-willpower.md"
+Cohesion: 0.33
+Nodes (5): 20ms的秘密:为什么你的拇指比你的大脑更快, 和尚模式2.0的三条规则, 大师你的神经结构, 打造"认知防火墙", 结果:我复活之日
+
+### Community 308 - "zh/psychology-of-fomo-marketing.md"
+Cohesion: 0.33
+Nodes (5): FOMO的道德, 心理学研究所, 目 录, 社会验证:"数字安全"效应, "饥饿"的Heuristic
+
+### Community 309 - "zh/reclaim-focus-story.md"
+Cohesion: 0.33
+Nodes (5): 别打更硬,更聪明, 我尝试了“软”解决方案(它们失败), 数字健康框架的一部分, "焦点"的破约, 解决方案:建设"认知防火墙"
+
+### Community 310 - "zh/shopify-site-speed-social-proof.md"
+Cohesion: 0.33
+Nodes (5): 业绩支柱的一部分, 如何审计您的存储, 底线, 脚本标记对 App 嵌入块( 2026 标准), 责任人: JavaScript Bloat
+
+### Community 311 - "zh/zero-telemetry-blocker.md"
+Cohesion: 0.33
+Nodes (5): 为什么隐私等于表现, 分析的性能成本, 重拾你的神经结构, 隐私作为一个基金会, 零距离宣言
+
+### Community 312 - "3. SVG Animations"
+Cohesion: 0.40
+Nodes (5): 3. SVG Animations, Line Drawing Principles, Principles, Types of SVG Animation, When to Use SVG Animations
+
+### Community 313 - "1. Modular Scale Principles"
+Cohesion: 0.40
+Nodes (5): 1. Modular Scale Principles, Choosing Base Size, Common Ratios and When to Use, Generate Your Scale, What is a Modular Scale?
+
+### Community 314 - "3. Dark Mode Design"
+Cohesion: 0.40
+Nodes (5): 3. Dark Mode Design, Color Inversion Rules, Dark Mode Benefits, Dark Mode Color Strategy, Text Colors in Dark Mode
+
+### Community 315 - "zh/calculate-free-shipping-threshold.md"
+Cohesion: 0.40
+Nodes (4): 掌握边际, 数学:如何找到您的魔法号码, 积累经验, 结论
+
+### Community 316 - "zh/mobile-sticky-cart-guide.md"
+Cohesion: 0.40
+Nodes (4): "Thumb区"科学, 你可以期待的结果, 在按钮之外, 行动计划
+
+### Community 317 - "3. Line Height Principles"
+Cohesion: 0.50
+Nodes (4): 3. Line Height Principles, Adjustment Factors, Guidelines by Context, The Relationship
+
+### Community 318 - "4. Line Length Principles"
+Cohesion: 0.50
+Nodes (4): 4. Line Length Principles, Context Adjustments, How to Measure, Optimal Reading Width
+
+### Community 319 - "8. Hierarchy Principles"
+Cohesion: 0.50
+Nodes (4): 8. Hierarchy Principles, Testing Hierarchy, Typical Hierarchy, Visual Hierarchy Through Type
+
+### Community 320 - "9. Readability Psychology"
+Cohesion: 0.50
+Nodes (4): 9. Readability Psychology, Chunking for Comprehension, Cognitive Ease, F-Pattern Reading
+
+### Community 321 - "10. Quick Reference"
+Cohesion: 0.50
+Nodes (4): 10. Quick Reference, Contrast Ratios, Dark Mode Backgrounds, Text on Dark
+
+### Community 322 - "5. Semantic Colors"
+Cohesion: 0.50
+Nodes (4): 5. Semantic Colors, Consistent Meaning, Error State Colors, Semantic Color Rules
+
+### Community 323 - "6. Dynamic Color (Android)"
+Cohesion: 0.50
+Nodes (4): 6. Dynamic Color (Android), Fallback Colors, Material You, Supporting Dynamic Color
+
+### Community 324 - "8. Color Anti-Patterns"
+Cohesion: 0.67
+Nodes (3): 8. Color Anti-Patterns, ❌ AI Color Mistakes, ❌ Common Mistakes
+
 ## Knowledge Gaps
-- **2597 isolated node(s):** `Colors`, `Colors`, `$schema`, `style`, `rsc` (+2592 more)
+- **2778 isolated node(s):** `Colors`, `Colors`, `$schema`, `style`, `rsc` (+2773 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **17 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
+- **Why does `Touch Psychology Reference` connect `Touch Psychology Reference` to `mobile-design/SKILL.md`?**
+  _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **Why does `Mobile Performance Reference` connect `Mobile Performance Reference` to `mobile-design/SKILL.md`?**
-  _High betweenness centrality (0.004) - this node is a cross-community bridge._
-- **Why does `Mobile Backend Patterns` connect `Mobile Backend Patterns` to `mobile-design/SKILL.md`?**
-  _High betweenness centrality (0.004) - this node is a cross-community bridge._
+  _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **What connects `Colors`, `Colors`, `$schema` to the rest of the system?**
-  _2597 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2778 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `@/i18n/localize` be split into smaller, more focused modules?**
   _Cohesion score 0.06748911465892599 - nodes in this community are weakly interconnected._
 - **Should `design_system.py` be split into smaller, more focused modules?**

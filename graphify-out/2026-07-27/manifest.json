@@ -170,8 +170,8 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1785092251.3984153,
-    "ast_hash": "b571871c6722fed79472923facad503d",
+    "mtime": 1785093708.728063,
+    "ast_hash": "6bc24518ac6c0a82cdff03edc8421cfa",
     "semantic_hash": ""
   },
   "scratch/update_fr.py": {
@@ -385,8 +385,8 @@
     "semantic_hash": ""
   },
   "src/components/common/LanguageToggle.astro": {
-    "mtime": 1784965289.4601405,
-    "ast_hash": "4bcb382f6fd4b19fc37dec89ae3a1e79",
+    "mtime": 1785093609.5845273,
+    "ast_hash": "593012a615175e1ee7da8845a2709207",
     "semantic_hash": ""
   },
   "src/components/common/MobileMenuToggle.astro": {
@@ -2532,6 +2532,11 @@
   "scripts/translate-blog-i18n.ts": {
     "mtime": 1785092242.280967,
     "ast_hash": "b9f9b200c9b0fb8e4b8b315a2a3a2aca",
+    "semantic_hash": ""
+  },
+  "worker/index.ts": {
+    "mtime": 1785093596.107807,
+    "ast_hash": "4fa2aadf266070b2a4da46cc87c0fa41",
     "semantic_hash": ""
   }
 }

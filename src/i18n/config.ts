@@ -1,7 +1,7 @@
 export const i18nConfig = {
   defaultLocale: "en",
-  // Top 10 languages by internet users.
-  locales: ["en", "zh", "es", "ar", "id", "pt", "fr", "ja", "ru", "de"],
+  // Top 10 languages by internet users, plus Bengali.
+  locales: ["en", "zh", "es", "ar", "id", "pt", "fr", "ja", "ru", "de", "bn"],
   rtlLocales: ["ar"],
 } as const;
 
@@ -21,6 +21,7 @@ export const localeMeta: Record<
   ja: { fullLabel: "日本語", englishName: "Japanese", ogLocale: "ja_JP" },
   ru: { fullLabel: "Русский", englishName: "Russian", ogLocale: "ru_RU" },
   de: { fullLabel: "Deutsch", englishName: "German", ogLocale: "de_DE" },
+  bn: { fullLabel: "বাংলা", englishName: "Bengali", ogLocale: "bn_BD" },
 };
 
 export function isRtl(locale: string): boolean {
