@@ -2,7 +2,7 @@ import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { i18nConfig } from '../src/i18n/config';
 
 // Free, self-hosted translation — LibreTranslate. Zero cost, no signup, no rate limit.
-// Run once: docker run -ti --rm -p 5000:5000 libretranslate/libretranslate
+// Run once: npm run translate-docker
 // Then:     npm run translate-i18n
 const LT_URL = process.env.LIBRETRANSLATE_URL || 'http://localhost:5000';
 const LT_API_KEY = process.env.LIBRETRANSLATE_API_KEY || '';
@@ -79,7 +79,7 @@ async function checkServer() {
     console.error(
       `❌ Can't reach LibreTranslate at ${LT_URL}.\n` +
       '   Start it first:\n' +
-      '   docker run -ti --rm -p 5000:5000 libretranslate/libretranslate\n' +
+      '   npm run translate-docker\n' +
       '   (or set LIBRETRANSLATE_URL to point at a running instance)'
     );
     process.exit(1);

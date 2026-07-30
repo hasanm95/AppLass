@@ -11,7 +11,7 @@
     "extract-i18n": "tsx scripts/extract-translations.ts",
     "translate-i18n": "tsx scripts/translate-i18n.ts",
     "translate-blog-i18n": "tsx scripts/translate-blog-i18n.ts",
-    "translate-docker": "docker run -ti --rm -p 5000:5000 libretranslate/libretranslate",
+    "translate-docker": "docker run --rm -v libretranslate-models:/data alpine chown -R 1032:1032 /data && docker run -ti --rm -p 5000:5000 -e LT_LOAD_ONLY=en,bn -v libretranslate-models:/home/libretranslate/.local/share/argos-translate libretranslate/libretranslate",
     "deploy": "npm run build && wrangler deploy",
     "cf-typegen": "wrangler types"
   },
