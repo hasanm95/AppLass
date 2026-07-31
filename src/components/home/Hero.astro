@@ -31,23 +31,23 @@ const lang = getLangFromUrl(Astro.url);
       {/* Eyebrow */}
       <div class="mb-8 flex items-center gap-4">
         <span class="block h-px w-24 bg-cta" />
-        <span class="font-mono text-[10px] font-bold tracking-[0.2em] text-cta uppercase">
-          {localize("Elite Software Studio")}
+        <span class="font-mono text-[10px] font-bold tracking-[0.2em] text-cta-text uppercase">
+          {localize("Android and Shopify Apps")}
         </span>
       </div>
 
       {/* Massive Headline - Left Aligned */}
       <h1 class="mb-4 font-mono text-4xl leading-[1.1] font-bold tracking-tight md:text-6xl lg:text-7xl">
-        <span class="block">{localize("Mathematical Precision")}</span>
-        <span class="block text-primary">{localize("Meets Human-Centric")}</span>
-        <span class="block text-muted-foreground/30">
-          {localize("Design.")}
+        <span class="block">{localize("Save your battery.")}</span>
+        <span class="block text-primary">{localize("Protect your focus.")}</span>
+        <span class="block text-muted-accent">
+          {localize("Speed up your store.")}
         </span>
       </h1>
 
       {/* Subheading */}
       <p class="mb-8 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
-        {localize("Stop letting bloated software slow your growth. We engineer top-tier Shopify and mobile tools, guided by first-principles precision.")}
+        {localize("ScreenVeil plays video with the screen off. Mindful Guard blocks distracting apps without your data leaving the phone. FomoGen adds social proof to your Shopify store. None of them track you.")}
       </p>
 
       {/* Stats Row */}
@@ -57,7 +57,7 @@ const lang = getLangFromUrl(Astro.url);
             {localize("10K+")}
           </span>
           <span class="ml-2 text-muted-foreground">
-            {localize("Downloads")}
+            {localize("ScreenVeil downloads")}
           </span>
         </div>
         <div class="h-6 w-px bg-border" />
@@ -66,16 +66,16 @@ const lang = getLangFromUrl(Astro.url);
             {localize("4.4★")}
           </span>
           <span class="ml-2 text-muted-foreground">
-            {localize("Rating")}
+            {localize("Play Store rating")}
           </span>
         </div>
         <div class="h-6 w-px bg-border" />
         <div>
           <span class="font-mono text-2xl font-bold text-foreground md:text-3xl">
-            {localize("<2.1KB")}
+            {localize("0")}
           </span>
           <span class="ml-2 text-muted-foreground">
-            {localize("Payload")}
+            {localize("Trackers in any app")}
           </span>
         </div>
       </div>
@@ -86,7 +86,7 @@ const lang = getLangFromUrl(Astro.url);
           href={localePath(lang, '/apps')}
           class="group inline-flex cursor-pointer items-center justify-center gap-2 border-2 border-foreground bg-foreground px-8 py-4 font-semibold text-background transition-all duration-200 hover:bg-transparent hover:text-foreground"
         >
-          {localize("See Our Apps")}
+          {localize("See all three apps")}
           <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
         </a>
         <a

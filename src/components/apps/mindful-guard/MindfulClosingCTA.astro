@@ -18,20 +18,20 @@ import { playUrl } from "@/lib/utils";
       <div class="flex flex-col items-center justify-center gap-4 sm:gap-6">
         <LinkButton
           size="lg"
-          className="h-12 rounded-2xl bg-[#16A34A] px-8 text-base font-bold text-white shadow-xl shadow-emerald-900/25 transition-all duration-500 hover:-translate-y-1 hover:bg-[#15803D] active:translate-y-0 sm:h-16 sm:px-12 sm:text-lg"
+          className="h-12 rounded-2xl bg-[#15803D] px-8 text-base font-bold text-white shadow-xl shadow-emerald-900/25 transition-all duration-500 hover:-translate-y-1 hover:bg-[#15803D] active:translate-y-0 sm:h-16 sm:px-12 sm:text-lg"
           href={playUrl("app-landing-closing")}
           target="_blank"
           rel="noopener noreferrer"
         >
           {localize("Get it on Google Play")}
         </LinkButton>
-        <p class="text-sm font-bold text-slate-500">
+        <p class="text-sm font-bold text-slate-600">
           {localize("Free to download • No internet required • Zero data collection")}
         </p>
       </div>
 
       <div class="mt-10 pt-6 border-t border-slate-300 text-center sm:mt-14 sm:pt-8 md:mt-20 md:pt-10">
-        <p class="text-slate-500 font-medium">
+        <p class="text-slate-600 font-medium">
             {localize("Explore:")} <a href="/" class="text-[#15803D] hover:text-[#166534] transition-colors underline underline-offset-4 font-bold">Home</a> • <a href="/apps/screenveil" class="text-[#15803D] hover:text-[#166534] transition-colors underline underline-offset-4 font-bold">ScreenVeil</a> • <a href="/apps/fomogen" class="text-[#15803D] hover:text-[#166534] transition-colors underline underline-offset-4 font-bold">FomoGen</a>
         </p>
       </div>
