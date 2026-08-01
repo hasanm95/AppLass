@@ -1,16 +1,16 @@
 # Graph Report - AppLass  (2026-08-01)
 
 ## Corpus Check
-- 428 files · ~1,696,074 words
+- 429 files · ~1,698,815 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4049 nodes · 4588 edges · 301 communities (284 shown, 17 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 7 edges (avg confidence: 0.63)
+- 4052 nodes · 4605 edges · 300 communities (283 shown, 17 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.61)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `9778b9af`
+- Built from commit: `19fdefe6`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -297,14 +297,13 @@
 - tsx
 - @types/react
 - @types/react-dom
+- @astrojs/check
 - fix-getstaticpaths.js
 - split-pages.sh
 - use-localepath.js
 - env.d.ts
-- 2. State Management Selection
 - package.json
 - eslint-plugin-astro
-- clsx
 - typescript
 
 ## God Nodes (most connected - your core abstractions)
@@ -313,19 +312,19 @@
 3. `@/components/common/Section.astro` - 43 edges
 4. `@/i18n/config` - 43 edges
 5. `../layouts/Layout.astro` - 37 edges
-6. `@/components/common/Navbar.astro` - 26 edges
-7. `5. Re-render Optimization` - 26 edges
-8. `7. JavaScript Performance` - 26 edges
-9. `@/i18n/utils` - 25 edges
-10. `@/components/common/Footer.astro` - 25 edges
+6. `@/page-templates/AppsScreenveilPage.astro` - 27 edges
+7. `@/components/common/Navbar.astro` - 26 edges
+8. `5. Re-render Optimization` - 26 edges
+9. `7. JavaScript Performance` - 26 edges
+10. `@/i18n/utils` - 25 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `_generate_intelligent_overrides()` --calls--> `search()`  [INFERRED]
   .agent/.shared/ui-ux-pro-max/scripts/design_system.py → .agent/.shared/ui-ux-pro-max/scripts/core.py
 - `StickyDownloadBar()` --calls--> `localize()`  [EXTRACTED]
   src/components/apps/screenveil/StickyDownloadBar.tsx → src/i18n/localize.ts
-- `getFooterLinks()` --calls--> `localePath()`  [EXTRACTED]
-  src/components/common/Footer.astro → src/i18n/utils.ts
+- `getFooterLinks()` --calls--> `localize()`  [EXTRACTED]
+  src/components/common/Footer.astro → src/i18n/localize.ts
 - `Button()` --calls--> `cn()`  [EXTRACTED]
   src/components/ui/button.tsx → src/lib/utils.ts
 - `getFaqRegistry()` --calls--> `localize()`  [EXTRACTED]
@@ -334,11 +333,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (301 total, 17 thin omitted)
+## Communities (300 total, 17 thin omitted)
 
 ### Community 0 - "@/i18n/localize"
-Cohesion: 0.06
-Nodes (30): @/components/docs-content/fomogen/configuration/ConfigurationPage.astro, ../../../../components/docs-content/fomogen/countdown-timers/CountdownTimersPage.astro, ../../../../components/docs-content/fomogen/exit-intent/ExitIntentPage.astro, ../../../../components/docs-content/fomogen/progress-indicators/ProgressIndicatorsPage.astro, ../../../../components/docs-content/fomogen/purchase-notifications/PurchaseNotificationsPage.astro, ../../../../components/docs-content/fomogen/social-proof-badges/SocialProofBadgesPage.astro, ../../../../components/docs-content/fomogen/sticky-cart/StickyCartPage.astro, ../../../../components/docs-content/fomogen/stock-alerts/StockAlertsPage.astro (+22 more)
+Cohesion: 0.08
+Nodes (34): ./LanguageToggle.astro, list, ../components/docs-content/DocsHubPage.astro, @/i18n/config, i18nConfig, isRtl(), Locale, localeMeta (+26 more)
 
 ### Community 1 - "design_system.py"
 Cohesion: 0.05
@@ -413,8 +412,8 @@ Cohesion: 0.05
 Nodes (35): Audience-Specific (137-139), Competitor & Comparison (11-13), Content Formats (97-109), Content & SEO (1-10), Contents, Developer & Technical (133-136), Email Marketing (45-53), Events & Speaking (65-72) (+27 more)
 
 ### Community 19 - "@/page-templates/AppsMindfulGuardPage.astro"
-Cohesion: 0.09
-Nodes (37): @/components/apps/mindful-guard/ComparisonMatrix.astro, @/components/apps/mindful-guard/DifferentiatorsSection.astro, LucideIcon, mindfulData, @/components/apps/mindful-guard/LogicSection.astro, mindfulData, @/components/apps/mindful-guard/MindfulClosingCTA.astro, @/components/apps/mindful-guard/MindfulHero.astro (+29 more)
+Cohesion: 0.11
+Nodes (33): @/components/apps/mindful-guard/ComparisonMatrix.astro, @/components/apps/mindful-guard/DifferentiatorsSection.astro, LucideIcon, mindfulData, @/components/apps/mindful-guard/LogicSection.astro, mindfulData, @/components/apps/mindful-guard/MindfulClosingCTA.astro, @/components/apps/mindful-guard/MindfulHero.astro (+25 more)
 
 ### Community 20 - "Orchestrator - Native Multi-Agent Coordination"
 Cohesion: 0.06
@@ -422,7 +421,7 @@ Nodes (35): 🔴 AGENT BOUNDARY ENFORCEMENT (CRITICAL), Agent Chaining with Cont
 
 ### Community 21 - "Mobile Navigation Reference"
 Cohesion: 0.11
-Nodes (19): 1. Navigation Selection Decision Tree, 2. Tab Bar Navigation, 4. Drawer Navigation, 5. Modal Navigation, 7. Navigation State Persistence, 9. Navigation Anti-Patterns, ❌ AI Navigation Mistakes, Drawer Patterns (+11 more)
+Nodes (19): 1. Navigation Selection Decision Tree, 2. Tab Bar Navigation, 4. Drawer Navigation, 6. Deep Linking, 7. Navigation State Persistence, 9. Navigation Anti-Patterns, ❌ AI Navigation Mistakes, Deep Link Navigation Rules (+11 more)
 
 ### Community 22 - "Tailwind CSS Patterns (v4 - 2025)"
 Cohesion: 0.06
@@ -513,12 +512,12 @@ Cohesion: 0.07
 Nodes (27): @astrojs/mdx, @astrojs/react, @astrojs/sitemap, class-variance-authority, i18next, dependencies, astro, @astrojs/mdx (+19 more)
 
 ### Community 44 - "@/page-templates/AppsFomogenPage.astro"
-Cohesion: 0.14
-Nodes (20): @/components/apps/fomogen/CoreFeatures.astro, @/components/apps/fomogen/FomoGenCTA.astro, @/components/apps/fomogen/FomoGenHero.astro, @/components/apps/fomogen/PricingMatrix.astro, fomoData, @/components/apps/fomogen/PricingSection.astro, @/components/apps/fomogen/SpeedBenefitSection.astro, @/components/apps/fomogen/TestimonialsSection.astro (+12 more)
+Cohesion: 0.13
+Nodes (19): @/components/apps/fomogen/CoreFeatures.astro, @/components/apps/fomogen/FomoGenCTA.astro, @/components/apps/fomogen/FomoGenHero.astro, @/components/apps/fomogen/PricingMatrix.astro, fomoData, @/components/apps/fomogen/PricingSection.astro, @/components/apps/fomogen/SpeedBenefitSection.astro, @/components/apps/fomogen/TestimonialsSection.astro (+11 more)
 
 ### Community 45 - "localize"
-Cohesion: 0.23
-Nodes (11): @/components/apps/mindful-guard/MindfulFAQSection.astro, @/components/apps/screenveil/FAQSection.astro, @/components/common/FAQRegistrySection.astro, @/components/common/FAQSchema.astro, schema, ../../../../components/docs-content/fomogen/faq/FAQPage.astro, @/components/home/AnswerNuggets.astro, @/constants/faq-registry (+3 more)
+Cohesion: 0.05
+Nodes (36): @/components/apps/mindful-guard/MindfulFAQSection.astro, @/components/apps/screenveil/FAQSection.astro, content, content, content, href, @/components/common/FAQRegistrySection.astro, @/components/common/FAQSchema.astro (+28 more)
 
 ### Community 46 - "Game Audio Principles"
 Cohesion: 0.08
@@ -537,8 +536,8 @@ Cohesion: 0.09
 Nodes (22): 10. Anti-Patterns, 1. Testing Pyramid, 2. AAA Pattern, 3. Test Type Selection, 4. Unit Test Principles, 5. Integration Test Principles, 6. Mocking Principles, 7. Test Organization (+14 more)
 
 ### Community 50 - "@/page-templates/AppsPage.astro"
-Cohesion: 0.09
-Nodes (26): @/components/common/Footer.astro, currentLang, currentYear, footerLinks, getFooterLinks(), @/components/home/FoundersMoat.astro, @/components/home/ProductShowcase.astro, @/components/home/SocialProof.astro (+18 more)
+Cohesion: 0.11
+Nodes (23): @/components/home/FoundersMoat.astro, @/components/home/ProductShowcase.astro, @/components/home/SocialProof.astro, @/components/home/SolutionsSection.astro, ICONS, lang, solutionsData, @/components/home/Testimonials.astro (+15 more)
 
 ### Community 51 - "devDependencies"
 Cohesion: 0.09
@@ -958,7 +957,7 @@ Nodes (8): check_page(), find_pages(), is_page_file(), main(), Path, Check if th
 
 ### Community 156 - "Vulnerability Scanner"
 Cohesion: 0.22
-Nodes (9): 10. Anti-Patterns, 7. Scanning Methodology, 9. Cloud Security Considerations, Cloud-Specific Checks, Phase-Based Approach, 📋 Reference Files, 🔧 Runtime Scripts, Shared Responsibility (+1 more)
+Nodes (9): 10. Anti-Patterns, 3. Supply Chain Security (A03), 7. Scanning Methodology, Attack Surface, Defense Principles, Phase-Based Approach, 📋 Reference Files, 🔧 Runtime Scripts (+1 more)
 
 ### Community 157 - "/preview - Preview Management"
 Cohesion: 0.22
@@ -1033,24 +1032,24 @@ Cohesion: 0.25
 Nodes (7): Bottom line, How daily and per-session limits actually work, Platform by platform, Quick comparison, Step by step: set up Reel Guard in under two minutes, The three ways to block short-form video on Android, Why blocking Reels and Shorts is harder than blocking an app
 
 ### Community 175 - "en/the-logic-of-focus.md"
-Cohesion: 0.25
-Nodes (7): Conclusion: Reclaim Your 3 Hours, Enter Mindful Guard: Engineering Intentional Friction, The Logic of Focus: Why Most Digital Detox Apps Fail (and How to Fix It), The Path to Digital Wellness, The Three Pillars of the Mindful Guard Logic:, To reclaim your time, you don't need more willpower. You need better Logical Guardrails., Why Accessibility Matters for Focus
+Cohesion: 0.29
+Nodes (6): Conclusion: Reclaim Your 3 Hours, Enter Mindful Guard: Engineering Intentional Friction, The Path to Digital Wellness, The Three Pillars of the Mindful Guard Logic:, The "Willpower Gap" in Productivity, Why Accessibility Matters for Focus
 
 ### Community 176 - "en/youtube-background-play-2026-workaround.mdx"
 Cohesion: 0.25
 Nodes (7): Bottom line, Method 1 — ScreenVeil (free, works with any app) ⚡ Recommended, Method 2 — NewPipe (free, open-source), Method 3 — Firefox Mobile with Video Background Play Fix, Method 4 — YouTube Premium Lite ($7.99/month), Quick comparison, Why everything broke in January 2026
 
 ### Community 177 - "fr/the-logic-of-focus.md"
-Cohesion: 0.25
-Nodes (7): Conclusion : Récupérez vos 3 Heures, La Logique de la Concentration : Pourquoi la Plupart des Applications de Détox Numérique Échouent (et Comment y Remédier), Le Chemin vers le Bien-être Numérique, Les Trois Piliers de la Logique Mindful Guard :, Mindful Guard : Ingénierie de la Friction Intentionnelle, Pour reprendre le contrôle de votre temps, vous n'avez pas besoin de plus de volonté. Vous avez besoin de meilleures Garde-fous Logiques., Pourquoi l'Accessibilité est Essentielle pour la Concentration
+Cohesion: 0.29
+Nodes (6): Conclusion : Récupérez vos 3 Heures, Le Chemin vers le Bien-être Numérique, Le "Fossé de la Volonté" dans la Productivité, Les Trois Piliers de la Logique Mindful Guard :, Mindful Guard : Ingénierie de la Friction Intentionnelle, Pourquoi l'Accessibilité est Essentielle pour la Concentration
 
 ### Community 178 - "fr/youtube-background-play-2026-workaround.mdx"
 Cohesion: 0.25
 Nodes (7): Comparaison rapide, En résumé, Méthode 1 — ScreenVeil (gratuit, fonctionne avec n'importe quelle app) ⚡ Recommandé, Méthode 2 — NewPipe (gratuit, open-source), Méthode 3 — Firefox Mobile avec Video Background Play Fix, Méthode 4 — YouTube Premium Lite (7,99 $/mois), Pourquoi tout a cassé en janvier 2026
 
 ### Community 179 - "🔴 BUILD VERIFICATION (MANDATORY Before "Done")"
-Cohesion: 0.13
-Nodes (15): isRtl(), ../layouts/Layout.astro, alternateOgLocales, basePath, defaultBreadcrumbs, defaultDescription, defaultKeywords, defaultTitle (+7 more)
+Cohesion: 0.40
+Nodes (5): 5. E-commerce Guidelines {#e-commerce}, Color Thinking:, Key Principles (Not Fixed Rules), Layout Principles:, Psychology to Apply:
 
 ### Community 180 - "Project Scaffolding"
 Cohesion: 0.29
@@ -1190,7 +1189,7 @@ Nodes (5): La Confidentialité comme Fondement, Le Coût de Performance des Anal
 
 ### Community 217 - "Development Decision Process"
 Cohesion: 0.40
-Nodes (5): 5. E-commerce Guidelines {#e-commerce}, Color Thinking:, Key Principles (Not Fixed Rules), Layout Principles:, Psychology to Apply:
+Nodes (5): 6. SaaS Dashboard Guidelines {#saas}, Color Thinking:, Key Principles, Layout Principles:, Psychology to Apply:
 
 ### Community 218 - "API Style Selection (2025)"
 Cohesion: 0.40
@@ -1242,19 +1241,19 @@ Nodes (4): N+1 Problem, Optimization Priorities, Query Analysis Mindset, Query O
 
 ### Community 230 - "5. E-commerce Guidelines {#e-commerce}"
 Cohesion: 0.40
-Nodes (5): 6. SaaS Dashboard Guidelines {#saas}, Color Thinking:, Key Principles, Layout Principles:, Psychology to Apply:
+Nodes (5): 8. Portfolio Guidelines {#portfolio}, Color Thinking:, Key Principles, Psychology to Apply:, Structure Principles:
 
 ### Community 231 - "7. Landing Page Guidelines {#landing-page}"
 Cohesion: 0.40
-Nodes (5): 8. Portfolio Guidelines {#portfolio}, Color Thinking:, Key Principles, Psychology to Apply:, Structure Principles:
+Nodes (5): 9. Pre-Design Checklists, Before Choosing Colors, Before Delivery, Before Finalizing Layout, Before Starting ANY Design
 
 ### Community 232 - "8. Portfolio Guidelines {#portfolio}"
-Cohesion: 0.40
-Nodes (5): 9. Pre-Design Checklists, Before Choosing Colors, Before Delivery, Before Finalizing Layout, Before Starting ANY Design
+Cohesion: 0.50
+Nodes (4): 1. Color Theory Fundamentals, Color Relationships, How to Choose a Scheme:, The Color Wheel
 
 ### Community 233 - "9. Pre-Design Checklists"
 Cohesion: 0.50
-Nodes (4): 1. Color Theory Fundamentals, Color Relationships, How to Choose a Scheme:, The Color Wheel
+Nodes (4): 10. Complexity Estimation, Large Projects (Weeks), Medium Projects (Days), Quick Projects (Hours)
 
 ### Community 234 - "1. Lottie Animations"
 Cohesion: 0.50
@@ -1266,7 +1265,7 @@ Nodes (4): 7. Accessibility Guidelines, Contrast Requirements (WCAG), How to Che
 
 ### Community 236 - "5. Particle Effects"
 Cohesion: 0.50
-Nodes (4): 10. Complexity Estimation, Large Projects (Weeks), Medium Projects (Days), Quick Projects (Hours)
+Nodes (4): 1. Framework Selection, Framework Comparison, Master Decision Tree, When to Choose Native
 
 ### Community 237 - "6. User Persona Quick Reference"
 Cohesion: 0.40
@@ -1310,7 +1309,7 @@ Nodes (4): Au-delà du Bouton, La Science de la "Zone du Pouce", Plan d'Action, 
 
 ### Community 247 - "Quick Reference"
 Cohesion: 0.50
-Nodes (4): 10. Navigation Checklist, Before Every Screen, Before Navigation Architecture, Before Release
+Nodes (4): 2. State Management Selection, Flutter State Decision, React Native State Decision, State Management Anti-Patterns
 
 ### Community 248 - "Authentication Patterns"
 Cohesion: 0.50
@@ -1346,11 +1345,11 @@ Nodes (3): Comparison, Decision Tree, ORM Selection (2025)
 
 ### Community 256 - "10. Complexity Estimation"
 Cohesion: 0.50
-Nodes (4): 1. Framework Selection, Framework Comparison, Master Decision Tree, When to Choose Native
+Nodes (4): 10. Navigation Checklist, Before Every Screen, Before Navigation Architecture, Before Release
 
 ### Community 257 - "4. 3D CSS Transforms"
-Cohesion: 0.10
-Nodes (28): content, content, ./LanguageToggle.astro, list, ./MobileMenuToggle.astro, @/components/common/Navbar.astro, ../components/docs-content/DocsHubPage.astro, ../components/docs-content/fomogen/FomogenDocsPage.astro (+20 more)
+Cohesion: 0.09
+Nodes (27): @/components/common/Footer.astro, currentLang, currentYear, footerLinks, getFooterLinks(), ./MobileMenuToggle.astro, @/components/common/Navbar.astro, ../components/docs-content/fomogen/FomogenDocsPage.astro (+19 more)
 
 ### Community 258 - "10. Quick Reference"
 Cohesion: 0.50
@@ -1393,12 +1392,12 @@ Cohesion: 0.67
 Nodes (3): 2025 Key Changes, 2. OWASP Top 10:2025, Risk Categories
 
 ### Community 268 - "3. Supply Chain Security (A03)"
-Cohesion: 0.67
-Nodes (3): 3. Supply Chain Security (A03), Attack Surface, Defense Principles
+Cohesion: 0.50
+Nodes (4): 5. Modal Navigation, Modal Dismissal, Modal Types, Modal vs Push
 
 ### Community 269 - "4. Attack Surface Mapping"
 Cohesion: 0.50
-Nodes (4): 6. Deep Linking, Deep Link Navigation Rules, URL Structure, Why Deep Links from Day One
+Nodes (4): 8. Transition Animations, Custom Transitions, Platform Defaults, Shared Element Transitions
 
 ### Community 270 - "6. Exceptional Conditions (A10 - New)"
 Cohesion: 0.67
@@ -1409,8 +1408,8 @@ Cohesion: 0.67
 Nodes (3): 8. Code Pattern Analysis, High-Risk Patterns, Secret Patterns
 
 ### Community 272 - "9. Cloud Security Considerations"
-Cohesion: 0.50
-Nodes (4): 8. Transition Animations, Custom Transitions, Platform Defaults, Shared Element Transitions
+Cohesion: 0.67
+Nodes (3): 5. Risk Prioritization, CVSS + Context, Prioritization Decision Tree
 
 ### Community 275 - "content.config.ts"
 Cohesion: 0.50
@@ -1422,11 +1421,7 @@ Nodes (3): 4. Attack Surface Mapping, Prioritization Matrix, What to Map
 
 ### Community 282 - "@types/react"
 Cohesion: 0.67
-Nodes (3): 5. Risk Prioritization, CVSS + Context, Prioritization Decision Tree
-
-### Community 297 - "2. State Management Selection"
-Cohesion: 0.50
-Nodes (4): 2. State Management Selection, Flutter State Decision, React Native State Decision, State Management Anti-Patterns
+Nodes (3): 9. Cloud Security Considerations, Cloud-Specific Checks, Shared Responsibility
 
 ### Community 298 - "package.json"
 Cohesion: 0.50
@@ -1442,14 +1437,14 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Mobile Backend Patterns` connect `Mobile Backend Patterns` to `mobile-design/SKILL.md`?**
   _High betweenness centrality (0.004) - this node is a cross-community bridge._
-- **Why does `Mobile Developer` connect `Mobile Developer` to `mobile-design/SKILL.md`?**
+- **Why does `Mobile Testing Patterns` connect `Mobile Testing Patterns` to `mobile-design/SKILL.md`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
-- **Why does `@/i18n/localize` connect `4. 3D CSS Transforms` to `@/i18n/localize`, `@/lib/legal-registry`, `@/components/common/Section.astro`, `@/page-templates/AppsFomogenPage.astro`, `localize`, `@/page-templates/CompareDetailPage.astro`, `@/page-templates/AppsPage.astro`, `@/page-templates/AppsMindfulGuardPage.astro`, `🔴 BUILD VERIFICATION (MANDATORY Before "Done")`, `@/page-templates/BlogPostPage.astro`?**
+- **Why does `@/i18n/localize` connect `localize` to `@/i18n/localize`, `4. 3D CSS Transforms`, `@/lib/legal-registry`, `@/components/common/Section.astro`, `@/page-templates/AppsFomogenPage.astro`, `@/page-templates/CompareDetailPage.astro`, `@/page-templates/AppsPage.astro`, `@/page-templates/AppsMindfulGuardPage.astro`, `@/page-templates/BlogPostPage.astro`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **What connects `Colors`, `Colors`, `$schema` to the rest of the system?**
   _2590 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `@/i18n/localize` be split into smaller, more focused modules?**
-  _Cohesion score 0.06015037593984962 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07575757575757576 - nodes in this community are weakly interconnected._
 - **Should `design_system.py` be split into smaller, more focused modules?**
   _Cohesion score 0.05263157894736842 - nodes in this community are weakly interconnected._
 - **Should `Android Platform Guidelines` be split into smaller, more focused modules?**

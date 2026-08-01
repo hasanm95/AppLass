@@ -6,6 +6,15 @@ category: "Android Apps"
 keywords: "reclaim focus, dopamine loop, cognitive firewall app, stop phone addiction android, mindful guard android"
 author: "AppLass Team"
 excerpt: "I used to spend my mornings fighting my phone instead of building my business. Here is how I used 'Strict Logic' to win the war for my attention."
+faqs:
+  - question: "How long does it take to refocus after a single notification?"
+    answer: "Roughly 23 minutes. A single interruption is enough to break a flow state, which is why notification-based nudges are counterproductive — the interruption itself causes the damage the app claims to prevent."
+  - question: "Why don't soft app blockers work?"
+    answer: "Soft blockers let you click '5 more minutes' and bypass your own goals. The bypass is the failure: at the moment you most want to override a block is exactly the moment the block needs to hold. A limit you can dismiss is a suggestion, not a constraint."
+  - question: "What is a cognitive firewall?"
+    answer: "A cognitive firewall applies network firewall logic to attention. Instead of nudging you toward better behaviour, it enforces access rules at the system level — the block is a hard wall rather than a warning, so willpower is never the thing being tested."
+  - question: "Why avoid VPN-based focus apps?"
+    answer: "VPN-based blockers route all of your private traffic through the provider's servers to filter it. That is a significant amount of trust to extend to a productivity app, and it adds latency across every connection on the device."
 thumbnail: "../../../assets/blogs/my-focus-story.png"
 featured: true
 sidebarApps:

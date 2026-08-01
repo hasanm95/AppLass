@@ -675,7 +675,7 @@
     "semantic_hash": ""
   },
   "src/i18n/locales/en.json": {
-    "mtime": 1785566534.4143355,
+    "mtime": 1785568109.4381258,
     "ast_hash": "6620fd9318d66ae30c0a428190b631da",
     "semantic_hash": ""
   },
@@ -730,13 +730,13 @@
     "semantic_hash": ""
   },
   "src/page-templates/AboutPage.astro": {
-    "mtime": 1785522697.213445,
-    "ast_hash": "678dbaa41acd729140dab56f078974c0",
+    "mtime": 1785566937.1766868,
+    "ast_hash": "db0e98d5c7155225025dd3d535085fde",
     "semantic_hash": ""
   },
   "src/page-templates/AppsFomogenPage.astro": {
-    "mtime": 1785523019.6032066,
-    "ast_hash": "de9a21f9c95fe627262cc0057f84a09b",
+    "mtime": 1785566937.1793065,
+    "ast_hash": "d7fd21d997c75b7eb1ce1fc461776e42",
     "semantic_hash": ""
   },
   "src/page-templates/AppsFomogenPricingPage.astro": {
@@ -745,8 +745,8 @@
     "semantic_hash": ""
   },
   "src/page-templates/AppsMindfulGuardPage.astro": {
-    "mtime": 1785523019.6021268,
-    "ast_hash": "8d9e13e55c834c20b82ec437b9ac6070",
+    "mtime": 1785566937.1820462,
+    "ast_hash": "380164dd40559c57c3d21d158f4597b3",
     "semantic_hash": ""
   },
   "src/page-templates/AppsPage.astro": {
@@ -755,8 +755,8 @@
     "semantic_hash": ""
   },
   "src/page-templates/AppsScreenveilPage.astro": {
-    "mtime": 1785522989.9016829,
-    "ast_hash": "a00a2904aca2f3dd5f6cd63b0c753c11",
+    "mtime": 1785566937.1843164,
+    "ast_hash": "971bdf493b89314b473515288c25a270",
     "semantic_hash": ""
   },
   "src/page-templates/BlogIndexPage.astro": {
@@ -770,8 +770,8 @@
     "semantic_hash": ""
   },
   "src/page-templates/CompareDetailPage.astro": {
-    "mtime": 1785523019.6036317,
-    "ast_hash": "a7af0d67a42094d2b9f62a9fca3c5af8",
+    "mtime": 1785566937.192983,
+    "ast_hash": "e5af249be7097a3d5b1cb0462cb33702",
     "semantic_hash": ""
   },
   "src/page-templates/ComparePage.astro": {
@@ -780,8 +780,8 @@
     "semantic_hash": ""
   },
   "src/page-templates/DigitalWellnessPage.astro": {
-    "mtime": 1785523019.6017585,
-    "ast_hash": "a8aab0607e4cd33d7070b85e57f6c06c",
+    "mtime": 1785567458.8181233,
+    "ast_hash": "9a31c13bcec72d9603051047dbd9a8bf",
     "semantic_hash": ""
   },
   "src/page-templates/DocsArticlePage.astro": {
@@ -800,8 +800,8 @@
     "semantic_hash": ""
   },
   "src/page-templates/EcommerceGuidePage.astro": {
-    "mtime": 1785523389.1510878,
-    "ast_hash": "ccb4b6813781b87c80c2c622f269c8c5",
+    "mtime": 1785566937.1892147,
+    "ast_hash": "29c9738cbf08fcf4499bc10f7a3338de",
     "semantic_hash": ""
   },
   "src/page-templates/HomePage.astro": {
@@ -1960,8 +1960,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/en/logic-comparison-matrix.md": {
-    "mtime": 1785566498.4406052,
-    "ast_hash": "f365f3bb0df4480beff0a48141741219",
+    "mtime": 1785567985.8401442,
+    "ast_hash": "6a2b3381d1214b9fa4010b3fc9af44a0",
     "semantic_hash": ""
   },
   "src/content/blog/en/mobile-sticky-cart-guide.md": {
@@ -1970,8 +1970,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/en/monk-mode-willpower.md": {
-    "mtime": 1785566498.4390748,
-    "ast_hash": "410a35f93933d6a582c024e6cadf9ad1",
+    "mtime": 1785568021.945824,
+    "ast_hash": "bf8b65d9302abeafb59ca70853c150a2",
     "semantic_hash": ""
   },
   "src/content/blog/en/opal-alternatives-android.mdx": {
@@ -1985,8 +1985,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/en/reclaim-focus-story.md": {
-    "mtime": 1785566498.4436948,
-    "ast_hash": "79ffc4ab8b91c631191430a96ed7889f",
+    "mtime": 1785568011.8123188,
+    "ast_hash": "0c7a3ca36663f68ff5d9be8b4d152d89",
     "semantic_hash": ""
   },
   "src/content/blog/en/shopify-conversion-rate-2026.mdx": {
@@ -2005,8 +2005,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/en/the-logic-of-focus.md": {
-    "mtime": 1785566498.4502509,
-    "ast_hash": "a1feec5020e688f4e3a55f046139b854",
+    "mtime": 1785567972.9481318,
+    "ast_hash": "0f31d19271769ba05fd5252fa9f7b1d8",
     "semantic_hash": ""
   },
   "src/content/blog/en/youtube-background-play-2026-workaround.mdx": {
@@ -2020,8 +2020,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/en/zero-telemetry-blocker.md": {
-    "mtime": 1785566498.4450877,
-    "ast_hash": "26fcf12b9598afa539f364edb7dfccab",
+    "mtime": 1785568001.10443,
+    "ast_hash": "8224c7c22bb02c412dd133f5409e8888",
     "semantic_hash": ""
   },
   "src/content/blog/fr/add-low-stock-alerts-shopify.md": {
@@ -2065,8 +2065,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/logic-comparison-matrix.md": {
-    "mtime": 1785566498.426097,
-    "ast_hash": "c47dc3f263caa50ae39e729b974a218e",
+    "mtime": 1785568066.0688446,
+    "ast_hash": "3c350fa913128df95e8b7641628f1974",
     "semantic_hash": ""
   },
   "src/content/blog/fr/mobile-sticky-cart-guide.md": {
@@ -2075,8 +2075,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/monk-mode-willpower.md": {
-    "mtime": 1785566498.44211,
-    "ast_hash": "e515862ad30064b3bd5e8ec578aabafb",
+    "mtime": 1785568101.776367,
+    "ast_hash": "36d969c7c202a3a28e574af2695d825c",
     "semantic_hash": ""
   },
   "src/content/blog/fr/opal-alternatives-android.mdx": {
@@ -2090,8 +2090,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/reclaim-focus-story.md": {
-    "mtime": 1785566498.4296427,
-    "ast_hash": "6e4162f91cb002ac47b53e55b6e9930e",
+    "mtime": 1785568091.3191261,
+    "ast_hash": "20a69a214eb5abce1078faa994da1740",
     "semantic_hash": ""
   },
   "src/content/blog/fr/shopify-conversion-rate-2026.mdx": {
@@ -2110,8 +2110,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/the-logic-of-focus.md": {
-    "mtime": 1785566498.4517624,
-    "ast_hash": "cabf6e86cfef68a62ba2c67d8ba33496",
+    "mtime": 1785568046.7665734,
+    "ast_hash": "db32f181b5ebc53895af6a3b58f452c4",
     "semantic_hash": ""
   },
   "src/content/blog/fr/youtube-background-play-2026-workaround.mdx": {
@@ -2125,8 +2125,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/zero-telemetry-blocker.md": {
-    "mtime": 1785566498.4369736,
-    "ast_hash": "cdd4a7f122442722307c8f7904b3d99c",
+    "mtime": 1785568081.5542297,
+    "ast_hash": "4583ee01687f236bdb70833c24f01b83",
     "semantic_hash": ""
   },
   "public/apple-touch-icon.png": {
@@ -2492,6 +2492,11 @@
   "src/components/home/Testimonials.astro": {
     "mtime": 1785522337.2455418,
     "ast_hash": "9523709063f1d2ba452a7566fb408b03",
+    "semantic_hash": ""
+  },
+  "src/lib/lastUpdated.ts": {
+    "mtime": 1785566925.3711786,
+    "ast_hash": "1222e4590a73b8cc24aca8f6de2d5dc0",
     "semantic_hash": ""
   }
 }

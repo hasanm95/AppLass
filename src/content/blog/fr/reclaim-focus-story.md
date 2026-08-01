@@ -6,6 +6,15 @@ category: "Applications Android"
 keywords: "retrouver concentration, boucle dopamine, pare-feu cognitif, arrêter addiction téléphone android, mindful guard android"
 author: "Équipe AppLass"
 excerpt: "J'avais l'habitude de passer mes matinées à lutter contre mon téléphone au lieu de développer mon activité. Voici comment j'ai utilisé la 'Logique Stricte' pour gagner la guerre de mon attention."
+faqs:
+  - question: "Combien de temps faut-il pour se reconcentrer après une seule notification ?"
+    answer: "Environ 23 minutes. Une seule interruption suffit à briser un état de flow, ce qui rend les rappels par notification contre-productifs : l'interruption elle-même cause précisément le dommage que l'application prétend éviter."
+  - question: "Pourquoi les bloqueurs d'applications « souples » ne fonctionnent-ils pas ?"
+    answer: "Les bloqueurs souples vous laissent cliquer sur « 5 minutes de plus » et contourner vos propres objectifs. Le contournement est l'échec : le moment où vous voulez le plus outrepasser un blocage est exactement celui où ce blocage doit tenir. Une limite que l'on peut ignorer est une suggestion, pas une contrainte."
+  - question: "Qu'est-ce qu'un pare-feu cognitif ?"
+    answer: "Un pare-feu cognitif applique la logique d'un pare-feu réseau à l'attention. Au lieu de vous inciter à mieux vous comporter, il applique des règles d'accès au niveau du système : le blocage est un mur, pas un avertissement, si bien que la volonté n'est jamais ce qui est mis à l'épreuve."
+  - question: "Pourquoi éviter les applications de concentration basées sur un VPN ?"
+    answer: "Les bloqueurs par VPN font transiter l'ensemble de votre trafic privé par les serveurs du fournisseur pour le filtrer. C'est un niveau de confiance considérable à accorder à une application de productivité, et cela ajoute de la latence à toutes les connexions de l'appareil."
 thumbnail: "../../../assets/blogs/my-focus-story.png"
 featured: true
 sidebarApps:

@@ -3442,8 +3442,8 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "package_devdependencies_types_node",
-      "community": 300,
-      "community_name": "clsx",
+      "community": 284,
+      "community_name": "@astrojs/check",
       "norm_label": "@types/node"
     },
     {
@@ -3453,8 +3453,8 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "types_node",
-      "community": 300,
-      "community_name": "clsx",
+      "community": 284,
+      "community_name": "@astrojs/check",
       "norm_label": "@types/node"
     },
     {
@@ -3937,8 +3937,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "astro_assets",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "astro:assets"
     },
     {
@@ -4005,8 +4005,8 @@
       "_origin": "ast",
       "source_location": "L1",
       "id": "src_components_ui_button",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/components/ui/button"
     },
     {
@@ -4017,8 +4017,8 @@
       "_origin": "ast",
       "source_location": "L1",
       "id": "src_i18n_localize",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "@/i18n/localize"
     },
     {
@@ -4462,8 +4462,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_apps_screenveil_screenveilhero",
-      "community": 19,
-      "community_name": "@/page-templates/AppsMindfulGuardPage.astro",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "@/components/apps/screenveil/screenveilhero.astro"
     },
     {
@@ -4473,8 +4473,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_screenveil_hero_mockup_png",
-      "community": 19,
-      "community_name": "@/page-templates/AppsMindfulGuardPage.astro",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "@/assets/apps/screenveil/hero-mockup.png"
     },
     {
@@ -4612,8 +4612,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_blog_carttimecta",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "carttimecta.astro"
     },
     {
@@ -4623,8 +4623,8 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "src_components_blog_carttimecta_content",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "content"
     },
     {
@@ -4634,8 +4634,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_blog_fomogencta",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "fomogencta.astro"
     },
     {
@@ -4645,8 +4645,8 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "src_components_blog_fomogencta_content",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "content"
     },
     {
@@ -4656,8 +4656,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_blog_mindfulguardcta",
-      "community": 19,
-      "community_name": "@/page-templates/AppsMindfulGuardPage.astro",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "mindfulguardcta.astro"
     },
     {
@@ -4667,8 +4667,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_components_blog_mindfulguardcta_href",
-      "community": 19,
-      "community_name": "@/page-templates/AppsMindfulGuardPage.astro",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "href"
     },
     {
@@ -4678,8 +4678,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "src_components_blog_mindfulguardcta_content",
-      "community": 19,
-      "community_name": "@/page-templates/AppsMindfulGuardPage.astro",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "content"
     },
     {
@@ -4748,8 +4748,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_common_footer",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/components/common/footer.astro"
     },
     {
@@ -4759,8 +4759,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_components_common_footer_currentlang",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "currentlang"
     },
     {
@@ -4770,8 +4770,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "src_components_common_footer_currentyear",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "currentyear"
     },
     {
@@ -4781,8 +4781,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_components_common_footer_getfooterlinks",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "getfooterlinks()"
     },
     {
@@ -4792,8 +4792,8 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "src_components_common_footer_footerlinks",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "footerlinks"
     },
     {
@@ -4803,8 +4803,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_logo_png",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/assets/logo.png"
     },
     {
@@ -4826,8 +4826,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_common_languagetoggle",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "./languagetoggle.astro"
     },
     {
@@ -4837,8 +4837,8 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "src_components_common_languagetoggle_list",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "list"
     },
     {
@@ -4848,8 +4848,8 @@
       "source_location": "L109",
       "_origin": "ast",
       "id": "src_components_common_languagetoggle_connectedcallback",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "connectedcallback()"
     },
     {
@@ -5014,8 +5014,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_docs_content_docshubpage",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "../components/docs-content/docshubpage.astro"
     },
     {
@@ -5038,8 +5038,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_docs_content_fomogen_configuration_configurationpage",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "@/components/docs-content/fomogen/configuration/configurationpage.astro"
     },
     {
@@ -5050,8 +5050,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_docs_content_fomogen_countdown_timers_countdowntimerspage",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "../../../../components/docs-content/fomogen/countdown-timers/countdowntimerspage.astro"
     },
     {
@@ -5062,8 +5062,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_docs_content_fomogen_exit_intent_exitintentpage",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "../../../../components/docs-content/fomogen/exit-intent/exitintentpage.astro"
     },
     {
@@ -5086,8 +5086,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_docs_content_fomogen_progress_indicators_progressindicatorspage",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "../../../../components/docs-content/fomogen/progress-indicators/progressindicatorspage.astro"
     },
     {
@@ -5098,8 +5098,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_docs_content_fomogen_purchase_notifications_purchasenotificationspage",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "../../../../components/docs-content/fomogen/purchase-notifications/purchasenotificationspage.astro"
     },
     {
@@ -5122,8 +5122,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_docs_content_fomogen_social_proof_badges_socialproofbadgespage",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "../../../../components/docs-content/fomogen/social-proof-badges/socialproofbadgespage.astro"
     },
     {
@@ -5134,8 +5134,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_docs_content_fomogen_sticky_cart_stickycartpage",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "../../../../components/docs-content/fomogen/sticky-cart/stickycartpage.astro"
     },
     {
@@ -5146,8 +5146,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_docs_content_fomogen_stock_alerts_stockalertspage",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "../../../../components/docs-content/fomogen/stock-alerts/stockalertspage.astro"
     },
     {
@@ -5158,8 +5158,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_docs_content_fomogen_trust_badges_trustbadgespage",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "../../../../components/docs-content/fomogen/trust-badges/trustbadgespage.astro"
     },
     {
@@ -5182,8 +5182,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_docs_content_mindful_guard_installation_mindfulinstallationpage",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "../../../../components/docs-content/mindful-guard/installation/mindfulinstallationpage.astro"
     },
     {
@@ -5194,8 +5194,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_docs_content_mindful_guard_strict_mode_strictmodepage",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "../../../../components/docs-content/mindful-guard/strict-mode/strictmodepage.astro"
     },
     {
@@ -5218,8 +5218,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_docs_content_screenveil_amoled_efficiency_amoledefficiencypage",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "../../../../components/docs-content/screenveil/amoled-efficiency/amoledefficiencypage.astro"
     },
     {
@@ -5312,8 +5312,8 @@
       "_origin": "ast",
       "source_location": "L1",
       "id": "src_components_i18n_localize",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "localize.tsx"
     },
     {
@@ -5392,8 +5392,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_home_solutionssection",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 50,
+      "community_name": "@/page-templates/AppsPage.astro",
       "norm_label": "@/components/home/solutionssection.astro"
     },
     {
@@ -5403,8 +5403,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "src_components_home_solutionssection_icons",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 50,
+      "community_name": "@/page-templates/AppsPage.astro",
       "norm_label": "icons"
     },
     {
@@ -5414,8 +5414,8 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "src_components_home_solutionssection_lang",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 50,
+      "community_name": "@/page-templates/AppsPage.astro",
       "norm_label": "lang"
     },
     {
@@ -5425,8 +5425,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "src_components_home_solutionssection_solutionsdata",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 50,
+      "community_name": "@/page-templates/AppsPage.astro",
       "norm_label": "solutionsdata"
     },
     {
@@ -5448,8 +5448,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_components_i18n_localize_localizeprops",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "localizeprops"
     },
     {
@@ -5459,8 +5459,8 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "src_components_i18n_localize_localize",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "localize()"
     },
     {
@@ -5566,8 +5566,8 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "src_components_ui_button_buttonvariants",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "buttonvariants"
     },
     {
@@ -5577,8 +5577,8 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "src_components_ui_button_button",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "button()"
     },
     {
@@ -5973,8 +5973,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "src_i18n_config_localemeta",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "localemeta"
     },
     {
@@ -5984,8 +5984,8 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "src_i18n_config_isrtl",
-      "community": 179,
-      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "isrtl()"
     },
     {
@@ -6097,8 +6097,8 @@
       "_origin": "ast",
       "source_location": "L1",
       "id": "src_layouts_layout",
-      "community": 179,
-      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "../layouts/layout.astro"
     },
     {
@@ -6108,8 +6108,8 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "src_layouts_layout_defaultdescription",
-      "community": 179,
-      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "defaultdescription"
     },
     {
@@ -6119,8 +6119,8 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "src_layouts_layout_defaulttitle",
-      "community": 179,
-      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "defaulttitle"
     },
     {
@@ -6130,8 +6130,8 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "src_layouts_layout_defaultkeywords",
-      "community": 179,
-      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "defaultkeywords"
     },
     {
@@ -6141,8 +6141,8 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "src_layouts_layout_localeprefixpattern",
-      "community": 179,
-      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "localeprefixpattern"
     },
     {
@@ -6152,8 +6152,8 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "src_layouts_layout_basepath",
-      "community": 179,
-      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "basepath"
     },
     {
@@ -6163,8 +6163,8 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "src_layouts_layout_hreflangalternates",
-      "community": 179,
-      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "hreflangalternates"
     },
     {
@@ -6174,8 +6174,8 @@
       "source_location": "L71",
       "_origin": "ast",
       "id": "src_layouts_layout_alternateoglocales",
-      "community": 179,
-      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "alternateoglocales"
     },
     {
@@ -6185,8 +6185,8 @@
       "source_location": "L75",
       "_origin": "ast",
       "id": "src_layouts_layout_defaultbreadcrumbs",
-      "community": 179,
-      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "defaultbreadcrumbs"
     },
     {
@@ -6196,8 +6196,8 @@
       "source_location": "L86",
       "_origin": "ast",
       "id": "src_layouts_layout_mindfulguardschema",
-      "community": 179,
-      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "mindfulguardschema"
     },
     {
@@ -6207,8 +6207,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_i18n_utils",
-      "community": 179,
-      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "../i18n/utils"
     },
     {
@@ -6218,8 +6218,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_globals_css",
-      "community": 179,
-      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "../globals.css"
     },
     {
@@ -6229,8 +6229,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_fonts_css",
-      "community": 179,
-      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "../fonts.css"
     },
     {
@@ -6240,8 +6240,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_tw_animate_css",
-      "community": 179,
-      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "../tw-animate.css"
     },
     {
@@ -6340,8 +6340,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_lib_docs_registry",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "@/lib/docs-registry"
     },
     {
@@ -6351,9 +6351,65 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_lib_docs_registry_docsregistry",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "docsregistry"
+    },
+    {
+      "label": "@/lib/lastUpdated",
+      "file_type": "code",
+      "source_file": "src/lib/lastUpdated.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "id": "src_lib_lastupdated",
+      "community": 45,
+      "community_name": "localize",
+      "norm_label": "@/lib/lastupdated"
+    },
+    {
+      "label": "root",
+      "file_type": "code",
+      "source_file": "src/lib/lastUpdated.ts",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "src_lib_lastupdated_root",
+      "community": 45,
+      "community_name": "localize",
+      "norm_label": "root"
+    },
+    {
+      "label": "cache",
+      "file_type": "code",
+      "source_file": "src/lib/lastUpdated.ts",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "src_lib_lastupdated_cache",
+      "community": 45,
+      "community_name": "localize",
+      "norm_label": "cache"
+    },
+    {
+      "label": "commitDate()",
+      "file_type": "code",
+      "source_file": "src/lib/lastUpdated.ts",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "src_lib_lastupdated_commitdate",
+      "community": 45,
+      "community_name": "localize",
+      "norm_label": "commitdate()"
+    },
+    {
+      "label": "lastUpdatedFor()",
+      "file_type": "code",
+      "source_file": "src/lib/lastUpdated.ts",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "src_lib_lastupdated_lastupdatedfor",
+      "community": 45,
+      "community_name": "localize",
+      "norm_label": "lastupdatedfor()"
     },
     {
       "label": "@/lib/legal-registry",
@@ -6583,8 +6639,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_digitalwellnesspage",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "@/page-templates/digitalwellnesspage.astro"
     },
     {
@@ -6953,8 +7009,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_digital_wellness_2026_guide_index",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "[lang]/digital-wellness-2026-guide/index.astro"
     },
     {
@@ -6964,8 +7020,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_digital_wellness_2026_guide_index_getstaticpaths",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -6975,8 +7031,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_docs_product_slug",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "[product]/[slug].astro"
     },
     {
@@ -6986,8 +7042,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_pages_lang_docs_product_slug_getstaticpaths",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7239,8 +7295,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_digital_wellness_2026_guide_index",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "pages/digital-wellness-2026-guide/index.astro"
     },
     {
@@ -7250,8 +7306,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_fomogen_configuration_index",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "configuration/index.astro"
     },
     {
@@ -7261,8 +7317,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_fomogen_countdown_timers_index",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "countdown-timers/index.astro"
     },
     {
@@ -7272,8 +7328,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_fomogen_exit_intent_index",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "exit-intent/index.astro"
     },
     {
@@ -7305,8 +7361,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_fomogen_progress_indicators_index",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "progress-indicators/index.astro"
     },
     {
@@ -7316,8 +7372,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_fomogen_purchase_notifications_index",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "purchase-notifications/index.astro"
     },
     {
@@ -7338,8 +7394,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_fomogen_social_proof_badges_index",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "social-proof-badges/index.astro"
     },
     {
@@ -7349,8 +7405,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_fomogen_sticky_cart_index",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "sticky-cart/index.astro"
     },
     {
@@ -7360,8 +7416,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_fomogen_stock_alerts_index",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "stock-alerts/index.astro"
     },
     {
@@ -7371,8 +7427,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_fomogen_trust_badges_index",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "trust-badges/index.astro"
     },
     {
@@ -7404,8 +7460,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_mindful_guard_installation_index",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "installation/index.astro"
     },
     {
@@ -7415,8 +7471,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_mindful_guard_strict_mode_index",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "strict-mode/index.astro"
     },
     {
@@ -7426,8 +7482,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_screenveil_amoled_efficiency_index",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "amoled-efficiency/index.astro"
     },
     {
@@ -19350,8 +19406,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_1_color_theory_fundamentals",
-      "community": 233,
-      "community_name": "9. Pre-Design Checklists",
+      "community": 232,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "1. color theory fundamentals"
     },
     {
@@ -19361,8 +19417,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_the_color_wheel",
-      "community": 233,
-      "community_name": "9. Pre-Design Checklists",
+      "community": 232,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "the color wheel"
     },
     {
@@ -19372,8 +19428,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_color_relationships",
-      "community": 233,
-      "community_name": "9. Pre-Design Checklists",
+      "community": 232,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "color relationships"
     },
     {
@@ -19383,8 +19439,8 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_how_to_choose_a_scheme",
-      "community": 233,
-      "community_name": "9. Pre-Design Checklists",
+      "community": 232,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "how to choose a scheme:"
     },
     {
@@ -19790,8 +19846,8 @@
       "source_location": "L171",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_5_e_commerce_guidelines_e_commerce",
-      "community": 217,
-      "community_name": "Development Decision Process",
+      "community": 179,
+      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
       "norm_label": "5. e-commerce guidelines {#e-commerce}"
     },
     {
@@ -19801,8 +19857,8 @@
       "source_location": "L173",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_key_principles_not_fixed_rules",
-      "community": 217,
-      "community_name": "Development Decision Process",
+      "community": 179,
+      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
       "norm_label": "key principles (not fixed rules)"
     },
     {
@@ -19812,8 +19868,8 @@
       "source_location": "L179",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_color_thinking",
-      "community": 217,
-      "community_name": "Development Decision Process",
+      "community": 179,
+      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
       "norm_label": "color thinking:"
     },
     {
@@ -19823,8 +19879,8 @@
       "source_location": "L190",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_layout_principles",
-      "community": 217,
-      "community_name": "Development Decision Process",
+      "community": 179,
+      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
       "norm_label": "layout principles:"
     },
     {
@@ -19834,8 +19890,8 @@
       "source_location": "L217",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_psychology_to_apply",
-      "community": 217,
-      "community_name": "Development Decision Process",
+      "community": 179,
+      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
       "norm_label": "psychology to apply:"
     },
     {
@@ -19845,8 +19901,8 @@
       "source_location": "L226",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_6_saas_dashboard_guidelines_saas",
-      "community": 230,
-      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "community": 217,
+      "community_name": "Development Decision Process",
       "norm_label": "6. saas dashboard guidelines {#saas}"
     },
     {
@@ -19856,8 +19912,8 @@
       "source_location": "L228",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_key_principles",
-      "community": 230,
-      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "community": 217,
+      "community_name": "Development Decision Process",
       "norm_label": "key principles"
     },
     {
@@ -19867,8 +19923,8 @@
       "source_location": "L234",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_color_thinking_234",
-      "community": 230,
-      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "community": 217,
+      "community_name": "Development Decision Process",
       "norm_label": "color thinking:"
     },
     {
@@ -19878,8 +19934,8 @@
       "source_location": "L245",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_layout_principles_245",
-      "community": 230,
-      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "community": 217,
+      "community_name": "Development Decision Process",
       "norm_label": "layout principles:"
     },
     {
@@ -19889,8 +19945,8 @@
       "source_location": "L265",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_psychology_to_apply_265",
-      "community": 230,
-      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "community": 217,
+      "community_name": "Development Decision Process",
       "norm_label": "psychology to apply:"
     },
     {
@@ -19955,8 +20011,8 @@
       "source_location": "L326",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_8_portfolio_guidelines_portfolio",
-      "community": 231,
-      "community_name": "7. Landing Page Guidelines {#landing-page}",
+      "community": 230,
+      "community_name": "5. E-commerce Guidelines {#e-commerce}",
       "norm_label": "8. portfolio guidelines {#portfolio}"
     },
     {
@@ -19966,8 +20022,8 @@
       "source_location": "L328",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_key_principles_328",
-      "community": 231,
-      "community_name": "7. Landing Page Guidelines {#landing-page}",
+      "community": 230,
+      "community_name": "5. E-commerce Guidelines {#e-commerce}",
       "norm_label": "key principles"
     },
     {
@@ -19977,8 +20033,8 @@
       "source_location": "L334",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_color_thinking_334",
-      "community": 231,
-      "community_name": "7. Landing Page Guidelines {#landing-page}",
+      "community": 230,
+      "community_name": "5. E-commerce Guidelines {#e-commerce}",
       "norm_label": "color thinking:"
     },
     {
@@ -19988,8 +20044,8 @@
       "source_location": "L345",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_structure_principles_345",
-      "community": 231,
-      "community_name": "7. Landing Page Guidelines {#landing-page}",
+      "community": 230,
+      "community_name": "5. E-commerce Guidelines {#e-commerce}",
       "norm_label": "structure principles:"
     },
     {
@@ -19999,8 +20055,8 @@
       "source_location": "L365",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_psychology_to_apply_365",
-      "community": 231,
-      "community_name": "7. Landing Page Guidelines {#landing-page}",
+      "community": 230,
+      "community_name": "5. E-commerce Guidelines {#e-commerce}",
       "norm_label": "psychology to apply:"
     },
     {
@@ -20010,8 +20066,8 @@
       "source_location": "L373",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_9_pre_design_checklists",
-      "community": 232,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 231,
+      "community_name": "7. Landing Page Guidelines {#landing-page}",
       "norm_label": "9. pre-design checklists"
     },
     {
@@ -20021,8 +20077,8 @@
       "source_location": "L375",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_before_starting_any_design",
-      "community": 232,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 231,
+      "community_name": "7. Landing Page Guidelines {#landing-page}",
       "norm_label": "before starting any design"
     },
     {
@@ -20032,8 +20088,8 @@
       "source_location": "L383",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_before_choosing_colors",
-      "community": 232,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 231,
+      "community_name": "7. Landing Page Guidelines {#landing-page}",
       "norm_label": "before choosing colors"
     },
     {
@@ -20043,8 +20099,8 @@
       "source_location": "L390",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_before_finalizing_layout",
-      "community": 232,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 231,
+      "community_name": "7. Landing Page Guidelines {#landing-page}",
       "norm_label": "before finalizing layout"
     },
     {
@@ -20054,8 +20110,8 @@
       "source_location": "L397",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_before_delivery",
-      "community": 232,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 231,
+      "community_name": "7. Landing Page Guidelines {#landing-page}",
       "norm_label": "before delivery"
     },
     {
@@ -20065,8 +20121,8 @@
       "source_location": "L405",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_10_complexity_estimation",
-      "community": 236,
-      "community_name": "5. Particle Effects",
+      "community": 233,
+      "community_name": "9. Pre-Design Checklists",
       "norm_label": "10. complexity estimation"
     },
     {
@@ -20076,8 +20132,8 @@
       "source_location": "L407",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_quick_projects_hours",
-      "community": 236,
-      "community_name": "5. Particle Effects",
+      "community": 233,
+      "community_name": "9. Pre-Design Checklists",
       "norm_label": "quick projects (hours)"
     },
     {
@@ -20087,8 +20143,8 @@
       "source_location": "L418",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_medium_projects_days",
-      "community": 236,
-      "community_name": "5. Particle Effects",
+      "community": 233,
+      "community_name": "9. Pre-Design Checklists",
       "norm_label": "medium projects (days)"
     },
     {
@@ -20098,8 +20154,8 @@
       "source_location": "L429",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_large_projects_weeks",
-      "community": 236,
-      "community_name": "5. Particle Effects",
+      "community": 233,
+      "community_name": "9. Pre-Design Checklists",
       "norm_label": "large projects (weeks)"
     },
     {
@@ -25961,8 +26017,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_1_framework_selection",
-      "community": 256,
-      "community_name": "10. Complexity Estimation",
+      "community": 236,
+      "community_name": "5. Particle Effects",
       "norm_label": "1. framework selection"
     },
     {
@@ -25972,8 +26028,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_master_decision_tree",
-      "community": 256,
-      "community_name": "10. Complexity Estimation",
+      "community": 236,
+      "community_name": "5. Particle Effects",
       "norm_label": "master decision tree"
     },
     {
@@ -25983,8 +26039,8 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_framework_comparison",
-      "community": 256,
-      "community_name": "10. Complexity Estimation",
+      "community": 236,
+      "community_name": "5. Particle Effects",
       "norm_label": "framework comparison"
     },
     {
@@ -25994,8 +26050,8 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_when_to_choose_native",
-      "community": 256,
-      "community_name": "10. Complexity Estimation",
+      "community": 236,
+      "community_name": "5. Particle Effects",
       "norm_label": "when to choose native"
     },
     {
@@ -26005,8 +26061,8 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_2_state_management_selection",
-      "community": 297,
-      "community_name": "2. State Management Selection",
+      "community": 247,
+      "community_name": "Quick Reference",
       "norm_label": "2. state management selection"
     },
     {
@@ -26016,8 +26072,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_react_native_state_decision",
-      "community": 297,
-      "community_name": "2. State Management Selection",
+      "community": 247,
+      "community_name": "Quick Reference",
       "norm_label": "react native state decision"
     },
     {
@@ -26027,8 +26083,8 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_flutter_state_decision",
-      "community": 297,
-      "community_name": "2. State Management Selection",
+      "community": 247,
+      "community_name": "Quick Reference",
       "norm_label": "flutter state decision"
     },
     {
@@ -26038,8 +26094,8 @@
       "source_location": "L162",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_state_management_anti_patterns",
-      "community": 297,
-      "community_name": "2. State Management Selection",
+      "community": 247,
+      "community_name": "Quick Reference",
       "norm_label": "state management anti-patterns"
     },
     {
@@ -27776,8 +27832,8 @@
       "source_location": "L184",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_5_modal_navigation",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 268,
+      "community_name": "3. Supply Chain Security (A03)",
       "norm_label": "5. modal navigation"
     },
     {
@@ -27787,8 +27843,8 @@
       "source_location": "L186",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_modal_vs_push",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 268,
+      "community_name": "3. Supply Chain Security (A03)",
       "norm_label": "modal vs push"
     },
     {
@@ -27798,8 +27854,8 @@
       "source_location": "L204",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_modal_types",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 268,
+      "community_name": "3. Supply Chain Security (A03)",
       "norm_label": "modal types"
     },
     {
@@ -27809,8 +27865,8 @@
       "source_location": "L213",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_modal_dismissal",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 268,
+      "community_name": "3. Supply Chain Security (A03)",
       "norm_label": "modal dismissal"
     },
     {
@@ -27820,8 +27876,8 @@
       "source_location": "L228",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_6_deep_linking",
-      "community": 269,
-      "community_name": "4. Attack Surface Mapping",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "6. deep linking"
     },
     {
@@ -27831,8 +27887,8 @@
       "source_location": "L230",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_why_deep_links_from_day_one",
-      "community": 269,
-      "community_name": "4. Attack Surface Mapping",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "why deep links from day one"
     },
     {
@@ -27842,8 +27898,8 @@
       "source_location": "L248",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_url_structure",
-      "community": 269,
-      "community_name": "4. Attack Surface Mapping",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "url structure"
     },
     {
@@ -27853,8 +27909,8 @@
       "source_location": "L266",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_deep_link_navigation_rules",
-      "community": 269,
-      "community_name": "4. Attack Surface Mapping",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "deep link navigation rules"
     },
     {
@@ -27897,8 +27953,8 @@
       "source_location": "L343",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_8_transition_animations",
-      "community": 272,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 269,
+      "community_name": "4. Attack Surface Mapping",
       "norm_label": "8. transition animations"
     },
     {
@@ -27908,8 +27964,8 @@
       "source_location": "L345",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_platform_defaults",
-      "community": 272,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 269,
+      "community_name": "4. Attack Surface Mapping",
       "norm_label": "platform defaults"
     },
     {
@@ -27919,8 +27975,8 @@
       "source_location": "L361",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_custom_transitions",
-      "community": 272,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 269,
+      "community_name": "4. Attack Surface Mapping",
       "norm_label": "custom transitions"
     },
     {
@@ -27930,8 +27986,8 @@
       "source_location": "L377",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_shared_element_transitions",
-      "community": 272,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 269,
+      "community_name": "4. Attack Surface Mapping",
       "norm_label": "shared element transitions"
     },
     {
@@ -27974,8 +28030,8 @@
       "source_location": "L428",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_10_navigation_checklist",
-      "community": 247,
-      "community_name": "Quick Reference",
+      "community": 256,
+      "community_name": "10. Complexity Estimation",
       "norm_label": "10. navigation checklist"
     },
     {
@@ -27985,8 +28041,8 @@
       "source_location": "L430",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_before_navigation_architecture",
-      "community": 247,
-      "community_name": "Quick Reference",
+      "community": 256,
+      "community_name": "10. Complexity Estimation",
       "norm_label": "before navigation architecture"
     },
     {
@@ -27996,8 +28052,8 @@
       "source_location": "L438",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_before_every_screen",
-      "community": 247,
-      "community_name": "Quick Reference",
+      "community": 256,
+      "community_name": "10. Complexity Estimation",
       "norm_label": "before every screen"
     },
     {
@@ -28007,8 +28063,8 @@
       "source_location": "L446",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_before_release",
-      "community": 247,
-      "community_name": "Quick Reference",
+      "community": 256,
+      "community_name": "10. Complexity Estimation",
       "norm_label": "before release"
     },
     {
@@ -36147,8 +36203,8 @@
       "source_location": "L80",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_3_supply_chain_security_a03",
-      "community": 268,
-      "community_name": "3. Supply Chain Security (A03)",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "3. supply chain security (a03)"
     },
     {
@@ -36158,8 +36214,8 @@
       "source_location": "L82",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_attack_surface",
-      "community": 268,
-      "community_name": "3. Supply Chain Security (A03)",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "attack surface"
     },
     {
@@ -36169,8 +36225,8 @@
       "source_location": "L91",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_defense_principles",
-      "community": 268,
-      "community_name": "3. Supply Chain Security (A03)",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "defense principles"
     },
     {
@@ -36213,8 +36269,8 @@
       "source_location": "L124",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_5_risk_prioritization",
-      "community": 282,
-      "community_name": "@types/react",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "5. risk prioritization"
     },
     {
@@ -36224,8 +36280,8 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_cvss_context",
-      "community": 282,
-      "community_name": "@types/react",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "cvss + context"
     },
     {
@@ -36235,8 +36291,8 @@
       "source_location": "L135",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_prioritization_decision_tree",
-      "community": 282,
-      "community_name": "@types/react",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "prioritization decision tree"
     },
     {
@@ -36334,8 +36390,8 @@
       "source_location": "L222",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_9_cloud_security_considerations",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 282,
+      "community_name": "@types/react",
       "norm_label": "9. cloud security considerations"
     },
     {
@@ -36345,8 +36401,8 @@
       "source_location": "L224",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_shared_responsibility",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 282,
+      "community_name": "@types/react",
       "norm_label": "shared responsibility"
     },
     {
@@ -36356,8 +36412,8 @@
       "source_location": "L233",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_cloud_specific_checks",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 282,
+      "community_name": "@types/react",
       "norm_label": "cloud-specific checks"
     },
     {
@@ -42037,32 +42093,21 @@
       "norm_label": "en/the-logic-of-focus.md"
     },
     {
-      "label": "The Logic of Focus: Why Most Digital Detox Apps Fail (and How to Fix It)",
+      "label": "The \"Willpower Gap\" in Productivity",
       "file_type": "document",
       "source_file": "src/content/blog/en/the-logic-of-focus.md",
-      "source_location": "L14",
+      "source_location": "L27",
       "_origin": "ast",
-      "id": "src_content_blog_en_the_logic_of_focus_the_logic_of_focus_why_most_digital_detox_apps_fail_and_how_to_fix_it",
+      "id": "src_content_blog_en_the_logic_of_focus_the_willpower_gap_in_productivity",
       "community": 175,
       "community_name": "en/the-logic-of-focus.md",
-      "norm_label": "the logic of focus: why most digital detox apps fail (and how to fix it)"
-    },
-    {
-      "label": "To reclaim your time, you don't need more willpower. You need better Logical Guardrails.",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/the-logic-of-focus.md",
-      "source_location": "L20",
-      "_origin": "ast",
-      "id": "src_content_blog_en_the_logic_of_focus_to_reclaim_your_time_you_don_t_need_more_willpower_you_need_better_logical_guardrails",
-      "community": 175,
-      "community_name": "en/the-logic-of-focus.md",
-      "norm_label": "to reclaim your time, you don't need more willpower. you need better logical guardrails."
+      "norm_label": "the \"willpower gap\" in productivity"
     },
     {
       "label": "Enter Mindful Guard: Engineering Intentional Friction",
       "file_type": "document",
       "source_file": "src/content/blog/en/the-logic-of-focus.md",
-      "source_location": "L27",
+      "source_location": "L35",
       "_origin": "ast",
       "id": "src_content_blog_en_the_logic_of_focus_enter_mindful_guard_engineering_intentional_friction",
       "community": 175,
@@ -42073,7 +42118,7 @@
       "label": "The Three Pillars of the Mindful Guard Logic:",
       "file_type": "document",
       "source_file": "src/content/blog/en/the-logic-of-focus.md",
-      "source_location": "L31",
+      "source_location": "L39",
       "_origin": "ast",
       "id": "src_content_blog_en_the_logic_of_focus_the_three_pillars_of_the_mindful_guard_logic",
       "community": 175,
@@ -42084,7 +42129,7 @@
       "label": "Why Accessibility Matters for Focus",
       "file_type": "document",
       "source_file": "src/content/blog/en/the-logic-of-focus.md",
-      "source_location": "L39",
+      "source_location": "L47",
       "_origin": "ast",
       "id": "src_content_blog_en_the_logic_of_focus_why_accessibility_matters_for_focus",
       "community": 175,
@@ -42095,7 +42140,7 @@
       "label": "The Path to Digital Wellness",
       "file_type": "document",
       "source_file": "src/content/blog/en/the-logic-of-focus.md",
-      "source_location": "L43",
+      "source_location": "L51",
       "_origin": "ast",
       "id": "src_content_blog_en_the_logic_of_focus_the_path_to_digital_wellness",
       "community": 175,
@@ -42106,7 +42151,7 @@
       "label": "Conclusion: Reclaim Your 3 Hours",
       "file_type": "document",
       "source_file": "src/content/blog/en/the-logic-of-focus.md",
-      "source_location": "L47",
+      "source_location": "L55",
       "_origin": "ast",
       "id": "src_content_blog_en_the_logic_of_focus_conclusion_reclaim_your_3_hours",
       "community": 175,
@@ -44336,32 +44381,21 @@
       "norm_label": "fr/the-logic-of-focus.md"
     },
     {
-      "label": "La Logique de la Concentration : Pourquoi la Plupart des Applications de D\u00e9tox Num\u00e9rique \u00c9chouent (et Comment y Rem\u00e9dier)",
+      "label": "Le \"Foss\u00e9 de la Volont\u00e9\" dans la Productivit\u00e9",
       "file_type": "document",
       "source_file": "src/content/blog/fr/the-logic-of-focus.md",
-      "source_location": "L14",
+      "source_location": "L27",
       "_origin": "ast",
-      "id": "src_content_blog_fr_the_logic_of_focus_la_logique_de_la_concentration_pourquoi_la_plupart_des_applications_de_d\u00e9tox_num\u00e9rique_\u00e9chouent_et_comment_y_rem\u00e9dier",
+      "id": "src_content_blog_fr_the_logic_of_focus_le_foss\u00e9_de_la_volont\u00e9_dans_la_productivit\u00e9",
       "community": 177,
       "community_name": "fr/the-logic-of-focus.md",
-      "norm_label": "la logique de la concentration : pourquoi la plupart des applications de detox numerique echouent (et comment y remedier)"
-    },
-    {
-      "label": "Pour reprendre le contr\u00f4le de votre temps, vous n'avez pas besoin de plus de volont\u00e9. Vous avez besoin de meilleures Garde-fous Logiques.",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/the-logic-of-focus.md",
-      "source_location": "L20",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_the_logic_of_focus_pour_reprendre_le_contr\u00f4le_de_votre_temps_vous_n_avez_pas_besoin_de_plus_de_volont\u00e9_vous_avez_besoin_de_meilleures_garde_fous_logiques",
-      "community": 177,
-      "community_name": "fr/the-logic-of-focus.md",
-      "norm_label": "pour reprendre le controle de votre temps, vous n'avez pas besoin de plus de volonte. vous avez besoin de meilleures garde-fous logiques."
+      "norm_label": "le \"fosse de la volonte\" dans la productivite"
     },
     {
       "label": "Mindful Guard : Ing\u00e9nierie de la Friction Intentionnelle",
       "file_type": "document",
       "source_file": "src/content/blog/fr/the-logic-of-focus.md",
-      "source_location": "L27",
+      "source_location": "L35",
       "_origin": "ast",
       "id": "src_content_blog_fr_the_logic_of_focus_mindful_guard_ing\u00e9nierie_de_la_friction_intentionnelle",
       "community": 177,
@@ -44372,7 +44406,7 @@
       "label": "Les Trois Piliers de la Logique Mindful Guard :",
       "file_type": "document",
       "source_file": "src/content/blog/fr/the-logic-of-focus.md",
-      "source_location": "L31",
+      "source_location": "L39",
       "_origin": "ast",
       "id": "src_content_blog_fr_the_logic_of_focus_les_trois_piliers_de_la_logique_mindful_guard",
       "community": 177,
@@ -44383,7 +44417,7 @@
       "label": "Pourquoi l'Accessibilit\u00e9 est Essentielle pour la Concentration",
       "file_type": "document",
       "source_file": "src/content/blog/fr/the-logic-of-focus.md",
-      "source_location": "L39",
+      "source_location": "L47",
       "_origin": "ast",
       "id": "src_content_blog_fr_the_logic_of_focus_pourquoi_l_accessibilit\u00e9_est_essentielle_pour_la_concentration",
       "community": 177,
@@ -44394,7 +44428,7 @@
       "label": "Le Chemin vers le Bien-\u00eatre Num\u00e9rique",
       "file_type": "document",
       "source_file": "src/content/blog/fr/the-logic-of-focus.md",
-      "source_location": "L43",
+      "source_location": "L51",
       "_origin": "ast",
       "id": "src_content_blog_fr_the_logic_of_focus_le_chemin_vers_le_bien_\u00eatre_num\u00e9rique",
       "community": 177,
@@ -44405,7 +44439,7 @@
       "label": "Conclusion : R\u00e9cup\u00e9rez vos 3 Heures",
       "file_type": "document",
       "source_file": "src/content/blog/fr/the-logic-of-focus.md",
-      "source_location": "L47",
+      "source_location": "L55",
       "_origin": "ast",
       "id": "src_content_blog_fr_the_logic_of_focus_conclusion_r\u00e9cup\u00e9rez_vos_3_heures",
       "community": 177,
@@ -59168,6 +59202,230 @@
       "_origin": "ast",
       "source": "src_pages_lang_docs_product_slug",
       "target": "src_lib_docs_registry_docsregistry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/lastUpdated.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_lastupdated",
+      "target": "src_lib_lastupdated_cache",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/lastUpdated.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_lastupdated",
+      "target": "src_lib_lastupdated_commitdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/lastUpdated.ts",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_lastupdated",
+      "target": "src_lib_lastupdated_lastupdatedfor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/lastUpdated.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_lastupdated",
+      "target": "src_lib_lastupdated_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/page-templates/AboutPage.astro",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_page_templates_aboutpage",
+      "target": "src_lib_lastupdated",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/page-templates/AppsFomogenPage.astro",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_page_templates_appsfomogenpage",
+      "target": "src_lib_lastupdated",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/page-templates/AppsMindfulGuardPage.astro",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_page_templates_appsmindfulguardpage",
+      "target": "src_lib_lastupdated",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/page-templates/AppsScreenveilPage.astro",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_page_templates_appsscreenveilpage",
+      "target": "src_lib_lastupdated",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/page-templates/CompareDetailPage.astro",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_page_templates_comparedetailpage",
+      "target": "src_lib_lastupdated",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/page-templates/DigitalWellnessPage.astro",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_page_templates_digitalwellnesspage",
+      "target": "src_lib_lastupdated",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/page-templates/EcommerceGuidePage.astro",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_page_templates_ecommerceguidepage",
+      "target": "src_lib_lastupdated",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "source_file": "src/lib/lastUpdated.ts",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_lib_lastupdated_lastupdatedfor",
+      "target": "src_lib_lastupdated_commitdate",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/page-templates/AboutPage.astro",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_page_templates_aboutpage",
+      "target": "src_lib_lastupdated_lastupdatedfor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/page-templates/AppsFomogenPage.astro",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_page_templates_appsfomogenpage",
+      "target": "src_lib_lastupdated_lastupdatedfor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/page-templates/AppsMindfulGuardPage.astro",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_page_templates_appsmindfulguardpage",
+      "target": "src_lib_lastupdated_lastupdatedfor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/page-templates/AppsScreenveilPage.astro",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_page_templates_appsscreenveilpage",
+      "target": "src_lib_lastupdated_lastupdatedfor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/page-templates/CompareDetailPage.astro",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_page_templates_comparedetailpage",
+      "target": "src_lib_lastupdated_lastupdatedfor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/page-templates/DigitalWellnessPage.astro",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_page_templates_digitalwellnesspage",
+      "target": "src_lib_lastupdated_lastupdatedfor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/page-templates/EcommerceGuidePage.astro",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_page_templates_ecommerceguidepage",
+      "target": "src_lib_lastupdated_lastupdatedfor",
       "confidence_score": 1.0
     },
     {
@@ -93291,7 +93549,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/en/the-logic-of-focus.md",
-      "source_location": "L47",
+      "source_location": "L55",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_en_the_logic_of_focus",
@@ -93302,7 +93560,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/en/the-logic-of-focus.md",
-      "source_location": "L27",
+      "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_en_the_logic_of_focus",
@@ -93313,18 +93571,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/en/the-logic-of-focus.md",
-      "source_location": "L14",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_the_logic_of_focus",
-      "target": "src_content_blog_en_the_logic_of_focus_the_logic_of_focus_why_most_digital_detox_apps_fail_and_how_to_fix_it",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/the-logic-of-focus.md",
-      "source_location": "L43",
+      "source_location": "L51",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_en_the_logic_of_focus",
@@ -93335,7 +93582,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/en/the-logic-of-focus.md",
-      "source_location": "L31",
+      "source_location": "L39",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_en_the_logic_of_focus",
@@ -93346,18 +93593,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/en/the-logic-of-focus.md",
-      "source_location": "L20",
+      "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_en_the_logic_of_focus",
-      "target": "src_content_blog_en_the_logic_of_focus_to_reclaim_your_time_you_don_t_need_more_willpower_you_need_better_logical_guardrails",
+      "target": "src_content_blog_en_the_logic_of_focus_the_willpower_gap_in_productivity",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/en/the-logic-of-focus.md",
-      "source_location": "L39",
+      "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_en_the_logic_of_focus",
@@ -95359,7 +95606,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/fr/the-logic-of-focus.md",
-      "source_location": "L47",
+      "source_location": "L55",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_fr_the_logic_of_focus",
@@ -95370,18 +95617,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/fr/the-logic-of-focus.md",
-      "source_location": "L14",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_the_logic_of_focus",
-      "target": "src_content_blog_fr_the_logic_of_focus_la_logique_de_la_concentration_pourquoi_la_plupart_des_applications_de_d\u00e9tox_num\u00e9rique_\u00e9chouent_et_comment_y_rem\u00e9dier",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/the-logic-of-focus.md",
-      "source_location": "L43",
+      "source_location": "L51",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_fr_the_logic_of_focus",
@@ -95392,7 +95628,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/fr/the-logic-of-focus.md",
-      "source_location": "L31",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_the_logic_of_focus",
+      "target": "src_content_blog_fr_the_logic_of_focus_le_foss\u00e9_de_la_volont\u00e9_dans_la_productivit\u00e9",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/the-logic-of-focus.md",
+      "source_location": "L39",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_fr_the_logic_of_focus",
@@ -95403,7 +95650,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/fr/the-logic-of-focus.md",
-      "source_location": "L27",
+      "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_fr_the_logic_of_focus",
@@ -95414,18 +95661,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/fr/the-logic-of-focus.md",
-      "source_location": "L20",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_the_logic_of_focus",
-      "target": "src_content_blog_fr_the_logic_of_focus_pour_reprendre_le_contr\u00f4le_de_votre_temps_vous_n_avez_pas_besoin_de_plus_de_volont\u00e9_vous_avez_besoin_de_meilleures_garde_fous_logiques",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/the-logic-of-focus.md",
-      "source_location": "L39",
+      "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_fr_the_logic_of_focus",
@@ -95654,5 +95890,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "9778b9afcec5721a87843634900c1845744cda57"
+  "built_at_commit": "19fdefe6cf330d4c6a07fb6ca2a00e137db05048"
 }

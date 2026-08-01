@@ -283,6 +283,7 @@
   "281": "tsx",
   "282": "@types/react",
   "283": "@types/react-dom",
+  "284": "@astrojs/check",
   "285": "fix-getstaticpaths.js",
   "286": "split-pages.sh",
   "287": "use-localepath.js",
@@ -295,9 +296,7 @@
   "294": "react",
   "295": "update_fr.py",
   "296": "ScreenVeilCTA.astro",
-  "297": "2. State Management Selection",
   "298": "package.json",
   "299": "eslint-plugin-astro",
-  "300": "clsx",
   "302": "typescript"
 }

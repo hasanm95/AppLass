@@ -6,6 +6,15 @@ category: "Applications Android"
 keywords: "application monk mode android, application détox dopamine, comment faire monk mode, mindful guard android"
 author: "Équipe AppLass"
 excerpt: "J'ai essayé de me forcer dans le 'Monk Mode' pendant des mois et j'ai échoué. Ce n'était pas parce que j'étais paresseux — c'était parce que mon cerveau était littéralement trop lent pour stopper mes habitudes."
+faqs:
+  - question: "Qu'est-ce que le Monk Mode ?"
+    answer: "Le Monk Mode est une période prolongée de concentration délibérée où les distractions sont supprimées entièrement, et non simplement limitées. L'erreur courante consiste à le traiter comme une épreuve de discipline : sans système pour l'imposer, le mode dure exactement aussi longtemps que votre volonté."
+  - question: "Pourquoi la volonté échoue-t-elle face aux habitudes téléphoniques ?"
+    answer: "C'est un problème de latence, pas de discipline. Les actions habituelles s'exécutent avant que la délibération consciente ne les rattrape : votre pouce a déjà ouvert l'application avant que la décision de l'ouvrir ne soit prise. Les fils d'actualité chargent leur contenu en quelques millisecondes, plus vite que vous ne pouvez décider de vous arrêter."
+  - question: "Combien coûte Opal par rapport aux alternatives ?"
+    answer: "Opal coûte jusqu'à 99 $ par an. Freedom se situe plutôt autour de 40 $ par an, mais elle est conçue avant tout pour le bureau, ce qui la rend peu naturelle sur Android. Le coût est souvent ce qui pousse les utilisateurs exigeants vers une alternative native."
+  - question: "Les applications de concentration survivent-elles à la gestion agressive de la batterie sur Android ?"
+    answer: "Beaucoup n'y survivent pas. Les surcouches constructeur des appareils Xiaomi ou Samsung arrêtent agressivement les processus en arrière-plan, ce qui désactive silencieusement les bloqueurs dépendant d'une connexion persistante. MindfulGuard a été conçue pour fonctionner nativement sur ces appareils sans être arrêtée."
 thumbnail: "../../../assets/blogs/monk-mode-logic.png"
 featured: true
 sidebarApps:

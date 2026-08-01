@@ -675,7 +675,7 @@
     "semantic_hash": ""
   },
   "src/i18n/locales/en.json": {
-    "mtime": 1785566944.9277353,
+    "mtime": 1785568488.116076,
     "ast_hash": "6620fd9318d66ae30c0a428190b631da",
     "semantic_hash": ""
   },
@@ -780,8 +780,8 @@
     "semantic_hash": ""
   },
   "src/page-templates/DigitalWellnessPage.astro": {
-    "mtime": 1785566937.1866615,
-    "ast_hash": "6a503681a57c9f7461c90405e3e8c508",
+    "mtime": 1785567458.8181233,
+    "ast_hash": "9a31c13bcec72d9603051047dbd9a8bf",
     "semantic_hash": ""
   },
   "src/page-templates/DocsArticlePage.astro": {
@@ -1960,8 +1960,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/en/logic-comparison-matrix.md": {
-    "mtime": 1785566498.4406052,
-    "ast_hash": "f365f3bb0df4480beff0a48141741219",
+    "mtime": 1785567985.8401442,
+    "ast_hash": "6a2b3381d1214b9fa4010b3fc9af44a0",
     "semantic_hash": ""
   },
   "src/content/blog/en/mobile-sticky-cart-guide.md": {
@@ -1970,8 +1970,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/en/monk-mode-willpower.md": {
-    "mtime": 1785566498.4390748,
-    "ast_hash": "410a35f93933d6a582c024e6cadf9ad1",
+    "mtime": 1785568021.945824,
+    "ast_hash": "bf8b65d9302abeafb59ca70853c150a2",
     "semantic_hash": ""
   },
   "src/content/blog/en/opal-alternatives-android.mdx": {
@@ -1985,8 +1985,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/en/reclaim-focus-story.md": {
-    "mtime": 1785566498.4436948,
-    "ast_hash": "79ffc4ab8b91c631191430a96ed7889f",
+    "mtime": 1785568011.8123188,
+    "ast_hash": "0c7a3ca36663f68ff5d9be8b4d152d89",
     "semantic_hash": ""
   },
   "src/content/blog/en/shopify-conversion-rate-2026.mdx": {
@@ -2005,8 +2005,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/en/the-logic-of-focus.md": {
-    "mtime": 1785566498.4502509,
-    "ast_hash": "a1feec5020e688f4e3a55f046139b854",
+    "mtime": 1785567972.9481318,
+    "ast_hash": "0f31d19271769ba05fd5252fa9f7b1d8",
     "semantic_hash": ""
   },
   "src/content/blog/en/youtube-background-play-2026-workaround.mdx": {
@@ -2020,8 +2020,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/en/zero-telemetry-blocker.md": {
-    "mtime": 1785566498.4450877,
-    "ast_hash": "26fcf12b9598afa539f364edb7dfccab",
+    "mtime": 1785568001.10443,
+    "ast_hash": "8224c7c22bb02c412dd133f5409e8888",
     "semantic_hash": ""
   },
   "src/content/blog/fr/add-low-stock-alerts-shopify.md": {
@@ -2045,8 +2045,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/calculate-free-shipping-threshold.md": {
-    "mtime": 1772301003.8172972,
-    "ast_hash": "a0e775c0f4e4ce56b13211c2ad8ddc57",
+    "mtime": 1785568484.0842109,
+    "ast_hash": "e99a263bf1ffb22ab57ba067f5d274d7",
     "semantic_hash": ""
   },
   "src/content/blog/fr/free-shipping-bar-shopify.md": {
@@ -2065,8 +2065,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/logic-comparison-matrix.md": {
-    "mtime": 1785566498.426097,
-    "ast_hash": "c47dc3f263caa50ae39e729b974a218e",
+    "mtime": 1785568458.6787405,
+    "ast_hash": "a40c83660d4261af15d61427abf1cbbf",
     "semantic_hash": ""
   },
   "src/content/blog/fr/mobile-sticky-cart-guide.md": {
@@ -2075,8 +2075,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/monk-mode-willpower.md": {
-    "mtime": 1785566498.44211,
-    "ast_hash": "e515862ad30064b3bd5e8ec578aabafb",
+    "mtime": 1785568101.776367,
+    "ast_hash": "36d969c7c202a3a28e574af2695d825c",
     "semantic_hash": ""
   },
   "src/content/blog/fr/opal-alternatives-android.mdx": {
@@ -2090,8 +2090,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/reclaim-focus-story.md": {
-    "mtime": 1785566498.4296427,
-    "ast_hash": "6e4162f91cb002ac47b53e55b6e9930e",
+    "mtime": 1785568091.3191261,
+    "ast_hash": "20a69a214eb5abce1078faa994da1740",
     "semantic_hash": ""
   },
   "src/content/blog/fr/shopify-conversion-rate-2026.mdx": {
@@ -2110,8 +2110,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/the-logic-of-focus.md": {
-    "mtime": 1785566498.4517624,
-    "ast_hash": "cabf6e86cfef68a62ba2c67d8ba33496",
+    "mtime": 1785568046.7665734,
+    "ast_hash": "db32f181b5ebc53895af6a3b58f452c4",
     "semantic_hash": ""
   },
   "src/content/blog/fr/youtube-background-play-2026-workaround.mdx": {
@@ -2125,8 +2125,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/zero-telemetry-blocker.md": {
-    "mtime": 1785566498.4369736,
-    "ast_hash": "cdd4a7f122442722307c8f7904b3d99c",
+    "mtime": 1785568081.5542297,
+    "ast_hash": "4583ee01687f236bdb70833c24f01b83",
     "semantic_hash": ""
   },
   "public/apple-touch-icon.png": {
