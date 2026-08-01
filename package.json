@@ -9,6 +9,7 @@
     "astro": "astro",
     "lint": "eslint .",
     "extract-i18n": "tsx scripts/extract-translations.ts",
+    "validate-i18n": "tsx scripts/validate-i18n.ts",
     "deploy": "npm run build && wrangler deploy",
     "cf-typegen": "wrangler types"
   },

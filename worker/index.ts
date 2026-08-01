@@ -3,13 +3,18 @@ export interface Env {
 }
 
 const DEFAULT_LOCALE = "en";
-const LOCALES = ["en", "zh", "es", "ar", "id", "pt", "fr", "ja", "ru", "de", "bn"] as const;
-type Locale = (typeof LOCALES)[number];
+
+// Locales that actually have a build. Only these are redirect targets.
+// Add a locale here ONLY once its pages exist, otherwise geo-routed visitors
+// get a 404 — the map below is allowed to stay ahead of this list.
+const LOCALES = ["en", "fr"] as const;
 
 // Dominant language per country, used only as a geo default for first-time visitors.
-// Multilingual countries (Canada, Switzerland, Belgium's Flemish half, Ukraine, etc.)
-// are deliberately left unmapped — they fall through to "en" rather than guess wrong.
-const COUNTRY_TO_LOCALE: Record<string, Locale> = {
+// Entries whose locale is not in LOCALES are inert: they fall through to the default
+// locale until that locale ships. Multilingual countries (Canada, Switzerland,
+// Belgium's Flemish half, Ukraine, etc.) are deliberately left unmapped rather than
+// guessed at.
+const COUNTRY_TO_LOCALE: Record<string, string> = {
   CN: "zh", TW: "zh", HK: "zh", MO: "zh",
 
   ES: "es", MX: "es", AR: "es", CO: "es", CL: "es", PE: "es", VE: "es", EC: "es",
@@ -73,7 +78,11 @@ export default {
 
     // `cf` is Cloudflare's request metadata, not part of the standard Request type.
     const country = (request as Request & { cf?: { country?: string } }).cf?.country;
-    const locale = country ? COUNTRY_TO_LOCALE[country] : undefined;
+    const mapped = country ? COUNTRY_TO_LOCALE[country] : undefined;
+
+    // Never redirect to a locale that has not shipped — that is a guaranteed 404.
+    const isBuilt = mapped !== undefined && (LOCALES as readonly string[]).includes(mapped);
+    const locale = isBuilt ? mapped : undefined;
 
     if (!locale || locale === DEFAULT_LOCALE) {
       return env.ASSETS.fetch(request);

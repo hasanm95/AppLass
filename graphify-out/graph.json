@@ -3040,10 +3040,21 @@
       "norm_label": "extract-i18n"
     },
     {
-      "label": "deploy",
+      "label": "validate-i18n",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L12",
+      "_origin": "ast",
+      "id": "package_scripts_validate_i18n",
+      "community": 132,
+      "community_name": "scripts",
+      "norm_label": "validate-i18n"
+    },
+    {
+      "label": "deploy",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L13",
       "_origin": "ast",
       "id": "package_scripts_deploy",
       "community": 132,
@@ -3054,7 +3065,7 @@
       "label": "cf-typegen",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L13",
+      "source_location": "L14",
       "_origin": "ast",
       "id": "package_scripts_cf_typegen",
       "community": 132,
@@ -3065,7 +3076,7 @@
       "label": "dependencies",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L15",
+      "source_location": "L16",
       "_origin": "ast",
       "id": "package_dependencies",
       "community": 43,
@@ -3076,7 +3087,7 @@
       "label": "@astrojs/mdx",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L16",
+      "source_location": "L17",
       "_origin": "ast",
       "id": "package_dependencies_astrojs_mdx",
       "community": 43,
@@ -3087,7 +3098,7 @@
       "label": "@astrojs/mdx",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L16",
+      "source_location": "L17",
       "_origin": "ast",
       "id": "astrojs_mdx",
       "community": 43,
@@ -3098,7 +3109,7 @@
       "label": "@astrojs/react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L17",
+      "source_location": "L18",
       "_origin": "ast",
       "id": "package_dependencies_astrojs_react",
       "community": 43,
@@ -3109,7 +3120,7 @@
       "label": "@astrojs/react",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L17",
+      "source_location": "L18",
       "_origin": "ast",
       "id": "astrojs_react",
       "community": 43,
@@ -3120,7 +3131,7 @@
       "label": "@astrojs/sitemap",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L18",
+      "source_location": "L19",
       "_origin": "ast",
       "id": "package_dependencies_astrojs_sitemap",
       "community": 43,
@@ -3131,7 +3142,7 @@
       "label": "@astrojs/sitemap",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L18",
+      "source_location": "L19",
       "_origin": "ast",
       "id": "astrojs_sitemap",
       "community": 43,
@@ -3142,7 +3153,7 @@
       "label": "@radix-ui/react-slot",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L19",
+      "source_location": "L20",
       "_origin": "ast",
       "id": "package_dependencies_radix_ui_react_slot",
       "community": 43,
@@ -3153,7 +3164,7 @@
       "label": "@radix-ui/react-slot",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L19",
+      "source_location": "L20",
       "_origin": "ast",
       "id": "radix_ui_react_slot",
       "community": 43,
@@ -3164,7 +3175,7 @@
       "label": "astro",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "package_dependencies_astro",
       "community": 43,
@@ -3175,7 +3186,7 @@
       "label": "astro",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "package_json_astro",
       "community": 43,
@@ -3186,7 +3197,7 @@
       "label": "class-variance-authority",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L21",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "package_dependencies_class_variance_authority",
       "community": 43,
@@ -3197,7 +3208,7 @@
       "label": "class-variance-authority",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L21",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "class_variance_authority",
       "community": 43,
@@ -3208,7 +3219,7 @@
       "label": "clsx",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L22",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "package_dependencies_clsx",
       "community": 43,
@@ -3219,7 +3230,7 @@
       "label": "clsx",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L22",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "package_json_clsx",
       "community": 43,
@@ -3230,7 +3241,7 @@
       "label": "i18next",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L23",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "package_dependencies_i18next",
       "community": 43,
@@ -3241,7 +3252,7 @@
       "label": "i18next",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L23",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "i18next",
       "community": 43,
@@ -3252,7 +3263,7 @@
       "label": "lucide-react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L24",
+      "source_location": "L25",
       "_origin": "ast",
       "id": "package_dependencies_lucide_react",
       "community": 43,
@@ -3263,7 +3274,7 @@
       "label": "lucide-react",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L24",
+      "source_location": "L25",
       "_origin": "ast",
       "id": "package_json_lucide_react",
       "community": 43,
@@ -3274,7 +3285,7 @@
       "label": "react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L25",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "package_dependencies_react",
       "community": 43,
@@ -3285,7 +3296,7 @@
       "label": "react",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L25",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "package_json_react",
       "community": 43,
@@ -3296,7 +3307,7 @@
       "label": "react-dom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L26",
+      "source_location": "L27",
       "_origin": "ast",
       "id": "package_dependencies_react_dom",
       "community": 43,
@@ -3307,7 +3318,7 @@
       "label": "react-dom",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L26",
+      "source_location": "L27",
       "_origin": "ast",
       "id": "react_dom",
       "community": 43,
@@ -3318,7 +3329,7 @@
       "label": "react-i18next",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "package_dependencies_react_i18next",
       "community": 43,
@@ -3329,7 +3340,7 @@
       "label": "react-i18next",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "react_i18next",
       "community": 43,
@@ -3340,7 +3351,7 @@
       "label": "tailwind-merge",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L28",
+      "source_location": "L29",
       "_origin": "ast",
       "id": "package_dependencies_tailwind_merge",
       "community": 43,
@@ -3351,7 +3362,7 @@
       "label": "tailwind-merge",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L28",
+      "source_location": "L29",
       "_origin": "ast",
       "id": "tailwind_merge",
       "community": 43,
@@ -3362,7 +3373,7 @@
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L30",
+      "source_location": "L31",
       "_origin": "ast",
       "id": "package_devdependencies",
       "community": 51,
@@ -3373,29 +3384,29 @@
       "label": "@astrojs/check",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L32",
       "_origin": "ast",
       "id": "package_devdependencies_astrojs_check",
-      "community": 51,
-      "community_name": "devDependencies",
+      "community": 247,
+      "community_name": "Quick Reference",
       "norm_label": "@astrojs/check"
     },
     {
       "label": "@astrojs/check",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L32",
       "_origin": "ast",
       "id": "astrojs_check",
-      "community": 51,
-      "community_name": "devDependencies",
+      "community": 247,
+      "community_name": "Quick Reference",
       "norm_label": "@astrojs/check"
     },
     {
       "label": "@tailwindcss/typography",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L32",
+      "source_location": "L33",
       "_origin": "ast",
       "id": "package_devdependencies_tailwindcss_typography",
       "community": 51,
@@ -3406,7 +3417,7 @@
       "label": "@tailwindcss/typography",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L32",
+      "source_location": "L33",
       "_origin": "ast",
       "id": "tailwindcss_typography",
       "community": 51,
@@ -3417,7 +3428,7 @@
       "label": "@tailwindcss/vite",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L33",
+      "source_location": "L34",
       "_origin": "ast",
       "id": "package_devdependencies_tailwindcss_vite",
       "community": 299,
@@ -3428,7 +3439,7 @@
       "label": "@tailwindcss/vite",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L33",
+      "source_location": "L34",
       "_origin": "ast",
       "id": "tailwindcss_vite",
       "community": 299,
@@ -3439,29 +3450,29 @@
       "label": "@types/node",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L34",
+      "source_location": "L35",
       "_origin": "ast",
       "id": "package_devdependencies_types_node",
-      "community": 297,
-      "community_name": "@astrojs/check",
+      "community": 51,
+      "community_name": "devDependencies",
       "norm_label": "@types/node"
     },
     {
       "label": "@types/node",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L34",
+      "source_location": "L35",
       "_origin": "ast",
       "id": "types_node",
-      "community": 297,
-      "community_name": "@astrojs/check",
+      "community": 51,
+      "community_name": "devDependencies",
       "norm_label": "@types/node"
     },
     {
       "label": "@types/react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L35",
+      "source_location": "L36",
       "_origin": "ast",
       "id": "package_devdependencies_types_react",
       "community": 51,
@@ -3472,7 +3483,7 @@
       "label": "@types/react",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L35",
+      "source_location": "L36",
       "_origin": "ast",
       "id": "types_react",
       "community": 51,
@@ -3483,29 +3494,29 @@
       "label": "@types/react-dom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L36",
+      "source_location": "L37",
       "_origin": "ast",
       "id": "package_devdependencies_types_react_dom",
-      "community": 280,
-      "community_name": "tailwindcss",
+      "community": 51,
+      "community_name": "devDependencies",
       "norm_label": "@types/react-dom"
     },
     {
       "label": "@types/react-dom",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L36",
+      "source_location": "L37",
       "_origin": "ast",
       "id": "types_react_dom",
-      "community": 280,
-      "community_name": "tailwindcss",
+      "community": 51,
+      "community_name": "devDependencies",
       "norm_label": "@types/react-dom"
     },
     {
       "label": "@typescript-eslint/eslint-plugin",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L37",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "package_devdependencies_typescript_eslint_eslint_plugin",
       "community": 51,
@@ -3516,7 +3527,7 @@
       "label": "@typescript-eslint/eslint-plugin",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L37",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "typescript_eslint_eslint_plugin",
       "community": 51,
@@ -3527,29 +3538,29 @@
       "label": "@typescript-eslint/parser",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L38",
+      "source_location": "L39",
       "_origin": "ast",
       "id": "package_devdependencies_typescript_eslint_parser",
-      "community": 51,
-      "community_name": "devDependencies",
+      "community": 304,
+      "community_name": "@typescript-eslint/parser",
       "norm_label": "@typescript-eslint/parser"
     },
     {
       "label": "@typescript-eslint/parser",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L38",
+      "source_location": "L39",
       "_origin": "ast",
       "id": "typescript_eslint_parser",
-      "community": 51,
-      "community_name": "devDependencies",
+      "community": 304,
+      "community_name": "@typescript-eslint/parser",
       "norm_label": "@typescript-eslint/parser"
     },
     {
       "label": "crc-32",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L39",
+      "source_location": "L40",
       "_origin": "ast",
       "id": "package_devdependencies_crc_32",
       "community": 51,
@@ -3560,7 +3571,7 @@
       "label": "crc-32",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L39",
+      "source_location": "L40",
       "_origin": "ast",
       "id": "crc_32",
       "community": 51,
@@ -3571,7 +3582,7 @@
       "label": "eslint",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L40",
+      "source_location": "L41",
       "_origin": "ast",
       "id": "package_devdependencies_eslint",
       "community": 51,
@@ -3582,7 +3593,7 @@
       "label": "eslint",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L40",
+      "source_location": "L41",
       "_origin": "ast",
       "id": "eslint",
       "community": 51,
@@ -3593,7 +3604,7 @@
       "label": "eslint-plugin-astro",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L41",
+      "source_location": "L42",
       "_origin": "ast",
       "id": "package_devdependencies_eslint_plugin_astro",
       "community": 51,
@@ -3604,7 +3615,7 @@
       "label": "eslint-plugin-astro",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L41",
+      "source_location": "L42",
       "_origin": "ast",
       "id": "eslint_plugin_astro",
       "community": 51,
@@ -3615,7 +3626,7 @@
       "label": "glob",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L42",
+      "source_location": "L43",
       "_origin": "ast",
       "id": "package_devdependencies_glob",
       "community": 279,
@@ -3626,7 +3637,7 @@
       "label": "glob",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L42",
+      "source_location": "L43",
       "_origin": "ast",
       "id": "glob",
       "community": 279,
@@ -3637,51 +3648,51 @@
       "label": "gray-matter",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L43",
+      "source_location": "L44",
       "_origin": "ast",
       "id": "package_devdependencies_gray_matter",
-      "community": 51,
-      "community_name": "devDependencies",
+      "community": 301,
+      "community_name": "gray-matter",
       "norm_label": "gray-matter"
     },
     {
       "label": "gray-matter",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L43",
+      "source_location": "L44",
       "_origin": "ast",
       "id": "gray_matter",
-      "community": 51,
-      "community_name": "devDependencies",
+      "community": 301,
+      "community_name": "gray-matter",
       "norm_label": "gray-matter"
     },
     {
       "label": "tailwindcss",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L44",
+      "source_location": "L45",
       "_origin": "ast",
       "id": "package_devdependencies_tailwindcss",
-      "community": 51,
-      "community_name": "devDependencies",
+      "community": 303,
+      "community_name": "tailwindcss",
       "norm_label": "tailwindcss"
     },
     {
       "label": "tailwindcss",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L44",
+      "source_location": "L45",
       "_origin": "ast",
       "id": "tailwindcss",
-      "community": 51,
-      "community_name": "devDependencies",
+      "community": 303,
+      "community_name": "tailwindcss",
       "norm_label": "tailwindcss"
     },
     {
       "label": "tsx",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L45",
+      "source_location": "L46",
       "_origin": "ast",
       "id": "package_devdependencies_tsx",
       "community": 51,
@@ -3692,7 +3703,7 @@
       "label": "tsx",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L45",
+      "source_location": "L46",
       "_origin": "ast",
       "id": "tsx",
       "community": 51,
@@ -3703,51 +3714,51 @@
       "label": "typescript",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L46",
+      "source_location": "L47",
       "_origin": "ast",
       "id": "package_devdependencies_typescript",
-      "community": 281,
-      "community_name": "tsx",
+      "community": 51,
+      "community_name": "devDependencies",
       "norm_label": "typescript"
     },
     {
       "label": "typescript",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L46",
+      "source_location": "L47",
       "_origin": "ast",
       "id": "typescript",
-      "community": 281,
-      "community_name": "tsx",
+      "community": 51,
+      "community_name": "devDependencies",
       "norm_label": "typescript"
     },
     {
       "label": "typescript-eslint",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L47",
+      "source_location": "L48",
       "_origin": "ast",
       "id": "package_devdependencies_typescript_eslint",
-      "community": 283,
-      "community_name": "@types/react-dom",
+      "community": 51,
+      "community_name": "devDependencies",
       "norm_label": "typescript-eslint"
     },
     {
       "label": "typescript-eslint",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L47",
+      "source_location": "L48",
       "_origin": "ast",
       "id": "typescript_eslint",
-      "community": 283,
-      "community_name": "@types/react-dom",
+      "community": 51,
+      "community_name": "devDependencies",
       "norm_label": "typescript-eslint"
     },
     {
       "label": "wrangler",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L48",
+      "source_location": "L49",
       "_origin": "ast",
       "id": "package_devdependencies_wrangler",
       "community": 302,
@@ -3758,7 +3769,7 @@
       "label": "wrangler",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L48",
+      "source_location": "L49",
       "_origin": "ast",
       "id": "wrangler",
       "community": 302,
@@ -3884,6 +3895,116 @@
       "norm_label": "files"
     },
     {
+      "label": "validate-i18n.ts",
+      "file_type": "code",
+      "source_file": "scripts/validate-i18n.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_validate_i18n",
+      "community": 230,
+      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "norm_label": "validate-i18n.ts"
+    },
+    {
+      "label": "Dict",
+      "file_type": "code",
+      "source_file": "scripts/validate-i18n.ts",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "scripts_validate_i18n_dict",
+      "community": 230,
+      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "norm_label": "dict"
+    },
+    {
+      "label": "load()",
+      "file_type": "code",
+      "source_file": "scripts/validate-i18n.ts",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "scripts_validate_i18n_load",
+      "community": 230,
+      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "norm_label": "load()"
+    },
+    {
+      "label": "placeholders()",
+      "file_type": "code",
+      "source_file": "scripts/validate-i18n.ts",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "scripts_validate_i18n_placeholders",
+      "community": 230,
+      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "norm_label": "placeholders()"
+    },
+    {
+      "label": "loadGlossary()",
+      "file_type": "code",
+      "source_file": "scripts/validate-i18n.ts",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "scripts_validate_i18n_loadglossary",
+      "community": 230,
+      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "norm_label": "loadglossary()"
+    },
+    {
+      "label": "validate()",
+      "file_type": "code",
+      "source_file": "scripts/validate-i18n.ts",
+      "source_location": "L68",
+      "_origin": "ast",
+      "id": "scripts_validate_i18n_validate",
+      "community": 230,
+      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "norm_label": "validate()"
+    },
+    {
+      "label": "requested",
+      "file_type": "code",
+      "source_file": "scripts/validate-i18n.ts",
+      "source_location": "L121",
+      "_origin": "ast",
+      "id": "scripts_validate_i18n_requested",
+      "community": 230,
+      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "norm_label": "requested"
+    },
+    {
+      "label": "available",
+      "file_type": "code",
+      "source_file": "scripts/validate-i18n.ts",
+      "source_location": "L122",
+      "_origin": "ast",
+      "id": "scripts_validate_i18n_available",
+      "community": 230,
+      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "norm_label": "available"
+    },
+    {
+      "label": "en",
+      "file_type": "code",
+      "source_file": "scripts/validate-i18n.ts",
+      "source_location": "L128",
+      "_origin": "ast",
+      "id": "scripts_validate_i18n_en",
+      "community": 230,
+      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "norm_label": "en"
+    },
+    {
+      "label": "{ terms: doNotTranslate, exempt }",
+      "file_type": "code",
+      "source_file": "scripts/validate-i18n.ts",
+      "source_location": "L129",
+      "_origin": "ast",
+      "id": "scripts_validate_i18n_terms_donottranslate_exempt",
+      "community": 230,
+      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "norm_label": "{ terms: donottranslate, exempt }"
+    },
+    {
       "label": "@/components/apps/fomogen/CoreFeatures.astro",
       "file_type": "code",
       "source_file": "src/components/apps/fomogen/CoreFeatures.astro",
@@ -3937,8 +4058,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "astro_assets",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "astro:assets"
     },
     {
@@ -4017,8 +4138,8 @@
       "_origin": "ast",
       "source_location": "L1",
       "id": "src_i18n_localize",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "@/i18n/localize"
     },
     {
@@ -4612,8 +4733,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_blog_carttimecta",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "carttimecta.astro"
     },
     {
@@ -4623,8 +4744,8 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "src_components_blog_carttimecta_content",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "content"
     },
     {
@@ -4634,8 +4755,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_blog_fomogencta",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "fomogencta.astro"
     },
     {
@@ -4645,8 +4766,8 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "src_components_blog_fomogencta_content",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "content"
     },
     {
@@ -4656,8 +4777,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_blog_mindfulguardcta",
-      "community": 272,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "mindfulguardcta.astro"
     },
     {
@@ -4667,8 +4788,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_components_blog_mindfulguardcta_href",
-      "community": 272,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "href"
     },
     {
@@ -4678,8 +4799,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "src_components_blog_mindfulguardcta_content",
-      "community": 272,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "content"
     },
     {
@@ -5170,8 +5291,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_docs_content_mindful_guard_mindfulguarddocspage",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "../components/docs-content/mindful-guard/mindfulguarddocspage.astro"
     },
     {
@@ -5206,8 +5327,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_docs_content_screenveil_screenveildocspage",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "../components/docs-content/screenveil/screenveildocspage.astro"
     },
     {
@@ -5276,8 +5397,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_home_foundersmoat",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/components/home/foundersmoat.astro"
     },
     {
@@ -5288,8 +5409,8 @@
       "_origin": "ast",
       "source_location": "L1",
       "id": "src_constants_home_data",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/constants/home-data"
     },
     {
@@ -5335,8 +5456,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_home_productshowcase",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/components/home/productshowcase.astro"
     },
     {
@@ -5346,8 +5467,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_fomogen_feature_png",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/assets/apps/fomogen-feature.png"
     },
     {
@@ -5357,8 +5478,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_mindful_guard_feature_png",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/assets/apps/mindful-guard-feature.png"
     },
     {
@@ -5368,8 +5489,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_screenveil_feature_png",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/assets/apps/screenveil-feature.png"
     },
     {
@@ -5392,8 +5513,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_home_solutionssection",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/components/home/solutionssection.astro"
     },
     {
@@ -5403,8 +5524,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "src_components_home_solutionssection_icons",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "icons"
     },
     {
@@ -5414,8 +5535,8 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "src_components_home_solutionssection_lang",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "lang"
     },
     {
@@ -5425,8 +5546,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "src_components_home_solutionssection_solutionsdata",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "solutionsdata"
     },
     {
@@ -5437,8 +5558,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_home_testimonials",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/components/home/testimonials.astro"
     },
     {
@@ -5698,8 +5819,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_constants_home_data_getsolutions",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "getsolutions()"
     },
     {
@@ -5709,8 +5830,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "src_constants_home_data_getproducts",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "getproducts()"
     },
     {
@@ -5720,8 +5841,8 @@
       "source_location": "L93",
       "_origin": "ast",
       "id": "src_constants_home_data_pillar",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "pillar"
     },
     {
@@ -5731,8 +5852,8 @@
       "source_location": "L103",
       "_origin": "ast",
       "id": "src_constants_home_data_gettestimonials",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "gettestimonials()"
     },
     {
@@ -5742,8 +5863,8 @@
       "source_location": "L148",
       "_origin": "ast",
       "id": "src_constants_home_data_getaboutpillars",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "getaboutpillars()"
     },
     {
@@ -5753,8 +5874,8 @@
       "source_location": "L179",
       "_origin": "ast",
       "id": "src_constants_home_data_gethomepillars",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "gethomepillars()"
     },
     {
@@ -6475,8 +6596,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_aboutpage",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/page-templates/aboutpage.astro"
     },
     {
@@ -6534,8 +6655,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_appspage",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/page-templates/appspage.astro"
     },
     {
@@ -6627,8 +6748,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_comparepage",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "@/page-templates/comparepage.astro"
     },
     {
@@ -6651,8 +6772,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_docsarticlepage",
-      "community": 45,
-      "community_name": "localize",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "@/page-templates/docsarticlepage.astro"
     },
     {
@@ -6686,8 +6807,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_docsproductpage",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "@/page-templates/docsproductpage.astro"
     },
     {
@@ -6697,8 +6818,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "src_page_templates_docsproductpage_contents",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "contents"
     },
     {
@@ -6708,8 +6829,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "src_page_templates_docsproductpage_productmeta",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "productmeta"
     },
     {
@@ -6732,8 +6853,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_homepage",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/page-templates/homepage.astro"
     },
     {
@@ -6743,8 +6864,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "src_page_templates_homepage_meta",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "meta"
     },
     {
@@ -6811,8 +6932,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_about_index",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "[lang]/about/index.astro"
     },
     {
@@ -6822,8 +6943,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_about_index_getstaticpaths",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -6877,8 +6998,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_apps_index",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "[lang]/apps/index.astro"
     },
     {
@@ -6888,8 +7009,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_apps_index_getstaticpaths",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7009,8 +7130,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_compare_index",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "[lang]/compare/index.astro"
     },
     {
@@ -7020,8 +7141,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_compare_index_getstaticpaths",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7075,8 +7196,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_docs_product_index",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "[product]/index.astro"
     },
     {
@@ -7086,8 +7207,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_docs_product_index_getstaticpaths",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7141,8 +7262,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_index",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "[lang]/index.astro"
     },
     {
@@ -7152,8 +7273,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_index_getstaticpaths",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7185,8 +7306,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_about_index",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "pages/about/index.astro"
     },
     {
@@ -7218,8 +7339,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_apps_index",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "pages/apps/index.astro"
     },
     {
@@ -7306,8 +7427,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_compare_index",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "pages/compare/index.astro"
     },
     {
@@ -7361,8 +7482,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_fomogen_faq_index",
-      "community": 45,
-      "community_name": "localize",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "faq/index.astro"
     },
     {
@@ -7372,8 +7493,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_fomogen_index",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "docs/fomogen/index.astro"
     },
     {
@@ -7405,8 +7526,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_fomogen_quick_start_index",
-      "community": 45,
-      "community_name": "localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "quick-start/index.astro"
     },
     {
@@ -7471,8 +7592,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_mindful_guard_index",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "docs/mindful-guard/index.astro"
     },
     {
@@ -7515,8 +7636,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_screenveil_index",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "docs/screenveil/index.astro"
     },
     {
@@ -7537,8 +7658,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_index",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "pages/index.astro"
     },
     {
@@ -7919,7 +8040,7 @@
       "label": "LOCALES",
       "file_type": "code",
       "source_file": "worker/index.ts",
-      "source_location": "L6",
+      "source_location": "L10",
       "_origin": "ast",
       "id": "worker_index_locales",
       "community": 2,
@@ -7927,21 +8048,10 @@
       "norm_label": "locales"
     },
     {
-      "label": "Locale",
-      "file_type": "code",
-      "source_file": "worker/index.ts",
-      "source_location": "L7",
-      "_origin": "ast",
-      "id": "worker_index_locale",
-      "community": 2,
-      "community_name": "@/i18n/config",
-      "norm_label": "locale"
-    },
-    {
       "label": "COUNTRY_TO_LOCALE",
       "file_type": "code",
       "source_file": "worker/index.ts",
-      "source_location": "L12",
+      "source_location": "L17",
       "_origin": "ast",
       "id": "worker_index_country_to_locale",
       "community": 2,
@@ -7952,7 +8062,7 @@
       "label": "hasLocalePrefix()",
       "file_type": "code",
       "source_file": "worker/index.ts",
-      "source_location": "L46",
+      "source_location": "L51",
       "_origin": "ast",
       "id": "worker_index_haslocaleprefix",
       "community": 2,
@@ -7963,7 +8073,7 @@
       "label": "getCookie()",
       "file_type": "code",
       "source_file": "worker/index.ts",
-      "source_location": "L52",
+      "source_location": "L57",
       "_origin": "ast",
       "id": "worker_index_getcookie",
       "community": 2,
@@ -7974,7 +8084,7 @@
       "label": "fetch()",
       "file_type": "code",
       "source_file": "worker/index.ts",
-      "source_location": "L60",
+      "source_location": "L65",
       "_origin": "ast",
       "id": "worker_index_fetch",
       "community": 2,
@@ -10815,8 +10925,8 @@
       "source_location": "L175",
       "_origin": "ast",
       "id": "agent_agents_mobile_developer_development_decision_process",
-      "community": 89,
-      "community_name": "Mobile Developer",
+      "community": 50,
+      "community_name": "@/page-templates/AppsPage.astro",
       "norm_label": "development decision process"
     },
     {
@@ -10826,8 +10936,8 @@
       "source_location": "L177",
       "_origin": "ast",
       "id": "agent_agents_mobile_developer_phase_1_requirements_analysis_always_first",
-      "community": 89,
-      "community_name": "Mobile Developer",
+      "community": 50,
+      "community_name": "@/page-templates/AppsPage.astro",
       "norm_label": "phase 1: requirements analysis (always first)"
     },
     {
@@ -10837,8 +10947,8 @@
       "source_location": "L188",
       "_origin": "ast",
       "id": "agent_agents_mobile_developer_phase_2_architecture",
-      "community": 89,
-      "community_name": "Mobile Developer",
+      "community": 50,
+      "community_name": "@/page-templates/AppsPage.astro",
       "norm_label": "phase 2: architecture"
     },
     {
@@ -10848,8 +10958,8 @@
       "source_location": "L197",
       "_origin": "ast",
       "id": "agent_agents_mobile_developer_phase_3_execute",
-      "community": 89,
-      "community_name": "Mobile Developer",
+      "community": 50,
+      "community_name": "@/page-templates/AppsPage.astro",
       "norm_label": "phase 3: execute"
     },
     {
@@ -10859,8 +10969,8 @@
       "source_location": "L206",
       "_origin": "ast",
       "id": "agent_agents_mobile_developer_phase_4_verification",
-      "community": 89,
-      "community_name": "Mobile Developer",
+      "community": 50,
+      "community_name": "@/page-templates/AppsPage.astro",
       "norm_label": "phase 4: verification"
     },
     {
@@ -10936,8 +11046,8 @@
       "source_location": "L279",
       "_origin": "ast",
       "id": "agent_agents_mobile_developer_build_verification_mandatory_before_done",
-      "community": 89,
-      "community_name": "Mobile Developer",
+      "community": 231,
+      "community_name": "7. Landing Page Guidelines {#landing-page}",
       "norm_label": "\ud83d\udd34 build verification (mandatory before \"done\")"
     },
     {
@@ -10947,8 +11057,8 @@
       "source_location": "L283",
       "_origin": "ast",
       "id": "agent_agents_mobile_developer_why_this_is_non_negotiable",
-      "community": 89,
-      "community_name": "Mobile Developer",
+      "community": 231,
+      "community_name": "7. Landing Page Guidelines {#landing-page}",
       "norm_label": "why this is non-negotiable"
     },
     {
@@ -10958,8 +11068,8 @@
       "source_location": "L296",
       "_origin": "ast",
       "id": "agent_agents_mobile_developer_emulator_quick_commands_all_platforms",
-      "community": 89,
-      "community_name": "Mobile Developer",
+      "community": 231,
+      "community_name": "7. Landing Page Guidelines {#landing-page}",
       "norm_label": "\ud83d\udcf1 emulator quick commands (all platforms)"
     },
     {
@@ -10969,8 +11079,8 @@
       "source_location": "L335",
       "_origin": "ast",
       "id": "agent_agents_mobile_developer_build_commands_by_framework",
-      "community": 89,
-      "community_name": "Mobile Developer",
+      "community": 231,
+      "community_name": "7. Landing Page Guidelines {#landing-page}",
       "norm_label": "build commands by framework"
     },
     {
@@ -10980,8 +11090,8 @@
       "source_location": "L344",
       "_origin": "ast",
       "id": "agent_agents_mobile_developer_what_to_check_after_build",
-      "community": 89,
-      "community_name": "Mobile Developer",
+      "community": 231,
+      "community_name": "7. Landing Page Guidelines {#landing-page}",
       "norm_label": "what to check after build"
     },
     {
@@ -10991,8 +11101,8 @@
       "source_location": "L357",
       "_origin": "ast",
       "id": "agent_agents_mobile_developer_common_build_errors_to_watch_for",
-      "community": 89,
-      "community_name": "Mobile Developer",
+      "community": 231,
+      "community_name": "7. Landing Page Guidelines {#landing-page}",
       "norm_label": "common build errors to watch for"
     },
     {
@@ -11002,8 +11112,8 @@
       "source_location": "L368",
       "_origin": "ast",
       "id": "agent_agents_mobile_developer_mandatory_build_checklist",
-      "community": 89,
-      "community_name": "Mobile Developer",
+      "community": 231,
+      "community_name": "7. Landing Page Guidelines {#landing-page}",
       "norm_label": "mandatory build checklist"
     },
     {
@@ -18471,8 +18581,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill",
-      "community": 206,
-      "community_name": "translate-i18n.ts",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "frontend-design/skill.md"
     },
     {
@@ -18966,8 +19076,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "animation-guide.md"
     },
     {
@@ -19032,8 +19142,8 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_2_easing_principles",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 256,
+      "community_name": "10. Complexity Estimation",
       "norm_label": "2. easing principles"
     },
     {
@@ -19043,8 +19153,8 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_what_easing_does",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 256,
+      "community_name": "10. Complexity Estimation",
       "norm_label": "what easing does"
     },
     {
@@ -19054,8 +19164,8 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_when_to_use_each",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 256,
+      "community_name": "10. Complexity Estimation",
       "norm_label": "when to use each"
     },
     {
@@ -19065,8 +19175,8 @@
       "source_location": "L64",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_the_pattern",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 256,
+      "community_name": "10. Complexity Estimation",
       "norm_label": "the pattern"
     },
     {
@@ -19120,8 +19230,8 @@
       "source_location": "L116",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_4_loading_states_principles",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 268,
+      "community_name": "6. Weight and Emphasis Principles",
       "norm_label": "4. loading states principles"
     },
     {
@@ -19131,8 +19241,8 @@
       "source_location": "L118",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_types_by_context",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 268,
+      "community_name": "6. Weight and Emphasis Principles",
       "norm_label": "types by context"
     },
     {
@@ -19142,8 +19252,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_skeleton_screens",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 268,
+      "community_name": "6. Weight and Emphasis Principles",
       "norm_label": "skeleton screens"
     },
     {
@@ -19153,8 +19263,8 @@
       "source_location": "L137",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_progress_indicators",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 268,
+      "community_name": "6. Weight and Emphasis Principles",
       "norm_label": "progress indicators"
     },
     {
@@ -19164,8 +19274,8 @@
       "source_location": "L154",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_5_page_transitions_principles",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "5. page transitions principles"
     },
     {
@@ -19175,8 +19285,8 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_transition_strategy",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "transition strategy"
     },
     {
@@ -19186,8 +19296,8 @@
       "source_location": "L165",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_common_patterns",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "common patterns"
     },
     {
@@ -19197,8 +19307,8 @@
       "source_location": "L174",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_direction_matching",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "direction matching"
     },
     {
@@ -19208,8 +19318,8 @@
       "source_location": "L186",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_6_scroll_animation_principles",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 232,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "6. scroll animation principles"
     },
     {
@@ -19219,8 +19329,8 @@
       "source_location": "L188",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_progressive_reveal",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 232,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "progressive reveal"
     },
     {
@@ -19230,8 +19340,8 @@
       "source_location": "L198",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_trigger_points",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 232,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "trigger points"
     },
     {
@@ -19241,8 +19351,8 @@
       "source_location": "L207",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_animation_properties",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 232,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "animation properties"
     },
     {
@@ -19252,8 +19362,8 @@
       "source_location": "L214",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_performance",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 232,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "performance"
     },
     {
@@ -19296,8 +19406,8 @@
       "source_location": "L242",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_8_feedback_animation_principles",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 278,
+      "community_name": "gray-matter",
       "norm_label": "8. feedback animation principles"
     },
     {
@@ -19307,8 +19417,8 @@
       "source_location": "L244",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_success_states",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 278,
+      "community_name": "gray-matter",
       "norm_label": "success states"
     },
     {
@@ -19318,8 +19428,8 @@
       "source_location": "L254",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_error_states",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 278,
+      "community_name": "gray-matter",
       "norm_label": "error states"
     },
     {
@@ -19329,8 +19439,8 @@
       "source_location": "L264",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_timing",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 278,
+      "community_name": "gray-matter",
       "norm_label": "timing"
     },
     {
@@ -19340,8 +19450,8 @@
       "source_location": "L272",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_9_performance_principles",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 280,
+      "community_name": "tailwindcss",
       "norm_label": "9. performance principles"
     },
     {
@@ -19351,8 +19461,8 @@
       "source_location": "L274",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_what_s_cheap_to_animate",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 280,
+      "community_name": "tailwindcss",
       "norm_label": "what's cheap to animate"
     },
     {
@@ -19362,8 +19472,8 @@
       "source_location": "L289",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_optimization_strategies",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 280,
+      "community_name": "tailwindcss",
       "norm_label": "optimization strategies"
     },
     {
@@ -19373,8 +19483,8 @@
       "source_location": "L296",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_respecting_user_preferences",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 280,
+      "community_name": "tailwindcss",
       "norm_label": "respecting user preferences"
     },
     {
@@ -19406,8 +19516,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system",
-      "community": 206,
-      "community_name": "translate-i18n.ts",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "color-system.md"
     },
     {
@@ -19549,8 +19659,8 @@
       "source_location": "L124",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_4_palette_generation_principles",
-      "community": 231,
-      "community_name": "7. Landing Page Guidelines {#landing-page}",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "4. palette generation principles"
     },
     {
@@ -19560,8 +19670,8 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_from_a_single_color_hsl_method",
-      "community": 231,
-      "community_name": "7. Landing Page Guidelines {#landing-page}",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "from a single color (hsl method)"
     },
     {
@@ -19571,8 +19681,8 @@
       "source_location": "L151",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_generating_a_full_palette",
-      "community": 231,
-      "community_name": "7. Landing Page Guidelines {#landing-page}",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "generating a full palette"
     },
     {
@@ -19582,8 +19692,8 @@
       "source_location": "L169",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_saturation_adjustments",
-      "community": 231,
-      "community_name": "7. Landing Page Guidelines {#landing-page}",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "saturation adjustments"
     },
     {
@@ -19615,8 +19725,8 @@
       "source_location": "L226",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_6_dark_mode_principles",
-      "community": 232,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "6. dark mode principles"
     },
     {
@@ -19626,8 +19736,8 @@
       "source_location": "L228",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_key_rules_no_fixed_codes",
-      "community": 232,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "key rules (no fixed codes)"
     },
     {
@@ -19637,8 +19747,8 @@
       "source_location": "L235",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_contrast_in_dark_mode",
-      "community": 232,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "contrast in dark mode"
     },
     {
@@ -19648,8 +19758,8 @@
       "source_location": "L245",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_adapting_colors_for_dark_mode",
-      "community": 232,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "adapting colors for dark mode"
     },
     {
@@ -19659,8 +19769,8 @@
       "source_location": "L256",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_7_accessibility_guidelines",
-      "community": 233,
-      "community_name": "9. Pre-Design Checklists",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "7. accessibility guidelines"
     },
     {
@@ -19670,8 +19780,8 @@
       "source_location": "L258",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_contrast_requirements_wcag",
-      "community": 233,
-      "community_name": "9. Pre-Design Checklists",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "contrast requirements (wcag)"
     },
     {
@@ -19681,8 +19791,8 @@
       "source_location": "L265",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_how_to_check_contrast",
-      "community": 233,
-      "community_name": "9. Pre-Design Checklists",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "how to check contrast"
     },
     {
@@ -19692,8 +19802,8 @@
       "source_location": "L271",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_safe_patterns",
-      "community": 233,
-      "community_name": "9. Pre-Design Checklists",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "safe patterns"
     },
     {
@@ -19747,8 +19857,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees",
-      "community": 206,
-      "community_name": "translate-i18n.ts",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "frontend-design/decision-trees.md"
     },
     {
@@ -20187,8 +20297,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics",
-      "community": 206,
-      "community_name": "translate-i18n.ts",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "motion-graphics.md"
     },
     {
@@ -20209,8 +20319,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_1_lottie_animations",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 233,
+      "community_name": "9. Pre-Design Checklists",
       "norm_label": "1. lottie animations"
     },
     {
@@ -20220,8 +20330,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_what_is_lottie",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 233,
+      "community_name": "9. Pre-Design Checklists",
       "norm_label": "what is lottie?"
     },
     {
@@ -20231,8 +20341,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use_lottie",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 233,
+      "community_name": "9. Pre-Design Checklists",
       "norm_label": "when to use lottie"
     },
     {
@@ -20242,8 +20352,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 233,
+      "community_name": "9. Pre-Design Checklists",
       "norm_label": "principles"
     },
     {
@@ -20253,8 +20363,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_sources",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 233,
+      "community_name": "9. Pre-Design Checklists",
       "norm_label": "sources"
     },
     {
@@ -20264,8 +20374,8 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_2_gsap_greensock",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 234,
+      "community_name": "1. Lottie Animations",
       "norm_label": "2. gsap (greensock)"
     },
     {
@@ -20275,8 +20385,8 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_what_makes_gsap_different",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 234,
+      "community_name": "1. Lottie Animations",
       "norm_label": "what makes gsap different"
     },
     {
@@ -20286,8 +20396,8 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_core_concepts",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 234,
+      "community_name": "1. Lottie Animations",
       "norm_label": "core concepts"
     },
     {
@@ -20297,8 +20407,8 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use_gsap",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 234,
+      "community_name": "1. Lottie Animations",
       "norm_label": "when to use gsap"
     },
     {
@@ -20308,8 +20418,8 @@
       "source_location": "L77",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_77",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 234,
+      "community_name": "1. Lottie Animations",
       "norm_label": "principles"
     },
     {
@@ -20374,8 +20484,8 @@
       "source_location": "L125",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_4_3d_css_transforms",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 281,
+      "community_name": "tsx",
       "norm_label": "4. 3d css transforms"
     },
     {
@@ -20385,8 +20495,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_core_properties",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 281,
+      "community_name": "tsx",
       "norm_label": "core properties"
     },
     {
@@ -20396,8 +20506,8 @@
       "source_location": "L138",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_common_3d_patterns",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 281,
+      "community_name": "tsx",
       "norm_label": "common 3d patterns"
     },
     {
@@ -20407,8 +20517,8 @@
       "source_location": "L147",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_147",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 281,
+      "community_name": "tsx",
       "norm_label": "principles"
     },
     {
@@ -20418,8 +20528,8 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_5_particle_effects",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 236,
+      "community_name": "5. Particle Effects",
       "norm_label": "5. particle effects"
     },
     {
@@ -20429,8 +20539,8 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_types_of_particle_systems",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 236,
+      "community_name": "5. Particle Effects",
       "norm_label": "types of particle systems"
     },
     {
@@ -20440,8 +20550,8 @@
       "source_location": "L168",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_libraries",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 236,
+      "community_name": "5. Particle Effects",
       "norm_label": "libraries"
     },
     {
@@ -20451,8 +20561,8 @@
       "source_location": "L177",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_177",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 236,
+      "community_name": "5. Particle Effects",
       "norm_label": "principles"
     },
     {
@@ -20462,8 +20572,8 @@
       "source_location": "L185",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 236,
+      "community_name": "5. Particle Effects",
       "norm_label": "when to use"
     },
     {
@@ -20583,8 +20693,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system",
-      "community": 206,
-      "community_name": "translate-i18n.ts",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "typography-system.md"
     },
     {
@@ -20605,8 +20715,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_1_modular_scale_principles",
-      "community": 230,
-      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "1. modular scale principles"
     },
     {
@@ -20616,8 +20726,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_what_is_a_modular_scale",
-      "community": 230,
-      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "what is a modular scale?"
     },
     {
@@ -20627,8 +20737,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_common_ratios_and_when_to_use",
-      "community": 230,
-      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "common ratios and when to use"
     },
     {
@@ -20638,8 +20748,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_generate_your_scale",
-      "community": 230,
-      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "generate your scale"
     },
     {
@@ -20649,8 +20759,8 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_choosing_base_size",
-      "community": 230,
-      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "choosing base size"
     },
     {
@@ -20660,8 +20770,8 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_2_font_pairing_principles",
-      "community": 217,
-      "community_name": "Development Decision Process",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "2. font pairing principles"
     },
     {
@@ -20671,8 +20781,8 @@
       "source_location": "L60",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_what_makes_fonts_work_together",
-      "community": 217,
-      "community_name": "Development Decision Process",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "what makes fonts work together"
     },
     {
@@ -20682,8 +20792,8 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_pairing_strategies",
-      "community": 217,
-      "community_name": "Development Decision Process",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "pairing strategies"
     },
     {
@@ -20693,8 +20803,8 @@
       "source_location": "L78",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_what_to_look_for",
-      "community": 217,
-      "community_name": "Development Decision Process",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "what to look for"
     },
     {
@@ -20704,8 +20814,8 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_safe_pairing_patterns",
-      "community": 217,
-      "community_name": "Development Decision Process",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "safe pairing patterns"
     },
     {
@@ -20715,8 +20825,8 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_avoid",
-      "community": 217,
-      "community_name": "Development Decision Process",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "avoid"
     },
     {
@@ -20726,8 +20836,8 @@
       "source_location": "L106",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_3_line_height_principles",
-      "community": 234,
-      "community_name": "1. Lottie Animations",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "3. line height principles"
     },
     {
@@ -20737,8 +20847,8 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_the_relationship",
-      "community": 234,
-      "community_name": "1. Lottie Animations",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "the relationship"
     },
     {
@@ -20748,8 +20858,8 @@
       "source_location": "L118",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_guidelines_by_context",
-      "community": 234,
-      "community_name": "1. Lottie Animations",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "guidelines by context"
     },
     {
@@ -20759,8 +20869,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_adjustment_factors",
-      "community": 234,
-      "community_name": "1. Lottie Animations",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "adjustment factors"
     },
     {
@@ -20770,8 +20880,8 @@
       "source_location": "L136",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_4_line_length_principles",
-      "community": 256,
-      "community_name": "10. Complexity Estimation",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "4. line length principles"
     },
     {
@@ -20781,8 +20891,8 @@
       "source_location": "L138",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_optimal_reading_width",
-      "community": 256,
-      "community_name": "10. Complexity Estimation",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "optimal reading width"
     },
     {
@@ -20792,8 +20902,8 @@
       "source_location": "L147",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_how_to_measure",
-      "community": 256,
-      "community_name": "10. Complexity Estimation",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "how to measure"
     },
     {
@@ -20803,8 +20913,8 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_context_adjustments",
-      "community": 256,
-      "community_name": "10. Complexity Estimation",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "context adjustments"
     },
     {
@@ -20858,8 +20968,8 @@
       "source_location": "L199",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_6_weight_and_emphasis_principles",
-      "community": 268,
-      "community_name": "6. Weight and Emphasis Principles",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "6. weight and emphasis principles"
     },
     {
@@ -20869,8 +20979,8 @@
       "source_location": "L201",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_semantic_weight_usage",
-      "community": 268,
-      "community_name": "6. Weight and Emphasis Principles",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "semantic weight usage"
     },
     {
@@ -20880,8 +20990,8 @@
       "source_location": "L211",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_creating_contrast",
-      "community": 268,
-      "community_name": "6. Weight and Emphasis Principles",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "creating contrast"
     },
     {
@@ -20891,8 +21001,8 @@
       "source_location": "L220",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_avoid_220",
-      "community": 268,
-      "community_name": "6. Weight and Emphasis Principles",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "avoid"
     },
     {
@@ -20935,8 +21045,8 @@
       "source_location": "L258",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_8_hierarchy_principles",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "8. hierarchy principles"
     },
     {
@@ -20946,8 +21056,8 @@
       "source_location": "L260",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_visual_hierarchy_through_type",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "visual hierarchy through type"
     },
     {
@@ -20957,8 +21067,8 @@
       "source_location": "L271",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_typical_hierarchy",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "typical hierarchy"
     },
     {
@@ -20968,8 +21078,8 @@
       "source_location": "L281",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_testing_hierarchy",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "testing hierarchy"
     },
     {
@@ -20979,8 +21089,8 @@
       "source_location": "L289",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_9_readability_psychology",
-      "community": 278,
-      "community_name": "gray-matter",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "9. readability psychology"
     },
     {
@@ -20990,8 +21100,8 @@
       "source_location": "L291",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_f_pattern_reading",
-      "community": 278,
-      "community_name": "gray-matter",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "f-pattern reading"
     },
     {
@@ -21001,8 +21111,8 @@
       "source_location": "L303",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_chunking_for_comprehension",
-      "community": 278,
-      "community_name": "gray-matter",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "chunking for comprehension"
     },
     {
@@ -21012,8 +21122,8 @@
       "source_location": "L310",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_cognitive_ease",
-      "community": 278,
-      "community_name": "gray-matter",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "cognitive ease"
     },
     {
@@ -21045,8 +21155,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_ux_psychology",
-      "community": 206,
-      "community_name": "translate-i18n.ts",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "ux-psychology.md"
     },
     {
@@ -26039,8 +26149,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_1_framework_selection",
-      "community": 236,
-      "community_name": "5. Particle Effects",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "1. framework selection"
     },
     {
@@ -26050,8 +26160,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_master_decision_tree",
-      "community": 236,
-      "community_name": "5. Particle Effects",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "master decision tree"
     },
     {
@@ -26061,8 +26171,8 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_framework_comparison",
-      "community": 236,
-      "community_name": "5. Particle Effects",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "framework comparison"
     },
     {
@@ -26072,8 +26182,8 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_when_to_choose_native",
-      "community": 236,
-      "community_name": "5. Particle Effects",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "when to choose native"
     },
     {
@@ -26083,8 +26193,8 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_2_state_management_selection",
-      "community": 247,
-      "community_name": "Quick Reference",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "2. state management selection"
     },
     {
@@ -26094,8 +26204,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_react_native_state_decision",
-      "community": 247,
-      "community_name": "Quick Reference",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "react native state decision"
     },
     {
@@ -26105,8 +26215,8 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_flutter_state_decision",
-      "community": 247,
-      "community_name": "Quick Reference",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "flutter state decision"
     },
     {
@@ -26116,8 +26226,8 @@
       "source_location": "L162",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_state_management_anti_patterns",
-      "community": 247,
-      "community_name": "Quick Reference",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "state management anti-patterns"
     },
     {
@@ -26259,8 +26369,8 @@
       "source_location": "L430",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_8_decision_checklist",
-      "community": 258,
-      "community_name": "10. Quick Reference",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "8. decision checklist"
     },
     {
@@ -26270,8 +26380,8 @@
       "source_location": "L432",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_before_starting_any_project",
-      "community": 258,
-      "community_name": "10. Quick Reference",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "before starting any project"
     },
     {
@@ -26281,8 +26391,8 @@
       "source_location": "L443",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_questions_to_ask_user",
-      "community": 258,
-      "community_name": "10. Quick Reference",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "questions to ask user"
     },
     {
@@ -26314,8 +26424,8 @@
       "source_location": "L484",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_10_quick_reference",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 297,
+      "community_name": "@astrojs/check",
       "norm_label": "10. quick reference"
     },
     {
@@ -26325,8 +26435,8 @@
       "source_location": "L486",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_framework_quick_pick",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 297,
+      "community_name": "@astrojs/check",
       "norm_label": "framework quick pick"
     },
     {
@@ -26336,8 +26446,8 @@
       "source_location": "L496",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_state_quick_pick",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 297,
+      "community_name": "@astrojs/check",
       "norm_label": "state quick pick"
     },
     {
@@ -26347,8 +26457,8 @@
       "source_location": "L505",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_storage_quick_pick",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 297,
+      "community_name": "@astrojs/check",
       "norm_label": "storage quick pick"
     },
     {
@@ -36258,8 +36368,8 @@
       "source_location": "L100",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_4_attack_surface_mapping",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 206,
+      "community_name": "translate-i18n.ts",
       "norm_label": "4. attack surface mapping"
     },
     {
@@ -36269,8 +36379,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_what_to_map",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 206,
+      "community_name": "translate-i18n.ts",
       "norm_label": "what to map"
     },
     {
@@ -36280,8 +36390,8 @@
       "source_location": "L111",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_prioritization_matrix",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 206,
+      "community_name": "translate-i18n.ts",
       "norm_label": "prioritization matrix"
     },
     {
@@ -36291,8 +36401,8 @@
       "source_location": "L124",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_5_risk_prioritization",
-      "community": 259,
-      "community_name": "7. Project Type Templates",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "5. risk prioritization"
     },
     {
@@ -36302,8 +36412,8 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_cvss_context",
-      "community": 259,
-      "community_name": "7. Project Type Templates",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "cvss + context"
     },
     {
@@ -36313,8 +36423,8 @@
       "source_location": "L135",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_prioritization_decision_tree",
-      "community": 259,
-      "community_name": "7. Project Type Templates",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "prioritization decision tree"
     },
     {
@@ -39616,6 +39726,149 @@
       "community": 243,
       "community_name": "Astro Starter Kit: Basics",
       "norm_label": "\ud83d\udc40 want to learn more?"
+    },
+    {
+      "label": "i18n-glossary.md",
+      "file_type": "document",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_i18n_glossary",
+      "community": 217,
+      "community_name": "Development Decision Process",
+      "norm_label": "i18n-glossary.md"
+    },
+    {
+      "label": "Translation Glossary",
+      "file_type": "document",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_i18n_glossary_translation_glossary",
+      "community": 217,
+      "community_name": "Development Decision Process",
+      "norm_label": "translation glossary"
+    },
+    {
+      "label": "Register",
+      "file_type": "document",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "docs_i18n_glossary_register",
+      "community": 217,
+      "community_name": "Development Decision Process",
+      "norm_label": "register"
+    },
+    {
+      "label": "Do not translate",
+      "file_type": "document",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "docs_i18n_glossary_do_not_translate",
+      "community": 217,
+      "community_name": "Development Decision Process",
+      "norm_label": "do not translate"
+    },
+    {
+      "label": "Competitor and third-party product names",
+      "file_type": "document",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "docs_i18n_glossary_competitor_and_third_party_product_names",
+      "community": 217,
+      "community_name": "Development Decision Process",
+      "norm_label": "competitor and third-party product names"
+    },
+    {
+      "label": "Locale exceptions",
+      "file_type": "document",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "docs_i18n_glossary_locale_exceptions",
+      "community": 217,
+      "community_name": "Development Decision Process",
+      "norm_label": "locale exceptions"
+    },
+    {
+      "label": "Concept terms \u2014 translate, but consistently",
+      "file_type": "document",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L77",
+      "_origin": "ast",
+      "id": "docs_i18n_glossary_concept_terms_translate_but_consistently",
+      "community": 217,
+      "community_name": "Development Decision Process",
+      "norm_label": "concept terms \u2014 translate, but consistently"
+    },
+    {
+      "label": "Placeholders",
+      "file_type": "document",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L102",
+      "_origin": "ast",
+      "id": "docs_i18n_glossary_placeholders",
+      "community": 217,
+      "community_name": "Development Decision Process",
+      "norm_label": "placeholders"
+    },
+    {
+      "label": "Typography",
+      "file_type": "document",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L116",
+      "_origin": "ast",
+      "id": "docs_i18n_glossary_typography",
+      "community": 217,
+      "community_name": "Development Decision Process",
+      "norm_label": "typography"
+    },
+    {
+      "label": "Blog frontmatter",
+      "file_type": "document",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L134",
+      "_origin": "ast",
+      "id": "docs_i18n_glossary_blog_frontmatter",
+      "community": 217,
+      "community_name": "Development Decision Process",
+      "norm_label": "blog frontmatter"
+    },
+    {
+      "label": "Component props",
+      "file_type": "document",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L151",
+      "_origin": "ast",
+      "id": "docs_i18n_glossary_component_props",
+      "community": 217,
+      "community_name": "Development Decision Process",
+      "norm_label": "component props"
+    },
+    {
+      "label": "Idioms \u2014 translate the meaning, not the words",
+      "file_type": "document",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L165",
+      "_origin": "ast",
+      "id": "docs_i18n_glossary_idioms_translate_the_meaning_not_the_words",
+      "community": 217,
+      "community_name": "Development Decision Process",
+      "norm_label": "idioms \u2014 translate the meaning, not the words"
+    },
+    {
+      "label": "Checklist before shipping a locale",
+      "file_type": "document",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L179",
+      "_origin": "ast",
+      "id": "docs_i18n_glossary_checklist_before_shipping_a_locale",
+      "community": 217,
+      "community_name": "Development Decision Process",
+      "norm_label": "checklist before shipping a locale"
     },
     {
       "label": "mindfulguard-marketing-plan.md",
@@ -49416,7 +49669,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package",
@@ -49427,7 +49680,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L30",
+      "source_location": "L31",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package",
@@ -49504,7 +49757,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_scripts",
@@ -49515,7 +49768,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L12",
+      "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_scripts",
@@ -49570,44 +49823,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "package_dependencies",
-      "target": "package_dependencies_astro",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L16",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "package_dependencies",
-      "target": "package_dependencies_astrojs_mdx",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L17",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "package_dependencies",
-      "target": "package_dependencies_astrojs_react",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L18",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "package_dependencies",
-      "target": "package_dependencies_astrojs_sitemap",
+      "source": "package_scripts",
+      "target": "package_scripts_validate_i18n",
       "confidence_score": 1.0
     },
     {
@@ -49618,40 +49838,29 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
-      "target": "package_dependencies_class_variance_authority",
+      "target": "package_dependencies_astro",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L22",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
-      "target": "package_dependencies_clsx",
+      "target": "package_dependencies_astrojs_mdx",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L23",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
-      "target": "package_dependencies_i18next",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L24",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "package_dependencies",
-      "target": "package_dependencies_lucide_react",
+      "target": "package_dependencies_astrojs_react",
       "confidence_score": 1.0
     },
     {
@@ -49662,7 +49871,40 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
-      "target": "package_dependencies_radix_ui_react_slot",
+      "target": "package_dependencies_astrojs_sitemap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "package_dependencies",
+      "target": "package_dependencies_class_variance_authority",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "package_dependencies",
+      "target": "package_dependencies_clsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "package_dependencies",
+      "target": "package_dependencies_i18next",
       "confidence_score": 1.0
     },
     {
@@ -49673,7 +49915,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
-      "target": "package_dependencies_react",
+      "target": "package_dependencies_lucide_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "package_dependencies",
+      "target": "package_dependencies_radix_ui_react_slot",
       "confidence_score": 1.0
     },
     {
@@ -49684,7 +49937,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
-      "target": "package_dependencies_react_dom",
+      "target": "package_dependencies_react",
       "confidence_score": 1.0
     },
     {
@@ -49695,7 +49948,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
-      "target": "package_dependencies_react_i18next",
+      "target": "package_dependencies_react_dom",
       "confidence_score": 1.0
     },
     {
@@ -49706,6 +49959,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
+      "target": "package_dependencies_react_i18next",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "package_dependencies",
       "target": "package_dependencies_tailwind_merge",
       "confidence_score": 1.0
     },
@@ -49713,7 +49977,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -49725,7 +49989,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -49737,7 +50001,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -49749,7 +50013,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -49761,7 +50025,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -49773,7 +50037,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -49785,7 +50049,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -49797,7 +50061,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L23",
+      "source_location": "L24",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -49809,7 +50073,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -49821,7 +50085,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -49833,7 +50097,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L26",
+      "source_location": "L27",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -49845,7 +50109,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -49857,7 +50121,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L28",
+      "source_location": "L29",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -49869,7 +50133,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -49880,7 +50144,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L39",
+      "source_location": "L40",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -49891,7 +50155,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L40",
+      "source_location": "L41",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -49902,7 +50166,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L41",
+      "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -49913,7 +50177,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L42",
+      "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -49924,7 +50188,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L43",
+      "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -49935,7 +50199,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L44",
+      "source_location": "L45",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -49946,7 +50210,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L32",
+      "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -49957,7 +50221,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L33",
+      "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -49968,7 +50232,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L45",
+      "source_location": "L46",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -49979,7 +50243,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L34",
+      "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -49990,7 +50254,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L35",
+      "source_location": "L36",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -50001,7 +50265,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L36",
+      "source_location": "L37",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -50012,7 +50276,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L46",
+      "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -50023,7 +50287,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L47",
+      "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -50034,7 +50298,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L37",
+      "source_location": "L38",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -50045,7 +50309,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L38",
+      "source_location": "L39",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -50056,7 +50320,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L48",
+      "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -50067,7 +50331,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L32",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -50079,7 +50343,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L32",
+      "source_location": "L33",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -50091,7 +50355,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L33",
+      "source_location": "L34",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -50103,7 +50367,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L34",
+      "source_location": "L35",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -50115,7 +50379,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L35",
+      "source_location": "L36",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -50127,7 +50391,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L36",
+      "source_location": "L37",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -50139,7 +50403,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L37",
+      "source_location": "L38",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -50151,7 +50415,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L38",
+      "source_location": "L39",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -50163,7 +50427,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L39",
+      "source_location": "L40",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -50175,7 +50439,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L40",
+      "source_location": "L41",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -50187,7 +50451,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L41",
+      "source_location": "L42",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -50199,7 +50463,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L42",
+      "source_location": "L43",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -50211,7 +50475,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L43",
+      "source_location": "L44",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -50223,7 +50487,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L44",
+      "source_location": "L45",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -50235,7 +50499,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L45",
+      "source_location": "L46",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -50247,7 +50511,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L46",
+      "source_location": "L47",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -50259,7 +50523,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L47",
+      "source_location": "L48",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -50271,7 +50535,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L48",
+      "source_location": "L49",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -50332,6 +50596,129 @@
       "_origin": "ast",
       "source": "scripts_use_localepath",
       "target": "scripts_use_localepath_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/validate-i18n.ts",
+      "source_location": "L122",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_validate_i18n",
+      "target": "scripts_validate_i18n_available",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/validate-i18n.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_validate_i18n",
+      "target": "scripts_validate_i18n_dict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/validate-i18n.ts",
+      "source_location": "L128",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_validate_i18n",
+      "target": "scripts_validate_i18n_en",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/validate-i18n.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_validate_i18n",
+      "target": "scripts_validate_i18n_load",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/validate-i18n.ts",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_validate_i18n",
+      "target": "scripts_validate_i18n_loadglossary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/validate-i18n.ts",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_validate_i18n",
+      "target": "scripts_validate_i18n_placeholders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/validate-i18n.ts",
+      "source_location": "L121",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_validate_i18n",
+      "target": "scripts_validate_i18n_requested",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/validate-i18n.ts",
+      "source_location": "L129",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_validate_i18n",
+      "target": "scripts_validate_i18n_terms_donottranslate_exempt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/validate-i18n.ts",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_validate_i18n",
+      "target": "scripts_validate_i18n_validate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/validate-i18n.ts",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_validate_i18n_validate",
+      "target": "scripts_validate_i18n_load",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/validate-i18n.ts",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_validate_i18n_validate",
+      "target": "scripts_validate_i18n_placeholders",
       "confidence_score": 1.0
     },
     {
@@ -59237,7 +59624,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/pages/[lang]/blog/[slug].astro",
-      "source_location": "L14",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_pages_lang_blog_slug_getstaticpaths",
@@ -60744,7 +61131,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "worker/index.ts",
-      "source_location": "L12",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
       "source": "worker_index",
@@ -60766,7 +61153,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "worker/index.ts",
-      "source_location": "L60",
+      "source_location": "L65",
       "weight": 1.0,
       "_origin": "ast",
       "source": "worker_index",
@@ -60777,7 +61164,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "worker/index.ts",
-      "source_location": "L52",
+      "source_location": "L57",
       "weight": 1.0,
       "_origin": "ast",
       "source": "worker_index",
@@ -60788,7 +61175,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "worker/index.ts",
-      "source_location": "L46",
+      "source_location": "L51",
       "weight": 1.0,
       "_origin": "ast",
       "source": "worker_index",
@@ -60799,18 +61186,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "worker/index.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "worker_index",
-      "target": "worker_index_locale",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "worker/index.ts",
-      "source_location": "L6",
+      "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
       "source": "worker_index",
@@ -60823,7 +61199,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "worker/index.ts",
-      "source_location": "L47",
+      "source_location": "L52",
       "weight": 1.0,
       "_origin": "ast",
       "source": "worker_index_haslocaleprefix",
@@ -60834,7 +61210,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "worker/index.ts",
-      "source_location": "L66",
+      "source_location": "L71",
       "weight": 1.0,
       "_origin": "ast",
       "source": "worker_index_fetch",
@@ -60846,7 +61222,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "worker/index.ts",
-      "source_location": "L67",
+      "source_location": "L72",
       "weight": 1.0,
       "_origin": "ast",
       "source": "worker_index_fetch",
@@ -91436,6 +91812,138 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_i18n_glossary",
+      "target": "docs_i18n_glossary_translation_glossary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L134",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_i18n_glossary_translation_glossary",
+      "target": "docs_i18n_glossary_blog_frontmatter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L179",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_i18n_glossary_translation_glossary",
+      "target": "docs_i18n_glossary_checklist_before_shipping_a_locale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L151",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_i18n_glossary_translation_glossary",
+      "target": "docs_i18n_glossary_component_props",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_i18n_glossary_translation_glossary",
+      "target": "docs_i18n_glossary_concept_terms_translate_but_consistently",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_i18n_glossary_translation_glossary",
+      "target": "docs_i18n_glossary_do_not_translate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L165",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_i18n_glossary_translation_glossary",
+      "target": "docs_i18n_glossary_idioms_translate_the_meaning_not_the_words",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L102",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_i18n_glossary_translation_glossary",
+      "target": "docs_i18n_glossary_placeholders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_i18n_glossary_translation_glossary",
+      "target": "docs_i18n_glossary_register",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L116",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_i18n_glossary_translation_glossary",
+      "target": "docs_i18n_glossary_typography",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_i18n_glossary_do_not_translate",
+      "target": "docs_i18n_glossary_competitor_and_third_party_product_names",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_i18n_glossary_do_not_translate",
+      "target": "docs_i18n_glossary_locale_exceptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "docs/mindfulguard-marketing-plan.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -96121,5 +96629,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "f17c7ce91ee9d0e4361cc5903becc4e5e9c3c146"
+  "built_at_commit": "c28759d65bfebac22838d45c34a389e7dd6e1162"
 }

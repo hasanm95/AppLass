@@ -170,8 +170,8 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1785517851.8245814,
-    "ast_hash": "dd2dc4aa8258c99fd30bf1eb38872702",
+    "mtime": 1785569833.8660598,
+    "ast_hash": "46f06e1d31a7931eba0422beb08aba4e",
     "semantic_hash": ""
   },
   "scratch/update_fr.py": {
@@ -675,8 +675,8 @@
     "semantic_hash": ""
   },
   "src/i18n/locales/en.json": {
-    "mtime": 1785569055.277868,
-    "ast_hash": "6620fd9318d66ae30c0a428190b631da",
+    "mtime": 1785570155.0218754,
+    "ast_hash": "dad39cb4d391c426e17b24782a70bd22",
     "semantic_hash": ""
   },
   "src/i18n/locales/fr.json": {
@@ -765,8 +765,8 @@
     "semantic_hash": ""
   },
   "src/page-templates/BlogPostPage.astro": {
-    "mtime": 1785566529.7740047,
-    "ast_hash": "b9261040b42711c7acaba3e700f79501",
+    "mtime": 1785569759.5698965,
+    "ast_hash": "82094351149f77b2ed13584c8a9e410f",
     "semantic_hash": ""
   },
   "src/page-templates/CompareDetailPage.astro": {
@@ -855,8 +855,8 @@
     "semantic_hash": ""
   },
   "src/pages/[lang]/blog/[slug].astro": {
-    "mtime": 1785289553.416251,
-    "ast_hash": "51c96738ed6a6c8845daf03d1c6c911c",
+    "mtime": 1785569767.428357,
+    "ast_hash": "cd20aba9f29cee7a4b7077a5acf402dd",
     "semantic_hash": ""
   },
   "src/pages/[lang]/blog/index.astro": {
@@ -2485,8 +2485,8 @@
     "semantic_hash": ""
   },
   "worker/index.ts": {
-    "mtime": 1785094433.8860185,
-    "ast_hash": "28708548db001bcedec47dcce8282c9e",
+    "mtime": 1785569752.3565457,
+    "ast_hash": "957b1a98aa37969d31eb395f2d14fec8",
     "semantic_hash": ""
   },
   "src/components/home/Testimonials.astro": {
@@ -2502,6 +2502,21 @@
   "src/pages/[lang]/404.astro": {
     "mtime": 1785569046.9826324,
     "ast_hash": "f5e47c80f82c0485f434c361b495e803",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/how-to-block-reels-and-shorts-on-android-2026.mdx": {
+    "mtime": 1785569223.3414543,
+    "ast_hash": "a19640cbe2694d59069a745a2a73efa8",
+    "semantic_hash": ""
+  },
+  "scripts/validate-i18n.ts": {
+    "mtime": 1785569789.6933596,
+    "ast_hash": "b9f0fbabfd7e96ecf7a0b4fd8987da49",
+    "semantic_hash": ""
+  },
+  "docs/i18n-glossary.md": {
+    "mtime": 1785569826.1351707,
+    "ast_hash": "cf7aa025172e83445294ae66862c007b",
     "semantic_hash": ""
   }
 }
