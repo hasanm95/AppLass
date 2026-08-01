@@ -186,4 +186,4 @@ L'objectif n'est pas de trouver l'application parfaite. C'est de construire un e
 
 ---
 
-**À lire aussi :** Maintenant que vous comprenez les outils, lisez comment [bloquer les réseaux sociaux sur Android pendant les heures de travail uniquement](/fr/blog/bloquer-reseaux-sociaux-android-heures-travail/) pour un guide de configuration étape par étape qui met Mindful Guard au travail immédiatement.
+**À lire aussi :** Maintenant que vous comprenez les outils, lisez comment [bloquer les réseaux sociaux sur Android pendant les heures de travail uniquement](/fr/blog/how-to-block-social-media-on-android-during-work-hours) pour un guide de configuration étape par étape qui met Mindful Guard au travail immédiatement.
