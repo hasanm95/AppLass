@@ -1,16 +1,16 @@
 # Graph Report - AppLass  (2026-08-01)
 
 ## Corpus Check
-- 429 files · ~1,698,815 words
+- 430 files · ~1,698,925 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4052 nodes · 4605 edges · 300 communities (283 shown, 17 thin omitted)
+- 4054 nodes · 4609 edges · 298 communities (281 shown, 17 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.61)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `19fdefe6`
+- Built from commit: `f17c7ce9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -220,6 +220,7 @@
 - /enhance - Update Application
 - /status - Show Status
 - Prioritizing Content Ideas
+- translate-i18n.ts
 - en/monk-mode-willpower.md
 - en/psychology-of-fomo-marketing.md
 - en/reclaim-focus-story.md
@@ -281,8 +282,6 @@
 - 11. Reporting Principles
 - 1. Security Expert Mindset
 - 2. OWASP Top 10:2025
-- 3. Supply Chain Security (A03)
-- 4. Attack Surface Mapping
 - 6. Exceptional Conditions (A10 - New)
 - 8. Code Pattern Analysis
 - 9. Cloud Security Considerations
@@ -295,13 +294,13 @@
 - react
 - tailwindcss
 - tsx
-- @types/react
 - @types/react-dom
 - @astrojs/check
 - fix-getstaticpaths.js
 - split-pages.sh
 - use-localepath.js
 - env.d.ts
+- @astrojs/check
 - package.json
 - eslint-plugin-astro
 - typescript
@@ -309,8 +308,8 @@
 ## God Nodes (most connected - your core abstractions)
 1. `@/i18n/localize` - 85 edges
 2. `localize()` - 83 edges
-3. `@/components/common/Section.astro` - 43 edges
-4. `@/i18n/config` - 43 edges
+3. `@/i18n/config` - 44 edges
+4. `@/components/common/Section.astro` - 43 edges
 5. `../layouts/Layout.astro` - 37 edges
 6. `@/page-templates/AppsScreenveilPage.astro` - 27 edges
 7. `@/components/common/Navbar.astro` - 26 edges
@@ -327,17 +326,17 @@
   src/components/common/Footer.astro → src/i18n/localize.ts
 - `Button()` --calls--> `cn()`  [EXTRACTED]
   src/components/ui/button.tsx → src/lib/utils.ts
-- `getFaqRegistry()` --calls--> `localize()`  [EXTRACTED]
-  src/constants/faq-registry.ts → src/i18n/localize.ts
+- `getFomoGenData()` --calls--> `localize()`  [EXTRACTED]
+  src/constants/fomogen-data.ts → src/i18n/localize.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (300 total, 17 thin omitted)
+## Communities (298 total, 17 thin omitted)
 
 ### Community 0 - "@/i18n/localize"
-Cohesion: 0.08
-Nodes (34): ./LanguageToggle.astro, list, ../components/docs-content/DocsHubPage.astro, @/i18n/config, i18nConfig, isRtl(), Locale, localeMeta (+26 more)
+Cohesion: 0.07
+Nodes (35): ./LanguageToggle.astro, list, @/components/home/SocialProof.astro, LocalizeProps, @/i18n/config, i18nConfig, isRtl(), Locale (+27 more)
 
 ### Community 1 - "design_system.py"
 Cohesion: 0.05
@@ -420,8 +419,8 @@ Cohesion: 0.06
 Nodes (35): 🔴 AGENT BOUNDARY ENFORCEMENT (CRITICAL), Agent Chaining with Context, Agent States, Available Agents, Best Practices, 🔴 CHECKPOINT 1: Plan Verification (MANDATORY), 🔴 CHECKPOINT 2: Project Type Routing, 🔴 Checkpoint Summary (CRITICAL) (+27 more)
 
 ### Community 21 - "Mobile Navigation Reference"
-Cohesion: 0.11
-Nodes (19): 1. Navigation Selection Decision Tree, 2. Tab Bar Navigation, 4. Drawer Navigation, 6. Deep Linking, 7. Navigation State Persistence, 9. Navigation Anti-Patterns, ❌ AI Navigation Mistakes, Deep Link Navigation Rules (+11 more)
+Cohesion: 0.06
+Nodes (35): 10. Navigation Checklist, 1. Navigation Selection Decision Tree, 2. Tab Bar Navigation, 3. Stack Navigation, 4. Drawer Navigation, 5. Modal Navigation, 6. Deep Linking, 7. Navigation State Persistence (+27 more)
 
 ### Community 22 - "Tailwind CSS Patterns (v4 - 2025)"
 Cohesion: 0.06
@@ -444,8 +443,8 @@ Cohesion: 0.07
 Nodes (29): API Development, API Style Selection, Architecture, Backend Development Architect, Common Anti-Patterns You Avoid, 🛑 CRITICAL: CLARIFY BEFORE CODING (MANDATORY), Database & Data, Database Selection (2025) (+21 more)
 
 ### Community 27 - "Color System Reference"
-Cohesion: 0.11
-Nodes (18): 2. The 60-30-10 Rule, 3. Color Psychology - Meaning & Selection, 4. Palette Generation Principles, 5. Context-Based Selection Guide, 8. Color Selection Checklist, 9. Anti-Patterns to Avoid, Color System Reference, Distribution Principle (+10 more)
+Cohesion: 0.06
+Nodes (30): 1. Color Theory Fundamentals, 2. The 60-30-10 Rule, 3. Color Psychology - Meaning & Selection, 4. Palette Generation Principles, 5. Context-Based Selection Guide, 6. Dark Mode Principles, 7. Accessibility Guidelines, 8. Color Selection Checklist (+22 more)
 
 ### Community 28 - "Mobile Design System"
 Cohesion: 0.07
@@ -492,8 +491,8 @@ Cohesion: 0.08
 Nodes (25): 1. Modular Skill Loading Protocol, 2. Enforcement Protocol, ⚠️ AGENT ROUTING CHECKLIST (MANDATORY BEFORE EVERY CODE/DESIGN RESPONSE), Agents & Skills, Auto-Selection Protocol, 🧹 Clean Code (Global Mandatory), CRITICAL: AGENT & SKILL PROTOCOL (START HERE), 📁 File Dependency Awareness (+17 more)
 
 ### Community 39 - "@/components/common/Section.astro"
-Cohesion: 0.14
-Nodes (21): @/components/apps/screenveil/CompetitorComparison.astro, @/components/apps/screenveil/FeatureGrid.astro, LucideIcon, screenveilData, @/components/apps/screenveil/PainPointsSection.astro, @/components/apps/screenveil/PrivacySection.astro, LucideIcon, screenveilData (+13 more)
+Cohesion: 0.13
+Nodes (24): @/components/apps/screenveil/CompetitorComparison.astro, @/components/apps/screenveil/FAQSection.astro, @/components/apps/screenveil/FeatureGrid.astro, LucideIcon, screenveilData, @/components/apps/screenveil/PainPointsSection.astro, @/components/apps/screenveil/PrivacySection.astro, LucideIcon (+16 more)
 
 ### Community 40 - "Debugger - Root Cause Analysis Expert"
 Cohesion: 0.08
@@ -512,12 +511,12 @@ Cohesion: 0.07
 Nodes (27): @astrojs/mdx, @astrojs/react, @astrojs/sitemap, class-variance-authority, i18next, dependencies, astro, @astrojs/mdx (+19 more)
 
 ### Community 44 - "@/page-templates/AppsFomogenPage.astro"
-Cohesion: 0.13
-Nodes (19): @/components/apps/fomogen/CoreFeatures.astro, @/components/apps/fomogen/FomoGenCTA.astro, @/components/apps/fomogen/FomoGenHero.astro, @/components/apps/fomogen/PricingMatrix.astro, fomoData, @/components/apps/fomogen/PricingSection.astro, @/components/apps/fomogen/SpeedBenefitSection.astro, @/components/apps/fomogen/TestimonialsSection.astro (+11 more)
+Cohesion: 0.14
+Nodes (20): @/components/apps/fomogen/CoreFeatures.astro, @/components/apps/fomogen/FomoGenCTA.astro, @/components/apps/fomogen/FomoGenHero.astro, @/components/apps/fomogen/PricingMatrix.astro, fomoData, @/components/apps/fomogen/PricingSection.astro, @/components/apps/fomogen/SpeedBenefitSection.astro, @/components/apps/fomogen/TestimonialsSection.astro (+12 more)
 
 ### Community 45 - "localize"
-Cohesion: 0.05
-Nodes (36): @/components/apps/mindful-guard/MindfulFAQSection.astro, @/components/apps/screenveil/FAQSection.astro, content, content, content, href, @/components/common/FAQRegistrySection.astro, @/components/common/FAQSchema.astro (+28 more)
+Cohesion: 0.07
+Nodes (23): content, content, @/components/docs-content/fomogen/configuration/ConfigurationPage.astro, ../../../../components/docs-content/fomogen/countdown-timers/CountdownTimersPage.astro, ../../../../components/docs-content/fomogen/exit-intent/ExitIntentPage.astro, ../../../../components/docs-content/fomogen/progress-indicators/ProgressIndicatorsPage.astro, ../../../../components/docs-content/fomogen/purchase-notifications/PurchaseNotificationsPage.astro, ../../../../components/docs-content/fomogen/social-proof-badges/SocialProofBadgesPage.astro (+15 more)
 
 ### Community 46 - "Game Audio Principles"
 Cohesion: 0.08
@@ -528,20 +527,20 @@ Cohesion: 0.09
 Nodes (22): Anti-Patterns, Bundle Size, Caching, Core Philosophy, Core Web Vitals Targets (2025), CSS, Images, JavaScript (+14 more)
 
 ### Community 48 - "Mobile Design Thinking"
-Cohesion: 0.09
-Nodes (23): 🚫 AI MOBILE DEFAULTS (FORBIDDEN LIST), Analysis for Every Gesture, 🧪 ANTI-MEMORIZATION TEST, Ask Yourself Before Every Solution, 🔍 COMPONENT DECOMPOSITION (MANDATORY), 📊 CONTEXT-BASED DECISION PROTOCOL, Decomposition Analysis for Every Screen, 🧠 DEEP MOBILE THINKING PROTOCOL (+15 more)
+Cohesion: 0.11
+Nodes (18): 🚫 AI MOBILE DEFAULTS (FORBIDDEN LIST), Analysis for Every Gesture, 🧪 ANTI-MEMORIZATION TEST, Ask Yourself Before Every Solution, 🔍 COMPONENT DECOMPOSITION (MANDATORY), 📊 CONTEXT-BASED DECISION PROTOCOL, Decomposition Analysis for Every Screen, 🧠 DEEP MOBILE THINKING PROTOCOL (+10 more)
 
 ### Community 49 - "Testing Patterns"
 Cohesion: 0.09
 Nodes (22): 10. Anti-Patterns, 1. Testing Pyramid, 2. AAA Pattern, 3. Test Type Selection, 4. Unit Test Principles, 5. Integration Test Principles, 6. Mocking Principles, 7. Test Organization (+14 more)
 
 ### Community 50 - "@/page-templates/AppsPage.astro"
-Cohesion: 0.11
-Nodes (23): @/components/home/FoundersMoat.astro, @/components/home/ProductShowcase.astro, @/components/home/SocialProof.astro, @/components/home/SolutionsSection.astro, ICONS, lang, solutionsData, @/components/home/Testimonials.astro (+15 more)
+Cohesion: 0.19
+Nodes (12): @/components/home/FoundersMoat.astro, @/components/home/ProductShowcase.astro, @/components/home/Testimonials.astro, @/constants/home-data, getHomePillars(), getProducts(), getTestimonials(), Pillar (+4 more)
 
 ### Community 51 - "devDependencies"
 Cohesion: 0.09
-Nodes (23): @astrojs/check, crc-32, eslint, eslint-plugin-astro, gray-matter, devDependencies, @astrojs/check, crc-32 (+15 more)
+Nodes (23): crc-32, eslint, eslint-plugin-astro, gray-matter, devDependencies, crc-32, eslint, eslint-plugin-astro (+15 more)
 
 ### Community 52 - "MindfulGuard Landing Page — Rebrand Plan"
 Cohesion: 0.09
@@ -553,7 +552,7 @@ Nodes (21): Always, Anti-Patterns, Attack Surface Categories, By OWASP Top 10 (2
 
 ### Community 54 - "Mobile Decision Trees"
 Cohesion: 0.11
-Nodes (18): 10. Quick Reference, 3. Navigation Pattern Selection, 4. Storage Strategy Selection, 5. Offline Strategy Selection, 6. Authentication Pattern Selection, 8. Decision Checklist, 9. Anti-Pattern Decisions, Auth Token Storage (+10 more)
+Nodes (19): 10. Quick Reference, 3. Navigation Pattern Selection, 4. Storage Strategy Selection, 5. Offline Strategy Selection, 6. Authentication Pattern Selection, 7. Project Type Templates, 9. Anti-Pattern Decisions, Auth Token Storage (+11 more)
 
 ### Community 55 - "PowerShell Windows Patterns"
 Cohesion: 0.09
@@ -708,8 +707,8 @@ Cohesion: 0.12
 Nodes (15): 1. README Structure, 2. API Documentation Structure, 3. Code Comment Guidelines, 4. Changelog Template (Keep a Changelog), 5. Architecture Decision Record (ADR), 6. AI-Friendly Documentation (2025), 7. Structure Principles, Documentation Templates (+7 more)
 
 ### Community 93 - "Motion Graphics Reference"
-Cohesion: 0.06
-Nodes (35): 10. Quick Reference, 1. Lottie Animations, 2. GSAP (GreenSock), 3. SVG Animations, 4. 3D CSS Transforms, 5. Particle Effects, 6. Scroll-Driven Animations, 7. Performance Principles (+27 more)
+Cohesion: 0.12
+Nodes (16): 10. Quick Reference, 3. SVG Animations, 6. Scroll-Driven Animations, 7. Performance Principles, 8. Motion Graphics Decision Tree, 9. Anti-Patterns, Best Practices, GPU vs CPU Animation (+8 more)
 
 ### Community 94 - "i18n & Localization"
 Cohesion: 0.12
@@ -737,7 +736,7 @@ Nodes (14): Antigravity Skills, Bước 1: Tạo thư mục, Bước 1: Tạo th
 
 ### Community 100 - "Decision Trees & Context Templates"
 Cohesion: 0.13
-Nodes (15): 1. Master Decision Tree, 2. Audience Decision Tree, 3. Color Selection Decision Tree, 4. Typography Decision Tree, 7. Landing Page Guidelines {#landing-page}, Color Thinking:, Decision Trees & Context Templates, ⚠️ How to Use This File (+7 more)
+Nodes (15): 1. Master Decision Tree, 2. Audience Decision Tree, 3. Color Selection Decision Tree, 4. Typography Decision Tree, 6. SaaS Dashboard Guidelines {#saas}, Color Thinking:, Decision Trees & Context Templates, ⚠️ How to Use This File (+7 more)
 
 ### Community 101 - "Mobile Game Development"
 Cohesion: 0.13
@@ -840,7 +839,7 @@ Cohesion: 0.17
 Nodes (11): API Security Testing, Authentication Testing, Authorization Testing, BOLA/IDOR Testing, GraphQL Security, Input Validation Testing, JWT Testing, OWASP API Security Top 10 (+3 more)
 
 ### Community 127 - "frontend-design/SKILL.md"
-Cohesion: 0.33
+Cohesion: 0.18
 Nodes (6): Design Workflow, Guidelines Source, How It Works, Related Skills, Usage, Web Interface Guidelines
 
 ### Community 128 - "1. Core UX Laws"
@@ -957,7 +956,7 @@ Nodes (8): check_page(), find_pages(), is_page_file(), main(), Path, Check if th
 
 ### Community 156 - "Vulnerability Scanner"
 Cohesion: 0.22
-Nodes (9): 10. Anti-Patterns, 3. Supply Chain Security (A03), 7. Scanning Methodology, Attack Surface, Defense Principles, Phase-Based Approach, 📋 Reference Files, 🔧 Runtime Scripts (+1 more)
+Nodes (9): 10. Anti-Patterns, 7. Scanning Methodology, 9. Cloud Security Considerations, Cloud-Specific Checks, Phase-Based Approach, 📋 Reference Files, 🔧 Runtime Scripts, Shared Responsibility (+1 more)
 
 ### Community 157 - "/preview - Preview Management"
 Cohesion: 0.22
@@ -1101,11 +1100,11 @@ Nodes (6): My Final Recommendation, The Battery Drain, The Logic Matrix, The Pri
 
 ### Community 194 - "fr/calculate-free-shipping-threshold.md"
 Cohesion: 0.29
-Nodes (6): Calculation:, Conclusion, Example:, Gamifying the Customer Experience, Mastering Your Margins, The Mathematical Logic: Finding Your Optimal Number
+Nodes (6): Calcul :, Conclusion, Exemple :, Gamifier l'Expérience Client, La Logique Mathématique : Trouver Votre Nombre Optimal, Maîtriser Vos Marges
 
 ### Community 195 - "Why Architecture Is the Deciding Factor"
 Cohesion: 0.29
-Nodes (6): My Final Recommendation, The Battery Impact, The Logic Matrix, The Privacy Problem, The "Willpower" Trap, Why Architecture Is the Deciding Factor
+Nodes (6): L'Impact sur la Batterie, La Matrice Logique, Le Piège de la « Volonté », Le Problème de la Confidentialité, Ma Recommandation Finale, Pourquoi l'Architecture est le Facteur Décisif
 
 ### Community 196 - "Response Format Principles"
 Cohesion: 0.33
@@ -1146,6 +1145,10 @@ Nodes (5): Example Output, /status - Show Status, Task, Technical, What It Shows
 ### Community 205 - "Prioritizing Content Ideas"
 Cohesion: 0.33
 Nodes (6): 1. Customer Impact (40%), 2. Content-Market Fit (30%), 3. Search Potential (20%), 4. Resource Requirements (10%), Prioritizing Content Ideas, Scoring Template
+
+### Community 206 - "translate-i18n.ts"
+Cohesion: 0.40
+Nodes (5): 7. Landing Page Guidelines {#landing-page}, Color Thinking:, Key Principles, Psychology to Apply:, Structure Principles:
 
 ### Community 207 - "en/monk-mode-willpower.md"
 Cohesion: 0.33
@@ -1189,7 +1192,7 @@ Nodes (5): La Confidentialité comme Fondement, Le Coût de Performance des Anal
 
 ### Community 217 - "Development Decision Process"
 Cohesion: 0.40
-Nodes (5): 6. SaaS Dashboard Guidelines {#saas}, Color Thinking:, Key Principles, Layout Principles:, Psychology to Apply:
+Nodes (5): 1. Lottie Animations, Principles, Sources, What is Lottie?, When to Use Lottie
 
 ### Community 218 - "API Style Selection (2025)"
 Cohesion: 0.40
@@ -1248,20 +1251,20 @@ Cohesion: 0.40
 Nodes (5): 9. Pre-Design Checklists, Before Choosing Colors, Before Delivery, Before Finalizing Layout, Before Starting ANY Design
 
 ### Community 232 - "8. Portfolio Guidelines {#portfolio}"
-Cohesion: 0.50
-Nodes (4): 1. Color Theory Fundamentals, Color Relationships, How to Choose a Scheme:, The Color Wheel
+Cohesion: 0.40
+Nodes (5): 2. GSAP (GreenSock), Core Concepts, Principles, What Makes GSAP Different, When to Use GSAP
 
 ### Community 233 - "9. Pre-Design Checklists"
 Cohesion: 0.50
 Nodes (4): 10. Complexity Estimation, Large Projects (Weeks), Medium Projects (Days), Quick Projects (Hours)
 
 ### Community 234 - "1. Lottie Animations"
-Cohesion: 0.50
-Nodes (4): 6. Dark Mode Principles, Adapting Colors for Dark Mode, Contrast in Dark Mode, Key Rules (No Fixed Codes)
+Cohesion: 0.40
+Nodes (5): 5. Particle Effects, Libraries, Principles, Types of Particle Systems, When to Use
 
 ### Community 235 - "2. GSAP (GreenSock)"
-Cohesion: 0.50
-Nodes (4): 7. Accessibility Guidelines, Contrast Requirements (WCAG), How to Check Contrast, Safe Patterns
+Cohesion: 0.40
+Nodes (5): List Pattern Questioning, Navigation Pattern Questioning, 🎯 PATTERN QUESTIONING MATRIX, State Pattern Questioning, UI Pattern Questioning
 
 ### Community 236 - "5. Particle Effects"
 Cohesion: 0.50
@@ -1345,19 +1348,19 @@ Nodes (3): Comparison, Decision Tree, ORM Selection (2025)
 
 ### Community 256 - "10. Complexity Estimation"
 Cohesion: 0.50
-Nodes (4): 10. Navigation Checklist, Before Every Screen, Before Navigation Architecture, Before Release
+Nodes (4): 4. 3D CSS Transforms, Common 3D Patterns, Core Properties, Principles
 
 ### Community 257 - "4. 3D CSS Transforms"
-Cohesion: 0.09
-Nodes (27): @/components/common/Footer.astro, currentLang, currentYear, footerLinks, getFooterLinks(), ./MobileMenuToggle.astro, @/components/common/Navbar.astro, ../components/docs-content/fomogen/FomogenDocsPage.astro (+19 more)
+Cohesion: 0.12
+Nodes (25): @/components/common/Footer.astro, currentLang, currentYear, footerLinks, getFooterLinks(), ./MobileMenuToggle.astro, @/components/common/Navbar.astro, ../components/docs-content/DocsHubPage.astro (+17 more)
 
 ### Community 258 - "10. Quick Reference"
-Cohesion: 0.50
-Nodes (4): 3. Stack Navigation, Back Button Handling, Core Concepts, Stack Navigation Patterns
+Cohesion: 0.67
+Nodes (3): 8. Decision Checklist, Before Starting ANY Project, Questions to Ask User
 
 ### Community 259 - "7. Project Type Templates"
-Cohesion: 0.50
-Nodes (4): 7. Project Type Templates, E-Commerce App, Productivity/SaaS App, Social/Content App
+Cohesion: 0.67
+Nodes (3): 5. Risk Prioritization, CVSS + Context, Prioritization Decision Tree
 
 ### Community 260 - "Editorial Workflows"
 Cohesion: 0.50
@@ -1391,14 +1394,6 @@ Nodes (3): 1. Security Expert Mindset, Core Principles, Threat Modeling Question
 Cohesion: 0.67
 Nodes (3): 2025 Key Changes, 2. OWASP Top 10:2025, Risk Categories
 
-### Community 268 - "3. Supply Chain Security (A03)"
-Cohesion: 0.50
-Nodes (4): 5. Modal Navigation, Modal Dismissal, Modal Types, Modal vs Push
-
-### Community 269 - "4. Attack Surface Mapping"
-Cohesion: 0.50
-Nodes (4): 8. Transition Animations, Custom Transitions, Platform Defaults, Shared Element Transitions
-
 ### Community 270 - "6. Exceptional Conditions (A10 - New)"
 Cohesion: 0.67
 Nodes (3): 6. Exceptional Conditions (A10 - New), Fail-Open vs Fail-Closed, What to Check
@@ -1408,8 +1403,8 @@ Cohesion: 0.67
 Nodes (3): 8. Code Pattern Analysis, High-Risk Patterns, Secret Patterns
 
 ### Community 272 - "9. Cloud Security Considerations"
-Cohesion: 0.67
-Nodes (3): 5. Risk Prioritization, CVSS + Context, Prioritization Decision Tree
+Cohesion: 0.12
+Nodes (21): @/components/apps/mindful-guard/MindfulFAQSection.astro, content, href, @/components/common/FAQRegistrySection.astro, @/components/common/FAQSchema.astro, schema, ../../../../components/docs-content/fomogen/faq/FAQPage.astro, @/components/home/AnswerNuggets.astro (+13 more)
 
 ### Community 275 - "content.config.ts"
 Cohesion: 0.50
@@ -1419,9 +1414,9 @@ Nodes (3): blog, collections, isoDate
 Cohesion: 0.67
 Nodes (3): 4. Attack Surface Mapping, Prioritization Matrix, What to Map
 
-### Community 282 - "@types/react"
+### Community 284 - "@astrojs/check"
 Cohesion: 0.67
-Nodes (3): 9. Cloud Security Considerations, Cloud-Specific Checks, Shared Responsibility
+Nodes (3): 3. Supply Chain Security (A03), Attack Surface, Defense Principles
 
 ### Community 298 - "package.json"
 Cohesion: 0.50
@@ -1439,12 +1434,12 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.004) - this node is a cross-community bridge._
 - **Why does `Mobile Testing Patterns` connect `Mobile Testing Patterns` to `mobile-design/SKILL.md`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
-- **Why does `@/i18n/localize` connect `localize` to `@/i18n/localize`, `4. 3D CSS Transforms`, `@/lib/legal-registry`, `@/components/common/Section.astro`, `@/page-templates/AppsFomogenPage.astro`, `@/page-templates/CompareDetailPage.astro`, `@/page-templates/AppsPage.astro`, `@/page-templates/AppsMindfulGuardPage.astro`, `@/page-templates/BlogPostPage.astro`?**
+- **Why does `@/i18n/localize` connect `localize` to `@/i18n/localize`, `4. 3D CSS Transforms`, `@/lib/legal-registry`, `@/components/common/Section.astro`, `@/page-templates/AppsFomogenPage.astro`, `9. Cloud Security Considerations`, `@/page-templates/CompareDetailPage.astro`, `@/page-templates/AppsPage.astro`, `@/page-templates/AppsMindfulGuardPage.astro`, `@/page-templates/BlogPostPage.astro`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **What connects `Colors`, `Colors`, `$schema` to the rest of the system?**
   _2590 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `@/i18n/localize` be split into smaller, more focused modules?**
-  _Cohesion score 0.07575757575757576 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.0653061224489796 - nodes in this community are weakly interconnected._
 - **Should `design_system.py` be split into smaller, more focused modules?**
   _Cohesion score 0.05263157894736842 - nodes in this community are weakly interconnected._
 - **Should `Android Platform Guidelines` be split into smaller, more focused modules?**

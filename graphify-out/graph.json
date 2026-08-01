@@ -3376,8 +3376,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "package_devdependencies_astrojs_check",
-      "community": 297,
-      "community_name": "@astrojs/check",
+      "community": 51,
+      "community_name": "devDependencies",
       "norm_label": "@astrojs/check"
     },
     {
@@ -3387,8 +3387,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "astrojs_check",
-      "community": 297,
-      "community_name": "@astrojs/check",
+      "community": 51,
+      "community_name": "devDependencies",
       "norm_label": "@astrojs/check"
     },
     {
@@ -3442,8 +3442,8 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "package_devdependencies_types_node",
-      "community": 51,
-      "community_name": "devDependencies",
+      "community": 297,
+      "community_name": "@astrojs/check",
       "norm_label": "@types/node"
     },
     {
@@ -3453,8 +3453,8 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "types_node",
-      "community": 51,
-      "community_name": "devDependencies",
+      "community": 297,
+      "community_name": "@astrojs/check",
       "norm_label": "@types/node"
     },
     {
@@ -3937,8 +3937,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "astro_assets",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 50,
+      "community_name": "@/page-templates/AppsPage.astro",
       "norm_label": "astro:assets"
     },
     {
@@ -4017,8 +4017,8 @@
       "_origin": "ast",
       "source_location": "L1",
       "id": "src_i18n_localize",
-      "community": 45,
-      "community_name": "localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/i18n/localize"
     },
     {
@@ -4346,8 +4346,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_apps_screenveil_faqsection",
-      "community": 272,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 39,
+      "community_name": "@/components/common/Section.astro",
       "norm_label": "@/components/apps/screenveil/faqsection.astro"
     },
     {
@@ -4612,8 +4612,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_blog_carttimecta",
-      "community": 45,
-      "community_name": "localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "carttimecta.astro"
     },
     {
@@ -4623,8 +4623,8 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "src_components_blog_carttimecta_content",
-      "community": 45,
-      "community_name": "localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "content"
     },
     {
@@ -4634,8 +4634,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_blog_fomogencta",
-      "community": 45,
-      "community_name": "localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "fomogencta.astro"
     },
     {
@@ -4645,8 +4645,8 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "src_components_blog_fomogencta_content",
-      "community": 45,
-      "community_name": "localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "content"
     },
     {
@@ -4656,8 +4656,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_blog_mindfulguardcta",
-      "community": 45,
-      "community_name": "localize",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "mindfulguardcta.astro"
     },
     {
@@ -4667,8 +4667,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_components_blog_mindfulguardcta_href",
-      "community": 45,
-      "community_name": "localize",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "href"
     },
     {
@@ -4678,8 +4678,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "src_components_blog_mindfulguardcta_content",
-      "community": 45,
-      "community_name": "localize",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "content"
     },
     {
@@ -5026,8 +5026,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_docs_content_fomogen_fomogendocspage",
-      "community": 45,
-      "community_name": "localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "../components/docs-content/fomogen/fomogendocspage.astro"
     },
     {
@@ -5074,8 +5074,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_docs_content_fomogen_faq_faqpage",
-      "community": 45,
-      "community_name": "localize",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "../../../../components/docs-content/fomogen/faq/faqpage.astro"
     },
     {
@@ -5170,8 +5170,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_docs_content_mindful_guard_mindfulguarddocspage",
-      "community": 45,
-      "community_name": "localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "../components/docs-content/mindful-guard/mindfulguarddocspage.astro"
     },
     {
@@ -5206,8 +5206,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_docs_content_screenveil_screenveildocspage",
-      "community": 45,
-      "community_name": "localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "../components/docs-content/screenveil/screenveildocspage.astro"
     },
     {
@@ -5380,8 +5380,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_home_socialproof",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/components/home/socialproof.astro"
     },
     {
@@ -6040,8 +6040,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "src_i18n_localize_localize",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "localize()"
     },
     {
@@ -6475,8 +6475,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_aboutpage",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "@/page-templates/aboutpage.astro"
     },
     {
@@ -6627,8 +6627,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_comparepage",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/page-templates/comparepage.astro"
     },
     {
@@ -6651,8 +6651,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_docsarticlepage",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "@/page-templates/docsarticlepage.astro"
     },
     {
@@ -6663,8 +6663,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_docshubpage",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "@/page-templates/docshubpage.astro"
     },
     {
@@ -6674,8 +6674,8 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "src_page_templates_docshubpage_meta",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "meta"
     },
     {
@@ -6686,8 +6686,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_docsproductpage",
-      "community": 45,
-      "community_name": "localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/page-templates/docsproductpage.astro"
     },
     {
@@ -6697,8 +6697,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "src_page_templates_docsproductpage_contents",
-      "community": 45,
-      "community_name": "localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "contents"
     },
     {
@@ -6708,8 +6708,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "src_page_templates_docsproductpage_productmeta",
-      "community": 45,
-      "community_name": "localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "productmeta"
     },
     {
@@ -6732,8 +6732,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_homepage",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "@/page-templates/homepage.astro"
     },
     {
@@ -6743,8 +6743,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "src_page_templates_homepage_meta",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "meta"
     },
     {
@@ -6772,7 +6772,7 @@
       "norm_label": "@/page-templates/notfoundpage.astro"
     },
     {
-      "label": "404.astro",
+      "label": "pages/404.astro",
       "file_type": "code",
       "source_file": "src/pages/404.astro",
       "source_location": "L1",
@@ -6780,7 +6780,29 @@
       "id": "src_pages_404",
       "community": 0,
       "community_name": "@/i18n/localize",
-      "norm_label": "404.astro"
+      "norm_label": "pages/404.astro"
+    },
+    {
+      "label": "[lang]/404.astro",
+      "file_type": "code",
+      "source_file": "src/pages/[lang]/404.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_pages_lang_404",
+      "community": 0,
+      "community_name": "@/i18n/localize",
+      "norm_label": "[lang]/404.astro"
+    },
+    {
+      "label": "getStaticPaths()",
+      "file_type": "code",
+      "source_file": "src/pages/[lang]/404.astro",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "src_pages_lang_404_getstaticpaths",
+      "community": 0,
+      "community_name": "@/i18n/localize",
+      "norm_label": "getstaticpaths()"
     },
     {
       "label": "[lang]/about/index.astro",
@@ -6789,8 +6811,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_about_index",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "[lang]/about/index.astro"
     },
     {
@@ -6800,8 +6822,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_about_index_getstaticpaths",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -6987,8 +7009,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_compare_index",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "[lang]/compare/index.astro"
     },
     {
@@ -6998,8 +7020,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_compare_index_getstaticpaths",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7053,8 +7075,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_docs_product_index",
-      "community": 45,
-      "community_name": "localize",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "[product]/index.astro"
     },
     {
@@ -7064,8 +7086,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_docs_product_index_getstaticpaths",
-      "community": 45,
-      "community_name": "localize",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7075,8 +7097,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_docs_index",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "[lang]/docs/index.astro"
     },
     {
@@ -7086,8 +7108,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_docs_index_getstaticpaths",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7119,8 +7141,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_index",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "[lang]/index.astro"
     },
     {
@@ -7130,8 +7152,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_index_getstaticpaths",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7163,8 +7185,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_about_index",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "pages/about/index.astro"
     },
     {
@@ -7284,8 +7306,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_compare_index",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "pages/compare/index.astro"
     },
     {
@@ -7350,8 +7372,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_fomogen_index",
-      "community": 45,
-      "community_name": "localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "docs/fomogen/index.astro"
     },
     {
@@ -7383,8 +7405,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_fomogen_quick_start_index",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "quick-start/index.astro"
     },
     {
@@ -7438,8 +7460,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_index",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "pages/docs/index.astro"
     },
     {
@@ -7449,8 +7471,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_mindful_guard_index",
-      "community": 45,
-      "community_name": "localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "docs/mindful-guard/index.astro"
     },
     {
@@ -7493,8 +7515,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_screenveil_index",
-      "community": 45,
-      "community_name": "localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "docs/screenveil/index.astro"
     },
     {
@@ -7515,8 +7537,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_index",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "pages/index.astro"
     },
     {
@@ -19406,8 +19428,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_1_color_theory_fundamentals",
-      "community": 232,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "1. color theory fundamentals"
     },
     {
@@ -19417,8 +19439,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_the_color_wheel",
-      "community": 232,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "the color wheel"
     },
     {
@@ -19428,8 +19450,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_color_relationships",
-      "community": 232,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "color relationships"
     },
     {
@@ -19439,8 +19461,8 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_how_to_choose_a_scheme",
-      "community": 232,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "how to choose a scheme:"
     },
     {
@@ -19527,8 +19549,8 @@
       "source_location": "L124",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_4_palette_generation_principles",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 231,
+      "community_name": "7. Landing Page Guidelines {#landing-page}",
       "norm_label": "4. palette generation principles"
     },
     {
@@ -19538,8 +19560,8 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_from_a_single_color_hsl_method",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 231,
+      "community_name": "7. Landing Page Guidelines {#landing-page}",
       "norm_label": "from a single color (hsl method)"
     },
     {
@@ -19549,8 +19571,8 @@
       "source_location": "L151",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_generating_a_full_palette",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 231,
+      "community_name": "7. Landing Page Guidelines {#landing-page}",
       "norm_label": "generating a full palette"
     },
     {
@@ -19560,8 +19582,8 @@
       "source_location": "L169",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_saturation_adjustments",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 231,
+      "community_name": "7. Landing Page Guidelines {#landing-page}",
       "norm_label": "saturation adjustments"
     },
     {
@@ -19593,8 +19615,8 @@
       "source_location": "L226",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_6_dark_mode_principles",
-      "community": 234,
-      "community_name": "1. Lottie Animations",
+      "community": 232,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "6. dark mode principles"
     },
     {
@@ -19604,8 +19626,8 @@
       "source_location": "L228",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_key_rules_no_fixed_codes",
-      "community": 234,
-      "community_name": "1. Lottie Animations",
+      "community": 232,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "key rules (no fixed codes)"
     },
     {
@@ -19615,8 +19637,8 @@
       "source_location": "L235",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_contrast_in_dark_mode",
-      "community": 234,
-      "community_name": "1. Lottie Animations",
+      "community": 232,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "contrast in dark mode"
     },
     {
@@ -19626,8 +19648,8 @@
       "source_location": "L245",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_adapting_colors_for_dark_mode",
-      "community": 234,
-      "community_name": "1. Lottie Animations",
+      "community": 232,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "adapting colors for dark mode"
     },
     {
@@ -19637,8 +19659,8 @@
       "source_location": "L256",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_7_accessibility_guidelines",
-      "community": 235,
-      "community_name": "2. GSAP (GreenSock)",
+      "community": 233,
+      "community_name": "9. Pre-Design Checklists",
       "norm_label": "7. accessibility guidelines"
     },
     {
@@ -19648,8 +19670,8 @@
       "source_location": "L258",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_contrast_requirements_wcag",
-      "community": 235,
-      "community_name": "2. GSAP (GreenSock)",
+      "community": 233,
+      "community_name": "9. Pre-Design Checklists",
       "norm_label": "contrast requirements (wcag)"
     },
     {
@@ -19659,8 +19681,8 @@
       "source_location": "L265",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_how_to_check_contrast",
-      "community": 235,
-      "community_name": "2. GSAP (GreenSock)",
+      "community": 233,
+      "community_name": "9. Pre-Design Checklists",
       "norm_label": "how to check contrast"
     },
     {
@@ -19670,8 +19692,8 @@
       "source_location": "L271",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_safe_patterns",
-      "community": 235,
-      "community_name": "2. GSAP (GreenSock)",
+      "community": 233,
+      "community_name": "9. Pre-Design Checklists",
       "norm_label": "safe patterns"
     },
     {
@@ -19846,8 +19868,8 @@
       "source_location": "L171",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_5_e_commerce_guidelines_e_commerce",
-      "community": 179,
-      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "5. e-commerce guidelines {#e-commerce}"
     },
     {
@@ -19857,8 +19879,8 @@
       "source_location": "L173",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_key_principles_not_fixed_rules",
-      "community": 179,
-      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "key principles (not fixed rules)"
     },
     {
@@ -19868,8 +19890,8 @@
       "source_location": "L179",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_color_thinking",
-      "community": 179,
-      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "color thinking:"
     },
     {
@@ -19879,8 +19901,8 @@
       "source_location": "L190",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_layout_principles",
-      "community": 179,
-      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "layout principles:"
     },
     {
@@ -19890,8 +19912,8 @@
       "source_location": "L217",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_psychology_to_apply",
-      "community": 179,
-      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "psychology to apply:"
     },
     {
@@ -19901,8 +19923,8 @@
       "source_location": "L226",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_6_saas_dashboard_guidelines_saas",
-      "community": 217,
-      "community_name": "Development Decision Process",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "6. saas dashboard guidelines {#saas}"
     },
     {
@@ -19912,8 +19934,8 @@
       "source_location": "L228",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_key_principles",
-      "community": 217,
-      "community_name": "Development Decision Process",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "key principles"
     },
     {
@@ -19923,8 +19945,8 @@
       "source_location": "L234",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_color_thinking_234",
-      "community": 217,
-      "community_name": "Development Decision Process",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "color thinking:"
     },
     {
@@ -19934,8 +19956,8 @@
       "source_location": "L245",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_layout_principles_245",
-      "community": 217,
-      "community_name": "Development Decision Process",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "layout principles:"
     },
     {
@@ -19945,8 +19967,8 @@
       "source_location": "L265",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_psychology_to_apply_265",
-      "community": 217,
-      "community_name": "Development Decision Process",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "psychology to apply:"
     },
     {
@@ -20011,8 +20033,8 @@
       "source_location": "L326",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_8_portfolio_guidelines_portfolio",
-      "community": 230,
-      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "8. portfolio guidelines {#portfolio}"
     },
     {
@@ -20022,8 +20044,8 @@
       "source_location": "L328",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_key_principles_328",
-      "community": 230,
-      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "key principles"
     },
     {
@@ -20033,8 +20055,8 @@
       "source_location": "L334",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_color_thinking_334",
-      "community": 230,
-      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "color thinking:"
     },
     {
@@ -20044,8 +20066,8 @@
       "source_location": "L345",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_structure_principles_345",
-      "community": 230,
-      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "structure principles:"
     },
     {
@@ -20055,8 +20077,8 @@
       "source_location": "L365",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_psychology_to_apply_365",
-      "community": 230,
-      "community_name": "5. E-commerce Guidelines {#e-commerce}",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "psychology to apply:"
     },
     {
@@ -20066,8 +20088,8 @@
       "source_location": "L373",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_9_pre_design_checklists",
-      "community": 231,
-      "community_name": "7. Landing Page Guidelines {#landing-page}",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "9. pre-design checklists"
     },
     {
@@ -20077,8 +20099,8 @@
       "source_location": "L375",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_before_starting_any_design",
-      "community": 231,
-      "community_name": "7. Landing Page Guidelines {#landing-page}",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "before starting any design"
     },
     {
@@ -20088,8 +20110,8 @@
       "source_location": "L383",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_before_choosing_colors",
-      "community": 231,
-      "community_name": "7. Landing Page Guidelines {#landing-page}",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "before choosing colors"
     },
     {
@@ -20099,8 +20121,8 @@
       "source_location": "L390",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_before_finalizing_layout",
-      "community": 231,
-      "community_name": "7. Landing Page Guidelines {#landing-page}",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "before finalizing layout"
     },
     {
@@ -20110,8 +20132,8 @@
       "source_location": "L397",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_before_delivery",
-      "community": 231,
-      "community_name": "7. Landing Page Guidelines {#landing-page}",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "before delivery"
     },
     {
@@ -20121,8 +20143,8 @@
       "source_location": "L405",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_10_complexity_estimation",
-      "community": 233,
-      "community_name": "9. Pre-Design Checklists",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "10. complexity estimation"
     },
     {
@@ -20132,8 +20154,8 @@
       "source_location": "L407",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_quick_projects_hours",
-      "community": 233,
-      "community_name": "9. Pre-Design Checklists",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "quick projects (hours)"
     },
     {
@@ -20143,8 +20165,8 @@
       "source_location": "L418",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_medium_projects_days",
-      "community": 233,
-      "community_name": "9. Pre-Design Checklists",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "medium projects (days)"
     },
     {
@@ -20154,8 +20176,8 @@
       "source_location": "L429",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_large_projects_weeks",
-      "community": 233,
-      "community_name": "9. Pre-Design Checklists",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "large projects (weeks)"
     },
     {
@@ -20561,8 +20583,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 206,
+      "community_name": "translate-i18n.ts",
       "norm_label": "typography-system.md"
     },
     {
@@ -20583,8 +20605,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_1_modular_scale_principles",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 230,
+      "community_name": "5. E-commerce Guidelines {#e-commerce}",
       "norm_label": "1. modular scale principles"
     },
     {
@@ -20594,8 +20616,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_what_is_a_modular_scale",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 230,
+      "community_name": "5. E-commerce Guidelines {#e-commerce}",
       "norm_label": "what is a modular scale?"
     },
     {
@@ -20605,8 +20627,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_common_ratios_and_when_to_use",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 230,
+      "community_name": "5. E-commerce Guidelines {#e-commerce}",
       "norm_label": "common ratios and when to use"
     },
     {
@@ -20616,8 +20638,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_generate_your_scale",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 230,
+      "community_name": "5. E-commerce Guidelines {#e-commerce}",
       "norm_label": "generate your scale"
     },
     {
@@ -20627,8 +20649,8 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_choosing_base_size",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 230,
+      "community_name": "5. E-commerce Guidelines {#e-commerce}",
       "norm_label": "choosing base size"
     },
     {
@@ -20638,8 +20660,8 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_2_font_pairing_principles",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 217,
+      "community_name": "Development Decision Process",
       "norm_label": "2. font pairing principles"
     },
     {
@@ -20649,8 +20671,8 @@
       "source_location": "L60",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_what_makes_fonts_work_together",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 217,
+      "community_name": "Development Decision Process",
       "norm_label": "what makes fonts work together"
     },
     {
@@ -20660,8 +20682,8 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_pairing_strategies",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 217,
+      "community_name": "Development Decision Process",
       "norm_label": "pairing strategies"
     },
     {
@@ -20671,8 +20693,8 @@
       "source_location": "L78",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_what_to_look_for",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 217,
+      "community_name": "Development Decision Process",
       "norm_label": "what to look for"
     },
     {
@@ -20682,8 +20704,8 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_safe_pairing_patterns",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 217,
+      "community_name": "Development Decision Process",
       "norm_label": "safe pairing patterns"
     },
     {
@@ -20693,8 +20715,8 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_avoid",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 217,
+      "community_name": "Development Decision Process",
       "norm_label": "avoid"
     },
     {
@@ -20704,8 +20726,8 @@
       "source_location": "L106",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_3_line_height_principles",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 234,
+      "community_name": "1. Lottie Animations",
       "norm_label": "3. line height principles"
     },
     {
@@ -20715,8 +20737,8 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_the_relationship",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 234,
+      "community_name": "1. Lottie Animations",
       "norm_label": "the relationship"
     },
     {
@@ -20726,8 +20748,8 @@
       "source_location": "L118",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_guidelines_by_context",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 234,
+      "community_name": "1. Lottie Animations",
       "norm_label": "guidelines by context"
     },
     {
@@ -20737,8 +20759,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_adjustment_factors",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 234,
+      "community_name": "1. Lottie Animations",
       "norm_label": "adjustment factors"
     },
     {
@@ -20748,8 +20770,8 @@
       "source_location": "L136",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_4_line_length_principles",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 256,
+      "community_name": "10. Complexity Estimation",
       "norm_label": "4. line length principles"
     },
     {
@@ -20759,8 +20781,8 @@
       "source_location": "L138",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_optimal_reading_width",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 256,
+      "community_name": "10. Complexity Estimation",
       "norm_label": "optimal reading width"
     },
     {
@@ -20770,8 +20792,8 @@
       "source_location": "L147",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_how_to_measure",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 256,
+      "community_name": "10. Complexity Estimation",
       "norm_label": "how to measure"
     },
     {
@@ -20781,8 +20803,8 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_context_adjustments",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 256,
+      "community_name": "10. Complexity Estimation",
       "norm_label": "context adjustments"
     },
     {
@@ -20836,8 +20858,8 @@
       "source_location": "L199",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_6_weight_and_emphasis_principles",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 268,
+      "community_name": "6. Weight and Emphasis Principles",
       "norm_label": "6. weight and emphasis principles"
     },
     {
@@ -20847,8 +20869,8 @@
       "source_location": "L201",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_semantic_weight_usage",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 268,
+      "community_name": "6. Weight and Emphasis Principles",
       "norm_label": "semantic weight usage"
     },
     {
@@ -20858,8 +20880,8 @@
       "source_location": "L211",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_creating_contrast",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 268,
+      "community_name": "6. Weight and Emphasis Principles",
       "norm_label": "creating contrast"
     },
     {
@@ -20869,8 +20891,8 @@
       "source_location": "L220",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_avoid_220",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 268,
+      "community_name": "6. Weight and Emphasis Principles",
       "norm_label": "avoid"
     },
     {
@@ -20913,8 +20935,8 @@
       "source_location": "L258",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_8_hierarchy_principles",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "8. hierarchy principles"
     },
     {
@@ -20924,8 +20946,8 @@
       "source_location": "L260",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_visual_hierarchy_through_type",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "visual hierarchy through type"
     },
     {
@@ -20935,8 +20957,8 @@
       "source_location": "L271",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_typical_hierarchy",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "typical hierarchy"
     },
     {
@@ -20946,8 +20968,8 @@
       "source_location": "L281",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_testing_hierarchy",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "testing hierarchy"
     },
     {
@@ -20957,8 +20979,8 @@
       "source_location": "L289",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_9_readability_psychology",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 278,
+      "community_name": "gray-matter",
       "norm_label": "9. readability psychology"
     },
     {
@@ -20968,8 +20990,8 @@
       "source_location": "L291",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_f_pattern_reading",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 278,
+      "community_name": "gray-matter",
       "norm_label": "f-pattern reading"
     },
     {
@@ -20979,8 +21001,8 @@
       "source_location": "L303",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_chunking_for_comprehension",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 278,
+      "community_name": "gray-matter",
       "norm_label": "chunking for comprehension"
     },
     {
@@ -20990,8 +21012,8 @@
       "source_location": "L310",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_cognitive_ease",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 278,
+      "community_name": "gray-matter",
       "norm_label": "cognitive ease"
     },
     {
@@ -26193,8 +26215,8 @@
       "source_location": "L372",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_7_project_type_templates",
-      "community": 259,
-      "community_name": "7. Project Type Templates",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "7. project type templates"
     },
     {
@@ -26204,8 +26226,8 @@
       "source_location": "L374",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_e_commerce_app",
-      "community": 259,
-      "community_name": "7. Project Type Templates",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "e-commerce app"
     },
     {
@@ -26215,8 +26237,8 @@
       "source_location": "L392",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_social_content_app",
-      "community": 259,
-      "community_name": "7. Project Type Templates",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "social/content app"
     },
     {
@@ -26226,8 +26248,8 @@
       "source_location": "L410",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_productivity_saas_app",
-      "community": 259,
-      "community_name": "7. Project Type Templates",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "productivity/saas app"
     },
     {
@@ -26237,8 +26259,8 @@
       "source_location": "L430",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_8_decision_checklist",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 258,
+      "community_name": "10. Quick Reference",
       "norm_label": "8. decision checklist"
     },
     {
@@ -26248,8 +26270,8 @@
       "source_location": "L432",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_before_starting_any_project",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 258,
+      "community_name": "10. Quick Reference",
       "norm_label": "before starting any project"
     },
     {
@@ -26259,8 +26281,8 @@
       "source_location": "L443",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_questions_to_ask_user",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 258,
+      "community_name": "10. Quick Reference",
       "norm_label": "questions to ask user"
     },
     {
@@ -27502,8 +27524,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_pattern_questioning_matrix",
-      "community": 48,
-      "community_name": "Mobile Design Thinking",
+      "community": 235,
+      "community_name": "2. GSAP (GreenSock)",
       "norm_label": "\ud83c\udfaf pattern questioning matrix"
     },
     {
@@ -27513,8 +27535,8 @@
       "source_location": "L131",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_navigation_pattern_questioning",
-      "community": 48,
-      "community_name": "Mobile Design Thinking",
+      "community": 235,
+      "community_name": "2. GSAP (GreenSock)",
       "norm_label": "navigation pattern questioning"
     },
     {
@@ -27524,8 +27546,8 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_state_pattern_questioning",
-      "community": 48,
-      "community_name": "Mobile Design Thinking",
+      "community": 235,
+      "community_name": "2. GSAP (GreenSock)",
       "norm_label": "state pattern questioning"
     },
     {
@@ -27535,8 +27557,8 @@
       "source_location": "L149",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_list_pattern_questioning",
-      "community": 48,
-      "community_name": "Mobile Design Thinking",
+      "community": 235,
+      "community_name": "2. GSAP (GreenSock)",
       "norm_label": "list pattern questioning"
     },
     {
@@ -27546,8 +27568,8 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_ui_pattern_questioning",
-      "community": 48,
-      "community_name": "Mobile Design Thinking",
+      "community": 235,
+      "community_name": "2. GSAP (GreenSock)",
       "norm_label": "ui pattern questioning"
     },
     {
@@ -27755,8 +27777,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_3_stack_navigation",
-      "community": 258,
-      "community_name": "10. Quick Reference",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "3. stack navigation"
     },
     {
@@ -27766,8 +27788,8 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_core_concepts",
-      "community": 258,
-      "community_name": "10. Quick Reference",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "core concepts"
     },
     {
@@ -27777,8 +27799,8 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_stack_navigation_patterns",
-      "community": 258,
-      "community_name": "10. Quick Reference",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "stack navigation patterns"
     },
     {
@@ -27788,8 +27810,8 @@
       "source_location": "L117",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_back_button_handling",
-      "community": 258,
-      "community_name": "10. Quick Reference",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "back button handling"
     },
     {
@@ -27832,8 +27854,8 @@
       "source_location": "L184",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_5_modal_navigation",
-      "community": 268,
-      "community_name": "3. Supply Chain Security (A03)",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "5. modal navigation"
     },
     {
@@ -27843,8 +27865,8 @@
       "source_location": "L186",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_modal_vs_push",
-      "community": 268,
-      "community_name": "3. Supply Chain Security (A03)",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "modal vs push"
     },
     {
@@ -27854,8 +27876,8 @@
       "source_location": "L204",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_modal_types",
-      "community": 268,
-      "community_name": "3. Supply Chain Security (A03)",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "modal types"
     },
     {
@@ -27865,8 +27887,8 @@
       "source_location": "L213",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_modal_dismissal",
-      "community": 268,
-      "community_name": "3. Supply Chain Security (A03)",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "modal dismissal"
     },
     {
@@ -27953,8 +27975,8 @@
       "source_location": "L343",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_8_transition_animations",
-      "community": 269,
-      "community_name": "4. Attack Surface Mapping",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "8. transition animations"
     },
     {
@@ -27964,8 +27986,8 @@
       "source_location": "L345",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_platform_defaults",
-      "community": 269,
-      "community_name": "4. Attack Surface Mapping",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "platform defaults"
     },
     {
@@ -27975,8 +27997,8 @@
       "source_location": "L361",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_custom_transitions",
-      "community": 269,
-      "community_name": "4. Attack Surface Mapping",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "custom transitions"
     },
     {
@@ -27986,8 +28008,8 @@
       "source_location": "L377",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_shared_element_transitions",
-      "community": 269,
-      "community_name": "4. Attack Surface Mapping",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "shared element transitions"
     },
     {
@@ -28030,8 +28052,8 @@
       "source_location": "L428",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_10_navigation_checklist",
-      "community": 256,
-      "community_name": "10. Complexity Estimation",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "10. navigation checklist"
     },
     {
@@ -28041,8 +28063,8 @@
       "source_location": "L430",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_before_navigation_architecture",
-      "community": 256,
-      "community_name": "10. Complexity Estimation",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "before navigation architecture"
     },
     {
@@ -28052,8 +28074,8 @@
       "source_location": "L438",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_before_every_screen",
-      "community": 256,
-      "community_name": "10. Complexity Estimation",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "before every screen"
     },
     {
@@ -28063,8 +28085,8 @@
       "source_location": "L446",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_before_release",
-      "community": 256,
-      "community_name": "10. Complexity Estimation",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "before release"
     },
     {
@@ -36236,8 +36258,8 @@
       "source_location": "L100",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_4_attack_surface_mapping",
-      "community": 278,
-      "community_name": "gray-matter",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "4. attack surface mapping"
     },
     {
@@ -36247,8 +36269,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_what_to_map",
-      "community": 278,
-      "community_name": "gray-matter",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "what to map"
     },
     {
@@ -36258,8 +36280,8 @@
       "source_location": "L111",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_prioritization_matrix",
-      "community": 278,
-      "community_name": "gray-matter",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "prioritization matrix"
     },
     {
@@ -36269,8 +36291,8 @@
       "source_location": "L124",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_5_risk_prioritization",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 259,
+      "community_name": "7. Project Type Templates",
       "norm_label": "5. risk prioritization"
     },
     {
@@ -36280,8 +36302,8 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_cvss_context",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 259,
+      "community_name": "7. Project Type Templates",
       "norm_label": "cvss + context"
     },
     {
@@ -36291,8 +36313,8 @@
       "source_location": "L135",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_prioritization_decision_tree",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 259,
+      "community_name": "7. Project Type Templates",
       "norm_label": "prioritization decision tree"
     },
     {
@@ -36391,7 +36413,7 @@
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_9_cloud_security_considerations",
       "community": 282,
-      "community_name": "@types/react",
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "9. cloud security considerations"
     },
     {
@@ -36402,7 +36424,7 @@
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_shared_responsibility",
       "community": 282,
-      "community_name": "@types/react",
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "shared responsibility"
     },
     {
@@ -36413,7 +36435,7 @@
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_cloud_specific_checks",
       "community": 282,
-      "community_name": "@types/react",
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "cloud-specific checks"
     },
     {
@@ -36665,8 +36687,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_web_design_guidelines_skill",
-      "community": 206,
-      "community_name": "translate-i18n.ts",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "web-design-guidelines/skill.md"
     },
     {
@@ -40993,7 +41015,7 @@
       "norm_label": "pair it with scarcity for maximum effect"
     },
     {
-      "label": "how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "label": "en/how-to-block-reels-and-shorts-on-android-2026.mdx",
       "file_type": "document",
       "source_file": "src/content/blog/en/how-to-block-reels-and-shorts-on-android-2026.mdx",
       "source_location": "L1",
@@ -41001,7 +41023,7 @@
       "id": "src_content_blog_en_how_to_block_reels_and_shorts_on_android_2026",
       "community": 174,
       "community_name": "how-to-block-reels-and-shorts-on-android-2026.mdx",
-      "norm_label": "how-to-block-reels-and-shorts-on-android-2026.mdx"
+      "norm_label": "en/how-to-block-reels-and-shorts-on-android-2026.mdx"
     },
     {
       "label": "Why blocking Reels and Shorts is harder than blocking an app",
@@ -43367,6 +43389,94 @@
       "community": 111,
       "community_name": "fr/how-to-add-sales-popup-shopify.md",
       "norm_label": "combinez-le avec la rarete pour un effet maximum"
+    },
+    {
+      "label": "fr/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_how_to_block_reels_and_shorts_on_android_2026",
+      "community": 179,
+      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "norm_label": "fr/how-to-block-reels-and-shorts-on-android-2026.mdx"
+    },
+    {
+      "label": "Pourquoi bloquer les Reels et les Shorts est plus difficile que bloquer une application",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_how_to_block_reels_and_shorts_on_android_2026_pourquoi_bloquer_les_reels_et_les_shorts_est_plus_difficile_que_bloquer_une_application",
+      "community": 179,
+      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "norm_label": "pourquoi bloquer les reels et les shorts est plus difficile que bloquer une application"
+    },
+    {
+      "label": "Les trois fa\u00e7ons de bloquer la vid\u00e9o courte sur Android",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_how_to_block_reels_and_shorts_on_android_2026_les_trois_fa\u00e7ons_de_bloquer_la_vid\u00e9o_courte_sur_android",
+      "community": 179,
+      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "norm_label": "les trois facons de bloquer la video courte sur android"
+    },
+    {
+      "label": "Comment fonctionnent r\u00e9ellement les limites quotidiennes et par session",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_how_to_block_reels_and_shorts_on_android_2026_comment_fonctionnent_r\u00e9ellement_les_limites_quotidiennes_et_par_session",
+      "community": 179,
+      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "norm_label": "comment fonctionnent reellement les limites quotidiennes et par session"
+    },
+    {
+      "label": "Plateforme par plateforme",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L101",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_how_to_block_reels_and_shorts_on_android_2026_plateforme_par_plateforme",
+      "community": 179,
+      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "norm_label": "plateforme par plateforme"
+    },
+    {
+      "label": "Pas \u00e0 pas : configurer Reel Guard en moins de deux minutes",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L121",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_how_to_block_reels_and_shorts_on_android_2026_pas_\u00e0_pas_configurer_reel_guard_en_moins_de_deux_minutes",
+      "community": 179,
+      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "norm_label": "pas a pas : configurer reel guard en moins de deux minutes"
+    },
+    {
+      "label": "Comparatif rapide",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L134",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_how_to_block_reels_and_shorts_on_android_2026_comparatif_rapide",
+      "community": 179,
+      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "norm_label": "comparatif rapide"
+    },
+    {
+      "label": "L'essentiel",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L143",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_how_to_block_reels_and_shorts_on_android_2026_l_essentiel",
+      "community": 179,
+      "community_name": "\ud83d\udd34 BUILD VERIFICATION (MANDATORY Before \"Done\")",
+      "norm_label": "l'essentiel"
     },
     {
       "label": "fr/how-to-block-social-media-on-android-during-work-hours.md",
@@ -55057,6 +55167,18 @@
     },
     {
       "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/[lang]/404.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_lang_404",
+      "target": "src_i18n_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/[lang]/about/index.astro",
       "_origin": "ast",
@@ -57841,6 +57963,18 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/pages/[lang]/404.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_lang_404",
+      "target": "src_i18n_config_i18nconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/layouts/Layout.astro",
       "source_location": "L8",
       "weight": 1.0,
@@ -60117,6 +60251,26 @@
       "_origin": "ast",
       "source": "src_pages_404",
       "target": "src_page_templates_notfoundpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/[lang]/404.astro",
+      "_origin": "ast",
+      "source": "src_pages_lang_404",
+      "target": "src_page_templates_notfoundpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/[lang]/404.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_lang_404",
+      "target": "src_pages_lang_404_getstaticpaths",
       "confidence_score": 1.0
     },
     {
@@ -94714,6 +94868,83 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_how_to_block_reels_and_shorts_on_android_2026",
+      "target": "src_content_blog_fr_how_to_block_reels_and_shorts_on_android_2026_comment_fonctionnent_r\u00e9ellement_les_limites_quotidiennes_et_par_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L134",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_how_to_block_reels_and_shorts_on_android_2026",
+      "target": "src_content_blog_fr_how_to_block_reels_and_shorts_on_android_2026_comparatif_rapide",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_how_to_block_reels_and_shorts_on_android_2026",
+      "target": "src_content_blog_fr_how_to_block_reels_and_shorts_on_android_2026_l_essentiel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_how_to_block_reels_and_shorts_on_android_2026",
+      "target": "src_content_blog_fr_how_to_block_reels_and_shorts_on_android_2026_les_trois_fa\u00e7ons_de_bloquer_la_vid\u00e9o_courte_sur_android",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L121",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_how_to_block_reels_and_shorts_on_android_2026",
+      "target": "src_content_blog_fr_how_to_block_reels_and_shorts_on_android_2026_pas_\u00e0_pas_configurer_reel_guard_en_moins_de_deux_minutes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L101",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_how_to_block_reels_and_shorts_on_android_2026",
+      "target": "src_content_blog_fr_how_to_block_reels_and_shorts_on_android_2026_plateforme_par_plateforme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_how_to_block_reels_and_shorts_on_android_2026",
+      "target": "src_content_blog_fr_how_to_block_reels_and_shorts_on_android_2026_pourquoi_bloquer_les_reels_et_les_shorts_est_plus_difficile_que_bloquer_une_application",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/fr/how-to-block-social-media-on-android-during-work-hours.md",
       "source_location": "L64",
       "weight": 1.0,
@@ -95890,5 +96121,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "19fdefe6cf330d4c6a07fb6ca2a00e137db05048"
+  "built_at_commit": "f17c7ce91ee9d0e4361cc5903becc4e5e9c3c146"
 }

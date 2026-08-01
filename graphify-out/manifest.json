@@ -675,7 +675,7 @@
     "semantic_hash": ""
   },
   "src/i18n/locales/en.json": {
-    "mtime": 1785568488.116076,
+    "mtime": 1785569226.9403965,
     "ast_hash": "6620fd9318d66ae30c0a428190b631da",
     "semantic_hash": ""
   },
@@ -1995,8 +1995,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/en/shopify-conversion-rate-benchmarks-2026.md": {
-    "mtime": 1775295654.616268,
-    "ast_hash": "c95d3134d0365e79cd56ab1752f987ce",
+    "mtime": 1785568829.0823996,
+    "ast_hash": "a335398d238ab5520d1b16850987e972",
     "semantic_hash": ""
   },
   "src/content/blog/en/shopify-site-speed-social-proof.md": {
@@ -2030,8 +2030,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/android-digital-wellbeing-vs-third-party-focus-apps.md": {
-    "mtime": 1785566498.4241662,
-    "ast_hash": "f1daa42e8ac5d379ce0f2e3a5ad9f1c9",
+    "mtime": 1785568832.4472597,
+    "ast_hash": "23039b337433fb977334245a0e2c015b",
     "semantic_hash": ""
   },
   "src/content/blog/fr/best-app-to-block-social-media-on-android-in-2026.mdx": {
@@ -2100,8 +2100,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/shopify-conversion-rate-benchmarks-2026.md": {
-    "mtime": 1775295654.6174433,
-    "ast_hash": "c9ed2dcfa68f8aac7021ae2300cded14",
+    "mtime": 1785568830.5339973,
+    "ast_hash": "9d24ef571385ba0ce61cc9472e7afa47",
     "semantic_hash": ""
   },
   "src/content/blog/fr/shopify-site-speed-social-proof.md": {
@@ -2497,6 +2497,16 @@
   "src/lib/lastUpdated.ts": {
     "mtime": 1785566925.3711786,
     "ast_hash": "1222e4590a73b8cc24aca8f6de2d5dc0",
+    "semantic_hash": ""
+  },
+  "src/pages/[lang]/404.astro": {
+    "mtime": 1785569046.9826324,
+    "ast_hash": "f5e47c80f82c0485f434c361b495e803",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/how-to-block-reels-and-shorts-on-android-2026.mdx": {
+    "mtime": 1785569223.3414543,
+    "ast_hash": "a19640cbe2694d59069a745a2a73efa8",
     "semantic_hash": ""
   }
 }
