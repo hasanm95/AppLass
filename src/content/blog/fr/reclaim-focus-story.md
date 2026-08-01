@@ -1,7 +1,7 @@
 ---
 title: "Pourquoi j'ai arrêté de combattre mon propre cerveau (et comment j'ai récupéré 2,4 heures)"
 date: "2026-01-26"
-updatedAt: "2026-05-19"
+dateModified: "2026-05-19"
 category: "Applications Android"
 keywords: "retrouver concentration, boucle dopamine, pare-feu cognitif, arrêter addiction téléphone android, mindful guard android"
 author: "Équipe AppLass"

@@ -1,7 +1,7 @@
 ---
 title: "Android Bien-être Numérique vs. Applications de Concentration Tierces : Comparaison Honnête"
 date: "2026-05-07"
-updatedAt: "2026-05-19"
+dateModified: "2026-05-19"
 category: "Applications Android"
 keywords: "bien-être numérique android, bien-être numérique vs bloqueur d'applications, mode concentration natif android, mindful guard android"
 author: "AppLass Team"

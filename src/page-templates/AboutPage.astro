@@ -23,6 +23,7 @@ interface Props {
 const { lang } = Astro.props;
 
 import { setLocale } from "@/i18n";
+import { lastUpdatedFor } from "@/lib/lastUpdated";
 setLocale(lang);
 
 const isDefault = lang === "en";
@@ -37,7 +38,7 @@ const meta = {
   ogUrl: isDefault ? "https://applass.com/about" : `https://applass.com/${lang}/about`
 };
 
-const lastUpdated = "2026-03-23";
+const lastUpdated = lastUpdatedFor("src/page-templates/AboutPage.astro");
 
 const aboutSchema = {
   "@context": "https://schema.org",
@@ -75,9 +76,11 @@ const iconMap = {
     <script type="application/ld+json" is:inline set:html={JSON.stringify(aboutSchema)} />
     <div class="pt-20 lg:pt-32">
       <div class="section-container mt-8 flex items-center gap-4">
-        <span class="rounded-full bg-slate-50 px-3 py-1 text-[10px] font-bold text-slate-600 uppercase border border-slate-100">
-          {localize("Last Evaluated: ")} {lastUpdated}
-        </span>
+        {lastUpdated && (
+          <span class="rounded-full bg-slate-50 px-3 py-1 text-[10px] font-bold text-slate-600 uppercase border border-slate-100">
+            {localize("Last Evaluated: ")} {lastUpdated}
+          </span>
+        )}
       </div>
       {/* Hero Methodology Section */}
       <SubpageHero

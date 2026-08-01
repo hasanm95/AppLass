@@ -1,7 +1,7 @@
 ---
 title: "La Télémétrie est une Distraction : Le Cas pour une Productivité Zéro-Données"
 date: "2026-01-26"
-updatedAt: "2026-05-19"
+dateModified: "2026-05-19"
 category: "Applications Android"
 keywords: "bloqueur application sans télémétrie, application concentration hors ligne android, outils productivité confidentialité, mindful guard android"
 author: "Équipe AppLass"

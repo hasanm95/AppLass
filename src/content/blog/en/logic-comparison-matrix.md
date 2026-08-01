@@ -1,7 +1,7 @@
 ---
 title: "Logic Comparison Matrix: Choose Your Best App"
 date: "2026-01-26"
-updatedAt: "2026-05-19"
+dateModified: "2026-05-19"
 category: "Android Apps"
 keywords: "focus app comparison, opal vs freedom, mindful guard vs appblock, best privacy focus apps, mindful guard android"
 author: "AppLass Team"

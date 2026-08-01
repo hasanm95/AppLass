@@ -1,7 +1,7 @@
 ---
 title: "Telemetry is a Distraction: The Case for Zero-Data Productivity"
 date: "2026-01-26"
-updatedAt: "2026-05-19"
+dateModified: "2026-05-19"
 category: "Android Apps"
 keywords: "zero telemetry app blocker, offline focus app android, privacy focused productivity tools, mindful guard android"
 author: "AppLass Team"

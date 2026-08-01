@@ -1,7 +1,7 @@
 ---
 title: "Monk Mode 2.0 : Pourquoi votre volonté ne suffit pas (et ce que j'ai construit à la place)"
 date: "2026-01-26"
-updatedAt: "2026-05-19"
+dateModified: "2026-05-19"
 category: "Applications Android"
 keywords: "application monk mode android, application détox dopamine, comment faire monk mode, mindful guard android"
 author: "Équipe AppLass"

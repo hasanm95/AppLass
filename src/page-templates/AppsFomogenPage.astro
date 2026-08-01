@@ -19,6 +19,7 @@ interface Props {
 const { lang } = Astro.props;
 
 import { setLocale } from "@/i18n";
+import { lastUpdatedFor } from "@/lib/lastUpdated";
 setLocale(lang);
 
 const isDefault = lang === "en";
@@ -33,7 +34,7 @@ const meta = {
   ogUrl: isDefault ? "https://applass.com/apps/fomogen" : `https://applass.com/${lang}/apps/fomogen`
 };
 
-const lastUpdated = "2026-03-23";
+const lastUpdated = lastUpdatedFor("src/page-templates/AppsFomogenPage.astro");
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -84,9 +85,11 @@ const jsonLd = {
     <div class="flex-1 overflow-x-hidden">
       <FomoGenHero>
         <div slot="meta" class="mb-6 flex items-center justify-center lg:justify-start gap-4">
-          <span class="rounded-full bg-green-50 px-3 py-1 text-[10px] font-bold text-green-700 uppercase border border-green-100">
-            {localize("Last Evaluated: ")} {lastUpdated}
-          </span>
+          {lastUpdated && (
+            <span class="rounded-full bg-green-50 px-3 py-1 text-[10px] font-bold text-green-700 uppercase border border-green-100">
+              {localize("Last Evaluated: ")} {lastUpdated}
+            </span>
+          )}
           <span class="h-1 w-1 rounded-full bg-slate-200"></span>
           <span class="text-[10px] font-bold text-slate-600 uppercase tracking-widest italic">
             {localize("Core Web Vitals Verified")}

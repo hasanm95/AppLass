@@ -23,10 +23,11 @@ interface Props {
 const { lang } = Astro.props;
 
 import { setLocale } from "@/i18n";
+import { lastUpdatedFor } from "@/lib/lastUpdated";
 setLocale(lang);
 
 const isDefault = lang === "en";
-const lastUpdated = "2026-03-23";
+const lastUpdated = lastUpdatedFor("src/page-templates/AppsScreenveilPage.astro");
 const screenveilData = getScreenveilData();
 const screenveilSchema = {
   ...getScreenveilSchema(),
@@ -74,9 +75,11 @@ const meta = {
       />
       <ScreenVeilHero>
         <div slot="meta" class="mb-6 flex items-center justify-center lg:justify-start gap-4">
-          <span class="rounded-full bg-green-500/10 px-3 py-1 text-[10px] font-bold text-green-400 uppercase border border-green-500/20 backdrop-blur-md">
-            {localize("Last Evaluated: ")} {lastUpdated}
-          </span>
+          {lastUpdated && (
+            <span class="rounded-full bg-green-500/10 px-3 py-1 text-[10px] font-bold text-green-400 uppercase border border-green-500/20 backdrop-blur-md">
+              {localize("Last Evaluated: ")} {lastUpdated}
+            </span>
+          )}
           <span class="h-1 w-1 rounded-full bg-slate-800"></span>
           <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest italic">
             {localize("AMOLED Optimization Verified")}

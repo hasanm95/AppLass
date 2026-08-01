@@ -33,6 +33,9 @@ const { Content } = await render(post.entry);
 const title = `${post.title} | AppLass Blog`;
 const description = post.excerpt;
 
+// Never earlier than publication — an unrevised post was last modified when it shipped.
+const lastModified = post.dateModified || post.date;
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
@@ -40,7 +43,7 @@ const jsonLd = {
   description: post.excerpt,
   image: typeof post.thumbnail === 'object' ? post.thumbnail.src : post.thumbnail,
   datePublished: post.date,
-  dateModified: post.dateModified || "2026-03-23",
+  dateModified: lastModified,
   author: {
     "@type": "Person",
     name: post.author,
@@ -115,7 +118,7 @@ const normalizedSidebarApps = (post.sidebarApps && post.sidebarApps.length > 0
   ogType="article"
   articleMeta={{
     publishedTime: post.date ? `${post.date}T00:00:00Z` : undefined,
-    modifiedTime: post.dateModified ? `${post.dateModified}T00:00:00Z` : undefined,
+    modifiedTime: `${lastModified}T00:00:00Z`,
     author: post.author,
     tags: post.tags || [],
   }}
@@ -152,7 +155,7 @@ const normalizedSidebarApps = (post.sidebarApps && post.sidebarApps.length > 0
           <span class="h-1 w-1 rounded-full bg-slate-200" />
           <div class="flex items-center gap-2">
             <span class="text-[10px] font-bold text-slate-500 uppercase border border-slate-100 rounded-lg px-2 py-0.5">
-              {localize("Verified on: ")} {post.dateModified || "2026-03-23"}
+              {localize("Verified on: ")} {lastModified}
             </span>
           </div>
         </div>

@@ -1,7 +1,7 @@
 ---
 title: "Logic Comparison Matrix: Choose the Ideal App"
 date: "2026-01-26"
-updatedAt: "2026-05-19"
+dateModified: "2026-05-19"
 category: "Applications Android"
 keywords: "comparatif applications concentration, opal vs freedom, mindful guard vs appblock, meilleures applications confidentialité, mindful guard android"
 author: "AppLass Team"

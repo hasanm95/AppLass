@@ -1,7 +1,7 @@
 ---
 title: "The Logic of Focus: Why Most Digital Detox Apps Fail"
-date: "Jan 12, 2026"
-updatedAt: "2026-05-19"
+date: "2026-01-12"
+dateModified: "2026-05-19"
 category: "Android Apps"
 keywords: "digital detox apps, intentional friction app, focus logic, phone addiction solutions, mindful guard android"
 author: "Mathematician Founder"

@@ -22,10 +22,11 @@ interface Props {
 const { lang } = Astro.props;
 
 import { setLocale } from "@/i18n";
+import { lastUpdatedFor } from "@/lib/lastUpdated";
 setLocale(lang);
 
 const isDefault = lang === "en";
-const lastUpdated = "2026-07-24";
+const lastUpdated = lastUpdatedFor("src/page-templates/AppsMindfulGuardPage.astro");
 const mindfulSchema = {
   ...getMindfulGuardSchema(),
   "datePublished": "2024-02-15",
@@ -71,9 +72,11 @@ const meta = {
     {/* Section 1: The Hero (Above the Fold) */}
     <MindfulHero>
       <div slot="meta" class="mb-4 flex flex-wrap items-center gap-3 sm:mb-6 sm:gap-4 justify-start">
-        <span class="rounded-full bg-emerald-50 px-3 py-1 text-[10px] font-bold text-emerald-700 border border-emerald-100">
-          {localize("Last checked: ")} {lastUpdated}
-        </span>
+        {lastUpdated && (
+          <span class="rounded-full bg-emerald-50 px-3 py-1 text-[10px] font-bold text-emerald-700 border border-emerald-100">
+            {localize("Last checked: ")} {lastUpdated}
+          </span>
+        )}
         <span class="hidden h-1 w-1 rounded-full bg-slate-200 sm:block"></span>
         <span class="text-[10px] font-bold text-slate-600 italic">
           {localize("Verified: zero data collected")}

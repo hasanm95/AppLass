@@ -1,7 +1,7 @@
 ---
 title: "Why I Stopped Fighting My Own Brain (And How I Reclaimed 2.4 Hours)"
 date: "2026-01-26"
-updatedAt: "2026-05-19"
+dateModified: "2026-05-19"
 category: "Android Apps"
 keywords: "reclaim focus, dopamine loop, cognitive firewall app, stop phone addiction android, mindful guard android"
 author: "AppLass Team"

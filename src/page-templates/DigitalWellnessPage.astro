@@ -25,6 +25,7 @@ interface Props {
 const { lang } = Astro.props;
 
 import { setLocale } from "@/i18n";
+import { lastUpdatedFor } from "@/lib/lastUpdated";
 setLocale(lang);
 
 const isDefault = lang === "en";
@@ -39,7 +40,7 @@ const meta = {
   ogUrl: isDefault ? "https://applass.com/guide-digital-wellness-2026" : `https://applass.com/${lang}/guide-digital-wellness-2026`
 };
 const faqItems = getFaqRegistry().DIGITAL_WELLNESS;
-const lastUpdated = "2026-03-23";
+const lastUpdated = lastUpdatedFor("src/page-templates/DigitalWellnessPage.astro");
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -91,9 +92,11 @@ const articleSchema = {
       <Section className="bg-iridescent border-b border-slate-100 py-12 lg:py-32">
         <div class="section-container">
           <div class="mb-8 flex items-center gap-4">
-            <span class="rounded-full bg-blue-50 px-3 py-1 text-[10px] font-bold text-blue-600 uppercase border border-blue-100">
-              {localize("Last Evaluated: ")} {lastUpdated}
-            </span>
+            {lastUpdated && (
+              <span class="rounded-full bg-blue-50 px-3 py-1 text-[10px] font-bold text-blue-600 uppercase border border-blue-100">
+                {localize("Last Evaluated: ")} {lastUpdated}
+              </span>
+            )}
             <span class="h-1 w-1 rounded-full bg-slate-200"></span>
             <span class="text-[10px] font-bold text-slate-600 uppercase tracking-widest">
               {localize("Guideline v2.1")}

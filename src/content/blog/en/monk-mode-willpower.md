@@ -1,7 +1,7 @@
 ---
 title: "Monk Mode 2.0: Why Your Willpower Isn't Enough (and What I Built Instead)"
 date: "2026-01-26"
-updatedAt: "2026-05-19"
+dateModified: "2026-05-19"
 category: "Android Apps"
 keywords: "monk mode app android, dopamine detox app, how to do monk mode, mindful guard android"
 author: "AppLass Team"

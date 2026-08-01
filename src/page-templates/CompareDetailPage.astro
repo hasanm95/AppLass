@@ -21,6 +21,7 @@ interface Props {
 const { lang, slug } = Astro.props;
 
 import { setLocale } from "@/i18n";
+import { lastUpdatedFor } from "@/lib/lastUpdated";
 setLocale(lang);
 const data = getComparisonBySlug(slug as string);
 
@@ -34,7 +35,7 @@ const description = localize("Why elite teams are switching from {{competitor}} 
   product: data.productName
 });
 
-const lastUpdated = "2026-03-23";
+const lastUpdated = lastUpdatedFor("src/page-templates/CompareDetailPage.astro", "src/lib/compare.ts");
 
 // JSON-LD for Comparison/Product
 const jsonLd = {
@@ -100,9 +101,11 @@ const jsonLd = {
         subheadline={data.heroSubheadline}
       >
         <div slot="meta" class="mb-10 flex items-center justify-center gap-4">
-          <span class="rounded-full bg-blue-50 px-3 py-1 text-[10px] font-bold text-blue-600 uppercase border border-blue-100">
-            {localize("Last Evaluated: ")} {lastUpdated}
-          </span>
+          {lastUpdated && (
+            <span class="rounded-full bg-blue-50 px-3 py-1 text-[10px] font-bold text-blue-600 uppercase border border-blue-100">
+              {localize("Last Evaluated: ")} {lastUpdated}
+            </span>
+          )}
           <span class="h-1 w-1 rounded-full bg-slate-200"></span>
           <span class="text-[10px] font-bold text-slate-600 uppercase tracking-widest italic">
             {localize("Expert Verified Analysis")}
