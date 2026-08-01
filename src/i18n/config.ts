@@ -1,6 +1,6 @@
 export const i18nConfig = {
   defaultLocale: "en",
-  locales: ["en", "fr"],
+  locales: ["en", "fr", "de"],
   rtlLocales: [],
 } as const;
 
@@ -12,6 +12,7 @@ export const localeMeta: Record<
 > = {
   en: { fullLabel: "English", englishName: "English", ogLocale: "en_US" },
   fr: { fullLabel: "Français", englishName: "French", ogLocale: "fr_FR" },
+  de: { fullLabel: "Deutsch", englishName: "German", ogLocale: "de_DE" },
 };
 
 export function isRtl(locale: string): boolean {

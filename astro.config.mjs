@@ -15,7 +15,7 @@ export default defineConfig({
   integrations: [react(), sitemap(), mdx()],
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "fr"],
+    locales: ["en", "fr", "de"],
     routing: {
       prefixDefaultLocale: false,
     }

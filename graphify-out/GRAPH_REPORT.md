@@ -1,16 +1,16 @@
 # Graph Report - AppLass  (2026-08-01)
 
 ## Corpus Check
-- 433 files · ~1,702,799 words
+- 435 files · ~1,713,267 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4085 nodes · 4639 edges · 301 communities (284 shown, 17 thin omitted)
+- 4094 nodes · 4648 edges · 302 communities (285 shown, 17 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.61)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c28759d6`
+- Built from commit: `cdfdcda2`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -272,6 +272,8 @@
 - ORM Selection (2025)
 - 10. Complexity Estimation
 - 4. 3D CSS Transforms
+- crc-32
+- @tailwindcss/typography
 - Editorial Workflows
 - Output Format
 - Content Pillars and Topic Clusters
@@ -295,6 +297,7 @@
 - tailwindcss
 - tsx
 - 9. Cloud Security Considerations
+- @types/node
 - @astrojs/check
 - fix-getstaticpaths.js
 - split-pages.sh
@@ -303,10 +306,8 @@
 - @astrojs/check
 - package.json
 - eslint-plugin-astro
-- gray-matter
-- typescript
+- @typescript-eslint/eslint-plugin
 - tailwindcss
-- @typescript-eslint/parser
 
 ## God Nodes (most connected - your core abstractions)
 1. `@/i18n/localize` - 85 edges
@@ -335,7 +336,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (301 total, 17 thin omitted)
+## Communities (302 total, 17 thin omitted)
 
 ### Community 0 - "@/i18n/localize"
 Cohesion: 0.08
@@ -543,7 +544,7 @@ Nodes (5): Development Decision Process, Phase 1: Requirements Analysis (ALWAYS 
 
 ### Community 51 - "devDependencies"
 Cohesion: 0.09
-Nodes (23): crc-32, eslint, eslint-plugin-astro, devDependencies, crc-32, eslint, eslint-plugin-astro, @tailwindcss/typography (+15 more)
+Nodes (23): @astrojs/check, eslint, eslint-plugin-astro, gray-matter, devDependencies, @astrojs/check, eslint, eslint-plugin-astro (+15 more)
 
 ### Community 52 - "MindfulGuard Landing Page — Rebrand Plan"
 Cohesion: 0.09
@@ -862,8 +863,8 @@ Cohesion: 0.17
 Nodes (12): Common Marketing Content Types, Content Modeling for Marketing, Core Principles, Decision Checklist, Headless CMS Guide, Headless vs Traditional CMS, Implementation Checklist, Relevant Integration Guides (+4 more)
 
 ### Community 132 - "scripts"
-Cohesion: 0.20
-Nodes (10): scripts, astro, build, cf-typegen, deploy, dev, extract-i18n, lint (+2 more)
+Cohesion: 0.18
+Nodes (11): scripts, astro, build, cf-typegen, deploy, dev, extract-i18n, lint (+3 more)
 
 ### Community 133 - "en/best-app-to-block-social-media-on-android-in-2026.mdx"
 Cohesion: 0.17
@@ -1247,7 +1248,7 @@ Nodes (4): N+1 Problem, Optimization Priorities, Query Analysis Mindset, Query O
 
 ### Community 230 - "5. E-commerce Guidelines {#e-commerce}"
 Cohesion: 0.24
-Nodes (8): available, Dict, en, load(), placeholders(), requested, { terms: doNotTranslate, exempt }, validate()
+Nodes (9): available, compoundNormalize(), Dict, en, load(), placeholders(), requested, { terms: doNotTranslate, exempt } (+1 more)
 
 ### Community 231 - "7. Landing Page Guidelines {#landing-page}"
 Cohesion: 0.29
@@ -1312,6 +1313,10 @@ Nodes (4): Action Plan, Beyond the Button, Results You Can Expect, The "Thumb Zo
 ### Community 246 - "fr/mobile-sticky-cart-guide.md"
 Cohesion: 0.40
 Nodes (4): Au-delà du Bouton, La Science de la "Zone du Pouce", Plan d'Action, Résultats Attendus
+
+### Community 247 - "Quick Reference"
+Cohesion: 0.29
+Nodes (6): batch, en, [locale, batchPath], localePath, ordered, unknown
 
 ### Community 248 - "Authentication Patterns"
 Cohesion: 0.50
@@ -1438,19 +1443,19 @@ Cohesion: 0.50
 Nodes (3): name, type, version
 
 ## Knowledge Gaps
-- **2612 isolated node(s):** `Colors`, `Colors`, `$schema`, `style`, `rsc` (+2607 more)
+- **2619 isolated node(s):** `Colors`, `Colors`, `$schema`, `style`, `rsc` (+2614 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **17 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
+- **Why does `Mobile Performance Reference` connect `Mobile Performance Reference` to `mobile-design/SKILL.md`?**
+  _High betweenness centrality (0.004) - this node is a cross-community bridge._
 - **Why does `Mobile Backend Patterns` connect `Mobile Backend Patterns` to `mobile-design/SKILL.md`?**
   _High betweenness centrality (0.004) - this node is a cross-community bridge._
-- **Why does `Mobile Testing Patterns` connect `Mobile Testing Patterns` to `mobile-design/SKILL.md`?**
-  _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **What connects `Colors`, `Colors`, `$schema` to the rest of the system?**
-  _2612 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2619 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `@/i18n/localize` be split into smaller, more focused modules?**
   _Cohesion score 0.07536231884057971 - nodes in this community are weakly interconnected._
 - **Should `design_system.py` be split into smaller, more focused modules?**

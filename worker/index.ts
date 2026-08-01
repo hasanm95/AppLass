@@ -7,7 +7,7 @@ const DEFAULT_LOCALE = "en";
 // Locales that actually have a build. Only these are redirect targets.
 // Add a locale here ONLY once its pages exist, otherwise geo-routed visitors
 // get a 404 — the map below is allowed to stay ahead of this list.
-const LOCALES = ["en", "fr"] as const;
+const LOCALES = ["en", "fr", "de"] as const;
 
 // Dominant language per country, used only as a geo default for first-time visitors.
 // Entries whose locale is not in LOCALES are inert: they fall through to the default

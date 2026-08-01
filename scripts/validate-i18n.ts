@@ -32,6 +32,16 @@ function placeholders(s: string): string[] {
 }
 
 /**
+ * German (and Dutch, Danish, Swedish) bind a borrowed term into a compound with a
+ * hyphen: "Play Store" correctly becomes "Play-Store-Bewertung". Treating hyphen and
+ * space as equivalent lets the do-not-translate check see the term is still intact,
+ * instead of reporting every legitimate compound as a violation.
+ */
+function compoundNormalize(s: string): string {
+  return s.replace(/[-‐‑]/g, ' ');
+}
+
+/**
  * Reads the "Do not translate" section from the glossary.
  *
  * Also reads its "Locale exceptions" table, so a term that legitimately has an
@@ -103,9 +113,10 @@ function validate(
       untranslated++;
     }
 
+    const normalizedValue = compoundNormalize(value);
     for (const term of doNotTranslate) {
       if (exempt.get(term)?.has(locale)) continue;
-      if (source.includes(term) && !value.includes(term)) {
+      if (source.includes(term) && !normalizedValue.includes(term)) {
         warnings.push(`"${term}" should be kept as-is but is absent in ${key}`);
       }
     }

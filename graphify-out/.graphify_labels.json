@@ -257,6 +257,8 @@
   "255": "ORM Selection (2025)",
   "256": "10. Complexity Estimation",
   "257": "4. 3D CSS Transforms",
+  "258": "crc-32",
+  "259": "@tailwindcss/typography",
   "260": "Editorial Workflows",
   "261": "Output Format",
   "262": "Content Pillars and Topic Clusters",
@@ -280,6 +282,7 @@
   "280": "tailwindcss",
   "281": "tsx",
   "282": "9. Cloud Security Considerations",
+  "283": "@types/node",
   "284": "@astrojs/check",
   "285": "fix-getstaticpaths.js",
   "286": "split-pages.sh",
@@ -296,8 +299,6 @@
   "297": "@astrojs/check",
   "298": "package.json",
   "299": "eslint-plugin-astro",
-  "301": "gray-matter",
-  "302": "typescript",
-  "303": "tailwindcss",
-  "304": "@typescript-eslint/parser"
+  "300": "@typescript-eslint/eslint-plugin",
+  "303": "tailwindcss"
 }

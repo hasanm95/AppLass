@@ -3387,8 +3387,8 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "package_devdependencies_astrojs_check",
-      "community": 51,
-      "community_name": "devDependencies",
+      "community": 247,
+      "community_name": "Quick Reference",
       "norm_label": "@astrojs/check"
     },
     {
@@ -3398,8 +3398,8 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "astrojs_check",
-      "community": 51,
-      "community_name": "devDependencies",
+      "community": 247,
+      "community_name": "Quick Reference",
       "norm_label": "@astrojs/check"
     },
     {
@@ -3585,8 +3585,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "package_devdependencies_eslint",
-      "community": 300,
-      "community_name": "eslint",
+      "community": 51,
+      "community_name": "devDependencies",
       "norm_label": "eslint"
     },
     {
@@ -3596,8 +3596,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "eslint",
-      "community": 300,
-      "community_name": "eslint",
+      "community": 51,
+      "community_name": "devDependencies",
       "norm_label": "eslint"
     },
     {
@@ -3939,21 +3939,21 @@
       "norm_label": "placeholders()"
     },
     {
-      "label": "loadDoNotTranslate()",
+      "label": "loadGlossary()",
       "file_type": "code",
       "source_file": "scripts/validate-i18n.ts",
-      "source_location": "L35",
+      "source_location": "L42",
       "_origin": "ast",
-      "id": "scripts_validate_i18n_loaddonottranslate",
+      "id": "scripts_validate_i18n_loadglossary",
       "community": 230,
       "community_name": "5. E-commerce Guidelines {#e-commerce}",
-      "norm_label": "loaddonottranslate()"
+      "norm_label": "loadglossary()"
     },
     {
       "label": "validate()",
       "file_type": "code",
       "source_file": "scripts/validate-i18n.ts",
-      "source_location": "L46",
+      "source_location": "L68",
       "_origin": "ast",
       "id": "scripts_validate_i18n_validate",
       "community": 230,
@@ -3964,7 +3964,7 @@
       "label": "requested",
       "file_type": "code",
       "source_file": "scripts/validate-i18n.ts",
-      "source_location": "L93",
+      "source_location": "L121",
       "_origin": "ast",
       "id": "scripts_validate_i18n_requested",
       "community": 230,
@@ -3975,7 +3975,7 @@
       "label": "available",
       "file_type": "code",
       "source_file": "scripts/validate-i18n.ts",
-      "source_location": "L94",
+      "source_location": "L122",
       "_origin": "ast",
       "id": "scripts_validate_i18n_available",
       "community": 230,
@@ -3986,7 +3986,7 @@
       "label": "en",
       "file_type": "code",
       "source_file": "scripts/validate-i18n.ts",
-      "source_location": "L100",
+      "source_location": "L128",
       "_origin": "ast",
       "id": "scripts_validate_i18n_en",
       "community": 230,
@@ -3994,15 +3994,15 @@
       "norm_label": "en"
     },
     {
-      "label": "doNotTranslate",
+      "label": "{ terms: doNotTranslate, exempt }",
       "file_type": "code",
       "source_file": "scripts/validate-i18n.ts",
-      "source_location": "L101",
+      "source_location": "L129",
       "_origin": "ast",
-      "id": "scripts_validate_i18n_donottranslate",
+      "id": "scripts_validate_i18n_terms_donottranslate_exempt",
       "community": 230,
       "community_name": "5. E-commerce Guidelines {#e-commerce}",
-      "norm_label": "donottranslate"
+      "norm_label": "{ terms: donottranslate, exempt }"
     },
     {
       "label": "@/components/apps/fomogen/CoreFeatures.astro",
@@ -4058,8 +4058,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "astro_assets",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "astro:assets"
     },
     {
@@ -4777,8 +4777,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_blog_mindfulguardcta",
-      "community": 272,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "mindfulguardcta.astro"
     },
     {
@@ -4788,8 +4788,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_components_blog_mindfulguardcta_href",
-      "community": 272,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "href"
     },
     {
@@ -4799,8 +4799,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "src_components_blog_mindfulguardcta_content",
-      "community": 272,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "content"
     },
     {
@@ -5397,8 +5397,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_home_foundersmoat",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/components/home/foundersmoat.astro"
     },
     {
@@ -5409,8 +5409,8 @@
       "_origin": "ast",
       "source_location": "L1",
       "id": "src_constants_home_data",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/constants/home-data"
     },
     {
@@ -5433,8 +5433,8 @@
       "_origin": "ast",
       "source_location": "L1",
       "id": "src_components_i18n_localize",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "localize.tsx"
     },
     {
@@ -5456,8 +5456,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_home_productshowcase",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/components/home/productshowcase.astro"
     },
     {
@@ -5467,8 +5467,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_fomogen_feature_png",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/assets/apps/fomogen-feature.png"
     },
     {
@@ -5478,8 +5478,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_mindful_guard_feature_png",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/assets/apps/mindful-guard-feature.png"
     },
     {
@@ -5489,8 +5489,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_screenveil_feature_png",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/assets/apps/screenveil-feature.png"
     },
     {
@@ -5501,8 +5501,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_home_socialproof",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/components/home/socialproof.astro"
     },
     {
@@ -5558,8 +5558,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_home_testimonials",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/components/home/testimonials.astro"
     },
     {
@@ -5569,8 +5569,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_components_i18n_localize_localizeprops",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "localizeprops"
     },
     {
@@ -5580,8 +5580,8 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "src_components_i18n_localize_localize",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "localize()"
     },
     {
@@ -5830,8 +5830,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "src_constants_home_data_getproducts",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "getproducts()"
     },
     {
@@ -5841,8 +5841,8 @@
       "source_location": "L93",
       "_origin": "ast",
       "id": "src_constants_home_data_pillar",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "pillar"
     },
     {
@@ -5852,8 +5852,8 @@
       "source_location": "L103",
       "_origin": "ast",
       "id": "src_constants_home_data_gettestimonials",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "gettestimonials()"
     },
     {
@@ -5863,8 +5863,8 @@
       "source_location": "L148",
       "_origin": "ast",
       "id": "src_constants_home_data_getaboutpillars",
-      "community": 272,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "getaboutpillars()"
     },
     {
@@ -5874,8 +5874,8 @@
       "source_location": "L179",
       "_origin": "ast",
       "id": "src_constants_home_data_gethomepillars",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "gethomepillars()"
     },
     {
@@ -6596,8 +6596,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_aboutpage",
-      "community": 272,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/page-templates/aboutpage.astro"
     },
     {
@@ -6655,8 +6655,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_appspage",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/page-templates/appspage.astro"
     },
     {
@@ -6748,8 +6748,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_comparepage",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "@/page-templates/comparepage.astro"
     },
     {
@@ -6772,8 +6772,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_docsarticlepage",
-      "community": 45,
-      "community_name": "localize",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "@/page-templates/docsarticlepage.astro"
     },
     {
@@ -6853,8 +6853,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_homepage",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "@/page-templates/homepage.astro"
     },
     {
@@ -6864,8 +6864,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "src_page_templates_homepage_meta",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "meta"
     },
     {
@@ -6932,8 +6932,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_about_index",
-      "community": 272,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "[lang]/about/index.astro"
     },
     {
@@ -6943,8 +6943,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_about_index_getstaticpaths",
-      "community": 272,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -6998,8 +6998,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_apps_index",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "[lang]/apps/index.astro"
     },
     {
@@ -7009,8 +7009,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_apps_index_getstaticpaths",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7130,8 +7130,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_compare_index",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "[lang]/compare/index.astro"
     },
     {
@@ -7141,8 +7141,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_compare_index_getstaticpaths",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7262,8 +7262,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_index",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "[lang]/index.astro"
     },
     {
@@ -7273,8 +7273,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_index_getstaticpaths",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7306,8 +7306,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_about_index",
-      "community": 272,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "pages/about/index.astro"
     },
     {
@@ -7339,8 +7339,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_apps_index",
-      "community": 50,
-      "community_name": "@/page-templates/AppsPage.astro",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "pages/apps/index.astro"
     },
     {
@@ -7427,8 +7427,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_compare_index",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 0,
+      "community_name": "@/i18n/localize",
       "norm_label": "pages/compare/index.astro"
     },
     {
@@ -7482,8 +7482,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_fomogen_faq_index",
-      "community": 45,
-      "community_name": "localize",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "faq/index.astro"
     },
     {
@@ -7526,8 +7526,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_fomogen_quick_start_index",
-      "community": 45,
-      "community_name": "localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "quick-start/index.astro"
     },
     {
@@ -7658,8 +7658,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_index",
-      "community": 0,
-      "community_name": "@/i18n/localize",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "pages/index.astro"
     },
     {
@@ -10925,8 +10925,8 @@
       "source_location": "L175",
       "_origin": "ast",
       "id": "agent_agents_mobile_developer_development_decision_process",
-      "community": 89,
-      "community_name": "Mobile Developer",
+      "community": 50,
+      "community_name": "@/page-templates/AppsPage.astro",
       "norm_label": "development decision process"
     },
     {
@@ -10936,8 +10936,8 @@
       "source_location": "L177",
       "_origin": "ast",
       "id": "agent_agents_mobile_developer_phase_1_requirements_analysis_always_first",
-      "community": 89,
-      "community_name": "Mobile Developer",
+      "community": 50,
+      "community_name": "@/page-templates/AppsPage.astro",
       "norm_label": "phase 1: requirements analysis (always first)"
     },
     {
@@ -10947,8 +10947,8 @@
       "source_location": "L188",
       "_origin": "ast",
       "id": "agent_agents_mobile_developer_phase_2_architecture",
-      "community": 89,
-      "community_name": "Mobile Developer",
+      "community": 50,
+      "community_name": "@/page-templates/AppsPage.astro",
       "norm_label": "phase 2: architecture"
     },
     {
@@ -10958,8 +10958,8 @@
       "source_location": "L197",
       "_origin": "ast",
       "id": "agent_agents_mobile_developer_phase_3_execute",
-      "community": 89,
-      "community_name": "Mobile Developer",
+      "community": 50,
+      "community_name": "@/page-templates/AppsPage.astro",
       "norm_label": "phase 3: execute"
     },
     {
@@ -10969,8 +10969,8 @@
       "source_location": "L206",
       "_origin": "ast",
       "id": "agent_agents_mobile_developer_phase_4_verification",
-      "community": 89,
-      "community_name": "Mobile Developer",
+      "community": 50,
+      "community_name": "@/page-templates/AppsPage.astro",
       "norm_label": "phase 4: verification"
     },
     {
@@ -10980,8 +10980,8 @@
       "source_location": "L218",
       "_origin": "ast",
       "id": "agent_agents_mobile_developer_quick_reference",
-      "community": 247,
-      "community_name": "Quick Reference",
+      "community": 89,
+      "community_name": "Mobile Developer",
       "norm_label": "quick reference"
     },
     {
@@ -10991,8 +10991,8 @@
       "source_location": "L220",
       "_origin": "ast",
       "id": "agent_agents_mobile_developer_touch_targets",
-      "community": 247,
-      "community_name": "Quick Reference",
+      "community": 89,
+      "community_name": "Mobile Developer",
       "norm_label": "touch targets"
     },
     {
@@ -11002,8 +11002,8 @@
       "source_location": "L228",
       "_origin": "ast",
       "id": "agent_agents_mobile_developer_flatlist_react_native",
-      "community": 247,
-      "community_name": "Quick Reference",
+      "community": 89,
+      "community_name": "Mobile Developer",
       "norm_label": "flatlist (react native)"
     },
     {
@@ -11013,8 +11013,8 @@
       "source_location": "L243",
       "_origin": "ast",
       "id": "agent_agents_mobile_developer_listview_builder_flutter",
-      "community": 247,
-      "community_name": "Quick Reference",
+      "community": 89,
+      "community_name": "Mobile Developer",
       "norm_label": "listview.builder (flutter)"
     },
     {
@@ -18581,8 +18581,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill",
-      "community": 206,
-      "community_name": "translate-i18n.ts",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "frontend-design/skill.md"
     },
     {
@@ -19076,8 +19076,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide",
-      "community": 206,
-      "community_name": "translate-i18n.ts",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "animation-guide.md"
     },
     {
@@ -19186,8 +19186,8 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_3_micro_interaction_principles",
-      "community": 258,
-      "community_name": "10. Quick Reference",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "3. micro-interaction principles"
     },
     {
@@ -19197,8 +19197,8 @@
       "source_location": "L87",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_what_makes_good_micro_interactions",
-      "community": 258,
-      "community_name": "10. Quick Reference",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "what makes good micro-interactions"
     },
     {
@@ -19208,8 +19208,8 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_button_states",
-      "community": 258,
-      "community_name": "10. Quick Reference",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "button states"
     },
     {
@@ -19219,8 +19219,8 @@
       "source_location": "L107",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_principles",
-      "community": 258,
-      "community_name": "10. Quick Reference",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "principles"
     },
     {
@@ -19857,8 +19857,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees",
-      "community": 206,
-      "community_name": "translate-i18n.ts",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "frontend-design/decision-trees.md"
     },
     {
@@ -20297,8 +20297,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics",
-      "community": 206,
-      "community_name": "translate-i18n.ts",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "motion-graphics.md"
     },
     {
@@ -20583,8 +20583,8 @@
       "source_location": "L195",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_6_scroll_driven_animations",
-      "community": 283,
-      "community_name": "@types/react-dom",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "6. scroll-driven animations"
     },
     {
@@ -20594,8 +20594,8 @@
       "source_location": "L197",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_native_css_modern",
-      "community": 283,
-      "community_name": "@types/react-dom",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "native css (modern)"
     },
     {
@@ -20605,8 +20605,8 @@
       "source_location": "L207",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_207",
-      "community": 283,
-      "community_name": "@types/react-dom",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "principles"
     },
     {
@@ -20616,8 +20616,8 @@
       "source_location": "L216",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_best_practices",
-      "community": 283,
-      "community_name": "@types/react-dom",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "best practices"
     },
     {
@@ -20693,8 +20693,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system",
-      "community": 206,
-      "community_name": "translate-i18n.ts",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "typography-system.md"
     },
     {
@@ -21155,8 +21155,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_ux_psychology",
-      "community": 206,
-      "community_name": "translate-i18n.ts",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "ux-psychology.md"
     },
     {
@@ -36368,8 +36368,8 @@
       "source_location": "L100",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_4_attack_surface_mapping",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 206,
+      "community_name": "translate-i18n.ts",
       "norm_label": "4. attack surface mapping"
     },
     {
@@ -36379,8 +36379,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_what_to_map",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 206,
+      "community_name": "translate-i18n.ts",
       "norm_label": "what to map"
     },
     {
@@ -36390,8 +36390,8 @@
       "source_location": "L111",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_prioritization_matrix",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 206,
+      "community_name": "translate-i18n.ts",
       "norm_label": "prioritization matrix"
     },
     {
@@ -36401,8 +36401,8 @@
       "source_location": "L124",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_5_risk_prioritization",
-      "community": 259,
-      "community_name": "7. Project Type Templates",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "5. risk prioritization"
     },
     {
@@ -36412,8 +36412,8 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_cvss_context",
-      "community": 259,
-      "community_name": "7. Project Type Templates",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "cvss + context"
     },
     {
@@ -36423,8 +36423,8 @@
       "source_location": "L135",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_prioritization_decision_tree",
-      "community": 259,
-      "community_name": "7. Project Type Templates",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "prioritization decision tree"
     },
     {
@@ -39772,10 +39772,32 @@
       "norm_label": "do not translate"
     },
     {
+      "label": "Competitor and third-party product names",
+      "file_type": "document",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "docs_i18n_glossary_competitor_and_third_party_product_names",
+      "community": 217,
+      "community_name": "Development Decision Process",
+      "norm_label": "competitor and third-party product names"
+    },
+    {
+      "label": "Locale exceptions",
+      "file_type": "document",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "docs_i18n_glossary_locale_exceptions",
+      "community": 217,
+      "community_name": "Development Decision Process",
+      "norm_label": "locale exceptions"
+    },
+    {
       "label": "Concept terms \u2014 translate, but consistently",
       "file_type": "document",
       "source_file": "docs/i18n-glossary.md",
-      "source_location": "L53",
+      "source_location": "L77",
       "_origin": "ast",
       "id": "docs_i18n_glossary_concept_terms_translate_but_consistently",
       "community": 217,
@@ -39786,7 +39808,7 @@
       "label": "Placeholders",
       "file_type": "document",
       "source_file": "docs/i18n-glossary.md",
-      "source_location": "L78",
+      "source_location": "L102",
       "_origin": "ast",
       "id": "docs_i18n_glossary_placeholders",
       "community": 217,
@@ -39797,7 +39819,7 @@
       "label": "Typography",
       "file_type": "document",
       "source_file": "docs/i18n-glossary.md",
-      "source_location": "L92",
+      "source_location": "L116",
       "_origin": "ast",
       "id": "docs_i18n_glossary_typography",
       "community": 217,
@@ -39808,7 +39830,7 @@
       "label": "Blog frontmatter",
       "file_type": "document",
       "source_file": "docs/i18n-glossary.md",
-      "source_location": "L110",
+      "source_location": "L134",
       "_origin": "ast",
       "id": "docs_i18n_glossary_blog_frontmatter",
       "community": 217,
@@ -39819,7 +39841,7 @@
       "label": "Component props",
       "file_type": "document",
       "source_file": "docs/i18n-glossary.md",
-      "source_location": "L127",
+      "source_location": "L151",
       "_origin": "ast",
       "id": "docs_i18n_glossary_component_props",
       "community": 217,
@@ -39830,7 +39852,7 @@
       "label": "Idioms \u2014 translate the meaning, not the words",
       "file_type": "document",
       "source_file": "docs/i18n-glossary.md",
-      "source_location": "L141",
+      "source_location": "L165",
       "_origin": "ast",
       "id": "docs_i18n_glossary_idioms_translate_the_meaning_not_the_words",
       "community": 217,
@@ -39841,7 +39863,7 @@
       "label": "Checklist before shipping a locale",
       "file_type": "document",
       "source_file": "docs/i18n-glossary.md",
-      "source_location": "L155",
+      "source_location": "L179",
       "_origin": "ast",
       "id": "docs_i18n_glossary_checklist_before_shipping_a_locale",
       "community": 217,
@@ -50580,7 +50602,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/validate-i18n.ts",
-      "source_location": "L94",
+      "source_location": "L122",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_validate_i18n",
@@ -50602,18 +50624,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/validate-i18n.ts",
-      "source_location": "L101",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "scripts_validate_i18n",
-      "target": "scripts_validate_i18n_donottranslate",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/validate-i18n.ts",
-      "source_location": "L100",
+      "source_location": "L128",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_validate_i18n",
@@ -50635,11 +50646,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/validate-i18n.ts",
-      "source_location": "L35",
+      "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_validate_i18n",
-      "target": "scripts_validate_i18n_loaddonottranslate",
+      "target": "scripts_validate_i18n_loadglossary",
       "confidence_score": 1.0
     },
     {
@@ -50657,7 +50668,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/validate-i18n.ts",
-      "source_location": "L93",
+      "source_location": "L121",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_validate_i18n",
@@ -50668,7 +50679,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/validate-i18n.ts",
-      "source_location": "L46",
+      "source_location": "L129",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_validate_i18n",
+      "target": "scripts_validate_i18n_terms_donottranslate_exempt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/validate-i18n.ts",
+      "source_location": "L68",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_validate_i18n",
@@ -50680,7 +50702,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/validate-i18n.ts",
-      "source_location": "L47",
+      "source_location": "L74",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_validate_i18n_validate",
@@ -50692,7 +50714,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/validate-i18n.ts",
-      "source_location": "L67",
+      "source_location": "L94",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_validate_i18n_validate",
@@ -91802,7 +91824,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/i18n-glossary.md",
-      "source_location": "L110",
+      "source_location": "L134",
       "weight": 1.0,
       "_origin": "ast",
       "source": "docs_i18n_glossary_translation_glossary",
@@ -91813,7 +91835,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/i18n-glossary.md",
-      "source_location": "L155",
+      "source_location": "L179",
       "weight": 1.0,
       "_origin": "ast",
       "source": "docs_i18n_glossary_translation_glossary",
@@ -91824,7 +91846,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/i18n-glossary.md",
-      "source_location": "L127",
+      "source_location": "L151",
       "weight": 1.0,
       "_origin": "ast",
       "source": "docs_i18n_glossary_translation_glossary",
@@ -91835,7 +91857,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/i18n-glossary.md",
-      "source_location": "L53",
+      "source_location": "L77",
       "weight": 1.0,
       "_origin": "ast",
       "source": "docs_i18n_glossary_translation_glossary",
@@ -91857,7 +91879,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/i18n-glossary.md",
-      "source_location": "L141",
+      "source_location": "L165",
       "weight": 1.0,
       "_origin": "ast",
       "source": "docs_i18n_glossary_translation_glossary",
@@ -91868,7 +91890,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/i18n-glossary.md",
-      "source_location": "L78",
+      "source_location": "L102",
       "weight": 1.0,
       "_origin": "ast",
       "source": "docs_i18n_glossary_translation_glossary",
@@ -91890,11 +91912,33 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/i18n-glossary.md",
-      "source_location": "L92",
+      "source_location": "L116",
       "weight": 1.0,
       "_origin": "ast",
       "source": "docs_i18n_glossary_translation_glossary",
       "target": "docs_i18n_glossary_typography",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_i18n_glossary_do_not_translate",
+      "target": "docs_i18n_glossary_competitor_and_third_party_product_names",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/i18n-glossary.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_i18n_glossary_do_not_translate",
+      "target": "docs_i18n_glossary_locale_exceptions",
       "confidence_score": 1.0
     },
     {

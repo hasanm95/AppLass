@@ -675,13 +675,13 @@
     "semantic_hash": ""
   },
   "src/i18n/locales/en.json": {
-    "mtime": 1785570155.0218754,
+    "mtime": 1785570730.155611,
     "ast_hash": "dad39cb4d391c426e17b24782a70bd22",
     "semantic_hash": ""
   },
   "src/i18n/locales/fr.json": {
-    "mtime": 1785521192.5453525,
-    "ast_hash": "ee4364a15575765b80548cb5fb7397de",
+    "mtime": 1785570718.6512103,
+    "ast_hash": "6ea7e9cc598cfb610d772b5d81cbec32",
     "semantic_hash": ""
   },
   "src/i18n/localize.ts": {
@@ -2510,13 +2510,13 @@
     "semantic_hash": ""
   },
   "scripts/validate-i18n.ts": {
-    "mtime": 1785569789.6933596,
-    "ast_hash": "b9f0fbabfd7e96ecf7a0b4fd8987da49",
+    "mtime": 1785570622.5557086,
+    "ast_hash": "98fdc291211e61b2164d40518e052d1b",
     "semantic_hash": ""
   },
   "docs/i18n-glossary.md": {
-    "mtime": 1785569826.1351707,
-    "ast_hash": "cf7aa025172e83445294ae66862c007b",
+    "mtime": 1785570597.160894,
+    "ast_hash": "36840df400cfd396a3885e8b04f7acc4",
     "semantic_hash": ""
   }
 }

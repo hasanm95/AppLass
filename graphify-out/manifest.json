@@ -155,8 +155,8 @@
     "semantic_hash": ""
   },
   "astro.config.mjs": {
-    "mtime": 1785517814.4776878,
-    "ast_hash": "cdcb331146e95c0d7b92db0dcccb945a",
+    "mtime": 1785593356.2832704,
+    "ast_hash": "6a1606cad8cb77afe992fd7fc12f3450",
     "semantic_hash": ""
   },
   "components.json": {
@@ -170,8 +170,8 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1785569833.8660598,
-    "ast_hash": "46f06e1d31a7931eba0422beb08aba4e",
+    "mtime": 1785590391.2678404,
+    "ast_hash": "0dc0207dab284af7b4a1fac7b7e6363b",
     "semantic_hash": ""
   },
   "scratch/update_fr.py": {
@@ -665,8 +665,8 @@
     "semantic_hash": ""
   },
   "src/i18n/config.ts": {
-    "mtime": 1785517824.9317322,
-    "ast_hash": "d7256c4173a6acf589a317609eda379f",
+    "mtime": 1785593351.4888415,
+    "ast_hash": "9b5bd8304c2b41f16e2750895021bbe1",
     "semantic_hash": ""
   },
   "src/i18n/index.ts": {
@@ -675,13 +675,13 @@
     "semantic_hash": ""
   },
   "src/i18n/locales/en.json": {
-    "mtime": 1785570730.155611,
-    "ast_hash": "dad39cb4d391c426e17b24782a70bd22",
+    "mtime": 1785593502.2625453,
+    "ast_hash": "cc756f4fe892efe27b0da872ad8b10d7",
     "semantic_hash": ""
   },
   "src/i18n/locales/fr.json": {
-    "mtime": 1785570718.6512103,
-    "ast_hash": "6ea7e9cc598cfb610d772b5d81cbec32",
+    "mtime": 1785593490.3651404,
+    "ast_hash": "4cec05ca9ef9648c637309a1312804ec",
     "semantic_hash": ""
   },
   "src/i18n/localize.ts": {
@@ -745,8 +745,8 @@
     "semantic_hash": ""
   },
   "src/page-templates/AppsMindfulGuardPage.astro": {
-    "mtime": 1785566937.1820462,
-    "ast_hash": "380164dd40559c57c3d21d158f4597b3",
+    "mtime": 1785593433.2912967,
+    "ast_hash": "a3ef877aa1c0db8602cf5a1fbc37910d",
     "semantic_hash": ""
   },
   "src/page-templates/AppsPage.astro": {
@@ -755,8 +755,8 @@
     "semantic_hash": ""
   },
   "src/page-templates/AppsScreenveilPage.astro": {
-    "mtime": 1785566937.1843164,
-    "ast_hash": "971bdf493b89314b473515288c25a270",
+    "mtime": 1785593436.092128,
+    "ast_hash": "1be15c131046cfe035a1ab74b1ba8f2d",
     "semantic_hash": ""
   },
   "src/page-templates/BlogIndexPage.astro": {
@@ -2485,8 +2485,8 @@
     "semantic_hash": ""
   },
   "worker/index.ts": {
-    "mtime": 1785569752.3565457,
-    "ast_hash": "957b1a98aa37969d31eb395f2d14fec8",
+    "mtime": 1785593357.2158527,
+    "ast_hash": "a152f6c36c3c3541eef38c3121372f3b",
     "semantic_hash": ""
   },
   "src/components/home/Testimonials.astro": {
@@ -2510,13 +2510,23 @@
     "semantic_hash": ""
   },
   "scripts/validate-i18n.ts": {
-    "mtime": 1785570622.5557086,
-    "ast_hash": "98fdc291211e61b2164d40518e052d1b",
+    "mtime": 1785591728.8147483,
+    "ast_hash": "83291299d545ee010e7c1c7a80f89b33",
     "semantic_hash": ""
   },
   "docs/i18n-glossary.md": {
     "mtime": 1785570597.160894,
     "ast_hash": "36840df400cfd396a3885e8b04f7acc4",
+    "semantic_hash": ""
+  },
+  "scripts/merge-locale-batch.ts": {
+    "mtime": 1785590385.8283997,
+    "ast_hash": "6d2c6a63993739b52d9e16f21cffbffb",
+    "semantic_hash": ""
+  },
+  "src/i18n/locales/de.json": {
+    "mtime": 1785593490.1866686,
+    "ast_hash": "e5c9031963f21b9fd23e1bffc34790af",
     "semantic_hash": ""
   }
 }

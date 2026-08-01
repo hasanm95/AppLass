@@ -10,6 +10,7 @@
     "lint": "eslint .",
     "extract-i18n": "tsx scripts/extract-translations.ts",
     "validate-i18n": "tsx scripts/validate-i18n.ts",
+    "merge-locale": "tsx scripts/merge-locale-batch.ts",
     "deploy": "npm run build && wrangler deploy",
     "cf-typegen": "wrangler types"
   },
