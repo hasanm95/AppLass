@@ -300,18 +300,5 @@
   "298": "package.json",
   "299": "eslint-plugin-astro",
   "300": "@typescript-eslint/eslint-plugin",
-  "301": "6. Dark Mode Principles",
-  "302": "7. Accessibility Guidelines",
-  "303": "tailwindcss",
-  "304": "2. UX Psychology Principles",
-  "305": "3. Layout Principles",
-  "306": "4. Color Principles",
-  "307": "5. Typography Principles",
-  "308": "6. Visual Effects Principles",
-  "309": "7. Animation Principles",
-  "310": "8. \"Wow Factor\" Checklist",
-  "311": "9. Anti-Patterns (What NOT to Do)",
-  "312": "2. Offline Sync & Conflict Resolution",
-  "313": "3. Mobile API Optimization",
-  "314": "8. Security for Mobile"
+  "303": "tailwindcss"
 }

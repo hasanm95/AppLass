@@ -65,9 +65,9 @@ Wenn Sie Ihr Telefon häufig für „Nur-Ton“-Videokonsum nutzen, sprechen die
 
 In einer Zeit, in der die Akkugesundheit über die Lebensdauer des Geräts entscheidet, ist „digitale Sauberkeit“ und der Einsatz hardwarebewusster Werkzeuge wie ScreenVeil kein bloßer Trick — für Power-User ist es eine Notwendigkeit.
 
-## Bringen Sie auch Ihren Shopify-Shop voran
+## Mehr zur Technik dahinter
 
-Wenn Sie zusätzlich einen Shopify-Shop betreiben, werfen Sie einen Blick in unseren [Leitfaden zum mobilen Sticky Cart](/de/blog/mobile-sticky-cart-guide) — der eine UX-Kniff, der die Conversions um 15 % gesteigert hat.
+Wenn Sie tiefer einsteigen wollen, erklärt unser [Leitfaden zur AMOLED-Effizienz](/de/docs/screenveil/amoled-efficiency), warum abgeschaltete Pixel physikalisch keinen Strom verbrauchen — und wie viel das über einen ganzen Tag ausmacht.
 
 ---
 

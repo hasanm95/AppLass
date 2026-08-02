@@ -24,6 +24,13 @@ interface Props {
     tags?: string[];
   };
   breadcrumbs?: { name: string; item: string }[];
+  /**
+   * Locales this specific page exists in. Defaults to every configured locale,
+   * which is correct for static pages. Partially translated content (blog posts)
+   * must pass the real set — an hreflang alternate for a page that was never
+   * built points search engines at a 404.
+   */
+  availableLocales?: readonly string[];
 }
 
 const {
@@ -38,6 +45,7 @@ const {
   ogType = "website",
   articleMeta,
   breadcrumbs,
+  availableLocales = i18nConfig.locales,
 } = Astro.props;
 
 // Get language from URL if not explicitly provided
@@ -55,7 +63,7 @@ let basePath = Astro.url.pathname.replace(localePrefixPattern, '/');
 if (basePath !== '/' && basePath.endsWith('/')) {
   basePath = basePath.slice(0, -1);
 }
-const hreflangAlternates = i18nConfig.locales.map((locale) => ({
+const hreflangAlternates = availableLocales.map((locale) => ({
   locale,
   url: `https://applass.com${localePath(locale, basePath)}`,
 }));
@@ -68,9 +76,10 @@ if (canonicalPath !== '/' && canonicalPath.endsWith('/')) {
 const canonicalUrl = `https://applass.com${canonicalPath}`;
 
 const currentOgLocale = localeMeta[documentLang as keyof typeof localeMeta]?.ogLocale || 'en_US';
-const alternateOgLocales = i18nConfig.locales
+const alternateOgLocales = availableLocales
   .filter((l) => l !== documentLang)
-  .map((l) => localeMeta[l].ogLocale);
+  .map((l) => localeMeta[l as keyof typeof localeMeta]?.ogLocale)
+  .filter((l): l is string => Boolean(l));
 
 const defaultBreadcrumbs = [
   {

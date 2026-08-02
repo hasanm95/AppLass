@@ -26,6 +26,7 @@ const { lang } = Astro.props;
 
 import { setLocale } from "@/i18n";
 import { lastUpdatedFor } from "@/lib/lastUpdated";
+import { blogPath } from "@/lib/blog";
 setLocale(lang);
 
 const isDefault = lang === "en";
@@ -40,6 +41,12 @@ const meta = {
   ogUrl: isDefault ? "https://applass.com/ecommerce-performance-2026-benchmarks" : `https://applass.com/${lang}/ecommerce-performance-2026-benchmarks`
 };
 const faqItems = getFaqRegistry().ECOMMERCE_PERFORMANCE;
+
+// These posts are not translated into every locale; blogPath falls back to English
+// rather than linking at a localized URL that was never built.
+const siteSpeedHref = await blogPath(lang, "shopify-site-speed-social-proof");
+const socialProofAppsHref = await blogPath(lang, "best-social-proof-apps-shopify-2026");
+const stickyCartHref = await blogPath(lang, "mobile-sticky-cart-guide");
 const lastUpdated = lastUpdatedFor("src/page-templates/EcommerceGuidePage.astro");
 
 const articleSchema = {
@@ -216,7 +223,7 @@ const articleSchema = {
                 {localize("that use native Shopify Liquid where possible.")}
               </p>
               <a
-                href={localePath(lang, "/blog/shopify-site-speed-social-proof")}
+                href={siteSpeedHref}
                 class="inline-flex h-12 items-center rounded-full bg-white px-8 text-sm font-black text-blue-600 transition-all hover:bg-slate-100"
               >
                 {localize("Optimize My Stack")}
@@ -284,7 +291,7 @@ const articleSchema = {
                 <strong class="text-blue-600"> 137%</strong>.
               </p>
               <a
-                href={localePath(lang, "/blog/best-social-proof-apps-shopify-2026")}
+                href={socialProofAppsHref}
                 class="flex items-center gap-2 font-black text-blue-600 underline-offset-4 hover:underline"
               >
                 {localize("See Visual Strategies")} <MousePointer2 size={16} />
@@ -314,7 +321,7 @@ const articleSchema = {
                 {localize("Ensures the \"Checkout\" button is always within thumb-reach, significantly increasing ROI for Shopify developers.")}
               </p>
               <a
-                href={localePath(lang, "/blog/mobile-sticky-cart-guide")}
+                href={stickyCartHref}
                 class="font-black text-blue-400 hover:underline"
               >
                 {localize("Read the Guide")}

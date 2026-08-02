@@ -7,7 +7,7 @@ import ShareArticle from "@/components/blog/ShareArticle.astro";
 import ReadingProgressBar from "@/components/blog/ReadingProgressBar.astro";
 import FAQSchema from "@/components/common/FAQSchema.astro";
 import { localize } from "@/i18n/localize";
-import { getBlogPostBySlug } from "@/lib/blog";
+import { getBlogPostBySlug, localesForPost } from "@/lib/blog";
 import { i18nConfig } from "@/i18n/config";
 import { render } from "astro:content";
 import { ArrowLeft } from "lucide-react";
@@ -35,6 +35,9 @@ const description = post.excerpt;
 
 // Never earlier than publication — an unrevised post was last modified when it shipped.
 const lastModified = post.dateModified || post.date;
+
+// Only the locales this post was actually translated into — see localesForPost.
+const availableLocales = await localesForPost(slug as string);
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -116,6 +119,7 @@ const normalizedSidebarApps = (post.sidebarApps && post.sidebarApps.length > 0
     tags: post.tags || [],
   }}
   breadcrumbs={breadcrumbs}
+  availableLocales={availableLocales}
 >
   <script
     type="application/ld+json"
@@ -128,7 +132,7 @@ const normalizedSidebarApps = (post.sidebarApps && post.sidebarApps.length > 0
     />
   )}
   <ReadingProgressBar />
-  <Navbar    />
+  <Navbar availableLocales={availableLocales} />
   
   <div class="flex-1 bg-white pt-20">
     <header class="bg-iridescent relative border-b border-slate-100 pt-20 pb-15 lg:py-32">
