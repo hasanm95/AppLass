@@ -180,8 +180,8 @@
     "semantic_hash": ""
   },
   "scripts/extract-translations.ts": {
-    "mtime": 1775928644.4213715,
-    "ast_hash": "92d6b0bf29339d3bee46e8a611da1898",
+    "mtime": 1785659469.8599045,
+    "ast_hash": "6c8044a7b27da5e2987cc131d69d964c",
     "semantic_hash": ""
   },
   "scripts/fix-getstaticpaths.js": {
@@ -675,13 +675,13 @@
     "semantic_hash": ""
   },
   "src/i18n/locales/en.json": {
-    "mtime": 1785637322.7690375,
-    "ast_hash": "2515af7826998a5cdabcb3174b9b2cfb",
+    "mtime": 1785659538.1138864,
+    "ast_hash": "9aa8761ce5f185491c9b2186ed30bf95",
     "semantic_hash": ""
   },
   "src/i18n/locales/fr.json": {
-    "mtime": 1785633794.359911,
-    "ast_hash": "7b0f493d7d3d082daabc140703d2117c",
+    "mtime": 1785659530.8294199,
+    "ast_hash": "633dc42ea4f9e4a9021b3f068e64a9b9",
     "semantic_hash": ""
   },
   "src/i18n/localize.ts": {
@@ -2525,8 +2525,8 @@
     "semantic_hash": ""
   },
   "src/i18n/locales/de.json": {
-    "mtime": 1785633794.6848824,
-    "ast_hash": "5bf3bfb67dab0f2e41570802181c66ae",
+    "mtime": 1785659530.8310974,
+    "ast_hash": "5d0cc9879d5072e8a4538f2c425a6f52",
     "semantic_hash": ""
   },
   "src/content/blog/de/android-digital-wellbeing-vs-third-party-focus-apps.md": {

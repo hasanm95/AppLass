@@ -675,7 +675,7 @@
     "semantic_hash": ""
   },
   "src/i18n/locales/en.json": {
-    "mtime": 1785635254.3524296,
+    "mtime": 1785637322.7690375,
     "ast_hash": "2515af7826998a5cdabcb3174b9b2cfb",
     "semantic_hash": ""
   },
@@ -2587,6 +2587,56 @@
   "src/content/blog/de/zero-telemetry-blocker.md": {
     "mtime": 1785594151.0268943,
     "ast_hash": "1c3990a1cee08cc8943fb3e1c2fcd896",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/add-low-stock-alerts-shopify.md": {
+    "mtime": 1785635979.459293,
+    "ast_hash": "de120f7b346676625d652094d2dbbf28",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/best-social-proof-apps-shopify-2026.md": {
+    "mtime": 1785635913.218772,
+    "ast_hash": "7a000f81cd08c596104d2bd97a5e2c46",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/calculate-free-shipping-threshold.md": {
+    "mtime": 1785635714.7683873,
+    "ast_hash": "cec0ac7c3ff159033dba889b28a1f99e",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/free-shipping-bar-shopify.md": {
+    "mtime": 1785636216.6932695,
+    "ast_hash": "a39a3516a7c2025c0629c0eefa6d6cc6",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/how-to-add-sales-popup-shopify.md": {
+    "mtime": 1785636144.8337846,
+    "ast_hash": "3349bc9805233b77a48ee267e06345c4",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/mobile-sticky-cart-guide.md": {
+    "mtime": 1785635764.70285,
+    "ast_hash": "309a73a397fad9f8e64e80e9fe28e84b",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/psychology-of-fomo-marketing.md": {
+    "mtime": 1785635793.4365313,
+    "ast_hash": "45b0bb05fd581ae26e90330f624400be",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/shopify-conversion-rate-2026.mdx": {
+    "mtime": 1785636659.5552208,
+    "ast_hash": "c605d0672573104faa19c9902a36716a",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md": {
+    "mtime": 1785636819.7107546,
+    "ast_hash": "ebd7eb1ed9e60c63deab6f337cde9148",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/shopify-site-speed-social-proof.md": {
+    "mtime": 1785635732.1298423,
+    "ast_hash": "0da3cf4fb21e78ea869b04a9be4d7844",
     "semantic_hash": ""
   }
 }

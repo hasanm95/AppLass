@@ -3810,10 +3810,32 @@
       "norm_label": "extract-translations.ts"
     },
     {
+      "label": "unescapeLiteral()",
+      "file_type": "code",
+      "source_file": "scripts/extract-translations.ts",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "scripts_extract_translations_unescapeliteral",
+      "community": 273,
+      "community_name": "extract-translations.ts",
+      "norm_label": "unescapeliteral()"
+    },
+    {
+      "label": "Candidate",
+      "file_type": "code",
+      "source_file": "scripts/extract-translations.ts",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "scripts_extract_translations_candidate",
+      "community": 273,
+      "community_name": "extract-translations.ts",
+      "norm_label": "candidate"
+    },
+    {
       "label": "extracted",
       "file_type": "code",
       "source_file": "scripts/extract-translations.ts",
-      "source_location": "L7",
+      "source_location": "L42",
       "_origin": "ast",
       "id": "scripts_extract_translations_extracted",
       "community": 273,
@@ -3824,7 +3846,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/extract-translations.ts",
-      "source_location": "L9",
+      "source_location": "L44",
       "_origin": "ast",
       "id": "scripts_extract_translations_files",
       "community": 273,
@@ -19098,8 +19120,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "animation-guide.md"
     },
     {
@@ -19791,8 +19813,8 @@
       "source_location": "L256",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_7_accessibility_guidelines",
-      "community": 302,
-      "community_name": "7. Accessibility Guidelines",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "7. accessibility guidelines"
     },
     {
@@ -19802,8 +19824,8 @@
       "source_location": "L258",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_contrast_requirements_wcag",
-      "community": 302,
-      "community_name": "7. Accessibility Guidelines",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "contrast requirements (wcag)"
     },
     {
@@ -19813,8 +19835,8 @@
       "source_location": "L265",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_how_to_check_contrast",
-      "community": 302,
-      "community_name": "7. Accessibility Guidelines",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "how to check contrast"
     },
     {
@@ -19824,8 +19846,8 @@
       "source_location": "L271",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_safe_patterns",
-      "community": 302,
-      "community_name": "7. Accessibility Guidelines",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "safe patterns"
     },
     {
@@ -20220,8 +20242,8 @@
       "source_location": "L373",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_9_pre_design_checklists",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 235,
+      "community_name": "2. GSAP (GreenSock)",
       "norm_label": "9. pre-design checklists"
     },
     {
@@ -20231,8 +20253,8 @@
       "source_location": "L375",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_before_starting_any_design",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 235,
+      "community_name": "2. GSAP (GreenSock)",
       "norm_label": "before starting any design"
     },
     {
@@ -20242,8 +20264,8 @@
       "source_location": "L383",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_before_choosing_colors",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 235,
+      "community_name": "2. GSAP (GreenSock)",
       "norm_label": "before choosing colors"
     },
     {
@@ -20253,8 +20275,8 @@
       "source_location": "L390",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_before_finalizing_layout",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 235,
+      "community_name": "2. GSAP (GreenSock)",
       "norm_label": "before finalizing layout"
     },
     {
@@ -20264,8 +20286,8 @@
       "source_location": "L397",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_before_delivery",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 235,
+      "community_name": "2. GSAP (GreenSock)",
       "norm_label": "before delivery"
     },
     {
@@ -20275,8 +20297,8 @@
       "source_location": "L405",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_10_complexity_estimation",
-      "community": 320,
-      "community_name": "10. Complexity Estimation",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "10. complexity estimation"
     },
     {
@@ -20286,8 +20308,8 @@
       "source_location": "L407",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_quick_projects_hours",
-      "community": 320,
-      "community_name": "10. Complexity Estimation",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "quick projects (hours)"
     },
     {
@@ -20297,8 +20319,8 @@
       "source_location": "L418",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_medium_projects_days",
-      "community": 320,
-      "community_name": "10. Complexity Estimation",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "medium projects (days)"
     },
     {
@@ -20308,8 +20330,8 @@
       "source_location": "L429",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_large_projects_weeks",
-      "community": 320,
-      "community_name": "10. Complexity Estimation",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "large projects (weeks)"
     },
     {
@@ -20715,8 +20737,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "typography-system.md"
     },
     {
@@ -27656,8 +27678,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_pattern_questioning_matrix",
-      "community": 235,
-      "community_name": "2. GSAP (GreenSock)",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "\ud83c\udfaf pattern questioning matrix"
     },
     {
@@ -27667,8 +27689,8 @@
       "source_location": "L131",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_navigation_pattern_questioning",
-      "community": 235,
-      "community_name": "2. GSAP (GreenSock)",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "navigation pattern questioning"
     },
     {
@@ -27678,8 +27700,8 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_state_pattern_questioning",
-      "community": 235,
-      "community_name": "2. GSAP (GreenSock)",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "state pattern questioning"
     },
     {
@@ -27689,8 +27711,8 @@
       "source_location": "L149",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_list_pattern_questioning",
-      "community": 235,
-      "community_name": "2. GSAP (GreenSock)",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "list pattern questioning"
     },
     {
@@ -27700,8 +27722,8 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_ui_pattern_questioning",
-      "community": 235,
-      "community_name": "2. GSAP (GreenSock)",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "ui pattern questioning"
     },
     {
@@ -27865,8 +27887,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_2_tab_bar_navigation",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 308,
+      "community_name": "6. Visual Effects Principles",
       "norm_label": "2. tab bar navigation"
     },
     {
@@ -27876,8 +27898,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_when_to_use",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 308,
+      "community_name": "6. Visual Effects Principles",
       "norm_label": "when to use"
     },
     {
@@ -27887,8 +27909,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_tab_bar_best_practices",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 308,
+      "community_name": "6. Visual Effects Principles",
       "norm_label": "tab bar best practices"
     },
     {
@@ -27898,8 +27920,8 @@
       "source_location": "L73",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_tab_state_preservation",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 308,
+      "community_name": "6. Visual Effects Principles",
       "norm_label": "tab state preservation"
     },
     {
@@ -27909,8 +27931,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_3_stack_navigation",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 309,
+      "community_name": "7. Animation Principles",
       "norm_label": "3. stack navigation"
     },
     {
@@ -27920,8 +27942,8 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_core_concepts",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 309,
+      "community_name": "7. Animation Principles",
       "norm_label": "core concepts"
     },
     {
@@ -27931,8 +27953,8 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_stack_navigation_patterns",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 309,
+      "community_name": "7. Animation Principles",
       "norm_label": "stack navigation patterns"
     },
     {
@@ -27942,8 +27964,8 @@
       "source_location": "L117",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_back_button_handling",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 309,
+      "community_name": "7. Animation Principles",
       "norm_label": "back button handling"
     },
     {
@@ -28030,8 +28052,8 @@
       "source_location": "L228",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_6_deep_linking",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "6. deep linking"
     },
     {
@@ -28041,8 +28063,8 @@
       "source_location": "L230",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_why_deep_links_from_day_one",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "why deep links from day one"
     },
     {
@@ -28052,8 +28074,8 @@
       "source_location": "L248",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_url_structure",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "url structure"
     },
     {
@@ -28063,8 +28085,8 @@
       "source_location": "L266",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_deep_link_navigation_rules",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "deep link navigation rules"
     },
     {
@@ -28184,8 +28206,8 @@
       "source_location": "L428",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_10_navigation_checklist",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 302,
+      "community_name": "7. Accessibility Guidelines",
       "norm_label": "10. navigation checklist"
     },
     {
@@ -28195,8 +28217,8 @@
       "source_location": "L430",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_before_navigation_architecture",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 302,
+      "community_name": "7. Accessibility Guidelines",
       "norm_label": "before navigation architecture"
     },
     {
@@ -28206,8 +28228,8 @@
       "source_location": "L438",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_before_every_screen",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 302,
+      "community_name": "7. Accessibility Guidelines",
       "norm_label": "before every screen"
     },
     {
@@ -28217,8 +28239,8 @@
       "source_location": "L446",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_before_release",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 302,
+      "community_name": "7. Accessibility Guidelines",
       "norm_label": "before release"
     },
     {
@@ -28283,8 +28305,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_2_react_native_performance",
-      "community": 308,
-      "community_name": "6. Visual Effects Principles",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "2. react native performance"
     },
     {
@@ -28294,8 +28316,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_the_1_ai_mistake_scrollview_for_lists",
-      "community": 308,
-      "community_name": "6. Visual Effects Principles",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "\ud83d\udeab the #1 ai mistake: scrollview for lists"
     },
     {
@@ -28305,8 +28327,8 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_flatlist_optimization_checklist",
-      "community": 308,
-      "community_name": "6. Visual Effects Principles",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "flatlist optimization checklist"
     },
     {
@@ -28316,8 +28338,8 @@
       "source_location": "L110",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_why_each_optimization_matters",
-      "community": 308,
-      "community_name": "6. Visual Effects Principles",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "why each optimization matters"
     },
     {
@@ -28327,8 +28349,8 @@
       "source_location": "L122",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_flashlist_the_better_option",
-      "community": 308,
-      "community_name": "6. Visual Effects Principles",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "flashlist: the better option"
     },
     {
@@ -28338,8 +28360,8 @@
       "source_location": "L142",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_animation_performance",
-      "community": 308,
-      "community_name": "6. Visual Effects Principles",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "animation performance"
     },
     {
@@ -28349,8 +28371,8 @@
       "source_location": "L170",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_reanimated_for_complex_animations",
-      "community": 308,
-      "community_name": "6. Visual Effects Principles",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "reanimated for complex animations"
     },
     {
@@ -28360,8 +28382,8 @@
       "source_location": "L198",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_memory_leak_prevention",
-      "community": 308,
-      "community_name": "6. Visual Effects Principles",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "memory leak prevention"
     },
     {
@@ -28371,8 +28393,8 @@
       "source_location": "L226",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_react_native_performance_checklist",
-      "community": 308,
-      "community_name": "6. Visual Effects Principles",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "react native performance checklist"
     },
     {
@@ -28382,8 +28404,8 @@
       "source_location": "L254",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_3_flutter_performance",
-      "community": 309,
-      "community_name": "7. Animation Principles",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "3. flutter performance"
     },
     {
@@ -28393,8 +28415,8 @@
       "source_location": "L256",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_the_1_ai_mistake_setstate_overuse",
-      "community": 309,
-      "community_name": "7. Animation Principles",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "\ud83d\udeab the #1 ai mistake: setstate overuse"
     },
     {
@@ -28404,8 +28426,8 @@
       "source_location": "L287",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_the_const_constructor_revolution",
-      "community": 309,
-      "community_name": "7. Animation Principles",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "the `const` constructor revolution"
     },
     {
@@ -28415,8 +28437,8 @@
       "source_location": "L317",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_targeted_state_management",
-      "community": 309,
-      "community_name": "7. Animation Principles",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "targeted state management"
     },
     {
@@ -28426,8 +28448,8 @@
       "source_location": "L344",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_riverpod_provider_best_practices",
-      "community": 309,
-      "community_name": "7. Animation Principles",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "riverpod/provider best practices"
     },
     {
@@ -28437,8 +28459,8 @@
       "source_location": "L360",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_listview_optimization",
-      "community": 309,
-      "community_name": "7. Animation Principles",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "listview optimization"
     },
     {
@@ -28448,8 +28470,8 @@
       "source_location": "L385",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_image_optimization",
-      "community": 309,
-      "community_name": "7. Animation Principles",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "image optimization"
     },
     {
@@ -28459,8 +28481,8 @@
       "source_location": "L404",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_dispose_pattern",
-      "community": 309,
-      "community_name": "7. Animation Principles",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "dispose pattern"
     },
     {
@@ -28470,8 +28492,8 @@
       "source_location": "L439",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_flutter_performance_checklist",
-      "community": 309,
-      "community_name": "7. Animation Principles",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "flutter performance checklist"
     },
     {
@@ -28481,8 +28503,8 @@
       "source_location": "L471",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_4_animation_performance_both_platforms",
-      "community": 316,
-      "community_name": "4. Animation Performance (Both Platforms)",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "4. animation performance (both platforms)"
     },
     {
@@ -28492,8 +28514,8 @@
       "source_location": "L473",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_the_60fps_imperative",
-      "community": 316,
-      "community_name": "4. Animation Performance (Both Platforms)",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "the 60fps imperative"
     },
     {
@@ -28503,8 +28525,8 @@
       "source_location": "L487",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_gpu_vs_cpu_animation",
-      "community": 316,
-      "community_name": "4. Animation Performance (Both Platforms)",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "gpu vs cpu animation"
     },
     {
@@ -28514,8 +28536,8 @@
       "source_location": "L501",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_animation_timing_guide",
-      "community": 316,
-      "community_name": "4. Animation Performance (Both Platforms)",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "animation timing guide"
     },
     {
@@ -28525,8 +28547,8 @@
       "source_location": "L511",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_spring_physics",
-      "community": 316,
-      "community_name": "4. Animation Performance (Both Platforms)",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "spring physics"
     },
     {
@@ -28536,8 +28558,8 @@
       "source_location": "L541",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_5_memory_management",
-      "community": 321,
-      "community_name": "5. Memory Management",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "5. memory management"
     },
     {
@@ -28547,8 +28569,8 @@
       "source_location": "L543",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_common_memory_leaks",
-      "community": 321,
-      "community_name": "5. Memory Management",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "common memory leaks"
     },
     {
@@ -28558,8 +28580,8 @@
       "source_location": "L554",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_image_memory",
-      "community": 321,
-      "community_name": "5. Memory Management",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "image memory"
     },
     {
@@ -28569,8 +28591,8 @@
       "source_location": "L567",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_memory_profiling",
-      "community": 321,
-      "community_name": "5. Memory Management",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "memory profiling"
     },
     {
@@ -28657,8 +28679,8 @@
       "source_location": "L673",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_8_performance_testing",
-      "community": 322,
-      "community_name": "8. Performance Testing",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "8. performance testing"
     },
     {
@@ -28668,8 +28690,8 @@
       "source_location": "L675",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_what_to_test",
-      "community": 322,
-      "community_name": "8. Performance Testing",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "what to test"
     },
     {
@@ -28679,8 +28701,8 @@
       "source_location": "L686",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_test_on_real_devices",
-      "community": 322,
-      "community_name": "8. Performance Testing",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "test on real devices"
     },
     {
@@ -28690,8 +28712,8 @@
       "source_location": "L701",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_performance_monitoring_checklist",
-      "community": 322,
-      "community_name": "8. Performance Testing",
+      "community": 6,
+      "community_name": "Mobile Performance Reference",
       "norm_label": "performance monitoring checklist"
     },
     {
@@ -52934,7 +52956,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/extract-translations.ts",
-      "source_location": "L7",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_extract_translations",
+      "target": "scripts_extract_translations_candidate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/extract-translations.ts",
+      "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_extract_translations",
@@ -52945,11 +52978,22 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/extract-translations.ts",
-      "source_location": "L9",
+      "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_extract_translations",
       "target": "scripts_extract_translations_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/extract-translations.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_extract_translations",
+      "target": "scripts_extract_translations_unescapeliteral",
       "confidence_score": 1.0
     },
     {
@@ -101245,5 +101289,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "671fe1448f3d6c251041257697b724137c1ef000"
+  "built_at_commit": "723e83c01420809e78d068dc670ed12fa2209834"
 }
