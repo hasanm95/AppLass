@@ -21,6 +21,7 @@ interface Props {
 const { lang, slug } = Astro.props;
 
 import { setLocale } from "@/i18n";
+import { lastUpdatedFor } from "@/lib/lastUpdated";
 setLocale(lang);
 const data = getComparisonBySlug(slug as string);
 
@@ -34,7 +35,7 @@ const description = localize("Why elite teams are switching from {{competitor}} 
   product: data.productName
 });
 
-const lastUpdated = "2026-03-23";
+const lastUpdated = lastUpdatedFor("src/page-templates/CompareDetailPage.astro", "src/lib/compare.ts");
 
 // JSON-LD for Comparison/Product
 const jsonLd = {
@@ -100,11 +101,13 @@ const jsonLd = {
         subheadline={data.heroSubheadline}
       >
         <div slot="meta" class="mb-10 flex items-center justify-center gap-4">
-          <span class="rounded-full bg-blue-50 px-3 py-1 text-[10px] font-bold text-blue-600 uppercase border border-blue-100">
-            {localize("Last Evaluated: ")} {lastUpdated}
-          </span>
+          {lastUpdated && (
+            <span class="rounded-full bg-blue-50 px-3 py-1 text-[10px] font-bold text-blue-600 uppercase border border-blue-100">
+              {localize("Last Evaluated: ")} {lastUpdated}
+            </span>
+          )}
           <span class="h-1 w-1 rounded-full bg-slate-200"></span>
-          <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest italic">
+          <span class="text-[10px] font-bold text-slate-600 uppercase tracking-widest italic">
             {localize("Expert Verified Analysis")}
           </span>
         </div>
@@ -116,11 +119,11 @@ const jsonLd = {
           </div>
           <div class="grid grid-cols-1 gap-px bg-slate-900 md:grid-cols-2">
             <div class="bg-white p-8">
-              <p class="mb-2 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Logic Foundation")}</p>
+              <p class="mb-2 text-[10px] font-bold text-slate-600 uppercase tracking-tighter">{localize("Logic Foundation")}</p>
               <p class="font-black text-slate-900 leading-tight text-xl">{localize("AppLass is 40x lighter and 100% privacy-compliant compared to {{competitor}}.")}</p>
             </div>
             <div class="bg-white p-8">
-              <p class="mb-2 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Verdict")}</p>
+              <p class="mb-2 text-[10px] font-bold text-slate-600 uppercase tracking-tighter">{localize("Verdict")}</p>
               <p class="font-black text-slate-900 leading-tight text-xl">{localize("Switch to ensure Core Web Vitals remain green and biological privacy remains absolute.")}</p>
             </div>
           </div>

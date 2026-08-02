@@ -1,7 +1,7 @@
 ---
 title: "How to Block Social Media on Android During Work Hours Only"
 date: "2026-04-24"
-updatedAt: "2026-05-19"
+dateModified: "2026-05-19"
 category: "Android Apps"
 keywords: "block social media android, schedule app blocker android, block apps during work hours, mindful guard android"
 author: "AppLass Team"
