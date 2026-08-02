@@ -360,8 +360,8 @@
     "semantic_hash": ""
   },
   "src/components/blog/ScreenVeilCTA.astro": {
-    "mtime": 1779016498.1685688,
-    "ast_hash": "8b1e40944af51e27a33e7bce7abaef7a",
+    "mtime": 1785633761.3465679,
+    "ast_hash": "cbd994a0694b705df4b3ad6a62302f9b",
     "semantic_hash": ""
   },
   "src/components/blog/ShareArticle.astro": {
@@ -385,8 +385,8 @@
     "semantic_hash": ""
   },
   "src/components/common/LanguageToggle.astro": {
-    "mtime": 1785093609.5845273,
-    "ast_hash": "593012a615175e1ee7da8845a2709207",
+    "mtime": 1785635223.3464842,
+    "ast_hash": "db0ff7c6a0be7e6d508292b6f195c1e7",
     "semantic_hash": ""
   },
   "src/components/common/MobileMenuToggle.astro": {
@@ -395,8 +395,8 @@
     "semantic_hash": ""
   },
   "src/components/common/Navbar.astro": {
-    "mtime": 1779016498.16911,
-    "ast_hash": "b23ee1e5ee9caa4a4eef0f6eeaf03dd8",
+    "mtime": 1785635238.2709613,
+    "ast_hash": "b39a4fbe7c3ef01a85aa2224e2c43cb1",
     "semantic_hash": ""
   },
   "src/components/common/Section.astro": {
@@ -675,13 +675,13 @@
     "semantic_hash": ""
   },
   "src/i18n/locales/en.json": {
-    "mtime": 1785593502.2625453,
-    "ast_hash": "cc756f4fe892efe27b0da872ad8b10d7",
+    "mtime": 1785635254.3524296,
+    "ast_hash": "2515af7826998a5cdabcb3174b9b2cfb",
     "semantic_hash": ""
   },
   "src/i18n/locales/fr.json": {
-    "mtime": 1785593490.3651404,
-    "ast_hash": "4cec05ca9ef9648c637309a1312804ec",
+    "mtime": 1785633794.359911,
+    "ast_hash": "7b0f493d7d3d082daabc140703d2117c",
     "semantic_hash": ""
   },
   "src/i18n/localize.ts": {
@@ -700,13 +700,13 @@
     "semantic_hash": ""
   },
   "src/layouts/Layout.astro": {
-    "mtime": 1784917245.611185,
-    "ast_hash": "4eea21ba38f43650cd2c05d020d20847",
+    "mtime": 1785635165.87495,
+    "ast_hash": "dbeff7228c9d4ab3ffc1d0a0426ea789",
     "semantic_hash": ""
   },
   "src/lib/blog.ts": {
-    "mtime": 1785289547.0535314,
-    "ast_hash": "00b89448e02f7ed53c5671686eff8308",
+    "mtime": 1785635147.1372743,
+    "ast_hash": "1fbb87741c2c4209ae7b3914bda29e1a",
     "semantic_hash": ""
   },
   "src/lib/compare.ts": {
@@ -765,8 +765,8 @@
     "semantic_hash": ""
   },
   "src/page-templates/BlogPostPage.astro": {
-    "mtime": 1785569759.5698965,
-    "ast_hash": "82094351149f77b2ed13584c8a9e410f",
+    "mtime": 1785635243.7026618,
+    "ast_hash": "dbc3cfe3ea1159bd1e7a065864bacc93",
     "semantic_hash": ""
   },
   "src/page-templates/CompareDetailPage.astro": {
@@ -800,8 +800,8 @@
     "semantic_hash": ""
   },
   "src/page-templates/EcommerceGuidePage.astro": {
-    "mtime": 1785566937.1892147,
-    "ast_hash": "29c9738cbf08fcf4499bc10f7a3338de",
+    "mtime": 1785635064.8298817,
+    "ast_hash": "d19c2b5c42ec57b096d3a73ddcc6e1f4",
     "semantic_hash": ""
   },
   "src/page-templates/HomePage.astro": {
@@ -2525,8 +2525,68 @@
     "semantic_hash": ""
   },
   "src/i18n/locales/de.json": {
-    "mtime": 1785593490.1866686,
-    "ast_hash": "e5c9031963f21b9fd23e1bffc34790af",
+    "mtime": 1785633794.6848824,
+    "ast_hash": "5bf3bfb67dab0f2e41570802181c66ae",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/android-digital-wellbeing-vs-third-party-focus-apps.md": {
+    "mtime": 1785634932.889659,
+    "ast_hash": "9770b72c51ffb535459d52d6e3fd3640",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/best-app-to-block-social-media-on-android-in-2026.mdx": {
+    "mtime": 1785634603.2008653,
+    "ast_hash": "c17870155e90e4f7fb2d183a294db2c4",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/how-to-block-reels-and-shorts-on-android-2026.mdx": {
+    "mtime": 1785634125.4393427,
+    "ast_hash": "e632fc625562d1a02ed5a3faa209b244",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/how-to-block-social-media-on-android-during-work-hours.md": {
+    "mtime": 1785634790.5758343,
+    "ast_hash": "ef3a1474bb4bdec5f4f5f6d368d4ab1b",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/logic-comparison-matrix.md": {
+    "mtime": 1785633575.7891579,
+    "ast_hash": "0305077d11c06d2b63e676fbd53c9612",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/monk-mode-willpower.md": {
+    "mtime": 1785633538.2699258,
+    "ast_hash": "786c8575ad799dec67004152b13faa28",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/opal-alternatives-android.mdx": {
+    "mtime": 1785634364.5563476,
+    "ast_hash": "8b033000b5ff099a82ac16b360dadd76",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/reclaim-focus-story.md": {
+    "mtime": 1785594227.8284519,
+    "ast_hash": "94764152ac457c936ae8036ee10dd163",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/the-logic-of-focus.md": {
+    "mtime": 1785594184.8938966,
+    "ast_hash": "9c36180e1d7ba227d9a71c20953f0d73",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/youtube-background-play-2026-workaround.mdx": {
+    "mtime": 1785633980.1274035,
+    "ast_hash": "d62727b6197353cabcbd598e5014e1e6",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/youtube-screen-off-battery-hack.md": {
+    "mtime": 1785635076.4692338,
+    "ast_hash": "f9881cea4cb4a8e128e41921c1fdcadc",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/zero-telemetry-blocker.md": {
+    "mtime": 1785594151.0268943,
+    "ast_hash": "1c3990a1cee08cc8943fb3e1c2fcd896",
     "semantic_hash": ""
   }
 }

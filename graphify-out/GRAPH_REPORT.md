@@ -1,16 +1,16 @@
 # Graph Report - AppLass  (2026-08-02)
 
 ## Corpus Check
-- 447 files · ~1,729,647 words
+- 457 files · ~1,740,437 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4197 nodes · 4748 edges · 315 communities (298 shown, 17 thin omitted)
+- 4301 nodes · 4842 edges · 323 communities (306 shown, 17 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.61)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `73fca164`
+- Built from commit: `671fe144`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -321,6 +321,14 @@
 - 2. Offline Sync & Conflict Resolution
 - 3. Mobile API Optimization
 - 8. Security for Mobile
+- 8. Portfolio Guidelines {#portfolio}
+- 4. Animation Performance (Both Platforms)
+- de/calculate-free-shipping-threshold.md
+- de/mobile-sticky-cart-guide.md
+- 1. Color Theory Fundamentals
+- 10. Complexity Estimation
+- 5. Memory Management
+- 8. Performance Testing
 
 ## God Nodes (most connected - your core abstractions)
 1. `@/i18n/localize` - 86 edges
@@ -349,7 +357,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (315 total, 17 thin omitted)
+## Communities (323 total, 17 thin omitted)
 
 ### Community 0 - "@/i18n/localize"
 Cohesion: 0.12
@@ -376,12 +384,12 @@ Cohesion: 0.04
 Nodes (47): 10. Quick Reference Card, 1. Fitts' Law for Touch, 2. Thumb Zone Anatomy, 3. Touch vs Click Psychology, 4. Gesture Psychology, 5. Haptic Feedback Patterns, 6. Mobile Cognitive Load, 7. Touch Accessibility (+39 more)
 
 ### Community 6 - "Mobile Performance Reference"
-Cohesion: 0.04
-Nodes (46): 1. The Mobile Performance Mindset, 2. React Native Performance, 3. Flutter Performance, 4. Animation Performance (Both Platforms), 5. Memory Management, 6. Battery Optimization, 7. Network Performance, 8. Performance Testing (+38 more)
+Cohesion: 0.13
+Nodes (15): 1. The Mobile Performance Mindset, 6. Battery Optimization, 7. Network Performance, 9. Quick Reference Card, Animation Targets, Background Task Guidelines, Battery Drain Sources, Flutter Essentials (+7 more)
 
 ### Community 7 - "Frontend Design System"
-Cohesion: 0.17
-Nodes (12): 10. Decision Process Summary, 1. Constraint Analysis (ALWAYS FIRST), Audience → Design Approach, ⚠️ CRITICAL: ASK BEFORE ASSUMING (MANDATORY), ⛔ DEFAULT TENDENCIES TO AVOID (ANTI-SAFE HARBOR):, Frontend Design System, Post-Design Workflow, Reference Files (+4 more)
+Cohesion: 0.05
+Nodes (44): 10. Decision Process Summary, 1. Constraint Analysis (ALWAYS FIRST), 2. UX Psychology Principles, 3. Layout Principles, 4. Color Principles, 5. Typography Principles, 60-30-10 Rule, 6. Visual Effects Principles (+36 more)
 
 ### Community 8 - "Intelligent Agent Routing"
 Cohesion: 0.05
@@ -396,8 +404,8 @@ Cohesion: 0.05
 Nodes (42): 10. Effect Selection Checklist, 1. Glassmorphism Principles, 2. Neomorphism Principles, 3. Shadow Hierarchy Principles, 4. Gradient Principles, 5. Border Effects Principles, 6. Glow Effects Principles, 7. Overlay Techniques (+34 more)
 
 ### Community 11 - "Mobile Backend Patterns"
-Cohesion: 0.10
-Nodes (20): 4. App Versioning, 5. Authentication for Mobile, 6. Error Handling for Mobile, 7. Media & Binary Handling, 9. Monitoring & Analytics, 🚫 AI MOBILE BACKEND ANTI-PATTERNS, Chunked Upload (Large Files), Error Categories (+12 more)
+Cohesion: 0.05
+Nodes (43): 1. Push Notifications, 2. Offline Sync & Conflict Resolution, 3. Mobile API Optimization, 4. App Versioning, 5. Authentication for Mobile, 6. Error Handling for Mobile, 7. Media & Binary Handling, 8. Security for Mobile (+35 more)
 
 ### Community 12 - "Typography System Reference"
 Cohesion: 0.05
@@ -460,8 +468,8 @@ Cohesion: 0.07
 Nodes (29): API Development, API Style Selection, Architecture, Backend Development Architect, Common Anti-Patterns You Avoid, 🛑 CRITICAL: CLARIFY BEFORE CODING (MANDATORY), Database & Data, Database Selection (2025) (+21 more)
 
 ### Community 27 - "Color System Reference"
-Cohesion: 0.11
-Nodes (18): 1. Color Theory Fundamentals, 2. The 60-30-10 Rule, 3. Color Psychology - Meaning & Selection, 5. Context-Based Selection Guide, 8. Color Selection Checklist, 9. Anti-Patterns to Avoid, Color Relationships, Color System Reference (+10 more)
+Cohesion: 0.14
+Nodes (14): 2. The 60-30-10 Rule, 3. Color Psychology - Meaning & Selection, 5. Context-Based Selection Guide, 8. Color Selection Checklist, 9. Anti-Patterns to Avoid, Color System Reference, Distribution Principle, ✅ DO: (+6 more)
 
 ### Community 28 - "Mobile Design System"
 Cohesion: 0.07
@@ -752,8 +760,8 @@ Cohesion: 0.13
 Nodes (14): Antigravity Skills, Bước 1: Tạo thư mục, Bước 1: Tạo thư mục, Bước 2: Tạo file template, Bước 2: Tạo SKILL.md, Bước 3: Tạo SKILL.md, Cấu trúc thư mục kỹ năng, 📁 Cấu trúc và Phạm vi (+6 more)
 
 ### Community 100 - "Decision Trees & Context Templates"
-Cohesion: 0.05
-Nodes (39): 10. Complexity Estimation, 1. Master Decision Tree, 2. Audience Decision Tree, 3. Color Selection Decision Tree, 4. Typography Decision Tree, 5. E-commerce Guidelines {#e-commerce}, 6. SaaS Dashboard Guidelines {#saas}, 7. Landing Page Guidelines {#landing-page} (+31 more)
+Cohesion: 0.13
+Nodes (15): 1. Master Decision Tree, 2. Audience Decision Tree, 3. Color Selection Decision Tree, 4. Typography Decision Tree, 9. Pre-Design Checklists, Before Choosing Colors, Before Delivery, Before Finalizing Layout (+7 more)
 
 ### Community 101 - "Mobile Game Development"
 Cohesion: 0.13
@@ -856,7 +864,7 @@ Cohesion: 0.17
 Nodes (11): API Security Testing, Authentication Testing, Authorization Testing, BOLA/IDOR Testing, GraphQL Security, Input Validation Testing, JWT Testing, OWASP API Security Top 10 (+3 more)
 
 ### Community 127 - "frontend-design/SKILL.md"
-Cohesion: 0.29
+Cohesion: 0.33
 Nodes (6): Design Workflow, Guidelines Source, How It Works, Related Skills, Usage, Web Interface Guidelines
 
 ### Community 128 - "1. Core UX Laws"
@@ -1416,8 +1424,8 @@ Cohesion: 0.67
 Nodes (3): 8. Code Pattern Analysis, High-Risk Patterns, Secret Patterns
 
 ### Community 272 - "9. Cloud Security Considerations"
-Cohesion: 0.33
-Nodes (6): Authentication, Before API Design, For Every Endpoint, 📝 MOBILE BACKEND CHECKLIST, Push Notifications, Release
+Cohesion: 0.10
+Nodes (20): 1. Langsame Ladezeiten (besonders mobil), 2. Kein Social Proof auf Produktseiten, 3. Überraschende Versandkosten an der Kasse, 4. Die Kaufen-Schaltfläche verschwindet auf dem Smartphone, 5. Schlechte Traffic-Qualität, Beauty & Körperpflege: 4,5–4,9 %, Die Benchmarks 2026 nach Nische, Die häufigsten Gründe, warum Shops unter ihrem Benchmark bleiben (+12 more)
 
 ### Community 275 - "content.config.ts"
 Cohesion: 0.50
@@ -1444,8 +1452,8 @@ Cohesion: 0.67
 Nodes (3): 3. Supply Chain Security (A03), Attack Surface, Defense Principles
 
 ### Community 296 - "ScreenVeilCTA.astro"
-Cohesion: 0.40
-Nodes (5): 1. Push Notifications, Anti-Patterns, Platform Architecture, Push Types, Token Management
+Cohesion: 0.14
+Nodes (13): Ein konkretes Rechenbeispiel, Häufige Fehler, die Sie vermeiden sollten, Mit Social Proof kombinieren für noch bessere Ergebnisse, Schritt 1: FomoGen installieren, Schritt 2: Funktion „Versandkostenfrei-Leiste“ öffnen, Schritt 3: Schwellenwert festlegen, Schritt 4: Ihre Texte formulieren, Schritt 5: Anzeigeorte wählen (+5 more)
 
 ### Community 297 - "@astrojs/check"
 Cohesion: 0.50
@@ -1464,63 +1472,95 @@ Cohesion: 0.50
 Nodes (4): 7. Accessibility Guidelines, Contrast Requirements (WCAG), How to Check Contrast, Safe Patterns
 
 ### Community 304 - "2. UX Psychology Principles"
-Cohesion: 0.50
-Nodes (4): 2. UX Psychology Principles, Core Laws (Internalize These), Emotional Design Levels, Trust Building
+Cohesion: 0.14
+Nodes (13): Das richtige Timing finden, Die Geschwindigkeitsfrage: Schadet das meinem PageSpeed-Score?, Mit Verknappung kombinieren für maximale Wirkung, Schritt 1: FomoGen installieren, Schritt 2: FomoGen-Dashboard öffnen, Schritt 3: Erste Kampagne erstellen, Schritt 4: Aussehen anpassen, Schritt 5: Bestellzeitraum festlegen (+5 more)
 
 ### Community 305 - "3. Layout Principles"
-Cohesion: 0.50
-Nodes (4): 3. Layout Principles, 8-Point Grid Concept, Golden Ratio (φ = 1.618), Key Sizing Principles
+Cohesion: 0.15
+Nodes (12): Die Psychologie hinter „Nur noch X übrig“, Die richtige Schwelle finden: einige Beispiele, Mit Social Proof zum vollständigen Conversion-Stack kombinieren, Schritt 1: FomoGen installieren, Schritt 2: Zu „Verknappung & Dringlichkeit“ wechseln, Schritt 3: Bestandsschwelle festlegen, Schritt 4: Warntext formulieren, Schritt 5: Anzeigeort wählen (+4 more)
 
 ### Community 306 - "4. Color Principles"
-Cohesion: 0.50
-Nodes (4): 4. Color Principles, 60-30-10 Rule, Color Psychology (For Decision Making), Selection Process
+Cohesion: 0.20
+Nodes (9): 1. [FOMO Gen](https://apps.shopify.com/fomogen) (bestes Gesamtpaket aus Leistung und Tempo), 2. [Loox](https://apps.shopify.com/loox) (der visuelle Vertrauensbildner), 3. [Nudgify](https://apps.shopify.com/nudgify) (die UX-Wahl), 4. [Vitals](https://apps.shopify.com/vitals) (das Schwergewicht), 5. [Rocket Sales Pop](https://apps.shopify.com/window-shoppers) (die Altbewährte), 6. [SnapNoti](https://apps.shopify.com/snapnoti) (das leichtgewichtige All-in-One), 7. [Fomo](https://apps.shopify.com/fomo) (der Enterprise-Maßstab), Das Conversion-Ökosystem (+1 more)
 
 ### Community 307 - "5. Typography Principles"
-Cohesion: 0.50
-Nodes (4): 5. Typography Principles, Pairing Concept, Readability Rules, Scale Selection
+Cohesion: 0.20
+Nodes (9): Der schnellste Weg vom Durchschnitt in die oberen 20 %, Lösung 1 — Social Proof in Echtzeit einbinden, Lösung 2 — Dringlichkeit im Warenkorb mit einem Countdown-Timer, Lösung 3 — Ihren App-Stack auf Geschwindigkeitsbremsen prüfen, Lösung 4 — Das Layout Ihrer Produktseite optimieren, Lösung 5 — Abgebrochene Warenkörbe zurückholen, Shopify-Conversion-Benchmarks 2026, Warum die meisten Shopify-Shops zu schwach konvertieren (+1 more)
 
 ### Community 308 - "6. Visual Effects Principles"
-Cohesion: 0.50
-Nodes (4): 6. Visual Effects Principles, Glassmorphism (When Appropriate), Gradient Usage, Shadow Hierarchy
+Cohesion: 0.22
+Nodes (9): 2. React Native Performance, Animation Performance, FlashList: The Better Option, FlatList Optimization Checklist, Memory Leak Prevention, React Native Performance Checklist, Reanimated for Complex Animations, 🚫 The #1 AI Mistake: ScrollView for Lists (+1 more)
 
 ### Community 309 - "7. Animation Principles"
-Cohesion: 0.50
-Nodes (4): 7. Animation Principles, Easing Selection, Performance, Timing Concept
+Cohesion: 0.22
+Nodes (9): 3. Flutter Performance, Dispose Pattern, Flutter Performance Checklist, Image Optimization, ListView Optimization, Riverpod/Provider Best Practices, Targeted State Management, 🚫 The #1 AI Mistake: setState Overuse (+1 more)
 
 ### Community 310 - "8. "Wow Factor" Checklist"
-Cohesion: 0.50
-Nodes (4): 8. "Wow Factor" Checklist, Emotional Triggers, Premium Indicators, Trust Builders
+Cohesion: 0.33
+Nodes (5): Die Ethik von FOMO, Die Heuristik der Verknappung, Die Wissenschaft hinter dem psychologischen ROI, Soziale Bestätigung: der Effekt „Sicherheit in der Gruppe“, Zusammenfassung
 
 ### Community 311 - "9. Anti-Patterns (What NOT to Do)"
-Cohesion: 0.50
-Nodes (4): 9. Anti-Patterns (What NOT to Do), ❌ AI Tendency Patterns (AVOID!), ❌ Dark Patterns (Unethical), ❌ Lazy Design Indicators
+Cohesion: 0.33
+Nodes (5): Das Fazit, Der Übeltäter: JavaScript-Ballast, Script-Tags vs. App-Embed-Blöcke (der Standard 2026), So prüfen Sie Ihren Shop, Teil der Performance-Themenseite
 
 ### Community 312 - "2. Offline Sync & Conflict Resolution"
-Cohesion: 0.50
-Nodes (4): 2. Offline Sync & Conflict Resolution, Conflict Resolution Strategies, Sync Queue Pattern, Sync Strategy Selection
+Cohesion: 0.40
+Nodes (5): 5. E-commerce Guidelines {#e-commerce}, Color Thinking:, Key Principles (Not Fixed Rules), Layout Principles:, Psychology to Apply:
 
 ### Community 313 - "3. Mobile API Optimization"
-Cohesion: 0.50
-Nodes (4): 3. Mobile API Optimization, Batch Requests, Pagination: Cursor vs Offset, Response Size Reduction
+Cohesion: 0.40
+Nodes (5): 6. SaaS Dashboard Guidelines {#saas}, Color Thinking:, Key Principles, Layout Principles:, Psychology to Apply:
 
 ### Community 314 - "8. Security for Mobile"
+Cohesion: 0.40
+Nodes (5): 7. Landing Page Guidelines {#landing-page}, Color Thinking:, Key Principles, Psychology to Apply:, Structure Principles:
+
+### Community 315 - "8. Portfolio Guidelines {#portfolio}"
+Cohesion: 0.40
+Nodes (5): 8. Portfolio Guidelines {#portfolio}, Color Thinking:, Key Principles, Psychology to Apply:, Structure Principles:
+
+### Community 316 - "4. Animation Performance (Both Platforms)"
+Cohesion: 0.40
+Nodes (5): 4. Animation Performance (Both Platforms), Animation Timing Guide, GPU vs CPU Animation, Spring Physics, The 60fps Imperative
+
+### Community 317 - "de/calculate-free-shipping-threshold.md"
+Cohesion: 0.40
+Nodes (4): Das Erlebnis gamifizieren, Die Rechnung: So finden Sie Ihre magische Zahl, Fazit, Margen im Griff
+
+### Community 318 - "de/mobile-sticky-cart-guide.md"
+Cohesion: 0.40
+Nodes (4): Aktionsplan, Die Wissenschaft der „Daumenzone“, Diese Ergebnisse können Sie erwarten, Über die Schaltfläche hinaus
+
+### Community 319 - "1. Color Theory Fundamentals"
 Cohesion: 0.50
-Nodes (4): 8. Security for Mobile, Device Attestation, Rate Limiting, Request Signing
+Nodes (4): 1. Color Theory Fundamentals, Color Relationships, How to Choose a Scheme:, The Color Wheel
+
+### Community 320 - "10. Complexity Estimation"
+Cohesion: 0.50
+Nodes (4): 10. Complexity Estimation, Large Projects (Weeks), Medium Projects (Days), Quick Projects (Hours)
+
+### Community 321 - "5. Memory Management"
+Cohesion: 0.50
+Nodes (4): 5. Memory Management, Common Memory Leaks, Image Memory, Memory Profiling
+
+### Community 322 - "8. Performance Testing"
+Cohesion: 0.50
+Nodes (4): 8. Performance Testing, Performance Monitoring Checklist, Test on Real Devices, What to Test
 
 ## Knowledge Gaps
-- **2701 isolated node(s):** `Colors`, `Colors`, `$schema`, `style`, `rsc` (+2696 more)
+- **2790 isolated node(s):** `Colors`, `Colors`, `$schema`, `style`, `rsc` (+2785 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **17 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Animation Guidelines Reference` connect `Animation Guidelines Reference` to `8. Hierarchy Principles`?**
+- **Why does `Typography System Reference` connect `Typography System Reference` to `8. Hierarchy Principles`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
-- **Why does `Decision Trees & Context Templates` connect `Decision Trees & Context Templates` to `8. Hierarchy Principles`?**
+- **Why does `Decision Trees & Context Templates` connect `Decision Trees & Context Templates` to `10. Complexity Estimation`, `8. Hierarchy Principles`, `2. Offline Sync & Conflict Resolution`, `3. Mobile API Optimization`, `8. Security for Mobile`, `8. Portfolio Guidelines {#portfolio}`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **What connects `Colors`, `Colors`, `$schema` to the rest of the system?**
-  _2701 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2790 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `@/i18n/localize` be split into smaller, more focused modules?**
   _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
 - **Should `design_system.py` be split into smaller, more focused modules?**

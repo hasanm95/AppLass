@@ -18702,8 +18702,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_2_ux_psychology_principles",
-      "community": 304,
-      "community_name": "2. UX Psychology Principles",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "2. ux psychology principles"
     },
     {
@@ -18713,8 +18713,8 @@
       "source_location": "L104",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_core_laws_internalize_these",
-      "community": 304,
-      "community_name": "2. UX Psychology Principles",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "core laws (internalize these)"
     },
     {
@@ -18724,8 +18724,8 @@
       "source_location": "L114",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_emotional_design_levels",
-      "community": 304,
-      "community_name": "2. UX Psychology Principles",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "emotional design levels"
     },
     {
@@ -18735,8 +18735,8 @@
       "source_location": "L122",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_trust_building",
-      "community": 304,
-      "community_name": "2. UX Psychology Principles",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "trust building"
     },
     {
@@ -18746,8 +18746,8 @@
       "source_location": "L132",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_3_layout_principles",
-      "community": 305,
-      "community_name": "3. Layout Principles",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "3. layout principles"
     },
     {
@@ -18757,8 +18757,8 @@
       "source_location": "L134",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_golden_ratio_\u03c6_1_618",
-      "community": 305,
-      "community_name": "3. Layout Principles",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "golden ratio (\u03c6 = 1.618)"
     },
     {
@@ -18768,8 +18768,8 @@
       "source_location": "L143",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_8_point_grid_concept",
-      "community": 305,
-      "community_name": "3. Layout Principles",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "8-point grid concept"
     },
     {
@@ -18779,8 +18779,8 @@
       "source_location": "L155",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_key_sizing_principles",
-      "community": 305,
-      "community_name": "3. Layout Principles",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "key sizing principles"
     },
     {
@@ -18790,8 +18790,8 @@
       "source_location": "L167",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_4_color_principles",
-      "community": 306,
-      "community_name": "4. Color Principles",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "4. color principles"
     },
     {
@@ -18801,8 +18801,8 @@
       "source_location": "L169",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_60_30_10_rule",
-      "community": 306,
-      "community_name": "4. Color Principles",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "60-30-10 rule"
     },
     {
@@ -18812,8 +18812,8 @@
       "source_location": "L177",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_color_psychology_for_decision_making",
-      "community": 306,
-      "community_name": "4. Color Principles",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "color psychology (for decision making)"
     },
     {
@@ -18823,8 +18823,8 @@
       "source_location": "L187",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_selection_process",
-      "community": 306,
-      "community_name": "4. Color Principles",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "selection process"
     },
     {
@@ -18834,8 +18834,8 @@
       "source_location": "L198",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_5_typography_principles",
-      "community": 307,
-      "community_name": "5. Typography Principles",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "5. typography principles"
     },
     {
@@ -18845,8 +18845,8 @@
       "source_location": "L200",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_scale_selection",
-      "community": 307,
-      "community_name": "5. Typography Principles",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "scale selection"
     },
     {
@@ -18856,8 +18856,8 @@
       "source_location": "L209",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_pairing_concept",
-      "community": 307,
-      "community_name": "5. Typography Principles",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "pairing concept"
     },
     {
@@ -18867,8 +18867,8 @@
       "source_location": "L218",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_readability_rules",
-      "community": 307,
-      "community_name": "5. Typography Principles",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "readability rules"
     },
     {
@@ -18878,8 +18878,8 @@
       "source_location": "L229",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_6_visual_effects_principles",
-      "community": 308,
-      "community_name": "6. Visual Effects Principles",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "6. visual effects principles"
     },
     {
@@ -18889,8 +18889,8 @@
       "source_location": "L231",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_glassmorphism_when_appropriate",
-      "community": 308,
-      "community_name": "6. Visual Effects Principles",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "glassmorphism (when appropriate)"
     },
     {
@@ -18900,8 +18900,8 @@
       "source_location": "L241",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_shadow_hierarchy",
-      "community": 308,
-      "community_name": "6. Visual Effects Principles",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "shadow hierarchy"
     },
     {
@@ -18911,8 +18911,8 @@
       "source_location": "L251",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_gradient_usage",
-      "community": 308,
-      "community_name": "6. Visual Effects Principles",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "gradient usage"
     },
     {
@@ -18922,8 +18922,8 @@
       "source_location": "L266",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_7_animation_principles",
-      "community": 309,
-      "community_name": "7. Animation Principles",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "7. animation principles"
     },
     {
@@ -18933,8 +18933,8 @@
       "source_location": "L268",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_timing_concept",
-      "community": 309,
-      "community_name": "7. Animation Principles",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "timing concept"
     },
     {
@@ -18944,8 +18944,8 @@
       "source_location": "L278",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_easing_selection",
-      "community": 309,
-      "community_name": "7. Animation Principles",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "easing selection"
     },
     {
@@ -18955,8 +18955,8 @@
       "source_location": "L287",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_performance",
-      "community": 309,
-      "community_name": "7. Animation Principles",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "performance"
     },
     {
@@ -18966,8 +18966,8 @@
       "source_location": "L297",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_8_wow_factor_checklist",
-      "community": 310,
-      "community_name": "8. \"Wow Factor\" Checklist",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "8. \"wow factor\" checklist"
     },
     {
@@ -18977,8 +18977,8 @@
       "source_location": "L299",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_premium_indicators",
-      "community": 310,
-      "community_name": "8. \"Wow Factor\" Checklist",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "premium indicators"
     },
     {
@@ -18988,8 +18988,8 @@
       "source_location": "L308",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_trust_builders",
-      "community": 310,
-      "community_name": "8. \"Wow Factor\" Checklist",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "trust builders"
     },
     {
@@ -18999,8 +18999,8 @@
       "source_location": "L316",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_emotional_triggers",
-      "community": 310,
-      "community_name": "8. \"Wow Factor\" Checklist",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "emotional triggers"
     },
     {
@@ -19010,8 +19010,8 @@
       "source_location": "L325",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_9_anti_patterns_what_not_to_do",
-      "community": 311,
-      "community_name": "9. Anti-Patterns (What NOT to Do)",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "9. anti-patterns (what not to do)"
     },
     {
@@ -19021,8 +19021,8 @@
       "source_location": "L327",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_lazy_design_indicators",
-      "community": 311,
-      "community_name": "9. Anti-Patterns (What NOT to Do)",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "\u274c lazy design indicators"
     },
     {
@@ -19032,8 +19032,8 @@
       "source_location": "L336",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_ai_tendency_patterns_avoid",
-      "community": 311,
-      "community_name": "9. Anti-Patterns (What NOT to Do)",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "\u274c ai tendency patterns (avoid!)"
     },
     {
@@ -19043,8 +19043,8 @@
       "source_location": "L346",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_dark_patterns_unethical",
-      "community": 311,
-      "community_name": "9. Anti-Patterns (What NOT to Do)",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "\u274c dark patterns (unethical)"
     },
     {
@@ -19098,8 +19098,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "animation-guide.md"
     },
     {
@@ -19560,8 +19560,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_1_color_theory_fundamentals",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 319,
+      "community_name": "1. Color Theory Fundamentals",
       "norm_label": "1. color theory fundamentals"
     },
     {
@@ -19571,8 +19571,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_the_color_wheel",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 319,
+      "community_name": "1. Color Theory Fundamentals",
       "norm_label": "the color wheel"
     },
     {
@@ -19582,8 +19582,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_color_relationships",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 319,
+      "community_name": "1. Color Theory Fundamentals",
       "norm_label": "color relationships"
     },
     {
@@ -19593,8 +19593,8 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_how_to_choose_a_scheme",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 319,
+      "community_name": "1. Color Theory Fundamentals",
       "norm_label": "how to choose a scheme:"
     },
     {
@@ -20000,8 +20000,8 @@
       "source_location": "L171",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_5_e_commerce_guidelines_e_commerce",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 312,
+      "community_name": "2. Offline Sync & Conflict Resolution",
       "norm_label": "5. e-commerce guidelines {#e-commerce}"
     },
     {
@@ -20011,8 +20011,8 @@
       "source_location": "L173",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_key_principles_not_fixed_rules",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 312,
+      "community_name": "2. Offline Sync & Conflict Resolution",
       "norm_label": "key principles (not fixed rules)"
     },
     {
@@ -20022,8 +20022,8 @@
       "source_location": "L179",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_color_thinking",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 312,
+      "community_name": "2. Offline Sync & Conflict Resolution",
       "norm_label": "color thinking:"
     },
     {
@@ -20033,8 +20033,8 @@
       "source_location": "L190",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_layout_principles",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 312,
+      "community_name": "2. Offline Sync & Conflict Resolution",
       "norm_label": "layout principles:"
     },
     {
@@ -20044,8 +20044,8 @@
       "source_location": "L217",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_psychology_to_apply",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 312,
+      "community_name": "2. Offline Sync & Conflict Resolution",
       "norm_label": "psychology to apply:"
     },
     {
@@ -20055,8 +20055,8 @@
       "source_location": "L226",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_6_saas_dashboard_guidelines_saas",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "6. saas dashboard guidelines {#saas}"
     },
     {
@@ -20066,8 +20066,8 @@
       "source_location": "L228",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_key_principles",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "key principles"
     },
     {
@@ -20077,8 +20077,8 @@
       "source_location": "L234",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_color_thinking_234",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "color thinking:"
     },
     {
@@ -20088,8 +20088,8 @@
       "source_location": "L245",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_layout_principles_245",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "layout principles:"
     },
     {
@@ -20099,8 +20099,8 @@
       "source_location": "L265",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_psychology_to_apply_265",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "psychology to apply:"
     },
     {
@@ -20110,8 +20110,8 @@
       "source_location": "L273",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_7_landing_page_guidelines_landing_page",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "7. landing page guidelines {#landing-page}"
     },
     {
@@ -20121,8 +20121,8 @@
       "source_location": "L275",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_key_principles_275",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "key principles"
     },
     {
@@ -20132,8 +20132,8 @@
       "source_location": "L281",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_color_thinking_281",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "color thinking:"
     },
     {
@@ -20143,8 +20143,8 @@
       "source_location": "L292",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_structure_principles",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "structure principles:"
     },
     {
@@ -20154,8 +20154,8 @@
       "source_location": "L318",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_psychology_to_apply_318",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "psychology to apply:"
     },
     {
@@ -20165,8 +20165,8 @@
       "source_location": "L326",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_8_portfolio_guidelines_portfolio",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "8. portfolio guidelines {#portfolio}"
     },
     {
@@ -20176,8 +20176,8 @@
       "source_location": "L328",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_key_principles_328",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "key principles"
     },
     {
@@ -20187,8 +20187,8 @@
       "source_location": "L334",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_color_thinking_334",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "color thinking:"
     },
     {
@@ -20198,8 +20198,8 @@
       "source_location": "L345",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_structure_principles_345",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "structure principles:"
     },
     {
@@ -20209,8 +20209,8 @@
       "source_location": "L365",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_psychology_to_apply_365",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "psychology to apply:"
     },
     {
@@ -20275,8 +20275,8 @@
       "source_location": "L405",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_10_complexity_estimation",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 320,
+      "community_name": "10. Complexity Estimation",
       "norm_label": "10. complexity estimation"
     },
     {
@@ -20286,8 +20286,8 @@
       "source_location": "L407",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_quick_projects_hours",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 320,
+      "community_name": "10. Complexity Estimation",
       "norm_label": "quick projects (hours)"
     },
     {
@@ -20297,8 +20297,8 @@
       "source_location": "L418",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_medium_projects_days",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 320,
+      "community_name": "10. Complexity Estimation",
       "norm_label": "medium projects (days)"
     },
     {
@@ -20308,8 +20308,8 @@
       "source_location": "L429",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_large_projects_weeks",
-      "community": 100,
-      "community_name": "Decision Trees & Context Templates",
+      "community": 320,
+      "community_name": "10. Complexity Estimation",
       "norm_label": "large projects (weeks)"
     },
     {
@@ -20715,8 +20715,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "typography-system.md"
     },
     {
@@ -26545,8 +26545,8 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_backend_1_push_notifications",
-      "community": 296,
-      "community_name": "ScreenVeilCTA.astro",
+      "community": 11,
+      "community_name": "Mobile Backend Patterns",
       "norm_label": "1. push notifications"
     },
     {
@@ -26556,8 +26556,8 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_backend_platform_architecture",
-      "community": 296,
-      "community_name": "ScreenVeilCTA.astro",
+      "community": 11,
+      "community_name": "Mobile Backend Patterns",
       "norm_label": "platform architecture"
     },
     {
@@ -26567,8 +26567,8 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_backend_push_types",
-      "community": 296,
-      "community_name": "ScreenVeilCTA.astro",
+      "community": 11,
+      "community_name": "Mobile Backend Patterns",
       "norm_label": "push types"
     },
     {
@@ -26578,8 +26578,8 @@
       "source_location": "L73",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_backend_anti_patterns",
-      "community": 296,
-      "community_name": "ScreenVeilCTA.astro",
+      "community": 11,
+      "community_name": "Mobile Backend Patterns",
       "norm_label": "anti-patterns"
     },
     {
@@ -26589,8 +26589,8 @@
       "source_location": "L83",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_backend_token_management",
-      "community": 296,
-      "community_name": "ScreenVeilCTA.astro",
+      "community": 11,
+      "community_name": "Mobile Backend Patterns",
       "norm_label": "token management"
     },
     {
@@ -26600,8 +26600,8 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_backend_2_offline_sync_conflict_resolution",
-      "community": 312,
-      "community_name": "2. Offline Sync & Conflict Resolution",
+      "community": 11,
+      "community_name": "Mobile Backend Patterns",
       "norm_label": "2. offline sync & conflict resolution"
     },
     {
@@ -26611,8 +26611,8 @@
       "source_location": "L98",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_backend_sync_strategy_selection",
-      "community": 312,
-      "community_name": "2. Offline Sync & Conflict Resolution",
+      "community": 11,
+      "community_name": "Mobile Backend Patterns",
       "norm_label": "sync strategy selection"
     },
     {
@@ -26622,8 +26622,8 @@
       "source_location": "L120",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_backend_conflict_resolution_strategies",
-      "community": 312,
-      "community_name": "2. Offline Sync & Conflict Resolution",
+      "community": 11,
+      "community_name": "Mobile Backend Patterns",
       "norm_label": "conflict resolution strategies"
     },
     {
@@ -26633,8 +26633,8 @@
       "source_location": "L130",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_backend_sync_queue_pattern",
-      "community": 312,
-      "community_name": "2. Offline Sync & Conflict Resolution",
+      "community": 11,
+      "community_name": "Mobile Backend Patterns",
       "norm_label": "sync queue pattern"
     },
     {
@@ -26644,8 +26644,8 @@
       "source_location": "L151",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_backend_3_mobile_api_optimization",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 11,
+      "community_name": "Mobile Backend Patterns",
       "norm_label": "3. mobile api optimization"
     },
     {
@@ -26655,8 +26655,8 @@
       "source_location": "L153",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_backend_response_size_reduction",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 11,
+      "community_name": "Mobile Backend Patterns",
       "norm_label": "response size reduction"
     },
     {
@@ -26666,8 +26666,8 @@
       "source_location": "L163",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_backend_pagination_cursor_vs_offset",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 11,
+      "community_name": "Mobile Backend Patterns",
       "norm_label": "pagination: cursor vs offset"
     },
     {
@@ -26677,8 +26677,8 @@
       "source_location": "L180",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_backend_batch_requests",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 11,
+      "community_name": "Mobile Backend Patterns",
       "norm_label": "batch requests"
     },
     {
@@ -26831,8 +26831,8 @@
       "source_location": "L374",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_backend_8_security_for_mobile",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
+      "community": 11,
+      "community_name": "Mobile Backend Patterns",
       "norm_label": "8. security for mobile"
     },
     {
@@ -26842,8 +26842,8 @@
       "source_location": "L376",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_backend_device_attestation",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
+      "community": 11,
+      "community_name": "Mobile Backend Patterns",
       "norm_label": "device attestation"
     },
     {
@@ -26853,8 +26853,8 @@
       "source_location": "L387",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_backend_request_signing",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
+      "community": 11,
+      "community_name": "Mobile Backend Patterns",
       "norm_label": "request signing"
     },
     {
@@ -26864,8 +26864,8 @@
       "source_location": "L403",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_backend_rate_limiting",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
+      "community": 11,
+      "community_name": "Mobile Backend Patterns",
       "norm_label": "rate limiting"
     },
     {
@@ -26908,8 +26908,8 @@
       "source_location": "L457",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_backend_mobile_backend_checklist",
-      "community": 272,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 11,
+      "community_name": "Mobile Backend Patterns",
       "norm_label": "\ud83d\udcdd mobile backend checklist"
     },
     {
@@ -26919,8 +26919,8 @@
       "source_location": "L459",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_backend_before_api_design",
-      "community": 272,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 11,
+      "community_name": "Mobile Backend Patterns",
       "norm_label": "before api design"
     },
     {
@@ -26930,8 +26930,8 @@
       "source_location": "L466",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_backend_for_every_endpoint",
-      "community": 272,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 11,
+      "community_name": "Mobile Backend Patterns",
       "norm_label": "for every endpoint"
     },
     {
@@ -26941,8 +26941,8 @@
       "source_location": "L473",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_backend_authentication",
-      "community": 272,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 11,
+      "community_name": "Mobile Backend Patterns",
       "norm_label": "authentication"
     },
     {
@@ -26952,8 +26952,8 @@
       "source_location": "L480",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_backend_push_notifications",
-      "community": 272,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 11,
+      "community_name": "Mobile Backend Patterns",
       "norm_label": "push notifications"
     },
     {
@@ -26963,8 +26963,8 @@
       "source_location": "L487",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_backend_release",
-      "community": 272,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 11,
+      "community_name": "Mobile Backend Patterns",
       "norm_label": "release"
     },
     {
@@ -28283,8 +28283,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_2_react_native_performance",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 308,
+      "community_name": "6. Visual Effects Principles",
       "norm_label": "2. react native performance"
     },
     {
@@ -28294,8 +28294,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_the_1_ai_mistake_scrollview_for_lists",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 308,
+      "community_name": "6. Visual Effects Principles",
       "norm_label": "\ud83d\udeab the #1 ai mistake: scrollview for lists"
     },
     {
@@ -28305,8 +28305,8 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_flatlist_optimization_checklist",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 308,
+      "community_name": "6. Visual Effects Principles",
       "norm_label": "flatlist optimization checklist"
     },
     {
@@ -28316,8 +28316,8 @@
       "source_location": "L110",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_why_each_optimization_matters",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 308,
+      "community_name": "6. Visual Effects Principles",
       "norm_label": "why each optimization matters"
     },
     {
@@ -28327,8 +28327,8 @@
       "source_location": "L122",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_flashlist_the_better_option",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 308,
+      "community_name": "6. Visual Effects Principles",
       "norm_label": "flashlist: the better option"
     },
     {
@@ -28338,8 +28338,8 @@
       "source_location": "L142",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_animation_performance",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 308,
+      "community_name": "6. Visual Effects Principles",
       "norm_label": "animation performance"
     },
     {
@@ -28349,8 +28349,8 @@
       "source_location": "L170",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_reanimated_for_complex_animations",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 308,
+      "community_name": "6. Visual Effects Principles",
       "norm_label": "reanimated for complex animations"
     },
     {
@@ -28360,8 +28360,8 @@
       "source_location": "L198",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_memory_leak_prevention",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 308,
+      "community_name": "6. Visual Effects Principles",
       "norm_label": "memory leak prevention"
     },
     {
@@ -28371,8 +28371,8 @@
       "source_location": "L226",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_react_native_performance_checklist",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 308,
+      "community_name": "6. Visual Effects Principles",
       "norm_label": "react native performance checklist"
     },
     {
@@ -28382,8 +28382,8 @@
       "source_location": "L254",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_3_flutter_performance",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 309,
+      "community_name": "7. Animation Principles",
       "norm_label": "3. flutter performance"
     },
     {
@@ -28393,8 +28393,8 @@
       "source_location": "L256",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_the_1_ai_mistake_setstate_overuse",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 309,
+      "community_name": "7. Animation Principles",
       "norm_label": "\ud83d\udeab the #1 ai mistake: setstate overuse"
     },
     {
@@ -28404,8 +28404,8 @@
       "source_location": "L287",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_the_const_constructor_revolution",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 309,
+      "community_name": "7. Animation Principles",
       "norm_label": "the `const` constructor revolution"
     },
     {
@@ -28415,8 +28415,8 @@
       "source_location": "L317",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_targeted_state_management",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 309,
+      "community_name": "7. Animation Principles",
       "norm_label": "targeted state management"
     },
     {
@@ -28426,8 +28426,8 @@
       "source_location": "L344",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_riverpod_provider_best_practices",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 309,
+      "community_name": "7. Animation Principles",
       "norm_label": "riverpod/provider best practices"
     },
     {
@@ -28437,8 +28437,8 @@
       "source_location": "L360",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_listview_optimization",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 309,
+      "community_name": "7. Animation Principles",
       "norm_label": "listview optimization"
     },
     {
@@ -28448,8 +28448,8 @@
       "source_location": "L385",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_image_optimization",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 309,
+      "community_name": "7. Animation Principles",
       "norm_label": "image optimization"
     },
     {
@@ -28459,8 +28459,8 @@
       "source_location": "L404",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_dispose_pattern",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 309,
+      "community_name": "7. Animation Principles",
       "norm_label": "dispose pattern"
     },
     {
@@ -28470,8 +28470,8 @@
       "source_location": "L439",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_flutter_performance_checklist",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 309,
+      "community_name": "7. Animation Principles",
       "norm_label": "flutter performance checklist"
     },
     {
@@ -28481,8 +28481,8 @@
       "source_location": "L471",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_4_animation_performance_both_platforms",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "4. animation performance (both platforms)"
     },
     {
@@ -28492,8 +28492,8 @@
       "source_location": "L473",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_the_60fps_imperative",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "the 60fps imperative"
     },
     {
@@ -28503,8 +28503,8 @@
       "source_location": "L487",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_gpu_vs_cpu_animation",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "gpu vs cpu animation"
     },
     {
@@ -28514,8 +28514,8 @@
       "source_location": "L501",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_animation_timing_guide",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "animation timing guide"
     },
     {
@@ -28525,8 +28525,8 @@
       "source_location": "L511",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_spring_physics",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "spring physics"
     },
     {
@@ -28536,8 +28536,8 @@
       "source_location": "L541",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_5_memory_management",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 321,
+      "community_name": "5. Memory Management",
       "norm_label": "5. memory management"
     },
     {
@@ -28547,8 +28547,8 @@
       "source_location": "L543",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_common_memory_leaks",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 321,
+      "community_name": "5. Memory Management",
       "norm_label": "common memory leaks"
     },
     {
@@ -28558,8 +28558,8 @@
       "source_location": "L554",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_image_memory",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 321,
+      "community_name": "5. Memory Management",
       "norm_label": "image memory"
     },
     {
@@ -28569,8 +28569,8 @@
       "source_location": "L567",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_memory_profiling",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 321,
+      "community_name": "5. Memory Management",
       "norm_label": "memory profiling"
     },
     {
@@ -28657,8 +28657,8 @@
       "source_location": "L673",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_8_performance_testing",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 322,
+      "community_name": "8. Performance Testing",
       "norm_label": "8. performance testing"
     },
     {
@@ -28668,8 +28668,8 @@
       "source_location": "L675",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_what_to_test",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 322,
+      "community_name": "8. Performance Testing",
       "norm_label": "what to test"
     },
     {
@@ -28679,8 +28679,8 @@
       "source_location": "L686",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_test_on_real_devices",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 322,
+      "community_name": "8. Performance Testing",
       "norm_label": "test on real devices"
     },
     {
@@ -28690,8 +28690,8 @@
       "source_location": "L701",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_performance_performance_monitoring_checklist",
-      "community": 6,
-      "community_name": "Mobile Performance Reference",
+      "community": 322,
+      "community_name": "8. Performance Testing",
       "norm_label": "performance monitoring checklist"
     },
     {
@@ -36819,8 +36819,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_web_design_guidelines_skill",
-      "community": 127,
-      "community_name": "frontend-design/SKILL.md",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "web-design-guidelines/skill.md"
     },
     {
@@ -40355,6 +40355,149 @@
       "norm_label": "contact"
     },
     {
+      "label": "de/add-low-stock-alerts-shopify.md",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_de_add_low_stock_alerts_shopify",
+      "community": 305,
+      "community_name": "3. Layout Principles",
+      "norm_label": "de/add-low-stock-alerts-shopify.md"
+    },
+    {
+      "label": "Die Psychologie hinter \u201eNur noch X \u00fcbrig\u201c",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "src_content_blog_de_add_low_stock_alerts_shopify_die_psychologie_hinter_nur_noch_x_\u00fcbrig",
+      "community": 305,
+      "community_name": "3. Layout Principles",
+      "norm_label": "die psychologie hinter \u201enur noch x ubrig\u201c"
+    },
+    {
+      "label": "So binden Sie Bestandswarnungen mit FomoGen ein",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "src_content_blog_de_add_low_stock_alerts_shopify_so_binden_sie_bestandswarnungen_mit_fomogen_ein",
+      "community": 305,
+      "community_name": "3. Layout Principles",
+      "norm_label": "so binden sie bestandswarnungen mit fomogen ein"
+    },
+    {
+      "label": "Schritt 1: FomoGen installieren",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "src_content_blog_de_add_low_stock_alerts_shopify_schritt_1_fomogen_installieren",
+      "community": 305,
+      "community_name": "3. Layout Principles",
+      "norm_label": "schritt 1: fomogen installieren"
+    },
+    {
+      "label": "Schritt 2: Zu \u201eVerknappung & Dringlichkeit\u201c wechseln",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "src_content_blog_de_add_low_stock_alerts_shopify_schritt_2_zu_verknappung_dringlichkeit_wechseln",
+      "community": 305,
+      "community_name": "3. Layout Principles",
+      "norm_label": "schritt 2: zu \u201everknappung & dringlichkeit\u201c wechseln"
+    },
+    {
+      "label": "Schritt 3: Bestandsschwelle festlegen",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "src_content_blog_de_add_low_stock_alerts_shopify_schritt_3_bestandsschwelle_festlegen",
+      "community": 305,
+      "community_name": "3. Layout Principles",
+      "norm_label": "schritt 3: bestandsschwelle festlegen"
+    },
+    {
+      "label": "Schritt 4: Warntext formulieren",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "src_content_blog_de_add_low_stock_alerts_shopify_schritt_4_warntext_formulieren",
+      "community": 305,
+      "community_name": "3. Layout Principles",
+      "norm_label": "schritt 4: warntext formulieren"
+    },
+    {
+      "label": "Schritt 5: Anzeigeort w\u00e4hlen",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "src_content_blog_de_add_low_stock_alerts_shopify_schritt_5_anzeigeort_w\u00e4hlen",
+      "community": 305,
+      "community_name": "3. Layout Principles",
+      "norm_label": "schritt 5: anzeigeort wahlen"
+    },
+    {
+      "label": "Schritt 6: Produkte ausw\u00e4hlen",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "src_content_blog_de_add_low_stock_alerts_shopify_schritt_6_produkte_ausw\u00e4hlen",
+      "community": 305,
+      "community_name": "3. Layout Principles",
+      "norm_label": "schritt 6: produkte auswahlen"
+    },
+    {
+      "label": "Schritt 7: Gestalten und speichern",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "src_content_blog_de_add_low_stock_alerts_shopify_schritt_7_gestalten_und_speichern",
+      "community": 305,
+      "community_name": "3. Layout Principles",
+      "norm_label": "schritt 7: gestalten und speichern"
+    },
+    {
+      "label": "Die richtige Schwelle finden: einige Beispiele",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L109",
+      "_origin": "ast",
+      "id": "src_content_blog_de_add_low_stock_alerts_shopify_die_richtige_schwelle_finden_einige_beispiele",
+      "community": 305,
+      "community_name": "3. Layout Principles",
+      "norm_label": "die richtige schwelle finden: einige beispiele"
+    },
+    {
+      "label": "Was Sie nicht tun sollten",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L126",
+      "_origin": "ast",
+      "id": "src_content_blog_de_add_low_stock_alerts_shopify_was_sie_nicht_tun_sollten",
+      "community": 305,
+      "community_name": "3. Layout Principles",
+      "norm_label": "was sie nicht tun sollten"
+    },
+    {
+      "label": "Mit Social Proof zum vollst\u00e4ndigen Conversion-Stack kombinieren",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L143",
+      "_origin": "ast",
+      "id": "src_content_blog_de_add_low_stock_alerts_shopify_mit_social_proof_zum_vollst\u00e4ndigen_conversion_stack_kombinieren",
+      "community": 305,
+      "community_name": "3. Layout Principles",
+      "norm_label": "mit social proof zum vollstandigen conversion-stack kombinieren"
+    },
+    {
       "label": "de/android-digital-wellbeing-vs-third-party-focus-apps.md",
       "file_type": "document",
       "source_file": "src/content/blog/de/android-digital-wellbeing-vs-third-party-focus-apps.md",
@@ -40674,6 +40817,479 @@
       "norm_label": "fazit"
     },
     {
+      "label": "de/best-social-proof-apps-shopify-2026.md",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/best-social-proof-apps-shopify-2026.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_de_best_social_proof_apps_shopify_2026",
+      "community": 306,
+      "community_name": "4. Color Principles",
+      "norm_label": "de/best-social-proof-apps-shopify-2026.md"
+    },
+    {
+      "label": "1. [FOMO Gen](https://apps.shopify.com/fomogen) (bestes Gesamtpaket aus Leistung und Tempo)",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/best-social-proof-apps-shopify-2026.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "src_content_blog_de_best_social_proof_apps_shopify_2026_1_fomo_gen_https_apps_shopify_com_fomogen_bestes_gesamtpaket_aus_leistung_und_tempo",
+      "community": 306,
+      "community_name": "4. Color Principles",
+      "norm_label": "1. [fomo gen](https://apps.shopify.com/fomogen) (bestes gesamtpaket aus leistung und tempo)"
+    },
+    {
+      "label": "2. [Loox](https://apps.shopify.com/loox) (der visuelle Vertrauensbildner)",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/best-social-proof-apps-shopify-2026.md",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "src_content_blog_de_best_social_proof_apps_shopify_2026_2_loox_https_apps_shopify_com_loox_der_visuelle_vertrauensbildner",
+      "community": 306,
+      "community_name": "4. Color Principles",
+      "norm_label": "2. [loox](https://apps.shopify.com/loox) (der visuelle vertrauensbildner)"
+    },
+    {
+      "label": "3. [Nudgify](https://apps.shopify.com/nudgify) (die UX-Wahl)",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/best-social-proof-apps-shopify-2026.md",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "src_content_blog_de_best_social_proof_apps_shopify_2026_3_nudgify_https_apps_shopify_com_nudgify_die_ux_wahl",
+      "community": 306,
+      "community_name": "4. Color Principles",
+      "norm_label": "3. [nudgify](https://apps.shopify.com/nudgify) (die ux-wahl)"
+    },
+    {
+      "label": "4. [Vitals](https://apps.shopify.com/vitals) (das Schwergewicht)",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/best-social-proof-apps-shopify-2026.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "src_content_blog_de_best_social_proof_apps_shopify_2026_4_vitals_https_apps_shopify_com_vitals_das_schwergewicht",
+      "community": 306,
+      "community_name": "4. Color Principles",
+      "norm_label": "4. [vitals](https://apps.shopify.com/vitals) (das schwergewicht)"
+    },
+    {
+      "label": "5. [Rocket Sales Pop](https://apps.shopify.com/window-shoppers) (die Altbew\u00e4hrte)",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/best-social-proof-apps-shopify-2026.md",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "src_content_blog_de_best_social_proof_apps_shopify_2026_5_rocket_sales_pop_https_apps_shopify_com_window_shoppers_die_altbew\u00e4hrte",
+      "community": 306,
+      "community_name": "4. Color Principles",
+      "norm_label": "5. [rocket sales pop](https://apps.shopify.com/window-shoppers) (die altbewahrte)"
+    },
+    {
+      "label": "6. [SnapNoti](https://apps.shopify.com/snapnoti) (das leichtgewichtige All-in-One)",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/best-social-proof-apps-shopify-2026.md",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "src_content_blog_de_best_social_proof_apps_shopify_2026_6_snapnoti_https_apps_shopify_com_snapnoti_das_leichtgewichtige_all_in_one",
+      "community": 306,
+      "community_name": "4. Color Principles",
+      "norm_label": "6. [snapnoti](https://apps.shopify.com/snapnoti) (das leichtgewichtige all-in-one)"
+    },
+    {
+      "label": "7. [Fomo](https://apps.shopify.com/fomo) (der Enterprise-Ma\u00dfstab)",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/best-social-proof-apps-shopify-2026.md",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "src_content_blog_de_best_social_proof_apps_shopify_2026_7_fomo_https_apps_shopify_com_fomo_der_enterprise_massstab",
+      "community": 306,
+      "community_name": "4. Color Principles",
+      "norm_label": "7. [fomo](https://apps.shopify.com/fomo) (der enterprise-ma\u00dfstab)"
+    },
+    {
+      "label": "Das Conversion-\u00d6kosystem",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/best-social-proof-apps-shopify-2026.md",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "src_content_blog_de_best_social_proof_apps_shopify_2026_das_conversion_\u00f6kosystem",
+      "community": 306,
+      "community_name": "4. Color Principles",
+      "norm_label": "das conversion-okosystem"
+    },
+    {
+      "label": "Fazit",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/best-social-proof-apps-shopify-2026.md",
+      "source_location": "L92",
+      "_origin": "ast",
+      "id": "src_content_blog_de_best_social_proof_apps_shopify_2026_fazit",
+      "community": 306,
+      "community_name": "4. Color Principles",
+      "norm_label": "fazit"
+    },
+    {
+      "label": "de/calculate-free-shipping-threshold.md",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/calculate-free-shipping-threshold.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_de_calculate_free_shipping_threshold",
+      "community": 317,
+      "community_name": "de/calculate-free-shipping-threshold.md",
+      "norm_label": "de/calculate-free-shipping-threshold.md"
+    },
+    {
+      "label": "Die Rechnung: So finden Sie Ihre magische Zahl",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/calculate-free-shipping-threshold.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "src_content_blog_de_calculate_free_shipping_threshold_die_rechnung_so_finden_sie_ihre_magische_zahl",
+      "community": 317,
+      "community_name": "de/calculate-free-shipping-threshold.md",
+      "norm_label": "die rechnung: so finden sie ihre magische zahl"
+    },
+    {
+      "label": "Das Erlebnis gamifizieren",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/calculate-free-shipping-threshold.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "src_content_blog_de_calculate_free_shipping_threshold_das_erlebnis_gamifizieren",
+      "community": 317,
+      "community_name": "de/calculate-free-shipping-threshold.md",
+      "norm_label": "das erlebnis gamifizieren"
+    },
+    {
+      "label": "Margen im Griff",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/calculate-free-shipping-threshold.md",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "src_content_blog_de_calculate_free_shipping_threshold_margen_im_griff",
+      "community": 317,
+      "community_name": "de/calculate-free-shipping-threshold.md",
+      "norm_label": "margen im griff"
+    },
+    {
+      "label": "Fazit",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/calculate-free-shipping-threshold.md",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "src_content_blog_de_calculate_free_shipping_threshold_fazit",
+      "community": 317,
+      "community_name": "de/calculate-free-shipping-threshold.md",
+      "norm_label": "fazit"
+    },
+    {
+      "label": "de/free-shipping-bar-shopify.md",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_de_free_shipping_bar_shopify",
+      "community": 296,
+      "community_name": "ScreenVeilCTA.astro",
+      "norm_label": "de/free-shipping-bar-shopify.md"
+    },
+    {
+      "label": "Warum Versandkostenfrei-Leisten so gut funktionieren",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "src_content_blog_de_free_shipping_bar_shopify_warum_versandkostenfrei_leisten_so_gut_funktionieren",
+      "community": 296,
+      "community_name": "ScreenVeilCTA.astro",
+      "norm_label": "warum versandkostenfrei-leisten so gut funktionieren"
+    },
+    {
+      "label": "Schritt f\u00fcr Schritt: Versandkostenfrei-Leiste mit FomoGen einbinden",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "src_content_blog_de_free_shipping_bar_shopify_schritt_f\u00fcr_schritt_versandkostenfrei_leiste_mit_fomogen_einbinden",
+      "community": 296,
+      "community_name": "ScreenVeilCTA.astro",
+      "norm_label": "schritt fur schritt: versandkostenfrei-leiste mit fomogen einbinden"
+    },
+    {
+      "label": "Schritt 1: FomoGen installieren",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "src_content_blog_de_free_shipping_bar_shopify_schritt_1_fomogen_installieren",
+      "community": 296,
+      "community_name": "ScreenVeilCTA.astro",
+      "norm_label": "schritt 1: fomogen installieren"
+    },
+    {
+      "label": "Schritt 2: Funktion \u201eVersandkostenfrei-Leiste\u201c \u00f6ffnen",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "src_content_blog_de_free_shipping_bar_shopify_schritt_2_funktion_versandkostenfrei_leiste_\u00f6ffnen",
+      "community": 296,
+      "community_name": "ScreenVeilCTA.astro",
+      "norm_label": "schritt 2: funktion \u201eversandkostenfrei-leiste\u201c offnen"
+    },
+    {
+      "label": "Schritt 3: Schwellenwert festlegen",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "src_content_blog_de_free_shipping_bar_shopify_schritt_3_schwellenwert_festlegen",
+      "community": 296,
+      "community_name": "ScreenVeilCTA.astro",
+      "norm_label": "schritt 3: schwellenwert festlegen"
+    },
+    {
+      "label": "Schritt 4: Ihre Texte formulieren",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "src_content_blog_de_free_shipping_bar_shopify_schritt_4_ihre_texte_formulieren",
+      "community": 296,
+      "community_name": "ScreenVeilCTA.astro",
+      "norm_label": "schritt 4: ihre texte formulieren"
+    },
+    {
+      "label": "Schritt 5: Anzeigeorte w\u00e4hlen",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "src_content_blog_de_free_shipping_bar_shopify_schritt_5_anzeigeorte_w\u00e4hlen",
+      "community": 296,
+      "community_name": "ScreenVeilCTA.astro",
+      "norm_label": "schritt 5: anzeigeorte wahlen"
+    },
+    {
+      "label": "Schritt 6: Passend zu Ihrem Shop gestalten",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "src_content_blog_de_free_shipping_bar_shopify_schritt_6_passend_zu_ihrem_shop_gestalten",
+      "community": 296,
+      "community_name": "ScreenVeilCTA.astro",
+      "norm_label": "schritt 6: passend zu ihrem shop gestalten"
+    },
+    {
+      "label": "Schritt 7: Speichern und live schalten",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L100",
+      "_origin": "ast",
+      "id": "src_content_blog_de_free_shipping_bar_shopify_schritt_7_speichern_und_live_schalten",
+      "community": 296,
+      "community_name": "ScreenVeilCTA.astro",
+      "norm_label": "schritt 7: speichern und live schalten"
+    },
+    {
+      "label": "So berechnen Sie den richtigen Schwellenwert",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L110",
+      "_origin": "ast",
+      "id": "src_content_blog_de_free_shipping_bar_shopify_so_berechnen_sie_den_richtigen_schwellenwert",
+      "community": 296,
+      "community_name": "ScreenVeilCTA.astro",
+      "norm_label": "so berechnen sie den richtigen schwellenwert"
+    },
+    {
+      "label": "Ein konkretes Rechenbeispiel",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L130",
+      "_origin": "ast",
+      "id": "src_content_blog_de_free_shipping_bar_shopify_ein_konkretes_rechenbeispiel",
+      "community": 296,
+      "community_name": "ScreenVeilCTA.astro",
+      "norm_label": "ein konkretes rechenbeispiel"
+    },
+    {
+      "label": "H\u00e4ufige Fehler, die Sie vermeiden sollten",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L144",
+      "_origin": "ast",
+      "id": "src_content_blog_de_free_shipping_bar_shopify_h\u00e4ufige_fehler_die_sie_vermeiden_sollten",
+      "community": 296,
+      "community_name": "ScreenVeilCTA.astro",
+      "norm_label": "haufige fehler, die sie vermeiden sollten"
+    },
+    {
+      "label": "Mit Social Proof kombinieren f\u00fcr noch bessere Ergebnisse",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L160",
+      "_origin": "ast",
+      "id": "src_content_blog_de_free_shipping_bar_shopify_mit_social_proof_kombinieren_f\u00fcr_noch_bessere_ergebnisse",
+      "community": 296,
+      "community_name": "ScreenVeilCTA.astro",
+      "norm_label": "mit social proof kombinieren fur noch bessere ergebnisse"
+    },
+    {
+      "label": "de/how-to-add-sales-popup-shopify.md",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_add_sales_popup_shopify",
+      "community": 304,
+      "community_name": "2. UX Psychology Principles",
+      "norm_label": "de/how-to-add-sales-popup-shopify.md"
+    },
+    {
+      "label": "Warum Ihre Besucher sehen m\u00fcssen, dass andere kaufen",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_add_sales_popup_shopify_warum_ihre_besucher_sehen_m\u00fcssen_dass_andere_kaufen",
+      "community": 304,
+      "community_name": "2. UX Psychology Principles",
+      "norm_label": "warum ihre besucher sehen mussen, dass andere kaufen"
+    },
+    {
+      "label": "Was eine gute Verkaufsbenachrichtigung zeigt",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_add_sales_popup_shopify_was_eine_gute_verkaufsbenachrichtigung_zeigt",
+      "community": 304,
+      "community_name": "2. UX Psychology Principles",
+      "norm_label": "was eine gute verkaufsbenachrichtigung zeigt"
+    },
+    {
+      "label": "Schritt f\u00fcr Schritt: Verkaufsbenachrichtigung mit FomoGen einbinden",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L68",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_add_sales_popup_shopify_schritt_f\u00fcr_schritt_verkaufsbenachrichtigung_mit_fomogen_einbinden",
+      "community": 304,
+      "community_name": "2. UX Psychology Principles",
+      "norm_label": "schritt fur schritt: verkaufsbenachrichtigung mit fomogen einbinden"
+    },
+    {
+      "label": "Schritt 1: FomoGen installieren",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_add_sales_popup_shopify_schritt_1_fomogen_installieren",
+      "community": 304,
+      "community_name": "2. UX Psychology Principles",
+      "norm_label": "schritt 1: fomogen installieren"
+    },
+    {
+      "label": "Schritt 2: FomoGen-Dashboard \u00f6ffnen",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L76",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_add_sales_popup_shopify_schritt_2_fomogen_dashboard_\u00f6ffnen",
+      "community": 304,
+      "community_name": "2. UX Psychology Principles",
+      "norm_label": "schritt 2: fomogen-dashboard offnen"
+    },
+    {
+      "label": "Schritt 3: Erste Kampagne erstellen",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_add_sales_popup_shopify_schritt_3_erste_kampagne_erstellen",
+      "community": 304,
+      "community_name": "2. UX Psychology Principles",
+      "norm_label": "schritt 3: erste kampagne erstellen"
+    },
+    {
+      "label": "Schritt 4: Aussehen anpassen",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_add_sales_popup_shopify_schritt_4_aussehen_anpassen",
+      "community": 304,
+      "community_name": "2. UX Psychology Principles",
+      "norm_label": "schritt 4: aussehen anpassen"
+    },
+    {
+      "label": "Schritt 5: Bestellzeitraum festlegen",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L100",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_add_sales_popup_shopify_schritt_5_bestellzeitraum_festlegen",
+      "community": 304,
+      "community_name": "2. UX Psychology Principles",
+      "norm_label": "schritt 5: bestellzeitraum festlegen"
+    },
+    {
+      "label": "Schritt 6: Speichern und aktivieren",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L106",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_add_sales_popup_shopify_schritt_6_speichern_und_aktivieren",
+      "community": 304,
+      "community_name": "2. UX Psychology Principles",
+      "norm_label": "schritt 6: speichern und aktivieren"
+    },
+    {
+      "label": "Das richtige Timing finden",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L112",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_add_sales_popup_shopify_das_richtige_timing_finden",
+      "community": 304,
+      "community_name": "2. UX Psychology Principles",
+      "norm_label": "das richtige timing finden"
+    },
+    {
+      "label": "Was tun, wenn Sie noch wenige Bestellungen haben?",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L126",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_add_sales_popup_shopify_was_tun_wenn_sie_noch_wenige_bestellungen_haben",
+      "community": 304,
+      "community_name": "2. UX Psychology Principles",
+      "norm_label": "was tun, wenn sie noch wenige bestellungen haben?"
+    },
+    {
+      "label": "Die Geschwindigkeitsfrage: Schadet das meinem PageSpeed-Score?",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L143",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_add_sales_popup_shopify_die_geschwindigkeitsfrage_schadet_das_meinem_pagespeed_score",
+      "community": 304,
+      "community_name": "2. UX Psychology Principles",
+      "norm_label": "die geschwindigkeitsfrage: schadet das meinem pagespeed-score?"
+    },
+    {
+      "label": "Mit Verknappung kombinieren f\u00fcr maximale Wirkung",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L157",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_add_sales_popup_shopify_mit_verknappung_kombinieren_f\u00fcr_maximale_wirkung",
+      "community": 304,
+      "community_name": "2. UX Psychology Principles",
+      "norm_label": "mit verknappung kombinieren fur maximale wirkung"
+    },
+    {
       "label": "de/how-to-block-reels-and-shorts-on-android-2026.mdx",
       "file_type": "document",
       "source_file": "src/content/blog/de/how-to-block-reels-and-shorts-on-android-2026.mdx",
@@ -40982,6 +41598,61 @@
       "norm_label": "meine abschlie\u00dfende empfehlung"
     },
     {
+      "label": "de/mobile-sticky-cart-guide.md",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/mobile-sticky-cart-guide.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_de_mobile_sticky_cart_guide",
+      "community": 318,
+      "community_name": "de/mobile-sticky-cart-guide.md",
+      "norm_label": "de/mobile-sticky-cart-guide.md"
+    },
+    {
+      "label": "Die Wissenschaft der \u201eDaumenzone\u201c",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/mobile-sticky-cart-guide.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "src_content_blog_de_mobile_sticky_cart_guide_die_wissenschaft_der_daumenzone",
+      "community": 318,
+      "community_name": "de/mobile-sticky-cart-guide.md",
+      "norm_label": "die wissenschaft der \u201edaumenzone\u201c"
+    },
+    {
+      "label": "Diese Ergebnisse k\u00f6nnen Sie erwarten",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/mobile-sticky-cart-guide.md",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "src_content_blog_de_mobile_sticky_cart_guide_diese_ergebnisse_k\u00f6nnen_sie_erwarten",
+      "community": 318,
+      "community_name": "de/mobile-sticky-cart-guide.md",
+      "norm_label": "diese ergebnisse konnen sie erwarten"
+    },
+    {
+      "label": "\u00dcber die Schaltfl\u00e4che hinaus",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/mobile-sticky-cart-guide.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "src_content_blog_de_mobile_sticky_cart_guide_\u00fcber_die_schaltfl\u00e4che_hinaus",
+      "community": 318,
+      "community_name": "de/mobile-sticky-cart-guide.md",
+      "norm_label": "uber die schaltflache hinaus"
+    },
+    {
+      "label": "Aktionsplan",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/mobile-sticky-cart-guide.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "src_content_blog_de_mobile_sticky_cart_guide_aktionsplan",
+      "community": 318,
+      "community_name": "de/mobile-sticky-cart-guide.md",
+      "norm_label": "aktionsplan"
+    },
+    {
       "label": "de/monk-mode-willpower.md",
       "file_type": "document",
       "source_file": "src/content/blog/de/monk-mode-willpower.md",
@@ -41169,6 +41840,72 @@
       "norm_label": "entdecken sie das fokus-okosystem"
     },
     {
+      "label": "de/psychology-of-fomo-marketing.md",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/psychology-of-fomo-marketing.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_de_psychology_of_fomo_marketing",
+      "community": 310,
+      "community_name": "8. \"Wow Factor\" Checklist",
+      "norm_label": "de/psychology-of-fomo-marketing.md"
+    },
+    {
+      "label": "Die Heuristik der Verknappung",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/psychology-of-fomo-marketing.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "src_content_blog_de_psychology_of_fomo_marketing_die_heuristik_der_verknappung",
+      "community": 310,
+      "community_name": "8. \"Wow Factor\" Checklist",
+      "norm_label": "die heuristik der verknappung"
+    },
+    {
+      "label": "Soziale Best\u00e4tigung: der Effekt \u201eSicherheit in der Gruppe\u201c",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/psychology-of-fomo-marketing.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "src_content_blog_de_psychology_of_fomo_marketing_soziale_best\u00e4tigung_der_effekt_sicherheit_in_der_gruppe",
+      "community": 310,
+      "community_name": "8. \"Wow Factor\" Checklist",
+      "norm_label": "soziale bestatigung: der effekt \u201esicherheit in der gruppe\u201c"
+    },
+    {
+      "label": "Die Ethik von FOMO",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/psychology-of-fomo-marketing.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "src_content_blog_de_psychology_of_fomo_marketing_die_ethik_von_fomo",
+      "community": 310,
+      "community_name": "8. \"Wow Factor\" Checklist",
+      "norm_label": "die ethik von fomo"
+    },
+    {
+      "label": "Die Wissenschaft hinter dem psychologischen ROI",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/psychology-of-fomo-marketing.md",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "src_content_blog_de_psychology_of_fomo_marketing_die_wissenschaft_hinter_dem_psychologischen_roi",
+      "community": 310,
+      "community_name": "8. \"Wow Factor\" Checklist",
+      "norm_label": "die wissenschaft hinter dem psychologischen roi"
+    },
+    {
+      "label": "Zusammenfassung",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/psychology-of-fomo-marketing.md",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "src_content_blog_de_psychology_of_fomo_marketing_zusammenfassung",
+      "community": 310,
+      "community_name": "8. \"Wow Factor\" Checklist",
+      "norm_label": "zusammenfassung"
+    },
+    {
       "label": "de/reclaim-focus-story.md",
       "file_type": "document",
       "source_file": "src/content/blog/de/reclaim-focus-story.md",
@@ -41233,6 +41970,413 @@
       "community": 280,
       "community_name": "tailwindcss",
       "norm_label": "teil des frameworks fur digitales wohlbefinden"
+    },
+    {
+      "label": "de/shopify-conversion-rate-2026.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-2026.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_2026",
+      "community": 307,
+      "community_name": "5. Typography Principles",
+      "norm_label": "de/shopify-conversion-rate-2026.mdx"
+    },
+    {
+      "label": "Shopify-Conversion-Benchmarks 2026",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-2026.mdx",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_2026_shopify_conversion_benchmarks_2026",
+      "community": 307,
+      "community_name": "5. Typography Principles",
+      "norm_label": "shopify-conversion-benchmarks 2026"
+    },
+    {
+      "label": "Warum die meisten Shopify-Shops zu schwach konvertieren",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-2026.mdx",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_2026_warum_die_meisten_shopify_shops_zu_schwach_konvertieren",
+      "community": 307,
+      "community_name": "5. Typography Principles",
+      "norm_label": "warum die meisten shopify-shops zu schwach konvertieren"
+    },
+    {
+      "label": "L\u00f6sung 1 \u2014 Social Proof in Echtzeit einbinden",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-2026.mdx",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_2026_l\u00f6sung_1_social_proof_in_echtzeit_einbinden",
+      "community": 307,
+      "community_name": "5. Typography Principles",
+      "norm_label": "losung 1 \u2014 social proof in echtzeit einbinden"
+    },
+    {
+      "label": "L\u00f6sung 2 \u2014 Dringlichkeit im Warenkorb mit einem Countdown-Timer",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-2026.mdx",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_2026_l\u00f6sung_2_dringlichkeit_im_warenkorb_mit_einem_countdown_timer",
+      "community": 307,
+      "community_name": "5. Typography Principles",
+      "norm_label": "losung 2 \u2014 dringlichkeit im warenkorb mit einem countdown-timer"
+    },
+    {
+      "label": "L\u00f6sung 3 \u2014 Ihren App-Stack auf Geschwindigkeitsbremsen pr\u00fcfen",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-2026.mdx",
+      "source_location": "L122",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_2026_l\u00f6sung_3_ihren_app_stack_auf_geschwindigkeitsbremsen_pr\u00fcfen",
+      "community": 307,
+      "community_name": "5. Typography Principles",
+      "norm_label": "losung 3 \u2014 ihren app-stack auf geschwindigkeitsbremsen prufen"
+    },
+    {
+      "label": "L\u00f6sung 4 \u2014 Das Layout Ihrer Produktseite optimieren",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-2026.mdx",
+      "source_location": "L143",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_2026_l\u00f6sung_4_das_layout_ihrer_produktseite_optimieren",
+      "community": 307,
+      "community_name": "5. Typography Principles",
+      "norm_label": "losung 4 \u2014 das layout ihrer produktseite optimieren"
+    },
+    {
+      "label": "L\u00f6sung 5 \u2014 Abgebrochene Warenk\u00f6rbe zur\u00fcckholen",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-2026.mdx",
+      "source_location": "L163",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_2026_l\u00f6sung_5_abgebrochene_warenk\u00f6rbe_zur\u00fcckholen",
+      "community": 307,
+      "community_name": "5. Typography Principles",
+      "norm_label": "losung 5 \u2014 abgebrochene warenkorbe zuruckholen"
+    },
+    {
+      "label": "Der schnellste Weg vom Durchschnitt in die oberen 20 %",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-2026.mdx",
+      "source_location": "L181",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_2026_der_schnellste_weg_vom_durchschnitt_in_die_oberen_20",
+      "community": 307,
+      "community_name": "5. Typography Principles",
+      "norm_label": "der schnellste weg vom durchschnitt in die oberen 20 %"
+    },
+    {
+      "label": "Was 1 Prozentpunkt Conversion-Rate tats\u00e4chlich wert ist",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-2026.mdx",
+      "source_location": "L202",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_2026_was_1_prozentpunkt_conversion_rate_tats\u00e4chlich_wert_ist",
+      "community": 307,
+      "community_name": "5. Typography Principles",
+      "norm_label": "was 1 prozentpunkt conversion-rate tatsachlich wert ist"
+    },
+    {
+      "label": "de/shopify-conversion-rate-benchmarks-2026.md",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
+      "norm_label": "de/shopify-conversion-rate-benchmarks-2026.md"
+    },
+    {
+      "label": "Warum die Conversion-Rate je nach Nische so stark schwankt",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_warum_die_conversion_rate_je_nach_nische_so_stark_schwankt",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
+      "norm_label": "warum die conversion-rate je nach nische so stark schwankt"
+    },
+    {
+      "label": "Die Benchmarks 2026 nach Nische",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_die_benchmarks_2026_nach_nische",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
+      "norm_label": "die benchmarks 2026 nach nische"
+    },
+    {
+      "label": "Geschenke & Spezialit\u00e4ten: 4,5\u20135,0 %",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_geschenke_spezialit\u00e4ten_4_5_5_0",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
+      "norm_label": "geschenke & spezialitaten: 4,5\u20135,0 %"
+    },
+    {
+      "label": "Beauty & K\u00f6rperpflege: 4,5\u20134,9 %",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_beauty_k\u00f6rperpflege_4_5_4_9",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
+      "norm_label": "beauty & korperpflege: 4,5\u20134,9 %"
+    },
+    {
+      "label": "Lebensmittel & Getr\u00e4nke: 3,0\u20134,5 %",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_lebensmittel_getr\u00e4nke_3_0_4_5",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
+      "norm_label": "lebensmittel & getranke: 3,0\u20134,5 %"
+    },
+    {
+      "label": "Gesundheit & Wellness: 3,0\u20133,5 %",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_gesundheit_wellness_3_0_3_5",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
+      "norm_label": "gesundheit & wellness: 3,0\u20133,5 %"
+    },
+    {
+      "label": "Mode & Bekleidung: 2,5\u20133,1 %",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L68",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_mode_bekleidung_2_5_3_1",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
+      "norm_label": "mode & bekleidung: 2,5\u20133,1 %"
+    },
+    {
+      "label": "Haus & Garten: 2,1\u20132,8 %",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_haus_garten_2_1_2_8",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
+      "norm_label": "haus & garten: 2,1\u20132,8 %"
+    },
+    {
+      "label": "Elektronik & Technik: 1,4\u20132,3 %",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_elektronik_technik_1_4_2_3",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
+      "norm_label": "elektronik & technik: 1,4\u20132,3 %"
+    },
+    {
+      "label": "Schmuck: 1,2\u20132,0 %",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L77",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_schmuck_1_2_2_0",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
+      "norm_label": "schmuck: 1,2\u20132,0 %"
+    },
+    {
+      "label": "Luxus & Premium (1,0\u20131,5 %)",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_luxus_premium_1_0_1_5",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
+      "norm_label": "luxus & premium (1,0\u20131,5 %)"
+    },
+    {
+      "label": "So berechnen Sie Ihre eigene Conversion-Rate",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L85",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_so_berechnen_sie_ihre_eigene_conversion_rate",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
+      "norm_label": "so berechnen sie ihre eigene conversion-rate"
+    },
+    {
+      "label": "Die h\u00e4ufigsten Gr\u00fcnde, warum Shops unter ihrem Benchmark bleiben",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L110",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_die_h\u00e4ufigsten_gr\u00fcnde_warum_shops_unter_ihrem_benchmark_bleiben",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
+      "norm_label": "die haufigsten grunde, warum shops unter ihrem benchmark bleiben"
+    },
+    {
+      "label": "1. Langsame Ladezeiten (besonders mobil)",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L116",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_1_langsame_ladezeiten_besonders_mobil",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
+      "norm_label": "1. langsame ladezeiten (besonders mobil)"
+    },
+    {
+      "label": "2. Kein Social Proof auf Produktseiten",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L119",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_2_kein_social_proof_auf_produktseiten",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
+      "norm_label": "2. kein social proof auf produktseiten"
+    },
+    {
+      "label": "3. \u00dcberraschende Versandkosten an der Kasse",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L122",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_3_\u00fcberraschende_versandkosten_an_der_kasse",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
+      "norm_label": "3. uberraschende versandkosten an der kasse"
+    },
+    {
+      "label": "4. Die Kaufen-Schaltfl\u00e4che verschwindet auf dem Smartphone",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L125",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_4_die_kaufen_schaltfl\u00e4che_verschwindet_auf_dem_smartphone",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
+      "norm_label": "4. die kaufen-schaltflache verschwindet auf dem smartphone"
+    },
+    {
+      "label": "5. Schlechte Traffic-Qualit\u00e4t",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L128",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_5_schlechte_traffic_qualit\u00e4t",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
+      "norm_label": "5. schlechte traffic-qualitat"
+    },
+    {
+      "label": "Ein einfacher Priorit\u00e4tenplan",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L133",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_ein_einfacher_priorit\u00e4tenplan",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
+      "norm_label": "ein einfacher prioritatenplan"
+    },
+    {
+      "label": "Werkzeuge, die genau diese Zahlen bewegen",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L152",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_werkzeuge_die_genau_diese_zahlen_bewegen",
+      "community": 272,
+      "community_name": "9. Cloud Security Considerations",
+      "norm_label": "werkzeuge, die genau diese zahlen bewegen"
+    },
+    {
+      "label": "de/shopify-site-speed-social-proof.md",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-site-speed-social-proof.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_site_speed_social_proof",
+      "community": 311,
+      "community_name": "9. Anti-Patterns (What NOT to Do)",
+      "norm_label": "de/shopify-site-speed-social-proof.md"
+    },
+    {
+      "label": "Der \u00dcbelt\u00e4ter: JavaScript-Ballast",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-site-speed-social-proof.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_site_speed_social_proof_der_\u00fcbelt\u00e4ter_javascript_ballast",
+      "community": 311,
+      "community_name": "9. Anti-Patterns (What NOT to Do)",
+      "norm_label": "der ubeltater: javascript-ballast"
+    },
+    {
+      "label": "Script-Tags vs. App-Embed-Bl\u00f6cke (der Standard 2026)",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-site-speed-social-proof.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_site_speed_social_proof_script_tags_vs_app_embed_bl\u00f6cke_der_standard_2026",
+      "community": 311,
+      "community_name": "9. Anti-Patterns (What NOT to Do)",
+      "norm_label": "script-tags vs. app-embed-blocke (der standard 2026)"
+    },
+    {
+      "label": "So pr\u00fcfen Sie Ihren Shop",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-site-speed-social-proof.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_site_speed_social_proof_so_pr\u00fcfen_sie_ihren_shop",
+      "community": 311,
+      "community_name": "9. Anti-Patterns (What NOT to Do)",
+      "norm_label": "so prufen sie ihren shop"
+    },
+    {
+      "label": "Teil der Performance-Themenseite",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-site-speed-social-proof.md",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_site_speed_social_proof_teil_der_performance_themenseite",
+      "community": 311,
+      "community_name": "9. Anti-Patterns (What NOT to Do)",
+      "norm_label": "teil der performance-themenseite"
+    },
+    {
+      "label": "Das Fazit",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-site-speed-social-proof.md",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_site_speed_social_proof_das_fazit",
+      "community": 311,
+      "community_name": "9. Anti-Patterns (What NOT to Do)",
+      "norm_label": "das fazit"
     },
     {
       "label": "de/the-logic-of-focus.md",
@@ -93744,6 +94888,138 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_add_low_stock_alerts_shopify",
+      "target": "src_content_blog_de_add_low_stock_alerts_shopify_die_psychologie_hinter_nur_noch_x_\u00fcbrig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L109",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_add_low_stock_alerts_shopify",
+      "target": "src_content_blog_de_add_low_stock_alerts_shopify_die_richtige_schwelle_finden_einige_beispiele",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_add_low_stock_alerts_shopify",
+      "target": "src_content_blog_de_add_low_stock_alerts_shopify_mit_social_proof_zum_vollst\u00e4ndigen_conversion_stack_kombinieren",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_add_low_stock_alerts_shopify",
+      "target": "src_content_blog_de_add_low_stock_alerts_shopify_so_binden_sie_bestandswarnungen_mit_fomogen_ein",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L126",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_add_low_stock_alerts_shopify",
+      "target": "src_content_blog_de_add_low_stock_alerts_shopify_was_sie_nicht_tun_sollten",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_add_low_stock_alerts_shopify_so_binden_sie_bestandswarnungen_mit_fomogen_ein",
+      "target": "src_content_blog_de_add_low_stock_alerts_shopify_schritt_1_fomogen_installieren",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_add_low_stock_alerts_shopify_so_binden_sie_bestandswarnungen_mit_fomogen_ein",
+      "target": "src_content_blog_de_add_low_stock_alerts_shopify_schritt_2_zu_verknappung_dringlichkeit_wechseln",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_add_low_stock_alerts_shopify_so_binden_sie_bestandswarnungen_mit_fomogen_ein",
+      "target": "src_content_blog_de_add_low_stock_alerts_shopify_schritt_3_bestandsschwelle_festlegen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_add_low_stock_alerts_shopify_so_binden_sie_bestandswarnungen_mit_fomogen_ein",
+      "target": "src_content_blog_de_add_low_stock_alerts_shopify_schritt_4_warntext_formulieren",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_add_low_stock_alerts_shopify_so_binden_sie_bestandswarnungen_mit_fomogen_ein",
+      "target": "src_content_blog_de_add_low_stock_alerts_shopify_schritt_5_anzeigeort_w\u00e4hlen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_add_low_stock_alerts_shopify_so_binden_sie_bestandswarnungen_mit_fomogen_ein",
+      "target": "src_content_blog_de_add_low_stock_alerts_shopify_schritt_6_produkte_ausw\u00e4hlen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/add-low-stock-alerts-shopify.md",
+      "source_location": "L97",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_add_low_stock_alerts_shopify_so_binden_sie_bestandswarnungen_mit_fomogen_ein",
+      "target": "src_content_blog_de_add_low_stock_alerts_shopify_schritt_7_gestalten_und_speichern",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/de/android-digital-wellbeing-vs-third-party-focus-apps.md",
       "source_location": "L175",
       "weight": 1.0,
@@ -94041,6 +95317,435 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/best-social-proof-apps-shopify-2026.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_best_social_proof_apps_shopify_2026",
+      "target": "src_content_blog_de_best_social_proof_apps_shopify_2026_1_fomo_gen_https_apps_shopify_com_fomogen_bestes_gesamtpaket_aus_leistung_und_tempo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/best-social-proof-apps-shopify-2026.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_best_social_proof_apps_shopify_2026",
+      "target": "src_content_blog_de_best_social_proof_apps_shopify_2026_2_loox_https_apps_shopify_com_loox_der_visuelle_vertrauensbildner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/best-social-proof-apps-shopify-2026.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_best_social_proof_apps_shopify_2026",
+      "target": "src_content_blog_de_best_social_proof_apps_shopify_2026_3_nudgify_https_apps_shopify_com_nudgify_die_ux_wahl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/best-social-proof-apps-shopify-2026.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_best_social_proof_apps_shopify_2026",
+      "target": "src_content_blog_de_best_social_proof_apps_shopify_2026_4_vitals_https_apps_shopify_com_vitals_das_schwergewicht",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/best-social-proof-apps-shopify-2026.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_best_social_proof_apps_shopify_2026",
+      "target": "src_content_blog_de_best_social_proof_apps_shopify_2026_5_rocket_sales_pop_https_apps_shopify_com_window_shoppers_die_altbew\u00e4hrte",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/best-social-proof-apps-shopify-2026.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_best_social_proof_apps_shopify_2026",
+      "target": "src_content_blog_de_best_social_proof_apps_shopify_2026_6_snapnoti_https_apps_shopify_com_snapnoti_das_leichtgewichtige_all_in_one",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/best-social-proof-apps-shopify-2026.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_best_social_proof_apps_shopify_2026",
+      "target": "src_content_blog_de_best_social_proof_apps_shopify_2026_7_fomo_https_apps_shopify_com_fomo_der_enterprise_massstab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/best-social-proof-apps-shopify-2026.md",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_best_social_proof_apps_shopify_2026",
+      "target": "src_content_blog_de_best_social_proof_apps_shopify_2026_das_conversion_\u00f6kosystem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/best-social-proof-apps-shopify-2026.md",
+      "source_location": "L92",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_best_social_proof_apps_shopify_2026",
+      "target": "src_content_blog_de_best_social_proof_apps_shopify_2026_fazit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/calculate-free-shipping-threshold.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_calculate_free_shipping_threshold",
+      "target": "src_content_blog_de_calculate_free_shipping_threshold_das_erlebnis_gamifizieren",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/calculate-free-shipping-threshold.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_calculate_free_shipping_threshold",
+      "target": "src_content_blog_de_calculate_free_shipping_threshold_die_rechnung_so_finden_sie_ihre_magische_zahl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/calculate-free-shipping-threshold.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_calculate_free_shipping_threshold",
+      "target": "src_content_blog_de_calculate_free_shipping_threshold_fazit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/calculate-free-shipping-threshold.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_calculate_free_shipping_threshold",
+      "target": "src_content_blog_de_calculate_free_shipping_threshold_margen_im_griff",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L130",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_free_shipping_bar_shopify",
+      "target": "src_content_blog_de_free_shipping_bar_shopify_ein_konkretes_rechenbeispiel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L144",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_free_shipping_bar_shopify",
+      "target": "src_content_blog_de_free_shipping_bar_shopify_h\u00e4ufige_fehler_die_sie_vermeiden_sollten",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L160",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_free_shipping_bar_shopify",
+      "target": "src_content_blog_de_free_shipping_bar_shopify_mit_social_proof_kombinieren_f\u00fcr_noch_bessere_ergebnisse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_free_shipping_bar_shopify",
+      "target": "src_content_blog_de_free_shipping_bar_shopify_schritt_f\u00fcr_schritt_versandkostenfrei_leiste_mit_fomogen_einbinden",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_free_shipping_bar_shopify",
+      "target": "src_content_blog_de_free_shipping_bar_shopify_so_berechnen_sie_den_richtigen_schwellenwert",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_free_shipping_bar_shopify",
+      "target": "src_content_blog_de_free_shipping_bar_shopify_warum_versandkostenfrei_leisten_so_gut_funktionieren",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_free_shipping_bar_shopify_schritt_f\u00fcr_schritt_versandkostenfrei_leiste_mit_fomogen_einbinden",
+      "target": "src_content_blog_de_free_shipping_bar_shopify_schritt_1_fomogen_installieren",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_free_shipping_bar_shopify_schritt_f\u00fcr_schritt_versandkostenfrei_leiste_mit_fomogen_einbinden",
+      "target": "src_content_blog_de_free_shipping_bar_shopify_schritt_2_funktion_versandkostenfrei_leiste_\u00f6ffnen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_free_shipping_bar_shopify_schritt_f\u00fcr_schritt_versandkostenfrei_leiste_mit_fomogen_einbinden",
+      "target": "src_content_blog_de_free_shipping_bar_shopify_schritt_3_schwellenwert_festlegen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_free_shipping_bar_shopify_schritt_f\u00fcr_schritt_versandkostenfrei_leiste_mit_fomogen_einbinden",
+      "target": "src_content_blog_de_free_shipping_bar_shopify_schritt_4_ihre_texte_formulieren",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_free_shipping_bar_shopify_schritt_f\u00fcr_schritt_versandkostenfrei_leiste_mit_fomogen_einbinden",
+      "target": "src_content_blog_de_free_shipping_bar_shopify_schritt_5_anzeigeorte_w\u00e4hlen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L96",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_free_shipping_bar_shopify_schritt_f\u00fcr_schritt_versandkostenfrei_leiste_mit_fomogen_einbinden",
+      "target": "src_content_blog_de_free_shipping_bar_shopify_schritt_6_passend_zu_ihrem_shop_gestalten",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_free_shipping_bar_shopify_schritt_f\u00fcr_schritt_versandkostenfrei_leiste_mit_fomogen_einbinden",
+      "target": "src_content_blog_de_free_shipping_bar_shopify_schritt_7_speichern_und_live_schalten",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_add_sales_popup_shopify",
+      "target": "src_content_blog_de_how_to_add_sales_popup_shopify_das_richtige_timing_finden",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_add_sales_popup_shopify",
+      "target": "src_content_blog_de_how_to_add_sales_popup_shopify_die_geschwindigkeitsfrage_schadet_das_meinem_pagespeed_score",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L157",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_add_sales_popup_shopify",
+      "target": "src_content_blog_de_how_to_add_sales_popup_shopify_mit_verknappung_kombinieren_f\u00fcr_maximale_wirkung",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_add_sales_popup_shopify",
+      "target": "src_content_blog_de_how_to_add_sales_popup_shopify_schritt_f\u00fcr_schritt_verkaufsbenachrichtigung_mit_fomogen_einbinden",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_add_sales_popup_shopify",
+      "target": "src_content_blog_de_how_to_add_sales_popup_shopify_warum_ihre_besucher_sehen_m\u00fcssen_dass_andere_kaufen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_add_sales_popup_shopify",
+      "target": "src_content_blog_de_how_to_add_sales_popup_shopify_was_eine_gute_verkaufsbenachrichtigung_zeigt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L126",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_add_sales_popup_shopify",
+      "target": "src_content_blog_de_how_to_add_sales_popup_shopify_was_tun_wenn_sie_noch_wenige_bestellungen_haben",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_add_sales_popup_shopify_schritt_f\u00fcr_schritt_verkaufsbenachrichtigung_mit_fomogen_einbinden",
+      "target": "src_content_blog_de_how_to_add_sales_popup_shopify_schritt_1_fomogen_installieren",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_add_sales_popup_shopify_schritt_f\u00fcr_schritt_verkaufsbenachrichtigung_mit_fomogen_einbinden",
+      "target": "src_content_blog_de_how_to_add_sales_popup_shopify_schritt_2_fomogen_dashboard_\u00f6ffnen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_add_sales_popup_shopify_schritt_f\u00fcr_schritt_verkaufsbenachrichtigung_mit_fomogen_einbinden",
+      "target": "src_content_blog_de_how_to_add_sales_popup_shopify_schritt_3_erste_kampagne_erstellen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_add_sales_popup_shopify_schritt_f\u00fcr_schritt_verkaufsbenachrichtigung_mit_fomogen_einbinden",
+      "target": "src_content_blog_de_how_to_add_sales_popup_shopify_schritt_4_aussehen_anpassen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_add_sales_popup_shopify_schritt_f\u00fcr_schritt_verkaufsbenachrichtigung_mit_fomogen_einbinden",
+      "target": "src_content_blog_de_how_to_add_sales_popup_shopify_schritt_5_bestellzeitraum_festlegen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_add_sales_popup_shopify_schritt_f\u00fcr_schritt_verkaufsbenachrichtigung_mit_fomogen_einbinden",
+      "target": "src_content_blog_de_how_to_add_sales_popup_shopify_schritt_6_speichern_und_aktivieren",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/de/how-to-block-reels-and-shorts-on-android-2026.mdx",
       "source_location": "L64",
       "weight": 1.0,
@@ -94316,6 +96021,50 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/mobile-sticky-cart-guide.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_mobile_sticky_cart_guide",
+      "target": "src_content_blog_de_mobile_sticky_cart_guide_aktionsplan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/mobile-sticky-cart-guide.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_mobile_sticky_cart_guide",
+      "target": "src_content_blog_de_mobile_sticky_cart_guide_die_wissenschaft_der_daumenzone",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/mobile-sticky-cart-guide.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_mobile_sticky_cart_guide",
+      "target": "src_content_blog_de_mobile_sticky_cart_guide_diese_ergebnisse_k\u00f6nnen_sie_erwarten",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/mobile-sticky-cart-guide.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_mobile_sticky_cart_guide",
+      "target": "src_content_blog_de_mobile_sticky_cart_guide_\u00fcber_die_schaltfl\u00e4che_hinaus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/de/monk-mode-willpower.md",
       "source_location": "L28",
       "weight": 1.0,
@@ -94481,6 +96230,61 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/psychology-of-fomo-marketing.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_psychology_of_fomo_marketing",
+      "target": "src_content_blog_de_psychology_of_fomo_marketing_die_ethik_von_fomo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/psychology-of-fomo-marketing.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_psychology_of_fomo_marketing",
+      "target": "src_content_blog_de_psychology_of_fomo_marketing_die_heuristik_der_verknappung",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/psychology-of-fomo-marketing.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_psychology_of_fomo_marketing",
+      "target": "src_content_blog_de_psychology_of_fomo_marketing_die_wissenschaft_hinter_dem_psychologischen_roi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/psychology-of-fomo-marketing.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_psychology_of_fomo_marketing",
+      "target": "src_content_blog_de_psychology_of_fomo_marketing_soziale_best\u00e4tigung_der_effekt_sicherheit_in_der_gruppe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/psychology-of-fomo-marketing.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_psychology_of_fomo_marketing",
+      "target": "src_content_blog_de_psychology_of_fomo_marketing_zusammenfassung",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/de/reclaim-focus-story.md",
       "source_location": "L30",
       "weight": 1.0,
@@ -94531,6 +96335,380 @@
       "_origin": "ast",
       "source": "src_content_blog_de_reclaim_focus_story",
       "target": "src_content_blog_de_reclaim_focus_story_teil_des_frameworks_f\u00fcr_digitales_wohlbefinden",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-2026.mdx",
+      "source_location": "L181",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_2026",
+      "target": "src_content_blog_de_shopify_conversion_rate_2026_der_schnellste_weg_vom_durchschnitt_in_die_oberen_20",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-2026.mdx",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_2026",
+      "target": "src_content_blog_de_shopify_conversion_rate_2026_l\u00f6sung_1_social_proof_in_echtzeit_einbinden",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-2026.mdx",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_2026",
+      "target": "src_content_blog_de_shopify_conversion_rate_2026_l\u00f6sung_2_dringlichkeit_im_warenkorb_mit_einem_countdown_timer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-2026.mdx",
+      "source_location": "L122",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_2026",
+      "target": "src_content_blog_de_shopify_conversion_rate_2026_l\u00f6sung_3_ihren_app_stack_auf_geschwindigkeitsbremsen_pr\u00fcfen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-2026.mdx",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_2026",
+      "target": "src_content_blog_de_shopify_conversion_rate_2026_l\u00f6sung_4_das_layout_ihrer_produktseite_optimieren",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-2026.mdx",
+      "source_location": "L163",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_2026",
+      "target": "src_content_blog_de_shopify_conversion_rate_2026_l\u00f6sung_5_abgebrochene_warenk\u00f6rbe_zur\u00fcckholen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-2026.mdx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_2026",
+      "target": "src_content_blog_de_shopify_conversion_rate_2026_shopify_conversion_benchmarks_2026",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-2026.mdx",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_2026",
+      "target": "src_content_blog_de_shopify_conversion_rate_2026_warum_die_meisten_shopify_shops_zu_schwach_konvertieren",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-2026.mdx",
+      "source_location": "L202",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_2026",
+      "target": "src_content_blog_de_shopify_conversion_rate_2026_was_1_prozentpunkt_conversion_rate_tats\u00e4chlich_wert_ist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026",
+      "target": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_die_benchmarks_2026_nach_nische",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026",
+      "target": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_die_h\u00e4ufigsten_gr\u00fcnde_warum_shops_unter_ihrem_benchmark_bleiben",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L133",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026",
+      "target": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_ein_einfacher_priorit\u00e4tenplan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026",
+      "target": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_so_berechnen_sie_ihre_eigene_conversion_rate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026",
+      "target": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_warum_die_conversion_rate_je_nach_nische_so_stark_schwankt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L152",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026",
+      "target": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_werkzeuge_die_genau_diese_zahlen_bewegen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_die_benchmarks_2026_nach_nische",
+      "target": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_beauty_k\u00f6rperpflege_4_5_4_9",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_die_benchmarks_2026_nach_nische",
+      "target": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_elektronik_technik_1_4_2_3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_die_benchmarks_2026_nach_nische",
+      "target": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_geschenke_spezialit\u00e4ten_4_5_5_0",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_die_benchmarks_2026_nach_nische",
+      "target": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_gesundheit_wellness_3_0_3_5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_die_benchmarks_2026_nach_nische",
+      "target": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_haus_garten_2_1_2_8",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_die_benchmarks_2026_nach_nische",
+      "target": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_lebensmittel_getr\u00e4nke_3_0_4_5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_die_benchmarks_2026_nach_nische",
+      "target": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_luxus_premium_1_0_1_5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_die_benchmarks_2026_nach_nische",
+      "target": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_mode_bekleidung_2_5_3_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_die_benchmarks_2026_nach_nische",
+      "target": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_schmuck_1_2_2_0",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L116",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_die_h\u00e4ufigsten_gr\u00fcnde_warum_shops_unter_ihrem_benchmark_bleiben",
+      "target": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_1_langsame_ladezeiten_besonders_mobil",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L119",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_die_h\u00e4ufigsten_gr\u00fcnde_warum_shops_unter_ihrem_benchmark_bleiben",
+      "target": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_2_kein_social_proof_auf_produktseiten",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L122",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_die_h\u00e4ufigsten_gr\u00fcnde_warum_shops_unter_ihrem_benchmark_bleiben",
+      "target": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_3_\u00fcberraschende_versandkosten_an_der_kasse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L125",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_die_h\u00e4ufigsten_gr\u00fcnde_warum_shops_unter_ihrem_benchmark_bleiben",
+      "target": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_4_die_kaufen_schaltfl\u00e4che_verschwindet_auf_dem_smartphone",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md",
+      "source_location": "L128",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_die_h\u00e4ufigsten_gr\u00fcnde_warum_shops_unter_ihrem_benchmark_bleiben",
+      "target": "src_content_blog_de_shopify_conversion_rate_benchmarks_2026_5_schlechte_traffic_qualit\u00e4t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-site-speed-social-proof.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_site_speed_social_proof",
+      "target": "src_content_blog_de_shopify_site_speed_social_proof_das_fazit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-site-speed-social-proof.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_site_speed_social_proof",
+      "target": "src_content_blog_de_shopify_site_speed_social_proof_der_\u00fcbelt\u00e4ter_javascript_ballast",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-site-speed-social-proof.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_site_speed_social_proof",
+      "target": "src_content_blog_de_shopify_site_speed_social_proof_script_tags_vs_app_embed_bl\u00f6cke_der_standard_2026",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-site-speed-social-proof.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_site_speed_social_proof",
+      "target": "src_content_blog_de_shopify_site_speed_social_proof_so_pr\u00fcfen_sie_ihren_shop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-site-speed-social-proof.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_site_speed_social_proof",
+      "target": "src_content_blog_de_shopify_site_speed_social_proof_teil_der_performance_themenseite",
       "confidence_score": 1.0
     },
     {
@@ -99067,5 +101245,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "73fca1647c79b4864f56e1bab71809c17734cb9e"
+  "built_at_commit": "671fe1448f3d6c251041257697b724137c1ef000"
 }
