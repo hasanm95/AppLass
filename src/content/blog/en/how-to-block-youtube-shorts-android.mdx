@@ -1,42 +1,43 @@
 ---
-title: "How to Block YouTube Shorts on Android (Without Blocking YouTube)"
-description: "Stop the YouTube Shorts feed from hijacking your attention — without losing tutorials, subscriptions, or long-form videos. A surgical, no-root way to block Shorts on Android in 2026."
+title: "Block YouTube Shorts Without Blocking YouTube"
+description: "YouTube has no real setting to disable Shorts. Cap the Shorts feed on Android with a daily or per-session limit — while tutorials and subscriptions keep working."
 date: "2026-07-30"
 dateModified: "2026-07-30"
 author: "AppLass Team"
-excerpt: "Stop the YouTube Shorts feed from hijacking your attention — without losing tutorials, subscriptions, or long-form videos. A surgical, no-root way to block Shorts on Android in 2026."
+excerpt: "YouTube has no setting that truly disables Shorts. A feed-level limit caps the Shorts feed with a daily or per-session cap, while long-form video keeps working."
 tags: ["android", "youtube", "shorts", "focus", "productivity"]
 category: "Android Apps"
-keywords: "block youtube shorts android, disable youtube shorts, how to turn off youtube shorts, youtube shorts blocker, limit youtube shorts, hide youtube shorts feed android, mindful guard reel guard"
+keywords: "disable youtube shorts, turn off youtube shorts, youtube shorts setting android, hide shorts shelf youtube, youtube shorts time limit, stop shorts in youtube search, youtube shorts without blocking youtube"
+breadcrumbName: "Block YouTube Shorts"
 sidebarApps:
   - mindful-guard
 thumbnail: "../../../assets/blogs/block-youtube-shorts-android.png"
 featured: true
 faqs:
-  - question: "How do I block YouTube Shorts on Android without disabling YouTube?"
-    answer: "Use a Reel Guard tool like Mindful Guard. It detects the Shorts feed specifically inside the YouTube app and enforces a daily or per-session limit on it, while long-form videos, subscriptions, search, and playback continue to work normally. You never lose YouTube — only the infinite Shorts shelf gets capped."
   - question: "Does YouTube have a built-in setting to turn off Shorts?"
-    answer: "Not a real one. YouTube's app settings can hide the Shorts shelf from the homepage in some regions, but the Shorts player and feed are still reachable from search, notifications, and the subscriptions tab — and Google has removed or relocated this toggle before. It's a cosmetic setting, not an enforced block, so it isn't reliable long-term."
-  - question: "Can I set a daily time limit for YouTube Shorts specifically, not all of YouTube?"
-    answer: "Yes. Mindful Guard's Reel Guard lets you set a daily limit and a per-session limit for the Shorts feed alone, separate from any limit on the rest of YouTube or other apps. When the Shorts limit is reached, the feed is blocked until your limit resets — the rest of the app is untouched."
+    answer: "Not a real one. YouTube's app settings can hide the Shorts shelf from the homepage in some regions, but the Shorts player and feed remain reachable from search, notifications, and the subscriptions tab — and Google has removed or relocated this toggle before. It is a cosmetic setting, not an enforced block, so it is not reliable long-term."
   - question: "Why doesn't Android's Digital Wellbeing app timer work for Shorts?"
     answer: "Digital Wellbeing can only time-limit the whole YouTube app, not the Shorts feed inside it. Setting a YouTube app timer blocks tutorials and subscriptions along with Shorts, which is why most people either ignore the timer or turn it off within a week. A Shorts-specific blocker is the only way to target the feed without losing the app."
-  - question: "Is blocking YouTube Shorts on Android free?"
-    answer: "Yes. Mindful Guard has a free tier that includes Reel Guard for YouTube Shorts (and Instagram Reels, TikTok, Facebook Reels), with premium plans unlocking unlimited use. It runs 100% offline, collects no data, and requires no root or VPN."
-  - question: "Does a Shorts blocker need root access or a VPN on Android?"
-    answer: "No. Mindful Guard uses Android's native Accessibility Service to detect the Shorts feed in real time — no root, no VPN, no account required. Because it doesn't route traffic through a VPN, it isn't killed by aggressive battery managers on Samsung, Xiaomi, or OnePlus devices."
+  - question: "Does blocking Shorts also stop them appearing in search results and notifications?"
+    answer: "A feed-level blocker acts when the Shorts player opens, not when a thumbnail is displayed. Shorts can still appear as results in search or as a notification, but tapping one during an active limit hits the block instead of the player. Hiding the homepage shelf alone does not do this, which is why the shelf toggle feels ineffective."
+  - question: "Will blocking YouTube Shorts affect YouTube Music or a Premium subscription?"
+    answer: "No. A Shorts limit targets the Shorts feed inside the YouTube app only. YouTube Music is a separate app and is unaffected, and a Premium subscription continues to work normally for background play, downloads, and ad-free long-form video."
+  - question: "Does the Shorts shelf come back after a YouTube app update?"
+    answer: "Often, yes. The homepage shelf toggle has been moved, renamed, and removed across YouTube releases, and app updates can reset it. This is the practical argument for enforcing the limit from outside the app: a third-party feed limit keeps working regardless of what YouTube changes in its own settings."
+  - question: "How is a Shorts blocker different from tapping 'Not interested'?"
+    answer: "'Not interested' is a recommendation signal — it asks the algorithm to show you fewer Shorts of that kind, and the algorithm decides what to do with the request. A blocker is an enforcement mechanism: when your limit is reached the feed does not open, regardless of what the recommendation system wants to serve."
 ---
 
 import MindfulGuardCTA from "@/components/blog/MindfulGuardCTA.astro";
 
-YouTube Shorts is the reason a "quick tutorial check" turns into forty minutes of vertical video
-you don't remember choosing. The player is engineered the same way as Reels and TikTok's feed:
-infinite, auto-advancing, and one swipe away from the next hit.
+**YouTube has no setting that actually turns Shorts off.** The toggle that hides the Shorts shelf
+from your homepage is cosmetic — the feed is still one search, notification, or shared link away,
+and Google has moved or removed that toggle more than once between releases.
 
-The problem is that most advice tells you to block YouTube. That's the wrong fix. **YouTube isn't
-the trap — the Shorts feed is.** You still need YouTube for tutorials, music, and the channels you
-actually subscribe to. This guide shows you how to kill only the Shorts feed on Android, in 2026,
-without losing the rest of the app.
+What works instead is a **feed-level limit**: cap the Shorts feed itself with a daily or
+per-session limit, and leave the rest of YouTube alone. Tutorials, subscriptions, playlists, and
+long-form video keep working exactly as before. This guide sets that up on Android in about two
+minutes, with no root and no VPN.
 
 ---
 
@@ -49,20 +50,33 @@ also lose:
 - Your subscriptions and watch-later queue
 - Podcasts and long-form video you chose to watch
 
-That's why whole-app blocks on YouTube rarely survive more than a few days — the cost is too high,
-so people disable the blocker the first time they need a real video. The fix isn't giving up
-YouTube. It's targeting the one feed inside it that's built to be infinite.
+That is why whole-app blocks on YouTube rarely survive more than a few days — the cost is too high,
+so people disable the blocker the first time they need a real video. The fix is not giving up
+YouTube. It is targeting the one feed inside it that is built to be infinite.
+
+## Why the Shorts shelf toggle isn't enough
+
+YouTube's own setting hides the Shorts row from your homepage. It does not stop the feed. Shorts
+still reach you through:
+
+- **Search results**, where Shorts appear alongside long-form video
+- **Notifications** from channels that post Shorts
+- **Shared links** from friends, which open the Shorts player directly
+- **The subscriptions tab**, which mixes Shorts into the feed
+
+Hiding a shelf changes what you see on one screen. It does not change what happens when you tap a
+Short from anywhere else — which is where most Shorts sessions actually start.
 
 ## What actually works: feed-level blocking
 
-A **Reel Guard** is a Shorts-specific blocker — it detects when the Shorts feed opens (whether from
-the homepage shelf, search, or a shared link) and enforces your limit right there, while the rest of
-the app keeps working. Mindful Guard's Reel Guard does this for YouTube Shorts, Instagram Reels,
-TikTok's For You feed, Facebook Reels, and Snapchat Spotlight — each with its own separate limit.
+A **Reel Guard** is a Shorts-specific blocker. It detects when the Shorts feed opens — whether from
+the homepage shelf, search, or a shared link — and enforces your limit right there, while the rest
+of the app keeps working. Mindful Guard's Reel Guard does this for YouTube Shorts, Instagram Reels,
+TikTok's For You feed, Facebook Reels, and Snapchat Spotlight, each with its own separate limit.
 
 This is the same feed-level approach covered in our
-[full guide to blocking Reels and Shorts on Android](/blog/how-to-block-reels-and-shorts-on-android-2026):
-target the feed, not the app.
+[full guide to blocking Reels and Shorts on Android](/blog/how-to-block-reels-and-shorts-on-android-2026),
+applied to YouTube specifically: target the feed, not the app.
 
 <MindfulGuardCTA campaign="how-to-block-youtube-shorts-android" />
 
@@ -70,13 +84,13 @@ target the feed, not the app.
 
 Two settings do the actual work, and you can use either or both:
 
-- **Daily limit** — a total Shorts budget per day (e.g. 10 minutes). Once it's spent, Shorts is
-  blocked until the next day — the rest of YouTube stays open.
+- **Daily limit** — a total Shorts budget per day (e.g. 10 minutes). Once it is spent, Shorts is
+  blocked until the next day, and the rest of YouTube stays open.
 - **Per-session limit** — a cap on any single sitting (e.g. 3 minutes). This is what stops the
-  scroll before it becomes a session, since the damage is rarely opening Shorts once — it's the
-  half hour you didn't plan to lose.
+  scroll before it becomes a session, since the damage is rarely opening Shorts once — it is the
+  half hour you did not plan to lose.
 
-Set a hard limit and there's nothing to negotiate with. No "add 5 more minutes" button to tap.
+Set a hard limit and there is nothing to negotiate with. No "add 5 more minutes" button to tap.
 
 ## Step by step: block YouTube Shorts in under two minutes
 
@@ -91,7 +105,7 @@ Set a hard limit and there's nothing to negotiate with. No "add 5 more minutes" 
 
 ## Shorts vs. the rest of YouTube
 
-| | Keeps YouTube usable? | Enforcement | Setup |
+| Approach | Keeps YouTube usable? | Enforcement | Setup |
 |---|---|---|---|
 | **Reel Guard (feed-level limit)** | ✅ Yes — only Shorts is capped | Hard limit, no override | ~2 min |
 | Blocking the whole YouTube app | ❌ No — loses tutorials, subs, everything | Hard block during window | ~1 min |
@@ -101,12 +115,12 @@ Set a hard limit and there's nothing to negotiate with. No "add 5 more minutes" 
 If you also want to reclaim your phone's battery while watching the long-form content you keep,
 see our guide on [screen-off YouTube playback](/blog/youtube-screen-off-battery-hack) and the
 [2026 background-play workaround](/blog/youtube-background-play-2026-workaround) — useful once
-Shorts stops eating the time you'd rather spend on either.
+Shorts stops eating the time you would rather spend on either.
 
 ## Bottom line
 
-YouTube Shorts isn't a reason to give up YouTube — it's a reason to block one specific feed inside
-it. A feed-level limit keeps your subscriptions, tutorials, and long-form habits fully intact while
-putting a hard stop on the one part of the app engineered to be infinite.
+YouTube Shorts is not a reason to give up YouTube — it is a reason to block one specific feed
+inside it. A feed-level limit keeps your subscriptions, tutorials, and long-form habits fully
+intact while putting a hard stop on the one part of the app engineered to be infinite.
 
 <MindfulGuardCTA campaign="how-to-block-youtube-shorts-android" />
