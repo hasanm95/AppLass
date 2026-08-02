@@ -19813,8 +19813,8 @@
       "source_location": "L256",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_7_accessibility_guidelines",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 321,
+      "community_name": "7. Accessibility Guidelines",
       "norm_label": "7. accessibility guidelines"
     },
     {
@@ -19824,8 +19824,8 @@
       "source_location": "L258",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_contrast_requirements_wcag",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 321,
+      "community_name": "7. Accessibility Guidelines",
       "norm_label": "contrast requirements (wcag)"
     },
     {
@@ -19835,8 +19835,8 @@
       "source_location": "L265",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_how_to_check_contrast",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 321,
+      "community_name": "7. Accessibility Guidelines",
       "norm_label": "how to check contrast"
     },
     {
@@ -19846,8 +19846,8 @@
       "source_location": "L271",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_safe_patterns",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 321,
+      "community_name": "7. Accessibility Guidelines",
       "norm_label": "safe patterns"
     },
     {
@@ -20022,8 +20022,8 @@
       "source_location": "L171",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_5_e_commerce_guidelines_e_commerce",
-      "community": 312,
-      "community_name": "2. Offline Sync & Conflict Resolution",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "5. e-commerce guidelines {#e-commerce}"
     },
     {
@@ -20033,8 +20033,8 @@
       "source_location": "L173",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_key_principles_not_fixed_rules",
-      "community": 312,
-      "community_name": "2. Offline Sync & Conflict Resolution",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "key principles (not fixed rules)"
     },
     {
@@ -20044,8 +20044,8 @@
       "source_location": "L179",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_color_thinking",
-      "community": 312,
-      "community_name": "2. Offline Sync & Conflict Resolution",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "color thinking:"
     },
     {
@@ -20055,8 +20055,8 @@
       "source_location": "L190",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_layout_principles",
-      "community": 312,
-      "community_name": "2. Offline Sync & Conflict Resolution",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "layout principles:"
     },
     {
@@ -20066,8 +20066,8 @@
       "source_location": "L217",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_psychology_to_apply",
-      "community": 312,
-      "community_name": "2. Offline Sync & Conflict Resolution",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "psychology to apply:"
     },
     {
@@ -20077,8 +20077,8 @@
       "source_location": "L226",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_6_saas_dashboard_guidelines_saas",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "6. saas dashboard guidelines {#saas}"
     },
     {
@@ -20088,8 +20088,8 @@
       "source_location": "L228",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_key_principles",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "key principles"
     },
     {
@@ -20099,8 +20099,8 @@
       "source_location": "L234",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_color_thinking_234",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "color thinking:"
     },
     {
@@ -20110,8 +20110,8 @@
       "source_location": "L245",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_layout_principles_245",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "layout principles:"
     },
     {
@@ -20121,8 +20121,8 @@
       "source_location": "L265",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_psychology_to_apply_265",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "psychology to apply:"
     },
     {
@@ -20132,8 +20132,8 @@
       "source_location": "L273",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_7_landing_page_guidelines_landing_page",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "7. landing page guidelines {#landing-page}"
     },
     {
@@ -20143,8 +20143,8 @@
       "source_location": "L275",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_key_principles_275",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "key principles"
     },
     {
@@ -20154,8 +20154,8 @@
       "source_location": "L281",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_color_thinking_281",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "color thinking:"
     },
     {
@@ -20165,8 +20165,8 @@
       "source_location": "L292",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_structure_principles",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "structure principles:"
     },
     {
@@ -20176,8 +20176,8 @@
       "source_location": "L318",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_psychology_to_apply_318",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "psychology to apply:"
     },
     {
@@ -20187,8 +20187,8 @@
       "source_location": "L326",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_8_portfolio_guidelines_portfolio",
-      "community": 315,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "8. portfolio guidelines {#portfolio}"
     },
     {
@@ -20198,8 +20198,8 @@
       "source_location": "L328",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_key_principles_328",
-      "community": 315,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "key principles"
     },
     {
@@ -20209,8 +20209,8 @@
       "source_location": "L334",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_color_thinking_334",
-      "community": 315,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "color thinking:"
     },
     {
@@ -20220,8 +20220,8 @@
       "source_location": "L345",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_structure_principles_345",
-      "community": 315,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "structure principles:"
     },
     {
@@ -20231,8 +20231,8 @@
       "source_location": "L365",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_psychology_to_apply_365",
-      "community": 315,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "psychology to apply:"
     },
     {
@@ -20242,8 +20242,8 @@
       "source_location": "L373",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_9_pre_design_checklists",
-      "community": 235,
-      "community_name": "2. GSAP (GreenSock)",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "9. pre-design checklists"
     },
     {
@@ -20253,8 +20253,8 @@
       "source_location": "L375",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_before_starting_any_design",
-      "community": 235,
-      "community_name": "2. GSAP (GreenSock)",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "before starting any design"
     },
     {
@@ -20264,8 +20264,8 @@
       "source_location": "L383",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_before_choosing_colors",
-      "community": 235,
-      "community_name": "2. GSAP (GreenSock)",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "before choosing colors"
     },
     {
@@ -20275,8 +20275,8 @@
       "source_location": "L390",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_before_finalizing_layout",
-      "community": 235,
-      "community_name": "2. GSAP (GreenSock)",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "before finalizing layout"
     },
     {
@@ -20286,8 +20286,8 @@
       "source_location": "L397",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_before_delivery",
-      "community": 235,
-      "community_name": "2. GSAP (GreenSock)",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "before delivery"
     },
     {
@@ -20363,8 +20363,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_1_lottie_animations",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "1. lottie animations"
     },
     {
@@ -20374,8 +20374,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_what_is_lottie",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "what is lottie?"
     },
     {
@@ -20385,8 +20385,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use_lottie",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "when to use lottie"
     },
     {
@@ -20396,8 +20396,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "principles"
     },
     {
@@ -20407,8 +20407,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_sources",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "sources"
     },
     {
@@ -20418,8 +20418,8 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_2_gsap_greensock",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "2. gsap (greensock)"
     },
     {
@@ -20429,8 +20429,8 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_what_makes_gsap_different",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "what makes gsap different"
     },
     {
@@ -20440,8 +20440,8 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_core_concepts",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "core concepts"
     },
     {
@@ -20451,8 +20451,8 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use_gsap",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "when to use gsap"
     },
     {
@@ -20462,8 +20462,8 @@
       "source_location": "L77",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_77",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "principles"
     },
     {
@@ -20473,8 +20473,8 @@
       "source_location": "L86",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_3_svg_animations",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "3. svg animations"
     },
     {
@@ -20484,8 +20484,8 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_types_of_svg_animation",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "types of svg animation"
     },
     {
@@ -20495,8 +20495,8 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_line_drawing_principles",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "line drawing principles"
     },
     {
@@ -20506,8 +20506,8 @@
       "source_location": "L107",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use_svg_animations",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "when to use svg animations"
     },
     {
@@ -20517,8 +20517,8 @@
       "source_location": "L116",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_116",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "principles"
     },
     {
@@ -20528,8 +20528,8 @@
       "source_location": "L125",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_4_3d_css_transforms",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 322,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "4. 3d css transforms"
     },
     {
@@ -20539,8 +20539,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_core_properties",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 322,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "core properties"
     },
     {
@@ -20550,8 +20550,8 @@
       "source_location": "L138",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_common_3d_patterns",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 322,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "common 3d patterns"
     },
     {
@@ -20561,8 +20561,8 @@
       "source_location": "L147",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_147",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 322,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "principles"
     },
     {
@@ -20572,8 +20572,8 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_5_particle_effects",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "5. particle effects"
     },
     {
@@ -20583,8 +20583,8 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_types_of_particle_systems",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "types of particle systems"
     },
     {
@@ -20594,8 +20594,8 @@
       "source_location": "L168",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_libraries",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "libraries"
     },
     {
@@ -20605,8 +20605,8 @@
       "source_location": "L177",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_177",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "principles"
     },
     {
@@ -20616,8 +20616,8 @@
       "source_location": "L185",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "when to use"
     },
     {
@@ -26193,8 +26193,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_1_framework_selection",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 323,
+      "community_name": "1. Framework Selection",
       "norm_label": "1. framework selection"
     },
     {
@@ -26204,8 +26204,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_master_decision_tree",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 323,
+      "community_name": "1. Framework Selection",
       "norm_label": "master decision tree"
     },
     {
@@ -26215,8 +26215,8 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_framework_comparison",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 323,
+      "community_name": "1. Framework Selection",
       "norm_label": "framework comparison"
     },
     {
@@ -26226,8 +26226,8 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_when_to_choose_native",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 323,
+      "community_name": "1. Framework Selection",
       "norm_label": "when to choose native"
     },
     {
@@ -26237,8 +26237,8 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_2_state_management_selection",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 324,
+      "community_name": "2. State Management Selection",
       "norm_label": "2. state management selection"
     },
     {
@@ -26248,8 +26248,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_react_native_state_decision",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 324,
+      "community_name": "2. State Management Selection",
       "norm_label": "react native state decision"
     },
     {
@@ -26259,8 +26259,8 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_flutter_state_decision",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 324,
+      "community_name": "2. State Management Selection",
       "norm_label": "flutter state decision"
     },
     {
@@ -26270,8 +26270,8 @@
       "source_location": "L162",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_state_management_anti_patterns",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 324,
+      "community_name": "2. State Management Selection",
       "norm_label": "state management anti-patterns"
     },
     {
@@ -26369,8 +26369,8 @@
       "source_location": "L372",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_7_project_type_templates",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 325,
+      "community_name": "7. Project Type Templates",
       "norm_label": "7. project type templates"
     },
     {
@@ -26380,8 +26380,8 @@
       "source_location": "L374",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_e_commerce_app",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 325,
+      "community_name": "7. Project Type Templates",
       "norm_label": "e-commerce app"
     },
     {
@@ -26391,8 +26391,8 @@
       "source_location": "L392",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_social_content_app",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 325,
+      "community_name": "7. Project Type Templates",
       "norm_label": "social/content app"
     },
     {
@@ -26402,8 +26402,8 @@
       "source_location": "L410",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_productivity_saas_app",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 325,
+      "community_name": "7. Project Type Templates",
       "norm_label": "productivity/saas app"
     },
     {
@@ -27095,8 +27095,8 @@
       "source_location": "L89",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_3_dark_mode_design",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
       "norm_label": "3. dark mode design"
     },
     {
@@ -27106,8 +27106,8 @@
       "source_location": "L91",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_dark_mode_benefits",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
       "norm_label": "dark mode benefits"
     },
     {
@@ -27117,8 +27117,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_dark_mode_color_strategy",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
       "norm_label": "dark mode color strategy"
     },
     {
@@ -27128,8 +27128,8 @@
       "source_location": "L123",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_text_colors_in_dark_mode",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
       "norm_label": "text colors in dark mode"
     },
     {
@@ -27139,8 +27139,8 @@
       "source_location": "L132",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_color_inversion_rules",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
       "norm_label": "color inversion rules"
     },
     {
@@ -27150,8 +27150,8 @@
       "source_location": "L150",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_4_outdoor_visibility",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 328,
+      "community_name": "4. Outdoor Visibility",
       "norm_label": "4. outdoor visibility"
     },
     {
@@ -27161,8 +27161,8 @@
       "source_location": "L152",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_the_sunlight_problem",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 328,
+      "community_name": "4. Outdoor Visibility",
       "norm_label": "the sunlight problem"
     },
     {
@@ -27172,8 +27172,8 @@
       "source_location": "L168",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_high_contrast_strategies",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 328,
+      "community_name": "4. Outdoor Visibility",
       "norm_label": "high contrast strategies"
     },
     {
@@ -27271,8 +27271,8 @@
       "source_location": "L287",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_7_color_accessibility",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 327,
+      "community_name": "7. Color Accessibility",
       "norm_label": "7. color accessibility"
     },
     {
@@ -27282,8 +27282,8 @@
       "source_location": "L289",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_colorblind_considerations",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 327,
+      "community_name": "7. Color Accessibility",
       "norm_label": "colorblind considerations"
     },
     {
@@ -27293,8 +27293,8 @@
       "source_location": "L307",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_contrast_testing_tools",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 327,
+      "community_name": "7. Color Accessibility",
       "norm_label": "contrast testing tools"
     },
     {
@@ -27304,8 +27304,8 @@
       "source_location": "L318",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_sufficient_contrast",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 327,
+      "community_name": "7. Color Accessibility",
       "norm_label": "sufficient contrast"
     },
     {
@@ -27348,8 +27348,8 @@
       "source_location": "L368",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_9_color_system_checklist",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 329,
+      "community_name": "9. Color System Checklist",
       "norm_label": "9. color system checklist"
     },
     {
@@ -27359,8 +27359,8 @@
       "source_location": "L370",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_before_choosing_colors",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 329,
+      "community_name": "9. Color System Checklist",
       "norm_label": "before choosing colors"
     },
     {
@@ -27370,8 +27370,8 @@
       "source_location": "L378",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_before_release",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 329,
+      "community_name": "9. Color System Checklist",
       "norm_label": "before release"
     },
     {
@@ -27381,8 +27381,8 @@
       "source_location": "L389",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_10_quick_reference",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 326,
+      "community_name": "10. Quick Reference",
       "norm_label": "10. quick reference"
     },
     {
@@ -27392,8 +27392,8 @@
       "source_location": "L391",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_dark_mode_backgrounds",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 326,
+      "community_name": "10. Quick Reference",
       "norm_label": "dark mode backgrounds"
     },
     {
@@ -27403,8 +27403,8 @@
       "source_location": "L401",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_text_on_dark",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 326,
+      "community_name": "10. Quick Reference",
       "norm_label": "text on dark"
     },
     {
@@ -27414,8 +27414,8 @@
       "source_location": "L409",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_contrast_ratios",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 326,
+      "community_name": "10. Quick Reference",
       "norm_label": "contrast ratios"
     },
     {
@@ -27887,8 +27887,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_2_tab_bar_navigation",
-      "community": 308,
-      "community_name": "6. Visual Effects Principles",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "2. tab bar navigation"
     },
     {
@@ -27898,8 +27898,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_when_to_use",
-      "community": 308,
-      "community_name": "6. Visual Effects Principles",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "when to use"
     },
     {
@@ -27909,8 +27909,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_tab_bar_best_practices",
-      "community": 308,
-      "community_name": "6. Visual Effects Principles",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "tab bar best practices"
     },
     {
@@ -27920,8 +27920,8 @@
       "source_location": "L73",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_tab_state_preservation",
-      "community": 308,
-      "community_name": "6. Visual Effects Principles",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "tab state preservation"
     },
     {
@@ -27931,8 +27931,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_3_stack_navigation",
-      "community": 309,
-      "community_name": "7. Animation Principles",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "3. stack navigation"
     },
     {
@@ -27942,8 +27942,8 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_core_concepts",
-      "community": 309,
-      "community_name": "7. Animation Principles",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "core concepts"
     },
     {
@@ -27953,8 +27953,8 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_stack_navigation_patterns",
-      "community": 309,
-      "community_name": "7. Animation Principles",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "stack navigation patterns"
     },
     {
@@ -27964,8 +27964,8 @@
       "source_location": "L117",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_back_button_handling",
-      "community": 309,
-      "community_name": "7. Animation Principles",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "back button handling"
     },
     {
@@ -28052,8 +28052,8 @@
       "source_location": "L228",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_6_deep_linking",
-      "community": 316,
-      "community_name": "4. Animation Performance (Both Platforms)",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "6. deep linking"
     },
     {
@@ -28063,8 +28063,8 @@
       "source_location": "L230",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_why_deep_links_from_day_one",
-      "community": 316,
-      "community_name": "4. Animation Performance (Both Platforms)",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "why deep links from day one"
     },
     {
@@ -28074,8 +28074,8 @@
       "source_location": "L248",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_url_structure",
-      "community": 316,
-      "community_name": "4. Animation Performance (Both Platforms)",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "url structure"
     },
     {
@@ -28085,8 +28085,8 @@
       "source_location": "L266",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_deep_link_navigation_rules",
-      "community": 316,
-      "community_name": "4. Animation Performance (Both Platforms)",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "deep link navigation rules"
     },
     {
@@ -28206,8 +28206,8 @@
       "source_location": "L428",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_10_navigation_checklist",
-      "community": 302,
-      "community_name": "7. Accessibility Guidelines",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "10. navigation checklist"
     },
     {
@@ -28217,8 +28217,8 @@
       "source_location": "L430",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_before_navigation_architecture",
-      "community": 302,
-      "community_name": "7. Accessibility Guidelines",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "before navigation architecture"
     },
     {
@@ -28228,8 +28228,8 @@
       "source_location": "L438",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_before_every_screen",
-      "community": 302,
-      "community_name": "7. Accessibility Guidelines",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "before every screen"
     },
     {
@@ -28239,8 +28239,8 @@
       "source_location": "L446",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_before_release",
-      "community": 302,
-      "community_name": "7. Accessibility Guidelines",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "before release"
     },
     {
@@ -36412,8 +36412,8 @@
       "source_location": "L100",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_4_attack_surface_mapping",
-      "community": 206,
-      "community_name": "translate-i18n.ts",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "4. attack surface mapping"
     },
     {
@@ -36423,8 +36423,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_what_to_map",
-      "community": 206,
-      "community_name": "translate-i18n.ts",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "what to map"
     },
     {
@@ -36434,8 +36434,8 @@
       "source_location": "L111",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_prioritization_matrix",
-      "community": 206,
-      "community_name": "translate-i18n.ts",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "prioritization matrix"
     },
     {
@@ -36445,8 +36445,8 @@
       "source_location": "L124",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_5_risk_prioritization",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 330,
+      "community_name": "5. Risk Prioritization",
       "norm_label": "5. risk prioritization"
     },
     {
@@ -36456,8 +36456,8 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_cvss_context",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 330,
+      "community_name": "5. Risk Prioritization",
       "norm_label": "cvss + context"
     },
     {
@@ -36467,8 +36467,8 @@
       "source_location": "L135",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_prioritization_decision_tree",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 330,
+      "community_name": "5. Risk Prioritization",
       "norm_label": "prioritization decision tree"
     },
     {
@@ -36841,8 +36841,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_web_design_guidelines_skill",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "web-design-guidelines/skill.md"
     },
     {
@@ -40028,7 +40028,7 @@
       "label": "Open follow-ups",
       "file_type": "document",
       "source_file": "docs/mindfulguard-marketing-plan.md",
-      "source_location": "L123",
+      "source_location": "L126",
       "_origin": "ast",
       "id": "docs_mindfulguard_marketing_plan_open_follow_ups",
       "community": 52,
@@ -41312,6 +41312,83 @@
       "norm_label": "mit verknappung kombinieren fur maximale wirkung"
     },
     {
+      "label": "de/how-to-block-instagram-reels-android.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_block_instagram_reels_android",
+      "community": 308,
+      "community_name": "6. Visual Effects Principles",
+      "norm_label": "de/how-to-block-instagram-reels-android.mdx"
+    },
+    {
+      "label": "Warum es keinen echten Aus-Schalter f\u00fcr Reels gibt",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_block_instagram_reels_android_warum_es_keinen_echten_aus_schalter_f\u00fcr_reels_gibt",
+      "community": 308,
+      "community_name": "6. Visual Effects Principles",
+      "norm_label": "warum es keinen echten aus-schalter fur reels gibt"
+    },
+    {
+      "label": "Ganze App sperren oder nur Reels",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_block_instagram_reels_android_ganze_app_sperren_oder_nur_reels",
+      "community": 308,
+      "community_name": "6. Visual Effects Principles",
+      "norm_label": "ganze app sperren oder nur reels"
+    },
+    {
+      "label": "Tageslimit oder Sitzungslimit f\u00fcr Reels",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_block_instagram_reels_android_tageslimit_oder_sitzungslimit_f\u00fcr_reels",
+      "community": 308,
+      "community_name": "6. Visual Effects Principles",
+      "norm_label": "tageslimit oder sitzungslimit fur reels"
+    },
+    {
+      "label": "Schritt f\u00fcr Schritt: Instagram Reels in unter zwei Minuten blockieren",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_block_instagram_reels_android_schritt_f\u00fcr_schritt_instagram_reels_in_unter_zwei_minuten_blockieren",
+      "community": 308,
+      "community_name": "6. Visual Effects Principles",
+      "norm_label": "schritt fur schritt: instagram reels in unter zwei minuten blockieren"
+    },
+    {
+      "label": "Reels-Limit gegen\u00fcber den Alternativen",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L101",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_block_instagram_reels_android_reels_limit_gegen\u00fcber_den_alternativen",
+      "community": 308,
+      "community_name": "6. Visual Effects Principles",
+      "norm_label": "reels-limit gegenuber den alternativen"
+    },
+    {
+      "label": "Fazit",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L115",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_block_instagram_reels_android_fazit",
+      "community": 308,
+      "community_name": "6. Visual Effects Principles",
+      "norm_label": "fazit"
+    },
+    {
       "label": "de/how-to-block-reels-and-shorts-on-android-2026.mdx",
       "file_type": "document",
       "source_file": "src/content/blog/de/how-to-block-reels-and-shorts-on-android-2026.mdx",
@@ -41541,6 +41618,94 @@
       "community": 50,
       "community_name": "@/page-templates/AppsPage.astro",
       "norm_label": "der tiefere punkt: systeme schlagen willenskraft jedes mal"
+    },
+    {
+      "label": "de/how-to-block-youtube-shorts-android.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_block_youtube_shorts_android",
+      "community": 206,
+      "community_name": "translate-i18n.ts",
+      "norm_label": "de/how-to-block-youtube-shorts-android.mdx"
+    },
+    {
+      "label": "Warum \u201eblockier einfach YouTube\u201c ein schlechter Rat ist",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_block_youtube_shorts_android_warum_blockier_einfach_youtube_ein_schlechter_rat_ist",
+      "community": 206,
+      "community_name": "translate-i18n.ts",
+      "norm_label": "warum \u201eblockier einfach youtube\u201c ein schlechter rat ist"
+    },
+    {
+      "label": "Warum das Ausblenden der Shorts-Leiste nicht gen\u00fcgt",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_block_youtube_shorts_android_warum_das_ausblenden_der_shorts_leiste_nicht_gen\u00fcgt",
+      "community": 206,
+      "community_name": "translate-i18n.ts",
+      "norm_label": "warum das ausblenden der shorts-leiste nicht genugt"
+    },
+    {
+      "label": "Was wirklich funktioniert: Blockieren auf Feed-Ebene",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_block_youtube_shorts_android_was_wirklich_funktioniert_blockieren_auf_feed_ebene",
+      "community": 206,
+      "community_name": "translate-i18n.ts",
+      "norm_label": "was wirklich funktioniert: blockieren auf feed-ebene"
+    },
+    {
+      "label": "Tageslimit oder Sitzungslimit",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_block_youtube_shorts_android_tageslimit_oder_sitzungslimit",
+      "community": 206,
+      "community_name": "translate-i18n.ts",
+      "norm_label": "tageslimit oder sitzungslimit"
+    },
+    {
+      "label": "Schritt f\u00fcr Schritt: YouTube Shorts in unter zwei Minuten blockieren",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_block_youtube_shorts_android_schritt_f\u00fcr_schritt_youtube_shorts_in_unter_zwei_minuten_blockieren",
+      "community": 206,
+      "community_name": "translate-i18n.ts",
+      "norm_label": "schritt fur schritt: youtube shorts in unter zwei minuten blockieren"
+    },
+    {
+      "label": "Shorts gegen\u00fcber dem Rest von YouTube",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L110",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_block_youtube_shorts_android_shorts_gegen\u00fcber_dem_rest_von_youtube",
+      "community": 206,
+      "community_name": "translate-i18n.ts",
+      "norm_label": "shorts gegenuber dem rest von youtube"
+    },
+    {
+      "label": "Fazit",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L125",
+      "_origin": "ast",
+      "id": "src_content_blog_de_how_to_block_youtube_shorts_android_fazit",
+      "community": 206,
+      "community_name": "translate-i18n.ts",
+      "norm_label": "fazit"
     },
     {
       "label": "de/logic-comparison-matrix.md",
@@ -43666,6 +43831,83 @@
       "norm_label": "pair it with scarcity for maximum effect"
     },
     {
+      "label": "en/how-to-block-instagram-reels-android.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_en_how_to_block_instagram_reels_android",
+      "community": 309,
+      "community_name": "7. Animation Principles",
+      "norm_label": "en/how-to-block-instagram-reels-android.mdx"
+    },
+    {
+      "label": "Why there's no real \"off\" switch for Reels",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "src_content_blog_en_how_to_block_instagram_reels_android_why_there_s_no_real_off_switch_for_reels",
+      "community": 309,
+      "community_name": "7. Animation Principles",
+      "norm_label": "why there's no real \"off\" switch for reels"
+    },
+    {
+      "label": "Whole-app block vs. Reels-only block",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "src_content_blog_en_how_to_block_instagram_reels_android_whole_app_block_vs_reels_only_block",
+      "community": 309,
+      "community_name": "7. Animation Principles",
+      "norm_label": "whole-app block vs. reels-only block"
+    },
+    {
+      "label": "Daily limit vs. per-session limit for Reels",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "src_content_blog_en_how_to_block_instagram_reels_android_daily_limit_vs_per_session_limit_for_reels",
+      "community": 309,
+      "community_name": "7. Animation Principles",
+      "norm_label": "daily limit vs. per-session limit for reels"
+    },
+    {
+      "label": "Step by step: block Instagram Reels in under two minutes",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "src_content_blog_en_how_to_block_instagram_reels_android_step_by_step_block_instagram_reels_in_under_two_minutes",
+      "community": 309,
+      "community_name": "7. Animation Principles",
+      "norm_label": "step by step: block instagram reels in under two minutes"
+    },
+    {
+      "label": "Reels-only limit vs. the alternatives",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "src_content_blog_en_how_to_block_instagram_reels_android_reels_only_limit_vs_the_alternatives",
+      "community": 309,
+      "community_name": "7. Animation Principles",
+      "norm_label": "reels-only limit vs. the alternatives"
+    },
+    {
+      "label": "Bottom line",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L110",
+      "_origin": "ast",
+      "id": "src_content_blog_en_how_to_block_instagram_reels_android_bottom_line",
+      "community": 309,
+      "community_name": "7. Animation Principles",
+      "norm_label": "bottom line"
+    },
+    {
       "label": "en/how-to-block-reels-and-shorts-on-android-2026.mdx",
       "file_type": "document",
       "source_file": "src/content/blog/en/how-to-block-reels-and-shorts-on-android-2026.mdx",
@@ -43724,7 +43966,7 @@
       "label": "Step by step: set up Reel Guard in under two minutes",
       "file_type": "document",
       "source_file": "src/content/blog/en/how-to-block-reels-and-shorts-on-android-2026.mdx",
-      "source_location": "L113",
+      "source_location": "L117",
       "_origin": "ast",
       "id": "src_content_blog_en_how_to_block_reels_and_shorts_on_android_2026_step_by_step_set_up_reel_guard_in_under_two_minutes",
       "community": 174,
@@ -43735,7 +43977,7 @@
       "label": "Quick comparison",
       "file_type": "document",
       "source_file": "src/content/blog/en/how-to-block-reels-and-shorts-on-android-2026.mdx",
-      "source_location": "L125",
+      "source_location": "L129",
       "_origin": "ast",
       "id": "src_content_blog_en_how_to_block_reels_and_shorts_on_android_2026_quick_comparison",
       "community": 174,
@@ -43746,7 +43988,7 @@
       "label": "Bottom line",
       "file_type": "document",
       "source_file": "src/content/blog/en/how-to-block-reels-and-shorts-on-android-2026.mdx",
-      "source_location": "L134",
+      "source_location": "L138",
       "_origin": "ast",
       "id": "src_content_blog_en_how_to_block_reels_and_shorts_on_android_2026_bottom_line",
       "community": 174,
@@ -43895,6 +44137,94 @@
       "community": 120,
       "community_name": "How to Block Social Media During Work Hours on Android",
       "norm_label": "the deeper point: systems beat willpower every time"
+    },
+    {
+      "label": "en/how-to-block-youtube-shorts-android.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_en_how_to_block_youtube_shorts_android",
+      "community": 235,
+      "community_name": "2. GSAP (GreenSock)",
+      "norm_label": "en/how-to-block-youtube-shorts-android.mdx"
+    },
+    {
+      "label": "Why \"just block YouTube\" is bad advice",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "src_content_blog_en_how_to_block_youtube_shorts_android_why_just_block_youtube_is_bad_advice",
+      "community": 235,
+      "community_name": "2. GSAP (GreenSock)",
+      "norm_label": "why \"just block youtube\" is bad advice"
+    },
+    {
+      "label": "Why the Shorts shelf toggle isn't enough",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "src_content_blog_en_how_to_block_youtube_shorts_android_why_the_shorts_shelf_toggle_isn_t_enough",
+      "community": 235,
+      "community_name": "2. GSAP (GreenSock)",
+      "norm_label": "why the shorts shelf toggle isn't enough"
+    },
+    {
+      "label": "What actually works: feed-level blocking",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "src_content_blog_en_how_to_block_youtube_shorts_android_what_actually_works_feed_level_blocking",
+      "community": 235,
+      "community_name": "2. GSAP (GreenSock)",
+      "norm_label": "what actually works: feed-level blocking"
+    },
+    {
+      "label": "Daily limit vs. per-session limit",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "src_content_blog_en_how_to_block_youtube_shorts_android_daily_limit_vs_per_session_limit",
+      "community": 235,
+      "community_name": "2. GSAP (GreenSock)",
+      "norm_label": "daily limit vs. per-session limit"
+    },
+    {
+      "label": "Step by step: block YouTube Shorts in under two minutes",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L95",
+      "_origin": "ast",
+      "id": "src_content_blog_en_how_to_block_youtube_shorts_android_step_by_step_block_youtube_shorts_in_under_two_minutes",
+      "community": 235,
+      "community_name": "2. GSAP (GreenSock)",
+      "norm_label": "step by step: block youtube shorts in under two minutes"
+    },
+    {
+      "label": "Shorts vs. the rest of YouTube",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L106",
+      "_origin": "ast",
+      "id": "src_content_blog_en_how_to_block_youtube_shorts_android_shorts_vs_the_rest_of_youtube",
+      "community": 235,
+      "community_name": "2. GSAP (GreenSock)",
+      "norm_label": "shorts vs. the rest of youtube"
+    },
+    {
+      "label": "Bottom line",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L120",
+      "_origin": "ast",
+      "id": "src_content_blog_en_how_to_block_youtube_shorts_android_bottom_line",
+      "community": 235,
+      "community_name": "2. GSAP (GreenSock)",
+      "norm_label": "bottom line"
     },
     {
       "label": "en/logic-comparison-matrix.md",
@@ -46042,6 +46372,83 @@
       "norm_label": "combinez-le avec la rarete pour un effet maximum"
     },
     {
+      "label": "fr/how-to-block-instagram-reels-android.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_how_to_block_instagram_reels_android",
+      "community": 312,
+      "community_name": "2. Offline Sync & Conflict Resolution",
+      "norm_label": "fr/how-to-block-instagram-reels-android.mdx"
+    },
+    {
+      "label": "Pourquoi il n'existe pas de vrai bouton \u00ab d\u00e9sactiver \u00bb pour les Reels",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_how_to_block_instagram_reels_android_pourquoi_il_n_existe_pas_de_vrai_bouton_d\u00e9sactiver_pour_les_reels",
+      "community": 312,
+      "community_name": "2. Offline Sync & Conflict Resolution",
+      "norm_label": "pourquoi il n'existe pas de vrai bouton \u00ab desactiver \u00bb pour les reels"
+    },
+    {
+      "label": "Blocage de toute l'application ou blocage des seuls Reels",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_how_to_block_instagram_reels_android_blocage_de_toute_l_application_ou_blocage_des_seuls_reels",
+      "community": 312,
+      "community_name": "2. Offline Sync & Conflict Resolution",
+      "norm_label": "blocage de toute l'application ou blocage des seuls reels"
+    },
+    {
+      "label": "Limite quotidienne ou limite par session pour les Reels",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_how_to_block_instagram_reels_android_limite_quotidienne_ou_limite_par_session_pour_les_reels",
+      "community": 312,
+      "community_name": "2. Offline Sync & Conflict Resolution",
+      "norm_label": "limite quotidienne ou limite par session pour les reels"
+    },
+    {
+      "label": "Pas \u00e0 pas : bloquer les Reels Instagram en moins de deux minutes",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_how_to_block_instagram_reels_android_pas_\u00e0_pas_bloquer_les_reels_instagram_en_moins_de_deux_minutes",
+      "community": 312,
+      "community_name": "2. Offline Sync & Conflict Resolution",
+      "norm_label": "pas a pas : bloquer les reels instagram en moins de deux minutes"
+    },
+    {
+      "label": "Limite Reels uniquement face aux alternatives",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L100",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_how_to_block_instagram_reels_android_limite_reels_uniquement_face_aux_alternatives",
+      "community": 312,
+      "community_name": "2. Offline Sync & Conflict Resolution",
+      "norm_label": "limite reels uniquement face aux alternatives"
+    },
+    {
+      "label": "L'essentiel",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L114",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_how_to_block_instagram_reels_android_l_essentiel",
+      "community": 312,
+      "community_name": "2. Offline Sync & Conflict Resolution",
+      "norm_label": "l'essentiel"
+    },
+    {
       "label": "fr/how-to-block-reels-and-shorts-on-android-2026.mdx",
       "file_type": "document",
       "source_file": "src/content/blog/fr/how-to-block-reels-and-shorts-on-android-2026.mdx",
@@ -46271,6 +46678,94 @@
       "community": 122,
       "community_name": "Comment Bloquer les R\u00e9seaux Sociaux Pendant les Heures de Travail sur Android",
       "norm_label": "l'idee centrale : les systemes battent la volonte a chaque fois"
+    },
+    {
+      "label": "fr/how-to-block-youtube-shorts-android.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_how_to_block_youtube_shorts_android",
+      "community": 302,
+      "community_name": "7. Accessibility Guidelines",
+      "norm_label": "fr/how-to-block-youtube-shorts-android.mdx"
+    },
+    {
+      "label": "Pourquoi \u00ab bloquez simplement YouTube \u00bb est un mauvais conseil",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_how_to_block_youtube_shorts_android_pourquoi_bloquez_simplement_youtube_est_un_mauvais_conseil",
+      "community": 302,
+      "community_name": "7. Accessibility Guidelines",
+      "norm_label": "pourquoi \u00ab bloquez simplement youtube \u00bb est un mauvais conseil"
+    },
+    {
+      "label": "Pourquoi masquer l'\u00e9tag\u00e8re Shorts ne suffit pas",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_how_to_block_youtube_shorts_android_pourquoi_masquer_l_\u00e9tag\u00e8re_shorts_ne_suffit_pas",
+      "community": 302,
+      "community_name": "7. Accessibility Guidelines",
+      "norm_label": "pourquoi masquer l'etagere shorts ne suffit pas"
+    },
+    {
+      "label": "Ce qui fonctionne vraiment : le blocage au niveau du fil",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_how_to_block_youtube_shorts_android_ce_qui_fonctionne_vraiment_le_blocage_au_niveau_du_fil",
+      "community": 302,
+      "community_name": "7. Accessibility Guidelines",
+      "norm_label": "ce qui fonctionne vraiment : le blocage au niveau du fil"
+    },
+    {
+      "label": "Limite quotidienne ou limite par session",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L85",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_how_to_block_youtube_shorts_android_limite_quotidienne_ou_limite_par_session",
+      "community": 302,
+      "community_name": "7. Accessibility Guidelines",
+      "norm_label": "limite quotidienne ou limite par session"
+    },
+    {
+      "label": "Pas \u00e0 pas : bloquer les Shorts YouTube en moins de deux minutes",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_how_to_block_youtube_shorts_android_pas_\u00e0_pas_bloquer_les_shorts_youtube_en_moins_de_deux_minutes",
+      "community": 302,
+      "community_name": "7. Accessibility Guidelines",
+      "norm_label": "pas a pas : bloquer les shorts youtube en moins de deux minutes"
+    },
+    {
+      "label": "Les Shorts face au reste de YouTube",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L109",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_how_to_block_youtube_shorts_android_les_shorts_face_au_reste_de_youtube",
+      "community": 302,
+      "community_name": "7. Accessibility Guidelines",
+      "norm_label": "les shorts face au reste de youtube"
+    },
+    {
+      "label": "L'essentiel",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L124",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_how_to_block_youtube_shorts_android_l_essentiel",
+      "community": 302,
+      "community_name": "7. Accessibility Guidelines",
+      "norm_label": "l'essentiel"
     },
     {
       "label": "fr/logic-comparison-matrix.md",
@@ -94603,7 +95098,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/mindfulguard-marketing-plan.md",
-      "source_location": "L123",
+      "source_location": "L126",
       "weight": 1.0,
       "_origin": "ast",
       "source": "docs_mindfulguard_marketing_plan_execution_log",
@@ -95790,6 +96285,72 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L115",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_de_how_to_block_instagram_reels_android_fazit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_de_how_to_block_instagram_reels_android_ganze_app_sperren_oder_nur_reels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L101",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_de_how_to_block_instagram_reels_android_reels_limit_gegen\u00fcber_den_alternativen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L89",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_de_how_to_block_instagram_reels_android_schritt_f\u00fcr_schritt_instagram_reels_in_unter_zwei_minuten_blockieren",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_de_how_to_block_instagram_reels_android_tageslimit_oder_sitzungslimit_f\u00fcr_reels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_de_how_to_block_instagram_reels_android_warum_es_keinen_echten_aus_schalter_f\u00fcr_reels_gibt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/de/how-to-block-reels-and-shorts-on-android-2026.mdx",
       "source_location": "L64",
       "weight": 1.0,
@@ -95994,6 +96555,83 @@
       "_origin": "ast",
       "source": "src_content_blog_de_how_to_block_social_media_on_android_during_work_hours_so_blockieren_sie_soziale_medien_auf_android_w\u00e4hrend_der_arbeitszeit",
       "target": "src_content_blog_de_how_to_block_social_media_on_android_during_work_hours_schritt_6_zeitplan_aktivieren",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L125",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_de_how_to_block_youtube_shorts_android_fazit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_de_how_to_block_youtube_shorts_android_schritt_f\u00fcr_schritt_youtube_shorts_in_unter_zwei_minuten_blockieren",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_de_how_to_block_youtube_shorts_android_shorts_gegen\u00fcber_dem_rest_von_youtube",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_de_how_to_block_youtube_shorts_android_tageslimit_oder_sitzungslimit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_de_how_to_block_youtube_shorts_android_warum_blockier_einfach_youtube_ein_schlechter_rat_ist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_de_how_to_block_youtube_shorts_android_warum_das_ausblenden_der_shorts_leiste_nicht_gen\u00fcgt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_de_how_to_block_youtube_shorts_android_was_wirklich_funktioniert_blockieren_auf_feed_ebene",
       "confidence_score": 1.0
     },
     {
@@ -97902,8 +98540,74 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_en_how_to_block_instagram_reels_android_bottom_line",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_en_how_to_block_instagram_reels_android_daily_limit_vs_per_session_limit_for_reels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L97",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_en_how_to_block_instagram_reels_android_reels_only_limit_vs_the_alternatives",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_en_how_to_block_instagram_reels_android_step_by_step_block_instagram_reels_in_under_two_minutes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_en_how_to_block_instagram_reels_android_whole_app_block_vs_reels_only_block",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_en_how_to_block_instagram_reels_android_why_there_s_no_real_off_switch_for_reels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/en/how-to-block-reels-and-shorts-on-android-2026.mdx",
-      "source_location": "L134",
+      "source_location": "L138",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_en_how_to_block_reels_and_shorts_on_android_2026",
@@ -97936,7 +98640,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/en/how-to-block-reels-and-shorts-on-android-2026.mdx",
-      "source_location": "L125",
+      "source_location": "L129",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_en_how_to_block_reels_and_shorts_on_android_2026",
@@ -97947,7 +98651,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/en/how-to-block-reels-and-shorts-on-android-2026.mdx",
-      "source_location": "L113",
+      "source_location": "L117",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_en_how_to_block_reels_and_shorts_on_android_2026",
@@ -98106,6 +98810,83 @@
       "_origin": "ast",
       "source": "src_content_blog_en_how_to_block_social_media_on_android_during_work_hours_how_to_block_social_media_during_work_hours_on_android",
       "target": "src_content_blog_en_how_to_block_social_media_on_android_during_work_hours_step_6_activate_the_schedule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L120",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_en_how_to_block_youtube_shorts_android_bottom_line",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_en_how_to_block_youtube_shorts_android_daily_limit_vs_per_session_limit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_en_how_to_block_youtube_shorts_android_shorts_vs_the_rest_of_youtube",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_en_how_to_block_youtube_shorts_android_step_by_step_block_youtube_shorts_in_under_two_minutes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_en_how_to_block_youtube_shorts_android_what_actually_works_feed_level_blocking",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_en_how_to_block_youtube_shorts_android_why_just_block_youtube_is_bad_advice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_en_how_to_block_youtube_shorts_android_why_the_shorts_shelf_toggle_isn_t_enough",
       "confidence_score": 1.0
     },
     {
@@ -100036,6 +100817,72 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_fr_how_to_block_instagram_reels_android_blocage_de_toute_l_application_ou_blocage_des_seuls_reels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L114",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_fr_how_to_block_instagram_reels_android_l_essentiel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_fr_how_to_block_instagram_reels_android_limite_quotidienne_ou_limite_par_session_pour_les_reels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_fr_how_to_block_instagram_reels_android_limite_reels_uniquement_face_aux_alternatives",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_fr_how_to_block_instagram_reels_android_pas_\u00e0_pas_bloquer_les_reels_instagram_en_moins_de_deux_minutes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_fr_how_to_block_instagram_reels_android_pourquoi_il_n_existe_pas_de_vrai_bouton_d\u00e9sactiver_pour_les_reels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/fr/how-to-block-reels-and-shorts-on-android-2026.mdx",
       "source_location": "L87",
       "weight": 1.0,
@@ -100240,6 +101087,83 @@
       "_origin": "ast",
       "source": "src_content_blog_fr_how_to_block_social_media_on_android_during_work_hours_comment_bloquer_les_r\u00e9seaux_sociaux_pendant_les_heures_de_travail_sur_android",
       "target": "src_content_blog_fr_how_to_block_social_media_on_android_during_work_hours_\u00e9tape_6_activer_le_programme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_fr_how_to_block_youtube_shorts_android_ce_qui_fonctionne_vraiment_le_blocage_au_niveau_du_fil",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L124",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_fr_how_to_block_youtube_shorts_android_l_essentiel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L109",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_fr_how_to_block_youtube_shorts_android_les_shorts_face_au_reste_de_youtube",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_fr_how_to_block_youtube_shorts_android_limite_quotidienne_ou_limite_par_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L97",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_fr_how_to_block_youtube_shorts_android_pas_\u00e0_pas_bloquer_les_shorts_youtube_en_moins_de_deux_minutes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_fr_how_to_block_youtube_shorts_android_pourquoi_bloquez_simplement_youtube_est_un_mauvais_conseil",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_fr_how_to_block_youtube_shorts_android_pourquoi_masquer_l_\u00e9tag\u00e8re_shorts_ne_suffit_pas",
       "confidence_score": 1.0
     },
     {
@@ -101289,5 +102213,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "723e83c01420809e78d068dc670ed12fa2209834"
+  "built_at_commit": "c5cbbd6bfdfba15c459d114cadb36aa8e6176cfa"
 }
