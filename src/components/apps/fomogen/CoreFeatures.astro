@@ -38,13 +38,13 @@ const features = fomoData.features.map((feature, idx) => ({
 <Section id="features" className="relative bg-white py-24 md:py-32">
   <div class="section-container relative z-10">
     <div class="mb-20 text-center lg:text-left">
-      <span class="mb-6 block text-[10px] font-black tracking-[0.2em] text-green-600 uppercase">
+      <span class="mb-6 block text-[10px] font-black tracking-[0.2em] text-green-700 uppercase">
         {labels?.platformPillars || "Platform Pillars"}
       </span>
       <h2 class="mb-10 text-4xl leading-[0.95] font-bold tracking-tight text-slate-900 md:text-5xl lg:text-8xl">
         {labels?.everythingYouNeed || "Everything You Need."}
         <br />
-        <span class="text-slate-300">{labels?.nothingYouDont || "Nothing You Don't."}</span>
+        <span class="text-slate-500">{labels?.nothingYouDont || "Nothing You Don't."}</span>
       </h2>
     </div>
 
@@ -75,7 +75,7 @@ const features = fomoData.features.map((feature, idx) => ({
                 </div>
               ) : (
                 <div class="flex aspect-video items-center justify-center rounded-4xl border border-green-100 bg-green-50/30 md:rounded-[3rem]">
-                  <Icon className="h-24 w-24 text-green-600 opacity-20" />
+                  <Icon className="h-24 w-24 text-green-700 opacity-20" />
                 </div>
               )}
 
@@ -87,7 +87,7 @@ const features = fomoData.features.map((feature, idx) => ({
 
             {/* Content Section */}
             <div class="flex-1 text-center lg:text-left">
-              <div class="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl border border-green-100 bg-green-50 text-green-600 shadow-sm">
+              <div class="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl border border-green-100 bg-green-50 text-green-700 shadow-sm">
                 <Icon className="h-8 w-8" />
               </div>
 
@@ -95,7 +95,7 @@ const features = fomoData.features.map((feature, idx) => ({
                 {feature.title}
               </h3>
 
-              <h4 class="mb-6 text-xl font-bold text-green-600 italic">
+              <h4 class="mb-6 text-xl font-bold text-green-700 italic">
                 {feature.subtitle}
               </h4>
 
@@ -105,7 +105,7 @@ const features = fomoData.features.map((feature, idx) => ({
 
               <div class="mt-10 flex items-center justify-center gap-3 lg:justify-start">
                 <div class="h-2 w-2 animate-pulse rounded-full bg-green-500" />
-                <span class="text-xs font-black tracking-widest text-slate-400 uppercase">
+                <span class="text-xs font-black tracking-widest text-slate-600 uppercase">
                   {feature.highlight}
                 </span>
               </div>

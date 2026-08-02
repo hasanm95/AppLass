@@ -115,7 +115,7 @@ per week for steady crawl freshness and to double down on early winners.
 
 - [x] §3 Landing page reposition (hero + meta + schema + Reel Guard differentiator) — 2026-07-23
 - [x] §2 P1 pillar post: `how-to-block-reels-and-shorts-on-android-2026.mdx` (BlogPosting + FAQPage schema, 3 CTAs) — 2026-07-23
-- [x] §2 S1 spoke: `how-to-block-youtube-shorts-android.mdx` (BlogPosting + FAQPage schema, 3 CTAs, interlinks to P1 + youtube-background-play + youtube-screen-off-battery), thumbnail hand-built as SVG→PNG via sharp — 2026-07-30
+- [x] §2 S1 spoke: `how-to-block-youtube-shorts-android.mdx` (BlogPosting + FAQPage schema, 3 CTAs, interlinks to P1 + youtube-background-play + youtube-screen-off-battery) — 2026-07-30, thumbnail hand-built as SVG→PNG via sharp (Higgsfield workspace out of credits, same as P1)
 - [x] §2 S2 spoke: `how-to-block-instagram-reels-android.mdx` (BlogPosting + FAQPage schema, 3 CTAs, interlinks to P1 + best-app-to-block-social-media), thumbnail hand-built as SVG→PNG via sharp — 2026-08-06
 - [x] §2 S3 spoke: `how-to-block-tiktok-feed-android.mdx` (BlogPosting + FAQPage schema, 3 CTAs, interlinks to P1), thumbnail hand-built as SVG→PNG via sharp — 2026-08-13
 - [ ] §2 S4–S5 spokes (one per week, staggered)
@@ -126,4 +126,6 @@ per week for steady crawl freshness and to double down on early winners.
 
 ### Open follow-ups
 - [x] Thumbnail for P1 — hand-built vector `block-reels-shorts-android.png` (1024×1024), post now `featured: true` — 2026-07-23 (Higgsfield workspace was out of credits; swap in a photoreal render later if desired)
-- [ ] French translations for the repositioned landing-page copy + FR versions of P1/S1/S2/S3 (`src/content/blog/fr/`); EN falls back cleanly until then
+- [x] FR + DE translations of P1/S1/S2 (`src/content/blog/fr/`, `src/content/blog/de/`) — pillar and the YouTube Shorts / Instagram Reels spokes are live in all three locales
+- [ ] FR + DE translation of S3 (`how-to-block-tiktok-feed-android`) — currently EN-only; the routing guard means no `/fr/` or `/de/` URL is generated for it until translated
+- [ ] French translations for the repositioned landing-page copy

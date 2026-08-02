@@ -5,6 +5,7 @@ import Navbar from "@/components/common/Navbar.astro";
 import Hero from "@/components/home/Hero.astro";
 import SocialProof from "@/components/home/SocialProof.astro";
 import ProductShowcase from "@/components/home/ProductShowcase.astro";
+import Testimonials from "@/components/home/Testimonials.astro";
 import FoundersMoat from "@/components/home/FoundersMoat.astro";
 import SolutionsSection from "@/components/home/SolutionsSection.astro";
 import AnswerNuggets from "@/components/home/AnswerNuggets.astro";
@@ -20,11 +21,11 @@ const { lang } = Astro.props;
 setLocale(lang);
 const isDefault = lang === "en"; 
 const meta = {
-  title: localize("Applass: Productivity & Privacy Solutions for the 2026 Digital World"),
-  description: localize("Home of Mindful Guard and ScreenVeil. Discover advanced Android focus tools and Shopify apps designed to protect your privacy and boost ROI."),
-  keywords: localize("privacy apps, productivity tools, Shopify apps, digital wellness, Android utilities, Mindful Guard, ScreenVeil, AppLass"),
-  ogTitle: localize("AppLass | Logic-Driven Software Studio"),
-  ogDescription: localize("Mathematical precision meets human-centric design. We build the Next Wave of digital performance."),
+  title: localize("AppLass: Android Apps and Shopify Tools, Built Small and Private"),
+  description: localize("ScreenVeil plays video with your screen off. Mindful Guard blocks distracting apps on-device. FomoGen adds social proof to your Shopify store. None of them track you."),
+  keywords: localize("ScreenVeil, Mindful Guard, FomoGen, screen off video playback, app blocker Android, Shopify social proof, no tracking apps, AppLass"),
+  ogTitle: localize("AppLass — ScreenVeil, Mindful Guard and FomoGen"),
+  ogDescription: localize("Three apps for Android and Shopify. No trackers, no accounts, no bloat."),
   ogImage: "https://applass.com/og-home.png",
   ogUrl: isDefault ? "https://applass.com" : `https://applass.com/${lang}`
 };
@@ -45,6 +46,7 @@ const meta = {
   <Hero />
   <SocialProof />
   <ProductShowcase />
+  <Testimonials />
   <FoundersMoat />
   <SolutionsSection />
   <AnswerNuggets />

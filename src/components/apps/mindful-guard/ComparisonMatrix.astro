@@ -27,7 +27,7 @@ const labels = mindfulData.labels;
             <th class="p-6 2xl:p-8 text-left text-xs font-bold text-slate-400">
               {labels.technicalSpec}
             </th>
-            <th class="bg-[#16A34A] p-6 2xl:p-8 text-left text-xs font-bold text-white">
+            <th class="bg-[#15803D] p-6 2xl:p-8 text-left text-xs font-bold text-white">
               {labels.mindfulGuardVersion}
             </th>
             <th class="p-6 2xl:p-8 text-left text-xs font-bold text-slate-400">
@@ -54,7 +54,7 @@ const labels = mindfulData.labels;
               </td>
               <td class="p-6 2xl:p-8">
                 {spec.opal.includes("High") || spec.opal.includes("$99") ? (
-                  <span class="flex items-center gap-3 text-sm text-red-900/50">
+                  <span class="flex items-center gap-3 text-sm text-red-800">
                     <X className="h-4 w-4" />
                     {spec.opal}
                   </span>
@@ -67,7 +67,7 @@ const labels = mindfulData.labels;
               </td>
               <td class="p-6 2xl:p-8">
                 {spec.freedom.includes("High") || spec.freedom.includes("$99") ? (
-                  <span class="flex items-center gap-3 text-sm text-red-900/50">
+                  <span class="flex items-center gap-3 text-sm text-red-800">
                     <X className="h-4 w-4" />
                     {spec.freedom}
                   </span>
@@ -104,11 +104,11 @@ const labels = mindfulData.labels;
               </span>
             </div>
             <div class="flex items-center justify-between border-b border-slate-100 pb-4">
-              <span class="text-xs font-bold text-slate-400">
+              <span class="text-xs font-bold text-slate-600">
                 {competitors.opal}
               </span>
               {spec.opal.includes("High") || spec.opal.includes("$99") ? (
-                <span class="flex items-center gap-3 text-sm text-red-900/50">
+                <span class="flex items-center gap-3 text-sm text-red-800">
                   <X className="h-4 w-4" />
                   {spec.opal}
                 </span>
@@ -120,11 +120,11 @@ const labels = mindfulData.labels;
               )}
             </div>
             <div class="flex items-center justify-between">
-              <span class="text-xs font-bold text-slate-400">
+              <span class="text-xs font-bold text-slate-600">
                 {competitors.freedom}
               </span>
               {spec.freedom.includes("High") || spec.freedom.includes("$99") ? (
-                <span class="flex items-center gap-3 text-sm text-red-900/50">
+                <span class="flex items-center gap-3 text-sm text-red-800">
                   <X className="h-4 w-4" />
                   {spec.freedom}
                 </span>
