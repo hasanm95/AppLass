@@ -177,7 +177,7 @@ const footerLinks = getFooterLinks(currentLang);
       <p
         class={clsx(
           "text-sm",
-          isDark ? "text-slate-500" : "text-slate-600"
+          isDark ? "text-slate-400" : "text-slate-600"
         )}
       >
         {localize("© {year} AppLass. All rights reserved.", { year: currentYear.toString() })}
@@ -185,7 +185,7 @@ const footerLinks = getFooterLinks(currentLang);
       <div
         class={clsx(
           "text-xs",
-          isDark ? "text-slate-600" : "text-slate-400"
+          isDark ? "text-slate-400" : "text-slate-600"
         )}
       >
         {localize("Built with {infinity} logical precision", {

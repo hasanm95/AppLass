@@ -166,5 +166,3 @@ The biggest mistake merchants make is trying to fix everything at once. Pick the
 > **[Install FomoGen Free on Shopify →](https://apps.shopify.com/fomogen)**
 
 ---
-
-**Related:** Understand why your visitors aren't buying even after you've fixed the basics — read our post on [why Shopify visitors leave without buying and what to do about it](/blog/why-shopify-visitors-dont-buy).

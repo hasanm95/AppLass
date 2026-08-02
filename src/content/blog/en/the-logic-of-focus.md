@@ -1,25 +1,33 @@
 ---
 title: "The Logic of Focus: Why Most Digital Detox Apps Fail"
-date: "Jan 12, 2026"
-updatedAt: "2026-05-19"
+date: "2026-01-12"
+dateModified: "2026-05-19"
 category: "Android Apps"
 keywords: "digital detox apps, intentional friction app, focus logic, phone addiction solutions, mindful guard android"
 author: "Mathematician Founder"
 featured: true
-excerpt: "Reclaim your time by engineering intentional friction into your digital life. Why willpower is a system failure."
+excerpt: "Most digital detox apps fail because they warn instead of block — and a warning arrives after the habit has already executed. The fix is intentional friction: raising the cost of opening an app until the brain switches from impulse to deliberation."
+faqs:
+  - question: "Why do most digital detox apps fail?"
+    answer: "They rely on willpower rather than removing the choice. Most apps send a friendly notification or show a usage graph, but a notification is an interrupt, not a block. By the time you are mid-scroll, your prefrontal cortex is effectively offline, so the warning arrives after the decision has already been made."
+  - question: "What is intentional friction?"
+    answer: "Intentional friction means deliberately raising the cost of reaching a distracting app. If access costs a single tap, the probability of opening it approaches 100%. Adding a logical barrier forces the brain to switch from System 1 thinking (automatic and impulsive) to System 2 (deliberate and logical), which is where actual decisions get made."
+  - question: "Does Mindful Guard collect usage data?"
+    answer: "No. Mindful Guard operates 100% locally with zero telemetry. Usage patterns never leave the device, there are no analytics SDKs, and no data is sent to a server."
+  - question: "How much time does blocking distractions actually save?"
+    answer: "The arithmetic is straightforward: saving 30 minutes a day of mindless scrolling recovers 182 hours a year, which is over four full work weeks."
 sidebarApps:
   - mindful-guard
 ---
-
-## The Logic of Focus: Why Most Digital Detox Apps Fail (and How to Fix It)
 
 We live in an economy of distraction. In 2026, the average smartphone user checks their device over 150 times a day. For many, this isn’t just a habit—it’s a dopamine loop engineered by some of the most advanced algorithms on the planet.
 
 As a developer with a background in mathematics, I look at phone addiction as a system failure. If the "System" (your phone) is optimized to keep you scrolling, your "Input" (willpower) will eventually hit a point of diminishing returns.
 
-## To reclaim your time, you don't need more willpower. You need better Logical Guardrails.
+## The "Willpower Gap" in Productivity
 
-The "Willpower Gap" in Productivity
+To reclaim your time, you don't need more willpower. You need better logical guardrails.
+
 Most productivity apps rely on the user's "desire" to stay focused. They send a friendly notification or show a pretty graph of your usage. But when you are in the middle of a "doom-scroll," your prefrontal cortex is effectively offline.
 
 A notification is an interrupt, but it isn't a block. In programming terms, most apps are just console.warn() when they should be an access_denied exception.

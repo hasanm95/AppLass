@@ -1,0 +1,18 @@
+---
+import NotFoundPage from "@/page-templates/NotFoundPage.astro";
+import { i18nConfig } from "@/i18n/config";
+
+export function getStaticPaths() {
+  return i18nConfig.locales.map((lang) => ({
+    params: { lang },
+  }));
+}
+
+interface Props {
+  lang: typeof i18nConfig.locales[number];
+}
+
+const { lang } = Astro.params;
+---
+
+<NotFoundPage lang={lang as typeof i18nConfig.locales[number]} />

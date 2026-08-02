@@ -115,11 +115,9 @@ per week for steady crawl freshness and to double down on early winners.
 
 - [x] §3 Landing page reposition (hero + meta + schema + Reel Guard differentiator) — 2026-07-23
 - [x] §2 P1 pillar post: `how-to-block-reels-and-shorts-on-android-2026.mdx` (BlogPosting + FAQPage schema, 3 CTAs) — 2026-07-23
-- [x] §2 S1 spoke: `how-to-block-youtube-shorts-android.mdx` (BlogPosting + FAQPage schema, 3 CTAs, interlinks to P1 + youtube-background-play + youtube-screen-off-battery), thumbnail hand-built as SVG→PNG via sharp — 2026-07-30
+- [x] §2 S1 spoke: `how-to-block-youtube-shorts-android.mdx` (BlogPosting + FAQPage schema, 3 CTAs, interlinks to P1 + youtube-background-play + youtube-screen-off-battery) — 2026-07-30, thumbnail hand-built as SVG→PNG via sharp (Higgsfield workspace out of credits, same as P1)
 - [x] §2 S2 spoke: `how-to-block-instagram-reels-android.mdx` (BlogPosting + FAQPage schema, 3 CTAs, interlinks to P1 + best-app-to-block-social-media), thumbnail hand-built as SVG→PNG via sharp — 2026-08-06
-- [x] §2 S3 spoke: `how-to-block-tiktok-feed-android.mdx` (BlogPosting + FAQPage schema, 3 CTAs, interlinks to P1), thumbnail hand-built as SVG→PNG via sharp — 2026-08-13
-- [x] §2 S4 spoke: `limit-reels-per-day-android.mdx` (BlogPosting + FAQPage schema, 3 CTAs, interlinks to monk-mode-willpower + the-logic-of-focus + P1), thumbnail hand-built as SVG→PNG via sharp — 2026-08-20
-- [ ] §2 S5 spoke: Dopamine Detox 7-Day Short-Form Reset (one per week, staggered)
+- [ ] §2 S3–S5 spokes (one per week, staggered)
 - [x] §2 C1 optimization: rewrote `opal-alternatives-android.mdx` — retitled to head term "Best Opal Alternatives for Android (2026)", added direct-answer TL;DR + comparison table + MindfulGuard as #1 list item, refreshed FAQs/date for AI-Overview citation — 2026-07-23
 - [ ] §2 C2–C3 comparison pages (Freedom alternative, Best free Reels/Shorts blockers)
 - [x] §6 UTM install-referrer params — `getPlayStoreUrl`-style helper in `src/lib/utils.ts` encodes `utm_source`/`utm_medium`/`utm_campaign` into the Play Store `referrer` param
@@ -127,4 +125,4 @@ per week for steady crawl freshness and to double down on early winners.
 
 ### Open follow-ups
 - [x] Thumbnail for P1 — hand-built vector `block-reels-shorts-android.png` (1024×1024), post now `featured: true` — 2026-07-23 (Higgsfield workspace was out of credits; swap in a photoreal render later if desired)
-- [ ] French translations for the repositioned landing-page copy + FR versions of P1/S1/S2/S3/S4 (`src/content/blog/fr/`); EN falls back cleanly until then
+- [ ] French translations for the repositioned landing-page copy + an FR version of P1 (`src/content/blog/fr/`); EN falls back cleanly until then — confirmed still missing (fr/ has no reels-and-shorts post)

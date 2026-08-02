@@ -14,7 +14,7 @@ const labels = fomoData.labels;
 
   <div class="section-container relative z-10 max-w-7xl mx-auto">
     <div class="mb-16 text-center md:mb-20">
-      <span class="mb-6 inline-block rounded-full bg-green-50 px-4 py-1.5 text-[10px] font-black tracking-[0.2em] text-green-600 uppercase ring-1 ring-green-500/20">
+      <span class="mb-6 inline-block rounded-full bg-green-50 px-4 py-1.5 text-[10px] font-black tracking-[0.2em] text-green-700 uppercase ring-1 ring-green-500/20">
         {fomoData.pricing.subtitle}
       </span>
       <h2 class="mb-6 text-4xl leading-[0.95] font-bold tracking-tight text-slate-900 md:text-6xl lg:text-7xl">
@@ -36,7 +36,7 @@ const labels = fomoData.labels;
           }`}
         >
           {tier.highlighted && (
-            <div class="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-green-600 px-6 py-1.5 text-[10px] font-black tracking-widest text-white uppercase shadow-lg shadow-green-200">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-green-700 px-6 py-1.5 text-[10px] font-black tracking-widest text-white uppercase shadow-lg shadow-green-200">
               {labels?.recommended || "Recommended"}
             </div>
           )}
@@ -54,11 +54,11 @@ const labels = fomoData.labels;
             <span class="text-4xl font-black text-slate-900 md:text-5xl tracking-tight">
               {tier.price}
             </span>
-            <span class="ml-2 text-[10px] font-bold tracking-widest text-slate-400 uppercase">
+            <span class="ml-2 text-[10px] font-bold tracking-widest text-slate-600 uppercase">
               {tier.period}
             </span>
             {tier.subLabel && (
-              <p class="text-xs text-green-600 font-bold mt-3 tracking-wide bg-green-50 inline-block px-3 py-1 rounded-full">
+              <p class="text-xs text-green-700 font-bold mt-3 tracking-wide bg-green-50 inline-block px-3 py-1 rounded-full">
                 {tier.subLabel}
               </p>
             )}
@@ -76,13 +76,13 @@ const labels = fomoData.labels;
           </Button>
 
           <div class="grow space-y-5 border-t border-slate-100 pt-8">
-            <p class="text-[10px] font-black uppercase text-slate-400 tracking-[0.2em]">
+            <p class="text-[10px] font-black uppercase text-slate-600 tracking-[0.2em]">
               {labels?.featuresIncluded || "Features Included"}
             </p>
             <ul class="space-y-4">
               {tier.features.map((feature) => (
                 <li class="flex items-start gap-3">
-                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-green-600" />
+                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-green-700" />
                   <span class="text-sm font-medium text-slate-600 leading-snug">
                     {feature}
                   </span>
@@ -90,10 +90,10 @@ const labels = fomoData.labels;
               ))}
               {tier.limitations?.map((limit) => (
                 <li class="flex items-start gap-3">
-                  <span class="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full border border-slate-300 text-[10px] font-bold text-slate-400 italic">
+                  <span class="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full border border-slate-300 text-[10px] font-bold text-slate-600 italic">
                     i
                   </span>
-                  <span class="text-sm italic text-slate-400 flex-1 leading-snug">
+                  <span class="text-sm italic text-slate-600 flex-1 leading-snug">
                     {limit}
                   </span>
                 </li>
