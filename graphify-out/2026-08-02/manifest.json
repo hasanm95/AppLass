@@ -1,0 +1,2642 @@
+{
+  ".agent/.shared/ui-ux-pro-max/scripts/core.py": {
+    "mtime": 1770905839.4152536,
+    "ast_hash": "2f61a08163b38697fc47a46702efc2c3",
+    "semantic_hash": ""
+  },
+  ".agent/.shared/ui-ux-pro-max/scripts/design_system.py": {
+    "mtime": 1770905839.415479,
+    "ast_hash": "08f84d04608a19049c90fc2b1ef314f9",
+    "semantic_hash": ""
+  },
+  ".agent/.shared/ui-ux-pro-max/scripts/search.py": {
+    "mtime": 1770905839.4156966,
+    "ast_hash": "aad47a09ec0f48620735a6e64f773398",
+    "semantic_hash": ""
+  },
+  ".agent/mcp_config.json": {
+    "mtime": 1770905839.42045,
+    "ast_hash": "0b138ce69b0926a456d5d68148485706",
+    "semantic_hash": ""
+  },
+  ".agent/scripts/auto_preview.py": {
+    "mtime": 1770905839.4211488,
+    "ast_hash": "05cd4d30411b5e64c954ea5e91005ced",
+    "semantic_hash": ""
+  },
+  ".agent/scripts/checklist.py": {
+    "mtime": 1771167602.7556846,
+    "ast_hash": "47bd3e02fb4b23a8b8ce157d50260759",
+    "semantic_hash": ""
+  },
+  ".agent/scripts/session_manager.py": {
+    "mtime": 1770905839.4219887,
+    "ast_hash": "d80b06ab615c9fb2a1c5d5630661ec75",
+    "semantic_hash": ""
+  },
+  ".agent/scripts/verify_all.py": {
+    "mtime": 1770905839.4221916,
+    "ast_hash": "2a1d845c47b73b5492a294b820dc3f3e",
+    "semantic_hash": ""
+  },
+  ".agent/skills/api-patterns/scripts/api_validator.py": {
+    "mtime": 1770905839.4236276,
+    "ast_hash": "85d8ef631156c8df6092c40355d3818a",
+    "semantic_hash": ""
+  },
+  ".agent/skills/database-design/scripts/schema_validator.py": {
+    "mtime": 1770905839.4314377,
+    "ast_hash": "effd77357ea9635f93c69e097ef6afab",
+    "semantic_hash": ""
+  },
+  ".agent/skills/frontend-design/scripts/accessibility_checker.py": {
+    "mtime": 1770905839.433512,
+    "ast_hash": "319142ecd967d38addb420ab5276f18a",
+    "semantic_hash": ""
+  },
+  ".agent/skills/frontend-design/scripts/ux_audit.py": {
+    "mtime": 1772974051.8970685,
+    "ast_hash": "a3c7bd889fe8b68ec39d6c6a6c1afbba",
+    "semantic_hash": ""
+  },
+  ".agent/skills/geo-fundamentals/scripts/geo_checker.py": {
+    "mtime": 1770905839.437428,
+    "ast_hash": "1cae5a3bbafd97322582465c7c14ab6d",
+    "semantic_hash": ""
+  },
+  ".agent/skills/i18n-localization/scripts/i18n_checker.py": {
+    "mtime": 1770905839.4379048,
+    "ast_hash": "7862bc26e015a2dca8d6348dc22f53ae",
+    "semantic_hash": ""
+  },
+  ".agent/skills/lint-and-validate/scripts/lint_runner.py": {
+    "mtime": 1770905839.4385412,
+    "ast_hash": "5ae7450733955decbeedd1571764aac1",
+    "semantic_hash": ""
+  },
+  ".agent/skills/lint-and-validate/scripts/type_coverage.py": {
+    "mtime": 1770905839.4387763,
+    "ast_hash": "0407442971672eb54fca1c3ac3eed797",
+    "semantic_hash": ""
+  },
+  ".agent/skills/mobile-design/scripts/mobile_audit.py": {
+    "mtime": 1770905839.4422512,
+    "ast_hash": "26fb01014110f0d00d75c5bb22bd5991",
+    "semantic_hash": ""
+  },
+  ".agent/skills/nextjs-react-expert/scripts/convert_rules.py": {
+    "mtime": 1770905839.4446929,
+    "ast_hash": "3214a2101a7912b5535e7c1a13c22391",
+    "semantic_hash": ""
+  },
+  ".agent/skills/nextjs-react-expert/scripts/react_performance_checker.py": {
+    "mtime": 1770905839.445044,
+    "ast_hash": "bca032a9b1c021009bac31ac881599c7",
+    "semantic_hash": ""
+  },
+  ".agent/skills/performance-profiling/scripts/lighthouse_audit.py": {
+    "mtime": 1770905839.4458601,
+    "ast_hash": "2739e64c3ddc2ca21b62506c606a1622",
+    "semantic_hash": ""
+  },
+  ".agent/skills/seo-fundamentals/scripts/seo_checker.py": {
+    "mtime": 1771167602.756008,
+    "ast_hash": "8e8e77f3c1f56389dfae2cdb3c1b96ee",
+    "semantic_hash": ""
+  },
+  ".agent/skills/testing-patterns/scripts/test_runner.py": {
+    "mtime": 1770905839.44785,
+    "ast_hash": "6115b867600a36618c339658d33cc74a",
+    "semantic_hash": ""
+  },
+  ".agent/skills/vulnerability-scanner/scripts/security_scan.py": {
+    "mtime": 1770905839.4484076,
+    "ast_hash": "50c0e7a44ad07394eda503ca81451ae7",
+    "semantic_hash": ""
+  },
+  ".agent/skills/webapp-testing/scripts/playwright_runner.py": {
+    "mtime": 1770905839.4488292,
+    "ast_hash": "5c08e378e90629ec080b54b3eed6373d",
+    "semantic_hash": ""
+  },
+  ".agents/skills/content-strategy/evals/evals.json": {
+    "mtime": 1784820698.6370854,
+    "ast_hash": "d74c124780fae14207c12dacafb923f5",
+    "semantic_hash": ""
+  },
+  ".agents/skills/marketing-ideas/evals/evals.json": {
+    "mtime": 1784820540.8391423,
+    "ast_hash": "609f512486bab7643db48d0be98aa90e",
+    "semantic_hash": ""
+  },
+  ".claude/launch.json": {
+    "mtime": 1784647389.8228145,
+    "ast_hash": "dd2a45e024f428083a0c82bc9d642b1a",
+    "semantic_hash": ""
+  },
+  ".claude/settings.json": {
+    "mtime": 1784916861.575682,
+    "ast_hash": "17d45b208427b83eea334eea3beb61ac",
+    "semantic_hash": ""
+  },
+  ".claude/settings.local.json": {
+    "mtime": 1785094466.340633,
+    "ast_hash": "ef051044b4d1a8b94521d0d95a3b55b6",
+    "semantic_hash": ""
+  },
+  ".vscode/extensions.json": {
+    "mtime": 1772227499.1498165,
+    "ast_hash": "3adedb22d082dbd1ebb00b75d21403aa",
+    "semantic_hash": ""
+  },
+  ".vscode/launch.json": {
+    "mtime": 1772227499.1500216,
+    "ast_hash": "60493763dcbc2d109e57da86d997602a",
+    "semantic_hash": ""
+  },
+  "astro.config.mjs": {
+    "mtime": 1785593356.2832704,
+    "ast_hash": "6a1606cad8cb77afe992fd7fc12f3450",
+    "semantic_hash": ""
+  },
+  "components.json": {
+    "mtime": 1771603767.0578556,
+    "ast_hash": "e9f64ed73f55abdf3d74ae4a99b565b6",
+    "semantic_hash": ""
+  },
+  "eslint.config.mjs": {
+    "mtime": 1775289088.8936584,
+    "ast_hash": "04f9531f3a240e5f5564d7d6c898581a",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1785590391.2678404,
+    "ast_hash": "0dc0207dab284af7b4a1fac7b7e6363b",
+    "semantic_hash": ""
+  },
+  "scratch/update_fr.py": {
+    "mtime": 1775929225.6444762,
+    "ast_hash": "c0b5ae9ff885ec3deb8b0e2f5c338577",
+    "semantic_hash": ""
+  },
+  "scripts/extract-translations.ts": {
+    "mtime": 1785659469.8599045,
+    "ast_hash": "6c8044a7b27da5e2987cc131d69d964c",
+    "semantic_hash": ""
+  },
+  "scripts/fix-getstaticpaths.js": {
+    "mtime": 1772796396.773199,
+    "ast_hash": "fcea497c192b99d30e7592350ab73cd8",
+    "semantic_hash": ""
+  },
+  "scripts/split-pages.sh": {
+    "mtime": 1772796396.7734332,
+    "ast_hash": "07d2c8aab5d6b23f6488bb6985ad8f10",
+    "semantic_hash": ""
+  },
+  "scripts/use-localepath.js": {
+    "mtime": 1772796396.7742333,
+    "ast_hash": "a3718a55b3e679f2e4ffaadf13c8d3ca",
+    "semantic_hash": ""
+  },
+  "skills-lock.json": {
+    "mtime": 1784823179.3178313,
+    "ast_hash": "bf0e2d314017a2cd675f3048645632d1",
+    "semantic_hash": ""
+  },
+  "src/components/apps/fomogen/CoreFeatures.astro": {
+    "mtime": 1785523019.6014569,
+    "ast_hash": "4cd9991c6eea5ed542e8847406c3202d",
+    "semantic_hash": ""
+  },
+  "src/components/apps/fomogen/FomoGenCTA.astro": {
+    "mtime": 1785523019.6016173,
+    "ast_hash": "04e0e90bcc56baaa350d76ed6f4a84e9",
+    "semantic_hash": ""
+  },
+  "src/components/apps/fomogen/FomoGenHero.astro": {
+    "mtime": 1785523019.6008465,
+    "ast_hash": "543538d5b5c6aa39340e27cafbe39608",
+    "semantic_hash": ""
+  },
+  "src/components/apps/fomogen/PricingMatrix.astro": {
+    "mtime": 1785523019.6012766,
+    "ast_hash": "1922293901c57e3633a16a8ae458eda8",
+    "semantic_hash": ""
+  },
+  "src/components/apps/fomogen/PricingSection.astro": {
+    "mtime": 1785523019.600676,
+    "ast_hash": "96c5776bcb316725022670de59c53377",
+    "semantic_hash": ""
+  },
+  "src/components/apps/fomogen/SpeedBenefitSection.astro": {
+    "mtime": 1785523019.601194,
+    "ast_hash": "5881956bf82783f16e54cc2b71dee1d4",
+    "semantic_hash": ""
+  },
+  "src/components/apps/fomogen/TestimonialsSection.astro": {
+    "mtime": 1785523170.0826292,
+    "ast_hash": "f81c4d847ff39b7584861ccdf9630a92",
+    "semantic_hash": ""
+  },
+  "src/components/apps/mindful-guard/ComparisonMatrix.astro": {
+    "mtime": 1785523187.6270854,
+    "ast_hash": "40e8cd524857e24e3bfe916f43bf26a1",
+    "semantic_hash": ""
+  },
+  "src/components/apps/mindful-guard/DifferentiatorsSection.astro": {
+    "mtime": 1785523019.5991127,
+    "ast_hash": "338c1a7ae1e63fee79e0927e1f11b532",
+    "semantic_hash": ""
+  },
+  "src/components/apps/mindful-guard/LogicSection.astro": {
+    "mtime": 1785523289.3199687,
+    "ast_hash": "59a19625f73559982fdd82078f7c7c17",
+    "semantic_hash": ""
+  },
+  "src/components/apps/mindful-guard/MindfulClosingCTA.astro": {
+    "mtime": 1785523170.082316,
+    "ast_hash": "fc15f7ac275425ff071cc8fafa4c7f22",
+    "semantic_hash": ""
+  },
+  "src/components/apps/mindful-guard/MindfulHero.astro": {
+    "mtime": 1785523268.9297633,
+    "ast_hash": "5a2004b16486714c06bf62ff9698736e",
+    "semantic_hash": ""
+  },
+  "src/components/apps/mindful-guard/MindfulPricing.astro": {
+    "mtime": 1785522932.9762986,
+    "ast_hash": "35ef934d5708b7606159c30cdea0d04c",
+    "semantic_hash": ""
+  },
+  "src/components/apps/mindful-guard/MindfulSocialProof.astro": {
+    "mtime": 1785523019.5999136,
+    "ast_hash": "e38e8891eeb74d586fac002cf4a41486",
+    "semantic_hash": ""
+  },
+  "src/components/apps/mindful-guard/MindfulStatsBar.astro": {
+    "mtime": 1784916861.5793576,
+    "ast_hash": "0fbf715e64a0d31d182df68a8be2e99a",
+    "semantic_hash": ""
+  },
+  "src/components/apps/screenveil/CompetitorComparison.astro": {
+    "mtime": 1772973072.166781,
+    "ast_hash": "2e56376ebd0ca625c8354ccd678d7eed",
+    "semantic_hash": ""
+  },
+  "src/components/apps/screenveil/FAQSection.astro": {
+    "mtime": 1772796847.3260934,
+    "ast_hash": "c4c91a5d6c665f9dbb3fedc3ecbf5558",
+    "semantic_hash": ""
+  },
+  "src/components/apps/screenveil/FeatureGrid.astro": {
+    "mtime": 1785522989.9021726,
+    "ast_hash": "249400723b55ae5440c371490277bbce",
+    "semantic_hash": ""
+  },
+  "src/components/apps/screenveil/PainPointsSection.astro": {
+    "mtime": 1772974690.7364063,
+    "ast_hash": "c21855362cc8df1059d10a967bf3004e",
+    "semantic_hash": ""
+  },
+  "src/components/apps/screenveil/PrivacySection.astro": {
+    "mtime": 1772974700.8417912,
+    "ast_hash": "8f8fd63ad6316b693d724830c10a60c3",
+    "semantic_hash": ""
+  },
+  "src/components/apps/screenveil/ScreenVeilClosingCTA.astro": {
+    "mtime": 1785522989.9006648,
+    "ast_hash": "941818c5b9c48988c63f25b318f143e0",
+    "semantic_hash": ""
+  },
+  "src/components/apps/screenveil/ScreenVeilHero.astro": {
+    "mtime": 1785522989.9008632,
+    "ast_hash": "47c0ae3ea92960da101c984c2ccae211",
+    "semantic_hash": ""
+  },
+  "src/components/apps/screenveil/StickyDownloadBar.tsx": {
+    "mtime": 1775927830.5274608,
+    "ast_hash": "6956f9f4dc885858901a56f88769b412",
+    "semantic_hash": ""
+  },
+  "src/components/apps/screenveil/TechnicalAdvantage.astro": {
+    "mtime": 1785522989.9012241,
+    "ast_hash": "cbe1d1df8f03077e805dc5e7fccaf256",
+    "semantic_hash": ""
+  },
+  "src/components/apps/screenveil/TestimonialsSection.astro": {
+    "mtime": 1785522989.9015672,
+    "ast_hash": "f976500127df02972f3e55d36bca22e8",
+    "semantic_hash": ""
+  },
+  "src/components/blog/AppCallout.astro": {
+    "mtime": 1785523389.151638,
+    "ast_hash": "b145d9b02631e74dee960e72b7847201",
+    "semantic_hash": ""
+  },
+  "src/components/blog/BlogCard.astro": {
+    "mtime": 1785523170.0829744,
+    "ast_hash": "bc50daec49e9e815a4a6cdc2129b51b1",
+    "semantic_hash": ""
+  },
+  "src/components/blog/CartTimeCTA.astro": {
+    "mtime": 1784917257.8150623,
+    "ast_hash": "42112d5ff99dd701948a5297ad38395d",
+    "semantic_hash": ""
+  },
+  "src/components/blog/FomogenCTA.astro": {
+    "mtime": 1784917262.5375044,
+    "ast_hash": "beb9fce984b49110cd602f8f35debbba",
+    "semantic_hash": ""
+  },
+  "src/components/blog/MindfulGuardCTA.astro": {
+    "mtime": 1785523502.7338834,
+    "ast_hash": "59db845c17c21e7ea71a440a440a7baf",
+    "semantic_hash": ""
+  },
+  "src/components/blog/ReadingProgressBar.astro": {
+    "mtime": 1775289088.916935,
+    "ast_hash": "aee3dfa13ca1c6a8ca4b3a6b49197640",
+    "semantic_hash": ""
+  },
+  "src/components/blog/ScreenVeilCTA.astro": {
+    "mtime": 1785633761.3465679,
+    "ast_hash": "cbd994a0694b705df4b3ad6a62302f9b",
+    "semantic_hash": ""
+  },
+  "src/components/blog/ShareArticle.astro": {
+    "mtime": 1775289088.9171345,
+    "ast_hash": "63695c07f29ae5c3167480502c2fe609",
+    "semantic_hash": ""
+  },
+  "src/components/common/FAQRegistrySection.astro": {
+    "mtime": 1785523019.591719,
+    "ast_hash": "2368820f542cb285bff773f31d578b7b",
+    "semantic_hash": ""
+  },
+  "src/components/common/FAQSchema.astro": {
+    "mtime": 1775289088.9174092,
+    "ast_hash": "24a9e0d05821ce895b0019075fa4bdd7",
+    "semantic_hash": ""
+  },
+  "src/components/common/Footer.astro": {
+    "mtime": 1785523268.9295425,
+    "ast_hash": "48f8940d7e93f2f07d3fba2b94a243f2",
+    "semantic_hash": ""
+  },
+  "src/components/common/LanguageToggle.astro": {
+    "mtime": 1785635223.3464842,
+    "ast_hash": "db0ff7c6a0be7e6d508292b6f195c1e7",
+    "semantic_hash": ""
+  },
+  "src/components/common/MobileMenuToggle.astro": {
+    "mtime": 1778958942.373794,
+    "ast_hash": "e26652efb122c12c53218ee54d0e9eb1",
+    "semantic_hash": ""
+  },
+  "src/components/common/Navbar.astro": {
+    "mtime": 1785635238.2709613,
+    "ast_hash": "b39a4fbe7c3ef01a85aa2224e2c43cb1",
+    "semantic_hash": ""
+  },
+  "src/components/common/Section.astro": {
+    "mtime": 1772796847.3323634,
+    "ast_hash": "28216435c40775a54419869cff464fdc",
+    "semantic_hash": ""
+  },
+  "src/components/common/SubpageHero.astro": {
+    "mtime": 1772796847.3325737,
+    "ast_hash": "605d6caaa1947fe967040e5ba4c9d6de",
+    "semantic_hash": ""
+  },
+  "src/components/compare/CompareFooter.astro": {
+    "mtime": 1772963894.62156,
+    "ast_hash": "09562ae2b5a70b836fc10a87d8f15049",
+    "semantic_hash": ""
+  },
+  "src/components/compare/CompareHero.astro": {
+    "mtime": 1775289088.9182746,
+    "ast_hash": "ccc0b6f12bfaf7d132f3674d7b3e5629",
+    "semantic_hash": ""
+  },
+  "src/components/compare/CompareTestimonial.astro": {
+    "mtime": 1785523019.5923483,
+    "ast_hash": "0b1325c81d97a3198e8d4140cc9f658d",
+    "semantic_hash": ""
+  },
+  "src/components/compare/ComparisonMatrix.astro": {
+    "mtime": 1772963894.622139,
+    "ast_hash": "979727e6e4d0997e01d9b70cb5deb862",
+    "semantic_hash": ""
+  },
+  "src/components/compare/TechnicalDebt.astro": {
+    "mtime": 1785523019.5929725,
+    "ast_hash": "d9660447726f7c075f9c1bf8bfaf0c59",
+    "semantic_hash": ""
+  },
+  "src/components/compare/ValueHighlights.astro": {
+    "mtime": 1772963894.6224632,
+    "ast_hash": "476ee47cfa450306b6c76c1c1f713295",
+    "semantic_hash": ""
+  },
+  "src/components/docs-content/DocsHubPage.astro": {
+    "mtime": 1785523019.593593,
+    "ast_hash": "b60a2734891ade9dfd4337044865c06d",
+    "semantic_hash": ""
+  },
+  "src/components/docs-content/fomogen/FomogenDocsPage.astro": {
+    "mtime": 1785523019.594901,
+    "ast_hash": "280bfd49a690b62e33c36860c06ff54d",
+    "semantic_hash": ""
+  },
+  "src/components/docs-content/fomogen/configuration/ConfigurationPage.astro": {
+    "mtime": 1785523019.595265,
+    "ast_hash": "4961f24279e093fb7de130c582a7ac63",
+    "semantic_hash": ""
+  },
+  "src/components/docs-content/fomogen/countdown-timers/CountdownTimersPage.astro": {
+    "mtime": 1785523019.5970638,
+    "ast_hash": "34b9ee221e809db57769009a07cd0fcc",
+    "semantic_hash": ""
+  },
+  "src/components/docs-content/fomogen/exit-intent/ExitIntentPage.astro": {
+    "mtime": 1785523019.5976841,
+    "ast_hash": "5eb805bd17553b875f57594a05d4d5c5",
+    "semantic_hash": ""
+  },
+  "src/components/docs-content/fomogen/faq/FAQPage.astro": {
+    "mtime": 1785523019.5954642,
+    "ast_hash": "ea27d851c4213020ecb4e9a804ce1681",
+    "semantic_hash": ""
+  },
+  "src/components/docs-content/fomogen/progress-indicators/ProgressIndicatorsPage.astro": {
+    "mtime": 1785523019.59732,
+    "ast_hash": "895e05290319513ce3d2191d8c41e9c4",
+    "semantic_hash": ""
+  },
+  "src/components/docs-content/fomogen/purchase-notifications/PurchaseNotificationsPage.astro": {
+    "mtime": 1785523019.5975099,
+    "ast_hash": "2a140be01a82addd39c33bce1616eefc",
+    "semantic_hash": ""
+  },
+  "src/components/docs-content/fomogen/quick-start/QuickStartPage.astro": {
+    "mtime": 1785523019.5968096,
+    "ast_hash": "f9894983f70aa89eee69354363711587",
+    "semantic_hash": ""
+  },
+  "src/components/docs-content/fomogen/social-proof-badges/SocialProofBadgesPage.astro": {
+    "mtime": 1785523019.5957212,
+    "ast_hash": "a8211a1148b2d1313e0c8162fdaec28b",
+    "semantic_hash": ""
+  },
+  "src/components/docs-content/fomogen/sticky-cart/StickyCartPage.astro": {
+    "mtime": 1785523019.59641,
+    "ast_hash": "5e73938c351a049058f5216669ff21d7",
+    "semantic_hash": ""
+  },
+  "src/components/docs-content/fomogen/stock-alerts/StockAlertsPage.astro": {
+    "mtime": 1785523019.5965996,
+    "ast_hash": "78664bf0853bfa6de1ed9aaff1ee00e7",
+    "semantic_hash": ""
+  },
+  "src/components/docs-content/fomogen/trust-badges/TrustBadgesPage.astro": {
+    "mtime": 1785523019.5960705,
+    "ast_hash": "507da2baea4315c344e5aa799d28bf3f",
+    "semantic_hash": ""
+  },
+  "src/components/docs-content/mindful-guard/MindfulGuardDocsPage.astro": {
+    "mtime": 1785523019.5937133,
+    "ast_hash": "27a43c91f633f9273466632b38baf4ed",
+    "semantic_hash": ""
+  },
+  "src/components/docs-content/mindful-guard/installation/MindfulInstallationPage.astro": {
+    "mtime": 1785523019.5938878,
+    "ast_hash": "3f3d04b3eebedc224ea8b53cc4982d82",
+    "semantic_hash": ""
+  },
+  "src/components/docs-content/mindful-guard/strict-mode/StrictModePage.astro": {
+    "mtime": 1785523019.5941203,
+    "ast_hash": "92a04f79415c3105e823725dc9263172",
+    "semantic_hash": ""
+  },
+  "src/components/docs-content/screenveil/ScreenVeilDocsPage.astro": {
+    "mtime": 1785523019.5943835,
+    "ast_hash": "bd8c52eef74f0d12aada5a97a4d3fd2f",
+    "semantic_hash": ""
+  },
+  "src/components/docs-content/screenveil/amoled-efficiency/AmoledEfficiencyPage.astro": {
+    "mtime": 1785523019.5945845,
+    "ast_hash": "f1963b8bba7ceb7b0362de4aecc47aa3",
+    "semantic_hash": ""
+  },
+  "src/components/docs/docs-sidebar.tsx": {
+    "mtime": 1785523019.611415,
+    "ast_hash": "28104c205043703954e2b697a7004179",
+    "semantic_hash": ""
+  },
+  "src/components/home/AnswerNuggets.astro": {
+    "mtime": 1785522378.4438114,
+    "ast_hash": "71ff64f9adce470e9303482544325a52",
+    "semantic_hash": ""
+  },
+  "src/components/home/FoundersMoat.astro": {
+    "mtime": 1785522234.2109993,
+    "ast_hash": "b487e52c40d216a733d3fed7f3a15fa0",
+    "semantic_hash": ""
+  },
+  "src/components/home/Hero.astro": {
+    "mtime": 1785522234.2113943,
+    "ast_hash": "c40a0380bebabac4e70651ea74b155d3",
+    "semantic_hash": ""
+  },
+  "src/components/home/ProductShowcase.astro": {
+    "mtime": 1785522352.3154395,
+    "ast_hash": "edd61d6022e754a47581ec0cefe4e945",
+    "semantic_hash": ""
+  },
+  "src/components/home/SocialProof.astro": {
+    "mtime": 1785521604.2089663,
+    "ast_hash": "f01288a6b150ed127cac9f8f05d81778",
+    "semantic_hash": ""
+  },
+  "src/components/home/SolutionsSection.astro": {
+    "mtime": 1785522234.212054,
+    "ast_hash": "d8d7c5c253be23904b5dcc931ccf5949",
+    "semantic_hash": ""
+  },
+  "src/components/i18n/Localize.tsx": {
+    "mtime": 1772796847.3359733,
+    "ast_hash": "8c835da7f5d30b2d38e852c422eab70a",
+    "semantic_hash": ""
+  },
+  "src/components/legal/AriselyPrivacy.astro": {
+    "mtime": 1785523019.5986748,
+    "ast_hash": "8bb10a5239463050d52d0742776273c1",
+    "semantic_hash": ""
+  },
+  "src/components/legal/AriselyTerms.astro": {
+    "mtime": 1785522932.975114,
+    "ast_hash": "ad2849ee98e660098de2238fe72ef3b1",
+    "semantic_hash": ""
+  },
+  "src/components/legal/FomogenPrivacy.astro": {
+    "mtime": 1772796396.7814083,
+    "ast_hash": "8f33a7d6c4dedfa554fd9a3283023ee2",
+    "semantic_hash": ""
+  },
+  "src/components/legal/FomogenTerms.astro": {
+    "mtime": 1772796396.7817032,
+    "ast_hash": "32c021aaf2b33015cac5bcc41b6f8170",
+    "semantic_hash": ""
+  },
+  "src/components/legal/MindfulGuardPrivacy.astro": {
+    "mtime": 1785523019.598482,
+    "ast_hash": "0fb3f16a1c21fafad151ff5576d517b7",
+    "semantic_hash": ""
+  },
+  "src/components/legal/MindfulGuardTerms.astro": {
+    "mtime": 1772531797.7338548,
+    "ast_hash": "3b35cbe1a225cf0570653056b80743c7",
+    "semantic_hash": ""
+  },
+  "src/components/legal/ScreenveilPrivacy.astro": {
+    "mtime": 1785523019.5980074,
+    "ast_hash": "b7358ea6a855cc119d6be637d2f15fe0",
+    "semantic_hash": ""
+  },
+  "src/components/legal/ScreenveilTerms.astro": {
+    "mtime": 1772531797.7320065,
+    "ast_hash": "b1523d193d5858ba9b6955c0541e80a8",
+    "semantic_hash": ""
+  },
+  "src/components/ui/button.tsx": {
+    "mtime": 1772227499.1966918,
+    "ast_hash": "6101c0f1928ab7a9f45c5de2155f074f",
+    "semantic_hash": ""
+  },
+  "src/components/ui/link-button.tsx": {
+    "mtime": 1772227499.196854,
+    "ast_hash": "d6626f9f08ffd85e6dff91086dccd6bf",
+    "semantic_hash": ""
+  },
+  "src/components/ui/portal.tsx": {
+    "mtime": 1772227499.1970332,
+    "ast_hash": "5f3ba1a30fd68b31cd6eb6af98b4e3c8",
+    "semantic_hash": ""
+  },
+  "src/constants/faq-registry.ts": {
+    "mtime": 1785520304.1315262,
+    "ast_hash": "f1d80e538be04f7689c00d606284d4be",
+    "semantic_hash": ""
+  },
+  "src/constants/fomogen-data.ts": {
+    "mtime": 1775927606.0656555,
+    "ast_hash": "0bcad456b5fe8bb7efbd793913f06d4c",
+    "semantic_hash": ""
+  },
+  "src/constants/home-data.ts": {
+    "mtime": 1785521183.861393,
+    "ast_hash": "022482efea545b3e0e825c15edf9de69",
+    "semantic_hash": ""
+  },
+  "src/constants/mindful-guard-data.ts": {
+    "mtime": 1784916861.5800226,
+    "ast_hash": "65687ee05623534d3e99da135f57e18f",
+    "semantic_hash": ""
+  },
+  "src/constants/screenveil-data.ts": {
+    "mtime": 1775289088.9187775,
+    "ast_hash": "31d8ab3cfb7d90693e1107049c542057",
+    "semantic_hash": ""
+  },
+  "src/content.config.ts": {
+    "mtime": 1785566508.8414373,
+    "ast_hash": "b5206cf040e9ff238b6978f12b95f016",
+    "semantic_hash": ""
+  },
+  "src/env.d.ts": {
+    "mtime": 1772227499.197444,
+    "ast_hash": "7d8bbe5805ce32280696152903c9a707",
+    "semantic_hash": ""
+  },
+  "src/hooks/useParallax.ts": {
+    "mtime": 1772227499.1979947,
+    "ast_hash": "97cbe984bc7b96920b13df588b6df67e",
+    "semantic_hash": ""
+  },
+  "src/i18n/config.ts": {
+    "mtime": 1785593351.4888415,
+    "ast_hash": "9b5bd8304c2b41f16e2750895021bbe1",
+    "semantic_hash": ""
+  },
+  "src/i18n/index.ts": {
+    "mtime": 1784917176.720167,
+    "ast_hash": "3519ee3cdc0a2637b03ac3dc397eb2db",
+    "semantic_hash": ""
+  },
+  "src/i18n/locales/en.json": {
+    "mtime": 1785659538.1138864,
+    "ast_hash": "9aa8761ce5f185491c9b2186ed30bf95",
+    "semantic_hash": ""
+  },
+  "src/i18n/locales/fr.json": {
+    "mtime": 1785659530.8294199,
+    "ast_hash": "633dc42ea4f9e4a9021b3f068e64a9b9",
+    "semantic_hash": ""
+  },
+  "src/i18n/localize.ts": {
+    "mtime": 1772796847.3399737,
+    "ast_hash": "27b28622bb0e66be65dec0828030a7d2",
+    "semantic_hash": ""
+  },
+  "src/i18n/utils.ts": {
+    "mtime": 1777185979.7399678,
+    "ast_hash": "b287b9575a32b55f5e3f137c12c8742b",
+    "semantic_hash": ""
+  },
+  "src/layouts/DocsLayout.astro": {
+    "mtime": 1785523019.6045818,
+    "ast_hash": "b45e4223c90fb8e4e03ef1578472f7c1",
+    "semantic_hash": ""
+  },
+  "src/layouts/Layout.astro": {
+    "mtime": 1785635165.87495,
+    "ast_hash": "dbeff7228c9d4ab3ffc1d0a0426ea789",
+    "semantic_hash": ""
+  },
+  "src/lib/blog.ts": {
+    "mtime": 1785635147.1372743,
+    "ast_hash": "1fbb87741c2c4209ae7b3914bda29e1a",
+    "semantic_hash": ""
+  },
+  "src/lib/compare.ts": {
+    "mtime": 1772796847.3411615,
+    "ast_hash": "6e14536b9beeedce5b885d4bc40d7372",
+    "semantic_hash": ""
+  },
+  "src/lib/docs-registry.ts": {
+    "mtime": 1772963894.6284175,
+    "ast_hash": "8ddf7a772c8ade74b12237e41067afac",
+    "semantic_hash": ""
+  },
+  "src/lib/legal-registry.ts": {
+    "mtime": 1784647349.5288725,
+    "ast_hash": "d156faa275555cdce40cf582ff9de413",
+    "semantic_hash": ""
+  },
+  "src/lib/utils.ts": {
+    "mtime": 1784823261.9896505,
+    "ast_hash": "53c9ccfd0b68bef85d5add078acad63f",
+    "semantic_hash": ""
+  },
+  "src/page-templates/AboutPage.astro": {
+    "mtime": 1785566937.1766868,
+    "ast_hash": "db0e98d5c7155225025dd3d535085fde",
+    "semantic_hash": ""
+  },
+  "src/page-templates/AppsFomogenPage.astro": {
+    "mtime": 1785566937.1793065,
+    "ast_hash": "d7fd21d997c75b7eb1ce1fc461776e42",
+    "semantic_hash": ""
+  },
+  "src/page-templates/AppsFomogenPricingPage.astro": {
+    "mtime": 1775289088.9223998,
+    "ast_hash": "315414df85b709838531f893b1d8c013",
+    "semantic_hash": ""
+  },
+  "src/page-templates/AppsMindfulGuardPage.astro": {
+    "mtime": 1785593433.2912967,
+    "ast_hash": "a3ef877aa1c0db8602cf5a1fbc37910d",
+    "semantic_hash": ""
+  },
+  "src/page-templates/AppsPage.astro": {
+    "mtime": 1785523019.6028163,
+    "ast_hash": "ef9db24559ad4ca32bbf417d2134c460",
+    "semantic_hash": ""
+  },
+  "src/page-templates/AppsScreenveilPage.astro": {
+    "mtime": 1785593436.092128,
+    "ast_hash": "1be15c131046cfe035a1ab74b1ba8f2d",
+    "semantic_hash": ""
+  },
+  "src/page-templates/BlogIndexPage.astro": {
+    "mtime": 1785523019.603875,
+    "ast_hash": "63d07631a772c0a15076c0b34a2d4842",
+    "semantic_hash": ""
+  },
+  "src/page-templates/BlogPostPage.astro": {
+    "mtime": 1785635243.7026618,
+    "ast_hash": "dbc3cfe3ea1159bd1e7a065864bacc93",
+    "semantic_hash": ""
+  },
+  "src/page-templates/CompareDetailPage.astro": {
+    "mtime": 1785566937.192983,
+    "ast_hash": "e5af249be7097a3d5b1cb0462cb33702",
+    "semantic_hash": ""
+  },
+  "src/page-templates/ComparePage.astro": {
+    "mtime": 1785523187.6268175,
+    "ast_hash": "73e7a0fc7f65e37bcbcce2c6fc62d5f6",
+    "semantic_hash": ""
+  },
+  "src/page-templates/DigitalWellnessPage.astro": {
+    "mtime": 1785567458.8181233,
+    "ast_hash": "9a31c13bcec72d9603051047dbd9a8bf",
+    "semantic_hash": ""
+  },
+  "src/page-templates/DocsArticlePage.astro": {
+    "mtime": 1772796847.3450253,
+    "ast_hash": "bfea3e29ca05c8559273992e692d4719",
+    "semantic_hash": ""
+  },
+  "src/page-templates/DocsHubPage.astro": {
+    "mtime": 1772963894.629133,
+    "ast_hash": "69b69478de6ee14ccc764e4f46383e85",
+    "semantic_hash": ""
+  },
+  "src/page-templates/DocsProductPage.astro": {
+    "mtime": 1772963894.6293464,
+    "ast_hash": "4dd8bc8d8e2141f7327a8109b86d6401",
+    "semantic_hash": ""
+  },
+  "src/page-templates/EcommerceGuidePage.astro": {
+    "mtime": 1785635064.8298817,
+    "ast_hash": "d19c2b5c42ec57b096d3a73ddcc6e1f4",
+    "semantic_hash": ""
+  },
+  "src/page-templates/HomePage.astro": {
+    "mtime": 1785520985.572488,
+    "ast_hash": "994c2649275fe173a56791e0c67ff346",
+    "semantic_hash": ""
+  },
+  "src/page-templates/LegalPage.astro": {
+    "mtime": 1785523019.6019363,
+    "ast_hash": "152b2f970eb8b8565b49e946bebc6d33",
+    "semantic_hash": ""
+  },
+  "src/page-templates/NotFoundPage.astro": {
+    "mtime": 1785523170.083159,
+    "ast_hash": "79c5eba414c7a9ab82165b2a168e22a4",
+    "semantic_hash": ""
+  },
+  "src/pages/404.astro": {
+    "mtime": 1772529301.7610128,
+    "ast_hash": "19dc118698958782ce2fbf9e15f02256",
+    "semantic_hash": ""
+  },
+  "src/pages/[lang]/about/index.astro": {
+    "mtime": 1772529301.7696831,
+    "ast_hash": "94630e46316574d5bc93379ab1d3e5b2",
+    "semantic_hash": ""
+  },
+  "src/pages/[lang]/apps/fomogen/index.astro": {
+    "mtime": 1772529301.7732973,
+    "ast_hash": "28f6a7a9a72c2b20cb827bb372347a71",
+    "semantic_hash": ""
+  },
+  "src/pages/[lang]/apps/fomogen/pricing/index.astro": {
+    "mtime": 1772529301.773612,
+    "ast_hash": "87f4ee4c86ac435e4c4e8f221d016551",
+    "semantic_hash": ""
+  },
+  "src/pages/[lang]/apps/index.astro": {
+    "mtime": 1772529301.7726316,
+    "ast_hash": "ac787ec2690a1846598f1d34e8770151",
+    "semantic_hash": ""
+  },
+  "src/pages/[lang]/apps/mindful-guard/index.astro": {
+    "mtime": 1772529301.772847,
+    "ast_hash": "8104ade5a9c04914c44e27c6562044f4",
+    "semantic_hash": ""
+  },
+  "src/pages/[lang]/apps/screenveil/index.astro": {
+    "mtime": 1772529301.7730742,
+    "ast_hash": "addf6760c7e552d9791429e2742371aa",
+    "semantic_hash": ""
+  },
+  "src/pages/[lang]/blog/[slug].astro": {
+    "mtime": 1785569767.428357,
+    "ast_hash": "cd20aba9f29cee7a4b7077a5acf402dd",
+    "semantic_hash": ""
+  },
+  "src/pages/[lang]/blog/index.astro": {
+    "mtime": 1772529301.7704751,
+    "ast_hash": "afd0e571a92c0057d6a5093cb1e4d586",
+    "semantic_hash": ""
+  },
+  "src/pages/[lang]/compare/[slug].astro": {
+    "mtime": 1772529301.7716973,
+    "ast_hash": "31b4d6ba8f166ef30f1d5f1f2e4e4c98",
+    "semantic_hash": ""
+  },
+  "src/pages/[lang]/compare/index.astro": {
+    "mtime": 1772529301.7710564,
+    "ast_hash": "4938c1c484087b08173b1539900e6ee7",
+    "semantic_hash": ""
+  },
+  "src/pages/[lang]/digital-wellness-2026-guide/index.astro": {
+    "mtime": 1772529301.7721431,
+    "ast_hash": "dd96941f408bc74072aba9cd9261ab37",
+    "semantic_hash": ""
+  },
+  "src/pages/[lang]/docs/[product]/[slug].astro": {
+    "mtime": 1772796396.784887,
+    "ast_hash": "952585ec7f49829767b0f91a59789a4f",
+    "semantic_hash": ""
+  },
+  "src/pages/[lang]/docs/[product]/index.astro": {
+    "mtime": 1772529301.7698956,
+    "ast_hash": "f12e6b71bfc09f3d0b72e079f448a631",
+    "semantic_hash": ""
+  },
+  "src/pages/[lang]/docs/index.astro": {
+    "mtime": 1772796396.7851617,
+    "ast_hash": "f5b73642843218de30dd2a9774ddfdde",
+    "semantic_hash": ""
+  },
+  "src/pages/[lang]/ecommerce-performance-2026-benchmarks/index.astro": {
+    "mtime": 1772529301.7719386,
+    "ast_hash": "64fc26ff380fbbdc81f6d5eb1e06280d",
+    "semantic_hash": ""
+  },
+  "src/pages/[lang]/index.astro": {
+    "mtime": 1772529301.7694721,
+    "ast_hash": "36bb03f4b98bcf3f4978ee6328312ff4",
+    "semantic_hash": ""
+  },
+  "src/pages/[lang]/legal/[product]/[type].astro": {
+    "mtime": 1785523019.610525,
+    "ast_hash": "3243d30cd6af9ea3ff3bf0b39616923b",
+    "semantic_hash": ""
+  },
+  "src/pages/about/index.astro": {
+    "mtime": 1772529301.7618494,
+    "ast_hash": "b1c54d9cc9438f0ed51a3ee0990a52f0",
+    "semantic_hash": ""
+  },
+  "src/pages/apps/fomogen/index.astro": {
+    "mtime": 1772529301.7690513,
+    "ast_hash": "10fc3c068d1cea9480a9bc6cffc1bdbb",
+    "semantic_hash": ""
+  },
+  "src/pages/apps/fomogen/pricing/index.astro": {
+    "mtime": 1772529301.7692685,
+    "ast_hash": "e790b2b27fdf5ff91432c04c430b0f58",
+    "semantic_hash": ""
+  },
+  "src/pages/apps/index.astro": {
+    "mtime": 1772529301.7684882,
+    "ast_hash": "e613b6dfc94722a7690c1b14b3e9c244",
+    "semantic_hash": ""
+  },
+  "src/pages/apps/mindful-guard/index.astro": {
+    "mtime": 1772529301.7686808,
+    "ast_hash": "76e64bf6f3899904b3e1e8e64fd1ef37",
+    "semantic_hash": ""
+  },
+  "src/pages/apps/screenveil/index.astro": {
+    "mtime": 1772529301.768867,
+    "ast_hash": "1922f375ef20e9483154fde4c4ee9c93",
+    "semantic_hash": ""
+  },
+  "src/pages/blog/[slug].astro": {
+    "mtime": 1772529301.7662573,
+    "ast_hash": "411c211d7070dacf17c036255e5ac31f",
+    "semantic_hash": ""
+  },
+  "src/pages/blog/index.astro": {
+    "mtime": 1772529301.7660713,
+    "ast_hash": "0cb72e32896d70a809275349899ef073",
+    "semantic_hash": ""
+  },
+  "src/pages/compare/[slug].astro": {
+    "mtime": 1772529301.7666416,
+    "ast_hash": "b70d5b79501d0915cf9a725a94b52caa",
+    "semantic_hash": ""
+  },
+  "src/pages/compare/index.astro": {
+    "mtime": 1772529301.7664602,
+    "ast_hash": "45dc2530c4c1a9abad761738d578cce1",
+    "semantic_hash": ""
+  },
+  "src/pages/digital-wellness-2026-guide/index.astro": {
+    "mtime": 1772529301.7669625,
+    "ast_hash": "5ebf38d8d7faad5178ef7007913d8c62",
+    "semantic_hash": ""
+  },
+  "src/pages/docs/fomogen/configuration/index.astro": {
+    "mtime": 1772963894.6295683,
+    "ast_hash": "c1a3f1780b17b2461f1ee38a6fd2df81",
+    "semantic_hash": ""
+  },
+  "src/pages/docs/fomogen/countdown-timers/index.astro": {
+    "mtime": 1772963894.630086,
+    "ast_hash": "2c009313232421e6b1d22c385957e9d3",
+    "semantic_hash": ""
+  },
+  "src/pages/docs/fomogen/exit-intent/index.astro": {
+    "mtime": 1772963894.6302667,
+    "ast_hash": "47bbe00e07fb519841be2fc0b4f4a59a",
+    "semantic_hash": ""
+  },
+  "src/pages/docs/fomogen/faq/index.astro": {
+    "mtime": 1772963894.6304967,
+    "ast_hash": "85fe29d5bfefe94c8ddb0424145cccea",
+    "semantic_hash": ""
+  },
+  "src/pages/docs/fomogen/index.astro": {
+    "mtime": 1772794553.9972901,
+    "ast_hash": "9e1497f5c317c9f4cb66099b9d405776",
+    "semantic_hash": ""
+  },
+  "src/pages/docs/fomogen/progress-indicators/index.astro": {
+    "mtime": 1772963894.6309395,
+    "ast_hash": "e3ac49a752a66d269c1929bf9f6231ef",
+    "semantic_hash": ""
+  },
+  "src/pages/docs/fomogen/purchase-notifications/index.astro": {
+    "mtime": 1772963894.6310837,
+    "ast_hash": "48660041ed0dd5cd32732d3038d76a60",
+    "semantic_hash": ""
+  },
+  "src/pages/docs/fomogen/quick-start/index.astro": {
+    "mtime": 1772963894.6312625,
+    "ast_hash": "b3816a39b2cec1388001bf634c5f5308",
+    "semantic_hash": ""
+  },
+  "src/pages/docs/fomogen/social-proof-badges/index.astro": {
+    "mtime": 1772963894.6315448,
+    "ast_hash": "7149fc036f42c717cc65fdc9f99af76c",
+    "semantic_hash": ""
+  },
+  "src/pages/docs/fomogen/sticky-cart/index.astro": {
+    "mtime": 1772963894.6321964,
+    "ast_hash": "79d62f8019656606257aec71ca581460",
+    "semantic_hash": ""
+  },
+  "src/pages/docs/fomogen/stock-alerts/index.astro": {
+    "mtime": 1772963894.6323724,
+    "ast_hash": "5e27b634f486717657fa73cfcf9826e7",
+    "semantic_hash": ""
+  },
+  "src/pages/docs/fomogen/trust-badges/index.astro": {
+    "mtime": 1772963894.6325605,
+    "ast_hash": "9f3fc4401ddceeed23bef1d7a7f6ae58",
+    "semantic_hash": ""
+  },
+  "src/pages/docs/index.astro": {
+    "mtime": 1772823900.4700007,
+    "ast_hash": "146936e68269319fcb88b4aa06eea597",
+    "semantic_hash": ""
+  },
+  "src/pages/docs/mindful-guard/index.astro": {
+    "mtime": 1772529301.7622962,
+    "ast_hash": "da3db82d6a476e4984f82fea12e82922",
+    "semantic_hash": ""
+  },
+  "src/pages/docs/mindful-guard/installation/index.astro": {
+    "mtime": 1772963894.63273,
+    "ast_hash": "917ab5d4b95530f31bd8c6c53293747a",
+    "semantic_hash": ""
+  },
+  "src/pages/docs/mindful-guard/strict-mode/index.astro": {
+    "mtime": 1772963894.6329067,
+    "ast_hash": "8f3126a6404ed586643e8495358d7a99",
+    "semantic_hash": ""
+  },
+  "src/pages/docs/screenveil/amoled-efficiency/index.astro": {
+    "mtime": 1772963894.6331208,
+    "ast_hash": "8b6e14d766bbd4ba1c21d7b9f3f27e5b",
+    "semantic_hash": ""
+  },
+  "src/pages/docs/screenveil/index.astro": {
+    "mtime": 1772529301.7631886,
+    "ast_hash": "7f77471e1f2e5a6da0ea97890c4a12a8",
+    "semantic_hash": ""
+  },
+  "src/pages/ecommerce-performance-2026-benchmarks/index.astro": {
+    "mtime": 1772529301.7668004,
+    "ast_hash": "7fda9775e786d1521b19dc7f927d7eef",
+    "semantic_hash": ""
+  },
+  "src/pages/index.astro": {
+    "mtime": 1772529301.7613711,
+    "ast_hash": "bf887cb6f41132246d7c28a2f1567a35",
+    "semantic_hash": ""
+  },
+  "src/pages/legal/arisely/privacy/index.astro": {
+    "mtime": 1784647335.3276744,
+    "ast_hash": "1c622b02f68799ea5194bc0552f33c06",
+    "semantic_hash": ""
+  },
+  "src/pages/legal/arisely/terms/index.astro": {
+    "mtime": 1784647337.0370326,
+    "ast_hash": "7e50615aa4318c36c9a860f67c799909",
+    "semantic_hash": ""
+  },
+  "src/pages/legal/fomogen/privacy/index.astro": {
+    "mtime": 1775924009.8385384,
+    "ast_hash": "c141cb4c927c899d365a198316011429",
+    "semantic_hash": ""
+  },
+  "src/pages/legal/fomogen/terms/index.astro": {
+    "mtime": 1775924016.7035356,
+    "ast_hash": "d691615bcf995bbdee9e5ac8a1fa7703",
+    "semantic_hash": ""
+  },
+  "src/pages/legal/mindful-guard/privacy/index.astro": {
+    "mtime": 1785523019.6078932,
+    "ast_hash": "6d701e4b3504454092ae8d669dd38c70",
+    "semantic_hash": ""
+  },
+  "src/pages/legal/mindful-guard/terms/index.astro": {
+    "mtime": 1785523019.6080601,
+    "ast_hash": "bc0b45cb172482a60cdf97ba5967a757",
+    "semantic_hash": ""
+  },
+  "src/pages/legal/screenveil/privacy/index.astro": {
+    "mtime": 1775924037.561604,
+    "ast_hash": "12d3f1ffc8ad663ae091b2b10939646d",
+    "semantic_hash": ""
+  },
+  "src/pages/legal/screenveil/terms/index.astro": {
+    "mtime": 1775924044.7172544,
+    "ast_hash": "a5970ff10d1ae3ba9699567ef23236eb",
+    "semantic_hash": ""
+  },
+  "src/pages/robots.txt.ts": {
+    "mtime": 1784916861.5818655,
+    "ast_hash": "af08cfc769184fd4356b5137115549e2",
+    "semantic_hash": ""
+  },
+  "tsconfig.json": {
+    "mtime": 1772227499.215189,
+    "ast_hash": "c12ac0ca1a343dd71efc3eb79d58d38f",
+    "semantic_hash": ""
+  },
+  ".agent/ARCHITECTURE.md": {
+    "mtime": 1770905839.4160655,
+    "ast_hash": "0a374939f16162849901d40ce3a34600",
+    "semantic_hash": ""
+  },
+  ".agent/agents/backend-specialist.md": {
+    "mtime": 1770905839.416433,
+    "ast_hash": "676c72cde832534213f5ce91d1f56e2a",
+    "semantic_hash": ""
+  },
+  ".agent/agents/code-archaeologist.md": {
+    "mtime": 1770905839.416596,
+    "ast_hash": "bb756087b168afed6938d9a7eea0f808",
+    "semantic_hash": ""
+  },
+  ".agent/agents/database-architect.md": {
+    "mtime": 1770905839.4171953,
+    "ast_hash": "d0537f6d47fa38eb9d3930898d980589",
+    "semantic_hash": ""
+  },
+  ".agent/agents/debugger.md": {
+    "mtime": 1770905839.417397,
+    "ast_hash": "c96e49d4f0a795f63a1449c4a51183c6",
+    "semantic_hash": ""
+  },
+  ".agent/agents/devops-engineer.md": {
+    "mtime": 1770905839.4175267,
+    "ast_hash": "361f7e82563dd7370438ebf057a36ec2",
+    "semantic_hash": ""
+  },
+  ".agent/agents/documentation-writer.md": {
+    "mtime": 1770905839.417735,
+    "ast_hash": "0b5ed6ad6fa440c133cd9236c1dddd10",
+    "semantic_hash": ""
+  },
+  ".agent/agents/explorer-agent.md": {
+    "mtime": 1770905839.41786,
+    "ast_hash": "d85169d52ac3cdee678e9a33725fd103",
+    "semantic_hash": ""
+  },
+  ".agent/agents/frontend-specialist.md": {
+    "mtime": 1770905839.4181232,
+    "ast_hash": "7d6699f97c2f6a791a5cb5355441bd3c",
+    "semantic_hash": ""
+  },
+  ".agent/agents/game-developer.md": {
+    "mtime": 1770905839.4182642,
+    "ast_hash": "a46e41a1385ca2a236a310be54659fe5",
+    "semantic_hash": ""
+  },
+  ".agent/agents/mobile-developer.md": {
+    "mtime": 1770905839.4187028,
+    "ast_hash": "7316dd50b8b5ea68addd24e1a920a67a",
+    "semantic_hash": ""
+  },
+  ".agent/agents/orchestrator.md": {
+    "mtime": 1770905839.418972,
+    "ast_hash": "09a77fa30f63a28e3e798a90e20a2e04",
+    "semantic_hash": ""
+  },
+  ".agent/agents/penetration-tester.md": {
+    "mtime": 1770905839.4190867,
+    "ast_hash": "794905ed38f4647e4e1c70ccd19b6417",
+    "semantic_hash": ""
+  },
+  ".agent/agents/performance-optimizer.md": {
+    "mtime": 1770905839.4192002,
+    "ast_hash": "4912daf97edcf29f02bab378e4b64952",
+    "semantic_hash": ""
+  },
+  ".agent/agents/product-manager.md": {
+    "mtime": 1770905839.419312,
+    "ast_hash": "52ff775ba12355f28a75f854f156f8e4",
+    "semantic_hash": ""
+  },
+  ".agent/agents/product-owner.md": {
+    "mtime": 1770905839.4195936,
+    "ast_hash": "4fb765af2bc06b0cbe88b2e7fe3312ca",
+    "semantic_hash": ""
+  },
+  ".agent/agents/project-planner.md": {
+    "mtime": 1770905839.4197485,
+    "ast_hash": "c95456a002018f84864d54ab42e6b953",
+    "semantic_hash": ""
+  },
+  ".agent/agents/qa-automation-engineer.md": {
+    "mtime": 1770905839.419987,
+    "ast_hash": "a2e4c8234862babd6fce15266e4ee643",
+    "semantic_hash": ""
+  },
+  ".agent/agents/security-auditor.md": {
+    "mtime": 1770905839.4201174,
+    "ast_hash": "b1196e6e2bf1b55900d3592dae6c3b67",
+    "semantic_hash": ""
+  },
+  ".agent/agents/seo-specialist.md": {
+    "mtime": 1775295307.8871007,
+    "ast_hash": "ff71d73b07fc62371554d87dc1f23ad7",
+    "semantic_hash": ""
+  },
+  ".agent/agents/test-engineer.md": {
+    "mtime": 1770905839.4203372,
+    "ast_hash": "d53e53f5213caf1a3814ea4a0eec9dc7",
+    "semantic_hash": ""
+  },
+  ".agent/rules/GEMINI.md": {
+    "mtime": 1770905839.4206855,
+    "ast_hash": "4dfd817aa9b23ffb7abeb868d8bd083f",
+    "semantic_hash": ""
+  },
+  ".agent/skills/api-patterns/SKILL.md": {
+    "mtime": 1770905839.42239,
+    "ast_hash": "a761f6af3dec95802dc32b614c4e97c7",
+    "semantic_hash": ""
+  },
+  ".agent/skills/api-patterns/api-style.md": {
+    "mtime": 1770905839.422518,
+    "ast_hash": "026906ab9dea74e590c1a063ab343393",
+    "semantic_hash": ""
+  },
+  ".agent/skills/api-patterns/auth.md": {
+    "mtime": 1770905839.4227314,
+    "ast_hash": "e681963c4a76425c826e78385bee809e",
+    "semantic_hash": ""
+  },
+  ".agent/skills/api-patterns/documentation.md": {
+    "mtime": 1770905839.4228427,
+    "ast_hash": "7481785b96c1daf7980edf4b232d6d52",
+    "semantic_hash": ""
+  },
+  ".agent/skills/api-patterns/graphql.md": {
+    "mtime": 1770905839.422996,
+    "ast_hash": "1171306974034c812f8a4dc59e34030b",
+    "semantic_hash": ""
+  },
+  ".agent/skills/api-patterns/rate-limiting.md": {
+    "mtime": 1770905839.4231083,
+    "ast_hash": "0fc1c906dc10326b76b333f8cd213590",
+    "semantic_hash": ""
+  },
+  ".agent/skills/api-patterns/response.md": {
+    "mtime": 1770905839.4232268,
+    "ast_hash": "5bdc075b6659fb61634cd1069349c8c2",
+    "semantic_hash": ""
+  },
+  ".agent/skills/api-patterns/rest.md": {
+    "mtime": 1770905839.4233532,
+    "ast_hash": "a1e467859fe04ebbecfd74324483f652",
+    "semantic_hash": ""
+  },
+  ".agent/skills/api-patterns/security-testing.md": {
+    "mtime": 1770905839.423747,
+    "ast_hash": "3684662c65ff3ca1c7d96fd8ffdf58fe",
+    "semantic_hash": ""
+  },
+  ".agent/skills/api-patterns/trpc.md": {
+    "mtime": 1770905839.4239166,
+    "ast_hash": "905cac48b9beb48a379e49145678a4a7",
+    "semantic_hash": ""
+  },
+  ".agent/skills/api-patterns/versioning.md": {
+    "mtime": 1770905839.4240456,
+    "ast_hash": "c2bbb6891d64e87e9b7495c5c3cf4447",
+    "semantic_hash": ""
+  },
+  ".agent/skills/app-builder/SKILL.md": {
+    "mtime": 1770905839.4241939,
+    "ast_hash": "9720f8d287fe5ac68495dcea6650a03d",
+    "semantic_hash": ""
+  },
+  ".agent/skills/app-builder/agent-coordination.md": {
+    "mtime": 1770905839.4243088,
+    "ast_hash": "9dcf9e734a65e64fb49c697dc2a675a1",
+    "semantic_hash": ""
+  },
+  ".agent/skills/app-builder/feature-building.md": {
+    "mtime": 1770905839.4244199,
+    "ast_hash": "90c6a5b5958e404832fe51436a803a4b",
+    "semantic_hash": ""
+  },
+  ".agent/skills/app-builder/project-detection.md": {
+    "mtime": 1770905839.4246976,
+    "ast_hash": "8c6833c8ae34f0525a1b4dd0d804d082",
+    "semantic_hash": ""
+  },
+  ".agent/skills/app-builder/scaffolding.md": {
+    "mtime": 1770905839.4248118,
+    "ast_hash": "2b687efb9cfa3e1a12b85670145432c0",
+    "semantic_hash": ""
+  },
+  ".agent/skills/app-builder/tech-stack.md": {
+    "mtime": 1770905839.4249156,
+    "ast_hash": "f5af8aba38e8400171da2a6c59e41813",
+    "semantic_hash": ""
+  },
+  ".agent/skills/app-builder/templates/SKILL.md": {
+    "mtime": 1770905839.4250495,
+    "ast_hash": "29a7c054b968662665b7da2c887b76ea",
+    "semantic_hash": ""
+  },
+  ".agent/skills/app-builder/templates/astro-static/TEMPLATE.md": {
+    "mtime": 1770905839.4251866,
+    "ast_hash": "c9d421ead3b1de54043fa4ae610b2a95",
+    "semantic_hash": ""
+  },
+  ".agent/skills/app-builder/templates/chrome-extension/TEMPLATE.md": {
+    "mtime": 1770905839.4253247,
+    "ast_hash": "5dbf2eb3fb1ca85960a03675c0844985",
+    "semantic_hash": ""
+  },
+  ".agent/skills/app-builder/templates/cli-tool/TEMPLATE.md": {
+    "mtime": 1770905839.4254797,
+    "ast_hash": "5f8c32d543569ac8fadcd06ecf02c31f",
+    "semantic_hash": ""
+  },
+  ".agent/skills/app-builder/templates/electron-desktop/TEMPLATE.md": {
+    "mtime": 1770905839.4256158,
+    "ast_hash": "088639bf92cd2b6cce5cf7bdcf0c5b5b",
+    "semantic_hash": ""
+  },
+  ".agent/skills/app-builder/templates/express-api/TEMPLATE.md": {
+    "mtime": 1770905839.425756,
+    "ast_hash": "f62300858b64b202f0d772d7164dc0aa",
+    "semantic_hash": ""
+  },
+  ".agent/skills/app-builder/templates/flutter-app/TEMPLATE.md": {
+    "mtime": 1770905839.4259002,
+    "ast_hash": "957b3a59e7bce19359cf1e143097bbd8",
+    "semantic_hash": ""
+  },
+  ".agent/skills/app-builder/templates/monorepo-turborepo/TEMPLATE.md": {
+    "mtime": 1770905839.4269757,
+    "ast_hash": "91cbea11ec665f52306d3f9af327dab9",
+    "semantic_hash": ""
+  },
+  ".agent/skills/app-builder/templates/nextjs-fullstack/TEMPLATE.md": {
+    "mtime": 1770905839.4272807,
+    "ast_hash": "37ffded35d5b173ad8510181908852b7",
+    "semantic_hash": ""
+  },
+  ".agent/skills/app-builder/templates/nextjs-saas/TEMPLATE.md": {
+    "mtime": 1770905839.4277081,
+    "ast_hash": "b69a1f64b22a5416936764ee11b4c697",
+    "semantic_hash": ""
+  },
+  ".agent/skills/app-builder/templates/nextjs-static/TEMPLATE.md": {
+    "mtime": 1770905839.4278636,
+    "ast_hash": "09cc76d196f9e60f9776a6ccbdeed8ae",
+    "semantic_hash": ""
+  },
+  ".agent/skills/app-builder/templates/nuxt-app/TEMPLATE.md": {
+    "mtime": 1770905839.4280899,
+    "ast_hash": "35df06754f67f3ed87e02f8184a3e053",
+    "semantic_hash": ""
+  },
+  ".agent/skills/app-builder/templates/python-fastapi/TEMPLATE.md": {
+    "mtime": 1770905839.4282436,
+    "ast_hash": "7b2c89d2b4083120841c9ef212fc5dbd",
+    "semantic_hash": ""
+  },
+  ".agent/skills/app-builder/templates/react-native-app/TEMPLATE.md": {
+    "mtime": 1770905839.4283922,
+    "ast_hash": "8f2afa941c5b41655063a4b47559d309",
+    "semantic_hash": ""
+  },
+  ".agent/skills/architecture/SKILL.md": {
+    "mtime": 1770905839.428562,
+    "ast_hash": "f326c59d18a108b1bbdbcdc528823037",
+    "semantic_hash": ""
+  },
+  ".agent/skills/architecture/context-discovery.md": {
+    "mtime": 1770905839.428709,
+    "ast_hash": "639c14983f8d539428d88d0723d1bc7f",
+    "semantic_hash": ""
+  },
+  ".agent/skills/architecture/examples.md": {
+    "mtime": 1770905839.4288237,
+    "ast_hash": "57731f1ba92d434772fcf7eecb361823",
+    "semantic_hash": ""
+  },
+  ".agent/skills/architecture/pattern-selection.md": {
+    "mtime": 1770905839.4289377,
+    "ast_hash": "794a63a0e1ed9bbc10109b7aef585193",
+    "semantic_hash": ""
+  },
+  ".agent/skills/architecture/patterns-reference.md": {
+    "mtime": 1770905839.4290843,
+    "ast_hash": "c97f2a6ce65c7c2e0be06a218505da7b",
+    "semantic_hash": ""
+  },
+  ".agent/skills/architecture/trade-off-analysis.md": {
+    "mtime": 1770905839.4292126,
+    "ast_hash": "4f8a7d8b826b262e11b92b4904d7408e",
+    "semantic_hash": ""
+  },
+  ".agent/skills/bash-linux/SKILL.md": {
+    "mtime": 1770905839.4294508,
+    "ast_hash": "fd46da19bc3086941b8dcb3c47d73d5c",
+    "semantic_hash": ""
+  },
+  ".agent/skills/behavioral-modes/SKILL.md": {
+    "mtime": 1770905839.429599,
+    "ast_hash": "000d8841b0c4b6a7bf8016d91b3eb710",
+    "semantic_hash": ""
+  },
+  ".agent/skills/brainstorming/SKILL.md": {
+    "mtime": 1770905839.429744,
+    "ast_hash": "cbc74b62dc979fb6a37741b0b4f695f4",
+    "semantic_hash": ""
+  },
+  ".agent/skills/brainstorming/dynamic-questioning.md": {
+    "mtime": 1770905839.4300117,
+    "ast_hash": "690a002b4ebd1769f5f0d6d5d90bea5e",
+    "semantic_hash": ""
+  },
+  ".agent/skills/clean-code/SKILL.md": {
+    "mtime": 1770905839.43023,
+    "ast_hash": "62f71e934acd9e1cf1c772e5a7d0c2dd",
+    "semantic_hash": ""
+  },
+  ".agent/skills/code-review-checklist/SKILL.md": {
+    "mtime": 1770905839.4303684,
+    "ast_hash": "ca2dc4643bb5e097d438333e1bf1f433",
+    "semantic_hash": ""
+  },
+  ".agent/skills/database-design/SKILL.md": {
+    "mtime": 1770905839.4306095,
+    "ast_hash": "c2c46136fe7493488c0088d38ca3232c",
+    "semantic_hash": ""
+  },
+  ".agent/skills/database-design/database-selection.md": {
+    "mtime": 1770905839.4307232,
+    "ast_hash": "347313ad6404d9c67233c9e3589e827b",
+    "semantic_hash": ""
+  },
+  ".agent/skills/database-design/indexing.md": {
+    "mtime": 1770905839.430844,
+    "ast_hash": "d9af4f15a221fd11216ac4becb2ae6d9",
+    "semantic_hash": ""
+  },
+  ".agent/skills/database-design/migrations.md": {
+    "mtime": 1770905839.4309454,
+    "ast_hash": "5b0fae60872a97085a4eaea0f5043c7f",
+    "semantic_hash": ""
+  },
+  ".agent/skills/database-design/optimization.md": {
+    "mtime": 1770905839.43105,
+    "ast_hash": "ba23a83d2f87ccf798f686ffb98eefb4",
+    "semantic_hash": ""
+  },
+  ".agent/skills/database-design/orm-selection.md": {
+    "mtime": 1770905839.431148,
+    "ast_hash": "57b36b081b5a433c3f212dc7650b7ba2",
+    "semantic_hash": ""
+  },
+  ".agent/skills/database-design/schema-design.md": {
+    "mtime": 1770905839.4312575,
+    "ast_hash": "de70f75edc8c42a3ce5ab3ef7b1e44b0",
+    "semantic_hash": ""
+  },
+  ".agent/skills/deployment-procedures/SKILL.md": {
+    "mtime": 1770905839.4315789,
+    "ast_hash": "77ad2fef6850bbb31a6af95dc957c529",
+    "semantic_hash": ""
+  },
+  ".agent/skills/doc.md": {
+    "mtime": 1770905839.431696,
+    "ast_hash": "ddbb695d7dab708def2957782ffabfb9",
+    "semantic_hash": ""
+  },
+  ".agent/skills/documentation-templates/SKILL.md": {
+    "mtime": 1770905839.4318314,
+    "ast_hash": "5fdce483c0b706ca9cfd952305de2ece",
+    "semantic_hash": ""
+  },
+  ".agent/skills/frontend-design/SKILL.md": {
+    "mtime": 1770905839.4321098,
+    "ast_hash": "af42060024c0fab00383906ff1a73d37",
+    "semantic_hash": ""
+  },
+  ".agent/skills/frontend-design/animation-guide.md": {
+    "mtime": 1770905839.4323647,
+    "ast_hash": "53ce4cc04709d1aae0ad116de654c6be",
+    "semantic_hash": ""
+  },
+  ".agent/skills/frontend-design/color-system.md": {
+    "mtime": 1770905839.4326923,
+    "ast_hash": "ab7abcefbebd5cffb42ebb881b9313ad",
+    "semantic_hash": ""
+  },
+  ".agent/skills/frontend-design/decision-trees.md": {
+    "mtime": 1770905839.4330716,
+    "ast_hash": "5a309956e70777b1e1e64c726b69c96d",
+    "semantic_hash": ""
+  },
+  ".agent/skills/frontend-design/motion-graphics.md": {
+    "mtime": 1770905839.4332688,
+    "ast_hash": "da853990b01dd9d02beabcf6487594d4",
+    "semantic_hash": ""
+  },
+  ".agent/skills/frontend-design/typography-system.md": {
+    "mtime": 1770905839.434093,
+    "ast_hash": "678d27ff9fdae7011fae8514b6886720",
+    "semantic_hash": ""
+  },
+  ".agent/skills/frontend-design/ux-psychology.md": {
+    "mtime": 1770905839.434414,
+    "ast_hash": "3dd212171b8a6afca82505a3c737173c",
+    "semantic_hash": ""
+  },
+  ".agent/skills/frontend-design/visual-effects.md": {
+    "mtime": 1770905839.434633,
+    "ast_hash": "ac983fac39ffbd8fb11d3124cc829f21",
+    "semantic_hash": ""
+  },
+  ".agent/skills/game-development/2d-games/SKILL.md": {
+    "mtime": 1770905839.4347959,
+    "ast_hash": "08032d58d720de7dbb5eff22ab0d92da",
+    "semantic_hash": ""
+  },
+  ".agent/skills/game-development/3d-games/SKILL.md": {
+    "mtime": 1770905839.4349954,
+    "ast_hash": "20a08249ff8de51ef52b8b8c644b2d96",
+    "semantic_hash": ""
+  },
+  ".agent/skills/game-development/SKILL.md": {
+    "mtime": 1770905839.4353104,
+    "ast_hash": "880c2d7a1beda19db82fd6a1c4aa38d3",
+    "semantic_hash": ""
+  },
+  ".agent/skills/game-development/game-art/SKILL.md": {
+    "mtime": 1770905839.435582,
+    "ast_hash": "3a1c8fe9c471299a6c11610186c88015",
+    "semantic_hash": ""
+  },
+  ".agent/skills/game-development/game-audio/SKILL.md": {
+    "mtime": 1770905839.435796,
+    "ast_hash": "5ccaa0440ea0c219cb1a595abdccb7b3",
+    "semantic_hash": ""
+  },
+  ".agent/skills/game-development/game-design/SKILL.md": {
+    "mtime": 1770905839.4361763,
+    "ast_hash": "4edef7c1c71ea9d817678dd52b2c8b8a",
+    "semantic_hash": ""
+  },
+  ".agent/skills/game-development/mobile-games/SKILL.md": {
+    "mtime": 1770905839.436334,
+    "ast_hash": "1b495a47751c53848d5fd41ba9352fbf",
+    "semantic_hash": ""
+  },
+  ".agent/skills/game-development/multiplayer/SKILL.md": {
+    "mtime": 1770905839.436474,
+    "ast_hash": "3e7c4f6db553f936c0ff5ff6f75a5039",
+    "semantic_hash": ""
+  },
+  ".agent/skills/game-development/pc-games/SKILL.md": {
+    "mtime": 1770905839.4366274,
+    "ast_hash": "d4f2c5000a6874b022f88fc145e8d345",
+    "semantic_hash": ""
+  },
+  ".agent/skills/game-development/vr-ar/SKILL.md": {
+    "mtime": 1770905839.4367704,
+    "ast_hash": "8e57d1861f9007796135148ea78cd68d",
+    "semantic_hash": ""
+  },
+  ".agent/skills/game-development/web-games/SKILL.md": {
+    "mtime": 1770905839.436917,
+    "ast_hash": "0d673df3aa92e60a3b2245e682d7feea",
+    "semantic_hash": ""
+  },
+  ".agent/skills/geo-fundamentals/SKILL.md": {
+    "mtime": 1770905839.437067,
+    "ast_hash": "e5cf4b9552377321422bbe509416cf66",
+    "semantic_hash": ""
+  },
+  ".agent/skills/i18n-localization/SKILL.md": {
+    "mtime": 1770905839.4377058,
+    "ast_hash": "e9d01501f2b1fcc4b74bde68d3d12129",
+    "semantic_hash": ""
+  },
+  ".agent/skills/intelligent-routing/SKILL.md": {
+    "mtime": 1770905839.4381843,
+    "ast_hash": "45715144b5ac54bb69b0d8ec200a3578",
+    "semantic_hash": ""
+  },
+  ".agent/skills/lint-and-validate/SKILL.md": {
+    "mtime": 1770905839.4383183,
+    "ast_hash": "9c21b5201977857193608c522f36f5b0",
+    "semantic_hash": ""
+  },
+  ".agent/skills/mcp-builder/SKILL.md": {
+    "mtime": 1770905839.4389095,
+    "ast_hash": "a541eec4a6cac5ea38daae5a739c194b",
+    "semantic_hash": ""
+  },
+  ".agent/skills/mobile-design/SKILL.md": {
+    "mtime": 1770905839.4391117,
+    "ast_hash": "96fded5c3eb1771bba8e6578e1fc29d7",
+    "semantic_hash": ""
+  },
+  ".agent/skills/mobile-design/decision-trees.md": {
+    "mtime": 1770905839.4393423,
+    "ast_hash": "da41645ced8583140ea4769a93356032",
+    "semantic_hash": ""
+  },
+  ".agent/skills/mobile-design/mobile-backend.md": {
+    "mtime": 1770905839.4397666,
+    "ast_hash": "5efeeed87af0cf24b46b57abf8cec62e",
+    "semantic_hash": ""
+  },
+  ".agent/skills/mobile-design/mobile-color-system.md": {
+    "mtime": 1770905839.439946,
+    "ast_hash": "e3d3bdb60c3c9f33cf7b054ee4a6fcd6",
+    "semantic_hash": ""
+  },
+  ".agent/skills/mobile-design/mobile-debugging.md": {
+    "mtime": 1770905839.44015,
+    "ast_hash": "0f2c244c90ffd75cb6c8e41c5dfebf30",
+    "semantic_hash": ""
+  },
+  ".agent/skills/mobile-design/mobile-design-thinking.md": {
+    "mtime": 1770905839.4402695,
+    "ast_hash": "72c0a7f59974c596517f6c20e658427f",
+    "semantic_hash": ""
+  },
+  ".agent/skills/mobile-design/mobile-navigation.md": {
+    "mtime": 1770905839.4405136,
+    "ast_hash": "c5bf0f8c1b343e975426cd9d01bb07fe",
+    "semantic_hash": ""
+  },
+  ".agent/skills/mobile-design/mobile-performance.md": {
+    "mtime": 1770905839.44065,
+    "ast_hash": "b7890d3a52c4fccb33e478bd9ec58348",
+    "semantic_hash": ""
+  },
+  ".agent/skills/mobile-design/mobile-testing.md": {
+    "mtime": 1770905839.4408271,
+    "ast_hash": "c1cf9eb1852fa50f66d33c3236a49070",
+    "semantic_hash": ""
+  },
+  ".agent/skills/mobile-design/mobile-typography.md": {
+    "mtime": 1770905839.4410014,
+    "ast_hash": "05589e223e3b7c58aa38c6a0b9148ffa",
+    "semantic_hash": ""
+  },
+  ".agent/skills/mobile-design/platform-android.md": {
+    "mtime": 1770905839.4411306,
+    "ast_hash": "4638d680cfa5bbc85a8679dde96a0d2a",
+    "semantic_hash": ""
+  },
+  ".agent/skills/mobile-design/platform-ios.md": {
+    "mtime": 1770905839.4412582,
+    "ast_hash": "0c70db44faba33601bcaf4f7779f2676",
+    "semantic_hash": ""
+  },
+  ".agent/skills/mobile-design/touch-psychology.md": {
+    "mtime": 1770905839.442498,
+    "ast_hash": "9748644e18e7db30a0fd241a0e4e09e1",
+    "semantic_hash": ""
+  },
+  ".agent/skills/nextjs-react-expert/1-async-eliminating-waterfalls.md": {
+    "mtime": 1770905839.4426806,
+    "ast_hash": "6a4dd091e73994ec7d4dd67d30c4e759",
+    "semantic_hash": ""
+  },
+  ".agent/skills/nextjs-react-expert/2-bundle-bundle-size-optimization.md": {
+    "mtime": 1770905839.4428017,
+    "ast_hash": "1d33f6021ab3b86ef0203891c925e133",
+    "semantic_hash": ""
+  },
+  ".agent/skills/nextjs-react-expert/3-server-server-side-performance.md": {
+    "mtime": 1770905839.4429865,
+    "ast_hash": "e4683083575ebb9604a2e8b0f15045ee",
+    "semantic_hash": ""
+  },
+  ".agent/skills/nextjs-react-expert/4-client-client-side-data-fetching.md": {
+    "mtime": 1770905839.4431176,
+    "ast_hash": "112049ec08fba24dd78613a73ceeb975",
+    "semantic_hash": ""
+  },
+  ".agent/skills/nextjs-react-expert/5-rerender-re-render-optimization.md": {
+    "mtime": 1770905839.443286,
+    "ast_hash": "64d4758299929c42c2a0eaa8132fa12a",
+    "semantic_hash": ""
+  },
+  ".agent/skills/nextjs-react-expert/6-rendering-rendering-performance.md": {
+    "mtime": 1770905839.443488,
+    "ast_hash": "d88aca4380d4238980d9722af32e7aa2",
+    "semantic_hash": ""
+  },
+  ".agent/skills/nextjs-react-expert/7-js-javascript-performance.md": {
+    "mtime": 1770905839.4436283,
+    "ast_hash": "b066dd16ad1d25637c1781be00eb6bad",
+    "semantic_hash": ""
+  },
+  ".agent/skills/nextjs-react-expert/8-advanced-advanced-patterns.md": {
+    "mtime": 1770905839.4437568,
+    "ast_hash": "450f1a9223a365deb16a75bb6abf77f2",
+    "semantic_hash": ""
+  },
+  ".agent/skills/nextjs-react-expert/SKILL.md": {
+    "mtime": 1770905839.4442434,
+    "ast_hash": "8985c25728d44d080219e60b9807a336",
+    "semantic_hash": ""
+  },
+  ".agent/skills/nodejs-best-practices/SKILL.md": {
+    "mtime": 1770905839.4452608,
+    "ast_hash": "32f400005277d167d4e4be784d523943",
+    "semantic_hash": ""
+  },
+  ".agent/skills/parallel-agents/SKILL.md": {
+    "mtime": 1770905839.445413,
+    "ast_hash": "ed57c1d1588d57a5ad80aedd3a1339ce",
+    "semantic_hash": ""
+  },
+  ".agent/skills/performance-profiling/SKILL.md": {
+    "mtime": 1770905839.445569,
+    "ast_hash": "b7ea0aacfb18bbb5836ef530570ac821",
+    "semantic_hash": ""
+  },
+  ".agent/skills/plan-writing/SKILL.md": {
+    "mtime": 1770905839.44603,
+    "ast_hash": "73cc49a801718189217c4c006055572c",
+    "semantic_hash": ""
+  },
+  ".agent/skills/powershell-windows/SKILL.md": {
+    "mtime": 1770905839.4461813,
+    "ast_hash": "38267f1cb0cbb5675a1488e61ea93a2b",
+    "semantic_hash": ""
+  },
+  ".agent/skills/python-patterns/SKILL.md": {
+    "mtime": 1770905839.446396,
+    "ast_hash": "499438501ace49fa323febf9d5b13f0a",
+    "semantic_hash": ""
+  },
+  ".agent/skills/red-team-tactics/SKILL.md": {
+    "mtime": 1770905839.4465725,
+    "ast_hash": "84e91f650fb1425e1e4b9b16b4f299a0",
+    "semantic_hash": ""
+  },
+  ".agent/skills/seo-fundamentals/SKILL.md": {
+    "mtime": 1775295309.902742,
+    "ast_hash": "d93f170c3037df90683d2d7eac75df32",
+    "semantic_hash": ""
+  },
+  ".agent/skills/server-management/SKILL.md": {
+    "mtime": 1770905839.4470248,
+    "ast_hash": "b53044ce541b9b076c4d3a0207c3b2da",
+    "semantic_hash": ""
+  },
+  ".agent/skills/systematic-debugging/SKILL.md": {
+    "mtime": 1770905839.4471793,
+    "ast_hash": "08e76c8c3e1cc2a9d7bfdce86d35adf3",
+    "semantic_hash": ""
+  },
+  ".agent/skills/tailwind-patterns/SKILL.md": {
+    "mtime": 1770905839.4473906,
+    "ast_hash": "536894b12b1f43f2f15b35f5f4a75ce1",
+    "semantic_hash": ""
+  },
+  ".agent/skills/tdd-workflow/SKILL.md": {
+    "mtime": 1770905839.4475286,
+    "ast_hash": "1a6eed4dd83000fc316b8ccf6d42e4d4",
+    "semantic_hash": ""
+  },
+  ".agent/skills/testing-patterns/SKILL.md": {
+    "mtime": 1770905839.447698,
+    "ast_hash": "abc5978237e9831823f06e9702b0b5b8",
+    "semantic_hash": ""
+  },
+  ".agent/skills/vulnerability-scanner/SKILL.md": {
+    "mtime": 1770905839.4480453,
+    "ast_hash": "7c77ccd518c14bb7c1fbed90fed02bb8",
+    "semantic_hash": ""
+  },
+  ".agent/skills/vulnerability-scanner/checklists.md": {
+    "mtime": 1770905839.448148,
+    "ast_hash": "350500a08f395bae5bed39a13c023f5f",
+    "semantic_hash": ""
+  },
+  ".agent/skills/web-design-guidelines/SKILL.md": {
+    "mtime": 1770905839.448542,
+    "ast_hash": "79c5af49d238b7d53ef90a40cca5e85e",
+    "semantic_hash": ""
+  },
+  ".agent/skills/webapp-testing/SKILL.md": {
+    "mtime": 1770905839.448677,
+    "ast_hash": "8cd0df264b980c983b865ae828ea8b9a",
+    "semantic_hash": ""
+  },
+  ".agent/workflows/brainstorm.md": {
+    "mtime": 1770905839.4489787,
+    "ast_hash": "3c7b164401b7b381786322f62a7441ee",
+    "semantic_hash": ""
+  },
+  ".agent/workflows/create.md": {
+    "mtime": 1770905839.4491022,
+    "ast_hash": "26899c59bd84cf4d4af646d293cc86b1",
+    "semantic_hash": ""
+  },
+  ".agent/workflows/debug.md": {
+    "mtime": 1770905839.449203,
+    "ast_hash": "d6a9ec4d47bafe8da5b4787c7e66ada3",
+    "semantic_hash": ""
+  },
+  ".agent/workflows/deploy.md": {
+    "mtime": 1770905839.4493062,
+    "ast_hash": "c7729fc67d7556b0452b7b998afb9106",
+    "semantic_hash": ""
+  },
+  ".agent/workflows/enhance.md": {
+    "mtime": 1770905839.4494023,
+    "ast_hash": "521bcbce05dacc928e5ef7b41a4cb383",
+    "semantic_hash": ""
+  },
+  ".agent/workflows/orchestrate.md": {
+    "mtime": 1770905839.4495966,
+    "ast_hash": "355414e63fc1798fd3e7fd798ab6f6a4",
+    "semantic_hash": ""
+  },
+  ".agent/workflows/plan.md": {
+    "mtime": 1770905839.4497108,
+    "ast_hash": "bc1307c9da7855038820661f8b0888fe",
+    "semantic_hash": ""
+  },
+  ".agent/workflows/preview.md": {
+    "mtime": 1770905839.4498062,
+    "ast_hash": "d786313d5f32e3353058868ccbba0aee",
+    "semantic_hash": ""
+  },
+  ".agent/workflows/status.md": {
+    "mtime": 1770905839.449903,
+    "ast_hash": "53f1272179d8f1c531e1ad8de19423a7",
+    "semantic_hash": ""
+  },
+  ".agent/workflows/test.md": {
+    "mtime": 1770905839.450007,
+    "ast_hash": "b6e7c7950d37dfaf1be070fbb69c3a8f",
+    "semantic_hash": ""
+  },
+  ".agent/workflows/ui-ux-pro-max.md": {
+    "mtime": 1770905839.450156,
+    "ast_hash": "4a1fe4c0790a077b3dc015954da39763",
+    "semantic_hash": ""
+  },
+  ".agents/skills/content-strategy/SKILL.md": {
+    "mtime": 1784820698.6367617,
+    "ast_hash": "77a58ce277b244d5f852ee8be923d7d1",
+    "semantic_hash": ""
+  },
+  ".agents/skills/content-strategy/references/headless-cms.md": {
+    "mtime": 1784820698.637093,
+    "ast_hash": "7fd35a740b5b9884b9009d02960842c1",
+    "semantic_hash": ""
+  },
+  ".agents/skills/marketing-ideas/SKILL.md": {
+    "mtime": 1784820540.8389668,
+    "ast_hash": "9cc357338181a02e6cdd3c775fa1026d",
+    "semantic_hash": ""
+  },
+  ".agents/skills/marketing-ideas/references/ideas-by-category.md": {
+    "mtime": 1784820540.8391523,
+    "ast_hash": "037d36ec60475fa42f6c4167bfc85af8",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1784823199.546595,
+    "ast_hash": "82efb97a359f5c7290bf2513d14686be",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1772227499.1503494,
+    "ast_hash": "de76967202948d4f70d11f4b3d9e7674",
+    "semantic_hash": ""
+  },
+  "docs/mindfulguard-marketing-plan.md": {
+    "mtime": 1785428421.3095376,
+    "ast_hash": "59fa370622595a2697801c63f7882a68",
+    "semantic_hash": ""
+  },
+  "play-data-safety.md": {
+    "mtime": 1784647058.666773,
+    "ast_hash": "a60433eb96b6c0e506abca6475e502cd",
+    "semantic_hash": ""
+  },
+  "privacy-policy.md": {
+    "mtime": 1784647067.6068113,
+    "ast_hash": "39b0fb534371141140b3fe96df8c682c",
+    "semantic_hash": ""
+  },
+  "public/app-ads.txt": {
+    "mtime": 1780758185.488534,
+    "ast_hash": "cb9838ded5d4a821f99f3334c630f2eb",
+    "semantic_hash": ""
+  },
+  "public/llms.txt": {
+    "mtime": 1771603766.8953412,
+    "ast_hash": "293e87c8c31cdb9981b391f484a0b7f8",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/add-low-stock-alerts-shopify.md": {
+    "mtime": 1775295654.6157546,
+    "ast_hash": "62eeb35ba21d5de6773ec940bb7382c7",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/android-digital-wellbeing-vs-third-party-focus-apps.md": {
+    "mtime": 1785566498.4342055,
+    "ast_hash": "11aedd4bb656260b7f080c6dea701301",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/best-app-to-block-social-media-on-android-in-2026.mdx": {
+    "mtime": 1784823688.9833379,
+    "ast_hash": "185b36a67190976ecb3a460ab8ea4694",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/best-social-proof-apps-shopify-2026.md": {
+    "mtime": 1772301003.8157456,
+    "ast_hash": "9a398970492da74e4a50d2b3e9ffb42c",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/calculate-free-shipping-threshold.md": {
+    "mtime": 1772301003.8158417,
+    "ast_hash": "52ff59d4f22c32ba8af9d090ae2c2663",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/free-shipping-bar-shopify.md": {
+    "mtime": 1775295654.616053,
+    "ast_hash": "b3374f124a4753e380abd24b0392e978",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/how-to-add-sales-popup-shopify.md": {
+    "mtime": 1775289088.9196367,
+    "ast_hash": "8ccbd748cb0e108ee4c012d0939b16f6",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/how-to-block-reels-and-shorts-on-android-2026.mdx": {
+    "mtime": 1784824059.9390523,
+    "ast_hash": "d836243893631e4ca6ff7858022891df",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/how-to-block-social-media-on-android-during-work-hours.md": {
+    "mtime": 1785566498.4464774,
+    "ast_hash": "f5259c9b263d13446344b5d5ac614f17",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/logic-comparison-matrix.md": {
+    "mtime": 1785567985.8401442,
+    "ast_hash": "6a2b3381d1214b9fa4010b3fc9af44a0",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/mobile-sticky-cart-guide.md": {
+    "mtime": 1772301003.8160717,
+    "ast_hash": "7b05dc71f5d02891d52724fcf62aa0e8",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/monk-mode-willpower.md": {
+    "mtime": 1785568021.945824,
+    "ast_hash": "bf8b65d9302abeafb59ca70853c150a2",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/opal-alternatives-android.mdx": {
+    "mtime": 1784916861.5803213,
+    "ast_hash": "a4c84ab9f3a21dc4b9d0a1f72369cc1a",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/psychology-of-fomo-marketing.md": {
+    "mtime": 1772301003.8164635,
+    "ast_hash": "1bcc112ee239a33b0fce096dd89d057d",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/reclaim-focus-story.md": {
+    "mtime": 1785568011.8123188,
+    "ast_hash": "0c7a3ca36663f68ff5d9be8b4d152d89",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/shopify-conversion-rate-2026.mdx": {
+    "mtime": 1783164958.4802175,
+    "ast_hash": "044ef39df9d7e92a269bf6844e0786f9",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/shopify-conversion-rate-benchmarks-2026.md": {
+    "mtime": 1785568829.0823996,
+    "ast_hash": "a335398d238ab5520d1b16850987e972",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/shopify-site-speed-social-proof.md": {
+    "mtime": 1772301003.816651,
+    "ast_hash": "cd99862d15ef7d28eba2adee6bd3152f",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/the-logic-of-focus.md": {
+    "mtime": 1785567972.9481318,
+    "ast_hash": "0f31d19271769ba05fd5252fa9f7b1d8",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/youtube-background-play-2026-workaround.mdx": {
+    "mtime": 1779016498.1694267,
+    "ast_hash": "9e05e36af2f551e338b1ce0a90b42cb8",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/youtube-screen-off-battery-hack.md": {
+    "mtime": 1772301003.8169634,
+    "ast_hash": "15f2bbf81366ef7cc1d3e01d3e27c0f1",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/zero-telemetry-blocker.md": {
+    "mtime": 1785568001.10443,
+    "ast_hash": "8224c7c22bb02c412dd133f5409e8888",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/add-low-stock-alerts-shopify.md": {
+    "mtime": 1775295654.6165755,
+    "ast_hash": "1033a545d56319acbecba8366fdfdafc",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/android-digital-wellbeing-vs-third-party-focus-apps.md": {
+    "mtime": 1785568832.4472597,
+    "ast_hash": "23039b337433fb977334245a0e2c015b",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/best-app-to-block-social-media-on-android-in-2026.mdx": {
+    "mtime": 1784823688.9868765,
+    "ast_hash": "26fa9df5944f6b12e2bde8670d870968",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/best-social-proof-apps-shopify-2026.md": {
+    "mtime": 1772301003.817176,
+    "ast_hash": "334a22bcac0eff2539ef09acf3bf8c15",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/calculate-free-shipping-threshold.md": {
+    "mtime": 1785568484.0842109,
+    "ast_hash": "e99a263bf1ffb22ab57ba067f5d274d7",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/free-shipping-bar-shopify.md": {
+    "mtime": 1775295654.6168885,
+    "ast_hash": "b94fa2a1a46fa04e65e05be5d97ffe89",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/how-to-add-sales-popup-shopify.md": {
+    "mtime": 1775295654.6172335,
+    "ast_hash": "68b25c347e39219b7555fa6ea0c94f9d",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/how-to-block-social-media-on-android-during-work-hours.md": {
+    "mtime": 1785566498.4278924,
+    "ast_hash": "5e8c9bcaec5ecee4972cefc10e77b6fc",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/logic-comparison-matrix.md": {
+    "mtime": 1785568458.6787405,
+    "ast_hash": "a40c83660d4261af15d61427abf1cbbf",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/mobile-sticky-cart-guide.md": {
+    "mtime": 1772301003.8175058,
+    "ast_hash": "a3417a48926a225ec6c4df8173763aaa",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/monk-mode-willpower.md": {
+    "mtime": 1785568101.776367,
+    "ast_hash": "36d969c7c202a3a28e574af2695d825c",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/opal-alternatives-android.mdx": {
+    "mtime": 1784824349.6782932,
+    "ast_hash": "80d66d82e2d77276a46cb8547c269d22",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/psychology-of-fomo-marketing.md": {
+    "mtime": 1772301003.8178725,
+    "ast_hash": "1d4ae21ecb1705301734b7fd77a63777",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/reclaim-focus-story.md": {
+    "mtime": 1785568091.3191261,
+    "ast_hash": "20a69a214eb5abce1078faa994da1740",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/shopify-conversion-rate-2026.mdx": {
+    "mtime": 1783166852.9112294,
+    "ast_hash": "334269788754ee40f579eb9831ebb533",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/shopify-conversion-rate-benchmarks-2026.md": {
+    "mtime": 1785568830.5339973,
+    "ast_hash": "9d24ef571385ba0ce61cc9472e7afa47",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/shopify-site-speed-social-proof.md": {
+    "mtime": 1772301003.818105,
+    "ast_hash": "60e963f1b06760d9fead24ae8233e26d",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/the-logic-of-focus.md": {
+    "mtime": 1785568046.7665734,
+    "ast_hash": "db32f181b5ebc53895af6a3b58f452c4",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/youtube-background-play-2026-workaround.mdx": {
+    "mtime": 1779016498.1695786,
+    "ast_hash": "59a60e5c613d1c809b29a923597123e1",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/youtube-screen-off-battery-hack.md": {
+    "mtime": 1772301003.818437,
+    "ast_hash": "efd5ad70f4acecc26d867e989269a55c",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/zero-telemetry-blocker.md": {
+    "mtime": 1785568081.5542297,
+    "ast_hash": "4583ee01687f236bdb70833c24f01b83",
+    "semantic_hash": ""
+  },
+  "public/apple-touch-icon.png": {
+    "mtime": 1772285254.0,
+    "ast_hash": "b6ca1cf214374a79fac8f4e243d2db46",
+    "semantic_hash": ""
+  },
+  "public/favicon-96x96.png": {
+    "mtime": 1772285254.0,
+    "ast_hash": "82cb091e5e90f447c385169ca8991ca2",
+    "semantic_hash": ""
+  },
+  "public/favicon.svg": {
+    "mtime": 1772285254.0,
+    "ast_hash": "8c9d4f0e69df3fedaf01597769acb962",
+    "semantic_hash": ""
+  },
+  "public/fomogen-feature.png": {
+    "mtime": 1772306033.3853889,
+    "ast_hash": "23475fcb16e9824df44225f69bbf8f28",
+    "semantic_hash": ""
+  },
+  "public/fomogen-screenshot.png": {
+    "mtime": 1772306634.196852,
+    "ast_hash": "3d1c0bc8333093188361b5e7b5a05180",
+    "semantic_hash": ""
+  },
+  "public/logo.png": {
+    "mtime": 1772285056.0,
+    "ast_hash": "150210c30e1eb50113705d6738374158",
+    "semantic_hash": ""
+  },
+  "public/mindful-guard-feature.png": {
+    "mtime": 1772306033.3864334,
+    "ast_hash": "4ea0e8e6639bd5d0ac100bce93e8eb09",
+    "semantic_hash": ""
+  },
+  "public/og-image.png": {
+    "mtime": 1779016498.168194,
+    "ast_hash": "dd7a9f3bf5844618e893352877052d0c",
+    "semantic_hash": ""
+  },
+  "public/screenveil-feature.png": {
+    "mtime": 1772306033.384629,
+    "ast_hash": "884111389059d9253fa1b2b73091b27b",
+    "semantic_hash": ""
+  },
+  "public/web-app-manifest-192x192.png": {
+    "mtime": 1772285254.0,
+    "ast_hash": "c4ed540fec3aa27f874525908036d4ce",
+    "semantic_hash": ""
+  },
+  "public/web-app-manifest-512x512.png": {
+    "mtime": 1772285254.0,
+    "ast_hash": "f9f43764edfd5f0aa59dbe3416ba20a1",
+    "semantic_hash": ""
+  },
+  "src/assets/apps/fomogen-feature.png": {
+    "mtime": 1772227499.165381,
+    "ast_hash": "23475fcb16e9824df44225f69bbf8f28",
+    "semantic_hash": ""
+  },
+  "src/assets/apps/fomogen/comparison-hero.png": {
+    "mtime": 1772227499.1667373,
+    "ast_hash": "3d1c0bc8333093188361b5e7b5a05180",
+    "semantic_hash": ""
+  },
+  "src/assets/apps/fomogen/scarcity-ui.png": {
+    "mtime": 1772227499.1678798,
+    "ast_hash": "8e779f1d7e4f020fab87185b4b963dd0",
+    "semantic_hash": ""
+  },
+  "src/assets/apps/fomogen/shipping-bar-ui.png": {
+    "mtime": 1772227499.1689613,
+    "ast_hash": "1ea4efb57f7c0f0c704aa8d075a467fa",
+    "semantic_hash": ""
+  },
+  "src/assets/apps/fomogen/social-proof-ui.png": {
+    "mtime": 1772227499.1701643,
+    "ast_hash": "bc8c77ade1ae884f7f84bdac695f031e",
+    "semantic_hash": ""
+  },
+  "src/assets/apps/fomogen/sticky-cart-ui.png": {
+    "mtime": 1772227499.1715589,
+    "ast_hash": "ba42f1ba99a3ef0e40931c2c0ce66b91",
+    "semantic_hash": ""
+  },
+  "src/assets/apps/mindful-guard-feature.png": {
+    "mtime": 1772227499.173965,
+    "ast_hash": "4ea0e8e6639bd5d0ac100bce93e8eb09",
+    "semantic_hash": ""
+  },
+  "src/assets/apps/screenveil-feature.png": {
+    "mtime": 1772227499.1760588,
+    "ast_hash": "884111389059d9253fa1b2b73091b27b",
+    "semantic_hash": ""
+  },
+  "src/assets/apps/screenveil/hero-mockup.png": {
+    "mtime": 1772227499.1762717,
+    "ast_hash": "e186e2f332e57ca502f6a47b108a8979",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/android-apps-block-vs-unblock-work-hours-mindful-guard.png": {
+    "mtime": 1777184388.7639174,
+    "ast_hash": "b8a51196ae01973eb9cade6799e5887f",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/android-digital-wellbeing-limitations-focus-tool-infographic.png": {
+    "mtime": 1778178772.1436777,
+    "ast_hash": "d0346aa4d69a771e0e91afe984ecc9ea",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/app-bloat-diagram.png": {
+    "mtime": 1772301003.7713614,
+    "ast_hash": "776add6b4f85d97977b2022dd8c04744",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/app-comparison-chart.png": {
+    "mtime": 1772301003.7727747,
+    "ast_hash": "1fb43483328fae544e8c3a16492a2ea5",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/app-embed-diagram-v2.png": {
+    "mtime": 1772301003.7744567,
+    "ast_hash": "bbb36fad76ff292d0c4d3e11c6791dd6",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/block-reels-shorts-android.png": {
+    "mtime": 1784824059.9388392,
+    "ast_hash": "bf8236d5fdd07c61d476036c9605b782",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/block-social-media-android-2026.png": {
+    "mtime": 1779441442.4876592,
+    "ast_hash": "11f11a2ffa8cb56bb72a17744d41b9be",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/block-social-media-work-hours-android.png": {
+    "mtime": 1777184388.7559626,
+    "ast_hash": "11fba062c0ad411be12109553ace871e",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/comparison-matrix.png": {
+    "mtime": 1772301003.7752385,
+    "ast_hash": "e2f93e2baf2708906f44c2edd22bf872",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/cost-comparison.png": {
+    "mtime": 1772301003.7762291,
+    "ast_hash": "d4845c9d8a769600545cb468209df7d8",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/digital-wellbeing-dashboard-vs-mindful-guard-schedule-comparison.png": {
+    "mtime": 1778178772.1391792,
+    "ast_hash": "01ecf3cbf444a6ce0e0fd3a45fef8d6e",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/digital-wellbeing-vs-focus-apps-android.png": {
+    "mtime": 1778178772.1366193,
+    "ast_hash": "94934c51ccf3caaa3ddc860365889a4e",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/digital-wellbeing-vs-mindful-guard-block-screen-android.png": {
+    "mtime": 1777184388.7592957,
+    "ast_hash": "2f102e0b924f9e842ab1559d28dc2273",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/digital-wellbeing-vs-mindful-guard-feature-comparison-table.png": {
+    "mtime": 1778178772.1416268,
+    "ast_hash": "3be2698509b4ffcf2e43f1d67f79ca22",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/focus-reclaimed.png": {
+    "mtime": 1772301003.7773952,
+    "ast_hash": "07a470669e0df4904c82cef26ea8ad6b",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/fomo-funnel.png": {
+    "mtime": 1772301003.7784774,
+    "ast_hash": "96bc94165ffffdd166d569e53a1ac6ee",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/fomogen-social-proof-setup-dashboard.png": {
+    "mtime": 1775289088.8974702,
+    "ast_hash": "f4c9c2ffe1e8144b087ba3df9e81c7aa",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/free-shipping-bar-aov-comparison-infographic.png": {
+    "mtime": 1775289088.899264,
+    "ast_hash": "ca84c363e5b42ae9817baa3b69b8ad10",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/free-shipping-bar-shopify-hero.png": {
+    "mtime": 1775289088.90129,
+    "ast_hash": "c7bdd5ff5d1cc3af46f38ba0301bdc52",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/free-shipping-bar-three-stages-mobile.png": {
+    "mtime": 1775289088.902799,
+    "ast_hash": "d4bb256feacb598ed0f1c08ff615bbc7",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/free-shipping-progress-bar-customer-motivation.png": {
+    "mtime": 1775289088.9043827,
+    "ast_hash": "f0a63ed197bfcf07e2b85cc24103fb19",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/logic-matrix-visual.png": {
+    "mtime": 1772301003.7791204,
+    "ast_hash": "7bc1158731e46241743bb9a638b715ed",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/low-stock-alert-before-after-product-page.png": {
+    "mtime": 1775289088.9054098,
+    "ast_hash": "2d3f2dfa7c73794d2ceb4c0f0bb6dfd5",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/low-stock-alert-mobile-product-page-shopify.png": {
+    "mtime": 1775289088.9064906,
+    "ast_hash": "847a667fd4c0bd4366c85c600ba01b51",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/low-stock-alert-shopify-hero.png": {
+    "mtime": 1775289088.9073896,
+    "ast_hash": "523b6660b2505f479fd2b53c55540f85",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/low-stock-threshold-guide-product-types.png": {
+    "mtime": 1775289088.9083836,
+    "ast_hash": "3f1a97037eb443beeec0a53474d2437a",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/mindful-guard-instagram-block-screen-work-hours-android.png": {
+    "mtime": 1777184388.7617438,
+    "ast_hash": "8a15effe63e023dfbc68a5bbd77230a4",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/mobile-sticky-cart.png": {
+    "mtime": 1772301003.7805007,
+    "ast_hash": "c01745b658198b47744da86185a74079",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/monk-mode-desk.png": {
+    "mtime": 1772301003.7814908,
+    "ast_hash": "232f97b971fa15b79f5272bee0a31915",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/monk-mode-logic.png": {
+    "mtime": 1772301003.782319,
+    "ast_hash": "6f18493f9999f9abc08d335b4a21fa86",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/my-focus-story.png": {
+    "mtime": 1772301003.7834098,
+    "ast_hash": "9abf5911099fd0e7f6d86ec5a0d1c393",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/opal-alternatives-android.png": {
+    "mtime": 1772301003.784416,
+    "ast_hash": "9f19be70dcdf0644ef537a905c4c01b7",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/sales-popup-before-after-shopify.png": {
+    "mtime": 1775289088.9099386,
+    "ast_hash": "003a478ad9a7e5d085f3eaf615b0e17d",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/sales-popup-mobile-shopify-product-page.png": {
+    "mtime": 1775289088.9113822,
+    "ast_hash": "91b5a3280b2c1276fd5e064fc14610db",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/sales-popup-shopify-hero.png": {
+    "mtime": 1775289088.9126372,
+    "ast_hash": "bc516a518b60cca390bd65516a5d4bcd",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/screenveil-youtube-battery.png": {
+    "mtime": 1772301003.785621,
+    "ast_hash": "cb87ebef47f4c809ee19c0f1d1ae3400",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/shipping-bar-states.png": {
+    "mtime": 1772301003.7865877,
+    "ast_hash": "ef5956b62be7a7d4a5954f411f73e03c",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/shopify-conversion-rate-2026.png": {
+    "mtime": 1783164953.2705696,
+    "ast_hash": "6fb7777a00b46c8d6252389b7d384278",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/shopify-conversion-rate-benchmark-by-niche-2026.png": {
+    "mtime": 1775295654.607816,
+    "ast_hash": "3480a485538fb0fe6c1fdd199a9e7b1c",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/shopify-conversion-rate-benchmarks-hero.png": {
+    "mtime": 1775295654.610668,
+    "ast_hash": "2ffaf3148b5d9f82507e5594e2e27a09",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/shopify-conversion-rate-mobile-vs-desktop-dashboard.png": {
+    "mtime": 1775295654.6129415,
+    "ast_hash": "2a1143a1b02c082dbaa41d142ac257bc",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/shopify-cro-priority-pyramid-2026.png": {
+    "mtime": 1775295654.6152167,
+    "ast_hash": "82dac05d2e95b3d5c0ff9838c5e76f6f",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/speed-comparison-v2.png": {
+    "mtime": 1772301003.7875795,
+    "ast_hash": "2e5403c583fa903622046506c6cd7a5f",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/thumb-zone-heatmap.png": {
+    "mtime": 1772301003.7887151,
+    "ast_hash": "5f77c76bd7ada2fcfc1e720de1e8d696",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/valuation-matrix.png": {
+    "mtime": 1772301003.789954,
+    "ast_hash": "44c48e85423be92cb9ccd84b68d19418",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/youtube-background-play-workaround.png": {
+    "mtime": 1772301003.7911406,
+    "ast_hash": "fe746b12f1207a3ec7740f638c0d8bcb",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/zero-telemetry-shield.png": {
+    "mtime": 1772301003.792319,
+    "ast_hash": "c4ac6c4d6a8dd5ac3a5caaff3deab705",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/zero-telemetry.png": {
+    "mtime": 1772301003.793195,
+    "ast_hash": "be4fb7ca3a5bfe38b9c5b97b4f288984",
+    "semantic_hash": ""
+  },
+  "src/assets/logo.png": {
+    "mtime": 1772301003.8108733,
+    "ast_hash": "81e5ea35a05ccbe47685a0abf73671b6",
+    "semantic_hash": ""
+  },
+  "src/components/apps/mindful-guard/MindfulFAQSection.astro": {
+    "mtime": 1785523019.6005697,
+    "ast_hash": "c8cd174e438ac3770305efc0a5e099d0",
+    "semantic_hash": ""
+  },
+  "docs/mindfulguard-rebrand-plan.md": {
+    "mtime": 1784916861.576035,
+    "ast_hash": "105b8d57d45edb5b8d783ba5eda21b4b",
+    "semantic_hash": ""
+  },
+  "worker/index.ts": {
+    "mtime": 1785593357.2158527,
+    "ast_hash": "a152f6c36c3c3541eef38c3121372f3b",
+    "semantic_hash": ""
+  },
+  "src/components/home/Testimonials.astro": {
+    "mtime": 1785522337.2455418,
+    "ast_hash": "9523709063f1d2ba452a7566fb408b03",
+    "semantic_hash": ""
+  },
+  "src/lib/lastUpdated.ts": {
+    "mtime": 1785566925.3711786,
+    "ast_hash": "1222e4590a73b8cc24aca8f6de2d5dc0",
+    "semantic_hash": ""
+  },
+  "src/pages/[lang]/404.astro": {
+    "mtime": 1785569046.9826324,
+    "ast_hash": "f5e47c80f82c0485f434c361b495e803",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/how-to-block-reels-and-shorts-on-android-2026.mdx": {
+    "mtime": 1785569223.3414543,
+    "ast_hash": "a19640cbe2694d59069a745a2a73efa8",
+    "semantic_hash": ""
+  },
+  "scripts/validate-i18n.ts": {
+    "mtime": 1785591728.8147483,
+    "ast_hash": "83291299d545ee010e7c1c7a80f89b33",
+    "semantic_hash": ""
+  },
+  "docs/i18n-glossary.md": {
+    "mtime": 1785570597.160894,
+    "ast_hash": "36840df400cfd396a3885e8b04f7acc4",
+    "semantic_hash": ""
+  },
+  "scripts/merge-locale-batch.ts": {
+    "mtime": 1785590385.8283997,
+    "ast_hash": "6d2c6a63993739b52d9e16f21cffbffb",
+    "semantic_hash": ""
+  },
+  "src/i18n/locales/de.json": {
+    "mtime": 1785659530.8310974,
+    "ast_hash": "5d0cc9879d5072e8a4538f2c425a6f52",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/android-digital-wellbeing-vs-third-party-focus-apps.md": {
+    "mtime": 1785634932.889659,
+    "ast_hash": "9770b72c51ffb535459d52d6e3fd3640",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/best-app-to-block-social-media-on-android-in-2026.mdx": {
+    "mtime": 1785634603.2008653,
+    "ast_hash": "c17870155e90e4f7fb2d183a294db2c4",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/how-to-block-reels-and-shorts-on-android-2026.mdx": {
+    "mtime": 1785634125.4393427,
+    "ast_hash": "e632fc625562d1a02ed5a3faa209b244",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/how-to-block-social-media-on-android-during-work-hours.md": {
+    "mtime": 1785634790.5758343,
+    "ast_hash": "ef3a1474bb4bdec5f4f5f6d368d4ab1b",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/logic-comparison-matrix.md": {
+    "mtime": 1785633575.7891579,
+    "ast_hash": "0305077d11c06d2b63e676fbd53c9612",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/monk-mode-willpower.md": {
+    "mtime": 1785633538.2699258,
+    "ast_hash": "786c8575ad799dec67004152b13faa28",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/opal-alternatives-android.mdx": {
+    "mtime": 1785634364.5563476,
+    "ast_hash": "8b033000b5ff099a82ac16b360dadd76",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/reclaim-focus-story.md": {
+    "mtime": 1785594227.8284519,
+    "ast_hash": "94764152ac457c936ae8036ee10dd163",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/the-logic-of-focus.md": {
+    "mtime": 1785594184.8938966,
+    "ast_hash": "9c36180e1d7ba227d9a71c20953f0d73",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/youtube-background-play-2026-workaround.mdx": {
+    "mtime": 1785633980.1274035,
+    "ast_hash": "d62727b6197353cabcbd598e5014e1e6",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/youtube-screen-off-battery-hack.md": {
+    "mtime": 1785635076.4692338,
+    "ast_hash": "f9881cea4cb4a8e128e41921c1fdcadc",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/zero-telemetry-blocker.md": {
+    "mtime": 1785594151.0268943,
+    "ast_hash": "1c3990a1cee08cc8943fb3e1c2fcd896",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/add-low-stock-alerts-shopify.md": {
+    "mtime": 1785635979.459293,
+    "ast_hash": "de120f7b346676625d652094d2dbbf28",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/best-social-proof-apps-shopify-2026.md": {
+    "mtime": 1785635913.218772,
+    "ast_hash": "7a000f81cd08c596104d2bd97a5e2c46",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/calculate-free-shipping-threshold.md": {
+    "mtime": 1785635714.7683873,
+    "ast_hash": "cec0ac7c3ff159033dba889b28a1f99e",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/free-shipping-bar-shopify.md": {
+    "mtime": 1785636216.6932695,
+    "ast_hash": "a39a3516a7c2025c0629c0eefa6d6cc6",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/how-to-add-sales-popup-shopify.md": {
+    "mtime": 1785636144.8337846,
+    "ast_hash": "3349bc9805233b77a48ee267e06345c4",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/mobile-sticky-cart-guide.md": {
+    "mtime": 1785635764.70285,
+    "ast_hash": "309a73a397fad9f8e64e80e9fe28e84b",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/psychology-of-fomo-marketing.md": {
+    "mtime": 1785635793.4365313,
+    "ast_hash": "45b0bb05fd581ae26e90330f624400be",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/shopify-conversion-rate-2026.mdx": {
+    "mtime": 1785636659.5552208,
+    "ast_hash": "c605d0672573104faa19c9902a36716a",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/shopify-conversion-rate-benchmarks-2026.md": {
+    "mtime": 1785636819.7107546,
+    "ast_hash": "ebd7eb1ed9e60c63deab6f337cde9148",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/shopify-site-speed-social-proof.md": {
+    "mtime": 1785635732.1298423,
+    "ast_hash": "0da3cf4fb21e78ea869b04a9be4d7844",
+    "semantic_hash": ""
+  }
+}

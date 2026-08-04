@@ -1,4 +1,35 @@
 import { getCollection, getEntry, type CollectionEntry } from "astro:content";
+import { i18nConfig } from "@/i18n/config";
+import { localePath } from "@/i18n/utils";
+
+/**
+ * Locale-aware href for a blog post, falling back to the default locale when that
+ * translation does not exist.
+ *
+ * localePath() alone assumes every locale has every post. That holds for en/fr but
+ * not for partially translated locales, where it produces links to pages the
+ * getStaticPaths guard deliberately never builds — i.e. guaranteed 404s.
+ */
+export async function blogPath(lang: string, slug: string): Promise<string> {
+  const translated = await getEntry("blog", `${lang}/${slug}`);
+  const target = translated ? lang : i18nConfig.defaultLocale;
+  return localePath(target, `/blog/${slug}`);
+}
+
+/**
+ * Locales that actually have this post, for hreflang.
+ *
+ * Declaring an hreflang alternate for a locale that was never built points search
+ * engines at a 404, so the alternate set has to match what getStaticPaths produced.
+ */
+export async function localesForPost(slug: string): Promise<string[]> {
+  const present = await Promise.all(
+    i18nConfig.locales.map(async (locale) =>
+      (await getEntry("blog", `${locale}/${slug}`)) ? locale : null
+    )
+  );
+  return present.filter((l): l is string => l !== null);
+}
 
 export interface MarkdownBlogPost {
   slug: string;

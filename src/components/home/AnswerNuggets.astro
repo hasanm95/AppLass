@@ -8,13 +8,13 @@ import { localize } from "@/i18n/localize";
 const faqData = getFaqRegistry().HOME;
 ---
 
-<Section className="bg-muted py-16 md:py-24 lg:py-32">
+<Section className="bg-background py-16 md:py-24 lg:py-32">
   <FAQSchema items={faqData} />
   <div class="section-container">
     {/* Section Header */}
     <div class="mb-16">
       <div class="mb-8 flex items-center gap-4">
-        <span class="font-mono text-xs font-bold tracking-widest text-muted-foreground/50 uppercase">
+        <span class="font-mono text-xs font-bold tracking-widest text-muted-foreground uppercase">
           {localize("FAQ")}
         </span>
         <span class="block h-px flex-1 bg-foreground/20" />
@@ -23,7 +23,7 @@ const faqData = getFaqRegistry().HOME;
       <h2 class="text-foreground mb-4 font-mono text-2xl leading-tight font-bold md:text-3xl lg:text-4xl">
         {localize("Frequently Asked")}
         <br />
-        <span class="text-muted-foreground/40">
+        <span class="text-muted-accent">
           {localize("Questions")}
         </span>
       </h2>
@@ -38,24 +38,31 @@ const faqData = getFaqRegistry().HOME;
         >
           <div class="flex items-start justify-between gap-4">
             <div class="flex items-start gap-4">
-              <span class="mt-1 font-mono text-xs font-bold tracking-widest text-muted-foreground/50 uppercase">
+              <span class="mt-1 font-mono text-xs font-bold tracking-widest text-muted-foreground uppercase">
                 {String(idx + 1).padStart(2, "0")}
               </span>
-              <h3 class="group-hover:text-cta text-base font-semibold transition-colors">
+              <h3 class="group-hover:text-cta-text text-base font-semibold transition-colors" id={`faq-q-${idx}`}>
                 {faq.question}
               </h3>
             </div>
             <button
               class="faq-trigger border-border group-hover:border-cta flex h-8 w-8 shrink-0 items-center justify-center border transition-all duration-200"
               aria-expanded="false"
-              aria-label="Expand answer"
+              aria-controls={`faq-panel-${idx}`}
+              aria-labelledby={`faq-q-${idx}`}
             >
               <Plus className="plus-icon text-muted-foreground h-4 w-4" />
-              <Minus className="minus-icon text-cta h-4 w-4 hidden" />
+              <Minus className="minus-icon text-cta-text h-4 w-4 hidden" />
             </button>
           </div>
 
-          <div class="faq-content grid transition-all duration-300 grid-rows-[0fr] opacity-0 overflow-hidden">
+          <div
+            class="faq-content grid transition-all duration-300 grid-rows-[0fr] opacity-0 overflow-hidden"
+            id={`faq-panel-${idx}`}
+            role="region"
+            aria-labelledby={`faq-q-${idx}`}
+            inert
+          >
             <div class="min-h-0 pl-12 pt-4">
               <p class="text-muted-foreground text-sm leading-relaxed whitespace-pre-line">
                 {faq.answer}
@@ -88,6 +95,9 @@ const faqData = getFaqRegistry().HOME;
           trigger?.setAttribute('aria-expanded', 'false');
           content?.classList.replace('grid-rows-[1fr]', 'grid-rows-[0fr]');
           content?.classList.replace('opacity-100', 'opacity-0');
+          // Keep the collapsed answer out of the accessibility tree, so screen
+          // readers reflect the same state sighted users see.
+          content?.setAttribute('inert', '');
           plusIcon?.classList.remove('hidden');
           minusIcon?.classList.add('hidden');
         } else {
@@ -102,6 +112,7 @@ const faqData = getFaqRegistry().HOME;
               otherTrigger?.setAttribute('aria-expanded', 'false');
               otherContent?.classList.replace('grid-rows-[1fr]', 'grid-rows-[0fr]');
               otherContent?.classList.replace('opacity-100', 'opacity-0');
+              otherContent?.setAttribute('inert', '');
               otherPlus?.classList.remove('hidden');
               otherMinus?.classList.add('hidden');
             }
@@ -110,6 +121,7 @@ const faqData = getFaqRegistry().HOME;
           trigger?.setAttribute('aria-expanded', 'true');
           content?.classList.replace('grid-rows-[0fr]', 'grid-rows-[1fr]');
           content?.classList.replace('opacity-0', 'opacity-100');
+          content?.removeAttribute('inert');
           plusIcon?.classList.add('hidden');
           minusIcon?.classList.remove('hidden');
         }
