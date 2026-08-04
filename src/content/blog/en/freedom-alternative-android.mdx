@@ -24,9 +24,9 @@ faqs:
   - question: "Is there a Freedom alternative for Android that does not require an account?"
     answer: "Yes. Mindful Guard requires no account, no email and no internet connection — every block, schedule and limit is stored and enforced on the device itself. Freedom requires an email and password because its core feature is syncing sessions across your devices through its servers, which is not possible without an account."
   - question: "Is Freedom's free plan enough, or do I need Premium?"
-    answer: "Freedom's free plan is limited to Start Now sessions capped at 2 hours, with no recurring or advance-scheduled sessions and no Locked Mode. If you want a block that starts automatically every weekday morning, or one you cannot quit mid-session, you need Premium. Mindful Guard includes scheduled blocks and an unbreakable Strict Mode on its free tier."
+    answer: "Freedom's free plan is limited to Start Now sessions capped at 2 hours, with no recurring or advance-scheduled sessions and no Locked Mode. If you want a block that starts automatically every weekday morning, or one you cannot quit mid-session, you need Premium. Mindful Guard includes scheduled blocks and an unbreakable Strict Mode on its free tier, capped at three focus sessions per day — no limit on how long each one runs."
   - question: "Is Mindful Guard cheaper than Freedom?"
-    answer: "Not on a straight annual comparison. Mindful Guard Premium is $3.99 per month, which is more per year than Freedom's $39.96 annual plan. The honest comparison is different: the features most people pay Freedom for — scheduled blocks and a locked mode you cannot quit — are free in Mindful Guard, so most Android-only users never reach a paywall at all. Mindful Guard is also month-to-month, with no annual commitment required."
+    answer: "Not on a straight annual comparison. Mindful Guard Premium is $3.99 per month, which is more per year than Freedom's $39.96 annual plan. The honest comparison is different: the features most people pay Freedom for — scheduled blocks and a locked mode you cannot quit — are free in Mindful Guard, capped at three focus sessions per day. If three blocks a day covers your routine, you never reach a paywall; if you need more, premium lifts the cap. Mindful Guard is also month-to-month, with no annual commitment required."
   - question: "What are the main alternatives to Freedom on Android?"
     answer: "The realistic options are Mindful Guard (native, offline, no account, free scheduled blocks and Strict Mode, Android only), Cold Turkey (very strong blocking, desktop-first), Opal (polished, VPN-based, roughly $99 per year, iOS-first), Forest (gamified timer rather than an enforced block) and Android's built-in Digital Wellbeing (free but easy to bypass). Which one fits depends mostly on whether you need desktop coverage."
   - question: "Can I block Instagram Reels and TikTok specifically instead of the whole app?"
@@ -118,8 +118,10 @@ design around:
   schedule and limit is stored and enforced on-device. There is no internet permission at all, which
   is a stronger guarantee than a privacy policy — see
   [what zero-telemetry actually means](/blog/zero-telemetry-blocker).
-- **No session cap, and scheduling is free.** Scheduled blocks and an unbreakable Strict Mode are on
-  the free tier — the two features Freedom reserves for Premium.
+- **Scheduling and Strict Mode are free.** Scheduled blocks and an unbreakable Strict Mode are on the
+  free tier — the two features Freedom reserves for Premium. The free tier does cap you at three
+  focus sessions per day; premium lifts that to unlimited. The difference from Freedom is which
+  features you get, not how long each session may run.
 - **Reel Guard.** Beyond whole-app blocking, it targets the short-form feed specifically inside
   Instagram, YouTube, TikTok, Facebook and Snapchat, with separate daily and per-session limits. Our
   [guide to blocking Reels and Shorts](/blog/how-to-block-reels-and-shorts-on-android-2026) covers
@@ -134,7 +136,7 @@ design around:
 | Blocking method | VPN tunnel (Freedom Profile) | Native Android API (no VPN) |
 | Account required | Yes — email + password, server sync | No |
 | Works fully offline | No — syncs via servers | Yes — 100% on-device |
-| Free plan sessions | 2-hour cap, no recurring/scheduling | Scheduled blocks, no cap |
+| Free plan sessions | 2-hour cap, no recurring/scheduling | 3 sessions/day, no length cap, scheduling included |
 | Locked / Strict Mode | Premium only | Free |
 | Feed-level blocking (Reels/Shorts/TikTok) | No — whole app or nothing | Yes — Reel Guard |
 | Survives Samsung/Xiaomi power management | VPN may be killed | Yes — native service |
@@ -178,10 +180,13 @@ Mindful Guard Premium is $3.99 per month. Over a year that is more than Freedom'
 plan, and any page telling you otherwise is doing arithmetic it hopes you will not check.
 
 The real difference is *where the paywall sits*. The two features most people upgrade Freedom for —
-scheduled blocks and a locked mode you cannot quit — are free in Mindful Guard. Most Android-only
-users never hit a paywall at all, which makes the practical comparison "free" versus "$39.96/year",
-not "$47.88" versus "$39.96". And if you do upgrade, it is month-to-month rather than an annual
-commitment.
+scheduled blocks and a locked mode you cannot quit — are free in Mindful Guard, within a limit of
+three focus sessions per day.
+
+So the practical comparison depends on your routine. If three blocks a day covers it — a morning
+block, an afternoon block, an evening block — you are comparing "free" against "$39.96/year." If you
+need more than three, you are comparing "$47.88" against "$39.96," and Freedom is cheaper. Either
+way, Mindful Guard is month-to-month rather than an annual commitment.
 
 <MindfulGuardCTA campaign="freedom-alternative-android" />
 
