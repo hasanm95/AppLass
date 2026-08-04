@@ -23,10 +23,11 @@ interface Props {
 const { lang } = Astro.props;
 
 import { setLocale } from "@/i18n";
+import { lastUpdatedFor } from "@/lib/lastUpdated";
 setLocale(lang);
 
 const isDefault = lang === "en";
-const lastUpdated = "2026-03-23";
+const lastUpdated = lastUpdatedFor("src/page-templates/AppsScreenveilPage.astro");
 const screenveilData = getScreenveilData();
 const screenveilSchema = {
   ...getScreenveilSchema(),
@@ -41,8 +42,8 @@ const screenveilSchema = {
 };
 
 const meta = {
-  title: "Play YouTube With Screen Off – AMOLED Battery Saver | ScreenVeil",
-  description: "ScreenVeil saves 60%+ battery on AMOLED/OLED Android devices. Play YouTube, podcasts & music with your screen off. Zero permissions. 10,000+ downloads. Free.",
+  title: localize("Play YouTube With Screen Off – AMOLED Battery Saver | ScreenVeil"),
+  description: localize("ScreenVeil saves 60%+ battery on AMOLED/OLED Android devices. Play YouTube, podcasts & music with your screen off. Zero permissions. 10,000+ downloads. Free."),
   keywords: localize("black screen video, AMOLED battery saver, screen off playback, YouTube background audio, OLED efficiency, screen overlay utility, android battery saver, screen off youtube"),
   ogTitle: localize("ScreenVeil: Save 60% Battery with Screen Off Video Playback"),
   ogDescription: localize("The ultimate AMOLED battery saver. Watch YouTube, Netflix, and podcasts with your screen off. Zero permissions, 100% privacy."),
@@ -74,11 +75,13 @@ const meta = {
       />
       <ScreenVeilHero>
         <div slot="meta" class="mb-6 flex items-center justify-center lg:justify-start gap-4">
-          <span class="rounded-full bg-green-500/10 px-3 py-1 text-[10px] font-bold text-green-400 uppercase border border-green-500/20 backdrop-blur-md">
-            {localize("Last Evaluated: ")} {lastUpdated}
-          </span>
+          {lastUpdated && (
+            <span class="rounded-full bg-green-500/10 px-3 py-1 text-[10px] font-bold text-green-400 uppercase border border-green-500/20 backdrop-blur-md">
+              {localize("Last Evaluated: ")} {lastUpdated}
+            </span>
+          )}
           <span class="h-1 w-1 rounded-full bg-slate-800"></span>
-          <span class="text-[10px] font-bold text-slate-500 uppercase tracking-widest italic">
+          <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest italic">
             {localize("AMOLED Optimization Verified")}
           </span>
         </div>
@@ -90,15 +93,15 @@ const meta = {
           </div>
           <div class="grid grid-cols-1 gap-px bg-slate-800 md:grid-cols-3">
             <div class="bg-slate-900 p-4">
-              <p class="mb-1 text-[9px] font-bold text-slate-500 uppercase tracking-tighter">{localize("Benchmark")}</p>
+              <p class="mb-1 text-[9px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Benchmark")}</p>
               <p class="font-black text-white text-sm">{localize("60%+ Battery Saving")}</p>
             </div>
             <div class="bg-slate-900 p-4">
-              <p class="mb-1 text-[9px] font-bold text-slate-500 uppercase tracking-tighter">{localize("Privacy")}</p>
+              <p class="mb-1 text-[9px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Privacy")}</p>
               <p class="font-black text-white text-sm">{localize("Zero Permissions")}</p>
             </div>
             <div class="bg-slate-900 p-4">
-              <p class="mb-1 text-[9px] font-bold text-slate-500 uppercase tracking-tighter">{localize("Tech")}</p>
+              <p class="mb-1 text-[9px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Tech")}</p>
               <p class="font-black text-white text-sm">{localize("AMOLED Optimized")}</p>
             </div>
           </div>

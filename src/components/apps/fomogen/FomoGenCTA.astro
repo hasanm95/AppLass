@@ -24,7 +24,7 @@ const translations = getFomoGenData().cta;
 
     <h2 class="text-4xl leading-[0.95] font-bold tracking-tight text-slate-900 md:text-5xl lg:text-8xl">
       {translations.title.split(" ").slice(0, 3).join(" ")} <br />
-      <span class="text-slate-300">
+      <span class="text-slate-500">
         {translations.title.split(" ").slice(3).join(" ")}
       </span>
     </h2>
@@ -38,7 +38,7 @@ const translations = getFomoGenData().cta;
         <div
           class="flex items-center gap-2 rounded-full border border-green-100 bg-green-50/50 px-4 py-1.5 text-xs font-bold text-green-900 shadow-sm backdrop-blur-md md:px-6 md:py-2 md:text-sm"
         >
-          <Check className="h-3.5 w-3.5 text-green-600 md:h-4 md:w-4" />
+          <Check className="h-3.5 w-3.5 text-green-700 md:h-4 md:w-4" />
           {highlight}
         </div>
       ))}
@@ -55,13 +55,13 @@ const translations = getFomoGenData().cta;
         </a>
       </Button>
 
-      <p class="mt-8 text-xs font-bold tracking-widest text-slate-400 uppercase">
+      <p class="mt-8 text-xs font-bold tracking-widest text-slate-600 uppercase">
         {translations.noCreditCard || "No Credit Card Required • Beta Access"}
       </p>
 
       <div class="mt-20 pt-10 border-t border-slate-200 text-center">
         <p class="text-slate-500 font-medium">
-            {localize("Explore:")} <a href="/" class="text-green-600 hover:text-green-500 transition-colors underline underline-offset-4 font-bold">Home</a> • <a href="/apps/screenveil" class="text-green-600 hover:text-green-500 transition-colors underline underline-offset-4 font-bold">ScreenVeil</a> • <a href="/apps/mindful-guard" class="text-green-600 hover:text-green-500 transition-colors underline underline-offset-4 font-bold">Mindful Guard</a>
+            {localize("Explore:")} <a href="/" class="text-green-700 hover:text-green-500 transition-colors underline underline-offset-4 font-bold">Home</a> • <a href="/apps/screenveil" class="text-green-700 hover:text-green-500 transition-colors underline underline-offset-4 font-bold">ScreenVeil</a> • <a href="/apps/mindful-guard" class="text-green-700 hover:text-green-500 transition-colors underline underline-offset-4 font-bold">Mindful Guard</a>
         </p>
       </div>
     </div>

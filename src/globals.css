@@ -18,18 +18,21 @@
 
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
+  --color-primary-text: var(--primary-text);
 
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
 
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
+  --color-muted-accent: var(--muted-accent);
 
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
 
   --color-cta: var(--cta);
   --color-cta-foreground: var(--cta-foreground);
+  --color-cta-text: var(--cta-text);
 
   --color-border: var(--border);
   --color-ring: var(--ring);
@@ -50,18 +53,28 @@
 
   --primary: #3b82f6;
   --primary-foreground: #ffffff;
+  /* blue-700: --primary is only 3.5:1, so text uses this darker variant. */
+  --primary-text: #1d4ed8;
 
   --secondary: #60a5fa;
   --secondary-foreground: #1e293b;
 
   --muted: #e2e8f0;
-  --muted-foreground: #64748b;
+  /* slate-600: 4.5:1+ on background, muted and card. Secondary text must stay
+     readable on the muted section bands, which are the binding constraint. */
+  --muted-foreground: #475569;
+  /* slate-500: reserved for deliberately faded LARGE text (>=24px), where the
+     AA threshold is 3:1. Keeps the heading hierarchy without failing contrast. */
+  --muted-accent: #64748b;
 
   --accent: #f1f5f9;
   --accent-foreground: #1e293b;
 
+  /* --cta is a FILL colour (buttons, borders, rules). It is only 2.7:1 on our
+     backgrounds, so it must never be used for text. Use --cta-text instead. */
   --cta: #f97316;
   --cta-foreground: #ffffff;
+  --cta-text: #9a3412;
 
   --border: #e2e8f0;
   --ring: #3b82f6;
@@ -105,7 +118,7 @@
   position: absolute;
   top: -40px;
   left: 0;
-  background: var(--cta);
+  background: var(--cta-text);
   color: var(--cta-foreground);
   padding: 8px 16px;
   z-index: 100;
