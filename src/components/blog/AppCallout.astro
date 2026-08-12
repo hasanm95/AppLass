@@ -4,7 +4,7 @@ import { playUrl } from "@/lib/utils";
 import { localize } from "@/i18n/localize";
 
 interface Props {
-  appName: "Mindful Guard" | "FOMOgen" | "AppLass" | "ScreenVeil";
+  appName: "Mindful Guard" | "FOMOgen" | "AppLass" | "ScreenVeil" | "CartTime";
   lang?: string;
   labels?: {
     learnMore?: string;
@@ -43,6 +43,15 @@ const data = {
     color: "bg-slate-900",
     learnMoreText: localize("Subscribe"),
     external: false,
+  },
+  CartTime: {
+    title: "CartTime",
+    sub: labels?.sub || localize("Checkout Timers That Convert."),
+    desc: labels?.desc || localize("Cart reservation timers, countdown bars, and low-stock alerts for Shopify. Speed-optimized, fully responsive."),
+    href: "https://apps.shopify.com/carttime-countdown",
+    color: "bg-[#f97316]",
+    learnMoreText: localize("Install Free"),
+    external: true,
   },
   ScreenVeil: {
     title: "ScreenVeil",
