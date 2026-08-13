@@ -1,0 +1,159 @@
+---
+title: "Le Mode Sombre Économise-t-il la Batterie ? Les Vrais Chiffres AMOLED (2026)"
+description: "Des chercheurs de Purdue l'ont mesuré : le mode sombre économise 3 à 9 % de batterie à la luminosité réellement utilisée, et 39 à 47 % uniquement à luminosité maximale. Pourquoi l'écart est si grand, et ce qui réduit vraiment la consommation de l'écran."
+date: "2026-09-24"
+dateModified: "2026-09-24"
+author: "Équipe AppLass"
+excerpt: "Le mode sombre économise 3 à 9 % de la consommation totale du téléphone à luminosité normale, et 39 à 47 % à luminosité maximale — mesuré par des chercheurs de Purdue sur quatre téléphones Android. L'économie dépend de la luminosité, car le mode sombre continue d'allumer la plupart des pixels. Un écran entièrement noir relève d'un tout autre mécanisme."
+tags: ["Android", "AMOLED", "batterie", "mode sombre", "OLED", "temps d'écran"]
+category: "Conseils Batterie"
+keywords: "le mode sombre économise-t-il la batterie, mode sombre batterie amoled, consommation oled mode sombre, mode nuit batterie android, test batterie mode sombre, fond d'écran noir batterie, combien économise le mode sombre"
+breadcrumbName: "Mode Sombre et Batterie"
+thumbnail: "../../../assets/blogs/does-dark-mode-save-battery-amoled.png"
+sidebarApps:
+  - screenveil
+featured: true
+faqs:
+  - question: "Le mode sombre économise-t-il vraiment la batterie sur un écran AMOLED ?"
+    answer: "Oui, mais bien moins qu'on ne l'imagine. Des chercheurs de l'université Purdue ont mesuré une économie de 3 à 9 % de la consommation totale entre 30 et 50 % de luminosité, la plage où la plupart des gens règlent leur écran. À 100 % de luminosité, le même changement économise 39 à 47 %. L'économie est réelle, simplement modeste en usage courant."
+  - question: "Pourquoi le mode sombre économise-t-il beaucoup plus à pleine luminosité ?"
+    answer: "Sur une dalle OLED, chaque pixel allumé consomme son propre courant, et cette consommation augmente avec la luminosité. À luminosité maximale, l'écran représente 44 à 73 % de la consommation totale du téléphone : assombrir des pixels retire donc une quantité absolue importante. À mi-luminosité, l'écran pèse bien moins dans le total et la même réduction économise beaucoup moins."
+  - question: "Le mode sombre économise-t-il la batterie sur un écran LCD ?"
+    answer: "Pratiquement pas. Un LCD éclaire tous les pixels avec un rétroéclairage unique qui reste allumé quel que soit l'affichage : un pixel noir coûte donc autant qu'un pixel blanc. Sur un téléphone LCD, le mode sombre relève du confort visuel, pas de l'économie d'énergie. Seules les dalles OLED et AMOLED éteignent les pixels individuellement."
+  - question: "Un fond d'écran noir vaut-il mieux que le mode sombre pour la batterie ?"
+    answer: "Un fond d'écran parfaitement noir n'aide que lorsque l'écran d'accueil est visible, soit une petite part du temps d'écran. Le mode sombre s'applique dans toutes les applications et couvre donc bien plus d'usage. Ni l'un ni l'autre n'approche l'extinction complète de l'écran, un pixel OLED noir ne consommant quasiment rien."
+  - question: "Combien économise un écran éteint par rapport au mode sombre ?"
+    answer: "Nettement plus. Le mode sombre continue d'allumer le texte, les icônes, les images et l'interface, souvent la majorité des pixels. Un écran entièrement noir n'en allume presque aucun et supprime donc la quasi-totalité du coût de l'écran plutôt qu'une fraction. Comme l'écran peut représenter 44 à 73 % de la consommation totale à forte luminosité, ce plafond dépasse largement celui du mode sombre."
+  - question: "Comment tester l'économie sur mon propre téléphone ?"
+    answer: "Chargez à 100 %, désactivez la luminosité automatique et fixez une luminosité précise. Lisez le même contenu pendant une heure en mode clair et notez la baisse. Recommencez le lendemain en mode sombre, à luminosité et contenu identiques. Fixer la luminosité compte plus que tout le reste, car c'est elle qui domine le résultat."
+---
+
+import ScreenVeilCTA from "@/components/blog/ScreenVeilCTA.astro";
+
+**Le mode sombre économise 3 à 9 % de la consommation totale de votre téléphone à la luminosité que
+les gens utilisent réellement.** Pas 60 %, pas la moitié de votre batterie. Les grands chiffres que
+vous avez lus ne sont pas inventés, mais ils ne valent qu'à luminosité maximale — un réglage que
+l'on adopte en plein soleil, et rarement ailleurs.
+
+L'écart entre 3 % et 47 % n'est pas une contradiction. C'est toute l'histoire de la consommation
+OLED, et il indique ce qui prolonge vraiment votre temps d'écran.
+
+---
+
+## Le mode sombre économise-t-il la batterie en AMOLED ?
+
+**Oui, mais modestement en usage normal.** Des chercheurs de l'université Purdue ont mesuré une
+économie de 3 à 9 % de la consommation totale lors du passage du mode clair au mode sombre entre 30
+et 50 % de luminosité. À 100 % de luminosité, le même changement économisait 39 à 47 %. L'effet est
+réel ; son ampleur dépend presque entièrement de la luminosité de votre écran.
+
+La source est l'article *How much battery does dark mode save? An accurate OLED display power
+profiler for modern smartphones*, de Pranab Dash et du professeur Y. Charlie Hu, de l'Elmore Family
+School of Electrical and Computer Engineering de Purdue, publié à
+[MobiSys '21](https://doi.org/10.1145/3458864.3467682) et résumé dans le
+[communiqué de Purdue](https://www.purdue.edu/newsroom/archive/releases/2021/Q3/dark-mode-may-not-save-your-phones-battery-life-as-much-as-you-think,-but-there-are-a-few-silver-linings.html).
+Ils ont testé quatre générations de matériel Android — Pixel 2, Moto Z3, Pixel 4 et Pixel 5 — sur
+des sessions de soixante secondes dans six applications Google, dont Maps, News et YouTube.
+
+La méthodologie explique la fiabilité de ces chiffres. L'utilitaire de batterie intégré à Android
+ignore le contenu affiché et rapporte la même consommation d'écran en mode clair et en mode sombre :
+il ne peut donc pas mesurer cet effet. L'outil de Purdue isole la part réelle de l'écran dans la
+décharge, ce que les démonstrations de constructeurs qui l'ont précédé n'ont jamais fait.
+
+| Luminosité de l'écran | Économie du mode sombre | Situation typique |
+|---|---|---|
+| 100 % | 39–47 %, soit 42 % en moyenne | Dehors, en plein soleil |
+| 50 % | 8,5 % | En intérieur, pièce lumineuse |
+| 30 % | Moins de 5 % | En intérieur, lumière tamisée ou le soir |
+
+## Pourquoi la luminosité décide de tout
+
+Une dalle OLED ou AMOLED n'a pas de rétroéclairage. Chaque pixel émet sa propre lumière et consomme
+son propre courant, et cette consommation croît avec la luminosité. Un pixel noir est simplement
+éteint : il ne coûte pratiquement rien.
+
+La part de l'écran dans la consommation totale n'est donc pas fixe. L'équipe de Purdue a mesuré que
+l'écran OLED représentait **44 à 73 % de la consommation totale du téléphone** en mode clair à
+luminosité maximale. Baissez la luminosité et l'écran ne pèse plus qu'une fraction bien moindre du
+total : assombrir les pixels retire alors une quantité absolue beaucoup plus faible, même si la
+proportion de pixels assombris est identique.
+
+C'est aussi pour cela que la luminosité automatique sape discrètement le mode sombre. Presque
+personne ne reste à 100 % ; le capteur maintient l'écran dans la plage où l'économie se compte en
+unités de pourcentage.
+
+## Le mode sombre n'est pas un écran noir
+
+Voici la distinction que presque tous les articles sur le sujet manquent. **Le mode sombre n'éteint
+pas les pixels : il change lesquels sont allumés.** Une application au thème sombre continue
+d'illuminer le texte, les icônes, les vignettes, les images, les boutons et l'interface. Selon
+l'application, cela peut représenter la majeure partie de l'écran. Le mode sombre remplace un fond
+clair par un fond sombre et laisse tout le reste briller.
+
+Un écran entièrement noir relève d'un autre mécanisme. Tous les pixels sont éteints : le coût de
+l'écran tombe donc quasiment à zéro au lieu d'être réduit d'une fraction. C'est pourquoi le plafond
+d'une extinction correspond à la part totale de l'écran — ces 44 à 73 % — tandis que le plafond du
+mode sombre reste aux 39 à 47 % mesurés.
+
+Concrètement : si vous écoutez un podcast de deux heures ou un cours sur YouTube, le mode sombre
+vous fait gagner quelques pourcents, parce que l'écran reste allumé et éclairé. L'occulter
+entièrement pendant que le son continue le retire de l'équation. C'est le mécanisme derrière
+[l'astuce YouTube écran éteint](/blog/youtube-screen-off-battery-hack), et c'est autre chose que
+choisir un thème sombre.
+
+<ScreenVeilCTA lang="fr" />
+
+## Sur un écran LCD, le mode sombre n'économise rien
+
+Si votre téléphone possède une dalle LCD, le mode sombre n'apporte aucun gain de batterie notable.
+Les LCD éclairent chaque pixel via un rétroéclairage unique qui fonctionne à la même intensité quel
+que soit l'affichage. Un pixel noir est obtenu en bloquant cette lumière, pas en l'éteignant : il
+coûte donc exactement autant qu'un pixel blanc.
+
+Sur un LCD, le mode sombre vaut pour le confort des yeux le soir, et pour rien d'autre. Vérifiez la
+fiche technique de votre écran avant d'espérer des économies : OLED, AMOLED, POLED et Super AMOLED
+comptent, IPS et LCD non.
+
+## Ce qui réduit vraiment la consommation de l'écran
+
+| Action | Effet sur la batterie | Effort |
+|---|---|---|
+| Baisser la luminosité | Le plus grand levier, valable sur toutes les dalles | Un glissement |
+| Éteindre l'écran en usage audio seul | Supprime presque toute la consommation d'écran en OLED | Une pression avec une app d'occultation |
+| Réduire la mise en veille | Diminue le temps d'écran involontaire | Un réglage |
+| Mode sombre | 3–9 % en usage courant, jusqu'à 39–47 % à pleine luminosité en OLED | Un réglage |
+| Baisser le taux de rafraîchissement (120 Hz → 60 Hz) | Modeste, dépend de la dalle | Un réglage |
+| Fond d'écran noir | Uniquement quand l'écran d'accueil est visible | Un changement |
+
+Cet ordre surprend, mais il découle directement de la physique : la luminosité est le multiplicateur
+de chaque pixel allumé, la modifier pèse donc plus que changer quels pixels sont allumés.
+
+## Testez sur votre propre téléphone
+
+Les chiffres ci-dessus sont des moyennes sur quatre appareils précis. Le vôtre différera, et la
+mesure est simple :
+
+1. Chargez à 100 % et **désactivez la luminosité automatique** — cette étape compte plus que toutes
+   les autres réunies.
+2. Fixez une luminosité que vous utilisez réellement, par exemple 40 %.
+3. Lisez le même contenu pendant une heure en mode clair. Notez la baisse du pourcentage.
+4. Le lendemain, recommencez à luminosité et contenu identiques, en mode sombre.
+5. Comparez. Si l'écart est de quelques pourcents, c'est le résultat correct à cette luminosité —
+   pas un test raté.
+
+Quiconque annonce des économies spectaculaires sans préciser sa luminosité n'a rien mesuré de
+sérieux. C'est la raison de fond pour laquelle l'idée que « le mode sombre économise la moitié de
+la batterie » s'est répandue aussi largement.
+
+<ScreenVeilCTA lang="fr" />
+
+## En résumé
+
+Le mode sombre vaut la peine. Il est plus reposant pour les yeux le soir et, sur un téléphone OLED,
+il économise réellement un peu d'énergie — 3 à 9 % en intérieur, sensiblement plus si vous passez du
+temps dehors à pleine luminosité.
+
+Ce qu'il n'est pas, c'est une stratégie de batterie. Si votre objectif est le temps d'écran, le
+levier s'appelle luminosité. Et si vous utilisez votre téléphone pour du son pendant que l'écran
+reste allumé sans que personne le regarde, la réponse honnête n'est pas un thème plus sombre : c'est
+pas d'image du tout.

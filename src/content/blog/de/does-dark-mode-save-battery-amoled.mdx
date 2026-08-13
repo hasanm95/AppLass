@@ -1,0 +1,159 @@
+---
+title: "Spart Dark Mode Akku? Die echten AMOLED-Zahlen (2026)"
+description: "Forscher der Purdue University haben es gemessen: Dark Mode spart bei üblicher Helligkeit 3–9 % Akku, die oft zitierten 39–47 % gelten nur bei maximaler Helligkeit. Warum der Unterschied so groß ist und was den Displayverbrauch wirklich senkt."
+date: "2026-09-24"
+dateModified: "2026-09-24"
+author: "AppLass-Team"
+excerpt: "Dark Mode spart bei üblicher Helligkeit 3–9 % der gesamten Akkuleistung, bei maximaler Helligkeit 39–47 % — gemessen von Purdue-Forschern auf vier Android-Geräten. Die Ersparnis hängt an der Helligkeit, weil Dark Mode die meisten Pixel weiterhin leuchten lässt. Ein komplett schwarzes Display ist ein anderer Mechanismus."
+tags: ["Android", "AMOLED", "Akku", "Dark Mode", "OLED", "Bildschirmzeit"]
+category: "Akku-Tipps"
+keywords: "spart dark mode akku, dark mode akkuverbrauch amoled, oled dark mode stromverbrauch, dunkelmodus akku sparen android, dark mode akku test, schwarzes hintergrundbild akku, wie viel akku spart dark mode"
+breadcrumbName: "Dark Mode und Akku"
+thumbnail: "../../../assets/blogs/does-dark-mode-save-battery-amoled.png"
+sidebarApps:
+  - screenveil
+featured: true
+faqs:
+  - question: "Spart Dark Mode auf einem AMOLED-Gerät wirklich Akku?"
+    answer: "Ja, aber deutlich weniger als angenommen. Forscher der Purdue University haben bei 30 bis 50 % Helligkeit eine Ersparnis von 3–9 % der gesamten Akkuleistung gemessen — und genau in diesem Bereich nutzen die meisten Menschen ihr Display. Bei 100 % Helligkeit spart derselbe Wechsel 39–47 %. Die Ersparnis ist real, im Alltag jedoch klein."
+  - question: "Warum spart Dark Mode bei voller Helligkeit so viel mehr?"
+    answer: "Auf einem OLED-Panel zieht jedes leuchtende Pixel eigenen Strom, und dieser Verbrauch steigt mit der Helligkeit. Bei maximaler Helligkeit entfallen 44–73 % des gesamten Stromverbrauchs auf das Display, dunkle Pixel sparen also einen großen absoluten Betrag. Bei halber Helligkeit ist der Displayanteil viel kleiner, dieselbe Reduktion spart entsprechend weniger."
+  - question: "Spart Dark Mode auf einem LCD-Display Akku?"
+    answer: "Praktisch nicht. Ein LCD beleuchtet alle Pixel über eine einzige Hintergrundbeleuchtung, die unabhängig vom Bildinhalt eingeschaltet bleibt. Ein schwarzes Pixel kostet damit genauso viel wie ein weißes. Dark Mode auf einem LCD-Gerät ist eine Frage von Komfort und Lesbarkeit, keine Stromsparmaßnahme. Nur OLED- und AMOLED-Panels schalten einzelne Pixel ab."
+  - question: "Ist ein schwarzes Hintergrundbild besser für den Akku als Dark Mode?"
+    answer: "Ein rein schwarzes Hintergrundbild hilft nur, solange der Homescreen sichtbar ist — ein kleiner Teil der Bildschirmzeit. Dark Mode wirkt app-übergreifend und deckt damit deutlich mehr Nutzung ab. Beides kommt nicht an das vollständige Abschalten des Displays heran, da ein schwarzes OLED-Pixel nahezu keinen Strom zieht."
+  - question: "Wie viel spart ein ausgeschaltetes Display im Vergleich zum Dark Mode?"
+    answer: "Erheblich mehr. Dark Mode lässt Text, Symbole, Bilder und Bedienelemente weiterhin leuchten, oft die Mehrheit der Pixel. Ein komplett schwarzes Display lässt fast nichts leuchten und entfernt damit nahezu den gesamten Displayverbrauch statt nur eines Teils. Da das Display bei hoher Helligkeit 44–73 % der Gesamtleistung ziehen kann, liegt diese Obergrenze weit über der des Dark Mode."
+  - question: "Wie teste ich die Ersparnis auf meinem eigenen Gerät?"
+    answer: "Laden Sie auf 100 %, schalten Sie die automatische Helligkeit aus und stellen Sie eine feste Helligkeit ein. Spielen Sie denselben Inhalt eine Stunde im hellen Modus ab und notieren Sie den Verlust. Wiederholen Sie das am Folgetag im Dark Mode bei identischer Helligkeit und identischem Inhalt. Die feste Helligkeit ist dabei wichtiger als alles andere."
+---
+
+import ScreenVeilCTA from "@/components/blog/ScreenVeilCTA.astro";
+
+**Dark Mode spart bei der Helligkeit, die die meisten Menschen tatsächlich nutzen, 3–9 % der
+gesamten Akkuleistung.** Nicht 60 %, nicht die Hälfte Ihres Akkus. Die großen Zahlen, die Sie
+gelesen haben, sind nicht erfunden — sie gelten aber nur bei maximaler Helligkeit, also einer
+Einstellung, die man draußen in der Sonne wählt und sonst selten.
+
+Der Abstand zwischen 3 % und 47 % ist kein Widerspruch. Er ist die ganze Geschichte der
+OLED-Leistungsaufnahme, und er zeigt, was Ihre Bildschirmzeit wirklich verlängert.
+
+---
+
+## Spart Dark Mode auf AMOLED-Displays Akku?
+
+**Ja, im Alltag jedoch nur wenig.** Forscher der Purdue University haben beim Wechsel von hellem zu
+dunklem Modus bei 30 bis 50 % Helligkeit eine Ersparnis von 3–9 % der Gesamtleistung gemessen. Bei
+100 % Helligkeit sparte derselbe Wechsel 39–47 %. Der Effekt ist real, seine Größe hängt fast
+vollständig davon ab, wie hell Ihr Display eingestellt ist.
+
+Die Quelle ist die Arbeit *How much battery does dark mode save? An accurate OLED display power
+profiler for modern smartphones* von Pranab Dash und Professor Y. Charlie Hu von der Elmore Family
+School of Electrical and Computer Engineering der Purdue University, veröffentlicht auf der
+[MobiSys '21](https://doi.org/10.1145/3458864.3467682) und zusammengefasst in der
+[Mitteilung der Purdue University](https://www.purdue.edu/newsroom/archive/releases/2021/Q3/dark-mode-may-not-save-your-phones-battery-life-as-much-as-you-think,-but-there-are-a-few-silver-linings.html).
+Getestet wurden vier Gerätegenerationen — Pixel 2, Moto Z3, Pixel 4 und Pixel 5 — in
+60-Sekunden-Sitzungen mit sechs Google-Apps, darunter Maps, News und YouTube.
+
+Die Methodik erklärt, warum diese Zahlen belastbar sind. Das Bordwerkzeug von Android ist blind für
+den Bildinhalt und meldet im hellen wie im dunklen Modus denselben Displayverbrauch, kann den Effekt
+also gar nicht messen. Das Purdue-Werkzeug isoliert den tatsächlichen Displayanteil am Verbrauch —
+genau das leisteten die Herstellerdemos davor nie.
+
+| Displayhelligkeit | Ersparnis durch Dark Mode | Typische Situation |
+|---|---|---|
+| 100 % | 39–47 %, im Mittel 42 % | Draußen, direkte Sonne |
+| 50 % | 8,5 % | Drinnen, heller Raum |
+| 30 % | Unter 5 % | Drinnen, gedämpft oder abends |
+
+## Warum die Helligkeit über alles entscheidet
+
+Ein OLED- oder AMOLED-Panel hat keine Hintergrundbeleuchtung. Jedes Pixel leuchtet selbst und zieht
+eigenen Strom, und dieser Verbrauch steigt mit der Helligkeit. Ein schwarzes Pixel ist schlicht
+abgeschaltet und kostet praktisch nichts.
+
+Der Displayanteil am Gesamtverbrauch ist deshalb nicht konstant. Das Purdue-Team hat gemessen, dass
+das OLED-Display im hellen Modus bei maximaler Helligkeit **44–73 % der gesamten Leistungsaufnahme**
+des Geräts ausmacht. Bei geringerer Helligkeit schrumpft dieser Anteil deutlich — dunkle Pixel
+sparen dann einen viel kleineren absoluten Betrag, obwohl Sie denselben Anteil der Pixel abgedunkelt
+haben.
+
+Genau deshalb unterläuft die automatische Helligkeit den Dark Mode still und leise. Kaum jemand
+bleibt dauerhaft bei 100 %; der Sensor hält das Display in dem Bereich, in dem die Ersparnis
+einstellig bleibt.
+
+## Dark Mode ist kein schwarzes Display
+
+Hier liegt der Unterschied, den fast jeder Artikel zum Thema übergeht. **Dark Mode schaltet keine
+Pixel ab — er ändert, welche Pixel leuchten.** Eine dunkel gestaltete App beleuchtet weiterhin Text,
+Symbole, Vorschaubilder, Fotos, Schaltflächen und Bedienelemente. Je nach App kann das der größte
+Teil der Fläche sein. Dark Mode tauscht einen hellen Hintergrund gegen einen dunklen und lässt alles
+Übrige leuchten.
+
+Ein vollständig schwarzes Display funktioniert anders. Alle Pixel sind aus, der Displayverbrauch
+sinkt also gegen null, statt nur anteilig reduziert zu werden. Deshalb liegt die Obergrenze einer
+Abdunklung beim gesamten Displayanteil — jenen 44–73 % — während die Obergrenze des Dark Mode bei
+den gemessenen 39–47 % liegt.
+
+Praktisch heißt das: Wenn Sie einen zweistündigen Podcast oder eine Vorlesung auf YouTube hören,
+spart Dark Mode einstellige Prozentwerte, weil das Display weiterhin an ist und leuchtet. Das
+Display vollständig abzudunkeln, während der Ton weiterläuft, nimmt es aus der Rechnung heraus. Das
+ist der Mechanismus hinter dem
+[YouTube-Trick mit ausgeschaltetem Bildschirm](/blog/youtube-screen-off-battery-hack) — und etwas
+anderes als die Wahl eines dunklen Designs.
+
+<ScreenVeilCTA lang="de" />
+
+## Auf LCD-Displays spart Dark Mode nichts
+
+Hat Ihr Gerät ein LCD-Panel, bringt Dark Mode keinen nennenswerten Akkuvorteil. LCDs beleuchten alle
+Pixel über eine Hintergrundbeleuchtung, die unabhängig vom Bildinhalt mit derselben Intensität
+arbeitet. Ein schwarzes Pixel entsteht dadurch, dass dieses Licht blockiert wird, nicht dadurch,
+dass es abgeschaltet wird — es kostet also exakt so viel wie ein weißes.
+
+Dark Mode auf einem LCD lohnt sich für die Augen am Abend, sonst für nichts. Prüfen Sie die
+Displayangabe Ihres Geräts, bevor Sie mit Ersparnis rechnen: OLED, AMOLED, POLED und Super AMOLED
+zählen dazu, IPS und LCD nicht.
+
+## Was den Displayverbrauch wirklich senkt
+
+| Maßnahme | Wirkung | Aufwand |
+|---|---|---|
+| Helligkeit senken | Der größte Einzelhebel, wirkt bei jedem Paneltyp | Ein Wisch |
+| Display bei reiner Audionutzung abschalten | Entfernt fast den gesamten Displayverbrauch bei OLED | Ein Tipp mit Overlay-App |
+| Bildschirm-Timeout verkürzen | Reduziert unbeabsichtigte Bildschirmzeit | Eine Einstellung |
+| Dark Mode | 3–9 % im Alltag, bis 39–47 % bei voller Helligkeit auf OLED | Eine Einstellung |
+| Bildwiederholrate senken (120 Hz → 60 Hz) | Gering, panelabhängig | Eine Einstellung |
+| Schwarzes Hintergrundbild | Nur solange der Homescreen sichtbar ist | Eine Änderung |
+
+Die Reihenfolge überrascht viele, folgt aber direkt aus der Physik: Die Helligkeit ist der
+Multiplikator für jedes leuchtende Pixel — sie zu ändern wirkt stärker, als zu ändern, welche Pixel
+leuchten.
+
+## Testen Sie es auf Ihrem eigenen Gerät
+
+Die Zahlen oben sind Mittelwerte über vier konkrete Geräte. Ihres verhält sich anders, und die
+Messung ist einfach:
+
+1. Auf 100 % laden und die **automatische Helligkeit ausschalten** — das ist wichtiger als alle
+   übrigen Schritte zusammen.
+2. Eine feste Helligkeit einstellen, die Sie wirklich nutzen, zum Beispiel 40 %.
+3. Denselben Inhalt eine Stunde im hellen Modus abspielen und den Akkustand notieren.
+4. Am nächsten Tag mit identischer Helligkeit und identischem Inhalt im Dark Mode wiederholen.
+5. Vergleichen. Liegt der Unterschied bei wenigen Prozent, ist das bei dieser Helligkeit das
+   korrekte Ergebnis — kein misslungener Test.
+
+Wer dramatische Einsparungen meldet, ohne die Helligkeit anzugeben, hat nichts Belastbares gemessen.
+Genau deshalb hat sich die Behauptung, Dark Mode spare den halben Akku, so weit verbreitet.
+
+<ScreenVeilCTA lang="de" />
+
+## Fazit
+
+Dark Mode lohnt sich. Er ist abends angenehmer für die Augen, und auf einem OLED-Gerät spart er
+tatsächlich Strom — 3–9 % unter normalen Bedingungen im Innenraum, spürbar mehr, wenn Sie viel
+draußen bei voller Helligkeit unterwegs sind.
+
+Eine Akkustrategie ist er nicht. Geht es Ihnen um Bildschirmzeit, ist die Helligkeit der Hebel. Und
+wenn Sie Ihr Gerät für Audio nutzen, während das Display unbeachtet vor sich hin leuchtet, lautet
+die ehrliche Antwort nicht „dunkleres Design“, sondern „gar kein Bild“.
