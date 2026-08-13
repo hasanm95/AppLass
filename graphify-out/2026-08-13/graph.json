@@ -18625,8 +18625,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "frontend-design/skill.md"
     },
     {
@@ -19560,8 +19560,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "color-system.md"
     },
     {
@@ -19582,8 +19582,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_1_color_theory_fundamentals",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 319,
+      "community_name": "1. Color Theory Fundamentals",
       "norm_label": "1. color theory fundamentals"
     },
     {
@@ -19593,8 +19593,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_the_color_wheel",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 319,
+      "community_name": "1. Color Theory Fundamentals",
       "norm_label": "the color wheel"
     },
     {
@@ -19604,8 +19604,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_color_relationships",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 319,
+      "community_name": "1. Color Theory Fundamentals",
       "norm_label": "color relationships"
     },
     {
@@ -19615,8 +19615,8 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_how_to_choose_a_scheme",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 319,
+      "community_name": "1. Color Theory Fundamentals",
       "norm_label": "how to choose a scheme:"
     },
     {
@@ -19769,8 +19769,8 @@
       "source_location": "L226",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_6_dark_mode_principles",
-      "community": 323,
-      "community_name": "1. Framework Selection",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "6. dark mode principles"
     },
     {
@@ -19780,8 +19780,8 @@
       "source_location": "L228",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_key_rules_no_fixed_codes",
-      "community": 323,
-      "community_name": "1. Framework Selection",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "key rules (no fixed codes)"
     },
     {
@@ -19791,8 +19791,8 @@
       "source_location": "L235",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_contrast_in_dark_mode",
-      "community": 323,
-      "community_name": "1. Framework Selection",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "contrast in dark mode"
     },
     {
@@ -19802,8 +19802,8 @@
       "source_location": "L245",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_adapting_colors_for_dark_mode",
-      "community": 323,
-      "community_name": "1. Framework Selection",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "adapting colors for dark mode"
     },
     {
@@ -19901,8 +19901,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "frontend-design/decision-trees.md"
     },
     {
@@ -20341,8 +20341,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "motion-graphics.md"
     },
     {
@@ -20737,8 +20737,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "typography-system.md"
     },
     {
@@ -20759,8 +20759,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_1_modular_scale_principles",
-      "community": 320,
-      "community_name": "3. Dark Mode Design",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "1. modular scale principles"
     },
     {
@@ -20770,8 +20770,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_what_is_a_modular_scale",
-      "community": 320,
-      "community_name": "3. Dark Mode Design",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "what is a modular scale?"
     },
     {
@@ -20781,8 +20781,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_common_ratios_and_when_to_use",
-      "community": 320,
-      "community_name": "3. Dark Mode Design",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "common ratios and when to use"
     },
     {
@@ -20792,8 +20792,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_generate_your_scale",
-      "community": 320,
-      "community_name": "3. Dark Mode Design",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "generate your scale"
     },
     {
@@ -20803,8 +20803,8 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_choosing_base_size",
-      "community": 320,
-      "community_name": "3. Dark Mode Design",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "choosing base size"
     },
     {
@@ -20814,8 +20814,8 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_2_font_pairing_principles",
-      "community": 319,
-      "community_name": "1. Color Theory Fundamentals",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "2. font pairing principles"
     },
     {
@@ -20825,8 +20825,8 @@
       "source_location": "L60",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_what_makes_fonts_work_together",
-      "community": 319,
-      "community_name": "1. Color Theory Fundamentals",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "what makes fonts work together"
     },
     {
@@ -20836,8 +20836,8 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_pairing_strategies",
-      "community": 319,
-      "community_name": "1. Color Theory Fundamentals",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "pairing strategies"
     },
     {
@@ -20847,8 +20847,8 @@
       "source_location": "L78",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_what_to_look_for",
-      "community": 319,
-      "community_name": "1. Color Theory Fundamentals",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "what to look for"
     },
     {
@@ -20858,8 +20858,8 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_safe_pairing_patterns",
-      "community": 319,
-      "community_name": "1. Color Theory Fundamentals",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "safe pairing patterns"
     },
     {
@@ -20869,8 +20869,8 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_avoid",
-      "community": 319,
-      "community_name": "1. Color Theory Fundamentals",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "avoid"
     },
     {
@@ -20880,8 +20880,8 @@
       "source_location": "L106",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_3_line_height_principles",
-      "community": 325,
-      "community_name": "7. Project Type Templates",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "3. line height principles"
     },
     {
@@ -20891,8 +20891,8 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_the_relationship",
-      "community": 325,
-      "community_name": "7. Project Type Templates",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "the relationship"
     },
     {
@@ -20902,8 +20902,8 @@
       "source_location": "L118",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_guidelines_by_context",
-      "community": 325,
-      "community_name": "7. Project Type Templates",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "guidelines by context"
     },
     {
@@ -20913,8 +20913,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_adjustment_factors",
-      "community": 325,
-      "community_name": "7. Project Type Templates",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "adjustment factors"
     },
     {
@@ -20924,8 +20924,8 @@
       "source_location": "L136",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_4_line_length_principles",
-      "community": 326,
-      "community_name": "10. Quick Reference",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "4. line length principles"
     },
     {
@@ -20935,8 +20935,8 @@
       "source_location": "L138",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_optimal_reading_width",
-      "community": 326,
-      "community_name": "10. Quick Reference",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "optimal reading width"
     },
     {
@@ -20946,8 +20946,8 @@
       "source_location": "L147",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_how_to_measure",
-      "community": 326,
-      "community_name": "10. Quick Reference",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "how to measure"
     },
     {
@@ -20957,8 +20957,8 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_context_adjustments",
-      "community": 326,
-      "community_name": "10. Quick Reference",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "context adjustments"
     },
     {
@@ -21012,8 +21012,8 @@
       "source_location": "L199",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_6_weight_and_emphasis_principles",
-      "community": 327,
-      "community_name": "7. Color Accessibility",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "6. weight and emphasis principles"
     },
     {
@@ -21023,8 +21023,8 @@
       "source_location": "L201",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_semantic_weight_usage",
-      "community": 327,
-      "community_name": "7. Color Accessibility",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "semantic weight usage"
     },
     {
@@ -21034,8 +21034,8 @@
       "source_location": "L211",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_creating_contrast",
-      "community": 327,
-      "community_name": "7. Color Accessibility",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "creating contrast"
     },
     {
@@ -21045,8 +21045,8 @@
       "source_location": "L220",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_avoid_220",
-      "community": 327,
-      "community_name": "7. Color Accessibility",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "avoid"
     },
     {
@@ -21089,8 +21089,8 @@
       "source_location": "L258",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_8_hierarchy_principles",
-      "community": 328,
-      "community_name": "4. Outdoor Visibility",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "8. hierarchy principles"
     },
     {
@@ -21100,8 +21100,8 @@
       "source_location": "L260",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_visual_hierarchy_through_type",
-      "community": 328,
-      "community_name": "4. Outdoor Visibility",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "visual hierarchy through type"
     },
     {
@@ -21111,8 +21111,8 @@
       "source_location": "L271",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_typical_hierarchy",
-      "community": 328,
-      "community_name": "4. Outdoor Visibility",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "typical hierarchy"
     },
     {
@@ -21122,8 +21122,8 @@
       "source_location": "L281",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_testing_hierarchy",
-      "community": 328,
-      "community_name": "4. Outdoor Visibility",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "testing hierarchy"
     },
     {
@@ -21133,8 +21133,8 @@
       "source_location": "L289",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_9_readability_psychology",
-      "community": 329,
-      "community_name": "9. Color System Checklist",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "9. readability psychology"
     },
     {
@@ -21144,8 +21144,8 @@
       "source_location": "L291",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_f_pattern_reading",
-      "community": 329,
-      "community_name": "9. Color System Checklist",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "f-pattern reading"
     },
     {
@@ -21155,8 +21155,8 @@
       "source_location": "L303",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_chunking_for_comprehension",
-      "community": 329,
-      "community_name": "9. Color System Checklist",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "chunking for comprehension"
     },
     {
@@ -21166,8 +21166,8 @@
       "source_location": "L310",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system_cognitive_ease",
-      "community": 329,
-      "community_name": "9. Color System Checklist",
+      "community": 12,
+      "community_name": "Typography System Reference",
       "norm_label": "cognitive ease"
     },
     {
@@ -21199,8 +21199,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_ux_psychology",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "ux-psychology.md"
     },
     {
@@ -21661,8 +21661,8 @@
       "source_location": "L919",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_ux_psychology_4_cognitive_load_management",
-      "community": 263,
-      "community_name": "4. Cognitive Load Management",
+      "community": 135,
+      "community_name": "UX Psychology Reference",
       "norm_label": "4. cognitive load management"
     },
     {
@@ -21672,8 +21672,8 @@
       "source_location": "L921",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_ux_psychology_three_types_of_cognitive_load",
-      "community": 263,
-      "community_name": "4. Cognitive Load Management",
+      "community": 135,
+      "community_name": "UX Psychology Reference",
       "norm_label": "three types of cognitive load"
     },
     {
@@ -21683,8 +21683,8 @@
       "source_location": "L929",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_ux_psychology_reduction_strategies",
-      "community": 263,
-      "community_name": "4. Cognitive Load Management",
+      "community": 135,
+      "community_name": "UX Psychology Reference",
       "norm_label": "reduction strategies"
     },
     {
@@ -21694,8 +21694,8 @@
       "source_location": "L1018",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_ux_psychology_5_persuasive_design_ethical",
-      "community": 264,
-      "community_name": "5. Persuasive Design (Ethical)",
+      "community": 135,
+      "community_name": "UX Psychology Reference",
       "norm_label": "5. persuasive design (ethical)"
     },
     {
@@ -21705,8 +21705,8 @@
       "source_location": "L1020",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_ux_psychology_ethical_persuasion_techniques",
-      "community": 264,
-      "community_name": "5. Persuasive Design (Ethical)",
+      "community": 135,
+      "community_name": "UX Psychology Reference",
       "norm_label": "ethical persuasion techniques"
     },
     {
@@ -21716,8 +21716,8 @@
       "source_location": "L1030",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_ux_psychology_nudge_patterns",
-      "community": 264,
-      "community_name": "5. Persuasive Design (Ethical)",
+      "community": 135,
+      "community_name": "UX Psychology Reference",
       "norm_label": "nudge patterns"
     },
     {
@@ -26193,8 +26193,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_1_framework_selection",
-      "community": 331,
-      "community_name": "2. OLED Considerations",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "1. framework selection"
     },
     {
@@ -26204,8 +26204,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_master_decision_tree",
-      "community": 331,
-      "community_name": "2. OLED Considerations",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "master decision tree"
     },
     {
@@ -26215,8 +26215,8 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_framework_comparison",
-      "community": 331,
-      "community_name": "2. OLED Considerations",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "framework comparison"
     },
     {
@@ -26226,8 +26226,8 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_when_to_choose_native",
-      "community": 331,
-      "community_name": "2. OLED Considerations",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "when to choose native"
     },
     {
@@ -26237,8 +26237,8 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_2_state_management_selection",
-      "community": 332,
-      "community_name": "5. Semantic Colors",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "2. state management selection"
     },
     {
@@ -26248,8 +26248,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_react_native_state_decision",
-      "community": 332,
-      "community_name": "5. Semantic Colors",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "react native state decision"
     },
     {
@@ -26259,8 +26259,8 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_flutter_state_decision",
-      "community": 332,
-      "community_name": "5. Semantic Colors",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "flutter state decision"
     },
     {
@@ -26270,8 +26270,8 @@
       "source_location": "L162",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_state_management_anti_patterns",
-      "community": 332,
-      "community_name": "5. Semantic Colors",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "state management anti-patterns"
     },
     {
@@ -26413,8 +26413,8 @@
       "source_location": "L430",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_8_decision_checklist",
-      "community": 333,
-      "community_name": "6. Dynamic Color (Android)",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "8. decision checklist"
     },
     {
@@ -26424,8 +26424,8 @@
       "source_location": "L432",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_before_starting_any_project",
-      "community": 333,
-      "community_name": "6. Dynamic Color (Android)",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "before starting any project"
     },
     {
@@ -26435,8 +26435,8 @@
       "source_location": "L443",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_questions_to_ask_user",
-      "community": 333,
-      "community_name": "6. Dynamic Color (Android)",
+      "community": 54,
+      "community_name": "Mobile Decision Trees",
       "norm_label": "questions to ask user"
     },
     {
@@ -27678,8 +27678,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_pattern_questioning_matrix",
-      "community": 321,
-      "community_name": "7. Accessibility Guidelines",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "\ud83c\udfaf pattern questioning matrix"
     },
     {
@@ -27689,8 +27689,8 @@
       "source_location": "L131",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_navigation_pattern_questioning",
-      "community": 321,
-      "community_name": "7. Accessibility Guidelines",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "navigation pattern questioning"
     },
     {
@@ -27700,8 +27700,8 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_state_pattern_questioning",
-      "community": 321,
-      "community_name": "7. Accessibility Guidelines",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "state pattern questioning"
     },
     {
@@ -27711,8 +27711,8 @@
       "source_location": "L149",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_list_pattern_questioning",
-      "community": 321,
-      "community_name": "7. Accessibility Guidelines",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "list pattern questioning"
     },
     {
@@ -27722,8 +27722,8 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_ui_pattern_questioning",
-      "community": 321,
-      "community_name": "7. Accessibility Guidelines",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "ui pattern questioning"
     },
     {
@@ -27887,8 +27887,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_2_tab_bar_navigation",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 321,
+      "community_name": "7. Accessibility Guidelines",
       "norm_label": "2. tab bar navigation"
     },
     {
@@ -27898,8 +27898,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_when_to_use",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 321,
+      "community_name": "7. Accessibility Guidelines",
       "norm_label": "when to use"
     },
     {
@@ -27909,8 +27909,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_tab_bar_best_practices",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 321,
+      "community_name": "7. Accessibility Guidelines",
       "norm_label": "tab bar best practices"
     },
     {
@@ -27920,8 +27920,8 @@
       "source_location": "L73",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_tab_state_preservation",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 321,
+      "community_name": "7. Accessibility Guidelines",
       "norm_label": "tab state preservation"
     },
     {
@@ -27931,8 +27931,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_3_stack_navigation",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 323,
+      "community_name": "1. Framework Selection",
       "norm_label": "3. stack navigation"
     },
     {
@@ -27942,8 +27942,8 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_core_concepts",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 323,
+      "community_name": "1. Framework Selection",
       "norm_label": "core concepts"
     },
     {
@@ -27953,8 +27953,8 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_stack_navigation_patterns",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 323,
+      "community_name": "1. Framework Selection",
       "norm_label": "stack navigation patterns"
     },
     {
@@ -27964,8 +27964,8 @@
       "source_location": "L117",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_back_button_handling",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 323,
+      "community_name": "1. Framework Selection",
       "norm_label": "back button handling"
     },
     {
@@ -28052,8 +28052,8 @@
       "source_location": "L228",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_6_deep_linking",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 325,
+      "community_name": "7. Project Type Templates",
       "norm_label": "6. deep linking"
     },
     {
@@ -28063,8 +28063,8 @@
       "source_location": "L230",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_why_deep_links_from_day_one",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 325,
+      "community_name": "7. Project Type Templates",
       "norm_label": "why deep links from day one"
     },
     {
@@ -28074,8 +28074,8 @@
       "source_location": "L248",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_url_structure",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 325,
+      "community_name": "7. Project Type Templates",
       "norm_label": "url structure"
     },
     {
@@ -28085,8 +28085,8 @@
       "source_location": "L266",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_deep_link_navigation_rules",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 325,
+      "community_name": "7. Project Type Templates",
       "norm_label": "deep link navigation rules"
     },
     {
@@ -28206,8 +28206,8 @@
       "source_location": "L428",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_10_navigation_checklist",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
       "norm_label": "10. navigation checklist"
     },
     {
@@ -28217,8 +28217,8 @@
       "source_location": "L430",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_before_navigation_architecture",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
       "norm_label": "before navigation architecture"
     },
     {
@@ -28228,8 +28228,8 @@
       "source_location": "L438",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_before_every_screen",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
       "norm_label": "before every screen"
     },
     {
@@ -28239,8 +28239,8 @@
       "source_location": "L446",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_before_release",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
       "norm_label": "before release"
     },
     {
@@ -36412,8 +36412,8 @@
       "source_location": "L100",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_4_attack_surface_mapping",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 326,
+      "community_name": "10. Quick Reference",
       "norm_label": "4. attack surface mapping"
     },
     {
@@ -36423,8 +36423,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_what_to_map",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 326,
+      "community_name": "10. Quick Reference",
       "norm_label": "what to map"
     },
     {
@@ -36434,8 +36434,8 @@
       "source_location": "L111",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_prioritization_matrix",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 326,
+      "community_name": "10. Quick Reference",
       "norm_label": "prioritization matrix"
     },
     {
@@ -36445,8 +36445,8 @@
       "source_location": "L124",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_5_risk_prioritization",
-      "community": 330,
-      "community_name": "5. Risk Prioritization",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "5. risk prioritization"
     },
     {
@@ -36456,8 +36456,8 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_cvss_context",
-      "community": 330,
-      "community_name": "5. Risk Prioritization",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "cvss + context"
     },
     {
@@ -36467,8 +36467,8 @@
       "source_location": "L135",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_prioritization_decision_tree",
-      "community": 330,
-      "community_name": "5. Risk Prioritization",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "prioritization decision tree"
     },
     {
@@ -42610,6 +42610,72 @@
       "norm_label": "fazit"
     },
     {
+      "label": "de/shopify-checkout-countdown-timer.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_checkout_countdown_timer",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "de/shopify-checkout-countdown-timer.mdx"
+    },
+    {
+      "label": "Welche Fl\u00e4chen darf welcher Tarif anpassen?",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_checkout_countdown_timer_welche_fl\u00e4chen_darf_welcher_tarif_anpassen",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "welche flachen darf welcher tarif anpassen?"
+    },
+    {
+      "label": "Methoden, die nicht mehr funktionieren",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_checkout_countdown_timer_methoden_die_nicht_mehr_funktionieren",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "methoden, die nicht mehr funktionieren"
+    },
+    {
+      "label": "Auch mit Plus ist der Checkout der falsche Ort",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_checkout_countdown_timer_auch_mit_plus_ist_der_checkout_der_falsche_ort",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "auch mit plus ist der checkout der falsche ort"
+    },
+    {
+      "label": "Wohin der Timer stattdessen geh\u00f6rt",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L105",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_checkout_countdown_timer_wohin_der_timer_stattdessen_geh\u00f6rt",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "wohin der timer stattdessen gehort"
+    },
+    {
+      "label": "Fazit",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L126",
+      "_origin": "ast",
+      "id": "src_content_blog_de_shopify_checkout_countdown_timer_fazit",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "fazit"
+    },
+    {
       "label": "de/shopify-conversion-rate-2026.mdx",
       "file_type": "document",
       "source_file": "src/content/blog/de/shopify-conversion-rate-2026.mdx",
@@ -45335,6 +45401,72 @@
       "id": "src_content_blog_en_shopify_cart_reservation_timer_bottom_line",
       "community": 301,
       "community_name": "6. Dark Mode Principles",
+      "norm_label": "bottom line"
+    },
+    {
+      "label": "en/shopify-checkout-countdown-timer.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_en_shopify_checkout_countdown_timer",
+      "community": 264,
+      "community_name": "5. Persuasive Design (Ethical)",
+      "norm_label": "en/shopify-checkout-countdown-timer.mdx"
+    },
+    {
+      "label": "Which surfaces can each plan customise?",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "src_content_blog_en_shopify_checkout_countdown_timer_which_surfaces_can_each_plan_customise",
+      "community": 264,
+      "community_name": "5. Persuasive Design (Ethical)",
+      "norm_label": "which surfaces can each plan customise?"
+    },
+    {
+      "label": "Methods that no longer work",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "src_content_blog_en_shopify_checkout_countdown_timer_methods_that_no_longer_work",
+      "community": 264,
+      "community_name": "5. Persuasive Design (Ethical)",
+      "norm_label": "methods that no longer work"
+    },
+    {
+      "label": "Even on Plus, checkout is the wrong place",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "src_content_blog_en_shopify_checkout_countdown_timer_even_on_plus_checkout_is_the_wrong_place",
+      "community": 264,
+      "community_name": "5. Persuasive Design (Ethical)",
+      "norm_label": "even on plus, checkout is the wrong place"
+    },
+    {
+      "label": "Where to put the timer instead",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L103",
+      "_origin": "ast",
+      "id": "src_content_blog_en_shopify_checkout_countdown_timer_where_to_put_the_timer_instead",
+      "community": 264,
+      "community_name": "5. Persuasive Design (Ethical)",
+      "norm_label": "where to put the timer instead"
+    },
+    {
+      "label": "Bottom line",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L123",
+      "_origin": "ast",
+      "id": "src_content_blog_en_shopify_checkout_countdown_timer_bottom_line",
+      "community": 264,
+      "community_name": "5. Persuasive Design (Ethical)",
       "norm_label": "bottom line"
     },
     {
@@ -48085,6 +48217,72 @@
       "id": "src_content_blog_fr_shopify_cart_reservation_timer_en_r\u00e9sum\u00e9",
       "community": 313,
       "community_name": "3. Mobile API Optimization",
+      "norm_label": "en resume"
+    },
+    {
+      "label": "fr/shopify-checkout-countdown-timer.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_shopify_checkout_countdown_timer",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
+      "norm_label": "fr/shopify-checkout-countdown-timer.mdx"
+    },
+    {
+      "label": "Quelles surfaces chaque formule peut-elle personnaliser ?",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_shopify_checkout_countdown_timer_quelles_surfaces_chaque_formule_peut_elle_personnaliser",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
+      "norm_label": "quelles surfaces chaque formule peut-elle personnaliser ?"
+    },
+    {
+      "label": "Les m\u00e9thodes qui ne fonctionnent plus",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L68",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_shopify_checkout_countdown_timer_les_m\u00e9thodes_qui_ne_fonctionnent_plus",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
+      "norm_label": "les methodes qui ne fonctionnent plus"
+    },
+    {
+      "label": "M\u00eame avec Plus, le paiement est le mauvais endroit",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_shopify_checkout_countdown_timer_m\u00eame_avec_plus_le_paiement_est_le_mauvais_endroit",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
+      "norm_label": "meme avec plus, le paiement est le mauvais endroit"
+    },
+    {
+      "label": "O\u00f9 placer le minuteur \u00e0 la place",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L104",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_shopify_checkout_countdown_timer_o\u00f9_placer_le_minuteur_\u00e0_la_place",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
+      "norm_label": "ou placer le minuteur a la place"
+    },
+    {
+      "label": "En r\u00e9sum\u00e9",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L125",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_shopify_checkout_countdown_timer_en_r\u00e9sum\u00e9",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "en resume"
     },
     {
@@ -98320,6 +98518,61 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L89",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_checkout_countdown_timer",
+      "target": "src_content_blog_de_shopify_checkout_countdown_timer_auch_mit_plus_ist_der_checkout_der_falsche_ort",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L126",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_checkout_countdown_timer",
+      "target": "src_content_blog_de_shopify_checkout_countdown_timer_fazit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_checkout_countdown_timer",
+      "target": "src_content_blog_de_shopify_checkout_countdown_timer_methoden_die_nicht_mehr_funktionieren",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_checkout_countdown_timer",
+      "target": "src_content_blog_de_shopify_checkout_countdown_timer_welche_fl\u00e4chen_darf_welcher_tarif_anpassen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L105",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_shopify_checkout_countdown_timer",
+      "target": "src_content_blog_de_shopify_checkout_countdown_timer_wohin_der_timer_stattdessen_geh\u00f6rt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/de/shopify-conversion-rate-2026.mdx",
       "source_location": "L181",
       "weight": 1.0,
@@ -100757,6 +101010,61 @@
       "_origin": "ast",
       "source": "src_content_blog_en_shopify_cart_reservation_timer",
       "target": "src_content_blog_en_shopify_cart_reservation_timer_when_you_need_a_real_reservation_draft_orders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L123",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_shopify_checkout_countdown_timer",
+      "target": "src_content_blog_en_shopify_checkout_countdown_timer_bottom_line",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_shopify_checkout_countdown_timer",
+      "target": "src_content_blog_en_shopify_checkout_countdown_timer_even_on_plus_checkout_is_the_wrong_place",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_shopify_checkout_countdown_timer",
+      "target": "src_content_blog_en_shopify_checkout_countdown_timer_methods_that_no_longer_work",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L103",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_shopify_checkout_countdown_timer",
+      "target": "src_content_blog_en_shopify_checkout_countdown_timer_where_to_put_the_timer_instead",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_shopify_checkout_countdown_timer",
+      "target": "src_content_blog_en_shopify_checkout_countdown_timer_which_surfaces_can_each_plan_customise",
       "confidence_score": 1.0
     },
     {
@@ -103226,6 +103534,61 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L125",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_shopify_checkout_countdown_timer",
+      "target": "src_content_blog_fr_shopify_checkout_countdown_timer_en_r\u00e9sum\u00e9",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_shopify_checkout_countdown_timer",
+      "target": "src_content_blog_fr_shopify_checkout_countdown_timer_les_m\u00e9thodes_qui_ne_fonctionnent_plus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_shopify_checkout_countdown_timer",
+      "target": "src_content_blog_fr_shopify_checkout_countdown_timer_m\u00eame_avec_plus_le_paiement_est_le_mauvais_endroit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_shopify_checkout_countdown_timer",
+      "target": "src_content_blog_fr_shopify_checkout_countdown_timer_o\u00f9_placer_le_minuteur_\u00e0_la_place",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/shopify-checkout-countdown-timer.mdx",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_shopify_checkout_countdown_timer",
+      "target": "src_content_blog_fr_shopify_checkout_countdown_timer_quelles_surfaces_chaque_formule_peut_elle_personnaliser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/fr/shopify-conversion-rate-2026.mdx",
       "source_location": "L26",
       "weight": 1.0,
@@ -103885,5 +104248,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "1ad27e1b1d0ddc83fa1802efeabfee17dec530d3"
+  "built_at_commit": "1de3db5a54babadf901f65f5749abefda0df3b40"
 }

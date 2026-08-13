@@ -27678,8 +27678,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_pattern_questioning_matrix",
-      "community": 48,
-      "community_name": "Mobile Design Thinking",
+      "community": 325,
+      "community_name": "7. Project Type Templates",
       "norm_label": "\ud83c\udfaf pattern questioning matrix"
     },
     {
@@ -27689,8 +27689,8 @@
       "source_location": "L131",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_navigation_pattern_questioning",
-      "community": 48,
-      "community_name": "Mobile Design Thinking",
+      "community": 325,
+      "community_name": "7. Project Type Templates",
       "norm_label": "navigation pattern questioning"
     },
     {
@@ -27700,8 +27700,8 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_state_pattern_questioning",
-      "community": 48,
-      "community_name": "Mobile Design Thinking",
+      "community": 325,
+      "community_name": "7. Project Type Templates",
       "norm_label": "state pattern questioning"
     },
     {
@@ -27711,8 +27711,8 @@
       "source_location": "L149",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_list_pattern_questioning",
-      "community": 48,
-      "community_name": "Mobile Design Thinking",
+      "community": 325,
+      "community_name": "7. Project Type Templates",
       "norm_label": "list pattern questioning"
     },
     {
@@ -27722,8 +27722,8 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_ui_pattern_questioning",
-      "community": 48,
-      "community_name": "Mobile Design Thinking",
+      "community": 325,
+      "community_name": "7. Project Type Templates",
       "norm_label": "ui pattern questioning"
     },
     {
@@ -27887,8 +27887,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_2_tab_bar_navigation",
-      "community": 321,
-      "community_name": "7. Accessibility Guidelines",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "2. tab bar navigation"
     },
     {
@@ -27898,8 +27898,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_when_to_use",
-      "community": 321,
-      "community_name": "7. Accessibility Guidelines",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "when to use"
     },
     {
@@ -27909,8 +27909,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_tab_bar_best_practices",
-      "community": 321,
-      "community_name": "7. Accessibility Guidelines",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "tab bar best practices"
     },
     {
@@ -27920,8 +27920,8 @@
       "source_location": "L73",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_tab_state_preservation",
-      "community": 321,
-      "community_name": "7. Accessibility Guidelines",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "tab state preservation"
     },
     {
@@ -27931,8 +27931,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_3_stack_navigation",
-      "community": 323,
-      "community_name": "1. Framework Selection",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "3. stack navigation"
     },
     {
@@ -27942,8 +27942,8 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_core_concepts",
-      "community": 323,
-      "community_name": "1. Framework Selection",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "core concepts"
     },
     {
@@ -27953,8 +27953,8 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_stack_navigation_patterns",
-      "community": 323,
-      "community_name": "1. Framework Selection",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "stack navigation patterns"
     },
     {
@@ -27964,8 +27964,8 @@
       "source_location": "L117",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_back_button_handling",
-      "community": 323,
-      "community_name": "1. Framework Selection",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "back button handling"
     },
     {
@@ -28052,8 +28052,8 @@
       "source_location": "L228",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_6_deep_linking",
-      "community": 325,
-      "community_name": "7. Project Type Templates",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "6. deep linking"
     },
     {
@@ -28063,8 +28063,8 @@
       "source_location": "L230",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_why_deep_links_from_day_one",
-      "community": 325,
-      "community_name": "7. Project Type Templates",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "why deep links from day one"
     },
     {
@@ -28074,8 +28074,8 @@
       "source_location": "L248",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_url_structure",
-      "community": 325,
-      "community_name": "7. Project Type Templates",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "url structure"
     },
     {
@@ -28085,8 +28085,8 @@
       "source_location": "L266",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_deep_link_navigation_rules",
-      "community": 325,
-      "community_name": "7. Project Type Templates",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "deep link navigation rules"
     },
     {
@@ -28206,8 +28206,8 @@
       "source_location": "L428",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_10_navigation_checklist",
-      "community": 320,
-      "community_name": "3. Dark Mode Design",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "10. navigation checklist"
     },
     {
@@ -28217,8 +28217,8 @@
       "source_location": "L430",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_before_navigation_architecture",
-      "community": 320,
-      "community_name": "3. Dark Mode Design",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "before navigation architecture"
     },
     {
@@ -28228,8 +28228,8 @@
       "source_location": "L438",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_before_every_screen",
-      "community": 320,
-      "community_name": "3. Dark Mode Design",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "before every screen"
     },
     {
@@ -28239,8 +28239,8 @@
       "source_location": "L446",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_before_release",
-      "community": 320,
-      "community_name": "3. Dark Mode Design",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "before release"
     },
     {
@@ -29196,8 +29196,8 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_2_system_fonts",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 327,
+      "community_name": "2. System Fonts",
       "norm_label": "2. system fonts"
     },
     {
@@ -29207,8 +29207,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_ios_sf_pro_family",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 327,
+      "community_name": "2. System Fonts",
       "norm_label": "ios: sf pro family"
     },
     {
@@ -29218,8 +29218,8 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_android_roboto_family",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 327,
+      "community_name": "2. System Fonts",
       "norm_label": "android: roboto family"
     },
     {
@@ -29229,8 +29229,8 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_when_to_use_system_fonts",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 327,
+      "community_name": "2. System Fonts",
       "norm_label": "when to use system fonts"
     },
     {
@@ -29240,8 +29240,8 @@
       "source_location": "L87",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_custom_font_considerations",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 327,
+      "community_name": "2. System Fonts",
       "norm_label": "custom font considerations"
     },
     {
@@ -29295,8 +29295,8 @@
       "source_location": "L164",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_4_dynamic_type_text_scaling",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 329,
+      "community_name": "4. Dynamic Type / Text Scaling",
       "norm_label": "4. dynamic type / text scaling"
     },
     {
@@ -29306,8 +29306,8 @@
       "source_location": "L166",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_ios_dynamic_type_mandatory",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 329,
+      "community_name": "4. Dynamic Type / Text Scaling",
       "norm_label": "ios dynamic type (mandatory)"
     },
     {
@@ -29317,8 +29317,8 @@
       "source_location": "L182",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_android_text_scaling_mandatory",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 329,
+      "community_name": "4. Dynamic Type / Text Scaling",
       "norm_label": "android text scaling (mandatory)"
     },
     {
@@ -29328,8 +29328,8 @@
       "source_location": "L197",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_scaling_challenges",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 329,
+      "community_name": "4. Dynamic Type / Text Scaling",
       "norm_label": "scaling challenges"
     },
     {
@@ -29339,8 +29339,8 @@
       "source_location": "L216",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_5_typography_accessibility",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 330,
+      "community_name": "5. Typography Accessibility",
       "norm_label": "5. typography accessibility"
     },
     {
@@ -29350,8 +29350,8 @@
       "source_location": "L218",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_minimum_sizes",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 330,
+      "community_name": "5. Typography Accessibility",
       "norm_label": "minimum sizes"
     },
     {
@@ -29361,8 +29361,8 @@
       "source_location": "L228",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_contrast_requirements_wcag",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 330,
+      "community_name": "5. Typography Accessibility",
       "norm_label": "contrast requirements (wcag)"
     },
     {
@@ -29372,8 +29372,8 @@
       "source_location": "L242",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_line_height_for_accessibility",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 330,
+      "community_name": "5. Typography Accessibility",
       "norm_label": "line height for accessibility"
     },
     {
@@ -29460,8 +29460,8 @@
       "source_location": "L332",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_8_font_loading_performance",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 331,
+      "community_name": "8. Font Loading & Performance",
       "norm_label": "8. font loading & performance"
     },
     {
@@ -29471,8 +29471,8 @@
       "source_location": "L334",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_font_file_optimization",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 331,
+      "community_name": "8. Font Loading & Performance",
       "norm_label": "font file optimization"
     },
     {
@@ -29482,8 +29482,8 @@
       "source_location": "L350",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_loading_strategy",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 331,
+      "community_name": "8. Font Loading & Performance",
       "norm_label": "loading strategy"
     },
     {
@@ -29526,8 +29526,8 @@
       "source_location": "L390",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_10_quick_reference",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 328,
+      "community_name": "10. Quick Reference",
       "norm_label": "10. quick reference"
     },
     {
@@ -29537,8 +29537,8 @@
       "source_location": "L392",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_typography_tokens",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 328,
+      "community_name": "10. Quick Reference",
       "norm_label": "typography tokens"
     },
     {
@@ -29548,8 +29548,8 @@
       "source_location": "L414",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_minimum_sizes_414",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 328,
+      "community_name": "10. Quick Reference",
       "norm_label": "minimum sizes"
     },
     {
@@ -29559,8 +29559,8 @@
       "source_location": "L423",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_line_height",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 328,
+      "community_name": "10. Quick Reference",
       "norm_label": "line height"
     },
     {
@@ -41246,6 +41246,105 @@
       "norm_label": "fazit"
     },
     {
+      "label": "de/do-cart-timers-work.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/do-cart-timers-work.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_de_do_cart_timers_work",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
+      "norm_label": "de/do-cart-timers-work.mdx"
+    },
+    {
+      "label": "Erh\u00f6hen Countdown-Timer die Conversion?",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/do-cart-timers-work.mdx",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "src_content_blog_de_do_cart_timers_work_erh\u00f6hen_countdown_timer_die_conversion",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
+      "norm_label": "erhohen countdown-timer die conversion?"
+    },
+    {
+      "label": "Fast jede Zahl, die Sie sehen, ist erfunden",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/do-cart-timers-work.mdx",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "src_content_blog_de_do_cart_timers_work_fast_jede_zahl_die_sie_sehen_ist_erfunden",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
+      "norm_label": "fast jede zahl, die sie sehen, ist erfunden"
+    },
+    {
+      "label": "Was die Forschung tats\u00e4chlich hergibt",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/do-cart-timers-work.mdx",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "src_content_blog_de_do_cart_timers_work_was_die_forschung_tats\u00e4chlich_hergibt",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
+      "norm_label": "was die forschung tatsachlich hergibt"
+    },
+    {
+      "label": "Der Befund, der Ihr Setup \u00e4ndern sollte",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/do-cart-timers-work.mdx",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "src_content_blog_de_do_cart_timers_work_der_befund_der_ihr_setup_\u00e4ndern_sollte",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
+      "norm_label": "der befund, der ihr setup andern sollte"
+    },
+    {
+      "label": "Wo die rechtliche Grenze verl\u00e4uft",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/do-cart-timers-work.mdx",
+      "source_location": "L110",
+      "_origin": "ast",
+      "id": "src_content_blog_de_do_cart_timers_work_wo_die_rechtliche_grenze_verl\u00e4uft",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
+      "norm_label": "wo die rechtliche grenze verlauft"
+    },
+    {
+      "label": "Ein Timer, der einer Pr\u00fcfung standh\u00e4lt",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/do-cart-timers-work.mdx",
+      "source_location": "L138",
+      "_origin": "ast",
+      "id": "src_content_blog_de_do_cart_timers_work_ein_timer_der_einer_pr\u00fcfung_standh\u00e4lt",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
+      "norm_label": "ein timer, der einer prufung standhalt"
+    },
+    {
+      "label": "Wann Sie ganz auf den Timer verzichten",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/do-cart-timers-work.mdx",
+      "source_location": "L159",
+      "_origin": "ast",
+      "id": "src_content_blog_de_do_cart_timers_work_wann_sie_ganz_auf_den_timer_verzichten",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
+      "norm_label": "wann sie ganz auf den timer verzichten"
+    },
+    {
+      "label": "Fazit",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/do-cart-timers-work.mdx",
+      "source_location": "L169",
+      "_origin": "ast",
+      "id": "src_content_blog_de_do_cart_timers_work_fazit",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
+      "norm_label": "fazit"
+    },
+    {
       "label": "de/free-shipping-bar-shopify.md",
       "file_type": "document",
       "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
@@ -44038,6 +44137,105 @@
       "community": 244,
       "community_name": "en/calculate-free-shipping-threshold.md",
       "norm_label": "conclusion"
+    },
+    {
+      "label": "en/do-cart-timers-work.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/do-cart-timers-work.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_en_do_cart_timers_work",
+      "community": 321,
+      "community_name": "7. Accessibility Guidelines",
+      "norm_label": "en/do-cart-timers-work.mdx"
+    },
+    {
+      "label": "Do countdown timers increase conversions?",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/do-cart-timers-work.mdx",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "src_content_blog_en_do_cart_timers_work_do_countdown_timers_increase_conversions",
+      "community": 321,
+      "community_name": "7. Accessibility Guidelines",
+      "norm_label": "do countdown timers increase conversions?"
+    },
+    {
+      "label": "Almost every number you will see is fabricated",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/do-cart-timers-work.mdx",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "src_content_blog_en_do_cart_timers_work_almost_every_number_you_will_see_is_fabricated",
+      "community": 321,
+      "community_name": "7. Accessibility Guidelines",
+      "norm_label": "almost every number you will see is fabricated"
+    },
+    {
+      "label": "What the research actually supports",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/do-cart-timers-work.mdx",
+      "source_location": "L77",
+      "_origin": "ast",
+      "id": "src_content_blog_en_do_cart_timers_work_what_the_research_actually_supports",
+      "community": 321,
+      "community_name": "7. Accessibility Guidelines",
+      "norm_label": "what the research actually supports"
+    },
+    {
+      "label": "The finding that should change your setup",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/do-cart-timers-work.mdx",
+      "source_location": "L94",
+      "_origin": "ast",
+      "id": "src_content_blog_en_do_cart_timers_work_the_finding_that_should_change_your_setup",
+      "community": 321,
+      "community_name": "7. Accessibility Guidelines",
+      "norm_label": "the finding that should change your setup"
+    },
+    {
+      "label": "Where the legal line sits",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/do-cart-timers-work.mdx",
+      "source_location": "L105",
+      "_origin": "ast",
+      "id": "src_content_blog_en_do_cart_timers_work_where_the_legal_line_sits",
+      "community": 321,
+      "community_name": "7. Accessibility Guidelines",
+      "norm_label": "where the legal line sits"
+    },
+    {
+      "label": "A timer that survives scrutiny",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/do-cart-timers-work.mdx",
+      "source_location": "L132",
+      "_origin": "ast",
+      "id": "src_content_blog_en_do_cart_timers_work_a_timer_that_survives_scrutiny",
+      "community": 321,
+      "community_name": "7. Accessibility Guidelines",
+      "norm_label": "a timer that survives scrutiny"
+    },
+    {
+      "label": "When to skip the timer entirely",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/do-cart-timers-work.mdx",
+      "source_location": "L151",
+      "_origin": "ast",
+      "id": "src_content_blog_en_do_cart_timers_work_when_to_skip_the_timer_entirely",
+      "community": 321,
+      "community_name": "7. Accessibility Guidelines",
+      "norm_label": "when to skip the timer entirely"
+    },
+    {
+      "label": "Bottom line",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/do-cart-timers-work.mdx",
+      "source_location": "L160",
+      "_origin": "ast",
+      "id": "src_content_blog_en_do_cart_timers_work_bottom_line",
+      "community": 321,
+      "community_name": "7. Accessibility Guidelines",
+      "norm_label": "bottom line"
     },
     {
       "label": "en/free-shipping-bar-shopify.md",
@@ -46854,6 +47052,105 @@
       "community": 194,
       "community_name": "fr/calculate-free-shipping-threshold.md",
       "norm_label": "conclusion"
+    },
+    {
+      "label": "fr/do-cart-timers-work.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/do-cart-timers-work.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_do_cart_timers_work",
+      "community": 323,
+      "community_name": "1. Framework Selection",
+      "norm_label": "fr/do-cart-timers-work.mdx"
+    },
+    {
+      "label": "Les comptes \u00e0 rebours augmentent-ils les conversions ?",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/do-cart-timers-work.mdx",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_do_cart_timers_work_les_comptes_\u00e0_rebours_augmentent_ils_les_conversions",
+      "community": 323,
+      "community_name": "1. Framework Selection",
+      "norm_label": "les comptes a rebours augmentent-ils les conversions ?"
+    },
+    {
+      "label": "Presque tous les chiffres que vous verrez sont invent\u00e9s",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/do-cart-timers-work.mdx",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_do_cart_timers_work_presque_tous_les_chiffres_que_vous_verrez_sont_invent\u00e9s",
+      "community": 323,
+      "community_name": "1. Framework Selection",
+      "norm_label": "presque tous les chiffres que vous verrez sont inventes"
+    },
+    {
+      "label": "Ce que la recherche soutient r\u00e9ellement",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/do-cart-timers-work.mdx",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_do_cart_timers_work_ce_que_la_recherche_soutient_r\u00e9ellement",
+      "community": 323,
+      "community_name": "1. Framework Selection",
+      "norm_label": "ce que la recherche soutient reellement"
+    },
+    {
+      "label": "Le r\u00e9sultat qui devrait changer votre configuration",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/do-cart-timers-work.mdx",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_do_cart_timers_work_le_r\u00e9sultat_qui_devrait_changer_votre_configuration",
+      "community": 323,
+      "community_name": "1. Framework Selection",
+      "norm_label": "le resultat qui devrait changer votre configuration"
+    },
+    {
+      "label": "O\u00f9 se situe la limite juridique",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/do-cart-timers-work.mdx",
+      "source_location": "L110",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_do_cart_timers_work_o\u00f9_se_situe_la_limite_juridique",
+      "community": 323,
+      "community_name": "1. Framework Selection",
+      "norm_label": "ou se situe la limite juridique"
+    },
+    {
+      "label": "Un minuteur qui r\u00e9siste \u00e0 l'examen",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/do-cart-timers-work.mdx",
+      "source_location": "L139",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_do_cart_timers_work_un_minuteur_qui_r\u00e9siste_\u00e0_l_examen",
+      "community": 323,
+      "community_name": "1. Framework Selection",
+      "norm_label": "un minuteur qui resiste a l'examen"
+    },
+    {
+      "label": "Quand renoncer enti\u00e8rement au minuteur",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/do-cart-timers-work.mdx",
+      "source_location": "L160",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_do_cart_timers_work_quand_renoncer_enti\u00e8rement_au_minuteur",
+      "community": 323,
+      "community_name": "1. Framework Selection",
+      "norm_label": "quand renoncer entierement au minuteur"
+    },
+    {
+      "label": "En r\u00e9sum\u00e9",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/do-cart-timers-work.mdx",
+      "source_location": "L170",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_do_cart_timers_work_en_r\u00e9sum\u00e9",
+      "community": 323,
+      "community_name": "1. Framework Selection",
+      "norm_label": "en resume"
     },
     {
       "label": "fr/free-shipping-bar-shopify.md",
@@ -97308,6 +97605,94 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/do-cart-timers-work.mdx",
+      "source_location": "L97",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_do_cart_timers_work",
+      "target": "src_content_blog_de_do_cart_timers_work_der_befund_der_ihr_setup_\u00e4ndern_sollte",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/do-cart-timers-work.mdx",
+      "source_location": "L138",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_do_cart_timers_work",
+      "target": "src_content_blog_de_do_cart_timers_work_ein_timer_der_einer_pr\u00fcfung_standh\u00e4lt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/do-cart-timers-work.mdx",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_do_cart_timers_work",
+      "target": "src_content_blog_de_do_cart_timers_work_erh\u00f6hen_countdown_timer_die_conversion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/do-cart-timers-work.mdx",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_do_cart_timers_work",
+      "target": "src_content_blog_de_do_cart_timers_work_fast_jede_zahl_die_sie_sehen_ist_erfunden",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/do-cart-timers-work.mdx",
+      "source_location": "L169",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_do_cart_timers_work",
+      "target": "src_content_blog_de_do_cart_timers_work_fazit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/do-cart-timers-work.mdx",
+      "source_location": "L159",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_do_cart_timers_work",
+      "target": "src_content_blog_de_do_cart_timers_work_wann_sie_ganz_auf_den_timer_verzichten",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/do-cart-timers-work.mdx",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_do_cart_timers_work",
+      "target": "src_content_blog_de_do_cart_timers_work_was_die_forschung_tats\u00e4chlich_hergibt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/do-cart-timers-work.mdx",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_do_cart_timers_work",
+      "target": "src_content_blog_de_do_cart_timers_work_wo_die_rechtliche_grenze_verl\u00e4uft",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
       "source_location": "L130",
       "weight": 1.0,
@@ -99800,6 +100185,94 @@
       "_origin": "ast",
       "source": "src_content_blog_en_calculate_free_shipping_threshold",
       "target": "src_content_blog_en_calculate_free_shipping_threshold_the_math_how_to_find_your_magic_number",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/do-cart-timers-work.mdx",
+      "source_location": "L132",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_do_cart_timers_work",
+      "target": "src_content_blog_en_do_cart_timers_work_a_timer_that_survives_scrutiny",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/do-cart-timers-work.mdx",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_do_cart_timers_work",
+      "target": "src_content_blog_en_do_cart_timers_work_almost_every_number_you_will_see_is_fabricated",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/do-cart-timers-work.mdx",
+      "source_location": "L160",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_do_cart_timers_work",
+      "target": "src_content_blog_en_do_cart_timers_work_bottom_line",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/do-cart-timers-work.mdx",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_do_cart_timers_work",
+      "target": "src_content_blog_en_do_cart_timers_work_do_countdown_timers_increase_conversions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/do-cart-timers-work.mdx",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_do_cart_timers_work",
+      "target": "src_content_blog_en_do_cart_timers_work_the_finding_that_should_change_your_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/do-cart-timers-work.mdx",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_do_cart_timers_work",
+      "target": "src_content_blog_en_do_cart_timers_work_what_the_research_actually_supports",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/do-cart-timers-work.mdx",
+      "source_location": "L151",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_do_cart_timers_work",
+      "target": "src_content_blog_en_do_cart_timers_work_when_to_skip_the_timer_entirely",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/do-cart-timers-work.mdx",
+      "source_location": "L105",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_do_cart_timers_work",
+      "target": "src_content_blog_en_do_cart_timers_work_where_the_legal_line_sits",
       "confidence_score": 1.0
     },
     {
@@ -102324,6 +102797,94 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/do-cart-timers-work.mdx",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_do_cart_timers_work",
+      "target": "src_content_blog_fr_do_cart_timers_work_ce_que_la_recherche_soutient_r\u00e9ellement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/do-cart-timers-work.mdx",
+      "source_location": "L170",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_do_cart_timers_work",
+      "target": "src_content_blog_fr_do_cart_timers_work_en_r\u00e9sum\u00e9",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/do-cart-timers-work.mdx",
+      "source_location": "L97",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_do_cart_timers_work",
+      "target": "src_content_blog_fr_do_cart_timers_work_le_r\u00e9sultat_qui_devrait_changer_votre_configuration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/do-cart-timers-work.mdx",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_do_cart_timers_work",
+      "target": "src_content_blog_fr_do_cart_timers_work_les_comptes_\u00e0_rebours_augmentent_ils_les_conversions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/do-cart-timers-work.mdx",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_do_cart_timers_work",
+      "target": "src_content_blog_fr_do_cart_timers_work_o\u00f9_se_situe_la_limite_juridique",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/do-cart-timers-work.mdx",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_do_cart_timers_work",
+      "target": "src_content_blog_fr_do_cart_timers_work_presque_tous_les_chiffres_que_vous_verrez_sont_invent\u00e9s",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/do-cart-timers-work.mdx",
+      "source_location": "L160",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_do_cart_timers_work",
+      "target": "src_content_blog_fr_do_cart_timers_work_quand_renoncer_enti\u00e8rement_au_minuteur",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/do-cart-timers-work.mdx",
+      "source_location": "L139",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_do_cart_timers_work",
+      "target": "src_content_blog_fr_do_cart_timers_work_un_minuteur_qui_r\u00e9siste_\u00e0_l_examen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/fr/free-shipping-bar-shopify.md",
       "source_location": "L160",
       "weight": 1.0,
@@ -104248,5 +104809,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "1de3db5a54babadf901f65f5749abefda0df3b40"
+  "built_at_commit": "ddd87886ab4b738581888130a33c9baa5c30b729"
 }

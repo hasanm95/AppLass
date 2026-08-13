@@ -1,16 +1,16 @@
 # Graph Report - AppLass  (2026-08-13)
 
 ## Corpus Check
-- 473 files · ~1,797,114 words
+- 476 files · ~1,809,434 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4445 nodes · 4971 edges · 327 communities (311 shown, 16 thin omitted)
+- 4472 nodes · 4995 edges · 332 communities (316 shown, 16 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.61)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1de3db5a`
+- Built from commit: `ddd87886`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -334,6 +334,11 @@
 - 2. State Management Selection
 - 7. Project Type Templates
 - 10. Quick Reference
+- 2. System Fonts
+- 10. Quick Reference
+- 4. Dynamic Type / Text Scaling
+- 5. Typography Accessibility
+- 8. Font Loading & Performance
 
 ## God Nodes (most connected - your core abstractions)
 1. `@/i18n/localize` - 86 edges
@@ -362,7 +367,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (327 total, 16 thin omitted)
+## Communities (332 total, 16 thin omitted)
 
 ### Community 0 - "@/i18n/localize"
 Cohesion: 0.12
@@ -425,8 +430,8 @@ Cohesion: 0.05
 Nodes (38): 10. Quick Reference, 1. Mobile Color Fundamentals, 2. OLED Considerations, 3. Dark Mode Design, 4. Outdoor Visibility, 5. Semantic Colors, 6. Dynamic Color (Android), 7. Color Accessibility (+30 more)
 
 ### Community 15 - "Mobile Typography Reference"
-Cohesion: 0.05
-Nodes (38): 10. Quick Reference, 1. Mobile Typography Fundamentals, 2. System Fonts, 3. Type Scale, 4. Dynamic Type / Text Scaling, 5. Typography Accessibility, 6. Dark Mode Typography, 7. Typography Anti-Patterns (+30 more)
+Cohesion: 0.11
+Nodes (18): 1. Mobile Typography Fundamentals, 3. Type Scale, 6. Dark Mode Typography, 7. Typography Anti-Patterns, 9. Typography Checklist, ❌ AI Typography Mistakes, Android Type Scale (Material 3), Before Any Text Design (+10 more)
 
 ### Community 16 - "Python Patterns"
 Cohesion: 0.05
@@ -449,8 +454,8 @@ Cohesion: 0.06
 Nodes (35): 🔴 AGENT BOUNDARY ENFORCEMENT (CRITICAL), Agent Chaining with Context, Agent States, Available Agents, Best Practices, 🔴 CHECKPOINT 1: Plan Verification (MANDATORY), 🔴 CHECKPOINT 2: Project Type Routing, 🔴 Checkpoint Summary (CRITICAL) (+27 more)
 
 ### Community 21 - "Mobile Navigation Reference"
-Cohesion: 0.11
-Nodes (19): 1. Navigation Selection Decision Tree, 4. Drawer Navigation, 5. Modal Navigation, 7. Navigation State Persistence, 8. Transition Animations, 9. Navigation Anti-Patterns, ❌ AI Navigation Mistakes, Custom Transitions (+11 more)
+Cohesion: 0.06
+Nodes (35): 10. Navigation Checklist, 1. Navigation Selection Decision Tree, 2. Tab Bar Navigation, 3. Stack Navigation, 4. Drawer Navigation, 5. Modal Navigation, 6. Deep Linking, 7. Navigation State Persistence (+27 more)
 
 ### Community 22 - "Tailwind CSS Patterns (v4 - 2025)"
 Cohesion: 0.06
@@ -557,8 +562,8 @@ Cohesion: 0.09
 Nodes (22): Anti-Patterns, Bundle Size, Caching, Core Philosophy, Core Web Vitals Targets (2025), CSS, Images, JavaScript (+14 more)
 
 ### Community 48 - "Mobile Design Thinking"
-Cohesion: 0.09
-Nodes (23): 🚫 AI MOBILE DEFAULTS (FORBIDDEN LIST), Analysis for Every Gesture, 🧪 ANTI-MEMORIZATION TEST, Ask Yourself Before Every Solution, 🔍 COMPONENT DECOMPOSITION (MANDATORY), 📊 CONTEXT-BASED DECISION PROTOCOL, Decomposition Analysis for Every Screen, 🧠 DEEP MOBILE THINKING PROTOCOL (+15 more)
+Cohesion: 0.11
+Nodes (18): 🚫 AI MOBILE DEFAULTS (FORBIDDEN LIST), Analysis for Every Gesture, 🧪 ANTI-MEMORIZATION TEST, Ask Yourself Before Every Solution, 🔍 COMPONENT DECOMPOSITION (MANDATORY), 📊 CONTEXT-BASED DECISION PROTOCOL, Decomposition Analysis for Every Screen, 🧠 DEEP MOBILE THINKING PROTOCOL (+10 more)
 
 ### Community 49 - "Testing Patterns"
 Cohesion: 0.09
@@ -1549,35 +1554,55 @@ Cohesion: 0.50
 Nodes (4): 1. Color Theory Fundamentals, Color Relationships, How to Choose a Scheme:, The Color Wheel
 
 ### Community 320 - "3. Dark Mode Design"
-Cohesion: 0.50
-Nodes (4): 10. Navigation Checklist, Before Every Screen, Before Navigation Architecture, Before Release
+Cohesion: 0.22
+Nodes (8): Der Befund, der Ihr Setup ändern sollte, Ein Timer, der einer Prüfung standhält, Erhöhen Countdown-Timer die Conversion?, Fast jede Zahl, die Sie sehen, ist erfunden, Fazit, Wann Sie ganz auf den Timer verzichten, Was die Forschung tatsächlich hergibt, Wo die rechtliche Grenze verläuft
 
 ### Community 321 - "7. Accessibility Guidelines"
-Cohesion: 0.50
-Nodes (4): 2. Tab Bar Navigation, Tab Bar Best Practices, Tab State Preservation, When to Use
+Cohesion: 0.22
+Nodes (8): A timer that survives scrutiny, Almost every number you will see is fabricated, Bottom line, Do countdown timers increase conversions?, The finding that should change your setup, What the research actually supports, When to skip the timer entirely, Where the legal line sits
 
 ### Community 322 - "4. 3D CSS Transforms"
 Cohesion: 0.50
 Nodes (4): 4. Palette Generation Principles, From a Single Color (HSL Method), Generating a Full Palette, Saturation Adjustments
 
 ### Community 323 - "1. Framework Selection"
-Cohesion: 0.50
-Nodes (4): 3. Stack Navigation, Back Button Handling, Core Concepts, Stack Navigation Patterns
+Cohesion: 0.22
+Nodes (8): Ce que la recherche soutient réellement, En résumé, Le résultat qui devrait changer votre configuration, Les comptes à rebours augmentent-ils les conversions ?, Où se situe la limite juridique, Presque tous les chiffres que vous verrez sont inventés, Quand renoncer entièrement au minuteur, Un minuteur qui résiste à l'examen
 
 ### Community 324 - "2. State Management Selection"
 Cohesion: 0.50
 Nodes (4): 7. Accessibility Guidelines, Contrast Requirements (WCAG), How to Check Contrast, Safe Patterns
 
 ### Community 325 - "7. Project Type Templates"
-Cohesion: 0.50
-Nodes (4): 6. Deep Linking, Deep Link Navigation Rules, URL Structure, Why Deep Links from Day One
+Cohesion: 0.40
+Nodes (5): List Pattern Questioning, Navigation Pattern Questioning, 🎯 PATTERN QUESTIONING MATRIX, State Pattern Questioning, UI Pattern Questioning
 
 ### Community 326 - "10. Quick Reference"
 Cohesion: 0.67
 Nodes (3): 4. Attack Surface Mapping, Prioritization Matrix, What to Map
 
+### Community 327 - "2. System Fonts"
+Cohesion: 0.40
+Nodes (5): 2. System Fonts, Android: Roboto Family, Custom Font Considerations, iOS: SF Pro Family, When to Use System Fonts
+
+### Community 328 - "10. Quick Reference"
+Cohesion: 0.50
+Nodes (4): 10. Quick Reference, Line Height, Minimum Sizes, Typography Tokens
+
+### Community 329 - "4. Dynamic Type / Text Scaling"
+Cohesion: 0.50
+Nodes (4): 4. Dynamic Type / Text Scaling, Android Text Scaling (MANDATORY), iOS Dynamic Type (MANDATORY), Scaling Challenges
+
+### Community 330 - "5. Typography Accessibility"
+Cohesion: 0.50
+Nodes (4): 5. Typography Accessibility, Contrast Requirements (WCAG), Line Height for Accessibility, Minimum Sizes
+
+### Community 331 - "8. Font Loading & Performance"
+Cohesion: 0.67
+Nodes (3): 8. Font Loading & Performance, Font File Optimization, Loading Strategy
+
 ## Knowledge Gaps
-- **2914 isolated node(s):** `Colors`, `Colors`, `$schema`, `style`, `rsc` (+2909 more)
+- **2938 isolated node(s):** `Colors`, `Colors`, `$schema`, `style`, `rsc` (+2933 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **16 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -1587,7 +1612,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `Decision Trees & Context Templates` connect `Decision Trees & Context Templates` to `frontend-design/SKILL.md`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **What connects `Colors`, `Colors`, `$schema` to the rest of the system?**
-  _2914 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2938 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `@/i18n/localize` be split into smaller, more focused modules?**
   _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
 - **Should `design_system.py` be split into smaller, more focused modules?**

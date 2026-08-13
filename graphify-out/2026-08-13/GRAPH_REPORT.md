@@ -1,16 +1,16 @@
 # Graph Report - AppLass  (2026-08-13)
 
 ## Corpus Check
-- 470 files · ~1,786,965 words
+- 473 files · ~1,797,114 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4427 nodes · 4956 edges · 334 communities (318 shown, 16 thin omitted)
+- 4445 nodes · 4971 edges · 327 communities (311 shown, 16 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.61)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1ad27e1b`
+- Built from commit: `1de3db5a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -283,6 +283,7 @@
 - 1. Security Expert Mindset
 - 2. OWASP Top 10:2025
 - 6. Weight and Emphasis Principles
+- 8. Hierarchy Principles
 - 6. Exceptional Conditions (A10 - New)
 - 8. Code Pattern Analysis
 - 9. Cloud Security Considerations
@@ -333,13 +334,6 @@
 - 2. State Management Selection
 - 7. Project Type Templates
 - 10. Quick Reference
-- 7. Color Accessibility
-- 4. Outdoor Visibility
-- 9. Color System Checklist
-- 5. Risk Prioritization
-- 2. OLED Considerations
-- 5. Semantic Colors
-- 6. Dynamic Color (Android)
 
 ## God Nodes (most connected - your core abstractions)
 1. `@/i18n/localize` - 86 edges
@@ -368,7 +362,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (334 total, 16 thin omitted)
+## Communities (327 total, 16 thin omitted)
 
 ### Community 0 - "@/i18n/localize"
 Cohesion: 0.12
@@ -419,8 +413,8 @@ Cohesion: 0.05
 Nodes (43): 1. Push Notifications, 2. Offline Sync & Conflict Resolution, 3. Mobile API Optimization, 4. App Versioning, 5. Authentication for Mobile, 6. Error Handling for Mobile, 7. Media & Binary Handling, 8. Security for Mobile (+35 more)
 
 ### Community 12 - "Typography System Reference"
-Cohesion: 0.20
-Nodes (10): 10. Typography Selection Checklist, 5. Responsive Typography Principles, 7. Letter Spacing (Tracking), Adjustment Guidelines, Anti-Patterns, Fluid Typography (clamp), Principles, Scaling Strategy (+2 more)
+Cohesion: 0.05
+Nodes (41): 10. Typography Selection Checklist, 1. Modular Scale Principles, 2. Font Pairing Principles, 3. Line Height Principles, 4. Line Length Principles, 5. Responsive Typography Principles, 6. Weight and Emphasis Principles, 7. Letter Spacing (Tracking) (+33 more)
 
 ### Community 13 - "Animation Guidelines Reference"
 Cohesion: 0.05
@@ -455,8 +449,8 @@ Cohesion: 0.06
 Nodes (35): 🔴 AGENT BOUNDARY ENFORCEMENT (CRITICAL), Agent Chaining with Context, Agent States, Available Agents, Best Practices, 🔴 CHECKPOINT 1: Plan Verification (MANDATORY), 🔴 CHECKPOINT 2: Project Type Routing, 🔴 Checkpoint Summary (CRITICAL) (+27 more)
 
 ### Community 21 - "Mobile Navigation Reference"
-Cohesion: 0.06
-Nodes (35): 10. Navigation Checklist, 1. Navigation Selection Decision Tree, 2. Tab Bar Navigation, 3. Stack Navigation, 4. Drawer Navigation, 5. Modal Navigation, 6. Deep Linking, 7. Navigation State Persistence (+27 more)
+Cohesion: 0.11
+Nodes (19): 1. Navigation Selection Decision Tree, 4. Drawer Navigation, 5. Modal Navigation, 7. Navigation State Persistence, 8. Transition Animations, 9. Navigation Anti-Patterns, ❌ AI Navigation Mistakes, Custom Transitions (+11 more)
 
 ### Community 22 - "Tailwind CSS Patterns (v4 - 2025)"
 Cohesion: 0.06
@@ -480,7 +474,7 @@ Nodes (29): API Development, API Style Selection, Architecture, Backend Developm
 
 ### Community 27 - "Color System Reference"
 Cohesion: 0.11
-Nodes (18): 1. Color Theory Fundamentals, 2. The 60-30-10 Rule, 3. Color Psychology - Meaning & Selection, 5. Context-Based Selection Guide, 8. Color Selection Checklist, 9. Anti-Patterns to Avoid, Color Relationships, Color System Reference (+10 more)
+Nodes (18): 2. The 60-30-10 Rule, 3. Color Psychology - Meaning & Selection, 5. Context-Based Selection Guide, 6. Dark Mode Principles, 8. Color Selection Checklist, 9. Anti-Patterns to Avoid, Adapting Colors for Dark Mode, Color System Reference (+10 more)
 
 ### Community 28 - "Mobile Design System"
 Cohesion: 0.07
@@ -563,8 +557,8 @@ Cohesion: 0.09
 Nodes (22): Anti-Patterns, Bundle Size, Caching, Core Philosophy, Core Web Vitals Targets (2025), CSS, Images, JavaScript (+14 more)
 
 ### Community 48 - "Mobile Design Thinking"
-Cohesion: 0.11
-Nodes (18): 🚫 AI MOBILE DEFAULTS (FORBIDDEN LIST), Analysis for Every Gesture, 🧪 ANTI-MEMORIZATION TEST, Ask Yourself Before Every Solution, 🔍 COMPONENT DECOMPOSITION (MANDATORY), 📊 CONTEXT-BASED DECISION PROTOCOL, Decomposition Analysis for Every Screen, 🧠 DEEP MOBILE THINKING PROTOCOL (+10 more)
+Cohesion: 0.09
+Nodes (23): 🚫 AI MOBILE DEFAULTS (FORBIDDEN LIST), Analysis for Every Gesture, 🧪 ANTI-MEMORIZATION TEST, Ask Yourself Before Every Solution, 🔍 COMPONENT DECOMPOSITION (MANDATORY), 📊 CONTEXT-BASED DECISION PROTOCOL, Decomposition Analysis for Every Screen, 🧠 DEEP MOBILE THINKING PROTOCOL (+15 more)
 
 ### Community 49 - "Testing Patterns"
 Cohesion: 0.09
@@ -587,8 +581,8 @@ Cohesion: 0.09
 Nodes (21): Always, Anti-Patterns, Attack Surface Categories, By OWASP Top 10 (2025), By Phase, By Vector, Core Philosophy, Ethical Boundaries (+13 more)
 
 ### Community 54 - "Mobile Decision Trees"
-Cohesion: 0.11
-Nodes (19): 10. Quick Reference, 3. Navigation Pattern Selection, 4. Storage Strategy Selection, 5. Offline Strategy Selection, 6. Authentication Pattern Selection, 7. Project Type Templates, 9. Anti-Pattern Decisions, Auth Token Storage (+11 more)
+Cohesion: 0.07
+Nodes (30): 10. Quick Reference, 1. Framework Selection, 2. State Management Selection, 3. Navigation Pattern Selection, 4. Storage Strategy Selection, 5. Offline Strategy Selection, 6. Authentication Pattern Selection, 7. Project Type Templates (+22 more)
 
 ### Community 55 - "PowerShell Windows Patterns"
 Cohesion: 0.09
@@ -875,7 +869,7 @@ Cohesion: 0.17
 Nodes (11): API Security Testing, Authentication Testing, Authorization Testing, BOLA/IDOR Testing, GraphQL Security, Input Validation Testing, JWT Testing, OWASP API Security Top 10 (+3 more)
 
 ### Community 127 - "frontend-design/SKILL.md"
-Cohesion: 0.29
+Cohesion: 0.18
 Nodes (6): Design Workflow, Guidelines Source, How It Works, Related Skills, Usage, Web Interface Guidelines
 
 ### Community 128 - "1. Core UX Laws"
@@ -907,8 +901,8 @@ Cohesion: 0.17
 Nodes (11): 1. Mindful Guard — Meilleure note globale ⚡ Premier choix, 2. AppBlock — Idéal pour le blocage basé sur la localisation, 3. Freedom — Idéal pour bloquer simultanément le téléphone et l'ordinateur portable, 4. One Sec — Idéal pour développer la prise de conscience (pas pour un blocage strict), 5. Bien-être numérique — Excellent point de départ gratuit (avec une mise en garde majeure), Comment bloquer réellement Instagram sur Android (étape par étape), Comparatif rapide, En résumé (+3 more)
 
 ### Community 135 - "UX Psychology Reference"
-Cohesion: 0.18
-Nodes (11): 2. Emotional Design (Don Norman), 3. Trust Building System, 7. Emotion Color Mapping, 8. Psychology Checklist, Before Launch, Designing for Each Level, Three Levels of Processing, Trust-Building CSS Patterns (+3 more)
+Cohesion: 0.12
+Nodes (17): 2. Emotional Design (Don Norman), 3. Trust Building System, 4. Cognitive Load Management, 5. Persuasive Design (Ethical), 7. Emotion Color Mapping, 8. Psychology Checklist, Before Launch, Designing for Each Level (+9 more)
 
 ### Community 136 - "i18n_checker.py"
 Cohesion: 0.29
@@ -992,7 +986,7 @@ Nodes (8): check_page(), find_pages(), is_page_file(), main(), Path, Check if th
 
 ### Community 156 - "Vulnerability Scanner"
 Cohesion: 0.22
-Nodes (9): 10. Anti-Patterns, 4. Attack Surface Mapping, 7. Scanning Methodology, Phase-Based Approach, Prioritization Matrix, 📋 Reference Files, 🔧 Runtime Scripts, Vulnerability Scanner (+1 more)
+Nodes (9): 10. Anti-Patterns, 5. Risk Prioritization, 7. Scanning Methodology, CVSS + Context, Phase-Based Approach, Prioritization Decision Tree, 📋 Reference Files, 🔧 Runtime Scripts (+1 more)
 
 ### Community 157 - "/preview - Preview Management"
 Cohesion: 0.22
@@ -1403,12 +1397,12 @@ Cohesion: 0.50
 Nodes (4): Content Pillars and Topic Clusters, How to Identify Pillars, Pillar Criteria, Pillar Structure
 
 ### Community 263 - "4. Cognitive Load Management"
-Cohesion: 0.67
-Nodes (3): 4. Cognitive Load Management, Reduction Strategies, Three Types of Cognitive Load
+Cohesion: 0.33
+Nodes (5): Auch mit Plus ist der Checkout der falsche Ort, Fazit, Methoden, die nicht mehr funktionieren, Welche Flächen darf welcher Tarif anpassen?, Wohin der Timer stattdessen gehört
 
 ### Community 264 - "5. Persuasive Design (Ethical)"
-Cohesion: 0.67
-Nodes (3): 5. Persuasive Design (Ethical), Ethical Persuasion Techniques, Nudge Patterns
+Cohesion: 0.33
+Nodes (5): Bottom line, Even on Plus, checkout is the wrong place, Methods that no longer work, Where to put the timer instead, Which surfaces can each plan customise?
 
 ### Community 265 - "11. Reporting Principles"
 Cohesion: 0.67
@@ -1425,6 +1419,10 @@ Nodes (3): 2025 Key Changes, 2. OWASP Top 10:2025, Risk Categories
 ### Community 268 - "6. Weight and Emphasis Principles"
 Cohesion: 0.29
 Nodes (6): Auftritt Mindful Guard: bewusste Reibung als Konstruktionsprinzip, Der Weg zum digitalen Wohlbefinden, Die drei Säulen der Mindful-Guard-Logik:, Die „Willenskraft-Lücke“ in der Produktivität, Fazit: Holen Sie sich Ihre 3 Stunden zurück, Warum Barrierefreiheit für Konzentration zählt
+
+### Community 269 - "8. Hierarchy Principles"
+Cohesion: 0.33
+Nodes (5): En résumé, Les méthodes qui ne fonctionnent plus, Même avec Plus, le paiement est le mauvais endroit, Où placer le minuteur à la place, Quelles surfaces chaque formule peut-elle personnaliser ?
 
 ### Community 270 - "6. Exceptional Conditions (A10 - New)"
 Cohesion: 0.67
@@ -1547,16 +1545,16 @@ Cohesion: 0.40
 Nodes (4): Aktionsplan, Die Wissenschaft der „Daumenzone“, Diese Ergebnisse können Sie erwarten, Über die Schaltfläche hinaus
 
 ### Community 319 - "1. Color Theory Fundamentals"
-Cohesion: 0.33
-Nodes (6): 2. Font Pairing Principles, Avoid, Pairing Strategies, Safe Pairing Patterns, What Makes Fonts Work Together, What to Look For
+Cohesion: 0.50
+Nodes (4): 1. Color Theory Fundamentals, Color Relationships, How to Choose a Scheme:, The Color Wheel
 
 ### Community 320 - "3. Dark Mode Design"
-Cohesion: 0.40
-Nodes (5): 1. Modular Scale Principles, Choosing Base Size, Common Ratios and When to Use, Generate Your Scale, What is a Modular Scale?
+Cohesion: 0.50
+Nodes (4): 10. Navigation Checklist, Before Every Screen, Before Navigation Architecture, Before Release
 
 ### Community 321 - "7. Accessibility Guidelines"
-Cohesion: 0.40
-Nodes (5): List Pattern Questioning, Navigation Pattern Questioning, 🎯 PATTERN QUESTIONING MATRIX, State Pattern Questioning, UI Pattern Questioning
+Cohesion: 0.50
+Nodes (4): 2. Tab Bar Navigation, Tab Bar Best Practices, Tab State Preservation, When to Use
 
 ### Community 322 - "4. 3D CSS Transforms"
 Cohesion: 0.50
@@ -1564,7 +1562,7 @@ Nodes (4): 4. Palette Generation Principles, From a Single Color (HSL Method), G
 
 ### Community 323 - "1. Framework Selection"
 Cohesion: 0.50
-Nodes (4): 6. Dark Mode Principles, Adapting Colors for Dark Mode, Contrast in Dark Mode, Key Rules (No Fixed Codes)
+Nodes (4): 3. Stack Navigation, Back Button Handling, Core Concepts, Stack Navigation Patterns
 
 ### Community 324 - "2. State Management Selection"
 Cohesion: 0.50
@@ -1572,54 +1570,24 @@ Nodes (4): 7. Accessibility Guidelines, Contrast Requirements (WCAG), How to Che
 
 ### Community 325 - "7. Project Type Templates"
 Cohesion: 0.50
-Nodes (4): 3. Line Height Principles, Adjustment Factors, Guidelines by Context, The Relationship
+Nodes (4): 6. Deep Linking, Deep Link Navigation Rules, URL Structure, Why Deep Links from Day One
 
 ### Community 326 - "10. Quick Reference"
-Cohesion: 0.50
-Nodes (4): 4. Line Length Principles, Context Adjustments, How to Measure, Optimal Reading Width
-
-### Community 327 - "7. Color Accessibility"
-Cohesion: 0.50
-Nodes (4): 6. Weight and Emphasis Principles, Avoid, Creating Contrast, Semantic Weight Usage
-
-### Community 328 - "4. Outdoor Visibility"
-Cohesion: 0.50
-Nodes (4): 8. Hierarchy Principles, Testing Hierarchy, Typical Hierarchy, Visual Hierarchy Through Type
-
-### Community 329 - "9. Color System Checklist"
-Cohesion: 0.50
-Nodes (4): 9. Readability Psychology, Chunking for Comprehension, Cognitive Ease, F-Pattern Reading
-
-### Community 330 - "5. Risk Prioritization"
 Cohesion: 0.67
-Nodes (3): 5. Risk Prioritization, CVSS + Context, Prioritization Decision Tree
-
-### Community 331 - "2. OLED Considerations"
-Cohesion: 0.50
-Nodes (4): 1. Framework Selection, Framework Comparison, Master Decision Tree, When to Choose Native
-
-### Community 332 - "5. Semantic Colors"
-Cohesion: 0.50
-Nodes (4): 2. State Management Selection, Flutter State Decision, React Native State Decision, State Management Anti-Patterns
-
-### Community 333 - "6. Dynamic Color (Android)"
-Cohesion: 0.67
-Nodes (3): 8. Decision Checklist, Before Starting ANY Project, Questions to Ask User
+Nodes (3): 4. Attack Surface Mapping, Prioritization Matrix, What to Map
 
 ## Knowledge Gaps
-- **2899 isolated node(s):** `Colors`, `Colors`, `$schema`, `style`, `rsc` (+2894 more)
+- **2914 isolated node(s):** `Colors`, `Colors`, `$schema`, `style`, `rsc` (+2909 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **16 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Typography System Reference` connect `Typography System Reference` to `3. Dark Mode Design`, `7. Project Type Templates`, `10. Quick Reference`, `7. Color Accessibility`, `4. Outdoor Visibility`, `9. Color System Checklist`, `8. Hierarchy Principles`, `1. Color Theory Fundamentals`?**
-  _High betweenness centrality (0.003) - this node is a cross-community bridge._
-- **Why does `Decision Trees & Context Templates` connect `Decision Trees & Context Templates` to `8. Hierarchy Principles`?**
+- **Why does `Decision Trees & Context Templates` connect `Decision Trees & Context Templates` to `frontend-design/SKILL.md`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **What connects `Colors`, `Colors`, `$schema` to the rest of the system?**
-  _2899 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2914 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `@/i18n/localize` be split into smaller, more focused modules?**
   _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
 - **Should `design_system.py` be split into smaller, more focused modules?**
@@ -1627,4 +1595,6 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `Android Platform Guidelines` be split into smaller, more focused modules?**
   _Cohesion score 0.041666666666666664 - nodes in this community are weakly interconnected._
 - **Should `🧠 DEEP DESIGN THINKING (MANDATORY - BEFORE ANY DESIGN)` be split into smaller, more focused modules?**
+  _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._
+- **Should `Touch Psychology Reference` be split into smaller, more focused modules?**
   _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._

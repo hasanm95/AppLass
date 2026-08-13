@@ -675,7 +675,7 @@
     "semantic_hash": ""
   },
   "src/i18n/locales/en.json": {
-    "mtime": 1786619204.7223656,
+    "mtime": 1786622097.4173734,
     "ast_hash": "7bf1233f43d81b62902772b3438185f7",
     "semantic_hash": ""
   },
@@ -2742,6 +2742,26 @@
   "src/assets/blogs/shopify-checkout-countdown-timer.png": {
     "mtime": 1786619083.8699782,
     "ast_hash": "25153f6177b51865638b5ab1b89088bb",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/do-cart-timers-work.mdx": {
+    "mtime": 1786622023.1974132,
+    "ast_hash": "35419424f86aefd7c4d4f050798be329",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/do-cart-timers-work.mdx": {
+    "mtime": 1786621899.3923345,
+    "ast_hash": "48fb43e84e39a20a0ad170c23dd19cbc",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/do-cart-timers-work.mdx": {
+    "mtime": 1786622096.9676702,
+    "ast_hash": "d0486220f0ae6f8d49f84d8c686abc2a",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/do-cart-timers-work.png": {
+    "mtime": 1786621951.466848,
+    "ast_hash": "ec347707dc74b4b2de23196589983a92",
     "semantic_hash": ""
   }
 }
