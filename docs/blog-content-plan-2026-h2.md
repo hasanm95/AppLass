@@ -53,10 +53,15 @@ cite, because every competing page conflates the two.
 
 ### 2.2 A countdown timer cannot go in Shopify checkout unless you are Plus
 
-Checkout UI extensions on the information, shipping, and payment steps are **Shopify Plus only**.
-Non-Plus merchants can only extend the Thank You and Order Status pages. There is also a hard
-migration deadline of **August 26, 2026** — two weeks out — for non-Plus stores to move to checkout
-extensibility.
+Checkout UI extensions on the information, shipping, and payment steps are **Shopify Plus only** —
+shopify.dev states it verbatim. Non-Plus merchants (Basic, Shopify, Advanced) got Thank You and
+Order Status page extensions in the [May 2024 changelog](https://shopify.dev/changelog/new-checkout-functionality-for-merchants-on-basic-shopify-and-advanced-plans),
+and that remains the extent of their checkout surface.
+
+_Correction: an earlier draft of this plan cited a "hard migration deadline of August 26, 2026" for
+non-Plus stores, taken from a third-party blog. No such deadline appears in Shopify's changelog. The
+real sunsets are past — checkout.liquid for in-checkout pages ended **August 13, 2024**, and the
+Checkout APIs shut down **April 1, 2025**. Do not use the 2026 date in any post._
 
 Most competing "Shopify checkout countdown timer" articles ignore this and tell merchants to do
 something their plan forbids. Being the page that states the restriction plainly is a strong
@@ -312,7 +317,8 @@ FomoGen-flavored, so C-series posts link to it rather than restating it.
 
 - [Purdue: dark mode may not save battery as much as you think](https://www.purdue.edu/newsroom/archive/releases/2021/Q3/dark-mode-may-not-save-your-phones-battery-life-as-much-as-you-think,-but-there-are-a-few-silver-linings.html)
 - [Purdue ECE: shedding light on dark mode to save energy](https://engineering.purdue.edu/ECE/News/2022/shedding-light-on-dark-mode-to-save-energy)
-- [Shopify checkout extensibility 2026 — non-Plus deadline](https://www.codilar.com/blog/shopify-checkout-extensibility-august-26-deadline/)
+- [Shopify: checkout UI extensions plan availability](https://shopify.dev/docs/api/checkout-ui-extensions)
+- [Shopify changelog: Thank You / Order Status extensions for Basic, Shopify and Advanced plans](https://shopify.dev/changelog/new-checkout-functionality-for-merchants-on-basic-shopify-and-advanced-plans)
 - [Checkout UI extensions vs legacy apps](https://cart-x.io/blog-posts/checkout-ui-extensions-vs-legacy-apps)
 - [Cart abandonment benchmarks and causes, 2026](https://www.zipchat.ai/blog/cart-abandonment-benchmarks-and-causes)
 - [Average cart abandonment rate 2026, by device](https://propelcommerce.io/blog/average-cart-abandonment-rate-2026)
