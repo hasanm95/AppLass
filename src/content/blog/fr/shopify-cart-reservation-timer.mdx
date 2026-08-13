@@ -18,6 +18,8 @@ faqs:
     answer: "Non. Shopify ne retient aucun stock lorsqu'un article est ajouté au panier. Le stock n'est réservé que pendant le traitement du paiement — l'équipe d'ingénierie de Shopify décrit une retenue courte, de l'ordre de quelques minutes, déclenchée au moment de finaliser l'achat pour empêcher deux commandes simultanées de réclamer la même unité. Jusque-là, tout ce qui se trouve dans un panier reste disponible pour les autres clients."
   - question: "Quelle durée choisir pour un minuteur de panier Shopify ?"
     answer: "De dix à trente minutes convient à la plupart des boutiques, quinze minutes étant la valeur par défaut la plus répandue parmi les applications de panier. En dessous de cinq minutes, le client n'a pas le temps de saisir ses coordonnées bancaires et le compte à rebours paraît manipulateur. Au-delà de soixante minutes, l'effet d'urgence disparaît entièrement."
+  - question: "Certaines applications Shopify proposent-elles une réservation souple du panier ?"
+    answer: "Shopify ne dispose d'aucun mécanisme de réservation souple : il n'y a donc rien qu'une application puisse activer. La seule retenue côté serveur de la plateforme est la réservation dans une commande provisoire, créée manuellement par le marchand. Une application peut diminuer votre stock réel pendant qu'un panier est ouvert puis le rétablir, mais cela écrit sur vos quantités au lieu de les réserver et désynchronise tous vos autres canaux de vente."
   - question: "Un minuteur de panier peut-il vraiment mettre un article de côté ?"
     answer: "Pas via le panier lui-même. Un minuteur est un affichage front-end : il ne modifie pas le système de stock de Shopify. Si vous avez besoin d'une véritable réservation — pour un client grossiste, un devis sur mesure ou un article de forte valeur — utilisez une commande provisoire avec articles réservés, qui engage le stock côté serveur jusqu'à l'expiration de la réservation."
   - question: "Un minuteur de réservation peut-il poser un problème juridique ?"
@@ -77,6 +79,24 @@ minuteur affichant « Vos articles sont réservés pendant 15:00 » affirme qu
 fait pas. Un minuteur affichant « Votre panier expire dans 15:00 » décrit quelque chose que vous
 contrôlez réellement — et convertit tout aussi bien, car c'est l'échéance qui agit, pas le mot
 « réservé ».
+
+## Et les applications qui annoncent une « réservation souple » ?
+
+**Shopify ne dispose d'aucun mécanisme de réservation souple : il n'y a donc rien qu'une application
+puisse activer.** Demandez à tout éditeur qui en promet une ce sur quoi elle écrit exactement. La
+plateforme propose une seule retenue côté serveur — la réservation dans une commande provisoire — et
+elle est déclenchée par le marchand, pas par le panier de la boutique.
+
+Les développeurs ont demandé à plusieurs reprises un paramètre de réservation dans l'Admin API,
+précisément parce qu'il n'en existe pas. Ce qu'une application *peut* faire : diminuer votre stock
+réel pendant qu'un panier est ouvert, puis le rétablir ensuite. Ce n'est pas une réservation, c'est
+une écriture sur vos quantités en stock. Elle désynchronise tous les autres canaux qui lisent ces
+chiffres et, si la libération échoue ou si le client ne revient jamais, le stock reste manquant
+jusqu'à ce que quelqu'un s'en aperçoive.
+
+Considérez la « réservation souple » comme une formule marketing, pas comme une fonction Shopify. La
+bonne question à poser à une application de réservation est simple : *cela modifie-t-il mon stock,
+oui ou non ?*
 
 <CartTimeCTA lang="fr" />
 

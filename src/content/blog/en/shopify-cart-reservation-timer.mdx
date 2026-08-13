@@ -18,6 +18,8 @@ faqs:
     answer: "No. Shopify does not hold stock when an item is added to a cart. Inventory is only reserved during payment processing — Shopify's engineering team describes a short hold, on the order of several minutes, that runs when a buyer completes their purchase to stop two concurrent checkouts claiming the same unit. Until then, anything in a cart is available to every other shopper."
   - question: "How long should a Shopify cart reservation timer be?"
     answer: "Ten to thirty minutes covers most stores, and fifteen minutes is the most common default among cart reservation apps. Under five minutes does not leave enough time to enter payment details and reads as manipulative. Over sixty minutes removes the urgency effect entirely, since the shopper has no reason to act during the current session."
+  - question: "Do some Shopify apps offer a soft hold on cart inventory?"
+    answer: "Shopify has no soft-hold mechanism, so there is nothing for an app to enable. The platform's only server-side hold is draft order reservation, which a merchant creates manually. An app can decrement your real inventory while a cart is open and add it back later, but that writes to your stock numbers rather than reserving them, and it desynchronises every other sales channel reading those numbers."
   - question: "Can a cart timer actually hold stock for a customer?"
     answer: "Not through the cart itself. A cart timer is a front-end display, so it cannot change what Shopify's inventory system does. If you need a genuine hold — for a wholesale buyer, a custom quote, or a high-value item — use a draft order with reserved items, which does commit the inventory server-side until the reservation expires."
   - question: "Will a cart reservation timer get my Shopify app rejected or flagged?"
@@ -74,6 +76,21 @@ The gap between those two columns is where stores get into trouble. A timer that
 are reserved for 15:00"* is asserting something Shopify is not doing. A timer that says *"Your cart
 expires in 15:00"* describes something you actually control — and converts just as well, because
 the deadline is what does the work, not the word "reserved".
+
+## What about apps that advertise a "soft hold"?
+
+**Shopify has no soft-hold mechanism, so there is nothing for an app to switch on.** Ask any vendor
+claiming one exactly what it writes to. The platform offers one server-side hold — draft order
+reservation — and it is merchant-initiated, not something a storefront cart triggers.
+
+App developers have repeatedly asked Shopify for a reservation parameter in the Admin API precisely
+because there isn't one. What an app *can* do is decrement your actual inventory quantity while a
+cart is open and add it back later, but that is not a reservation — it is writing to your stock
+numbers. It desynchronises every other channel reading those numbers, and if the release step fails
+or the customer never returns, the stock stays missing until someone notices.
+
+Treat "soft hold" as a marketing phrase, not a Shopify feature. The honest question to ask a
+reservation app is simply: *does this change my inventory, yes or no?*
 
 <CartTimeCTA />
 

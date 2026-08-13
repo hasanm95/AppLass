@@ -18,6 +18,8 @@ faqs:
     answer: "Nein. Shopify hält keinen Bestand zurück, wenn ein Artikel in den Warenkorb gelegt wird. Der Bestand wird ausschließlich während der Zahlungsabwicklung reserviert — das Engineering-Team von Shopify beschreibt eine kurze Sperre von wenigen Minuten, die beim Abschluss des Kaufs greift und verhindert, dass zwei gleichzeitige Checkouts dieselbe Einheit beanspruchen. Bis dahin steht alles im Warenkorb jedem anderen Kunden zur Verfügung."
   - question: "Wie lange sollte ein Shopify Warenkorb-Timer laufen?"
     answer: "Zehn bis dreißig Minuten passen für die meisten Shops, fünfzehn Minuten sind der häufigste Standardwert unter den Warenkorb-Apps. Unter fünf Minuten bleibt zu wenig Zeit für die Eingabe der Zahlungsdaten und der Countdown wirkt manipulativ. Über sechzig Minuten entfällt die Dringlichkeit vollständig, weil der Kunde in dieser Sitzung nicht mehr handeln muss."
+  - question: "Bieten manche Shopify-Apps einen Soft Hold auf den Warenkorbbestand?"
+    answer: "Shopify kennt keinen Soft-Hold-Mechanismus, es gibt also nichts, was eine App aktivieren könnte. Die einzige serverseitige Sperre der Plattform ist die Reservierung im Entwurfsauftrag, die ein Händler manuell anlegt. Eine App kann Ihren echten Bestand verringern, solange ein Warenkorb offen ist, und ihn später zurückbuchen. Das schreibt jedoch auf Ihre Bestandszahlen, statt sie zu reservieren, und bringt jeden anderen Verkaufskanal aus dem Takt."
   - question: "Kann ein Warenkorb-Timer Ware für einen Kunden zurücklegen?"
     answer: "Nicht über den Warenkorb selbst. Ein Timer ist eine reine Frontend-Anzeige und kann das Bestandssystem von Shopify nicht verändern. Wenn Sie eine echte Reservierung benötigen — für Großhandelskunden, individuelle Angebote oder hochpreisige Artikel — nutzen Sie einen Entwurfsauftrag mit reservierten Artikeln. Dieser bindet den Bestand serverseitig, bis die Reservierung abläuft."
   - question: "Kann ein Warenkorb-Timer rechtlich problematisch werden?"
@@ -75,6 +77,23 @@ Zwischen diesen beiden Spalten liegt die Zone, in der Shops in Schwierigkeiten g
 mit dem Text „Ihre Artikel sind für 15:00 reserviert“ behauptet etwas, das Shopify nicht tut. Ein
 Timer mit „Ihr Warenkorb läuft in 15:00 ab“ beschreibt etwas, das Sie tatsächlich steuern — und
 konvertiert genauso gut, denn die Wirkung geht von der Frist aus, nicht vom Wort „reserviert“.
+
+## Was ist mit Apps, die einen „Soft Hold“ bewerben?
+
+**Shopify kennt keinen Soft-Hold-Mechanismus, es gibt also nichts, was eine App aktivieren könnte.**
+Fragen Sie jeden Anbieter, der so etwas verspricht, worauf genau geschrieben wird. Die Plattform
+bietet eine einzige serverseitige Sperre — die Reservierung im Entwurfsauftrag — und die geht vom
+Händler aus, nicht vom Warenkorb im Shop.
+
+App-Entwickler haben Shopify wiederholt um einen Reservierungsparameter in der Admin-API gebeten,
+genau weil es keinen gibt. Was eine App tun *kann*: Ihren tatsächlichen Bestand verringern, solange
+ein Warenkorb offen ist, und ihn später wieder hinzufügen. Das ist keine Reservierung, sondern ein
+Schreibvorgang auf Ihren Bestandszahlen. Er bringt jeden anderen Kanal, der diese Zahlen liest, aus
+dem Takt — und wenn die Freigabe fehlschlägt oder der Kunde nie zurückkehrt, fehlt der Bestand, bis
+es jemandem auffällt.
+
+Behandeln Sie „Soft Hold“ als Marketingbegriff, nicht als Shopify-Funktion. Die ehrliche Frage an
+eine Reservierungs-App lautet schlicht: *Verändert das meinen Bestand, ja oder nein?*
 
 <CartTimeCTA lang="de" />
 
