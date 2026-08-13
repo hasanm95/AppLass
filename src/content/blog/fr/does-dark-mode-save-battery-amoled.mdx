@@ -47,19 +47,24 @@ OLED, et il indique ce qui prolonge vraiment votre temps d'écran.
 et 50 % de luminosité. À 100 % de luminosité, le même changement économisait 39 à 47 %. L'effet est
 réel ; son ampleur dépend presque entièrement de la luminosité de votre écran.
 
-L'étude a été menée par Pranab Dash et le professeur Y. Charlie Hu, de l'Elmore Family School of
-Electrical and Computer Engineering de Purdue, et publiée à
-[MobiSys '21](https://www.purdue.edu/newsroom/archive/releases/2021/Q3/dark-mode-may-not-save-your-phones-battery-life-as-much-as-you-think,-but-there-are-a-few-silver-linings.html).
+La source est l'article *How much battery does dark mode save? An accurate OLED display power
+profiler for modern smartphones*, de Pranab Dash et du professeur Y. Charlie Hu, de l'Elmore Family
+School of Electrical and Computer Engineering de Purdue, publié à
+[MobiSys '21](https://doi.org/10.1145/3458864.3467682) et résumé dans le
+[communiqué de Purdue](https://www.purdue.edu/newsroom/archive/releases/2021/Q3/dark-mode-may-not-save-your-phones-battery-life-as-much-as-you-think,-but-there-are-a-few-silver-linings.html).
 Ils ont testé quatre générations de matériel Android — Pixel 2, Moto Z3, Pixel 4 et Pixel 5 — sur
-des sessions de soixante secondes dans six applications Google, dont Maps, News et YouTube. Leur
-outil isolait spécifiquement la part de l'écran dans la décharge, ce qui rend ces chiffres plus
-fiables que les démonstrations de constructeurs qui les ont précédés.
+des sessions de soixante secondes dans six applications Google, dont Maps, News et YouTube.
+
+La méthodologie explique la fiabilité de ces chiffres. L'utilitaire de batterie intégré à Android
+ignore le contenu affiché et rapporte la même consommation d'écran en mode clair et en mode sombre :
+il ne peut donc pas mesurer cet effet. L'outil de Purdue isole la part réelle de l'écran dans la
+décharge, ce que les démonstrations de constructeurs qui l'ont précédé n'ont jamais fait.
 
 | Luminosité de l'écran | Économie du mode sombre | Situation typique |
 |---|---|---|
-| 100 % | 39–47 % | Dehors, en plein soleil |
-| 30–50 % | 3–9 % | En intérieur, luminosité auto — l'usage courant |
-| Moins de 30 % | Moins de 3 % | Pièce sombre, lecture le soir |
+| 100 % | 39–47 %, soit 42 % en moyenne | Dehors, en plein soleil |
+| 50 % | 8,5 % | En intérieur, pièce lumineuse |
+| 30 % | Moins de 5 % | En intérieur, lumière tamisée ou le soir |
 
 ## Pourquoi la luminosité décide de tout
 

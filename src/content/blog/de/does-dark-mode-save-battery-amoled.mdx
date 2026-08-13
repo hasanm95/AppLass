@@ -47,19 +47,24 @@ dunklem Modus bei 30 bis 50 % Helligkeit eine Ersparnis von 3–9 % der Gesamtle
 100 % Helligkeit sparte derselbe Wechsel 39–47 %. Der Effekt ist real, seine Größe hängt fast
 vollständig davon ab, wie hell Ihr Display eingestellt ist.
 
-Durchgeführt wurde die Studie von Pranab Dash und Professor Y. Charlie Hu von der Elmore Family
+Die Quelle ist die Arbeit *How much battery does dark mode save? An accurate OLED display power
+profiler for modern smartphones* von Pranab Dash und Professor Y. Charlie Hu von der Elmore Family
 School of Electrical and Computer Engineering der Purdue University, veröffentlicht auf der
-[MobiSys '21](https://www.purdue.edu/newsroom/archive/releases/2021/Q3/dark-mode-may-not-save-your-phones-battery-life-as-much-as-you-think,-but-there-are-a-few-silver-linings.html).
+[MobiSys '21](https://doi.org/10.1145/3458864.3467682) und zusammengefasst in der
+[Mitteilung der Purdue University](https://www.purdue.edu/newsroom/archive/releases/2021/Q3/dark-mode-may-not-save-your-phones-battery-life-as-much-as-you-think,-but-there-are-a-few-silver-linings.html).
 Getestet wurden vier Gerätegenerationen — Pixel 2, Moto Z3, Pixel 4 und Pixel 5 — in
-60-Sekunden-Sitzungen mit sechs Google-Apps, darunter Maps, News und YouTube. Ihr Messwerkzeug
-isolierte gezielt den Displayanteil am Akkuverbrauch, was die Zahlen belastbarer macht als die
-Herstellerdemos davor.
+60-Sekunden-Sitzungen mit sechs Google-Apps, darunter Maps, News und YouTube.
+
+Die Methodik erklärt, warum diese Zahlen belastbar sind. Das Bordwerkzeug von Android ist blind für
+den Bildinhalt und meldet im hellen wie im dunklen Modus denselben Displayverbrauch, kann den Effekt
+also gar nicht messen. Das Purdue-Werkzeug isoliert den tatsächlichen Displayanteil am Verbrauch —
+genau das leisteten die Herstellerdemos davor nie.
 
 | Displayhelligkeit | Ersparnis durch Dark Mode | Typische Situation |
 |---|---|---|
-| 100 % | 39–47 % | Draußen, direkte Sonne |
-| 30–50 % | 3–9 % | Drinnen, Auto-Helligkeit — der Normalfall |
-| Unter 30 % | Unter 3 % | Dunkler Raum, Lesen am Abend |
+| 100 % | 39–47 %, im Mittel 42 % | Draußen, direkte Sonne |
+| 50 % | 8,5 % | Drinnen, heller Raum |
+| 30 % | Unter 5 % | Drinnen, gedämpft oder abends |
 
 ## Warum die Helligkeit über alles entscheidet
 

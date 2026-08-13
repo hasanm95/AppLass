@@ -47,19 +47,24 @@ total phone power when switching from light to dark mode at 30–50% brightness.
 the same switch saved 39–47%. The effect is real; its size depends almost entirely on how bright
 your screen is.
 
-The study was run by Pranab Dash and Professor Y. Charlie Hu of Purdue's Elmore Family School of
-Electrical and Computer Engineering, and published at
-[MobiSys '21](https://www.purdue.edu/newsroom/archive/releases/2021/Q3/dark-mode-may-not-save-your-phones-battery-life-as-much-as-you-think,-but-there-are-a-few-silver-linings.html).
+The source is *How much battery does dark mode save? An accurate OLED display power profiler for
+modern smartphones* by Pranab Dash and Professor Y. Charlie Hu of Purdue's Elmore Family School of
+Electrical and Computer Engineering, published at
+[MobiSys '21](https://doi.org/10.1145/3458864.3467682) and summarised in
+[Purdue's announcement](https://www.purdue.edu/newsroom/archive/releases/2021/Q3/dark-mode-may-not-save-your-phones-battery-life-as-much-as-you-think,-but-there-are-a-few-silver-linings.html).
 They tested four generations of Android hardware — Pixel 2, Moto Z3, Pixel 4, and Pixel 5 — across
-sixty-second sessions in six Google apps including Maps, News, and YouTube. Their tool isolated the
-display's share of battery drain specifically, which is what makes the numbers more trustworthy
-than the manufacturer demos that preceded them.
+sixty-second sessions in six Google apps including Maps, News, and YouTube.
+
+The methodology is why these numbers are worth trusting. Android's own battery utility is blind to
+screen content and reports identical display energy in light and dark mode, so it cannot measure
+this effect at all. The Purdue tool isolates the OLED display's actual share of drain, which is what
+the manufacturer demos that preceded it never did.
 
 | Screen brightness | Battery saved by dark mode | Typical situation |
 |---|---|---|
-| 100% | 39–47% | Outdoors, direct sunlight |
-| 30–50% | 3–9% | Indoors, auto-brightness — most usage |
-| Below 30% | Under 3% | Dark room, night reading |
+| 100% | 39–47%, averaging 42% | Outdoors, direct sunlight |
+| 50% | 8.5% | Indoors, bright room |
+| 30% | Under 5% | Indoors, dim or evening use |
 
 ## Why brightness decides everything
 
