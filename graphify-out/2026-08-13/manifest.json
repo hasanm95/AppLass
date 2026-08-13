@@ -305,7 +305,7 @@
     "semantic_hash": ""
   },
   "src/components/apps/screenveil/ScreenVeilClosingCTA.astro": {
-    "mtime": 1786600095.3674886,
+    "mtime": 1785824108.888091,
     "ast_hash": "941818c5b9c48988c63f25b318f143e0",
     "semantic_hash": ""
   },
@@ -330,7 +330,7 @@
     "semantic_hash": ""
   },
   "src/components/blog/AppCallout.astro": {
-    "mtime": 1786600095.368043,
+    "mtime": 1786537335.658354,
     "ast_hash": "0dd7e567d6a76ed0c5c34675e4bd3ab7",
     "semantic_hash": ""
   },
@@ -360,7 +360,7 @@
     "semantic_hash": ""
   },
   "src/components/blog/ScreenVeilCTA.astro": {
-    "mtime": 1786600095.3681557,
+    "mtime": 1785824108.8892643,
     "ast_hash": "cbd994a0694b705df4b3ad6a62302f9b",
     "semantic_hash": ""
   },
@@ -515,7 +515,7 @@
     "semantic_hash": ""
   },
   "src/components/docs-content/mindful-guard/strict-mode/StrictModePage.astro": {
-    "mtime": 1786600095.3682957,
+    "mtime": 1785824108.8933916,
     "ast_hash": "92a04f79415c3105e823725dc9263172",
     "semantic_hash": ""
   },
@@ -625,7 +625,7 @@
     "semantic_hash": ""
   },
   "src/constants/faq-registry.ts": {
-    "mtime": 1786600095.3684335,
+    "mtime": 1785824108.8959637,
     "ast_hash": "f1d80e538be04f7689c00d606284d4be",
     "semantic_hash": ""
   },
@@ -645,7 +645,7 @@
     "semantic_hash": ""
   },
   "src/constants/screenveil-data.ts": {
-    "mtime": 1786600095.36872,
+    "mtime": 1775289088.9187775,
     "ast_hash": "31d8ab3cfb7d90693e1107049c542057",
     "semantic_hash": ""
   },
@@ -675,12 +675,12 @@
     "semantic_hash": ""
   },
   "src/i18n/locales/en.json": {
-    "mtime": 1786600487.169503,
+    "mtime": 1786537649.2467825,
     "ast_hash": "7bf1233f43d81b62902772b3438185f7",
     "semantic_hash": ""
   },
   "src/i18n/locales/fr.json": {
-    "mtime": 1786600095.372515,
+    "mtime": 1785824108.910725,
     "ast_hash": "633dc42ea4f9e4a9021b3f068e64a9b9",
     "semantic_hash": ""
   },
@@ -700,7 +700,7 @@
     "semantic_hash": ""
   },
   "src/layouts/Layout.astro": {
-    "mtime": 1786600095.3726904,
+    "mtime": 1785824108.9113908,
     "ast_hash": "dbeff7228c9d4ab3ffc1d0a0426ea789",
     "semantic_hash": ""
   },
@@ -755,7 +755,7 @@
     "semantic_hash": ""
   },
   "src/page-templates/AppsScreenveilPage.astro": {
-    "mtime": 1786600095.372832,
+    "mtime": 1785824108.9133394,
     "ast_hash": "1be15c131046cfe035a1ab74b1ba8f2d",
     "semantic_hash": ""
   },
@@ -765,7 +765,7 @@
     "semantic_hash": ""
   },
   "src/page-templates/BlogPostPage.astro": {
-    "mtime": 1786600095.3731403,
+    "mtime": 1786537322.4750814,
     "ast_hash": "b90ef2857bb2223387752352b5fdd155",
     "semantic_hash": ""
   },
@@ -780,7 +780,7 @@
     "semantic_hash": ""
   },
   "src/page-templates/DigitalWellnessPage.astro": {
-    "mtime": 1786600095.3732913,
+    "mtime": 1785824108.914428,
     "ast_hash": "9a31c13bcec72d9603051047dbd9a8bf",
     "semantic_hash": ""
   },
@@ -2010,12 +2010,12 @@
     "semantic_hash": ""
   },
   "src/content/blog/en/youtube-background-play-2026-workaround.mdx": {
-    "mtime": 1786600095.3706164,
+    "mtime": 1785822025.304428,
     "ast_hash": "9e05e36af2f551e338b1ce0a90b42cb8",
     "semantic_hash": ""
   },
   "src/content/blog/en/youtube-screen-off-battery-hack.md": {
-    "mtime": 1786600095.3707619,
+    "mtime": 1785822025.3045857,
     "ast_hash": "15f2bbf81366ef7cc1d3e01d3e27c0f1",
     "semantic_hash": ""
   },
@@ -2115,12 +2115,12 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/youtube-background-play-2026-workaround.mdx": {
-    "mtime": 1786600095.3712068,
+    "mtime": 1779016498.1695786,
     "ast_hash": "59a60e5c613d1c809b29a923597123e1",
     "semantic_hash": ""
   },
   "src/content/blog/fr/youtube-screen-off-battery-hack.md": {
-    "mtime": 1786600095.3713686,
+    "mtime": 1772301003.818437,
     "ast_hash": "efd5ad70f4acecc26d867e989269a55c",
     "semantic_hash": ""
   },
@@ -2525,7 +2525,7 @@
     "semantic_hash": ""
   },
   "src/i18n/locales/de.json": {
-    "mtime": 1786600095.3716347,
+    "mtime": 1785824108.909977,
     "ast_hash": "5d0cc9879d5072e8a4538f2c425a6f52",
     "semantic_hash": ""
   },
@@ -2575,12 +2575,12 @@
     "semantic_hash": ""
   },
   "src/content/blog/de/youtube-background-play-2026-workaround.mdx": {
-    "mtime": 1786600095.3692038,
+    "mtime": 1785824108.9015636,
     "ast_hash": "d62727b6197353cabcbd598e5014e1e6",
     "semantic_hash": ""
   },
   "src/content/blog/de/youtube-screen-off-battery-hack.md": {
-    "mtime": 1786600095.369624,
+    "mtime": 1785824108.9018075,
     "ast_hash": "f9881cea4cb4a8e128e41921c1fdcadc",
     "semantic_hash": ""
   },
@@ -2680,48 +2680,28 @@
     "semantic_hash": ""
   },
   "docs/blog-content-plan-2026-h2.md": {
-    "mtime": 1786600095.34662,
+    "mtime": 1786536996.9116712,
     "ast_hash": "2a15cbf591f03b26d2387c775f46ac50",
     "semantic_hash": ""
   },
   "src/content/blog/de/shopify-cart-reservation-timer.mdx": {
-    "mtime": 1786600095.3690572,
-    "ast_hash": "32bb37d41520b8a1662fdebe2f028b55",
+    "mtime": 1786537526.1934884,
+    "ast_hash": "7fcea2e4c9cc02ea3a6c04b60113bac9",
     "semantic_hash": ""
   },
   "src/content/blog/en/shopify-cart-reservation-timer.mdx": {
-    "mtime": 1786600095.3702276,
-    "ast_hash": "123f7fa6f3184a888697e59669a379dc",
+    "mtime": 1786537298.192601,
+    "ast_hash": "c07eb6ce34faf12034941b9d477c92c4",
     "semantic_hash": ""
   },
   "src/content/blog/fr/shopify-cart-reservation-timer.mdx": {
-    "mtime": 1786600095.371013,
-    "ast_hash": "862488304b96ddbd7af4fbd23ef95d51",
+    "mtime": 1786537611.495822,
+    "ast_hash": "bcbf0cd569796a3395248ba47ea1a9f9",
     "semantic_hash": ""
   },
   "src/assets/blogs/shopify-cart-reservation-timer.png": {
-    "mtime": 1786600095.3673432,
+    "mtime": 1786537387.6713727,
     "ast_hash": "da8b6d9684dce6dba45f62c64ecf63fd",
-    "semantic_hash": ""
-  },
-  "src/content/blog/de/shopify-cart-abandonment-benchmarks-2026.mdx": {
-    "mtime": 1786600416.6122677,
-    "ast_hash": "4cbed2c3e5d1c59c83776b64bc529ca7",
-    "semantic_hash": ""
-  },
-  "src/content/blog/en/shopify-cart-abandonment-benchmarks-2026.mdx": {
-    "mtime": 1786600305.0521615,
-    "ast_hash": "f758b3d1a94db5b4ace9ac677d5432a0",
-    "semantic_hash": ""
-  },
-  "src/content/blog/fr/shopify-cart-abandonment-benchmarks-2026.mdx": {
-    "mtime": 1786600486.83307,
-    "ast_hash": "bb31ab5777fa78b7afef9d4bac2bf489",
-    "semantic_hash": ""
-  },
-  "src/assets/blogs/shopify-cart-abandonment-benchmarks-2026.png": {
-    "mtime": 1786600337.767314,
-    "ast_hash": "23eadbe621a82b4fc4aa98ed9a016de0",
     "semantic_hash": ""
   }
 }
