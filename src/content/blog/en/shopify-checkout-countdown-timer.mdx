@@ -1,0 +1,130 @@
+---
+title: "Can You Add a Countdown Timer to Shopify Checkout? (2026)"
+description: "Only on Shopify Plus. Extensions for the information, shipping and payment steps are Plus-only, while every plan can extend Thank You and Order Status. Here's the full plan-by-surface matrix, the methods that no longer work, and why checkout is the wrong place for a timer anyway."
+date: "2026-10-15"
+dateModified: "2026-10-15"
+author: "AppLass Team"
+excerpt: "Countdown timers inside Shopify's checkout steps require Shopify Plus — shopify.dev states it outright. Every plan can extend the Thank You and Order Status pages instead. But even on Plus, checkout is the wrong place for urgency: the shopper already committed at the cart."
+tags: ["shopify", "checkout", "countdown timer", "shopify plus", "checkout extensibility", "conversion"]
+category: "Technical"
+keywords: "shopify checkout countdown timer, countdown timer on checkout page shopify, checkout extensibility countdown, shopify plus checkout customization, add timer to shopify checkout, checkout ui extensions plans"
+breadcrumbName: "Checkout Countdown Timer"
+thumbnail: "../../../assets/blogs/shopify-checkout-countdown-timer.png"
+sidebarApps:
+  - carttime
+featured: true
+faqs:
+  - question: "Can you add a countdown timer to the Shopify checkout page?"
+    answer: "Only on Shopify Plus. Shopify's documentation states that checkout UI extensions for the information, shipping, and payment steps are available only to stores on a Shopify Plus plan. On Basic, Shopify, and Advanced, a timer has to live on the product page, the cart page, or the cart drawer instead."
+  - question: "What parts of checkout can non-Plus Shopify stores customise?"
+    answer: "The Thank You and Order Status pages. Shopify made UI extensions and web pixels on those two pages available to Basic, Shopify, and Advanced plans in May 2024. Both are post-purchase surfaces, so they are useful for upsells, surveys, and referrals — but not for urgency, since the order is already placed."
+  - question: "Can I edit checkout.liquid to add a timer?"
+    answer: "No. Checkout.liquid stopped working for in-checkout pages on 13 August 2024, and it was a Shopify Plus feature before that. Any guide that tells you to paste timer code into checkout.liquid is describing a method that no longer functions. Checkout UI extensions replaced it."
+  - question: "Should you put a countdown timer in checkout even if you can?"
+    answer: "Usually not. A shopper on the payment step has already decided; adding a deadline there mostly creates anxiety during form entry and risks reading as a dark pattern. Urgency does more work earlier, at the cart, where the real decision between buying now and drifting away is made."
+  - question: "Where is the best place for a countdown timer on Shopify?"
+    answer: "The cart page or cart drawer, on every plan. That is the point where a shopper decides between completing now or leaving to think about it, which is exactly the decision a deadline influences. Product page timers work for genuine flash sales, and checkout timers mostly arrive too late to change anything."
+  - question: "Does the Shopify Script Editor let me add a checkout timer?"
+    answer: "No. Script Editor was always a Shopify Plus tool, it applies discount and shipping logic rather than rendering interface elements, and it has been superseded by Shopify Functions. Neither Scripts nor Functions draw anything on screen, so neither can produce a visible countdown."
+---
+
+import CartTimeCTA from "@/components/blog/CartTimeCTA.astro";
+
+**Only if you are on Shopify Plus.** Shopify's own documentation is unambiguous: checkout UI
+extensions for the information, shipping, and payment steps are
+[available only to stores on a Shopify Plus plan](https://shopify.dev/docs/api/checkout-ui-extensions).
+
+Every other plan can still extend part of checkout — just not the part where a timer would create
+urgency. This is the full picture: what each plan can do, which methods have stopped working, and
+why a checkout timer is usually the wrong idea even when it is technically available.
+
+---
+
+## Which surfaces can each plan customise?
+
+**Basic, Shopify, and Advanced plans can extend the Thank You and Order Status pages. Only Plus can
+extend the checkout steps themselves.** Shopify opened those two post-purchase pages to non-Plus
+plans in a
+[May 2024 update](https://shopify.dev/changelog/new-checkout-functionality-for-merchants-on-basic-shopify-and-advanced-plans),
+which is the source of a lot of confusion — non-Plus merchants *can* customise "checkout," just not
+the steps before payment.
+
+| Surface | Basic / Shopify / Advanced | Plus | Useful for a timer? |
+|---|---|---|---|
+| Product page | ✅ | ✅ | Yes, for real flash sales |
+| Cart page | ✅ | ✅ | **Yes — the best placement** |
+| Cart drawer | ✅ | ✅ | Yes |
+| Checkout: information | ❌ | ✅ | Rarely |
+| Checkout: shipping | ❌ | ✅ | Rarely |
+| Checkout: payment | ❌ | ✅ | Rarely |
+| Thank You page | ✅ | ✅ | No — order already placed |
+| Order Status page | ✅ | ✅ | No — order already placed |
+
+The Thank You and Order Status pages are genuinely useful surfaces, just not for this. They suit
+post-purchase upsells, surveys, referral codes, and download links — anything that assumes the sale
+already happened.
+
+## Methods that no longer work
+
+Search results for this question are full of advice that was correct years ago. Two in particular
+keep resurfacing:
+
+**Editing `checkout.liquid`.** This stopped working for in-checkout pages on **13 August 2024**, and
+it was a Plus-only file before that. Checkout UI extensions replaced it. Any tutorial that says to
+paste a timer snippet into `checkout.liquid` is describing something that cannot work on a current
+store.
+
+**Shopify Script Editor.** Scripts were Plus-only, they operate on discounts and shipping rather
+than rendering interface, and they have been superseded by Shopify Functions. Neither Scripts nor
+Functions draw anything on screen — they change what things cost, not what the buyer sees. No
+countdown can come from either.
+
+If a vendor tells you they can put a timer in your non-Plus checkout, ask exactly which extension
+target they are using. There isn't one.
+
+<CartTimeCTA />
+
+## Even on Plus, checkout is the wrong place
+
+Here is the part the plan-availability question distracts from. Suppose you are on Plus and the
+restriction does not apply to you. **You still probably should not do it.**
+
+A shopper on the payment step has already decided. They are typing a card number. What a deadline
+adds at that moment is not motivation but pressure during a task that requires accuracy — and
+pressure applied after the decision is the definition of a dark pattern rather than a nudge. It also
+sits badly with the top reason people abandon: in
+[Baymard's data](/blog/shopify-cart-abandonment-benchmarks-2026), 40% leave because of unexpected
+costs, and none of them are helped by a clock.
+
+The decision a timer can actually influence happens one step earlier. At the cart, the shopper is
+genuinely choosing between completing now and leaving to think about it. That is where a deadline
+changes an outcome instead of just adding stress.
+
+## Where to put the timer instead
+
+Ranked by how much work each placement does:
+
+1. **Cart page and cart drawer.** Available on every plan, and positioned exactly where the
+   buy-now-or-drift decision happens. This is where a
+   [cart reservation timer](/blog/shopify-cart-reservation-timer) belongs — phrased as a cart that
+   expires, since Shopify does not hold stock for you.
+2. **Product page**, for genuine time-boxed sales. Real deadline, real event.
+3. **Sticky cart bar on mobile.** Pairs a persistent action with the deadline; see the
+   [mobile sticky cart guide](/blog/mobile-sticky-cart-guide).
+4. **Thank You page**, for a post-purchase offer window — a real use of a timer, just a completely
+   different one.
+
+And before adding urgency at all, deal with the reason most carts actually die. A
+[free-shipping progress bar](/blog/free-shipping-bar-shopify) addresses a 40% objection; a countdown
+addresses none of the top ten.
+
+<CartTimeCTA />
+
+## Bottom line
+
+The technical answer is short: checkout-step timers need Plus, everyone gets Thank You and Order
+Status, and `checkout.liquid` has been dead since August 2024.
+
+The useful answer is that the restriction is saving most merchants from a mistake. Checkout is where
+you remove friction, not where you add it. Put the deadline at the cart, where the decision is still
+open, and leave the payment step as boring and frictionless as you can make it.

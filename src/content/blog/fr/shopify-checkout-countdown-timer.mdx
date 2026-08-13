@@ -1,0 +1,133 @@
+---
+title: "Peut-on Ajouter un Compte à Rebours au Paiement Shopify ? (2026)"
+description: "Uniquement avec Shopify Plus. Les extensions des étapes information, livraison et paiement sont réservées à Plus, tandis que toutes les formules peuvent enrichir les pages de remerciement et de statut de commande. Voici la matrice complète par formule, les méthodes qui ne fonctionnent plus, et pourquoi le paiement est de toute façon le mauvais endroit."
+date: "2026-10-15"
+dateModified: "2026-10-15"
+author: "Équipe AppLass"
+excerpt: "Les comptes à rebours dans les étapes du paiement Shopify exigent Shopify Plus — la documentation le dit explicitement. Toutes les formules peuvent en revanche enrichir les pages de remerciement et de statut. Mais même avec Plus, le paiement est le mauvais endroit : la décision a déjà été prise au panier."
+tags: ["Shopify", "paiement", "compte à rebours", "Shopify Plus", "checkout extensibility", "conversion"]
+category: "Technique"
+keywords: "compte à rebours paiement shopify, minuteur page de paiement shopify, checkout extensibility compte à rebours, personnaliser paiement shopify plus, ajouter minuteur au checkout shopify, extensions interface paiement formules"
+breadcrumbName: "Compte à Rebours au Paiement"
+thumbnail: "../../../assets/blogs/shopify-checkout-countdown-timer.png"
+sidebarApps:
+  - carttime
+featured: true
+faqs:
+  - question: "Peut-on ajouter un compte à rebours à la page de paiement Shopify ?"
+    answer: "Uniquement avec Shopify Plus. La documentation de Shopify indique que les extensions d'interface du paiement pour les étapes information, livraison et paiement sont réservées aux boutiques disposant d'une formule Shopify Plus. Sur Basic, Shopify et Advanced, le minuteur doit se placer sur la fiche produit, la page panier ou le tiroir panier."
+  - question: "Quelles parties du paiement les boutiques sans Plus peuvent-elles personnaliser ?"
+    answer: "Les pages de remerciement et de statut de commande. Shopify a ouvert les extensions d'interface et les web pixels sur ces deux pages aux formules Basic, Shopify et Advanced en mai 2024. Ce sont des surfaces post-achat : utiles pour les ventes additionnelles, les sondages et le parrainage, mais pas pour l'urgence, la commande étant déjà passée."
+  - question: "Puis-je modifier checkout.liquid pour ajouter un minuteur ?"
+    answer: "Non. Checkout.liquid ne fonctionne plus pour les pages internes au paiement depuis le 13 août 2024, et c'était auparavant une fonctionnalité réservée à Shopify Plus. Les extensions d'interface l'ont remplacé. Tout tutoriel qui propose de coller du code de minuteur dans checkout.liquid décrit une méthode qui n'existe plus."
+  - question: "Faut-il mettre un compte à rebours au paiement même quand c'est possible ?"
+    answer: "En général non. Un acheteur arrivé à l'étape du paiement a déjà décidé ; une échéance n'ajoute alors pas de motivation mais de la pression pendant une saisie qui exige de la précision. Une pression appliquée après la décision relève du dark pattern plutôt que de l'incitation. L'urgence agit plus tôt, au panier."
+  - question: "Où placer au mieux un compte à rebours sur Shopify ?"
+    answer: "Sur la page panier ou le tiroir panier, quelle que soit la formule. C'est là que l'acheteur choisit entre finaliser maintenant ou partir réfléchir, exactement la décision qu'une échéance influence. Les minuteurs de fiche produit conviennent aux vraies ventes limitées dans le temps ; au paiement, ils arrivent trop tard."
+  - question: "Le Script Editor de Shopify permet-il un minuteur au paiement ?"
+    answer: "Non. Script Editor a toujours été un outil Shopify Plus, il agit sur les remises et la livraison plutôt que sur l'interface, et il a été remplacé par Shopify Functions. Ni les Scripts ni les Functions n'affichent quoi que ce soit à l'écran : aucun compte à rebours visible ne peut en sortir."
+---
+
+import CartTimeCTA from "@/components/blog/CartTimeCTA.astro";
+
+**Uniquement si vous êtes sur Shopify Plus.** La documentation de Shopify est sans ambiguïté : les
+extensions d'interface du paiement pour les étapes information, livraison et paiement sont
+[réservées aux boutiques disposant d'une formule Shopify Plus](https://shopify.dev/docs/api/checkout-ui-extensions).
+
+Toutes les autres formules peuvent malgré tout enrichir une partie du paiement — simplement pas
+celle où un minuteur créerait de l'urgence. Voici le tableau complet : ce que permet chaque formule,
+les méthodes qui ont cessé de fonctionner, et pourquoi un minuteur au paiement reste une mauvaise
+idée même lorsqu'il est techniquement possible.
+
+---
+
+## Quelles surfaces chaque formule peut-elle personnaliser ?
+
+**Les formules Basic, Shopify et Advanced peuvent enrichir les pages de remerciement et de statut de
+commande. Seule Plus peut intervenir sur les étapes du paiement.** Shopify a ouvert ces deux pages
+post-achat aux formules sans Plus dans une
+[mise à jour de mai 2024](https://shopify.dev/changelog/new-checkout-functionality-for-merchants-on-basic-shopify-and-advanced-plans),
+ce qui explique une bonne part de la confusion : sans Plus, on peut bel et bien personnaliser « le
+paiement », mais pas les étapes qui précèdent le règlement.
+
+| Surface | Basic / Shopify / Advanced | Plus | Utile pour un minuteur ? |
+|---|---|---|---|
+| Fiche produit | ✅ | ✅ | Oui, pour de vraies ventes flash |
+| Page panier | ✅ | ✅ | **Oui — le meilleur emplacement** |
+| Tiroir panier | ✅ | ✅ | Oui |
+| Paiement : information | ❌ | ✅ | Rarement |
+| Paiement : livraison | ❌ | ✅ | Rarement |
+| Paiement : règlement | ❌ | ✅ | Rarement |
+| Page de remerciement | ✅ | ✅ | Non — commande déjà passée |
+| Page de statut | ✅ | ✅ | Non — commande déjà passée |
+
+Les pages de remerciement et de statut sont de vraies surfaces utiles, mais pas pour cela. Elles
+conviennent aux ventes additionnelles après achat, aux sondages, aux codes de parrainage et aux
+liens de téléchargement — tout ce qui suppose la vente déjà conclue.
+
+## Les méthodes qui ne fonctionnent plus
+
+Les résultats de recherche sur cette question regorgent de conseils qui étaient justes il y a
+quelques années. Deux reviennent sans cesse :
+
+**Modifier `checkout.liquid`.** Cela ne fonctionne plus pour les pages internes au paiement depuis
+le **13 août 2024**, et le fichier était de toute façon réservé à Plus auparavant. Les extensions
+d'interface l'ont remplacé. Tout tutoriel proposant de coller un extrait de minuteur dans
+`checkout.liquid` décrit une opération impossible sur une boutique actuelle.
+
+**Le Script Editor de Shopify.** Les Scripts étaient réservés à Plus, ils portent sur les remises et
+la livraison plutôt que sur l'affichage, et ils ont été remplacés par Shopify Functions. Ni les uns
+ni les autres ne dessinent quoi que ce soit à l'écran : ils modifient les prix, pas ce que voit
+l'acheteur. Aucun compte à rebours n'en sortira.
+
+Si un prestataire affirme pouvoir placer un minuteur dans le paiement d'une boutique sans Plus,
+demandez-lui quelle cible d'extension il utilise exactement. Il n'y en a pas.
+
+<CartTimeCTA lang="fr" />
+
+## Même avec Plus, le paiement est le mauvais endroit
+
+Voici ce que la question des formules occulte. Supposons que vous soyez sur Plus et que la
+restriction ne vous concerne pas. **Mieux vaut quand même s'en abstenir.**
+
+Un acheteur à l'étape du règlement a déjà décidé : il saisit un numéro de carte. Une échéance
+n'apporte à ce moment-là aucune motivation, seulement de la pression pendant une tâche qui exige de
+la précision — et la pression appliquée après la décision relève du dark pattern plutôt que de
+l'incitation. Cela s'accorde mal avec la première cause d'abandon : dans les
+[données de Baymard](/blog/shopify-cart-abandonment-benchmarks-2026), 40 % partent à cause de frais
+inattendus, et aucun d'eux n'est aidé par une horloge.
+
+La décision qu'un minuteur peut réellement influencer se joue une étape plus tôt. Au panier,
+l'acheteur choisit véritablement entre finaliser maintenant et partir réfléchir. C'est là qu'une
+échéance change un résultat au lieu d'ajouter du stress.
+
+## Où placer le minuteur à la place
+
+Classé selon l'effet de chaque emplacement :
+
+1. **Page panier et tiroir panier.** Disponibles sur toutes les formules, et situés exactement là où
+   se joue le choix entre acheter et s'en aller. C'est la place d'un
+   [minuteur de réservation de panier](/blog/shopify-cart-reservation-timer) — formulé comme un
+   panier qui expire, puisque Shopify ne retient aucun stock pour vous.
+2. **Fiche produit**, pour de véritables ventes limitées dans le temps. Vraie échéance, vrai
+   événement.
+3. **Barre panier collante sur mobile.** Associe une action toujours visible à l'échéance ; voyez le
+   [guide du panier collant](/blog/mobile-sticky-cart-guide).
+4. **Page de remerciement**, pour une fenêtre d'offre après achat — un usage légitime du minuteur,
+   simplement tout autre.
+
+Et avant même d'ajouter de l'urgence, traitez la raison qui tue la plupart des paniers. Une
+[barre de progression vers la livraison gratuite](/blog/free-shipping-bar-shopify) répond à une
+objection à 40 % ; un compte à rebours n'en traite aucune du top dix.
+
+<CartTimeCTA lang="fr" />
+
+## En résumé
+
+La réponse technique est brève : les minuteurs dans les étapes du paiement exigent Plus, les pages
+de remerciement et de statut sont ouvertes à tous, et `checkout.liquid` est mort depuis août 2024.
+
+La réponse utile, c'est que cette restriction épargne une erreur à la plupart des marchands. Le
+paiement est l'endroit où l'on retire de la friction, pas où l'on en ajoute. Placez l'échéance au
+panier, là où la décision reste ouverte, et gardez l'étape de règlement aussi ennuyeuse et fluide
+que possible.

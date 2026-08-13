@@ -1,0 +1,134 @@
+---
+title: "Lässt sich ein Countdown-Timer im Shopify-Checkout einbauen? (2026)"
+description: "Nur mit Shopify Plus. Erweiterungen für die Schritte Information, Versand und Zahlung sind Plus vorbehalten, während jeder Tarif die Dankes- und Bestellstatusseite erweitern kann. Die vollständige Matrix nach Tarif und Fläche, die Methoden, die nicht mehr funktionieren — und warum der Checkout ohnehin der falsche Ort ist."
+date: "2026-10-15"
+dateModified: "2026-10-15"
+author: "AppLass-Team"
+excerpt: "Countdown-Timer in den Checkout-Schritten von Shopify erfordern Shopify Plus — so steht es in der Dokumentation. Jeder Tarif kann stattdessen die Dankes- und Bestellstatusseite erweitern. Doch selbst mit Plus ist der Checkout der falsche Ort für Dringlichkeit: Die Entscheidung fiel bereits im Warenkorb."
+tags: ["Shopify", "Checkout", "Countdown-Timer", "Shopify Plus", "Checkout Extensibility", "Conversion"]
+category: "Technik"
+keywords: "shopify checkout countdown timer, countdown timer checkout seite shopify, checkout extensibility countdown, shopify plus checkout anpassen, timer im shopify checkout, checkout ui extensions tarife"
+breadcrumbName: "Countdown im Checkout"
+thumbnail: "../../../assets/blogs/shopify-checkout-countdown-timer.png"
+sidebarApps:
+  - carttime
+featured: true
+faqs:
+  - question: "Kann man im Shopify-Checkout einen Countdown-Timer einbauen?"
+    answer: "Nur mit Shopify Plus. Die Dokumentation von Shopify hält fest, dass Checkout-UI-Erweiterungen für die Schritte Information, Versand und Zahlung ausschließlich Shops im Shopify-Plus-Tarif zur Verfügung stehen. In den Tarifen Basic, Shopify und Advanced muss ein Timer stattdessen auf der Produktseite, der Warenkorbseite oder im Warenkorb-Drawer stehen."
+  - question: "Welche Teile des Checkouts können Shops ohne Plus anpassen?"
+    answer: "Die Dankes- und die Bestellstatusseite. Shopify hat UI-Erweiterungen und Web Pixels auf diesen beiden Seiten im Mai 2024 für die Tarife Basic, Shopify und Advanced freigegeben. Beides sind Nachkaufflächen und eignen sich für Upsells, Umfragen und Empfehlungen — nicht jedoch für Dringlichkeit, da die Bestellung bereits aufgegeben ist."
+  - question: "Kann ich checkout.liquid bearbeiten, um einen Timer einzufügen?"
+    answer: "Nein. Checkout.liquid funktioniert für die Seiten innerhalb des Checkouts seit dem 13. August 2024 nicht mehr, und davor war es ohnehin eine Shopify-Plus-Funktion. Checkout-UI-Erweiterungen haben es ersetzt. Jede Anleitung, die Timer-Code in checkout.liquid einfügen lässt, beschreibt eine Methode, die es nicht mehr gibt."
+  - question: "Sollte man einen Countdown im Checkout einsetzen, wenn man es könnte?"
+    answer: "Meist nicht. Wer beim Zahlungsschritt angekommen ist, hat sich bereits entschieden. Eine Frist erzeugt dort keine Motivation, sondern Druck während einer Eingabe, die Genauigkeit verlangt — und Druck nach der Entscheidung ist eher ein Dark Pattern als ein Anstoß. Dringlichkeit wirkt früher, im Warenkorb."
+  - question: "Wo gehört ein Countdown-Timer bei Shopify am besten hin?"
+    answer: "Auf die Warenkorbseite oder in den Warenkorb-Drawer, in jedem Tarif. Dort entscheidet sich, ob jemand jetzt abschließt oder geht, um noch einmal darüber nachzudenken — genau die Entscheidung, die eine Frist beeinflusst. Timer auf der Produktseite passen zu echten Aktionen mit Enddatum, im Checkout kommen sie zu spät."
+  - question: "Kann der Shopify Script Editor einen Checkout-Timer anzeigen?"
+    answer: "Nein. Der Script Editor war stets ein Shopify-Plus-Werkzeug, er wirkt auf Rabatte und Versandlogik statt auf die Oberfläche, und er wurde durch Shopify Functions abgelöst. Weder Scripts noch Functions zeichnen etwas auf den Bildschirm, also kann daraus kein sichtbarer Countdown entstehen."
+---
+
+import CartTimeCTA from "@/components/blog/CartTimeCTA.astro";
+
+**Nur mit Shopify Plus.** Die Dokumentation von Shopify ist eindeutig: Checkout-UI-Erweiterungen für
+die Schritte Information, Versand und Zahlung stehen
+[ausschließlich Shops im Shopify-Plus-Tarif](https://shopify.dev/docs/api/checkout-ui-extensions)
+zur Verfügung.
+
+Alle anderen Tarife können durchaus einen Teil des Checkouts erweitern — nur eben nicht den Teil, in
+dem ein Timer Dringlichkeit erzeugen würde. Hier steht das vollständige Bild: was jeder Tarif kann,
+welche Methoden nicht mehr funktionieren und warum ein Timer im Checkout selbst dann meist eine
+schlechte Idee ist, wenn er technisch möglich wäre.
+
+---
+
+## Welche Flächen darf welcher Tarif anpassen?
+
+**Die Tarife Basic, Shopify und Advanced können die Dankes- und die Bestellstatusseite erweitern.
+Nur Plus darf die Checkout-Schritte selbst anpassen.** Shopify hat diese beiden Nachkaufseiten in
+einem
+[Update vom Mai 2024](https://shopify.dev/changelog/new-checkout-functionality-for-merchants-on-basic-shopify-and-advanced-plans)
+für Shops ohne Plus geöffnet — daher rührt viel Verwirrung: Auch ohne Plus lässt sich „der Checkout“
+anpassen, nur nicht die Schritte vor der Zahlung.
+
+| Fläche | Basic / Shopify / Advanced | Plus | Für einen Timer sinnvoll? |
+|---|---|---|---|
+| Produktseite | ✅ | ✅ | Ja, bei echten Aktionen |
+| Warenkorbseite | ✅ | ✅ | **Ja — die beste Platzierung** |
+| Warenkorb-Drawer | ✅ | ✅ | Ja |
+| Checkout: Information | ❌ | ✅ | Selten |
+| Checkout: Versand | ❌ | ✅ | Selten |
+| Checkout: Zahlung | ❌ | ✅ | Selten |
+| Dankesseite | ✅ | ✅ | Nein — Bestellung ist erfolgt |
+| Bestellstatusseite | ✅ | ✅ | Nein — Bestellung ist erfolgt |
+
+Die Dankes- und die Bestellstatusseite sind durchaus wertvolle Flächen, nur nicht dafür. Sie eignen
+sich für Upsells nach dem Kauf, Umfragen, Empfehlungscodes und Download-Links — alles, was den
+abgeschlossenen Kauf voraussetzt.
+
+## Methoden, die nicht mehr funktionieren
+
+Die Suchergebnisse zu dieser Frage sind voller Ratschläge, die vor Jahren richtig waren. Zwei
+tauchen besonders hartnäckig auf:
+
+**`checkout.liquid` bearbeiten.** Das funktioniert für die Seiten innerhalb des Checkouts seit dem
+**13. August 2024** nicht mehr, und davor war die Datei ohnehin Plus vorbehalten.
+Checkout-UI-Erweiterungen haben sie ersetzt. Jede Anleitung, die einen Timer-Schnipsel in
+`checkout.liquid` einfügen lässt, beschreibt etwas, das in einem aktuellen Shop nicht mehr geht.
+
+**Shopify Script Editor.** Scripts waren Plus vorbehalten, sie wirken auf Rabatte und Versand statt
+auf die Oberfläche, und sie wurden durch Shopify Functions abgelöst. Weder Scripts noch Functions
+zeichnen etwas auf den Bildschirm — sie verändern, was Dinge kosten, nicht das, was der Kunde sieht.
+Ein Countdown kann daraus nicht entstehen.
+
+Verspricht Ihnen ein Anbieter einen Timer im Checkout eines Shops ohne Plus, fragen Sie nach dem
+konkreten Extension-Target. Es gibt keines.
+
+<CartTimeCTA lang="de" />
+
+## Auch mit Plus ist der Checkout der falsche Ort
+
+Hier liegt der Punkt, von dem die Tariffrage ablenkt. Angenommen, Sie haben Plus und die
+Einschränkung betrifft Sie nicht. **Sie sollten es trotzdem eher lassen.**
+
+Wer beim Zahlungsschritt angekommen ist, hat sich bereits entschieden und tippt gerade eine
+Kartennummer ein. Eine Frist liefert in diesem Moment keine Motivation, sondern Druck während einer
+Aufgabe, die Genauigkeit verlangt — und Druck nach der Entscheidung ist eher ein Dark Pattern als
+ein Anstoß. Dazu passt der häufigste Abbruchgrund schlecht: In den
+[Daten von Baymard](/blog/shopify-cart-abandonment-benchmarks-2026) gehen 40 % wegen unerwarteter
+Kosten, und keinem davon hilft eine Uhr.
+
+Die Entscheidung, die ein Timer wirklich beeinflussen kann, fällt einen Schritt früher. Im Warenkorb
+wählt der Kunde tatsächlich zwischen jetzt abschließen und später noch einmal nachdenken. Dort
+verändert eine Frist ein Ergebnis, statt nur Stress hinzuzufügen.
+
+## Wohin der Timer stattdessen gehört
+
+Sortiert danach, wie viel jede Platzierung leistet:
+
+1. **Warenkorbseite und Warenkorb-Drawer.** In jedem Tarif verfügbar und genau dort, wo die
+   Entscheidung zwischen Kaufen und Abwandern fällt. Hierhin gehört ein
+   [Warenkorb-Reservierungstimer](/blog/shopify-cart-reservation-timer) — formuliert als ablaufender
+   Warenkorb, denn Shopify hält keinen Bestand für Sie zurück.
+2. **Produktseite**, bei echten zeitlich begrenzten Aktionen. Echte Frist, echter Anlass.
+3. **Sticky-Cart-Leiste auf Mobilgeräten.** Verbindet eine dauerhaft sichtbare Aktion mit der Frist;
+   siehe den [Leitfaden zum Sticky Add-to-Cart](/blog/mobile-sticky-cart-guide).
+4. **Dankesseite**, für ein Zeitfenster nach dem Kauf — ebenfalls ein sinnvoller Einsatz, nur ein
+   ganz anderer.
+
+Und bevor Sie überhaupt Dringlichkeit hinzufügen, kümmern Sie sich um den Grund, an dem die meisten
+Warenkörbe sterben. Eine [Fortschrittsleiste für kostenlosen
+Versand](/blog/free-shipping-bar-shopify) adressiert einen 40-%-Einwand; ein Countdown adressiert
+keinen der zehn häufigsten.
+
+<CartTimeCTA lang="de" />
+
+## Fazit
+
+Die technische Antwort ist kurz: Timer in den Checkout-Schritten brauchen Plus, Dankes- und
+Bestellstatusseite stehen allen offen, und `checkout.liquid` ist seit August 2024 tot.
+
+Die nützliche Antwort lautet, dass die Einschränkung die meisten Händler vor einem Fehler bewahrt.
+Der Checkout ist der Ort, an dem man Reibung entfernt, nicht hinzufügt. Setzen Sie die Frist in den
+Warenkorb, wo die Entscheidung noch offen ist, und halten Sie den Zahlungsschritt so langweilig und
+reibungslos wie möglich.

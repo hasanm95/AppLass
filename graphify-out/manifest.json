@@ -330,7 +330,7 @@
     "semantic_hash": ""
   },
   "src/components/blog/AppCallout.astro": {
-    "mtime": 1786600095.368043,
+    "mtime": 1786618755.1263027,
     "ast_hash": "0dd7e567d6a76ed0c5c34675e4bd3ab7",
     "semantic_hash": ""
   },
@@ -675,7 +675,7 @@
     "semantic_hash": ""
   },
   "src/i18n/locales/en.json": {
-    "mtime": 1786600487.169503,
+    "mtime": 1786619204.7223656,
     "ast_hash": "7bf1233f43d81b62902772b3438185f7",
     "semantic_hash": ""
   },
@@ -765,7 +765,7 @@
     "semantic_hash": ""
   },
   "src/page-templates/BlogPostPage.astro": {
-    "mtime": 1786600095.3731403,
+    "mtime": 1786618755.1302977,
     "ast_hash": "b90ef2857bb2223387752352b5fdd155",
     "semantic_hash": ""
   },
@@ -2680,48 +2680,68 @@
     "semantic_hash": ""
   },
   "docs/blog-content-plan-2026-h2.md": {
-    "mtime": 1786600095.34662,
+    "mtime": 1786618897.8236077,
     "ast_hash": "2a15cbf591f03b26d2387c775f46ac50",
     "semantic_hash": ""
   },
   "src/content/blog/de/shopify-cart-reservation-timer.mdx": {
-    "mtime": 1786600095.3690572,
+    "mtime": 1786618755.1277413,
     "ast_hash": "32bb37d41520b8a1662fdebe2f028b55",
     "semantic_hash": ""
   },
   "src/content/blog/en/shopify-cart-reservation-timer.mdx": {
-    "mtime": 1786600095.3702276,
+    "mtime": 1786618755.128455,
     "ast_hash": "123f7fa6f3184a888697e59669a379dc",
     "semantic_hash": ""
   },
   "src/content/blog/fr/shopify-cart-reservation-timer.mdx": {
-    "mtime": 1786600095.371013,
+    "mtime": 1786618755.1291513,
     "ast_hash": "862488304b96ddbd7af4fbd23ef95d51",
     "semantic_hash": ""
   },
   "src/assets/blogs/shopify-cart-reservation-timer.png": {
-    "mtime": 1786600095.3673432,
+    "mtime": 1786618755.1259522,
     "ast_hash": "da8b6d9684dce6dba45f62c64ecf63fd",
     "semantic_hash": ""
   },
   "src/content/blog/de/shopify-cart-abandonment-benchmarks-2026.mdx": {
-    "mtime": 1786600416.6122677,
+    "mtime": 1786618897.845959,
     "ast_hash": "4cbed2c3e5d1c59c83776b64bc529ca7",
     "semantic_hash": ""
   },
   "src/content/blog/en/shopify-cart-abandonment-benchmarks-2026.mdx": {
-    "mtime": 1786600305.0521615,
+    "mtime": 1786618897.8462958,
     "ast_hash": "f758b3d1a94db5b4ace9ac677d5432a0",
     "semantic_hash": ""
   },
   "src/content/blog/fr/shopify-cart-abandonment-benchmarks-2026.mdx": {
-    "mtime": 1786600486.83307,
+    "mtime": 1786618897.8468063,
     "ast_hash": "bb31ab5777fa78b7afef9d4bac2bf489",
     "semantic_hash": ""
   },
   "src/assets/blogs/shopify-cart-abandonment-benchmarks-2026.png": {
-    "mtime": 1786600337.767314,
+    "mtime": 1786618897.845481,
     "ast_hash": "23eadbe621a82b4fc4aa98ed9a016de0",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/shopify-checkout-countdown-timer.mdx": {
+    "mtime": 1786619137.5807014,
+    "ast_hash": "3be6f375ee0a9f780d04ac0c877075bc",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/shopify-checkout-countdown-timer.mdx": {
+    "mtime": 1786619018.575962,
+    "ast_hash": "3a4475897f472c232582f9609c356272",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/shopify-checkout-countdown-timer.mdx": {
+    "mtime": 1786619204.2515502,
+    "ast_hash": "39e46fc97085e83d474320458664df4a",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/shopify-checkout-countdown-timer.png": {
+    "mtime": 1786619083.8699782,
+    "ast_hash": "25153f6177b51865638b5ab1b89088bb",
     "semantic_hash": ""
   }
 }
