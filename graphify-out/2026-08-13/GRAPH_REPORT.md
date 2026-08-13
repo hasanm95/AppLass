@@ -1,7 +1,7 @@
-# Graph Report - AppLass  (2026-08-13)
+# Graph Report - AppLass  (2026-08-02)
 
 ## Corpus Check
-- 463 files · ~1,758,487 words
+- 463 files · ~1,757,611 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `26efb5b9`
+- Built from commit: `c5cbbd6b`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -424,8 +424,8 @@ Cohesion: 0.05
 Nodes (39): 10. Animation Decision Checklist, 1. Duration Principles, 2. Easing Principles, 3. Micro-Interaction Principles, 4. Loading States Principles, 5. Page Transitions Principles, 6. Scroll Animation Principles, 7. Hover Effects Principles (+31 more)
 
 ### Community 14 - "Mobile Color System Reference"
-Cohesion: 0.11
-Nodes (18): 1. Mobile Color Fundamentals, 2. OLED Considerations, 4. Outdoor Visibility, 7. Color Accessibility, 9. Color System Checklist, Battery Savings with OLED, Before Choosing Colors, Before Release (+10 more)
+Cohesion: 0.10
+Nodes (19): 1. Mobile Color Fundamentals, 2. OLED Considerations, 5. Semantic Colors, 6. Dynamic Color (Android), 8. Color Anti-Patterns, ❌ AI Color Mistakes, Battery Savings with OLED, ❌ Common Mistakes (+11 more)
 
 ### Community 15 - "Mobile Typography Reference"
 Cohesion: 0.05
@@ -1577,15 +1577,15 @@ Nodes (4): 10. Quick Reference, Contrast Ratios, Dark Mode Backgrounds, Text on 
 
 ### Community 327 - "7. Color Accessibility"
 Cohesion: 0.50
-Nodes (4): 5. Semantic Colors, Consistent Meaning, Error State Colors, Semantic Color Rules
+Nodes (4): 7. Color Accessibility, Colorblind Considerations, Contrast Testing Tools, Sufficient Contrast
 
 ### Community 328 - "4. Outdoor Visibility"
-Cohesion: 0.50
-Nodes (4): 6. Dynamic Color (Android), Fallback Colors, Material You, Supporting Dynamic Color
+Cohesion: 0.67
+Nodes (3): 4. Outdoor Visibility, High Contrast Strategies, The Sunlight Problem
 
 ### Community 329 - "9. Color System Checklist"
 Cohesion: 0.67
-Nodes (3): 8. Color Anti-Patterns, ❌ AI Color Mistakes, ❌ Common Mistakes
+Nodes (3): 9. Color System Checklist, Before Choosing Colors, Before Release
 
 ### Community 330 - "5. Risk Prioritization"
 Cohesion: 0.67

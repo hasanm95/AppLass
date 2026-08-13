@@ -4,9 +4,9 @@ export const getScreenveilData = () => ({
   hero: {
     tagline: localize("AMOLED Battery Saver"),
     headline: localize("Play YouTube"),
-    headlineAccent: localize("With Your Screen Off. Save 60% Battery on AMOLED."),
+    headlineAccent: localize("With Your Screen Off. Up to 60% Less Screen Power on AMOLED."),
     subheadline: localize(
-      "Save over 60% battery on AMOLED devices. ScreenVeil overlays a pure black layer so you can enjoy YouTube, podcasts, and music without the battery drain or accidental touches."
+      "Cut display power by up to 60% at full brightness on AMOLED. ScreenVeil overlays a pure black layer so you can enjoy YouTube, podcasts, and music without the battery drain or accidental touches."
     ),
     primaryCTA: localize("Get it on Google Play"),
     secondaryCTA: localize("Learn More"),
@@ -17,8 +17,8 @@ export const getScreenveilData = () => ({
   painPoints: [
     {
       title: localize("Battery Anxiety?"),
-      stat: "50-80%",
-      description: localize("Power savings on OLED/AMOLED panels"),
+      stat: "Up to 60%",
+      description: localize("Display power saved on OLED/AMOLED at full brightness"),
       iconName: "Battery",
     },
     {
@@ -75,7 +75,7 @@ export const getScreenveilData = () => ({
   technical: {
     headline: localize("The Physics of Battery Conservation."),
     description: localize(
-      "On OLED and AMOLED displays, each pixel is its own light source. By displaying 'True Black,' ScreenVeil instructs pixels to turn completely off. Research shows this can reduce display-related power draw by up to 63% at max brightness."
+      "On OLED and AMOLED displays, each pixel is its own light source. By displaying 'True Black,' ScreenVeil instructs pixels to turn completely off. Google's own Android Dev Summit measurements put the saving at up to 63% of display power at full brightness — the darker your screen and the brighter your setting, the more you keep."
     ),
     stat: "63%",
     statLabel: localize("Power Reduction"),
@@ -155,7 +155,7 @@ export const getScreenveilSchema = () => ({
     "ratingValue": "4.4",
     "ratingCount": "10000"
   },
-  "description": "ScreenVeil overlays a pure black layer on AMOLED/OLED screens so you can play YouTube and audio with your screen off, saving 60%+ battery. Zero permissions. Zero data collection.",
+  "description": "ScreenVeil overlays a pure black layer on AMOLED/OLED screens so you can play YouTube and audio with your screen off, cutting display power by up to 60% at full brightness. Zero permissions. Zero data collection.",
   "url": "https://applass.com/apps/screenveil",
   "downloadUrl": "https://play.google.com/store/apps/details?id=com.screenveil.app"
 });
