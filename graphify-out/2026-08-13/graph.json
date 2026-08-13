@@ -18625,8 +18625,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill",
-      "community": 127,
-      "community_name": "frontend-design/SKILL.md",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "frontend-design/skill.md"
     },
     {
@@ -19120,8 +19120,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide",
-      "community": 127,
-      "community_name": "frontend-design/SKILL.md",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "animation-guide.md"
     },
     {
@@ -19186,8 +19186,8 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_2_easing_principles",
-      "community": 323,
-      "community_name": "1. Framework Selection",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "2. easing principles"
     },
     {
@@ -19197,8 +19197,8 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_what_easing_does",
-      "community": 323,
-      "community_name": "1. Framework Selection",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "what easing does"
     },
     {
@@ -19208,8 +19208,8 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_when_to_use_each",
-      "community": 323,
-      "community_name": "1. Framework Selection",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "when to use each"
     },
     {
@@ -19219,8 +19219,8 @@
       "source_location": "L64",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_the_pattern",
-      "community": 323,
-      "community_name": "1. Framework Selection",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "the pattern"
     },
     {
@@ -19230,8 +19230,8 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_3_micro_interaction_principles",
-      "community": 324,
-      "community_name": "2. State Management Selection",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "3. micro-interaction principles"
     },
     {
@@ -19241,8 +19241,8 @@
       "source_location": "L87",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_what_makes_good_micro_interactions",
-      "community": 324,
-      "community_name": "2. State Management Selection",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "what makes good micro-interactions"
     },
     {
@@ -19252,8 +19252,8 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_button_states",
-      "community": 324,
-      "community_name": "2. State Management Selection",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "button states"
     },
     {
@@ -19263,8 +19263,8 @@
       "source_location": "L107",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_principles",
-      "community": 324,
-      "community_name": "2. State Management Selection",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "principles"
     },
     {
@@ -19274,8 +19274,8 @@
       "source_location": "L116",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_4_loading_states_principles",
-      "community": 325,
-      "community_name": "7. Project Type Templates",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "4. loading states principles"
     },
     {
@@ -19285,8 +19285,8 @@
       "source_location": "L118",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_types_by_context",
-      "community": 325,
-      "community_name": "7. Project Type Templates",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "types by context"
     },
     {
@@ -19296,8 +19296,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_skeleton_screens",
-      "community": 325,
-      "community_name": "7. Project Type Templates",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "skeleton screens"
     },
     {
@@ -19307,8 +19307,8 @@
       "source_location": "L137",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_progress_indicators",
-      "community": 325,
-      "community_name": "7. Project Type Templates",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "progress indicators"
     },
     {
@@ -19318,8 +19318,8 @@
       "source_location": "L154",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_5_page_transitions_principles",
-      "community": 326,
-      "community_name": "10. Quick Reference",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "5. page transitions principles"
     },
     {
@@ -19329,8 +19329,8 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_transition_strategy",
-      "community": 326,
-      "community_name": "10. Quick Reference",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "transition strategy"
     },
     {
@@ -19340,8 +19340,8 @@
       "source_location": "L165",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_common_patterns",
-      "community": 326,
-      "community_name": "10. Quick Reference",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "common patterns"
     },
     {
@@ -19351,8 +19351,8 @@
       "source_location": "L174",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_direction_matching",
-      "community": 326,
-      "community_name": "10. Quick Reference",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "direction matching"
     },
     {
@@ -19362,8 +19362,8 @@
       "source_location": "L186",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_6_scroll_animation_principles",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "6. scroll animation principles"
     },
     {
@@ -19373,8 +19373,8 @@
       "source_location": "L188",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_progressive_reveal",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "progressive reveal"
     },
     {
@@ -19384,8 +19384,8 @@
       "source_location": "L198",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_trigger_points",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "trigger points"
     },
     {
@@ -19395,8 +19395,8 @@
       "source_location": "L207",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_animation_properties",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "animation properties"
     },
     {
@@ -19406,8 +19406,8 @@
       "source_location": "L214",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_performance",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "performance"
     },
     {
@@ -19494,8 +19494,8 @@
       "source_location": "L272",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_9_performance_principles",
-      "community": 327,
-      "community_name": "7. Color Accessibility",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "9. performance principles"
     },
     {
@@ -19505,8 +19505,8 @@
       "source_location": "L274",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_what_s_cheap_to_animate",
-      "community": 327,
-      "community_name": "7. Color Accessibility",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "what's cheap to animate"
     },
     {
@@ -19516,8 +19516,8 @@
       "source_location": "L289",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_optimization_strategies",
-      "community": 327,
-      "community_name": "7. Color Accessibility",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "optimization strategies"
     },
     {
@@ -19527,8 +19527,8 @@
       "source_location": "L296",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_respecting_user_preferences",
-      "community": 327,
-      "community_name": "7. Color Accessibility",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "respecting user preferences"
     },
     {
@@ -19560,8 +19560,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "color-system.md"
     },
     {
@@ -19582,8 +19582,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_1_color_theory_fundamentals",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 319,
+      "community_name": "1. Color Theory Fundamentals",
       "norm_label": "1. color theory fundamentals"
     },
     {
@@ -19593,8 +19593,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_the_color_wheel",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 319,
+      "community_name": "1. Color Theory Fundamentals",
       "norm_label": "the color wheel"
     },
     {
@@ -19604,8 +19604,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_color_relationships",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 319,
+      "community_name": "1. Color Theory Fundamentals",
       "norm_label": "color relationships"
     },
     {
@@ -19615,8 +19615,8 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_how_to_choose_a_scheme",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 319,
+      "community_name": "1. Color Theory Fundamentals",
       "norm_label": "how to choose a scheme:"
     },
     {
@@ -19703,8 +19703,8 @@
       "source_location": "L124",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_4_palette_generation_principles",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 297,
+      "community_name": "@astrojs/check",
       "norm_label": "4. palette generation principles"
     },
     {
@@ -19714,8 +19714,8 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_from_a_single_color_hsl_method",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 297,
+      "community_name": "@astrojs/check",
       "norm_label": "from a single color (hsl method)"
     },
     {
@@ -19725,8 +19725,8 @@
       "source_location": "L151",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_generating_a_full_palette",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 297,
+      "community_name": "@astrojs/check",
       "norm_label": "generating a full palette"
     },
     {
@@ -19736,8 +19736,8 @@
       "source_location": "L169",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_saturation_adjustments",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 297,
+      "community_name": "@astrojs/check",
       "norm_label": "saturation adjustments"
     },
     {
@@ -19769,8 +19769,8 @@
       "source_location": "L226",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_6_dark_mode_principles",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 301,
+      "community_name": "6. Dark Mode Principles",
       "norm_label": "6. dark mode principles"
     },
     {
@@ -19780,8 +19780,8 @@
       "source_location": "L228",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_key_rules_no_fixed_codes",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 301,
+      "community_name": "6. Dark Mode Principles",
       "norm_label": "key rules (no fixed codes)"
     },
     {
@@ -19791,8 +19791,8 @@
       "source_location": "L235",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_contrast_in_dark_mode",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 301,
+      "community_name": "6. Dark Mode Principles",
       "norm_label": "contrast in dark mode"
     },
     {
@@ -19802,8 +19802,8 @@
       "source_location": "L245",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_adapting_colors_for_dark_mode",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 301,
+      "community_name": "6. Dark Mode Principles",
       "norm_label": "adapting colors for dark mode"
     },
     {
@@ -19813,8 +19813,8 @@
       "source_location": "L256",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_7_accessibility_guidelines",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 321,
+      "community_name": "7. Accessibility Guidelines",
       "norm_label": "7. accessibility guidelines"
     },
     {
@@ -19824,8 +19824,8 @@
       "source_location": "L258",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_contrast_requirements_wcag",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 321,
+      "community_name": "7. Accessibility Guidelines",
       "norm_label": "contrast requirements (wcag)"
     },
     {
@@ -19835,8 +19835,8 @@
       "source_location": "L265",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_how_to_check_contrast",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 321,
+      "community_name": "7. Accessibility Guidelines",
       "norm_label": "how to check contrast"
     },
     {
@@ -19846,8 +19846,8 @@
       "source_location": "L271",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_safe_patterns",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 321,
+      "community_name": "7. Accessibility Guidelines",
       "norm_label": "safe patterns"
     },
     {
@@ -19901,8 +19901,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees",
-      "community": 127,
-      "community_name": "frontend-design/SKILL.md",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "frontend-design/decision-trees.md"
     },
     {
@@ -20022,8 +20022,8 @@
       "source_location": "L171",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_5_e_commerce_guidelines_e_commerce",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "5. e-commerce guidelines {#e-commerce}"
     },
     {
@@ -20033,8 +20033,8 @@
       "source_location": "L173",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_key_principles_not_fixed_rules",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "key principles (not fixed rules)"
     },
     {
@@ -20044,8 +20044,8 @@
       "source_location": "L179",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_color_thinking",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "color thinking:"
     },
     {
@@ -20055,8 +20055,8 @@
       "source_location": "L190",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_layout_principles",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "layout principles:"
     },
     {
@@ -20066,8 +20066,8 @@
       "source_location": "L217",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_psychology_to_apply",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "psychology to apply:"
     },
     {
@@ -20077,8 +20077,8 @@
       "source_location": "L226",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_6_saas_dashboard_guidelines_saas",
-      "community": 315,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "6. saas dashboard guidelines {#saas}"
     },
     {
@@ -20088,8 +20088,8 @@
       "source_location": "L228",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_key_principles",
-      "community": 315,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "key principles"
     },
     {
@@ -20099,8 +20099,8 @@
       "source_location": "L234",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_color_thinking_234",
-      "community": 315,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "color thinking:"
     },
     {
@@ -20110,8 +20110,8 @@
       "source_location": "L245",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_layout_principles_245",
-      "community": 315,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "layout principles:"
     },
     {
@@ -20121,8 +20121,8 @@
       "source_location": "L265",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_psychology_to_apply_265",
-      "community": 315,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "psychology to apply:"
     },
     {
@@ -20187,8 +20187,8 @@
       "source_location": "L326",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_8_portfolio_guidelines_portfolio",
-      "community": 316,
-      "community_name": "4. Animation Performance (Both Platforms)",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "8. portfolio guidelines {#portfolio}"
     },
     {
@@ -20198,8 +20198,8 @@
       "source_location": "L328",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_key_principles_328",
-      "community": 316,
-      "community_name": "4. Animation Performance (Both Platforms)",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "key principles"
     },
     {
@@ -20209,8 +20209,8 @@
       "source_location": "L334",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_color_thinking_334",
-      "community": 316,
-      "community_name": "4. Animation Performance (Both Platforms)",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "color thinking:"
     },
     {
@@ -20220,8 +20220,8 @@
       "source_location": "L345",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_structure_principles_345",
-      "community": 316,
-      "community_name": "4. Animation Performance (Both Platforms)",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "structure principles:"
     },
     {
@@ -20231,8 +20231,8 @@
       "source_location": "L365",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_psychology_to_apply_365",
-      "community": 316,
-      "community_name": "4. Animation Performance (Both Platforms)",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "psychology to apply:"
     },
     {
@@ -20242,8 +20242,8 @@
       "source_location": "L373",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_9_pre_design_checklists",
-      "community": 319,
-      "community_name": "1. Color Theory Fundamentals",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "9. pre-design checklists"
     },
     {
@@ -20253,8 +20253,8 @@
       "source_location": "L375",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_before_starting_any_design",
-      "community": 319,
-      "community_name": "1. Color Theory Fundamentals",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "before starting any design"
     },
     {
@@ -20264,8 +20264,8 @@
       "source_location": "L383",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_before_choosing_colors",
-      "community": 319,
-      "community_name": "1. Color Theory Fundamentals",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "before choosing colors"
     },
     {
@@ -20275,8 +20275,8 @@
       "source_location": "L390",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_before_finalizing_layout",
-      "community": 319,
-      "community_name": "1. Color Theory Fundamentals",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "before finalizing layout"
     },
     {
@@ -20286,8 +20286,8 @@
       "source_location": "L397",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_before_delivery",
-      "community": 319,
-      "community_name": "1. Color Theory Fundamentals",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "before delivery"
     },
     {
@@ -20297,8 +20297,8 @@
       "source_location": "L405",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_10_complexity_estimation",
-      "community": 328,
-      "community_name": "4. Outdoor Visibility",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "10. complexity estimation"
     },
     {
@@ -20308,8 +20308,8 @@
       "source_location": "L407",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_quick_projects_hours",
-      "community": 328,
-      "community_name": "4. Outdoor Visibility",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "quick projects (hours)"
     },
     {
@@ -20319,8 +20319,8 @@
       "source_location": "L418",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_medium_projects_days",
-      "community": 328,
-      "community_name": "4. Outdoor Visibility",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "medium projects (days)"
     },
     {
@@ -20330,8 +20330,8 @@
       "source_location": "L429",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees_large_projects_weeks",
-      "community": 328,
-      "community_name": "4. Outdoor Visibility",
+      "community": 100,
+      "community_name": "Decision Trees & Context Templates",
       "norm_label": "large projects (weeks)"
     },
     {
@@ -20341,8 +20341,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics",
-      "community": 127,
-      "community_name": "frontend-design/SKILL.md",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "motion-graphics.md"
     },
     {
@@ -20363,8 +20363,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_1_lottie_animations",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "1. lottie animations"
     },
     {
@@ -20374,8 +20374,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_what_is_lottie",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "what is lottie?"
     },
     {
@@ -20385,8 +20385,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use_lottie",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "when to use lottie"
     },
     {
@@ -20396,8 +20396,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "principles"
     },
     {
@@ -20407,8 +20407,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_sources",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "sources"
     },
     {
@@ -20418,8 +20418,8 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_2_gsap_greensock",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "2. gsap (greensock)"
     },
     {
@@ -20429,8 +20429,8 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_what_makes_gsap_different",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "what makes gsap different"
     },
     {
@@ -20440,8 +20440,8 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_core_concepts",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "core concepts"
     },
     {
@@ -20451,8 +20451,8 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use_gsap",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "when to use gsap"
     },
     {
@@ -20462,8 +20462,8 @@
       "source_location": "L77",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_77",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "principles"
     },
     {
@@ -20473,8 +20473,8 @@
       "source_location": "L86",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_3_svg_animations",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "3. svg animations"
     },
     {
@@ -20484,8 +20484,8 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_types_of_svg_animation",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "types of svg animation"
     },
     {
@@ -20495,8 +20495,8 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_line_drawing_principles",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "line drawing principles"
     },
     {
@@ -20506,8 +20506,8 @@
       "source_location": "L107",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use_svg_animations",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "when to use svg animations"
     },
     {
@@ -20517,8 +20517,8 @@
       "source_location": "L116",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_116",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "principles"
     },
     {
@@ -20528,8 +20528,8 @@
       "source_location": "L125",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_4_3d_css_transforms",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 322,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "4. 3d css transforms"
     },
     {
@@ -20539,8 +20539,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_core_properties",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 322,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "core properties"
     },
     {
@@ -20550,8 +20550,8 @@
       "source_location": "L138",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_common_3d_patterns",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 322,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "common 3d patterns"
     },
     {
@@ -20561,8 +20561,8 @@
       "source_location": "L147",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_147",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 322,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "principles"
     },
     {
@@ -20572,8 +20572,8 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_5_particle_effects",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "5. particle effects"
     },
     {
@@ -20583,8 +20583,8 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_types_of_particle_systems",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "types of particle systems"
     },
     {
@@ -20594,8 +20594,8 @@
       "source_location": "L168",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_libraries",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "libraries"
     },
     {
@@ -20605,8 +20605,8 @@
       "source_location": "L177",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_177",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "principles"
     },
     {
@@ -20616,8 +20616,8 @@
       "source_location": "L185",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "when to use"
     },
     {
@@ -21199,8 +21199,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_ux_psychology",
-      "community": 127,
-      "community_name": "frontend-design/SKILL.md",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "ux-psychology.md"
     },
     {
@@ -26193,8 +26193,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_1_framework_selection",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 323,
+      "community_name": "1. Framework Selection",
       "norm_label": "1. framework selection"
     },
     {
@@ -26204,8 +26204,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_master_decision_tree",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 323,
+      "community_name": "1. Framework Selection",
       "norm_label": "master decision tree"
     },
     {
@@ -26215,8 +26215,8 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_framework_comparison",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 323,
+      "community_name": "1. Framework Selection",
       "norm_label": "framework comparison"
     },
     {
@@ -26226,8 +26226,8 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_when_to_choose_native",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 323,
+      "community_name": "1. Framework Selection",
       "norm_label": "when to choose native"
     },
     {
@@ -26237,8 +26237,8 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_2_state_management_selection",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 324,
+      "community_name": "2. State Management Selection",
       "norm_label": "2. state management selection"
     },
     {
@@ -26248,8 +26248,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_react_native_state_decision",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 324,
+      "community_name": "2. State Management Selection",
       "norm_label": "react native state decision"
     },
     {
@@ -26259,8 +26259,8 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_flutter_state_decision",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 324,
+      "community_name": "2. State Management Selection",
       "norm_label": "flutter state decision"
     },
     {
@@ -26270,8 +26270,8 @@
       "source_location": "L162",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_state_management_anti_patterns",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 324,
+      "community_name": "2. State Management Selection",
       "norm_label": "state management anti-patterns"
     },
     {
@@ -26369,8 +26369,8 @@
       "source_location": "L372",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_7_project_type_templates",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 325,
+      "community_name": "7. Project Type Templates",
       "norm_label": "7. project type templates"
     },
     {
@@ -26380,8 +26380,8 @@
       "source_location": "L374",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_e_commerce_app",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 325,
+      "community_name": "7. Project Type Templates",
       "norm_label": "e-commerce app"
     },
     {
@@ -26391,8 +26391,8 @@
       "source_location": "L392",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_social_content_app",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 325,
+      "community_name": "7. Project Type Templates",
       "norm_label": "social/content app"
     },
     {
@@ -26402,8 +26402,8 @@
       "source_location": "L410",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_productivity_saas_app",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 325,
+      "community_name": "7. Project Type Templates",
       "norm_label": "productivity/saas app"
     },
     {
@@ -27095,8 +27095,8 @@
       "source_location": "L89",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_3_dark_mode_design",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
       "norm_label": "3. dark mode design"
     },
     {
@@ -27106,8 +27106,8 @@
       "source_location": "L91",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_dark_mode_benefits",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
       "norm_label": "dark mode benefits"
     },
     {
@@ -27117,8 +27117,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_dark_mode_color_strategy",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
       "norm_label": "dark mode color strategy"
     },
     {
@@ -27128,8 +27128,8 @@
       "source_location": "L123",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_text_colors_in_dark_mode",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
       "norm_label": "text colors in dark mode"
     },
     {
@@ -27139,8 +27139,8 @@
       "source_location": "L132",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_color_inversion_rules",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
       "norm_label": "color inversion rules"
     },
     {
@@ -27150,8 +27150,8 @@
       "source_location": "L150",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_4_outdoor_visibility",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 328,
+      "community_name": "4. Outdoor Visibility",
       "norm_label": "4. outdoor visibility"
     },
     {
@@ -27161,8 +27161,8 @@
       "source_location": "L152",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_the_sunlight_problem",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 328,
+      "community_name": "4. Outdoor Visibility",
       "norm_label": "the sunlight problem"
     },
     {
@@ -27172,8 +27172,8 @@
       "source_location": "L168",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_high_contrast_strategies",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 328,
+      "community_name": "4. Outdoor Visibility",
       "norm_label": "high contrast strategies"
     },
     {
@@ -27271,8 +27271,8 @@
       "source_location": "L287",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_7_color_accessibility",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 327,
+      "community_name": "7. Color Accessibility",
       "norm_label": "7. color accessibility"
     },
     {
@@ -27282,8 +27282,8 @@
       "source_location": "L289",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_colorblind_considerations",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 327,
+      "community_name": "7. Color Accessibility",
       "norm_label": "colorblind considerations"
     },
     {
@@ -27293,8 +27293,8 @@
       "source_location": "L307",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_contrast_testing_tools",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 327,
+      "community_name": "7. Color Accessibility",
       "norm_label": "contrast testing tools"
     },
     {
@@ -27304,8 +27304,8 @@
       "source_location": "L318",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_sufficient_contrast",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 327,
+      "community_name": "7. Color Accessibility",
       "norm_label": "sufficient contrast"
     },
     {
@@ -27348,8 +27348,8 @@
       "source_location": "L368",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_9_color_system_checklist",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 329,
+      "community_name": "9. Color System Checklist",
       "norm_label": "9. color system checklist"
     },
     {
@@ -27359,8 +27359,8 @@
       "source_location": "L370",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_before_choosing_colors",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 329,
+      "community_name": "9. Color System Checklist",
       "norm_label": "before choosing colors"
     },
     {
@@ -27370,8 +27370,8 @@
       "source_location": "L378",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_before_release",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 329,
+      "community_name": "9. Color System Checklist",
       "norm_label": "before release"
     },
     {
@@ -27381,8 +27381,8 @@
       "source_location": "L389",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_10_quick_reference",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 326,
+      "community_name": "10. Quick Reference",
       "norm_label": "10. quick reference"
     },
     {
@@ -27392,8 +27392,8 @@
       "source_location": "L391",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_dark_mode_backgrounds",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 326,
+      "community_name": "10. Quick Reference",
       "norm_label": "dark mode backgrounds"
     },
     {
@@ -27403,8 +27403,8 @@
       "source_location": "L401",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_text_on_dark",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 326,
+      "community_name": "10. Quick Reference",
       "norm_label": "text on dark"
     },
     {
@@ -27414,8 +27414,8 @@
       "source_location": "L409",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_contrast_ratios",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 326,
+      "community_name": "10. Quick Reference",
       "norm_label": "contrast ratios"
     },
     {
@@ -27678,8 +27678,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_pattern_questioning_matrix",
-      "community": 320,
-      "community_name": "3. Dark Mode Design",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "\ud83c\udfaf pattern questioning matrix"
     },
     {
@@ -27689,8 +27689,8 @@
       "source_location": "L131",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_navigation_pattern_questioning",
-      "community": 320,
-      "community_name": "3. Dark Mode Design",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "navigation pattern questioning"
     },
     {
@@ -27700,8 +27700,8 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_state_pattern_questioning",
-      "community": 320,
-      "community_name": "3. Dark Mode Design",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "state pattern questioning"
     },
     {
@@ -27711,8 +27711,8 @@
       "source_location": "L149",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_list_pattern_questioning",
-      "community": 320,
-      "community_name": "3. Dark Mode Design",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "list pattern questioning"
     },
     {
@@ -27722,8 +27722,8 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_ui_pattern_questioning",
-      "community": 320,
-      "community_name": "3. Dark Mode Design",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "ui pattern questioning"
     },
     {
@@ -30219,8 +30219,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_3_ios_color_system",
-      "community": 329,
-      "community_name": "9. Color System Checklist",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "3. ios color system"
     },
     {
@@ -30230,8 +30230,8 @@
       "source_location": "L104",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_system_colors_semantic",
-      "community": 329,
-      "community_name": "9. Color System Checklist",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "system colors (semantic)"
     },
     {
@@ -30241,8 +30241,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_system_accent_colors",
-      "community": 329,
-      "community_name": "9. Color System Checklist",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "system accent colors"
     },
     {
@@ -30252,8 +30252,8 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_dark_mode_considerations",
-      "community": 329,
-      "community_name": "9. Color System Checklist",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "dark mode considerations"
     },
     {
@@ -30263,8 +30263,8 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_4_ios_layout_spacing",
-      "community": 331,
-      "community_name": "4. iOS Layout & Spacing",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "4. ios layout & spacing"
     },
     {
@@ -30274,8 +30274,8 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_safe_areas",
-      "community": 331,
-      "community_name": "4. iOS Layout & Spacing",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "safe areas"
     },
     {
@@ -30285,8 +30285,8 @@
       "source_location": "L176",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_standard_margins_padding",
-      "community": 331,
-      "community_name": "4. iOS Layout & Spacing",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "standard margins & padding"
     },
     {
@@ -30296,8 +30296,8 @@
       "source_location": "L186",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_ios_grid_system",
-      "community": 331,
-      "community_name": "4. iOS Layout & Spacing",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "ios grid system"
     },
     {
@@ -30307,8 +30307,8 @@
       "source_location": "L205",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_5_ios_navigation_patterns",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "5. ios navigation patterns"
     },
     {
@@ -30318,8 +30318,8 @@
       "source_location": "L207",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_navigation_types",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "navigation types"
     },
     {
@@ -30329,8 +30329,8 @@
       "source_location": "L216",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_tab_bar_guidelines",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "tab bar guidelines"
     },
     {
@@ -30340,8 +30340,8 @@
       "source_location": "L236",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_navigation_bar_guidelines",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "navigation bar guidelines"
     },
     {
@@ -30351,8 +30351,8 @@
       "source_location": "L255",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_modal_presentations",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "modal presentations"
     },
     {
@@ -30362,8 +30362,8 @@
       "source_location": "L265",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_gestures",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "gestures"
     },
     {
@@ -30373,8 +30373,8 @@
       "source_location": "L277",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_6_ios_components",
-      "community": 321,
-      "community_name": "7. Accessibility Guidelines",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "6. ios components"
     },
     {
@@ -30384,8 +30384,8 @@
       "source_location": "L279",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_buttons",
-      "community": 321,
-      "community_name": "7. Accessibility Guidelines",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "buttons"
     },
     {
@@ -30395,8 +30395,8 @@
       "source_location": "L299",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_lists_tables",
-      "community": 321,
-      "community_name": "7. Accessibility Guidelines",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "lists & tables"
     },
     {
@@ -30406,8 +30406,8 @@
       "source_location": "L317",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_text_fields",
-      "community": 321,
-      "community_name": "7. Accessibility Guidelines",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "text fields"
     },
     {
@@ -30417,8 +30417,8 @@
       "source_location": "L334",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_segmented_controls",
-      "community": 321,
-      "community_name": "7. Accessibility Guidelines",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "segmented controls"
     },
     {
@@ -30428,8 +30428,8 @@
       "source_location": "L355",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_7_ios_specific_patterns",
-      "community": 322,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "7. ios specific patterns"
     },
     {
@@ -30439,8 +30439,8 @@
       "source_location": "L357",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_pull_to_refresh",
-      "community": 322,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "pull to refresh"
     },
     {
@@ -30450,8 +30450,8 @@
       "source_location": "L369",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_swipe_actions",
-      "community": 322,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "swipe actions"
     },
     {
@@ -30461,8 +30461,8 @@
       "source_location": "L385",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_context_menus",
-      "community": 322,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "context menus"
     },
     {
@@ -30472,8 +30472,8 @@
       "source_location": "L407",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_sheets_half_sheets",
-      "community": 322,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "sheets & half-sheets"
     },
     {
@@ -30483,8 +30483,8 @@
       "source_location": "L432",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_8_sf_symbols",
-      "community": 332,
-      "community_name": "8. SF Symbols",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "8. sf symbols"
     },
     {
@@ -30494,8 +30494,8 @@
       "source_location": "L434",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_usage_guidelines",
-      "community": 332,
-      "community_name": "8. SF Symbols",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "usage guidelines"
     },
     {
@@ -30505,8 +30505,8 @@
       "source_location": "L450",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_symbol_configurations",
-      "community": 332,
-      "community_name": "8. SF Symbols",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "symbol configurations"
     },
     {
@@ -30516,8 +30516,8 @@
       "source_location": "L467",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_symbol_best_practices",
-      "community": 332,
-      "community_name": "8. SF Symbols",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "symbol best practices"
     },
     {
@@ -36412,8 +36412,8 @@
       "source_location": "L100",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_4_attack_surface_mapping",
-      "community": 333,
-      "community_name": "4. Attack Surface Mapping",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "4. attack surface mapping"
     },
     {
@@ -36423,8 +36423,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_what_to_map",
-      "community": 333,
-      "community_name": "4. Attack Surface Mapping",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "what to map"
     },
     {
@@ -36434,8 +36434,8 @@
       "source_location": "L111",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_prioritization_matrix",
-      "community": 333,
-      "community_name": "4. Attack Surface Mapping",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "prioritization matrix"
     },
     {
@@ -36566,8 +36566,8 @@
       "source_location": "L222",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_9_cloud_security_considerations",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "9. cloud security considerations"
     },
     {
@@ -36577,8 +36577,8 @@
       "source_location": "L224",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_shared_responsibility",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "shared responsibility"
     },
     {
@@ -36588,8 +36588,8 @@
       "source_location": "L233",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_cloud_specific_checks",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "cloud-specific checks"
     },
     {
@@ -42731,72 +42731,6 @@
       "norm_label": "fazit"
     },
     {
-      "label": "de/youtube-premium-alternatives-background-play.mdx",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_content_blog_de_youtube_premium_alternatives_background_play",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
-      "norm_label": "de/youtube-premium-alternatives-background-play.mdx"
-    },
-    {
-      "label": "Was die offiziellen Tarife kosten und enthalten",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L47",
-      "_origin": "ast",
-      "id": "src_content_blog_de_youtube_premium_alternatives_background_play_was_die_offiziellen_tarife_kosten_und_enthalten",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
-      "norm_label": "was die offiziellen tarife kosten und enthalten"
-    },
-    {
-      "label": "Was die kostenlosen Alternativen tats\u00e4chlich ersetzen",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L71",
-      "_origin": "ast",
-      "id": "src_content_blog_de_youtube_premium_alternatives_background_play_was_die_kostenlosen_alternativen_tats\u00e4chlich_ersetzen",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
-      "norm_label": "was die kostenlosen alternativen tatsachlich ersetzen"
-    },
-    {
-      "label": "Das eine Problem, das keine davon l\u00f6st",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L107",
-      "_origin": "ast",
-      "id": "src_content_blog_de_youtube_premium_alternatives_background_play_das_eine_problem_das_keine_davon_l\u00f6st",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
-      "norm_label": "das eine problem, das keine davon lost"
-    },
-    {
-      "label": "Also einfach zahlen?",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L126",
-      "_origin": "ast",
-      "id": "src_content_blog_de_youtube_premium_alternatives_background_play_also_einfach_zahlen",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
-      "norm_label": "also einfach zahlen?"
-    },
-    {
-      "label": "Fazit",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L148",
-      "_origin": "ast",
-      "id": "src_content_blog_de_youtube_premium_alternatives_background_play_fazit",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
-      "norm_label": "fazit"
-    },
-    {
       "label": "de/youtube-screen-off-battery-hack.md",
       "file_type": "document",
       "source_file": "src/content/blog/de/youtube-screen-off-battery-hack.md",
@@ -45313,72 +45247,6 @@
       "id": "src_content_blog_en_youtube_background_play_2026_workaround_bottom_line",
       "community": 176,
       "community_name": "en/youtube-background-play-2026-workaround.mdx",
-      "norm_label": "bottom line"
-    },
-    {
-      "label": "en/youtube-premium-alternatives-background-play.mdx",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_content_blog_en_youtube_premium_alternatives_background_play",
-      "community": 297,
-      "community_name": "@astrojs/check",
-      "norm_label": "en/youtube-premium-alternatives-background-play.mdx"
-    },
-    {
-      "label": "What the official tiers cost and include",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L47",
-      "_origin": "ast",
-      "id": "src_content_blog_en_youtube_premium_alternatives_background_play_what_the_official_tiers_cost_and_include",
-      "community": 297,
-      "community_name": "@astrojs/check",
-      "norm_label": "what the official tiers cost and include"
-    },
-    {
-      "label": "What the free alternatives actually replace",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L70",
-      "_origin": "ast",
-      "id": "src_content_blog_en_youtube_premium_alternatives_background_play_what_the_free_alternatives_actually_replace",
-      "community": 297,
-      "community_name": "@astrojs/check",
-      "norm_label": "what the free alternatives actually replace"
-    },
-    {
-      "label": "The one thing none of them solve",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L104",
-      "_origin": "ast",
-      "id": "src_content_blog_en_youtube_premium_alternatives_background_play_the_one_thing_none_of_them_solve",
-      "community": 297,
-      "community_name": "@astrojs/check",
-      "norm_label": "the one thing none of them solve"
-    },
-    {
-      "label": "So should you just pay?",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L123",
-      "_origin": "ast",
-      "id": "src_content_blog_en_youtube_premium_alternatives_background_play_so_should_you_just_pay",
-      "community": 297,
-      "community_name": "@astrojs/check",
-      "norm_label": "so should you just pay?"
-    },
-    {
-      "label": "Bottom line",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L146",
-      "_origin": "ast",
-      "id": "src_content_blog_en_youtube_premium_alternatives_background_play_bottom_line",
-      "community": 297,
-      "community_name": "@astrojs/check",
       "norm_label": "bottom line"
     },
     {
@@ -47920,72 +47788,6 @@
       "id": "src_content_blog_fr_youtube_background_play_2026_workaround_en_r\u00e9sum\u00e9",
       "community": 178,
       "community_name": "fr/youtube-background-play-2026-workaround.mdx",
-      "norm_label": "en resume"
-    },
-    {
-      "label": "fr/youtube-premium-alternatives-background-play.mdx",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_youtube_premium_alternatives_background_play",
-      "community": 301,
-      "community_name": "6. Dark Mode Principles",
-      "norm_label": "fr/youtube-premium-alternatives-background-play.mdx"
-    },
-    {
-      "label": "Ce que co\u00fbtent et contiennent les formules officielles",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L48",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_youtube_premium_alternatives_background_play_ce_que_co\u00fbtent_et_contiennent_les_formules_officielles",
-      "community": 301,
-      "community_name": "6. Dark Mode Principles",
-      "norm_label": "ce que coutent et contiennent les formules officielles"
-    },
-    {
-      "label": "Ce que remplacent r\u00e9ellement les alternatives gratuites",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L71",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_youtube_premium_alternatives_background_play_ce_que_remplacent_r\u00e9ellement_les_alternatives_gratuites",
-      "community": 301,
-      "community_name": "6. Dark Mode Principles",
-      "norm_label": "ce que remplacent reellement les alternatives gratuites"
-    },
-    {
-      "label": "Le seul probl\u00e8me qu'aucune ne r\u00e9sout",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L107",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_youtube_premium_alternatives_background_play_le_seul_probl\u00e8me_qu_aucune_ne_r\u00e9sout",
-      "community": 301,
-      "community_name": "6. Dark Mode Principles",
-      "norm_label": "le seul probleme qu'aucune ne resout"
-    },
-    {
-      "label": "Alors, faut-il simplement payer ?",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L125",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_youtube_premium_alternatives_background_play_alors_faut_il_simplement_payer",
-      "community": 301,
-      "community_name": "6. Dark Mode Principles",
-      "norm_label": "alors, faut-il simplement payer ?"
-    },
-    {
-      "label": "En r\u00e9sum\u00e9",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L147",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_youtube_premium_alternatives_background_play_en_r\u00e9sum\u00e9",
-      "community": 301,
-      "community_name": "6. Dark Mode Principles",
       "norm_label": "en resume"
     },
     {
@@ -97737,61 +97539,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L126",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_youtube_premium_alternatives_background_play",
-      "target": "src_content_blog_de_youtube_premium_alternatives_background_play_also_einfach_zahlen",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L107",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_youtube_premium_alternatives_background_play",
-      "target": "src_content_blog_de_youtube_premium_alternatives_background_play_das_eine_problem_das_keine_davon_l\u00f6st",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L148",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_youtube_premium_alternatives_background_play",
-      "target": "src_content_blog_de_youtube_premium_alternatives_background_play_fazit",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L71",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_youtube_premium_alternatives_background_play",
-      "target": "src_content_blog_de_youtube_premium_alternatives_background_play_was_die_kostenlosen_alternativen_tats\u00e4chlich_ersetzen",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L47",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_youtube_premium_alternatives_background_play",
-      "target": "src_content_blog_de_youtube_premium_alternatives_background_play_was_die_offiziellen_tarife_kosten_und_enthalten",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/de/youtube-screen-off-battery-hack.md",
       "source_location": "L62",
       "weight": 1.0,
@@ -100042,61 +99789,6 @@
       "_origin": "ast",
       "source": "src_content_blog_en_youtube_background_play_2026_workaround",
       "target": "src_content_blog_en_youtube_background_play_2026_workaround_why_everything_broke_in_january_2026",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L146",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_youtube_premium_alternatives_background_play",
-      "target": "src_content_blog_en_youtube_premium_alternatives_background_play_bottom_line",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L123",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_youtube_premium_alternatives_background_play",
-      "target": "src_content_blog_en_youtube_premium_alternatives_background_play_so_should_you_just_pay",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L104",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_youtube_premium_alternatives_background_play",
-      "target": "src_content_blog_en_youtube_premium_alternatives_background_play_the_one_thing_none_of_them_solve",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L70",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_youtube_premium_alternatives_background_play",
-      "target": "src_content_blog_en_youtube_premium_alternatives_background_play_what_the_free_alternatives_actually_replace",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L47",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_youtube_premium_alternatives_background_play",
-      "target": "src_content_blog_en_youtube_premium_alternatives_background_play_what_the_official_tiers_cost_and_include",
       "confidence_score": 1.0
     },
     {
@@ -102379,61 +102071,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L125",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_youtube_premium_alternatives_background_play",
-      "target": "src_content_blog_fr_youtube_premium_alternatives_background_play_alors_faut_il_simplement_payer",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L48",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_youtube_premium_alternatives_background_play",
-      "target": "src_content_blog_fr_youtube_premium_alternatives_background_play_ce_que_co\u00fbtent_et_contiennent_les_formules_officielles",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L71",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_youtube_premium_alternatives_background_play",
-      "target": "src_content_blog_fr_youtube_premium_alternatives_background_play_ce_que_remplacent_r\u00e9ellement_les_alternatives_gratuites",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L147",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_youtube_premium_alternatives_background_play",
-      "target": "src_content_blog_fr_youtube_premium_alternatives_background_play_en_r\u00e9sum\u00e9",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/youtube-premium-alternatives-background-play.mdx",
-      "source_location": "L107",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_youtube_premium_alternatives_background_play",
-      "target": "src_content_blog_fr_youtube_premium_alternatives_background_play_le_seul_probl\u00e8me_qu_aucune_ne_r\u00e9sout",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/fr/youtube-screen-off-battery-hack.md",
       "source_location": "L68",
       "weight": 1.0,
@@ -102576,5 +102213,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "26efb5b93dba6125343f1c1088504e25e96a9e76"
+  "built_at_commit": "c5cbbd6bfdfba15c459d114cadb36aa8e6176cfa"
 }
