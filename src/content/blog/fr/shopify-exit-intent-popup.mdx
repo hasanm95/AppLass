@@ -1,0 +1,169 @@
+---
+title: "Pop-ups d'Intention de Sortie Shopify : Pourquoi le Mobile Exige d'Autres Déclencheurs (2026)"
+description: "Le mobile n'a pas de curseur : l'intention de sortie classique ne s'y déclenche donc jamais. Voici les quatre signaux de substitution, les deux règles de navigateur qui cassent silencieusement la plupart des implémentations, et quoi utiliser quand aucune ne convient."
+date: "2026-11-12"
+dateModified: "2026-11-12"
+author: "Équipe AppLass"
+excerpt: "Sur ordinateur, l'intention de sortie surveille le curseur qui remonte vers la barre du navigateur. Le mobile n'a pas de curseur : il lui faut des substituts — retour arrière, remontée rapide, inactivité, changement d'onglet. Deux règles de navigateur cassent les versions naïves, dont une qui rend la détection du retour inutile face aux rebonds."
+tags: ["Shopify", "intention de sortie", "pop-ups", "mobile", "conversion", "JavaScript"]
+category: "Guide Pratique"
+keywords: "pop-up intention de sortie shopify, exit intent mobile, déclencheur exit intent mobile, exit intent ne fonctionne pas mobile, pop-up bouton retour shopify, exit intent javascript, application pop-up shopify"
+breadcrumbName: "Pop-ups de Sortie"
+thumbnail: "../../../assets/blogs/shopify-exit-intent-popup.png"
+sidebarApps:
+  - fomogen
+featured: true
+faqs:
+  - question: "Comment fonctionne l'intention de sortie sur mobile sans curseur ?"
+    answer: "Elle s'appuie sur des signaux de substitution plutôt que sur la position du curseur. Quatre sont courants : l'appui sur retour, une remontée rapide de la page, un minuteur d'inactivité et un changement d'onglet ou événement de perte de focus. Aucun ne détecte le départ aussi bien que le curseur : sur mobile, l'intention de sortie reste une supposition."
+  - question: "Pourquoi mon pop-up de sortie ne s'affiche-t-il pas sur mobile ?"
+    answer: "Il s'agit très probablement d'une implémentation conçue pour ordinateur. Celle-ci écoute la sortie du pointeur par le haut de la fenêtre, ce qui n'arrive jamais sur un écran tactile faute de pointeur. Si votre application ne propose qu'une détection à la souris, les visiteurs mobiles ne verront jamais le pop-up, quels que soient les réglages."
+  - question: "Puis-je utiliser beforeunload pour afficher un pop-up de sortie ?"
+    answer: "Non. Tous les grands navigateurs ont supprimé les messages personnalisés dans la boîte beforeunload — Chrome depuis la version 51 — et n'affichent qu'un texte générique contrôlé par le navigateur. La boîte exige en outre une interaction préalable du visiteur. Vous ne pouvez y afficher aucune offre."
+  - question: "La détection du bouton retour capte-t-elle les visiteurs qui rebondissent aussitôt ?"
+    answer: "Non, et cela surprend. L'intervention de Chrome sur la manipulation de l'historique ignore les entrées ajoutées sans geste de l'utilisateur : l'événement popstate ne se déclenche donc jamais. Un visiteur qui arrive et appuie immédiatement sur retour n'a pas interagi ; le piège reste sans effet, précisément face au visiteur visé."
+  - question: "Intercepter le bouton retour est-il un dark pattern ?"
+    answer: "On en est proche. Le bouton retour est une commande du navigateur dont les utilisateurs attendent un comportement précis ; le détourner pour afficher une offre confisque une navigation qu'on ne vous a pas confiée. Si vous l'utilisez : une fois par session au maximum, avec un pop-up réellement facile à fermer."
+  - question: "Qu'est-ce qui fonctionne mieux que l'intention de sortie sur mobile ?"
+    answer: "La profondeur de défilement combinée au temps passé. Ce n'est pas de la détection de sortie, mais c'est fiable sur tous les appareils et cela vise les visiteurs engagés plutôt que ceux qui partent. Déclencher aux deux tiers de la page, une fois par session, surpasse généralement les suppositions au moment du départ."
+---
+
+import FomogenCTA from "@/components/blog/FomogenCTA.astro";
+
+**Sur ordinateur, l'intention de sortie surveille le curseur qui remonte vers l'interface du
+navigateur. Le mobile n'a pas de curseur : ce code ne s'y déclenche donc jamais — pas rarement,
+jamais.** Si votre pop-up est réglé sur l'intention de sortie et que les visiteurs mobiles ne le
+voient jamais, c'est presque toujours l'explication.
+
+Le mobile exige des signaux de substitution. Quatre sont couramment utilisés, et deux règles de
+navigateur cassent discrètement leur implémentation naïve. La seconde fait échouer la technique
+mobile la plus répandue exactement auprès des visiteurs pour lesquels elle a été conçue.
+
+---
+
+## Comment fonctionne l'intention de sortie sur ordinateur, et pourquoi elle ne se transpose pas
+
+**La détection sur ordinateur écoute la sortie du pointeur par le bord supérieur de la fenêtre** —
+typiquement un `mouseout` sur le document dont la coordonnée verticale est à zéro ou au-dessus, ce
+qui signifie que le curseur est passé dans l'interface du navigateur, en route vers le bouton de
+fermeture, la barre d'adresse ou un autre onglet.
+
+C'est un très bon signal. Se diriger vers l'interface du navigateur est une déclaration d'intention
+forte, et elle arrive avant que le visiteur ne parte réellement.
+
+Les écrans tactiles n'ont rien de tout cela. Pas d'état de survol, pas de position de pointeur entre
+deux appuis, aucun équivalent du « se dirige vers la sortie ». Un doigt touche la vitre ou non.
+Toutes les techniques mobiles ci-dessous tentent de reconstruire l'intention à partir de
+comportements qui ne font que corréler avec le départ.
+
+## Les quatre déclencheurs mobiles
+
+| Déclencheur | Comment il est détecté | Où il échoue |
+|---|---|---|
+| **Appui sur retour** | Entrée d'historique ajoutée plus écouteur `popstate` | Reste sans effet si le visiteur n'a pas interagi — voir plus bas |
+| **Remontée rapide** | Delta de défilement vers le haut sur un court intervalle | Se déclenche sans cesse lors d'une relecture ou d'une vérification de prix |
+| **Inactivité** | Aucun appui ni défilement pendant un délai donné | Détecte la distraction, pas le départ ; le visiteur lit peut-être |
+| **Changement d'onglet / blur** | `visibilitychange` ou `blur` | Se déclenche sur une notification ; le pop-up s'affiche sans être vu |
+
+Notez ce que la dernière colonne a en commun. Chacun se déclenche sur un comportement qui précède
+*parfois* le départ, et souvent pas. L'intention de sortie sur ordinateur a aussi ses faux positifs,
+mais bien moins nombreux : atteindre la barre d'adresse a moins d'explications innocentes que
+remonter la page.
+
+Conséquence pratique : sur mobile, réglez l'intention de sortie de façon conservatrice et limitez-la
+à une fois par session. Un faux positif sur ordinateur est un pop-up légèrement agaçant. Sur un
+petit écran, un calque qui recouvre le produit pendant la lecture est une raison de partir.
+
+<FomogenCTA lang="fr" />
+
+## Deux règles de navigateur qui cassent la plupart des implémentations
+
+### `beforeunload` ne peut pas afficher votre offre
+
+Des guides conseillent encore de s'accrocher à `beforeunload`. Cela ne fera pas ce que vous
+souhaitez. **Tous les grands navigateurs ont supprimé les messages personnalisés dans cette boîte —
+Chrome depuis la version 51 — et n'affichent qu'un texte générique qu'ils contrôlent.** La boîte
+exige en outre une interaction préalable, sans quoi elle n'apparaît pas du tout.
+
+Vous ne pouvez y afficher ni offre, ni code de réduction, ni le moindre balisage. C'est une
+confirmation que vous ne contrôlez pas, pas une surface d'affichage.
+
+### Le piège du bouton retour échoue silencieusement sur les rebonds
+
+C'est le point important, et presque rien de ce qui s'écrit sur le sujet ne le mentionne.
+
+La technique habituelle ajoute une entrée d'historique au chargement, puis écoute `popstate` pour
+intercepter l'appui sur retour et afficher un pop-up au lieu de quitter la page. **L'intervention de
+Chrome sur la manipulation de l'historique ignore les entrées ajoutées sans geste de
+l'utilisateur**, et `popstate` ne se déclenche donc jamais.
+
+Autrement dit : un visiteur arrive, n'appuie ni ne fait défiler, puis revient en arrière. Aucun
+geste n'a été enregistré, l'entrée est ignorée, votre gestionnaire ne s'exécute pas. Le piège ne
+fonctionne que pour les visiteurs ayant déjà interagi — et reste inerte face au rebond rapide qu'il
+devait intercepter.
+
+Ce n'est pas un bug à contourner. Le navigateur protège délibérément la navigation, et cela devrait
+changer la valeur que vous accordez à la technique : voyez la détection du retour comme un moyen de
+rattraper des visiteurs engagés qui s'en vont, pas comme un outil anti-rebond.
+
+## Faut-il seulement intercepter le bouton retour ?
+
+On frôle une limite qui mérite le respect. Le bouton retour est une commande du navigateur dont les
+gens attendent un comportement donné ; le détourner pour afficher une offre confisque une navigation
+qu'on ne vous a pas confiée. Le balayage européen qui a signalé les faux comptes à rebours comme
+dark pattern examinait précisément cette famille de comportements : des éléments d'interface qui
+font autre chose que ce que l'utilisateur attend.
+
+Si vous l'utilisez :
+
+- Déclenchez **une fois par session**, jamais de façon répétée.
+- Rendez le pop-up **réellement facile à fermer**, avec une vraie commande, pas un minuscule × gris.
+- Assurez-vous que **le second appui sur retour fait bien sortir**. Piéger quelqu'un deux fois est
+  indéfendable.
+
+## Que faire à la place
+
+**La profondeur de défilement combinée au temps passé.** Ce n'est pas de la détection de sortie, et
+c'est justement l'intérêt : un signal fiable, identique sur tous les appareils, qui vise les
+visiteurs engagés au lieu de deviner ceux qui partent.
+
+Un visiteur ayant lu les deux tiers d'une fiche produit et y ayant passé un temps réel a manifesté
+son intérêt. Lui proposer quelque chose à ce moment-là convertit mieux que d'intercepter une
+remontée ambiguë, et cela ne se déclenche jamais sur quelqu'un qui vérifiait seulement les frais de
+port.
+
+Appliquez la même discipline : une fois par session, refermable, et supprimé pour quiconque a déjà
+ajouté au panier. Si votre objectif est de récupérer des paniers mobiles, une
+[barre d'ajout au panier collante](/blog/mobile-sticky-cart-guide) fait plus de travail que
+n'importe quel calque : elle est toujours disponible et n'interrompt jamais.
+
+## Mise en place sur Shopify
+
+1. Choisissez une application dotée de **vrais déclencheurs mobiles**, pas d'un suivi de souris avec
+   un interrupteur « mobile ». [FOMO Gen](https://apps.shopify.com/fomo-gen) sépare les deux : suivi
+   cinétique sur ordinateur, inactivité et appui sur retour sur mobile.
+2. Réglez la **fréquence sur une fois par session.** C'est de loin le réglage le plus important.
+3. Ajoutez une **condition sur la valeur du panier**, pour supprimer l'offre chez ceux qui ont déjà
+   ajouté au panier, ou la faire varier selon le montant.
+4. Faites que l'offre vaille l'interruption. Une remise que le visiteur aurait trouvée de toute
+   façon ne justifie pas un calque.
+5. **Testez sur un vrai appareil**, pas en mode responsive d'un navigateur de bureau : le tactile
+   émulé ne reproduit fidèlement ni le retour ni les événements de visibilité.
+6. Surveillez le coût en performance. Les pop-ups chargent du JavaScript sur chaque page ; voyez
+   [vitesse du site et preuve sociale](/blog/shopify-site-speed-social-proof) pour garder cela sous
+   contrôle.
+
+<FomogenCTA lang="fr" />
+
+## En résumé
+
+L'intention de sortie sur mobile est un ensemble de suppositions éclairées, pas un système de
+détection, et deux règles de navigateur la contraignent davantage que ne l'admettent la plupart des
+guides : `beforeunload` ne peut pas afficher votre pop-up, et le piège du bouton retour ne fait rien
+face aux visiteurs qui n'ont pas interagi.
+
+Ajustez vos attentes en conséquence. Utilisez les substituts avec parcimonie, limitez-les à une fois
+par session, et appuyez-vous sur la profondeur de défilement et le temps passé quand vous voulez de
+la fiabilité. La [psychologie derrière l'offre](/blog/psychology-of-fomo-marketing) compte plus que
+l'ingéniosité du déclencheur : une bonne offre à un moment correct bat un déclencheur parfait
+attaché à une offre faible.

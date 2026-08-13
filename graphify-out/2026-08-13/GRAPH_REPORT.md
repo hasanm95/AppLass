@@ -1,16 +1,16 @@
-# Graph Report - AppLass  (2026-08-13)
+# Graph Report - AppLass  (2026-08-02)
 
 ## Corpus Check
-- 466 files · ~1,769,854 words
+- 463 files · ~1,757,611 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4378 nodes · 4910 edges · 335 communities (319 shown, 16 thin omitted)
+- 4348 nodes · 4883 edges · 331 communities (315 shown, 16 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.61)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `26efb5b9`
+- Built from commit: `c5cbbd6b`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -283,7 +283,6 @@
 - 1. Security Expert Mindset
 - 2. OWASP Top 10:2025
 - 6. Weight and Emphasis Principles
-- 8. Hierarchy Principles
 - 6. Exceptional Conditions (A10 - New)
 - 8. Code Pattern Analysis
 - 9. Cloud Security Considerations
@@ -338,10 +337,6 @@
 - 4. Outdoor Visibility
 - 9. Color System Checklist
 - 5. Risk Prioritization
-- 4. Dynamic Type / Text Scaling
-- 6. Dark Mode Typography
-- 8. Font Loading & Performance
-- 4. Attack Surface Mapping
 
 ## God Nodes (most connected - your core abstractions)
 1. `@/i18n/localize` - 86 edges
@@ -370,7 +365,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (335 total, 16 thin omitted)
+## Communities (331 total, 16 thin omitted)
 
 ### Community 0 - "@/i18n/localize"
 Cohesion: 0.12
@@ -413,8 +408,8 @@ Cohesion: 0.05
 Nodes (44): 10. iOS Checklist, 1. Human Interface Guidelines Philosophy, 2. iOS Typography, 3. iOS Color System, 4. iOS Layout & Spacing, 5. iOS Navigation Patterns, 6. iOS Components, 7. iOS Specific Patterns (+36 more)
 
 ### Community 10 - "Visual Effects Reference"
-Cohesion: 0.20
-Nodes (10): 10. Effect Selection Checklist, 5. Border Effects Principles, 7. Overlay Techniques, Animated Borders, Anti-Patterns, Colored Overlay, Glow Borders, Gradient Borders (+2 more)
+Cohesion: 0.05
+Nodes (42): 10. Effect Selection Checklist, 1. Glassmorphism Principles, 2. Neomorphism Principles, 3. Shadow Hierarchy Principles, 4. Gradient Principles, 5. Border Effects Principles, 6. Glow Effects Principles, 7. Overlay Techniques (+34 more)
 
 ### Community 11 - "Mobile Backend Patterns"
 Cohesion: 0.05
@@ -429,12 +424,12 @@ Cohesion: 0.05
 Nodes (39): 10. Animation Decision Checklist, 1. Duration Principles, 2. Easing Principles, 3. Micro-Interaction Principles, 4. Loading States Principles, 5. Page Transitions Principles, 6. Scroll Animation Principles, 7. Hover Effects Principles (+31 more)
 
 ### Community 14 - "Mobile Color System Reference"
-Cohesion: 0.05
-Nodes (38): 10. Quick Reference, 1. Mobile Color Fundamentals, 2. OLED Considerations, 3. Dark Mode Design, 4. Outdoor Visibility, 5. Semantic Colors, 6. Dynamic Color (Android), 7. Color Accessibility (+30 more)
+Cohesion: 0.10
+Nodes (19): 1. Mobile Color Fundamentals, 2. OLED Considerations, 5. Semantic Colors, 6. Dynamic Color (Android), 8. Color Anti-Patterns, ❌ AI Color Mistakes, Battery Savings with OLED, ❌ Common Mistakes (+11 more)
 
 ### Community 15 - "Mobile Typography Reference"
-Cohesion: 0.10
-Nodes (19): 1. Mobile Typography Fundamentals, 2. System Fonts, 5. Typography Accessibility, 7. Typography Anti-Patterns, 9. Typography Checklist, ❌ AI Typography Mistakes, Android: Roboto Family, Before Any Text Design (+11 more)
+Cohesion: 0.05
+Nodes (38): 10. Quick Reference, 1. Mobile Typography Fundamentals, 2. System Fonts, 3. Type Scale, 4. Dynamic Type / Text Scaling, 5. Typography Accessibility, 6. Dark Mode Typography, 7. Typography Anti-Patterns (+30 more)
 
 ### Community 16 - "Python Patterns"
 Cohesion: 0.05
@@ -481,8 +476,8 @@ Cohesion: 0.07
 Nodes (29): API Development, API Style Selection, Architecture, Backend Development Architect, Common Anti-Patterns You Avoid, 🛑 CRITICAL: CLARIFY BEFORE CODING (MANDATORY), Database & Data, Database Selection (2025) (+21 more)
 
 ### Community 27 - "Color System Reference"
-Cohesion: 0.13
-Nodes (14): 2. The 60-30-10 Rule, 4. Palette Generation Principles, 5. Context-Based Selection Guide, 8. Color Selection Checklist, 9. Anti-Patterns to Avoid, Color System Reference, Distribution Principle, ✅ DO: (+6 more)
+Cohesion: 0.14
+Nodes (14): 2. The 60-30-10 Rule, 3. Color Psychology - Meaning & Selection, 5. Context-Based Selection Guide, 8. Color Selection Checklist, 9. Anti-Patterns to Avoid, Color System Reference, Distribution Principle, ✅ DO: (+6 more)
 
 ### Community 28 - "Mobile Design System"
 Cohesion: 0.07
@@ -745,8 +740,8 @@ Cohesion: 0.12
 Nodes (15): 1. README Structure, 2. API Documentation Structure, 3. Code Comment Guidelines, 4. Changelog Template (Keep a Changelog), 5. Architecture Decision Record (ADR), 6. AI-Friendly Documentation (2025), 7. Structure Principles, Documentation Templates (+7 more)
 
 ### Community 93 - "Motion Graphics Reference"
-Cohesion: 0.06
-Nodes (35): 10. Quick Reference, 1. Lottie Animations, 2. GSAP (GreenSock), 3. SVG Animations, 4. 3D CSS Transforms, 5. Particle Effects, 6. Scroll-Driven Animations, 7. Performance Principles (+27 more)
+Cohesion: 0.18
+Nodes (11): 10. Quick Reference, 6. Scroll-Driven Animations, 7. Performance Principles, 8. Motion Graphics Decision Tree, 9. Anti-Patterns, Best Practices, GPU vs CPU Animation, Motion Graphics Reference (+3 more)
 
 ### Community 94 - "i18n & Localization"
 Cohesion: 0.12
@@ -877,7 +872,7 @@ Cohesion: 0.17
 Nodes (11): API Security Testing, Authentication Testing, Authorization Testing, BOLA/IDOR Testing, GraphQL Security, Input Validation Testing, JWT Testing, OWASP API Security Top 10 (+3 more)
 
 ### Community 127 - "frontend-design/SKILL.md"
-Cohesion: 0.18
+Cohesion: 0.29
 Nodes (6): Design Workflow, Guidelines Source, How It Works, Related Skills, Usage, Web Interface Guidelines
 
 ### Community 128 - "1. Core UX Laws"
@@ -994,7 +989,7 @@ Nodes (8): check_page(), find_pages(), is_page_file(), main(), Path, Check if th
 
 ### Community 156 - "Vulnerability Scanner"
 Cohesion: 0.22
-Nodes (9): 10. Anti-Patterns, 7. Scanning Methodology, 9. Cloud Security Considerations, Cloud-Specific Checks, Phase-Based Approach, 📋 Reference Files, 🔧 Runtime Scripts, Shared Responsibility (+1 more)
+Nodes (9): 10. Anti-Patterns, 4. Attack Surface Mapping, 7. Scanning Methodology, Phase-Based Approach, Prioritization Matrix, 📋 Reference Files, 🔧 Runtime Scripts, Vulnerability Scanner (+1 more)
 
 ### Community 157 - "/preview - Preview Management"
 Cohesion: 0.22
@@ -1428,10 +1423,6 @@ Nodes (3): 2025 Key Changes, 2. OWASP Top 10:2025, Risk Categories
 Cohesion: 0.29
 Nodes (6): Auftritt Mindful Guard: bewusste Reibung als Konstruktionsprinzip, Der Weg zum digitalen Wohlbefinden, Die drei Säulen der Mindful-Guard-Logik:, Die „Willenskraft-Lücke“ in der Produktivität, Fazit: Holen Sie sich Ihre 3 Stunden zurück, Warum Barrierefreiheit für Konzentration zählt
 
-### Community 269 - "8. Hierarchy Principles"
-Cohesion: 0.20
-Nodes (9): `beforeunload` kann Ihr Angebot nicht anzeigen, Die vier mobilen Auslöser, Die Zurück-Falle versagt still bei Absprüngen, Einrichtung bei Shopify, Fazit, Sollte man die Zurück-Taste überhaupt abfangen?, Was Sie stattdessen nutzen, Wie Exit-Intent am Desktop funktioniert — und warum es sich nicht übertragen lässt (+1 more)
-
 ### Community 270 - "6. Exceptional Conditions (A10 - New)"
 Cohesion: 0.67
 Nodes (3): 6. Exceptional Conditions (A10 - New), Fail-Open vs Fail-Closed, What to Check
@@ -1465,8 +1456,8 @@ Cohesion: 0.33
 Nodes (5): Das Zero-Telemetry-Manifest, Datenschutz als Fundament, Holen Sie sich Ihre neuronale Architektur zurück, Warum Datenschutz gleich Performance ist, Was Analytics wirklich kostet
 
 ### Community 282 - "9. Cloud Security Considerations"
-Cohesion: 0.20
-Nodes (9): `beforeunload` cannot show your offer, Bottom line, How desktop exit intent works, and why it does not port, Setting it up on Shopify, Should you intercept the back button at all?, The back-button trap silently fails on bounces, The four mobile triggers, Two browser rules that break most implementations (+1 more)
+Cohesion: 0.67
+Nodes (3): 9. Cloud Security Considerations, Cloud-Specific Checks, Shared Responsibility
 
 ### Community 284 - "@astrojs/check"
 Cohesion: 0.67
@@ -1477,8 +1468,8 @@ Cohesion: 0.14
 Nodes (13): Ein konkretes Rechenbeispiel, Häufige Fehler, die Sie vermeiden sollten, Mit Social Proof kombinieren für noch bessere Ergebnisse, Schritt 1: FomoGen installieren, Schritt 2: Funktion „Versandkostenfrei-Leiste“ öffnen, Schritt 3: Schwellenwert festlegen, Schritt 4: Ihre Texte formulieren, Schritt 5: Anzeigeorte wählen (+5 more)
 
 ### Community 297 - "@astrojs/check"
-Cohesion: 0.20
-Nodes (9): `beforeunload` ne peut pas afficher votre offre, Comment fonctionne l'intention de sortie sur ordinateur, et pourquoi elle ne se transpose pas, Deux règles de navigateur qui cassent la plupart des implémentations, En résumé, Faut-il seulement intercepter le bouton retour ?, Le piège du bouton retour échoue silencieusement sur les rebonds, Les quatre déclencheurs mobiles, Mise en place sur Shopify (+1 more)
+Cohesion: 0.50
+Nodes (4): 4. Palette Generation Principles, From a Single Color (HSL Method), Generating a Full Palette, Saturation Adjustments
 
 ### Community 298 - "package.json"
 Cohesion: 0.50
@@ -1530,19 +1521,19 @@ Nodes (6): Blocage de toute l'application ou blocage des seuls Reels, L'essentie
 
 ### Community 313 - "3. Mobile API Optimization"
 Cohesion: 0.40
-Nodes (5): 1. Glassmorphism Principles, The Pattern (Customize Values), What Makes Glassmorphism Work, When NOT to Use, When to Use Glassmorphism
+Nodes (5): 1. Lottie Animations, Principles, Sources, What is Lottie?, When to Use Lottie
 
 ### Community 314 - "8. Security for Mobile"
 Cohesion: 0.40
-Nodes (5): 2. Neomorphism Principles, Accessibility Warning, The Pattern, What Makes Neomorphism Work, When to Use
+Nodes (5): 2. GSAP (GreenSock), Core Concepts, Principles, What Makes GSAP Different, When to Use GSAP
 
 ### Community 315 - "8. Portfolio Guidelines {#portfolio}"
 Cohesion: 0.40
-Nodes (5): 3. Shadow Hierarchy Principles, Concept: Shadows Indicate Elevation, Dark Mode Shadows, Principles for Natural Shadows, Shadow Properties to Adjust
+Nodes (5): 3. SVG Animations, Line Drawing Principles, Principles, Types of SVG Animation, When to Use SVG Animations
 
 ### Community 316 - "4. Animation Performance (Both Platforms)"
 Cohesion: 0.40
-Nodes (5): 4. Gradient Principles, Creating Harmonious Gradients, Gradient Syntax Pattern, Mesh Gradients, Types and When to Use
+Nodes (5): 5. Particle Effects, Libraries, Principles, Types of Particle Systems, When to Use
 
 ### Community 317 - "de/calculate-free-shipping-threshold.md"
 Cohesion: 0.40
@@ -1557,8 +1548,8 @@ Cohesion: 0.50
 Nodes (4): 1. Color Theory Fundamentals, Color Relationships, How to Choose a Scheme:, The Color Wheel
 
 ### Community 320 - "3. Dark Mode Design"
-Cohesion: 0.50
-Nodes (4): 3. Color Psychology - Meaning & Selection, Emotional Associations (For Decision Making), How to Choose Based on Context, Selection Process:
+Cohesion: 0.40
+Nodes (5): 3. Dark Mode Design, Color Inversion Rules, Dark Mode Benefits, Dark Mode Color Strategy, Text Colors in Dark Mode
 
 ### Community 321 - "7. Accessibility Guidelines"
 Cohesion: 0.50
@@ -1566,7 +1557,7 @@ Nodes (4): 7. Accessibility Guidelines, Contrast Requirements (WCAG), How to Che
 
 ### Community 322 - "4. 3D CSS Transforms"
 Cohesion: 0.50
-Nodes (4): 6. Glow Effects Principles, Element Glow, Pulsing Glow Animation, Text Glow
+Nodes (4): 4. 3D CSS Transforms, Common 3D Patterns, Core Properties, Principles
 
 ### Community 323 - "1. Framework Selection"
 Cohesion: 0.50
@@ -1582,52 +1573,38 @@ Nodes (4): 7. Project Type Templates, E-Commerce App, Productivity/SaaS App, Soc
 
 ### Community 326 - "10. Quick Reference"
 Cohesion: 0.50
-Nodes (4): 8. Modern CSS Techniques, Container Queries (Concept), :has() Selector (Concept), Scroll-Driven Animations (Concept)
+Nodes (4): 10. Quick Reference, Contrast Ratios, Dark Mode Backgrounds, Text on Dark
 
 ### Community 327 - "7. Color Accessibility"
 Cohesion: 0.50
-Nodes (4): 9. Performance Principles, GPU-Accelerated Properties, Reduced Motion, will-change Usage
+Nodes (4): 7. Color Accessibility, Colorblind Considerations, Contrast Testing Tools, Sufficient Contrast
 
 ### Community 328 - "4. Outdoor Visibility"
-Cohesion: 0.50
-Nodes (4): 10. Quick Reference, Line Height, Minimum Sizes, Typography Tokens
+Cohesion: 0.67
+Nodes (3): 4. Outdoor Visibility, High Contrast Strategies, The Sunlight Problem
 
 ### Community 329 - "9. Color System Checklist"
-Cohesion: 0.50
-Nodes (4): 3. Type Scale, Android Type Scale (Material 3), Creating Custom Scale, iOS Type Scale (Built-in)
+Cohesion: 0.67
+Nodes (3): 9. Color System Checklist, Before Choosing Colors, Before Release
 
 ### Community 330 - "5. Risk Prioritization"
 Cohesion: 0.67
 Nodes (3): 5. Risk Prioritization, CVSS + Context, Prioritization Decision Tree
 
-### Community 331 - "4. Dynamic Type / Text Scaling"
-Cohesion: 0.50
-Nodes (4): 4. Dynamic Type / Text Scaling, Android Text Scaling (MANDATORY), iOS Dynamic Type (MANDATORY), Scaling Challenges
-
-### Community 332 - "6. Dark Mode Typography"
-Cohesion: 0.50
-Nodes (4): 6. Dark Mode Typography, Color Adjustments, Dark Mode Hierarchy, Weight in Dark Mode
-
-### Community 333 - "8. Font Loading & Performance"
-Cohesion: 0.67
-Nodes (3): 8. Font Loading & Performance, Font File Optimization, Loading Strategy
-
-### Community 334 - "4. Attack Surface Mapping"
-Cohesion: 0.67
-Nodes (3): 4. Attack Surface Mapping, Prioritization Matrix, What to Map
-
 ## Knowledge Gaps
-- **2854 isolated node(s):** `Colors`, `Colors`, `$schema`, `style`, `rsc` (+2849 more)
+- **2830 isolated node(s):** `Colors`, `Colors`, `$schema`, `style`, `rsc` (+2825 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **16 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Decision Trees & Context Templates` connect `Decision Trees & Context Templates` to `frontend-design/SKILL.md`?**
+- **Why does `Decision Trees & Context Templates` connect `Decision Trees & Context Templates` to `8. Hierarchy Principles`?**
+  _High betweenness centrality (0.003) - this node is a cross-community bridge._
+- **Why does `Animation Guidelines Reference` connect `Animation Guidelines Reference` to `8. Hierarchy Principles`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **What connects `Colors`, `Colors`, `$schema` to the rest of the system?**
-  _2854 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2830 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `@/i18n/localize` be split into smaller, more focused modules?**
   _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
 - **Should `design_system.py` be split into smaller, more focused modules?**
@@ -1635,6 +1612,4 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `Android Platform Guidelines` be split into smaller, more focused modules?**
   _Cohesion score 0.041666666666666664 - nodes in this community are weakly interconnected._
 - **Should `🧠 DEEP DESIGN THINKING (MANDATORY - BEFORE ANY DESIGN)` be split into smaller, more focused modules?**
-  _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._
-- **Should `Touch Psychology Reference` be split into smaller, more focused modules?**
   _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._

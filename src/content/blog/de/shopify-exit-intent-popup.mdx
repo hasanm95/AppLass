@@ -1,0 +1,166 @@
+---
+title: "Exit-Intent-Popups bei Shopify: Warum Mobil andere Auslöser braucht (2026)"
+description: "Auf dem Smartphone gibt es keinen Mauszeiger, deshalb greift klassisches Exit-Intent dort nie. Die vier Ersatzsignale, die zwei Browserregeln, die die meisten Umsetzungen still aushebeln — und was Sie nutzen, wenn nichts davon passt."
+date: "2026-11-12"
+dateModified: "2026-11-12"
+author: "AppLass-Team"
+excerpt: "Auf dem Desktop beobachtet Exit-Intent den Zeiger auf dem Weg zur Browserleiste. Mobil gibt es keinen Zeiger, also braucht es Ersatzsignale: Zurück-Geste, schnelles Hochscrollen, Inaktivität und Tab-Wechsel. Zwei Browserregeln hebeln die naiven Varianten aus — eine macht die Zurück-Erkennung bei Absprüngen wirkungslos."
+tags: ["Shopify", "Exit Intent", "Popups", "Mobil", "Conversion", "JavaScript"]
+category: "Anleitung"
+keywords: "shopify exit intent popup, exit intent popup mobil, exit intent auslöser handy, exit intent funktioniert nicht mobil, zurück button popup shopify, exit intent javascript, shopify popup app"
+breadcrumbName: "Exit-Intent-Popups"
+thumbnail: "../../../assets/blogs/shopify-exit-intent-popup.png"
+sidebarApps:
+  - fomogen
+featured: true
+faqs:
+  - question: "Wie funktioniert Exit-Intent mobil, wenn es keinen Mauszeiger gibt?"
+    answer: "Es nutzt Ersatzsignale statt der Zeigerposition. Vier sind gebräuchlich: die Zurück-Geste, schnelles Hochscrollen, ein Inaktivitäts-Timer sowie ein Tab-Wechsel beziehungsweise Blur-Ereignis. Keines erkennt das Verlassen so zuverlässig wie der Mauszeiger am Desktop, mobiles Exit-Intent bleibt daher eine Vermutung statt einer Erkennung."
+  - question: "Warum erscheint mein Exit-Intent-Popup mobil nicht?"
+    answer: "Sehr wahrscheinlich handelt es sich um eine Desktop-Umsetzung. Klassisches Exit-Intent lauscht darauf, dass der Zeiger den oberen Rand des Sichtbereichs verlässt — auf einem Touchscreen passiert das nie, weil es keinen Zeiger gibt. Bietet Ihre Popup-App nur mausbasierte Erkennung, sehen mobile Besucher das Popup unabhängig von den Einstellungen nie."
+  - question: "Kann ich beforeunload für ein Exit-Popup nutzen?"
+    answer: "Nein. Alle großen Browser haben eigene Texte im beforeunload-Dialog entfernt — Chrome mit Version 51 — und zeigen nur eine generische, vom Browser vorgegebene Meldung. Zusätzlich verlangt der Dialog eine vorherige Interaktion. Eigene Inhalte lassen sich darüber nicht darstellen."
+  - question: "Erfasst die Zurück-Erkennung Besucher, die sofort abspringen?"
+    answer: "Nein, und das überrascht viele. Chromes History-Manipulation-Intervention überspringt Verlaufseinträge, die ohne Nutzergeste hinzugefügt wurden, sodass das popstate-Ereignis nie ausgelöst wird. Wer die Seite öffnet und sofort zurückgeht, hat nicht interagiert — die Zurück-Falle bleibt genau bei dem Besucher wirkungslos, für den sie gedacht war."
+  - question: "Ist das Abfangen der Zurück-Taste ein Dark Pattern?"
+    answer: "Es liegt nah an der Grenze. Die Zurück-Taste ist ein Browserelement, dessen Funktion Nutzer erwarten; sie für ein Angebot umzuwidmen, greift in eine Navigation ein, die Ihnen niemand angeboten hat. Wenn Sie es einsetzen: höchstens einmal pro Sitzung und mit einem Popup, das sich mühelos schließen lässt."
+  - question: "Was funktioniert mobil besser als Exit-Intent?"
+    answer: "Scrolltiefe kombiniert mit Verweildauer. Das ist keine Austrittserkennung, aber es ist geräteübergreifend zuverlässig und adressiert interessierte statt gehender Besucher. Ein Auslöser bei etwa zwei Dritteln der Seitentiefe, einmal pro Sitzung, schlägt in der Regel das Raten im Moment des Verlassens."
+---
+
+import FomogenCTA from "@/components/blog/FomogenCTA.astro";
+
+**Auf dem Desktop beobachtet Exit-Intent den Mauszeiger auf dem Weg zur Browserleiste. Mobil gibt es
+keinen Zeiger, dieser Code greift dort also nie — nicht selten, sondern nie.** Wenn Ihr Popup auf
+Exit-Intent eingestellt ist und mobile Besucher es nie sehen, liegt fast immer das vor.
+
+Mobil braucht es Ersatzsignale. Vier davon sind gebräuchlich, und zwei Browserregeln hebeln ihre
+naive Umsetzung still aus. Die zweite Regel sorgt dafür, dass die beliebteste mobile Technik genau
+bei den Besuchern versagt, für die sie gebaut wurde.
+
+---
+
+## Wie Exit-Intent am Desktop funktioniert — und warum es sich nicht übertragen lässt
+
+**Die Desktop-Erkennung lauscht darauf, dass der Zeiger den oberen Rand des Sichtbereichs
+verlässt** — üblicherweise ein `mouseout` auf dem Dokument, bei dem die vertikale Koordinate bei
+null oder darüber liegt. Der Zeiger hat also die Browseroberfläche erreicht, unterwegs zum
+Schließen-Knopf, zur Adressleiste oder zu einem anderen Tab.
+
+Das ist ein wirklich gutes Signal. Der Griff zur Browserleiste ist eine deutliche Absichtserklärung
+und kommt, bevor der Besucher sie ausführt.
+
+Touchscreens haben davon nichts. Es gibt keinen Hover-Zustand, keine Zeigerposition zwischen den
+Berührungen und kein Äquivalent zu „bewegt sich Richtung Ausgang“. Ein Finger berührt das Glas oder
+nicht. Jede mobile Technik unten versucht, Absicht aus Verhalten zu rekonstruieren, das mit dem
+Verlassen lediglich korreliert.
+
+## Die vier mobilen Auslöser
+
+| Auslöser | Wie erkannt wird | Wo es scheitert |
+|---|---|---|
+| **Zurück-Geste** | Zusätzlicher Verlaufseintrag plus `popstate`-Listener | Bleibt still wirkungslos, wenn nie interagiert wurde — siehe unten |
+| **Schnelles Hochscrollen** | Scroll-Delta nach oben in kurzem Intervall | Löst ständig beim normalen Nachlesen und Preisvergleich aus |
+| **Inaktivität** | Keine Berührung oder Scrollbewegung über eine Zeitspanne | Erkennt Ablenkung, nicht Weggehen; vielleicht wird gerade gelesen |
+| **Tab-Wechsel / Blur** | `visibilitychange` oder `blur` | Löst bei Benachrichtigungen aus; das Popup erscheint ungesehen |
+
+Beachten Sie, was die letzte Spalte gemeinsam hat. Jedes dieser Signale löst bei Verhalten aus, das
+dem Verlassen *manchmal* vorausgeht und oft nicht. Auch Desktop-Exit-Intent hat ein Problem mit
+Fehlauslösungen, aber ein weit kleineres, weil der Griff zur Adressleiste weniger harmlose
+Erklärungen hat als Hochscrollen.
+
+Praktisch heißt das: Mobiles Exit-Intent sollte konservativ eingestellt und auf einmal pro Sitzung
+begrenzt sein. Eine Fehlauslösung am Desktop ist ein leicht störendes Popup. Auf einem kleinen
+Display ist ein Overlay, das beim Lesen das Produkt verdeckt, ein Grund zu gehen.
+
+<FomogenCTA lang="de" />
+
+## Zwei Browserregeln, die die meisten Umsetzungen aushebeln
+
+### `beforeunload` kann Ihr Angebot nicht anzeigen
+
+Anleitungen empfehlen weiterhin, sich in `beforeunload` einzuhängen. Das leistet nicht, was Sie
+wollen. **Alle großen Browser haben eigene Texte in diesem Dialog entfernt — Chrome mit Version 51 —
+und zeigen nur eine generische, vom Browser vorgegebene Zeichenkette.** Zusätzlich verlangt der
+Dialog eine vorherige Interaktion, sonst erscheint er gar nicht.
+
+Ein Angebot, ein Rabattcode oder beliebiges Markup lässt sich darüber nicht darstellen. Es ist eine
+Bestätigungsabfrage, die Sie nicht kontrollieren, keine Popup-Fläche.
+
+### Die Zurück-Falle versagt still bei Absprüngen
+
+Das ist der wichtige Punkt, und fast nichts zum Thema mobiles Exit-Intent erwähnt ihn.
+
+Die übliche Technik legt beim Laden einen zusätzlichen Verlaufseintrag an und lauscht dann auf
+`popstate`, um die Zurück-Geste abzufangen und statt der Navigation ein Popup zu zeigen. **Chromes
+History-Manipulation-Intervention überspringt Verlaufseinträge, die ohne Nutzergeste hinzugefügt
+wurden**, sodass `popstate` nie ausgelöst wird.
+
+Also: Jemand landet auf der Seite, tippt und scrollt nicht und geht zurück. Es wurde keine Geste
+registriert, der Eintrag wird übersprungen, Ihr Handler läuft nie. Die Zurück-Falle funktioniert nur
+bei Besuchern, die bereits interagiert haben — und ist gegen den schnellen Absprung, für den sie
+gedacht war, wirkungslos.
+
+Das ist kein Fehler, den man umgehen sollte. Der Browser schützt bewusst die Navigation, und das
+sollte Ihre Bewertung der Technik ändern: Betrachten Sie die Zurück-Erkennung als Weg, interessierte
+Besucher beim Gehen zu erwischen, nicht als Mittel gegen Absprünge.
+
+## Sollte man die Zurück-Taste überhaupt abfangen?
+
+Es liegt nah an einer Grenze, die man respektieren sollte. Die Zurück-Taste ist ein Browserelement,
+dessen Funktion Menschen erwarten; sie für ein Angebot umzuwidmen, übernimmt eine Navigation, die
+Ihnen niemand angeboten hat. Die EU-Überprüfung, die gefälschte Countdown-Timer als Dark Pattern
+markiert hat, betrachtete genau diese Familie von Verhaltensweisen — Bedienelemente, die etwas
+anderes tun als erwartet.
+
+Wenn Sie es einsetzen:
+
+- **Einmal pro Sitzung** auslösen, nie wiederholt.
+- Das Popup **mühelos schließbar** machen, mit echtem Schließen-Element statt winzigem grauen ×.
+- Sicherstellen, dass **die zweite Zurück-Geste wirklich hinausführt**. Jemanden zweimal zu fangen,
+  ist nicht vertretbar.
+
+## Was Sie stattdessen nutzen
+
+**Scrolltiefe kombiniert mit Verweildauer.** Das ist keine Austrittserkennung, und genau darin liegt
+der Punkt: ein verlässliches Signal, das auf jedem Gerät gleich funktioniert und interessierte statt
+vermeintlich gehende Besucher adressiert.
+
+Wer zwei Drittel einer Produktseite gelesen und echte Zeit dort verbracht hat, hat Interesse
+gezeigt. Ein Angebot in diesem Moment konvertiert besser, als ein mehrdeutiges Hochscrollen
+abzufangen, und es löst nie bei jemandem aus, der nur die Versandkosten geprüft hat.
+
+Kombinieren Sie es mit derselben Disziplin: einmal pro Sitzung, schließbar, unterdrückt für alle,
+die bereits in den Warenkorb gelegt haben. Wenn Sie gezielt mobile Warenkörbe retten wollen, leistet
+eine dauerhafte [Sticky-Add-to-Cart-Leiste](/blog/mobile-sticky-cart-guide) mehr als jedes Overlay,
+weil sie immer verfügbar ist und nie unterbricht.
+
+## Einrichtung bei Shopify
+
+1. Wählen Sie eine App mit **echten mobilen Auslösern**, nicht Desktop-Maustracking mit
+   Mobil-Schalter. [FOMO Gen](https://apps.shopify.com/fomo-gen) trennt beides: kinetisches Tracking
+   am Desktop, Inaktivität und Zurück-Geste mobil.
+2. Setzen Sie die **Häufigkeit auf einmal pro Sitzung.** Das ist die wichtigste Einstellung
+   überhaupt.
+3. Ergänzen Sie eine **Bedingung zum Warenkorbwert**, damit das Angebot für Personen mit gefülltem
+   Warenkorb unterdrückt wird oder mit der Warenkorbgröße skaliert.
+4. Machen Sie das Angebot die Unterbrechung wert. Ein Rabatt, den man ohnehin gefunden hätte, ist
+   kein Overlay wert.
+5. **Testen Sie auf einem echten Gerät**, nicht im Responsive-Modus eines Desktop-Browsers —
+   simulierte Berührung bildet Zurück- und Sichtbarkeitsverhalten nicht korrekt ab.
+6. Achten Sie auf die Ladezeit. Popups laden auf jeder Seite JavaScript; wie Sie das im Griff
+   behalten, steht in [Seitengeschwindigkeit und Social Proof](/blog/shopify-site-speed-social-proof).
+
+<FomogenCTA lang="de" />
+
+## Fazit
+
+Mobiles Exit-Intent ist eine Reihe fundierter Vermutungen, kein Erkennungssystem, und zwei
+Browserregeln schränken es stärker ein, als die meisten Anleitungen zugeben: `beforeunload` kann Ihr
+Popup nicht darstellen, und die Zurück-Falle tut bei Besuchern ohne Interaktion nichts.
+
+Richten Sie Ihre Erwartungen danach aus. Nutzen Sie die Ersatzsignale zurückhaltend, begrenzen Sie
+sie auf einmal pro Sitzung und setzen Sie auf Scrolltiefe und Verweildauer, wo Sie Verlässlichkeit
+brauchen. Die [Psychologie hinter dem Angebot](/blog/psychology-of-fomo-marketing) zählt mehr als die
+Raffinesse des Auslösers — ein gutes Angebot zu einem passablen Zeitpunkt schlägt einen perfekten
+Auslöser mit schwachem Angebot.

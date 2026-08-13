@@ -1,0 +1,160 @@
+---
+title: "Shopify Exit Intent Popups: Why Mobile Needs Different Triggers (2026)"
+description: "Mobile has no cursor, so desktop exit intent simply never fires. Here are the four proxy triggers that replace it, the two browser rules that silently break most implementations, and what to use when none of them fit."
+date: "2026-11-12"
+dateModified: "2026-11-12"
+author: "AppLass Team"
+excerpt: "Desktop exit intent watches the cursor leave toward the browser chrome. Mobile has no cursor, so it needs proxies: back-press, rapid scroll-up, inactivity, and tab-blur. Two browser-level rules break the naive versions of these — including one that makes back-button detection useless against bounces."
+tags: ["shopify", "exit intent", "popups", "mobile", "conversion", "javascript"]
+category: "How-To"
+keywords: "shopify exit intent popup, exit intent popup mobile, mobile exit intent trigger, exit intent not working on mobile, back button popup shopify, exit intent javascript, shopify popup app"
+breadcrumbName: "Exit Intent Popups"
+thumbnail: "../../../assets/blogs/shopify-exit-intent-popup.png"
+sidebarApps:
+  - fomogen
+featured: true
+faqs:
+  - question: "How does exit intent work on mobile if there's no cursor?"
+    answer: "It uses proxy signals instead of cursor position. The four in common use are a back-button press, a rapid upward scroll, an inactivity timer, and a tab-switch or blur event. None of them detects leaving as reliably as the desktop cursor does, so mobile exit intent is inherently a guess rather than a detection."
+  - question: "Why doesn't my exit intent popup fire on mobile?"
+    answer: "Most likely it is a desktop implementation. Desktop exit intent listens for the pointer leaving the top of the viewport, which never happens on a touchscreen because there is no pointer. If your popup app offers only mouse-based detection, mobile visitors will never see it regardless of settings."
+  - question: "Can I use beforeunload to show an exit popup?"
+    answer: "No. Every major browser removed support for custom messages in the beforeunload dialog — Chrome did so in version 51 — and only a generic browser-controlled string is shown. The dialog also requires sticky activation, meaning the visitor must have interacted with the page. You cannot render your own offer through it."
+  - question: "Does back-button detection catch visitors who bounce immediately?"
+    answer: "No, and this surprises people. Chrome's history manipulation intervention skips history entries added without a user gesture, so the popstate event never fires. A visitor who lands and immediately presses back has not interacted, so the back-button trap silently does nothing — against exactly the visitor it was meant to catch."
+  - question: "Is intercepting the back button a dark pattern?"
+    answer: "It sits close to the line. The back button is a browser control users expect to work, and repurposing it to show an offer takes over navigation they did not offer you. If you use it, fire once per session at most and make the popup trivially dismissible, so the second back press genuinely leaves."
+  - question: "What works better than exit intent on mobile?"
+    answer: "Scroll depth combined with time on page. It is not exit detection at all, but it is reliable across devices and it identifies engaged visitors rather than departing ones. Firing at around two thirds of page depth, once per session, generally outperforms guessing at the moment of exit."
+---
+
+import FomogenCTA from "@/components/blog/FomogenCTA.astro";
+
+**Desktop exit intent watches the cursor travel toward the browser chrome. Mobile has no cursor, so
+that code never fires — not rarely, never.** If your popup is configured for exit intent and mobile
+visitors never see it, this is almost always why.
+
+Mobile needs proxy signals instead. There are four in common use, and two browser-level rules that
+quietly break the naive implementation of them. The second rule in particular means the most popular
+mobile technique fails against exactly the visitors it was built for.
+
+---
+
+## How desktop exit intent works, and why it does not port
+
+**Desktop detection listens for the pointer leaving the top edge of the viewport** — typically a
+`mouseout` on the document where the vertical coordinate is at or above zero, meaning the cursor has
+crossed into the browser's own UI, heading for the close button, the address bar, or another tab.
+
+It is a genuinely good signal. Reaching for browser chrome is a strong statement of intent, and it
+arrives before the visitor commits.
+
+Touchscreens have none of this. There is no hover state, no pointer position between taps, and no
+equivalent of "moving toward the exit." A finger is either touching the glass or it isn't. Every
+mobile technique below is an attempt to reconstruct intent from behaviour that only correlates with
+leaving.
+
+## The four mobile triggers
+
+| Trigger | How it is detected | Where it fails |
+|---|---|---|
+| **Back-press** | A pushed history entry plus a `popstate` listener | Silently no-ops for visitors who never interacted — see below |
+| **Rapid scroll-up** | Upward scroll delta over a short interval | Fires constantly on normal re-reading and price-checking |
+| **Inactivity** | No tap or scroll for a set period | Detects distraction, not departure; the visitor may be reading |
+| **Tab-switch / blur** | `visibilitychange` or `blur` | Fires on notifications and app-switching; the popup renders unseen |
+
+Note what the failure column has in common. Each of these fires on behaviour that *sometimes*
+precedes leaving and often does not. Desktop exit intent has a false-positive problem too, but it is
+far smaller, because reaching for the address bar has fewer innocent explanations than scrolling up
+does.
+
+The practical consequence is that mobile exit intent should be tuned conservatively and capped at
+once per session. A false positive on desktop is a mildly annoying popup. On a small screen, an
+overlay that covers the product while someone is still reading is a reason to leave.
+
+<FomogenCTA />
+
+## Two browser rules that break most implementations
+
+### `beforeunload` cannot show your offer
+
+Guides still suggest hooking `beforeunload`. It will not do what you want. **Every major browser
+removed support for custom messages in that dialog — Chrome in version 51 — and shows only a
+generic, browser-controlled string.** The dialog additionally requires sticky activation, so it does
+not appear at all unless the visitor has interacted with the page.
+
+You cannot render an offer, a discount code, or any markup through `beforeunload`. It is a
+confirmation prompt you do not control, not a popup surface.
+
+### The back-button trap silently fails on bounces
+
+This is the important one, and almost nothing written about mobile exit intent mentions it.
+
+The standard technique pushes a dummy history entry on page load, then listens for `popstate` to
+catch the back press and show a popup instead of navigating away. **Chrome's history manipulation
+intervention skips history entries that were added without a user gesture**, which means `popstate`
+never fires.
+
+So: a visitor lands, does not tap or scroll, and hits back. No gesture was registered, the pushed
+entry is skipped, and your handler never runs. The back-button trap works only for visitors who have
+already engaged — and is inert against the fast bounce it was designed to intercept.
+
+That is not a bug to work around. It is the browser deliberately protecting navigation, and it
+should change how you value the technique: treat back-press detection as a way to catch engaged
+visitors leaving, not as a bounce recovery tool.
+
+## Should you intercept the back button at all?
+
+It sits close to a line worth respecting. The back button is a browser control people expect to
+work, and repurposing it to display an offer commandeers navigation they never offered you. The EU
+sweep that flagged fake countdown timers as a dark pattern was looking at exactly this family of
+behaviours — interface elements that do something other than what the user expects.
+
+If you use it:
+
+- Fire **once per session**, never repeatedly.
+- Make the popup **trivially dismissible**, with a real close control, not a tiny grey ×.
+- Ensure the **second back press actually leaves**. Trapping someone twice is indefensible.
+
+## What to use instead
+
+**Scroll depth combined with time on page.** It is not exit detection, and that is the point — it is
+a reliable signal that works identically on every device, and it targets engaged visitors rather
+than guessing at departing ones.
+
+A visitor who has read two thirds of a product page and spent real time there has demonstrated
+interest. Offering them something at that moment converts better than ambushing an ambiguous
+scroll-up, and it never fires on someone who was only checking the shipping cost.
+
+Pair it with the same discipline: once per session, dismissible, and suppressed for anyone who has
+already added to cart. If your goal is recovering mobile carts specifically, a persistent
+[sticky add-to-cart bar](/blog/mobile-sticky-cart-guide) does more work than any overlay, because it
+is always available and never interrupts.
+
+## Setting it up on Shopify
+
+1. Choose an app with **real mobile triggers**, not desktop mouse tracking with a mobile toggle.
+   [FOMO Gen](https://apps.shopify.com/fomo-gen) separates the two: kinetic tracking on desktop,
+   inactivity and back-press on mobile.
+2. Set **frequency to once per session.** This is the single most important setting.
+3. Add a **cart-value condition** so the offer suppresses for people who already added to cart, or
+   scales with basket size.
+4. Make the offer worth the interruption. A discount the visitor could have found anyway is not
+   worth an overlay.
+5. **Test on a real device**, not a desktop browser in responsive mode — emulated touch does not
+   reproduce back-button or visibility behaviour accurately.
+6. Watch the speed cost. Popups load JavaScript on every page; see
+   [site speed and social proof](/blog/shopify-site-speed-social-proof) for keeping that in check.
+
+<FomogenCTA />
+
+## Bottom line
+
+Mobile exit intent is a set of educated guesses, not a detection system, and two browser rules
+constrain it further than most guides admit: `beforeunload` cannot render your popup, and the
+back-button trap does nothing against visitors who never interacted.
+
+Set expectations accordingly. Use the proxies conservatively, cap them at once per session, and
+lean on scroll depth and time for the cases where you want reliability. The
+[psychology behind the offer](/blog/psychology-of-fomo-marketing) matters more than the cleverness of
+the trigger — a good offer shown at a decent moment beats a perfect trigger attached to a weak one.
