@@ -18625,8 +18625,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "frontend-design/skill.md"
     },
     {
@@ -19120,8 +19120,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "animation-guide.md"
     },
     {
@@ -19560,8 +19560,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "color-system.md"
     },
     {
@@ -19582,8 +19582,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_1_color_theory_fundamentals",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 319,
+      "community_name": "1. Color Theory Fundamentals",
       "norm_label": "1. color theory fundamentals"
     },
     {
@@ -19593,8 +19593,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_the_color_wheel",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 319,
+      "community_name": "1. Color Theory Fundamentals",
       "norm_label": "the color wheel"
     },
     {
@@ -19604,8 +19604,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_color_relationships",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 319,
+      "community_name": "1. Color Theory Fundamentals",
       "norm_label": "color relationships"
     },
     {
@@ -19615,8 +19615,8 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_how_to_choose_a_scheme",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 319,
+      "community_name": "1. Color Theory Fundamentals",
       "norm_label": "how to choose a scheme:"
     },
     {
@@ -19659,8 +19659,8 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_3_color_psychology_meaning_selection",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
       "norm_label": "3. color psychology - meaning & selection"
     },
     {
@@ -19670,8 +19670,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_how_to_choose_based_on_context",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
       "norm_label": "how to choose based on context"
     },
     {
@@ -19681,8 +19681,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_emotional_associations_for_decision_making",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
       "norm_label": "emotional associations (for decision making)"
     },
     {
@@ -19692,8 +19692,8 @@
       "source_location": "L115",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_selection_process",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
       "norm_label": "selection process:"
     },
     {
@@ -19703,8 +19703,8 @@
       "source_location": "L124",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_4_palette_generation_principles",
-      "community": 297,
-      "community_name": "@astrojs/check",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "4. palette generation principles"
     },
     {
@@ -19714,8 +19714,8 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_from_a_single_color_hsl_method",
-      "community": 297,
-      "community_name": "@astrojs/check",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "from a single color (hsl method)"
     },
     {
@@ -19725,8 +19725,8 @@
       "source_location": "L151",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_generating_a_full_palette",
-      "community": 297,
-      "community_name": "@astrojs/check",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "generating a full palette"
     },
     {
@@ -19736,8 +19736,8 @@
       "source_location": "L169",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_saturation_adjustments",
-      "community": 297,
-      "community_name": "@astrojs/check",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "saturation adjustments"
     },
     {
@@ -19769,8 +19769,8 @@
       "source_location": "L226",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_6_dark_mode_principles",
-      "community": 301,
-      "community_name": "6. Dark Mode Principles",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "6. dark mode principles"
     },
     {
@@ -19780,8 +19780,8 @@
       "source_location": "L228",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_key_rules_no_fixed_codes",
-      "community": 301,
-      "community_name": "6. Dark Mode Principles",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "key rules (no fixed codes)"
     },
     {
@@ -19791,8 +19791,8 @@
       "source_location": "L235",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_contrast_in_dark_mode",
-      "community": 301,
-      "community_name": "6. Dark Mode Principles",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "contrast in dark mode"
     },
     {
@@ -19802,8 +19802,8 @@
       "source_location": "L245",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_adapting_colors_for_dark_mode",
-      "community": 301,
-      "community_name": "6. Dark Mode Principles",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "adapting colors for dark mode"
     },
     {
@@ -19901,8 +19901,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "frontend-design/decision-trees.md"
     },
     {
@@ -20341,8 +20341,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "motion-graphics.md"
     },
     {
@@ -21199,8 +21199,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_ux_psychology",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "ux-psychology.md"
     },
     {
@@ -27678,8 +27678,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_pattern_questioning_matrix",
-      "community": 316,
-      "community_name": "4. Animation Performance (Both Platforms)",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "\ud83c\udfaf pattern questioning matrix"
     },
     {
@@ -27689,8 +27689,8 @@
       "source_location": "L131",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_navigation_pattern_questioning",
-      "community": 316,
-      "community_name": "4. Animation Performance (Both Platforms)",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "navigation pattern questioning"
     },
     {
@@ -27700,8 +27700,8 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_state_pattern_questioning",
-      "community": 316,
-      "community_name": "4. Animation Performance (Both Platforms)",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "state pattern questioning"
     },
     {
@@ -27711,8 +27711,8 @@
       "source_location": "L149",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_list_pattern_questioning",
-      "community": 316,
-      "community_name": "4. Animation Performance (Both Platforms)",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "list pattern questioning"
     },
     {
@@ -27722,8 +27722,8 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_ui_pattern_questioning",
-      "community": 316,
-      "community_name": "4. Animation Performance (Both Platforms)",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "ui pattern questioning"
     },
     {
@@ -30164,8 +30164,8 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_2_ios_typography",
-      "community": 319,
-      "community_name": "1. Color Theory Fundamentals",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "2. ios typography"
     },
     {
@@ -30175,8 +30175,8 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_sf_pro_font_family",
-      "community": 319,
-      "community_name": "1. Color Theory Fundamentals",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "sf pro font family"
     },
     {
@@ -30186,8 +30186,8 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_ios_type_scale_dynamic_type",
-      "community": 319,
-      "community_name": "1. Color Theory Fundamentals",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "ios type scale (dynamic type)"
     },
     {
@@ -30197,8 +30197,8 @@
       "source_location": "L74",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_dynamic_type_support_mandatory",
-      "community": 319,
-      "community_name": "1. Color Theory Fundamentals",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "dynamic type support (mandatory)"
     },
     {
@@ -30208,8 +30208,8 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_font_weight_usage",
-      "community": 319,
-      "community_name": "1. Color Theory Fundamentals",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "font weight usage"
     },
     {
@@ -30219,8 +30219,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_3_ios_color_system",
-      "community": 331,
-      "community_name": "3. iOS Color System",
+      "community": 330,
+      "community_name": "5. Risk Prioritization",
       "norm_label": "3. ios color system"
     },
     {
@@ -30230,8 +30230,8 @@
       "source_location": "L104",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_system_colors_semantic",
-      "community": 331,
-      "community_name": "3. iOS Color System",
+      "community": 330,
+      "community_name": "5. Risk Prioritization",
       "norm_label": "system colors (semantic)"
     },
     {
@@ -30241,8 +30241,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_system_accent_colors",
-      "community": 331,
-      "community_name": "3. iOS Color System",
+      "community": 330,
+      "community_name": "5. Risk Prioritization",
       "norm_label": "system accent colors"
     },
     {
@@ -30252,8 +30252,8 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_dark_mode_considerations",
-      "community": 331,
-      "community_name": "3. iOS Color System",
+      "community": 330,
+      "community_name": "5. Risk Prioritization",
       "norm_label": "dark mode considerations"
     },
     {
@@ -30263,7 +30263,7 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_4_ios_layout_spacing",
-      "community": 332,
+      "community": 331,
       "community_name": "4. iOS Layout & Spacing",
       "norm_label": "4. ios layout & spacing"
     },
@@ -30274,7 +30274,7 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_safe_areas",
-      "community": 332,
+      "community": 331,
       "community_name": "4. iOS Layout & Spacing",
       "norm_label": "safe areas"
     },
@@ -30285,7 +30285,7 @@
       "source_location": "L176",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_standard_margins_padding",
-      "community": 332,
+      "community": 331,
       "community_name": "4. iOS Layout & Spacing",
       "norm_label": "standard margins & padding"
     },
@@ -30296,7 +30296,7 @@
       "source_location": "L186",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_ios_grid_system",
-      "community": 332,
+      "community": 331,
       "community_name": "4. iOS Layout & Spacing",
       "norm_label": "ios grid system"
     },
@@ -30307,8 +30307,8 @@
       "source_location": "L205",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_5_ios_navigation_patterns",
-      "community": 315,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "5. ios navigation patterns"
     },
     {
@@ -30318,8 +30318,8 @@
       "source_location": "L207",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_navigation_types",
-      "community": 315,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "navigation types"
     },
     {
@@ -30329,8 +30329,8 @@
       "source_location": "L216",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_tab_bar_guidelines",
-      "community": 315,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "tab bar guidelines"
     },
     {
@@ -30340,8 +30340,8 @@
       "source_location": "L236",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_navigation_bar_guidelines",
-      "community": 315,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "navigation bar guidelines"
     },
     {
@@ -30351,8 +30351,8 @@
       "source_location": "L255",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_modal_presentations",
-      "community": 315,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "modal presentations"
     },
     {
@@ -30362,8 +30362,8 @@
       "source_location": "L265",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_gestures",
-      "community": 315,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "gestures"
     },
     {
@@ -30373,8 +30373,8 @@
       "source_location": "L277",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_6_ios_components",
-      "community": 320,
-      "community_name": "3. Dark Mode Design",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "6. ios components"
     },
     {
@@ -30384,8 +30384,8 @@
       "source_location": "L279",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_buttons",
-      "community": 320,
-      "community_name": "3. Dark Mode Design",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "buttons"
     },
     {
@@ -30395,8 +30395,8 @@
       "source_location": "L299",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_lists_tables",
-      "community": 320,
-      "community_name": "3. Dark Mode Design",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "lists & tables"
     },
     {
@@ -30406,8 +30406,8 @@
       "source_location": "L317",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_text_fields",
-      "community": 320,
-      "community_name": "3. Dark Mode Design",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "text fields"
     },
     {
@@ -30417,8 +30417,8 @@
       "source_location": "L334",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_segmented_controls",
-      "community": 320,
-      "community_name": "3. Dark Mode Design",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "segmented controls"
     },
     {
@@ -30483,7 +30483,7 @@
       "source_location": "L432",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_8_sf_symbols",
-      "community": 333,
+      "community": 332,
       "community_name": "8. SF Symbols",
       "norm_label": "8. sf symbols"
     },
@@ -30494,7 +30494,7 @@
       "source_location": "L434",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_usage_guidelines",
-      "community": 333,
+      "community": 332,
       "community_name": "8. SF Symbols",
       "norm_label": "usage guidelines"
     },
@@ -30505,7 +30505,7 @@
       "source_location": "L450",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_symbol_configurations",
-      "community": 333,
+      "community": 332,
       "community_name": "8. SF Symbols",
       "norm_label": "symbol configurations"
     },
@@ -30516,7 +30516,7 @@
       "source_location": "L467",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_symbol_best_practices",
-      "community": 333,
+      "community": 332,
       "community_name": "8. SF Symbols",
       "norm_label": "symbol best practices"
     },
@@ -30527,7 +30527,7 @@
       "source_location": "L478",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_9_ios_accessibility",
-      "community": 334,
+      "community": 333,
       "community_name": "9. iOS Accessibility",
       "norm_label": "9. ios accessibility"
     },
@@ -30538,7 +30538,7 @@
       "source_location": "L480",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_voiceover_requirements",
-      "community": 334,
+      "community": 333,
       "community_name": "9. iOS Accessibility",
       "norm_label": "voiceover requirements"
     },
@@ -30549,7 +30549,7 @@
       "source_location": "L499",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_dynamic_type_scaling",
-      "community": 334,
+      "community": 333,
       "community_name": "9. iOS Accessibility",
       "norm_label": "dynamic type scaling"
     },
@@ -30560,7 +30560,7 @@
       "source_location": "L517",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_reduce_motion",
-      "community": 334,
+      "community": 333,
       "community_name": "9. iOS Accessibility",
       "norm_label": "reduce motion"
     },
@@ -36379,8 +36379,8 @@
       "source_location": "L80",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_3_supply_chain_security_a03",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 284,
+      "community_name": "@astrojs/check",
       "norm_label": "3. supply chain security (a03)"
     },
     {
@@ -36390,8 +36390,8 @@
       "source_location": "L82",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_attack_surface",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 284,
+      "community_name": "@astrojs/check",
       "norm_label": "attack surface"
     },
     {
@@ -36401,8 +36401,8 @@
       "source_location": "L91",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_defense_principles",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 284,
+      "community_name": "@astrojs/check",
       "norm_label": "defense principles"
     },
     {
@@ -36412,7 +36412,7 @@
       "source_location": "L100",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_4_attack_surface_mapping",
-      "community": 335,
+      "community": 334,
       "community_name": "4. Attack Surface Mapping",
       "norm_label": "4. attack surface mapping"
     },
@@ -36423,7 +36423,7 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_what_to_map",
-      "community": 335,
+      "community": 334,
       "community_name": "4. Attack Surface Mapping",
       "norm_label": "what to map"
     },
@@ -36434,7 +36434,7 @@
       "source_location": "L111",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_prioritization_matrix",
-      "community": 335,
+      "community": 334,
       "community_name": "4. Attack Surface Mapping",
       "norm_label": "prioritization matrix"
     },
@@ -36445,8 +36445,8 @@
       "source_location": "L124",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_5_risk_prioritization",
-      "community": 330,
-      "community_name": "5. Risk Prioritization",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "5. risk prioritization"
     },
     {
@@ -36456,8 +36456,8 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_cvss_context",
-      "community": 330,
-      "community_name": "5. Risk Prioritization",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "cvss + context"
     },
     {
@@ -36467,8 +36467,8 @@
       "source_location": "L135",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_prioritization_decision_tree",
-      "community": 330,
-      "community_name": "5. Risk Prioritization",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "prioritization decision tree"
     },
     {
@@ -41004,160 +41004,6 @@
       "norm_label": "fazit"
     },
     {
-      "label": "de/dopamine-detox-phone-7-day-reset.mdx",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_content_blog_de_dopamine_detox_phone_7_day_reset",
-      "community": 284,
-      "community_name": "@astrojs/check",
-      "norm_label": "de/dopamine-detox-phone-7-day-reset.mdx"
-    },
-    {
-      "label": "Der 7-Tage-Plan auf einen Blick",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L53",
-      "_origin": "ast",
-      "id": "src_content_blog_de_dopamine_detox_phone_7_day_reset_der_7_tage_plan_auf_einen_blick",
-      "community": 284,
-      "community_name": "@astrojs/check",
-      "norm_label": "der 7-tage-plan auf einen blick"
-    },
-    {
-      "label": "Warum \u201eDopamin-Detox\" der falsche Name f\u00fcr einen echten Effekt ist",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L66",
-      "_origin": "ast",
-      "id": "src_content_blog_de_dopamine_detox_phone_7_day_reset_warum_dopamin_detox_der_falsche_name_f\u00fcr_einen_echten_effekt_ist",
-      "community": 284,
-      "community_name": "@astrojs/check",
-      "norm_label": "warum \u201edopamin-detox\" der falsche name fur einen echten effekt ist"
-    },
-    {
-      "label": "Warum \u201eeinfach die Apps l\u00f6schen\" fast immer scheitert",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L87",
-      "_origin": "ast",
-      "id": "src_content_blog_de_dopamine_detox_phone_7_day_reset_warum_einfach_die_apps_l\u00f6schen_fast_immer_scheitert",
-      "community": 284,
-      "community_name": "@astrojs/check",
-      "norm_label": "warum \u201eeinfach die apps loschen\" fast immer scheitert"
-    },
-    {
-      "label": "Dopamin-Detox am Handy: der 7-Tage-Plan",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L108",
-      "_origin": "ast",
-      "id": "src_content_blog_de_dopamine_detox_phone_7_day_reset_dopamin_detox_am_handy_der_7_tage_plan",
-      "community": 284,
-      "community_name": "@astrojs/check",
-      "norm_label": "dopamin-detox am handy: der 7-tage-plan"
-    },
-    {
-      "label": "Tag 1 \u2014 Setzen Sie eine Sperre, kein Versprechen",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L110",
-      "_origin": "ast",
-      "id": "src_content_blog_de_dopamine_detox_phone_7_day_reset_tag_1_setzen_sie_eine_sperre_kein_versprechen",
-      "community": 284,
-      "community_name": "@astrojs/check",
-      "norm_label": "tag 1 \u2014 setzen sie eine sperre, kein versprechen"
-    },
-    {
-      "label": "Tag 2 \u2014 Erwarten Sie Reibung, keine Motivation",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L120",
-      "_origin": "ast",
-      "id": "src_content_blog_de_dopamine_detox_phone_7_day_reset_tag_2_erwarten_sie_reibung_keine_motivation",
-      "community": 284,
-      "community_name": "@astrojs/check",
-      "norm_label": "tag 2 \u2014 erwarten sie reibung, keine motivation"
-    },
-    {
-      "label": "Tag 3-4 \u2014 Die h\u00e4rteste Phase",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L131",
-      "_origin": "ast",
-      "id": "src_content_blog_de_dopamine_detox_phone_7_day_reset_tag_3_4_die_h\u00e4rteste_phase",
-      "community": 284,
-      "community_name": "@astrojs/check",
-      "norm_label": "tag 3-4 \u2014 die harteste phase"
-    },
-    {
-      "label": "Tag 5 \u2014 Die Wende beginnt",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L145",
-      "_origin": "ast",
-      "id": "src_content_blog_de_dopamine_detox_phone_7_day_reset_tag_5_die_wende_beginnt",
-      "community": 284,
-      "community_name": "@astrojs/check",
-      "norm_label": "tag 5 \u2014 die wende beginnt"
-    },
-    {
-      "label": "Tag 6-7 \u2014 Beobachten Sie, was sich ver\u00e4ndert hat",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L155",
-      "_origin": "ast",
-      "id": "src_content_blog_de_dopamine_detox_phone_7_day_reset_tag_6_7_beobachten_sie_was_sich_ver\u00e4ndert_hat",
-      "community": 284,
-      "community_name": "@astrojs/check",
-      "norm_label": "tag 6-7 \u2014 beobachten sie, was sich verandert hat"
-    },
-    {
-      "label": "Warum ein echter 7-Tage-Detox mehr braucht als ein kostenloses Sitzungskontingent",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L170",
-      "_origin": "ast",
-      "id": "src_content_blog_de_dopamine_detox_phone_7_day_reset_warum_ein_echter_7_tage_detox_mehr_braucht_als_ein_kostenloses_sitzungskontingent",
-      "community": 284,
-      "community_name": "@astrojs/check",
-      "norm_label": "warum ein echter 7-tage-detox mehr braucht als ein kostenloses sitzungskontingent"
-    },
-    {
-      "label": "Was daf\u00fcr sorgt, dass dieser Detox tats\u00e4chlich zu Ende geht",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L196",
-      "_origin": "ast",
-      "id": "src_content_blog_de_dopamine_detox_phone_7_day_reset_was_daf\u00fcr_sorgt_dass_dieser_detox_tats\u00e4chlich_zu_ende_geht",
-      "community": 284,
-      "community_name": "@astrojs/check",
-      "norm_label": "was dafur sorgt, dass dieser detox tatsachlich zu ende geht"
-    },
-    {
-      "label": "Nach Tag 7: nicht auf null zur\u00fcckfallen",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L210",
-      "_origin": "ast",
-      "id": "src_content_blog_de_dopamine_detox_phone_7_day_reset_nach_tag_7_nicht_auf_null_zur\u00fcckfallen",
-      "community": 284,
-      "community_name": "@astrojs/check",
-      "norm_label": "nach tag 7: nicht auf null zuruckfallen"
-    },
-    {
-      "label": "Fazit",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L230",
-      "_origin": "ast",
-      "id": "src_content_blog_de_dopamine_detox_phone_7_day_reset_fazit",
-      "community": 284,
-      "community_name": "@astrojs/check",
-      "norm_label": "fazit"
-    },
-    {
       "label": "de/free-shipping-bar-shopify.md",
       "file_type": "document",
       "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
@@ -41310,6 +41156,138 @@
       "community": 296,
       "community_name": "ScreenVeilCTA.astro",
       "norm_label": "mit social proof kombinieren fur noch bessere ergebnisse"
+    },
+    {
+      "label": "de/freedom-alternative-android.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_de_freedom_alternative_android",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
+      "norm_label": "de/freedom-alternative-android.mdx"
+    },
+    {
+      "label": "Das Kurzurteil",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "src_content_blog_de_freedom_alternative_android_das_kurzurteil",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
+      "norm_label": "das kurzurteil"
+    },
+    {
+      "label": "Funktioniert Freedom auf Android?",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "src_content_blog_de_freedom_alternative_android_funktioniert_freedom_auf_android",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
+      "norm_label": "funktioniert freedom auf android?"
+    },
+    {
+      "label": "Was Ihnen Freedoms Android-App kostet",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "src_content_blog_de_freedom_alternative_android_was_ihnen_freedoms_android_app_kostet",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
+      "norm_label": "was ihnen freedoms android-app kostet"
+    },
+    {
+      "label": "Freedom-Preise, Stand 2026",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "src_content_blog_de_freedom_alternative_android_freedom_preise_stand_2026",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
+      "norm_label": "freedom-preise, stand 2026"
+    },
+    {
+      "label": "Eine native Offline-Alternative, nur f\u00fcr Android gebaut",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
+      "source_location": "L111",
+      "_origin": "ast",
+      "id": "src_content_blog_de_freedom_alternative_android_eine_native_offline_alternative_nur_f\u00fcr_android_gebaut",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
+      "norm_label": "eine native offline-alternative, nur fur android gebaut"
+    },
+    {
+      "label": "Freedom vs. Mindful Guard im direkten Vergleich",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
+      "source_location": "L135",
+      "_origin": "ast",
+      "id": "src_content_blog_de_freedom_alternative_android_freedom_vs_mindful_guard_im_direkten_vergleich",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
+      "norm_label": "freedom vs. mindful guard im direkten vergleich"
+    },
+    {
+      "label": "Die \u00fcbrigen Freedom-Alternativen, kurz gefasst",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
+      "source_location": "L150",
+      "_origin": "ast",
+      "id": "src_content_blog_de_freedom_alternative_android_die_\u00fcbrigen_freedom_alternativen_kurz_gefasst",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
+      "norm_label": "die ubrigen freedom-alternativen, kurz gefasst"
+    },
+    {
+      "label": "Worin Freedom tats\u00e4chlich besser ist",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
+      "source_location": "L168",
+      "_origin": "ast",
+      "id": "src_content_blog_de_freedom_alternative_android_worin_freedom_tats\u00e4chlich_besser_ist",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
+      "norm_label": "worin freedom tatsachlich besser ist"
+    },
+    {
+      "label": "Zum Preis: der Vergleich, den alle falsch machen",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
+      "source_location": "L182",
+      "_origin": "ast",
+      "id": "src_content_blog_de_freedom_alternative_android_zum_preis_der_vergleich_den_alle_falsch_machen",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
+      "norm_label": "zum preis: der vergleich, den alle falsch machen"
+    },
+    {
+      "label": "Wer was w\u00e4hlen sollte",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
+      "source_location": "L197",
+      "_origin": "ast",
+      "id": "src_content_blog_de_freedom_alternative_android_wer_was_w\u00e4hlen_sollte",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
+      "norm_label": "wer was wahlen sollte"
+    },
+    {
+      "label": "Fazit",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
+      "source_location": "L212",
+      "_origin": "ast",
+      "id": "src_content_blog_de_freedom_alternative_android_fazit",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
+      "norm_label": "fazit"
     },
     {
       "label": "de/how-to-add-sales-popup-shopify.md",
@@ -43677,160 +43655,6 @@
       "norm_label": "conclusion"
     },
     {
-      "label": "en/dopamine-detox-phone-7-day-reset.mdx",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_content_blog_en_dopamine_detox_phone_7_day_reset",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
-      "norm_label": "en/dopamine-detox-phone-7-day-reset.mdx"
-    },
-    {
-      "label": "The 7-day plan at a glance",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L53",
-      "_origin": "ast",
-      "id": "src_content_blog_en_dopamine_detox_phone_7_day_reset_the_7_day_plan_at_a_glance",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
-      "norm_label": "the 7-day plan at a glance"
-    },
-    {
-      "label": "Why \"dopamine detox\" is the wrong name for a real effect",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L66",
-      "_origin": "ast",
-      "id": "src_content_blog_en_dopamine_detox_phone_7_day_reset_why_dopamine_detox_is_the_wrong_name_for_a_real_effect",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
-      "norm_label": "why \"dopamine detox\" is the wrong name for a real effect"
-    },
-    {
-      "label": "Why \"just delete the apps\" usually fails",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L86",
-      "_origin": "ast",
-      "id": "src_content_blog_en_dopamine_detox_phone_7_day_reset_why_just_delete_the_apps_usually_fails",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
-      "norm_label": "why \"just delete the apps\" usually fails"
-    },
-    {
-      "label": "How to do a dopamine detox from your phone: the 7-day plan",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L105",
-      "_origin": "ast",
-      "id": "src_content_blog_en_dopamine_detox_phone_7_day_reset_how_to_do_a_dopamine_detox_from_your_phone_the_7_day_plan",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
-      "norm_label": "how to do a dopamine detox from your phone: the 7-day plan"
-    },
-    {
-      "label": "Day 1 \u2014 Set the block, not a promise",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L107",
-      "_origin": "ast",
-      "id": "src_content_blog_en_dopamine_detox_phone_7_day_reset_day_1_set_the_block_not_a_promise",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
-      "norm_label": "day 1 \u2014 set the block, not a promise"
-    },
-    {
-      "label": "Day 2 \u2014 Expect friction, not motivation",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L116",
-      "_origin": "ast",
-      "id": "src_content_blog_en_dopamine_detox_phone_7_day_reset_day_2_expect_friction_not_motivation",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
-      "norm_label": "day 2 \u2014 expect friction, not motivation"
-    },
-    {
-      "label": "Day 3-4 \u2014 The hardest stretch",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L126",
-      "_origin": "ast",
-      "id": "src_content_blog_en_dopamine_detox_phone_7_day_reset_day_3_4_the_hardest_stretch",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
-      "norm_label": "day 3-4 \u2014 the hardest stretch"
-    },
-    {
-      "label": "Day 5 \u2014 The shift starts",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L140",
-      "_origin": "ast",
-      "id": "src_content_blog_en_dopamine_detox_phone_7_day_reset_day_5_the_shift_starts",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
-      "norm_label": "day 5 \u2014 the shift starts"
-    },
-    {
-      "label": "Day 6-7 \u2014 Notice what changed",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L150",
-      "_origin": "ast",
-      "id": "src_content_blog_en_dopamine_detox_phone_7_day_reset_day_6_7_notice_what_changed",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
-      "norm_label": "day 6-7 \u2014 notice what changed"
-    },
-    {
-      "label": "Why most 7-day detoxes need more than a free session limit",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L164",
-      "_origin": "ast",
-      "id": "src_content_blog_en_dopamine_detox_phone_7_day_reset_why_most_7_day_detoxes_need_more_than_a_free_session_limit",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
-      "norm_label": "why most 7-day detoxes need more than a free session limit"
-    },
-    {
-      "label": "What makes this version of a detox actually finish",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L187",
-      "_origin": "ast",
-      "id": "src_content_blog_en_dopamine_detox_phone_7_day_reset_what_makes_this_version_of_a_detox_actually_finish",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
-      "norm_label": "what makes this version of a detox actually finish"
-    },
-    {
-      "label": "After day 7: do not go back to zero",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L201",
-      "_origin": "ast",
-      "id": "src_content_blog_en_dopamine_detox_phone_7_day_reset_after_day_7_do_not_go_back_to_zero",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
-      "norm_label": "after day 7: do not go back to zero"
-    },
-    {
-      "label": "Bottom line",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L218",
-      "_origin": "ast",
-      "id": "src_content_blog_en_dopamine_detox_phone_7_day_reset_bottom_line",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
-      "norm_label": "bottom line"
-    },
-    {
       "label": "en/free-shipping-bar-shopify.md",
       "file_type": "document",
       "source_file": "src/content/blog/en/free-shipping-bar-shopify.md",
@@ -43983,6 +43807,138 @@
       "community": 108,
       "community_name": "Step-by-Step: Adding a Free Shipping Bar with FomoGen",
       "norm_label": "stack it with social proof for even better results"
+    },
+    {
+      "label": "en/freedom-alternative-android.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_en_freedom_alternative_android",
+      "community": 297,
+      "community_name": "@astrojs/check",
+      "norm_label": "en/freedom-alternative-android.mdx"
+    },
+    {
+      "label": "Quick verdict",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "src_content_blog_en_freedom_alternative_android_quick_verdict",
+      "community": 297,
+      "community_name": "@astrojs/check",
+      "norm_label": "quick verdict"
+    },
+    {
+      "label": "Does Freedom work on Android?",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "src_content_blog_en_freedom_alternative_android_does_freedom_work_on_android",
+      "community": 297,
+      "community_name": "@astrojs/check",
+      "norm_label": "does freedom work on android?"
+    },
+    {
+      "label": "Where Freedom's Android app costs you something",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
+      "source_location": "L76",
+      "_origin": "ast",
+      "id": "src_content_blog_en_freedom_alternative_android_where_freedom_s_android_app_costs_you_something",
+      "community": 297,
+      "community_name": "@astrojs/check",
+      "norm_label": "where freedom's android app costs you something"
+    },
+    {
+      "label": "Freedom pricing, as of 2026",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
+      "source_location": "L95",
+      "_origin": "ast",
+      "id": "src_content_blog_en_freedom_alternative_android_freedom_pricing_as_of_2026",
+      "community": 297,
+      "community_name": "@astrojs/check",
+      "norm_label": "freedom pricing, as of 2026"
+    },
+    {
+      "label": "A native, offline alternative built for Android only",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "src_content_blog_en_freedom_alternative_android_a_native_offline_alternative_built_for_android_only",
+      "community": 297,
+      "community_name": "@astrojs/check",
+      "norm_label": "a native, offline alternative built for android only"
+    },
+    {
+      "label": "Freedom vs Mindful Guard, side by side",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
+      "source_location": "L130",
+      "_origin": "ast",
+      "id": "src_content_blog_en_freedom_alternative_android_freedom_vs_mindful_guard_side_by_side",
+      "community": 297,
+      "community_name": "@astrojs/check",
+      "norm_label": "freedom vs mindful guard, side by side"
+    },
+    {
+      "label": "The other Freedom alternatives, briefly",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
+      "source_location": "L145",
+      "_origin": "ast",
+      "id": "src_content_blog_en_freedom_alternative_android_the_other_freedom_alternatives_briefly",
+      "community": 297,
+      "community_name": "@astrojs/check",
+      "norm_label": "the other freedom alternatives, briefly"
+    },
+    {
+      "label": "What Freedom is genuinely better at",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
+      "source_location": "L162",
+      "_origin": "ast",
+      "id": "src_content_blog_en_freedom_alternative_android_what_freedom_is_genuinely_better_at",
+      "community": 297,
+      "community_name": "@astrojs/check",
+      "norm_label": "what freedom is genuinely better at"
+    },
+    {
+      "label": "On price: the comparison people get wrong",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
+      "source_location": "L175",
+      "_origin": "ast",
+      "id": "src_content_blog_en_freedom_alternative_android_on_price_the_comparison_people_get_wrong",
+      "community": 297,
+      "community_name": "@astrojs/check",
+      "norm_label": "on price: the comparison people get wrong"
+    },
+    {
+      "label": "Who should actually pick which",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
+      "source_location": "L188",
+      "_origin": "ast",
+      "id": "src_content_blog_en_freedom_alternative_android_who_should_actually_pick_which",
+      "community": 297,
+      "community_name": "@astrojs/check",
+      "norm_label": "who should actually pick which"
+    },
+    {
+      "label": "Bottom line",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
+      "source_location": "L203",
+      "_origin": "ast",
+      "id": "src_content_blog_en_freedom_alternative_android_bottom_line",
+      "community": 297,
+      "community_name": "@astrojs/check",
+      "norm_label": "bottom line"
     },
     {
       "label": "en/how-to-add-sales-popup-shopify.md",
@@ -46372,160 +46328,6 @@
       "norm_label": "conclusion"
     },
     {
-      "label": "fr/dopamine-detox-phone-7-day-reset.mdx",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_dopamine_detox_phone_7_day_reset",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
-      "norm_label": "fr/dopamine-detox-phone-7-day-reset.mdx"
-    },
-    {
-      "label": "Le plan de 7 jours en un coup d'\u0153il",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L55",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_le_plan_de_7_jours_en_un_coup_d_\u0153il",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
-      "norm_label": "le plan de 7 jours en un coup d'\u0153il"
-    },
-    {
-      "label": "Pourquoi \u00ab d\u00e9tox dopamine \u00bb est un mauvais nom pour un effet bien r\u00e9el",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L68",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_pourquoi_d\u00e9tox_dopamine_est_un_mauvais_nom_pour_un_effet_bien_r\u00e9el",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
-      "norm_label": "pourquoi \u00ab detox dopamine \u00bb est un mauvais nom pour un effet bien reel"
-    },
-    {
-      "label": "Pourquoi \u00ab il suffit de supprimer les applis \u00bb \u00e9choue presque toujours",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L90",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_pourquoi_il_suffit_de_supprimer_les_applis_\u00e9choue_presque_toujours",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
-      "norm_label": "pourquoi \u00ab il suffit de supprimer les applis \u00bb echoue presque toujours"
-    },
-    {
-      "label": "Comment faire une d\u00e9tox dopamine de son t\u00e9l\u00e9phone : le plan de 7 jours",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L111",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_comment_faire_une_d\u00e9tox_dopamine_de_son_t\u00e9l\u00e9phone_le_plan_de_7_jours",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
-      "norm_label": "comment faire une detox dopamine de son telephone : le plan de 7 jours"
-    },
-    {
-      "label": "Jour 1 \u2014 Posez le blocage, pas une promesse",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L113",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_jour_1_posez_le_blocage_pas_une_promesse",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
-      "norm_label": "jour 1 \u2014 posez le blocage, pas une promesse"
-    },
-    {
-      "label": "Jour 2 \u2014 Attendez-vous \u00e0 la friction, pas \u00e0 la motivation",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L124",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_jour_2_attendez_vous_\u00e0_la_friction_pas_\u00e0_la_motivation",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
-      "norm_label": "jour 2 \u2014 attendez-vous a la friction, pas a la motivation"
-    },
-    {
-      "label": "Jours 3-4 \u2014 La phase la plus difficile",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L135",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_jours_3_4_la_phase_la_plus_difficile",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
-      "norm_label": "jours 3-4 \u2014 la phase la plus difficile"
-    },
-    {
-      "label": "Jour 5 \u2014 Le basculement commence",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L150",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_jour_5_le_basculement_commence",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
-      "norm_label": "jour 5 \u2014 le basculement commence"
-    },
-    {
-      "label": "Jours 6-7 \u2014 Observez ce qui a chang\u00e9",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L160",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_jours_6_7_observez_ce_qui_a_chang\u00e9",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
-      "norm_label": "jours 6-7 \u2014 observez ce qui a change"
-    },
-    {
-      "label": "Pourquoi une vraie d\u00e9tox de 7 jours demande plus qu'un quota gratuit de sessions",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L175",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_pourquoi_une_vraie_d\u00e9tox_de_7_jours_demande_plus_qu_un_quota_gratuit_de_sessions",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
-      "norm_label": "pourquoi une vraie detox de 7 jours demande plus qu'un quota gratuit de sessions"
-    },
-    {
-      "label": "Ce qui fait qu'une d\u00e9tox va r\u00e9ellement au bout",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L200",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_ce_qui_fait_qu_une_d\u00e9tox_va_r\u00e9ellement_au_bout",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
-      "norm_label": "ce qui fait qu'une detox va reellement au bout"
-    },
-    {
-      "label": "Apr\u00e8s le jour 7 : ne repartez pas de z\u00e9ro",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L214",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_apr\u00e8s_le_jour_7_ne_repartez_pas_de_z\u00e9ro",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
-      "norm_label": "apres le jour 7 : ne repartez pas de zero"
-    },
-    {
-      "label": "En r\u00e9sum\u00e9",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L233",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_en_r\u00e9sum\u00e9",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
-      "norm_label": "en resume"
-    },
-    {
       "label": "fr/free-shipping-bar-shopify.md",
       "file_type": "document",
       "source_file": "src/content/blog/fr/free-shipping-bar-shopify.md",
@@ -46678,6 +46480,138 @@
       "community": 110,
       "community_name": "\u00c9tape par \u00c9tape : Ajouter une Barre de Livraison Gratuite avec FomoGen",
       "norm_label": "combinez-la avec la preuve sociale pour de meilleurs resultats"
+    },
+    {
+      "label": "fr/freedom-alternative-android.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_freedom_alternative_android",
+      "community": 301,
+      "community_name": "6. Dark Mode Principles",
+      "norm_label": "fr/freedom-alternative-android.mdx"
+    },
+    {
+      "label": "Le verdict rapide",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_freedom_alternative_android_le_verdict_rapide",
+      "community": 301,
+      "community_name": "6. Dark Mode Principles",
+      "norm_label": "le verdict rapide"
+    },
+    {
+      "label": "Freedom fonctionne-t-il sur Android ?",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_freedom_alternative_android_freedom_fonctionne_t_il_sur_android",
+      "community": 301,
+      "community_name": "6. Dark Mode Principles",
+      "norm_label": "freedom fonctionne-t-il sur android ?"
+    },
+    {
+      "label": "Ce que l'application Android de Freedom vous co\u00fbte",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_freedom_alternative_android_ce_que_l_application_android_de_freedom_vous_co\u00fbte",
+      "community": 301,
+      "community_name": "6. Dark Mode Principles",
+      "norm_label": "ce que l'application android de freedom vous coute"
+    },
+    {
+      "label": "Tarifs de Freedom en 2026",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_freedom_alternative_android_tarifs_de_freedom_en_2026",
+      "community": 301,
+      "community_name": "6. Dark Mode Principles",
+      "norm_label": "tarifs de freedom en 2026"
+    },
+    {
+      "label": "Une alternative native et hors ligne, con\u00e7ue pour Android seulement",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
+      "source_location": "L111",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_freedom_alternative_android_une_alternative_native_et_hors_ligne_con\u00e7ue_pour_android_seulement",
+      "community": 301,
+      "community_name": "6. Dark Mode Principles",
+      "norm_label": "une alternative native et hors ligne, concue pour android seulement"
+    },
+    {
+      "label": "Freedom vs Mindful Guard, c\u00f4te \u00e0 c\u00f4te",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
+      "source_location": "L136",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_freedom_alternative_android_freedom_vs_mindful_guard_c\u00f4te_\u00e0_c\u00f4te",
+      "community": 301,
+      "community_name": "6. Dark Mode Principles",
+      "norm_label": "freedom vs mindful guard, cote a cote"
+    },
+    {
+      "label": "Les autres alternatives \u00e0 Freedom, en bref",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
+      "source_location": "L151",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_freedom_alternative_android_les_autres_alternatives_\u00e0_freedom_en_bref",
+      "community": 301,
+      "community_name": "6. Dark Mode Principles",
+      "norm_label": "les autres alternatives a freedom, en bref"
+    },
+    {
+      "label": "Ce que Freedom fait r\u00e9ellement mieux",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
+      "source_location": "L168",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_freedom_alternative_android_ce_que_freedom_fait_r\u00e9ellement_mieux",
+      "community": 301,
+      "community_name": "6. Dark Mode Principles",
+      "norm_label": "ce que freedom fait reellement mieux"
+    },
+    {
+      "label": "Sur le prix : la comparaison que tout le monde rate",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
+      "source_location": "L184",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_freedom_alternative_android_sur_le_prix_la_comparaison_que_tout_le_monde_rate",
+      "community": 301,
+      "community_name": "6. Dark Mode Principles",
+      "norm_label": "sur le prix : la comparaison que tout le monde rate"
+    },
+    {
+      "label": "Qui devrait choisir quoi",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
+      "source_location": "L197",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_freedom_alternative_android_qui_devrait_choisir_quoi",
+      "community": 301,
+      "community_name": "6. Dark Mode Principles",
+      "norm_label": "qui devrait choisir quoi"
+    },
+    {
+      "label": "En r\u00e9sum\u00e9",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
+      "source_location": "L214",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_freedom_alternative_android_en_r\u00e9sum\u00e9",
+      "community": 301,
+      "community_name": "6. Dark Mode Principles",
+      "norm_label": "en resume"
     },
     {
       "label": "fr/how-to-add-sales-popup-shopify.md",
@@ -96461,149 +96395,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L53",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_dopamine_detox_phone_7_day_reset",
-      "target": "src_content_blog_de_dopamine_detox_phone_7_day_reset_der_7_tage_plan_auf_einen_blick",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L108",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_dopamine_detox_phone_7_day_reset",
-      "target": "src_content_blog_de_dopamine_detox_phone_7_day_reset_dopamin_detox_am_handy_der_7_tage_plan",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L230",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_dopamine_detox_phone_7_day_reset",
-      "target": "src_content_blog_de_dopamine_detox_phone_7_day_reset_fazit",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L210",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_dopamine_detox_phone_7_day_reset",
-      "target": "src_content_blog_de_dopamine_detox_phone_7_day_reset_nach_tag_7_nicht_auf_null_zur\u00fcckfallen",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L66",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_dopamine_detox_phone_7_day_reset",
-      "target": "src_content_blog_de_dopamine_detox_phone_7_day_reset_warum_dopamin_detox_der_falsche_name_f\u00fcr_einen_echten_effekt_ist",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L170",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_dopamine_detox_phone_7_day_reset",
-      "target": "src_content_blog_de_dopamine_detox_phone_7_day_reset_warum_ein_echter_7_tage_detox_mehr_braucht_als_ein_kostenloses_sitzungskontingent",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L87",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_dopamine_detox_phone_7_day_reset",
-      "target": "src_content_blog_de_dopamine_detox_phone_7_day_reset_warum_einfach_die_apps_l\u00f6schen_fast_immer_scheitert",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L196",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_dopamine_detox_phone_7_day_reset",
-      "target": "src_content_blog_de_dopamine_detox_phone_7_day_reset_was_daf\u00fcr_sorgt_dass_dieser_detox_tats\u00e4chlich_zu_ende_geht",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L110",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_dopamine_detox_phone_7_day_reset_dopamin_detox_am_handy_der_7_tage_plan",
-      "target": "src_content_blog_de_dopamine_detox_phone_7_day_reset_tag_1_setzen_sie_eine_sperre_kein_versprechen",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L120",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_dopamine_detox_phone_7_day_reset_dopamin_detox_am_handy_der_7_tage_plan",
-      "target": "src_content_blog_de_dopamine_detox_phone_7_day_reset_tag_2_erwarten_sie_reibung_keine_motivation",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L131",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_dopamine_detox_phone_7_day_reset_dopamin_detox_am_handy_der_7_tage_plan",
-      "target": "src_content_blog_de_dopamine_detox_phone_7_day_reset_tag_3_4_die_h\u00e4rteste_phase",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L145",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_dopamine_detox_phone_7_day_reset_dopamin_detox_am_handy_der_7_tage_plan",
-      "target": "src_content_blog_de_dopamine_detox_phone_7_day_reset_tag_5_die_wende_beginnt",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L155",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_dopamine_detox_phone_7_day_reset_dopamin_detox_am_handy_der_7_tage_plan",
-      "target": "src_content_blog_de_dopamine_detox_phone_7_day_reset_tag_6_7_beobachten_sie_was_sich_ver\u00e4ndert_hat",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
       "source_location": "L130",
       "weight": 1.0,
@@ -96742,6 +96533,127 @@
       "_origin": "ast",
       "source": "src_content_blog_de_free_shipping_bar_shopify_schritt_f\u00fcr_schritt_versandkostenfrei_leiste_mit_fomogen_einbinden",
       "target": "src_content_blog_de_free_shipping_bar_shopify_schritt_7_speichern_und_live_schalten",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_freedom_alternative_android",
+      "target": "src_content_blog_de_freedom_alternative_android_das_kurzurteil",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
+      "source_location": "L150",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_freedom_alternative_android",
+      "target": "src_content_blog_de_freedom_alternative_android_die_\u00fcbrigen_freedom_alternativen_kurz_gefasst",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
+      "source_location": "L111",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_freedom_alternative_android",
+      "target": "src_content_blog_de_freedom_alternative_android_eine_native_offline_alternative_nur_f\u00fcr_android_gebaut",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
+      "source_location": "L212",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_freedom_alternative_android",
+      "target": "src_content_blog_de_freedom_alternative_android_fazit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
+      "source_location": "L135",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_freedom_alternative_android",
+      "target": "src_content_blog_de_freedom_alternative_android_freedom_vs_mindful_guard_im_direkten_vergleich",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_freedom_alternative_android",
+      "target": "src_content_blog_de_freedom_alternative_android_funktioniert_freedom_auf_android",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_freedom_alternative_android",
+      "target": "src_content_blog_de_freedom_alternative_android_was_ihnen_freedoms_android_app_kostet",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
+      "source_location": "L197",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_freedom_alternative_android",
+      "target": "src_content_blog_de_freedom_alternative_android_wer_was_w\u00e4hlen_sollte",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
+      "source_location": "L168",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_freedom_alternative_android",
+      "target": "src_content_blog_de_freedom_alternative_android_worin_freedom_tats\u00e4chlich_besser_ist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
+      "source_location": "L182",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_freedom_alternative_android",
+      "target": "src_content_blog_de_freedom_alternative_android_zum_preis_der_vergleich_den_alle_falsch_machen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_freedom_alternative_android_was_ihnen_freedoms_android_app_kostet",
+      "target": "src_content_blog_de_freedom_alternative_android_freedom_preise_stand_2026",
       "confidence_score": 1.0
     },
     {
@@ -98859,149 +98771,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L201",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_dopamine_detox_phone_7_day_reset",
-      "target": "src_content_blog_en_dopamine_detox_phone_7_day_reset_after_day_7_do_not_go_back_to_zero",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L218",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_dopamine_detox_phone_7_day_reset",
-      "target": "src_content_blog_en_dopamine_detox_phone_7_day_reset_bottom_line",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L105",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_dopamine_detox_phone_7_day_reset",
-      "target": "src_content_blog_en_dopamine_detox_phone_7_day_reset_how_to_do_a_dopamine_detox_from_your_phone_the_7_day_plan",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L53",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_dopamine_detox_phone_7_day_reset",
-      "target": "src_content_blog_en_dopamine_detox_phone_7_day_reset_the_7_day_plan_at_a_glance",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L187",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_dopamine_detox_phone_7_day_reset",
-      "target": "src_content_blog_en_dopamine_detox_phone_7_day_reset_what_makes_this_version_of_a_detox_actually_finish",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L66",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_dopamine_detox_phone_7_day_reset",
-      "target": "src_content_blog_en_dopamine_detox_phone_7_day_reset_why_dopamine_detox_is_the_wrong_name_for_a_real_effect",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L86",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_dopamine_detox_phone_7_day_reset",
-      "target": "src_content_blog_en_dopamine_detox_phone_7_day_reset_why_just_delete_the_apps_usually_fails",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L164",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_dopamine_detox_phone_7_day_reset",
-      "target": "src_content_blog_en_dopamine_detox_phone_7_day_reset_why_most_7_day_detoxes_need_more_than_a_free_session_limit",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L107",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_dopamine_detox_phone_7_day_reset_how_to_do_a_dopamine_detox_from_your_phone_the_7_day_plan",
-      "target": "src_content_blog_en_dopamine_detox_phone_7_day_reset_day_1_set_the_block_not_a_promise",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L116",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_dopamine_detox_phone_7_day_reset_how_to_do_a_dopamine_detox_from_your_phone_the_7_day_plan",
-      "target": "src_content_blog_en_dopamine_detox_phone_7_day_reset_day_2_expect_friction_not_motivation",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L126",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_dopamine_detox_phone_7_day_reset_how_to_do_a_dopamine_detox_from_your_phone_the_7_day_plan",
-      "target": "src_content_blog_en_dopamine_detox_phone_7_day_reset_day_3_4_the_hardest_stretch",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L140",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_dopamine_detox_phone_7_day_reset_how_to_do_a_dopamine_detox_from_your_phone_the_7_day_plan",
-      "target": "src_content_blog_en_dopamine_detox_phone_7_day_reset_day_5_the_shift_starts",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L150",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_dopamine_detox_phone_7_day_reset_how_to_do_a_dopamine_detox_from_your_phone_the_7_day_plan",
-      "target": "src_content_blog_en_dopamine_detox_phone_7_day_reset_day_6_7_notice_what_changed",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/en/free-shipping-bar-shopify.md",
       "source_location": "L130",
       "weight": 1.0,
@@ -99140,6 +98909,127 @@
       "_origin": "ast",
       "source": "src_content_blog_en_free_shipping_bar_shopify_step_by_step_adding_a_free_shipping_bar_with_fomogen",
       "target": "src_content_blog_en_free_shipping_bar_shopify_step_7_save_and_go_live",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_freedom_alternative_android",
+      "target": "src_content_blog_en_freedom_alternative_android_a_native_offline_alternative_built_for_android_only",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
+      "source_location": "L203",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_freedom_alternative_android",
+      "target": "src_content_blog_en_freedom_alternative_android_bottom_line",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_freedom_alternative_android",
+      "target": "src_content_blog_en_freedom_alternative_android_does_freedom_work_on_android",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
+      "source_location": "L130",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_freedom_alternative_android",
+      "target": "src_content_blog_en_freedom_alternative_android_freedom_vs_mindful_guard_side_by_side",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
+      "source_location": "L175",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_freedom_alternative_android",
+      "target": "src_content_blog_en_freedom_alternative_android_on_price_the_comparison_people_get_wrong",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_freedom_alternative_android",
+      "target": "src_content_blog_en_freedom_alternative_android_quick_verdict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
+      "source_location": "L145",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_freedom_alternative_android",
+      "target": "src_content_blog_en_freedom_alternative_android_the_other_freedom_alternatives_briefly",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
+      "source_location": "L162",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_freedom_alternative_android",
+      "target": "src_content_blog_en_freedom_alternative_android_what_freedom_is_genuinely_better_at",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_freedom_alternative_android",
+      "target": "src_content_blog_en_freedom_alternative_android_where_freedom_s_android_app_costs_you_something",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
+      "source_location": "L188",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_freedom_alternative_android",
+      "target": "src_content_blog_en_freedom_alternative_android_who_should_actually_pick_which",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_freedom_alternative_android_where_freedom_s_android_app_costs_you_something",
+      "target": "src_content_blog_en_freedom_alternative_android_freedom_pricing_as_of_2026",
       "confidence_score": 1.0
     },
     {
@@ -101279,149 +101169,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L214",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_dopamine_detox_phone_7_day_reset",
-      "target": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_apr\u00e8s_le_jour_7_ne_repartez_pas_de_z\u00e9ro",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L200",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_dopamine_detox_phone_7_day_reset",
-      "target": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_ce_qui_fait_qu_une_d\u00e9tox_va_r\u00e9ellement_au_bout",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L111",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_dopamine_detox_phone_7_day_reset",
-      "target": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_comment_faire_une_d\u00e9tox_dopamine_de_son_t\u00e9l\u00e9phone_le_plan_de_7_jours",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L233",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_dopamine_detox_phone_7_day_reset",
-      "target": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_en_r\u00e9sum\u00e9",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L55",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_dopamine_detox_phone_7_day_reset",
-      "target": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_le_plan_de_7_jours_en_un_coup_d_\u0153il",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L68",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_dopamine_detox_phone_7_day_reset",
-      "target": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_pourquoi_d\u00e9tox_dopamine_est_un_mauvais_nom_pour_un_effet_bien_r\u00e9el",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L90",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_dopamine_detox_phone_7_day_reset",
-      "target": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_pourquoi_il_suffit_de_supprimer_les_applis_\u00e9choue_presque_toujours",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L175",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_dopamine_detox_phone_7_day_reset",
-      "target": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_pourquoi_une_vraie_d\u00e9tox_de_7_jours_demande_plus_qu_un_quota_gratuit_de_sessions",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L113",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_comment_faire_une_d\u00e9tox_dopamine_de_son_t\u00e9l\u00e9phone_le_plan_de_7_jours",
-      "target": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_jour_1_posez_le_blocage_pas_une_promesse",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L124",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_comment_faire_une_d\u00e9tox_dopamine_de_son_t\u00e9l\u00e9phone_le_plan_de_7_jours",
-      "target": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_jour_2_attendez_vous_\u00e0_la_friction_pas_\u00e0_la_motivation",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L150",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_comment_faire_une_d\u00e9tox_dopamine_de_son_t\u00e9l\u00e9phone_le_plan_de_7_jours",
-      "target": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_jour_5_le_basculement_commence",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L135",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_comment_faire_une_d\u00e9tox_dopamine_de_son_t\u00e9l\u00e9phone_le_plan_de_7_jours",
-      "target": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_jours_3_4_la_phase_la_plus_difficile",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx",
-      "source_location": "L160",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_comment_faire_une_d\u00e9tox_dopamine_de_son_t\u00e9l\u00e9phone_le_plan_de_7_jours",
-      "target": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_jours_6_7_observez_ce_qui_a_chang\u00e9",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/fr/free-shipping-bar-shopify.md",
       "source_location": "L160",
       "weight": 1.0,
@@ -101560,6 +101307,127 @@
       "_origin": "ast",
       "source": "src_content_blog_fr_free_shipping_bar_shopify_\u00e9tape_par_\u00e9tape_ajouter_une_barre_de_livraison_gratuite_avec_fomogen",
       "target": "src_content_blog_fr_free_shipping_bar_shopify_\u00e9tape_7_sauvegarder_et_mettre_en_ligne",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
+      "source_location": "L168",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_freedom_alternative_android",
+      "target": "src_content_blog_fr_freedom_alternative_android_ce_que_freedom_fait_r\u00e9ellement_mieux",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_freedom_alternative_android",
+      "target": "src_content_blog_fr_freedom_alternative_android_ce_que_l_application_android_de_freedom_vous_co\u00fbte",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
+      "source_location": "L214",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_freedom_alternative_android",
+      "target": "src_content_blog_fr_freedom_alternative_android_en_r\u00e9sum\u00e9",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_freedom_alternative_android",
+      "target": "src_content_blog_fr_freedom_alternative_android_freedom_fonctionne_t_il_sur_android",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
+      "source_location": "L136",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_freedom_alternative_android",
+      "target": "src_content_blog_fr_freedom_alternative_android_freedom_vs_mindful_guard_c\u00f4te_\u00e0_c\u00f4te",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_freedom_alternative_android",
+      "target": "src_content_blog_fr_freedom_alternative_android_le_verdict_rapide",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
+      "source_location": "L151",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_freedom_alternative_android",
+      "target": "src_content_blog_fr_freedom_alternative_android_les_autres_alternatives_\u00e0_freedom_en_bref",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
+      "source_location": "L197",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_freedom_alternative_android",
+      "target": "src_content_blog_fr_freedom_alternative_android_qui_devrait_choisir_quoi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
+      "source_location": "L184",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_freedom_alternative_android",
+      "target": "src_content_blog_fr_freedom_alternative_android_sur_le_prix_la_comparaison_que_tout_le_monde_rate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
+      "source_location": "L111",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_freedom_alternative_android",
+      "target": "src_content_blog_fr_freedom_alternative_android_une_alternative_native_et_hors_ligne_con\u00e7ue_pour_android_seulement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_freedom_alternative_android_ce_que_l_application_android_de_freedom_vous_co\u00fbte",
+      "target": "src_content_blog_fr_freedom_alternative_android_tarifs_de_freedom_en_2026",
       "confidence_score": 1.0
     },
     {
@@ -103104,5 +102972,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "fc355fdc201799a0d0e4da261160b5390a81cb5b"
+  "built_at_commit": "078bef2ab5661b401c0e074733c2c065fde4e4bc"
 }
