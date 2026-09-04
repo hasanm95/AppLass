@@ -1,16 +1,16 @@
 # Graph Report - AppLass  (2026-08-04)
 
 ## Corpus Check
-- 466 files · ~1,770,041 words
+- 466 files · ~1,770,156 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4384 nodes · 4916 edges · 333 communities (317 shown, 16 thin omitted)
+- 4384 nodes · 4916 edges · 335 communities (319 shown, 16 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.61)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `9461a540`
+- Built from commit: `078bef2a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -338,7 +338,9 @@
 - 4. Outdoor Visibility
 - 9. Color System Checklist
 - 5. Risk Prioritization
+- 4. iOS Layout & Spacing
 - 8. SF Symbols
+- 9. iOS Accessibility
 - 4. Attack Surface Mapping
 
 ## God Nodes (most connected - your core abstractions)
@@ -368,7 +370,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (333 total, 16 thin omitted)
+## Communities (335 total, 16 thin omitted)
 
 ### Community 0 - "@/i18n/localize"
 Cohesion: 0.12
@@ -399,16 +401,16 @@ Cohesion: 0.04
 Nodes (46): 1. The Mobile Performance Mindset, 2. React Native Performance, 3. Flutter Performance, 4. Animation Performance (Both Platforms), 5. Memory Management, 6. Battery Optimization, 7. Network Performance, 8. Performance Testing (+38 more)
 
 ### Community 7 - "Frontend Design System"
-Cohesion: 0.12
-Nodes (16): 10. Decision Process Summary, 1. Constraint Analysis (ALWAYS FIRST), 4. Color Principles, 60-30-10 Rule, Audience → Design Approach, Color Psychology (For Decision Making), ⚠️ CRITICAL: ASK BEFORE ASSUMING (MANDATORY), ⛔ DEFAULT TENDENCIES TO AVOID (ANTI-SAFE HARBOR): (+8 more)
+Cohesion: 0.17
+Nodes (12): 10. Decision Process Summary, 1. Constraint Analysis (ALWAYS FIRST), Audience → Design Approach, ⚠️ CRITICAL: ASK BEFORE ASSUMING (MANDATORY), ⛔ DEFAULT TENDENCIES TO AVOID (ANTI-SAFE HARBOR):, Frontend Design System, Post-Design Workflow, Reference Files (+4 more)
 
 ### Community 8 - "Intelligent Agent Routing"
 Cohesion: 0.05
 Nodes (43): 1. Request Analysis, 2. Agent Selection Matrix, 3. Automatic Routing Protocol, 4. Response Format, Case 1: Generic Question, Case 2: Extremely Vague Request, Case 3: Contradictory Patterns, COMPLEX (Orchestrator required) (+35 more)
 
 ### Community 9 - "iOS Platform Guidelines"
-Cohesion: 0.12
-Nodes (16): 10. iOS Checklist, 1. Human Interface Guidelines Philosophy, 2. iOS Typography, 9. iOS Accessibility, Before Every iOS Screen, Before iOS Release, Core Apple Design Principles, Dynamic Type Scaling (+8 more)
+Cohesion: 0.17
+Nodes (12): 10. iOS Checklist, 1. Human Interface Guidelines Philosophy, 7. iOS Specific Patterns, Before Every iOS Screen, Before iOS Release, Context Menus, Core Apple Design Principles, iOS Design Values (+4 more)
 
 ### Community 10 - "Visual Effects Reference"
 Cohesion: 0.05
@@ -1428,7 +1430,7 @@ Nodes (6): Auftritt Mindful Guard: bewusste Reibung als Konstruktionsprinzip, De
 
 ### Community 269 - "8. Hierarchy Principles"
 Cohesion: 0.17
-Nodes (11): Eines sollten Sie vor jeder Installation prüfen, Fazit, Kostenlose Reels- und Shorts-Blocker im Vergleich, MindfulGuard — Tages- und Sitzungslimit gemeinsam, NoScroll — die etablierteste Option, ScrollGuard — die breiteste Plattformabdeckung, Shortstop — die schlankeste, und wirklich kostenlos, StopScroll — beste Bewertung, mit eingebautem Tageslimit (+3 more)
+Nodes (11): Das Kurzurteil, Die übrigen Freedom-Alternativen, kurz gefasst, Eine native Offline-Alternative, nur für Android gebaut, Fazit, Freedom-Preise, Stand 2026, Freedom vs. Mindful Guard im direkten Vergleich, Funktioniert Freedom auf Android?, Was Ihnen Freedoms Android-App kostet (+3 more)
 
 ### Community 270 - "6. Exceptional Conditions (A10 - New)"
 Cohesion: 0.67
@@ -1476,7 +1478,7 @@ Nodes (13): Ein konkretes Rechenbeispiel, Häufige Fehler, die Sie vermeiden sol
 
 ### Community 297 - "@astrojs/check"
 Cohesion: 0.17
-Nodes (11): Bottom line, Free Reels and Shorts blockers compared, How to choose, How we compared these apps, MindfulGuard — daily and per-session limits together, NoScroll — the most established option, One thing to check before you install any of these, ScrollGuard — the broadest platform coverage (+3 more)
+Nodes (11): A native, offline alternative built for Android only, Bottom line, Does Freedom work on Android?, Freedom pricing, as of 2026, Freedom vs Mindful Guard, side by side, On price: the comparison people get wrong, Quick verdict, The other Freedom alternatives, briefly (+3 more)
 
 ### Community 298 - "package.json"
 Cohesion: 0.50
@@ -1484,7 +1486,7 @@ Nodes (3): name, type, version
 
 ### Community 301 - "6. Dark Mode Principles"
 Cohesion: 0.17
-Nodes (11): Comment choisir, Comparatif des bloqueurs gratuits de Reels et de Shorts, En résumé, Et les grands noms du blocage ?, MindfulGuard — limites quotidienne et par session ensemble, NoScroll — l'option la plus établie, Notre méthode de comparaison, ScrollGuard — la couverture la plus large (+3 more)
+Nodes (11): Ce que Freedom fait réellement mieux, Ce que l'application Android de Freedom vous coûte, En résumé, Freedom fonctionne-t-il sur Android ?, Freedom vs Mindful Guard, côte à côte, Le verdict rapide, Les autres alternatives à Freedom, en bref, Qui devrait choisir quoi (+3 more)
 
 ### Community 302 - "7. Accessibility Guidelines"
 Cohesion: 0.25
@@ -1536,11 +1538,11 @@ Nodes (5): List Pattern Questioning, Navigation Pattern Questioning, 🎯 PATTER
 
 ### Community 315 - "8. Portfolio Guidelines {#portfolio}"
 Cohesion: 0.40
-Nodes (5): 6. iOS Components, Buttons, Lists & Tables, Segmented Controls, Text Fields
+Nodes (5): 2. iOS Typography, Dynamic Type Support (MANDATORY), Font Weight Usage, iOS Type Scale (Dynamic Type), SF Pro Font Family
 
 ### Community 316 - "4. Animation Performance (Both Platforms)"
 Cohesion: 0.40
-Nodes (5): 7. iOS Specific Patterns, Context Menus, Pull to Refresh, Sheets & Half-Sheets, Swipe Actions
+Nodes (5): 6. iOS Components, Buttons, Lists & Tables, Segmented Controls, Text Fields
 
 ### Community 317 - "de/calculate-free-shipping-threshold.md"
 Cohesion: 0.40
@@ -1572,42 +1574,50 @@ Nodes (4): 3. Layout Principles, 8-Point Grid Concept, Golden Ratio (φ = 1.618)
 
 ### Community 324 - "2. State Management Selection"
 Cohesion: 0.50
-Nodes (4): 5. Typography Principles, Pairing Concept, Readability Rules, Scale Selection
+Nodes (4): 4. Color Principles, 60-30-10 Rule, Color Psychology (For Decision Making), Selection Process
 
 ### Community 325 - "7. Project Type Templates"
 Cohesion: 0.50
-Nodes (4): 6. Visual Effects Principles, Glassmorphism (When Appropriate), Gradient Usage, Shadow Hierarchy
+Nodes (4): 5. Typography Principles, Pairing Concept, Readability Rules, Scale Selection
 
 ### Community 326 - "10. Quick Reference"
 Cohesion: 0.50
-Nodes (4): 7. Animation Principles, Easing Selection, Performance, Timing Concept
+Nodes (4): 6. Visual Effects Principles, Glassmorphism (When Appropriate), Gradient Usage, Shadow Hierarchy
 
 ### Community 327 - "7. Color Accessibility"
 Cohesion: 0.50
-Nodes (4): 8. "Wow Factor" Checklist, Emotional Triggers, Premium Indicators, Trust Builders
+Nodes (4): 7. Animation Principles, Easing Selection, Performance, Timing Concept
 
 ### Community 328 - "4. Outdoor Visibility"
 Cohesion: 0.50
-Nodes (4): 9. Anti-Patterns (What NOT to Do), ❌ AI Tendency Patterns (AVOID!), ❌ Dark Patterns (Unethical), ❌ Lazy Design Indicators
+Nodes (4): 8. "Wow Factor" Checklist, Emotional Triggers, Premium Indicators, Trust Builders
 
 ### Community 329 - "9. Color System Checklist"
 Cohesion: 0.50
-Nodes (4): 3. iOS Color System, Dark Mode Considerations, System Accent Colors, System Colors (Semantic)
+Nodes (4): 9. Anti-Patterns (What NOT to Do), ❌ AI Tendency Patterns (AVOID!), ❌ Dark Patterns (Unethical), ❌ Lazy Design Indicators
 
 ### Community 330 - "5. Risk Prioritization"
 Cohesion: 0.50
+Nodes (4): 3. iOS Color System, Dark Mode Considerations, System Accent Colors, System Colors (Semantic)
+
+### Community 331 - "4. iOS Layout & Spacing"
+Cohesion: 0.50
 Nodes (4): 4. iOS Layout & Spacing, iOS Grid System, Safe Areas, Standard Margins & Padding
 
-### Community 331 - "8. SF Symbols"
+### Community 332 - "8. SF Symbols"
 Cohesion: 0.50
 Nodes (4): 8. SF Symbols, Symbol Best Practices, Symbol Configurations, Usage Guidelines
 
-### Community 332 - "4. Attack Surface Mapping"
+### Community 333 - "9. iOS Accessibility"
+Cohesion: 0.50
+Nodes (4): 9. iOS Accessibility, Dynamic Type Scaling, Reduce Motion, VoiceOver Requirements
+
+### Community 334 - "4. Attack Surface Mapping"
 Cohesion: 0.67
 Nodes (3): 4. Attack Surface Mapping, Prioritization Matrix, What to Map
 
 ## Knowledge Gaps
-- **2863 isolated node(s):** `Colors`, `Colors`, `$schema`, `style`, `rsc` (+2858 more)
+- **2860 isolated node(s):** `Colors`, `Colors`, `$schema`, `style`, `rsc` (+2855 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **16 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -1617,7 +1627,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `Decision Trees & Context Templates` connect `Decision Trees & Context Templates` to `frontend-design/SKILL.md`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **What connects `Colors`, `Colors`, `$schema` to the rest of the system?**
-  _2863 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2860 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `@/i18n/localize` be split into smaller, more focused modules?**
   _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
 - **Should `design_system.py` be split into smaller, more focused modules?**
