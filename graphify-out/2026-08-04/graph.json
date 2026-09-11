@@ -18625,8 +18625,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill",
-      "community": 127,
-      "community_name": "frontend-design/SKILL.md",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "frontend-design/skill.md"
     },
     {
@@ -18724,8 +18724,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_2_ux_psychology_principles",
-      "community": 322,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "2. ux psychology principles"
     },
     {
@@ -18735,8 +18735,8 @@
       "source_location": "L104",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_core_laws_internalize_these",
-      "community": 322,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "core laws (internalize these)"
     },
     {
@@ -18746,8 +18746,8 @@
       "source_location": "L114",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_emotional_design_levels",
-      "community": 322,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "emotional design levels"
     },
     {
@@ -18757,8 +18757,8 @@
       "source_location": "L122",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_trust_building",
-      "community": 322,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "trust building"
     },
     {
@@ -18768,8 +18768,8 @@
       "source_location": "L132",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_3_layout_principles",
-      "community": 323,
-      "community_name": "1. Framework Selection",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "3. layout principles"
     },
     {
@@ -18779,8 +18779,8 @@
       "source_location": "L134",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_golden_ratio_\u03c6_1_618",
-      "community": 323,
-      "community_name": "1. Framework Selection",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "golden ratio (\u03c6 = 1.618)"
     },
     {
@@ -18790,8 +18790,8 @@
       "source_location": "L143",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_8_point_grid_concept",
-      "community": 323,
-      "community_name": "1. Framework Selection",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "8-point grid concept"
     },
     {
@@ -18801,8 +18801,8 @@
       "source_location": "L155",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_key_sizing_principles",
-      "community": 323,
-      "community_name": "1. Framework Selection",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "key sizing principles"
     },
     {
@@ -18812,8 +18812,8 @@
       "source_location": "L167",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_4_color_principles",
-      "community": 324,
-      "community_name": "2. State Management Selection",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "4. color principles"
     },
     {
@@ -18823,8 +18823,8 @@
       "source_location": "L169",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_60_30_10_rule",
-      "community": 324,
-      "community_name": "2. State Management Selection",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "60-30-10 rule"
     },
     {
@@ -18834,8 +18834,8 @@
       "source_location": "L177",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_color_psychology_for_decision_making",
-      "community": 324,
-      "community_name": "2. State Management Selection",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "color psychology (for decision making)"
     },
     {
@@ -18845,8 +18845,8 @@
       "source_location": "L187",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_selection_process",
-      "community": 324,
-      "community_name": "2. State Management Selection",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "selection process"
     },
     {
@@ -18856,8 +18856,8 @@
       "source_location": "L198",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_5_typography_principles",
-      "community": 325,
-      "community_name": "7. Project Type Templates",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "5. typography principles"
     },
     {
@@ -18867,8 +18867,8 @@
       "source_location": "L200",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_scale_selection",
-      "community": 325,
-      "community_name": "7. Project Type Templates",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "scale selection"
     },
     {
@@ -18878,8 +18878,8 @@
       "source_location": "L209",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_pairing_concept",
-      "community": 325,
-      "community_name": "7. Project Type Templates",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "pairing concept"
     },
     {
@@ -18889,8 +18889,8 @@
       "source_location": "L218",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_readability_rules",
-      "community": 325,
-      "community_name": "7. Project Type Templates",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "readability rules"
     },
     {
@@ -18900,8 +18900,8 @@
       "source_location": "L229",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_6_visual_effects_principles",
-      "community": 326,
-      "community_name": "10. Quick Reference",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "6. visual effects principles"
     },
     {
@@ -18911,8 +18911,8 @@
       "source_location": "L231",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_glassmorphism_when_appropriate",
-      "community": 326,
-      "community_name": "10. Quick Reference",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "glassmorphism (when appropriate)"
     },
     {
@@ -18922,8 +18922,8 @@
       "source_location": "L241",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_shadow_hierarchy",
-      "community": 326,
-      "community_name": "10. Quick Reference",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "shadow hierarchy"
     },
     {
@@ -18933,8 +18933,8 @@
       "source_location": "L251",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_gradient_usage",
-      "community": 326,
-      "community_name": "10. Quick Reference",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "gradient usage"
     },
     {
@@ -18944,8 +18944,8 @@
       "source_location": "L266",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_7_animation_principles",
-      "community": 327,
-      "community_name": "7. Color Accessibility",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "7. animation principles"
     },
     {
@@ -18955,8 +18955,8 @@
       "source_location": "L268",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_timing_concept",
-      "community": 327,
-      "community_name": "7. Color Accessibility",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "timing concept"
     },
     {
@@ -18966,8 +18966,8 @@
       "source_location": "L278",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_easing_selection",
-      "community": 327,
-      "community_name": "7. Color Accessibility",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "easing selection"
     },
     {
@@ -18977,8 +18977,8 @@
       "source_location": "L287",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_performance",
-      "community": 327,
-      "community_name": "7. Color Accessibility",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "performance"
     },
     {
@@ -18988,8 +18988,8 @@
       "source_location": "L297",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_8_wow_factor_checklist",
-      "community": 328,
-      "community_name": "4. Outdoor Visibility",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "8. \"wow factor\" checklist"
     },
     {
@@ -18999,8 +18999,8 @@
       "source_location": "L299",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_premium_indicators",
-      "community": 328,
-      "community_name": "4. Outdoor Visibility",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "premium indicators"
     },
     {
@@ -19010,8 +19010,8 @@
       "source_location": "L308",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_trust_builders",
-      "community": 328,
-      "community_name": "4. Outdoor Visibility",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "trust builders"
     },
     {
@@ -19021,8 +19021,8 @@
       "source_location": "L316",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_emotional_triggers",
-      "community": 328,
-      "community_name": "4. Outdoor Visibility",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "emotional triggers"
     },
     {
@@ -19032,8 +19032,8 @@
       "source_location": "L325",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_9_anti_patterns_what_not_to_do",
-      "community": 329,
-      "community_name": "9. Color System Checklist",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "9. anti-patterns (what not to do)"
     },
     {
@@ -19043,8 +19043,8 @@
       "source_location": "L327",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_lazy_design_indicators",
-      "community": 329,
-      "community_name": "9. Color System Checklist",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "\u274c lazy design indicators"
     },
     {
@@ -19054,8 +19054,8 @@
       "source_location": "L336",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_ai_tendency_patterns_avoid",
-      "community": 329,
-      "community_name": "9. Color System Checklist",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "\u274c ai tendency patterns (avoid!)"
     },
     {
@@ -19065,8 +19065,8 @@
       "source_location": "L346",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill_dark_patterns_unethical",
-      "community": 329,
-      "community_name": "9. Color System Checklist",
+      "community": 7,
+      "community_name": "Frontend Design System",
       "norm_label": "\u274c dark patterns (unethical)"
     },
     {
@@ -19120,8 +19120,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "animation-guide.md"
     },
     {
@@ -19560,8 +19560,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system",
-      "community": 127,
-      "community_name": "frontend-design/SKILL.md",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "color-system.md"
     },
     {
@@ -19659,8 +19659,8 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_3_color_psychology_meaning_selection",
-      "community": 320,
-      "community_name": "3. Dark Mode Design",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "3. color psychology - meaning & selection"
     },
     {
@@ -19670,8 +19670,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_how_to_choose_based_on_context",
-      "community": 320,
-      "community_name": "3. Dark Mode Design",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "how to choose based on context"
     },
     {
@@ -19681,8 +19681,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_emotional_associations_for_decision_making",
-      "community": 320,
-      "community_name": "3. Dark Mode Design",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "emotional associations (for decision making)"
     },
     {
@@ -19692,8 +19692,8 @@
       "source_location": "L115",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_selection_process",
-      "community": 320,
-      "community_name": "3. Dark Mode Design",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "selection process:"
     },
     {
@@ -19703,8 +19703,8 @@
       "source_location": "L124",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_4_palette_generation_principles",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 297,
+      "community_name": "@astrojs/check",
       "norm_label": "4. palette generation principles"
     },
     {
@@ -19714,8 +19714,8 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_from_a_single_color_hsl_method",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 297,
+      "community_name": "@astrojs/check",
       "norm_label": "from a single color (hsl method)"
     },
     {
@@ -19725,8 +19725,8 @@
       "source_location": "L151",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_generating_a_full_palette",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 297,
+      "community_name": "@astrojs/check",
       "norm_label": "generating a full palette"
     },
     {
@@ -19736,8 +19736,8 @@
       "source_location": "L169",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_saturation_adjustments",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 297,
+      "community_name": "@astrojs/check",
       "norm_label": "saturation adjustments"
     },
     {
@@ -19769,8 +19769,8 @@
       "source_location": "L226",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_6_dark_mode_principles",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 301,
+      "community_name": "6. Dark Mode Principles",
       "norm_label": "6. dark mode principles"
     },
     {
@@ -19780,8 +19780,8 @@
       "source_location": "L228",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_key_rules_no_fixed_codes",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 301,
+      "community_name": "6. Dark Mode Principles",
       "norm_label": "key rules (no fixed codes)"
     },
     {
@@ -19791,8 +19791,8 @@
       "source_location": "L235",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_contrast_in_dark_mode",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 301,
+      "community_name": "6. Dark Mode Principles",
       "norm_label": "contrast in dark mode"
     },
     {
@@ -19802,8 +19802,8 @@
       "source_location": "L245",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_adapting_colors_for_dark_mode",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 301,
+      "community_name": "6. Dark Mode Principles",
       "norm_label": "adapting colors for dark mode"
     },
     {
@@ -19901,8 +19901,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees",
-      "community": 127,
-      "community_name": "frontend-design/SKILL.md",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "frontend-design/decision-trees.md"
     },
     {
@@ -20341,8 +20341,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics",
-      "community": 127,
-      "community_name": "frontend-design/SKILL.md",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "motion-graphics.md"
     },
     {
@@ -20363,8 +20363,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_1_lottie_animations",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "1. lottie animations"
     },
     {
@@ -20374,8 +20374,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_what_is_lottie",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "what is lottie?"
     },
     {
@@ -20385,8 +20385,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use_lottie",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "when to use lottie"
     },
     {
@@ -20396,8 +20396,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "principles"
     },
     {
@@ -20407,8 +20407,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_sources",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "sources"
     },
     {
@@ -20418,8 +20418,8 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_2_gsap_greensock",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "2. gsap (greensock)"
     },
     {
@@ -20429,8 +20429,8 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_what_makes_gsap_different",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "what makes gsap different"
     },
     {
@@ -20440,8 +20440,8 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_core_concepts",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "core concepts"
     },
     {
@@ -20451,8 +20451,8 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use_gsap",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "when to use gsap"
     },
     {
@@ -20462,8 +20462,8 @@
       "source_location": "L77",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_77",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 314,
+      "community_name": "8. Security for Mobile",
       "norm_label": "principles"
     },
     {
@@ -20473,8 +20473,8 @@
       "source_location": "L86",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_3_svg_animations",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "3. svg animations"
     },
     {
@@ -20484,8 +20484,8 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_types_of_svg_animation",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "types of svg animation"
     },
     {
@@ -20495,8 +20495,8 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_line_drawing_principles",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "line drawing principles"
     },
     {
@@ -20506,8 +20506,8 @@
       "source_location": "L107",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use_svg_animations",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "when to use svg animations"
     },
     {
@@ -20517,8 +20517,8 @@
       "source_location": "L116",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_116",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 315,
+      "community_name": "8. Portfolio Guidelines {#portfolio}",
       "norm_label": "principles"
     },
     {
@@ -20528,8 +20528,8 @@
       "source_location": "L125",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_4_3d_css_transforms",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 322,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "4. 3d css transforms"
     },
     {
@@ -20539,8 +20539,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_core_properties",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 322,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "core properties"
     },
     {
@@ -20550,8 +20550,8 @@
       "source_location": "L138",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_common_3d_patterns",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 322,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "common 3d patterns"
     },
     {
@@ -20561,8 +20561,8 @@
       "source_location": "L147",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_147",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 322,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "principles"
     },
     {
@@ -20572,8 +20572,8 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_5_particle_effects",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "5. particle effects"
     },
     {
@@ -20583,8 +20583,8 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_types_of_particle_systems",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "types of particle systems"
     },
     {
@@ -20594,8 +20594,8 @@
       "source_location": "L168",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_libraries",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "libraries"
     },
     {
@@ -20605,8 +20605,8 @@
       "source_location": "L177",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_177",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "principles"
     },
     {
@@ -20616,8 +20616,8 @@
       "source_location": "L185",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 316,
+      "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "when to use"
     },
     {
@@ -21199,8 +21199,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_ux_psychology",
-      "community": 127,
-      "community_name": "frontend-design/SKILL.md",
+      "community": 269,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "ux-psychology.md"
     },
     {
@@ -26193,8 +26193,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_1_framework_selection",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 323,
+      "community_name": "1. Framework Selection",
       "norm_label": "1. framework selection"
     },
     {
@@ -26204,8 +26204,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_master_decision_tree",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 323,
+      "community_name": "1. Framework Selection",
       "norm_label": "master decision tree"
     },
     {
@@ -26215,8 +26215,8 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_framework_comparison",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 323,
+      "community_name": "1. Framework Selection",
       "norm_label": "framework comparison"
     },
     {
@@ -26226,8 +26226,8 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_when_to_choose_native",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 323,
+      "community_name": "1. Framework Selection",
       "norm_label": "when to choose native"
     },
     {
@@ -26237,8 +26237,8 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_2_state_management_selection",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 324,
+      "community_name": "2. State Management Selection",
       "norm_label": "2. state management selection"
     },
     {
@@ -26248,8 +26248,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_react_native_state_decision",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 324,
+      "community_name": "2. State Management Selection",
       "norm_label": "react native state decision"
     },
     {
@@ -26259,8 +26259,8 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_flutter_state_decision",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 324,
+      "community_name": "2. State Management Selection",
       "norm_label": "flutter state decision"
     },
     {
@@ -26270,8 +26270,8 @@
       "source_location": "L162",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_state_management_anti_patterns",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 324,
+      "community_name": "2. State Management Selection",
       "norm_label": "state management anti-patterns"
     },
     {
@@ -26369,8 +26369,8 @@
       "source_location": "L372",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_7_project_type_templates",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 325,
+      "community_name": "7. Project Type Templates",
       "norm_label": "7. project type templates"
     },
     {
@@ -26380,8 +26380,8 @@
       "source_location": "L374",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_e_commerce_app",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 325,
+      "community_name": "7. Project Type Templates",
       "norm_label": "e-commerce app"
     },
     {
@@ -26391,8 +26391,8 @@
       "source_location": "L392",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_social_content_app",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 325,
+      "community_name": "7. Project Type Templates",
       "norm_label": "social/content app"
     },
     {
@@ -26402,8 +26402,8 @@
       "source_location": "L410",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_decision_trees_productivity_saas_app",
-      "community": 54,
-      "community_name": "Mobile Decision Trees",
+      "community": 325,
+      "community_name": "7. Project Type Templates",
       "norm_label": "productivity/saas app"
     },
     {
@@ -27095,8 +27095,8 @@
       "source_location": "L89",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_3_dark_mode_design",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
       "norm_label": "3. dark mode design"
     },
     {
@@ -27106,8 +27106,8 @@
       "source_location": "L91",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_dark_mode_benefits",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
       "norm_label": "dark mode benefits"
     },
     {
@@ -27117,8 +27117,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_dark_mode_color_strategy",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
       "norm_label": "dark mode color strategy"
     },
     {
@@ -27128,8 +27128,8 @@
       "source_location": "L123",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_text_colors_in_dark_mode",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
       "norm_label": "text colors in dark mode"
     },
     {
@@ -27139,8 +27139,8 @@
       "source_location": "L132",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_color_inversion_rules",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 320,
+      "community_name": "3. Dark Mode Design",
       "norm_label": "color inversion rules"
     },
     {
@@ -27150,8 +27150,8 @@
       "source_location": "L150",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_4_outdoor_visibility",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 328,
+      "community_name": "4. Outdoor Visibility",
       "norm_label": "4. outdoor visibility"
     },
     {
@@ -27161,8 +27161,8 @@
       "source_location": "L152",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_the_sunlight_problem",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 328,
+      "community_name": "4. Outdoor Visibility",
       "norm_label": "the sunlight problem"
     },
     {
@@ -27172,8 +27172,8 @@
       "source_location": "L168",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_high_contrast_strategies",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 328,
+      "community_name": "4. Outdoor Visibility",
       "norm_label": "high contrast strategies"
     },
     {
@@ -27271,8 +27271,8 @@
       "source_location": "L287",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_7_color_accessibility",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 327,
+      "community_name": "7. Color Accessibility",
       "norm_label": "7. color accessibility"
     },
     {
@@ -27282,8 +27282,8 @@
       "source_location": "L289",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_colorblind_considerations",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 327,
+      "community_name": "7. Color Accessibility",
       "norm_label": "colorblind considerations"
     },
     {
@@ -27293,8 +27293,8 @@
       "source_location": "L307",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_contrast_testing_tools",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 327,
+      "community_name": "7. Color Accessibility",
       "norm_label": "contrast testing tools"
     },
     {
@@ -27304,8 +27304,8 @@
       "source_location": "L318",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_sufficient_contrast",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 327,
+      "community_name": "7. Color Accessibility",
       "norm_label": "sufficient contrast"
     },
     {
@@ -27348,8 +27348,8 @@
       "source_location": "L368",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_9_color_system_checklist",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 329,
+      "community_name": "9. Color System Checklist",
       "norm_label": "9. color system checklist"
     },
     {
@@ -27359,8 +27359,8 @@
       "source_location": "L370",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_before_choosing_colors",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 329,
+      "community_name": "9. Color System Checklist",
       "norm_label": "before choosing colors"
     },
     {
@@ -27370,8 +27370,8 @@
       "source_location": "L378",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_before_release",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 329,
+      "community_name": "9. Color System Checklist",
       "norm_label": "before release"
     },
     {
@@ -27381,8 +27381,8 @@
       "source_location": "L389",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_10_quick_reference",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 326,
+      "community_name": "10. Quick Reference",
       "norm_label": "10. quick reference"
     },
     {
@@ -27392,8 +27392,8 @@
       "source_location": "L391",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_dark_mode_backgrounds",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 326,
+      "community_name": "10. Quick Reference",
       "norm_label": "dark mode backgrounds"
     },
     {
@@ -27403,8 +27403,8 @@
       "source_location": "L401",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_text_on_dark",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 326,
+      "community_name": "10. Quick Reference",
       "norm_label": "text on dark"
     },
     {
@@ -27414,8 +27414,8 @@
       "source_location": "L409",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_contrast_ratios",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 326,
+      "community_name": "10. Quick Reference",
       "norm_label": "contrast ratios"
     },
     {
@@ -27678,8 +27678,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_pattern_questioning_matrix",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "\ud83c\udfaf pattern questioning matrix"
     },
     {
@@ -27689,8 +27689,8 @@
       "source_location": "L131",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_navigation_pattern_questioning",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "navigation pattern questioning"
     },
     {
@@ -27700,8 +27700,8 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_state_pattern_questioning",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "state pattern questioning"
     },
     {
@@ -27711,8 +27711,8 @@
       "source_location": "L149",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_list_pattern_questioning",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "list pattern questioning"
     },
     {
@@ -27722,8 +27722,8 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_ui_pattern_questioning",
-      "community": 314,
-      "community_name": "8. Security for Mobile",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "ui pattern questioning"
     },
     {
@@ -30164,8 +30164,8 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_2_ios_typography",
-      "community": 315,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "2. ios typography"
     },
     {
@@ -30175,8 +30175,8 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_sf_pro_font_family",
-      "community": 315,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "sf pro font family"
     },
     {
@@ -30186,8 +30186,8 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_ios_type_scale_dynamic_type",
-      "community": 315,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "ios type scale (dynamic type)"
     },
     {
@@ -30197,8 +30197,8 @@
       "source_location": "L74",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_dynamic_type_support_mandatory",
-      "community": 315,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "dynamic type support (mandatory)"
     },
     {
@@ -30208,8 +30208,8 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_font_weight_usage",
-      "community": 315,
-      "community_name": "8. Portfolio Guidelines {#portfolio}",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "font weight usage"
     },
     {
@@ -30219,8 +30219,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_3_ios_color_system",
-      "community": 330,
-      "community_name": "5. Risk Prioritization",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "3. ios color system"
     },
     {
@@ -30230,8 +30230,8 @@
       "source_location": "L104",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_system_colors_semantic",
-      "community": 330,
-      "community_name": "5. Risk Prioritization",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "system colors (semantic)"
     },
     {
@@ -30241,8 +30241,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_system_accent_colors",
-      "community": 330,
-      "community_name": "5. Risk Prioritization",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "system accent colors"
     },
     {
@@ -30252,8 +30252,8 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_dark_mode_considerations",
-      "community": 330,
-      "community_name": "5. Risk Prioritization",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "dark mode considerations"
     },
     {
@@ -30263,8 +30263,8 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_4_ios_layout_spacing",
-      "community": 331,
-      "community_name": "4. iOS Layout & Spacing",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "4. ios layout & spacing"
     },
     {
@@ -30274,8 +30274,8 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_safe_areas",
-      "community": 331,
-      "community_name": "4. iOS Layout & Spacing",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "safe areas"
     },
     {
@@ -30285,8 +30285,8 @@
       "source_location": "L176",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_standard_margins_padding",
-      "community": 331,
-      "community_name": "4. iOS Layout & Spacing",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "standard margins & padding"
     },
     {
@@ -30296,8 +30296,8 @@
       "source_location": "L186",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_ios_grid_system",
-      "community": 331,
-      "community_name": "4. iOS Layout & Spacing",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "ios grid system"
     },
     {
@@ -30307,8 +30307,8 @@
       "source_location": "L205",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_5_ios_navigation_patterns",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "5. ios navigation patterns"
     },
     {
@@ -30318,8 +30318,8 @@
       "source_location": "L207",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_navigation_types",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "navigation types"
     },
     {
@@ -30329,8 +30329,8 @@
       "source_location": "L216",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_tab_bar_guidelines",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "tab bar guidelines"
     },
     {
@@ -30340,8 +30340,8 @@
       "source_location": "L236",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_navigation_bar_guidelines",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "navigation bar guidelines"
     },
     {
@@ -30351,8 +30351,8 @@
       "source_location": "L255",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_modal_presentations",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "modal presentations"
     },
     {
@@ -30362,8 +30362,8 @@
       "source_location": "L265",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_gestures",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "gestures"
     },
     {
@@ -30373,8 +30373,8 @@
       "source_location": "L277",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_6_ios_components",
-      "community": 316,
-      "community_name": "4. Animation Performance (Both Platforms)",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "6. ios components"
     },
     {
@@ -30384,8 +30384,8 @@
       "source_location": "L279",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_buttons",
-      "community": 316,
-      "community_name": "4. Animation Performance (Both Platforms)",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "buttons"
     },
     {
@@ -30395,8 +30395,8 @@
       "source_location": "L299",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_lists_tables",
-      "community": 316,
-      "community_name": "4. Animation Performance (Both Platforms)",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "lists & tables"
     },
     {
@@ -30406,8 +30406,8 @@
       "source_location": "L317",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_text_fields",
-      "community": 316,
-      "community_name": "4. Animation Performance (Both Platforms)",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "text fields"
     },
     {
@@ -30417,8 +30417,8 @@
       "source_location": "L334",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_segmented_controls",
-      "community": 316,
-      "community_name": "4. Animation Performance (Both Platforms)",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "segmented controls"
     },
     {
@@ -30483,8 +30483,8 @@
       "source_location": "L432",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_8_sf_symbols",
-      "community": 332,
-      "community_name": "8. SF Symbols",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "8. sf symbols"
     },
     {
@@ -30494,8 +30494,8 @@
       "source_location": "L434",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_usage_guidelines",
-      "community": 332,
-      "community_name": "8. SF Symbols",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "usage guidelines"
     },
     {
@@ -30505,8 +30505,8 @@
       "source_location": "L450",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_symbol_configurations",
-      "community": 332,
-      "community_name": "8. SF Symbols",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "symbol configurations"
     },
     {
@@ -30516,8 +30516,8 @@
       "source_location": "L467",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_symbol_best_practices",
-      "community": 332,
-      "community_name": "8. SF Symbols",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "symbol best practices"
     },
     {
@@ -30527,8 +30527,8 @@
       "source_location": "L478",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_9_ios_accessibility",
-      "community": 333,
-      "community_name": "9. iOS Accessibility",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "9. ios accessibility"
     },
     {
@@ -30538,8 +30538,8 @@
       "source_location": "L480",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_voiceover_requirements",
-      "community": 333,
-      "community_name": "9. iOS Accessibility",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "voiceover requirements"
     },
     {
@@ -30549,8 +30549,8 @@
       "source_location": "L499",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_dynamic_type_scaling",
-      "community": 333,
-      "community_name": "9. iOS Accessibility",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "dynamic type scaling"
     },
     {
@@ -30560,8 +30560,8 @@
       "source_location": "L517",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_platform_ios_reduce_motion",
-      "community": 333,
-      "community_name": "9. iOS Accessibility",
+      "community": 9,
+      "community_name": "iOS Platform Guidelines",
       "norm_label": "reduce motion"
     },
     {
@@ -36412,8 +36412,8 @@
       "source_location": "L100",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_4_attack_surface_mapping",
-      "community": 334,
-      "community_name": "4. Attack Surface Mapping",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "4. attack surface mapping"
     },
     {
@@ -36423,8 +36423,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_what_to_map",
-      "community": 334,
-      "community_name": "4. Attack Surface Mapping",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "what to map"
     },
     {
@@ -36434,8 +36434,8 @@
       "source_location": "L111",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_prioritization_matrix",
-      "community": 334,
-      "community_name": "4. Attack Surface Mapping",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "prioritization matrix"
     },
     {
@@ -36445,8 +36445,8 @@
       "source_location": "L124",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_5_risk_prioritization",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 330,
+      "community_name": "5. Risk Prioritization",
       "norm_label": "5. risk prioritization"
     },
     {
@@ -36456,8 +36456,8 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_cvss_context",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 330,
+      "community_name": "5. Risk Prioritization",
       "norm_label": "cvss + context"
     },
     {
@@ -36467,8 +36467,8 @@
       "source_location": "L135",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_prioritization_decision_tree",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 330,
+      "community_name": "5. Risk Prioritization",
       "norm_label": "prioritization decision tree"
     },
     {
@@ -41158,138 +41158,6 @@
       "norm_label": "mit social proof kombinieren fur noch bessere ergebnisse"
     },
     {
-      "label": "de/freedom-alternative-android.mdx",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_content_blog_de_freedom_alternative_android",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
-      "norm_label": "de/freedom-alternative-android.mdx"
-    },
-    {
-      "label": "Das Kurzurteil",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
-      "source_location": "L55",
-      "_origin": "ast",
-      "id": "src_content_blog_de_freedom_alternative_android_das_kurzurteil",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
-      "norm_label": "das kurzurteil"
-    },
-    {
-      "label": "Funktioniert Freedom auf Android?",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
-      "source_location": "L67",
-      "_origin": "ast",
-      "id": "src_content_blog_de_freedom_alternative_android_funktioniert_freedom_auf_android",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
-      "norm_label": "funktioniert freedom auf android?"
-    },
-    {
-      "label": "Was Ihnen Freedoms Android-App kostet",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
-      "source_location": "L78",
-      "_origin": "ast",
-      "id": "src_content_blog_de_freedom_alternative_android_was_ihnen_freedoms_android_app_kostet",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
-      "norm_label": "was ihnen freedoms android-app kostet"
-    },
-    {
-      "label": "Freedom-Preise, Stand 2026",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
-      "source_location": "L99",
-      "_origin": "ast",
-      "id": "src_content_blog_de_freedom_alternative_android_freedom_preise_stand_2026",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
-      "norm_label": "freedom-preise, stand 2026"
-    },
-    {
-      "label": "Eine native Offline-Alternative, nur f\u00fcr Android gebaut",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
-      "source_location": "L111",
-      "_origin": "ast",
-      "id": "src_content_blog_de_freedom_alternative_android_eine_native_offline_alternative_nur_f\u00fcr_android_gebaut",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
-      "norm_label": "eine native offline-alternative, nur fur android gebaut"
-    },
-    {
-      "label": "Freedom vs. Mindful Guard im direkten Vergleich",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
-      "source_location": "L135",
-      "_origin": "ast",
-      "id": "src_content_blog_de_freedom_alternative_android_freedom_vs_mindful_guard_im_direkten_vergleich",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
-      "norm_label": "freedom vs. mindful guard im direkten vergleich"
-    },
-    {
-      "label": "Die \u00fcbrigen Freedom-Alternativen, kurz gefasst",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
-      "source_location": "L150",
-      "_origin": "ast",
-      "id": "src_content_blog_de_freedom_alternative_android_die_\u00fcbrigen_freedom_alternativen_kurz_gefasst",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
-      "norm_label": "die ubrigen freedom-alternativen, kurz gefasst"
-    },
-    {
-      "label": "Worin Freedom tats\u00e4chlich besser ist",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
-      "source_location": "L168",
-      "_origin": "ast",
-      "id": "src_content_blog_de_freedom_alternative_android_worin_freedom_tats\u00e4chlich_besser_ist",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
-      "norm_label": "worin freedom tatsachlich besser ist"
-    },
-    {
-      "label": "Zum Preis: der Vergleich, den alle falsch machen",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
-      "source_location": "L182",
-      "_origin": "ast",
-      "id": "src_content_blog_de_freedom_alternative_android_zum_preis_der_vergleich_den_alle_falsch_machen",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
-      "norm_label": "zum preis: der vergleich, den alle falsch machen"
-    },
-    {
-      "label": "Wer was w\u00e4hlen sollte",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
-      "source_location": "L197",
-      "_origin": "ast",
-      "id": "src_content_blog_de_freedom_alternative_android_wer_was_w\u00e4hlen_sollte",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
-      "norm_label": "wer was wahlen sollte"
-    },
-    {
-      "label": "Fazit",
-      "file_type": "document",
-      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
-      "source_location": "L212",
-      "_origin": "ast",
-      "id": "src_content_blog_de_freedom_alternative_android_fazit",
-      "community": 269,
-      "community_name": "8. Hierarchy Principles",
-      "norm_label": "fazit"
-    },
-    {
       "label": "de/how-to-add-sales-popup-shopify.md",
       "file_type": "document",
       "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
@@ -43807,138 +43675,6 @@
       "community": 108,
       "community_name": "Step-by-Step: Adding a Free Shipping Bar with FomoGen",
       "norm_label": "stack it with social proof for even better results"
-    },
-    {
-      "label": "en/freedom-alternative-android.mdx",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_content_blog_en_freedom_alternative_android",
-      "community": 297,
-      "community_name": "@astrojs/check",
-      "norm_label": "en/freedom-alternative-android.mdx"
-    },
-    {
-      "label": "Quick verdict",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
-      "source_location": "L54",
-      "_origin": "ast",
-      "id": "src_content_blog_en_freedom_alternative_android_quick_verdict",
-      "community": 297,
-      "community_name": "@astrojs/check",
-      "norm_label": "quick verdict"
-    },
-    {
-      "label": "Does Freedom work on Android?",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
-      "source_location": "L66",
-      "_origin": "ast",
-      "id": "src_content_blog_en_freedom_alternative_android_does_freedom_work_on_android",
-      "community": 297,
-      "community_name": "@astrojs/check",
-      "norm_label": "does freedom work on android?"
-    },
-    {
-      "label": "Where Freedom's Android app costs you something",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
-      "source_location": "L76",
-      "_origin": "ast",
-      "id": "src_content_blog_en_freedom_alternative_android_where_freedom_s_android_app_costs_you_something",
-      "community": 297,
-      "community_name": "@astrojs/check",
-      "norm_label": "where freedom's android app costs you something"
-    },
-    {
-      "label": "Freedom pricing, as of 2026",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
-      "source_location": "L95",
-      "_origin": "ast",
-      "id": "src_content_blog_en_freedom_alternative_android_freedom_pricing_as_of_2026",
-      "community": 297,
-      "community_name": "@astrojs/check",
-      "norm_label": "freedom pricing, as of 2026"
-    },
-    {
-      "label": "A native, offline alternative built for Android only",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
-      "source_location": "L107",
-      "_origin": "ast",
-      "id": "src_content_blog_en_freedom_alternative_android_a_native_offline_alternative_built_for_android_only",
-      "community": 297,
-      "community_name": "@astrojs/check",
-      "norm_label": "a native, offline alternative built for android only"
-    },
-    {
-      "label": "Freedom vs Mindful Guard, side by side",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
-      "source_location": "L130",
-      "_origin": "ast",
-      "id": "src_content_blog_en_freedom_alternative_android_freedom_vs_mindful_guard_side_by_side",
-      "community": 297,
-      "community_name": "@astrojs/check",
-      "norm_label": "freedom vs mindful guard, side by side"
-    },
-    {
-      "label": "The other Freedom alternatives, briefly",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
-      "source_location": "L145",
-      "_origin": "ast",
-      "id": "src_content_blog_en_freedom_alternative_android_the_other_freedom_alternatives_briefly",
-      "community": 297,
-      "community_name": "@astrojs/check",
-      "norm_label": "the other freedom alternatives, briefly"
-    },
-    {
-      "label": "What Freedom is genuinely better at",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
-      "source_location": "L162",
-      "_origin": "ast",
-      "id": "src_content_blog_en_freedom_alternative_android_what_freedom_is_genuinely_better_at",
-      "community": 297,
-      "community_name": "@astrojs/check",
-      "norm_label": "what freedom is genuinely better at"
-    },
-    {
-      "label": "On price: the comparison people get wrong",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
-      "source_location": "L175",
-      "_origin": "ast",
-      "id": "src_content_blog_en_freedom_alternative_android_on_price_the_comparison_people_get_wrong",
-      "community": 297,
-      "community_name": "@astrojs/check",
-      "norm_label": "on price: the comparison people get wrong"
-    },
-    {
-      "label": "Who should actually pick which",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
-      "source_location": "L188",
-      "_origin": "ast",
-      "id": "src_content_blog_en_freedom_alternative_android_who_should_actually_pick_which",
-      "community": 297,
-      "community_name": "@astrojs/check",
-      "norm_label": "who should actually pick which"
-    },
-    {
-      "label": "Bottom line",
-      "file_type": "document",
-      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
-      "source_location": "L203",
-      "_origin": "ast",
-      "id": "src_content_blog_en_freedom_alternative_android_bottom_line",
-      "community": 297,
-      "community_name": "@astrojs/check",
-      "norm_label": "bottom line"
     },
     {
       "label": "en/how-to-add-sales-popup-shopify.md",
@@ -46480,138 +46216,6 @@
       "community": 110,
       "community_name": "\u00c9tape par \u00c9tape : Ajouter une Barre de Livraison Gratuite avec FomoGen",
       "norm_label": "combinez-la avec la preuve sociale pour de meilleurs resultats"
-    },
-    {
-      "label": "fr/freedom-alternative-android.mdx",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_freedom_alternative_android",
-      "community": 301,
-      "community_name": "6. Dark Mode Principles",
-      "norm_label": "fr/freedom-alternative-android.mdx"
-    },
-    {
-      "label": "Le verdict rapide",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
-      "source_location": "L55",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_freedom_alternative_android_le_verdict_rapide",
-      "community": 301,
-      "community_name": "6. Dark Mode Principles",
-      "norm_label": "le verdict rapide"
-    },
-    {
-      "label": "Freedom fonctionne-t-il sur Android ?",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
-      "source_location": "L67",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_freedom_alternative_android_freedom_fonctionne_t_il_sur_android",
-      "community": 301,
-      "community_name": "6. Dark Mode Principles",
-      "norm_label": "freedom fonctionne-t-il sur android ?"
-    },
-    {
-      "label": "Ce que l'application Android de Freedom vous co\u00fbte",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
-      "source_location": "L78",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_freedom_alternative_android_ce_que_l_application_android_de_freedom_vous_co\u00fbte",
-      "community": 301,
-      "community_name": "6. Dark Mode Principles",
-      "norm_label": "ce que l'application android de freedom vous coute"
-    },
-    {
-      "label": "Tarifs de Freedom en 2026",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
-      "source_location": "L99",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_freedom_alternative_android_tarifs_de_freedom_en_2026",
-      "community": 301,
-      "community_name": "6. Dark Mode Principles",
-      "norm_label": "tarifs de freedom en 2026"
-    },
-    {
-      "label": "Une alternative native et hors ligne, con\u00e7ue pour Android seulement",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
-      "source_location": "L111",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_freedom_alternative_android_une_alternative_native_et_hors_ligne_con\u00e7ue_pour_android_seulement",
-      "community": 301,
-      "community_name": "6. Dark Mode Principles",
-      "norm_label": "une alternative native et hors ligne, concue pour android seulement"
-    },
-    {
-      "label": "Freedom vs Mindful Guard, c\u00f4te \u00e0 c\u00f4te",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
-      "source_location": "L136",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_freedom_alternative_android_freedom_vs_mindful_guard_c\u00f4te_\u00e0_c\u00f4te",
-      "community": 301,
-      "community_name": "6. Dark Mode Principles",
-      "norm_label": "freedom vs mindful guard, cote a cote"
-    },
-    {
-      "label": "Les autres alternatives \u00e0 Freedom, en bref",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
-      "source_location": "L151",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_freedom_alternative_android_les_autres_alternatives_\u00e0_freedom_en_bref",
-      "community": 301,
-      "community_name": "6. Dark Mode Principles",
-      "norm_label": "les autres alternatives a freedom, en bref"
-    },
-    {
-      "label": "Ce que Freedom fait r\u00e9ellement mieux",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
-      "source_location": "L168",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_freedom_alternative_android_ce_que_freedom_fait_r\u00e9ellement_mieux",
-      "community": 301,
-      "community_name": "6. Dark Mode Principles",
-      "norm_label": "ce que freedom fait reellement mieux"
-    },
-    {
-      "label": "Sur le prix : la comparaison que tout le monde rate",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
-      "source_location": "L184",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_freedom_alternative_android_sur_le_prix_la_comparaison_que_tout_le_monde_rate",
-      "community": 301,
-      "community_name": "6. Dark Mode Principles",
-      "norm_label": "sur le prix : la comparaison que tout le monde rate"
-    },
-    {
-      "label": "Qui devrait choisir quoi",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
-      "source_location": "L197",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_freedom_alternative_android_qui_devrait_choisir_quoi",
-      "community": 301,
-      "community_name": "6. Dark Mode Principles",
-      "norm_label": "qui devrait choisir quoi"
-    },
-    {
-      "label": "En r\u00e9sum\u00e9",
-      "file_type": "document",
-      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
-      "source_location": "L214",
-      "_origin": "ast",
-      "id": "src_content_blog_fr_freedom_alternative_android_en_r\u00e9sum\u00e9",
-      "community": 301,
-      "community_name": "6. Dark Mode Principles",
-      "norm_label": "en resume"
     },
     {
       "label": "fr/how-to-add-sales-popup-shopify.md",
@@ -96538,127 +96142,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
-      "source_location": "L55",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_freedom_alternative_android",
-      "target": "src_content_blog_de_freedom_alternative_android_das_kurzurteil",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
-      "source_location": "L150",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_freedom_alternative_android",
-      "target": "src_content_blog_de_freedom_alternative_android_die_\u00fcbrigen_freedom_alternativen_kurz_gefasst",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
-      "source_location": "L111",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_freedom_alternative_android",
-      "target": "src_content_blog_de_freedom_alternative_android_eine_native_offline_alternative_nur_f\u00fcr_android_gebaut",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
-      "source_location": "L212",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_freedom_alternative_android",
-      "target": "src_content_blog_de_freedom_alternative_android_fazit",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
-      "source_location": "L135",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_freedom_alternative_android",
-      "target": "src_content_blog_de_freedom_alternative_android_freedom_vs_mindful_guard_im_direkten_vergleich",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
-      "source_location": "L67",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_freedom_alternative_android",
-      "target": "src_content_blog_de_freedom_alternative_android_funktioniert_freedom_auf_android",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
-      "source_location": "L78",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_freedom_alternative_android",
-      "target": "src_content_blog_de_freedom_alternative_android_was_ihnen_freedoms_android_app_kostet",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
-      "source_location": "L197",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_freedom_alternative_android",
-      "target": "src_content_blog_de_freedom_alternative_android_wer_was_w\u00e4hlen_sollte",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
-      "source_location": "L168",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_freedom_alternative_android",
-      "target": "src_content_blog_de_freedom_alternative_android_worin_freedom_tats\u00e4chlich_besser_ist",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
-      "source_location": "L182",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_freedom_alternative_android",
-      "target": "src_content_blog_de_freedom_alternative_android_zum_preis_der_vergleich_den_alle_falsch_machen",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/de/freedom-alternative-android.mdx",
-      "source_location": "L99",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_de_freedom_alternative_android_was_ihnen_freedoms_android_app_kostet",
-      "target": "src_content_blog_de_freedom_alternative_android_freedom_preise_stand_2026",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/de/how-to-add-sales-popup-shopify.md",
       "source_location": "L112",
       "weight": 1.0,
@@ -98909,127 +98392,6 @@
       "_origin": "ast",
       "source": "src_content_blog_en_free_shipping_bar_shopify_step_by_step_adding_a_free_shipping_bar_with_fomogen",
       "target": "src_content_blog_en_free_shipping_bar_shopify_step_7_save_and_go_live",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
-      "source_location": "L107",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_freedom_alternative_android",
-      "target": "src_content_blog_en_freedom_alternative_android_a_native_offline_alternative_built_for_android_only",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
-      "source_location": "L203",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_freedom_alternative_android",
-      "target": "src_content_blog_en_freedom_alternative_android_bottom_line",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
-      "source_location": "L66",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_freedom_alternative_android",
-      "target": "src_content_blog_en_freedom_alternative_android_does_freedom_work_on_android",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
-      "source_location": "L130",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_freedom_alternative_android",
-      "target": "src_content_blog_en_freedom_alternative_android_freedom_vs_mindful_guard_side_by_side",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
-      "source_location": "L175",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_freedom_alternative_android",
-      "target": "src_content_blog_en_freedom_alternative_android_on_price_the_comparison_people_get_wrong",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
-      "source_location": "L54",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_freedom_alternative_android",
-      "target": "src_content_blog_en_freedom_alternative_android_quick_verdict",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
-      "source_location": "L145",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_freedom_alternative_android",
-      "target": "src_content_blog_en_freedom_alternative_android_the_other_freedom_alternatives_briefly",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
-      "source_location": "L162",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_freedom_alternative_android",
-      "target": "src_content_blog_en_freedom_alternative_android_what_freedom_is_genuinely_better_at",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
-      "source_location": "L76",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_freedom_alternative_android",
-      "target": "src_content_blog_en_freedom_alternative_android_where_freedom_s_android_app_costs_you_something",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
-      "source_location": "L188",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_freedom_alternative_android",
-      "target": "src_content_blog_en_freedom_alternative_android_who_should_actually_pick_which",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/en/freedom-alternative-android.mdx",
-      "source_location": "L95",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_en_freedom_alternative_android_where_freedom_s_android_app_costs_you_something",
-      "target": "src_content_blog_en_freedom_alternative_android_freedom_pricing_as_of_2026",
       "confidence_score": 1.0
     },
     {
@@ -101312,127 +100674,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
-      "source_location": "L168",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_freedom_alternative_android",
-      "target": "src_content_blog_fr_freedom_alternative_android_ce_que_freedom_fait_r\u00e9ellement_mieux",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
-      "source_location": "L78",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_freedom_alternative_android",
-      "target": "src_content_blog_fr_freedom_alternative_android_ce_que_l_application_android_de_freedom_vous_co\u00fbte",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
-      "source_location": "L214",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_freedom_alternative_android",
-      "target": "src_content_blog_fr_freedom_alternative_android_en_r\u00e9sum\u00e9",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
-      "source_location": "L67",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_freedom_alternative_android",
-      "target": "src_content_blog_fr_freedom_alternative_android_freedom_fonctionne_t_il_sur_android",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
-      "source_location": "L136",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_freedom_alternative_android",
-      "target": "src_content_blog_fr_freedom_alternative_android_freedom_vs_mindful_guard_c\u00f4te_\u00e0_c\u00f4te",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
-      "source_location": "L55",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_freedom_alternative_android",
-      "target": "src_content_blog_fr_freedom_alternative_android_le_verdict_rapide",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
-      "source_location": "L151",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_freedom_alternative_android",
-      "target": "src_content_blog_fr_freedom_alternative_android_les_autres_alternatives_\u00e0_freedom_en_bref",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
-      "source_location": "L197",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_freedom_alternative_android",
-      "target": "src_content_blog_fr_freedom_alternative_android_qui_devrait_choisir_quoi",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
-      "source_location": "L184",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_freedom_alternative_android",
-      "target": "src_content_blog_fr_freedom_alternative_android_sur_le_prix_la_comparaison_que_tout_le_monde_rate",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
-      "source_location": "L111",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_freedom_alternative_android",
-      "target": "src_content_blog_fr_freedom_alternative_android_une_alternative_native_et_hors_ligne_con\u00e7ue_pour_android_seulement",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/content/blog/fr/freedom-alternative-android.mdx",
-      "source_location": "L99",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_content_blog_fr_freedom_alternative_android_ce_que_l_application_android_de_freedom_vous_co\u00fbte",
-      "target": "src_content_blog_fr_freedom_alternative_android_tarifs_de_freedom_en_2026",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/fr/how-to-add-sales-popup-shopify.md",
       "source_location": "L111",
       "weight": 1.0,
@@ -102972,5 +102213,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "078bef2ab5661b401c0e074733c2c065fde4e4bc"
+  "built_at_commit": "c5cbbd6bfdfba15c459d114cadb36aa8e6176cfa"
 }

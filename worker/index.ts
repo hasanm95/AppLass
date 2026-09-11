@@ -15,31 +15,11 @@ const LOCALES = ["en", "fr", "de"] as const;
 // Belgium's Flemish half, Ukraine, etc.) are deliberately left unmapped rather than
 // guessed at.
 const COUNTRY_TO_LOCALE: Record<string, string> = {
-  CN: "zh", TW: "zh", HK: "zh", MO: "zh",
-
-  ES: "es", MX: "es", AR: "es", CO: "es", CL: "es", PE: "es", VE: "es", EC: "es",
-  GT: "es", CU: "es", BO: "es", DO: "es", HN: "es", PY: "es", SV: "es", NI: "es",
-  CR: "es", PA: "es", UY: "es", GQ: "es",
-
-  SA: "ar", AE: "ar", EG: "ar", KW: "ar", QA: "ar", BH: "ar", OM: "ar", JO: "ar",
-  LB: "ar", IQ: "ar", SY: "ar", YE: "ar", LY: "ar", TN: "ar", DZ: "ar", MA: "ar",
-  SD: "ar", PS: "ar", MR: "ar",
-
-  ID: "id",
-
-  PT: "pt", BR: "pt", AO: "pt", MZ: "pt", CV: "pt", GW: "pt", ST: "pt", TL: "pt",
-
   FR: "fr", BE: "fr", LU: "fr", MC: "fr", SN: "fr", CI: "fr", ML: "fr", BF: "fr",
   NE: "fr", TG: "fr", BJ: "fr", GA: "fr", CG: "fr", CD: "fr", CM: "fr", TD: "fr",
   MG: "fr", RW: "fr", BI: "fr", HT: "fr",
 
-  JP: "ja",
-
-  RU: "ru", BY: "ru", KZ: "ru", KG: "ru", TJ: "ru",
-
   DE: "de", AT: "de", LI: "de",
-
-  BD: "bn",
 };
 
 const BOT_UA_RE =
@@ -89,7 +69,11 @@ export default {
     }
 
     const target = new URL(url);
-    target.pathname = `/${locale}${url.pathname === "/" ? "" : url.pathname}`;
+    let targetPathname = `/${locale}${url.pathname === "/" ? "" : url.pathname}`;
+    if (targetPathname !== "/" && targetPathname.endsWith("/")) {
+      targetPathname = targetPathname.slice(0, -1);
+    }
+    target.pathname = targetPathname;
 
     return new Response(null, {
       status: 302,
