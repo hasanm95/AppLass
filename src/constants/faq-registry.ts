@@ -3,34 +3,40 @@ import { localize } from "@/i18n/localize";
 export const getFaqRegistry = () => ({
   HOME: [
     {
-      question: localize("What is AppLass?"),
+      question: localize("Which AppLass app do I need?"),
       answer: localize(
-        "AppLass is an elite software engineering studio. We build high-performance Shopify apps and Android utilities that prioritize mathematical precision and user privacy. Our goal is to eliminate digital 'bloat' and help you reclaim your performance."
+        "Pick ScreenVeil if you want to keep listening to video with the screen off and save battery. Pick Mindful Guard if you want to block distracting apps on a schedule. Pick FomoGen if you run a Shopify store and want live sales and stock notifications."
       ),
     },
     {
-      question: localize("How does AppLass optimize for speed?"),
+      question: localize("Are the apps free?"),
       answer: localize(
-        "We use a first-principles approach to coding. Our Shopify apps, like FomoGen, have a payload of less than 2.1KB — meaning they load faster than a single product image. We avoid third-party tracking and heavy libraries to keep your site at peak performance."
-      ),
-    },
-    {
-      question: localize("Are your apps accessible?"),
-      answer: localize(
-        "Yes. Accessibility is not a feature; it's our foundation. Every tool we build is designed to be WCAG 2.1 compliant, ensuring that your digital experience is inclusive of all users regardless of their physical capabilities."
-      ),
-    },
-    {
-      question: localize("How do I contact support?"),
-      answer: localize(
-        "You can reach our engineering lab directly at support@applass.com. Because our tools are built for precision, we offer direct developer support to ensure your integration is seamless."
+        "ScreenVeil and Mindful Guard are both free to download on the Google Play Store. FomoGen is installed through the Shopify App Store, where you can see current plans and pricing."
       ),
     },
     {
       id: "privacy",
-      question: localize("What is AppLass's privacy policy?"),
+      question: localize("Do any of them collect my data?"),
       answer: localize(
-        "AppLass uses Zero-Telemetry Architecture. We never log personal identifiers, track user behavior, or include third-party analytics SDKs. All data stays 100% on-device for maximum user privacy."
+        "No. Our apps do not include third-party analytics SDKs and do not log what you do. Mindful Guard keeps all of its rules and history on your phone, and nothing is sent to a server."
+      ),
+    },
+    {
+      question: localize("Does ScreenVeil work on phones without an OLED screen?"),
+      answer: localize(
+        "Yes, it works on any Android phone. The battery benefit is largest on OLED and AMOLED screens, where black pixels switch off completely instead of staying lit."
+      ),
+    },
+    {
+      question: localize("Will FomoGen slow down my Shopify store?"),
+      answer: localize(
+        "It is built to stay small and to avoid the third-party tracking scripts that usually cause the damage. It also meets WCAG 2.1 AA, so it will not break accessibility on your theme."
+      ),
+    },
+    {
+      question: localize("Do I need to create an account?"),
+      answer: localize(
+        "No. None of our Android apps ask you to sign up, hand over an email address, or create a profile. Install and start using them."
       ),
     },
   ],

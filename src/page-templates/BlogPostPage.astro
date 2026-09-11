@@ -7,7 +7,7 @@ import ShareArticle from "@/components/blog/ShareArticle.astro";
 import ReadingProgressBar from "@/components/blog/ReadingProgressBar.astro";
 import FAQSchema from "@/components/common/FAQSchema.astro";
 import { localize } from "@/i18n/localize";
-import { getBlogPostBySlug } from "@/lib/blog";
+import { getBlogPostBySlug, localesForPost } from "@/lib/blog";
 import { i18nConfig } from "@/i18n/config";
 import { render } from "astro:content";
 import { ArrowLeft } from "lucide-react";
@@ -33,6 +33,12 @@ const { Content } = await render(post.entry);
 const title = `${post.title} | AppLass Blog`;
 const description = post.excerpt;
 
+// Never earlier than publication — an unrevised post was last modified when it shipped.
+const lastModified = post.dateModified || post.date;
+
+// Only the locales this post was actually translated into — see localesForPost.
+const availableLocales = await localesForPost(slug as string);
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
@@ -40,7 +46,7 @@ const jsonLd = {
   description: post.excerpt,
   image: typeof post.thumbnail === 'object' ? post.thumbnail.src : post.thumbnail,
   datePublished: post.date,
-  dateModified: post.dateModified || "2026-03-23",
+  dateModified: lastModified,
   author: {
     "@type": "Person",
     name: post.author,
@@ -73,22 +79,15 @@ const jsonLd = {
 
 const ogImageUrl = post.ogImage || (typeof post.thumbnail === 'object' ? post.thumbnail.src : post.thumbnail);
 
-const isFr = lang === "fr";
+// Built from localePath rather than a per-locale branch, so a new locale gets
+// correct breadcrumb URLs automatically instead of silently inheriting English ones.
+const SITE = "https://applass.com";
+const absolute = (path: string) => `${SITE}${localePath(lang, path)}`.replace(/\/$/, "");
+
 const breadcrumbs = [
-  {
-    name: isFr ? "Accueil" : "Home",
-    item: isFr ? "https://applass.com/fr" : "https://applass.com"
-  },
-  {
-    name: "Blog",
-    item: isFr ? "https://applass.com/fr/blog" : "https://applass.com/blog"
-  },
-  {
-    name: post.breadcrumbName || post.title,
-    item: isFr
-      ? `https://applass.com/fr/blog/${slug}`
-      : `https://applass.com/blog/${slug}`
-  }
+  { name: localize("Home"), item: absolute("/") },
+  { name: localize("Blog"), item: absolute("/blog") },
+  { name: post.breadcrumbName || post.title, item: absolute(`/blog/${slug}`) }
 ];
 
 const appMapping: Record<string, "ScreenVeil" | "Mindful Guard" | "FOMOgen"> = {
@@ -115,11 +114,12 @@ const normalizedSidebarApps = (post.sidebarApps && post.sidebarApps.length > 0
   ogType="article"
   articleMeta={{
     publishedTime: post.date ? `${post.date}T00:00:00Z` : undefined,
-    modifiedTime: post.dateModified ? `${post.dateModified}T00:00:00Z` : undefined,
+    modifiedTime: `${lastModified}T00:00:00Z`,
     author: post.author,
     tags: post.tags || [],
   }}
   breadcrumbs={breadcrumbs}
+  availableLocales={availableLocales}
 >
   <script
     type="application/ld+json"
@@ -132,7 +132,7 @@ const normalizedSidebarApps = (post.sidebarApps && post.sidebarApps.length > 0
     />
   )}
   <ReadingProgressBar />
-  <Navbar    />
+  <Navbar availableLocales={availableLocales} />
   
   <div class="flex-1 bg-white pt-20">
     <header class="bg-iridescent relative border-b border-slate-100 pt-20 pb-15 lg:py-32">
@@ -152,7 +152,7 @@ const normalizedSidebarApps = (post.sidebarApps && post.sidebarApps.length > 0
           <span class="h-1 w-1 rounded-full bg-slate-200" />
           <div class="flex items-center gap-2">
             <span class="text-[10px] font-bold text-slate-500 uppercase border border-slate-100 rounded-lg px-2 py-0.5">
-              {localize("Verified on: ")} {post.dateModified || "2026-03-23"}
+              {localize("Verified on: ")} {lastModified}
             </span>
           </div>
         </div>
@@ -190,7 +190,7 @@ const normalizedSidebarApps = (post.sidebarApps && post.sidebarApps.length > 0
             </p>
             <div class="mt-6 flex items-center gap-4">
               <div class="h-1 w-12 bg-blue-600"></div>
-              <p class="text-xs font-black tracking-widest text-slate-400 uppercase">
+              <p class="text-xs font-black tracking-widest text-slate-600 uppercase">
                 {localize("Verified Content Entity")}
               </p>
             </div>
@@ -280,7 +280,7 @@ const normalizedSidebarApps = (post.sidebarApps && post.sidebarApps.length > 0
             <h2 class="text-5xl font-black tracking-tighter text-slate-950 md:text-6xl">
               {localize("Frequently Asked")}
               <br />
-              <span class="text-slate-300">{localize("Questions")}</span>
+              <span class="text-slate-500">{localize("Questions")}</span>
             </h2>
           </div>
 
@@ -289,7 +289,7 @@ const normalizedSidebarApps = (post.sidebarApps && post.sidebarApps.length > 0
               <div
                 class="group relative border-2 border-slate-950 bg-white p-10 transition-all hover:bg-slate-50"
               >
-                <div class="absolute top-4 right-4 font-mono text-[8px] text-slate-300 uppercase">
+                <div class="absolute top-4 right-4 font-mono text-[8px] text-slate-600 uppercase">
                   [ Protocol.Entry_0{idx + 1} ]
                 </div>
                 <h3 class="mb-6 text-xl leading-tight font-black tracking-tight text-slate-950">

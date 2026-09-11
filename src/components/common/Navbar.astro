@@ -13,11 +13,14 @@ import appLogoImg from '@/assets/logo.png';
 interface Props {
   variant?: "light" | "dark";
   className?: string;
+  /** Forwarded to LanguageToggle; see its Props for why this exists. */
+  availableLocales?: readonly string[];
 }
 
 const {
   variant = "light",
   className,
+  availableLocales,
 } = Astro.props;
 
 const currentLang = getLangFromUrl(Astro.url);
@@ -115,7 +118,7 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
       {/* CTA & Mobile Toggle */}
       <div class="flex items-center gap-3 md:gap-4">
         {/* Language Switcher Trigger (Native) */}
-        <LanguageToggle isDark={isDark} currentLang={currentLang} />
+        <LanguageToggle isDark={isDark} currentLang={currentLang} availableLocales={availableLocales} />
 
         <div class="hidden md:block">
           {hasCustomCTA ? (

@@ -1,7 +1,7 @@
 ---
 title: "Android Digital Wellbeing vs. Third-Party Focus Apps: Honest Comparison"
 date: "2026-05-07"
-updatedAt: "2026-05-19"
+dateModified: "2026-05-19"
 category: "Android Apps"
 keywords: "android digital wellbeing, digital wellbeing vs app blocker, native android focus mode, mindful guard android"
 author: "AppLass Team"

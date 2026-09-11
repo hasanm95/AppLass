@@ -1,11 +1,20 @@
 ---
 title: "La Télémétrie est une Distraction : Le Cas pour une Productivité Zéro-Données"
 date: "2026-01-26"
-updatedAt: "2026-05-19"
+dateModified: "2026-05-19"
 category: "Applications Android"
 keywords: "bloqueur application sans télémétrie, application concentration hors ligne android, outils productivité confidentialité, mindful guard android"
 author: "Équipe AppLass"
 excerpt: "La plupart des outils de productivité suivent chacun de vos mouvements. Nous défendons l'idée que la vraie concentration est impossible sans une confidentialité absolue et une architecture offline-first."
+faqs:
+  - question: "Que signifie « zéro télémétrie » pour une application de concentration ?"
+    answer: "Zéro télémétrie signifie que l'application n'envoie aucune donnée d'utilisation nulle part. Tout le traitement se fait sur l'appareil, il n'y a aucun SDK d'analyse dans le code et aucun transfert en arrière-plan ne rapporte vos habitudes à un serveur. Vos données ne peuvent être ni divulguées ni revendues, puisqu'elles ne quittent jamais le téléphone."
+  - question: "Pourquoi les applications de concentration cloud vident-elles la batterie ?"
+    answer: "Chaque fois qu'une application envoie un signal de présence ou un rapport d'utilisation à un serveur, elle maintient une connexion réseau active en arrière-plan. C'est la principale raison pour laquelle les optimiseurs de batterie d'Android finissent par arrêter ces applications : celles censées vous aider se retrouvent à lutter contre le système d'exploitation."
+  - question: "Les bloqueurs basés sur un VPN posent-ils un risque pour la vie privée ?"
+    answer: "Ils font transiter votre trafic par les serveurs du fournisseur, ce qui signifie que votre navigation passe par un tiers. Au-delà de la question de confidentialité, cela introduit aussi une latence à l'échelle du système, chaque requête effectuant un saut supplémentaire avant d'atteindre sa destination."
+  - question: "MindfulGuard fonctionne-t-elle sans connexion Internet ?"
+    answer: "Oui. MindfulGuard est entièrement hors ligne d'abord, sans aucune dépendance réseau. La logique de blocage s'exécute intégralement sur l'appareil : elle fonctionne donc à l'identique en mode avion et ne dépend ni d'un VPN ni d'une synchronisation cloud pour appliquer une session."
 thumbnail: "../../../assets/blogs/zero-telemetry.png"
 featured: false
 sidebarApps:

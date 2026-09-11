@@ -1,25 +1,33 @@
 ---
 title: "La Logique de la Concentration : Pourquoi la Plupart des Applications de Détox Numérique Échouent"
-date: "12 Jan 2026"
-updatedAt: "2026-05-19"
+date: "2026-01-12"
+dateModified: "2026-05-19"
 category: "Applications Android"
 keywords: "applications détox numérique, application friction intentionnelle, logique de concentration, solutions addiction téléphone, mindful guard android"
 author: "Fondateur Mathématicien"
 featured: true
-excerpt: "Reprenez le contrôle de votre temps en intégrant une friction intentionnelle dans votre vie numérique. Pourquoi la volonté est un échec systémique."
+excerpt: "La plupart des applications de détox numérique échouent parce qu'elles avertissent au lieu de bloquer — et un avertissement arrive après que l'habitude s'est déjà exécutée. La solution est la friction intentionnelle : augmenter le coût d'ouverture d'une application jusqu'à ce que le cerveau passe de l'impulsion à la délibération."
+faqs:
+  - question: "Pourquoi la plupart des applications de détox numérique échouent-elles ?"
+    answer: "Elles reposent sur la volonté au lieu de supprimer le choix. La plupart envoient une notification amicale ou affichent un graphique d'utilisation, mais une notification est une interruption, pas un blocage. Lorsque vous êtes en plein doom-scroll, votre cortex préfrontal est effectivement hors ligne : l'avertissement arrive donc après que la décision a déjà été prise."
+  - question: "Qu'est-ce que la friction intentionnelle ?"
+    answer: "La friction intentionnelle consiste à augmenter délibérément le coût d'accès à une application distrayante. Si l'accès ne coûte qu'un seul tap, la probabilité de l'ouvrir approche les 100 %. Ajouter une barrière logique force le cerveau à passer du Système 1 (automatique et impulsif) au Système 2 (délibéré et logique), là où les vraies décisions se prennent."
+  - question: "Mindful Guard collecte-t-elle des données d'utilisation ?"
+    answer: "Non. Mindful Guard fonctionne à 100 % en local, sans aucune télémétrie. Vos habitudes d'utilisation ne quittent jamais l'appareil, il n'y a aucun SDK d'analyse dans le code et aucune donnée n'est envoyée à un serveur."
+  - question: "Combien de temps le blocage des distractions permet-il réellement de gagner ?"
+    answer: "Le calcul est simple : économiser 30 minutes de scroll machinal par jour représente 182 heures par an, soit plus de quatre semaines de travail complètes."
 sidebarApps:
   - mindful-guard
 ---
-
-## La Logique de la Concentration : Pourquoi la Plupart des Applications de Détox Numérique Échouent (et Comment y Remédier)
 
 Nous vivons dans une économie de la distraction. En 2026, l'utilisateur moyen de smartphone consulte son appareil plus de 150 fois par jour. Pour beaucoup, ce n'est pas seulement une habitude — c'est une boucle dopaminergique conçue par certains des algorithmes les plus avancés de la planète.
 
 En tant que développeur avec une formation en mathématiques, je perçois l'addiction au téléphone comme une défaillance systémique. Si le "Système" (votre téléphone) est optimisé pour vous maintenir en train de scroller, votre "Input" (votre volonté) finira par atteindre un point de rendements décroissants.
 
-## Pour reprendre le contrôle de votre temps, vous n'avez pas besoin de plus de volonté. Vous avez besoin de meilleures Garde-fous Logiques.
+## Le "Fossé de la Volonté" dans la Productivité
 
-**Le "Fossé de la Volonté" dans la Productivité**
+Pour reprendre le contrôle de votre temps, vous n'avez pas besoin de plus de volonté. Vous avez besoin de meilleurs garde-fous logiques.
+
 La plupart des applications de productivité reposent sur le "désir" de l'utilisateur de rester concentré. Elles envoient une notification amicale ou affichent un joli graphique de votre utilisation. Mais lorsque vous êtes en plein "doom-scroll", votre cortex préfrontal est effectivement hors ligne.
 
 Une notification est une interruption, mais ce n'est pas un blocage. En termes de programmation, la plupart des applications ne font que lancer un `console.warn()` alors qu'elles devraient déclencher une exception `access_denied`.

@@ -22,10 +22,11 @@ interface Props {
 const { lang } = Astro.props;
 
 import { setLocale } from "@/i18n";
+import { lastUpdatedFor } from "@/lib/lastUpdated";
 setLocale(lang);
 
 const isDefault = lang === "en";
-const lastUpdated = "2026-07-24";
+const lastUpdated = lastUpdatedFor("src/page-templates/AppsMindfulGuardPage.astro");
 const mindfulSchema = {
   ...getMindfulGuardSchema(),
   "datePublished": "2024-02-15",
@@ -39,8 +40,8 @@ const mindfulSchema = {
 };
 
 const meta = {
-  title: "Block Reels, Shorts & TikTok on Android — Mindful Guard",
-  description: "Block Instagram Reels, YouTube Shorts & TikTok on Android. Set daily limits that hold — 100% offline, zero data collected, free to download.",
+  title: localize("Block Reels, Shorts & TikTok on Android — Mindful Guard"),
+  description: localize("Block Instagram Reels, YouTube Shorts & TikTok on Android. Set daily limits that hold — 100% offline, zero data collected, free to download."),
   keywords: localize("block instagram reels android, block youtube shorts, tiktok blocker android, shorts blocker, reels blocker, android app blocker, limit short-form video, dopamine detox app, offline app blocker, zero telemetry"),
   ogTitle: localize("Block Reels, Shorts & TikTok on Android — Mindful Guard"),
   ogDescription: localize("A free Android app blocker with Reel Guard: cap Instagram Reels, YouTube Shorts & TikTok with daily and per-session limits. 100% offline. Zero data collected."),
@@ -71,11 +72,13 @@ const meta = {
     {/* Section 1: The Hero (Above the Fold) */}
     <MindfulHero>
       <div slot="meta" class="mb-4 flex flex-wrap items-center gap-3 sm:mb-6 sm:gap-4 justify-start">
-        <span class="rounded-full bg-emerald-50 px-3 py-1 text-[10px] font-bold text-emerald-700 border border-emerald-100">
-          {localize("Last checked: ")} {lastUpdated}
-        </span>
+        {lastUpdated && (
+          <span class="rounded-full bg-emerald-50 px-3 py-1 text-[10px] font-bold text-emerald-700 border border-emerald-100">
+            {localize("Last checked: ")} {lastUpdated}
+          </span>
+        )}
         <span class="hidden h-1 w-1 rounded-full bg-slate-200 sm:block"></span>
-        <span class="text-[10px] font-bold text-slate-400 italic">
+        <span class="text-[10px] font-bold text-slate-600 italic">
           {localize("Verified: zero data collected")}
         </span>
       </div>
@@ -93,7 +96,7 @@ const meta = {
           <span class="h-2 w-2 rounded-full bg-[#22C55E]"></span>
           {localize("Free to start")}
         </span>
-        <span class="flex items-center gap-1 text-sm font-bold text-amber-500">
+        <span class="flex items-center gap-1 text-sm font-bold text-amber-700">
           ★★★★★ <span class="ml-1 text-slate-500">5.0 · 500+ installs</span>
         </span>
       </div>

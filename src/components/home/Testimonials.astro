@@ -1,0 +1,75 @@
+---
+import Section from "@/components/common/Section.astro";
+import { getTestimonials } from "@/constants/home-data";
+import { localize } from "@/i18n/localize";
+
+const testimonials = getTestimonials();
+---
+
+<Section
+  id="reviews"
+  className="bg-muted py-16 md:py-24 lg:py-32"
+>
+  <div class="section-container">
+    {/* Section Header */}
+    <div class="mb-16 md:mb-24">
+      <div class="mb-8 flex items-center gap-4">
+        <span class="font-mono text-xs font-bold tracking-widest text-muted-foreground uppercase">
+          {localize("REVIEWS")}
+        </span>
+        <span class="block h-px flex-1 bg-foreground/20" />
+      </div>
+
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <h2 class="font-mono text-2xl leading-tight font-bold text-foreground md:text-3xl lg:text-4xl">
+          {localize("What people")}
+          <br />
+          <span class="text-muted-accent">
+            {localize("actually wrote.")}
+          </span>
+        </h2>
+
+        <div class="flex items-end">
+          <p class="max-w-md text-lg leading-relaxed text-muted-foreground">
+            {localize("Unedited reviews from the Google Play Store.")}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* Reviews Grid */}
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12">
+      {testimonials.map((review, index) => (
+        <figure class="border-l-2 border-foreground/10 pl-6 transition-all duration-200 hover:border-l-cta md:pl-8">
+          <div class="mb-6 flex items-center gap-4">
+            <span class="font-mono text-xs font-bold tracking-widest text-muted-foreground uppercase">
+              0{index + 1}
+            </span>
+            <span class="block h-px w-16 bg-foreground/20" />
+            <span class="font-mono text-[10px] font-bold tracking-[0.2em] text-cta-text uppercase">
+              {review.product}
+            </span>
+          </div>
+
+          <blockquote class="mb-6 text-base leading-relaxed text-muted-foreground">
+            {review.quote}
+          </blockquote>
+
+          <figcaption class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+            <span class="font-mono text-sm font-bold text-foreground">
+              {review.name}
+            </span>
+            <span class="text-xs text-muted-foreground">
+              {review.date}
+            </span>
+            {review.note && (
+              <span class="font-mono text-[10px] tracking-wide text-muted-foreground uppercase">
+                {review.note}
+              </span>
+            )}
+          </figcaption>
+        </figure>
+      ))}
+    </div>
+  </div>
+</Section>

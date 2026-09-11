@@ -28,7 +28,7 @@ const otherDataSources = products.slice(1);
   <div class="section-container">
     {/* Section Header */}
     <div class="mb-16 flex items-center gap-4 md:mb-20">
-      <span class="font-mono text-xs font-bold tracking-widest text-muted-foreground/50 uppercase">
+      <span class="font-mono text-xs font-bold tracking-widest text-muted-foreground uppercase">
         {localize("PRODUCTS")}
       </span>
       <span class="block h-px flex-1 bg-foreground/20" />
@@ -37,7 +37,7 @@ const otherDataSources = products.slice(1);
     {/* Featured Product: ScreenVeil */}
     <div class="mb-16 md:mb-24">
       <div class="mb-6 flex items-center gap-4">
-        <span class="font-mono text-xs font-bold tracking-widest text-muted-foreground/50 uppercase">
+        <span class="font-mono text-xs font-bold tracking-widest text-muted-foreground uppercase">
           01
         </span>
         <span class="block h-px w-24 bg-cta" />
@@ -54,7 +54,7 @@ const otherDataSources = products.slice(1);
             {featuredDataSource.name}
           </h2>
 
-          <p class="mb-4 font-mono text-lg font-semibold text-green-600">
+          <p class="mb-4 font-mono text-lg font-semibold text-green-700">
             {featuredDataSource.tagline}
           </p>
 
@@ -85,7 +85,7 @@ const otherDataSources = products.slice(1);
             href={featuredDataSource.ctaLink}
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex cursor-pointer items-center gap-2 bg-green-600 px-6 py-3 font-semibold text-white transition-all duration-200 hover:bg-green-700"
+            class="inline-flex cursor-pointer items-center gap-2 bg-green-700 px-6 py-3 font-semibold text-white transition-all duration-200 hover:bg-green-800"
           >
             {featuredDataSource.cta}
             <ExternalLink className="h-4 w-4" />
@@ -120,8 +120,8 @@ const otherDataSources = products.slice(1);
       {otherDataSources.map((product, idx) => {
         const isFomoGen = product.id === "fomogen";
         const accentColor = isFomoGen
-          ? "text-cta"
-          : "text-primary";
+          ? "text-cta-text"
+          : "text-primary-text";
           
 
         return (
@@ -134,7 +134,7 @@ const otherDataSources = products.slice(1);
           >
             {/* Number */}
             <div class="mb-6 flex items-center gap-4">
-              <span class="font-mono text-xs font-bold tracking-widest text-muted-foreground/50 uppercase">
+              <span class="font-mono text-xs font-bold tracking-widest text-muted-foreground uppercase">
                 0{idx + 2}
               </span>
               <span role="presentation" class="block h-px w-16 bg-foreground/20 transition-colors group-hover:bg-cta" />

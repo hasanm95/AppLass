@@ -6,11 +6,19 @@ import { i18nConfig, localeMeta } from "@/i18n/config";
 interface Props {
   isDark: boolean;
   currentLang: string;
+  /**
+   * Locales the current page exists in. Defaults to every configured locale,
+   * which is right for static pages. Partially translated content passes the
+   * real set so the toggle never offers a language that 404s.
+   */
+  availableLocales?: readonly string[];
 }
 
-const { isDark, currentLang } = Astro.props;
+const { isDark, currentLang, availableLocales = i18nConfig.locales } = Astro.props;
 
-const LOCALES = i18nConfig.locales.map((code) => ({ code, ...localeMeta[code] }));
+const LOCALES = i18nConfig.locales
+  .filter((code) => availableLocales.includes(code))
+  .map((code) => ({ code, ...localeMeta[code] }));
 
 const currentPath = Astro.url.pathname;
 const pathWithoutLang = currentPath.startsWith(`/${currentLang}/`) || currentPath === `/${currentLang}` 

@@ -1,7 +1,7 @@
 ---
 title: "Android Bien-être Numérique vs. Applications de Concentration Tierces : Comparaison Honnête"
 date: "2026-05-07"
-updatedAt: "2026-05-19"
+dateModified: "2026-05-19"
 category: "Applications Android"
 keywords: "bien-être numérique android, bien-être numérique vs bloqueur d'applications, mode concentration natif android, mindful guard android"
 author: "AppLass Team"
@@ -186,4 +186,4 @@ L'objectif n'est pas de trouver l'application parfaite. C'est de construire un e
 
 ---
 
-**À lire aussi :** Maintenant que vous comprenez les outils, lisez comment [bloquer les réseaux sociaux sur Android pendant les heures de travail uniquement](/fr/blog/bloquer-reseaux-sociaux-android-heures-travail/) pour un guide de configuration étape par étape qui met Mindful Guard au travail immédiatement.
+**À lire aussi :** Maintenant que vous comprenez les outils, lisez comment [bloquer les réseaux sociaux sur Android pendant les heures de travail uniquement](/fr/blog/how-to-block-social-media-on-android-during-work-hours) pour un guide de configuration étape par étape qui met Mindful Guard au travail immédiatement.

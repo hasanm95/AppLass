@@ -8,16 +8,18 @@ export async function getStaticPaths() {
     (l) => l !== i18nConfig.defaultLocale
   );
 
-  // Build a path for every English slug in every locale, even if that
-  // locale's translation is missing — BlogPostPage falls back to the
-  // English post rather than 404ing when a translation doesn't exist.
-  const englishPosts = await getBlogPosts(i18nConfig.defaultLocale);
-
-  const paths = nonDefaultLocales.flatMap((lang) =>
-    englishPosts.map((post) => ({
-      params: { lang, slug: post.slug },
-    }))
-  );
+  // Only build a localized route when that locale actually has the post.
+  // The English fallback in getBlogPostBySlug still exists as a safety net, but
+  // relying on it here would publish English content under a localized URL —
+  // declared in hreflang and the sitemap as if it were a translation.
+  const paths = (
+    await Promise.all(
+      nonDefaultLocales.map(async (lang) => {
+        const translated = await getBlogPosts(lang);
+        return translated.map((post) => ({ params: { lang, slug: post.slug } }));
+      })
+    )
+  ).flat();
 
   return paths;
 }

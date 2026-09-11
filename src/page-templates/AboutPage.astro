@@ -4,7 +4,7 @@ import Footer from "@/components/common/Footer.astro";
 import SubpageHero from "@/components/common/SubpageHero.astro";
 import Navbar from "@/components/common/Navbar.astro";
 import Section from "@/components/common/Section.astro";
-import { getHomePillars } from "@/constants/home-data";
+import { getAboutPillars } from "@/constants/home-data";
 import {
   Zap,
   Calculator,
@@ -23,6 +23,7 @@ interface Props {
 const { lang } = Astro.props;
 
 import { setLocale } from "@/i18n";
+import { lastUpdatedFor } from "@/lib/lastUpdated";
 setLocale(lang);
 
 const isDefault = lang === "en";
@@ -37,7 +38,7 @@ const meta = {
   ogUrl: isDefault ? "https://applass.com/about" : `https://applass.com/${lang}/about`
 };
 
-const lastUpdated = "2026-03-23";
+const lastUpdated = lastUpdatedFor("src/page-templates/AboutPage.astro");
 
 const aboutSchema = {
   "@context": "https://schema.org",
@@ -75,9 +76,11 @@ const iconMap = {
     <script type="application/ld+json" is:inline set:html={JSON.stringify(aboutSchema)} />
     <div class="pt-20 lg:pt-32">
       <div class="section-container mt-8 flex items-center gap-4">
-        <span class="rounded-full bg-slate-50 px-3 py-1 text-[10px] font-bold text-slate-600 uppercase border border-slate-100">
-          {localize("Last Evaluated: ")} {lastUpdated}
-        </span>
+        {lastUpdated && (
+          <span class="rounded-full bg-slate-50 px-3 py-1 text-[10px] font-bold text-slate-600 uppercase border border-slate-100">
+            {localize("Last Evaluated: ")} {lastUpdated}
+          </span>
+        )}
       </div>
       {/* Hero Methodology Section */}
       <SubpageHero
@@ -96,15 +99,15 @@ const iconMap = {
           </div>
           <div class="grid grid-cols-1 gap-px bg-slate-900 md:grid-cols-3">
             <div class="bg-white p-6">
-              <p class="mb-2 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Philosophy")}</p>
+              <p class="mb-2 text-[10px] font-bold text-muted-foreground uppercase tracking-tighter">{localize("Philosophy")}</p>
               <p class="font-black text-slate-900">{localize("First Principles Logic")}</p>
             </div>
             <div class="bg-white p-6">
-              <p class="mb-2 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Metric")}</p>
+              <p class="mb-2 text-[10px] font-bold text-muted-foreground uppercase tracking-tighter">{localize("Metric")}</p>
               <p class="font-black text-slate-900">{localize("Zero Technical Debt")}</p>
             </div>
             <div class="bg-white p-6">
-              <p class="mb-2 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Objective")}</p>
+              <p class="mb-2 text-[10px] font-bold text-muted-foreground uppercase tracking-tighter">{localize("Objective")}</p>
               <p class="font-black text-slate-900">{localize("Human-Centric Impact")}</p>
             </div>
           </div>
@@ -119,26 +122,26 @@ const iconMap = {
             <div class="hidden lg:block relative lg:w-1/3">
               <div class="relative aspect-4/5 overflow-hidden rounded-[3rem] bg-slate-100">
                 {/* Placeholder for real image in next iteration if needed */}
-                <div class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-900 text-[8rem] sm:text-[10rem] font-black text-white/10 italic select-none">
+                <div aria-hidden="true" class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-900 text-[8rem] sm:text-[10rem] font-black text-white/10 italic select-none">
                   {localize("LOGIC")}
                 </div>
               </div>
               {/* Float Badge */}
               <div class="absolute -right-6 -bottom-6 rounded-3xl bg-blue-600 p-8 text-white shadow-2xl lg:-right-10">
                 <span class="block text-3xl font-black">{localize("7+")}</span>
-                <span class="text-xs font-bold tracking-widest text-blue-100 uppercase">
+                <span class="text-xs font-bold tracking-widest text-blue-50 uppercase">
                   {localize("Years Experience")}
                 </span>
               </div>
             </div>
 
             <div class="flex-1 space-y-10">
-              <span class="block text-[10px] font-black tracking-widest text-slate-400 uppercase">
+              <span class="block text-[10px] font-black tracking-widest text-muted-foreground uppercase">
                 {localize("The Founder's Logic")}
               </span>
               <h2 class="text-3xl lg:text-5xl leading-[1.1] font-black text-slate-900">
                 {localize("Systemic Integrity")} <br />
-                <span class="text-slate-300">{localize("by Design.")}</span>
+                <span class="text-muted-accent">{localize("by Design.")}</span>
               </h2>
               <div class="max-w-2xl space-y-6 text-lg lg:text-xl leading-relaxed font-medium text-slate-600">
                 <p>
@@ -208,7 +211,7 @@ const iconMap = {
           </div>
 
           <div class="grid grid-cols-1 gap-12 lg:grid-cols-3">
-            {getHomePillars().map((pillar) => {
+            {getAboutPillars().map((pillar) => {
               const Icon = iconMap[pillar.iconName as keyof typeof iconMap];
               
               return (
@@ -216,7 +219,7 @@ const iconMap = {
                   <div class="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-500/10 text-blue-600 transition-colors group-hover:bg-blue-600 group-hover:text-white">
                     {Icon && <Icon size={32} />}
                   </div>
-                  <span class="mb-4 block text-[10px] font-black tracking-widest text-slate-400 uppercase">
+                  <span class="mb-4 block text-[10px] font-black tracking-widest text-muted-foreground uppercase">
                     {pillar.label}
                   </span>
                   <h3 class="mb-6 text-2xl font-black text-slate-900">
@@ -246,7 +249,7 @@ const iconMap = {
                   <span class="mb-2 block text-4xl font-black tracking-tighter">
                     {localize("10K+")}
                   </span>
-                  <span class="text-xs font-bold tracking-widest text-blue-200 uppercase">
+                  <span class="text-xs font-bold tracking-widest text-blue-50 uppercase">
                     {localize("ScreenVeil Android")}
                   </span>
                 </div>
@@ -254,7 +257,7 @@ const iconMap = {
                   <span class="mb-2 block text-4xl font-black tracking-tighter">
                     {localize("4.4★")}
                   </span>
-                  <span class="text-xs font-bold tracking-widest text-blue-200 uppercase">
+                  <span class="text-xs font-bold tracking-widest text-blue-50 uppercase">
                     {localize("Global Rating")}
                   </span>
                 </div>
@@ -272,7 +275,7 @@ const iconMap = {
               </div>
             </div>
             <div class="z-10 lg:w-1/3">
-              <p class="mb-10 text-lg lg:text-xl leading-relaxed font-medium text-blue-100">
+              <p class="mb-10 text-lg lg:text-xl leading-relaxed font-medium text-blue-50">
                 {localize("AppLass software is regularly cited in productivity guides and tech audits for its zero-bloat approach and strict privacy protocols.")}
               </p>
               <a

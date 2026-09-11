@@ -1,7 +1,22 @@
 ---
 // src/components/blog/ScreenVeilCTA.astro
-// Drop <ScreenVeilCTA /> anywhere in your MDX files.
+// Drop <ScreenVeilCTA lang={...} /> anywhere in your MDX files.
 // Matches your site's dark theme and tech aesthetic.
+import { localize } from "@/i18n/localize";
+
+interface Props {
+  lang?: string;
+}
+
+const { lang = "en" } = Astro.props;
+
+const content = {
+  aria: localize("Download ScreenVeil on Google Play — free Android app"),
+  badge: localize("Free Android App"),
+  title: localize("ScreenVeil — Screen Off Video"),
+  desc: localize("Black-out your screen while audio plays. Saves 60%+ battery on AMOLED. 10,000+ downloads · 4.4 ★ · Zero permissions."),
+  btn: localize("Get it free"),
+};
 ---
 
 <a
@@ -9,22 +24,20 @@
   target="_blank"
   rel="noopener noreferrer"
   class="screenveil-cta"
-  aria-label="Download ScreenVeil on Google Play — free Android app"
+  aria-label={content.aria}
+  lang={lang}
 >
   <div class="screenveil-cta__left">
-    <span class="screenveil-cta__badge">Free Android App</span>
-    <span class="screenveil-cta__title">ScreenVeil — Screen Off Video</span>
-    <span class="screenveil-cta__desc">
-      Black-out your screen while audio plays. Saves 60%+ battery on AMOLED.
-      10,000+ downloads · 4.4 ★ · Zero permissions.
-    </span>
+    <span class="screenveil-cta__badge">{content.badge}</span>
+    <span class="screenveil-cta__title">{content.title}</span>
+    <span class="screenveil-cta__desc">{content.desc}</span>
   </div>
   <div class="screenveil-cta__right" aria-hidden="true">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/>
       <path d="m10 8 6 4-6 4V8z"/>
     </svg>
-    <span>Get it free</span>
+    <span>{content.btn}</span>
   </div>
 </a>
 

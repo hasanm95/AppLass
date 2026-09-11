@@ -1,7 +1,7 @@
 ---
 title: "Comment Bloquer les Réseaux Sociaux sur Android Pendant les Heures de Travail Uniquement"
 date: "2026-04-24"
-updatedAt: "2026-05-19"
+dateModified: "2026-05-19"
 category: "Applications Android"
 keywords: "bloquer réseaux sociaux android, planifier bloqueur applications, bloquer applications heures de travail, mindful guard android"
 author: "AppLass Team"

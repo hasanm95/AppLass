@@ -1,0 +1,131 @@
+---
+title: "Bloquer les Shorts YouTube sans bloquer YouTube"
+description: "YouTube n'a aucun réglage pour désactiver vraiment les Shorts. Limitez le fil Shorts sur Android avec une limite quotidienne ou par session — tutoriels et abonnements continuent de fonctionner."
+date: "2026-07-30"
+dateModified: "2026-07-30"
+author: "Équipe AppLass"
+excerpt: "YouTube n'a aucun réglage désactivant vraiment les Shorts. Une limite au niveau du fil plafonne les Shorts par jour ou par session, sans toucher aux vidéos longues."
+tags: ["android", "youtube", "shorts", "concentration", "productivité"]
+category: "Applications Android"
+keywords: "désactiver shorts youtube, supprimer shorts youtube, réglage shorts youtube android, masquer les shorts youtube, limite de temps shorts youtube, bloquer shorts sans bloquer youtube"
+breadcrumbName: "Bloquer les Shorts YouTube"
+sidebarApps:
+  - mindful-guard
+thumbnail: "../../../assets/blogs/block-youtube-shorts-android.png"
+featured: true
+faqs:
+  - question: "YouTube propose-t-il un réglage intégré pour désactiver les Shorts ?"
+    answer: "Pas un vrai. Les paramètres de l'application YouTube permettent de masquer l'étagère Shorts de la page d'accueil dans certaines régions, mais le lecteur et le fil Shorts restent accessibles depuis la recherche, les notifications et l'onglet abonnements — et Google a déjà supprimé ou déplacé ce réglage. C'est un paramètre cosmétique, pas un blocage appliqué : il n'est donc pas fiable sur la durée."
+  - question: "Pourquoi le minuteur d'application de Bien-être numérique ne fonctionne-t-il pas pour les Shorts ?"
+    answer: "Bien-être numérique ne peut limiter que l'application YouTube dans son ensemble, pas le fil Shorts qu'elle contient. Définir un minuteur sur YouTube bloque les tutoriels et les abonnements en même temps que les Shorts, ce qui explique pourquoi la plupart des gens ignorent le minuteur ou le désactivent en une semaine. Un bloqueur spécifique aux Shorts est le seul moyen de viser le fil sans perdre l'application."
+  - question: "Bloquer les Shorts les empêche-t-il aussi d'apparaître dans la recherche et les notifications ?"
+    answer: "Un bloqueur au niveau du fil agit à l'ouverture du lecteur Shorts, pas à l'affichage d'une vignette. Les Shorts peuvent encore apparaître dans les résultats de recherche ou dans une notification, mais y toucher pendant une limite active déclenche le blocage au lieu du lecteur. Masquer l'étagère d'accueil ne fait pas cela, d'où l'inefficacité ressentie de ce réglage."
+  - question: "Bloquer les Shorts YouTube affecte-t-il YouTube Music ou un abonnement Premium ?"
+    answer: "Non. Une limite Shorts ne vise que le fil Shorts à l'intérieur de l'application YouTube. YouTube Music est une application distincte et n'est pas concernée, et un abonnement Premium continue de fonctionner normalement pour la lecture en arrière-plan, les téléchargements et les vidéos longues sans publicité."
+  - question: "L'étagère Shorts revient-elle après une mise à jour de YouTube ?"
+    answer: "Souvent, oui. Le réglage d'affichage de l'étagère a été déplacé, renommé et supprimé au fil des versions de YouTube, et les mises à jour peuvent le réinitialiser. C'est l'argument pratique en faveur d'une limite imposée depuis l'extérieur de l'application : une limite tierce continue de fonctionner quoi que YouTube change dans ses propres paramètres."
+  - question: "En quoi un bloqueur de Shorts diffère-t-il du bouton « Cela ne m'intéresse pas » ?"
+    answer: "« Cela ne m'intéresse pas » est un signal de recommandation : vous demandez à l'algorithme de vous montrer moins de Shorts de ce type, et l'algorithme décide de la suite. Un bloqueur est un mécanisme d'application : une fois votre limite atteinte, le fil ne s'ouvre pas, quoi que le système de recommandation veuille vous servir."
+---
+
+import MindfulGuardCTA from "@/components/blog/MindfulGuardCTA.astro";
+
+**YouTube n'a aucun réglage qui désactive réellement les Shorts.** Le bouton qui masque l'étagère
+Shorts de votre page d'accueil est cosmétique — le fil reste à une recherche, une notification ou
+un lien partagé de distance, et Google a déplacé ou supprimé ce réglage plus d'une fois d'une
+version à l'autre.
+
+Ce qui fonctionne à la place, c'est une **limite au niveau du fil** : plafonner le fil Shorts
+lui-même avec une limite quotidienne ou par session, et laisser le reste de YouTube tranquille.
+Tutoriels, abonnements, playlists et vidéos longues continuent de fonctionner exactement comme
+avant. Ce guide met cela en place sur Android en environ deux minutes, sans root et sans VPN.
+
+---
+
+## Pourquoi « bloquez simplement YouTube » est un mauvais conseil
+
+Un bloqueur d'application entière traite YouTube comme un simple interrupteur. Bloquez-le pendant
+vos heures de concentration et vous perdez aussi :
+
+- Le tutoriel dont vous aviez besoin pour travailler
+- Vos abonnements et votre liste « À regarder plus tard »
+- Les podcasts et les vidéos longues que vous aviez choisi de regarder
+
+C'est pourquoi les blocages complets de YouTube survivent rarement plus de quelques jours : le coût
+est trop élevé, et l'on désactive le bloqueur dès qu'une vraie vidéo devient nécessaire. La solution
+n'est pas de renoncer à YouTube, mais de viser le seul fil, à l'intérieur, conçu pour être infini.
+
+## Pourquoi masquer l'étagère Shorts ne suffit pas
+
+Le réglage de YouTube masque la rangée Shorts de votre page d'accueil. Il n'arrête pas le fil. Les
+Shorts vous atteignent toujours par :
+
+- **Les résultats de recherche**, où les Shorts apparaissent aux côtés des vidéos longues
+- **Les notifications** des chaînes qui publient des Shorts
+- **Les liens partagés** par des amis, qui ouvrent directement le lecteur Shorts
+- **L'onglet abonnements**, qui mélange les Shorts au reste du fil
+
+Masquer une étagère change ce que vous voyez sur un écran. Cela ne change rien à ce qui se passe
+quand vous touchez un Short depuis ailleurs — c'est-à-dire là où commencent la plupart des sessions.
+
+## Ce qui fonctionne vraiment : le blocage au niveau du fil
+
+Un **Reel Guard** est un bloqueur spécifique aux Shorts. Il détecte l'ouverture du fil Shorts —
+depuis l'étagère d'accueil, la recherche ou un lien partagé — et applique votre limite sur place,
+pendant que le reste de l'application continue de fonctionner. Le Reel Guard de Mindful Guard le
+fait pour les Shorts YouTube, les Reels Instagram, le fil « Pour toi » de TikTok, les Reels Facebook
+et Snapchat Spotlight, chacun avec sa propre limite.
+
+C'est la même approche au niveau du fil que celle décrite dans notre
+[guide complet du blocage des Reels et Shorts sur Android](/fr/blog/how-to-block-reels-and-shorts-on-android-2026),
+appliquée cette fois à YouTube : viser le fil, pas l'application.
+
+<MindfulGuardCTA lang="fr" campaign="how-to-block-youtube-shorts-android" />
+
+## Limite quotidienne ou limite par session
+
+Deux réglages font le travail, et vous pouvez utiliser l'un, l'autre ou les deux :
+
+- **Limite quotidienne** — un budget Shorts total par jour (par exemple 10 minutes). Une fois
+  épuisé, les Shorts sont bloqués jusqu'au lendemain, et le reste de YouTube reste ouvert.
+- **Limite par session** — un plafond sur chaque utilisation isolée (par exemple 3 minutes). C'est
+  ce qui arrête le défilement avant qu'il ne devienne une session, car le problème est rarement
+  d'ouvrir les Shorts une fois : c'est la demi-heure que vous n'aviez pas prévu de perdre.
+
+Fixez une limite ferme et il n'y a plus rien à négocier. Aucun bouton « encore 5 minutes ».
+
+## Pas à pas : bloquer les Shorts YouTube en moins de deux minutes
+
+1. Installez **Mindful Guard** depuis le Play Store.
+2. Accordez l'autorisation du **service d'accessibilité** — c'est ce qui permet à l'application de
+   détecter le fil Shorts à son ouverture, sans root ni VPN.
+3. Ouvrez **Reel Guard** et sélectionnez **Shorts YouTube**.
+4. Définissez une **limite quotidienne**, une **limite par session**, ou les deux.
+5. Terminé. YouTube en format long fonctionne exactement comme avant ; seuls les Shorts obéissent à
+   votre limite.
+
+<MindfulGuardCTA lang="fr" campaign="how-to-block-youtube-shorts-android" />
+
+## Les Shorts face au reste de YouTube
+
+| Approche | YouTube reste utilisable ? | Application de la règle | Installation |
+|---|---|---|---|
+| **Reel Guard (limite au niveau du fil)** | ✅ Oui — seuls les Shorts sont plafonnés | Limite ferme, sans contournement | ~2 min |
+| Bloquer toute l'application YouTube | ❌ Non — plus de tutoriels ni d'abonnements | Blocage ferme sur la plage définie | ~1 min |
+| Masquer l'étagère Shorts (réglage YouTube) | ✅ Oui, en apparence | Aucune — toujours accessible via recherche/notifications | ~30 s |
+| Minuteur de Bien-être numérique | ❌ Non — limite tout YouTube | Contournement « +5 min » en un tap (faible) | ~1 min |
+
+Si vous voulez aussi préserver la batterie de votre téléphone en regardant les contenus longs que
+vous gardez, consultez notre guide sur la
+[lecture YouTube écran éteint](/fr/blog/youtube-screen-off-battery-hack) et la
+[solution de lecture en arrière-plan 2026](/fr/blog/youtube-background-play-2026-workaround) — utiles
+une fois que les Shorts ne dévorent plus le temps que vous préféreriez consacrer à l'un ou l'autre.
+
+## L'essentiel
+
+Les Shorts YouTube ne sont pas une raison de renoncer à YouTube : c'est une raison de bloquer un
+fil précis à l'intérieur. Une limite au niveau du fil préserve intégralement vos abonnements, vos
+tutoriels et vos habitudes de format long, tout en imposant un arrêt net à la seule partie de
+l'application conçue pour être infinie.
+
+<MindfulGuardCTA lang="fr" campaign="how-to-block-youtube-shorts-android" />

@@ -99,7 +99,7 @@ export function DocsSidebar({ pathname = "", lang }: { pathname?: string; lang: 
         <nav className="space-y-12">
           {links.map((section) => (
             <div key={section.category}>
-              <h3 className="mb-4 text-[10px] font-black tracking-[0.2em] text-slate-400 uppercase">
+              <h3 className="mb-4 text-[10px] font-black tracking-[0.2em] text-slate-600 uppercase">
                 {section.category}
               </h3>
               <ul className="space-y-1">

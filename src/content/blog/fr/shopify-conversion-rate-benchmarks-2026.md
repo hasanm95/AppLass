@@ -166,5 +166,3 @@ La plus grande erreur que font les marchands, c'est d'essayer de tout corriger e
 > **[Installer FomoGen Gratuitement sur Shopify →](https://apps.shopify.com/fomogen)**
 
 ---
-
-**À lire ensuite :** Comprenez pourquoi vos visiteurs ne font pas d'achat même après avoir corrigé les bases — lisez notre article sur [pourquoi les visiteurs Shopify partent sans acheter](/fr/blog/why-shopify-visitors-dont-buy).
