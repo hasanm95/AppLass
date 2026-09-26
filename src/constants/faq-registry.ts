@@ -44,7 +44,7 @@ export const getFaqRegistry = () => ({
     {
       question: localize("Does ScreenVeil work on LCD screens?"),
       answer: localize(
-        "Yes. On LCD displays ScreenVeil acts as a screen dimmer and reduces brightness-related battery drain. Maximum savings of 60%+ are achieved on AMOLED/OLED displays, where black pixels physically power off."
+        "Yes. On LCD displays ScreenVeil acts as a screen dimmer and reduces brightness-related battery drain. The largest savings — up to 60% of display power at full brightness — come on AMOLED/OLED displays, where black pixels physically power off."
       ),
     },
     {
@@ -56,7 +56,7 @@ export const getFaqRegistry = () => ({
     {
       question: localize("What is ScreenVeil?"),
       answer: localize(
-        "ScreenVeil is a free Android app with 10,000+ downloads and a 4.4-star rating. It overlays a pure black layer on AMOLED/OLED screens so pixels physically turn off, saving 60% battery while you listen to YouTube, podcasts, or any audio."
+        "ScreenVeil is a free Android app with 10,000+ downloads and a 4.4-star rating. It overlays a pure black layer on AMOLED/OLED screens so pixels physically turn off, cutting display power by up to 60% at full brightness while you listen to YouTube, podcasts, or any audio."
       ),
     },
     {
@@ -80,7 +80,7 @@ export const getFaqRegistry = () => ({
     {
       question: localize("Does ScreenVeil drain battery?"),
       answer: localize(
-        "No. ScreenVeil is engineered for extreme efficiency. It uses 0% CPU while active. By turning off the pixels on AMOLED screens, it actually saves up to 60% of your total device power draw during video playback."
+        "No. ScreenVeil is engineered for extreme efficiency. It uses 0% CPU while active. By turning off the pixels on AMOLED screens, it removes almost all of the display's draw — up to 60% of screen power at full brightness — during audio-only playback."
       ),
     },
     {

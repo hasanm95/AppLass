@@ -90,18 +90,20 @@ const breadcrumbs = [
   { name: post.breadcrumbName || post.title, item: absolute(`/blog/${slug}`) }
 ];
 
-const appMapping: Record<string, "ScreenVeil" | "Mindful Guard" | "FOMOgen"> = {
+const appMapping: Record<string, "ScreenVeil" | "Mindful Guard" | "FOMOgen" | "CartTime"> = {
   "screenveil": "ScreenVeil",
   "screen-veil": "ScreenVeil",
   "mindfulguard": "Mindful Guard",
   "mindful-guard": "Mindful Guard",
   "fomogen": "FOMOgen",
+  "carttime": "CartTime",
+  "cart-time": "CartTime",
 };
 
 const normalizedSidebarApps = (post.sidebarApps && post.sidebarApps.length > 0
   ? post.sidebarApps.map(app => appMapping[app.toLowerCase()] || app)
   : ["ScreenVeil", "Mindful Guard"]
-) as ("ScreenVeil" | "Mindful Guard" | "FOMOgen")[];
+) as ("ScreenVeil" | "Mindful Guard" | "FOMOgen" | "CartTime")[];
 
 ---
 
@@ -231,6 +233,20 @@ const normalizedSidebarApps = (post.sidebarApps && post.sidebarApps.length > 0
                         poweredByLogic: localize("Powered by Logic"),
                         sub: localize("System-Level Focus for Android."),
                         desc: localize("Block biological distractions at the source. Native performance, absolute privacy.")
+                      }}
+                    />
+                  );
+                }
+                if (appName === "CartTime") {
+                  return (
+                    <AppCallout
+                      appName="CartTime"
+                      lang={lang}
+                      labels={{
+                        learnMore: localize("Install Free"),
+                        poweredByLogic: localize("Powered by Logic"),
+                        sub: localize("Checkout Timers That Convert."),
+                        desc: localize("Cart reservation timers, countdown bars, and low-stock alerts for Shopify. Speed-optimized, fully responsive.")
                       }}
                     />
                   );
