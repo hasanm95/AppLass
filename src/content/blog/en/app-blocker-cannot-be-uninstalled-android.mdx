@@ -1,0 +1,150 @@
+---
+title: "App Blockers That Can't Be Uninstalled on Android: What's Actually Possible (2026)"
+description: "No app on the Play Store can truly stop you uninstalling it — Android removed that capability in 2016. Here's what uninstall protection really does, how strong each method is, and how to remove a blocker you're genuinely stuck with."
+date: "2026-09-30"
+dateModified: "2026-09-30"
+author: "AppLass Team"
+excerpt: "No Play Store app can truly prevent its own uninstall — Android removed that capability in Nougat and deprecated device admin entirely. What blockers actually sell is friction: extra steps, timed locks, and settings screens that close themselves. Here's how strong each method is, and how to remove one you're stuck with."
+tags: ["android", "app blocker", "focus", "strict mode", "productivity", "device admin"]
+category: "Android Apps"
+keywords: "app blocker that can't be uninstalled, app blocker cannot be uninstalled android, strict mode app blocker android, uninstall protection app blocker, unremovable app blocker android, how to remove app blocker android, app blocker device admin"
+breadcrumbName: "Uninstall-Proof App Blockers"
+thumbnail: "../../../assets/blogs/app-blocker-cannot-be-uninstalled-android.png"
+sidebarApps:
+  - mindful-guard
+featured: true
+faqs:
+  - question: "Can an Android app blocker really be impossible to uninstall?"
+    answer: "No. Android removed the ability for a device administrator to prevent its own removal in Android 7 Nougat, and deprecated device admin entirely in 2020. What Play Store blockers offer is friction — extra steps, timed locks, and accessibility services that close the uninstall screen. Every consumer-grade method can be defeated by safe mode or ADB."
+  - question: "How do app blockers stop you uninstalling them?"
+    answer: "Most use an accessibility service to watch which settings screen you open. When you reach the app's App Info page or the accessibility settings, the app closes or redirects that screen before you can tap uninstall. This is interference with the uninstall flow rather than a block on it, which is why booting into safe mode defeats it."
+  - question: "What is the only way to truly prevent uninstalling an app on Android?"
+    answer: "Device Owner mode, which is what enterprise device management uses. It can suspend apps, hide them, block safe mode, and prevent uninstall without authentication. Provisioning it requires a factory-reset device and ADB, and it applies to the whole device, so it is not something a Play Store app can enable on its own."
+  - question: "Does safe mode remove an app blocker?"
+    answer: "Safe mode does not remove anything by itself, but it boots Android without third-party apps running. The blocker's accessibility service is inactive, so nothing intercepts you, and you can uninstall normally from Settings. This is the standard escape route from any consumer app blocker, and no Play Store app can prevent it."
+  - question: "Is device admin still used for app blocker uninstall protection?"
+    answer: "Less and less. Google deprecated device administrator in 2020 and it is no longer available on devices with Google Mobile Services, with support continuing only on Android 14 and earlier for GMS devices. Even when active, it only adds a step: you deactivate the administrator first, then uninstall."
+  - question: "How do I remove an app blocker when the uninstall button does nothing?"
+    answer: "Try these in order: revoke the app's accessibility permission, deactivate it under Security and device admin apps, boot into safe mode and uninstall from Settings, or uninstall over ADB from a computer. One of these clears every consumer blocker. If none work, the device is under Device Owner management, which needs a factory reset."
+---
+
+import MindfulGuardCTA from "@/components/blog/MindfulGuardCTA.astro";
+
+**No app you install from the Play Store can truly stop you from uninstalling it.** Android removed
+that capability in 2016 and has been closing the remaining gaps ever since. Every "unremovable" app
+blocker is selling friction — extra steps, timed locks, and settings screens that close themselves
+before you can tap the button.
+
+That is not a reason to dismiss them. Friction is the entire point, and a blocker you can remove in
+forty seconds of deliberate effort works very differently from one you can remove in two impulsive
+taps. But you should know what you are buying, and if you are on the other side of this — stuck with
+a blocker you want gone — you should know the exits.
+
+---
+
+## Can an app blocker really be impossible to uninstall?
+
+**No, not on modern Android.** The ability for a device administrator to prevent its own removal was
+taken out in Android 7 Nougat, for security reasons: malware was abusing it. Google then
+[deprecated device admin entirely in 2020](https://developers.google.com/android/work/device-admin-deprecation),
+and it is no longer available on devices with Google Mobile Services.
+
+So when an app promises it "cannot be uninstalled," what it can actually deliver is delay. The
+honest framing is a scale of resistance, not a binary.
+
+| Method | Real resistance | How it is defeated |
+|---|---|---|
+| Plain app, no protection | None | Long-press, uninstall, ~5 seconds |
+| PIN or password on settings | Low | You know the PIN |
+| Accessibility service closes uninstall screen | Moderate | Safe mode, or revoke the permission |
+| Device admin activated | Low to moderate, and shrinking | Deactivate admin, then uninstall |
+| Timed lock with no early exit | Moderate — the strongest consumer option | Safe mode, ADB |
+| Device Owner mode (enterprise) | Genuine | Factory reset only |
+
+## How the accessibility trick actually works
+
+Most blockers with uninstall protection use an **accessibility service**, the same permission that
+lets them see which app is in the foreground. It watches the screen you are on. The moment you land
+on the blocker's App Info page — the one with the uninstall button — or on the accessibility
+settings where you could switch it off, the app closes or redirects that screen.
+
+The important detail: this is interference with the uninstall flow, not a lock on it. Nothing at the
+OS level is refusing your request. An app is racing you to the button and winning, because it reacts
+in milliseconds and you do not.
+
+That distinction explains every documented bypass. Boot into safe mode and Android does not run
+third-party apps at all, so there is no service left to race you. The uninstall proceeds normally.
+
+## The one method that genuinely works, and its cost
+
+**Device Owner mode** is the real thing. It is the privileged mode enterprise device management
+uses, and it can suspend applications, hide them from the launcher, block safe mode, and prevent
+uninstall without authentication.
+
+The catch is how you get there. Device Owner has to be provisioned on a device with no accounts
+configured — in practice, straight after a factory reset — and set up over ADB from a computer. It
+governs the entire device, not one app. A Play Store app cannot switch it on for you, which is
+precisely why no consumer blocker offers it as a toggle.
+
+If you have genuinely tried everything else and want a lock you cannot talk yourself out of, that is
+the tier that exists. For almost everyone it is more than the problem requires.
+
+<MindfulGuardCTA campaign="app-blocker-cannot-be-uninstalled-android" />
+
+## What to actually look for in a blocker
+
+Given that no app can win the uninstall fight outright, the useful question changes. It is not "can
+this be removed" — it can — but "how many deliberate steps stand between an impulse and a removal,
+and does the app negotiate with you?"
+
+The features that matter, in order:
+
+1. **No early exit from an active session.** A timed lock with no override is the strongest thing a
+   consumer app can offer, because it removes the negotiation rather than the capability. Mindful
+   Guard's Strict Mode works this way: settings are locked for the duration you chose.
+2. **No "just 5 more minutes" button.** Digital Wellbeing's timers fail here — one tap extends them,
+   which is exactly the moment willpower is lowest.
+3. **Friction on the settings path**, so switching off protection is not one tap either.
+4. **Survives a reboot.** A blocker that quietly stops after a restart is decorative.
+
+Note what is missing from that list: a promise of true unremovability. Any app making that claim
+outright is describing something Android does not permit. Treat it the way you would treat any other
+overstated spec.
+
+If you want the fuller comparison of enforcement models, our
+[guide to the best apps for blocking social media on Android](/blog/best-app-to-block-social-media-on-android-in-2026)
+covers how the main options differ, and
+[Digital Wellbeing vs third-party focus apps](/blog/android-digital-wellbeing-vs-third-party-focus-apps)
+covers why the built-in timers are so easy to wave away.
+
+## How to remove an app blocker you're stuck with
+
+Half the people searching this phrase want the opposite of a blocker — they installed one, locked
+themselves out, and now need it gone. In order, least disruptive first:
+
+1. **Revoke the accessibility permission.** Settings → Accessibility → the app → off. If the screen
+   closes itself, keep going.
+2. **Deactivate device admin.** Settings → Security → Device admin apps → the app → deactivate.
+3. **Boot into safe mode.** Hold the power button, then long-press "Power off" until the safe mode
+   prompt appears. Third-party apps do not run. Uninstall from Settings → Apps, then reboot.
+4. **Uninstall over ADB.** From a computer with USB debugging enabled:
+   `adb uninstall <package.name>`. This bypasses the UI entirely.
+5. **Factory reset.** Only necessary if the device is genuinely under Device Owner management, which
+   for a self-installed focus app it will not be.
+
+Steps 3 and 4 clear every consumer-grade blocker on the Play Store. If you are reaching for them
+regularly, the blocker is not the problem worth solving — that is the subject of
+[monk mode and the limits of willpower](/blog/monk-mode-willpower).
+
+<MindfulGuardCTA campaign="app-blocker-cannot-be-uninstalled-android" />
+
+## Bottom line
+
+"Cannot be uninstalled" is marketing language for "takes deliberate effort to uninstall," and on
+Android that is the only thing on offer outside enterprise provisioning. The good news is that
+deliberate effort is usually enough — the failure mode for focus apps is the impulsive tap, not the
+determined one.
+
+Pick the blocker with the strongest timed lock and the fewest negotiation points, and accept that
+safe mode exists. If you find yourself in safe mode at 11pm to get one app back, the block worked
+exactly as intended; it just told you something about the habit rather than the software.
