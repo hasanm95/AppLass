@@ -5,13 +5,13 @@ import { localize } from "@/i18n/localize";
 
 const features = [
   {
-    title: localize("No-Bypass Architecture"),
-    description: localize("Bypassing the block is mathematically impossible during an active session."),
+    title: localize("No Early Exit"),
+    description: localize("Once a session starts there is no override button, no timer extension, and nothing inside the app to negotiate with."),
     icon: Lock
   },
   {
     title: localize("Scheduled Enforcement"),
-    description: localize("Pre-plan your focus blocks for the week. Once they start, the firewall is absolute."),
+    description: localize("Pre-plan your focus blocks for the week. Once a block starts, it holds until it ends."),
     icon: Timer
   },
   {
@@ -31,14 +31,14 @@ const features = [
       {localize("Strict Logic Mode")}<span class="text-slate-500">.</span>
     </h1>
     <p class="mt-6 max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
-      {localize("The core of the cognitive firewall. Enforce zero-bypass focus sessions that cannot be interrupted.")}
+      {localize("The core of the cognitive firewall. Lock a focus session so there is nothing left to negotiate with when the impulse arrives.")}
     </p>
   </header>
 
   <div class="prose prose-slate max-w-none">
     <h2 class="text-2xl font-black text-slate-900">{localize("How it works")}</h2>
     <p class="text-lg font-medium text-slate-500">
-      {localize("Strict Mode locks your chosen settings for a set duration. It prevents anyone (including you) from uninstalling the app or changing the blocking schedule until the timer expires.")}
+      {localize("Strict Mode locks your chosen settings for a set duration. Until the timer expires the blocking schedule cannot be changed from inside the app, and getting rid of the app takes deliberate effort rather than a single tap.")}
     </p>
   </div>
 
@@ -68,6 +68,18 @@ const features = [
     </h3>
     <p class="max-w-lg text-lg leading-relaxed font-medium text-slate-500">
       {localize("Strict Mode is designed to be permanent for the duration you set. There is no \"Emergency Unlock\" by design. Use with intention.")}
+    </p>
+  </div>
+
+  <div class="rounded-[2.5rem] border border-slate-100 bg-slate-50/50 p-12">
+    <p class="mb-4 font-black tracking-widest text-slate-500 uppercase">
+      {localize("What Android allows")}
+    </p>
+    <h3 class="mb-4 text-2xl font-black text-slate-900">
+      {localize("Strong friction, not an unbreakable lock")}
+    </h3>
+    <p class="max-w-lg text-lg leading-relaxed font-medium text-slate-500">
+      {localize("No app installed from the Play Store can make itself truly unremovable — Android removed that capability in version 7, and safe mode or a USB cable will always get an app off a phone. Strict Mode is built to defeat the impulsive tap, which is the one that actually breaks focus, not a determined person with a computer.")}
     </p>
   </div>
 </div>
