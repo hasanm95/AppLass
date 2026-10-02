@@ -11,13 +11,14 @@ interface Props {
   title: string;
   description?: string;
   appName: string;
+  lastUpdated?: string;
 }
 
-const { lang, title, description, appName } = Astro.props;
+const { lang, title, description, appName, lastUpdated: effectiveDate } = Astro.props;
 
 import { setLocale } from "@/i18n";
 setLocale(lang);
-const lastUpdated = localize("February 20, 2026");
+const lastUpdated = effectiveDate || localize("February 20, 2026");
 
 ---
 

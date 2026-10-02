@@ -1,12 +1,22 @@
 ---
+interface Props {
+  lastUpdated?: string;
+}
+
+const { lastUpdated = "October 2, 2026" } = Astro.props;
 ---
 
 <div class="text-center">
   <div class="max-w-3xl mx-auto p-12 bg-indigo-50/50 rounded-[2.5rem] border border-indigo-100">
     <p class="text-xl text-slate-700 leading-relaxed">
-      Arisely is an alarm clock app for Android. This Privacy Policy
-      explains what data the app handles and how — in short, it doesn't
-      collect, transmit, or share any of it.
+      Arisely is an alarm clock app for Android. It has no user accounts
+      and no server of its own — everything you create in the app (your
+      alarms, settings and sleep log) is stored on your device and is
+      never sent anywhere. Only two things involve a third party:
+      advertising and purchase verification.
+    </p>
+    <p class="mt-6 text-sm font-black uppercase tracking-widest text-indigo-600">
+      Effective date: {lastUpdated}
     </p>
   </div>
 </div>
@@ -14,20 +24,9 @@
 <section>
   <div class="text-center mb-12">
     <h2 class="text-3xl font-black text-slate-900 mb-4">
-      1. Data Collection
+      1. Summary
     </h2>
     <div class="w-16 h-1 bg-indigo-600 mx-auto rounded-full"></div>
-  </div>
-
-  <div class="mb-12 text-center">
-    <h3 class="text-2xl font-bold text-slate-800 mb-4">
-      What We Collect
-    </h3>
-    <p class="max-w-2xl mx-auto text-slate-500">
-      Nothing. Arisely has no user accounts, no analytics, no
-      advertising, and no third-party data services. There is no
-      backend — Arisely has no server component at all.
-    </p>
   </div>
 
   <div class="grid lg:grid-cols-2 gap-8">
@@ -45,27 +44,161 @@
           <span class="text-green-700 font-black shrink-0">·</span>
           <p><strong class="text-green-900">App Settings:</strong> Preferences like dark mode, time format, snooze behavior, and reminder settings.</p>
         </li>
+        <li class="flex gap-3">
+          <span class="text-green-700 font-black shrink-0">·</span>
+          <p><strong class="text-green-900">Sleep Log:</strong> The bedtimes you confirm and a record of each morning's alarms, snoozes and ritual attempts.</p>
+        </li>
+        <li class="flex gap-3">
+          <span class="text-green-700 font-black shrink-0">·</span>
+          <p><strong class="text-green-900">Pro Status:</strong> Whether this device has an active subscription or lifetime purchase, as last confirmed by RevenueCat.</p>
+        </li>
       </ul>
       <p class="text-sm text-green-700 mt-8">
-        This is stored locally via Android's app storage (AsyncStorage)
-        and is permanently deleted if you uninstall the app or clear
-        its storage.
+        This is stored locally via Android's app storage (AsyncStorage).
+        Uninstalling the app or clearing its storage permanently deletes
+        all of it.
       </p>
     </div>
 
-    <div class="bg-red-50/50 p-10 rounded-[2.5rem] border border-red-100">
-      <h4 class="text-xl font-black text-red-800 mb-8 flex items-center">
-        <span class="text-red-700 mr-4 text-2xl">❌</span>
-        Data We DO NOT Collect
+    <div class="bg-indigo-50/50 p-10 rounded-[2.5rem] border border-indigo-100">
+      <h4 class="text-xl font-black text-indigo-800 mb-8 flex items-center">
+        <span class="text-indigo-700 mr-4 text-2xl">↗</span>
+        The Only Two Third Parties
       </h4>
-      <ul class="space-y-4 text-base text-red-700 list-none">
-        <li class="flex gap-3"><span class="text-red-700 font-black shrink-0">/</span><span>Personal identifying information</span></li>
-        <li class="flex gap-3"><span class="text-red-700 font-black shrink-0">/</span><span>Data sent to any server</span></li>
-        <li class="flex gap-3"><span class="text-red-700 font-black shrink-0">/</span><span>Analytics or tracking data</span></li>
-        <li class="flex gap-3"><span class="text-red-700 font-black shrink-0">/</span><span>Location information</span></li>
-        <li class="flex gap-3"><span class="text-red-700 font-black shrink-0">/</span><span>Contact information</span></li>
-        <li class="flex gap-3"><span class="text-red-700 font-black shrink-0">/</span><span>Device identifiers for tracking purposes</span></li>
-        <li class="flex gap-3"><span class="text-red-700 font-black shrink-0">/</span><span>Any files on your device, beyond a sound file you pick</span></li>
+      <ul class="space-y-4 text-base text-indigo-700 list-none">
+        <li class="flex gap-3">
+          <span class="text-indigo-700 font-black shrink-0">·</span>
+          <p><strong class="text-indigo-900">Advertising:</strong> If you use Arisely for free, Google AdMob serves a banner ad and receives your device's advertising ID. Arisely Pro shows no ad and sends Google nothing.</p>
+        </li>
+        <li class="flex gap-3">
+          <span class="text-indigo-700 font-black shrink-0">·</span>
+          <p><strong class="text-indigo-900">Purchases:</strong> RevenueCat verifies whether Pro is active, knowing each install only by a random anonymous ID — never your name, email or Google account.</p>
+        </li>
+      </ul>
+      <p class="text-sm text-indigo-700 mt-8">
+        Payments themselves are handled entirely by Google Play.
+        Arisely never sees or stores a payment method.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-black text-slate-900 mb-4">
+      2. What's Stored, and Where
+    </h2>
+    <div class="w-16 h-1 bg-indigo-600 mx-auto rounded-full"></div>
+  </div>
+
+  <div class="bg-green-50/50 p-12 rounded-[2.5rem] border border-green-100">
+    <h3 class="text-2xl font-black text-green-800 mb-8 text-center uppercase tracking-tighter">Local Storage Only</h3>
+    <div class="grid md:grid-cols-2 gap-12">
+      <div class="space-y-4">
+        <p class="text-green-900 font-bold flex gap-3">
+          <span class="shrink-0 text-green-700">✓</span>
+          Your alarms, settings and sleep log are never sent to Arisely's developer or to any server. There is no backend — Arisely has no server component of its own.
+        </p>
+        <p class="text-green-700 font-medium flex gap-3">
+          <span class="shrink-0 text-red-500">❌</span>
+          Zero cloud synchronization or server-side backups.
+        </p>
+      </div>
+      <div class="bg-white/50 p-8 rounded-3xl">
+        <h4 class="text-xs font-black text-green-700 uppercase tracking-widest mb-4">Retention</h4>
+        <p class="text-sm text-green-800">
+          The only record that leaves the device is the purchase record
+          described under "Purchases". Uninstalling the app or clearing
+          its storage permanently deletes the data on your device.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-black text-slate-900 mb-4">
+      3. What Changed in This Version
+    </h2>
+    <div class="w-16 h-1 bg-indigo-600 mx-auto rounded-full"></div>
+  </div>
+
+  <div class="bg-amber-50/50 p-12 rounded-[2.5rem] border border-amber-100 space-y-6">
+    <p class="text-amber-800">
+      Before September 30, 2026, Arisely contained no advertising and no
+      purchases, and this policy said so. Version 1.5.0 introduced both.
+    </p>
+    <p class="text-amber-800">
+      That includes devices that already had Arisely installed before that
+      update: they show ads like any other free install, unless Pro is
+      active. Earlier versions of this policy said otherwise; that is no
+      longer the case.
+    </p>
+    <p class="text-amber-800">
+      Version 1.6.0 added RevenueCat to verify purchases. Unlike
+      advertising, this applies to every install, including those that
+      predate advertising.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-black text-slate-900 mb-4">
+      4. Advertising
+    </h2>
+    <div class="w-16 h-1 bg-indigo-600 mx-auto rounded-full"></div>
+  </div>
+
+  <p class="text-center text-slate-500 mb-12 max-w-2xl mx-auto">
+    Free users see a single banner ad, served by
+    <strong>Google AdMob</strong> (Google Ireland Limited / Google LLC).
+  </p>
+
+  <div class="grid gap-8">
+    <div class="bg-slate-50/50 p-10 rounded-3xl border border-slate-100">
+      <h4 class="text-xs font-black uppercase tracking-widest text-slate-600 mb-4">What Google Receives</h4>
+      <p class="text-slate-900">
+        To serve and measure an ad, the Google Mobile Ads SDK collects
+        and transmits your device's <strong>advertising ID</strong> (a
+        resettable identifier Android provides for this purpose), along
+        with device and app information such as device model, operating
+        system version, coarse location inferred from your IP address, and
+        whether you interacted with the ad. Arisely's developer does not
+        receive, see, or store any of it. Google's own handling of this
+        data is described in its
+        <a class="text-indigo-600 hover:underline" href="https://policies.google.com/privacy">Privacy Policy</a>
+        and its
+        <a class="text-indigo-600 hover:underline" href="https://policies.google.com/technologies/partner-sites">advertising disclosures</a>.
+      </p>
+    </div>
+
+    <div class="bg-slate-50/50 p-10 rounded-3xl border border-slate-100">
+      <h4 class="text-xs font-black uppercase tracking-widest text-slate-600 mb-4">Where Ads Appear</h4>
+      <p class="text-slate-900">
+        The banner appears only on the Alarms, Sleep and Settings tabs.
+        There is never an ad on the alarm ring screen, during a wake-up
+        ritual, or over your lock screen, and Arisely contains no
+        full-screen, interstitial or app-open ads of any kind.
+      </p>
+    </div>
+
+    <div class="bg-slate-50/50 p-10 rounded-3xl border border-slate-100">
+      <h4 class="text-xs font-black uppercase tracking-widest text-slate-600 mb-4">Your Choices</h4>
+      <ul class="space-y-4 text-slate-900 list-none">
+        <li class="flex gap-3">
+          <span class="font-black shrink-0">·</span>
+          <p><strong>Consent.</strong> In the EEA, the UK or Switzerland, Arisely shows Google's consent form before requesting any ad, and no ad is requested unless that consent allows it. You can change or withdraw your choice at any time from <strong>Settings → Ad preferences</strong>.</p>
+        </li>
+        <li class="flex gap-3">
+          <span class="font-black shrink-0">·</span>
+          <p><strong>Your advertising ID.</strong> You can reset it, or tell Android to stop apps using it, in your device's <strong>Settings → Privacy → Ads</strong>.</p>
+        </li>
+        <li class="flex gap-3">
+          <span class="font-black shrink-0">·</span>
+          <p><strong>Removing ads entirely.</strong> Arisely Pro removes the banner, and Arisely then requests no ads at all.</p>
+        </li>
       </ul>
     </div>
   </div>
@@ -74,15 +207,62 @@
 <section>
   <div class="text-center mb-12">
     <h2 class="text-3xl font-black text-slate-900 mb-4">
-      2. Permissions Explained
+      5. Purchases
+    </h2>
+    <div class="w-16 h-1 bg-indigo-600 mx-auto rounded-full"></div>
+  </div>
+
+  <p class="text-center text-slate-500 mb-12 max-w-2xl mx-auto">
+    Arisely Pro is sold as a monthly or yearly subscription, or as a
+    one-time lifetime purchase. <strong>All payment processing is handled
+    by Google Play.</strong> Arisely never receives, sees, or stores your
+    payment method, billing address, or any part of your Google account.
+  </p>
+
+  <div class="bg-indigo-50/50 p-12 rounded-[2.5rem] border border-indigo-100">
+    <p class="text-indigo-900 mb-8">
+      To know whether Pro is active, the app uses
+      <strong>RevenueCat</strong> (RevenueCat, Inc.), a
+      purchase-verification service. When the app starts, and when you
+      open the paywall or restore a purchase, it contacts RevenueCat to
+      check what this install owns. The answer — whether Pro is active —
+      is kept on your device so the app keeps working without a
+      connection.
+    </p>
+    <h4 class="text-xs font-black uppercase tracking-widest text-indigo-600 mb-4">What RevenueCat Receives</h4>
+    <p class="text-indigo-800">
+      A random anonymous ID generated for this install (it contains no
+      name, email or Google account detail), a record of any Pro purchase
+      or subscription made with it, and basic technical information such
+      as the app and operating system version and your locale. As with any
+      internet service, your IP address is visible to its servers during
+      the request. RevenueCat does not receive your alarms, settings,
+      sleep log or advertising ID, and Arisely does not use a RevenueCat
+      account login, email address or any other personal detail to
+      identify you to it. RevenueCat's handling of this data is described
+      in its
+      <a class="text-indigo-600 hover:underline" href="https://www.revenuecat.com/privacy">Privacy Policy</a>.
+    </p>
+    <p class="text-indigo-800 mt-6">
+      Arisely's developer can see purchase status in RevenueCat's
+      dashboard in order to run the app. Managing or cancelling a
+      subscription is done in Google Play, and Arisely links you there.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-black text-slate-900 mb-4">
+      6. Permissions Explained
     </h2>
     <div class="w-16 h-1 bg-indigo-600 mx-auto rounded-full"></div>
   </div>
 
   <p class="text-center text-slate-500 mb-16 max-w-2xl mx-auto">
-    None of these permissions are used to access, collect, or transmit
-    personal information — they exist solely to make scheduled alarms
-    fire reliably.
+    Apart from the advertising ID, none of these permissions are used to
+    access, collect, or transmit personal information — they exist solely
+    to make scheduled alarms fire reliably.
   </p>
 
   <div class="grid gap-8">
@@ -145,13 +325,43 @@
         </div>
       </div>
     </div>
+
+    <div class="bg-slate-50/50 p-10 rounded-3xl border border-slate-100 flex flex-col md:flex-row gap-8">
+      <div class="text-4xl shrink-0">📷</div>
+      <div class="grid sm:grid-cols-2 gap-8 flex-1">
+        <div>
+          <h4 class="text-xs font-black uppercase tracking-widest text-slate-600 mb-2">Camera</h4>
+          <p class="text-slate-900 font-bold">Watch you for the Push-Up ritual and read codes for the QR / Barcode ritual. Frames are processed on your device and are never recorded, stored, or transmitted.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-slate-50/50 p-10 rounded-3xl border border-slate-100 flex flex-col md:flex-row gap-8">
+      <div class="text-4xl shrink-0">🏃</div>
+      <div class="grid sm:grid-cols-2 gap-8 flex-1">
+        <div>
+          <h4 class="text-xs font-black uppercase tracking-widest text-slate-600 mb-2">Physical Activity</h4>
+          <p class="text-slate-900 font-bold">Count your steps for the Step ritual.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-slate-50/50 p-10 rounded-3xl border border-slate-100 flex flex-col md:flex-row gap-8">
+      <div class="text-4xl shrink-0">🆔</div>
+      <div class="grid sm:grid-cols-2 gap-8 flex-1">
+        <div>
+          <h4 class="text-xs font-black uppercase tracking-widest text-slate-600 mb-2">Advertising ID</h4>
+          <p class="text-slate-900 font-bold">Added by the Google Mobile Ads SDK so AdMob can serve ads to free users, as described under "Advertising" above. Not present in any other context.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="text-center mb-12">
     <h2 class="text-3xl font-black text-slate-900 mb-4">
-      3. Files You Choose to Use as Alarm Sounds
+      7. Files You Choose to Use as Alarm Sounds
     </h2>
     <div class="w-16 h-1 bg-indigo-600 mx-auto rounded-full"></div>
   </div>
@@ -169,57 +379,28 @@
 <section>
   <div class="text-center mb-12">
     <h2 class="text-3xl font-black text-slate-900 mb-4">
-      4. Data Storage Architecture
-    </h2>
-    <div class="w-16 h-1 bg-indigo-600 mx-auto rounded-full"></div>
-  </div>
-
-  <div class="bg-green-50/50 p-12 rounded-[2.5rem] border border-green-100">
-    <h3 class="text-2xl font-black text-green-800 mb-8 text-center uppercase tracking-tighter">Local Storage Only</h3>
-    <div class="grid md:grid-cols-2 gap-12">
-      <div class="space-y-4">
-        <p class="text-green-900 font-bold flex gap-3">
-          <span class="shrink-0 text-green-700">✓</span>
-          All data stays on your device exclusively, using Android's local app storage (AsyncStorage).
-        </p>
-        <p class="text-green-700 font-medium flex gap-3">
-          <span class="shrink-0 text-red-500">❌</span>
-          Zero cloud synchronization or server-side backups.
-        </p>
-      </div>
-      <div class="bg-white/50 p-8 rounded-3xl">
-        <h4 class="text-xs font-black text-green-700 uppercase tracking-widest mb-4">Retention</h4>
-        <p class="text-sm text-green-800">
-          Uninstalling the app or clearing its storage permanently
-          deletes all of it.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="text-center mb-12">
-    <h2 class="text-3xl font-black text-slate-900 mb-4">
-      5. Children's Privacy
+      8. Children's Privacy
     </h2>
     <div class="w-16 h-1 bg-indigo-600 mx-auto rounded-full"></div>
   </div>
   <p class="text-center max-w-2xl mx-auto text-slate-500">
-    Arisely does not knowingly collect data from anyone, including
-    children, because it does not collect data from anyone at all. The
-    app is not directed at children under 13.
+    Arisely is a general-audience utility and is not directed at children
+    under 13, and we do not knowingly collect personal information from
+    them. Arisely itself collects nothing; the only data leaving the
+    device is the advertising information Google receives to serve ads to
+    free users, and the anonymous purchase record RevenueCat holds, both
+    described above.
   </p>
 </section>
 
 <section class="rounded-[2.5rem] border border-indigo-100 bg-indigo-50/30 p-12 text-center">
   <h2 class="mb-6 text-3xl font-black text-slate-900">
-    6. Changes & Contact
+    9. Changes & Contact
   </h2>
   <p class="mb-10 text-slate-600 max-w-2xl mx-auto">
-    If this policy changes, the updated version will be posted here
-    with a revised effective date. Questions about this policy can be
-    sent to the address below.
+    If this policy changes, the updated version will be posted here with
+    a revised effective date. Questions about this policy can be sent to
+    the address below.
   </p>
   <a
     href="mailto:hasanmobarak25@gmail.com"
@@ -228,3 +409,10 @@
     hasanmobarak25@gmail.com
   </a>
 </section>
+
+<div class="pt-12 border-t border-slate-100 text-center">
+  <p class="text-sm text-slate-600 italic">
+    This Privacy Policy is effective as of {lastUpdated} and supersedes
+    any previous privacy policies for Arisely.
+  </p>
+</div>
