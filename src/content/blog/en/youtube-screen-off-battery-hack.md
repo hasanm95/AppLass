@@ -1,14 +1,15 @@
 ---
-title: "YouTube Screen Off Hack: Save 80% Battery on Android (2026)"
+title: "YouTube Screen Off Hack: Cut Screen Power up to 60% on Android (2026)"
 date: "2026-02-02"
+dateModified: "2026-08-13"
 category: "Battery Tips"
 author: "AppLass Team"
-excerpt: "Play YouTube with your screen off and save up to 80% battery. No root, no subscription needed. The free AMOLED hack Google doesn't advertise."
+excerpt: "Play YouTube with the screen off and cut display power by up to 60% at full brightness on AMOLED. No root, no subscription needed. The free hack Google doesn't advertise."
 thumbnail: "../../../assets/blogs/screenveil-youtube-battery.png"
 featured: true
 faqs:
   - question: "Is ScreenVeil better than YouTube Premium for battery saving?"
-    answer: "Yes, in specific hardware scenarios. While Premium allows background play, the screen is often still active or on a lock-screen state. [ScreenVeil](/apps/screenveil) uses 'True Black' overlays that physically turn off pixels on AMOLED/OLED displays, reducing power consumption by up to 80% compared to a lit screen."
+    answer: "Yes, in specific hardware scenarios. While Premium allows background play, the screen is often still active or on a lock-screen state. [ScreenVeil](/apps/screenveil) uses 'True Black' overlays that physically turn off pixels on AMOLED/OLED displays, cutting display power by up to 60% at full brightness compared to a lit screen. The saving shrinks as you lower brightness, because a dimmer panel draws less to begin with."
   - question: "Does this workaround work on Android 17?"
     answer: "Yes. While YouTube has recently blocked background play in many third-party browsers, ScreenVeil uses a system-level overlay (Draw Over Apps) that remains functional on Android 17 and older versions."
   - question: "Will ScreenVeil cause burn-in on my OLED screen?"
@@ -61,7 +62,7 @@ One of the biggest pain points of listening to videos on the go is the "ghost to
 
 ## The Verdict: Is It Worth It?
 
-If you frequently use your phone for "audio-only" video consumption, the stats don't lie. Moving from a lit screen to a black overlay can **extend your listening time by over 50-80%** on compatible devices.
+If you frequently use your phone for "audio-only" video consumption, the stats don't lie. Moving from a lit screen to a black overlay removes almost all of the display's draw — and on AMOLED at full brightness the display is the single largest consumer in the phone.
 
 In an era where battery health is the heart of device longevity, practicing "digital cleanliness" and using hardware-aware utilities like ScreenVeil isn't just a trick—it's a necessity for the power user.
 
