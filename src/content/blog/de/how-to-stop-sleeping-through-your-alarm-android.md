@@ -70,4 +70,4 @@ Schlummern zerstückelt deinen Schlaf und trainiert den Reflex, ohne Aufwachen a
 
 ---
 
-**Verwandt:** [Warum dein Android-Wecker nicht losgeht](/de/blog/arisely-alarm-clock-for-heavy-sleepers) · [Alle Artikel](/de/blog)
+**Verwandt:** [Warum dein Android-Wecker nicht losgeht](/de/blog/why-android-alarms-dont-go-off-exact-alarms) · [Alle Artikel](/de/blog)

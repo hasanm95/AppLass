@@ -70,4 +70,4 @@ Snoozing fragments your sleep and trains the dismiss-without-waking reflex. Set 
 
 ---
 
-**Related:** [Why your Android alarm doesn't go off](/blog/arisely-alarm-clock-for-heavy-sleepers) · [All articles](/blog)
+**Related:** [Why your Android alarm doesn't go off](/blog/why-android-alarms-dont-go-off-exact-alarms) · [Sleep inertia: why you wake up groggy](/blog/sleep-inertia-why-you-wake-up-groggy) · [All articles](/blog)
