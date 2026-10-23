@@ -232,6 +232,50 @@ export const getFaqRegistry = () => ({
       ),
     },
   ],
+  ARISELY: [
+    {
+      question: localize("What is Arisely?"),
+      answer: localize(
+        "Arisely is an Android alarm clock for heavy sleepers. Instead of a single off button, it keeps ringing at full volume until you finish a wake-up mission you choose, such as solving math, scanning a barcode or doing push-ups counted by the camera. It is made by AppLass."
+      ),
+    },
+    {
+      question: localize("How does Arisely stop me sleeping through my alarm?"),
+      answer: localize(
+        "It removes the easy off switch. The alarm plays on Android's alarm audio channel, so it rings even with media muted or Do Not Disturb on, and it only stops once you finish your mission. Because the mission needs real attention or movement, you can't dismiss it in your sleep."
+      ),
+    },
+    {
+      question: localize("What wake-up missions does Arisely have?"),
+      answer: localize(
+        "Arisely has 10 missions: Math, Memory, Code, Sequence, Typing, Trivia, Shake, Step, QR / Barcode and AI Push-Up. You can choose Easy, Medium or Hard difficulty, and use a quick math problem for light sleep or push-ups and a barcode across the room for the deepest sleep."
+      ),
+    },
+    {
+      question: localize("How does the AI push-up alarm work?"),
+      answer: localize(
+        "You set a number of push-ups and place the phone where its camera can see you. Arisely counts each rep and checks your form in real time, and the alarm keeps ringing until the set is done. The camera frames are processed on your phone and are never recorded, stored or sent."
+      ),
+    },
+    {
+      question: localize("Will Arisely ring if my phone is locked or on Do Not Disturb?"),
+      answer: localize(
+        "Yes. Arisely uses exact-time alarms that fire even when the phone is locked, idle or the app has been closed for hours, and it plays on the alarm audio channel, which Do Not Disturb and muted media do not silence. It also reschedules your alarms after the phone restarts."
+      ),
+    },
+    {
+      question: localize("Is Arisely free? Does it have ads?"),
+      answer: localize(
+        "Arisely is free to download and needs no account. The free version shows one banner ad on the Alarms, Sleep and Settings tabs, never on the ring screen, during a mission or over the lock screen. Arisely Pro, sold monthly, yearly or as a one-time lifetime purchase, removes the ad."
+      ),
+    },
+    {
+      question: localize("Does Arisely collect my data?"),
+      answer: localize(
+        "Your alarms, settings and sleep log stay on your phone and are never sent to Arisely's developer or any server. Only two third parties are involved: Google AdMob receives your advertising ID to show the banner ad to free users, and RevenueCat checks whether Pro is active using a random anonymous ID."
+      ),
+    },
+  ],
   DIGITAL_WELLNESS: [
     {
       question: localize("What is digital wellness?"),
