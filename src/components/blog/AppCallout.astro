@@ -4,7 +4,7 @@ import { playUrl } from "@/lib/utils";
 import { localize } from "@/i18n/localize";
 
 interface Props {
-  appName: "Mindful Guard" | "FOMOgen" | "AppLass" | "ScreenVeil" | "CartTime";
+  appName: "Mindful Guard" | "FOMOgen" | "AppLass" | "ScreenVeil" | "CartTime" | "Arisely";
   lang?: string;
   labels?: {
     learnMore?: string;
@@ -53,10 +53,19 @@ const data = {
     learnMoreText: localize("Install Free"),
     external: true,
   },
+  Arisely: {
+    title: "Arisely",
+    sub: labels?.sub || localize("The Alarm You Can't Sleep Through."),
+    desc: labels?.desc || localize("Loud alarm clock for heavy sleepers. It keeps ringing until you finish a wake-up mission, including camera-checked push-ups. No account, no data collected."),
+    href: "https://play.google.com/store/apps/details?id=com.arisely&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dblog-callout",
+    color: "bg-[#7c3aed]",
+    learnMoreText: localize("Download on Play Store"),
+    external: true,
+  },
   ScreenVeil: {
     title: "ScreenVeil",
     sub: labels?.sub || localize("Screen Off Video for Android."),
-    desc: labels?.desc || localize("Black overlay keeps audio playing and cuts AMOLED display power by up to 60% at full brightness. 10,000+ downloads · 4.4 ★ · Free forever."),
+    desc: labels?.desc || localize("Black screen overlay that keeps audio playing and blocks accidental touches. Less display power on AMOLED. 10,000+ downloads · Free."),
     href: "https://play.google.com/store/apps/details?id=com.screenveil.app",
     color: "bg-[#22d3ee]",
     learnMoreText: localize("Download on Play Store"),
