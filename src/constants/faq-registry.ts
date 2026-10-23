@@ -18,7 +18,7 @@ export const getFaqRegistry = () => ({
       id: "privacy",
       question: localize("Do any of them collect my data?"),
       answer: localize(
-        "No. Our apps do not include third-party analytics SDKs and do not log what you do. Mindful Guard keeps all of its rules and history on your phone, and nothing is sent to a server."
+        "Mindful Guard collects no data, and its rules and history stay on your phone. ScreenVeil shows no ads, but its Google Play Data safety section lists device or other IDs as collected and shared. Each app's Play listing shows exactly what it collects."
       ),
     },
     {
@@ -266,7 +266,7 @@ export const getFaqRegistry = () => ({
     {
       question: localize("Is Mindful Guard safe for privacy?"),
       answer: localize(
-        "Yes. Mindful Guard is 100% offline. It does not require an account, does not use a VPN, and never transmits your usage data to any server. Your focus sessions stay on your device."
+        "Yes. Mindful Guard works offline, and its Google Play Data safety section declares no data collected. It does not require an account, does not use a VPN, and keeps your focus sessions on your device."
       ),
     },
     {
