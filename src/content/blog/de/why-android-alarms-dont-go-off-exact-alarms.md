@@ -2,7 +2,7 @@
 title: "Warum dein Android-Wecker nicht losgeht (und wie exakte Alarme das beheben)"
 description: "Android-Wecker zu spät oder stumm? Akku-Optimierung und Doze verzögern im Hintergrund geplante Alarme. Hier die Ursache und wie exakte Alarme pünktliches Klingeln garantieren."
 date: "2026-10-04"
-dateModified: "2026-10-04"
+dateModified: "2026-10-23"
 category: "Android-Apps"
 author: "AppLass-Team"
 keywords: "android wecker geht nicht los, wecker zu spät android, wecker hat nicht geklingelt, doze modus wecker, akku optimierung wecker, exakter alarm android"
@@ -12,6 +12,8 @@ tags:
   - technik
   - wecker
   - akku
+  - arisely
+sidebarApps:
   - arisely
 faqs:
   - question: "Warum ist mein Android-Wecker nicht losgegangen?"
@@ -60,7 +62,7 @@ Auch mit exakten Alarmen kannst du zusätzliche Zuverlässigkeit hinzufügen: St
 
 ## Ein Wecker, der auf allen dreien basiert
 
-[Arisely](/de/blog/arisely-alarm-clock-for-heavy-sleepers) nutzt zeitgenaue Alarme, läuft über den Wecker-Audiokanal mit Extra-laut-Boost und zeigt Vollbild über dem Sperrbildschirm — also löst er pünktlich und laut aus, auch bei gesperrtem Telefon oder seit Stunden geschlossener App. Kostenlos, kein Konto, keine erfassten Daten.
+[Arisely](/de/blog/arisely-alarm-clock-for-heavy-sleepers) nutzt zeitgenaue Alarme, läuft über den Wecker-Audiokanal mit Extra-laut-Boost und zeigt Vollbild über dem Sperrbildschirm — also löst er pünktlich und laut aus, auch bei gesperrtem Telefon oder seit Stunden geschlossener App. Kostenlos, kein Konto, und das Werbebanner der Gratisversion erscheint nie auf dem Klingel-Bildschirm.
 
 [**Arisely bei Google Play herunterladen**](https://play.google.com/store/apps/details?id=com.arisely&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dexact-alarms%26utm_content%3Dwhy-android-alarms-dont-go-off-exact-alarms)
 
