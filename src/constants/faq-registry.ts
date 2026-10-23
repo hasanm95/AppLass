@@ -42,69 +42,63 @@ export const getFaqRegistry = () => ({
   ],
   SCREENVEIL: [
     {
-      question: localize("Does ScreenVeil work on LCD screens?"),
-      answer: localize(
-        "Yes. On LCD displays ScreenVeil acts as a screen dimmer and reduces brightness-related battery drain. The largest savings — up to 60% of display power at full brightness — come on AMOLED/OLED displays, where black pixels physically power off."
-      ),
-    },
-    {
-      question: localize("How is ScreenVeil different from YouTube Premium?"),
-      answer: localize(
-        "YouTube Premium only covers YouTube. ScreenVeil is a system-level utility that works across every app — Netflix, Spotify, Twitch, podcast players, and more. It also adds pocket mode to block accidental touches while your screen is covered."
-      ),
-    },
-    {
       question: localize("What is ScreenVeil?"),
       answer: localize(
-        "ScreenVeil is a free Android app with 10,000+ downloads and a 4.4-star rating. It overlays a pure black layer on AMOLED/OLED screens so pixels physically turn off, cutting display power by up to 60% at full brightness while you listen to YouTube, podcasts, or any audio."
+        "ScreenVeil is a black screen overlay for Android. One tap on its floating button or Quick Settings tile turns the screen black while whatever you were playing keeps playing. It also has a dim mode, a sleep timer, pocket mode and biometric unlock. It is free to download and needs no account."
       ),
     },
     {
-      question: localize("How do I play YouTube in the background like Premium?"),
+      question: localize("Does the audio keep playing when the screen is black?"),
       answer: localize(
-        "Simply open the YouTube app, start your video, and activate ScreenVeil from your notification shade or the floating button. Your screen will go black, but the audio will continue to play. For more details, see our full guide on <a href='/blog/youtube-background-play-2026-workaround' class='text-green-500 underline'>YouTube Background Play in 2026</a>."
+        "Yes. ScreenVeil only draws a black layer over your own screen. The app underneath stays open and carries on exactly as before, so a lecture, podcast or playlist keeps playing."
       ),
     },
     {
-      question: localize("Why does ScreenVeil need 'Display over other apps' permission?"),
+      question: localize("Does ScreenVeil save battery?"),
       answer: localize(
-        "This is the only way Android allows an app to place a layer over other apps (like YouTube or Netflix). We use this to draw the pure black 'Veil' over your screen. ScreenVeil does not require internet, camera, or contact permissions."
+        "On AMOLED and OLED screens, yes: a pure black pixel is switched off, so the display uses less power. The brighter your screen was and the longer you listen, the more you save. On LCD screens the backlight stays on, so the saving is small. ScreenVeil doesn't promise a fixed percentage, because it differs on every phone."
       ),
     },
     {
-      question: localize("Will this work while my phone is in my pocket?"),
+      question: localize("Why does ScreenVeil need the \"display over other apps\" permission?"),
       answer: localize(
-        "Yes. ScreenVeil includes a 'Pocket Guard' feature that blocks all touch inputs while the veil is active. This prevents accidental skipping, pausing, or 'ghost dialing' while your phone is in your pocket or bag."
+        "It is the only permission you grant, and it is how Android lets an app draw a layer on top of other apps. ScreenVeil uses it to draw the black screen. It does not read your screen, record audio or video, or need your files, contacts or location."
       ),
     },
     {
-      question: localize("Does ScreenVeil drain battery?"),
+      question: localize("How do I get my screen back?"),
       answer: localize(
-        "No. ScreenVeil is engineered for extreme efficiency. It uses 0% CPU while active. By turning off the pixels on AMOLED screens, it removes almost all of the display's draw — up to 60% of screen power at full brightness — during audio-only playback."
+        "Touch the black screen to show the unlock button, then tap it. If you turned on biometric unlock, only your fingerprint lifts the black screen."
       ),
     },
     {
-      question: localize("Does ScreenVeil require root access?"),
+      question: localize("Will it stop accidental touches in my pocket?"),
       answer: localize(
-        "No. ScreenVeil requires only the standard Android Overlay permission to function. No root, no ADB, no special setup. Install and activate in under 30 seconds."
-      ),
-    },
-    {
-      question: localize("Will ScreenVeil get killed by battery optimizers on Samsung or Xiaomi devices?"),
-      answer: localize(
-        "ScreenVeil is engineered to handle aggressive battery management on MIUI, OneUI, and OxygenOS. We recommend adding ScreenVeil to your device's battery optimization whitelist for uninterrupted session performance."
-      ),
-    },
-    {
-      question: localize("Is ScreenVeil safe? What data does it collect?"),
-      answer: localize(
-        "ScreenVeil collects zero personal data. It requires no internet access and contains no third-party analytics SDKs. The only permission it needs is \"Display over other apps\" — nothing else."
+        "Yes. While the black screen is on, touches are blocked until you unlock on purpose. Pocket mode can also turn the screen black on its own when the phone goes into your pocket."
       ),
     },
     {
       question: localize("Does ScreenVeil work with Bluetooth headphones and earbuds?"),
       answer: localize(
-        "Yes. ScreenVeil only controls the display layer — audio routing is handled entirely by Android. It works with all Bluetooth devices, wired headphones, speakers, and car audio systems."
+        "Yes. ScreenVeil only controls what the screen shows. Android handles audio as usual, so Bluetooth headphones, wired earphones, speakers and car audio all work."
+      ),
+    },
+    {
+      question: localize("Does ScreenVeil need root?"),
+      answer: localize(
+        "No. Install it, tap Start Service and allow \"display over other apps\". There is no root, no ADB and no account."
+      ),
+    },
+    {
+      question: localize("ScreenVeil stops on my Samsung or Xiaomi phone. What can I do?"),
+      answer: localize(
+        "Some phones close background apps aggressively. Exclude ScreenVeil from battery optimization in your phone's settings so the overlay and the sleep timer keep running."
+      ),
+    },
+    {
+      question: localize("ScreenVeil vs Mindful Guard: what is the difference?"),
+      answer: localize(
+        "ScreenVeil turns your screen black while audio keeps playing. Mindful Guard, also by AppLass, keeps you out of distracting apps and limits Reels, Shorts and TikTok."
       ),
     },
   ],
