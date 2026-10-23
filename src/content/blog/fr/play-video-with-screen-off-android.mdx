@@ -1,0 +1,112 @@
+---
+title: "Lire une vidéo écran éteint sur Android (2026)"
+description: "La plupart des applications vidéo s'arrêtent dès que vous verrouillez le téléphone. Voici pourquoi, quelles applications ont leur propre mode arrière-plan ou audio seul, et comment garder n'importe quelle vidéo — cours, formations, streams — en lecture avec un écran noir."
+date: "2026-10-24"
+dateModified: "2026-10-24"
+author: "Équipe AppLass"
+excerpt: "Verrouillez le téléphone et la plupart des vidéos s'arrêtent. Vérifiez d'abord l'option arrière-plan ou audio seul de l'application ; sinon, gardez-la ouverte derrière une superposition d'écran noir : la vidéo continue, l'écran n'affiche rien."
+tags: ["android", "écran éteint", "lecture en arrière-plan", "cours", "batterie"]
+category: "Applications Android"
+keywords: "vidéo écran éteint android, lire une vidéo écran éteint, écouter une vidéo écran verrouillé, garder une vidéo en lecture écran éteint, youtube écran éteint android, vlc lire en audio, écouter un cours écran éteint, screenveil"
+breadcrumbName: "Vidéo écran éteint"
+sidebarApps:
+  - screenveil
+featured: false
+faqs:
+  - question: "Comment lire une vidéo écran éteint sur Android ?"
+    answer: "Vérifiez d'abord si l'application propose la lecture en arrière-plan ou un mode audio seul. Sinon, gardez l'application ouverte et recouvrez l'écran d'une superposition noire comme ScreenVeil. Pour Android, l'application est toujours à l'écran : la vidéo continue pendant que l'écran affiche un noir pur et ignore les touches."
+  - question: "Pourquoi ma vidéo s'arrête-t-elle quand je verrouille mon téléphone ?"
+    answer: "Au verrouillage, Android fait passer l'application vidéo en arrière-plan. Beaucoup d'applications vidéo, de navigateurs et d'applications de cours mettent alors la lecture en pause, sauf si elles ont été conçues pour l'arrière-plan. La vidéo n'est pas cassée : l'application s'arrête simplement quand elle n'est plus à l'écran."
+  - question: "VLC peut-il lire une vidéo écran éteint ?"
+    answer: "VLC pour Android peut continuer le son en arrière-plan, et vous pouvez ouvrir ou partager une vidéo vers VLC et la lire en audio. Cela fonctionne pour les fichiers et liens que VLC sait ouvrir, pas pour les vidéos à l'intérieur d'autres applications comme les plateformes de cours."
+  - question: "Une superposition d'écran noir économise-t-elle la batterie ?"
+    answer: "Sur les écrans AMOLED et OLED, oui : un pixel noir pur est éteint, l'écran consomme donc moins qu'en affichant la vidéo. Sur les écrans LCD, le rétroéclairage reste allumé, l'économie est faible. La vidéo reste diffusée : cela n'économise pas de données mobiles."
+  - question: "Les touches dans la poche vont-elles mettre la vidéo en pause ?"
+    answer: "Pas avec ScreenVeil. Tant que l'écran noir est actif, les touches sont bloquées jusqu'à ce que vous déverrouilliez volontairement. Une poche ou une manche ne peut donc ni mettre en pause, ni sauter, ni fermer la vidéo."
+---
+
+import ScreenVeilCTA from "@/components/blog/ScreenVeilCTA.astro";
+
+**Verrouillez le téléphone et la plupart des vidéos s'arrêtent.** Android fait alors passer l'application
+en arrière-plan, et beaucoup d'applications vidéo, de navigateurs et d'applications de cours s'y mettent en
+pause. Vérifiez d'abord si votre application a sa propre option arrière-plan ou audio seul. Sinon, gardez-la
+ouverte et rendez l'écran noir à la place : la vidéo continue, vous ne voyez rien, et les touches sont
+ignorées.
+
+## Pourquoi les vidéos s'arrêtent quand l'écran s'éteint
+
+Quand vous appuyez sur le bouton marche/arrêt, Android fait passer tout ce qui est à l'écran en
+arrière-plan. Certaines applications continuent de jouer, parce que leurs développeurs ont prévu la lecture
+en arrière-plan. Beaucoup non, car elles sont faites pour regarder, pas pour écouter. Des utilisateurs de
+l'application Android de Plex réclament par exemple sur son forum une lecture vidéo écran éteint que
+l'application ne propose pas ([forum Plex](https://forums.plex.tv/t/screen-off-video-play-on-android-app/905303)).
+
+Au bureau, peu importe. En marchant, dans le bus, en cuisinant ou à la salle de sport, si — précisément
+quand vous préféreriez écouter un cours, une conférence ou une longue vidéo plutôt que la regarder.
+
+## Étape 1 : vérifier les options de l'application
+
+| Application | Option intégrée |
+|---|---|
+| YouTube | Lecture en arrière-plan avec YouTube Premium |
+| VLC | Son en arrière-plan ; ouvrir ou partager une vidéo et la lire en audio ([Trusted Reviews](https://www.trustedreviews.com/news/use-trick-play-youtube-audio-phone-screen-off-3966982)) |
+| Twitch | Réglage du son en arrière-plan et mode Audio uniquement dans l'application |
+| Applications de cours | Variable ; cherchez la lecture en arrière-plan, l'audio seul ou l'audio téléchargeable |
+| Navigateurs mobiles | Se mettent généralement en pause au verrouillage |
+
+Si votre application propose l'une de ces options, utilisez-la. Pour YouTube en particulier, voir
+[la lecture en arrière-plan de YouTube en 2026](/fr/blog/youtube-background-play-2026-workaround).
+
+## Étape 2 : garder n'importe quelle application en lecture avec un écran noir
+
+Quand l'application n'a pas d'option arrière-plan, ne verrouillez pas le téléphone. Une superposition
+d'écran noir pose une couche de noir pur sur votre écran tandis que l'application en dessous reste ouverte.
+Pour Android, l'application vidéo est toujours à l'écran, elle continue donc de jouer. Avec
+[ScreenVeil](/fr/apps/screenveil) :
+
+1. Installez ScreenVeil et touchez **Start Service**.
+2. Autorisez **« Afficher par-dessus les autres applications »** quand Android le demande. C'est la seule
+   permission que vous accordez.
+3. Ouvrez votre vidéo et lancez la lecture.
+4. Touchez le bouton flottant de ScreenVeil, ou sa vignette dans les Réglages rapides. L'écran devient noir
+   et la vidéo continue.
+5. Pour revenir, touchez l'écran, puis déverrouillez.
+
+Tant que l'écran est noir, les touches sont bloquées : votre poche ne peut rien mettre en pause ni sauter.
+Le mode poche peut aussi rendre l'écran noir tout seul quand le téléphone entre dans votre poche.
+
+<ScreenVeilCTA lang="fr" />
+
+## Batterie et données : à quoi s'attendre
+
+| Méthode | Énergie de l'écran | Données mobiles |
+|---|---|---|
+| Regarder normalement | La plus élevée | Vidéo complète |
+| Mode audio seul de l'application | L'écran peut être éteint | Beaucoup moins |
+| Superposition noire (AMOLED/OLED) | Beaucoup moins | Vidéo complète |
+| Superposition noire (LCD) | Petite économie | Vidéo complète |
+
+Sur les écrans **AMOLED et OLED**, un pixel noir pur est éteint : une superposition noire consomme donc bien
+moins d'énergie d'écran qu'une vidéo allumée. Sur les écrans **LCD**, le rétroéclairage reste allumé. Pour
+les détails, voir
+[le mode sombre économise-t-il la batterie sur AMOLED ?](/fr/blog/does-dark-mode-save-battery-amoled)
+
+## Exemple : écouter des cours enregistrés
+
+Les cours sont la raison la plus fréquente de cette recherche : les applications de cours et les portails
+universitaires jouent rarement en arrière-plan, mais une deuxième écoute du cours de la semaine dernière
+trouve parfaitement sa place dans un trajet.
+
+- **Accélérez un peu.** Beaucoup de lecteurs permettent 1,25× ou 1,5× ; la parole reste claire.
+- **L'audio pour réviser, pas pour découvrir.** Les cours chargés en diapositives, en équations ou en code
+  se regardent mieux une première fois, puis se réécoutent.
+- **Notez les horodatages.** Quand quelque chose fait tilt, notez l'heure pour retrouver la diapositive.
+- **Des écouteurs en public.**
+
+## En résumé
+
+Si une application propose la lecture en arrière-plan ou un mode audio seul, utilisez-le. Sinon, gardez-la
+ouverte et rendez l'écran noir à la place : la vidéo continue, rien ne s'allume, et les touches
+accidentelles ne peuvent pas l'arrêter.
+
+<ScreenVeilCTA lang="fr" />
