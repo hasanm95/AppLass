@@ -22,8 +22,16 @@ const COUNTRY_TO_LOCALE: Record<string, string> = {
   DE: "de", AT: "de", LI: "de",
 };
 
+// Locales that were built once and then removed. Google still holds their URLs
+// (they show up in Search Console), so 301 them to the English page instead of
+// letting them 404 and throw away whatever signals they earned.
+const RETIRED_LOCALES = ["zh", "es", "ar", "id", "pt", "ja", "ru", "bn"] as const;
+const RETIRED_LOCALE_RE = new RegExp(`^/(?:${RETIRED_LOCALES.join("|")})(?=/|$)`);
+
+// AI assistants fetching a page for a user (ChatGPT-User, Perplexity-User, …) do
+// not say "bot", but must get the URL they asked for, not a geo redirect.
 const BOT_UA_RE =
-  /bot|crawl|spider|slurp|facebookexternalhit|applebot|ahrefsbot|semrushbot|mj12bot|dotbot|petalbot|bytespider|gptbot|claudebot|google-extended|ccbot|perplexitybot|yandexbot|sogou|exabot/i;
+  /bot|crawl|spider|slurp|facebookexternalhit|applebot|ahrefsbot|semrushbot|mj12bot|dotbot|petalbot|bytespider|gptbot|claudebot|claude-user|chatgpt-user|perplexity-user|mistralai-user|google-extended|ccbot|perplexitybot|yandexbot|sogou|exabot/i;
 
 const ASSET_EXT_RE =
   /\.(?:js|mjs|css|png|jpe?g|gif|svg|webp|avif|ico|json|xml|txt|woff2?|ttf|map|webmanifest|pdf)$/i;
@@ -45,6 +53,12 @@ export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
     const userAgent = request.headers.get("User-Agent") || "";
+
+    if (RETIRED_LOCALE_RE.test(url.pathname)) {
+      const target = new URL(url);
+      target.pathname = url.pathname.replace(RETIRED_LOCALE_RE, "") || "/";
+      return Response.redirect(target.toString(), 301);
+    }
 
     const skipRedirect =
       ASSET_EXT_RE.test(url.pathname) ||
