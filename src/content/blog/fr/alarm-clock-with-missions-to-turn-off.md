@@ -2,7 +2,7 @@
 title: "Réveils à missions : pourquoi une tâche bat le bouton répétition"
 description: "Un réveil qu'on éteint avec une tâche — calcul, un code, des pas ou des pompes — vous réveille là où la répétition échoue. Voici la science et les 10 missions d'Arisely."
 date: "2026-10-04"
-dateModified: "2026-10-04"
+dateModified: "2026-10-23"
 category: "Applications Android"
 author: "Équipe AppLass"
 keywords: "réveil avec mission, réveil avec tâche, réveil à tâche android, réveil avec calcul, réveil code-barres, missions arisely"
@@ -25,7 +25,7 @@ faqs:
   - question: "Puis-je rendre la mission plus difficile si je me rendors ?"
     answer: "Oui. Choisissez un type de mission plus difficile (pompes vérifiées par caméra ou un code-barres placé à l'autre bout de la pièce plutôt qu'un calcul rapide) et augmentez le nombre requis ou la difficulté. Les missions physiques qui vous sortent du lit sont les plus dures à déjouer, car vous finissez debout et en mouvement."
   - question: "Les réveils à missions nécessitent-ils un compte ou Internet ?"
-    answer: "Ceux d'Arisely, non. Il ne demande aucun compte et sa fiche « Sécurité des données » sur Google Play indique qu'aucune donnée n'est collectée ni partagée. Les missions, y compris le contrôle de pompes par caméra, s'exécutent entièrement sur votre appareil."
+    answer: "Ceux d'Arisely, non. Il ne demande aucun compte, et vos alarmes restent sur votre téléphone. Les missions, y compris le contrôle de pompes par caméra, s'exécutent entièrement sur votre appareil."
 ---
 
 **Un réveil à missions est une alarme qui ne s'éteint pas tant que vous n'avez pas terminé une tâche — calcul, un code, des pas, un scan de code-barres ou des pompes.** Comme la tâche demande une attention que votre cerveau à moitié endormi n'a pas, vous ne pouvez pas l'éteindre par réflexe. Ce seul changement de conception explique pourquoi un réveil à mission réveille les gros dormeurs là où une sonnerie plus forte et un bouton répétition échouent.
@@ -71,7 +71,7 @@ Adaptez la mission à votre sommeil. Un calcul rapide peut suffire une nuit lég
 
 ## Essayez un réveil à mission
 
-[Arisely](/fr/blog/arisely-alarm-clock-for-heavy-sleepers) est un réveil Android gratuit entièrement construit autour des missions, avec des alarmes à l'heure exacte et un plein volume sur le canal des alarmes. Aucun compte, aucune donnée collectée.
+[Arisely](/fr/blog/arisely-alarm-clock-for-heavy-sleepers) est un réveil Android gratuit entièrement construit autour des missions, avec des alarmes à l'heure exacte et un plein volume sur le canal des alarmes. Aucun compte, et la bannière publicitaire de la version gratuite n'apparaît jamais sur l'écran de sonnerie.
 
 [**Télécharger Arisely sur Google Play**](https://play.google.com/store/apps/details?id=com.arisely&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dmission-alarm%26utm_content%3Dalarm-clock-with-missions-to-turn-off)
 

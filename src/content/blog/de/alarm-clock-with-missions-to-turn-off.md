@@ -2,7 +2,7 @@
 title: "Wecker mit Missionen: Warum eine Aufgabe die Schlummertaste schlägt"
 description: "Ein Wecker, den du mit einer Aufgabe abstellst — Mathe, ein Code, Schritte oder Liegestütze — weckt dich, wo eine Schlummertaste versagt. Hier die Wissenschaft und die 10 Missionen in Arisely."
 date: "2026-10-04"
-dateModified: "2026-10-04"
+dateModified: "2026-10-23"
 category: "Android-Apps"
 author: "AppLass-Team"
 keywords: "wecker mit aufgaben, wecker mit mission, aufgaben wecker android, wecker mit mathe aufgabe, barcode wecker, arisely missionen"
@@ -25,7 +25,7 @@ faqs:
   - question: "Kann ich die Mission schwerer machen, wenn ich immer wieder einschlafe?"
     answer: "Ja. Wähl einen schwereren Missionstyp (kamerageprüfte Liegestütze oder einen quer durchs Zimmer gelegten Barcode statt einer schnellen Rechenaufgabe) und erhöhe die geforderte Zahl oder Schwierigkeit. Körperliche Missionen, die dich aus dem Bett holen, sind am schwersten zu schlagen, weil du am Ende stehst und dich bewegst."
   - question: "Brauchen Missions-Wecker ein Konto oder Internet?"
-    answer: "Die von Arisely nicht. Es braucht kein Konto, und sein „Datensicherheit“-Eintrag bei Google Play besagt, dass keine Daten erfasst oder geteilt werden. Die Missionen, inklusive des kamerabasierten Liegestütz-Checks, laufen komplett auf deinem Gerät."
+    answer: "Die von Arisely nicht. Es braucht kein Konto, und deine Alarme bleiben auf deinem Telefon. Die Missionen, inklusive des kamerabasierten Liegestütz-Checks, laufen komplett auf deinem Gerät."
 ---
 
 **Ein Wecker mit Missionen ist ein Alarm, der sich erst abschalten lässt, wenn du eine Aufgabe erledigst — Mathe, einen Code, Schritte, einen Barcode-Scan oder Liegestütze.** Weil die Aufgabe Aufmerksamkeit braucht, die dein halb schlafendes Gehirn nicht hat, kannst du sie nicht reflexartig abstellen. Diese eine Design-Änderung ist der Grund, warum ein Missions-Wecker Tiefschläfer weckt, wo ein lauterer Klingelton und eine Schlummertaste scheitern.
@@ -71,7 +71,7 @@ Passe die Mission an deinen Schlaf an. Eine schnelle Rechenaufgabe reicht vielle
 
 ## Probier einen Missions-Wecker
 
-[Arisely](/de/blog/arisely-alarm-clock-for-heavy-sleepers) ist ein kostenloser Android-Wecker, der komplett um Missionen herum gebaut ist, mit zeitgenauen Alarmen und voller Wecker-Kanal-Lautstärke. Kein Konto, keine erfassten Daten.
+[Arisely](/de/blog/arisely-alarm-clock-for-heavy-sleepers) ist ein kostenloser Android-Wecker, der komplett um Missionen herum gebaut ist, mit zeitgenauen Alarmen und voller Wecker-Kanal-Lautstärke. Kein Konto, und das Werbebanner der Gratisversion erscheint nie auf dem Klingel-Bildschirm.
 
 [**Arisely bei Google Play herunterladen**](https://play.google.com/store/apps/details?id=com.arisely&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dmission-alarm%26utm_content%3Dalarm-clock-with-missions-to-turn-off)
 

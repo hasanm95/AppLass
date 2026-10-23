@@ -2,7 +2,7 @@
 title: "Arisely : le réveil puissant qui force les gros dormeurs à sortir du lit"
 description: "Arisely est un réveil Android gratuit pour les gros dormeurs. Il continue de sonner à plein volume jusqu'à ce que vous terminiez une mission de réveil — calcul, mémoire, pas, ou des pompes vérifiées par l'IA."
 date: "2026-10-04"
-dateModified: "2026-10-04"
+dateModified: "2026-10-23"
 category: "Applications Android"
 author: "Équipe AppLass"
 keywords: "arisely, réveil arisely, application réveil puissant android, réveil pour gros dormeurs, réveil avec mission, réveil pompes, réveil pompes ia, réveil qu'on ne peut pas éteindre, réveil avec calcul"
@@ -23,7 +23,7 @@ faqs:
   - question: "Qu'est-ce que l'alarme de pompes par IA d'Arisely ?"
     answer: "La mission Pompes par IA vous demande de faire un nombre défini de pompes devant la caméra de votre téléphone pour éteindre l'alarme. Arisely vérifie votre posture en temps réel : vous ne pouvez ni tricher ni sauter les répétitions. L'objectif est de mettre votre corps en mouvement avant même d'être tout à fait réveillé, ce qui rend le rendormissement bien plus difficile."
   - question: "Arisely est-il gratuit, contient-il des publicités ou exige-t-il un compte ?"
-    answer: "Arisely est gratuit au téléchargement et à l'utilisation sur Google Play, avec des options payantes prévues. Aucun compte ni inscription n'est requis. Selon la section « Sécurité des données » du Play Store, il ne collecte aucune donnée et n'en partage aucune avec des tiers : tout ce que vous réglez reste sur votre téléphone."
+    answer: "Arisely se télécharge gratuitement sur Google Play. La version gratuite affiche une bannière publicitaire dans les onglets Alarmes, Sommeil et Paramètres — jamais sur l'écran de sonnerie, pendant une mission ou sur l'écran de verrouillage. Arisely Pro (au mois, à l'année ou en achat unique à vie) supprime la publicité. Aucun compte ni inscription n'est requis, et vos alarmes, réglages et journal de sommeil restent sur votre téléphone."
   - question: "Quelles missions de réveil Arisely propose-t-il ?"
     answer: "Arisely propose 10 missions de réveil : Calcul, Mémoire, Code, Séquence, Saisie, Quiz, Secouer, Pas, QR/Code-barres et le contrôle de Pompes par IA. Vous adaptez la difficulté à votre sommeil : un calcul rapide pour les petits dormeurs, ou des pompes vérifiées par caméra et des codes-barres placés à l'autre bout de la pièce pour les cas les plus difficiles."
   - question: "À qui s'adresse Arisely ?"
@@ -69,10 +69,13 @@ C'est la fonctionnalité que la plupart des applications de réveil n'ont pas. V
 
 ## Arisely respecte-t-il votre vie privée ?
 
-Oui. Arisely est conçu pour ne pas se mêler de vos affaires :
+Vos alarmes, oui. Arisely garde ce que vous créez sur votre téléphone ; la bannière publicitaire de la version gratuite est la seule exception :
 
 - **Aucun compte requis** — installez l'application et réglez une alarme. Pas d'inscription, pas d'e-mail.
-- **Aucune donnée collectée ni partagée.** Sa fiche « Sécurité des données » sur Google Play déclare : aucune donnée collectée, aucune donnée partagée avec des tiers. Tout ce que vous créez — alarmes, réglages, historique — reste sur votre téléphone.
+- **Vos alarmes restent sur votre téléphone.** Les alarmes, les réglages et votre journal de sommeil ne sont jamais envoyés au développeur d'Arisely ni à un serveur. Il n'y a pas de synchronisation cloud.
+- **Une bannière publicitaire dans la version gratuite.** Google AdMob la diffuse dans les onglets Alarmes, Sommeil et Paramètres, jamais sur l'écran de sonnerie, et reçoit pour cela l'identifiant publicitaire de votre appareil. Arisely Pro supprime la publicité, et Arisely ne demande alors plus aucune annonce. Les achats sont vérifiés par RevenueCat, qui ne connaît chaque installation que par un identifiant anonyme aléatoire.
+
+La [politique de confidentialité](/fr/legal/arisely/privacy) donne le détail.
 
 Cela compte pour une application à laquelle vous accordez l'accès aux alarmes, à la caméra et au mouvement. La caméra utilisée par la mission pompes vérifie votre posture sur l'appareil ; aucun compte cloud n'enregistre vos matins.
 
@@ -85,7 +88,8 @@ Cela compte pour une application à laquelle vous accordez l'accès aux alarmes,
 | **Fiabilité** | Peut être retardée par les limites de batterie d'Android | Alarmes à l'heure exacte, même verrouillé ou fermé |
 | **Réveil physique** | Aucun | Pompes vérifiées par IA, pas, secousses ou marche vers un code-barres |
 | **Compte** | Souvent requis | Aucun |
-| **Données** | Souvent collectées | Aucune collectée ni partagée |
+| **Vos alarmes** | Souvent synchronisées avec un compte | Restent sur votre téléphone |
+| **Publicité** | Variable | Une bannière dans la version gratuite, jamais sur l'écran de sonnerie ; Pro la supprime |
 
 ## À qui s'adresse Arisely
 
@@ -106,7 +110,7 @@ Une alarme intransigeante n'est utile que si les bases sont solides. Arisely les
 
 ## En résumé
 
-Arisely est un réveil puissant et fiable qui s'assure que vous **vous levez vraiment.** Il est gratuit, ne nécessite aucun compte et ne collecte aucune donnée. Si « pose simplement le téléphone à l'autre bout de la pièce » a cessé de fonctionner, la barrière de mission — en particulier le contrôle de pompes par IA — est le niveau supérieur.
+Arisely est un réveil puissant et fiable qui s'assure que vous **vous levez vraiment.** Il est gratuit, ne nécessite aucun compte et garde vos alarmes sur votre téléphone ; Arisely Pro supprime la bannière publicitaire de la version gratuite. Si « pose simplement le téléphone à l'autre bout de la pièce » a cessé de fonctionner, la barrière de mission — en particulier le contrôle de pompes par IA — est le niveau supérieur.
 
 [**Télécharger Arisely sur Google Play**](https://play.google.com/store/apps/details?id=com.arisely&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Darisely-overview%26utm_content%3Darisely-alarm-clock-for-heavy-sleepers)
 

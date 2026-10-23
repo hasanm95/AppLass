@@ -2,7 +2,7 @@
 title: "Why Your Android Alarm Doesn't Go Off (and How Exact Alarms Fix It)"
 description: "Android alarm late or silent? Battery optimization and Doze delay background-scheduled alarms. Here's why it happens and how exact alarms guarantee on-time ringing."
 date: "2026-10-04"
-dateModified: "2026-10-04"
+dateModified: "2026-10-23"
 category: "Android Apps"
 author: "AppLass Team"
 keywords: "android alarm not going off, alarm late android, alarm didnt ring android, doze mode alarm, battery optimization alarm, exact alarm android, schedule exact alarm"
@@ -62,7 +62,7 @@ Even with exact alarms, you can add belt-and-braces reliability: in **Settings �
 
 ## An alarm built on all three
 
-[Arisely](/blog/arisely-alarm-clock-for-heavy-sleepers) uses exact-time alarms, plays on the alarm audio channel with an extra-loud boost, and shows full-screen over the lock screen — so it fires on time and loud even when the phone is locked or the app has been closed for hours. Free, no account, no data collected.
+[Arisely](/blog/arisely-alarm-clock-for-heavy-sleepers) uses exact-time alarms, plays on the alarm audio channel with an extra-loud boost, and shows full-screen over the lock screen — so it fires on time and loud even when the phone is locked or the app has been closed for hours. Free, no account, and the free version's banner ad never appears on the ring screen.
 
 [**Download Arisely on Google Play**](https://play.google.com/store/apps/details?id=com.arisely&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dexact-alarms%26utm_content%3Dwhy-android-alarms-dont-go-off-exact-alarms)
 
