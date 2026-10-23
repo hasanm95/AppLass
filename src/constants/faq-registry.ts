@@ -174,19 +174,19 @@ export const getFaqRegistry = () => ({
     {
       question: localize("Is Mindful Guard safe for privacy?"),
       answer: localize(
-        "Yes. Mindful Guard doesn't need an internet connection to work, and it has zero third-party analytics SDKs. Your block lists, schedules, and usage data stay on your phone — period. Unlike VPN-based blockers like Opal or Freedom, there's no cloud component at all."
+        "Yes. Mindful Guard doesn't need an internet connection to work, and it has zero third-party analytics SDKs. Your block lists, schedules, and usage data stay on your phone — period. There is no account and no cloud component at all."
       ),
     },
     {
       question: localize("How does Strict Mode work?"),
       answer: localize(
-        "Strict Mode locks your settings for a duration you choose. Once it's on, you can't change your block list, disable the app, or uninstall it until the timer runs out. It's built for the moments you know your future self will try to cheat."
+        "Strict Mode locks your settings for a duration you choose. Once it's on, you can't change your block list or switch the blocking off from inside the app until the timer runs out. It's built for the moments you know your future self will try to cheat."
       ),
     },
     {
       question: localize("Does Mindful Guard use a VPN?"),
       answer: localize(
-        "No. VPN-based blockers route your traffic through an external server — that adds lag, drains your battery, and sends usage data off your device. Mindful Guard blocks apps locally using Android's native Accessibility API, so there's no latency and no battery hit."
+        "No. A VPN-based blocker has to pass all of your network traffic through a VPN connection, which adds overhead and needs extra trust. Mindful Guard blocks apps locally using Android's Accessibility API, so it never touches your network traffic."
       ),
     },
     {
@@ -228,7 +228,7 @@ export const getFaqRegistry = () => ({
     {
       question: localize("Does Opal drain battery on Android?"),
       answer: localize(
-        "Yes, Opal uses a local VPN to block apps, forcing your phone's network stack to stay active 24/7. Mindful Guard completely avoids VPNs, using native Android systems instead to drop battery drain to almost zero."
+        "Not noticeably for most people. Opal used a local VPN on iOS until 2022, but on Android its Play Store listing says it uses the AccessibilityService API on Android 14 and above, the same approach Mindful Guard uses. Battery drain from any accessibility-based blocker is usually small; if one does drain, check its battery usage in Settings."
       ),
     },
   ],
