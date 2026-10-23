@@ -2,7 +2,7 @@
 title: "L'application de réveil qui vous fait faire des pompes pour vous lever (vérifiées par IA)"
 description: "Vous cherchez un réveil Android qui vous fait faire des pompes avant de s'éteindre ? Arisely vérifie chaque répétition par la caméra en temps réel — impossible de tricher ou de sauter."
 date: "2026-10-04"
-dateModified: "2026-10-04"
+dateModified: "2026-10-23"
 category: "Applications Android"
 author: "Équipe AppLass"
 keywords: "application réveil pompes, réveil pompes android, réveil pompes ia, réveil sportif, réveil qui force à faire du sport, arisely pompes"
@@ -13,6 +13,8 @@ tags:
   - fitness
   - se réveiller
   - arisely
+sidebarApps:
+  - arisely
 faqs:
   - question: "Existe-t-il une application de réveil qui fait faire des pompes ?"
     answer: "Oui. Arisely pour Android propose une mission Pompes par IA : vous définissez un nombre de pompes et l'alarme continue de sonner jusqu'à ce que vous les terminiez devant la caméra de votre téléphone. Arisely vérifie votre posture en temps réel, vous ne pouvez donc ni tricher sur les répétitions ni les sauter d'un geste."
@@ -21,7 +23,7 @@ faqs:
   - question: "Pourquoi les pompes fonctionnent-elles mieux qu'un bouton répétition ?"
     answer: "La répétition vous maintient allongé et somnolent, si bien que vous vous rendormez. Les pompes vous forcent à vous redresser, augmentent votre rythme cardiaque et élèvent la circulation et la température corporelle — les signaux mêmes qui mettent fin à la torpeur. Une fois les répétitions faites, vous êtes physiquement réveillé : se lever devient un choix, non un combat."
   - question: "Le réveil à pompes nécessite-t-il Internet ou un compte ?"
-    answer: "Non. Arisely ne demande aucun compte et sa fiche « Sécurité des données » sur Google Play indique qu'il ne collecte aucune donnée et n'en partage aucune avec des tiers. Le contrôle des pompes s'exécute sur votre appareil via la caméra ; aucune vidéo de votre matin n'est téléversée ni stockée sur un serveur."
+    answer: "Non. Arisely ne demande aucun compte, et vos alarmes restent sur votre téléphone. Le contrôle des pompes s'exécute sur votre appareil via la caméra ; aucune vidéo de votre matin n'est téléversée ni stockée sur un serveur."
   - question: "Et si je ne peux pas faire de pompes un matin ?"
     answer: "Arisely propose 10 missions, pas seulement les pompes. Vous pouvez basculer n'importe quelle alarme sur Calcul, Mémoire, Saisie, Pas, Secouer, QR/Code-barres et plus, ou attribuer des missions différentes à des alarmes différentes. La mission pompes est l'option la plus difficile, pas la seule."
 ---
@@ -58,11 +60,11 @@ Certains matins, un exercice n'est pas réaliste, et un outil de réveil trop ri
 
 ## Confidentialité : la caméra reste sur votre téléphone
 
-Un réveil basé sur la caméra soulève une question légitime : où va la vidéo ? Avec Arisely, nulle part. Il n'y a **aucun compte**, et la fiche « Sécurité des données » de Google Play indique qu'il **ne collecte aucune donnée et n'en partage aucune** avec des tiers. La détection de posture qui compte vos répétitions s'exécute sur l'appareil.
+Un réveil basé sur la caméra soulève une question légitime : où va la vidéo ? Avec Arisely, nulle part. Il n'y a **aucun compte**, et les images de la caméra sont **traitées sur votre téléphone, jamais enregistrées, stockées ni envoyées**. La détection de posture qui compte vos répétitions s'exécute sur l'appareil. La version gratuite affiche une bannière publicitaire en dehors de l'écran de sonnerie ; Arisely Pro la supprime.
 
 ## Essayez-la
 
-Arisely est gratuit sur Google Play, ne nécessite aucune inscription et affiche actuellement une note de 5,0.
+Arisely est gratuit sur Google Play et ne nécessite aucune inscription.
 
 [**Télécharger Arisely sur Google Play**](https://play.google.com/store/apps/details?id=com.arisely&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dpushup-alarm%26utm_content%3Dalarm-app-that-makes-you-do-pushups-android)
 
