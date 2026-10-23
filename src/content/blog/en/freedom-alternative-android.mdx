@@ -24,11 +24,11 @@ faqs:
   - question: "Is there a Freedom alternative for Android that does not require an account?"
     answer: "Yes. Mindful Guard requires no account, no email and no internet connection — every block, schedule and limit is stored and enforced on the device itself. Freedom requires an email and password because its core feature is syncing sessions across your devices through its servers, which is not possible without an account."
   - question: "Is Freedom's free plan enough, or do I need Premium?"
-    answer: "Freedom's free plan is limited to Start Now sessions capped at 2 hours, with no recurring or advance-scheduled sessions and no Locked Mode. If you want a block that starts automatically every weekday morning, or one you cannot quit mid-session, you need Premium. Mindful Guard includes scheduled blocks and an unbreakable Strict Mode on its free tier, capped at three focus sessions per day — no limit on how long each one runs."
+    answer: "Freedom's free plan is limited to Start Now sessions capped at 2 hours, with no recurring or advance-scheduled sessions and no Locked Mode. If you want a block that starts automatically every weekday morning, or one you cannot quit mid-session, you need Premium. Mindful Guard includes scheduled blocks on its free tier, and its blocks have no override button, capped at three focus sessions per day — no limit on how long each one runs."
   - question: "Is Mindful Guard cheaper than Freedom?"
     answer: "Not on a straight annual comparison. Mindful Guard Premium is $3.99 per month, which is more per year than Freedom's $39.96 annual plan. The honest comparison is different: the features most people pay Freedom for — scheduled blocks and a locked mode you cannot quit — are free in Mindful Guard, capped at three focus sessions per day. If three blocks a day covers your routine, you never reach a paywall; if you need more, premium lifts the cap. Mindful Guard is also month-to-month, with no annual commitment required."
   - question: "What are the main alternatives to Freedom on Android?"
-    answer: "The realistic options are Mindful Guard (native, offline, no account, free scheduled blocks and Strict Mode, Android only), Cold Turkey (very strong blocking, desktop-first), Opal (polished, accessibility-based on Android, Pro roughly $99.99 per year), Forest (gamified timer rather than an enforced block) and Android's built-in Digital Wellbeing (free but easy to bypass). Which one fits depends mostly on whether you need desktop coverage."
+    answer: "The realistic options are Mindful Guard (native, offline, no account, free scheduled blocks with no override button, Android only), Cold Turkey (very strong blocking, desktop-first), Opal (polished, accessibility-based on Android, Pro roughly $99.99 per year), Forest (gamified timer rather than an enforced block) and Android's built-in Digital Wellbeing (free but easy to bypass). Which one fits depends mostly on whether you need desktop coverage."
   - question: "Can I block Instagram Reels and TikTok specifically instead of the whole app?"
     answer: "Yes, with Mindful Guard. Its Reel Guard targets the short-form feed inside Instagram, YouTube, TikTok, Facebook and Snapchat specifically, with its own daily and per-session limits, separate from whole-app blocking. Freedom blocks apps and sites as whole units and does not offer feed-level blocking inside an app, so with Freedom you either lose Instagram entirely or keep Reels."
   - question: "Does a Freedom alternative need to support desktop too?"
@@ -55,7 +55,7 @@ free tier capped at 2-hour ad-hoc sessions.
 
 | If you… | Pick | Why |
 |---|---|---|
-| Only need your **Android phone** blocked | **Mindful Guard** | Native blocking, no VPN, no account, scheduled blocks and Strict Mode free |
+| Only need your **Android phone** blocked | **Mindful Guard** | Native blocking, no VPN, no account, free scheduled blocks with no override button |
 | Need **phone + Mac + Windows** blocked together | **Freedom** | Cross-device sync is its core strength; nothing here matches it |
 | Want to limit **Reels/Shorts/TikTok feeds**, not whole apps | **Mindful Guard** | Reel Guard blocks the feed inside the app; Freedom is whole-app-or-nothing |
 | Want **desktop-grade lockdown** on a computer | **Cold Turkey** | Strongest enforcement, desktop-first |
@@ -118,8 +118,8 @@ design around:
   schedule and limit is stored and enforced on-device. Its Google Play Data safety section declares no
   data collected or shared — see
   [what zero-telemetry actually means](/blog/zero-telemetry-blocker).
-- **Scheduling and Strict Mode are free.** Scheduled blocks and an unbreakable Strict Mode are on the
-  free tier — the two features Freedom reserves for Premium. The free tier does cap you at three
+- **Scheduling and no-override blocks are free.** Scheduled blocks, which hold until they end with no
+  override button, are on the free tier — the two things Freedom reserves for Premium. The free tier does cap you at three
   focus sessions per day; premium lifts that to unlimited. The difference from Freedom is which
   features you get, not how long each session may run.
 - **Reel Guard.** Beyond whole-app blocking, it targets the short-form feed specifically inside
@@ -137,7 +137,7 @@ design around:
 | Account required | Yes — email + password, server sync | No |
 | Works fully offline | No — syncs via servers | Yes — 100% on-device |
 | Free plan sessions | 2-hour cap, no recurring/scheduling | 3 sessions/day, no length cap, scheduling included |
-| Locked / Strict Mode | Premium only | Free |
+| Block you can't quit mid-session | Premium only (Locked Mode) | Free (no override button) |
 | Feed-level blocking (Reels/Shorts/TikTok) | No — whole app or nothing | Yes — Reel Guard |
 | Survives Samsung/Xiaomi power management | VPN may be killed | Yes — native service |
 | Battery impact | Moderate (VPN held open) | Under 1% daily |
@@ -196,7 +196,7 @@ way, Mindful Guard is month-to-month rather than an annual commitment.
 ## Who should actually pick which
 
 **Pick Mindful Guard if** you only need your Android phone controlled, you do not want an account or
-a server dependency, you want scheduled blocks and Strict Mode without paying, you are on a Samsung
+a server dependency, you want scheduled blocks you can't quit without paying, you are on a Samsung
 or Xiaomi phone that kills VPN-based blockers, or you specifically want to limit Reels, Shorts and
 TikTok feeds rather than block whole apps.
 

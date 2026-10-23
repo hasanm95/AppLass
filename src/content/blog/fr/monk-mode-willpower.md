@@ -1,7 +1,7 @@
 ---
 title: "Monk Mode 2.0 : Pourquoi votre volonté ne suffit pas (et ce que j'ai construit à la place)"
 date: "2026-01-26"
-dateModified: "2026-05-19"
+dateModified: "2026-10-24"
 category: "Applications Android"
 keywords: "application monk mode android, application détox dopamine, comment faire monk mode, mindful guard android"
 author: "Équipe AppLass"
@@ -47,7 +47,7 @@ C'est ainsi qu'est né [MindfulGuard](/fr/apps/mindful-guard). Je ne voulais pas
 
 Pour ancrer mon Monk Mode, j'ai intégré trois fonctionnalités spécifiques dans l'application :
 
-1. **Mode Logique Strict :** Pas de bouton "encore 5 minutes". Une fois le blocage activé, c'est un mur infranchissable que la volonté ne peut pas briser.
+1. **Aucun bouton de contournement :** Pas de bouton "encore 5 minutes". Une fois le blocage activé, c'est un mur infranchissable que la volonté ne peut pas briser.
 2. **Confidentialité Zéro-Télémétrie :** En tant que développeur, je suis obsédé par la confidentialité. Mon application fonctionne en mode offline-first, ce qui signifie que vos données d'utilisation restent sur votre téléphone, et non dans un cloud.
 3. **Entraînement par la Friction :** Parfois, vous avez juste besoin d'une pause. Nous ajoutons quelques secondes de respiration ou un délai pour briser la "boucle dopaminergique" avant qu'elle ne commence.
 

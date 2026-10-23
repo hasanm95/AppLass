@@ -1,11 +1,11 @@
 ---
 title: "Warum ich aufgehört habe, gegen mein eigenes Gehirn zu kämpfen (und wie ich 2,4 Stunden zurückgewann)"
 date: "2026-01-26"
-dateModified: "2026-05-19"
+dateModified: "2026-10-24"
 category: "Android-Apps"
 keywords: "konzentration zurückgewinnen, dopaminschleife, kognitive firewall app, handysucht stoppen android, mindful guard android"
 author: "AppLass-Team"
-excerpt: "Früher habe ich meine Vormittage damit verbracht, gegen mein Handy zu kämpfen, statt mein Unternehmen aufzubauen. So habe ich mit „strikter Logik“ den Kampf um meine Aufmerksamkeit gewonnen."
+excerpt: "Früher habe ich meine Vormittage damit verbracht, gegen mein Handy zu kämpfen, statt mein Unternehmen aufzubauen. So habe ich mit harten Limits den Kampf um meine Aufmerksamkeit gewonnen."
 faqs:
   - question: "Wie lange dauert es, sich nach einer einzigen Benachrichtigung wieder zu konzentrieren?"
     answer: "Rund 23 Minuten. Eine einzige Unterbrechung genügt, um einen Flow-Zustand zu zerstören. Genau deshalb sind Erinnerungen per Benachrichtigung kontraproduktiv — die Unterbrechung selbst richtet den Schaden an, den die App zu verhindern verspricht."
@@ -51,7 +51,7 @@ Als Entwickler wusste ich, dass ich etwas mit **mathematischer Präzision** und 
 
 Deshalb habe ich [MindfulGuard](/de/apps/mindful-guard) entwickelt. Ich wollte keine „Wellness“-App — ich wollte ein Werkzeug, das nach derselben Logik arbeitet wie eine Firewall für einen Computer.
 
-- **Strikter Logikmodus:** Sobald eine Sperre gesetzt ist, gibt es keine Umgehung. Das beseitigt die Ausreden und hält Sie auf Kurs.
+- **Keine Umgehungsschaltfläche:** Sobald eine Sperre läuft, gibt es keine Schaltfläche zum Umgehen. Das beseitigt die Ausreden und hält Sie auf Kurs.
 - **Datenschutz ohne Tracking:** Ihre Daten verlassen Ihr Telefon nie, denn Konzentration sollte privat sein.
 - **Native Performance:** Die App läuft unsichtbar im Hintergrund, ohne Ihren Akku zu leeren — selbst auf Android-Geräten mit aggressivem Energiemanagement.
 

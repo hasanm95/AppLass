@@ -1,11 +1,11 @@
 ---
 title: "Pourquoi j'ai arrêté de combattre mon propre cerveau (et comment j'ai récupéré 2,4 heures)"
 date: "2026-01-26"
-dateModified: "2026-05-19"
+dateModified: "2026-10-24"
 category: "Applications Android"
 keywords: "retrouver concentration, boucle dopamine, pare-feu cognitif, arrêter addiction téléphone android, mindful guard android"
 author: "Équipe AppLass"
-excerpt: "J'avais l'habitude de passer mes matinées à lutter contre mon téléphone au lieu de développer mon activité. Voici comment j'ai utilisé la 'Logique Stricte' pour gagner la guerre de mon attention."
+excerpt: "J'avais l'habitude de passer mes matinées à lutter contre mon téléphone au lieu de développer mon activité. Voici comment j'ai utilisé des limites fermes pour gagner la guerre de mon attention."
 faqs:
   - question: "Combien de temps faut-il pour se reconcentrer après une seule notification ?"
     answer: "Environ 23 minutes. Une seule interruption suffit à briser un état de flow, ce qui rend les rappels par notification contre-productifs : l'interruption elle-même cause précisément le dommage que l'application prétend éviter."
@@ -51,7 +51,7 @@ En tant que développeur, je savais qu'il me fallait quelque chose construit ave
 
 C'est pourquoi j'ai créé [MindfulGuard](/fr/apps/mindful-guard). Je ne voulais pas une application de "bien-être" — je voulais un outil qui fonctionnerait avec la même logique qu'un pare-feu pour ordinateur.
 
-- **Mode Logique Strict :** Une fois un blocage défini, il n'y a pas de "contournement". Il élimine les excuses et vous force à rester sur la bonne voie.
+- **Aucun bouton de contournement :** Une fois un blocage lancé, il n'y a pas de bouton pour le "contourner". Il élimine les excuses et vous force à rester sur la bonne voie.
 - **Confidentialité Zéro-Suivi :** Vos données ne quittent jamais votre téléphone, car la concentration doit rester privée.
 - **Performance Native :** Il fonctionne de manière invisible en arrière-plan sans vider votre batterie, même sur les appareils Android les plus agressifs.
 
