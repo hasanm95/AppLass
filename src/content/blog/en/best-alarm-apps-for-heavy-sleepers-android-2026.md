@@ -13,6 +13,8 @@ tags:
   - alarm clock
   - heavy sleepers
   - arisely
+sidebarApps:
+  - arisely
 faqs:
   - question: "What's the best type of alarm app for a heavy sleeper?"
     answer: "One that combines three things: exact-time alarms that fire even when the phone is locked or the app is closed, playback on Android's alarm audio channel so it's loud through muted media and Do Not Disturb, and a wake-up task (math, steps, barcode, or push-ups) that you can't dismiss by reflex while half-asleep. Volume alone is not enough."

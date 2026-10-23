@@ -13,6 +13,8 @@ tags:
   - fitness
   - wake up
   - arisely
+sidebarApps:
+  - arisely
 faqs:
   - question: "Is there an alarm app that makes you do push-ups?"
     answer: "Yes. Arisely for Android has an AI Push-Up Mission: you set a number of push-ups, and the alarm keeps ringing until you complete them in front of your phone's camera. Arisely checks your form in real time, so you cannot fake the reps or tap to skip them."
@@ -62,7 +64,7 @@ A camera-based alarm raises a fair question: where does the video go? With Arise
 
 ## Try it
 
-Arisely is free on Google Play, needs no sign-up, and currently holds a 5.0 rating.
+Arisely is free on Google Play and needs no sign-up.
 
 [**Download Arisely on Google Play**](https://play.google.com/store/apps/details?id=com.arisely&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dpushup-alarm%26utm_content%3Dalarm-app-that-makes-you-do-pushups-android)
 

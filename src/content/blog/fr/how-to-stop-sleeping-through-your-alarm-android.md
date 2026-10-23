@@ -13,6 +13,8 @@ tags:
   - sommeil
   - se réveiller
   - arisely
+sidebarApps:
+  - arisely
 faqs:
   - question: "Pourquoi est-ce que je dors toujours malgré mon réveil ?"
     answer: "En général, trois facteurs se combinent : l'inertie du sommeil (en sommeil profond, votre cerveau est assez embrumé pour éteindre une alarme sans vous en souvenir), le bouton d'arrêt d'un seul geste que votre main à moitié endormie trouve par réflexe, et l'optimisation de batterie d'Android qui retarde ou coupe l'alarme. Corriger les trois — pas seulement acheter une sonnerie plus forte — met fin au problème."

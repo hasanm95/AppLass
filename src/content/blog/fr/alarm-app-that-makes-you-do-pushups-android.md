@@ -13,6 +13,8 @@ tags:
   - fitness
   - se réveiller
   - arisely
+sidebarApps:
+  - arisely
 faqs:
   - question: "Existe-t-il une application de réveil qui fait faire des pompes ?"
     answer: "Oui. Arisely pour Android propose une mission Pompes par IA : vous définissez un nombre de pompes et l'alarme continue de sonner jusqu'à ce que vous les terminiez devant la caméra de votre téléphone. Arisely vérifie votre posture en temps réel, vous ne pouvez donc ni tricher sur les répétitions ni les sauter d'un geste."
@@ -62,7 +64,7 @@ Un réveil basé sur la caméra soulève une question légitime : où va la vid�
 
 ## Essayez-la
 
-Arisely est gratuit sur Google Play, ne nécessite aucune inscription et affiche actuellement une note de 5,0.
+Arisely est gratuit sur Google Play et ne nécessite aucune inscription.
 
 [**Télécharger Arisely sur Google Play**](https://play.google.com/store/apps/details?id=com.arisely&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dpushup-alarm%26utm_content%3Dalarm-app-that-makes-you-do-pushups-android)
 

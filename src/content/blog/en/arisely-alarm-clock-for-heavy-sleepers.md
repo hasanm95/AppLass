@@ -13,6 +13,8 @@ tags:
   - heavy sleepers
   - productivity
   - wake up
+sidebarApps:
+  - arisely
 faqs:
   - question: "What is Arisely?"
     answer: "Arisely is a free Android alarm clock built for heavy sleepers. Instead of a single off button, it keeps ringing at full volume until you complete a wake-up mission you choose, such as solving math, retyping a code, taking steps, or doing camera-verified push-ups. It is made by Applass Android Apps."
@@ -30,7 +32,7 @@ faqs:
     answer: "Yes. Arisely uses exact-time alarms that fire even when the phone is locked, idle, or the app has been closed for hours, so Android does not delay the alarm as a batched background task. This is what separates a reliable alarm clock from a reminder app that fires late."
 ---
 
-**Arisely is a free Android alarm clock built for heavy sleepers — the people who tap snooze in their sleep and wake up late.** Unlike a normal alarm, it keeps ringing at full volume until you complete a wake-up mission you choose, from solving math to doing camera-verified push-ups. It is published on Google Play by Applass Android Apps under the name *Arisely: Alarm + AI Push-Up*.
+**Arisely is a free Android alarm clock built for heavy sleepers — the people who tap snooze in their sleep and wake up late.** Unlike a normal alarm, it keeps ringing at full volume until you complete a wake-up mission you choose, from solving math to doing camera-verified push-ups. It is published on Google Play by Applass Android Apps under the name *Arisely: Push-Up Alarm Clock*.
 
 If you have ever turned off an alarm without remembering it, the problem is not your willpower. It is the off button. A single sleepy tap is all it takes, and your half-asleep brain is very good at finding it. Arisely's core idea is simple: **remove the easy off switch.**
 
@@ -104,7 +106,7 @@ A hard alarm is only useful if the basics are solid. Arisely covers them:
 
 ## The bottom line
 
-Arisely is a loud, reliable alarm clock that makes sure you **actually get up.** It is free, needs no account, collects no data, and currently holds a 5.0 rating on Google Play. If "just put the phone across the room" has stopped working, the mission gate — especially the AI push-up check — is the next step up.
+Arisely is a loud, reliable alarm clock that makes sure you **actually get up.** It is free, needs no account, and collects no data. If "just put the phone across the room" has stopped working, the mission gate — especially the AI push-up check — is the next step up.
 
 [**Download Arisely on Google Play**](https://play.google.com/store/apps/details?id=com.arisely&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Darisely-overview%26utm_content%3Darisely-alarm-clock-for-heavy-sleepers)
 
