@@ -40,7 +40,7 @@ Que vous soyez un étudiant qui essaie d'étudier, un développeur qui essaie de
 J'ai passé des mois à essayer des applications comme Opal et Freedom, mais elles ne me convenaient jamais vraiment :
 
 - Certaines étaient **beaucoup trop chères** pour ce qu'elles offraient
-- D'autres voulaient faire transiter toutes mes données privées par leurs serveurs via un VPN
+- D'autres avaient besoin d'un VPN pour filtrer mon trafic, ce qui revenait à leur confier tout
 - Pire encore, la plupart d'entre elles étaient "soft" — elles me laissaient cliquer sur "encore 5 minutes" et contourner mes propres objectifs
 
 En tant que développeur, je savais qu'il me fallait quelque chose construit avec une **précision mathématique** et une **confidentialité zéro-télémétrie**.

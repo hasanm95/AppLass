@@ -2,7 +2,7 @@
 title: "Arisely: Der laute Wecker, der Tiefschläfer aus dem Bett zwingt"
 description: "Arisely ist ein kostenloser Android-Wecker für Tiefschläfer. Er klingelt in voller Lautstärke weiter, bis du eine Aufwach-Mission abschließt — Mathe, Gedächtnis, Schritte oder einen KI-geprüften Liegestütz."
 date: "2026-10-04"
-dateModified: "2026-10-04"
+dateModified: "2026-10-23"
 category: "Android-Apps"
 author: "AppLass-Team"
 keywords: "arisely, arisely wecker, lauter wecker app android, wecker für tiefschläfer, wecker mit aufgaben, liegestütz wecker, ki liegestütz wecker, wecker der nicht ausgeht, wecker mit mathe aufgabe"
@@ -13,6 +13,8 @@ tags:
   - tiefschläfer
   - produktivität
   - aufwachen
+sidebarApps:
+  - arisely
 faqs:
   - question: "Was ist Arisely?"
     answer: "Arisely ist ein kostenloser Android-Wecker für Tiefschläfer. Statt einer einzigen Aus-Taste klingelt er in voller Lautstärke weiter, bis du eine selbst gewählte Aufwach-Mission abschließt — etwa Mathe lösen, einen Code neu eintippen, Schritte gehen oder kamerageprüfte Liegestütze machen. Entwickelt wird er von Applass Android Apps."
@@ -21,7 +23,7 @@ faqs:
   - question: "Was ist der KI-Liegestütz-Alarm in Arisely?"
     answer: "Die KI-Liegestütz-Mission verlangt eine festgelegte Anzahl Liegestütze vor der Kamera deines Telefons, um den Alarm auszuschalten. Arisely prüft deine Form in Echtzeit, du kannst die Wiederholungen also weder vortäuschen noch überspringen. So kommt dein Körper in Bewegung, bevor du ganz wach bist — und das Wiedereinschlafen fällt deutlich schwerer."
   - question: "Ist Arisely kostenlos, hat es Werbung oder braucht es ein Konto?"
-    answer: "Arisely ist bei Google Play kostenlos zum Herunterladen und Nutzen, optionale Upgrades sind geplant. Es braucht kein Konto und keine Anmeldung. Laut dem Abschnitt „Datensicherheit“ im Play Store werden keine Daten erfasst und keine Daten an Dritte weitergegeben — alles, was du einstellst, bleibt auf deinem Telefon."
+    answer: "Arisely ist bei Google Play kostenlos herunterzuladen. Die Gratisversion zeigt ein Werbebanner auf den Tabs Wecker, Schlaf und Einstellungen — nie auf dem Klingel-Bildschirm, während einer Mission oder auf dem Sperrbildschirm. Arisely Pro (monatlich, jährlich oder als einmaliger Lifetime-Kauf) entfernt die Werbung. Es braucht kein Konto und keine Anmeldung, und deine Alarme, Einstellungen und dein Schlafprotokoll bleiben auf deinem Telefon."
   - question: "Welche Aufwach-Missionen bietet Arisely?"
     answer: "Arisely hat 10 Aufwach-Missionen: Mathe, Gedächtnis, Code, Zahlenreihe, Tippen, Quiz, Schütteln, Schritte, QR-/Barcode und den KI-Liegestütz-Check. Du kannst die Schwierigkeit an deinen Schlaf anpassen — eine schnelle Rechenaufgabe für Leichtschläfer oder kamerageprüfte Liegestütze und quer durchs Zimmer platzierte Barcodes für die härtesten Fälle."
   - question: "Für wen ist Arisely gedacht?"
@@ -30,7 +32,7 @@ faqs:
     answer: "Ja. Arisely nutzt zeitgenaue Alarme, die auch dann auslösen, wenn das Telefon gesperrt ist, sich im Ruhezustand befindet oder die App seit Stunden geschlossen wurde. Android verzögert den Alarm also nicht als gebündelte Hintergrundaufgabe. Genau das unterscheidet einen zuverlässigen Wecker von einer Erinnerungs-App, die zu spät auslöst."
 ---
 
-**Arisely ist ein kostenloser Android-Wecker für Tiefschläfer — die Menschen, die im Schlaf auf Schlummern tippen und zu spät aufwachen.** Anders als ein normaler Wecker klingelt er in voller Lautstärke weiter, bis du eine selbst gewählte Aufwach-Mission abschließt, von Mathe lösen bis zu kamerageprüften Liegestützen. Er erscheint bei Google Play von Applass Android Apps unter dem Namen *Arisely: Alarm + AI Push-Up*.
+**Arisely ist ein kostenloser Android-Wecker für Tiefschläfer — die Menschen, die im Schlaf auf Schlummern tippen und zu spät aufwachen.** Anders als ein normaler Wecker klingelt er in voller Lautstärke weiter, bis du eine selbst gewählte Aufwach-Mission abschließt, von Mathe lösen bis zu kamerageprüften Liegestützen. Er erscheint bei Google Play von Applass Android Apps unter dem Namen *Arisely: Push-Up Alarm Clock*.
 
 Wenn du schon einmal einen Wecker ausgeschaltet hast, ohne dich daran zu erinnern, liegt das nicht an deiner Willenskraft. Es liegt an der Aus-Taste. Ein einziges verschlafenes Tippen genügt, und dein halb schlafendes Gehirn findet sie mühelos. Ariselys Grundidee ist einfach: **weg mit dem einfachen Aus-Schalter.**
 
@@ -67,10 +69,13 @@ Das ist die Funktion, die die meisten Wecker-Apps nicht haben. Du legst eine Anz
 
 ## Ist Arisely datenschutzfreundlich?
 
-Ja. Arisely ist so gebaut, dass es sich aus deinen Angelegenheiten heraushält:
+Deine Alarme schon. Arisely behält, was du erstellst, auf deinem Telefon; das Werbebanner der Gratisversion ist die einzige Ausnahme:
 
 - **Kein Konto nötig** — installieren und einen Alarm stellen. Keine Anmeldung, keine E-Mail.
-- **Keine Daten erfasst oder geteilt.** Der „Datensicherheit“-Eintrag bei Google Play erklärt: keine Daten erfasst, keine Daten an Dritte weitergegeben. Alles, was du erstellst — Alarme, Einstellungen, Verlauf — bleibt auf deinem Telefon.
+- **Deine Alarme bleiben auf deinem Telefon.** Alarme, Einstellungen und dein Schlafprotokoll werden nie an den Entwickler von Arisely oder einen Server gesendet. Es gibt keine Cloud-Synchronisierung.
+- **Ein Werbebanner in der Gratisversion.** Google AdMob liefert es auf den Tabs Wecker, Schlaf und Einstellungen aus, nie auf dem Klingel-Bildschirm, und erhält dafür die Werbe-ID deines Geräts. Arisely Pro entfernt die Werbung; Arisely fordert dann gar keine Anzeigen mehr an. Käufe prüft RevenueCat, das jede Installation nur über eine zufällige anonyme ID kennt.
+
+Details stehen in der [Datenschutzerklärung](/de/legal/arisely/privacy).
 
 Das ist wichtig bei einer App, der du Wecker-, Kamera- und Bewegungszugriff gibst. Die Kamera für die Liegestütz-Mission prüft deine Form auf dem Gerät; es gibt kein Cloud-Konto, das deine Morgen aufzeichnet.
 
@@ -83,7 +88,8 @@ Das ist wichtig bei einer App, der du Wecker-, Kamera- und Bewegungszugriff gibs
 | **Zuverlässigkeit** | Kann durch Androids Akku-Limits verzögert werden | Zeitgenaue Alarme, auch bei gesperrtem oder geschlossenem Zustand |
 | **Körperliches Aufwachen** | Keines | KI-geprüfte Liegestütze, Schritte, Schütteln oder Gang zum Barcode |
 | **Konto** | Oft erforderlich | Keines |
-| **Daten** | Oft erfasst | Keine erfasst oder geteilt |
+| **Deine Alarme** | Oft mit einem Konto synchronisiert | Bleiben auf deinem Telefon |
+| **Werbung** | Unterschiedlich | Ein Banner in der Gratisversion, nie auf dem Klingel-Bildschirm; Pro entfernt es |
 
 ## Für wen Arisely gedacht ist
 
@@ -104,7 +110,7 @@ Ein harter Alarm nützt nur, wenn die Grundlagen stimmen. Arisely deckt sie ab:
 
 ## Das Fazit
 
-Arisely ist ein lauter, zuverlässiger Wecker, der dafür sorgt, dass du **wirklich aufstehst.** Er ist kostenlos, braucht kein Konto, erfasst keine Daten und hat derzeit eine 5,0-Bewertung bei Google Play. Wenn „leg das Telefon einfach quer durchs Zimmer“ nicht mehr wirkt, ist das Missions-Gate — besonders der KI-Liegestütz-Check — der nächste Schritt.
+Arisely ist ein lauter, zuverlässiger Wecker, der dafür sorgt, dass du **wirklich aufstehst.** Er ist kostenlos, braucht kein Konto und hält deine Alarme auf deinem Telefon; Arisely Pro entfernt das Werbebanner der Gratisversion. Wenn „leg das Telefon einfach quer durchs Zimmer“ nicht mehr wirkt, ist das Missions-Gate — besonders der KI-Liegestütz-Check — der nächste Schritt.
 
 [**Arisely bei Google Play herunterladen**](https://play.google.com/store/apps/details?id=com.arisely&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Darisely-overview%26utm_content%3Darisely-alarm-clock-for-heavy-sleepers)
 

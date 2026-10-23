@@ -40,7 +40,7 @@ Whether you are a student trying to study, a developer trying to code, or a busi
 I spent months trying apps like Opal and Freedom, but they never felt right:
 
 - Some were **way too expensive** for what they offered
-- Others wanted to route all my private data through their servers using a VPN
+- Others needed a VPN to filter my traffic, which meant trusting them with all of it
 - Worst of all, most of them were "soft"—they let me click "5 more minutes" and bypass my own goals
 
 As a developer, I knew I needed something built with **mathematical precision** and **zero-telemetry privacy**.

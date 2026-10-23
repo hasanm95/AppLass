@@ -1,82 +1,124 @@
 ---
-title: "YouTube Background Play in 2026: Honest Methods That Still Work"
-description: "Google killed browser background play in January 2026. Here are the only free methods that actually work — including one that cuts screen power by up to 60% at the same time."
+title: "YouTube Background Play Not Working in 2026? The Firefox Fix and What Still Works"
+description: "YouTube blocked free background play in mobile browsers in January 2026. Why the Firefox add-on fix often fails now, what still works for free, and what Premium Lite includes."
 date: "2026-04-11"
-dateModified: "2026-08-13"
+dateModified: "2026-10-23"
 category: "Android"
 author: "AppLass Team"
-excerpt: "Google killed browser background play in January 2026. Here are the only free methods that actually work — including one that cuts screen power by up to 60% at the same time."
+excerpt: "In January 2026 Google confirmed that background play in mobile browsers is now Premium-only, which broke the Brave, Samsung Internet and Firefox tricks. The Firefox add-on still works for some accounts but is unreliable. The free options that keep working are NewPipe and keeping the video in the foreground with the screen blacked out."
 thumbnail: "../../../assets/blogs/youtube-background-play-workaround.png"
-keywords: "youtube background play android 2026, screen off youtube android, youtube background play free, screenveil android, amoled battery saver"
-tags: ["Android", "YouTube", "Battery"]
+keywords: "youtube background play not working, youtube background play firefox android, video background play fix not working, youtube background play android 2026, youtube premium lite background play"
+tags: ["Android", "YouTube", "Firefox", "Battery"]
 featured: true
 breadcrumbName: "YouTube Background Play 2026"
 sidebarApps:
   - screenveil
 faqs:
-  - question: "Does YouTube background play still work on Android in 2026?"
-    answer: "Browser-based workarounds stopped working in January 2026 when Google moved enforcement server-side. ScreenVeil (free Android app) still works by overlaying a black screen without triggering YouTube's lock detection. NewPipe (open-source) also works."
-  - question: "What is the easiest free way to play YouTube with screen off in 2026?"
-    answer: "ScreenVeil is the easiest option — install the free Android app, start your YouTube video, tap the ScreenVeil button and your screen goes black while audio continues. On AMOLED phones it also cuts display power by up to 60% at full brightness."
-  - question: "Why did YouTube background play stop working on Brave and Samsung Internet?"
-    answer: "In January 2026 Google moved YouTube's background-play detection to the server side. Previously the YouTube player used the browser's Page Visibility API which could be suppressed. Now the player reports its own visibility state directly, bypassing any browser-level workaround."
-  - question: "Does ScreenVeil work with apps other than YouTube?"
-    answer: "Yes. ScreenVeil overlays a black screen at the OS level, so it works with any app — YouTube, Netflix, Spotify, podcast apps, or any video/audio player."
+  - question: "Why did YouTube background play stop working in Firefox on Android?"
+    answer: "In late January 2026 YouTube began stopping playback for non-Premium accounts when a mobile browser loses focus, and Google confirmed background play is meant to be exclusive to Premium. Firefox's Video Background Play Fix add-on works by hiding the browser's visibility signal, so it still helps on some accounts, but YouTube can stop playback regardless."
+  - question: "Does the Video Background Play Fix add-on still work in 2026?"
+    answer: "Sometimes. The add-on (version 1.8.1, last updated November 2024) blocks the Page Visibility and Fullscreen APIs in Firefox for Android. Since YouTube's January 2026 change, users report it working for days or weeks and then breaking without warning. Treat it as a bonus, not a dependable method."
+  - question: "Does YouTube background play still work in Brave or Samsung Internet?"
+    answer: "Not reliably for free accounts. Reports from Brave, Samsung Internet, Vivaldi and Edge users started in January 2026, and Google confirmed it had updated the experience so background play is consistent with its Premium-only policy across platforms. Browser settings and desktop-mode tricks no longer get around it."
+  - question: "Does YouTube Premium Lite include background play?"
+    answer: "Yes, since late February 2026. YouTube added background play and downloads to Premium Lite with no price change, $7.99 a month in the US. Both features exclude music videos and Shorts, and ads still appear on music content. Full Premium covers music too."
+  - question: "What is the easiest free way to listen to YouTube with the screen dark?"
+    answer: "Keep the video playing in the YouTube app and cover the screen with a black overlay such as ScreenVeil. The app never goes to the background, so playback is not interrupted, and touches are blocked so a pocket cannot pause it. The screen is technically still on, just showing black."
+  - question: "Is NewPipe still working in 2026?"
+    answer: "Yes. NewPipe is a free, open-source YouTube client on F-Droid that supports true background play and needs no Google account. Because it does not use YouTube's official player, it occasionally breaks after YouTube changes something and is fixed in a later update. It cannot sync your YouTube subscriptions or history."
 ---
 
 import ScreenVeilCTA from "@/components/blog/ScreenVeilCTA.astro";
 
-If you landed here after a browser trick stopped working, you're not alone.
-In January 2026, Google moved YouTube's background-play enforcement to the
-server side — meaning every Chromium browser workaround (Brave, Samsung
-Internet, Vivaldi, Edge) is now permanently broken. The audio pauses the
-instant your screen turns off, no matter which setting you toggle.
+**As of October 2026, free YouTube background play in mobile browsers is mostly gone.** In late
+January 2026 YouTube started stopping playback for non-Premium accounts as soon as a mobile browser
+loses focus, and Google confirmed the change. That broke the Brave, Samsung Internet, Vivaldi and Edge
+tricks, and it is why the popular Firefox add-on now works on some days and not others.
 
-This guide skips the dead methods entirely. Here's what still works in May 2026.
-
----
-
-## Why everything broke in January 2026
-
-YouTube previously relied on the browser's **Page Visibility API** to detect
-when a tab was backgrounded. Clever browser settings could suppress that signal.
-Google's engineers fixed this by moving the detection server-side: the YouTube
-player now reports its own visibility state directly, independent of whatever
-the browser tells it. No browser flag can override that.
-
-Methods confirmed dead as of 2026:
-
-- Samsung Internet "desktop site + lock screen" trick
-- Brave's built-in background video playback setting
-- Vivaldi and Edge background tab workarounds
-- Any Chromium-based browser, full stop
+Two free options still hold up: **NewPipe**, an open-source YouTube client, and **keeping the video in
+the foreground with the screen blacked out**. The paid option got better: **Premium Lite now includes
+background play**. Details for each are below, starting with the Firefox fix most people are looking for.
 
 ---
 
-## Method 1 — ScreenVeil (free, works with any app) ⚡ Recommended
+## What changed in January 2026?
 
-This is the simplest and most overlooked solution. Instead of tricking YouTube
-into playing in the background, **ScreenVeil blacks out your screen while
-audio keeps playing normally**.
+Reports of background playback stopping in third-party browsers began around January 12, 2026, first
+from Brave users, then from Samsung Internet, Vivaldi and Edge. By the end of the month Google had
+confirmed it to [Android Authority](https://www.androidauthority.com/youtube-background-play-broken-3636179/)
+and [9to5Google](https://9to5google.com/2026/02/02/youtube-background-playback-workarounds-not-working-third-party-browsers/).
+A YouTube spokesperson said background playback is "a feature intended to be exclusive for YouTube
+Premium members."
 
-Here's the key insight: YouTube's background-play check only fires when
-your screen turns *off* via the power button or auto-lock. ScreenVeil overlays
-a pure black layer *without* actually turning the screen off — so YouTube
-never receives the lock signal and audio plays uninterrupted.
+The practical effect: when a free account is playing YouTube in a mobile browser and you switch apps
+or turn the screen off, YouTube pauses playback. It does this whatever the browser reports, which is
+why browser settings and the old "desktop site" trick no longer help.
 
-**How to use it:**
+| Method | Status for free accounts, Oct 2026 |
+|---|---|
+| Samsung Internet "desktop site + lock screen" | Broken |
+| Brave's background video playback setting | Broken or intermittent |
+| Vivaldi, Edge and other Chromium browsers | Broken |
+| Firefox + Video Background Play Fix add-on | Intermittent, works on some accounts |
+| NewPipe (F-Droid) | Works |
+| YouTube app in the foreground + black overlay | Works |
+| YouTube Premium or Premium Lite | Works, officially supported |
 
-1. Install [ScreenVeil](https://play.google.com/store/apps/details?id=com.screenveil.app) (free, no ads, no account)
-2. Open YouTube and start your video
-3. Tap the floating ScreenVeil button — the screen goes black instantly
-4. Audio continues. Touch anywhere to reveal the unlock button
+---
 
-**Bonus:** On AMOLED/OLED phones (Samsung Galaxy, Pixel, OnePlus), a true
-black overlay turns pixels completely off, saving **60%+ battery** compared
-to keeping the screen on. This actually uses *less* power than regular
-background play.
+## Why did the Firefox background play fix stop working?
 
-Works with YouTube, Netflix, Spotify, podcast apps — any app you already use.
+**Because the add-on fixes the browser side, and since January 2026 YouTube checks for itself.**
+[Video Background Play Fix](https://addons.mozilla.org/en-US/firefox/addon/video-background-play-fix/)
+is a Firefox for Android add-on (about 229,000 users) that blocks the Page Visibility API and the
+Fullscreen API, so YouTube is never told the tab went into the background. Its last update, version
+1.8.1, shipped in November 2024, before the current enforcement existed.
+
+That still works for some people, because YouTube's change did not reach every account at once and
+does not catch every case. Users report it working for days or weeks and then stopping overnight.
+
+If it stopped working for you, go through this list in order:
+
+1. **Update Firefox.** The add-on needs Firefox 82 or newer for Android, and old builds behave
+   differently. Update from the Play Store.
+2. **Check the add-on is enabled.** Firefox menu → Add-ons → Video Background Play Fix → enabled. If
+   you use private tabs, also turn on "Allow in private browsing."
+3. **Reload YouTube after enabling it.** The add-on only takes effect on pages loaded after it is on.
+4. **Test it.** Play a video in Firefox, press Home or lock the screen, and wait a few seconds. If
+   audio stops within seconds every time, YouTube is enforcing the block on your account.
+
+Some users also report success with a user-agent switcher, per
+[Tech Advisor](https://www.techadvisor.com/article/3051828/youtube-blocks-background-playback-in-mobile-browsers.html).
+That is the same game of whack-a-mole: it works until YouTube notices.
+
+**If none of that works, the add-on is not the problem.** YouTube is pausing playback on its side,
+and no Firefox setting can change that. Use one of the methods below instead.
+
+---
+
+## Method 1 — Keep the video in front and black out the screen (free, any app)
+
+The reliable free option sidesteps background play entirely. **Leave the video playing in the YouTube
+app, in the foreground, and cover the screen with a black overlay.** YouTube is never sent to the
+background, so there is nothing for it to pause.
+
+[ScreenVeil](https://play.google.com/store/apps/details?id=com.screenveil.app) is a free Android app
+that does exactly this:
+
+1. Install ScreenVeil and tap **Start Service**. Grant the "display over other apps" permission, the
+   only one it needs.
+2. Start your video in the YouTube app.
+3. Tap ScreenVeil's floating button. The screen turns black and blocks touches, so a pocket or a sleeve
+   cannot pause or skip anything.
+4. Touch the screen to show the unlock button when you want the picture back.
+
+Be clear about what this is: the screen is **still on**, just showing black. That is the point,
+because YouTube never sees it turn off. It also means that on an LCD phone the backlight stays lit, so
+you save little power. On an **AMOLED or OLED** phone, black pixels are switched off, so display power
+drops substantially. How much depends on brightness; we went through the measured
+numbers in [does dark mode save battery on AMOLED](/blog/does-dark-mode-save-battery-amoled).
+
+It works with any app that plays audio, not just YouTube, and it has 10,000+ downloads on Google Play.
 
 <ScreenVeilCTA />
 
@@ -84,93 +126,70 @@ Works with YouTube, Netflix, Spotify, podcast apps — any app you already use.
 
 ## Method 2 — NewPipe (free, open-source)
 
-[NewPipe](https://f-droid.org/en/packages/org.schabi.newpipe/) is an
-open-source YouTube client that bypasses YouTube's restrictions entirely
-because it doesn't use Google's player at all. It fetches the raw video
-stream directly.
+[NewPipe](https://f-droid.org/en/packages/org.schabi.newpipe/) is an open-source YouTube client. It
+does not use YouTube's own player, so YouTube's Premium check does not apply to it, and it supports
+genuine background play with the screen off.
 
 **What you get:**
-- Genuine background play (audio continues with screen off)
+- True background play, including with the screen locked
 - No ads
-- Download videos for offline use
+- Downloads for offline listening
 - No Google account required
 
-**The catch:** NewPipe is only available on
-[F-Droid](https://f-droid.org/en/packages/org.schabi.newpipe/), not the
-Play Store. Installing F-Droid takes about 2 minutes — you allow installs
-from unknown sources for that one app, install F-Droid, then install
-NewPipe through it. It's safe; F-Droid only hosts open-source apps with
-auditable code.
+**The catches:**
+- It is on [F-Droid](https://f-droid.org/en/packages/org.schabi.newpipe/), not the Play Store. You
+  allow installs from one extra source, install F-Droid, then install NewPipe through it.
+- It does not sign in to your Google account, so no synced subscriptions, history or playlists. You
+  can import subscriptions manually.
+- Because it works independently of YouTube's player, it **occasionally breaks** after YouTube
+  changes something. Fixes usually arrive within days through an update.
 
-NewPipe doesn't support your Google account (no watch history sync,
-no subscriptions from your existing account), which is a real limitation
-for daily use.
-
-**Best for:** People comfortable with a small setup step who want a
-completely Google-free experience.
+**Best for:** people who want real screen-off playback for free and do not mind a separate app.
 
 ---
 
-## Method 3 — Firefox Mobile with Video Background Play Fix
+## Method 3 — YouTube Premium Lite (now with background play)
 
-Firefox on Android still allows desktop-grade extensions. The
-**"Video Background Play Fix"** userscript (installed via Tampermonkey
-or Violentmonkey) intercepts YouTube's visibility calls from the browser
-extension layer.
+Premium Lite launched without background play. That changed on
+[February 24, 2026](https://www.tubefilter.com/2026/02/24/youtube-premium-lite-background-play-downloads/),
+when YouTube added background play and downloads to Lite at no extra cost. In the US it costs
+**$7.99 a month**.
 
-**Setup:**
+What Lite covers and what it does not:
 
-1. Install [Firefox for Android](https://play.google.com/store/apps/details?id=org.mozilla.firefox)
-2. In Firefox, install [Tampermonkey](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
-3. Install the [Video Background Play Fix](https://greasyfork.org/en/scripts/playlist-manager) userscript from Greasyfork
+| | Premium Lite | Premium |
+|---|---|---|
+| Price (US) | $7.99/month | $13.99/month |
+| Ad-free videos | Most videos | All videos |
+| Background play | Yes, except music videos and Shorts | Yes, everything |
+| Downloads | Yes, except music videos and Shorts | Yes |
+| YouTube Music | No | Included |
 
-**Reality check:** Google is actively patching these scripts. This method
-has broken and been fixed multiple times in 2026 already. It's unstable by
-nature — don't rely on it as your primary solution.
-
-**Best for:** Technical users who don't mind re-enabling it periodically.
-
----
-
-## Method 4 — YouTube Premium Lite ($7.99/month)
-
-In February 2026, Google expanded Premium Lite to more regions. For $7.99/month
-you get:
-
-- Official background play across all YouTube content
-- Ad-free viewing
-- No YouTube Music bundle required (unlike standard Premium at $13.99)
-
-This is the only method that's officially supported and guaranteed never to
-break. If you use YouTube for an hour or more daily, it's worth the cost just
-for the battery and sanity benefits.
-
-**Not worth it if:** You mainly want background play for occasional podcast
-or music content — in that case ScreenVeil or NewPipe covers you for free.
+If what you want in the background is podcasts, lectures or long videos, Lite covers it. If it is
+music, Lite does not, and full Premium or YouTube Music is the paid route.
 
 ---
 
-## Quick comparison
+## Which method should you use?
 
-| Method | Cost | Setup | Reliability | Works with any app |
-|---|---|---|---|---|
-| **ScreenVeil** | Free | 30 seconds | ✅ Stable | ✅ Yes |
-| NewPipe | Free | ~5 minutes | ✅ Stable | YouTube only |
-| Firefox + extension | Free | ~10 minutes | ⚠️ Unstable | YouTube only |
-| YouTube Premium Lite | $7.99/mo | Instant | ✅ Guaranteed | YouTube only |
+| Method | Cost | Setup | Reliability | Screen off? | Works with other apps |
+|---|---|---|---|---|---|
+| Firefox + add-on | Free | ~5 minutes | Intermittent | Yes, when it works | YouTube, Vimeo |
+| ScreenVeil overlay | Free | ~30 seconds | Stable | Black, but technically on | Yes, any app |
+| NewPipe | Free | ~5 minutes | Stable, rare breakage | Yes | YouTube only |
+| Premium Lite | $7.99/mo | Instant | Guaranteed | Yes | YouTube, not music |
+| Premium | $13.99/mo | Instant | Guaranteed | Yes | YouTube + Music |
 
----
+- **You were using Firefox and it just stopped:** run the checklist above once. If audio still stops
+  within seconds of switching away, move on, because it will not come back reliably.
+- **You want free and zero setup:** keep the video in front and black out the screen.
+- **You want true screen-off playback for free:** NewPipe.
+- **You listen to podcasts or long videos daily:** Premium Lite is now a fair deal.
+- **You listen in bed:** see [falling asleep to audio without screen light](/blog/fall-asleep-to-audio-without-screen-light-android)
+  for sleep timers and a dark screen.
 
-## Bottom line
-
-If you want a zero-effort free solution that works with every app and also
-saves your battery, **ScreenVeil is the right answer** — it takes 30 seconds
-to set up and has 10,000+ Android users already using it daily.
-
-If you want genuine screen-off background play and don't mind a small setup
-step, **NewPipe** is the most capable free option.
-
-If you use YouTube constantly and want an officially supported experience,
-**Premium Lite at $7.99/month** is now the cleanest paid option.
+If you want to cut down on YouTube rather than listen more, our guide to
+[blocking YouTube Shorts on Android](/blog/how-to-block-youtube-shorts-android) covers the opposite
+problem.
 
 <ScreenVeilCTA />

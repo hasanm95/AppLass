@@ -53,26 +53,26 @@ export const getMindfulGuardData = () => ({
       {
         label: localize("Privacy Model"),
         mindfulGuard: localize("Offline / Zero-Data"),
-        opal: localize("Cloud Analytics"),
+        opal: localize("On-device (per its Play listing)"),
         freedom: localize("Cloud Sync"),
       },
       {
         label: localize("Pricing"),
         mindfulGuard: localize("Free / $3.99/mo"),
-        opal: localize("$99/year Subscription"),
+        opal: localize("Limited free tier / Pro ~$99.99/year"),
         freedom: localize("$39/year Subscription"),
       },
       {
         label: localize("Blocking Tech"),
         mindfulGuard: localize("Native Android API"),
-        opal: localize("VPN (High Latency)"),
+        opal: localize("Accessibility API"),
         freedom: localize("VPN / Cross-platform"),
       },
       {
-        label: localize("Battery Impact"),
-        mindfulGuard: localize("<1%"),
-        opal: localize("High"),
-        freedom: localize("Moderate"),
+        label: localize("Reels & Shorts Limits"),
+        mindfulGuard: localize("Per-feed daily + session limits"),
+        opal: localize("App-level limits"),
+        freedom: localize("App & website blocking"),
       },
     ],
   },
@@ -119,11 +119,6 @@ export const getMindfulGuardSchema = () => ({
     "@type": "Offer",
     "price": "0",
     "priceCurrency": "USD"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "8"
   },
   "description": "Mindful Guard is a privacy-first Android app blocker and Reel Guard. It blocks distracting apps and limits short-form video — Instagram Reels, YouTube Shorts, TikTok, Facebook Reels, and Snapchat Spotlight — with daily and per-session limits. Zero telemetry, no internet requirement, blocking at the system level via native Android APIs. No VPN. No cloud. 100% on-device.",
   "url": "https://applass.com/apps/mindful-guard",
