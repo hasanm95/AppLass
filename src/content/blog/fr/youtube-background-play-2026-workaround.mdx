@@ -1,138 +1,195 @@
 ---
-title: "Lecture YouTube en arrière-plan en 2026 : Les méthodes honnêtes qui fonctionnent encore"
-description: "Google a supprimé la lecture en arrière-plan sur navigateur en janvier 2026. Voici les seules méthodes gratuites qui fonctionnent réellement — dont une qui réduit la puissance d'écran jusqu'à 60 % en même temps."
+title: "La lecture en arrière-plan YouTube ne marche plus en 2026 ? Le correctif Firefox et ce qui fonctionne encore"
+description: "YouTube a bloqué la lecture gratuite en arrière-plan dans les navigateurs mobiles en janvier 2026. Pourquoi le correctif Firefox échoue souvent, ce qui marche encore gratuitement et ce que comprend Premium Lite."
 date: "2026-04-11"
-dateModified: "2026-08-13"
+dateModified: "2026-10-23"
 category: "Android"
 author: "L'équipe AppLass"
-excerpt: "Google a supprimé la lecture en arrière-plan sur navigateur en janvier 2026. Voici les seules méthodes gratuites qui fonctionnent réellement — dont une qui réduit la puissance d'écran jusqu'à 60 % en même temps."
+excerpt: "En janvier 2026, Google a confirmé que la lecture en arrière-plan dans les navigateurs mobiles est réservée à Premium, ce qui a cassé les astuces Brave, Samsung Internet et Firefox. Gratuitement, il reste NewPipe et la vidéo au premier plan avec l'écran noir."
 thumbnail: "../../../assets/blogs/youtube-background-play-workaround.png"
-keywords: "lecture youtube arriere plan android 2026, ecran eteint youtube android, lecture youtube arriere plan gratuit, screenveil android, economiseur batterie amoled"
-tags: ["Android", "YouTube", "Batterie"]
+keywords: "lecture arrière-plan youtube ne marche plus, youtube arrière-plan firefox android, video background play fix, youtube premium lite arrière-plan"
+tags: ["Android", "YouTube", "Firefox", "Batterie"]
 featured: true
-breadcrumbName: "Lecture Arrière-plan YouTube 2026"
+breadcrumbName: "Lecture en arrière-plan YouTube 2026"
 sidebarApps:
   - screenveil
 faqs:
-  - question: "La lecture en arrière-plan de YouTube fonctionne-t-elle toujours sur Android en 2026 ?"
-    answer: "Les solutions basées sur le navigateur ont cessé de fonctionner en janvier 2026 lorsque Google a déplacé l'application du côté serveur. ScreenVeil (application Android gratuite) fonctionne toujours en superposant un écran noir sans déclencher la détection de verrouillage de YouTube. NewPipe (open-source) fonctionne également."
-  - question: "Quel est le moyen gratuit le plus simple de lire YouTube avec l'écran éteint en 2026 ?"
-    answer: "ScreenVeil est l'option la plus simple — installez l'application Android gratuite, lancez votre vidéo YouTube, appuyez sur le bouton ScreenVeil et votre écran devient noir tandis que l'audio continue. Sur les téléphones AMOLED, cela réduit aussi la puissance d'écran jusqu'à 60 % à pleine luminosité."
-  - question: "Pourquoi la lecture en arrière-plan de YouTube a-t-elle cessé de fonctionner sur Brave et Samsung Internet ?"
-    answer: "En janvier 2026, Google a déplacé la détection de lecture en arrière-plan de YouTube du côté serveur. Auparavant, le lecteur YouTube s'appuyait sur l'API Page Visibility du navigateur, qui pouvait être bloquée. Désormais, le lecteur signale directement son propre état de visibilité, contournant toute solution au niveau du navigateur."
-  - question: "ScreenVeil fonctionne-t-il avec d'autres applications que YouTube ?"
-    answer: "Oui. ScreenVeil superpose un écran noir au niveau du système d'exploitation, il fonctionne donc avec n'importe quelle application — YouTube, Netflix, Spotify, des applications de podcast ou tout autre lecteur vidéo/audio."
+  - question: "Pourquoi la lecture en arrière-plan YouTube ne fonctionne plus dans Firefox sur Android ?"
+    answer: "Depuis fin janvier 2026, YouTube arrête la lecture pour les comptes sans Premium dès qu'un navigateur mobile perd le focus, et Google a confirmé que l'arrière-plan est réservé à Premium. L'extension Firefox Video Background Play Fix masque le signal de visibilité du navigateur : cela aide encore sur certains comptes, mais YouTube peut arrêter la lecture malgré tout."
+  - question: "L'extension Video Background Play Fix fonctionne-t-elle encore en 2026 ?"
+    answer: "Parfois. L'extension (version 1.8.1, dernière mise à jour en novembre 2024) bloque les API Page Visibility et Fullscreen dans Firefox pour Android. Depuis le changement de janvier 2026, des utilisateurs la voient fonctionner des jours ou des semaines puis cesser sans prévenir. Ne comptez pas dessus."
+  - question: "La lecture en arrière-plan YouTube fonctionne-t-elle encore dans Brave ou Samsung Internet ?"
+    answer: "Pas de façon fiable pour les comptes gratuits. Les signalements d'utilisateurs de Brave, Samsung Internet, Vivaldi et Edge ont commencé en janvier 2026, et Google a confirmé avoir aligné l'expérience sur sa règle Premium sur toutes les plateformes. Les réglages du navigateur et le mode ordinateur ne suffisent plus."
+  - question: "YouTube Premium Lite inclut-il la lecture en arrière-plan ?"
+    answer: "Oui, depuis fin février 2026. YouTube a ajouté la lecture en arrière-plan et les téléchargements à Premium Lite sans changer le prix, 7,99 $ par mois aux États-Unis. Les deux fonctions excluent les clips musicaux et les Shorts, et la publicité reste présente sur la musique."
+  - question: "Quelle est la façon gratuite la plus simple d'écouter YouTube avec l'écran noir ?"
+    answer: "Laissez la vidéo tourner dans l'application YouTube et couvrez l'écran d'une superposition noire comme ScreenVeil. L'application ne passe jamais en arrière-plan, donc rien n'est interrompu, et les touches sont bloquées. L'écran reste techniquement allumé, il affiche simplement du noir."
+  - question: "NewPipe fonctionne-t-il encore en 2026 ?"
+    answer: "Oui. NewPipe est un client YouTube libre et gratuit disponible sur F-Droid, avec une vraie lecture en arrière-plan et sans compte Google. Comme il n'utilise pas le lecteur officiel, il casse parfois après un changement côté YouTube et se répare avec une mise à jour. Il ne synchronise ni vos abonnements ni votre historique."
 ---
 
 import ScreenVeilCTA from "@/components/blog/ScreenVeilCTA.astro";
 
-Si vous avez atterri ici après qu'une astuce de navigateur a cessé de fonctionner, vous n'êtes pas seul.
-En janvier 2026, Google a déplacé l'application de la lecture en arrière-plan de YouTube du côté serveur — ce qui signifie que chaque contournement de navigateur Chromium (Brave, Samsung Internet, Vivaldi, Edge) est désormais définitivement hors d'usage. L'audio s'arrête dès que votre écran s'éteint, quel que soit le paramètre que vous activez.
+**En octobre 2026, la lecture gratuite en arrière-plan de YouTube dans les navigateurs mobiles a quasiment
+disparu.** Depuis fin janvier 2026, YouTube arrête la lecture pour les comptes sans Premium dès qu'un
+navigateur mobile perd le focus, et Google a confirmé le changement. Les astuces Brave, Samsung Internet,
+Vivaldi et Edge ne marchent plus, et c'est pourquoi l'extension Firefox populaire fonctionne certains jours
+et pas d'autres.
 
-Ce guide ignore complètement les méthodes obsolètes. Voici ce qui fonctionne encore en mai 2026.
-
----
-
-## Pourquoi tout a cassé en janvier 2026
-
-YouTube s'appuyait auparavant sur l'**API Page Visibility** du navigateur pour détecter quand un onglet était mis en arrière-plan. Des paramètres de navigateur astucieux pouvaient supprimer ce signal.
-Les ingénieurs de Google ont corrigé cela en déplaçant la détection côté serveur : le lecteur YouTube signale désormais son propre état de visibilité directement, indépendamment de ce que le navigateur lui dit. Aucun flag de navigateur ne peut outrepasser cela.
-
-Méthodes confirmées comme mortes en 2026 :
-
-- Astuce Samsung Internet "site desktop + écran de verrouillage"
-- Paramètre de lecture vidéo en arrière-plan intégré de Brave
-- Contournements d'onglet en arrière-plan de Vivaldi et Edge
-- N'importe quel navigateur basé sur Chromium, point final.
+Deux solutions gratuites tiennent : **NewPipe**, un client YouTube libre, et **garder la vidéo au premier
+plan avec l'écran passé au noir**. L'option payante s'est améliorée : **Premium Lite inclut désormais
+l'arrière-plan**. Tous les détails ci-dessous, à commencer par le correctif Firefox que la plupart cherchent.
 
 ---
 
-## Méthode 1 — ScreenVeil (gratuit, fonctionne avec n'importe quelle app) ⚡ Recommandé
+## Qu'est-ce qui a changé en janvier 2026 ?
 
-C'est la solution la plus simple et la plus négligée. Au lieu de tromper YouTube pour qu'il joue en arrière-plan, **ScreenVeil occulte votre écran pendant que l'audio continue de jouer normalement**.
+Les signalements ont commencé vers le 12 janvier 2026, d'abord chez les utilisateurs de Brave, puis de
+Samsung Internet, Vivaldi et Edge. Fin janvier, Google a confirmé le changement à
+[Android Authority](https://www.androidauthority.com/youtube-background-play-broken-3636179/) et
+[9to5Google](https://9to5google.com/2026/02/02/youtube-background-playback-workarounds-not-working-third-party-browsers/) :
+la lecture en arrière-plan est censée être une fonction exclusive des membres Premium.
 
-Voici l'idée clé : la vérification de la lecture en arrière-plan de YouTube ne se déclenche que lorsque votre écran s'**éteint** via le bouton d'alimentation ou le verrouillage automatique. ScreenVeil superpose une couche noire pure *sans* réellement éteindre l'écran — ainsi, YouTube ne reçoit jamais le signal de verrouillage et l'audio joue sans interruption.
+En pratique : quand un compte gratuit lit YouTube dans un navigateur mobile et que vous changez
+d'application ou éteignez l'écran, YouTube met en pause, quoi que le navigateur signale. Les réglages du
+navigateur et l'ancienne astuce « version ordinateur » n'y changent plus rien.
 
-**Comment l'utiliser :**
-
-1. Installez [ScreenVeil](https://play.google.com/store/apps/details?id=com.screenveil.app) (gratuit, sans publicité, sans compte)
-2. Ouvrez YouTube et lancez votre vidéo
-3. Appuyez sur le bouton flottant ScreenVeil — l'écran devient noir instantanément
-4. L'audio continue. Touchez n'importe où pour révéler le bouton de déverrouillage
-
-**Bonus :** Sur les téléphones AMOLED/OLED (Samsung Galaxy, Pixel, OnePlus), une superposition noire véritable éteint complètement les pixels, réduisant la **puissance d'écran jusqu'à 60 %** par rapport à un écran allumé. Cela consomme en réalité *moins* d'énergie qu'une lecture en arrière-plan classique.
-
-Fonctionne avec YouTube, Netflix, Spotify, les applications de podcast — n'importe quelle application que vous utilisez déjà.
-
-<ScreenVeilCTA />
+| Méthode | État pour les comptes gratuits, oct. 2026 |
+|---|---|
+| Samsung Internet « version ordinateur + verrouillage » | Cassée |
+| Réglage de lecture vidéo en arrière-plan de Brave | Cassée ou intermittente |
+| Vivaldi, Edge et autres navigateurs Chromium | Cassée |
+| Firefox + extension Video Background Play Fix | Intermittente, sur certains comptes |
+| NewPipe (F-Droid) | Fonctionne |
+| Application YouTube au premier plan + superposition noire | Fonctionne |
+| YouTube Premium ou Premium Lite | Fonctionne, officiellement |
 
 ---
 
-## Méthode 2 — NewPipe (gratuit, open-source)
+## Pourquoi le correctif Firefox ne fonctionne plus ?
 
-[NewPipe](https://f-droid.org/en/packages/org.schabi.newpipe/) est un client YouTube open-source qui contourne entièrement les restrictions de YouTube car il n'utilise pas du tout le lecteur de Google. Il récupère directement le flux vidéo brut.
+**Parce que l'extension corrige le côté navigateur, alors que depuis janvier 2026 YouTube vérifie
+lui-même.** [Video Background Play Fix](https://addons.mozilla.org/fr/firefox/addon/video-background-play-fix/)
+est une extension pour Firefox sur Android (environ 229 000 utilisateurs) qui bloque les API Page
+Visibility et Fullscreen, pour que YouTube ne sache jamais que l'onglet est passé en arrière-plan. Sa
+dernière mise à jour, la version 1.8.1, date de novembre 2024, avant le blocage actuel.
+
+Elle marche encore chez certains, car le changement n'a pas touché tous les comptes en même temps et ne
+détecte pas tous les cas. Des utilisateurs la voient fonctionner des jours ou des semaines, puis cesser du
+jour au lendemain.
+
+Si elle ne marche plus chez vous, suivez cette liste dans l'ordre :
+
+1. **Mettez Firefox à jour.** L'extension demande Firefox 82 ou plus récent pour Android. Mettez à jour
+   depuis le Play Store.
+2. **Vérifiez que l'extension est activée.** Menu Firefox → Modules complémentaires → Video Background
+   Play Fix → activée. Si vous utilisez des onglets privés, activez aussi « Autoriser en navigation privée ».
+3. **Rechargez YouTube après l'activation.** L'extension n'agit que sur les pages chargées ensuite.
+4. **Testez.** Lancez une vidéo dans Firefox, appuyez sur Accueil ou verrouillez l'écran, attendez
+   quelques secondes. Si le son s'arrête à chaque fois, YouTube applique le blocage à votre compte.
+
+Certains utilisateurs signalent un succès avec un changeur d'user-agent, selon
+[Tech Advisor](https://www.techadvisor.com/article/3051828/youtube-blocks-background-playback-in-mobile-browsers.html).
+C'est le même jeu du chat et de la souris : ça marche jusqu'à ce que YouTube s'en aperçoive.
+
+**Si rien de tout cela ne marche, l'extension n'est pas en cause.** YouTube met en pause de son côté, et
+aucun réglage de Firefox n'y peut rien. Passez à l'une des méthodes ci-dessous.
+
+---
+
+## Méthode 1 — Garder la vidéo au premier plan et passer l'écran au noir (gratuit, toute application)
+
+La solution gratuite fiable contourne complètement la question de l'arrière-plan. **Laissez la vidéo
+tourner dans l'application YouTube, au premier plan, et couvrez l'écran d'une superposition noire.**
+YouTube ne passe jamais en arrière-plan, il n'y a donc rien à mettre en pause.
+
+[ScreenVeil](https://play.google.com/store/apps/details?id=com.screenveil.app) est une application
+Android gratuite qui fait exactement cela :
+
+1. Installez ScreenVeil et appuyez sur **Start Service**. Accordez l'autorisation « Afficher par-dessus
+   d'autres applications », la seule nécessaire.
+2. Lancez votre vidéo dans l'application YouTube.
+3. Appuyez sur le bouton flottant de ScreenVeil. L'écran devient noir et bloque les touches : une poche ou
+   une manche ne peut rien mettre en pause.
+4. Touchez l'écran pour afficher le bouton de déverrouillage quand vous voulez retrouver l'image.
+
+Soyons clairs : l'écran est **toujours allumé**, il affiche simplement du noir. C'est tout l'intérêt,
+puisque YouTube ne le voit jamais s'éteindre. Sur un téléphone LCD, le rétroéclairage reste allumé et
+l'économie est faible. Sur un écran **AMOLED ou OLED**, les pixels noirs sont éteints et la consommation de
+l'écran baisse nettement. L'ampleur dépend de la luminosité ; les chiffres mesurés sont dans
+[le mode sombre économise-t-il la batterie sur AMOLED](/fr/blog/does-dark-mode-save-battery-amoled).
+
+Cela fonctionne avec toute application qui joue du son, pas seulement YouTube, et l'application compte plus
+de 10 000 téléchargements sur Google Play.
+
+<ScreenVeilCTA lang="fr" />
+
+---
+
+## Méthode 2 — NewPipe (gratuit, libre)
+
+[NewPipe](https://f-droid.org/fr/packages/org.schabi.newpipe/) est un client YouTube libre. Il n'utilise
+pas le lecteur de YouTube, donc la vérification Premium ne s'applique pas, et il offre une vraie lecture en
+arrière-plan écran éteint.
 
 **Ce que vous obtenez :**
-- Véritable lecture en arrière-plan (l'audio continue avec l'écran éteint)
+- Une vraie lecture en arrière-plan, même écran verrouillé
 - Pas de publicité
-- Téléchargement de vidéos pour une utilisation hors ligne
-- Aucun compte Google requis
+- Des téléchargements pour écouter hors ligne
+- Aucun compte Google nécessaire
 
-**Le bémol :** NewPipe est uniquement disponible sur [F-Droid](https://f-droid.org/en/packages/org.schabi.newpipe/), pas sur le Play Store. L'installation de F-Droid prend environ 2 minutes — vous autorisez les installations de sources inconnues pour cette application, installez F-Droid, puis installez NewPipe via celui-ci. C'est sûr ; F-Droid n'héberge que des applications open-source avec un code auditable.
+**Les contreparties :**
+- Il est sur [F-Droid](https://f-droid.org/fr/packages/org.schabi.newpipe/), pas sur le Play Store. Vous
+  autorisez une source d'installation supplémentaire, installez F-Droid, puis NewPipe via F-Droid.
+- Pas de connexion à votre compte Google : ni abonnements synchronisés, ni historique, ni playlists. Les
+  abonnements peuvent être importés à la main.
+- Comme il fonctionne indépendamment du lecteur YouTube, il **casse parfois** quand YouTube change quelque
+  chose. Les correctifs arrivent généralement en quelques jours.
 
-NewPipe ne prend pas en charge votre compte Google (pas de synchronisation de l'historique de visionnage, pas d'abonnements de votre compte existant), ce qui est une réelle limitation pour une utilisation quotidienne.
-
-**Idéal pour :** Les personnes à l'aise avec une petite étape de configuration qui souhaitent une expérience totalement sans Google.
-
----
-
-## Méthode 3 — Firefox Mobile avec Video Background Play Fix
-
-Firefox sur Android permet toujours des extensions de qualité bureau. Le script utilisateur **"Video Background Play Fix"** (installé via Tampermonkey ou Violentmonkey) intercepte les appels de visibilité de YouTube depuis la couche d'extension du navigateur.
-
-**Configuration :**
-
-1. Installez [Firefox pour Android](https://play.google.com/store/apps/details?id=org.mozilla.firefox)
-2. Dans Firefox, installez [Tampermonkey](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
-3. Installez le script utilisateur [Video Background Play Fix](https://greasyfork.org/en/scripts/playlist-manager) depuis Greasyfork
-
-**Réalité :** Google patche activement ces scripts. Cette méthode a cassé et a été réparée plusieurs fois déjà en 2026. Elle est instable par nature — ne comptez pas sur elle comme solution principale.
-
-**Idéal pour :** Les utilisateurs techniques qui ne craignent pas de le réactiver périodiquement.
+**Idéal pour :** ceux qui veulent un vrai écran éteint gratuitement et acceptent une application à part.
 
 ---
 
-## Méthode 4 — YouTube Premium Lite (7,99 $/mois)
+## Méthode 3 — YouTube Premium Lite (désormais avec l'arrière-plan)
 
-En février 2026, Google a étendu Premium Lite à davantage de régions. Pour 7,99 $/mois, vous obtenez :
+Premium Lite a été lancé sans lecture en arrière-plan. Cela a changé le
+[24 février 2026](https://www.tubefilter.com/2026/02/24/youtube-premium-lite-background-play-downloads/),
+quand YouTube a ajouté l'arrière-plan et les téléchargements à Lite sans surcoût. Aux États-Unis, Lite
+coûte **7,99 $ par mois** ; les prix en France et ailleurs diffèrent.
 
-- Lecture en arrière-plan officielle sur tout le contenu YouTube
-- Visionnage sans publicité
-- Pas de forfait YouTube Music requis (contrairement au Premium standard à 13,99 $)
+Ce que Lite couvre et ne couvre pas :
 
-C'est la seule méthode officiellement prise en charge et garantie de ne jamais casser. Si vous utilisez YouTube une heure ou plus par jour, cela vaut le coût juste pour les bénéfices sur la batterie et la tranquillité d'esprit.
+| | Premium Lite | Premium |
+|---|---|---|
+| Prix (États-Unis) | 7,99 $/mois | 13,99 $/mois |
+| Vidéos sans publicité | La plupart | Toutes |
+| Lecture en arrière-plan | Oui, sauf clips musicaux et Shorts | Oui, tout |
+| Téléchargements | Oui, sauf clips musicaux et Shorts | Oui |
+| YouTube Music | Non | Inclus |
 
-**Pas intéressant si :** Vous voulez principalement la lecture en arrière-plan pour du contenu occasionnel de podcast ou de musique — dans ce cas, ScreenVeil ou NewPipe vous couvre gratuitement.
-
----
-
-## Comparaison rapide
-
-| Méthode | Coût | Configuration | Fiabilité | Fonctionne avec n'importe quelle app |
-|---|---|---|---|---|
-| **ScreenVeil** | Gratuit | 30 secondes | ✅ Stable | ✅ Oui |
-| NewPipe | Gratuit | ~5 minutes | ✅ Stable | YouTube uniquement |
-| Firefox + extension | Gratuit | ~10 minutes | ⚠️ Instable | YouTube uniquement |
-| YouTube Premium Lite | 7,99 $/mois | Instantané | ✅ Garanti | YouTube uniquement |
+Si vous écoutez des podcasts, des cours ou de longues vidéos en arrière-plan, Lite suffit. Pour la musique,
+non : il faut Premium ou YouTube Music.
 
 ---
 
-## En résumé
+## Quelle méthode choisir ?
 
-Si vous voulez une solution gratuite sans effort qui fonctionne avec chaque application et économise également votre batterie, **ScreenVeil est la bonne réponse** — cela prend 30 secondes à configurer et plus de 10 000 utilisateurs Android l'utilisent déjà quotidiennement.
+| Méthode | Coût | Mise en place | Fiabilité | Écran éteint ? | Autres applications |
+|---|---|---|---|---|---|
+| Firefox + extension | Gratuit | ~5 minutes | Intermittente | Oui, quand ça marche | YouTube, Vimeo |
+| Superposition ScreenVeil | Gratuit | ~30 secondes | Stable | Noir, techniquement allumé | Oui, toutes |
+| NewPipe | Gratuit | ~5 minutes | Stable, rares pannes | Oui | YouTube seulement |
+| Premium Lite | 7,99 $/mois | Immédiate | Garantie | Oui | YouTube, pas la musique |
+| Premium | 13,99 $/mois | Immédiate | Garantie | Oui | YouTube + Music |
 
-Si vous voulez une véritable lecture en arrière-plan avec écran éteint et que vous n'avez pas peur d'une petite étape de configuration, **NewPipe** est l'option gratuite la plus performante.
+- **Firefox vient de lâcher :** suivez la liste ci-dessus une fois. Si le son s'arrête toujours au bout de
+  quelques secondes, passez à autre chose, ça ne reviendra pas de façon fiable.
+- **Gratuit et sans configuration :** vidéo au premier plan, écran noir.
+- **Gratuit avec un vrai écran éteint :** NewPipe.
+- **Podcasts ou longues vidéos tous les jours :** Premium Lite est désormais une bonne affaire.
 
-Si vous utilisez constamment YouTube et que vous voulez une expérience officiellement prise en charge, **Premium Lite à 7,99 $/mois** est désormais l'option payante la plus propre.
+Si vous voulez plutôt réduire YouTube, notre guide pour
+[bloquer les Shorts YouTube sur Android](/fr/blog/how-to-block-youtube-shorts-android) traite le problème
+inverse.
 
-<ScreenVeilCTA />
+<ScreenVeilCTA lang="fr" />

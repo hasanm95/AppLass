@@ -2,7 +2,7 @@
 title: "Pourquoi votre réveil Android ne sonne pas (et comment les alarmes exactes y remédient)"
 description: "Réveil Android en retard ou muet ? L'optimisation de batterie et Doze retardent les alarmes planifiées en arrière-plan. Voici la cause et comment les alarmes exactes garantissent une sonnerie à l'heure."
 date: "2026-10-04"
-dateModified: "2026-10-04"
+dateModified: "2026-10-23"
 category: "Applications Android"
 author: "Équipe AppLass"
 keywords: "réveil android ne sonne pas, alarme en retard android, alarme n'a pas sonné android, mode doze alarme, optimisation batterie alarme, alarme exacte android"
@@ -12,6 +12,8 @@ tags:
   - technique
   - réveil
   - batterie
+  - arisely
+sidebarApps:
   - arisely
 faqs:
   - question: "Pourquoi mon réveil Android n'a-t-il pas sonné ?"
@@ -60,7 +62,7 @@ Même avec des alarmes exactes, vous pouvez ajouter une fiabilité supplémentai
 
 ## Un réveil fondé sur les trois
 
-[Arisely](/fr/blog/arisely-alarm-clock-for-heavy-sleepers) utilise des alarmes à l'heure exacte, sonne sur le canal audio des alarmes avec un boost extra fort et s'affiche en plein écran par-dessus l'écran verrouillé — il se déclenche donc à l'heure et fort, même téléphone verrouillé ou application fermée depuis des heures. Gratuit, aucun compte, aucune donnée collectée.
+[Arisely](/fr/blog/arisely-alarm-clock-for-heavy-sleepers) utilise des alarmes à l'heure exacte, sonne sur le canal audio des alarmes avec un boost extra fort et s'affiche en plein écran par-dessus l'écran verrouillé — il se déclenche donc à l'heure et fort, même téléphone verrouillé ou application fermée depuis des heures. Gratuit, aucun compte, et la bannière publicitaire de la version gratuite n'apparaît jamais sur l'écran de sonnerie.
 
 [**Télécharger Arisely sur Google Play**](https://play.google.com/store/apps/details?id=com.arisely&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dexact-alarms%26utm_content%3Dwhy-android-alarms-dont-go-off-exact-alarms)
 
