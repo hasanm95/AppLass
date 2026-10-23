@@ -70,4 +70,4 @@ La répétition fragmente votre sommeil et entraîne le réflexe d'éteindre san
 
 ---
 
-**À lire aussi :** [Pourquoi votre réveil Android ne sonne pas](/fr/blog/arisely-alarm-clock-for-heavy-sleepers) · [Tous les articles](/fr/blog)
+**À lire aussi :** [Pourquoi votre réveil Android ne sonne pas](/fr/blog/why-android-alarms-dont-go-off-exact-alarms) · [Tous les articles](/fr/blog)
