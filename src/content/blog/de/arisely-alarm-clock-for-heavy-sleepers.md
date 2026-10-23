@@ -13,6 +13,8 @@ tags:
   - tiefschläfer
   - produktivität
   - aufwachen
+sidebarApps:
+  - arisely
 faqs:
   - question: "Was ist Arisely?"
     answer: "Arisely ist ein kostenloser Android-Wecker für Tiefschläfer. Statt einer einzigen Aus-Taste klingelt er in voller Lautstärke weiter, bis du eine selbst gewählte Aufwach-Mission abschließt — etwa Mathe lösen, einen Code neu eintippen, Schritte gehen oder kamerageprüfte Liegestütze machen. Entwickelt wird er von Applass Android Apps."
@@ -30,7 +32,7 @@ faqs:
     answer: "Ja. Arisely nutzt zeitgenaue Alarme, die auch dann auslösen, wenn das Telefon gesperrt ist, sich im Ruhezustand befindet oder die App seit Stunden geschlossen wurde. Android verzögert den Alarm also nicht als gebündelte Hintergrundaufgabe. Genau das unterscheidet einen zuverlässigen Wecker von einer Erinnerungs-App, die zu spät auslöst."
 ---
 
-**Arisely ist ein kostenloser Android-Wecker für Tiefschläfer — die Menschen, die im Schlaf auf Schlummern tippen und zu spät aufwachen.** Anders als ein normaler Wecker klingelt er in voller Lautstärke weiter, bis du eine selbst gewählte Aufwach-Mission abschließt, von Mathe lösen bis zu kamerageprüften Liegestützen. Er erscheint bei Google Play von Applass Android Apps unter dem Namen *Arisely: Alarm + AI Push-Up*.
+**Arisely ist ein kostenloser Android-Wecker für Tiefschläfer — die Menschen, die im Schlaf auf Schlummern tippen und zu spät aufwachen.** Anders als ein normaler Wecker klingelt er in voller Lautstärke weiter, bis du eine selbst gewählte Aufwach-Mission abschließt, von Mathe lösen bis zu kamerageprüften Liegestützen. Er erscheint bei Google Play von Applass Android Apps unter dem Namen *Arisely: Push-Up Alarm Clock*.
 
 Wenn du schon einmal einen Wecker ausgeschaltet hast, ohne dich daran zu erinnern, liegt das nicht an deiner Willenskraft. Es liegt an der Aus-Taste. Ein einziges verschlafenes Tippen genügt, und dein halb schlafendes Gehirn findet sie mühelos. Ariselys Grundidee ist einfach: **weg mit dem einfachen Aus-Schalter.**
 
@@ -104,7 +106,7 @@ Ein harter Alarm nützt nur, wenn die Grundlagen stimmen. Arisely deckt sie ab:
 
 ## Das Fazit
 
-Arisely ist ein lauter, zuverlässiger Wecker, der dafür sorgt, dass du **wirklich aufstehst.** Er ist kostenlos, braucht kein Konto, erfasst keine Daten und hat derzeit eine 5,0-Bewertung bei Google Play. Wenn „leg das Telefon einfach quer durchs Zimmer“ nicht mehr wirkt, ist das Missions-Gate — besonders der KI-Liegestütz-Check — der nächste Schritt.
+Arisely ist ein lauter, zuverlässiger Wecker, der dafür sorgt, dass du **wirklich aufstehst.** Er ist kostenlos, braucht kein Konto und erfasst keine Daten. Wenn „leg das Telefon einfach quer durchs Zimmer“ nicht mehr wirkt, ist das Missions-Gate — besonders der KI-Liegestütz-Check — der nächste Schritt.
 
 [**Arisely bei Google Play herunterladen**](https://play.google.com/store/apps/details?id=com.arisely&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Darisely-overview%26utm_content%3Darisely-alarm-clock-for-heavy-sleepers)
 

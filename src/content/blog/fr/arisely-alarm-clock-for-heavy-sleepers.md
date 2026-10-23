@@ -13,6 +13,8 @@ tags:
   - gros dormeurs
   - productivité
   - se réveiller
+sidebarApps:
+  - arisely
 faqs:
   - question: "Qu'est-ce qu'Arisely ?"
     answer: "Arisely est un réveil Android gratuit conçu pour les gros dormeurs. Au lieu d'un simple bouton d'arrêt, il continue de sonner à plein volume jusqu'à ce que vous terminiez une mission de réveil de votre choix : résoudre un calcul, retaper un code, faire des pas ou des pompes vérifiées par la caméra. Il est développé par Applass Android Apps."
@@ -30,7 +32,7 @@ faqs:
     answer: "Oui. Arisely utilise des alarmes à l'heure exacte qui se déclenchent même lorsque le téléphone est verrouillé, en veille ou que l'application est fermée depuis des heures : Android ne retarde donc pas l'alarme comme une tâche groupée en arrière-plan. C'est ce qui distingue un vrai réveil d'une application de rappel qui sonne en retard."
 ---
 
-**Arisely est un réveil Android gratuit conçu pour les gros dormeurs — celles et ceux qui appuient sur répétition en dormant et se réveillent en retard.** Contrairement à un réveil classique, il continue de sonner à plein volume jusqu'à ce que vous terminiez une mission de réveil de votre choix, du calcul aux pompes vérifiées par la caméra. Il est publié sur Google Play par Applass Android Apps sous le nom *Arisely: Alarm + AI Push-Up*.
+**Arisely est un réveil Android gratuit conçu pour les gros dormeurs — celles et ceux qui appuient sur répétition en dormant et se réveillent en retard.** Contrairement à un réveil classique, il continue de sonner à plein volume jusqu'à ce que vous terminiez une mission de réveil de votre choix, du calcul aux pompes vérifiées par la caméra. Il est publié sur Google Play par Applass Android Apps sous le nom *Arisely: Push-Up Alarm Clock*.
 
 Si vous avez déjà éteint un réveil sans vous en souvenir, le problème n'est pas votre volonté. C'est le bouton d'arrêt. Un seul geste ensommeillé suffit, et votre cerveau à moitié endormi le trouve très facilement. L'idée d'Arisely est simple : **supprimer le bouton d'arrêt facile.**
 
@@ -104,7 +106,7 @@ Une alarme intransigeante n'est utile que si les bases sont solides. Arisely les
 
 ## En résumé
 
-Arisely est un réveil puissant et fiable qui s'assure que vous **vous levez vraiment.** Il est gratuit, ne nécessite aucun compte, ne collecte aucune donnée et affiche actuellement une note de 5,0 sur Google Play. Si « pose simplement le téléphone à l'autre bout de la pièce » a cessé de fonctionner, la barrière de mission — en particulier le contrôle de pompes par IA — est le niveau supérieur.
+Arisely est un réveil puissant et fiable qui s'assure que vous **vous levez vraiment.** Il est gratuit, ne nécessite aucun compte et ne collecte aucune donnée. Si « pose simplement le téléphone à l'autre bout de la pièce » a cessé de fonctionner, la barrière de mission — en particulier le contrôle de pompes par IA — est le niveau supérieur.
 
 [**Télécharger Arisely sur Google Play**](https://play.google.com/store/apps/details?id=com.arisely&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Darisely-overview%26utm_content%3Darisely-alarm-clock-for-heavy-sleepers)
 

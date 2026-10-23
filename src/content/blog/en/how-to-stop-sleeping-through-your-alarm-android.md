@@ -13,6 +13,8 @@ tags:
   - sleep
   - wake up
   - arisely
+sidebarApps:
+  - arisely
 faqs:
   - question: "Why do I keep sleeping through my alarm?"
     answer: "Usually three things combine: sleep inertia (your brain is groggiest in deep sleep and can dismiss an alarm without you remembering), the one-tap off button that your half-asleep hand finds by reflex, and Android battery optimization delaying or silencing the alarm. Fixing all three — not just buying a louder tone — is what stops it."

@@ -13,6 +13,8 @@ tags:
   - productivity
   - wake up
   - arisely
+sidebarApps:
+  - arisely
 faqs:
   - question: "What is a mission alarm clock?"
     answer: "A mission alarm is an alarm that won't turn off until you complete a task — such as solving a math problem, retyping a code, taking steps, scanning a barcode, or doing push-ups. Because the task requires real attention, you can't dismiss it by reflex while half-asleep, which is how it defeats the snooze habit."

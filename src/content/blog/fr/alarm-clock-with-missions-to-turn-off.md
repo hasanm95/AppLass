@@ -13,6 +13,8 @@ tags:
   - productivité
   - se réveiller
   - arisely
+sidebarApps:
+  - arisely
 faqs:
   - question: "Qu'est-ce qu'un réveil à missions ?"
     answer: "Un réveil à mission est une alarme qui ne s'éteint pas tant que vous n'avez pas accompli une tâche — résoudre un calcul, retaper un code, faire des pas, scanner un code-barres ou faire des pompes. Comme la tâche exige une vraie attention, vous ne pouvez pas l'éteindre par réflexe à moitié endormi, ce qui lui permet de vaincre l'habitude de la répétition."

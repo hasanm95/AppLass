@@ -13,6 +13,8 @@ tags:
   - alarm clock
   - battery
   - arisely
+sidebarApps:
+  - arisely
 faqs:
   - question: "Why didn't my Android alarm go off?"
     answer: "Most often, Android's battery optimization or Doze mode delayed the app that scheduled it. Alarms set as ordinary background work can be batched and deferred to save power, so they fire late or get skipped. Alarms scheduled as exact alarms are exempt and fire at the precise set time, even in Doze."

@@ -13,6 +13,8 @@ tags:
   - produktivität
   - aufwachen
   - arisely
+sidebarApps:
+  - arisely
 faqs:
   - question: "Was ist ein Wecker mit Missionen?"
     answer: "Ein Missions-Wecker ist ein Alarm, der sich erst abschalten lässt, wenn du eine Aufgabe erledigst — etwa eine Rechenaufgabe lösen, einen Code neu eintippen, Schritte gehen, einen Barcode scannen oder Liegestütze machen. Weil die Aufgabe echte Aufmerksamkeit verlangt, kannst du sie halb schlafend nicht reflexartig abstellen — so besiegt er die Schlummer-Gewohnheit."

@@ -40,7 +40,7 @@ Ob Sie als Studentin lernen, als Entwickler programmieren oder als Unternehmerin
 Ich habe monatelang Apps wie Opal und Freedom getestet, aber es hat sich nie richtig angefühlt:
 
 - Manche waren **viel zu teuer** für das, was sie boten
-- Andere wollten meine privaten Daten über ein VPN durch ihre Server leiten
+- Andere brauchten ein VPN, um meinen Datenverkehr zu filtern – ich hätte ihnen also alles anvertrauen müssen
 - Am schlimmsten: Die meisten waren „weich“ — ich konnte auf „5 Minuten mehr“ tippen und meine eigenen Ziele umgehen
 
 Als Entwickler wusste ich, dass ich etwas mit **mathematischer Präzision** und **Zero-Telemetry-Datenschutz** brauchte.
