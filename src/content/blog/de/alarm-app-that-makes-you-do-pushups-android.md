@@ -2,7 +2,7 @@
 title: "Die Wecker-App, die dich zum Aufwachen Liegestütze machen lässt (KI-geprüft)"
 description: "Du suchst einen Android-Wecker, der dich vor dem Ausschalten Liegestütze machen lässt? Arisely prüft jede Wiederholung per Kamera in Echtzeit — vortäuschen oder überspringen geht nicht."
 date: "2026-10-04"
-dateModified: "2026-10-04"
+dateModified: "2026-10-23"
 category: "Android-Apps"
 author: "AppLass-Team"
 keywords: "wecker app liegestütze, liegestütz wecker android, ki liegestütz wecker, workout wecker, wecker der zum sport zwingt, arisely liegestütze"
@@ -13,6 +13,8 @@ tags:
   - fitness
   - aufwachen
   - arisely
+sidebarApps:
+  - arisely
 faqs:
   - question: "Gibt es eine Wecker-App, die einen Liegestütze machen lässt?"
     answer: "Ja. Arisely für Android hat eine KI-Liegestütz-Mission: Du legst eine Anzahl Liegestütze fest, und der Alarm klingelt weiter, bis du sie vor der Kamera deines Telefons abgeschlossen hast. Arisely prüft deine Form in Echtzeit, du kannst die Wiederholungen also weder vortäuschen noch wegtippen."
@@ -21,7 +23,7 @@ faqs:
   - question: "Warum wirken Liegestütze besser als eine Schlummertaste?"
     answer: "Schlummern hält dich liegend und benommen, sodass du wieder einschläfst. Liegestütze zwingen dich nach oben, erhöhen deinen Puls und steigern Durchblutung und Körpertemperatur — genau die Signale, die Benommenheit beenden. Wenn die Wiederholungen erledigt sind, bist du körperlich wach, und Aufstehen wird zur Entscheidung statt zum Kampf."
   - question: "Braucht der Liegestütz-Wecker Internet oder ein Konto?"
-    answer: "Nein. Arisely braucht kein Konto, und sein „Datensicherheit“-Eintrag bei Google Play besagt, dass keine Daten erfasst und keine an Dritte weitergegeben werden. Der Liegestütz-Check läuft über die Kamera auf deinem Gerät; kein Video deines Morgens wird hochgeladen oder auf einem Server gespeichert."
+    answer: "Nein. Arisely braucht kein Konto, und deine Alarme bleiben auf deinem Telefon. Der Liegestütz-Check läuft über die Kamera auf deinem Gerät; kein Video deines Morgens wird hochgeladen oder auf einem Server gespeichert."
   - question: "Was, wenn ich an einem Morgen keine Liegestütze schaffe?"
     answer: "Arisely hat 10 Missionen, nicht nur Liegestütze. Du kannst jeden Alarm auf Mathe, Gedächtnis, Tippen, Schritte, Schütteln, QR-/Barcode und mehr umstellen oder verschiedenen Alarmen verschiedene Missionen geben. Die Liegestütz-Mission ist die härteste Option, nicht die einzige."
 ---
@@ -58,11 +60,11 @@ An manchen Morgen ist ein Workout unrealistisch, und ein zu starres Aufwach-Tool
 
 ## Datenschutz: Die Kamera bleibt auf deinem Telefon
 
-Ein kamerabasierter Wecker wirft eine berechtigte Frage auf: Wohin geht das Video? Bei Arisely nirgendwohin. Es gibt **kein Konto**, und der „Datensicherheit“-Eintrag bei Google Play besagt, dass **keine Daten erfasst und keine an Dritte weitergegeben** werden. Die Posenerkennung, die deine Wiederholungen zählt, läuft auf dem Gerät.
+Ein kamerabasierter Wecker wirft eine berechtigte Frage auf: Wohin geht das Video? Bei Arisely nirgendwohin. Es gibt **kein Konto**, und Kamerabilder werden **auf deinem Telefon verarbeitet und nie aufgezeichnet, gespeichert oder gesendet**. Die Posenerkennung, die deine Wiederholungen zählt, läuft auf dem Gerät. Die Gratisversion zeigt ein Werbebanner außerhalb des Klingel-Bildschirms; Arisely Pro entfernt es.
 
 ## Probier es aus
 
-Arisely ist bei Google Play kostenlos, braucht keine Anmeldung und hat derzeit eine 5,0-Bewertung.
+Arisely ist bei Google Play kostenlos und braucht keine Anmeldung.
 
 [**Arisely bei Google Play herunterladen**](https://play.google.com/store/apps/details?id=com.arisely&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dpushup-alarm%26utm_content%3Dalarm-app-that-makes-you-do-pushups-android)
 
