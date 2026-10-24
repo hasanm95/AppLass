@@ -156,73 +156,55 @@ export const getFaqRegistry = () => ({
     {
       question: localize("What is Mindful Guard?"),
       answer: localize(
-        "Mindful Guard is a free Android app blocker that stops Reels, Shorts, TikTok, and any other app you choose. It's built 100% offline with zero telemetry, so nothing about how you use it ever leaves your phone. The free tier gives you 3 focus sessions a day; premium unlocks unlimited. Most people get back about 2.4 hours of focus time daily."
+        "Mindful Guard is an Android app blocker with Reel Guard. It limits the short-form feeds in Instagram, YouTube, TikTok, Facebook and Snapchat with daily and per-session limits, and blocks any app you choose with a quick focus timer or a weekly schedule. It has a free plan, shows no ads and needs no account."
       ),
     },
     {
-      question: localize("Does Mindful Guard work on Xiaomi, Samsung, or MIUI devices?"),
+      question: localize("Can I block Reels but still use Instagram?"),
       answer: localize(
-        "Yes. MIUI, OneUI, and HyperOS are known for aggressively killing background apps to save battery — Mindful Guard is built to survive that. Add it to your battery optimization whitelist and your blocking sessions will run uninterrupted."
+        "Yes. Reel Guard closes only the Reels feed when your limit is reached. Messages, Stories and the rest of Instagram keep working. The same applies to YouTube Shorts, TikTok's feed, Facebook Reels and Snapchat Spotlight."
       ),
     },
     {
-      question: localize("Is Mindful Guard safe for privacy?"),
+      question: localize("Is Mindful Guard free?"),
       answer: localize(
-        "Yes. Mindful Guard doesn't need an internet connection to work, and it has zero third-party analytics SDKs. Your block lists, schedules, and usage data stay on your phone — period. There is no account and no cloud component at all."
+        "Yes, you can start on the free plan. Premium unlocks more and is available as a monthly, yearly or one-time lifetime purchase. Google Play shows the price in your currency."
       ),
     },
     {
-      question: localize("How does Strict Mode work?"),
+      question: localize("Does Mindful Guard collect my data?"),
       answer: localize(
-        "Strict Mode locks your settings for a duration you choose. Once it's on, you can't change your block list or switch the blocking off from inside the app until the timer runs out. It's built for the moments you know your future self will try to cheat."
+        "No. Its Google Play Data safety section declares no data collected and no data shared with third parties. There are no ads, no analytics and no account. Your block lists, schedules and stats stay on your phone."
+      ),
+    },
+    {
+      question: localize("Why does it need the Accessibility Service?"),
+      answer: localize(
+        "Android's Accessibility Service is how Mindful Guard notices that a blocked app or a short-form feed has opened, so it can close it in real time. It is used only for blocking. Mindful Guard also asks to display over other apps, to show the limit screen, and to be exempt from battery optimization, so blocking keeps running in the background."
       ),
     },
     {
       question: localize("Does Mindful Guard use a VPN?"),
       answer: localize(
-        "No. A VPN-based blocker has to pass all of your network traffic through a VPN connection, which adds overhead and needs extra trust. Mindful Guard blocks apps locally using Android's Accessibility API, so it never touches your network traffic."
+        "No. Mindful Guard blocks apps on the device using Android's Accessibility Service, so it never routes or inspects your network traffic."
       ),
     },
     {
-      question: localize("Which apps can Mindful Guard block?"),
+      question: localize("Does it work on Samsung, Xiaomi and other phones that close background apps?"),
       answer: localize(
-        "Mindful Guard can block any installed Android app — Instagram, TikTok, YouTube, Twitter/X, Reddit, games, browsers, or any custom app. You choose exactly which apps to block and when."
+        "Yes. Allow Mindful Guard to ignore battery optimization when it asks. On phones that close background apps aggressively, such as some Xiaomi, Samsung and Huawei models, this keeps your limits and schedules running."
       ),
     },
     {
-      question: localize("Does Mindful Guard track my screen time or usage?"),
+      question: localize("How is Mindful Guard different from Digital Wellbeing?"),
       answer: localize(
-        "Any stats Mindful Guard shows you — streaks, time saved, sessions completed — are calculated and stored only on your device. We never see any of it; there's no server for it to go to."
+        "Digital Wellbeing's app timer covers a whole app and is easy to turn off in Settings. Mindful Guard can limit only the Reels or Shorts feed, cap each session, count reels, add a cooldown between sessions, and keeps a block in place until it ends."
       ),
     },
     {
-      question: localize("How is Mindful Guard different from Android's built-in Digital Wellbeing?"),
+      question: localize("Mindful Guard vs ScreenVeil: what is the difference?"),
       answer: localize(
-        "Android's Digital Wellbeing is easy to bypass — a few taps in Settings and it's off. Mindful Guard's Strict Mode can't be turned off that way, not even by uninstalling. It also gives you more granular scheduling and works on devices where manufacturers have disabled Digital Wellbeing entirely."
-      ),
-    },
-    {
-      question: localize("Mindful Guard vs ScreenVeil: What is the difference?"),
-      answer: localize(
-        "Mindful Guard is an app blocker designed to stop you from opening distracting apps entirely. ScreenVeil is a battery-saving utility that places a black overlay on your screen so you can listen to background audio without draining power."
-      ),
-    },
-    {
-      question: localize("What is a zero telemetry blocker?"),
-      answer: localize(
-        "Zero telemetry means exactly what it sounds like: the app doesn't collect, record, or transmit any data about which apps you block or how long you use your phone. Everything stays on your device — nothing ever talks to a cloud server."
-      ),
-    },
-    {
-      question: localize("Mindful Guard vs Forest: Which should I choose?"),
-      answer: localize(
-        "Forest gamifies focus by growing virtual trees, but you can still just exit the app and kill your tree whenever you want. Mindful Guard's Strict Mode physically prevents you from opening blocked apps — even on the days your willpower gives out."
-      ),
-    },
-    {
-      question: localize("Does Opal drain battery on Android?"),
-      answer: localize(
-        "Not noticeably for most people. Opal used a local VPN on iOS until 2022, but on Android its Play Store listing says it uses the AccessibilityService API on Android 14 and above, the same approach Mindful Guard uses. Battery drain from any accessibility-based blocker is usually small; if one does drain, check its battery usage in Settings."
+        "Mindful Guard keeps you out of distracting apps and feeds. ScreenVeil, also by AppLass, turns your screen black while audio keeps playing, to hide the screen or save battery on AMOLED phones."
       ),
     },
   ],
