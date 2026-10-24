@@ -1,0 +1,112 @@
+---
+title: "Application écran noir Android : éteindre sans verrouiller"
+description: "Android ne peut pas éteindre l'écran sans verrouiller le téléphone, et le verrouillage met beaucoup d'applications en pause. Une application écran noir recouvre l'écran d'un noir pur pendant que l'application en dessous continue. Voici comment elles fonctionnent, quoi vérifier et comment en configurer une."
+date: "2026-10-24"
+dateModified: "2026-10-24"
+author: "Équipe AppLass"
+excerpt: "Une application écran noir pose une couche de noir pur sur l'écran : il semble éteint, l'application en dessous continue et les touches sont bloquées. Vérifiez : pas de root, blocage des touches, déverrouillage volontaire et le moins de permissions possible."
+tags: ["android", "écran noir", "écran éteint", "amoled", "batterie"]
+category: "Applications Android"
+keywords: "application écran noir android, application écran noir, application youtube écran noir, éteindre l'écran sans verrouiller android, écran noir vidéo continue android, application écran éteint android, superposition écran noir, screenveil"
+breadcrumbName: "Application écran noir"
+sidebarApps:
+  - screenveil
+featured: false
+faqs:
+  - question: "Comment éteindre l'écran sans verrouiller mon téléphone Android ?"
+    answer: "Android ne le permet pas seul : le bouton marche/arrêt éteint l'écran et verrouille le téléphone, ce qui met beaucoup d'applications en pause. Une application écran noir contourne cela en recouvrant l'écran d'un noir pur pendant que le téléphone reste déverrouillé : l'application en dessous continue de fonctionner."
+  - question: "À quoi sert une application écran noir ?"
+    answer: "Elle pose une couche de noir pur sur tout ce qui est à l'écran. L'application en dessous — une vidéo, un cours ou une application de navigation — continue. Les bonnes applications bloquent aussi les touches jusqu'à un déverrouillage volontaire, pour qu'une poche ou une manche ne touche rien."
+  - question: "Une application écran noir économise-t-elle la batterie ?"
+    answer: "Sur les écrans AMOLED et OLED, oui : un pixel noir pur est éteint, l'écran consomme donc moins. Sur les écrans LCD, le rétroéclairage reste allumé, l'économie est faible. Seules les applications root peuvent éteindre le rétroéclairage lui-même."
+  - question: "Les applications écran noir ont-elles besoin du root ?"
+    answer: "La plupart, non. Les applications de superposition comme ScreenVeil n'ont besoin que de la permission Android « Afficher par-dessus les autres applications ». Celles qui éteignent le rétroéclairage LCD lui-même, comme Screen Backlight Off, nécessitent le root."
+  - question: "Une application écran noir est-elle sûre ?"
+    answer: "Vérifiez deux choses avant d'en installer une : les permissions demandées et sa section « Sécurité des données » sur Google Play. Une superposition n'a besoin que d'« Afficher par-dessus les autres applications » — pas de vos fichiers, contacts, appareil photo ni micro."
+---
+
+import ScreenVeilCTA from "@/components/blog/ScreenVeilCTA.astro";
+
+**Une application écran noir donne l'impression que l'écran est éteint, alors que le téléphone reste
+déverrouillé.** Elle pose une couche de noir pur sur tout l'écran : la vidéo, le cours ou l'application en
+dessous continue, et les touches sont bloquées jusqu'à un déverrouillage volontaire. C'est la solution à ce
+qu'Android ne sait pas faire seul : éteindre l'écran sans verrouiller.
+
+## Pourquoi le bouton marche/arrêt ne suffit pas
+
+Sur Android, éteindre l'écran et verrouiller le téléphone sont une seule et même action. Une fois le
+téléphone verrouillé, l'application à l'écran passe en arrière-plan, et beaucoup s'y mettent en pause.
+YouTube sans Premium en est l'exemple le plus connu ; les navigateurs, les applications de cours et beaucoup
+de lecteurs vidéo font de même.
+
+Une application écran noir garde le téléphone déverrouillé et l'application au premier plan. Pour Android,
+rien n'a changé — vous ne la voyez simplement plus.
+
+## À quoi servent les applications écran noir
+
+- **Écouter des vidéos** — cours, podcasts vidéo, longues conférences — en marchant ou dans les transports.
+- **S'endormir** avec quelque chose en lecture, sans écran lumineux.
+- **Garder le téléphone en poche** sans que les touches mettent en pause ou fassent sauter quoi que ce soit.
+- **Masquer l'écran** pendant qu'un enregistrement, un téléchargement ou une application de navigation
+  continue.
+- **Économiser la batterie** sur les téléphones AMOLED pendant l'écoute.
+
+## Ce qu'il faut vérifier
+
+| Critère | Pourquoi c'est important |
+|---|---|
+| **Pas de root** | Fonctionne sur tout téléphone, sans le modifier |
+| **Blocage des touches** | Une poche ou une manche ne peut pas toucher l'application en dessous |
+| **Déverrouillage simple et volontaire** | On revient vite, mais pas par accident |
+| **Démarrage rapide** | Un bouton flottant ou une vignette des Réglages rapides : une pression |
+| **Noir pur** | Sur AMOLED, les pixels vraiment noirs sont éteints |
+| **Peu de permissions** | Une superposition n'a besoin que d'« Afficher par-dessus les autres applications » |
+| **Des extras utiles** | Horloge sur le noir, minuteur de sommeil, mode poche |
+
+**Vos principales options :**
+
+- **Les applications de superposition** (sans root), comme ScreenVeil ou Blackr : elles posent du noir
+  par-dessus n'importe quelle application. Sur les écrans LCD, le rétroéclairage reste allumé.
+- **Les applications de rétroéclairage** (root uniquement), comme Screen Backlight Off, qui éteignent le
+  rétroéclairage lui-même ([XDA](https://forum.xda-developers.com/t/app-2-3-root-screen-backlight-off-xda-exclusive-free-version.3037380/post-59031010)).
+- **Le mode arrière-plan d'une application**, comme YouTube Premium ou la lecture audio de VLC — seulement
+  pour cette application. Pour YouTube, voir
+  [la lecture en arrière-plan de YouTube en 2026](/fr/blog/youtube-background-play-2026-workaround).
+
+## Utiliser une application écran noir (ScreenVeil)
+
+[ScreenVeil](/fr/apps/screenveil) est une superposition d'écran noir pour Android :
+
+1. Installez ScreenVeil et touchez **Start Service**.
+2. Autorisez **« Afficher par-dessus les autres applications »** quand Android le demande. C'est la seule
+   permission que vous accordez.
+3. Ouvrez et lancez l'application qui doit continuer.
+4. Touchez le bouton flottant de ScreenVeil ou sa vignette dans les Réglages rapides. L'écran devient noir.
+5. Pour revenir, touchez l'écran, puis déverrouillez. Avec le déverrouillage biométrique, seule votre
+   empreinte lève l'écran noir.
+
+ScreenVeil propose aussi un **mode atténué** (une faible lueur au lieu du noir complet), un **minuteur de
+sommeil**, un **mode poche** qui rend l'écran noir quand le téléphone entre dans votre poche, et, si vous le
+souhaitez, **l'heure et la date** sur l'écran noir.
+
+<ScreenVeilCTA lang="fr" />
+
+## Batterie : à quoi s'attendre
+
+| Type d'écran | Application écran noir | Économie |
+|---|---|---|
+| AMOLED / OLED | Les pixels noirs sont éteints | Importante, surtout à forte luminosité |
+| LCD | Le rétroéclairage reste allumé derrière le noir | Faible |
+
+Plus l'écran était lumineux et plus il reste noir longtemps, plus l'économie est grande sur AMOLED. Pour les
+détails, voir
+[le mode sombre économise-t-il la batterie sur AMOLED ?](/fr/blog/does-dark-mode-save-battery-amoled)
+
+## En résumé
+
+Android ne peut pas éteindre l'écran sans verrouiller, et le verrouillage arrête beaucoup d'applications. Une
+application écran noir comble ce manque : l'écran semble éteint, l'application continue et les touches sont
+bloquées. Choisissez-en une sans root, qui bloque les touches et ne demande qu'« Afficher par-dessus les
+autres applications ».
+
+<ScreenVeilCTA lang="fr" />
