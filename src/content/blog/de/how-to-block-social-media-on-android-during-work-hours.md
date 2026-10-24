@@ -1,7 +1,7 @@
 ---
 title: "Soziale Medien auf Android nur während der Arbeitszeit blockieren"
 date: "2026-04-24"
-dateModified: "2026-05-19"
+dateModified: "2026-10-24"
 category: "Android-Apps"
 keywords: "soziale medien blockieren android, zeitgesteuerter app blocker android, apps während der arbeitszeit blockieren, mindful guard android"
 author: "AppLass-Team"
@@ -20,9 +20,9 @@ faqs:
   - question: "Kann ich für Werktage und Wochenenden unterschiedliche Zeitpläne festlegen?"
     answer: "Ja. Bei Mindful Guard wählen Sie für jeden Zeitplan die aktiven Tage, sodass Ihre Wochenenden völlig frei bleiben, während Ihr Arbeitsfenster von Montag bis Freitag geschützt ist. Sie können auch mehrere Zeitpläne anlegen — etwa eine strenge Morgensperre vor 8 Uhr und eine leichtere Nachmittagssperre von 13 bis 15 Uhr."
   - question: "Was, wenn ich eine gesperrte App tatsächlich beruflich brauche?"
-    answer: "Mindful Guard bietet den Standardmodus und den Strikten Modus. Der Standardmodus erlaubt ein kurzes Ausnahmefenster, wenn Sie wirklich Zugriff brauchen — nützlich, wenn Ihr Job gelegentlich einen Blick auf LinkedIn oder Twitter erfordert. Der Strikte Modus kennt überhaupt keine Ausnahme. Beginnen Sie mit dem Standardmodus und wechseln Sie zum Strikten Modus, wenn Sie merken, dass Sie die Ausnahme überstrapazieren."
+    answer: "Lassen Sie sie von Ihrer Sperrliste. Mindful Guard hat keine Umgehungsschaltfläche: Läuft eine Sperre, hält sie, bis der Zeitplan endet. Sperren Sie also nur, was Sie während der Arbeitszeit wirklich nicht brauchen. Braucht Ihr Job gelegentlich LinkedIn oder X, lassen Sie die App offen und begrenzen Sie mit Reel Guard nur ihren Kurzvideo-Feed."
   - question: "Ist Mindful Guard sicher? Werden meine Daten erfasst?"
-    answer: "Mindful Guard nutzt eine Architektur ohne jedes Tracking, die vollständig auf dem Gerät arbeitet. Sie benötigt lediglich die Berechtigung für den Nutzungszugriff, um zu erkennen, welche App im Vordergrund läuft — keine Standortdaten, keine Kontakte, keine personenbezogenen Kennungen. Ihre Nutzungsmuster verlassen Ihr Telefon nie."
+    answer: "Mindful Guard läuft vollständig auf Ihrem Gerät. Die App nutzt den Bedienungshilfen-Dienst von Android, um zu erkennen, wann sich eine gesperrte App öffnet, dazu den Nutzungszugriff für ihre Statistiken — keine Standortdaten, keine Kontakte, keine personenbezogenen Kennungen. Laut Abschnitt „Datensicherheit“ bei Google Play werden keine Daten erhoben."
 ---
 
 Sie haben die Apps gelöscht. Drei Tage später haben Sie sie wieder installiert.
@@ -67,13 +67,11 @@ Die Neurowissenschaft dahinter ist unkompliziert. Gewohnheitsschleifen werden du
 
 Installieren Sie [Mindful Guard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dhow-to-block-social-media-on-android-during-work-hours%26utm_content%3Dinline) aus dem Google Play Store. Der Download ist kostenlos und erfordert kein Konto, keine Registrierung und keine E-Mail-Adresse.
 
-### Schritt 2: Nutzungszugriff erteilen
+### Schritt 2: Bedienungshilfen-Dienst erlauben
 
-Beim ersten Öffnen fragt die App die Berechtigung für den Nutzungszugriff ab. Damit erkennt Mindful Guard, welche App im Vordergrund läuft, und kann Sperren durchsetzen.
+Beim ersten Öffnen bittet die App Sie, ihren **Bedienungshilfen-Dienst** zu erlauben. Damit erkennt Mindful Guard, dass sich eine gesperrte App geöffnet hat, und kann sie sofort schließen. Eventuell fragt sie außerdem nach dem Nutzungszugriff (für ihre Statistiken), nach der Berechtigung, über anderen Apps anzuzeigen (für den Sperrbildschirm), und danach, die Akkuoptimierung zu ignorieren (damit die Sperre im Hintergrund weiterläuft).
 
-So erteilen Sie sie: Gehen Sie zu **Einstellungen → Digital Wellbeing & Jugendschutzeinstellungen → Nutzungszugriff**, suchen Sie Mindful Guard in der Liste und schalten Sie die Berechtigung ein.
-
-Das ist die einzige Berechtigung, die die App benötigt. Sie fragt weder Standort noch Kontakte, Kamera, Mikrofon oder andere sensible Berechtigungen ab. Die gesamte Verarbeitung findet auf dem Gerät statt.
+Standort, Kontakte, Kamera oder Mikrofon fragt sie nicht ab. Die gesamte Verarbeitung findet auf dem Gerät statt.
 
 ### Schritt 3: Zeitplan für Ihre Arbeitszeit anlegen
 
@@ -100,15 +98,14 @@ Tippen Sie auf **Apps hinzufügen** und wählen Sie die Apps, die Sie während d
 
 Ein nützlicher Test: Öffnen Sie den Bildschirmzeit-Bericht Ihres Android-Geräts und sortieren Sie nach Tagesdurchschnitt. Die drei bis vier obersten Apps, die nichts mit Arbeit zu tun haben, sind Ihre Sperrliste. Übertreiben Sie es nicht — 15 Apps auf der Liste lassen den Zeitplan wie einen Käfig wirken, was den Drang zum Deinstallieren erhöht.
 
-### Schritt 5: Sperrmodus festlegen
+### Schritt 5: Festlegen, was offen bleibt
 
-Mindful Guard bietet Ihnen zwei Möglichkeiten:
+Mindful Guard hat keine Umgehungsschaltfläche. Öffnen Sie während Ihres Zeitplans eine gesperrte App, erscheint der Sperrbildschirm und bleibt, bis der Zeitplan endet. Genau darum geht es — aber Sie sollten deshalb jetzt entscheiden, was Sie während der Arbeitszeit wirklich brauchen.
 
-**Standardmodus** — Beim Versuch, eine gesperrte App zu öffnen, erscheint ein Sperrbildschirm mit der Option, ein kurzes Ausnahmefenster anzufordern. Nützlich, wenn Ihre Arbeit gelegentlich Zugriff auf soziale Medien erfordert (Community-Management, Social-Media-Marketing usw.).
+- **Brauchen Sie eine soziale App beruflich** (Community-Management, Social-Media-Marketing)? Lassen Sie sie von der Sperrliste und begrenzen Sie mit **Reel Guard** nur ihren Reels- oder Shorts-Feed.
+- **Brauchen Sie sie bei der Arbeit nie?** Sperren Sie die ganze App.
 
-**Strikter Modus** — Keine Ausnahme. Der Sperrbildschirm ist Endstation, bis Ihr Zeitplan abläuft. Empfohlen, wenn Sie bei sich beobachtet haben, dass Sie Ausnahmen rechtfertigen, die eigentlich nicht nötig waren.
-
-Wenn Sie so ein System zum ersten Mal einrichten, beginnen Sie mit dem Standardmodus. Geben Sie ihm eine Woche. Nutzen Sie die Ausnahme mehr als ein- oder zweimal täglich, wechseln Sie zum Strikten Modus.
+Wenn Sie so ein System zum ersten Mal einrichten, beginnen Sie mit einer kurzen Liste. Geben Sie ihr eine Woche und ergänzen Sie dann die Apps, nach denen Sie noch immer greifen.
 
 ### Schritt 6: Zeitplan aktivieren
 

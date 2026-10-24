@@ -1,7 +1,7 @@
 ---
 title: "Monk Mode 2.0: Why Your Willpower Isn't Enough (and What I Built Instead)"
 date: "2026-01-26"
-dateModified: "2026-05-19"
+dateModified: "2026-10-24"
 category: "Android Apps"
 keywords: "monk mode app android, dopamine detox app, how to do monk mode, mindful guard android"
 author: "AppLass Team"
@@ -47,7 +47,7 @@ That is how [MindfulGuard](/apps/mindful-guard) was born. I didn't want it to ju
 
 To make my Monk Mode stick, I built three specific features into the app:
 
-1. **Strict Logic Mode:** No "5 more minutes" button. Once the block is on, it's a hard wall that willpower can't break.
+1. **No Override Button:** No "5 more minutes" button. Once the block is on, it's a hard wall that willpower can't break.
 2. **Zero-Telemetry Privacy:** I'm a developer, so I'm obsessed with privacy. My app works offline-first, meaning your usage data stays on your phone, not in a cloud.
 3. **Friction Training:** Sometimes you just need a pause. We add a few seconds of breathing or a delay to break the "dopamine loop" before it starts.
 

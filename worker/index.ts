@@ -28,6 +28,13 @@ const COUNTRY_TO_LOCALE: Record<string, string> = {
 const RETIRED_LOCALES = ["zh", "es", "ar", "id", "pt", "ja", "ru", "bn"] as const;
 const RETIRED_LOCALE_RE = new RegExp(`^/(?:${RETIRED_LOCALES.join("|")})(?=/|$)`);
 
+// Pages that were removed. 301 them, keeping any locale prefix, so indexed URLs
+// and old links land somewhere relevant instead of 404ing.
+const RETIRED_PAGES: [RegExp, string][] = [
+  // Mindful Guard has no Strict Mode; the guide described a feature that does not exist.
+  [/^(\/(?:de|fr))?\/docs\/mindful-guard\/strict-mode\/?$/, "$1/docs/mindful-guard"],
+];
+
 // AI assistants fetching a page for a user (ChatGPT-User, Perplexity-User, …) do
 // not say "bot", but must get the URL they asked for, not a geo redirect.
 const BOT_UA_RE =
@@ -58,6 +65,14 @@ export default {
       const target = new URL(url);
       target.pathname = url.pathname.replace(RETIRED_LOCALE_RE, "") || "/";
       return Response.redirect(target.toString(), 301);
+    }
+
+    for (const [pattern, replacement] of RETIRED_PAGES) {
+      if (pattern.test(url.pathname)) {
+        const target = new URL(url);
+        target.pathname = url.pathname.replace(pattern, replacement);
+        return Response.redirect(target.toString(), 301);
+      }
     }
 
     const skipRedirect =
