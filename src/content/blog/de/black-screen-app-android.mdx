@@ -1,0 +1,109 @@
+---
+title: "Schwarzer-Bildschirm-App: Bildschirm aus ohne Sperre"
+description: "Android kann den Bildschirm nicht ausschalten, ohne zu sperren, und Sperren pausiert viele Apps. Eine Schwarzer-Bildschirm-App deckt den Bildschirm mit reinem Schwarz ab, während die App darunter weiterläuft. Wie sie funktioniert, worauf Sie achten sollten und wie Sie sie einrichten."
+date: "2026-10-24"
+dateModified: "2026-10-24"
+author: "AppLass-Team"
+excerpt: "Eine Schwarzer-Bildschirm-App legt eine rein schwarze Ebene über den Bildschirm: Er wirkt aus, die App darunter läuft weiter, und Berührungen sind blockiert. Achten Sie auf: kein Root, Berührungssperre, bewusstes Entsperren und möglichst wenige Berechtigungen."
+tags: ["android", "schwarzer bildschirm", "bildschirm aus", "amoled", "akku"]
+category: "Android-Apps"
+keywords: "schwarzer bildschirm app android, bildschirm aus app android, bildschirm ausschalten ohne sperren android, screen off app android, schwarzer bildschirm overlay, bildschirm schwarz video weiterlaufen, bildschirm aus app ohne root, screenveil"
+breadcrumbName: "Schwarzer-Bildschirm-App"
+sidebarApps:
+  - screenveil
+featured: false
+faqs:
+  - question: "Wie schalte ich den Bildschirm aus, ohne mein Android-Telefon zu sperren?"
+    answer: "Android selbst kann das nicht: Die Ein-/Aus-Taste schaltet den Bildschirm aus und sperrt das Telefon, was viele Apps pausiert. Eine Schwarzer-Bildschirm-App umgeht das, indem sie den Bildschirm mit reinem Schwarz abdeckt, während das Telefon entsperrt bleibt — die App darunter läuft also weiter."
+  - question: "Was macht eine Schwarzer-Bildschirm-App?"
+    answer: "Sie legt eine rein schwarze Ebene über alles auf dem Bildschirm. Die App darunter — ein Video, eine Vorlesung oder eine Navi-App — läuft weiter. Gute Apps blockieren außerdem Berührungen, bis Sie bewusst entsperren, damit Tasche oder Ärmel nichts antippen."
+  - question: "Spart eine Schwarzer-Bildschirm-App Akku?"
+    answer: "Auf AMOLED- und OLED-Bildschirmen ja: Ein rein schwarzes Pixel ist abgeschaltet, das Display verbraucht also weniger. Auf LCD-Bildschirmen bleibt die Hintergrundbeleuchtung an, die Ersparnis ist gering. Nur Root-Apps können die Hintergrundbeleuchtung selbst ausschalten."
+  - question: "Brauchen Schwarzer-Bildschirm-Apps Root?"
+    answer: "Die meisten nicht. Overlay-Apps wie ScreenVeil brauchen nur die Android-Berechtigung „Über anderen Apps anzeigen“. Apps, die die LCD-Hintergrundbeleuchtung selbst abschalten, etwa Screen Backlight Off, brauchen Root."
+  - question: "Ist eine Schwarzer-Bildschirm-App sicher?"
+    answer: "Prüfen Sie vor der Installation zwei Dinge: die angefragten Berechtigungen und den Abschnitt „Datensicherheit“ bei Google Play. Ein Overlay braucht nur „Über anderen Apps anzeigen“ — keinen Zugriff auf Dateien, Kontakte, Kamera oder Mikrofon."
+---
+
+import ScreenVeilCTA from "@/components/blog/ScreenVeilCTA.astro";
+
+**Eine Schwarzer-Bildschirm-App lässt Ihren Bildschirm ausgeschaltet wirken, während das Telefon entsperrt
+bleibt.** Sie legt eine rein schwarze Ebene über alles, sodass Video, Vorlesung oder App darunter
+weiterlaufen, und blockiert Berührungen, bis Sie bewusst entsperren. Das ist der Ausweg für etwas, das
+Android allein nicht kann: den Bildschirm ausschalten, ohne zu sperren.
+
+## Warum die Ein-/Aus-Taste nicht reicht
+
+Auf Android sind Bildschirm ausschalten und Telefon sperren dieselbe Aktion. Sobald das Telefon gesperrt
+ist, wandert die App auf dem Bildschirm in den Hintergrund, und viele Apps pausieren dort. YouTube ohne
+Premium ist das bekannteste Beispiel; Browser, Kurs-Apps und viele Videoplayer verhalten sich genauso.
+
+Eine Schwarzer-Bildschirm-App hält das Telefon entsperrt und die App im Vordergrund. Für Android hat sich
+nichts geändert — Sie sehen es nur nicht.
+
+## Wofür man Schwarzer-Bildschirm-Apps nutzt
+
+- **Videos hören** — Vorlesungen, Video-Podcasts, lange Vorträge — beim Spaziergang oder Pendeln.
+- **Einschlafen**, während etwas läuft, ohne leuchtenden Bildschirm.
+- **Das Telefon in der Tasche tragen**, ohne dass Berührungen etwas pausieren oder überspringen.
+- **Den Bildschirm verbergen**, während eine Aufnahme, ein Download oder eine Navi-App weiterläuft.
+- **Akku sparen** auf AMOLED-Telefonen, während Ton läuft.
+
+## Worauf Sie achten sollten
+
+| Merkmal | Warum es zählt |
+|---|---|
+| **Kein Root nötig** | Funktioniert auf jedem Telefon, ohne es zu verändern |
+| **Berührungssperre** | Tasche oder Ärmel können die App darunter nicht antippen |
+| **Einfaches, bewusstes Entsperren** | Schnell zurück, aber nicht aus Versehen |
+| **Schneller Start** | Schwebende Schaltfläche oder Schnelleinstellungs-Kachel, also ein Tipp |
+| **Reines Schwarz** | Auf AMOLED sind echt schwarze Pixel abgeschaltet |
+| **Wenige Berechtigungen** | Ein Overlay braucht nur „Über anderen Apps anzeigen“ |
+| **Nützliche Extras** | Uhr auf Schwarz, Schlaf-Timer, Taschenmodus |
+
+**Ihre wichtigsten Optionen:**
+
+- **Overlay-Apps** (ohne Root), etwa ScreenVeil oder Blackr: legen Schwarz über jede App. Auf
+  LCD-Bildschirmen bleibt die Hintergrundbeleuchtung an.
+- **Hintergrundbeleuchtungs-Apps** (nur mit Root), etwa Screen Backlight Off, die die Beleuchtung selbst
+  abschalten ([XDA](https://forum.xda-developers.com/t/app-2-3-root-screen-backlight-off-xda-exclusive-free-version.3037380/post-59031010)).
+- **Der Hintergrundmodus einer App**, etwa YouTube Premium oder die Audio-Wiedergabe von VLC — nur für diese
+  App. Für YouTube siehe [YouTube-Hintergrundwiedergabe 2026](/de/blog/youtube-background-play-2026-workaround).
+
+## So nutzen Sie eine Schwarzer-Bildschirm-App (ScreenVeil)
+
+[ScreenVeil](/de/apps/screenveil) ist ein schwarzes Bildschirm-Overlay für Android:
+
+1. Installieren Sie ScreenVeil und tippen Sie auf **Start Service**.
+2. Erlauben Sie **„Über anderen Apps anzeigen“**, wenn Android danach fragt. Es ist die einzige
+   Berechtigung, die Sie erteilen.
+3. Öffnen und starten Sie die App, die weiterlaufen soll.
+4. Tippen Sie auf die schwebende Schaltfläche von ScreenVeil oder die Kachel in den Schnelleinstellungen.
+   Der Bildschirm wird schwarz.
+5. Zum Zurückkehren berühren Sie den Bildschirm und tippen auf Entsperren. Mit biometrischer Entsperrung
+   hebt nur Ihr Fingerabdruck den schwarzen Bildschirm auf.
+
+ScreenVeil hat außerdem einen **Dimm-Modus** (ein schwaches Leuchten statt vollem Schwarz), einen
+**Schlaf-Timer**, einen **Taschenmodus**, der den Bildschirm schwarz schaltet, wenn das Telefon in die Tasche
+wandert, und auf Wunsch **Uhrzeit und Datum** auf dem schwarzen Bildschirm.
+
+<ScreenVeilCTA lang="de" />
+
+## Akku: Was Sie erwarten können
+
+| Bildschirmtyp | Schwarzer-Bildschirm-App | Ersparnis |
+|---|---|---|
+| AMOLED / OLED | Schwarze Pixel sind abgeschaltet | Groß, besonders bei hoher Helligkeit |
+| LCD | Hintergrundbeleuchtung bleibt hinter dem Schwarz an | Gering |
+
+Je heller der Bildschirm war und je länger er schwarz bleibt, desto mehr sparen Sie auf AMOLED. Details unter
+[Spart der Dark Mode Akku auf AMOLED?](/de/blog/does-dark-mode-save-battery-amoled)
+
+## Fazit
+
+Android kann den Bildschirm nicht ausschalten, ohne zu sperren, und Sperren stoppt viele Apps. Eine
+Schwarzer-Bildschirm-App schließt diese Lücke: Der Bildschirm wirkt aus, die App läuft weiter, Berührungen
+sind blockiert. Wählen Sie eine, die kein Root braucht, Berührungen blockiert und nur „Über anderen Apps
+anzeigen“ verlangt.
+
+<ScreenVeilCTA lang="de" />
