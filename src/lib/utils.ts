@@ -5,7 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-const MINDFUL_GUARD_PLAY_ID = "com.anonymous.mindfulguard";
+export const MINDFUL_GUARD_PLAY_ID = "com.anonymous.mindfulguard";
 
 /**
  * Builds the Mindful Guard Play Store URL with Google Play install attribution.
