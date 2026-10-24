@@ -1,61 +1,85 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 import Footer from "@/components/common/Footer.astro";
 import Navbar from "@/components/common/Navbar.astro";
-import ScreenVeilHero from "@/components/apps/screenveil/ScreenVeilHero.astro";
-import PainPointsSection from "@/components/apps/screenveil/PainPointsSection.astro";
-import FeatureGrid from "@/components/apps/screenveil/FeatureGrid.astro";
-import TechnicalAdvantage from "@/components/apps/screenveil/TechnicalAdvantage.astro";
-import PrivacySection from "@/components/apps/screenveil/PrivacySection.astro";
-import TestimonialsSection from "@/components/apps/screenveil/TestimonialsSection.astro";
-import FAQSection from "@/components/apps/screenveil/FAQSection.astro";
-import CompetitorComparison from "@/components/apps/screenveil/CompetitorComparison.astro";
-import ScreenVeilClosingCTA from "@/components/apps/screenveil/ScreenVeilClosingCTA.astro";
-import { StickyDownloadBar } from "@/components/apps/screenveil/StickyDownloadBar";
-import { getScreenveilData, getScreenveilSchema } from "@/constants/screenveil-data";
+import Section from "@/components/common/Section.astro";
+import FAQSchema from "@/components/common/FAQSchema.astro";
+import { Image } from "astro:assets";
+import {
+  ArrowRight,
+  Check,
+  ChevronDown,
+  X,
+  Layers,
+  Moon,
+  SunDim,
+  Timer,
+  CircleDot,
+  PanelTop,
+  Smartphone,
+  Fingerprint,
+  Clock,
+} from "lucide-react";
+import iconImg from "@/assets/apps/screenveil/icon.png";
+import screenOffShot from "@/assets/apps/screenveil/screen-off.jpg";
+import publicShot from "@/assets/apps/screenveil/public.jpg";
+import sleepShot from "@/assets/apps/screenveil/sleep.jpg";
+import pocketShot from "@/assets/apps/screenveil/pocket.jpg";
+import oneTapShot from "@/assets/apps/screenveil/one-tap.jpg";
+import tapBackShot from "@/assets/apps/screenveil/tap-back.jpg";
+import { getScreenveilData, getScreenveilSchema, screenveilPlayUrl } from "@/constants/screenveil-data";
+import { getFaqRegistry } from "@/constants/faq-registry";
 import { i18nConfig } from "@/i18n/config";
 import { localize } from "@/i18n/localize";
+import { localePath } from "@/i18n/utils";
+import { setLocale } from "@/i18n";
+import { lastUpdatedFor } from "@/lib/lastUpdated";
 
 interface Props {
   lang: typeof i18nConfig.locales[number];
 }
 
 const { lang } = Astro.props;
-
-import { setLocale } from "@/i18n";
-import { lastUpdatedFor } from "@/lib/lastUpdated";
 setLocale(lang);
 
 const isDefault = lang === "en";
+const data = getScreenveilData();
+const faqs = getFaqRegistry().SCREENVEIL;
 const lastUpdated = lastUpdatedFor("src/page-templates/AppsScreenveilPage.astro");
-const screenveilData = getScreenveilData();
-const screenveilSchema = {
+const pageUrl = isDefault ? "https://applass.com/apps/screenveil" : `https://applass.com/${lang}/apps/screenveil`;
+const schema = {
   ...getScreenveilSchema(),
+  "url": pageUrl,
   "datePublished": "2023-11-20",
-  "dateModified": lastUpdated,
-  "author": {
-    "@type": "Person",
-    "name": "Hasan M.",
-    "jobTitle": "Founder & Lead Engineer",
-    "url": "https://applass.com/about"
-  }
+  ...(lastUpdated && { "dateModified": lastUpdated }),
 };
+
+const featureIcons = { Moon, SunDim, Timer, CircleDot, PanelTop, Smartphone, Fingerprint, Clock } as const;
+const useShots = [
+  { src: publicShot, alt: localize("Phone with a black screen held on a night train while audio keeps playing") },
+  { src: sleepShot, alt: localize("Phone with a dark screen lying on a bed after the sleep timer ran out") },
+  { src: pocketShot, alt: localize("Phone with a black screen in a jeans pocket, connected to earphones") },
+];
+
+const reading = [
+  { slug: "does-dark-mode-save-battery-amoled", title: data.battery.linkLabel },
+  { slug: "youtube-screen-off-battery-hack", title: localize("How to listen with the screen off on Android") },
+];
 
 const meta = {
-  title: localize("Play YouTube With Screen Off – AMOLED Battery Saver | ScreenVeil"),
-  description: localize("ScreenVeil cuts AMOLED/OLED display power by up to 60% at full brightness. Play YouTube, podcasts & music with your screen off. Zero permissions. 10,000+ downloads. Free."),
-  keywords: localize("black screen video, AMOLED battery saver, screen off playback, YouTube background audio, OLED efficiency, screen overlay utility, android battery saver, screen off youtube"),
-  ogTitle: localize("ScreenVeil: Up to 60% Less Screen Power with Screen-Off Playback"),
-  ogDescription: localize("The ultimate AMOLED battery saver. Watch YouTube, Netflix, and podcasts with your screen off. Zero permissions, 100% privacy."),
-  ogImage: "https://applass.com/screenveil-feature.png",
-  ogUrl: isDefault ? "https://applass.com/apps/screenveil" : `https://applass.com/${lang}/apps/screenveil`
+  title: localize("ScreenVeil – Black Screen Overlay for Android: Screen Off, Sound On"),
+  description: localize("ScreenVeil turns your Android screen black with one tap while audio keeps playing. Hide your screen in public, block accidental taps and save display power on AMOLED. Free, no account."),
+  keywords: localize("screenveil, black screen app android, screen off video android, black screen overlay, play audio with screen off, amoled battery saver, pocket mode, screen off app"),
+  ogTitle: localize("ScreenVeil: Screen Off. Sound On."),
+  ogDescription: localize("One tap turns the screen black while your video, podcast or music keeps playing. Dim mode, sleep timer, pocket mode and biometric unlock."),
+  ogImage: "https://applass.com/screenveil-og.png",
+  ogUrl: pageUrl,
 };
-
 ---
 
-<Layout 
-  title={meta.title || "ScreenVeil: The Safest Screen Filter for Total Digital Privacy"}
-  description={meta.description || "Protect your data from prying eyes with ScreenVeil. A lightweight, secure screen overlay for Android. No data collection, 100% offline."}
+<Layout
+  title={meta.title}
+  description={meta.description}
   keywords={meta.keywords}
   ogTitle={meta.ogTitle}
   ogDescription={meta.ogDescription}
@@ -63,61 +87,352 @@ const meta = {
   ogUrl={meta.ogUrl}
   lang={lang}
 >
-  <div class="bg-[#020617]">
-    <Navbar   variant='dark'  />
+  <div class="screenveil bg-[#0B0B0C] text-white">
+    <Navbar variant="dark" />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />
 
-    <div class="flex-1 overflow-x-hidden">
-      {/* SoftwareApplication Schema for SEO - triggers rich results with star ratings */}
-      <script
-        type="application/ld+json"
-        is:inline
-        set:html={JSON.stringify(screenveilSchema)}
-      />
-      <ScreenVeilHero>
-        <div slot="meta" class="mb-6 flex items-center justify-center lg:justify-start gap-4">
-          {lastUpdated && (
-            <span class="rounded-full bg-green-500/10 px-3 py-1 text-[10px] font-bold text-green-400 uppercase border border-green-500/20 backdrop-blur-md">
-              {localize("Last Evaluated: ")} {lastUpdated}
-            </span>
-          )}
-          <span class="h-1 w-1 rounded-full bg-slate-800"></span>
-          <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest italic">
-            {localize("AMOLED Optimization Verified")}
-          </span>
-        </div>
+    <main class="flex-1 overflow-x-hidden">
+      {/* Hero */}
+      <section class="relative overflow-hidden pt-28 pb-16 md:pt-36 md:pb-24">
+        <div aria-hidden="true" class="pointer-events-none absolute -right-40 -bottom-40 h-[560px] w-[560px] rounded-full bg-[#FEB93F] opacity-25 blur-[120px]"></div>
 
-        <div slot="ai-summary" class="mt-10 overflow-hidden rounded-2xl border border-green-500/20 bg-slate-900/50 backdrop-blur-xl text-left shadow-2xl">
-          <div class="bg-green-500 px-4 py-2 text-[9px] font-black tracking-widest text-black uppercase flex items-center justify-between">
-            <span>{localize("App Protocol Summary (TL;DR)")}</span>
-            <span class="text-slate-900 font-mono">[ SV.V4_STABLE ]</span>
+        <div class="section-container relative z-10 grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+          <div class="text-center lg:text-left">
+            <div class="mb-6 inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/5 py-1.5 pr-4 pl-1.5 backdrop-blur">
+              <Image src={iconImg} alt="" width={64} height={64} class="h-8 w-8 rounded-lg" />
+              <span class="text-xs font-bold tracking-[0.14em] text-[#FEB93F] uppercase">{data.hero.tagline}</span>
+            </div>
+
+            <h1 class="text-5xl leading-[1.02] font-black tracking-tight sm:text-6xl lg:text-7xl">
+              {data.hero.headline}
+              <span class="block text-[#FEB93F]">{data.hero.headlineAccent}</span>
+            </h1>
+
+            <p class="mx-auto mt-6 max-w-xl text-lg leading-relaxed font-medium text-white/75 md:text-xl lg:mx-0">
+              {data.hero.subheadline}
+            </p>
+
+            <div class="mt-9 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
+              <a
+                href={screenveilPlayUrl("hero")}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex h-14 w-full items-center justify-center rounded-2xl bg-[#FEB93F] px-8 text-lg font-bold text-[#141210] shadow-lg shadow-[#FEB93F]/20 transition hover:bg-[#FFCB6B] sm:w-auto"
+              >
+                {data.hero.primaryCTA}
+              </a>
+              <a
+                href="#how"
+                class="group inline-flex h-14 w-full items-center justify-center gap-2 rounded-2xl border-2 border-white/80 px-8 text-lg font-bold transition hover:bg-white hover:text-[#141210] sm:w-auto"
+              >
+                {data.hero.secondaryCTA}
+                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </a>
+            </div>
+            <p class="mt-5 text-sm font-semibold text-white/60">{data.hero.subtext}</p>
+
+            <dl class="mt-10 grid grid-cols-3 overflow-hidden rounded-2xl border border-white/10 bg-white/5 text-left">
+              {data.stats.map((stat, idx) => (
+                <div class={`p-4 ${idx > 0 ? "border-l border-white/10" : ""}`}>
+                  <dt class="sr-only">{stat.label}</dt>
+                  <dd>
+                    <span class="block text-2xl font-black text-[#FEB93F] md:text-3xl">{stat.value}</span>
+                    <span class="mt-1 block text-xs leading-snug font-semibold text-white/70">{stat.label}</span>
+                  </dd>
+                </div>
+              ))}
+            </dl>
+            <p class="mt-2 text-[11px] text-white/45">{data.statsNote}</p>
           </div>
-          <div class="grid grid-cols-1 gap-px bg-slate-800 md:grid-cols-3">
-            <div class="bg-slate-900 p-4">
-              <p class="mb-1 text-[9px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Benchmark")}</p>
-              <p class="font-black text-white text-sm">{localize("Up to 60% Less Screen Power")}</p>
+
+          <div class="relative mx-auto w-full max-w-[360px]">
+            <Image
+              src={screenOffShot}
+              alt={localize("Hand holding a phone with a black screen while sound keeps playing")}
+              widths={[360, 720]}
+              sizes="(min-width: 1024px) 360px, 80vw"
+              class="aspect-[3/4] w-full rounded-[2rem] object-cover object-bottom shadow-2xl shadow-[#FEB93F]/10 ring-1 ring-white/10"
+              loading="eager"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Use cases */}
+      <Section className="bg-[#0B0B0C]">
+        <div class="section-container">
+          <div class="mx-auto max-w-3xl text-center">
+            <span class="text-xs font-bold tracking-[0.2em] text-[#FEB93F] uppercase">{data.uses.tag}</span>
+            <h2 class="mt-4 text-3xl leading-tight font-black tracking-tight md:text-5xl">{data.uses.title}</h2>
+          </div>
+          <div class="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
+            {data.uses.items.map((item, idx) => (
+              <figure class="overflow-hidden rounded-3xl border border-white/10 bg-[#161514]">
+                <Image
+                  src={useShots[idx].src}
+                  alt={useShots[idx].alt}
+                  widths={[360, 720]}
+                  sizes="(min-width: 768px) 33vw, 90vw"
+                  class="aspect-[4/5] w-full object-cover object-bottom"
+                />
+                <figcaption class="p-6">
+                  <h3 class="text-xl font-bold">{item.title}</h3>
+                  <p class="mt-2 leading-relaxed text-white/70">{item.description}</p>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      {/* How it works */}
+      <Section id="how" className="scroll-mt-24 bg-[#F4EFE3] text-[#141210]">
+        <div class="section-container grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
+          <div>
+            <span class="text-xs font-bold tracking-[0.2em] text-[#8A5A00] uppercase">{data.how.tag}</span>
+            <h2 class="mt-4 text-3xl leading-tight font-black tracking-tight md:text-5xl">{data.how.title}</h2>
+            <ol class="mt-10 space-y-4">
+              {data.how.steps.map((step, idx) => (
+                <li class="flex items-start gap-4">
+                  <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#141210] text-lg font-black text-[#FEB93F]">
+                    {idx + 1}
+                  </span>
+                  <span class="pt-1.5 text-lg leading-relaxed font-semibold">{step}</span>
+                </li>
+              ))}
+            </ol>
+            <p class="mt-8 font-semibold text-[#5C554A]">{data.how.note}</p>
+          </div>
+          <div class="mx-auto flex w-full max-w-[420px] items-start justify-center gap-4">
+            <Image
+              src={oneTapShot}
+              alt={localize("ScreenVeil turns the screen off with the floating button or the Quick Settings tile")}
+              widths={[200, 400]}
+              sizes="(min-width: 1024px) 200px, 44vw"
+              class="w-1/2 rounded-[1.5rem] shadow-xl shadow-[#141210]/25"
+            />
+            <Image
+              src={tapBackShot}
+              alt={localize("Touch the black screen, then unlock, to come back")}
+              widths={[200, 400]}
+              sizes="(min-width: 1024px) 200px, 44vw"
+              class="mt-14 w-1/2 rounded-[1.5rem] shadow-xl shadow-[#141210]/25"
+            />
+          </div>
+        </div>
+      </Section>
+
+      {/* Features */}
+      <Section className="bg-[#0B0B0C]">
+        <div class="section-container">
+          <div class="mx-auto max-w-3xl text-center">
+            <span class="text-xs font-bold tracking-[0.2em] text-[#FEB93F] uppercase">{data.features.tag}</span>
+            <h2 class="mt-4 text-3xl leading-tight font-black tracking-tight md:text-5xl">{data.features.title}</h2>
+          </div>
+          <div class="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {data.features.items.map((feature) => {
+              const Icon = featureIcons[feature.icon as keyof typeof featureIcons];
+              return (
+                <div class="rounded-2xl border border-white/10 bg-[#161514] p-6">
+                  <Icon className="h-7 w-7 text-[#FEB93F]" aria-hidden="true" />
+                  <h3 class="mt-4 text-lg font-bold">{feature.title}</h3>
+                  <p class="mt-1.5 leading-relaxed text-white/65">{feature.description}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </Section>
+
+      {/* Battery, honestly */}
+      <Section className="bg-[#F4EFE3] text-[#141210]">
+        <div class="section-container">
+          <div class="mx-auto max-w-3xl text-center">
+            <span class="text-xs font-bold tracking-[0.2em] text-[#8A5A00] uppercase">{data.battery.tag}</span>
+            <h2 class="mt-4 text-3xl leading-tight font-black tracking-tight md:text-5xl">{data.battery.title}</h2>
+            <p class="mt-5 text-lg leading-relaxed text-[#3F3A32]">{data.battery.description}</p>
+          </div>
+          <div class="mx-auto mt-12 grid max-w-4xl grid-cols-1 gap-5 md:grid-cols-2">
+            <div class="rounded-3xl bg-[#141210] p-8 text-white">
+              <div class="flex items-center gap-3">
+                <span class="h-3 w-3 rounded-full bg-[#FEB93F]"></span>
+                <h3 class="text-xl font-black">{data.battery.amoledTitle}</h3>
+              </div>
+              <p class="mt-3 leading-relaxed text-white/75">{data.battery.amoled}</p>
             </div>
-            <div class="bg-slate-900 p-4">
-              <p class="mb-1 text-[9px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Privacy")}</p>
-              <p class="font-black text-white text-sm">{localize("Zero Permissions")}</p>
+            <div class="rounded-3xl bg-white p-8 ring-1 ring-[#141210]/10">
+              <div class="flex items-center gap-3">
+                <span class="h-3 w-3 rounded-full bg-[#C9C1B2]"></span>
+                <h3 class="text-xl font-black">{data.battery.lcdTitle}</h3>
+              </div>
+              <p class="mt-3 leading-relaxed text-[#3F3A32]">{data.battery.lcd}</p>
             </div>
-            <div class="bg-slate-900 p-4">
-              <p class="mb-1 text-[9px] font-bold text-slate-400 uppercase tracking-tighter">{localize("Tech")}</p>
-              <p class="font-black text-white text-sm">{localize("AMOLED Optimized")}</p>
+          </div>
+          <div class="mt-8 text-center">
+            <a
+              href={localePath(lang, "/blog/does-dark-mode-save-battery-amoled")}
+              class="inline-flex items-center gap-2 font-bold text-[#8A5A00] underline underline-offset-4 hover:text-[#141210]"
+            >
+              {data.battery.linkLabel}
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </a>
+          </div>
+        </div>
+      </Section>
+
+      {/* Permissions & privacy */}
+      <Section className="bg-[#0B0B0C]">
+        <div class="section-container">
+          <div class="mx-auto max-w-3xl text-center">
+            <span class="text-xs font-bold tracking-[0.2em] text-[#FEB93F] uppercase">{data.trust.tag}</span>
+            <h2 class="mt-4 text-3xl leading-tight font-black tracking-tight md:text-5xl">{data.trust.title}</h2>
+          </div>
+          <div class="mx-auto mt-12 grid max-w-5xl grid-cols-1 gap-5 md:grid-cols-2">
+            <div class="rounded-3xl border border-white/10 bg-[#161514] p-8">
+              <Layers className="h-7 w-7 text-[#FEB93F]" aria-hidden="true" />
+              <h3 class="mt-4 text-xl font-bold">{data.trust.permissionTitle}</h3>
+              <p class="mt-2 leading-relaxed text-white/70">{data.trust.permission}</p>
+              <a
+                href={localePath(lang, "/legal/screenveil/privacy")}
+                class="mt-5 inline-flex items-center gap-2 font-bold text-[#FEB93F] underline underline-offset-4 hover:text-white"
+              >
+                {data.trust.policyLink}
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              </a>
+            </div>
+            <div class="rounded-3xl border border-white/10 bg-[#161514] p-8">
+              <h3 class="text-xl font-bold">{data.trust.doesNotTitle}</h3>
+              <ul class="mt-5 space-y-3">
+                {data.trust.doesNot.map((item) => (
+                  <li class="flex items-start gap-3 text-white/80">
+                    <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/10">
+                      <X className="h-3.5 w-3.5 text-[#FEB93F]" aria-hidden="true" />
+                    </span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div class="mx-auto mt-14 max-w-4xl text-center">
+            <h3 class="text-xs font-bold tracking-[0.2em] text-white/60 uppercase">{data.audience.tag}</h3>
+            <ul class="mt-5 flex flex-wrap justify-center gap-2">
+              {data.audience.items.map((item) => (
+                <li class="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm font-semibold text-white/85">
+                  <Check className="h-4 w-4 text-[#FEB93F]" aria-hidden="true" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </Section>
+
+      {/* FAQ */}
+      <Section className="bg-[#F4EFE3] text-[#141210]">
+        <FAQSchema items={faqs} />
+        <div class="section-container">
+          <div class="mx-auto max-w-3xl">
+            <div class="text-center">
+              <span class="text-xs font-bold tracking-[0.2em] text-[#8A5A00] uppercase">{data.labels.faqTag}</span>
+              <h2 class="mt-4 text-3xl font-black tracking-tight md:text-5xl">{data.labels.faqTitle}</h2>
+            </div>
+            <div class="mt-12 space-y-3">
+              {faqs.map((item, idx) => (
+                <details class="group rounded-2xl bg-white p-6 ring-1 ring-[#141210]/5" open={idx === 0}>
+                  <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-bold [&::-webkit-details-marker]:hidden">
+                    <h3>{item.question}</h3>
+                    <ChevronDown className="h-5 w-5 shrink-0 text-[#8A5A00] transition-transform group-open:rotate-180" aria-hidden="true" />
+                  </summary>
+                  <p class="mt-3 leading-relaxed text-[#3F3A32]">{item.answer}</p>
+                </details>
+              ))}
             </div>
           </div>
         </div>
-      </ScreenVeilHero>
-      <PainPointsSection />
-      <FeatureGrid />
-      <TechnicalAdvantage />
-      <PrivacySection />
-      <TestimonialsSection />
-      <CompetitorComparison />
-      <FAQSection />
-      <ScreenVeilClosingCTA />
+      </Section>
+
+      {/* Further reading */}
+      <Section className="bg-[#F4EFE3] py-16 text-[#141210] md:py-20">
+        <div class="section-container">
+          <div class="mx-auto max-w-4xl">
+            <span class="text-xs font-bold tracking-[0.2em] text-[#8A5A00] uppercase">{data.reading.tag}</span>
+            <h2 class="mt-3 text-2xl font-black tracking-tight md:text-3xl">{data.reading.title}</h2>
+            <ul class="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              {reading.map((post) => (
+                <li>
+                  <a
+                    href={localePath(lang, `/blog/${post.slug}`)}
+                    class="group flex h-full items-center justify-between gap-4 rounded-2xl bg-white p-5 font-bold ring-1 ring-[#141210]/5 transition hover:ring-[#FEB93F]"
+                  >
+                    {post.title}
+                    <ArrowRight className="h-5 w-5 shrink-0 text-[#8A5A00] transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </Section>
+
+      {/* Closing CTA */}
+      <section class="relative overflow-hidden bg-[#0B0B0C] py-20 md:py-28">
+        <div aria-hidden="true" class="pointer-events-none absolute -bottom-48 left-1/2 h-[480px] w-[720px] -translate-x-1/2 rounded-full bg-[#FEB93F] opacity-30 blur-[120px]"></div>
+        <div class="section-container relative text-center">
+          <Image src={iconImg} alt="" width={96} height={96} class="mx-auto h-20 w-20 rounded-3xl shadow-xl shadow-black/40 ring-4 ring-white/10" />
+          <h2 class="mt-8 text-4xl font-black tracking-tight md:text-6xl">{data.closing.title}</h2>
+          <p class="mx-auto mt-5 max-w-xl text-lg font-medium text-white/80 md:text-xl">{data.closing.description}</p>
+          <a
+            href={screenveilPlayUrl("closing")}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-10 inline-flex h-16 items-center justify-center rounded-2xl bg-[#FEB93F] px-10 text-lg font-bold text-[#141210] shadow-2xl transition hover:bg-[#FFCB6B]"
+          >
+            {data.hero.primaryCTA}
+          </a>
+          <p class="mt-5 text-sm font-semibold text-white/70">{data.closing.subtext}</p>
+        </div>
+      </section>
+    </main>
+
+    <Footer />
+
+    {/* Mobile sticky download bar, shown after the hero */}
+    <div
+      id="screenveil-sticky"
+      class="pointer-events-none fixed inset-x-0 bottom-0 z-50 translate-y-full border-t border-white/10 bg-[#0B0B0C]/95 p-3 opacity-0 backdrop-blur transition-all duration-300 lg:hidden"
+    >
+      <div class="mx-auto flex max-w-lg items-center gap-3">
+        <Image src={iconImg} alt="" width={64} height={64} class="h-11 w-11 rounded-xl" />
+        <div class="flex-1">
+          <p class="text-sm font-black">ScreenVeil</p>
+          <p class="text-xs text-white/65">{data.hero.stickyMeta}</p>
+        </div>
+        <a
+          href={screenveilPlayUrl("sticky")}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex h-11 items-center rounded-xl bg-[#FEB93F] px-5 font-bold text-[#141210]"
+        >
+          {data.hero.downloadNow}
+        </a>
+      </div>
     </div>
-
-    <Footer variant="dark" />
-    <StickyDownloadBar client:idle translations={screenveilData.hero} />
   </div>
 </Layout>
+
+<script>
+  const bar = document.getElementById("screenveil-sticky");
+  if (bar) {
+    const toggle = () => {
+      const show = window.scrollY > 600;
+      bar.classList.toggle("translate-y-full", !show);
+      bar.classList.toggle("opacity-0", !show);
+      bar.classList.toggle("pointer-events-none", !show);
+    };
+    window.addEventListener("scroll", toggle, { passive: true });
+    toggle();
+  }
+</script>
