@@ -1,7 +1,7 @@
 ---
 title: "Monk Mode 2.0: Warum Ihre Willenskraft nicht ausreicht (und was ich stattdessen gebaut habe)"
 date: "2026-01-26"
-dateModified: "2026-05-19"
+dateModified: "2026-10-24"
 category: "Android-Apps"
 keywords: "monk mode app android, dopamin detox app, monk mode umsetzen, mindful guard android"
 author: "AppLass-Team"
@@ -47,7 +47,7 @@ So entstand [MindfulGuard](/de/apps/mindful-guard). Es sollte nicht bloß ein we
 
 Damit mein Monk Mode hält, habe ich drei konkrete Funktionen in die App eingebaut:
 
-1. **Strikter Logikmodus:** Keine Schaltfläche „5 Minuten mehr“. Sobald die Sperre steht, ist sie eine harte Wand, die Willenskraft nicht durchbrechen kann.
+1. **Keine Umgehungsschaltfläche:** Keine Schaltfläche „5 Minuten mehr“. Sobald die Sperre steht, ist sie eine harte Wand, die Willenskraft nicht durchbrechen kann.
 2. **Zero-Telemetry-Datenschutz:** Ich bin Entwickler und deshalb besessen von Datenschutz. Meine App arbeitet Offline-First — Ihre Nutzungsdaten bleiben auf Ihrem Telefon, nicht in einer Cloud.
 3. **Reibungstraining:** Manchmal braucht es einfach eine Pause. Wir schieben ein paar Sekunden Atmen oder eine Verzögerung ein, um die „Dopaminschleife“ zu durchbrechen, bevor sie beginnt.
 

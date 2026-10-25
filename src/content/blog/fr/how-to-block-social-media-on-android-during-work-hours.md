@@ -1,7 +1,7 @@
 ---
 title: "Comment Bloquer les Réseaux Sociaux sur Android Pendant les Heures de Travail Uniquement"
 date: "2026-04-24"
-dateModified: "2026-05-19"
+dateModified: "2026-10-24"
 category: "Applications Android"
 keywords: "bloquer réseaux sociaux android, planifier bloqueur applications, bloquer applications heures de travail, mindful guard android"
 author: "AppLass Team"
@@ -20,9 +20,9 @@ faqs:
   - question: "Puis-je définir des horaires différents pour les jours de semaine et le week-end ?"
     answer: "Oui. Mindful Guard vous permet de choisir les jours d'activation de chaque programme, donc vos week-ends restent totalement libres pendant que votre fenêtre de travail du lundi au vendredi est protégée. Vous pouvez aussi créer plusieurs programmes — un blocage strict le matin avant 8h et un blocage plus léger l'après-midi de 13h à 15h, par exemple."
   - question: "Et si j'ai besoin d'accéder à une application bloquée pour le travail ?"
-    answer: "Mindful Guard propose un Mode Standard et un Mode Strict. Le Mode Standard permet une courte fenêtre de dérogation si vous avez vraiment besoin d'accès — utile si votre travail exige de consulter LinkedIn ou Twitter occasionnellement. Le Mode Strict n'a aucune dérogation. Commencez par le Mode Standard et passez au Mode Strict si vous abusez des dérogations."
+    answer: "Laissez-la hors de votre liste de blocage. Mindful Guard n'a pas de bouton de dérogation : une fois un blocage lancé, il tient jusqu'à la fin du programme. Ne bloquez donc que ce dont vous n'avez vraiment pas besoin pendant vos heures de travail. Si votre travail exige LinkedIn ou X de temps en temps, gardez l'application ouverte et utilisez Reel Guard pour limiter seulement son fil de vidéos courtes."
   - question: "Mindful Guard est-il sûr ? Collecte-t-il mes données ?"
-    answer: "Mindful Guard utilise une architecture zéro tracking, entièrement sur l'appareil. Il ne nécessite que la permission d'Accès à l'utilisation pour surveiller quelle application est au premier plan — aucune donnée de localisation, aucun contact, aucun identifiant personnel. Vos habitudes d'utilisation ne quittent jamais votre téléphone."
+    answer: "Mindful Guard fonctionne entièrement sur votre appareil. Il utilise le service d'accessibilité d'Android pour repérer l'ouverture d'une application bloquée, ainsi que l'Accès à l'utilisation pour ses statistiques — aucune donnée de localisation, aucun contact, aucun identifiant personnel. La section « Sécurité des données » de Google Play n'indique aucune donnée collectée."
 ---
 
 Vous avez essayé de supprimer les applications. Vous les avez réinstallées trois jours plus tard.
@@ -67,13 +67,11 @@ La neuroscience ici est simple. Les boucles d'habitudes sont déclenchées par d
 
 Installez [Mindful Guard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dhow-to-block-social-media-on-android-during-work-hours%26utm_content%3Dinline) depuis le Google Play Store. C'est gratuit, sans compte, sans inscription et sans adresse e-mail.
 
-### Étape 2 : Accorder l'Accès à l'Utilisation
+### Étape 2 : Autoriser le Service d'Accessibilité
 
-Au premier lancement, Mindful Guard demandera la permission d'Accès à l'utilisation. C'est ainsi qu'il détecte quelle application est au premier plan pour pouvoir appliquer les blocages.
+Au premier lancement, l'application vous demande d'autoriser son **service d'accessibilité**. C'est ainsi que Mindful Guard repère l'ouverture d'une application bloquée pour la fermer aussitôt. Elle peut aussi demander l'Accès à l'utilisation (pour ses statistiques), l'affichage par-dessus les autres applications (pour l'écran de blocage) et l'exemption de l'optimisation de la batterie (pour que le blocage continue en arrière-plan).
 
-Pour l'accorder : allez dans **Paramètres → Bien-être numérique et contrôle parental → Accès à l'utilisation**, trouvez Mindful Guard dans la liste et activez-le.
-
-C'est la seule permission dont l'application a besoin. Elle ne demande pas la localisation, les contacts, la caméra, le microphone ou toute autre permission sensible. Tout le traitement se fait sur l'appareil.
+Elle ne demande ni la localisation, ni les contacts, ni la caméra, ni le microphone. Tout le traitement se fait sur l'appareil.
 
 ### Étape 3 : Créer Votre Programme d'Heures de Travail
 
@@ -100,15 +98,14 @@ Appuyez sur **Ajouter des Applications** et choisissez celles qui vous coûtent 
 
 Un test utile : ouvrez votre rapport de temps d'écran Android et triez par moyenne quotidienne. Les trois ou quatre premières applications non professionnelles constituent votre liste de blocage. Ne bloquez pas excessivement — ajouter 15 applications à la liste donne l'impression d'une cage, ce qui augmente l'envie de désinstaller.
 
-### Étape 5 : Choisir Votre Mode de Blocage
+### Étape 5 : Décider Ce Qui Reste Ouvert
 
-Mindful Guard vous propose deux options :
+Mindful Guard n'a pas de bouton de dérogation. Si vous ouvrez une application bloquée pendant votre programme, l'écran de blocage apparaît et reste jusqu'à la fin du programme. C'est tout l'intérêt — mais il faut donc décider dès maintenant ce dont vous avez vraiment besoin pendant vos heures de travail.
 
-**Mode Standard** — Quand vous essayez d'ouvrir une application bloquée, un écran de blocage apparaît avec la possibilité de demander une courte fenêtre de dérogation. Utile si votre travail nécessite occasionnellement l'accès aux réseaux sociaux.
+- **Besoin d'un réseau social pour le travail** (community management, marketing social) ? Laissez-le hors de la liste de blocage, et utilisez **Reel Guard** pour limiter seulement son fil Reels ou Shorts.
+- **Jamais besoin au travail ?** Bloquez l'application entière.
 
-**Mode Strict** — Aucune dérogation. L'écran de blocage est la fin de la route jusqu'à l'expiration de votre programme. Recommandé si vous avez remarqué que vous justifiez des dérogations qui n'étaient pas vraiment nécessaires.
-
-Si c'est la première fois que vous configurez un système comme celui-ci, commencez par le Mode Standard. Donnez-lui une semaine. Si vous utilisez la dérogation plus d'une ou deux fois par jour, passez au Mode Strict.
+Si c'est la première fois que vous configurez un système comme celui-ci, commencez par une liste courte. Donnez-lui une semaine, puis ajoutez les applications vers lesquelles vous tendez encore la main.
 
 ### Étape 6 : Activer le Programme
 

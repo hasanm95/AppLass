@@ -18,7 +18,7 @@ export const getFaqRegistry = () => ({
       id: "privacy",
       question: localize("Do any of them collect my data?"),
       answer: localize(
-        "No. Our apps do not include third-party analytics SDKs and do not log what you do. Mindful Guard keeps all of its rules and history on your phone, and nothing is sent to a server."
+        "Mindful Guard collects no data, and its rules and history stay on your phone. ScreenVeil shows no ads, but its Google Play Data safety section lists device or other IDs as collected and shared. Each app's Play listing shows exactly what it collects."
       ),
     },
     {
@@ -42,69 +42,63 @@ export const getFaqRegistry = () => ({
   ],
   SCREENVEIL: [
     {
-      question: localize("Does ScreenVeil work on LCD screens?"),
-      answer: localize(
-        "Yes. On LCD displays ScreenVeil acts as a screen dimmer and reduces brightness-related battery drain. The largest savings — up to 60% of display power at full brightness — come on AMOLED/OLED displays, where black pixels physically power off."
-      ),
-    },
-    {
-      question: localize("How is ScreenVeil different from YouTube Premium?"),
-      answer: localize(
-        "YouTube Premium only covers YouTube. ScreenVeil is a system-level utility that works across every app — Netflix, Spotify, Twitch, podcast players, and more. It also adds pocket mode to block accidental touches while your screen is covered."
-      ),
-    },
-    {
       question: localize("What is ScreenVeil?"),
       answer: localize(
-        "ScreenVeil is a free Android app with 10,000+ downloads and a 4.4-star rating. It overlays a pure black layer on AMOLED/OLED screens so pixels physically turn off, cutting display power by up to 60% at full brightness while you listen to YouTube, podcasts, or any audio."
+        "ScreenVeil is a black screen overlay for Android. One tap on its floating button or Quick Settings tile turns the screen black while whatever you were playing keeps playing. It also has a dim mode, a sleep timer, pocket mode and biometric unlock. It is free to download and needs no account."
       ),
     },
     {
-      question: localize("How do I play YouTube in the background like Premium?"),
+      question: localize("Does the audio keep playing when the screen is black?"),
       answer: localize(
-        "Simply open the YouTube app, start your video, and activate ScreenVeil from your notification shade or the floating button. Your screen will go black, but the audio will continue to play. For more details, see our full guide on <a href='/blog/youtube-background-play-2026-workaround' class='text-green-500 underline'>YouTube Background Play in 2026</a>."
+        "Yes. ScreenVeil only draws a black layer over your own screen. The app underneath stays open and carries on exactly as before, so a lecture, podcast or playlist keeps playing."
       ),
     },
     {
-      question: localize("Why does ScreenVeil need 'Display over other apps' permission?"),
+      question: localize("Does ScreenVeil save battery?"),
       answer: localize(
-        "This is the only way Android allows an app to place a layer over other apps (like YouTube or Netflix). We use this to draw the pure black 'Veil' over your screen. ScreenVeil does not require internet, camera, or contact permissions."
+        "On AMOLED and OLED screens, yes: a pure black pixel is switched off, so the display uses less power. The brighter your screen was and the longer you listen, the more you save. On LCD screens the backlight stays on, so the saving is small. ScreenVeil doesn't promise a fixed percentage, because it differs on every phone."
       ),
     },
     {
-      question: localize("Will this work while my phone is in my pocket?"),
+      question: localize("Why does ScreenVeil need the \"display over other apps\" permission?"),
       answer: localize(
-        "Yes. ScreenVeil includes a 'Pocket Guard' feature that blocks all touch inputs while the veil is active. This prevents accidental skipping, pausing, or 'ghost dialing' while your phone is in your pocket or bag."
+        "It is the only permission you grant, and it is how Android lets an app draw a layer on top of other apps. ScreenVeil uses it to draw the black screen. It does not read your screen, record audio or video, or need your files, contacts or location."
       ),
     },
     {
-      question: localize("Does ScreenVeil drain battery?"),
+      question: localize("How do I get my screen back?"),
       answer: localize(
-        "No. ScreenVeil is engineered for extreme efficiency. It uses 0% CPU while active. By turning off the pixels on AMOLED screens, it removes almost all of the display's draw — up to 60% of screen power at full brightness — during audio-only playback."
+        "Touch the black screen to show the unlock button, then tap it. If you turned on biometric unlock, only your fingerprint lifts the black screen."
       ),
     },
     {
-      question: localize("Does ScreenVeil require root access?"),
+      question: localize("Will it stop accidental touches in my pocket?"),
       answer: localize(
-        "No. ScreenVeil requires only the standard Android Overlay permission to function. No root, no ADB, no special setup. Install and activate in under 30 seconds."
-      ),
-    },
-    {
-      question: localize("Will ScreenVeil get killed by battery optimizers on Samsung or Xiaomi devices?"),
-      answer: localize(
-        "ScreenVeil is engineered to handle aggressive battery management on MIUI, OneUI, and OxygenOS. We recommend adding ScreenVeil to your device's battery optimization whitelist for uninterrupted session performance."
-      ),
-    },
-    {
-      question: localize("Is ScreenVeil safe? What data does it collect?"),
-      answer: localize(
-        "ScreenVeil collects zero personal data. It requires no internet access and contains no third-party analytics SDKs. The only permission it needs is \"Display over other apps\" — nothing else."
+        "Yes. While the black screen is on, touches are blocked until you unlock on purpose. Pocket mode can also turn the screen black on its own when the phone goes into your pocket."
       ),
     },
     {
       question: localize("Does ScreenVeil work with Bluetooth headphones and earbuds?"),
       answer: localize(
-        "Yes. ScreenVeil only controls the display layer — audio routing is handled entirely by Android. It works with all Bluetooth devices, wired headphones, speakers, and car audio systems."
+        "Yes. ScreenVeil only controls what the screen shows. Android handles audio as usual, so Bluetooth headphones, wired earphones, speakers and car audio all work."
+      ),
+    },
+    {
+      question: localize("Does ScreenVeil need root?"),
+      answer: localize(
+        "No. Install it, tap Start Service and allow \"display over other apps\". There is no root, no ADB and no account."
+      ),
+    },
+    {
+      question: localize("ScreenVeil stops on my Samsung or Xiaomi phone. What can I do?"),
+      answer: localize(
+        "Some phones close background apps aggressively. Exclude ScreenVeil from battery optimization in your phone's settings so the overlay and the sleep timer keep running."
+      ),
+    },
+    {
+      question: localize("ScreenVeil vs Mindful Guard: what is the difference?"),
+      answer: localize(
+        "ScreenVeil turns your screen black while audio keeps playing. Mindful Guard, also by AppLass, keeps you out of distracting apps and limits Reels, Shorts and TikTok."
       ),
     },
   ],
@@ -162,73 +156,55 @@ export const getFaqRegistry = () => ({
     {
       question: localize("What is Mindful Guard?"),
       answer: localize(
-        "Mindful Guard is a free Android app blocker that stops Reels, Shorts, TikTok, and any other app you choose. It's built 100% offline with zero telemetry, so nothing about how you use it ever leaves your phone. The free tier gives you 3 focus sessions a day; premium unlocks unlimited. Most people get back about 2.4 hours of focus time daily."
+        "Mindful Guard is an Android app blocker with Reel Guard. It limits the short-form feeds in Instagram, YouTube, TikTok, Facebook and Snapchat with daily and per-session limits, and blocks any app you choose with a quick focus timer or a weekly schedule. It has a free plan, shows no ads and needs no account."
       ),
     },
     {
-      question: localize("Does Mindful Guard work on Xiaomi, Samsung, or MIUI devices?"),
+      question: localize("Can I block Reels but still use Instagram?"),
       answer: localize(
-        "Yes. MIUI, OneUI, and HyperOS are known for aggressively killing background apps to save battery — Mindful Guard is built to survive that. Add it to your battery optimization whitelist and your blocking sessions will run uninterrupted."
+        "Yes. Reel Guard closes only the Reels feed when your limit is reached. Messages, Stories and the rest of Instagram keep working. The same applies to YouTube Shorts, TikTok's feed, Facebook Reels and Snapchat Spotlight."
       ),
     },
     {
-      question: localize("Is Mindful Guard safe for privacy?"),
+      question: localize("Is Mindful Guard free?"),
       answer: localize(
-        "Yes. Mindful Guard doesn't need an internet connection to work, and it has zero third-party analytics SDKs. Your block lists, schedules, and usage data stay on your phone — period. There is no account and no cloud component at all."
+        "Yes, you can start on the free plan. Premium unlocks more and is available as a monthly, yearly or one-time lifetime purchase. Google Play shows the price in your currency."
       ),
     },
     {
-      question: localize("How does Strict Mode work?"),
+      question: localize("Does Mindful Guard collect my data?"),
       answer: localize(
-        "Strict Mode locks your settings for a duration you choose. Once it's on, you can't change your block list or switch the blocking off from inside the app until the timer runs out. It's built for the moments you know your future self will try to cheat."
+        "No. Its Google Play Data safety section declares no data collected and no data shared with third parties. There are no ads, no analytics and no account. Your block lists, schedules and stats stay on your phone."
+      ),
+    },
+    {
+      question: localize("Why does it need the Accessibility Service?"),
+      answer: localize(
+        "Android's Accessibility Service is how Mindful Guard notices that a blocked app or a short-form feed has opened, so it can close it in real time. It is used only for blocking. Mindful Guard also asks to display over other apps, to show the limit screen, and to be exempt from battery optimization, so blocking keeps running in the background."
       ),
     },
     {
       question: localize("Does Mindful Guard use a VPN?"),
       answer: localize(
-        "No. A VPN-based blocker has to pass all of your network traffic through a VPN connection, which adds overhead and needs extra trust. Mindful Guard blocks apps locally using Android's Accessibility API, so it never touches your network traffic."
+        "No. Mindful Guard blocks apps on the device using Android's Accessibility Service, so it never routes or inspects your network traffic."
       ),
     },
     {
-      question: localize("Which apps can Mindful Guard block?"),
+      question: localize("Does it work on Samsung, Xiaomi and other phones that close background apps?"),
       answer: localize(
-        "Mindful Guard can block any installed Android app — Instagram, TikTok, YouTube, Twitter/X, Reddit, games, browsers, or any custom app. You choose exactly which apps to block and when."
+        "Yes. Allow Mindful Guard to ignore battery optimization when it asks. On phones that close background apps aggressively, such as some Xiaomi, Samsung and Huawei models, this keeps your limits and schedules running."
       ),
     },
     {
-      question: localize("Does Mindful Guard track my screen time or usage?"),
+      question: localize("How is Mindful Guard different from Digital Wellbeing?"),
       answer: localize(
-        "Any stats Mindful Guard shows you — streaks, time saved, sessions completed — are calculated and stored only on your device. We never see any of it; there's no server for it to go to."
+        "Digital Wellbeing's app timer covers a whole app and is easy to turn off in Settings. Mindful Guard can limit only the Reels or Shorts feed, cap each session, count reels, add a cooldown between sessions, and keeps a block in place until it ends."
       ),
     },
     {
-      question: localize("How is Mindful Guard different from Android's built-in Digital Wellbeing?"),
+      question: localize("Mindful Guard vs ScreenVeil: what is the difference?"),
       answer: localize(
-        "Android's Digital Wellbeing is easy to bypass — a few taps in Settings and it's off. Mindful Guard's Strict Mode can't be turned off that way, not even by uninstalling. It also gives you more granular scheduling and works on devices where manufacturers have disabled Digital Wellbeing entirely."
-      ),
-    },
-    {
-      question: localize("Mindful Guard vs ScreenVeil: What is the difference?"),
-      answer: localize(
-        "Mindful Guard is an app blocker designed to stop you from opening distracting apps entirely. ScreenVeil is a battery-saving utility that places a black overlay on your screen so you can listen to background audio without draining power."
-      ),
-    },
-    {
-      question: localize("What is a zero telemetry blocker?"),
-      answer: localize(
-        "Zero telemetry means exactly what it sounds like: the app doesn't collect, record, or transmit any data about which apps you block or how long you use your phone. Everything stays on your device — nothing ever talks to a cloud server."
-      ),
-    },
-    {
-      question: localize("Mindful Guard vs Forest: Which should I choose?"),
-      answer: localize(
-        "Forest gamifies focus by growing virtual trees, but you can still just exit the app and kill your tree whenever you want. Mindful Guard's Strict Mode physically prevents you from opening blocked apps — even on the days your willpower gives out."
-      ),
-    },
-    {
-      question: localize("Does Opal drain battery on Android?"),
-      answer: localize(
-        "Not noticeably for most people. Opal used a local VPN on iOS until 2022, but on Android its Play Store listing says it uses the AccessibilityService API on Android 14 and above, the same approach Mindful Guard uses. Battery drain from any accessibility-based blocker is usually small; if one does drain, check its battery usage in Settings."
+        "Mindful Guard keeps you out of distracting apps and feeds. ScreenVeil, also by AppLass, turns your screen black while audio keeps playing, to hide the screen or save battery on AMOLED phones."
       ),
     },
   ],
@@ -310,7 +286,7 @@ export const getFaqRegistry = () => ({
     {
       question: localize("Is Mindful Guard safe for privacy?"),
       answer: localize(
-        "Yes. Mindful Guard is 100% offline. It does not require an account, does not use a VPN, and never transmits your usage data to any server. Your focus sessions stay on your device."
+        "Yes. Mindful Guard works offline, and its Google Play Data safety section declares no data collected. It does not require an account, does not use a VPN, and keeps your focus sessions on your device."
       ),
     },
     {

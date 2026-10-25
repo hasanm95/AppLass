@@ -11,7 +11,6 @@ import FomogenStock from '../components/docs-content/fomogen/stock-alerts/StockA
 import FomogenTrust from '../components/docs-content/fomogen/trust-badges/TrustBadgesPage.astro';
 
 import MindfulInstallation from '../components/docs-content/mindful-guard/installation/MindfulInstallationPage.astro';
-import MindfulStrictMode from '../components/docs-content/mindful-guard/strict-mode/StrictModePage.astro';
 
 import ScreenveilAmoled from '../components/docs-content/screenveil/amoled-efficiency/AmoledEfficiencyPage.astro';
 
@@ -31,7 +30,6 @@ export const docsRegistry: Record<string, Record<string, any>> = {
   },
   'mindful-guard': {
     installation: MindfulInstallation,
-    'strict-mode': MindfulStrictMode,
   },
   screenveil: {
     'amoled-efficiency': ScreenveilAmoled,

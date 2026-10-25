@@ -66,7 +66,7 @@ export const legalRegistry: Record<string, any> = {
     appName: 'ScreenVeil',
     product: 'screenveil',
     type: 'privacy',
-    description: localize("Privacy Policy for ScreenVeil - Our transparent approach to Android AMOLED efficiency and zero data collection.")
+    description: localize("Privacy Policy for ScreenVeil - How our Android black screen overlay handles permissions and data.")
   },
   'screenveil/terms': {
     component: ScreenveilTerms,

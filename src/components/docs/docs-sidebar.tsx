@@ -55,7 +55,6 @@ const DOCS_CONFIG: Record<
       items: [
         { name: "Introduction", href: "/docs/mindful-guard" },
         { name: "Installation", href: "/docs/mindful-guard/installation" },
-        { name: "Strict Logic Mode", href: "/docs/mindful-guard/strict-mode" },
       ],
     },
     {

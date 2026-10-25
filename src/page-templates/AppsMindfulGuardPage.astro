@@ -1,59 +1,82 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 import Footer from "@/components/common/Footer.astro";
 import Navbar from "@/components/common/Navbar.astro";
-import MindfulHero from "@/components/apps/mindful-guard/MindfulHero.astro";
-import LogicSection from "@/components/apps/mindful-guard/LogicSection.astro";
-import DifferentiatorsSection from "@/components/apps/mindful-guard/DifferentiatorsSection.astro";
-import ComparisonMatrix from "@/components/apps/mindful-guard/ComparisonMatrix.astro";
-import MindfulFAQSection from "@/components/apps/mindful-guard/MindfulFAQSection.astro";
-import MindfulStatsBar from "@/components/apps/mindful-guard/MindfulStatsBar.astro";
-import MindfulSocialProof from "@/components/apps/mindful-guard/MindfulSocialProof.astro";
-import MindfulPricing from "@/components/apps/mindful-guard/MindfulPricing.astro";
-import MindfulClosingCTA from "@/components/apps/mindful-guard/MindfulClosingCTA.astro";
-import { getMindfulGuardSchema } from "@/constants/mindful-guard-data";
+import Section from "@/components/common/Section.astro";
+import FAQSchema from "@/components/common/FAQSchema.astro";
+import { Image } from "astro:assets";
+import {
+  ArrowRight,
+  Check,
+  ChevronDown,
+  Timer,
+  CalendarClock,
+  ListChecks,
+  EyeOff,
+  ShieldCheck,
+  WifiOff,
+  Accessibility,
+  Layers,
+  BatteryCharging,
+} from "lucide-react";
+import iconImg from "@/assets/apps/mindful-guard/icon.png";
+import homeShot from "@/assets/apps/mindful-guard/home.jpg";
+import reelSettingsShot from "@/assets/apps/mindful-guard/reel-guard-settings.jpg";
+import reelLimitShot from "@/assets/apps/mindful-guard/reel-guard-limit.jpg";
+import schedulesShot from "@/assets/apps/mindful-guard/schedules.jpg";
+import selectAppsShot from "@/assets/apps/mindful-guard/select-apps.jpg";
+import { getMindfulGuardData, getMindfulGuardSchema, mindfulGuardPlayUrl } from "@/constants/mindful-guard-data";
+import { getFaqRegistry } from "@/constants/faq-registry";
 import { i18nConfig } from "@/i18n/config";
 import { localize } from "@/i18n/localize";
+import { localePath } from "@/i18n/utils";
+import { setLocale } from "@/i18n";
+import { lastUpdatedFor } from "@/lib/lastUpdated";
 
 interface Props {
   lang: typeof i18nConfig.locales[number];
 }
 
 const { lang } = Astro.props;
-
-import { setLocale } from "@/i18n";
-import { lastUpdatedFor } from "@/lib/lastUpdated";
 setLocale(lang);
 
 const isDefault = lang === "en";
+const data = getMindfulGuardData();
+const faqs = getFaqRegistry().MINDFUL_GUARD;
 const lastUpdated = lastUpdatedFor("src/page-templates/AppsMindfulGuardPage.astro");
-const mindfulSchema = {
+const pageUrl = isDefault ? "https://applass.com/apps/mindful-guard" : `https://applass.com/${lang}/apps/mindful-guard`;
+const schema = {
   ...getMindfulGuardSchema(),
+  "url": pageUrl,
   "datePublished": "2024-02-15",
-  "dateModified": lastUpdated,
-  "author": {
-    "@type": "Person",
-    "name": "Hasan M.",
-    "jobTitle": "Founder & Lead Engineer",
-    "url": "https://applass.com/about"
-  }
+  ...(lastUpdated && { "dateModified": lastUpdated }),
 };
+
+const modeIcons = [Timer, CalendarClock, ListChecks];
+const privacyIcons = [EyeOff, ShieldCheck, WifiOff];
+const permissionIcons = [Accessibility, Layers, BatteryCharging];
+
+const reading = [
+  { slug: "how-to-block-reels-and-shorts-on-android-2026", title: localize("How to block Reels and Shorts on Android") },
+  { slug: "how-to-block-youtube-shorts-android", title: localize("How to block YouTube Shorts on Android") },
+  { slug: "best-app-to-block-social-media-on-android-in-2026", title: localize("The best app to block social media on Android") },
+  { slug: "how-to-block-social-media-on-android-during-work-hours", title: localize("How to block social media during work hours") },
+];
 
 const meta = {
-  title: localize("Block Reels, Shorts & TikTok on Android — Mindful Guard"),
-  description: localize("Block Instagram Reels, YouTube Shorts & TikTok on Android. Set daily limits that hold — 100% offline, zero data collected, free to download."),
-  keywords: localize("block instagram reels android, block youtube shorts, tiktok blocker android, shorts blocker, reels blocker, android app blocker, limit short-form video, dopamine detox app, offline app blocker, zero telemetry"),
-  ogTitle: localize("Block Reels, Shorts & TikTok on Android — Mindful Guard"),
-  ogDescription: localize("A free Android app blocker with Reel Guard: cap Instagram Reels, YouTube Shorts & TikTok with daily and per-session limits. 100% offline. Zero data collected."),
-  ogImage: "https://applass.com/mindful-guard-feature.png",
-  ogUrl: isDefault ? "https://applass.com/apps/mindful-guard" : `https://applass.com/${lang}/apps/mindful-guard`
+  title: localize("Mindful Guard – Block Reels, Shorts & TikTok on Android | App Blocker"),
+  description: localize("Mindful Guard limits Instagram Reels, YouTube Shorts and TikTok with daily and per-session caps, and blocks any app on a timer or schedule. Free plan, no ads, no data collected."),
+  keywords: localize("mindful guard, block instagram reels android, block youtube shorts, tiktok blocker android, reels blocker, shorts blocker, app blocker android, focus timer, block apps schedule"),
+  ogTitle: localize("Mindful Guard: Get Your Hours Back From the Scroll"),
+  ogDescription: localize("Limit Reels, Shorts and TikTok, and block any app with a focus timer or weekly schedule. Free plan, no ads, no data collected."),
+  ogImage: "https://applass.com/mindful-guard-og.png",
+  ogUrl: pageUrl,
 };
-
 ---
 
-<Layout 
-  title={meta.title || "Mindful Guard: The #1 Privacy-First Focus App [Android 2026]"}
-  description={meta.description || "Stop digital distractions instantly. Mindful Guard is a 100% private, offline Pomodoro and app blocker for Android. Download for free today!"}
+<Layout
+  title={meta.title}
+  description={meta.description}
   keywords={meta.keywords}
   ogTitle={meta.ogTitle}
   ogDescription={meta.ogDescription}
@@ -61,70 +84,381 @@ const meta = {
   ogUrl={meta.ogUrl}
   lang={lang}
 >
-  <Navbar    />
-  {/* SoftwareApplication Schema for SEO - Critical for Google to display app details */}
-  <script
-    type="application/ld+json"
-    is:inline
-    set:html={JSON.stringify(mindfulSchema)}
-  />
-  <div class="flex-1">
-    {/* Section 1: The Hero (Above the Fold) */}
-    <MindfulHero>
-      <div slot="meta" class="mb-4 flex flex-wrap items-center gap-3 sm:mb-6 sm:gap-4 justify-start">
-        {lastUpdated && (
-          <span class="rounded-full bg-emerald-50 px-3 py-1 text-[10px] font-bold text-emerald-700 border border-emerald-100">
-            {localize("Last checked: ")} {lastUpdated}
-          </span>
-        )}
-        <span class="hidden h-1 w-1 rounded-full bg-slate-200 sm:block"></span>
-        <span class="text-[10px] font-bold text-slate-600 italic">
-          {localize("Verified: zero data collected")}
-        </span>
+  <div class="mindful bg-[#F3F7F4] text-[#1C2B24]">
+    <Navbar />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />
+
+    <main class="flex-1 overflow-x-hidden">
+      {/* Hero */}
+      <section class="relative overflow-hidden pt-28 pb-16 md:pt-36 md:pb-24">
+        <div aria-hidden="true" class="pointer-events-none absolute top-24 -right-48 h-[520px] w-[520px] rounded-full border-[56px] border-[#739D88]/25 md:h-[680px] md:w-[680px] md:border-[72px]"></div>
+        <div aria-hidden="true" class="pointer-events-none absolute top-[270px] right-[48px] hidden h-[200px] w-[200px] rounded-full bg-[#739D88]/20 md:block"></div>
+
+        <div class="section-container relative z-10 grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+          <div class="text-center lg:text-left">
+            <div class="mb-6 inline-flex items-center gap-3 rounded-full border border-[#739D88]/30 bg-white/80 py-1.5 pr-4 pl-1.5 backdrop-blur">
+              <Image src={iconImg} alt="" width={64} height={64} class="h-8 w-8 rounded-lg" />
+              <span class="text-xs font-bold tracking-[0.14em] text-[#3D6B55] uppercase">{data.hero.tagline}</span>
+            </div>
+
+            <h1 class="text-4xl leading-[1.04] font-black tracking-tight sm:text-5xl lg:text-6xl">
+              {data.hero.headline}
+              <span class="block text-[#3D6B55]">{data.hero.headlineAccent}</span>
+            </h1>
+
+            <p class="mx-auto mt-6 max-w-xl text-lg leading-relaxed font-medium text-[#3E4C45] md:text-xl lg:mx-0">
+              {data.hero.subheadline}
+            </p>
+
+            <div class="mt-9 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
+              <a
+                href={mindfulGuardPlayUrl("hero")}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex h-14 w-full items-center justify-center rounded-2xl bg-[#3D6B55] px-8 text-lg font-bold text-white shadow-lg shadow-[#3D6B55]/25 transition hover:bg-[#2F5644] sm:w-auto"
+              >
+                {data.hero.primaryCTA}
+              </a>
+              <a
+                href="#reel-guard"
+                class="group inline-flex h-14 w-full items-center justify-center gap-2 rounded-2xl border-2 border-[#1C2B24] px-8 text-lg font-bold transition hover:bg-[#1C2B24] hover:text-white sm:w-auto"
+              >
+                {data.hero.secondaryCTA}
+                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </a>
+            </div>
+            <p class="mt-5 text-sm font-semibold text-[#5A6862]">{data.hero.subtext}</p>
+
+            {/* TL;DR summary for readers and answer engines */}
+            <dl class="mt-10 grid grid-cols-1 overflow-hidden rounded-2xl border border-[#1C2B24]/10 bg-white text-left shadow-sm sm:grid-cols-3">
+              {data.summary.map((item, idx) => (
+                <div class={`p-4 ${idx > 0 ? "border-t border-[#1C2B24]/10 sm:border-t-0 sm:border-l" : ""}`}>
+                  <dt class="text-[11px] font-bold tracking-widest text-[#3D6B55] uppercase">{item.label}</dt>
+                  <dd class="mt-1 text-sm font-bold">{item.value}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+
+          <div class="relative mx-auto w-full max-w-[340px]">
+            <Image
+              src={homeShot}
+              alt={localize("Mindful Guard home screen with a 25-minute focus timer and Reel Guard usage for today")}
+              widths={[340, 680]}
+              sizes="(min-width: 1024px) 340px, 75vw"
+              class="w-full rounded-[2.25rem] border-[10px] border-[#1C2B24] shadow-2xl shadow-[#1C2B24]/25"
+              loading="eager"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Problem + how it works */}
+      <Section className="bg-[#1C2B24] text-white">
+        <div class="section-container">
+          <div class="mx-auto max-w-3xl text-center">
+            <span class="text-xs font-bold tracking-[0.2em] text-[#A9CDB8] uppercase">{data.problem.tag}</span>
+            <h2 class="mt-4 text-3xl leading-tight font-black tracking-tight md:text-5xl">{data.problem.title}</h2>
+            <p class="mt-6 text-lg leading-relaxed text-white/75">{data.problem.description}</p>
+          </div>
+
+          <ol class="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
+            {data.steps.map((step, idx) => (
+              <li class="rounded-3xl border border-white/10 bg-white/5 p-7">
+                <span class="flex h-10 w-10 items-center justify-center rounded-full bg-[#739D88] text-lg font-black">
+                  {idx + 1}
+                </span>
+                <h3 class="mt-5 text-xl font-bold">{step.title}</h3>
+                <p class="mt-2 leading-relaxed text-white/70">{step.description}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </Section>
+
+      {/* Reel Guard */}
+      <Section id="reel-guard" className="scroll-mt-24">
+        <div class="section-container grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
+          <div>
+            <span class="text-xs font-bold tracking-[0.2em] text-[#3D6B55] uppercase">{data.reelGuard.tag}</span>
+            <h2 class="mt-4 text-3xl leading-tight font-black tracking-tight md:text-5xl">{data.reelGuard.title}</h2>
+            <p class="mt-5 max-w-2xl text-lg leading-relaxed text-[#3E4C45]">{data.reelGuard.description}</p>
+
+            <ul class="mt-8 flex flex-wrap gap-2" aria-label={data.reelGuard.tag}>
+              {data.reelGuard.platforms.map((platform) => (
+                <li class="rounded-full bg-[#E6EFE8] px-4 py-2 text-sm font-bold text-[#2F5644]">{platform}</li>
+              ))}
+            </ul>
+
+            <div class="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              {data.reelGuard.limits.map((limit) => (
+                <div class="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-[#1C2B24]/5">
+                  <h3 class="font-bold">{limit.title}</h3>
+                  <p class="mt-1 text-sm leading-relaxed text-[#5A6862]">{limit.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div class="relative mx-auto flex w-full max-w-[420px] items-start justify-center gap-4">
+            <Image
+              src={reelSettingsShot}
+              alt={localize("Reel Guard settings with session, daily and reel-count limits and a cooldown")}
+              widths={[220, 440]}
+              sizes="(min-width: 1024px) 220px, 45vw"
+              class="w-[52%] rounded-[1.75rem] border-[8px] border-[#1C2B24] shadow-xl shadow-[#1C2B24]/20"
+            />
+            <figure class="mt-16 w-[48%]">
+              <Image
+                src={reelLimitShot}
+                alt={localize("Mindful Guard \"Daily limit reached\" screen after the reel budget is used")}
+                widths={[200, 400]}
+                sizes="(min-width: 1024px) 200px, 42vw"
+                class="w-full rounded-[1.75rem] border-[8px] border-[#1C2B24] shadow-xl shadow-[#1C2B24]/20"
+              />
+              <figcaption class="mt-3 text-center text-xs leading-snug font-semibold text-[#5A6862]">{data.reelGuard.overlayCaption}</figcaption>
+            </figure>
+          </div>
+        </div>
+      </Section>
+
+      {/* App blocking modes */}
+      <Section className="bg-white">
+        <div class="section-container grid grid-cols-1 items-center gap-12 lg:grid-cols-[0.85fr_1.15fr]">
+          <div class="order-last mx-auto flex w-full max-w-[420px] items-start justify-center gap-4 lg:order-first">
+            <Image
+              src={schedulesShot}
+              alt={localize("Mindful Guard schedule list with a sleeping-time block from 23:00 to 07:00")}
+              widths={[200, 400]}
+              sizes="(min-width: 1024px) 200px, 42vw"
+              class="mt-16 w-[48%] rounded-[1.75rem] border-[8px] border-[#1C2B24] shadow-xl shadow-[#1C2B24]/20"
+            />
+            <Image
+              src={selectAppsShot}
+              alt={localize("Choosing Instagram, Reddit and YouTube to block in Mindful Guard")}
+              widths={[220, 440]}
+              sizes="(min-width: 1024px) 220px, 45vw"
+              class="w-[52%] rounded-[1.75rem] border-[8px] border-[#1C2B24] shadow-xl shadow-[#1C2B24]/20"
+            />
+          </div>
+          <div>
+            <span class="text-xs font-bold tracking-[0.2em] text-[#3D6B55] uppercase">{data.blocking.tag}</span>
+            <h2 class="mt-4 text-3xl leading-tight font-black tracking-tight md:text-5xl">{data.blocking.title}</h2>
+            <div class="mt-10 space-y-4">
+              {data.blocking.modes.map((mode, idx) => {
+                const Icon = modeIcons[idx];
+                return (
+                  <div class="flex items-start gap-4 rounded-2xl bg-[#F3F7F4] p-5 ring-1 ring-[#1C2B24]/5">
+                    <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#739D88] text-white">
+                      <Icon className="h-6 w-6" aria-hidden="true" />
+                    </span>
+                    <span>
+                      <h3 class="text-lg font-bold">{mode.title}</h3>
+                      <p class="mt-1 leading-relaxed text-[#5A6862]">{mode.description}</p>
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Privacy & price */}
+      <Section className="bg-[#1C2B24] text-white">
+        <div class="section-container">
+          <div class="mx-auto max-w-3xl text-center">
+            <span class="text-xs font-bold tracking-[0.2em] text-[#A9CDB8] uppercase">{data.privacy.tag}</span>
+            <h2 class="mt-4 text-3xl leading-tight font-black tracking-tight md:text-5xl">{data.privacy.title}</h2>
+          </div>
+          <div class="mt-12 grid grid-cols-1 gap-5 md:grid-cols-3">
+            {data.privacy.points.map((point, idx) => {
+              const Icon = privacyIcons[idx];
+              return (
+                <div class="rounded-3xl border border-white/10 bg-white/5 p-7">
+                  <Icon className="h-7 w-7 text-[#A9CDB8]" aria-hidden="true" />
+                  <h3 class="mt-4 text-lg font-bold">{point.title}</h3>
+                  <p class="mt-1.5 leading-relaxed text-white/70">{point.description}</p>
+                </div>
+              );
+            })}
+          </div>
+          <div class="mx-auto mt-6 max-w-5xl rounded-3xl bg-white p-7 text-[#1C2B24] md:p-9">
+            <h3 class="text-xl font-black">{data.privacy.priceTitle}</h3>
+            <p class="mt-2 leading-relaxed text-[#3E4C45]">{data.privacy.priceDescription}</p>
+            <a
+              href={localePath(lang, "/legal/mindful-guard/privacy")}
+              class="mt-4 inline-flex items-center gap-2 font-bold text-[#3D6B55] underline underline-offset-4 hover:text-[#1C2B24]"
+            >
+              {data.privacy.policyLink}
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </a>
+          </div>
+        </div>
+      </Section>
+
+      {/* Permissions */}
+      <Section>
+        <div class="section-container">
+          <div class="mx-auto max-w-3xl text-center">
+            <span class="text-xs font-bold tracking-[0.2em] text-[#3D6B55] uppercase">{data.permissions.tag}</span>
+            <h2 class="mt-4 text-3xl leading-tight font-black tracking-tight md:text-5xl">{data.permissions.title}</h2>
+          </div>
+          <div class="mx-auto mt-12 grid max-w-5xl grid-cols-1 gap-5 md:grid-cols-3">
+            {data.permissions.items.map((item, idx) => {
+              const Icon = permissionIcons[idx];
+              return (
+                <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-[#1C2B24]/5">
+                  <Icon className="h-7 w-7 text-[#3D6B55]" aria-hidden="true" />
+                  <h3 class="mt-4 text-lg font-bold">{item.title}</h3>
+                  <p class="mt-1.5 leading-relaxed text-[#5A6862]">{item.description}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </Section>
+
+      {/* Comparison */}
+      <Section className="bg-white">
+        <div class="section-container">
+          <div class="text-center">
+            <span class="text-xs font-bold tracking-[0.2em] text-[#3D6B55] uppercase">{data.comparison.tag}</span>
+            <h2 class="mt-4 text-3xl font-black tracking-tight md:text-5xl">{data.comparison.title}</h2>
+          </div>
+          <div class="mx-auto mt-12 max-w-4xl overflow-x-auto rounded-3xl bg-white shadow-sm ring-1 ring-[#1C2B24]/10">
+            <table class="w-full min-w-[560px] text-left">
+              <thead>
+                <tr class="border-b border-[#1C2B24]/10">
+                  <th scope="col" class="p-5"><span class="sr-only">{localize("Feature")}</span></th>
+                  <th scope="col" class="p-5 text-sm font-bold text-[#5A6862]">{data.comparison.columns[0]}</th>
+                  <th scope="col" class="bg-[#E6EFE8] p-5 text-sm font-black text-[#2F5644]">{data.comparison.columns[1]}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.comparison.rows.map(([label, standard, ours]) => (
+                  <tr class="border-b border-[#1C2B24]/5 last:border-0">
+                    <th scope="row" class="p-5 font-bold">{label}</th>
+                    <td class="p-5 text-[#5A6862]">{standard}</td>
+                    <td class="bg-[#E6EFE8] p-5 font-semibold">
+                      <span class="inline-flex items-start gap-2">
+                        <Check className="mt-0.5 h-4 w-4 shrink-0 text-[#3D6B55]" aria-hidden="true" />
+                        {ours}
+                      </span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </Section>
+
+      {/* FAQ */}
+      <Section>
+        <FAQSchema items={faqs} />
+        <div class="section-container">
+          <div class="mx-auto max-w-3xl">
+            <div class="text-center">
+              <span class="text-xs font-bold tracking-[0.2em] text-[#3D6B55] uppercase">{data.labels.faqTag}</span>
+              <h2 class="mt-4 text-3xl font-black tracking-tight md:text-5xl">{data.labels.faqTitle}</h2>
+            </div>
+            <div class="mt-12 space-y-3">
+              {faqs.map((item, idx) => (
+                <details class="group rounded-2xl bg-white p-6 ring-1 ring-[#1C2B24]/5" open={idx === 0}>
+                  <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-bold [&::-webkit-details-marker]:hidden">
+                    <h3>{item.question}</h3>
+                    <ChevronDown className="h-5 w-5 shrink-0 text-[#3D6B55] transition-transform group-open:rotate-180" aria-hidden="true" />
+                  </summary>
+                  <p class="mt-3 leading-relaxed text-[#3E4C45]">{item.answer}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Further reading */}
+      <Section className="bg-white py-16 md:py-20">
+        <div class="section-container">
+          <div class="mx-auto max-w-4xl">
+            <span class="text-xs font-bold tracking-[0.2em] text-[#3D6B55] uppercase">{data.reading.tag}</span>
+            <h2 class="mt-3 text-2xl font-black tracking-tight md:text-3xl">{data.reading.title}</h2>
+            <ul class="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              {reading.map((post) => (
+                <li>
+                  <a
+                    href={localePath(lang, `/blog/${post.slug}`)}
+                    class="group flex h-full items-center justify-between gap-4 rounded-2xl bg-[#F3F7F4] p-5 font-bold ring-1 ring-[#1C2B24]/5 transition hover:ring-[#739D88]/60"
+                  >
+                    {post.title}
+                    <ArrowRight className="h-5 w-5 shrink-0 text-[#3D6B55] transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </Section>
+
+      {/* Closing CTA */}
+      <section class="relative overflow-hidden bg-[#3D6B55] py-20 text-white md:py-28">
+        <div aria-hidden="true" class="pointer-events-none absolute -top-32 -left-32 h-80 w-80 rounded-full border-[48px] border-white/10"></div>
+        <div aria-hidden="true" class="pointer-events-none absolute -right-24 -bottom-24 h-64 w-64 rounded-full bg-white/10"></div>
+        <div class="section-container relative text-center">
+          <Image src={iconImg} alt="" width={96} height={96} class="mx-auto h-20 w-20 rounded-3xl shadow-xl shadow-black/20 ring-4 ring-white/30" />
+          <h2 class="mt-8 text-4xl font-black tracking-tight md:text-6xl">{data.closing.title}</h2>
+          <p class="mx-auto mt-5 max-w-xl text-lg font-medium text-white/90 md:text-xl">{data.closing.description}</p>
+          <a
+            href={mindfulGuardPlayUrl("closing")}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-10 inline-flex h-16 items-center justify-center rounded-2xl bg-[#1C2B24] px-10 text-lg font-bold text-white shadow-2xl transition hover:bg-black"
+          >
+            {data.hero.primaryCTA}
+          </a>
+          <p class="mt-5 text-sm font-semibold text-white/90">{data.closing.subtext}</p>
+        </div>
+      </section>
+    </main>
+
+    <Footer />
+
+    {/* Mobile sticky download bar, shown after the hero */}
+    <div
+      id="mindful-sticky"
+      class="pointer-events-none fixed inset-x-0 bottom-0 z-50 translate-y-full border-t border-[#1C2B24]/10 bg-white/95 p-3 opacity-0 backdrop-blur transition-all duration-300 lg:hidden"
+    >
+      <div class="mx-auto flex max-w-lg items-center gap-3">
+        <Image src={iconImg} alt="" width={64} height={64} class="h-11 w-11 rounded-xl" />
+        <div class="flex-1">
+          <p class="text-sm font-black">Mindful Guard</p>
+          <p class="text-xs text-[#5A6862]">{data.hero.stickyMeta}</p>
+        </div>
+        <a
+          href={mindfulGuardPlayUrl("sticky")}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex h-11 items-center rounded-xl bg-[#3D6B55] px-5 font-bold text-white"
+        >
+          {data.hero.downloadNow}
+        </a>
       </div>
-
-      <div slot="ai-summary" class="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 rounded-2xl border border-slate-100 bg-white/60 px-4 py-4 text-left shadow-sm sm:mt-8 sm:gap-x-8 sm:px-6 sm:py-5 md:mt-10 lg:justify-start">
-        <span class="flex items-center gap-2 text-sm font-bold text-slate-700">
-          <span class="h-2 w-2 rounded-full bg-[#22C55E]"></span>
-          {localize("100% offline")}
-        </span>
-        <span class="flex items-center gap-2 text-sm font-bold text-slate-700">
-          <span class="h-2 w-2 rounded-full bg-[#22C55E]"></span>
-          {localize("Zero data collected")}
-        </span>
-        <span class="flex items-center gap-2 text-sm font-bold text-slate-700">
-          <span class="h-2 w-2 rounded-full bg-[#22C55E]"></span>
-          {localize("Free to start")}
-        </span>
-        <span class="flex items-center gap-1 text-sm font-bold text-amber-700">
-          ★★★★★ <span class="ml-1 text-slate-500">5.0 · 500+ installs</span>
-        </span>
-      </div>
-    </MindfulHero>
-
-    {/* Stats Bar */}
-    <MindfulStatsBar />
-
-    {/* Section 2: The Differentiators (Reel Guard leads) */}
-    <DifferentiatorsSection />
-
-    {/* Section 3: The Logic (The "Why") */}
-    <LogicSection />
-
-    {/* Section 4: The Comparison Matrix (Conversion Driver) */}
-    <ComparisonMatrix />
- 
-    {/* Social Proof */}
-    <MindfulSocialProof />
-
-    {/* Pricing Section */}
-    <MindfulPricing />
-
-    {/* Section 5: FAQ */}
-    <MindfulFAQSection />
-
-    {/* Closing CTA */}
-    <MindfulClosingCTA />
+    </div>
   </div>
-  <Footer />
 </Layout>
+
+<script>
+  const bar = document.getElementById("mindful-sticky");
+  if (bar) {
+    const toggle = () => {
+      const show = window.scrollY > 600;
+      bar.classList.toggle("translate-y-full", !show);
+      bar.classList.toggle("opacity-0", !show);
+      bar.classList.toggle("pointer-events-none", !show);
+    };
+    window.addEventListener("scroll", toggle, { passive: true });
+    toggle();
+  }
+</script>
