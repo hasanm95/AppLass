@@ -1,0 +1,522 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Footer from "@/components/common/Footer.astro";
+import Navbar from "@/components/common/Navbar.astro";
+import Section from "@/components/common/Section.astro";
+import FAQSchema from "@/components/common/FAQSchema.astro";
+import { Image } from "astro:assets";
+import {
+  Calculator,
+  Brain,
+  Code,
+  ListOrdered,
+  Keyboard,
+  HelpCircle,
+  Vibrate,
+  Footprints,
+  QrCode,
+  Dumbbell,
+  Check,
+  ChevronDown,
+  Clock,
+  Volume2,
+  Lock,
+  BatteryCharging,
+  UserX,
+  Smartphone,
+  Camera,
+  ArrowRight,
+} from "lucide-react";
+import iconImg from "@/assets/apps/arisely/icon.png";
+import store1 from "@/assets/apps/arisely/store-1.png";
+import store2 from "@/assets/apps/arisely/store-2.png";
+import store3 from "@/assets/apps/arisely/store-3.png";
+import store4 from "@/assets/apps/arisely/store-4.png";
+import store5 from "@/assets/apps/arisely/store-5.png";
+import store6 from "@/assets/apps/arisely/store-6.png";
+import store7 from "@/assets/apps/arisely/store-7.png";
+import permissionsShot from "@/assets/apps/arisely/screen-permissions.jpg";
+import { getAriselyData, getAriselySchema, ariselyPlayUrl } from "@/constants/arisely-data";
+import { getFaqRegistry } from "@/constants/faq-registry";
+import { i18nConfig } from "@/i18n/config";
+import { localize } from "@/i18n/localize";
+import { localePath } from "@/i18n/utils";
+import { setLocale } from "@/i18n";
+import { lastUpdatedFor } from "@/lib/lastUpdated";
+
+interface Props {
+  lang: typeof i18nConfig.locales[number];
+}
+
+const { lang } = Astro.props;
+setLocale(lang);
+
+const isDefault = lang === "en";
+const data = getAriselyData();
+const faqs = getFaqRegistry().ARISELY;
+const lastUpdated = lastUpdatedFor("src/page-templates/AppsAriselyPage.astro");
+const schema = {
+  ...getAriselySchema(),
+  "url": isDefault ? "https://applass.com/apps/arisely" : `https://applass.com/${lang}/apps/arisely`,
+  ...(lastUpdated && { "dateModified": lastUpdated }),
+};
+
+const missionIcons = {
+  Calculator,
+  Brain,
+  Code,
+  ListOrdered,
+  Keyboard,
+  HelpCircle,
+  Vibrate,
+  Footprints,
+  QrCode,
+  Dumbbell,
+} as const;
+const reliabilityIcons = [Clock, Volume2, Lock, BatteryCharging];
+const privacyIcons = [UserX, Smartphone, Camera];
+
+const gallery = [
+  { src: store4, alt: localize("Arisely math mission screen") },
+  { src: store5, alt: localize("Arisely QR and barcode mission screen") },
+  { src: store6, alt: localize("Arisely ring screen with a loud alarm and mission") },
+];
+
+const reading = [
+  { slug: "how-to-stop-sleeping-through-your-alarm-android", title: localize("How to stop sleeping through your alarm") },
+  { slug: "alarm-app-that-makes-you-do-pushups-android", title: localize("The alarm app that makes you do push-ups") },
+  { slug: "why-android-alarms-dont-go-off-exact-alarms", title: localize("Why Android alarms don't go off") },
+  { slug: "best-alarm-apps-for-heavy-sleepers-android-2026", title: localize("Best alarm apps for heavy sleepers") },
+];
+
+const meta = {
+  title: localize("Arisely – Alarm Clock for Heavy Sleepers with Wake-Up Missions & AI Push-Ups"),
+  description: localize("Arisely is a loud Android alarm clock that keeps ringing until you finish a mission: math, memory, steps, a barcode across the room or camera-counted push-ups. Free, no account."),
+  keywords: localize("arisely, alarm clock for heavy sleepers, alarm app with missions, loud alarm app android, push up alarm app, alarm you can't turn off, mission alarm android"),
+  ogTitle: localize("Arisely: The Alarm That Won't Stop Until You're Up"),
+  ogDescription: localize("10 wake-up missions, including camera-counted push-ups. Exact alarms that ring through Do Not Disturb. Free, no account."),
+  ogImage: "https://applass.com/arisely-feature.png",
+  ogUrl: isDefault ? "https://applass.com/apps/arisely" : `https://applass.com/${lang}/apps/arisely`,
+};
+---
+
+<Layout
+  title={meta.title}
+  description={meta.description}
+  keywords={meta.keywords}
+  ogTitle={meta.ogTitle}
+  ogDescription={meta.ogDescription}
+  ogImage={meta.ogImage}
+  ogUrl={meta.ogUrl}
+  lang={lang}
+>
+  <div class="arisely bg-[#F8F3EA] text-[#141414]">
+    <Navbar />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />
+
+    <main class="flex-1 overflow-x-hidden">
+      {/* Hero */}
+      <section class="relative overflow-hidden pt-28 pb-16 md:pt-36 md:pb-24">
+        <div aria-hidden="true" class="pointer-events-none absolute -top-40 -right-40 h-[420px] w-[420px] rounded-full bg-[#FF4B2B] opacity-90 md:h-[560px] md:w-[560px]"></div>
+        <div aria-hidden="true" class="pointer-events-none absolute -bottom-32 -left-32 h-64 w-64 rounded-full bg-[#FF4B2B]/90"></div>
+
+        <div class="section-container relative z-10 grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+          <div class="text-center lg:text-left">
+            <div class="mb-6 inline-flex items-center gap-3 rounded-full border border-[#FF4B2B]/25 bg-white/70 py-1.5 pr-4 pl-1.5 backdrop-blur">
+              <Image src={iconImg} alt="" width={64} height={64} class="h-8 w-8 rounded-lg" />
+              <span class="text-xs font-bold tracking-[0.14em] text-[#B8320F] uppercase">{data.hero.tagline}</span>
+            </div>
+
+            <h1 class="text-4xl leading-[1.02] font-black tracking-tight sm:text-5xl lg:text-6xl">
+              {data.hero.headline}
+              <span class="block text-[#E8401F]">{data.hero.headlineAccent}</span>
+            </h1>
+
+            <p class="mx-auto mt-6 max-w-xl text-lg leading-relaxed font-medium text-[#3D3A36] md:text-xl lg:mx-0">
+              {data.hero.subheadline}
+            </p>
+
+            <div class="mt-9 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
+              <a
+                href={ariselyPlayUrl("hero")}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex h-14 w-full items-center justify-center rounded-2xl bg-[#D9361A] px-8 text-lg font-bold text-white shadow-lg shadow-[#FF4B2B]/30 transition hover:bg-[#B8320F] sm:w-auto"
+              >
+                {data.hero.primaryCTA}
+              </a>
+              <a
+                href="#missions"
+                class="group inline-flex h-14 w-full items-center justify-center gap-2 rounded-2xl border-2 border-[#141414] px-8 text-lg font-bold transition hover:bg-[#141414] hover:text-white sm:w-auto"
+              >
+                {data.hero.secondaryCTA}
+                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </a>
+            </div>
+            <p class="mt-5 text-sm font-semibold text-[#5B5650]">{data.hero.subtext}</p>
+
+            {/* TL;DR summary for readers and answer engines */}
+            <dl class="mt-10 grid grid-cols-1 overflow-hidden rounded-2xl border border-[#141414]/10 bg-white text-left shadow-sm sm:grid-cols-3">
+              {data.summary.map((item, idx) => (
+                <div class={`p-4 ${idx > 0 ? "border-t border-[#141414]/10 sm:border-t-0 sm:border-l" : ""}`}>
+                  <dt class="text-[11px] font-bold tracking-widest text-[#B8320F] uppercase">{item.label}</dt>
+                  <dd class="mt-1 text-sm font-bold">{item.value}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+
+          <div class="relative mx-auto w-full max-w-[380px]">
+            <Image
+              src={store1}
+              alt={localize("Arisely alarm ring screen asking you to solve a math challenge before it stops")}
+              widths={[380, 760]}
+              sizes="(min-width: 1024px) 380px, 80vw"
+              class="w-full rounded-[2rem] shadow-2xl shadow-[#141414]/20 ring-1 ring-[#141414]/5"
+              loading="eager"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Problem + how it works */}
+      <Section className="bg-[#141414] text-white">
+        <div class="section-container">
+          <div class="mx-auto max-w-3xl text-center">
+            <span class="text-xs font-bold tracking-[0.2em] text-[#FF7A5C] uppercase">{data.problem.tag}</span>
+            <h2 class="mt-4 text-3xl leading-tight font-black tracking-tight md:text-5xl">{data.problem.title}</h2>
+            <p class="mt-6 text-lg leading-relaxed text-white/75">{data.problem.description}</p>
+          </div>
+
+          <ol class="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
+            {data.steps.map((step, idx) => (
+              <li class="rounded-3xl border border-white/10 bg-white/5 p-7">
+                <span class="flex h-10 w-10 items-center justify-center rounded-full bg-[#FF4B2B] text-lg font-black">
+                  {idx + 1}
+                </span>
+                <h3 class="mt-5 text-xl font-bold">{step.title}</h3>
+                <p class="mt-2 leading-relaxed text-white/70">{step.description}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </Section>
+
+      {/* Missions */}
+      <Section id="missions" className="scroll-mt-24">
+        <div class="section-container grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.2fr_0.8fr]">
+          <div>
+            <span class="text-xs font-bold tracking-[0.2em] text-[#B8320F] uppercase">{data.missionsSection.tag}</span>
+            <h2 class="mt-4 text-3xl leading-tight font-black tracking-tight md:text-5xl">{data.missionsSection.title}</h2>
+            <p class="mt-5 max-w-2xl text-lg leading-relaxed text-[#3D3A36]">{data.missionsSection.description}</p>
+
+            <ul class="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              {data.missions.map((mission) => {
+                const Icon = missionIcons[mission.icon as keyof typeof missionIcons];
+                return (
+                  <li class="flex items-center gap-4 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-[#141414]/5">
+                    <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl text-white" style={`background:${mission.color}`}>
+                      <Icon className="h-6 w-6" aria-hidden="true" />
+                    </span>
+                    <span>
+                      <span class="block font-bold">{mission.name}</span>
+                      <span class="block text-sm text-[#5B5650]">{mission.description}</span>
+                    </span>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <Image
+            src={store3}
+            alt={localize("Arisely mission picker showing all 10 wake-up missions")}
+            widths={[360, 720]}
+            sizes="(min-width: 1024px) 360px, 80vw"
+            class="mx-auto w-full max-w-[360px] rounded-[2rem] shadow-xl shadow-[#141414]/15"
+          />
+        </div>
+      </Section>
+
+      {/* Push-up spotlight */}
+      <Section className="bg-[#FF4B2B] text-white">
+        <div class="section-container grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+          <Image
+            src={store2}
+            alt={localize("Arisely AI push-up mission counting reps with the camera")}
+            widths={[380, 760]}
+            sizes="(min-width: 1024px) 380px, 80vw"
+            class="order-last mx-auto w-full max-w-[380px] rounded-[2rem] shadow-2xl shadow-black/25 lg:order-first"
+          />
+          <div>
+            <span class="inline-block rounded-full bg-white px-3 py-1 text-xs font-bold tracking-[0.14em] text-[#B8320F] uppercase">{data.pushup.tag}</span>
+            <h2 class="mt-5 text-3xl leading-tight font-black tracking-tight md:text-5xl">{data.pushup.title}</h2>
+            <p class="mt-5 text-lg leading-relaxed font-medium text-white">{data.pushup.description}</p>
+            <ul class="mt-8 space-y-3">
+              {data.pushup.points.map((point) => (
+                <li class="flex items-start gap-3 font-semibold">
+                  <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white text-[#D9361A]">
+                    <Check className="h-4 w-4" aria-hidden="true" />
+                  </span>
+                  {point}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </Section>
+
+      {/* Reliability */}
+      <Section>
+        <div class="section-container grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.2fr_0.8fr]">
+          <div>
+            <span class="text-xs font-bold tracking-[0.2em] text-[#B8320F] uppercase">{data.reliability.tag}</span>
+            <h2 class="mt-4 text-3xl leading-tight font-black tracking-tight md:text-5xl">{data.reliability.title}</h2>
+            <p class="mt-5 max-w-2xl text-lg leading-relaxed text-[#3D3A36]">{data.reliability.description}</p>
+            <div class="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2">
+              {data.reliability.points.map((point, idx) => {
+                const Icon = reliabilityIcons[idx];
+                return (
+                  <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-[#141414]/5">
+                    <Icon className="h-7 w-7 text-[#D9361A]" aria-hidden="true" />
+                    <h3 class="mt-4 text-lg font-bold">{point.title}</h3>
+                    <p class="mt-1.5 leading-relaxed text-[#5B5650]">{point.description}</p>
+                  </div>
+                );
+              })}
+            </div>
+            <a
+              href={localePath(lang, "/blog/why-android-alarms-dont-go-off-exact-alarms")}
+              class="mt-8 inline-flex items-center gap-2 font-bold text-[#B8320F] underline underline-offset-4 hover:text-[#141414]"
+            >
+              {data.reliability.linkLabel}
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </a>
+          </div>
+          <Image
+            src={permissionsShot}
+            alt={localize("Arisely permissions screen explaining why each permission keeps alarms on time")}
+            widths={[320, 640]}
+            sizes="(min-width: 1024px) 320px, 70vw"
+            class="mx-auto w-full max-w-[320px] rounded-[2rem] border-8 border-[#141414] shadow-xl shadow-[#141414]/20"
+          />
+        </div>
+      </Section>
+
+      {/* Everyday features */}
+      <Section className="bg-white">
+        <div class="section-container grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+          <Image
+            src={store7}
+            alt={localize("Arisely alarm list with repeating alarms")}
+            widths={[360, 720]}
+            sizes="(min-width: 1024px) 360px, 80vw"
+            class="order-last mx-auto w-full max-w-[360px] rounded-[2rem] shadow-xl shadow-[#141414]/15 lg:order-first"
+          />
+          <div>
+            <span class="text-xs font-bold tracking-[0.2em] text-[#B8320F] uppercase">{data.everyday.tag}</span>
+            <h2 class="mt-4 text-3xl leading-tight font-black tracking-tight md:text-5xl">{data.everyday.title}</h2>
+            <ul class="mt-8 space-y-4">
+              {data.everyday.points.map((point) => (
+                <li class="flex items-start gap-3 text-lg">
+                  <span class="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#FF4B2B]/10 text-[#D9361A]">
+                    <Check className="h-4 w-4" aria-hidden="true" />
+                  </span>
+                  {point}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </Section>
+
+      {/* Gallery */}
+      <Section>
+        <div class="section-container">
+          <div class="text-center">
+            <span class="text-xs font-bold tracking-[0.2em] text-[#B8320F] uppercase">{data.gallery.tag}</span>
+            <h2 class="mt-4 text-3xl font-black tracking-tight md:text-5xl">{data.gallery.title}</h2>
+          </div>
+          <div class="-mx-4 mt-12 flex snap-x snap-mandatory gap-5 overflow-x-auto px-4 pb-4 md:mx-auto md:grid md:max-w-4xl md:grid-cols-3 md:overflow-visible md:px-0">
+            {gallery.map((shot) => (
+              <Image
+                src={shot.src}
+                alt={shot.alt}
+                widths={[260, 520]}
+                sizes="(min-width: 768px) 33vw, 65vw"
+                class="w-[65vw] max-w-[280px] shrink-0 snap-center rounded-[1.5rem] shadow-lg shadow-[#141414]/15 md:w-full md:max-w-none"
+              />
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      {/* Privacy & price */}
+      <Section className="bg-[#141414] text-white">
+        <div class="section-container">
+          <div class="mx-auto max-w-3xl text-center">
+            <span class="text-xs font-bold tracking-[0.2em] text-[#FF7A5C] uppercase">{data.privacy.tag}</span>
+            <h2 class="mt-4 text-3xl leading-tight font-black tracking-tight md:text-5xl">{data.privacy.title}</h2>
+          </div>
+          <div class="mt-12 grid grid-cols-1 gap-5 md:grid-cols-3">
+            {data.privacy.points.map((point, idx) => {
+              const Icon = privacyIcons[idx];
+              return (
+                <div class="rounded-3xl border border-white/10 bg-white/5 p-7">
+                  <Icon className="h-7 w-7 text-[#FF7A5C]" aria-hidden="true" />
+                  <h3 class="mt-4 text-lg font-bold">{point.title}</h3>
+                  <p class="mt-1.5 leading-relaxed text-white/70">{point.description}</p>
+                </div>
+              );
+            })}
+          </div>
+          <div class="mx-auto mt-6 max-w-5xl rounded-3xl bg-white p-7 text-[#141414] md:p-9">
+            <h3 class="text-xl font-black">{data.privacy.priceTitle}</h3>
+            <p class="mt-2 leading-relaxed text-[#3D3A36]">{data.privacy.priceDescription}</p>
+            <a
+              href={localePath(lang, "/legal/arisely/privacy")}
+              class="mt-4 inline-flex items-center gap-2 font-bold text-[#B8320F] underline underline-offset-4 hover:text-[#141414]"
+            >
+              {data.privacy.policyLink}
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </a>
+          </div>
+        </div>
+      </Section>
+
+      {/* Comparison */}
+      <Section>
+        <div class="section-container">
+          <div class="text-center">
+            <span class="text-xs font-bold tracking-[0.2em] text-[#B8320F] uppercase">{data.comparison.tag}</span>
+            <h2 class="mt-4 text-3xl font-black tracking-tight md:text-5xl">{data.comparison.title}</h2>
+          </div>
+          <div class="mx-auto mt-12 max-w-4xl overflow-x-auto rounded-3xl bg-white shadow-sm ring-1 ring-[#141414]/5">
+            <table class="w-full min-w-[560px] text-left">
+              <thead>
+                <tr class="border-b border-[#141414]/10">
+                  <th scope="col" class="p-5"><span class="sr-only">{localize("Feature")}</span></th>
+                  <th scope="col" class="p-5 text-sm font-bold text-[#5B5650]">{data.comparison.columns[0]}</th>
+                  <th scope="col" class="bg-[#FF4B2B]/8 p-5 text-sm font-black text-[#B8320F]">{data.comparison.columns[1]}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.comparison.rows.map(([label, standard, arisely]) => (
+                  <tr class="border-b border-[#141414]/5 last:border-0">
+                    <th scope="row" class="p-5 font-bold">{label}</th>
+                    <td class="p-5 text-[#5B5650]">{standard}</td>
+                    <td class="bg-[#FF4B2B]/8 p-5 font-semibold">{arisely}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </Section>
+
+      {/* FAQ */}
+      <Section className="bg-white">
+        <FAQSchema items={faqs} />
+        <div class="section-container">
+          <div class="mx-auto max-w-3xl">
+            <div class="text-center">
+              <span class="text-xs font-bold tracking-[0.2em] text-[#B8320F] uppercase">{data.labels.faqTag}</span>
+              <h2 class="mt-4 text-3xl font-black tracking-tight md:text-5xl">{data.labels.faqTitle}</h2>
+            </div>
+            <div class="mt-12 space-y-3">
+              {faqs.map((item, idx) => (
+                <details class="group rounded-2xl bg-[#F8F3EA] p-6 ring-1 ring-[#141414]/5" open={idx === 0}>
+                  <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-bold [&::-webkit-details-marker]:hidden">
+                    <h3>{item.question}</h3>
+                    <ChevronDown className="h-5 w-5 shrink-0 text-[#D9361A] transition-transform group-open:rotate-180" aria-hidden="true" />
+                  </summary>
+                  <p class="mt-3 leading-relaxed text-[#3D3A36]">{item.answer}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Further reading */}
+      <Section className="py-16 md:py-20">
+        <div class="section-container">
+          <div class="mx-auto max-w-4xl">
+            <span class="text-xs font-bold tracking-[0.2em] text-[#B8320F] uppercase">{data.reading.tag}</span>
+            <h2 class="mt-3 text-2xl font-black tracking-tight md:text-3xl">{data.reading.title}</h2>
+            <ul class="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              {reading.map((post) => (
+                <li>
+                  <a
+                    href={localePath(lang, `/blog/${post.slug}`)}
+                    class="group flex h-full items-center justify-between gap-4 rounded-2xl bg-white p-5 font-bold shadow-sm ring-1 ring-[#141414]/5 transition hover:ring-[#FF4B2B]/40"
+                  >
+                    {post.title}
+                    <ArrowRight className="h-5 w-5 shrink-0 text-[#D9361A] transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </Section>
+
+      {/* Closing CTA */}
+      <section class="relative overflow-hidden bg-[#FF4B2B] py-20 text-white md:py-28">
+        <div aria-hidden="true" class="pointer-events-none absolute -top-24 -left-24 h-72 w-72 rounded-full bg-white/10"></div>
+        <div class="section-container relative text-center">
+          <Image src={iconImg} alt="" width={96} height={96} class="mx-auto h-20 w-20 rounded-3xl shadow-xl shadow-black/20 ring-4 ring-white/30" />
+          <h2 class="mt-8 text-4xl font-black tracking-tight md:text-6xl">{data.closing.title}</h2>
+          <p class="mx-auto mt-5 max-w-xl text-lg font-medium md:text-xl">{data.closing.description}</p>
+          <a
+            href={ariselyPlayUrl("closing")}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-10 inline-flex h-16 items-center justify-center rounded-2xl bg-[#141414] px-10 text-lg font-bold text-white shadow-2xl transition hover:bg-black"
+          >
+            {data.hero.primaryCTA}
+          </a>
+          <p class="mt-5 text-sm font-semibold">{data.closing.subtext}</p>
+        </div>
+      </section>
+    </main>
+
+    <Footer />
+
+    {/* Mobile sticky download bar, shown after the hero */}
+    <div
+      id="arisely-sticky"
+      class="pointer-events-none fixed inset-x-0 bottom-0 z-50 translate-y-full border-t border-[#141414]/10 bg-white/95 p-3 opacity-0 backdrop-blur transition-all duration-300 lg:hidden"
+    >
+      <div class="mx-auto flex max-w-lg items-center gap-3">
+        <Image src={iconImg} alt="" width={64} height={64} class="h-11 w-11 rounded-xl" />
+        <div class="flex-1">
+          <p class="text-sm font-black">Arisely</p>
+          <p class="text-xs text-[#5B5650]">{data.hero.stickyMeta}</p>
+        </div>
+        <a
+          href={ariselyPlayUrl("sticky")}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex h-11 items-center rounded-xl bg-[#D9361A] px-5 font-bold text-white"
+        >
+          {data.hero.downloadNow}
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  const bar = document.getElementById("arisely-sticky");
+  if (bar) {
+    const toggle = () => {
+      const show = window.scrollY > 600;
+      bar.classList.toggle("translate-y-full", !show);
+      bar.classList.toggle("opacity-0", !show);
+      bar.classList.toggle("pointer-events-none", !show);
+    };
+    window.addEventListener("scroll", toggle, { passive: true });
+    toggle();
+  }
+</script>

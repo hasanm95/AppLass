@@ -87,6 +87,22 @@ export const getProducts = () => [
     imageSrc: "mindful-guard-feature.png",
     featured: false,
   },
+  {
+    id: "arisely",
+    name: "Arisely",
+    platform: localize("Android Platform"),
+    tagline: localize("The alarm that won't stop until you're up"),
+    description: localize(
+      "An alarm clock for heavy sleepers. It keeps ringing at full volume until you finish a wake-up mission: math, memory, steps, a barcode across the room or push-ups the camera counts. No account needed."
+    ),
+    metrics: [localize("10 Wake-Up Missions"), localize("No Account")],
+    stats: {},
+    color: "orange",
+    cta: localize("Get on Play Store"),
+    ctaLink: "https://play.google.com/store/apps/details?id=com.arisely&referrer=utm_source%3Dapplass%26utm_medium%3Dsite%26utm_campaign%3Dhome",
+    imageSrc: "arisely-feature.png",
+    featured: false,
+  },
 ];
 
 export interface Pillar {
