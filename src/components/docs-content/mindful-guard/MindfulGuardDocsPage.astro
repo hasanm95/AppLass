@@ -18,11 +18,11 @@ const { lang } = Astro.props;
       {localize("Documentation")}<span class="text-slate-500">.</span>
     </h1>
     <p class="max-w-2xl text-xl leading-relaxed font-medium text-slate-500">
-      {localize("Mindful Guard is a cognitive firewall for Android. Deploy strict logic to prevent digital distractions with zero telemetry and total privacy.")}
+      {localize("Mindful Guard is a cognitive firewall for Android. Limit Reels and Shorts, block distracting apps on a timer or schedule, and keep your data on your phone.")}
     </p>
   </header>
 
-  <div class="grid gap-6 sm:grid-cols-2">
+  <div class="grid gap-6">
     <a
       href={localePath(lang, "/docs/mindful-guard/installation")}
       class="group rounded-3xl border border-slate-100 bg-white p-8 transition-all duration-500 hover:border-slate-500/20 hover:shadow-2xl hover:shadow-slate-500/5 focus:ring-2 focus:ring-slate-500 focus:outline-none"
@@ -32,17 +32,6 @@ const { lang } = Astro.props;
       </h3>
       <p class="font-medium text-slate-500 transition-colors group-hover:text-slate-600">
         {localize("Deploy the cognitive firewall to your Android device today.")}
-      </p>
-    </a>
-    <a
-      href={localePath(lang, "/docs/mindful-guard/strict-mode")}
-      class="group rounded-3xl border border-slate-100 bg-white p-8 transition-all duration-500 hover:border-slate-500/20 hover:shadow-2xl hover:shadow-slate-500/5 focus:ring-2 focus:ring-slate-500 focus:outline-none"
-    >
-      <h3 class="mb-3 text-lg font-black text-slate-900 transition-colors group-hover:text-slate-600">
-        🔒 {localize("Strict Mode")}
-      </h3>
-      <p class="font-medium text-slate-500 transition-colors group-hover:text-slate-600">
-        {localize("Learn how to lock down your device for maximum focus.")}
       </p>
     </a>
   </div>

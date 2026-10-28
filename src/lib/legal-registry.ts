@@ -16,8 +16,8 @@ export const legalRegistry: Record<string, any> = {
     appName: 'Arisely',
     product: 'arisely',
     type: 'privacy',
-    lastUpdated: 'July 2026',
-    description: localize("Privacy Policy for Arisely - Learn why our Android alarm clock app collects zero data and keeps everything on your device.")
+    lastUpdated: 'October 2, 2026',
+    description: localize("Privacy Policy for Arisely - Learn what our Android alarm clock app stores on your device, and the limited data used for advertising and purchases.")
   },
   'arisely/terms': {
     component: AriselyTerms,
@@ -66,7 +66,7 @@ export const legalRegistry: Record<string, any> = {
     appName: 'ScreenVeil',
     product: 'screenveil',
     type: 'privacy',
-    description: localize("Privacy Policy for ScreenVeil - Our transparent approach to Android AMOLED efficiency and zero data collection.")
+    description: localize("Privacy Policy for ScreenVeil - How our Android black screen overlay handles permissions and data.")
   },
   'screenveil/terms': {
     component: ScreenveilTerms,

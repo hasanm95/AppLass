@@ -15,35 +15,30 @@ const LOCALES = ["en", "fr", "de"] as const;
 // Belgium's Flemish half, Ukraine, etc.) are deliberately left unmapped rather than
 // guessed at.
 const COUNTRY_TO_LOCALE: Record<string, string> = {
-  CN: "zh", TW: "zh", HK: "zh", MO: "zh",
-
-  ES: "es", MX: "es", AR: "es", CO: "es", CL: "es", PE: "es", VE: "es", EC: "es",
-  GT: "es", CU: "es", BO: "es", DO: "es", HN: "es", PY: "es", SV: "es", NI: "es",
-  CR: "es", PA: "es", UY: "es", GQ: "es",
-
-  SA: "ar", AE: "ar", EG: "ar", KW: "ar", QA: "ar", BH: "ar", OM: "ar", JO: "ar",
-  LB: "ar", IQ: "ar", SY: "ar", YE: "ar", LY: "ar", TN: "ar", DZ: "ar", MA: "ar",
-  SD: "ar", PS: "ar", MR: "ar",
-
-  ID: "id",
-
-  PT: "pt", BR: "pt", AO: "pt", MZ: "pt", CV: "pt", GW: "pt", ST: "pt", TL: "pt",
-
   FR: "fr", BE: "fr", LU: "fr", MC: "fr", SN: "fr", CI: "fr", ML: "fr", BF: "fr",
   NE: "fr", TG: "fr", BJ: "fr", GA: "fr", CG: "fr", CD: "fr", CM: "fr", TD: "fr",
   MG: "fr", RW: "fr", BI: "fr", HT: "fr",
 
-  JP: "ja",
-
-  RU: "ru", BY: "ru", KZ: "ru", KG: "ru", TJ: "ru",
-
   DE: "de", AT: "de", LI: "de",
-
-  BD: "bn",
 };
 
+// Locales that were built once and then removed. Google still holds their URLs
+// (they show up in Search Console), so 301 them to the English page instead of
+// letting them 404 and throw away whatever signals they earned.
+const RETIRED_LOCALES = ["zh", "es", "ar", "id", "pt", "ja", "ru", "bn"] as const;
+const RETIRED_LOCALE_RE = new RegExp(`^/(?:${RETIRED_LOCALES.join("|")})(?=/|$)`);
+
+// Pages that were removed. 301 them, keeping any locale prefix, so indexed URLs
+// and old links land somewhere relevant instead of 404ing.
+const RETIRED_PAGES: [RegExp, string][] = [
+  // Mindful Guard has no Strict Mode; the guide described a feature that does not exist.
+  [/^(\/(?:de|fr))?\/docs\/mindful-guard\/strict-mode\/?$/, "$1/docs/mindful-guard"],
+];
+
+// AI assistants fetching a page for a user (ChatGPT-User, Perplexity-User, …) do
+// not say "bot", but must get the URL they asked for, not a geo redirect.
 const BOT_UA_RE =
-  /bot|crawl|spider|slurp|facebookexternalhit|applebot|ahrefsbot|semrushbot|mj12bot|dotbot|petalbot|bytespider|gptbot|claudebot|google-extended|ccbot|perplexitybot|yandexbot|sogou|exabot/i;
+  /bot|crawl|spider|slurp|facebookexternalhit|applebot|ahrefsbot|semrushbot|mj12bot|dotbot|petalbot|bytespider|gptbot|claudebot|claude-user|chatgpt-user|perplexity-user|mistralai-user|google-extended|ccbot|perplexitybot|yandexbot|sogou|exabot/i;
 
 const ASSET_EXT_RE =
   /\.(?:js|mjs|css|png|jpe?g|gif|svg|webp|avif|ico|json|xml|txt|woff2?|ttf|map|webmanifest|pdf)$/i;
@@ -65,6 +60,20 @@ export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
     const userAgent = request.headers.get("User-Agent") || "";
+
+    if (RETIRED_LOCALE_RE.test(url.pathname)) {
+      const target = new URL(url);
+      target.pathname = url.pathname.replace(RETIRED_LOCALE_RE, "") || "/";
+      return Response.redirect(target.toString(), 301);
+    }
+
+    for (const [pattern, replacement] of RETIRED_PAGES) {
+      if (pattern.test(url.pathname)) {
+        const target = new URL(url);
+        target.pathname = url.pathname.replace(pattern, replacement);
+        return Response.redirect(target.toString(), 301);
+      }
+    }
 
     const skipRedirect =
       ASSET_EXT_RE.test(url.pathname) ||
@@ -89,7 +98,11 @@ export default {
     }
 
     const target = new URL(url);
-    target.pathname = `/${locale}${url.pathname === "/" ? "" : url.pathname}`;
+    let targetPathname = `/${locale}${url.pathname === "/" ? "" : url.pathname}`;
+    if (targetPathname !== "/" && targetPathname.endsWith("/")) {
+      targetPathname = targetPathname.slice(0, -1);
+    }
+    target.pathname = targetPathname;
 
     return new Response(null, {
       status: 302,

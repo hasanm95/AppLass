@@ -1,11 +1,11 @@
 ---
 title: "Why I Stopped Fighting My Own Brain (And How I Reclaimed 2.4 Hours)"
 date: "2026-01-26"
-dateModified: "2026-05-19"
+dateModified: "2026-10-24"
 category: "Android Apps"
 keywords: "reclaim focus, dopamine loop, cognitive firewall app, stop phone addiction android, mindful guard android"
 author: "AppLass Team"
-excerpt: "I used to spend my mornings fighting my phone instead of building my business. Here is how I used 'Strict Logic' to win the war for my attention."
+excerpt: "I used to spend my mornings fighting my phone instead of building my business. Here is how I used hard limits to win the war for my attention."
 faqs:
   - question: "How long does it take to refocus after a single notification?"
     answer: "Roughly 23 minutes. A single interruption is enough to break a flow state, which is why notification-based nudges are counterproductive — the interruption itself causes the damage the app claims to prevent."
@@ -40,7 +40,7 @@ Whether you are a student trying to study, a developer trying to code, or a busi
 I spent months trying apps like Opal and Freedom, but they never felt right:
 
 - Some were **way too expensive** for what they offered
-- Others wanted to route all my private data through their servers using a VPN
+- Others needed a VPN to filter my traffic, which meant trusting them with all of it
 - Worst of all, most of them were "soft"—they let me click "5 more minutes" and bypass my own goals
 
 As a developer, I knew I needed something built with **mathematical precision** and **zero-telemetry privacy**.
@@ -51,7 +51,7 @@ As a developer, I knew I needed something built with **mathematical precision** 
 
 That is why I built [MindfulGuard](/apps/mindful-guard). I didn't want a "wellness" app—I wanted a tool that worked with the same logic as a firewall for a computer.
 
-- **Strict Logic Mode:** Once you set a block, there is no "bypass." It eliminates the excuses and forces you to stay on track.
+- **No Override Button:** Once a block starts, there is no "bypass" button. It eliminates the excuses and forces you to stay on track.
 - **Zero-Tracking Privacy:** Your data never leaves your phone because focus should be private.
 - **Native Performance:** It runs invisibly in the background without draining your battery, even on aggressive Android devices.
 

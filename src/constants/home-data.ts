@@ -29,7 +29,7 @@ export const getSolutions = () => [
   },
 ];
 
-// ScreenVeil first as authority anchor (10K+ downloads, 4.4★)
+// ScreenVeil first as authority anchor (10K+ downloads, 4.7★)
 export const getProducts = () => [
   {
     id: "screenveil",
@@ -37,13 +37,13 @@ export const getProducts = () => [
     platform: localize("Android Platform"),
     tagline: localize("Play video with the screen off"),
     description: localize(
-      "Listen to YouTube, podcasts and music with the screen off. On OLED and AMOLED phones the black pixels switch off completely, so you use less battery. No permissions, no account, no tracking."
+      "Listen to YouTube, podcasts and music with the screen off. On OLED and AMOLED phones the black pixels switch off completely, so you use less battery. One permission, no account, no ads."
     ),
-    metrics: [localize("10K+ Downloads"), localize("4.4★ Rating")],
+    metrics: [localize("10K+ Downloads"), localize("4.7★ Rating")],
     stats: {
       downloads: localize("10,000+"),
-      rating: localize("4.4"),
-      reviewCount: localize("43"),
+      rating: localize("4.7"),
+      reviewCount: localize("110"),
     },
     color: "green",
     cta: localize("Download Free"),
@@ -75,17 +75,32 @@ export const getProducts = () => [
     platform: localize("Android Platform"),
     tagline: localize("Block the apps that break your focus"),
     description: localize(
-      "Set rules for which apps can open and when. Everything runs on your phone — no account, no cloud, no tracking. Users get back an average of 2.4 hours a day."
+      "Set rules for which apps can open and when, and limit Reels and Shorts. Everything runs on your phone — no account, no ads, no data collected."
     ),
-    metrics: [localize("2.4h Reclaimed Daily"), localize("No Tracking")],
+    metrics: [localize("1K+ Downloads"), localize("No Data Collected")],
     stats: {
-      focusSaved: "2.4h",
-      tracking: "Zero",
+      downloads: "1K+",
     },
     color: "blue",
     cta: localize("Get on Play Store"),
     ctaLink: playUrl("home"),
     imageSrc: "mindful-guard-feature.png",
+    featured: false,
+  },
+  {
+    id: "arisely",
+    name: "Arisely",
+    platform: localize("Android Platform"),
+    tagline: localize("The alarm that won't stop until you're up"),
+    description: localize(
+      "An alarm clock for heavy sleepers. It keeps ringing at full volume until you finish a wake-up mission: math, memory, steps, a barcode across the room or push-ups the camera counts. No account needed."
+    ),
+    metrics: [localize("10 Wake-Up Missions"), localize("No Account")],
+    stats: {},
+    color: "orange",
+    cta: localize("Get on Play Store"),
+    ctaLink: "https://play.google.com/store/apps/details?id=com.arisely&referrer=utm_source%3Dapplass%26utm_medium%3Dsite%26utm_campaign%3Dhome",
+    imageSrc: "arisely-feature.png",
     featured: false,
   },
 ];
@@ -178,11 +193,11 @@ export const getAboutPillars = (): Pillar[] => [
 // Facts that hold true for every AppLass app.
 export const getHomePillars = (): Pillar[] => [
   {
-    key: "noTrackers",
-    title: localize("No trackers"),
-    label: localize("No analytics SDKs"),
+    key: "openData",
+    title: localize("Open about data"),
+    label: localize("Google Play Data safety"),
     description: localize(
-      "None of our apps include third-party analytics or send your usage anywhere. There is nothing to opt out of."
+      "Each app's Google Play listing shows exactly what it collects and shares in its Data safety section. Mindful Guard collects no data at all."
     ),
     iconName: "ShieldOff",
   },

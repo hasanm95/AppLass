@@ -55,7 +55,11 @@ const defaultDescription = localize("At AppLass, we bridge the gap between compl
 const defaultTitle = localize("AppLass | High-Performance Software Engineering");
 const defaultKeywords = localize("software studio, Shopify apps, digital wellness, accessibility, WCAG, web development, AppLass");
 
-const optimizedOgImage = ogImage || "https://applass.com/og-image.png";
+// og:image and twitter:image must be absolute — crawlers and social cards do not
+// resolve relative paths. Astro image imports hand us "/_astro/…".
+const optimizedOgImage = ogImage
+  ? (ogImage.startsWith("/") ? `https://applass.com${ogImage}` : ogImage)
+  : "https://applass.com/og-image.png";
 
 // Properly construct language-specific URLs for SEO indexing
 const localePrefixPattern = new RegExp(`^/(${i18nConfig.locales.join('|')})(/|$)`);
@@ -198,24 +202,25 @@ const mindfulGuardSchema = getMindfulGuardSchema();
           "name": localize("AppLass"),
           "url": "https://applass.com",
           "logo": "https://applass.com/logo.png",
-          "description": localize("Logic-driven software studio building high-performance apps with mathematical precision. Creators of ScreenVeil (10K+ downloads, 4.4★), FomoGen, and Mindful Guard."),
+          "description": localize("AppLass is an independent developer of privacy-first Android apps and Shopify tools. Its Android apps are Mindful Guard (app and Reels blocker), ScreenVeil (black screen overlay) and Arisely (mission alarm clock), all published on Google Play as Applass Android Apps."),
           "foundingDate": "2019",
-          "sameAs": []
+          "sameAs": [
+            "https://play.google.com/store/apps/developer?id=Applass+Android+Apps"
+          ]
         },
+        // No aggregateRating on these entries: Google only allows ratings that are
+        // visible on the page, and hard-coded Play Store numbers go stale.
         {
           "@type": "SoftwareApplication",
           "name": "ScreenVeil",
           "operatingSystem": "Android",
-          "applicationCategory": "Utility",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://applass.com/apps/screenveil",
+          "downloadUrl": "https://play.google.com/store/apps/details?id=com.screenveil.app",
           "author": {
             "@id": "https://applass.com/#organization"
           },
-          "description": localize("Black overlay for AMOLED/OLED displays that saves 60%+ battery life while listening to videos."),
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.4",
-            "reviewCount": "43"
-          },
+          "description": localize("Black screen overlay for Android: the screen goes black and blocks touches while audio from the app underneath keeps playing. On AMOLED and OLED panels black pixels are switched off, which reduces display power."),
           "offers": {
             "@type": "Offer",
             "price": "0",
@@ -243,12 +248,31 @@ const mindfulGuardSchema = getMindfulGuardSchema();
           "name": "Mindful Guard",
           "operatingSystem": mindfulGuardSchema.operatingSystem,
           "applicationCategory": mindfulGuardSchema.applicationCategory,
+          "url": mindfulGuardSchema.url,
+          "downloadUrl": mindfulGuardSchema.downloadUrl,
           "author": {
             "@id": "https://applass.com/#organization"
           },
           "description": mindfulGuardSchema.description,
-          "aggregateRating": mindfulGuardSchema.aggregateRating,
+          "offers": mindfulGuardSchema.offers,
           "featureList": localize("Zero-Tracking Architecture, System-Level Blocking, Focus Timers")
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Arisely",
+          "alternateName": "Arisely: Push-Up Alarm Clock",
+          "operatingSystem": "Android",
+          "applicationCategory": "LifestyleApplication",
+          "downloadUrl": "https://play.google.com/store/apps/details?id=com.arisely",
+          "author": {
+            "@id": "https://applass.com/#organization"
+          },
+          "description": localize("Loud alarm clock for heavy sleepers. The alarm keeps ringing until you finish a wake-up mission, including a camera-checked push-up mission. No account, and your alarms stay on your phone."),
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
         },
         {
           "@type": "BreadcrumbList",

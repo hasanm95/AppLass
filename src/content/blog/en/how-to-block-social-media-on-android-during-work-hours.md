@@ -1,7 +1,7 @@
 ---
 title: "How to Block Social Media on Android During Work Hours Only"
 date: "2026-04-24"
-dateModified: "2026-05-19"
+dateModified: "2026-10-24"
 category: "Android Apps"
 keywords: "block social media android, schedule app blocker android, block apps during work hours, mindful guard android"
 author: "AppLass Team"
@@ -20,9 +20,9 @@ faqs:
   - question: "Can I set different schedules for weekdays and weekends?"
     answer: "Yes. Mindful Guard lets you choose which days each schedule is active, so your weekends stay completely open while your Monday–Friday work window is protected. You can also create multiple schedules — a strict morning block before 8 AM and a lighter afternoon block from 1–3 PM, for example."
   - question: "What if I need to access a blocked app for actual work?"
-    answer: "Mindful Guard offers Standard Mode and Strict Mode. Standard Mode allows a short override window if you genuinely need access — useful if your job requires checking LinkedIn or Twitter occasionally. Strict Mode has no override at all. Start with Standard Mode and switch to Strict if you find yourself abusing the override."
+    answer: "Leave it off your block list. Mindful Guard has no override button: once a block is running, it holds until the schedule ends. So block only what you truly don't need during work hours. If your job needs LinkedIn or X now and then, keep the app open and use Reel Guard to limit just its short-video feed."
   - question: "Is Mindful Guard safe? Does it collect my data?"
-    answer: "Mindful Guard uses a zero-tracking, fully on-device architecture. It requires only Usage Access permission to monitor which app is in the foreground — no location data, no contacts, no personal identifiers. Your usage patterns never leave your phone."
+    answer: "Mindful Guard runs fully on your device. It uses Android's Accessibility Service to notice when a blocked app opens, plus Usage Access for its usage stats — no location data, no contacts, no personal identifiers. Google Play's Data safety section lists no data collected."
 ---
 
 You've tried deleting the apps. You reinstalled them three days later.
@@ -67,13 +67,11 @@ The neuroscience here is straightforward. Habit loops are triggered by cues — 
 
 Install [Mindful Guard](https://play.google.com/store/apps/details?id=com.anonymous.mindfulguard&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dhow-to-block-social-media-on-android-during-work-hours%26utm_content%3Dinline) from the Google Play Store. It's free to download and requires no account, no sign-up, and no email address.
 
-### Step 2: Grant Usage Access
+### Step 2: Allow the Accessibility Service
 
-When you open the app for the first time, it will ask for Usage Access permission. This is how Mindful Guard detects which app is in the foreground so it can enforce blocks.
+When you open the app for the first time, it asks you to allow its **Accessibility Service**. This is how Mindful Guard notices that a blocked app has opened, so it can close it in real time. It may also ask for Usage Access (for its usage stats), to display over other apps (for the block screen) and to ignore battery optimization (so blocking keeps running in the background).
 
-To grant it: go to **Settings → Digital Wellbeing & Parental Controls → Usage Access**, find Mindful Guard in the list, and toggle it on.
-
-This is the only permission the app needs. It does not request location, contacts, camera, microphone, or any other sensitive permission. All processing happens on-device.
+It does not request location, contacts, camera or microphone. All processing happens on-device.
 
 ### Step 3: Create Your Work Hours Schedule
 
@@ -100,15 +98,14 @@ Tap **Add Apps** and choose the ones that cost you the most time during work hou
 
 A useful test: open your Android screen time report and sort by daily average. The top three or four non-work apps are your blocklist. Don't over-block — adding 15 apps to the list makes the schedule feel like a cage, which increases the urge to uninstall.
 
-### Step 5: Set Your Block Mode
+### Step 5: Decide What Stays Open
 
-Mindful Guard gives you two options:
+Mindful Guard has no override button. When you open a blocked app during your schedule, the block screen appears and stays until the schedule ends. That is the point — but it means you should decide now what you truly need during work hours.
 
-**Standard Mode** — When you try to open a blocked app, a block screen appears with an option to request a short override window. Useful if your work occasionally requires social media access (community management, social marketing, etc.).
+- **Need a social app for work** (community management, social marketing)? Leave it off the block list, and use **Reel Guard** to limit only its Reels or Shorts feed.
+- **Never need it at work?** Block the whole app.
 
-**Strict Mode** — No override. The block screen is the end of the road until your schedule expires. Recommended if you've noticed yourself justifying overrides that weren't really necessary.
-
-If this is your first time setting up a system like this, start with Standard Mode. Give it a week. If you're using the override more than once or twice a day, switch to Strict.
+If this is your first time setting up a system like this, start with a short list. Give it a week, then add the apps you still catch yourself reaching for.
 
 ### Step 6: Activate the Schedule
 
