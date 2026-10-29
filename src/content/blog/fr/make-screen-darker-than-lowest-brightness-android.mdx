@@ -1,0 +1,102 @@
+---
+title: "Écran plus sombre que la luminosité minimale (Android)"
+description: "La luminosité minimale reste trop forte dans une pièce sombre. Voici comment fonctionne l'option d'atténuation supplémentaire d'Android, ce qu'apporte une superposition d'atténuation, et quand un écran entièrement noir est le meilleur choix."
+date: "2026-10-24"
+dateModified: "2026-10-24"
+author: "Équipe AppLass"
+excerpt: "Activez d'abord l'atténuation supplémentaire intégrée à Android. Si c'est encore trop lumineux, une superposition d'atténuation baisse l'écran davantage, et un écran entièrement noir supprime toute lumière pendant que le son continue."
+tags: ["android", "luminosité", "nuit", "écran", "batterie"]
+category: "Applications Android"
+keywords: "rendre l'écran plus sombre android, comment rendre l'écran plus sombre, écran plus sombre que la luminosité minimale, luminosité minimale trop forte, extra dim android, assombrir l'écran du téléphone, écran trop lumineux la nuit android, screenveil mode atténué"
+breadcrumbName: "Plus sombre que le minimum"
+sidebarApps:
+  - screenveil
+featured: false
+faqs:
+  - question: "Pourquoi ma luminosité minimale est-elle encore trop forte ?"
+    answer: "Les fabricants fixent la luminosité minimale pour que l'écran reste lisible dans la plupart des pièces, pas dans une chambre complètement noire. Ce minimum est un plancher matériel. L'atténuation supplémentaire (« Extra dim »), ajoutée avec Android 12, assombrit l'image par logiciel : l'écran peut paraître plus sombre que ce que permet le curseur."
+  - question: "Comment rendre mon écran Android plus sombre que la luminosité minimale ?"
+    answer: "Activez l'option d'atténuation supplémentaire d'Android (« Extra dim » en anglais). Cherchez « luminosité » dans les paramètres : sur beaucoup de téléphones, l'option se trouve dans Accessibilité, et elle peut être ajoutée aux Réglages rapides. Si c'est encore trop lumineux, une application d'atténuation peut assombrir l'écran davantage."
+  - question: "Qu'est-ce que l'atténuation supplémentaire sur Android ?"
+    answer: "C'est une fonction intégrée à Android, disponible sur les Pixel et beaucoup d'autres téléphones depuis Android 12, ainsi que sur les Samsung. Elle permet à l'écran de descendre sous la luminosité minimale normale, avec une intensité réglable. Son nom exact varie selon la marque et la version d'Android."
+  - question: "Assombrir l'écran économise-t-il la batterie ?"
+    answer: "Baisser la vraie luminosité, oui. Une superposition d'atténuation aide aussi sur un écran AMOLED ou OLED, car des pixels plus sombres consomment moins. Sur un écran LCD, une superposition assombrit seulement l'image ; le rétroéclairage reste au même niveau, l'économie est donc faible."
+  - question: "Quand préférer un écran noir à l'atténuation ?"
+    answer: "Quand vous n'avez besoin que du son : un podcast, de la musique, un cours ou une vidéo pour vous endormir. Un écran entièrement noir n'émet aucune lumière, et sur les écrans AMOLED, les pixels noirs sont éteints."
+  - question: "Le Mode Nuit, est-ce la même chose que l'atténuation ?"
+    answer: "Non. Le Mode Nuit (Confort visuel chez Samsung) rend l'écran plus chaud en réduisant la lumière bleue. Il ne l'assombrit pas vraiment. La nuit, vous pouvez le combiner avec l'atténuation supplémentaire."
+---
+
+import ScreenVeilCTA from "@/components/blog/ScreenVeilCTA.astro";
+
+**Activez d'abord l'atténuation supplémentaire.** Elle est intégrée à Android et fait descendre l'écran
+sous la luminosité minimale normale. Si c'est encore trop lumineux pour une chambre sombre, une
+superposition d'atténuation la baisse davantage. Et si vous n'avez besoin que du son, un écran entièrement
+noir supprime toute lumière.
+
+## Pourquoi la luminosité minimale ne suffit pas
+
+Les fabricants fixent la luminosité minimale pour que l'écran reste lisible dans la plupart des pièces.
+Dans une chambre complètement noire, lors d'un vol de nuit ou au cinéma, ce minimum paraît encore fort, et
+vos yeux doivent se réadapter à chaque coup d'œil au téléphone.
+
+## Étape 1 : activer l'atténuation supplémentaire
+
+Android 12 a ajouté un réglage précisément pour cela, dans Accessibilité, parce que certains téléphones ne descendent pas assez bas pour un usage dans le noir ([Android Authority](https://androidauthority.com/android-15-even-dimmer-3436221)). La plupart des téléphones Android depuis Android 12 l'ont :
+
+1. Ouvrez les **Paramètres** et cherchez **« luminosité »**. L'option qui assombrit l'écran au-delà du
+   minimum s'appelle « Extra dim » en anglais ; sur beaucoup de téléphones, elle se trouve dans
+   **Accessibilité**.
+2. Activez-la et réglez son **intensité**.
+3. Ajoutez sa vignette aux **Réglages rapides** pour l'activer et la désactiver d'une pression.
+
+L'emplacement et le nom exact varient selon la marque et la version d'Android : la recherche dans les
+paramètres reste le moyen le plus rapide de la trouver.
+
+**Associez-la au Mode Nuit** (Confort visuel chez Samsung) si vous voulez aussi un écran plus chaud. Le
+Mode Nuit réduit la lumière bleue ; seul, il n'assombrit presque pas l'écran.
+
+## Étape 2 : ajouter une superposition d'atténuation si c'est encore trop lumineux
+
+Une superposition d'atténuation pose une couche sombre semi-transparente sur tout l'écran, qui paraît alors
+encore plus sombre en plus de l'atténuation supplémentaire. [ScreenVeil](/fr/apps/screenveil) propose pour
+cela un **mode atténué** : une faible lueur au lieu du noir complet, quand vous devez encore voir l'écran.
+
+À savoir : sur un écran **LCD**, une superposition assombrit l'image mais le rétroéclairage continue au
+même niveau, elle économise donc peu de batterie. Sur les écrans **AMOLED et OLED**, des pixels plus
+sombres consomment réellement moins.
+
+## Étape 3 : passer au noir complet quand seul le son compte
+
+Si vous écoutez plutôt que vous ne regardez (un podcast, un cours, de la musique, une vidéo pour vous
+endormir), vous n'avez besoin d'aucune lumière. L'écran noir de ScreenVeil recouvre l'affichage d'un noir
+pur pendant que l'application en dessous continue de jouer :
+
+1. Installez ScreenVeil, touchez **Start Service** et autorisez
+   **« Afficher par-dessus les autres applications »**.
+2. Lancez votre audio ou votre vidéo.
+3. Touchez le bouton flottant ou la vignette des Réglages rapides. L'écran devient noir.
+4. Touchez l'écran et déverrouillez pour revenir.
+
+Sur les écrans AMOLED, les pixels noirs sont éteints : l'écran n'émet aucune lumière et consomme moins.
+Les touches sont bloquées tant qu'il est noir, une main endormie ne peut donc rien mettre en pause.
+L'heure et la date peuvent rester visibles sur l'écran noir si vous voulez savoir l'heure.
+
+<ScreenVeilCTA lang="fr" />
+
+## Quelle option choisir
+
+| Situation | Meilleure option |
+|---|---|
+| Lire au lit | Atténuation supplémentaire + Mode Nuit |
+| Encore trop lumineux | Atténuation supplémentaire + superposition d'atténuation |
+| Écouter sans regarder | Écran entièrement noir |
+| Cinéma, avion, chambre partagée | Écran entièrement noir, ou atténuation supplémentaire au maximum |
+
+## En résumé
+
+L'atténuation supplémentaire d'Android règle la plupart des problèmes d'écran « trop lumineux la nuit » et
+ne coûte rien. Une superposition d'atténuation va plus loin quand vous devez encore voir l'écran. Quand
+seul le son compte, un écran noir est l'option la plus sombre qui existe.
+
+<ScreenVeilCTA lang="fr" />
