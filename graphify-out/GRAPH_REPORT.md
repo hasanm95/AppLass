@@ -1,16 +1,16 @@
-# Graph Report - AppLass  (2026-08-04)
+# Graph Report - AppLass  (2026-11-05)
 
 ## Corpus Check
-- 466 files · ~1,770,156 words
+- 508 files · ~2,351,297 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4384 nodes · 4916 edges · 335 communities (319 shown, 16 thin omitted)
+- 4876 nodes · 5307 edges · 392 communities (373 shown, 19 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.61)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `078bef2a`
+- Built from commit: `7f01d4fd`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -303,6 +303,7 @@
 - split-pages.sh
 - use-localepath.js
 - env.d.ts
+- astro.config.mjs
 - ScreenVeilCTA.astro
 - @astrojs/check
 - package.json
@@ -342,47 +343,103 @@
 - 8. SF Symbols
 - 9. iOS Accessibility
 - 4. Attack Surface Mapping
+- de/alarmy-alternatives-android.mdx
+- de/arisely-alarm-clock-for-heavy-sleepers.md
+- de/shopify-cart-abandonment-benchmarks-2026.mdx
+- en/alarmy-alternatives-android.mdx
+- en/arisely-alarm-clock-for-heavy-sleepers.md
+- en/shopify-cart-abandonment-benchmarks-2026.mdx
+- fr/alarmy-alternatives-android.mdx
+- fr/arisely-alarm-clock-for-heavy-sleepers.md
+- fr/shopify-cart-abandonment-benchmarks-2026.mdx
+- de/does-dark-mode-save-battery-amoled.mdx
+- de/how-to-lock-touch-screen-android.mdx
+- en/does-dark-mode-save-battery-amoled.mdx
+- en/how-to-lock-touch-screen-android.mdx
+- fr/does-dark-mode-save-battery-amoled.mdx
+- fr/how-to-lock-touch-screen-android.mdx
+- de/app-blocker-cannot-be-uninstalled-android.mdx
+- de/how-to-stop-sleeping-through-your-alarm-android.md
+- en/app-blocker-cannot-be-uninstalled-android.mdx
+- en/how-to-stop-sleeping-through-your-alarm-android.md
+- fr/app-blocker-cannot-be-uninstalled-android.mdx
+- fr/how-to-stop-sleeping-through-your-alarm-android.md
+- 2. Font Pairing Principles
+- de/alarm-app-that-makes-you-do-pushups-android.md
+- de/alarm-clock-with-missions-to-turn-off.md
+- de/why-android-alarms-dont-go-off-exact-alarms.md
+- de/youtube-premium-alternatives-background-play.mdx
+- en/alarm-app-that-makes-you-do-pushups-android.md
+- en/alarm-clock-with-missions-to-turn-off.md
+- en/why-android-alarms-dont-go-off-exact-alarms.md
+- en/youtube-premium-alternatives-background-play.mdx
+- fr/alarm-app-that-makes-you-do-pushups-android.md
+- fr/alarm-clock-with-missions-to-turn-off.md
+- fr/why-android-alarms-dont-go-off-exact-alarms.md
+- fr/youtube-premium-alternatives-background-play.mdx
+- Development Decision Process
+- 6. Scroll Animation Principles
+- 1. Modular Scale Principles
+- de/best-alarm-apps-for-heavy-sleepers-android-2026.md
+- en/best-alarm-apps-for-heavy-sleepers-android-2026.md
+- fr/best-alarm-apps-for-heavy-sleepers-android-2026.md
+- 🚫 MOBILE ANTI-PATTERNS (NEVER DO THESE!)
+- 3. Micro-Interaction Principles
+- 4. Loading States Principles
+- 5. Page Transitions Principles
+- 8. Feedback Animation Principles
+- 9. Performance Principles
+- 4. Line Length Principles
+- 5. Responsive Typography Principles
+- 6. Weight and Emphasis Principles
+- 8. Hierarchy Principles
+- 3. Stack Navigation
+- 5. Modal Navigation
+- 8. Transition Animations
+- 5. Risk Prioritization
+- content/taste.md
+- workflow/taste.md
 
 ## God Nodes (most connected - your core abstractions)
-1. `@/i18n/localize` - 86 edges
-2. `localize()` - 83 edges
-3. `@/i18n/config` - 45 edges
-4. `@/components/common/Section.astro` - 43 edges
-5. `../layouts/Layout.astro` - 28 edges
-6. `@/page-templates/AppsScreenveilPage.astro` - 27 edges
-7. `@/i18n/utils` - 26 edges
-8. `@/components/common/Navbar.astro` - 26 edges
-9. `5. Re-render Optimization` - 26 edges
-10. `7. JavaScript Performance` - 26 edges
+1. `@/i18n/localize` - 79 edges
+2. `localize()` - 76 edges
+3. `@/i18n/config` - 47 edges
+4. `@/page-templates/AppsAriselyPage.astro` - 33 edges
+5. `@/page-templates/AppsScreenveilPage.astro` - 31 edges
+6. `@/components/common/Section.astro` - 30 edges
+7. `@/page-templates/AppsMindfulGuardPage.astro` - 30 edges
+8. `@/i18n/utils` - 29 edges
+9. `../layouts/Layout.astro` - 29 edges
+10. `@/components/common/Navbar.astro` - 27 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `_generate_intelligent_overrides()` --calls--> `search()`  [INFERRED]
   .agent/.shared/ui-ux-pro-max/scripts/design_system.py → .agent/.shared/ui-ux-pro-max/scripts/core.py
-- `StickyDownloadBar()` --calls--> `localize()`  [EXTRACTED]
-  src/components/apps/screenveil/StickyDownloadBar.tsx → src/i18n/localize.ts
 - `getFooterLinks()` --calls--> `localize()`  [EXTRACTED]
   src/components/common/Footer.astro → src/i18n/localize.ts
+- `getFooterLinks()` --calls--> `localePath()`  [EXTRACTED]
+  src/components/common/Footer.astro → src/i18n/utils.ts
+- `getAriselyData()` --calls--> `localize()`  [EXTRACTED]
+  src/constants/arisely-data.ts → src/i18n/localize.ts
 - `getFaqRegistry()` --calls--> `localize()`  [EXTRACTED]
   src/constants/faq-registry.ts → src/i18n/localize.ts
-- `getFomoGenData()` --calls--> `localize()`  [EXTRACTED]
-  src/constants/fomogen-data.ts → src/i18n/localize.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (335 total, 16 thin omitted)
+## Communities (392 total, 19 thin omitted)
 
 ### Community 0 - "@/i18n/localize"
 Cohesion: 0.12
-Nodes (16): Architektur ohne Telemetrie, Benachrichtigungen kommen weiterhin durch, Das ehrliche Fazit, Das Problem „Für heute ignorieren“, Daten und Datenschutz, Direkter Vergleich, Harte Zeitplansperren, Kein Strikter Modus (+8 more)
+Nodes (16): Architektur ohne Telemetrie, Benachrichtigungen kommen weiterhin durch, Das ehrliche Fazit, Das Problem „Für heute ignorieren“, Daten und Datenschutz, Direkter Vergleich, Harte Zeitplansperren, Keine harte Sperre (+8 more)
 
 ### Community 1 - "design_system.py"
 Cohesion: 0.05
 Nodes (42): BM25, detect_domain(), _load_csv(), BM25 ranking algorithm for text search, Lowercase, split, remove punctuation, filter short words, Build BM25 index from documents, Score all documents against query, Load CSV and return list of dicts (+34 more)
 
 ### Community 2 - "@/i18n/config"
-Cohesion: 0.43
-Nodes (6): COUNTRY_TO_LOCALE, Env, fetch(), getCookie(), hasLocalePrefix(), LOCALES
+Cohesion: 0.29
+Nodes (9): COUNTRY_TO_LOCALE, Env, fetch(), getCookie(), hasLocalePrefix(), LOCALES, RETIRED_LOCALE_RE, RETIRED_LOCALES (+1 more)
 
 ### Community 3 - "Android Platform Guidelines"
 Cohesion: 0.04
@@ -401,16 +458,16 @@ Cohesion: 0.04
 Nodes (46): 1. The Mobile Performance Mindset, 2. React Native Performance, 3. Flutter Performance, 4. Animation Performance (Both Platforms), 5. Memory Management, 6. Battery Optimization, 7. Network Performance, 8. Performance Testing (+38 more)
 
 ### Community 7 - "Frontend Design System"
-Cohesion: 0.17
-Nodes (12): 10. Decision Process Summary, 1. Constraint Analysis (ALWAYS FIRST), Audience → Design Approach, ⚠️ CRITICAL: ASK BEFORE ASSUMING (MANDATORY), ⛔ DEFAULT TENDENCIES TO AVOID (ANTI-SAFE HARBOR):, Frontend Design System, Post-Design Workflow, Reference Files (+4 more)
+Cohesion: 0.05
+Nodes (44): 10. Decision Process Summary, 1. Constraint Analysis (ALWAYS FIRST), 2. UX Psychology Principles, 3. Layout Principles, 4. Color Principles, 5. Typography Principles, 60-30-10 Rule, 6. Visual Effects Principles (+36 more)
 
 ### Community 8 - "Intelligent Agent Routing"
 Cohesion: 0.05
 Nodes (43): 1. Request Analysis, 2. Agent Selection Matrix, 3. Automatic Routing Protocol, 4. Response Format, Case 1: Generic Question, Case 2: Extremely Vague Request, Case 3: Contradictory Patterns, COMPLEX (Orchestrator required) (+35 more)
 
 ### Community 9 - "iOS Platform Guidelines"
-Cohesion: 0.17
-Nodes (12): 10. iOS Checklist, 1. Human Interface Guidelines Philosophy, 7. iOS Specific Patterns, Before Every iOS Screen, Before iOS Release, Context Menus, Core Apple Design Principles, iOS Design Values (+4 more)
+Cohesion: 0.05
+Nodes (44): 10. iOS Checklist, 1. Human Interface Guidelines Philosophy, 2. iOS Typography, 3. iOS Color System, 4. iOS Layout & Spacing, 5. iOS Navigation Patterns, 6. iOS Components, 7. iOS Specific Patterns (+36 more)
 
 ### Community 10 - "Visual Effects Reference"
 Cohesion: 0.05
@@ -421,12 +478,12 @@ Cohesion: 0.05
 Nodes (43): 1. Push Notifications, 2. Offline Sync & Conflict Resolution, 3. Mobile API Optimization, 4. App Versioning, 5. Authentication for Mobile, 6. Error Handling for Mobile, 7. Media & Binary Handling, 8. Security for Mobile (+35 more)
 
 ### Community 12 - "Typography System Reference"
-Cohesion: 0.05
-Nodes (41): 10. Typography Selection Checklist, 1. Modular Scale Principles, 2. Font Pairing Principles, 3. Line Height Principles, 4. Line Length Principles, 5. Responsive Typography Principles, 6. Weight and Emphasis Principles, 7. Letter Spacing (Tracking) (+33 more)
+Cohesion: 0.14
+Nodes (14): 10. Typography Selection Checklist, 3. Line Height Principles, 7. Letter Spacing (Tracking), 9. Readability Psychology, Adjustment Factors, Adjustment Guidelines, Anti-Patterns, Chunking for Comprehension (+6 more)
 
 ### Community 13 - "Animation Guidelines Reference"
-Cohesion: 0.05
-Nodes (39): 10. Animation Decision Checklist, 1. Duration Principles, 2. Easing Principles, 3. Micro-Interaction Principles, 4. Loading States Principles, 5. Page Transitions Principles, 6. Scroll Animation Principles, 7. Hover Effects Principles (+31 more)
+Cohesion: 0.13
+Nodes (14): 10. Animation Decision Checklist, 1. Duration Principles, 2. Easing Principles, 7. Hover Effects Principles, Animation Guidelines Reference, Anti-Patterns, Choosing Duration, Duration Ranges by Purpose (+6 more)
 
 ### Community 14 - "Mobile Color System Reference"
 Cohesion: 0.05
@@ -449,16 +506,16 @@ Cohesion: 0.05
 Nodes (35): Audience-Specific (137-139), Competitor & Comparison (11-13), Content Formats (97-109), Content & SEO (1-10), Contents, Developer & Technical (133-136), Email Marketing (45-53), Events & Speaking (65-72) (+27 more)
 
 ### Community 19 - "@/page-templates/AppsMindfulGuardPage.astro"
-Cohesion: 0.10
-Nodes (32): @/components/apps/mindful-guard/ComparisonMatrix.astro, @/components/apps/mindful-guard/DifferentiatorsSection.astro, LucideIcon, mindfulData, @/components/apps/mindful-guard/LogicSection.astro, mindfulData, @/components/apps/mindful-guard/MindfulClosingCTA.astro, @/components/apps/mindful-guard/MindfulHero.astro (+24 more)
+Cohesion: 0.16
+Nodes (12): @/constants/mindful-guard-data, getMindfulGuardData(), getMindfulGuardSchema(), MINDFUL_GUARD_SCHEMA, mindfulGuardPlayUrl(), @/page-templates/AppsMindfulGuardPage.astro, @/assets/apps/mindful-guard/home.jpg, @/assets/apps/mindful-guard/icon.png (+4 more)
 
 ### Community 20 - "Orchestrator - Native Multi-Agent Coordination"
 Cohesion: 0.06
 Nodes (35): 🔴 AGENT BOUNDARY ENFORCEMENT (CRITICAL), Agent Chaining with Context, Agent States, Available Agents, Best Practices, 🔴 CHECKPOINT 1: Plan Verification (MANDATORY), 🔴 CHECKPOINT 2: Project Type Routing, 🔴 Checkpoint Summary (CRITICAL) (+27 more)
 
 ### Community 21 - "Mobile Navigation Reference"
-Cohesion: 0.06
-Nodes (35): 10. Navigation Checklist, 1. Navigation Selection Decision Tree, 2. Tab Bar Navigation, 3. Stack Navigation, 4. Drawer Navigation, 5. Modal Navigation, 6. Deep Linking, 7. Navigation State Persistence (+27 more)
+Cohesion: 0.09
+Nodes (23): 10. Navigation Checklist, 1. Navigation Selection Decision Tree, 2. Tab Bar Navigation, 4. Drawer Navigation, 6. Deep Linking, 7. Navigation State Persistence, 9. Navigation Anti-Patterns, ❌ AI Navigation Mistakes (+15 more)
 
 ### Community 22 - "Tailwind CSS Patterns (v4 - 2025)"
 Cohesion: 0.06
@@ -481,8 +538,8 @@ Cohesion: 0.07
 Nodes (29): API Development, API Style Selection, Architecture, Backend Development Architect, Common Anti-Patterns You Avoid, 🛑 CRITICAL: CLARIFY BEFORE CODING (MANDATORY), Database & Data, Database Selection (2025) (+21 more)
 
 ### Community 27 - "Color System Reference"
-Cohesion: 0.11
-Nodes (18): 2. The 60-30-10 Rule, 4. Palette Generation Principles, 5. Context-Based Selection Guide, 6. Dark Mode Principles, 8. Color Selection Checklist, 9. Anti-Patterns to Avoid, Adapting Colors for Dark Mode, Color System Reference (+10 more)
+Cohesion: 0.06
+Nodes (30): 1. Color Theory Fundamentals, 2. The 60-30-10 Rule, 3. Color Psychology - Meaning & Selection, 4. Palette Generation Principles, 5. Context-Based Selection Guide, 6. Dark Mode Principles, 7. Accessibility Guidelines, 8. Color Selection Checklist (+22 more)
 
 ### Community 28 - "Mobile Design System"
 Cohesion: 0.07
@@ -501,8 +558,8 @@ Cohesion: 0.07
 Nodes (27): 10. Anti-Patterns, 1. MITRE ATT&CK Phases, 2. Reconnaissance Principles, 3. Initial Access Vectors, 4. Privilege Escalation Principles, 5. Defense Evasion Principles, 6. Lateral Movement Principles, 7. Active Directory Attacks (+19 more)
 
 ### Community 32 - "@/lib/legal-registry"
-Cohesion: 0.06
-Nodes (31): content, content, content, href, content, ../components/docs-content/fomogen/FomogenDocsPage.astro, ../components/docs-content/mindful-guard/MindfulGuardDocsPage.astro, ../components/docs-content/screenveil/ScreenVeilDocsPage.astro (+23 more)
+Cohesion: 0.07
+Nodes (28): @/components/home/FoundersMoat.astro, @/components/home/Testimonials.astro, @/components/legal/AriselyPrivacy.astro, @/components/legal/AriselyTerms.astro, @/components/legal/FomogenPrivacy.astro, @/components/legal/FomogenTerms.astro, @/components/legal/MindfulGuardPrivacy.astro, @/components/legal/MindfulGuardTerms.astro (+20 more)
 
 ### Community 33 - "Database Architect"
 Cohesion: 0.07
@@ -529,8 +586,8 @@ Cohesion: 0.08
 Nodes (25): 1. Modular Skill Loading Protocol, 2. Enforcement Protocol, ⚠️ AGENT ROUTING CHECKLIST (MANDATORY BEFORE EVERY CODE/DESIGN RESPONSE), Agents & Skills, Auto-Selection Protocol, 🧹 Clean Code (Global Mandatory), CRITICAL: AGENT & SKILL PROTOCOL (START HERE), 📁 File Dependency Awareness (+17 more)
 
 ### Community 39 - "@/components/common/Section.astro"
-Cohesion: 0.11
-Nodes (32): @/components/apps/mindful-guard/MindfulFAQSection.astro, @/components/apps/screenveil/CompetitorComparison.astro, @/components/apps/screenveil/FAQSection.astro, @/components/apps/screenveil/FeatureGrid.astro, LucideIcon, screenveilData, @/components/apps/screenveil/PainPointsSection.astro, @/components/apps/screenveil/PrivacySection.astro (+24 more)
+Cohesion: 0.08
+Nodes (28): @/components/common/FAQRegistrySection.astro, @/components/common/FAQSchema.astro, schema, @/components/home/AnswerNuggets.astro, @/constants/arisely-data, ariselyPlayUrl(), getAriselyData(), getAriselySchema() (+20 more)
 
 ### Community 40 - "Debugger - Root Cause Analysis Expert"
 Cohesion: 0.08
@@ -549,12 +606,12 @@ Cohesion: 0.07
 Nodes (27): @astrojs/mdx, @astrojs/react, @astrojs/sitemap, class-variance-authority, i18next, dependencies, astro, @astrojs/mdx (+19 more)
 
 ### Community 44 - "@/page-templates/AppsFomogenPage.astro"
-Cohesion: 0.14
-Nodes (21): @/components/apps/fomogen/CoreFeatures.astro, @/components/apps/fomogen/FomoGenCTA.astro, @/components/apps/fomogen/FomoGenHero.astro, @/components/apps/fomogen/PricingMatrix.astro, fomoData, @/components/apps/fomogen/PricingSection.astro, @/components/apps/fomogen/SpeedBenefitSection.astro, @/components/apps/fomogen/TestimonialsSection.astro (+13 more)
+Cohesion: 0.08
+Nodes (40): @/components/apps/fomogen/CoreFeatures.astro, @/components/apps/fomogen/FomoGenCTA.astro, @/components/apps/fomogen/FomoGenHero.astro, @/components/apps/fomogen/PricingMatrix.astro, fomoData, @/components/apps/fomogen/PricingSection.astro, @/components/apps/fomogen/SpeedBenefitSection.astro, @/components/apps/fomogen/TestimonialsSection.astro (+32 more)
 
 ### Community 45 - "localize"
-Cohesion: 0.04
-Nodes (30): @/components/docs-content/fomogen/configuration/ConfigurationPage.astro, ../../../../components/docs-content/fomogen/countdown-timers/CountdownTimersPage.astro, ../../../../components/docs-content/fomogen/exit-intent/ExitIntentPage.astro, ../../../../components/docs-content/fomogen/faq/FAQPage.astro, ../../../../components/docs-content/fomogen/progress-indicators/ProgressIndicatorsPage.astro, ../../../../components/docs-content/fomogen/purchase-notifications/PurchaseNotificationsPage.astro, ../../../../components/docs-content/fomogen/quick-start/QuickStartPage.astro, ../../../../components/docs-content/fomogen/social-proof-badges/SocialProofBadgesPage.astro (+22 more)
+Cohesion: 0.10
+Nodes (15): @/components/docs-content/fomogen/configuration/ConfigurationPage.astro, ../../../../components/docs-content/fomogen/countdown-timers/CountdownTimersPage.astro, ../../../../components/docs-content/fomogen/exit-intent/ExitIntentPage.astro, ../../../../components/docs-content/fomogen/faq/FAQPage.astro, ../../../../components/docs-content/fomogen/progress-indicators/ProgressIndicatorsPage.astro, ../../../../components/docs-content/fomogen/purchase-notifications/PurchaseNotificationsPage.astro, ../../../../components/docs-content/fomogen/social-proof-badges/SocialProofBadgesPage.astro, ../../../../components/docs-content/fomogen/sticky-cart/StickyCartPage.astro (+7 more)
 
 ### Community 46 - "Game Audio Principles"
 Cohesion: 0.08
@@ -565,8 +622,8 @@ Cohesion: 0.09
 Nodes (22): Anti-Patterns, Bundle Size, Caching, Core Philosophy, Core Web Vitals Targets (2025), CSS, Images, JavaScript (+14 more)
 
 ### Community 48 - "Mobile Design Thinking"
-Cohesion: 0.11
-Nodes (18): 🚫 AI MOBILE DEFAULTS (FORBIDDEN LIST), Analysis for Every Gesture, 🧪 ANTI-MEMORIZATION TEST, Ask Yourself Before Every Solution, 🔍 COMPONENT DECOMPOSITION (MANDATORY), 📊 CONTEXT-BASED DECISION PROTOCOL, Decomposition Analysis for Every Screen, 🧠 DEEP MOBILE THINKING PROTOCOL (+10 more)
+Cohesion: 0.09
+Nodes (23): 🚫 AI MOBILE DEFAULTS (FORBIDDEN LIST), Analysis for Every Gesture, 🧪 ANTI-MEMORIZATION TEST, Ask Yourself Before Every Solution, 🔍 COMPONENT DECOMPOSITION (MANDATORY), 📊 CONTEXT-BASED DECISION PROTOCOL, Decomposition Analysis for Every Screen, 🧠 DEEP MOBILE THINKING PROTOCOL (+15 more)
 
 ### Community 49 - "Testing Patterns"
 Cohesion: 0.09
@@ -574,15 +631,15 @@ Nodes (22): 10. Anti-Patterns, 1. Testing Pyramid, 2. AAA Pattern, 3. Test Type 
 
 ### Community 50 - "@/page-templates/AppsPage.astro"
 Cohesion: 0.15
-Nodes (12): Der tiefere Punkt: Systeme schlagen Willenskraft jedes Mal, Schritt 1: Mindful Guard herunterladen, Schritt 2: Nutzungszugriff erteilen, Schritt 3: Zeitplan für Ihre Arbeitszeit anlegen, Schritt 4: Die zu sperrenden Apps auswählen, Schritt 5: Sperrmodus festlegen, Schritt 6: Zeitplan aktivieren, So blockieren Sie soziale Medien auf Android während der Arbeitszeit (+4 more)
+Nodes (12): Der tiefere Punkt: Systeme schlagen Willenskraft jedes Mal, Schritt 1: Mindful Guard herunterladen, Schritt 2: Bedienungshilfen-Dienst erlauben, Schritt 3: Zeitplan für Ihre Arbeitszeit anlegen, Schritt 4: Die zu sperrenden Apps auswählen, Schritt 5: Festlegen, was offen bleibt, Schritt 6: Zeitplan aktivieren, So blockieren Sie soziale Medien auf Android während der Arbeitszeit (+4 more)
 
 ### Community 51 - "devDependencies"
 Cohesion: 0.09
 Nodes (23): @astrojs/check, eslint, eslint-plugin-astro, gray-matter, devDependencies, @astrojs/check, eslint, eslint-plugin-astro (+15 more)
 
 ### Community 52 - "MindfulGuard Landing Page — Rebrand Plan"
-Cohesion: 0.09
-Nodes (21): 1. Positioning north star, 2. Content calendar — the Reels/Shorts cluster, 3. On-site conversion (landing page), 4. Off-site amplification (free, fast), 5. ASO + review flywheel, 6. Measurement, 7. 90-day sequence, Execution log (+13 more)
+Cohesion: 0.04
+Nodes (42): 1. What is already in flight — do not rewrite these, 2.1 Dark mode saves 3–9%, not 60% — and that is an opportunity, not a problem, 2.2 A countdown timer cannot go in Shopify checkout unless you are Plus, 2.3 Cart reservation timers do not actually reserve inventory, 2.4 ScreenVeil is not a screen dimmer — dropping that post, 2.5 The most-quoted trust badge stat is a vendor claim, 2.6 Mobile has no true exit intent, 2.7 Site-level AEO check (+34 more)
 
 ### Community 53 - "Penetration Tester"
 Cohesion: 0.09
@@ -621,8 +678,8 @@ Cohesion: 0.10
 Nodes (20): 1. Process Management Principles, 2. Monitoring Principles, 3. Log Management Principles, 4. Scaling Decisions, 5. Health Check Principles, 6. Security Principles, 7. Troubleshooting Priority, 8. Anti-Patterns (+12 more)
 
 ### Community 62 - "@/page-templates/BlogPostPage.astro"
-Cohesion: 0.08
-Nodes (43): @/components/blog/BlogCard.astro, @/components/blog/ReadingProgressBar.astro, @/components/blog/ShareArticle.astro, @/components/common/Footer.astro, currentLang, currentYear, footerLinks, getFooterLinks() (+35 more)
+Cohesion: 0.09
+Nodes (24): @/components/blog/AppCallout.astro, @/components/blog/BlogCard.astro, content, href, @/components/blog/ReadingProgressBar.astro, @/components/blog/ShareArticle.astro, @/components/common/SubpageHero.astro, ParallaxLayer (+16 more)
 
 ### Community 63 - "The 2026 Benchmarks by Niche"
 Cohesion: 0.10
@@ -669,8 +726,8 @@ Cohesion: 0.11
 Nodes (18): aliases, components, hooks, lib, ui, utils, iconLibrary, registries (+10 more)
 
 ### Community 74 - "Play Console submission: Data Safety + permissions declarations"
-Cohesion: 0.11
-Nodes (17): Ads, Alarms & reminders permission declaration, Content rating questionnaire, Data Safety form (App content → Data safety), "Display over other apps" (`SYSTEM_ALERT_WINDOW`), Foreground service, Full-screen intent declaration (`USE_FULL_SCREEN_INTENT`), Play Console submission: Data Safety + permissions declarations (+9 more)
+Cohesion: 0.09
+Nodes (20): Ads, Alarms & reminders permission declaration, Content rating questionnaire, Data Safety form (App content → Data safety), "Display over other apps" (`SYSTEM_ALERT_WINDOW`), Foreground service, Full-screen intent declaration (`USE_FULL_SCREEN_INTENT`), Play Console submission: Data Safety + permissions declarations (+12 more)
 
 ### Community 75 - "Security Auditor"
 Cohesion: 0.11
@@ -693,8 +750,8 @@ Cohesion: 0.11
 Nodes (17): Antigravity Built-in Agents, Available Agents, Best Practices, Key Benefits, Native Agent Invocation, Native Parallel Agents, Orchestration Patterns, Overview (+9 more)
 
 ### Community 80 - "@/page-templates/CompareDetailPage.astro"
-Cohesion: 0.14
-Nodes (16): @/components/compare/CompareTestimonial.astro, @/components/compare/ComparisonMatrix.astro, @/components/compare/TechnicalDebt.astro, @/components/compare/ValueHighlights.astro, cards, @/lib/compare, ComparisonData, ComparisonFeature (+8 more)
+Cohesion: 0.08
+Nodes (26): ./LanguageToggle.astro, @/components/home/SocialProof.astro, LocalizeProps, @/i18n/config, i18nConfig, isRtl(), Locale, localeMeta (+18 more)
 
 ### Community 81 - "Game Developer Agent"
 Cohesion: 0.12
@@ -722,15 +779,15 @@ Nodes (14): 3. Server-Side Performance, Authenticate Server Actions Like API Rou
 
 ### Community 87 - "en/android-digital-wellbeing-vs-third-party-focus-apps.md"
 Cohesion: 0.12
-Nodes (16): Data and Privacy, Hard Schedule Blocks, Head-to-Head Comparison, How Mindful Guard Fills the Gap, Multiple Schedule Profiles, No Strict Mode, Notification Suppression, Notifications Still Come Through (+8 more)
+Nodes (16): Data and Privacy, Hard Schedule Blocks, Head-to-Head Comparison, How Mindful Guard Fills the Gap, Multiple Schedule Profiles, No Hard Block, No Override Button, Notification Suppression (+8 more)
 
 ### Community 88 - "fr/android-digital-wellbeing-vs-third-party-focus-apps.md"
 Cohesion: 0.12
-Nodes (16): Architecture Zéro Télémétrie, Blocages Horaires Stricts, Ce que le Bien-être Numérique Fait Vraiment Bien, Comment Mindful Guard Comble le Vide, Comparaison Directe, Données et Confidentialité, La Conclusion Honnête, Le Problème du « Ignorer pour Aujourd'hui » (+8 more)
+Nodes (16): Architecture Zéro Télémétrie, Aucun Bouton de Dérogation, Blocages Horaires Stricts, Ce que le Bien-être Numérique Fait Vraiment Bien, Comment Mindful Guard Comble le Vide, Comparaison Directe, Données et Confidentialité, La Conclusion Honnête (+8 more)
 
 ### Community 89 - "Mobile Developer"
-Cohesion: 0.06
-Nodes (32): Build Commands by Framework, 🔴 BUILD VERIFICATION (MANDATORY Before "Done"), 📝 CHECKPOINT (MANDATORY Before Any Mobile Work), Common Build Errors to Watch For, ⚠️ CRITICAL: ASK BEFORE ASSUMING (MANDATORY), ⛔ DEFAULT TENDENCIES TO AVOID:, Development Decision Process, 📱 Emulator Quick Commands (All Platforms) (+24 more)
+Cohesion: 0.09
+Nodes (23): Build Commands by Framework, 🔴 BUILD VERIFICATION (MANDATORY Before "Done"), 📝 CHECKPOINT (MANDATORY Before Any Mobile Work), Common Build Errors to Watch For, ⚠️ CRITICAL: ASK BEFORE ASSUMING (MANDATORY), ⛔ DEFAULT TENDENCIES TO AVOID:, 📱 Emulator Quick Commands (All Platforms), FlatList (React Native) (+15 more)
 
 ### Community 90 - "Product Manager"
 Cohesion: 0.12
@@ -854,7 +911,7 @@ Nodes (12): Combine With Social Proof for the Full Conversion Stack, Getting the
 
 ### Community 120 - "How to Block Social Media During Work Hours on Android"
 Cohesion: 0.15
-Nodes (12): How to Block Social Media During Work Hours on Android, Stack Your Schedules for Maximum Impact, Step 1: Download Mindful Guard, Step 2: Grant Usage Access, Step 3: Create Your Work Hours Schedule, Step 4: Select the Apps to Block, Step 5: Set Your Block Mode, Step 6: Activate the Schedule (+4 more)
+Nodes (12): How to Block Social Media During Work Hours on Android, Stack Your Schedules for Maximum Impact, Step 1: Download Mindful Guard, Step 2: Allow the Accessibility Service, Step 3: Create Your Work Hours Schedule, Step 4: Select the Apps to Block, Step 5: Decide What Stays Open, Step 6: Activate the Schedule (+4 more)
 
 ### Community 121 - "Comment Ajouter des Alertes de Stock Bas avec FomoGen"
 Cohesion: 0.15
@@ -862,7 +919,7 @@ Nodes (12): Bien Calibrer le Seuil : Des Exemples Pratiques, Ce Qu'il Ne Faut Pa
 
 ### Community 122 - "Comment Bloquer les Réseaux Sociaux Pendant les Heures de Travail sur Android"
 Cohesion: 0.15
-Nodes (12): Comment Bloquer les Réseaux Sociaux Pendant les Heures de Travail sur Android, Cumulez les Programmes pour un Impact Maximum, L'Idée Centrale : Les Systèmes Battent la Volonté à Chaque Fois, Pourquoi le Blocage Programmé Fonctionne Là Où Tout le Reste Échoue, Quelles Applications Bloquer — et Lesquelles Laisser Ouvertes, À Quoi S'Attendre la Première Semaine, Étape 1 : Télécharger Mindful Guard, Étape 2 : Accorder l'Accès à l'Utilisation (+4 more)
+Nodes (12): Comment Bloquer les Réseaux Sociaux Pendant les Heures de Travail sur Android, Cumulez les Programmes pour un Impact Maximum, L'Idée Centrale : Les Systèmes Battent la Volonté à Chaque Fois, Pourquoi le Blocage Programmé Fonctionne Là Où Tout le Reste Échoue, Quelles Applications Bloquer — et Lesquelles Laisser Ouvertes, À Quoi S'Attendre la Première Semaine, Étape 1 : Télécharger Mindful Guard, Étape 2 : Autoriser le Service d'Accessibilité (+4 more)
 
 ### Community 123 - "Documentation Writer"
 Cohesion: 0.17
@@ -934,11 +991,11 @@ Nodes (10): /deploy - Production Deployment, Deployment Flow, Examples, Failed D
 
 ### Community 141 - "en/opal-alternatives-android.mdx"
 Cohesion: 0.18
-Nodes (10): AppBlock (Best for heavy customization), Digital Wellbeing (Best for built-in basics), Explore the focus ecosystem, Freedom (Best for multi-device blocking), How to choose the right Opal alternative, MindfulGuard (Best Android-native alternative — free & private), One Sec (Best for mindful friction), Opal alternatives for Android compared (+2 more)
+Nodes (10): AppBlock (best for rules by place or Wi-Fi), Digital Wellbeing (free, built in), Freedom (best for phone and computer together), How to choose, Mindful Guard (best free Opal alternative), One Sec (best for gentle friction), Opal alternatives for Android compared, Opal on Android: the facts first (+2 more)
 
 ### Community 142 - "fr/opal-alternatives-android.mdx"
 Cohesion: 0.18
-Nodes (10): Alternatives à Opal pour Android comparées, AppBlock (Idéal pour une personnalisation poussée), Bien-être Numérique (Idéal pour les bases intégrées), Comment choisir la bonne alternative à Opal, Explorez l'écosystème de concentration, Freedom (Idéal pour le blocage multi-appareils), MindfulGuard (Meilleure alternative native Android — gratuite et privée), One Sec (Idéal pour la friction consciente) (+2 more)
+Nodes (10): AppBlock (idéal pour les règles par lieu ou Wi-Fi), Bien-être numérique (gratuit, intégré), Comment choisir, Freedom (idéal pour téléphone et ordinateur), Les alternatives à Opal pour Android comparées, Mindful Guard (meilleure alternative gratuite à Opal), One Sec (idéal pour une friction douce), Opal sur Android : d'abord les faits (+2 more)
 
 ### Community 143 - "Next.js Static Site Template (Modern Edition)"
 Cohesion: 0.20
@@ -994,7 +1051,7 @@ Nodes (8): check_page(), find_pages(), is_page_file(), main(), Path, Check if th
 
 ### Community 156 - "Vulnerability Scanner"
 Cohesion: 0.22
-Nodes (9): 10. Anti-Patterns, 5. Risk Prioritization, 7. Scanning Methodology, CVSS + Context, Phase-Based Approach, Prioritization Decision Tree, 📋 Reference Files, 🔧 Runtime Scripts (+1 more)
+Nodes (9): 10. Anti-Patterns, 7. Scanning Methodology, 9. Cloud Security Considerations, Cloud-Specific Checks, Phase-Based Approach, 📋 Reference Files, 🔧 Runtime Scripts, Shared Responsibility (+1 more)
 
 ### Community 157 - "/preview - Preview Management"
 Cohesion: 0.22
@@ -1002,11 +1059,11 @@ Nodes (8): Commands, Port Conflict, /preview - Preview Management, Start Server,
 
 ### Community 158 - "en/youtube-screen-off-battery-hack.md"
 Cohesion: 0.22
-Nodes (8): 1. Universal Compatibility, 2. Zero-Permission Privacy, 3. Smart "Pocket Mode" Protection, Boost Your Shopify Store Too, How to Set It Up in 30 Seconds, The Science of Saving Juice: Why "True Black" Matters, The Verdict: Is It Worth It?, Why ScreenVeil is the Go-To Utility for 2026
+Nodes (8): 1. Universal Compatibility, 2. One Permission, Nothing More, 3. Smart "Pocket Mode" Protection, Boost Your Shopify Store Too, How to Set It Up in 30 Seconds, The Science of Saving Juice: Why "True Black" Matters, The Verdict: Is It Worth It?, Why ScreenVeil is the Go-To Utility for 2026
 
 ### Community 159 - "fr/youtube-screen-off-battery-hack.md"
 Cohesion: 0.22
-Nodes (8): 1. Compatibilité Universelle, 2. Confidentialité Zéro-Permission, 3. Protection Intelligente du "Mode Poche", Boostez aussi Votre Boutique Shopify, Comment le Configurer en 30 Secondes, La Science des Économies d'Énergie : Pourquoi le "Noir Absolu" est Important, Le Verdict : Est-ce que ça vaut le coup ?, Pourquoi ScreenVeil est l'Utilitaire Incontournable de 2026
+Nodes (8): 1. Compatibilité Universelle, 2. Une Seule Permission, Rien de Plus, 3. Protection Intelligente du "Mode Poche", Boostez aussi Votre Boutique Shopify, Comment le Configurer en 30 Secondes, La Science des Économies d'Énergie : Pourquoi le "Noir Absolu" est Important, Le Verdict : Est-ce que ça vaut le coup ?, Pourquoi ScreenVeil est l'Utilitaire Incontournable de 2026
 
 ### Community 160 - "auto_preview.py"
 Cohesion: 0.54
@@ -1073,16 +1130,16 @@ Cohesion: 0.29
 Nodes (6): Conclusion: Reclaim Your 3 Hours, Enter Mindful Guard: Engineering Intentional Friction, The Path to Digital Wellness, The Three Pillars of the Mindful Guard Logic:, The "Willpower Gap" in Productivity, Why Accessibility Matters for Focus
 
 ### Community 176 - "en/youtube-background-play-2026-workaround.mdx"
-Cohesion: 0.25
-Nodes (7): Bottom line, Method 1 — ScreenVeil (free, works with any app) ⚡ Recommended, Method 2 — NewPipe (free, open-source), Method 3 — Firefox Mobile with Video Background Play Fix, Method 4 — YouTube Premium Lite ($7.99/month), Quick comparison, Why everything broke in January 2026
+Cohesion: 0.29
+Nodes (6): Method 1 — Keep the video in front and black out the screen (free, any app), Method 2 — NewPipe (free, open-source), Method 3 — YouTube Premium Lite (now with background play), What changed in January 2026?, Which method should you use?, Why did the Firefox background play fix stop working?
 
 ### Community 177 - "fr/the-logic-of-focus.md"
 Cohesion: 0.29
 Nodes (6): Conclusion : Récupérez vos 3 Heures, Le Chemin vers le Bien-être Numérique, Le "Fossé de la Volonté" dans la Productivité, Les Trois Piliers de la Logique Mindful Guard :, Mindful Guard : Ingénierie de la Friction Intentionnelle, Pourquoi l'Accessibilité est Essentielle pour la Concentration
 
 ### Community 178 - "fr/youtube-background-play-2026-workaround.mdx"
-Cohesion: 0.25
-Nodes (7): Comparaison rapide, En résumé, Méthode 1 — ScreenVeil (gratuit, fonctionne avec n'importe quelle app) ⚡ Recommandé, Méthode 2 — NewPipe (gratuit, open-source), Méthode 3 — Firefox Mobile avec Video Background Play Fix, Méthode 4 — YouTube Premium Lite (7,99 $/mois), Pourquoi tout a cassé en janvier 2026
+Cohesion: 0.29
+Nodes (6): Méthode 1 — Garder la vidéo au premier plan et passer l'écran au noir (gratuit, toute application), Méthode 2 — NewPipe (gratuit, libre), Méthode 3 — YouTube Premium Lite (désormais avec l'arrière-plan), Pourquoi le correctif Firefox ne fonctionne plus ?, Qu'est-ce qui a changé en janvier 2026 ?, Quelle méthode choisir ?
 
 ### Community 179 - "🔴 BUILD VERIFICATION (MANDATORY Before "Done")"
 Cohesion: 0.25
@@ -1290,11 +1347,11 @@ Nodes (11): 1. Mindful Guard — insgesamt am besten ⚡ Top-Empfehlung, 2. AppB
 
 ### Community 232 - "8. Portfolio Guidelines {#portfolio}"
 Cohesion: 0.18
-Nodes (10): AppBlock (am besten für weitreichende Anpassung), Digital Wellbeing (am besten für eingebaute Grundfunktionen), Entdecken Sie das Fokus-Ökosystem, Freedom (am besten für geräteübergreifendes Blockieren), MindfulGuard (beste Android-native Alternative — kostenlos und privat), One Sec (am besten für bewusste Reibung), Opal-Alternativen für Android im Vergleich, So wählen Sie die richtige Opal-Alternative (+2 more)
+Nodes (10): AppBlock (am besten für Regeln nach Ort oder WLAN), Digital Wellbeing (kostenlos, vorinstalliert), Freedom (am besten für Handy und Computer zusammen), Mindful Guard (beste kostenlose Opal-Alternative), One Sec (am besten für eine sanfte Hürde), Opal-Alternativen für Android im Vergleich, Opal auf Android: zuerst die Fakten, Opal vs. AppBlock vs. Mindful Guard (+2 more)
 
 ### Community 233 - "9. Pre-Design Checklists"
 Cohesion: 0.22
-Nodes (8): 1. Universelle Kompatibilität, 2. Datenschutz ohne Berechtigungen, 3. Intelligenter Schutz für die Hosentasche, Das Fazit: Lohnt sich das?, Die Physik des Sparens: Warum „echtes Schwarz“ zählt, Einrichtung in 30 Sekunden, Mehr zur Technik dahinter, Warum ScreenVeil 2026 das Mittel der Wahl ist
+Nodes (8): 1. Universelle Kompatibilität, 2. Eine Berechtigung, mehr nicht, 3. Intelligenter Schutz für die Hosentasche, Das Fazit: Lohnt sich das?, Die Physik des Sparens: Warum „echtes Schwarz“ zählt, Einrichtung in 30 Sekunden, Mehr zur Technik dahinter, Warum ScreenVeil 2026 das Mittel der Wahl ist
 
 ### Community 234 - "1. Lottie Animations"
 Cohesion: 0.25
@@ -1305,8 +1362,8 @@ Cohesion: 0.25
 Nodes (7): Bottom line, Daily limit vs. per-session limit, Shorts vs. the rest of YouTube, Step by step: block YouTube Shorts in under two minutes, What actually works: feed-level blocking, Why "just block YouTube" is bad advice, Why the Shorts shelf toggle isn't enough
 
 ### Community 236 - "5. Particle Effects"
-Cohesion: 0.25
-Nodes (7): Fazit, Methode 1 — ScreenVeil (kostenlos, funktioniert mit jeder App) ⚡ Empfohlen, Methode 2 — NewPipe (kostenlos, Open Source), Methode 3 — Firefox Mobile mit „Video Background Play Fix“, Methode 4 — YouTube Premium Lite (7,99 $/Monat), Vergleich auf einen Blick, Warum im Januar 2026 alles kaputtging
+Cohesion: 0.29
+Nodes (6): Methode 1 — Video im Vordergrund lassen und Bildschirm schwarz schalten (kostenlos, jede App), Methode 2 — NewPipe (kostenlos, Open Source), Methode 3 — YouTube Premium Lite (jetzt mit Hintergrundwiedergabe), Warum funktioniert der Firefox-Fix nicht mehr?, Was hat sich im Januar 2026 geändert?, Welche Methode passt zu Ihnen?
 
 ### Community 237 - "6. User Persona Quick Reference"
 Cohesion: 0.40
@@ -1389,8 +1446,8 @@ Cohesion: 0.29
 Nodes (6): Das Datenschutzproblem, Die Akkuentladung, Die Logikmatrix, Die „Willenskraft“-Falle, Meine abschließende Empfehlung, Warum die Architektur entscheidend ist
 
 ### Community 257 - "4. 3D CSS Transforms"
-Cohesion: 0.13
-Nodes (24): @/components/home/FoundersMoat.astro, @/components/home/ProductShowcase.astro, @/components/home/SocialProof.astro, @/components/home/SolutionsSection.astro, ICONS, lang, solutionsData, @/components/home/Testimonials.astro (+16 more)
+Cohesion: 0.16
+Nodes (13): @/components/common/Footer.astro, currentLang, currentYear, footerLinks, getFooterLinks(), @/components/home/ProductShowcase.astro, getProducts(), @/page-templates/AppsPage.astro (+5 more)
 
 ### Community 260 - "Editorial Workflows"
 Cohesion: 0.50
@@ -1465,8 +1522,8 @@ Cohesion: 0.33
 Nodes (5): Das Zero-Telemetry-Manifest, Datenschutz als Fundament, Holen Sie sich Ihre neuronale Architektur zurück, Warum Datenschutz gleich Performance ist, Was Analytics wirklich kostet
 
 ### Community 282 - "9. Cloud Security Considerations"
-Cohesion: 0.67
-Nodes (3): 9. Cloud Security Considerations, Cloud-Specific Checks, Shared Responsibility
+Cohesion: 0.10
+Nodes (28): content, referrer, content, content, content, ./MobileMenuToggle.astro, @/components/common/Navbar.astro, ../components/docs-content/DocsHubPage.astro (+20 more)
 
 ### Community 284 - "@astrojs/check"
 Cohesion: 0.67
@@ -1529,20 +1586,20 @@ Cohesion: 0.29
 Nodes (6): Blocage de toute l'application ou blocage des seuls Reels, L'essentiel, Limite quotidienne ou limite par session pour les Reels, Limite Reels uniquement face aux alternatives, Pas à pas : bloquer les Reels Instagram en moins de deux minutes, Pourquoi il n'existe pas de vrai bouton « désactiver » pour les Reels
 
 ### Community 313 - "3. Mobile API Optimization"
-Cohesion: 0.33
-Nodes (6): 5. iOS Navigation Patterns, Gestures, Modal Presentations, Navigation Bar Guidelines, Navigation Types, Tab Bar Guidelines
+Cohesion: 0.15
+Nodes (13): @/constants/screenveil-data, getScreenveilData(), getScreenveilSchema(), SCREENVEIL_SCHEMA, screenveilPlayUrl(), @/page-templates/AppsScreenveilPage.astro, @/assets/apps/screenveil/icon.png, @/assets/apps/screenveil/one-tap.jpg (+5 more)
 
 ### Community 314 - "8. Security for Mobile"
-Cohesion: 0.40
-Nodes (5): List Pattern Questioning, Navigation Pattern Questioning, 🎯 PATTERN QUESTIONING MATRIX, State Pattern Questioning, UI Pattern Questioning
+Cohesion: 0.14
+Nodes (13): Der 7-Tage-Plan auf einen Blick, Dopamin-Detox am Handy: der 7-Tage-Plan, Fazit, Nach Tag 7: nicht auf null zurückfallen, Tag 1 — Setzen Sie eine Sperre, kein Versprechen, Tag 2 — Erwarten Sie Reibung, keine Motivation, Tag 3-4 — Die härteste Phase, Tag 5 — Die Wende beginnt (+5 more)
 
 ### Community 315 - "8. Portfolio Guidelines {#portfolio}"
-Cohesion: 0.40
-Nodes (5): 2. iOS Typography, Dynamic Type Support (MANDATORY), Font Weight Usage, iOS Type Scale (Dynamic Type), SF Pro Font Family
+Cohesion: 0.14
+Nodes (13): After day 7: do not go back to zero, Bottom line, Day 1 — Set the block, not a promise, Day 2 — Expect friction, not motivation, Day 3-4 — The hardest stretch, Day 5 — The shift starts, Day 6-7 — Notice what changed, How to do a dopamine detox from your phone: the 7-day plan (+5 more)
 
 ### Community 316 - "4. Animation Performance (Both Platforms)"
-Cohesion: 0.40
-Nodes (5): 6. iOS Components, Buttons, Lists & Tables, Segmented Controls, Text Fields
+Cohesion: 0.14
+Nodes (13): Après le jour 7 : ne repartez pas de zéro, Ce qui fait qu'une détox va réellement au bout, Comment faire une détox dopamine de son téléphone : le plan de 7 jours, En résumé, Jour 1 — Posez le blocage, pas une promesse, Jour 2 — Attendez-vous à la friction, pas à la motivation, Jour 5 — Le basculement commence, Jours 3-4 — La phase la plus difficile (+5 more)
 
 ### Community 317 - "de/calculate-free-shipping-threshold.md"
 Cohesion: 0.40
@@ -1553,88 +1610,304 @@ Cohesion: 0.40
 Nodes (4): Aktionsplan, Die Wissenschaft der „Daumenzone“, Diese Ergebnisse können Sie erwarten, Über die Schaltfläche hinaus
 
 ### Community 319 - "1. Color Theory Fundamentals"
-Cohesion: 0.50
-Nodes (4): 1. Color Theory Fundamentals, Color Relationships, How to Choose a Scheme:, The Color Wheel
+Cohesion: 0.17
+Nodes (11): Eines sollten Sie vor jeder Installation prüfen, Fazit, Kostenlose Reels- und Shorts-Blocker im Vergleich, MindfulGuard — Tages- und Sitzungslimit gemeinsam, NoScroll — die etablierteste Option, ScrollGuard — die breiteste Plattformabdeckung, Shortstop — die schlankeste, und wirklich kostenlos, StopScroll — beste Bewertung, mit eingebautem Tageslimit (+3 more)
 
 ### Community 320 - "3. Dark Mode Design"
-Cohesion: 0.50
-Nodes (4): 3. Color Psychology - Meaning & Selection, Emotional Associations (For Decision Making), How to Choose Based on Context, Selection Process:
+Cohesion: 0.17
+Nodes (11): Bottom line, Free Reels and Shorts blockers compared, How to choose, How we compared these apps, MindfulGuard — daily and per-session limits together, NoScroll — the most established option, One thing to check before you install any of these, ScrollGuard — the broadest platform coverage (+3 more)
 
 ### Community 321 - "7. Accessibility Guidelines"
-Cohesion: 0.50
-Nodes (4): 7. Accessibility Guidelines, Contrast Requirements (WCAG), How to Check Contrast, Safe Patterns
+Cohesion: 0.17
+Nodes (11): Comment choisir, Comparatif des bloqueurs gratuits de Reels et de Shorts, En résumé, Et les grands noms du blocage ?, MindfulGuard — limites quotidienne et par session ensemble, NoScroll — l'option la plus établie, Notre méthode de comparaison, ScrollGuard — la couverture la plus large (+3 more)
 
 ### Community 322 - "4. 3D CSS Transforms"
-Cohesion: 0.50
-Nodes (4): 2. UX Psychology Principles, Core Laws (Internalize These), Emotional Design Levels, Trust Building
+Cohesion: 0.18
+Nodes (10): 1. Planen Sie eine Sperre der Feeds für Ihr Schlafenszeit-Fenster, 2. Schalten Sie den Schlafenszeitmodus ein, 3. Laden Sie das Handy außer Reichweite, 4. Besorgen Sie sich einen echten Wecker, damit das Handy keinen Grund hat, im Bett zu sein, 5. Geben Sie dem Abend ein anderes Ende, Checkliste für das Setup, Das Setup in fünf Schritten gegen nächtliches Scrollen, Warum ist es so schwer, nachts mit dem Scrollen aufzuhören? (+2 more)
 
 ### Community 323 - "1. Framework Selection"
-Cohesion: 0.50
-Nodes (4): 3. Layout Principles, 8-Point Grid Concept, Golden Ratio (φ = 1.618), Key Sizing Principles
+Cohesion: 0.18
+Nodes (10): 1. Schedule a block on the feeds for your bedtime window, 2. Turn on Bedtime mode, 3. Charge the phone out of reach, 4. Get a real alarm so the phone has no reason to be in bed, 5. Give the evening a different ending, Quick setup checklist, The five-step setup that ends night scrolling, What does late-night scrolling do to sleep? (+2 more)
 
 ### Community 324 - "2. State Management Selection"
-Cohesion: 0.50
-Nodes (4): 4. Color Principles, 60-30-10 Rule, Color Psychology (For Decision Making), Selection Process
+Cohesion: 0.18
+Nodes (10): 1. Programmez un blocage des fils pour votre créneau de coucher, 2. Activez le mode Coucher, 3. Chargez le téléphone hors de portée, 4. Prenez un vrai réveil pour que le téléphone n'ait aucune raison d'être au lit, 5. Donnez une autre fin à votre soirée, La configuration en cinq étapes qui met fin au scroll nocturne, Liste de contrôle rapide, Pourquoi est-il si difficile d'arrêter de scroller le soir ? (+2 more)
 
 ### Community 325 - "7. Project Type Templates"
-Cohesion: 0.50
-Nodes (4): 5. Typography Principles, Pairing Concept, Readability Rules, Scale Selection
+Cohesion: 0.20
+Nodes (9): Das TikTok-Feed-Limit gegen die Alternativen, Fazit, Schritt für Schritt: den TikTok-Feed in unter zwei Minuten sperren, Sperre auf Feed-Ebene oder für die ganze App, Tageslimit oder Sitzungslimit für TikTok, TikToks eigene Bildschirmzeit-Einstellungen, und was sie nicht leisten, Warum der „Abonniert“-Feed keine Lösung ist, Warum sich der TikTok-Feed am schwersten selbst regulieren lässt (+1 more)
 
 ### Community 326 - "10. Quick Reference"
-Cohesion: 0.50
-Nodes (4): 6. Visual Effects Principles, Glassmorphism (When Appropriate), Gradient Usage, Shadow Hierarchy
+Cohesion: 0.20
+Nodes (9): Das fehlende Stück: das Sitzungslimit, Die Zahlen, gegen die ein Tagesdeckel antritt, Fazit, Instagrams eingebautes Tageslimit, und was es nicht leistet, Mit welchen Werten anfangen, Nur Tageslimit, Tages- plus Sitzungslimit, oder die eingebauten Optionen, Schritt für Schritt: beide Limits auf Android einrichten, Warum ein Tageslimit allein nicht genügt (+1 more)
 
 ### Community 327 - "7. Color Accessibility"
-Cohesion: 0.50
-Nodes (4): 7. Animation Principles, Easing Selection, Performance, Timing Concept
+Cohesion: 0.20
+Nodes (9): Einen Warenkorb-Timer in Shopify einrichten, Fazit, Reserviert Shopify den Bestand beim Hinzufügen zum Warenkorb?, Vier Regeln für einen ehrlichen Timer, Warenkorb-Timer im Vergleich, Was ist mit Apps, die einen „Soft Hold“ bewerben?, Was leistet ein Warenkorb-Timer dann tatsächlich?, Wenn Sie eine echte Reservierung brauchen: Entwurfsaufträge (+1 more)
 
 ### Community 328 - "4. Outdoor Visibility"
-Cohesion: 0.50
-Nodes (4): 8. "Wow Factor" Checklist, Emotional Triggers, Premium Indicators, Trust Builders
+Cohesion: 0.20
+Nodes (9): Bottom line, Daily limit vs. per-session limit for TikTok, Feed-level block vs. whole-app block, Step by step: block TikTok's feed in under two minutes, TikTok feed limit vs. the alternatives, TikTok's own Screen Time settings, and what they don't do, What you're actually up against, Why the Following feed isn't a workaround (+1 more)
 
 ### Community 329 - "9. Color System Checklist"
-Cohesion: 0.50
-Nodes (4): 9. Anti-Patterns (What NOT to Do), ❌ AI Tendency Patterns (AVOID!), ❌ Dark Patterns (Unethical), ❌ Lazy Design Indicators
+Cohesion: 0.20
+Nodes (9): Bottom line, Daily-only vs. daily + session vs. the built-in options, Instagram's built-in daily limit, and what it doesn't do, Step by step: set both limits on Android, The missing piece: the per-session limit, The numbers a daily cap is up against, What numbers to start with, Why a daily limit alone isn't enough (+1 more)
 
 ### Community 330 - "5. Risk Prioritization"
-Cohesion: 0.50
-Nodes (4): 3. iOS Color System, Dark Mode Considerations, System Accent Colors, System Colors (Semantic)
+Cohesion: 0.20
+Nodes (9): Bottom line, Cart timer vs the alternatives, Does adding an item to a Shopify cart reserve inventory?, Four rules for a timer that stays honest, How long should a Shopify cart reservation timer be?, Setting up a cart timer on Shopify, So what does a cart reservation timer actually do?, What about apps that advertise a "soft hold"? (+1 more)
 
 ### Community 331 - "4. iOS Layout & Spacing"
-Cohesion: 0.50
-Nodes (4): 4. iOS Layout & Spacing, iOS Grid System, Safe Areas, Standard Margins & Padding
+Cohesion: 0.20
+Nodes (9): Blocage au niveau du fil ou blocage de toute l'application, Ce à quoi vous vous opposez réellement, L'essentiel, La limite de fil TikTok face aux alternatives, Les réglages « Temps d'écran » de TikTok, et ce qu'ils ne font pas, Limite quotidienne ou limite par session pour TikTok, Pas à pas : bloquer le fil TikTok en moins de deux minutes, Pourquoi le fil « Abonnements » n'est pas une solution de contournement (+1 more)
 
 ### Community 332 - "8. SF Symbols"
-Cohesion: 0.50
-Nodes (4): 8. SF Symbols, Symbol Best Practices, Symbol Configurations, Usage Guidelines
+Cohesion: 0.20
+Nodes (9): L'essentiel, La limite quotidienne intégrée d'Instagram, et ce qu'elle ne fait pas, La pièce manquante : la limite par session, Les chiffres auxquels s'oppose un plafond quotidien, Par quels chiffres commencer, Pas à pas : définir les deux limites sur Android, Pourquoi la volonté ne peut pas faire ce travail seule, Pourquoi une limite quotidienne ne suffit pas (+1 more)
 
 ### Community 333 - "9. iOS Accessibility"
-Cohesion: 0.50
-Nodes (4): 9. iOS Accessibility, Dynamic Type Scaling, Reduce Motion, VoiceOver Requirements
+Cohesion: 0.20
+Nodes (9): En résumé, Et les applications qui annoncent une « réservation souple » ?, Le minuteur face aux alternatives, Mettre en place un minuteur de panier sur Shopify, Quand il vous faut une vraie réservation : les commandes provisoires, Quatre règles pour un minuteur honnête, Que fait alors réellement un minuteur de panier ?, Quelle durée choisir pour un minuteur de panier Shopify ? (+1 more)
 
 ### Community 334 - "4. Attack Surface Mapping"
 Cohesion: 0.67
 Nodes (3): 4. Attack Surface Mapping, Prioritization Matrix, What to Map
 
+### Community 335 - "de/alarmy-alternatives-android.mdx"
+Cohesion: 0.22
+Nodes (8): Alarm Clock Xtreme (am besten für kostenlose Rätsel mit großer Nutzerbasis), Alarmy-Alternativen im Vergleich, AMdroid (am besten für ungewöhnliche Abschalt-Aufgaben), Arisely (am besten, um körperlich wach zu werden), Google Uhr (wenn Sie nichts davon brauchen), Sleep as Android (am besten für Schlaftracking), So wählen Sie, Was Alarmy gut macht (und warum Leute wechseln)
+
+### Community 336 - "de/arisely-alarm-clock-for-heavy-sleepers.md"
+Cohesion: 0.22
+Nodes (8): Alltags-Details, die es nutzbar machen, Arisely im Vergleich zu einer normalen Wecker-App, Das Fazit, Die 10 Aufwach-Missionen, Die KI-Liegestütz-Mission, Für wen Arisely gedacht ist, Ist Arisely datenschutzfreundlich?, Was Arisely von einer normalen Wecker-App unterscheidet
+
+### Community 337 - "de/shopify-cart-abandonment-benchmarks-2026.mdx"
+Cohesion: 0.22
+Nodes (8): Der Teil der 70 %, den Sie nicht beheben können, Fazit, Ihre Shopify-Rate abgebrochener Checkouts ist eine andere Kennzahl, Kaufabbruch nach Gerät, So berechnen Sie eine wirklich vergleichbare Zahl, Warum die Übrigen abbrechen, mit Zahlen, Was die Zahl im Warenkorb tatsächlich bewegt, Wie hoch ist die durchschnittliche Abbruchrate 2026?
+
+### Community 338 - "en/alarmy-alternatives-android.mdx"
+Cohesion: 0.22
+Nodes (8): Alarm Clock Xtreme (best for free puzzles at scale), Alarmy alternatives compared, AMdroid (best for unusual dismissal challenges), Arisely (best for a physical wake-up), Google Clock (when you do not need any of this), How to choose, Sleep as Android (best for sleep tracking), What Alarmy does well (and why people leave)
+
+### Community 339 - "en/arisely-alarm-clock-for-heavy-sleepers.md"
+Cohesion: 0.22
+Nodes (8): Arisely vs a standard alarm app, Everyday details that make it usable, Is Arisely private?, The 10 wake-up missions, The AI Push-Up Mission, The bottom line, What makes Arisely different from a normal alarm app, Who Arisely is for
+
+### Community 340 - "en/shopify-cart-abandonment-benchmarks-2026.mdx"
+Cohesion: 0.22
+Nodes (8): Bottom line, Cart abandonment by device, How to calculate a number you can actually compare, The part of the 70% you cannot fix, What actually moves the number at the cart stage, What is the average cart abandonment rate in 2026?, Why the rest abandon, with numbers, Your Shopify abandoned checkout rate is a different metric
+
+### Community 341 - "fr/alarmy-alternatives-android.mdx"
+Cohesion: 0.22
+Nodes (8): Alarm Clock Xtreme (idéal pour des énigmes gratuites à grande échelle), AMdroid (idéal pour des défis originaux), Arisely (idéal pour un réveil physique), Ce qu'Alarmy fait bien (et pourquoi on le quitte), Comment choisir, Horloge Google (si vous n'avez besoin de rien de tout cela), Les alternatives à Alarmy comparées, Sleep as Android (idéal pour le suivi du sommeil)
+
+### Community 342 - "fr/arisely-alarm-clock-for-heavy-sleepers.md"
+Cohesion: 0.22
+Nodes (8): Arisely face à une application de réveil classique, Arisely respecte-t-il votre vie privée ?, Ce qui distingue Arisely d'une application de réveil classique, En résumé, La mission Pompes par IA, Les 10 missions de réveil, Les détails du quotidien qui le rendent utilisable, À qui s'adresse Arisely
+
+### Community 343 - "fr/shopify-cart-abandonment-benchmarks-2026.mdx"
+Cohesion: 0.22
+Nodes (8): Ce qui fait réellement bouger le chiffre au niveau du panier, Comment calculer un chiffre réellement comparable, En résumé, L'abandon de panier par appareil, La part des 70 % que vous ne pouvez pas corriger, Pourquoi les autres abandonnent, chiffres à l'appui, Quel est le taux d'abandon de panier moyen en 2026 ?, Votre taux de paiements abandonnés Shopify est une autre mesure
+
+### Community 344 - "de/does-dark-mode-save-battery-amoled.mdx"
+Cohesion: 0.25
+Nodes (7): Auf LCD-Displays spart Dark Mode nichts, Dark Mode ist kein schwarzes Display, Fazit, Spart Dark Mode auf AMOLED-Displays Akku?, Testen Sie es auf Ihrem eigenen Gerät, Warum die Helligkeit über alles entscheidet, Was den Displayverbrauch wirklich senkt
+
+### Community 345 - "de/how-to-lock-touch-screen-android.mdx"
+Cohesion: 0.25
+Nodes (7): Häufige Fragen zum Sperren des Bildschirms, Option 1: Die eigene Sperre der Video-App, Option 2: Samsungs Interaktionssteuerung, Option 3: Bildschirmfixierung (hält ein Kind in einer App), Option 4: Ein schwarzes Overlay, das Berührungen blockiert, Option 5: Schutz vor versehentlicher Berührung (Bildschirm aus), Welche Methode passt zu Ihrer Situation?
+
+### Community 346 - "en/does-dark-mode-save-battery-amoled.mdx"
+Cohesion: 0.25
+Nodes (7): Bottom line, Dark mode is not a black screen, Dark mode on an LCD saves nothing, Does dark mode save battery on AMOLED?, Test it on your own phone, What actually reduces display drain, ranked, Why brightness decides everything
+
+### Community 347 - "en/how-to-lock-touch-screen-android.mdx"
+Cohesion: 0.25
+Nodes (7): Common questions about locking the screen, Option 1: The video app's own lock, Option 2: Samsung's Interaction control, Option 3: App pinning (keeps a child in one app), Option 4: A black-screen overlay that blocks touches, Option 5: Accidental touch protection (screen off), Which method fits your situation?
+
+### Community 348 - "fr/does-dark-mode-save-battery-amoled.mdx"
+Cohesion: 0.25
+Nodes (7): Ce qui réduit vraiment la consommation de l'écran, En résumé, Le mode sombre n'est pas un écran noir, Le mode sombre économise-t-il la batterie en AMOLED ?, Pourquoi la luminosité décide de tout, Sur un écran LCD, le mode sombre n'économise rien, Testez sur votre propre téléphone
+
+### Community 349 - "fr/how-to-lock-touch-screen-android.mdx"
+Cohesion: 0.25
+Nodes (7): Option 1 : le verrou propre à l'application vidéo, Option 2 : le Contrôle des interactions de Samsung, Option 3 : l'épinglage d'application (garde un enfant dans une seule application), Option 4 : un écran noir en superposition qui bloque les touches, Option 5 : la protection contre les touches accidentelles (écran éteint), Quelle méthode correspond à votre situation ?, Questions fréquentes sur le verrouillage de l'écran
+
+### Community 350 - "de/app-blocker-cannot-be-uninstalled-android.mdx"
+Cohesion: 0.29
+Nodes (6): Die eine Methode, die wirklich greift — und ihr Preis, Fazit, Kann ein App-Blocker wirklich unlöschbar sein?, So entfernen Sie einen App-Blocker, in dem Sie feststecken, Wie der Accessibility-Trick tatsächlich funktioniert, Worauf Sie bei einem Blocker wirklich achten sollten
+
+### Community 351 - "de/how-to-stop-sleeping-through-your-alarm-android.md"
+Cohesion: 0.29
+Nodes (6): Der einfachste Weg, alle vier umzusetzen, Lösung 1: Dafür sorgen, dass der Alarm überhaupt losgeht — zeitgenaue Alarme, Lösung 2: Laut genug, um durchzudringen, Lösung 3: Die Ein-Tipp-Aus-Taste entfernen, Lösung 4: Den Schlummer-Kreislauf beenden, Warum du ihn verschläfst
+
+### Community 352 - "en/app-blocker-cannot-be-uninstalled-android.mdx"
+Cohesion: 0.29
+Nodes (6): Bottom line, Can an app blocker really be impossible to uninstall?, How the accessibility trick actually works, How to remove an app blocker you're stuck with, The one method that genuinely works, and its cost, What to actually look for in a blocker
+
+### Community 353 - "en/how-to-stop-sleeping-through-your-alarm-android.md"
+Cohesion: 0.29
+Nodes (6): Fix 1: Make the alarm actually fire — exact-time alarms, Fix 2: Make it loud enough to break through, Fix 3: Remove the one-tap off button, Fix 4: Kill the snooze loop, The simplest way to apply all four, Why you sleep through it
+
+### Community 354 - "fr/app-blocker-cannot-be-uninstalled-android.mdx"
+Cohesion: 0.29
+Nodes (6): Ce qu'il faut réellement chercher dans un bloqueur, Comment fonctionne réellement l'astuce de l'accessibilité, Comment retirer un bloqueur dans lequel vous êtes coincé, En résumé, La seule méthode qui fonctionne vraiment, et son coût, Un bloqueur peut-il vraiment être impossible à désinstaller ?
+
+### Community 355 - "fr/how-to-stop-sleeping-through-your-alarm-android.md"
+Cohesion: 0.29
+Nodes (6): La façon la plus simple d'appliquer les quatre, Pourquoi vous dormez malgré lui, Solution 1 : faire en sorte que l'alarme se déclenche vraiment — alarmes à l'heure exacte, Solution 2 : assez fort pour percer, Solution 3 : supprimer le bouton d'arrêt d'un seul geste, Solution 4 : briser la boucle de la répétition
+
+### Community 356 - "2. Font Pairing Principles"
+Cohesion: 0.33
+Nodes (6): 2. Font Pairing Principles, Avoid, Pairing Strategies, Safe Pairing Patterns, What Makes Fonts Work Together, What to Look For
+
+### Community 357 - "de/alarm-app-that-makes-you-do-pushups-android.md"
+Cohesion: 0.33
+Nodes (5): Datenschutz: Die Kamera bleibt auf deinem Telefon, Es heißt nicht Liegestütze oder nichts, Probier es aus, So funktioniert Ariselys KI-Liegestütz-Wecker, Warum eine körperliche Mission jeden anderen „harten Wecker“ schlägt
+
+### Community 358 - "de/alarm-clock-with-missions-to-turn-off.md"
+Cohesion: 0.33
+Nodes (5): Das Problem mit der Schlummertaste, Die 10 Missionen in Arisely, Missions-Wecker vs. normaler Wecker, Probier einen Missions-Wecker, Warum eine Aufgabe wirkt
+
+### Community 359 - "de/why-android-alarms-dont-go-off-exact-alarms.md"
+Cohesion: 0.33
+Nodes (5): Die Lösung: exakte Alarme, Ein Wecker, der auf allen dreien basiert, Eine Absicherung in den Android-Einstellungen, Was wirklich passiert, Zwei weitere Dinge, die einen Wecker zuverlässig machen
+
+### Community 360 - "de/youtube-premium-alternatives-background-play.mdx"
+Cohesion: 0.33
+Nodes (5): Also einfach zahlen?, Das eine Problem, das keine davon löst, Fazit, Was die kostenlosen Alternativen tatsächlich ersetzen, Was die offiziellen Tarife kosten und enthalten
+
+### Community 361 - "en/alarm-app-that-makes-you-do-pushups-android.md"
+Cohesion: 0.33
+Nodes (5): How Arisely's AI push-up alarm works, It's not push-ups or nothing, Privacy: the camera stays on your phone, Try it, Why a physical mission beats every other "hard alarm"
+
+### Community 362 - "en/alarm-clock-with-missions-to-turn-off.md"
+Cohesion: 0.33
+Nodes (5): Mission alarm vs standard alarm, The 10 missions in Arisely, The problem with the snooze button, Try a mission alarm, Why a task works
+
+### Community 363 - "en/why-android-alarms-dont-go-off-exact-alarms.md"
+Cohesion: 0.33
+Nodes (5): A backstop in Android settings, An alarm built on all three, The fix: exact alarms, Two more things that make an alarm reliable, What's actually happening
+
+### Community 364 - "en/youtube-premium-alternatives-background-play.mdx"
+Cohesion: 0.33
+Nodes (5): Bottom line, So should you just pay?, The one thing none of them solve, What the free alternatives actually replace, What the official tiers cost and include
+
+### Community 365 - "fr/alarm-app-that-makes-you-do-pushups-android.md"
+Cohesion: 0.33
+Nodes (5): Ce n'est pas pompes ou rien, Comment fonctionne le réveil à pompes par IA d'Arisely, Confidentialité : la caméra reste sur votre téléphone, Essayez-la, Pourquoi une mission physique bat tout autre « réveil difficile »
+
+### Community 366 - "fr/alarm-clock-with-missions-to-turn-off.md"
+Cohesion: 0.33
+Nodes (5): Essayez un réveil à mission, Le problème du bouton répétition, Les 10 missions d'Arisely, Pourquoi une tâche fonctionne, Réveil à mission vs réveil classique
+
+### Community 367 - "fr/why-android-alarms-dont-go-off-exact-alarms.md"
+Cohesion: 0.33
+Nodes (5): Ce qui se passe réellement, Deux autres éléments qui rendent un réveil fiable, La solution : les alarmes exactes, Un filet de sécurité dans les paramètres Android, Un réveil fondé sur les trois
+
+### Community 368 - "fr/youtube-premium-alternatives-background-play.mdx"
+Cohesion: 0.33
+Nodes (5): Alors, faut-il simplement payer ?, Ce que coûtent et contiennent les formules officielles, Ce que remplacent réellement les alternatives gratuites, En résumé, Le seul problème qu'aucune ne résout
+
+### Community 369 - "Development Decision Process"
+Cohesion: 0.40
+Nodes (5): Development Decision Process, Phase 1: Requirements Analysis (ALWAYS FIRST), Phase 2: Architecture, Phase 3: Execute, Phase 4: Verification
+
+### Community 370 - "6. Scroll Animation Principles"
+Cohesion: 0.40
+Nodes (5): 6. Scroll Animation Principles, Animation Properties, Performance, Progressive Reveal, Trigger Points
+
+### Community 371 - "1. Modular Scale Principles"
+Cohesion: 0.40
+Nodes (5): 1. Modular Scale Principles, Choosing Base Size, Common Ratios and When to Use, Generate Your Scale, What is a Modular Scale?
+
+### Community 372 - "de/best-alarm-apps-for-heavy-sleepers-android-2026.md"
+Cohesion: 0.40
+Nodes (4): Die 5 Funktionen, die wirklich zählen, Für wen jede gedacht ist, Warum wir eine Missions-First-App empfehlen, Wie die wichtigsten Optionen abschneiden
+
+### Community 373 - "en/best-alarm-apps-for-heavy-sleepers-android-2026.md"
+Cohesion: 0.40
+Nodes (4): How the main options compare, The 5 features that actually matter, Who each is for, Why we recommend a mission-first app
+
+### Community 374 - "fr/best-alarm-apps-for-heavy-sleepers-android-2026.md"
+Cohesion: 0.40
+Nodes (4): Comment les principales options se comparent, Les 5 fonctionnalités qui comptent vraiment, Pourquoi nous recommandons une application « missions d'abord », À qui s'adresse chacune
+
+### Community 375 - "🚫 MOBILE ANTI-PATTERNS (NEVER DO THESE!)"
+Cohesion: 0.50
+Nodes (4): 🚫 MOBILE ANTI-PATTERNS (NEVER DO THESE!), Performance Sins, Security Sins, Touch/UX Sins
+
+### Community 376 - "3. Micro-Interaction Principles"
+Cohesion: 0.50
+Nodes (4): 3. Micro-Interaction Principles, Button States, Principles, What Makes Good Micro-Interactions
+
+### Community 377 - "4. Loading States Principles"
+Cohesion: 0.50
+Nodes (4): 4. Loading States Principles, Progress Indicators, Skeleton Screens, Types by Context
+
+### Community 378 - "5. Page Transitions Principles"
+Cohesion: 0.50
+Nodes (4): 5. Page Transitions Principles, Common Patterns, Direction Matching, Transition Strategy
+
+### Community 379 - "8. Feedback Animation Principles"
+Cohesion: 0.50
+Nodes (4): 8. Feedback Animation Principles, Error States, Success States, Timing
+
+### Community 380 - "9. Performance Principles"
+Cohesion: 0.50
+Nodes (4): 9. Performance Principles, Optimization Strategies, Respecting User Preferences, What's Cheap to Animate
+
+### Community 381 - "4. Line Length Principles"
+Cohesion: 0.50
+Nodes (4): 4. Line Length Principles, Context Adjustments, How to Measure, Optimal Reading Width
+
+### Community 382 - "5. Responsive Typography Principles"
+Cohesion: 0.50
+Nodes (4): 5. Responsive Typography Principles, Fluid Typography (clamp), Scaling Strategy, The Problem
+
+### Community 383 - "6. Weight and Emphasis Principles"
+Cohesion: 0.50
+Nodes (4): 6. Weight and Emphasis Principles, Avoid, Creating Contrast, Semantic Weight Usage
+
+### Community 384 - "8. Hierarchy Principles"
+Cohesion: 0.50
+Nodes (4): 8. Hierarchy Principles, Testing Hierarchy, Typical Hierarchy, Visual Hierarchy Through Type
+
+### Community 385 - "3. Stack Navigation"
+Cohesion: 0.50
+Nodes (4): 3. Stack Navigation, Back Button Handling, Core Concepts, Stack Navigation Patterns
+
+### Community 386 - "5. Modal Navigation"
+Cohesion: 0.50
+Nodes (4): 5. Modal Navigation, Modal Dismissal, Modal Types, Modal vs Push
+
+### Community 387 - "8. Transition Animations"
+Cohesion: 0.50
+Nodes (4): 8. Transition Animations, Custom Transitions, Platform Defaults, Shared Element Transitions
+
+### Community 388 - "5. Risk Prioritization"
+Cohesion: 0.67
+Nodes (3): 5. Risk Prioritization, CVSS + Context, Prioritization Decision Tree
+
 ## Knowledge Gaps
-- **2860 isolated node(s):** `Colors`, `Colors`, `$schema`, `style`, `rsc` (+2855 more)
+- **3294 isolated node(s):** `Colors`, `Colors`, `blogLastmod`, `$schema`, `style` (+3289 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **16 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **19 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Decision Trees & Context Templates` connect `Decision Trees & Context Templates` to `frontend-design/SKILL.md`?**
+- **Why does `Touch Psychology Reference` connect `Touch Psychology Reference` to `mobile-design/SKILL.md`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
-- **What connects `Colors`, `Colors`, `$schema` to the rest of the system?**
-  _2860 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Why does `Mobile Performance Reference` connect `Mobile Performance Reference` to `mobile-design/SKILL.md`?**
+  _High betweenness centrality (0.003) - this node is a cross-community bridge._
+- **Why does `Frontend Design System` connect `Frontend Design System` to `frontend-design/SKILL.md`?**
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
+- **What connects `Colors`, `Colors`, `blogLastmod` to the rest of the system?**
+  _3294 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `@/i18n/localize` be split into smaller, more focused modules?**
   _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
 - **Should `design_system.py` be split into smaller, more focused modules?**
   _Cohesion score 0.05263157894736842 - nodes in this community are weakly interconnected._
 - **Should `Android Platform Guidelines` be split into smaller, more focused modules?**
   _Cohesion score 0.041666666666666664 - nodes in this community are weakly interconnected._
-- **Should `🧠 DEEP DESIGN THINKING (MANDATORY - BEFORE ANY DESIGN)` be split into smaller, more focused modules?**
-  _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._
-- **Should `Touch Psychology Reference` be split into smaller, more focused modules?**
-  _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._

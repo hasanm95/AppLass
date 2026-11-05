@@ -16,7 +16,7 @@ export const legalRegistry: Record<string, any> = {
     appName: 'Arisely',
     product: 'arisely',
     type: 'privacy',
-    lastUpdated: 'October 2, 2026',
+    lastUpdated: 'November 5, 2026',
     description: localize("Privacy Policy for Arisely - Learn what our Android alarm clock app stores on your device, and the limited data used for advertising and purchases.")
   },
   'arisely/terms': {
@@ -25,7 +25,7 @@ export const legalRegistry: Record<string, any> = {
     appName: 'Arisely',
     product: 'arisely',
     type: 'terms',
-    lastUpdated: 'July 2026',
+    lastUpdated: 'November 5, 2026',
     description: localize("Terms of Service for Arisely - Understand the user agreement for our Android alarm clock app.")
   },
   'fomogen/privacy': {

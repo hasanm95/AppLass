@@ -3,7 +3,7 @@ interface Props {
   lastUpdated?: string;
 }
 
-const { lastUpdated = "October 2, 2026" } = Astro.props;
+const { lastUpdated = "November 5, 2026" } = Astro.props;
 ---
 
 <div class="text-center">
@@ -140,6 +140,15 @@ const { lastUpdated = "October 2, 2026" } = Astro.props;
       advertising, this applies to every install, including those that
       predate advertising.
     </p>
+    <p class="text-amber-800">
+      This version adds an optional Power-off guard. If you turn it on,
+      Arisely uses an AccessibilityService — granted manually by you — to
+      keep an alarm from being switched off while it is ringing. It is
+      described under "Permissions Explained" below. It is off unless you
+      enable it, and it reads only which system window is on screen; it
+      never reads, stores, or transmits screen contents or any personal
+      data.
+    </p>
   </div>
 </section>
 
@@ -262,7 +271,8 @@ const { lastUpdated = "October 2, 2026" } = Astro.props;
   <p class="text-center text-slate-500 mb-16 max-w-2xl mx-auto">
     Apart from the advertising ID, none of these permissions are used to
     access, collect, or transmit personal information — they exist solely
-    to make scheduled alarms fire reliably.
+    to make scheduled alarms fire reliably, run wake-up rituals, and keep
+    a ringing alarm from being dismissed.
   </p>
 
   <div class="grid gap-8">
@@ -332,6 +342,16 @@ const { lastUpdated = "October 2, 2026" } = Astro.props;
         <div>
           <h4 class="text-xs font-black uppercase tracking-widest text-slate-600 mb-2">Camera</h4>
           <p class="text-slate-900 font-bold">Watch you for the Push-Up ritual and read codes for the QR / Barcode ritual. Frames are processed on your device and are never recorded, stored, or transmitted.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-slate-50/50 p-10 rounded-3xl border border-slate-100 flex flex-col md:flex-row gap-8">
+      <div class="text-4xl shrink-0">🛡️</div>
+      <div class="grid sm:grid-cols-2 gap-8 flex-1">
+        <div>
+          <h4 class="text-xs font-black uppercase tracking-widest text-slate-600 mb-2">Accessibility Service (Power-off guard)</h4>
+          <p class="text-slate-900 font-bold">Optional, and granted manually only if you turn on Power-off guard. It is used solely to notice the system power menu while an alarm is ringing and close it (and to turn the screen back on), so the alarm can't be switched off. It reads only which system window is on screen for that purpose; it does not read, log, store, or transmit screen contents or any personal data.</p>
         </div>
       </div>
     </div>
