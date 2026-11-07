@@ -57,6 +57,8 @@ si l'application n'est pas exclue de l'optimisation de la batterie.
 de statistiques d'utilisation (UsageStats) natives d'Android pour détecter le lancement d'une application bloquée et la 
 rediriger immédiatement. Aucun réseau requis. Survit au mode Doze. Fonctionne hors ligne dans un avion.
 
+L'ancien compromis voulait que seule l'approche VPN puisse bloquer les *sites web*. Ce n'est plus vrai : Mindful Guard bloque désormais les sites au niveau du système aussi, en redirigeant l'onglet du navigateur vers une page blanche quand un domaine bloqué se charge — vous obtenez donc le blocage de sites sans confier tout votre réseau à une application.
+
 Cette distinction importe plus que n'importe quelle liste de fonctionnalités. Gardez-la à l'esprit lors de votre lecture.
 
 ---
@@ -75,14 +77,19 @@ d'une application bloquée ou d'un fil de vidéos courtes, et la ferme aussitôt
 rien ne passe par un tunnel, et rien ne cesse de fonctionner quand le système ferme les VPN en
 arrière-plan.
 
-**Quand le temps est écoulé :** Un écran calme prend le relais, sans bouton de contournement ni
-« encore cinq minutes ». Le blocage tient jusqu'à la fin de la limite, du minuteur ou du planning.
+**Quand le temps est écoulé :** Un Pause Screen plein écran prend le relais — l'icône de l'app atténuée,
+un court message « en pause » (ou votre propre note), un anneau de respiration et votre nombre
+d'ouvertures du jour — sans bouton de contournement ni « encore cinq minutes ». Le blocage tient jusqu'à
+la fin de la limite, du minuteur ou du planning.
 
 **Ce que vous pouvez bloquer :**
 - Des applications individuelles (Instagram, TikTok, YouTube, Reddit, X/Twitter, Snapchat, Facebook)
+- Des sites web — le site d'une application bloquée est couvert automatiquement, plus tout domaine que vous ajoutez, bloqué dans le navigateur sans VPN
 - Des plannings hebdomadaires (ex. bloqué de 9h à 18h en semaine)
 - Un minuteur de concentration rapide, de 5 à 60 minutes
-- Uniquement les fils Reels, Shorts, TikTok, Reels de Facebook et Snapchat Spotlight, avec Reel Guard
+- Uniquement les fils Reels, Shorts, TikTok, Reels de Facebook et Snapchat Spotlight, avec Reel Guard — dans les applis *et* les navigateurs
+
+**Pour aller plus loin :** **Strict Mode** verrouille les contournements habituels (Infos de l'appli, Accessibilité, désinstallation) derrière une attente de 20 minutes pendant une session ; un widget d'écran d'accueil et une tuile Réglages rapides démarrent un blocage de concentration en une pression.
 
 **Confidentialité :** Fonctionne hors ligne. Aucun compte requis. Pas de publicités. La section
 « Sécurité des données » de Google Play n'indique aucune donnée collectée.
@@ -164,13 +171,13 @@ lorsque vous serez prêt pour un véritable blocage.
 
 ## Comparatif rapide
 
-| Application | Méthode de blocage | Blocage sans contournement | Impact batterie | Coût | Fonctionne hors ligne |
-|---|---|---|---|---|---|
-| **Mindful Guard** | Sur l'appareil (accessibilité) | ✅ Oui | Faible | Gratuit / Premium | ✅ Oui |
-| AppBlock | Au niveau du système | ✅ Oui | Faible | Gratuit / 29,99 $/an | ✅ Oui |
-| Freedom | Basé sur un VPN (mobile) | ✅ Oui | Moyen | 39,99 $/an | ❌ Non |
-| One Sec | Friction / retard | ❌ Non | Minimal | Gratuit / payant | ✅ Oui |
-| Bien-être numérique | Basé sur un minuteur | ❌ Non | Minimal | Gratuit | ✅ Oui |
+| Application | Méthode de blocage | Blocage sans contournement | Bloque les sites | Impact batterie | Coût | Fonctionne hors ligne |
+|---|---|---|---|---|---|---|
+| **Mindful Guard** | Sur l'appareil (accessibilité) | ✅ Oui | ✅ Oui, sans VPN | Faible | Gratuit / Premium | ✅ Oui |
+| AppBlock | Au niveau du système | ✅ Oui | ✅ Oui | Faible | Gratuit / 29,99 $/an | ✅ Oui |
+| Freedom | Basé sur un VPN (mobile) | ✅ Oui | ✅ Oui, via VPN | Moyen | 39,99 $/an | ❌ Non |
+| One Sec | Friction / retard | ❌ Non | Partiel | Minimal | Gratuit / payant | ✅ Oui |
+| Bien-être numérique | Basé sur un minuteur | ❌ Non | ❌ Non | Minimal | Gratuit | ✅ Oui |
 
 ---
 

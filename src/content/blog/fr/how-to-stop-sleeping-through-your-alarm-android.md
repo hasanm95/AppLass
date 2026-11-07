@@ -62,9 +62,18 @@ Dès que vous accomplissez une tâche, vous êtes réveillé. C'est tout le méc
 
 La répétition fragmente votre sommeil et entraîne le réflexe d'éteindre sans se réveiller. Fixez une **limite de répétitions**, ou désactivez la répétition entièrement pour que la seule issue soit la tâche de réveil.
 
-## La façon la plus simple d'appliquer les quatre
+## Solution 5 : fermer les échappatoires physiques — volume et bouton d'alimentation
 
-[Arisely](/fr/blog/arisely-alarm-clock-for-heavy-sleepers) est un réveil Android gratuit construit précisément autour de ces solutions : alarmes à l'heure exacte qui se déclenchent verrouillé ou fermé, plein volume sur le canal des alarmes avec boost extra fort, 10 missions de réveil (dont des pompes vérifiées par caméra) qui suppriment l'arrêt d'un seul geste, et des limites de répétition que vous contrôlez. Aucun compte, et la bannière publicitaire de la version gratuite n'apparaît jamais sur l'écran de sonnerie.
+À une main à moitié endormie, il reste deux astuces : baisser le volume, ou appuyer sur le bouton d'alimentation pour mettre le téléphone en veille. Deux gardes optionnels, actifs uniquement pendant que l'alarme sonne, ferment les deux :
+
+- **Verrouiller le volume pendant la sonnerie** remet le volume de l'alarme au maximum si vous tentez de le baisser, pour que vous ne puissiez pas vous rendormir en coupant le son en douce.
+- **Garde anti-extinction** rallume aussitôt l'écran si le bouton d'alimentation le met en veille et, une fois sa permission d'accessibilité accordée, referme le menu d'alimentation long-appui quand il apparaît — l'alarme ne peut donc pas être éteinte ainsi.
+
+Les deux sont désactivés par défaut. (Un arrêt matériel forcé — maintenir le bouton — ne peut être bloqué par aucune application, et c'est voulu.)
+
+## La façon la plus simple d'appliquer les cinq
+
+[Arisely](/fr/blog/arisely-alarm-clock-for-heavy-sleepers) est un réveil Android gratuit construit précisément autour de ces solutions : alarmes à l'heure exacte qui se déclenchent verrouillé ou fermé, plein volume sur le canal des alarmes avec boost extra fort, 10 missions de réveil (dont des pompes vérifiées par caméra) qui suppriment l'arrêt d'un seul geste, des limites de répétition que vous contrôlez, et des gardes optionnels de verrouillage du volume et d'anti-extinction qui ferment les dernières échappatoires pendant la sonnerie. Aucun compte, et la bannière publicitaire de la version gratuite n'apparaît jamais sur l'écran de sonnerie.
 
 [**Télécharger Arisely sur Google Play**](https://play.google.com/store/apps/details?id=com.arisely&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dstop-sleeping-through-alarm%26utm_content%3Dhow-to-stop-sleeping-through-your-alarm-android)
 

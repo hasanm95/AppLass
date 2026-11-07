@@ -63,9 +63,20 @@ Vous adaptez la mission à la profondeur de votre sommeil. Petit dormeur ? Un ca
 | **QR / Code-barres** | Scanner un code que vous avez placé près du lit |
 | **Pompes par IA** | Faire un nombre défini de pompes devant la caméra |
 
+Vous pouvez aussi **enchaîner les missions** pour qu'une alarme en exécute plusieurs dans l'ordre — par exemple calcul, puis un code-barres à l'autre bout de la pièce, puis des pompes —, chacune avec sa propre difficulté et son nombre de tours. L'alarme ne se tait qu'une fois toute la chaîne terminée, ce qui est bien plus dur à franchir à moitié endormi que n'importe quelle tâche seule. Une mission est gratuite ; en enchaîner deux ou plus est une fonction Pro.
+
 ## La mission Pompes par IA
 
 C'est la fonctionnalité que la plupart des applications de réveil n'ont pas. Vous définissez un nombre de pompes, et **la caméra d'Arisely vérifie votre posture en temps réel.** Impossible de tricher sur les répétitions, impossible de les sauter. C'est l'option la plus puissante de l'application, car elle met votre corps en mouvement et fait monter votre rythme cardiaque avant que vous soyez tout à fait réveillé — et une fois physiquement debout et en mouvement, retourner au lit devient une décision consciente, pas un réflexe.
+
+## Des gardes qui empêchent de contourner l'alarme
+
+Une mission n'aide que si vous ne pouvez pas couper l'alarme avant de l'atteindre. Deux gardes optionnels, actifs uniquement pendant que l'alarme sonne, ferment les deux contournements courants :
+
+- **Verrouiller le volume pendant la sonnerie** remet le volume de l'alarme au maximum si vous tentez de le baisser.
+- **Garde anti-extinction** rallume l'écran si le bouton d'alimentation le met en veille et, une fois sa permission d'accessibilité accordée, referme le menu d'alimentation long-appui quand il apparaît — l'alarme ne peut donc pas être éteinte là.
+
+Les deux sont désactivés par défaut : vous ne les activez que si vous en avez besoin. Un arrêt matériel forcé (maintenir le bouton d'alimentation) ne peut être bloqué par aucune application, et Arisely ne prétend pas le contraire.
 
 ## Arisely respecte-t-il votre vie privée ?
 
@@ -105,7 +116,7 @@ Une alarme intransigeante n'est utile que si les bases sont solides. Arisely les
 - Alarmes répétées pour les jours de votre choix, plus des alarmes ponctuelles pour un réveil unique
 - Durée et limite de répétition que vous définissez (ou désactivez entièrement)
 - Rappels pour les alarmes à venir
-- Réveil avec une sonnerie intégrée ou n'importe quel fichier audio de votre téléphone
+- Réveil avec n'importe quel fichier audio de votre téléphone, ou une sonnerie d'une bibliothèque intégrée classée en Trending, Funny, Motivational, Classic et Nature — toutes libres de droits
 - Mode sombre et heure 12/24
 
 ## En résumé

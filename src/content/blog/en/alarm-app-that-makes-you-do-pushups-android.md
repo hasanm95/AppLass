@@ -58,6 +58,8 @@ Math and shake missions still let you stay in bed. The push-up mission is the on
 
 Some mornings a workout isn't realistic, and a wake-up tool that's too rigid gets uninstalled. Arisely ships **10 missions** — Math, Memory, Code, Sequence, Typing, Trivia, Shake, Step, QR/Barcode, and the AI Push-Up check — and you can assign different ones to different alarms. Use push-ups on gym days and a barcode scan across the room on the rest.
 
+You can also make push-ups one step in a longer chain. Arisely lets a single alarm run several missions in order — for example a quick math problem to clear the fog, then a barcode scan to get you out of bed, then the push-up check — each with its own difficulty and rounds, and the alarm only stops once you've finished the whole sequence. A single mission is free; chaining two or more is a Pro feature.
+
 ## Privacy: the camera stays on your phone
 
 A camera-based alarm raises a fair question: where does the video go? With Arisely, nowhere. There's **no account**, and camera frames are **processed on your phone and never recorded, stored or sent**. The pose detection that counts your reps runs on-device. The free version shows one banner ad outside the ring screen; Arisely Pro removes it.

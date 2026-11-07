@@ -62,9 +62,18 @@ Once you're doing a task, you're awake. That's the whole mechanism.
 
 Snoozing fragments your sleep and trains the dismiss-without-waking reflex. Set a **snooze limit**, or turn snooze off entirely so the only way out is the wake-up task.
 
-## The simplest way to apply all four
+## Fix 5: Close the physical dodges — volume and power button
 
-[Arisely](/blog/arisely-alarm-clock-for-heavy-sleepers) is a free Android alarm built around exactly these fixes: exact-time alarms that fire when locked or closed, full alarm-channel volume with an extra-loud boost, 10 wake-up missions (including camera-verified push-ups) that remove the one-tap off, and snooze limits you control. No account, and the free version's banner ad never appears on the ring screen.
+A determined half-asleep hand has two tricks left: turn the volume down, or press the power button to sleep the phone. Two optional guards, active only while the alarm is actually ringing, shut both:
+
+- **Lock volume while ringing** snaps the alarm volume back up if you try to turn it down, so you can't quietly mute your way back to sleep.
+- **Power-off guard** turns the screen straight back on if the power button sleeps it and, once its Accessibility permission is granted, closes the long-press power menu when it appears — so the alarm can't be switched off that way.
+
+Both are off by default. (A forced hardware shutdown — holding the button down — can't be blocked by any app, and that's by design.)
+
+## The simplest way to apply all five
+
+[Arisely](/blog/arisely-alarm-clock-for-heavy-sleepers) is a free Android alarm built around exactly these fixes: exact-time alarms that fire when locked or closed, full alarm-channel volume with an extra-loud boost, 10 wake-up missions (including camera-verified push-ups) that remove the one-tap off, snooze limits you control, and optional volume-lock and power-off guards that close the last dodges while it rings. No account, and the free version's banner ad never appears on the ring screen.
 
 [**Download Arisely on Google Play**](https://play.google.com/store/apps/details?id=com.arisely&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dstop-sleeping-through-alarm%26utm_content%3Dhow-to-stop-sleeping-through-your-alarm-android)
 

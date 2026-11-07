@@ -100,7 +100,7 @@ Ein nützlicher Test: Öffnen Sie den Bildschirmzeit-Bericht Ihres Android-Gerä
 
 ### Schritt 5: Festlegen, was offen bleibt
 
-Mindful Guard hat keine Umgehungsschaltfläche. Öffnen Sie während Ihres Zeitplans eine gesperrte App, erscheint der Sperrbildschirm und bleibt, bis der Zeitplan endet. Genau darum geht es — aber Sie sollten deshalb jetzt entscheiden, was Sie während der Arbeitszeit wirklich brauchen.
+Mindful Guard hat keine Umgehungsschaltfläche. Öffnen Sie während Ihres Zeitplans eine gesperrte App, erscheint ein bildschirmfüllender **Pause Screen** — das App-Symbol abgedunkelt, eine kurze „pausiert“-Meldung, ein 8-Sekunden-Atemring und wie oft Sie die App heute geöffnet haben — ohne Weg hindurch, bis der Zeitplan endet. (Unter Einstellungen → Pause Screen können Sie eine eigene Notiz hinterlegen, etwa „Warum sperrst du diese während der Arbeit?“.) Genau darum geht es — aber Sie sollten deshalb jetzt entscheiden, was Sie während der Arbeitszeit wirklich brauchen.
 
 - **Brauchen Sie eine soziale App beruflich** (Community-Management, Social-Media-Marketing)? Lassen Sie sie von der Sperrliste und begrenzen Sie mit **Reel Guard** nur ihren Reels- oder Shorts-Feed.
 - **Brauchen Sie sie bei der Arbeit nie?** Sperren Sie die ganze App.
@@ -175,6 +175,14 @@ Eine einfache Morgensperre sieht so aus:
 - **Wochenenden:** Aus (oder nur eine leichtere Morgensperre)
 
 Drei Minuten Einrichtung. Sie schützt die zwei Zeitfenster Ihres Tages, in denen Ablenkung den größten Schaden anrichtet.
+
+## Schließen Sie die Lücken, die der Zeitplan offen lässt
+
+Ein Zeitplan wirkt nur, wenn er überall hält und sich nicht still abschalten lässt. Drei Einstellungen schließen die üblichen Lecks während einer Arbeitssperre:
+
+- **Sperren Sie auch die Website, nicht nur die App.** Der Wechsel von der Instagram-App zu instagram.com im Browser ist der naheliegende Trick. Die **Website-Blockierung** von Mindful Guard deckt die Website einer gesperrten App automatisch ab, und Sie können eigene Domains hinzufügen — eine gesperrte Seite öffnet als leere Seite mit dem Pause Screen statt zu laden, und zwar auf dem Gerät, ganz ohne VPN.
+- **Starten und beobachten Sie die Sperre, ohne die App zu öffnen.** Ein Startbildschirm-**Widget** und eine **Schnelleinstellungs-Kachel** starten eine Fokus-Sperre mit einem Tipp, und eine Live-Benachrichtigung während einer Sitzung zeigt, was gesperrt ist und wann sie endet — praktisch für eine spontane Deep-Work-Sperre zusätzlich zum Zeitplan.
+- **Strict Mode für die Sperren, die halten müssen.** Wenn Sie zu denen gehören, die den Blocker zwangsbeenden oder seine Berechtigung abschalten, sobald der Drang kommt, wirft eine strikte Sitzung Sie von den App-Info-, Bedienungshilfen- und Deinstallations-Seiten zurück, ohne „Open anyway“-Schaltfläche; wer früher aufhören will, wartet 20 Minuten. Die erste strikte Sitzung ist gratis.
 
 ---
 

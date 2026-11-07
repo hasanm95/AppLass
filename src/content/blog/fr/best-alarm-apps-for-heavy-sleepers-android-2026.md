@@ -32,7 +32,7 @@ faqs:
 
 1. **Alarmes à l'heure exacte.** Si l'alarme peut être retardée par l'optimisation de batterie d'Android, le reste n'a aucune importance. Elle doit se déclencher à l'heure même verrouillée ou fermée.
 2. **Volume sur le canal des alarmes.** Elle doit sonner sur le canal dédié d'Android pour rester forte malgré les médias coupés et le mode Ne pas déranger, idéalement avec un boost de puissance.
-3. **Missions d'arrêt par tâche.** L'arrêt d'un seul geste est le plus gros point de défaillance. Une tâche — calcul, saisie, pas, un code-barres à l'autre bout de la pièce, des pompes — vous force à vous réveiller.
+3. **Missions d'arrêt par tâche.** L'arrêt d'un seul geste est le plus gros point de défaillance. Une tâche — calcul, saisie, pas, un code-barres à l'autre bout de la pièce, des pompes — vous force à vous réveiller. Les versions les plus fortes vous laissent en *enchaîner* plusieurs (par ex. calcul, puis un code-barres, puis des pompes), pour qu'un seul réflexe ne les efface pas.
 4. **Contrôle de la répétition.** Des limites de répétition réglables (ou aucune) brisent le réflexe d'éteindre sans se réveiller.
 5. **Confidentialité.** Un bon réveil n'a pas besoin de compte, et vos alarmes devraient rester sur votre téléphone.
 
@@ -40,7 +40,7 @@ faqs:
 
 | Application | Surtout connue pour | Mission pour éteindre | À noter |
 | :--- | :--- | :--- | :--- |
-| **Arisely** | Réveil par missions | 10 missions dont pompes par IA | Gratuit avec une bannière publicitaire (Pro la supprime), aucun compte |
+| **Arisely** | Réveil par missions | 10 missions dont pompes par IA, enchaînables | Gardes de verrouillage du volume et anti-extinction ; gratuit avec une bannière publicitaire (Pro la supprime), aucun compte |
 | **Alarmy** | Réveils à missions | Plusieurs types de missions | Application vaste et bien établie |
 | **Sleep as Android** | Suivi du sommeil + réveil | Options de tâches disponibles | Axée sur le suivi des cycles de sommeil |
 | **Appli horloge par défaut** | Simplicité | Aucune | Convient seulement aux petits dormeurs |
@@ -56,7 +56,9 @@ faqs:
 
 ## Pourquoi nous recommandons une application « missions d'abord »
 
-Pour un vrai gros dormeur, la fonctionnalité décisive est la **barrière de mission**. Le volume est un prérequis ; la raison de vos réveils ratés est l'arrêt d'un seul geste et l'inertie du sommeil, et seule une tâche vient à bout des deux. Si vous voulez la version la plus forte, des **pompes vérifiées par caméra** forment la mission la plus difficile à déjouer, car elle se termine debout et en mouvement.
+Pour un vrai gros dormeur, la fonctionnalité décisive est la **barrière de mission**. Le volume est un prérequis ; la raison de vos réveils ratés est l'arrêt d'un seul geste et l'inertie du sommeil, et seule une tâche vient à bout des deux. Si vous voulez la version la plus forte, des **pompes vérifiées par caméra** forment la mission la plus difficile à déjouer, car elle se termine debout et en mouvement — et l'enchaîner derrière une tâche cognitive la rend plus dure encore.
+
+L'autre point faible est le contournement à moitié endormi : baisser le volume ou appuyer sur le bouton d'alimentation pour couper l'alarme. Arisely ferme les deux avec deux gardes optionnels qui ne tournent que pendant la sonnerie — l'un remet le volume au maximum, l'autre rallume l'écran et (avec l'accessibilité accordée) referme le menu d'alimentation.
 
 [Arisely](/fr/blog/arisely-alarm-clock-for-heavy-sleepers) est gratuit sur Google Play, ne demande aucun compte, garde vos alarmes sur votre téléphone et est entièrement construit autour de ces cinq fonctionnalités.
 

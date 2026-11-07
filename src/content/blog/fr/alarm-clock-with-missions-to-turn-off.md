@@ -60,6 +60,12 @@ Dans les deux cas, quand l'alarme se tait, vous êtes réellement réveillé. L'
 
 Adaptez la mission à votre sommeil. Un calcul rapide peut suffire une nuit légère ; une nuit difficile, placez un code-barres à l'autre bout de la pièce ou réglez des pompes vérifiées par caméra pour ne pas pouvoir gagner sans vous lever.
 
+## Enchaîner plusieurs missions
+
+Une mission suffit souvent, mais une tâche faite cent fois peut devenir son propre réflexe à moitié endormi. Arisely permet à une alarme d'exécuter plusieurs missions dans l'ordre — par exemple **Calcul → QR / Code-barres → Pompes** —, chaque étape avec sa propre difficulté et son nombre de tours, et l'alarme ne s'éteint qu'une fois toute la chaîne terminée. Une tâche cognitive pour démarrer le cerveau, puis une tâche physique pour vous mettre debout, est bien plus difficile à franchir en dormant que l'une ou l'autre seule.
+
+Une mission seule reste gratuite (un tour, en Facile ou Moyen) ; enchaîner deux missions ou plus est une fonction Pro. Les alarmes déjà réglées fonctionnent exactement comme avant — elles deviennent simplement une chaîne à une étape, donc rien ne change tant que vous n'y ajoutez rien.
+
 ## Réveil à mission vs réveil classique
 
 | | Réveil classique | Réveil à mission (Arisely) |

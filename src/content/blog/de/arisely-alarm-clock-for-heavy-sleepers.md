@@ -63,9 +63,20 @@ Du passt die Mission daran an, wie tief du schläfst. Leichtschläfer? Eine schn
 | **QR / Barcode** | Einen Code scannen, den du am Bett platziert hast |
 | **KI-Liegestütz** | Eine festgelegte Anzahl Liegestütze vor der Kamera |
 
+Du kannst Missionen auch **verketten**, sodass ein Alarm mehrere nacheinander ausführt — zum Beispiel Mathe, dann einen Barcode quer durchs Zimmer, dann Liegestütze —, jede mit eigener Schwierigkeit und Rundenzahl. Der Alarm verstummt erst, wenn du die ganze Kette geschafft hast, was halb schlafend deutlich schwerer zu beenden ist als jede einzelne Aufgabe. Eine Mission ist kostenlos; zwei oder mehr zu verketten ist eine Pro-Funktion.
+
 ## Die KI-Liegestütz-Mission
 
 Das ist die Funktion, die die meisten Wecker-Apps nicht haben. Du legst eine Anzahl Liegestütze fest, und **Ariselys Kamera prüft deine Form in Echtzeit.** Du kannst die Wiederholungen weder vortäuschen noch überspringen. Es ist die stärkste Option der App, weil sie deinen Körper in Bewegung bringt und deinen Puls hebt, bevor du ganz wach bist — und wenn du einmal körperlich auf den Beinen bist, ist das Zurück-ins-Bett eine bewusste Entscheidung, kein Reflex.
+
+## Wächter, die das Umgehen des Alarms verhindern
+
+Eine Mission hilft nur, wenn du den Alarm nicht abwürgen kannst, bevor du sie erreichst. Zwei optionale Wächter, nur aktiv während der Alarm klingelt, schließen die zwei üblichen Umgehungen:
+
+- **Lautstärke beim Klingeln sperren** schnellt die Alarmlautstärke wieder hoch, wenn du sie herunterdrehst.
+- **Power-off-Schutz** schaltet den Bildschirm wieder ein, wenn die Power-Taste ihn schlafen legt, und schließt — sobald du die Bedienungshilfen-Berechtigung erteilst — das Lang-drücken-Power-Menü, wenn es erscheint, sodass der Alarm sich dort nicht ausschalten lässt.
+
+Beide sind standardmäßig aus, du aktivierst sie also nur, wenn du sie brauchst. Ein erzwungenes Hardware-Herunterfahren (Power-Taste gedrückt halten) kann keine App blockieren, und Arisely tut nicht so, als wäre es anders.
 
 ## Ist Arisely datenschutzfreundlich?
 
@@ -105,7 +116,7 @@ Ein harter Alarm nützt nur, wenn die Grundlagen stimmen. Arisely deckt sie ab:
 - Wiederkehrende Alarme für die Tage deiner Wahl, plus einmalige Alarme für ein einzelnes Aufwachen
 - Schlummerdauer und Schlummerlimit, das du selbst festlegst (oder ganz abschaltest)
 - Erinnerungen an bevorstehende Alarme
-- Aufwachen mit einem eingebauten Ton oder einer beliebigen Audiodatei auf deinem Telefon
+- Aufwachen mit einer beliebigen Audiodatei auf deinem Telefon oder einem Ton aus einer eingebauten Bibliothek, gruppiert in Trending, Funny, Motivational, Classic und Nature — alle lizenzfrei
 - Dunkelmodus und 12/24-Stunden-Zeit
 
 ## Das Fazit

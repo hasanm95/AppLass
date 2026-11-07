@@ -62,7 +62,7 @@ Auch mit exakten Alarmen kannst du zusätzliche Zuverlässigkeit hinzufügen: St
 
 ## Ein Wecker, der auf allen dreien basiert
 
-[Arisely](/de/blog/arisely-alarm-clock-for-heavy-sleepers) nutzt zeitgenaue Alarme, läuft über den Wecker-Audiokanal mit Extra-laut-Boost und zeigt Vollbild über dem Sperrbildschirm — also löst er pünktlich und laut aus, auch bei gesperrtem Telefon oder seit Stunden geschlossener App. Kostenlos, kein Konto, und das Werbebanner der Gratisversion erscheint nie auf dem Klingel-Bildschirm.
+[Arisely](/de/blog/arisely-alarm-clock-for-heavy-sleepers) nutzt zeitgenaue Alarme, läuft über den Wecker-Audiokanal mit Extra-laut-Boost und zeigt Vollbild über dem Sperrbildschirm — also löst er pünktlich und laut aus, auch bei gesperrtem Telefon oder seit Stunden geschlossener App. Für den Moment nach dem Auslösen können optionale Wächter die Lautstärke wieder hochschnellen lassen und das Power-off-Menü blockieren, solange er klingelt, sodass er sich nicht durch einen halbschlafenden Reflex stummschalten lässt. Kostenlos, kein Konto, und das Werbebanner der Gratisversion erscheint nie auf dem Klingel-Bildschirm.
 
 [**Arisely bei Google Play herunterladen**](https://play.google.com/store/apps/details?id=com.arisely&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dexact-alarms%26utm_content%3Dwhy-android-alarms-dont-go-off-exact-alarms)
 

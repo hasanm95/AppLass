@@ -63,9 +63,20 @@ You match the mission to how deeply you sleep. Light sleeper? A quick math probl
 | **QR / Barcode** | Scan a code you placed near your bed |
 | **AI Push-Up** | Do a set number of push-ups in front of the camera |
 
+You can also **chain missions** so one alarm runs several in order — for example math, then a barcode across the room, then push-ups — each with its own difficulty and number of rounds. The alarm only goes quiet once you've finished the whole chain, which is far harder to beat half-asleep than any single task. One mission is free; chaining two or more is a Pro feature.
+
 ## The AI Push-Up Mission
 
 This is the feature most alarm apps don't have. You set a push-up count, and **Arisely's camera checks your form in real time.** You can't fake the reps and you can't skip them. It is the strongest option in the app because it gets your body moving and your heart rate up before you are fully awake — and once you are physically up and moving, falling back into bed is a conscious decision, not a reflex.
+
+## Guards that stop you dodging the alarm
+
+A mission only helps if you can't kill the alarm before you reach it. Two optional guards, active only while the alarm is ringing, close the two common dodges:
+
+- **Lock volume while ringing** snaps the alarm volume back up if you try to turn it down.
+- **Power-off guard** turns the screen back on if the power button sleeps it and, once you grant its Accessibility permission, closes the long-press power menu when it appears — so the alarm can't be switched off there.
+
+Both are off by default, so you opt in only if you need them. A forced hardware shutdown (holding the power button) can't be blocked by any app, and Arisely doesn't pretend otherwise.
 
 ## Is Arisely private?
 
@@ -105,7 +116,7 @@ A hard alarm is only useful if the basics are solid. Arisely covers them:
 - Repeating alarms for the days you choose, plus one-off alarms for a single wake-up
 - Snooze length and snooze limit that you set (or turn off entirely)
 - Reminders for upcoming alarms
-- Wake to a built-in tone or any audio file on your phone
+- Wake to any audio file on your phone, or pick from a built-in tone library grouped into Trending, Funny, Motivational, Classic and Nature — all royalty-free
 - Dark mode and 12/24-hour time
 
 ## The bottom line

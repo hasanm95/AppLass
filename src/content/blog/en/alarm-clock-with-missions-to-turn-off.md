@@ -60,6 +60,12 @@ Either way, by the time the alarm goes quiet, you're actually awake. The alarm h
 
 Match the mission to your sleep. A quick math problem may be enough on a light night; on a heavy one, put a barcode across the room or set camera-verified push-ups so you can't win without standing up.
 
+## Chain several missions together
+
+One mission is often enough, but a single task you've done a hundred times can turn into its own half-asleep reflex. Arisely lets one alarm run several missions in order — say **Math → QR / Barcode → Push-Up** — each step with its own difficulty and number of rounds, and the alarm only dismisses once you've cleared the whole chain. A cognitive task to boot your brain, then a physical one to get you on your feet, is far harder to sleepwalk through than either alone.
+
+A single mission stays free (one round, on Easy or Medium); chaining two or more missions is a Pro feature. Alarms you already set keep working exactly as before — they simply become a one-step chain, so nothing changes unless you add to it.
+
 ## Mission alarm vs standard alarm
 
 | | Standard alarm | Mission alarm (Arisely) |

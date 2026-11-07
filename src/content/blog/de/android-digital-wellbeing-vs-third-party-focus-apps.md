@@ -121,6 +121,14 @@ Mindful Guard arbeitet vollständig auf dem Gerät. Die App erkennt über den Be
 
 Sie können unterschiedliche Zeitpläne für unterschiedliche Kontexte anlegen — eine strenge Morgensperre von 6 bis 8 Uhr, eine Arbeitssperre von 9 bis 17 Uhr, eine leichtere Sperre zum Herunterfahren am Abend. Jeder Zeitplan hat seine eigene App-Liste und seinen eigenen Sperrmodus. Diese Flexibilität erlaubt es, das System an Ihr tatsächliches Leben anzupassen, statt Ihr Leben in ein einziges Tageslimit zu pressen.
 
+### Strict Mode
+
+Die eine Lücke, die „keine Umgehungsschaltfläche“ offen lässt, ist die Umgehung über die Einstellungen — die App zwangsbeenden, ihre Bedienungshilfen-Berechtigung abschalten oder eine Deinstallation starten. Strict Mode schließt sie. Während einer strikten Sitzung werfen die App-Info-, Bedienungshilfen- und Deinstallations-Seite von Mindful Guard Sie sofort zurück, ohne „Open anyway“-Option; wer früher aufhören will, tippt auf „Unlock early“ und wartet 20 Minuten, wobei die Sperre die ganze Zeit aktiv bleibt. Genau für diese Durchsetzungsebene hat Digital Wellbeing kein Gegenstück. Die erste strikte Sitzung ist gratis, danach ist es eine Premium-Funktion.
+
+### Website-Blockierung
+
+Eine App zu sperren lässt ihre Website nicht länger als Schlupfloch offen. Mindful Guard deckt die Website einer gesperrten App automatisch ab — sperren Sie die Facebook-App, ist auch facebook.com gesperrt — und Sie können eigene Domains hinzufügen. Eine gesperrte Seite öffnet als leere Seite mit einem ruhigen Pause Screen statt zu laden, und weil der Browser-Tab auf dem Gerät umgeleitet wird, ist kein VPN im Spiel.
+
 ---
 
 ## Direkter Vergleich
@@ -130,6 +138,8 @@ Sie können unterschiedliche Zeitpläne für unterschiedliche Kontexte anlegen �
 | Bildschirmzeit-Berichte | ✅ Ja | ❌ Nein |
 | Zeitgesteuertes Blockieren | ❌ Nein | ✅ Ja |
 | Harte Sperre (ohne Ausnahme) | ❌ Nein | ✅ Ja |
+| Strict Mode (sperrt die Einstellungs-Umgehung) | ❌ Nein | ✅ Ja |
+| Website-Blockierung (ohne VPN) | ❌ Nein | ✅ Ja |
 | Unterdrückung von Benachrichtigungen | ❌ Nein | ✅ Ja |
 | Mehrere Zeitplan-Profile | ❌ Nein | ✅ Ja |
 | Entspannungsmodus / Graustufen | ✅ Ja | ❌ Nein |

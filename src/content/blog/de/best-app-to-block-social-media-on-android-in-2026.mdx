@@ -58,6 +58,8 @@ Schnittstellen für Bedienungshilfen und Nutzungsstatistiken von Android, um den
 gesperrten App zu erkennen und sofort umzuleiten. Kein Netzwerk nötig. Übersteht den Doze Mode.
 Funktioniert offline im Flugzeug.
 
+Der alte Kompromiss lautete, dass nur der VPN-Ansatz *Websites* sperren kann. Das stimmt nicht mehr: Mindful Guard sperrt Seiten jetzt ebenfalls auf Systemebene, indem es den Browser-Tab bei einer gesperrten Domain auf eine leere Seite umleitet — so bekommen Sie Website-Blockierung, ohne einer App Ihr ganzes Netzwerk anzuvertrauen.
+
 Dieser Unterschied wiegt schwerer als jede Funktionsliste. Behalten Sie ihn beim Lesen im Hinterkopf.
 
 ---
@@ -75,14 +77,19 @@ gesperrte App oder ein Kurzvideo-Feed öffnet, und schließt sie sofort. Es gibt
 läuft durch einen Tunnel, und nichts hört auf zu funktionieren, wenn das System Hintergrund-VPNs
 beendet.
 
-**Wenn die Zeit um ist:** Ein ruhiger Bildschirm übernimmt, ohne Umgehungsschaltfläche und ohne
-„nur noch fünf Minuten“. Die Sperre hält, bis Limit, Timer oder Zeitplan enden.
+**Wenn die Zeit um ist:** Ein bildschirmfüllender Pause Screen übernimmt — das abgedunkelte App-Symbol,
+eine kurze „pausiert“-Meldung (oder Ihre eigene Notiz), ein Atemring und Ihr Öffnungszähler für den Tag —
+ohne Umgehungsschaltfläche und ohne „nur noch fünf Minuten“. Die Sperre hält, bis Limit, Timer oder
+Zeitplan enden.
 
 **Was Sie blockieren können:**
 - Einzelne Apps (Instagram, TikTok, YouTube, Reddit, X/Twitter, Snapchat, Facebook)
+- Websites — die Seite einer gesperrten App ist automatisch abgedeckt, plus eigene Domains, im Browser gesperrt ohne VPN
 - Wochenpläne (z. B. werktags von 9 bis 18 Uhr gesperrt)
 - Einen schnellen Fokus-Timer von 5 bis 60 Minuten
-- Nur die Feeds von Reels, Shorts, TikTok, Facebook Reels und Snapchat Spotlight, mit Reel Guard
+- Nur die Feeds von Reels, Shorts, TikTok, Facebook Reels und Snapchat Spotlight, mit Reel Guard — in Apps *und* Browsern
+
+**Noch weiter:** **Strict Mode** sperrt die üblichen Umgehungen (App-Info, Bedienungshilfen, Deinstallation) während einer Sitzung hinter eine 20-Minuten-Wartezeit; ein Startbildschirm-Widget und eine Schnelleinstellungs-Kachel starten eine Fokus-Sperre mit einem Tipp.
 
 **Datenschutz:** Funktioniert offline. Kein Konto erforderlich. Keine Werbung. Laut Abschnitt
 „Datensicherheit“ bei Google Play werden keine Daten erhoben.
@@ -165,13 +172,13 @@ Guard, sobald Sie für eine echte Sperre bereit sind.
 
 ## Vergleich auf einen Blick
 
-| App | Blockiermethode | Sperre ohne Umgehung | Akkueinfluss | Kosten | Offline nutzbar |
-|---|---|---|---|---|---|
-| **Mindful Guard** | Auf dem Gerät (Bedienungshilfen) | ✅ Ja | Gering | Kostenlos / Premium | ✅ Ja |
-| AppBlock | Systemebene | ✅ Ja | Gering | Kostenlos / 29,99 $/Jahr | ✅ Ja |
-| Freedom | VPN-basiert (mobil) | ✅ Ja | Mittel | 39,99 $/Jahr | ❌ Nein |
-| One Sec | Reibung / Verzögerung | ❌ Nein | Minimal | Kostenlos / kostenpflichtig | ✅ Ja |
-| Digital Wellbeing | Timer-basiert | ❌ Nein | Minimal | Kostenlos | ✅ Ja |
+| App | Blockiermethode | Sperre ohne Umgehung | Sperrt Websites | Akkueinfluss | Kosten | Offline nutzbar |
+|---|---|---|---|---|---|---|
+| **Mindful Guard** | Auf dem Gerät (Bedienungshilfen) | ✅ Ja | ✅ Ja, ohne VPN | Gering | Kostenlos / Premium | ✅ Ja |
+| AppBlock | Systemebene | ✅ Ja | ✅ Ja | Gering | Kostenlos / 29,99 $/Jahr | ✅ Ja |
+| Freedom | VPN-basiert (mobil) | ✅ Ja | ✅ Ja, per VPN | Mittel | 39,99 $/Jahr | ❌ Nein |
+| One Sec | Reibung / Verzögerung | ❌ Nein | Teilweise | Minimal | Kostenlos / kostenpflichtig | ✅ Ja |
+| Digital Wellbeing | Timer-basiert | ❌ Nein | ❌ Nein | Minimal | Kostenlos | ✅ Ja |
 
 ---
 

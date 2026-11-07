@@ -32,7 +32,7 @@ faqs:
 
 1. **Exact-time alarms.** If the alarm can be delayed by Android battery optimization, nothing else matters. It must fire on time even when locked or closed.
 2. **Alarm-channel volume.** It should play on Android's dedicated alarm channel so it stays loud through muted media and Do Not Disturb, ideally with a loudness boost.
-3. **Dismiss-by-task missions.** A one-tap off is the single biggest failure point. A task — math, typing, steps, a barcode across the room, push-ups — forces you awake.
+3. **Dismiss-by-task missions.** A one-tap off is the single biggest failure point. A task — math, typing, steps, a barcode across the room, push-ups — forces you awake. The strongest versions let you *chain* several in a row (e.g. math, then a barcode, then push-ups) so one reflex can't clear them.
 4. **Snooze control.** Adjustable snooze limits (or none) break the dismiss-without-waking reflex.
 5. **Privacy.** A good alarm needs no account, and your alarms should stay on your phone.
 
@@ -40,7 +40,7 @@ faqs:
 
 | App | Best known for | Mission to dismiss | Notable |
 | :--- | :--- | :--- | :--- |
-| **Arisely** | Mission-based waking | 10 missions incl. AI push-up | Free with one banner ad (Pro removes it), no account |
+| **Arisely** | Mission-based waking | 10 missions incl. AI push-up, chainable | Volume-lock & power-off guards; free with one banner ad (Pro removes it), no account |
 | **Alarmy** | Mission alarms | Several mission types | Large, long-established app |
 | **Sleep as Android** | Sleep tracking + alarm | Task options available | Focus is sleep cycle tracking |
 | **Default clock app** | Simplicity | None | Fine for light sleepers only |
@@ -56,7 +56,9 @@ faqs:
 
 ## Why we recommend a mission-first app
 
-For a genuine heavy sleeper, the deciding feature is the **mission gate**. Loudness is table stakes; the reason you oversleep is the one-tap off and sleep inertia, and only a task defeats both. If you want the strongest version of that, a **camera-verified push-up** is the hardest mission to beat because it ends with you standing and moving.
+For a genuine heavy sleeper, the deciding feature is the **mission gate**. Loudness is table stakes; the reason you oversleep is the one-tap off and sleep inertia, and only a task defeats both. If you want the strongest version of that, a **camera-verified push-up** is the hardest mission to beat because it ends with you standing and moving — and chaining it behind a cognitive task makes it harder still.
+
+The other failure mode is the half-asleep dodge: turning the volume down or pressing the power button to kill the alarm. Arisely closes both with two optional guards that run only while the alarm rings — one snaps the volume back up, the other turns the screen back on and (with Accessibility granted) closes the power menu.
 
 [Arisely](/blog/arisely-alarm-clock-for-heavy-sleepers) is free on Google Play, needs no account, keeps your alarms on your phone, and is built entirely around these five features.
 

@@ -36,7 +36,8 @@ Pour vous épargner des semaines d'essais et d'erreurs, j'ai synthétisé mes re
 | **Philosophie de base**      | Précision logique     | Bien-être esthétique   | Synchro multi-appareils  | Restriction basique   |
 | **Architecture de vie privée** | Zéro télémétrie     | Sur l'appareil (selon la fiche) | Synchro serveur | Voir Sécurité des données |
 | **Méthode de blocage (Android)** | API d'accessibilité | API d'accessibilité | VPN                   | Accessibilité + accès à l'utilisation |
-| **Niveau de rigidité**       | Sans bouton de contournement | Sessions strictes avec Pro | Locked Mode          | Élevé (mode strict)   |
+| **Blocage de sites**         | Oui, sans VPN         | Selon la fiche       | Oui, via VPN          | Oui                   |
+| **Niveau de rigidité**       | Strict Mode, sans bouton de contournement | Sessions strictes avec Pro | Locked Mode          | Élevé (mode strict)   |
 | **Prix**                     | Gratuit / Premium     | Gratuit / Pro ~99,99 $/an | ~40 $/an              | Freemium              |
 
 > **Vous voulez une version interactive ?** Consultez le comparatif complet sur la page MindfulGuard.
@@ -47,7 +48,7 @@ Pour vous épargner des semaines d'essais et d'erreurs, j'ai synthétisé mes re
 
 Un bloqueur basé sur un VPN voit tout votre trafic réseau, ce qui demande beaucoup de confiance pour un simple minuteur. Freedom fonctionne encore ainsi sur Android, car c'est ce qui lui permet de bloquer des sites. Opal, qu'une version précédente de cette page classait aussi parmi les VPN, a abandonné cette approche depuis longtemps et utilise l'API d'accessibilité sur Android.
 
-MindfulGuard a été conçue dans une logique « hors ligne d'abord » : votre concentration ne devrait jamais se payer au prix de vos données.
+MindfulGuard a été conçue dans une logique « hors ligne d'abord » : votre concentration ne devrait jamais se payer au prix de vos données. Elle bloque malgré tout les sites — un site bloqué s'ouvre sur une page blanche avec le Pause Screen au lieu de se charger —, mais elle le fait en redirigeant l'onglet du navigateur sur l'appareil, sans faire transiter votre trafic par un VPN. Vous obtenez le blocage de sites sans confier votre réseau à une application.
 
 ### L'Impact sur la Batterie
 
@@ -59,7 +60,7 @@ MindfulGuard a été optimisée avec une logique de l'ordre de la microseconde p
 
 Les applications plus anciennes peuvent sembler contraignantes ou frustrantes, vous poussant soit à vous sur-bloquer, soit à abandonner trop facilement.
 
-Mindful Guard n'a pas de bouton de contournement : l'excuse du « juste 5 minutes de plus » disparaît définitivement.
+Mindful Guard n'a pas de bouton de contournement : l'excuse du « juste 5 minutes de plus » disparaît définitivement. Pour ceux qui contournent un bloqueur en fouillant dans les réglages, **Strict Mode** va plus loin : pendant une session stricte, ouvrir les écrans Infos de l'appli, Accessibilité ou désinstallation de Mindful Guard vous renvoie aussitôt en arrière, et pour arrêter plus tôt il faut appuyer sur « Unlock early » et attendre 20 minutes, le blocage restant actif. La première session stricte est gratuite ; c'est ensuite une fonction Premium.
 
 ![Comparaison technique d'Opal, Freedom et MindfulGuard](../../../assets/blogs/logic-matrix-visual.png)
 

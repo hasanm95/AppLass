@@ -34,7 +34,8 @@ To help you skip the trial and error, I've put together this comparison based on
 | **Core Philosophy**      | Logical Precision | Aesthetic Wellness | Multi-device Sync | Basic Restriction  |
 | **Privacy Architecture** | Zero-Telemetry    | On-device (per listing) | Server-synced | See its Data safety section |
 | **Blocking Method (Android)** | Accessibility API | Accessibility API | VPN | Accessibility + usage access |
-| **Strictness Level**     | No override button | Strict sessions on Pro | Locked Mode | High (Strict Mode) |
+| **Website Blocking**     | Yes, no VPN       | Per listing        | Yes, via VPN      | Yes                |
+| **Strictness Level**     | Strict Mode, no override button | Strict sessions on Pro | Locked Mode | High (Strict Mode) |
 | **Price**                | Free / Premium    | Free tier / Pro ~$99.99/yr | ~$40/year | Freemium |
 
 > **Want the interactive version?** See our [full comparison on the MindfulGuard page](/apps/mindful-guard#comparison).
@@ -43,7 +44,7 @@ To help you skip the trial and error, I've put together this comparison based on
 
 ### The Privacy Problem
 
-A VPN-based blocker sees all of your network traffic, which is a lot of trust to hand a focus timer. Freedom still works this way on Android, because it is how it blocks websites. Opal, which an earlier version of this page also listed as VPN-based, moved away from that years ago and now uses the accessibility API on Android. I built [MindfulGuard](/apps/mindful-guard) to be "offline-first" so that the question never comes up: it needs no account and no internet connection at all.
+A VPN-based blocker sees all of your network traffic, which is a lot of trust to hand a focus timer. Freedom still works this way on Android, because it is how it blocks websites. Opal, which an earlier version of this page also listed as VPN-based, moved away from that years ago and now uses the accessibility API on Android. I built [MindfulGuard](/apps/mindful-guard) to be "offline-first" so that the question never comes up: it needs no account and no internet connection at all. It still blocks websites — a blocked site opens to a blank page with the Pause Screen instead — but it does this by redirecting the browser tab on-device, not by routing your traffic through a VPN. You get web blocking without handing an app your network.
 
 ### The Battery Drain
 
@@ -51,7 +52,7 @@ Accessibility-based blockers (MindfulGuard, Opal and AppBlock on Android) use li
 
 ### The "Willpower" Trap
 
-Most "legacy" apps like Freedom can feel clunky or frustrating, leading you to accidentally lock yourself out—or worse, give you an easy way to quit when things get hard. We built Mindful Guard with no override button, to eliminate the "5 more minutes" excuse once and for all.
+Most "legacy" apps like Freedom can feel clunky or frustrating, leading you to accidentally lock yourself out—or worse, give you an easy way to quit when things get hard. We built Mindful Guard with no override button, to eliminate the "5 more minutes" excuse once and for all. For people who bypass a blocker by digging into settings, **Strict Mode** goes further: while a strict session runs, opening Mindful Guard's App Info, Accessibility, or uninstall screen sends you straight back, and leaving early means tapping "Unlock early" and waiting 20 minutes with blocking still on. The first strict session is free; it's a Premium feature after that.
 
 ![Technical comparison of Opal, Freedom, and MindfulGuard](../../../assets/blogs/logic-matrix-visual.png)
 

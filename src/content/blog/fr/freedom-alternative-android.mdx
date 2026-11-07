@@ -129,9 +129,20 @@ multiplateforme à ménager :
   durée de chaque session.
 - **Reel Guard.** Au-delà du blocage d'applications entières, l'app cible spécifiquement le fil de
   vidéos courtes dans Instagram, YouTube, TikTok, Facebook et Snapchat, avec des limites quotidiennes
-  et par session distinctes. Notre
+  et par session distinctes — et cette limite atteint désormais aussi la vidéo courte dans le
+  navigateur, donc elle est bloquée que vous l'ouvriez dans l'app ou dans Chrome. Notre
   [guide de blocage des Reels et des Shorts](/fr/blog/how-to-block-reels-and-shorts-on-android-2026)
   détaille ce mécanisme.
+- **Blocage de sites sans VPN.** C'est la seule chose que Freedom faisait et pas Mindful Guard. Le
+  site d'une application bloquée est couvert automatiquement (bloquez l'appli Facebook et facebook.com
+  l'est aussi), et vous ajoutez vos propres domaines à une bibliothèque de sites. Un site bloqué
+  s'ouvre sur une page blanche avec un Pause Screen apaisant au lieu de se charger — et comme l'onglet
+  du navigateur est redirigé sur l'appareil plutôt que filtré par un tunnel, le blocage web se fait
+  sans VPN.
+- **Strict Mode.** Contre le contournement par les réglages, une session stricte vous renvoie des
+  écrans Infos de l'appli, Accessibilité et désinstallation de Mindful Guard, sans bouton « Open
+  anyway » ; pour arrêter plus tôt, il faut attendre 20 minutes. La première session stricte est
+  gratuite.
 
 <MindfulGuardCTA lang="fr" campaign="freedom-alternative-android" />
 
@@ -143,8 +154,9 @@ multiplateforme à ménager :
 | Compte obligatoire | Oui — e-mail + mot de passe, synchro serveur | Non |
 | Fonctionne entièrement hors ligne | Non — synchronisation par serveurs | Oui — 100 % sur l'appareil |
 | Sessions de l'offre gratuite | Plafond de 2 h, sans récurrence ni planification | 3 sessions/jour, durée illimitée, planification incluse |
-| Blocage impossible à quitter en cours de session | Premium uniquement (Locked Mode) | Gratuit (sans bouton de contournement) |
-| Blocage au niveau du fil (Reels/Shorts/TikTok) | Non — application entière ou rien | Oui — Reel Guard |
+| Blocage impossible à quitter en cours de session | Premium uniquement (Locked Mode) | Gratuit (sans bouton de contournement) ; Strict Mode verrouille le contournement |
+| Blocage au niveau du fil (Reels/Shorts/TikTok) | Non — application entière ou rien | Oui — Reel Guard, applis et navigateurs |
+| Blocage de sites | Oui — via VPN | Oui — redirection sur l'appareil, sans VPN |
 | Résiste à la gestion d'énergie Samsung/Xiaomi | Le VPN peut être arrêté | Oui — service natif |
 | Impact batterie | Modéré (VPN maintenu ouvert) | Moins de 1 % par jour |
 | Plateformes | Android, iOS, Mac, Windows, ChromeOS | Android uniquement |
@@ -178,9 +190,11 @@ clairement :
 - **La synchronisation multi-appareils.** Une seule session, appliquée simultanément sur votre
   téléphone, votre Mac et votre PC Windows. Rien dans cette liste ne l'égale, et Mindful Guard n'y
   prétend pas.
-- **Le blocage de sites web.** Freedom bloque des sites et des domaines, pas seulement des
-  applications. Si votre problème est Reddit dans un navigateur plutôt qu'une application installée,
-  cela change tout.
+- **Le blocage de sites multiplateforme.** Les deux apps bloquent désormais les sites — Mindful Guard
+  l'a ajouté, et sur Android sans VPN —, mais Freedom applique la même liste de blocage sur votre
+  téléphone *et* vos navigateurs de bureau, avec un écosystème de listes plus profond et plus mature.
+  Si vous devez bloquer Reddit sur un ordinateur portable comme sur un téléphone, cela penche encore
+  pour Freedom.
 - **La maturité.** Des années de développement, une large base d'utilisateurs et un support
   multiplateforme qui fonctionne vraiment. L'écosystème de listes de blocage est plus profond.
 - **Le prix annuel.** À 39,96 $ par an, Freedom Premium revient moins cher sur douze mois que Mindful
@@ -206,13 +220,14 @@ cas, Mindful Guard se paie au mois, sans engagement annuel.
 
 **Choisissez Mindful Guard si** vous ne devez contrôler que votre téléphone Android, si vous ne
 voulez ni compte ni dépendance à un serveur, si vous voulez des blocages planifiés impossibles à quitter sans
-payer, si vous êtes sur un Samsung ou un Xiaomi qui tue les bloqueurs à base de VPN, ou si vous
-voulez précisément limiter les fils Reels, Shorts et TikTok plutôt que bloquer des applications
-entières.
+payer, si vous voulez bloquer des sites sans VPN, si vous êtes sur un Samsung ou un Xiaomi qui tue les
+bloqueurs à base de VPN, ou si vous voulez précisément limiter les fils Reels, Shorts et TikTok — dans
+les applis et les navigateurs — plutôt que bloquer des applications entières.
 
 **Choisissez Freedom si** vous avez besoin du même blocage actif simultanément sur téléphone, Mac et
-PC Windows, ou d'un blocage au niveau des sites dans un navigateur, et que le VPN, le compte et
-l'abonnement vous conviennent en échange.
+PC Windows, ou d'un blocage de sites qui couvre aussi un navigateur de bureau, et que le VPN, le compte
+et l'abonnement vous conviennent en échange. (Pour le blocage de sites sur Android seul, Mindful Guard
+le fait désormais sans VPN.)
 
 **Ne choisissez ni l'un ni l'autre si** votre vrai problème est un fil précis plutôt que l'usage des
 applications en général — dans ce cas, commencez par un blocage ciblé plutôt que par un bloqueur

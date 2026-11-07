@@ -58,6 +58,8 @@ Les missions calcul et secousse vous laissent au lit. La mission pompes est la s
 
 Certains matins, un exercice n'est pas réaliste, et un outil de réveil trop rigide finit désinstallé. Arisely propose **10 missions** — Calcul, Mémoire, Code, Séquence, Saisie, Quiz, Secouer, Pas, QR/Code-barres et le contrôle de Pompes par IA — et vous pouvez en attribuer de différentes à des alarmes différentes. Utilisez les pompes les jours de sport et un scan de code-barres à l'autre bout de la pièce les autres jours.
 
+Vous pouvez aussi faire des pompes une étape d'une chaîne plus longue. Arisely permet à une seule alarme d'exécuter plusieurs missions dans l'ordre — par exemple un calcul rapide pour dissiper le brouillard, puis un scan de code-barres pour sortir du lit, puis le contrôle de pompes —, chacune avec sa propre difficulté et son nombre de tours, et l'alarme ne s'arrête qu'une fois toute la séquence terminée. Une mission seule est gratuite ; en enchaîner deux ou plus est une fonction Pro.
+
 ## Confidentialité : la caméra reste sur votre téléphone
 
 Un réveil basé sur la caméra soulève une question légitime : où va la vidéo ? Avec Arisely, nulle part. Il n'y a **aucun compte**, et les images de la caméra sont **traitées sur votre téléphone, jamais enregistrées, stockées ni envoyées**. La détection de posture qui compte vos répétitions s'exécute sur l'appareil. La version gratuite affiche une bannière publicitaire en dehors de l'écran de sonnerie ; Arisely Pro la supprime.

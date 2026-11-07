@@ -58,6 +58,8 @@ Mathe- und Schüttel-Missionen lassen dich weiter im Bett. Die Liegestütz-Missi
 
 An manchen Morgen ist ein Workout unrealistisch, und ein zu starres Aufwach-Tool wird deinstalliert. Arisely liefert **10 Missionen** — Mathe, Gedächtnis, Code, Zahlenreihe, Tippen, Quiz, Schütteln, Schritte, QR-/Barcode und den KI-Liegestütz-Check — und du kannst verschiedenen Alarmen verschiedene zuweisen. Nutze Liegestütze an Trainingstagen und einen Barcode-Scan quer durchs Zimmer an den übrigen.
 
+Du kannst Liegestütze auch zu einem Schritt in einer längeren Kette machen. Arisely lässt einen einzelnen Alarm mehrere Missionen nacheinander ausführen — zum Beispiel eine schnelle Mathe-Aufgabe gegen den Nebel, dann einen Barcode-Scan, um aus dem Bett zu kommen, dann den Liegestütz-Check —, jede mit eigener Schwierigkeit und Rundenzahl, und der Alarm stoppt erst, wenn du die ganze Folge beendet hast. Eine einzelne Mission ist kostenlos; zwei oder mehr zu verketten ist eine Pro-Funktion.
+
 ## Datenschutz: Die Kamera bleibt auf deinem Telefon
 
 Ein kamerabasierter Wecker wirft eine berechtigte Frage auf: Wohin geht das Video? Bei Arisely nirgendwohin. Es gibt **kein Konto**, und Kamerabilder werden **auf deinem Telefon verarbeitet und nie aufgezeichnet, gespeichert oder gesendet**. Die Posenerkennung, die deine Wiederholungen zählt, läuft auf dem Gerät. Die Gratisversion zeigt ein Werbebanner außerhalb des Klingel-Bildschirms; Arisely Pro entfernt es.

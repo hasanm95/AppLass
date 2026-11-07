@@ -100,7 +100,7 @@ Un test utile : ouvrez votre rapport de temps d'écran Android et triez par moye
 
 ### Étape 5 : Décider Ce Qui Reste Ouvert
 
-Mindful Guard n'a pas de bouton de dérogation. Si vous ouvrez une application bloquée pendant votre programme, l'écran de blocage apparaît et reste jusqu'à la fin du programme. C'est tout l'intérêt — mais il faut donc décider dès maintenant ce dont vous avez vraiment besoin pendant vos heures de travail.
+Mindful Guard n'a pas de bouton de dérogation. Si vous ouvrez une application bloquée pendant votre programme, un **Pause Screen** plein écran apparaît — l'icône de l'app atténuée, un court message « en pause », un anneau de respiration de 8 secondes et le nombre de fois où vous avez ouvert l'app aujourd'hui — sans aucun passage possible jusqu'à la fin du programme. (Dans Réglages → Pause Screen, vous pouvez définir votre propre note, par ex. « Pourquoi bloques-tu ça pendant le travail ? ».) C'est tout l'intérêt — mais il faut donc décider dès maintenant ce dont vous avez vraiment besoin pendant vos heures de travail.
 
 - **Besoin d'un réseau social pour le travail** (community management, marketing social) ? Laissez-le hors de la liste de blocage, et utilisez **Reel Guard** pour limiter seulement son fil Reels ou Shorts.
 - **Jamais besoin au travail ?** Bloquez l'application entière.
@@ -175,6 +175,14 @@ Un programme matinal simple ressemble à ceci :
 - **Week-ends :** Désactivé (ou un blocage matinal plus léger)
 
 Trois minutes à configurer. Cela protège les deux fenêtres de votre journée où la distraction fait le plus de dégâts.
+
+## Fermez les Failles que le Programme Laisse Ouvertes
+
+Un programme ne fonctionne que s'il tient partout et ne peut pas être désactivé discrètement. Trois réglages ferment les fuites habituelles pendant un blocage de travail :
+
+- **Bloquez aussi le site, pas seulement l'appli.** Passer de l'appli Instagram à instagram.com dans un navigateur est le contournement évident. Le **blocage de sites** de Mindful Guard couvre automatiquement le site d'une application bloquée, et vous pouvez ajouter vos propres domaines — un site bloqué s'ouvre sur une page blanche avec le Pause Screen au lieu de se charger, et ce sur l'appareil, sans VPN.
+- **Démarrez et surveillez le blocage sans ouvrir l'appli.** Un **widget** d'écran d'accueil et une **tuile Réglages rapides** démarrent un blocage de concentration en une pression, et une notification en direct pendant une session indique ce qui est bloqué et quand cela se termine — pratique pour un blocage de travail profond ponctuel en plus de votre programme.
+- **Strict Mode pour les blocages qui doivent tenir.** Si vous êtes du genre à forcer l'arrêt du bloqueur ou à couper sa permission dès que l'envie monte, une session stricte vous renvoie des écrans Infos de l'appli, Accessibilité et désinstallation, sans bouton « Open anyway » ; pour arrêter plus tôt, il faut attendre 20 minutes. La première session stricte est gratuite.
 
 ---
 

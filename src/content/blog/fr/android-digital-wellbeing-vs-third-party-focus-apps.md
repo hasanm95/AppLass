@@ -121,6 +121,14 @@ Mindful Guard fonctionne entièrement sur l'appareil. Il utilise le service d'ac
 
 Vous pouvez créer différents programmes pour différents contextes — un blocage matinal strict de 6h à 8h, un blocage de travail de 9h à 17h, un blocage de détente en soirée plus léger. Chaque programme a sa propre liste d'applications et son propre mode de blocage. La flexibilité vous permet d'adapter le système à votre vie réelle plutôt que de forcer votre vie dans une seule limite quotidienne.
 
+### Strict Mode
+
+La seule faille que laisse « aucun bouton de contournement », c'est le contournement par les réglages — forcer l'arrêt de l'app, désactiver sa permission d'accessibilité ou lancer une désinstallation. Strict Mode la ferme. Pendant une session stricte, ouvrir les écrans Infos de l'appli, Accessibilité ou désinstallation de Mindful Guard vous renvoie aussitôt en arrière, sans option « Open anyway » ; pour arrêter plus tôt, vous appuyez sur « Unlock early » et attendez 20 minutes, le blocage restant actif tout du long. C'est exactement la couche d'application dont le Bien-être numérique n'a aucun équivalent. La première session stricte est gratuite ; c'est ensuite une fonction Premium.
+
+### Blocage de Sites
+
+Bloquer une application ne laisse plus son site web comme échappatoire. Mindful Guard couvre automatiquement le site d'une application bloquée — bloquez l'appli Facebook et facebook.com l'est aussi — et vous pouvez ajouter vos propres domaines. Un site bloqué s'ouvre sur une page blanche avec un Pause Screen apaisant au lieu de se charger, et comme l'onglet du navigateur est redirigé sur l'appareil, aucun VPN n'intervient.
+
 ---
 
 ## Comparaison Directe
@@ -130,6 +138,8 @@ Vous pouvez créer différents programmes pour différents contextes — un bloc
 | Rapports de temps d'écran | ✅ Oui | ❌ Non |
 | Blocage programmé | ❌ Non | ✅ Oui |
 | Blocage ferme (sans dérogation) | ❌ Non | ✅ Oui |
+| Strict Mode (verrouille le contournement par les réglages) | ❌ Non | ✅ Oui |
+| Blocage de sites (sans VPN) | ❌ Non | ✅ Oui |
 | Suppression des notifications | ❌ Non | ✅ Oui |
 | Plusieurs profils de programme | ❌ Non | ✅ Oui |
 | Mode coucher / niveaux de gris | ✅ Oui | ❌ Non |

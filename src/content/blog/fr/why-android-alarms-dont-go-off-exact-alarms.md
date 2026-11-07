@@ -62,7 +62,7 @@ Même avec des alarmes exactes, vous pouvez ajouter une fiabilité supplémentai
 
 ## Un réveil fondé sur les trois
 
-[Arisely](/fr/blog/arisely-alarm-clock-for-heavy-sleepers) utilise des alarmes à l'heure exacte, sonne sur le canal audio des alarmes avec un boost extra fort et s'affiche en plein écran par-dessus l'écran verrouillé — il se déclenche donc à l'heure et fort, même téléphone verrouillé ou application fermée depuis des heures. Gratuit, aucun compte, et la bannière publicitaire de la version gratuite n'apparaît jamais sur l'écran de sonnerie.
+[Arisely](/fr/blog/arisely-alarm-clock-for-heavy-sleepers) utilise des alarmes à l'heure exacte, sonne sur le canal audio des alarmes avec un boost extra fort et s'affiche en plein écran par-dessus l'écran verrouillé — il se déclenche donc à l'heure et fort, même téléphone verrouillé ou application fermée depuis des heures. Pour l'instant qui suit le déclenchement, des gardes optionnels peuvent remettre le volume au maximum et bloquer le menu d'extinction pendant la sonnerie, pour qu'il ne puisse pas être coupé par un réflexe à moitié endormi. Gratuit, aucun compte, et la bannière publicitaire de la version gratuite n'apparaît jamais sur l'écran de sonnerie.
 
 [**Télécharger Arisely sur Google Play**](https://play.google.com/store/apps/details?id=com.arisely&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dexact-alarms%26utm_content%3Dwhy-android-alarms-dont-go-off-exact-alarms)
 

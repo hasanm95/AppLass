@@ -32,7 +32,7 @@ faqs:
 
 1. **Zeitgenaue Alarme.** Wenn der Alarm von Androids Akku-Optimierung verzögert werden kann, ist alles andere egal. Er muss pünktlich auslösen, auch bei gesperrtem oder geschlossenem Zustand.
 2. **Wecker-Kanal-Lautstärke.** Er sollte über Androids eigenen Wecker-Kanal spielen, damit er trotz stummgeschalteter Medien und Bitte-nicht-stören laut bleibt, idealerweise mit Lautstärke-Boost.
-3. **Abstellen-durch-Aufgabe-Missionen.** Ein Ein-Tipp-Aus ist der größte einzelne Schwachpunkt. Eine Aufgabe — Mathe, Tippen, Schritte, ein Barcode quer durchs Zimmer, Liegestütze — zwingt dich wach.
+3. **Abstellen-durch-Aufgabe-Missionen.** Ein Ein-Tipp-Aus ist der größte einzelne Schwachpunkt. Eine Aufgabe — Mathe, Tippen, Schritte, ein Barcode quer durchs Zimmer, Liegestütze — zwingt dich wach. Die stärksten Varianten lassen dich mehrere *verketten* (z. B. Mathe, dann ein Barcode, dann Liegestütze), sodass ein einzelner Reflex sie nicht abräumt.
 4. **Schlummer-Kontrolle.** Einstellbare Schlummerlimits (oder keine) durchbrechen den Reflex, ohne Aufwachen abzustellen.
 5. **Datenschutz.** Ein guter Wecker braucht kein Konto, und deine Alarme sollten auf deinem Telefon bleiben.
 
@@ -40,7 +40,7 @@ faqs:
 
 | App | Bekannt für | Mission zum Abstellen | Bemerkenswert |
 | :--- | :--- | :--- | :--- |
-| **Arisely** | Missionsbasiertes Wecken | 10 Missionen inkl. KI-Liegestütz | Kostenlos mit einem Werbebanner (Pro entfernt es), kein Konto |
+| **Arisely** | Missionsbasiertes Wecken | 10 Missionen inkl. KI-Liegestütz, verkettbar | Lautstärke-Sperr- & Power-off-Wächter; kostenlos mit einem Werbebanner (Pro entfernt es), kein Konto |
 | **Alarmy** | Missions-Wecker | Mehrere Missionstypen | Große, lange etablierte App |
 | **Sleep as Android** | Schlaf-Tracking + Wecker | Aufgaben-Optionen verfügbar | Fokus liegt auf Schlafzyklus-Tracking |
 | **Standard-Uhr-App** | Einfachheit | Keine | Nur für Leichtschläfer geeignet |
@@ -56,7 +56,9 @@ faqs:
 
 ## Warum wir eine Missions-First-App empfehlen
 
-Für einen echten Tiefschläfer ist die entscheidende Funktion das **Missions-Gate**. Lautstärke ist Grundvoraussetzung; der Grund, warum du verschläfst, ist das Ein-Tipp-Aus und die Schlaftrunkenheit, und nur eine Aufgabe besiegt beides. Wenn du die stärkste Variante davon willst, ist ein **kamerageprüfter Liegestütz** die am schwersten zu schlagende Mission, weil du am Ende stehst und dich bewegst.
+Für einen echten Tiefschläfer ist die entscheidende Funktion das **Missions-Gate**. Lautstärke ist Grundvoraussetzung; der Grund, warum du verschläfst, ist das Ein-Tipp-Aus und die Schlaftrunkenheit, und nur eine Aufgabe besiegt beides. Wenn du die stärkste Variante davon willst, ist ein **kamerageprüfter Liegestütz** die am schwersten zu schlagende Mission, weil du am Ende stehst und dich bewegst — und ihn hinter eine kognitive Aufgabe zu verketten macht es noch schwerer.
+
+Der andere Schwachpunkt ist die halbschlafende Umgehung: die Lautstärke herunterdrehen oder die Power-Taste drücken, um den Alarm abzuwürgen. Arisely schließt beide mit zwei optionalen Wächtern, die nur laufen, während der Alarm klingelt — einer schnellt die Lautstärke wieder hoch, der andere schaltet den Bildschirm wieder ein und schließt (mit erteilter Bedienungshilfen-Berechtigung) das Power-Menü.
 
 [Arisely](/de/blog/arisely-alarm-clock-for-heavy-sleepers) ist bei Google Play kostenlos, braucht kein Konto, hält deine Alarme auf deinem Telefon und ist komplett um diese fünf Funktionen herum gebaut.
 

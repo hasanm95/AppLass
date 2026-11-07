@@ -62,7 +62,7 @@ Even with exact alarms, you can add belt-and-braces reliability: in **Settings �
 
 ## An alarm built on all three
 
-[Arisely](/blog/arisely-alarm-clock-for-heavy-sleepers) uses exact-time alarms, plays on the alarm audio channel with an extra-loud boost, and shows full-screen over the lock screen — so it fires on time and loud even when the phone is locked or the app has been closed for hours. Free, no account, and the free version's banner ad never appears on the ring screen.
+[Arisely](/blog/arisely-alarm-clock-for-heavy-sleepers) uses exact-time alarms, plays on the alarm audio channel with an extra-loud boost, and shows full-screen over the lock screen — so it fires on time and loud even when the phone is locked or the app has been closed for hours. For the moment after it fires, optional guards can snap the volume back up and block the power-off menu while it rings, so it can't be silenced by a half-asleep reflex. Free, no account, and the free version's banner ad never appears on the ring screen.
 
 [**Download Arisely on Google Play**](https://play.google.com/store/apps/details?id=com.arisely&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dexact-alarms%26utm_content%3Dwhy-android-alarms-dont-go-off-exact-alarms)
 

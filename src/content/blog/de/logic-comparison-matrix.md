@@ -34,7 +34,8 @@ Damit Sie sich das Ausprobieren sparen können, habe ich diesen Vergleich aus me
 | **Grundphilosophie**          | Logische Präzision    | Ästhetisches Wohlbefinden | Geräteübergreifende Synchronisierung | Einfache Einschränkung |
 | **Datenschutzarchitektur**    | Zero-Telemetry        | Auf dem Gerät (laut Eintrag) | Server-synchronisiert | Siehe Datensicherheit |
 | **Sperrmethode (Android)**    | Bedienungshilfen-API  | Bedienungshilfen-API   | VPN                      | Bedienungshilfen + Nutzungszugriff |
-| **Grad der Strenge**          | Keine Umgehungsschaltfläche | Strikte Sitzungen mit Pro | Locked Mode           | Hoch (Strikter Modus)  |
+| **Website-Blockierung**       | Ja, ohne VPN          | Laut Eintrag           | Ja, per VPN              | Ja                     |
+| **Grad der Strenge**          | Strict Mode, keine Umgehungsschaltfläche | Strikte Sitzungen mit Pro | Locked Mode           | Hoch (Strikter Modus)  |
 | **Preis**                     | Gratis / Premium      | Gratis / Pro ~99,99 $/Jahr | ~40 $/Jahr            | Freemium               |
 
 > **Sie wollen die interaktive Fassung?** Sehen Sie sich den [vollständigen Vergleich auf der MindfulGuard-Seite](/de/apps/mindful-guard#comparison) an.
@@ -43,7 +44,7 @@ Damit Sie sich das Ausprobieren sparen können, habe ich diesen Vergleich aus me
 
 ### Das Datenschutzproblem
 
-Ein VPN-basierter Blocker sieht Ihren gesamten Netzwerkverkehr – viel Vertrauen für einen Fokus-Timer. Freedom arbeitet auf Android noch so, weil es damit Websites sperrt. Opal, das eine frühere Version dieser Seite ebenfalls als VPN-basiert aufführte, ist davon längst abgerückt und nutzt auf Android die Bedienungshilfen-API. Ich habe [MindfulGuard](/de/apps/mindful-guard) bewusst „Offline-First“ gebaut, damit sich die Frage gar nicht stellt: kein Konto, keine Internetverbindung.
+Ein VPN-basierter Blocker sieht Ihren gesamten Netzwerkverkehr – viel Vertrauen für einen Fokus-Timer. Freedom arbeitet auf Android noch so, weil es damit Websites sperrt. Opal, das eine frühere Version dieser Seite ebenfalls als VPN-basiert aufführte, ist davon längst abgerückt und nutzt auf Android die Bedienungshilfen-API. Ich habe [MindfulGuard](/de/apps/mindful-guard) bewusst „Offline-First“ gebaut, damit sich die Frage gar nicht stellt: kein Konto, keine Internetverbindung. Websites sperrt es trotzdem — eine gesperrte Seite öffnet sich als leere Seite mit dem Pause Screen statt zu laden —, aber es leitet dafür den Browser-Tab auf dem Gerät um, statt Ihren Datenverkehr durch ein VPN zu schleusen. So bekommen Sie Website-Blockierung, ohne einer App Ihr Netzwerk anzuvertrauen.
 
 ### Die Akkuentladung
 
@@ -51,7 +52,7 @@ Blocker auf Basis der Bedienungshilfen (MindfulGuard, Opal und AppBlock auf Andr
 
 ### Die „Willenskraft“-Falle
 
-Viele ältere Apps wie Freedom wirken sperrig oder frustrierend. Entweder sperren Sie sich versehentlich selbst aus — oder, schlimmer, die App bietet Ihnen einen bequemen Ausweg, sobald es anstrengend wird. Deshalb hat Mindful Guard keine Umgehungsschaltfläche — damit die Ausrede „5 Minuten mehr“ ein für alle Mal verschwindet.
+Viele ältere Apps wie Freedom wirken sperrig oder frustrierend. Entweder sperren Sie sich versehentlich selbst aus — oder, schlimmer, die App bietet Ihnen einen bequemen Ausweg, sobald es anstrengend wird. Deshalb hat Mindful Guard keine Umgehungsschaltfläche — damit die Ausrede „5 Minuten mehr“ ein für alle Mal verschwindet. Für alle, die einen Blocker über die Einstellungen umgehen, geht **Strict Mode** noch weiter: Während einer strikten Sitzung werfen Sie die App-Info-, Bedienungshilfen- oder Deinstallations-Seite von Mindful Guard sofort zurück, und wer früher aufhören will, tippt auf „Unlock early“ und wartet 20 Minuten — die Sperre bleibt dabei aktiv. Die erste strikte Sitzung ist gratis, danach ist es eine Premium-Funktion.
 
 ![Technischer Vergleich von Opal, Freedom und MindfulGuard](../../../assets/blogs/logic-matrix-visual.png)
 

@@ -60,6 +60,12 @@ So oder so bist du wach, wenn der Alarm verstummt. Der Alarm ist zum Aufwach-*Te
 
 Passe die Mission an deinen Schlaf an. Eine schnelle Rechenaufgabe reicht vielleicht in einer leichten Nacht; in einer schweren leg einen Barcode quer durchs Zimmer oder stell kamerageprüfte Liegestütze ein, damit du nicht gewinnst, ohne aufzustehen.
 
+## Mehrere Missionen verketten
+
+Eine Mission reicht oft, aber eine Aufgabe, die du hundertmal gemacht hast, wird selbst zum halbschlafenden Reflex. Arisely lässt einen Alarm mehrere Missionen nacheinander ausführen — etwa **Mathe → QR / Barcode → Liegestütze** —, jede Stufe mit eigener Schwierigkeit und Rundenzahl, und der Alarm verstummt erst, wenn du die ganze Kette geschafft hast. Eine kognitive Aufgabe, um den Kopf hochzufahren, dann eine körperliche, um auf die Beine zu kommen, ist deutlich schwerer zu verschlafen als jede allein.
+
+Eine einzelne Mission bleibt kostenlos (eine Runde, auf Leicht oder Mittel); zwei oder mehr Missionen zu verketten ist eine Pro-Funktion. Bereits gesetzte Alarme funktionieren genau wie zuvor — sie werden einfach zu einer Ein-Schritt-Kette, sodass sich nichts ändert, solange du nichts hinzufügst.
+
 ## Missions-Wecker vs. normaler Wecker
 
 | | Normaler Wecker | Missions-Wecker (Arisely) |

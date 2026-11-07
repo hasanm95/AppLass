@@ -100,7 +100,7 @@ A useful test: open your Android screen time report and sort by daily average. T
 
 ### Step 5: Decide What Stays Open
 
-Mindful Guard has no override button. When you open a blocked app during your schedule, the block screen appears and stays until the schedule ends. That is the point — but it means you should decide now what you truly need during work hours.
+Mindful Guard has no override button. When you open a blocked app during your schedule, a full-screen **Pause Screen** appears — the app's icon dimmed, a short "paused" message, an 8-second breathing ring, and how many times you've opened the app today — with no way through until the schedule ends. (You can set your own note, like "Why are you blocking these during work?", under Settings → Pause Screen.) That is the point — but it means you should decide now what you truly need during work hours.
 
 - **Need a social app for work** (community management, social marketing)? Leave it off the block list, and use **Reel Guard** to limit only its Reels or Shorts feed.
 - **Never need it at work?** Block the whole app.
@@ -175,6 +175,14 @@ A simple morning block looks like this:
 - **Weekends:** Off (or a lighter morning-only block)
 
 Three minutes to configure. It protects the two windows in your day where distraction does the most damage.
+
+## Close the Gaps the Schedule Leaves Open
+
+A schedule only works if it holds everywhere and can't be quietly switched off. Three settings close the usual leaks during a work block:
+
+- **Block the website too, not just the app.** Switching from the Instagram app to instagram.com in a browser is the obvious dodge. Mindful Guard's **website blocking** covers a blocked app's site automatically, and you can add your own domains — a blocked site opens to a blank page with the Pause Screen instead of loading, and it does this on-device with no VPN.
+- **Start and watch the block without opening the app.** A home-screen **widget** and a **Quick Settings tile** let you start a focus block in one tap, and a live notification during a session shows what's blocked and when it ends — handy for an ad-hoc deep-work block on top of your schedule.
+- **Strict Mode for the blocks that must hold.** If you're the kind of person who force-stops the blocker or turns off its permission when the urge hits, a strict session sends you back from the App Info, Accessibility and uninstall screens with no "open anyway" button; leaving early means a 20-minute wait. The first strict session is free.
 
 ---
 

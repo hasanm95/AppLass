@@ -57,6 +57,8 @@ tunnel if the app is not exempted from battery optimization.
 Accessibility and UsageStats APIs to detect when a blocked app launches and immediately 
 redirect. No network required. Survives Doze Mode. Works offline on a plane.
 
+The old trade-off was that only the VPN approach could block *websites*. That's no longer true: Mindful Guard now blocks sites at the system level too, by redirecting the browser tab to a blank page when a blocked domain loads — so you get website blocking without handing an app your whole network.
+
 This distinction matters more than any feature list. Keep it in mind as you read.
 
 ---
@@ -74,14 +76,18 @@ because it doesn't have one.
 short-form feed opens, and closes it straight away. There is no VPN, so nothing is routed through
 a tunnel and nothing stops working when the system closes background VPNs.
 
-**When time is up:** A calm screen takes over, with no override button and no "just five more
-minutes". The block holds until the limit, timer or schedule ends.
+**When time is up:** A full-screen Pause Screen takes over — the dimmed app icon, a short "paused"
+message (or your own note), a breathing ring, and your open-count for the day — with no override
+button and no "just five more minutes". The block holds until the limit, timer or schedule ends.
 
 **What you can block:**
 - Individual apps (Instagram, TikTok, YouTube, Reddit, X/Twitter, Snapchat, Facebook)
+- Websites — a blocked app's site is covered automatically, plus any domains you add, blocked in the browser with no VPN
 - Weekly schedules (e.g. blocked 9am–6pm on weekdays)
 - A quick focus timer, from 5 to 60 minutes
-- Just the Reels, Shorts, TikTok, Facebook Reels and Snapchat Spotlight feeds, with Reel Guard
+- Just the Reels, Shorts, TikTok, Facebook Reels and Snapchat Spotlight feeds, with Reel Guard — in apps *and* browsers
+
+**Going further:** **Strict Mode** locks the common bypasses (App Info, Accessibility, uninstall) behind a 20-minute wait during a session; a home-screen widget and Quick Settings tile start a focus block in one tap.
 
 **Privacy:** Works offline. No account required. No ads. Google Play's Data safety section lists
 no data collected.
@@ -164,13 +170,13 @@ when you're ready for a real block.
 
 ## Quick comparison
 
-| App | Blocking method | No-override block | Battery impact | Cost | Works offline |
-|---|---|---|---|---|---|
-| **Mindful Guard** | On-device (Accessibility) | ✅ Yes | Low | Free / Premium | ✅ Yes |
-| AppBlock | System-level | ✅ Yes | Low | Free / $29.99/yr | ✅ Yes |
-| Freedom | VPN-based (mobile) | ✅ Yes | Medium | $39.99/yr | ❌ No |
-| One Sec | Friction / delay | ❌ No | Minimal | Free / paid | ✅ Yes |
-| Digital Wellbeing | Timer-based | ❌ No | Minimal | Free | ✅ Yes |
+| App | Blocking method | No-override block | Blocks websites | Battery impact | Cost | Works offline |
+|---|---|---|---|---|---|---|
+| **Mindful Guard** | On-device (Accessibility) | ✅ Yes | ✅ Yes, no VPN | Low | Free / Premium | ✅ Yes |
+| AppBlock | System-level | ✅ Yes | ✅ Yes | Low | Free / $29.99/yr | ✅ Yes |
+| Freedom | VPN-based (mobile) | ✅ Yes | ✅ Yes, via VPN | Medium | $39.99/yr | ❌ No |
+| One Sec | Friction / delay | ❌ No | Partial | Minimal | Free / paid | ✅ Yes |
+| Digital Wellbeing | Timer-based | ❌ No | ❌ No | Minimal | Free | ✅ Yes |
 
 ---
 

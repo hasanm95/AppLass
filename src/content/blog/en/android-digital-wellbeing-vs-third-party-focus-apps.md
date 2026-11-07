@@ -121,6 +121,14 @@ Mindful Guard operates entirely on-device. It uses Android's Accessibility Servi
 
 You can create different schedules for different contexts — a strict morning block from 6 to 8 AM, a work block from 9 AM to 5 PM, a lighter evening wind-down block. Each schedule has its own app list and block mode. The flexibility allows you to match the system to your actual life rather than forcing your life into a single daily limit.
 
+### Strict Mode
+
+The one gap a "no override button" leaves open is the settings bypass — force-stopping the app, turning off its accessibility permission, or starting an uninstall. Strict Mode closes that. During a strict session, opening Mindful Guard's App Info, Accessibility, or uninstall screen sends you straight back, with no "open anyway" option; to leave early you tap "Unlock early" and wait 20 minutes, with blocking still on the whole time. This is exactly the enforcement layer Digital Wellbeing has no equivalent for. Your first strict session is free; it's a Premium feature after that.
+
+### Website Blocking
+
+Blocking an app no longer leaves its website as an escape hatch. Mindful Guard automatically covers a blocked app's site — block the Facebook app and facebook.com is blocked too — and you can add your own domains. A blocked site opens to a blank page with a calm Pause Screen instead of loading, and because the browser tab is redirected on-device, there's no VPN involved.
+
 ---
 
 ## Head-to-Head Comparison
@@ -130,6 +138,8 @@ You can create different schedules for different contexts — a strict morning b
 | Screen time reporting | ✅ Yes | ❌ No |
 | Schedule-based blocking | ❌ No | ✅ Yes |
 | Hard block (no override) | ❌ No | ✅ Yes |
+| Strict Mode (locks the settings bypass) | ❌ No | ✅ Yes |
+| Website blocking (no VPN) | ❌ No | ✅ Yes |
 | Notification suppression | ❌ No | ✅ Yes |
 | Multiple schedule profiles | ❌ No | ✅ Yes |
 | Bedtime / grayscale mode | ✅ Yes | ❌ No |

@@ -62,9 +62,18 @@ Sobald du eine Aufgabe machst, bist du wach. Das ist der ganze Mechanismus.
 
 Schlummern zerstückelt deinen Schlaf und trainiert den Reflex, ohne Aufwachen abzustellen. Setz ein **Schlummerlimit** oder schalt Schlummern ganz ab, damit der einzige Ausweg die Aufwach-Aufgabe ist.
 
-## Der einfachste Weg, alle vier umzusetzen
+## Lösung 5: Die körperlichen Umgehungen schließen — Lautstärke und Power-Taste
 
-[Arisely](/de/blog/arisely-alarm-clock-for-heavy-sleepers) ist ein kostenloser Android-Wecker, der genau um diese Lösungen herum gebaut ist: zeitgenaue Alarme, die bei gesperrtem oder geschlossenem Zustand auslösen, volle Wecker-Kanal-Lautstärke mit Extra-laut-Boost, 10 Aufwach-Missionen (darunter kamerageprüfte Liegestütze), die das Ein-Tipp-Aus entfernen, und von dir steuerbare Schlummerlimits. Kein Konto, und das Werbebanner der Gratisversion erscheint nie auf dem Klingel-Bildschirm.
+Einer halbschlafenden Hand bleiben zwei Tricks: die Lautstärke herunterdrehen oder die Power-Taste drücken, um das Telefon schlafen zu legen. Zwei optionale Wächter, nur aktiv während der Alarm tatsächlich klingelt, schließen beide:
+
+- **Lautstärke beim Klingeln sperren** schnellt die Alarmlautstärke wieder hoch, wenn du sie herunterdrehst, sodass du dich nicht still zurück in den Schlaf stummschalten kannst.
+- **Power-off-Schutz** schaltet den Bildschirm sofort wieder ein, wenn die Power-Taste ihn schlafen legt, und schließt — sobald die Bedienungshilfen-Berechtigung erteilt ist — das Lang-drücken-Power-Menü, wenn es erscheint, sodass der Alarm sich so nicht ausschalten lässt.
+
+Beide sind standardmäßig aus. (Ein erzwungenes Hardware-Herunterfahren — die Taste gedrückt halten — kann keine App blockieren, und das ist Absicht.)
+
+## Der einfachste Weg, alle fünf umzusetzen
+
+[Arisely](/de/blog/arisely-alarm-clock-for-heavy-sleepers) ist ein kostenloser Android-Wecker, der genau um diese Lösungen herum gebaut ist: zeitgenaue Alarme, die bei gesperrtem oder geschlossenem Zustand auslösen, volle Wecker-Kanal-Lautstärke mit Extra-laut-Boost, 10 Aufwach-Missionen (darunter kamerageprüfte Liegestütze), die das Ein-Tipp-Aus entfernen, von dir steuerbare Schlummerlimits sowie optionale Lautstärke-Sperr- und Power-off-Wächter, die die letzten Umgehungen während des Klingelns schließen. Kein Konto, und das Werbebanner der Gratisversion erscheint nie auf dem Klingel-Bildschirm.
 
 [**Arisely bei Google Play herunterladen**](https://play.google.com/store/apps/details?id=com.arisely&referrer=utm_source%3Dapplass%26utm_medium%3Dblog%26utm_campaign%3Dstop-sleeping-through-alarm%26utm_content%3Dhow-to-stop-sleeping-through-your-alarm-android)
 
