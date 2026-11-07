@@ -1,0 +1,111 @@
+---
+title: "Video bei ausgeschaltetem Bildschirm abspielen (Android)"
+description: "Die meisten Video-Apps stoppen, sobald Sie das Telefon sperren. Warum das so ist, welche Apps eine eigene Hintergrund- oder Nur-Audio-Funktion haben und wie jedes Video — Vorlesungen, Kurse, Streams — bei schwarzem Bildschirm weiterläuft."
+date: "2026-10-24"
+dateModified: "2026-10-24"
+author: "AppLass-Team"
+excerpt: "Sperren Sie das Telefon, stoppen die meisten Videos. Prüfen Sie zuerst die Hintergrund- oder Nur-Audio-Option der App; fehlt sie, lassen Sie die App hinter einem schwarzen Bildschirm-Overlay offen — das Video läuft weiter, der Bildschirm zeigt nichts."
+tags: ["android", "bildschirm aus", "hintergrundwiedergabe", "vorlesungen", "akku"]
+category: "Android-Apps"
+keywords: "video bei ausgeschaltetem bildschirm abspielen android, video weiterlaufen lassen bildschirm aus, youtube bildschirm aus android, video im hintergrund abspielen android, vlc als audio abspielen, vorlesung hören bildschirm aus, screenveil"
+breadcrumbName: "Video bei Bildschirm aus"
+sidebarApps:
+  - screenveil
+featured: false
+faqs:
+  - question: "Wie spiele ich auf Android ein Video bei ausgeschaltetem Bildschirm ab?"
+    answer: "Prüfen Sie zuerst, ob die App Hintergrundwiedergabe oder einen Nur-Audio-Modus hat. Falls nicht, lassen Sie die App geöffnet und decken Sie den Bildschirm mit einem schwarzen Overlay wie ScreenVeil ab. Für Android ist die App weiter im Vordergrund, das Video läuft also weiter, während der Bildschirm reines Schwarz zeigt und Berührungen ignoriert."
+  - question: "Warum stoppt mein Video, wenn ich das Telefon sperre?"
+    answer: "Beim Sperren schiebt Android die Video-App in den Hintergrund. Viele Video-, Browser- und Kurs-Apps pausieren dann die Wiedergabe, sofern sie nicht für Hintergrundwiedergabe gebaut sind. Das Video ist nicht kaputt — die App hält einfach an, wenn sie nicht mehr im Vordergrund ist."
+  - question: "Kann VLC Videos bei ausgeschaltetem Bildschirm abspielen?"
+    answer: "VLC für Android kann den Ton im Hintergrund weiterspielen, und Sie können ein Video in VLC öffnen oder teilen und es als Audio abspielen. Das klappt bei Dateien und Links, die VLC öffnen kann, nicht bei Videos innerhalb anderer Apps wie Kursplattformen."
+  - question: "Spart ein schwarzes Bildschirm-Overlay Akku?"
+    answer: "Auf AMOLED- und OLED-Bildschirmen ja: Ein rein schwarzes Pixel ist abgeschaltet, das Display verbraucht also weniger als beim Anzeigen des Videos. Auf LCD-Bildschirmen bleibt die Hintergrundbeleuchtung an, die Ersparnis ist gering. Das Video wird weiter gestreamt, mobile Daten spart es also nicht."
+  - question: "Pausieren Berührungen in der Tasche das Video?"
+    answer: "Nicht mit ScreenVeil. Solange der schwarze Bildschirm aktiv ist, sind Berührungen blockiert, bis Sie bewusst entsperren. Tasche oder Ärmel können das Video also weder pausieren noch überspringen noch schließen."
+---
+
+import ScreenVeilCTA from "@/components/blog/ScreenVeilCTA.astro";
+
+**Sperren Sie das Telefon, hören die meisten Videos auf zu spielen.** Android schiebt die App dann in den
+Hintergrund, und viele Video-, Browser- und Kurs-Apps pausieren dort. Prüfen Sie zuerst, ob Ihre App eine
+eigene Hintergrund- oder Nur-Audio-Option hat. Falls nicht, lassen Sie die App geöffnet und schalten Sie
+stattdessen den Bildschirm schwarz: Das Video läuft weiter, Sie sehen nichts, und Berührungen werden
+ignoriert.
+
+## Warum Videos stoppen, wenn der Bildschirm ausgeht
+
+Wenn Sie die Ein-/Aus-Taste drücken, schiebt Android alles, was auf dem Bildschirm ist, in den Hintergrund.
+Manche Apps spielen dort weiter, weil ihre Entwickler Hintergrundwiedergabe eingebaut haben. Viele nicht,
+weil sie zum Anschauen gemacht sind, nicht zum Zuhören. Nutzer der Android-App von Plex etwa wünschen sich
+im Plex-Forum eine Videowiedergabe bei ausgeschaltetem Bildschirm, die die App nicht bietet
+([Plex-Forum](https://forums.plex.tv/t/screen-off-video-play-on-android-app/905303)).
+
+Am Schreibtisch ist das egal. Beim Spaziergang, im Bus, beim Kochen oder im Fitnessstudio nicht — genau dann,
+wenn Sie eine Vorlesung, einen Vortrag oder ein langes Video lieber hören als sehen möchten.
+
+## Schritt 1: Die Optionen der App prüfen
+
+| App | Eingebaute Option |
+|---|---|
+| YouTube | Hintergrundwiedergabe mit YouTube Premium |
+| VLC | Spielt Ton im Hintergrund; ein Video öffnen oder teilen und als Audio abspielen ([Trusted Reviews](https://www.trustedreviews.com/news/use-trick-play-youtube-audio-phone-screen-off-3966982)) |
+| Twitch | Einstellung für Hintergrundton und „Nur Audio“ in der App |
+| Kurs- und Vorlesungs-Apps | Unterschiedlich; suchen Sie nach Hintergrundwiedergabe, Nur-Audio oder Audio zum Herunterladen |
+| Mobile Browser | Pausieren meist beim Sperren |
+
+Hat Ihre App eine dieser Optionen, nutzen Sie sie. Speziell für YouTube siehe
+[YouTube-Hintergrundwiedergabe 2026](/de/blog/youtube-background-play-2026-workaround).
+
+## Schritt 2: Jede App mit schwarzem Bildschirm weiterlaufen lassen
+
+Hat die App keine Hintergrund-Option, sperren Sie das Telefon nicht. Ein schwarzes Bildschirm-Overlay legt
+eine rein schwarze Ebene über den Bildschirm, während die App darunter geöffnet bleibt. Für Android ist die
+Video-App weiter im Vordergrund, also spielt sie weiter. Mit [ScreenVeil](/de/apps/screenveil):
+
+1. Installieren Sie ScreenVeil und tippen Sie auf **Start Service**.
+2. Erlauben Sie **„Über anderen Apps anzeigen“**, wenn Android danach fragt. Es ist die einzige
+   Berechtigung, die Sie erteilen.
+3. Öffnen Sie Ihr Video und starten Sie die Wiedergabe.
+4. Tippen Sie auf die schwebende Schaltfläche von ScreenVeil oder auf die Kachel in den
+   Schnelleinstellungen. Der Bildschirm wird schwarz, das Video läuft weiter.
+5. Zum Zurückkehren berühren Sie den Bildschirm und tippen auf Entsperren.
+
+Solange der Bildschirm schwarz ist, sind Berührungen blockiert — Ihre Tasche kann nichts pausieren oder
+überspringen. Der Taschenmodus kann den Bildschirm außerdem von selbst schwarz schalten, wenn das Telefon in
+die Tasche wandert.
+
+<ScreenVeilCTA lang="de" />
+
+## Akku und Daten: Was Sie erwarten können
+
+| Methode | Displayleistung | Mobile Daten |
+|---|---|---|
+| Normal schauen | Am höchsten | Volles Video |
+| Nur-Audio-Modus der App | Bildschirm kann aus sein | Deutlich weniger |
+| Schwarzes Overlay (AMOLED/OLED) | Deutlich weniger | Volles Video |
+| Schwarzes Overlay (LCD) | Kleine Ersparnis | Volles Video |
+
+Auf **AMOLED- und OLED**-Bildschirmen ist ein rein schwarzes Pixel abgeschaltet, ein schwarzes Overlay
+verbraucht also weit weniger Displayleistung als ein leuchtendes Video. Auf **LCD**-Bildschirmen bleibt die
+Hintergrundbeleuchtung an. Details unter
+[Spart der Dark Mode Akku auf AMOLED?](/de/blog/does-dark-mode-save-battery-amoled)
+
+## Beispiel: aufgezeichnete Vorlesungen hören
+
+Vorlesungen sind der häufigste Grund für diese Frage: Kurs-Apps und Uni-Portale spielen selten im
+Hintergrund, aber ein zweites Hören der Vorlesung von letzter Woche passt perfekt in den Pendelweg.
+
+- **Etwas schneller abspielen.** Viele Player erlauben 1,25× oder 1,5×; Sprache bleibt verständlich.
+- **Ton zur Wiederholung, nicht beim ersten Kontakt.** Vorlesungen mit vielen Folien, Formeln oder Code
+  schauen Sie besser einmal an und hören sie dann erneut.
+- **Zeitstempel notieren.** Wenn etwas klickt, notieren Sie die Zeit, um die Folie später zu finden.
+- **Kopfhörer in der Öffentlichkeit.**
+
+## Fazit
+
+Hat eine App Hintergrundwiedergabe oder einen Nur-Audio-Modus, nutzen Sie ihn. Falls nicht, lassen Sie die
+App geöffnet und schalten Sie stattdessen den Bildschirm schwarz: Das Video läuft weiter, nichts leuchtet,
+und versehentliche Berührungen können es nicht stoppen.
+
+<ScreenVeilCTA lang="de" />
