@@ -80,4 +80,4 @@ Both are off by default. (A forced hardware shutdown — holding the button down
 
 ---
 
-**Related:** [Why your Android alarm doesn't go off](/blog/why-android-alarms-dont-go-off-exact-alarms) · [All articles](/blog)
+**Related:** [Why your Android alarm doesn't go off](/blog/why-android-alarms-dont-go-off-exact-alarms) · [Sleep inertia: why you wake up groggy](/blog/sleep-inertia-why-you-wake-up-groggy) · [All articles](/blog)
