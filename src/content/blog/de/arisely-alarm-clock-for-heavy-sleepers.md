@@ -15,6 +15,7 @@ tags:
   - aufwachen
 sidebarApps:
   - arisely
+thumbnail: "../../../assets/blogs/arisely-alarm-clock-for-heavy-sleepers.png"
 faqs:
   - question: "Was ist Arisely?"
     answer: "Arisely ist ein kostenloser Android-Wecker für Tiefschläfer. Statt einer einzigen Aus-Taste klingelt er in voller Lautstärke weiter, bis du eine selbst gewählte Aufwach-Mission abschließt — etwa Mathe lösen, einen Code neu eintippen, Schritte gehen oder kamerageprüfte Liegestütze machen. Entwickelt wird er von Applass Android Apps."

@@ -15,6 +15,7 @@ tags:
   - arisely
 sidebarApps:
   - arisely
+thumbnail: "../../../assets/blogs/why-android-alarms-dont-go-off-exact-alarms.png"
 faqs:
   - question: "Pourquoi mon réveil Android n'a-t-il pas sonné ?"
     answer: "Le plus souvent, l'optimisation de batterie ou le mode Doze d'Android a retardé l'application qui l'a planifié. Les alarmes définies comme un simple travail en arrière-plan peuvent être regroupées et différées pour économiser l'énergie, elles sonnent donc en retard ou sont ignorées. Les alarmes planifiées comme alarmes exactes en sont exemptées et se déclenchent à l'heure précise réglée, même en Doze."

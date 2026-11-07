@@ -15,6 +15,7 @@ tags:
   - arisely
 sidebarApps:
   - arisely
+thumbnail: "../../../assets/blogs/alarm-clock-with-missions-to-turn-off.png"
 faqs:
   - question: "Qu'est-ce qu'un réveil à missions ?"
     answer: "Un réveil à mission est une alarme qui ne s'éteint pas tant que vous n'avez pas accompli une tâche — résoudre un calcul, retaper un code, faire des pas, scanner un code-barres ou faire des pompes. Comme la tâche exige une vraie attention, vous ne pouvez pas l'éteindre par réflexe à moitié endormi, ce qui lui permet de vaincre l'habitude de la répétition."
@@ -63,6 +64,8 @@ Adaptez la mission à votre sommeil. Un calcul rapide peut suffire une nuit lég
 ## Enchaîner plusieurs missions
 
 Une mission suffit souvent, mais une tâche faite cent fois peut devenir son propre réflexe à moitié endormi. Arisely permet à une alarme d'exécuter plusieurs missions dans l'ordre — par exemple **Calcul → QR / Code-barres → Pompes** —, chaque étape avec sa propre difficulté et son nombre de tours, et l'alarme ne s'éteint qu'une fois toute la chaîne terminée. Une tâche cognitive pour démarrer le cerveau, puis une tâche physique pour vous mettre debout, est bien plus difficile à franchir en dormant que l'une ou l'autre seule.
+
+![Une chaîne de missions Arisely en trois étapes dans une seule alarme : étape 1 un calcul pour réveiller le cerveau, étape 2 un scan de QR ou de code-barres qui vous fait traverser la pièce, étape 3 des pompes comptées par la caméra, après quoi l'alarme est désactivée.](../../../assets/blogs/arisely-mission-chain.png)
 
 Une mission seule reste gratuite (un tour, en Facile ou Moyen) ; enchaîner deux missions ou plus est une fonction Pro. Les alarmes déjà réglées fonctionnent exactement comme avant — elles deviennent simplement une chaîne à une étape, donc rien ne change tant que vous n'y ajoutez rien.
 

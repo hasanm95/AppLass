@@ -15,6 +15,7 @@ tags:
   - arisely
 sidebarApps:
   - arisely
+thumbnail: "../../../assets/blogs/alarm-clock-with-missions-to-turn-off.png"
 faqs:
   - question: "Was ist ein Wecker mit Missionen?"
     answer: "Ein Missions-Wecker ist ein Alarm, der sich erst abschalten lässt, wenn du eine Aufgabe erledigst — etwa eine Rechenaufgabe lösen, einen Code neu eintippen, Schritte gehen, einen Barcode scannen oder Liegestütze machen. Weil die Aufgabe echte Aufmerksamkeit verlangt, kannst du sie halb schlafend nicht reflexartig abstellen — so besiegt er die Schlummer-Gewohnheit."
@@ -63,6 +64,8 @@ Passe die Mission an deinen Schlaf an. Eine schnelle Rechenaufgabe reicht vielle
 ## Mehrere Missionen verketten
 
 Eine Mission reicht oft, aber eine Aufgabe, die du hundertmal gemacht hast, wird selbst zum halbschlafenden Reflex. Arisely lässt einen Alarm mehrere Missionen nacheinander ausführen — etwa **Mathe → QR / Barcode → Liegestütze** —, jede Stufe mit eigener Schwierigkeit und Rundenzahl, und der Alarm verstummt erst, wenn du die ganze Kette geschafft hast. Eine kognitive Aufgabe, um den Kopf hochzufahren, dann eine körperliche, um auf die Beine zu kommen, ist deutlich schwerer zu verschlafen als jede allein.
+
+![Eine dreistufige Arisely-Missionskette in einem einzigen Alarm: Schritt 1 eine Mathe-Aufgabe, um den Kopf wachzumachen, Schritt 2 ein QR- oder Barcode-Scan, der dich quer durchs Zimmer gehen lässt, Schritt 3 von der Kamera gezählte Liegestütze, danach wird der Alarm ausgeschaltet.](../../../assets/blogs/arisely-mission-chain.png)
 
 Eine einzelne Mission bleibt kostenlos (eine Runde, auf Leicht oder Mittel); zwei oder mehr Missionen zu verketten ist eine Pro-Funktion. Bereits gesetzte Alarme funktionieren genau wie zuvor — sie werden einfach zu einer Ein-Schritt-Kette, sodass sich nichts ändert, solange du nichts hinzufügst.
 

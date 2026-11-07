@@ -15,6 +15,7 @@ tags:
   - wake up
 sidebarApps:
   - arisely
+thumbnail: "../../../assets/blogs/arisely-alarm-clock-for-heavy-sleepers.png"
 faqs:
   - question: "What is Arisely?"
     answer: "Arisely is a free Android alarm clock built for heavy sleepers. Instead of a single off button, it keeps ringing at full volume until you complete a wake-up mission you choose, such as solving math, retyping a code, taking steps, or doing camera-verified push-ups. It is made by Applass Android Apps."

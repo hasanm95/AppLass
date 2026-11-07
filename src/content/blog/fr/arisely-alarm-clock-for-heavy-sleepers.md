@@ -15,6 +15,7 @@ tags:
   - se réveiller
 sidebarApps:
   - arisely
+thumbnail: "../../../assets/blogs/arisely-alarm-clock-for-heavy-sleepers.png"
 faqs:
   - question: "Qu'est-ce qu'Arisely ?"
     answer: "Arisely est un réveil Android gratuit conçu pour les gros dormeurs. Au lieu d'un simple bouton d'arrêt, il continue de sonner à plein volume jusqu'à ce que vous terminiez une mission de réveil de votre choix : résoudre un calcul, retaper un code, faire des pas ou des pompes vérifiées par la caméra. Il est développé par Applass Android Apps."

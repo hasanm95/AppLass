@@ -15,6 +15,7 @@ tags:
   - arisely
 sidebarApps:
   - arisely
+thumbnail: "../../../assets/blogs/alarm-clock-with-missions-to-turn-off.png"
 faqs:
   - question: "What is a mission alarm clock?"
     answer: "A mission alarm is an alarm that won't turn off until you complete a task — such as solving a math problem, retyping a code, taking steps, scanning a barcode, or doing push-ups. Because the task requires real attention, you can't dismiss it by reflex while half-asleep, which is how it defeats the snooze habit."
@@ -63,6 +64,8 @@ Match the mission to your sleep. A quick math problem may be enough on a light n
 ## Chain several missions together
 
 One mission is often enough, but a single task you've done a hundred times can turn into its own half-asleep reflex. Arisely lets one alarm run several missions in order — say **Math → QR / Barcode → Push-Up** — each step with its own difficulty and number of rounds, and the alarm only dismisses once you've cleared the whole chain. A cognitive task to boot your brain, then a physical one to get you on your feet, is far harder to sleepwalk through than either alone.
+
+![A three-step Arisely mission chain running in a single alarm: step 1 a Math problem to wake the brain, step 2 a QR or barcode scan that makes you walk across the room, step 3 camera-counted push-ups, after which the alarm is dismissed.](../../../assets/blogs/arisely-mission-chain.png)
 
 A single mission stays free (one round, on Easy or Medium); chaining two or more missions is a Pro feature. Alarms you already set keep working exactly as before — they simply become a one-step chain, so nothing changes unless you add to it.
 

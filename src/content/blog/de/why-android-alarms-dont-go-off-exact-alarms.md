@@ -15,6 +15,7 @@ tags:
   - arisely
 sidebarApps:
   - arisely
+thumbnail: "../../../assets/blogs/why-android-alarms-dont-go-off-exact-alarms.png"
 faqs:
   - question: "Warum ist mein Android-Wecker nicht losgegangen?"
     answer: "Meist hat Androids Akku-Optimierung oder der Doze-Modus die App verzögert, die ihn geplant hat. Als gewöhnliche Hintergrundarbeit gesetzte Alarme können gebündelt und aufgeschoben werden, um Strom zu sparen, also gehen sie zu spät los oder werden übersprungen. Als exakte Alarme geplante Alarme sind ausgenommen und lösen zur genau eingestellten Zeit aus, auch im Doze."

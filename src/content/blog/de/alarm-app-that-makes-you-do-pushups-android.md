@@ -15,6 +15,7 @@ tags:
   - arisely
 sidebarApps:
   - arisely
+thumbnail: "../../../assets/blogs/alarm-app-that-makes-you-do-pushups-android.png"
 faqs:
   - question: "Gibt es eine Wecker-App, die einen Liegestütze machen lässt?"
     answer: "Ja. Arisely für Android hat eine KI-Liegestütz-Mission: Du legst eine Anzahl Liegestütze fest, und der Alarm klingelt weiter, bis du sie vor der Kamera deines Telefons abgeschlossen hast. Arisely prüft deine Form in Echtzeit, du kannst die Wiederholungen also weder vortäuschen noch wegtippen."

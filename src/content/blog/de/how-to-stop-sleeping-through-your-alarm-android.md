@@ -15,6 +15,7 @@ tags:
   - arisely
 sidebarApps:
   - arisely
+thumbnail: "../../../assets/blogs/how-to-stop-sleeping-through-your-alarm-android.png"
 faqs:
   - question: "Warum verschlafe ich ständig meinen Wecker?"
     answer: "Meist kommen drei Dinge zusammen: Schlaftrunkenheit (im Tiefschlaf ist dein Gehirn am benommensten und kann einen Alarm abstellen, ohne dass du dich erinnerst), die Ein-Tipp-Aus-Taste, die deine halb schlafende Hand reflexartig findet, und Androids Akku-Optimierung, die den Alarm verzögert oder stummschaltet. Alle drei zu beheben — nicht nur einen lauteren Ton zu kaufen — beendet das Problem."
