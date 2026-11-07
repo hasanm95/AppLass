@@ -1,0 +1,88 @@
+---
+title: "Twitch Background Play on Android: Listen With Screen Off"
+description: "Twitch streams stop or keep playing depending on one setting. Here's how to keep a stream's audio going with the screen off on Android, and what to do when it still stops."
+date: "2026-10-24"
+dateModified: "2026-10-24"
+author: "AppLass Team"
+excerpt: "Check the Twitch app's background audio setting and its Audio Only option first. If the stream still stops when you lock the phone, keep it open behind a black screen that blocks touches."
+tags: ["android", "twitch", "screen off", "background audio", "battery"]
+category: "Android Apps"
+keywords: "twitch background play android, twitch audio only screen off, twitch screen off android, twitch audio only mode, listen to twitch in background, twitch background audio, keep twitch playing when screen off, screenveil"
+breadcrumbName: "Twitch Background Play"
+sidebarApps:
+  - screenveil
+featured: false
+faqs:
+  - question: "How do I enable Twitch background play on Android?"
+    answer: "Yes, in the Twitch app. Look in your account preferences for the setting that controls background audio and set it to keep playing. In a stream's player settings there is also an Audio Only option that drops the video. Menu names change between app versions."
+  - question: "Why does my Twitch stream stop when I lock my phone?"
+    answer: "Usually because background audio is turned off in the Twitch app, or because you are watching in a mobile browser, which normally pauses when the screen locks. Battery savers on some phones can also stop apps in the background."
+  - question: "How do I keep Twitch playing if the background setting doesn't work?"
+    answer: "Keep the stream open and black out the screen instead of locking it. A black screen overlay such as ScreenVeil covers the screen with pure black while the stream keeps playing underneath, and blocks touches until you unlock on purpose."
+  - question: "Does Audio Only mode save data?"
+    answer: "Yes. Audio Only skips the video, so it uses much less mobile data than watching. A black screen overlay saves screen power on AMOLED phones, but the video is still streamed, so it doesn't save data."
+  - question: "Can I still read chat with the screen black?"
+    answer: "Not while the screen is black. Unlock to check chat, then black the screen out again with the floating button or the Quick Settings tile."
+---
+
+import ScreenVeilCTA from "@/components/blog/ScreenVeilCTA.astro";
+
+**Start with the Twitch app's own settings.** Turn on background audio in your preferences, and use
+**Audio Only** in the player if you just want the sound. If the stream still stops when you lock the
+phone — or you're watching in a browser — keep it open behind a black screen that blocks touches.
+
+## Why streams stop when the screen goes off
+
+When you lock an Android phone, the app on screen moves to the background. What happens next depends
+on the app:
+
+- **The Twitch app** keeps playing only if its background audio setting allows it.
+- **A mobile browser** usually pauses video as soon as the screen locks.
+- **Battery savers** on some Samsung, Xiaomi and OnePlus phones can stop apps in the background.
+
+## Step 1: Turn on background audio and Audio Only in Twitch
+
+1. Open Twitch, tap your profile picture and go to your **account settings → preferences**.
+2. Find the setting for **background audio** and set it to keep playing (always, or with headphones).
+3. In a stream, open the player's **settings (gear)** and choose **Audio Only** if you don't need the
+   picture. It also uses much less mobile data.
+
+Menu names move between app versions, so look for the closest match if yours differ.
+
+## Step 2: If it still stops, black out the screen instead
+
+If the stream still pauses, or you watch in a browser, don't lock the phone. Keep the stream open and
+cover the screen with black. With [ScreenVeil](/apps/screenveil):
+
+1. Install ScreenVeil, tap **Start Service** and allow **"display over other apps"**. It is the only
+   permission you grant.
+2. Open the stream and let it play.
+3. Tap ScreenVeil's floating button or its Quick Settings tile. The screen turns black; the stream keeps
+   playing.
+4. To check chat, touch the screen and tap unlock.
+
+Touches are blocked while the screen is black, so your pocket can't tap a clip, an ad or the back
+button. Pocket mode can also turn the screen black on its own when the phone goes into your pocket.
+
+<ScreenVeilCTA />
+
+## Battery and data
+
+| Method | Screen power | Mobile data |
+|---|---|---|
+| Watching normally | Highest | Highest |
+| Audio Only in Twitch | Screen can be off | Much lower |
+| Black screen overlay (AMOLED) | Much lower | Same as watching |
+| Black screen overlay (LCD) | Small saving | Same as watching |
+
+On AMOLED and OLED screens a pure black pixel is switched off, so a black overlay uses far less screen
+power than a lit stream. On LCD the backlight stays on. For long streams on mobile data, Audio Only is
+the better choice when it works for you.
+
+## The bottom line
+
+Turn on background audio and use Audio Only in the Twitch app first. When that isn't enough, keep the
+stream open behind a black screen: the audio keeps going, nothing lights up, and stray touches can't
+interrupt it. For YouTube, see [YouTube background play in 2026](/blog/youtube-background-play-2026-workaround).
+
+<ScreenVeilCTA />
