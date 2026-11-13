@@ -14,7 +14,10 @@ interface Props {
   availableLocales?: readonly string[];
 }
 
-const { isDark, currentLang, availableLocales = i18nConfig.locales } = Astro.props;
+// Default to full-UI locales: a static page (home, apps, docs) exists only in
+// those, so offering a content-only locale like `es` here would link to a 404.
+// Blog posts pass their real translated set explicitly, which still includes es.
+const { isDark, currentLang, availableLocales = i18nConfig.uiLocales } = Astro.props;
 
 const LOCALES = i18nConfig.locales
   .filter((code) => availableLocales.includes(code))

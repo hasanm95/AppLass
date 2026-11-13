@@ -4,7 +4,7 @@ import { docsRegistry } from "@/lib/docs-registry";
 import DocsArticlePage from "@/page-templates/DocsArticlePage.astro";
 
 export async function getStaticPaths() {
-  const nonDefaultLocales = i18nConfig.locales.filter(
+  const nonDefaultLocales = i18nConfig.uiLocales.filter(
     (l) => l !== i18nConfig.defaultLocale
   );
   

@@ -11,7 +11,7 @@ import { getBlogPostBySlug, localesForPost } from "@/lib/blog";
 import { i18nConfig } from "@/i18n/config";
 import { render } from "astro:content";
 import { ArrowLeft } from "lucide-react";
-import { localePath } from "@/i18n/utils";
+import { localePath, chromePath } from "@/i18n/utils";
 
 interface Props {
   lang: typeof i18nConfig.locales[number];
@@ -83,7 +83,7 @@ const ogImageUrl = post.ogImage || imageUrl;
 const absolute = (path: string) => `${SITE}${localePath(lang, path)}`.replace(/\/$/, "");
 
 const breadcrumbs = [
-  { name: localize("Home"), item: absolute("/") },
+  { name: localize("Home"), item: `${SITE}${chromePath(lang, "/")}`.replace(/\/$/, "") },
   { name: localize("Blog"), item: absolute("/blog") },
   { name: post.breadcrumbName || post.title, item: absolute(`/blog/${slug}`) }
 ];

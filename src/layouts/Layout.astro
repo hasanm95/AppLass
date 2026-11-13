@@ -1,5 +1,5 @@
 ---
-import { getLangFromUrl, localePath } from '../i18n/utils';
+import { getLangFromUrl, localePath, chromePath } from '../i18n/utils';
 import '../globals.css';
 import '../fonts.css';
 import '../tw-animate.css';
@@ -45,7 +45,10 @@ const {
   ogType = "website",
   articleMeta,
   breadcrumbs,
-  availableLocales = i18nConfig.locales,
+  // Static pages exist only for the fully-translated UI locales, so default
+  // hreflang to those. Content pages (blog, docs, compare, legal) pass their
+  // real translated set, which may include content-only locales like `es`.
+  availableLocales = i18nConfig.uiLocales,
 } = Astro.props;
 
 // Get language from URL if not explicitly provided
@@ -88,7 +91,7 @@ const alternateOgLocales = availableLocales
 const defaultBreadcrumbs = [
   {
     name: localize("Home"),
-    item: `https://applass.com${localePath(documentLang, '/')}`
+    item: `https://applass.com${chromePath(documentLang, '/')}`
   }
 ];
 

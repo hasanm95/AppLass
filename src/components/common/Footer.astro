@@ -1,5 +1,5 @@
 ---
-import { getLangFromUrl, localePath } from "@/i18n/utils";
+import { getLangFromUrl, chromePath } from "@/i18n/utils";
 import { localize } from "@/i18n/localize";
 import { Image } from 'astro:assets';
 import appLogoImg from '@/assets/logo.png';
@@ -18,22 +18,22 @@ const isDark = variant === "dark";
 function getFooterLinks(lang: string) {
   return {
     solutions: [
-      { slug: "fomogen", label: localize("Fomogen"), href: localePath(lang, '/apps/fomogen') },
-      { slug: "mindfulGuard", label: localize("Mindful Guard"), href: localePath(lang, '/apps/mindful-guard') },
-      { slug: "screenveil", label: localize("ScreenVeil"), href: localePath(lang, '/apps/screenveil') },
-      { slug: "arisely", label: "Arisely", href: localePath(lang, '/apps/arisely') },
+      { slug: "fomogen", label: localize("Fomogen"), href: chromePath(lang, '/apps/fomogen') },
+      { slug: "mindfulGuard", label: localize("Mindful Guard"), href: chromePath(lang, '/apps/mindful-guard') },
+      { slug: "screenveil", label: localize("ScreenVeil"), href: chromePath(lang, '/apps/screenveil') },
+      { slug: "arisely", label: "Arisely", href: chromePath(lang, '/apps/arisely') },
     ],
     resources: [
-      { slug: "ourEcosystem", label: localize("Our Ecosystem"), href: localePath(lang, '/apps') },
-      { slug: "documentation", label: localize("Documentation"), href: localePath(lang, '/docs') },
-      { slug: "digitalWellness", label: localize("Digital Wellness 2026"), href: localePath(lang, '/digital-wellness-2026-guide') },
-      { slug: "ecommercePerformance", label: localize("Ecommerce Performance 2026"), href: localePath(lang, '/ecommerce-performance-2026-benchmarks') },
-      { slug: "theMethodology", label: localize("The Methodology"), href: localePath(lang, '/about') },
-      { slug: "theLogicLab", label: localize("The Logic Lab (Blog)"), href: localePath(lang, '/blog') },
+      { slug: "ourEcosystem", label: localize("Our Ecosystem"), href: chromePath(lang, '/apps') },
+      { slug: "documentation", label: localize("Documentation"), href: chromePath(lang, '/docs') },
+      { slug: "digitalWellness", label: localize("Digital Wellness 2026"), href: chromePath(lang, '/digital-wellness-2026-guide') },
+      { slug: "ecommercePerformance", label: localize("Ecommerce Performance 2026"), href: chromePath(lang, '/ecommerce-performance-2026-benchmarks') },
+      { slug: "theMethodology", label: localize("The Methodology"), href: chromePath(lang, '/about') },
+      { slug: "theLogicLab", label: localize("The Logic Lab (Blog)"), href: chromePath(lang, '/blog') },
     ],
     legal: [
-      { slug: "privacyPolicy", label: localize("Privacy Policy"), href: localePath(lang, '/legal/fomogen/privacy') },
-      { slug: "termsOfService", label: localize("Terms of Service"), href: localePath(lang, '/legal/fomogen/terms') },
+      { slug: "privacyPolicy", label: localize("Privacy Policy"), href: chromePath(lang, '/legal/fomogen/privacy') },
+      { slug: "termsOfService", label: localize("Terms of Service"), href: chromePath(lang, '/legal/fomogen/terms') },
     ],
   };
 }
@@ -54,7 +54,7 @@ const footerLinks = getFooterLinks(currentLang);
       {/* Brand column */}
       <div class="md:col-span-1">
         <a
-          href={localePath(currentLang, '/')}
+          href={chromePath(currentLang, '/')}
           class={clsx(
             "inline-flex items-center gap-2 text-lg font-semibold",
             isDark ? "text-white" : "text-slate-900"

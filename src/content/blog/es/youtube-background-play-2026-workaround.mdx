@@ -1,0 +1,204 @@
+---
+title: "¿YouTube en segundo plano no funciona en 2026? El truco de Firefox y lo que todavía funciona"
+description: "YouTube bloqueó la reproducción en segundo plano gratuita en los navegadores móviles en enero de 2026. Por qué el truco del complemento de Firefox ahora suele fallar, qué sigue funcionando gratis y qué incluye Premium Lite."
+date: "2026-04-11"
+dateModified: "2026-11-13"
+category: "Android"
+author: "Equipo AppLass"
+excerpt: "En enero de 2026 Google confirmó que la reproducción en segundo plano en navegadores móviles es solo para Premium, lo que rompió los trucos de Brave, Samsung Internet y Firefox. El complemento de Firefox aún funciona en algunas cuentas, pero no es fiable. Las opciones gratuitas que siguen funcionando son NewPipe y mantener el vídeo en primer plano con la pantalla en negro."
+thumbnail: "../../../assets/blogs/youtube-background-play-workaround.png"
+keywords: "youtube en segundo plano no funciona, youtube segundo plano firefox android, reproducir youtube en segundo plano android 2026, youtube sin premium segundo plano, escuchar youtube con la pantalla apagada"
+tags: ["Android", "YouTube", "Firefox", "Batería"]
+featured: true
+breadcrumbName: "YouTube en segundo plano 2026"
+sidebarApps:
+  - screenveil
+faqs:
+  - question: "¿Por qué dejó de funcionar la reproducción en segundo plano de YouTube en Firefox para Android?"
+    answer: "A finales de enero de 2026 YouTube empezó a detener la reproducción en las cuentas sin Premium cuando un navegador móvil pierde el foco, y Google confirmó que la reproducción en segundo plano está pensada como exclusiva de Premium. El complemento Video Background Play Fix de Firefox funciona ocultando la señal de visibilidad del navegador, así que todavía ayuda en algunas cuentas, pero YouTube puede detener la reproducción igualmente."
+  - question: "¿El complemento Video Background Play Fix sigue funcionando en 2026?"
+    answer: "A veces. El complemento (versión 1.8.1, actualizada por última vez en noviembre de 2024) bloquea las API de visibilidad de página y de pantalla completa en Firefox para Android. Desde el cambio de YouTube de enero de 2026, los usuarios informan de que funciona durante días o semanas y luego deja de hacerlo sin aviso. Tómatelo como un extra, no como un método fiable."
+  - question: "¿La reproducción en segundo plano de YouTube sigue funcionando en Brave o Samsung Internet?"
+    answer: "No de forma fiable en cuentas gratuitas. Los informes de usuarios de Brave, Samsung Internet, Vivaldi y Edge empezaron en enero de 2026, y Google confirmó que había actualizado la experiencia para que la reproducción en segundo plano sea coherente con su política de exclusividad para Premium en todas las plataformas. Los ajustes del navegador y los trucos de «sitio de escritorio» ya no lo sortean."
+  - question: "¿YouTube Premium Lite incluye reproducción en segundo plano?"
+    answer: "Sí, desde finales de febrero de 2026. YouTube añadió la reproducción en segundo plano y las descargas a Premium Lite sin cambiar el precio, 7,99 $ al mes en Estados Unidos. Ambas funciones excluyen los vídeos musicales y los Shorts, y los anuncios siguen apareciendo en contenido musical. El Premium completo también cubre la música."
+  - question: "¿Cuál es la forma gratuita más fácil de escuchar YouTube con la pantalla a oscuras?"
+    answer: "Mantén el vídeo reproduciéndose en la app de YouTube y cubre la pantalla con una capa negra como ScreenVeil. La app nunca pasa a segundo plano, así que la reproducción no se interrumpe, y los toques quedan bloqueados para que el bolsillo no la pause. La pantalla técnicamente sigue encendida, solo que mostrando negro."
+  - question: "¿NewPipe sigue funcionando en 2026?"
+    answer: "Sí. NewPipe es un cliente de YouTube gratuito y de código abierto disponible en F-Droid que admite reproducción en segundo plano real y no necesita cuenta de Google. Como no usa el reproductor oficial de YouTube, de vez en cuando se rompe tras algún cambio de YouTube y se arregla en una actualización posterior. No puede sincronizar tus suscripciones ni tu historial de YouTube."
+---
+
+import ScreenVeilCTA from "@/components/blog/ScreenVeilCTA.astro";
+
+**A fecha de octubre de 2026, la reproducción gratuita de YouTube en segundo plano en navegadores móviles ha
+desaparecido casi por completo.** A finales de enero de 2026 YouTube empezó a detener la reproducción en las
+cuentas sin Premium en cuanto un navegador móvil pierde el foco, y Google confirmó el cambio. Eso rompió los
+trucos de Brave, Samsung Internet, Vivaldi y Edge, y es la razón por la que el popular complemento de Firefox
+ahora funciona unos días sí y otros no.
+
+Dos opciones gratuitas siguen aguantando: **NewPipe**, un cliente de YouTube de código abierto, y **mantener
+el vídeo en primer plano con la pantalla en negro**. La opción de pago ha mejorado: **Premium Lite ya incluye
+reproducción en segundo plano**. Abajo tienes los detalles de cada una, empezando por el truco de Firefox que
+la mayoría busca.
+
+---
+
+## ¿Qué cambió en enero de 2026?
+
+Los informes de reproducción en segundo plano detenida en navegadores de terceros empezaron en torno al 12 de
+enero de 2026, primero por parte de usuarios de Brave y luego de Samsung Internet, Vivaldi y Edge. A final de
+mes Google lo había confirmado a
+[Android Authority](https://www.androidauthority.com/youtube-background-play-broken-3636179/) y
+[9to5Google](https://9to5google.com/2026/02/02/youtube-background-playback-workarounds-not-working-third-party-browsers/).
+Un portavoz de YouTube dijo que la reproducción en segundo plano es «una función pensada como exclusiva para
+los miembros de YouTube Premium».
+
+El efecto práctico: cuando una cuenta gratuita reproduce YouTube en un navegador móvil y cambias de app o
+apagas la pantalla, YouTube pausa la reproducción. Lo hace diga lo que diga el navegador, y por eso los
+ajustes del navegador y el viejo truco del «sitio de escritorio» ya no ayudan.
+
+| Método | Estado para cuentas gratuitas, oct. 2026 |
+|---|---|
+| Samsung Internet «sitio de escritorio + pantalla bloqueada» | No funciona |
+| Ajuste de reproducción de vídeo en segundo plano de Brave | No funciona o intermitente |
+| Vivaldi, Edge y otros navegadores Chromium | No funciona |
+| Firefox + complemento Video Background Play Fix | Intermitente, funciona en algunas cuentas |
+| NewPipe (F-Droid) | Funciona |
+| App de YouTube en primer plano + capa negra | Funciona |
+| YouTube Premium o Premium Lite | Funciona, con soporte oficial |
+
+---
+
+## ¿Por qué dejó de funcionar el truco de Firefox?
+
+**Porque el complemento arregla la parte del navegador, y desde enero de 2026 YouTube lo comprueba por su
+cuenta.**
+[Video Background Play Fix](https://addons.mozilla.org/en-US/firefox/addon/video-background-play-fix/)
+es un complemento de Firefox para Android (unos 229.000 usuarios) que bloquea la API de visibilidad de página
+y la de pantalla completa, de modo que a YouTube nunca se le dice que la pestaña pasó a segundo plano. Su
+última actualización, la versión 1.8.1, salió en noviembre de 2024, antes de que existiera el control actual.
+
+Eso sigue funcionando para algunas personas, porque el cambio de YouTube no llegó a todas las cuentas a la vez
+y no detecta todos los casos. Los usuarios informan de que funciona durante días o semanas y luego se detiene
+de un día para otro.
+
+Si ha dejado de funcionarte, repasa esta lista en orden:
+
+1. **Actualiza Firefox.** El complemento necesita Firefox 82 o superior para Android, y las versiones
+   antiguas se comportan de otra forma. Actualiza desde Play Store.
+2. **Comprueba que el complemento está activado.** Menú de Firefox → Complementos → Video Background Play Fix
+   → activado. Si usas pestañas privadas, activa también «Permitir en navegación privada».
+3. **Recarga YouTube después de activarlo.** El complemento solo surte efecto en las páginas cargadas después
+   de encenderlo.
+4. **Pruébalo.** Reproduce un vídeo en Firefox, pulsa Inicio o bloquea la pantalla y espera unos segundos. Si
+   el audio se detiene a los pocos segundos siempre, YouTube está aplicando el bloqueo en tu cuenta.
+
+Algunos usuarios también informan de éxito con un cambiador de user-agent, según
+[Tech Advisor](https://www.techadvisor.com/article/3051828/youtube-blocks-background-playback-in-mobile-browsers.html).
+Es el mismo juego del gato y el ratón: funciona hasta que YouTube se da cuenta.
+
+**Si nada de eso funciona, el complemento no es el problema.** YouTube está pausando la reproducción por su
+lado, y ningún ajuste de Firefox puede cambiar eso. Usa uno de los métodos de abajo.
+
+---
+
+## Método 1 — Deja el vídeo delante y pon la pantalla en negro (gratis, cualquier app)
+
+La opción gratuita fiable esquiva por completo la reproducción en segundo plano. **Deja el vídeo
+reproduciéndose en la app de YouTube, en primer plano, y cubre la pantalla con una capa negra.** YouTube nunca
+pasa a segundo plano, así que no hay nada que pausar.
+
+[ScreenVeil](https://play.google.com/store/apps/details?id=com.screenveil.app) es una app gratuita de Android
+que hace exactamente esto:
+
+1. Instala ScreenVeil y toca **Iniciar servicio**. Concede el permiso de «mostrar sobre otras aplicaciones»,
+   el único que necesita.
+2. Inicia tu vídeo en la app de YouTube.
+3. Toca el botón flotante de ScreenVeil. La pantalla se pone negra y bloquea los toques, así que ni un
+   bolsillo ni una manga pueden pausar ni saltar nada.
+4. Toca la pantalla para que aparezca el botón de desbloqueo cuando quieras recuperar la imagen.
+
+Que quede claro qué es esto: la pantalla **sigue encendida**, solo que mostrando negro. Ese es el objetivo,
+porque YouTube nunca la ve apagarse. También significa que en un móvil con pantalla LCD la retroiluminación
+sigue encendida, así que ahorras poca energía. En un móvil **AMOLED u OLED**, los píxeles negros están
+apagados, así que el consumo de pantalla baja bastante. Cuánto depende del brillo; repasamos las cifras
+medidas en [¿ahorra batería el modo oscuro en AMOLED?](/blog/does-dark-mode-save-battery-amoled) (en inglés).
+
+Funciona con cualquier app que reproduzca audio, no solo YouTube, y tiene más de 10.000 descargas en Google
+Play.
+
+<ScreenVeilCTA />
+
+---
+
+## Método 2 — NewPipe (gratis, código abierto)
+
+[NewPipe](https://f-droid.org/en/packages/org.schabi.newpipe/) es un cliente de YouTube de código abierto. No
+usa el reproductor propio de YouTube, así que la comprobación de Premium no se le aplica, y admite
+reproducción en segundo plano real con la pantalla apagada.
+
+**Lo que obtienes:**
+- Reproducción en segundo plano real, incluso con la pantalla bloqueada
+- Sin anuncios
+- Descargas para escuchar sin conexión
+- No hace falta cuenta de Google
+
+**Las pegas:**
+- Está en [F-Droid](https://f-droid.org/en/packages/org.schabi.newpipe/), no en Play Store. Permites
+  instalaciones de una fuente adicional, instalas F-Droid y luego instalas NewPipe desde ahí.
+- No inicia sesión en tu cuenta de Google, así que no hay suscripciones, historial ni listas sincronizadas.
+  Puedes importar las suscripciones a mano.
+- Como funciona al margen del reproductor de YouTube, **se rompe de vez en cuando** tras algún cambio de
+  YouTube. Los arreglos suelen llegar en pocos días mediante una actualización.
+
+**Mejor para:** quien quiera reproducción real con la pantalla apagada y gratis, y no le importe usar una app
+aparte.
+
+---
+
+## Método 3 — YouTube Premium Lite (ahora con reproducción en segundo plano)
+
+Premium Lite salió sin reproducción en segundo plano. Eso cambió el
+[24 de febrero de 2026](https://www.tubefilter.com/2026/02/24/youtube-premium-lite-background-play-downloads/),
+cuando YouTube añadió la reproducción en segundo plano y las descargas a Lite sin coste adicional. En Estados
+Unidos cuesta **7,99 $ al mes**.
+
+Qué cubre Lite y qué no:
+
+| | Premium Lite | Premium |
+|---|---|---|
+| Precio (EE. UU.) | 7,99 $/mes | 13,99 $/mes |
+| Vídeos sin anuncios | La mayoría de vídeos | Todos los vídeos |
+| Reproducción en segundo plano | Sí, salvo vídeos musicales y Shorts | Sí, todo |
+| Descargas | Sí, salvo vídeos musicales y Shorts | Sí |
+| YouTube Music | No | Incluido |
+
+Si lo que quieres escuchar en segundo plano son pódcasts, clases o vídeos largos, Lite lo cubre. Si es
+música, Lite no, y la vía de pago es el Premium completo o YouTube Music.
+
+---
+
+## ¿Qué método deberías usar?
+
+| Método | Coste | Configuración | Fiabilidad | ¿Pantalla apagada? | Funciona con otras apps |
+|---|---|---|---|---|---|
+| Firefox + complemento | Gratis | ~5 minutos | Intermitente | Sí, cuando funciona | YouTube, Vimeo |
+| Capa de ScreenVeil | Gratis | ~30 segundos | Estable | Negra, pero técnicamente encendida | Sí, cualquier app |
+| NewPipe | Gratis | ~5 minutos | Estable, fallos raros | Sí | Solo YouTube |
+| Premium Lite | 7,99 $/mes | Inmediata | Garantizada | Sí | YouTube, no música |
+| Premium | 13,99 $/mes | Inmediata | Garantizada | Sí | YouTube + Music |
+
+- **Usabas Firefox y acaba de dejar de funcionar:** repasa la lista de arriba una vez. Si el audio sigue
+  parándose a los pocos segundos de cambiar de app, pasa a otra cosa, porque no volverá de forma fiable.
+- **Quieres gratis y sin configurar nada:** deja el vídeo delante y pon la pantalla en negro.
+- **Quieres reproducción real con la pantalla apagada y gratis:** NewPipe.
+- **Escuchas pódcasts o vídeos largos a diario:** Premium Lite es ahora un trato justo.
+- **Escuchas en la cama:** mira
+  [dormirte con audio sin luz de pantalla](/blog/fall-asleep-to-audio-without-screen-light-android) (en inglés)
+  para temporizadores de sueño y pantalla oscura.
+
+Si lo que quieres es reducir YouTube en lugar de escucharlo más, nuestra guía para
+[bloquear los Shorts de YouTube en Android](/es/blog/how-to-block-youtube-shorts-android) cubre el
+problema contrario.
+
+<ScreenVeilCTA />
