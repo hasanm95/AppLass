@@ -580,8 +580,8 @@
     "semantic_hash": ""
   },
   "src/i18n/locales/en.json": {
-    "mtime": 1794269321.8710845,
-    "ast_hash": "37d89ce6ff0d0ba9949c39aac109f2ae",
+    "mtime": 1794559751.5655968,
+    "ast_hash": "70b439e7fcbc6a761af904b5213c14bb",
     "semantic_hash": ""
   },
   "src/i18n/locales/fr.json": {
@@ -2600,8 +2600,8 @@
     "semantic_hash": ""
   },
   "src/page-templates/AppsAriselyPage.astro": {
-    "mtime": 1793155506.9962773,
-    "ast_hash": "0ad6c448e7f5d66704c0570a72230f6c",
+    "mtime": 1794559657.162947,
+    "ast_hash": "34a953c4376044d5c4f71a31fb54901a",
     "semantic_hash": ""
   },
   "src/pages/[lang]/apps/arisely/index.astro": {
@@ -2635,18 +2635,13 @@
     "semantic_hash": ""
   },
   "src/content/blog/de/alarm-app-that-makes-you-do-pushups-android.md": {
-    "mtime": 1794050650.13897,
-    "ast_hash": "fb821c68c04f6249e3f48e5a4e49728a",
-    "semantic_hash": ""
-  },
-  "src/content/blog/de/alarm-clock-with-missions-to-turn-off.md": {
-    "mtime": 1794050285.0745509,
-    "ast_hash": "d708b0ff30a947f0d43c06d6981d0bf4",
+    "mtime": 1794560639.3887587,
+    "ast_hash": "46408221f0ae545011b5fffd5e02ddd6",
     "semantic_hash": ""
   },
   "src/content/blog/de/alarmy-alternatives-android.mdx": {
-    "mtime": 1794050653.3309083,
-    "ast_hash": "f6c25738df7912c233b749653a02d455",
+    "mtime": 1794559639.1163027,
+    "ast_hash": "acd92eb8188506a981f61a1c9128b1ab",
     "semantic_hash": ""
   },
   "src/content/blog/de/app-blocker-cannot-be-uninstalled-android.mdx": {
@@ -2660,8 +2655,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/de/best-alarm-apps-for-heavy-sleepers-android-2026.md": {
-    "mtime": 1794050659.442571,
-    "ast_hash": "edd86d34bc0393c0925d67c0ad1700a1",
+    "mtime": 1794560639.388411,
+    "ast_hash": "93e4061b97cf1fafc2b890b2407a103a",
     "semantic_hash": ""
   },
   "src/content/blog/de/best-free-reels-shorts-blockers-android-2026.mdx": {
@@ -2694,11 +2689,6 @@
     "ast_hash": "d5859454f11598421f97510934504302",
     "semantic_hash": ""
   },
-  "src/content/blog/de/how-to-stop-sleeping-through-your-alarm-android.md": {
-    "mtime": 1794050662.7951622,
-    "ast_hash": "1ffce57b4afe15ddafda232b3513b599",
-    "semantic_hash": ""
-  },
   "src/content/blog/de/limit-reels-per-day-android.mdx": {
     "mtime": 1794047438.5497832,
     "ast_hash": "4466546bf2abc97f82cd1ef04071019c",
@@ -2715,8 +2705,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/de/why-android-alarms-dont-go-off-exact-alarms.md": {
-    "mtime": 1794050665.8457792,
-    "ast_hash": "3a7d0fa04f6a871887cbcbe8114daeaa",
+    "mtime": 1794560639.3877292,
+    "ast_hash": "e3f3823f037c31ea257c0c487ec52d47",
     "semantic_hash": ""
   },
   "src/content/blog/de/youtube-premium-alternatives-background-play.mdx": {
@@ -2725,18 +2715,13 @@
     "semantic_hash": ""
   },
   "src/content/blog/en/alarm-app-that-makes-you-do-pushups-android.md": {
-    "mtime": 1794050630.683212,
-    "ast_hash": "8ed16042a08a5c3c40e446ad56abf2d9",
-    "semantic_hash": ""
-  },
-  "src/content/blog/en/alarm-clock-with-missions-to-turn-off.md": {
-    "mtime": 1794050263.4977043,
-    "ast_hash": "66d4ec57363f0f9766990f29c384b545",
+    "mtime": 1794559495.347167,
+    "ast_hash": "65de5a57f51fb0c2f96a352b5e3664e4",
     "semantic_hash": ""
   },
   "src/content/blog/en/alarmy-alternatives-android.mdx": {
-    "mtime": 1794050633.600502,
-    "ast_hash": "e9eea05ce6f68c1b5334d2b8212f206a",
+    "mtime": 1794559643.2982092,
+    "ast_hash": "e040db4742e5d6950db2379f2c7db1e5",
     "semantic_hash": ""
   },
   "src/content/blog/en/app-blocker-cannot-be-uninstalled-android.mdx": {
@@ -2750,8 +2735,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/en/best-alarm-apps-for-heavy-sleepers-android-2026.md": {
-    "mtime": 1794050640.0551908,
-    "ast_hash": "4bafff06cb638c197bd3cb08f2c7ba91",
+    "mtime": 1794559435.9317648,
+    "ast_hash": "67497cfcd294b94165a8063ba73aed31",
     "semantic_hash": ""
   },
   "src/content/blog/en/best-free-reels-shorts-blockers-android-2026.mdx": {
@@ -2784,11 +2769,6 @@
     "ast_hash": "c57b7e9b83289fd7501943084a7f24b6",
     "semantic_hash": ""
   },
-  "src/content/blog/en/how-to-stop-sleeping-through-your-alarm-android.md": {
-    "mtime": 1794050643.3614237,
-    "ast_hash": "51af21314341755da1dfa850bdcd92e2",
-    "semantic_hash": ""
-  },
   "src/content/blog/en/limit-reels-per-day-android.mdx": {
     "mtime": 1794046754.9260497,
     "ast_hash": "456c9de86ca359c56610199ce2c1273f",
@@ -2805,8 +2785,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/en/why-android-alarms-dont-go-off-exact-alarms.md": {
-    "mtime": 1794050646.4809983,
-    "ast_hash": "2c9a3af79847e729f8cb87a61b4e2999",
+    "mtime": 1794559588.2144468,
+    "ast_hash": "2bde3fc1590e9612b6aa4c52e6a604be",
     "semantic_hash": ""
   },
   "src/content/blog/en/youtube-premium-alternatives-background-play.mdx": {
@@ -2815,18 +2795,13 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/alarm-app-that-makes-you-do-pushups-android.md": {
-    "mtime": 1794050669.1122305,
-    "ast_hash": "1ffa50e6f1993ef650ecb0ecc40cb0fd",
-    "semantic_hash": ""
-  },
-  "src/content/blog/fr/alarm-clock-with-missions-to-turn-off.md": {
-    "mtime": 1794050293.0667331,
-    "ast_hash": "d5b187b4dc6eebc435b082081b9653e5",
+    "mtime": 1794560461.9754114,
+    "ast_hash": "159a93c5463863d67a3509724d0d6f2c",
     "semantic_hash": ""
   },
   "src/content/blog/fr/alarmy-alternatives-android.mdx": {
-    "mtime": 1794050672.0705037,
-    "ast_hash": "990e3f3ed6ed710ab37c1143d6d8557c",
+    "mtime": 1794559639.1363757,
+    "ast_hash": "19cc424b6cc70afb7f1821dbdf087bae",
     "semantic_hash": ""
   },
   "src/content/blog/fr/app-blocker-cannot-be-uninstalled-android.mdx": {
@@ -2840,8 +2815,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/best-alarm-apps-for-heavy-sleepers-android-2026.md": {
-    "mtime": 1794050678.4606671,
-    "ast_hash": "f78133c6466a174d49eef2b1253ceb05",
+    "mtime": 1794560398.9861236,
+    "ast_hash": "bbfc40ce0da45cce3578be873a30d64b",
     "semantic_hash": ""
   },
   "src/content/blog/fr/best-free-reels-shorts-blockers-android-2026.mdx": {
@@ -2874,11 +2849,6 @@
     "ast_hash": "fe82528107b58cbd6150c423ac704fad",
     "semantic_hash": ""
   },
-  "src/content/blog/fr/how-to-stop-sleeping-through-your-alarm-android.md": {
-    "mtime": 1794050681.7159266,
-    "ast_hash": "8a2bd3fdcfdd3038423ca05cc5e26f6d",
-    "semantic_hash": ""
-  },
   "src/content/blog/fr/limit-reels-per-day-android.mdx": {
     "mtime": 1794047446.360099,
     "ast_hash": "3f567ff9272b065c66cae135dffbb882",
@@ -2895,8 +2865,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/why-android-alarms-dont-go-off-exact-alarms.md": {
-    "mtime": 1794050685.017755,
-    "ast_hash": "8c156e9427a8d702ee3e73164235f2ec",
+    "mtime": 1794560539.595974,
+    "ast_hash": "96ad7ec25985ec7c7bfd762e664a4888",
     "semantic_hash": ""
   },
   "src/content/blog/fr/youtube-premium-alternatives-background-play.mdx": {
@@ -3217,6 +3187,26 @@
   "src/content/blog/es/limit-reels-per-day-android.mdx": {
     "mtime": 1794557657.5838597,
     "ast_hash": "364351e6ae3ab5047ccd64eef8fa0e83",
+    "semantic_hash": ""
+  },
+  "src/content/blog/es/alarm-app-that-makes-you-do-pushups-android.md": {
+    "mtime": 1794566559.9739156,
+    "ast_hash": "042007aaa504b6d332966dc6155a0b3b",
+    "semantic_hash": ""
+  },
+  "src/content/blog/es/alarmy-alternatives-android.mdx": {
+    "mtime": 1794566617.376833,
+    "ast_hash": "c9173411128239403eb22d6d77bc46d1",
+    "semantic_hash": ""
+  },
+  "src/content/blog/es/best-alarm-apps-for-heavy-sleepers-android-2026.md": {
+    "mtime": 1794566501.910997,
+    "ast_hash": "80e8aba0f006670a0e1bd4b8cce9113d",
+    "semantic_hash": ""
+  },
+  "src/content/blog/es/why-android-alarms-dont-go-off-exact-alarms.md": {
+    "mtime": 1794566424.137304,
+    "ast_hash": "891047dd21f843fad42c69586b4dd754",
     "semantic_hash": ""
   }
 }

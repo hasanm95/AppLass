@@ -1,16 +1,16 @@
 # Graph Report - AppLass  (2026-11-13)
 
 ## Corpus Check
-- 525 files · ~2,420,303 words
+- 523 files · ~2,436,316 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5062 nodes · 5480 edges · 400 communities (381 shown, 19 thin omitted)
+- 5111 nodes · 5531 edges · 407 communities (388 shown, 19 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.61)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a1f7463f`
+- Built from commit: `9d7085c5`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -388,24 +388,32 @@
 - 4. Loading States Principles
 - 5. Page Transitions Principles
 - 8. Feedback Animation Principles
-- 4. Line Length Principles
+- 9. Performance Principles
+- 1. Glassmorphism Principles
 - 5. Responsive Typography Principles
 - 6. Weight and Emphasis Principles
 - 8. Hierarchy Principles
 - 3. Stack Navigation
 - 4. 3D CSS Transforms
 - 10. Navigation Checklist
-- 5. Risk Prioritization
+- 2. Neomorphism Principles
 - content/taste.md
 - workflow/taste.md
 - 2. Tab Bar Navigation
 - 3. Stack Navigation
-- 6. Deep Linking
+- 4. Gradient Principles
 - _README.md
-- 4. Loading States Principles
-- 5. Page Transitions Principles
-- 8. Feedback Animation Principles
+- 1. Color Theory Fundamentals
+- 6. Dark Mode Principles
+- 5. Border Effects Principles
+- 8. Modern CSS Techniques
 - 9. Performance Principles
+- 4. Cognitive Load Management
+- 5. Persuasive Design (Ethical)
+- 8. Color Anti-Patterns
+- 9. Color System Checklist
+- 6. Scroll-Driven Animations
+- 5. Semantic Colors
 
 ## God Nodes (most connected - your core abstractions)
 1. `@/i18n/localize` - 79 edges
@@ -434,7 +442,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (400 total, 19 thin omitted)
+## Communities (407 total, 19 thin omitted)
 
 ### Community 0 - "@/i18n/localize"
 Cohesion: 0.11
@@ -493,12 +501,12 @@ Cohesion: 0.05
 Nodes (39): 10. Animation Decision Checklist, 1. Duration Principles, 2. Easing Principles, 3. Micro-Interaction Principles, 4. Loading States Principles, 5. Page Transitions Principles, 6. Scroll Animation Principles, 7. Hover Effects Principles (+31 more)
 
 ### Community 14 - "Mobile Color System Reference"
-Cohesion: 0.05
-Nodes (38): 10. Quick Reference, 1. Mobile Color Fundamentals, 2. OLED Considerations, 3. Dark Mode Design, 4. Outdoor Visibility, 5. Semantic Colors, 6. Dynamic Color (Android), 7. Color Accessibility (+30 more)
+Cohesion: 0.11
+Nodes (18): 1. Mobile Color Fundamentals, 3. Dark Mode Design, 4. Outdoor Visibility, 8. Color Anti-Patterns, 9. Color System Checklist, ❌ AI Color Mistakes, Before Choosing Colors, Before Release (+10 more)
 
 ### Community 15 - "Mobile Typography Reference"
-Cohesion: 0.09
-Nodes (22): 1. Mobile Typography Fundamentals, 2. System Fonts, 4. Dynamic Type / Text Scaling, 7. Typography Anti-Patterns, 8. Font Loading & Performance, 9. Typography Checklist, ❌ AI Typography Mistakes, Android: Roboto Family (+14 more)
+Cohesion: 0.05
+Nodes (38): 10. Quick Reference, 1. Mobile Typography Fundamentals, 2. System Fonts, 3. Type Scale, 4. Dynamic Type / Text Scaling, 5. Typography Accessibility, 6. Dark Mode Typography, 7. Typography Anti-Patterns (+30 more)
 
 ### Community 16 - "Python Patterns"
 Cohesion: 0.05
@@ -529,8 +537,8 @@ Cohesion: 0.06
 Nodes (34): 10. Component Extraction, 11. Anti-Patterns, 12. Performance Principles, 1. Tailwind v4 Architecture, 2. CSS-Based Configuration, 3. Container Queries (v4 Native), 4. Responsive Design, 5. Dark Mode (+26 more)
 
 ### Community 23 - "Mobile Testing Patterns"
-Cohesion: 0.08
-Nodes (24): 1. Testing Tool Selection, 2. Testing Pyramid for Mobile, 4. Platform-Specific Testing, 5. Offline & Network Testing, 6. Performance Testing, 7. Accessibility Testing, 8. CI/CD Integration, 🚫 AI MOBILE TESTING ANTI-PATTERNS (+16 more)
+Cohesion: 0.06
+Nodes (33): 1. Testing Tool Selection, 2. Testing Pyramid for Mobile, 3. What to Test at Each Level, 4. Platform-Specific Testing, 5. Offline & Network Testing, 6. Performance Testing, 7. Accessibility Testing, 8. CI/CD Integration (+25 more)
 
 ### Community 24 - "Project Planner - Smart Project Planning"
 Cohesion: 0.06
@@ -546,7 +554,7 @@ Nodes (29): API Development, API Style Selection, Architecture, Backend Developm
 
 ### Community 27 - "Color System Reference"
 Cohesion: 0.11
-Nodes (18): 1. Color Theory Fundamentals, 2. The 60-30-10 Rule, 5. Context-Based Selection Guide, 6. Dark Mode Principles, 8. Color Selection Checklist, 9. Anti-Patterns to Avoid, Adapting Colors for Dark Mode, Color Relationships (+10 more)
+Nodes (18): 2. The 60-30-10 Rule, 4. Palette Generation Principles, 5. Context-Based Selection Guide, 7. Accessibility Guidelines, 8. Color Selection Checklist, 9. Anti-Patterns to Avoid, Color System Reference, Contrast Requirements (WCAG) (+10 more)
 
 ### Community 28 - "Mobile Design System"
 Cohesion: 0.07
@@ -565,8 +573,8 @@ Cohesion: 0.07
 Nodes (27): 10. Anti-Patterns, 1. MITRE ATT&CK Phases, 2. Reconnaissance Principles, 3. Initial Access Vectors, 4. Privilege Escalation Principles, 5. Defense Evasion Principles, 6. Lateral Movement Principles, 7. Active Directory Attacks (+19 more)
 
 ### Community 32 - "@/lib/legal-registry"
-Cohesion: 0.06
-Nodes (32): @/components/blog/AppCallout.astro, content, href, @/components/home/FoundersMoat.astro, @/components/home/Testimonials.astro, @/components/legal/AriselyPrivacy.astro, @/components/legal/AriselyTerms.astro, @/components/legal/FomogenPrivacy.astro (+24 more)
+Cohesion: 0.07
+Nodes (28): @/components/home/FoundersMoat.astro, @/components/home/Testimonials.astro, @/components/legal/AriselyPrivacy.astro, @/components/legal/AriselyTerms.astro, @/components/legal/FomogenPrivacy.astro, @/components/legal/FomogenTerms.astro, @/components/legal/MindfulGuardPrivacy.astro, @/components/legal/MindfulGuardTerms.astro (+20 more)
 
 ### Community 33 - "Database Architect"
 Cohesion: 0.07
@@ -613,8 +621,8 @@ Cohesion: 0.07
 Nodes (27): @astrojs/mdx, @astrojs/react, @astrojs/sitemap, class-variance-authority, i18next, dependencies, astro, @astrojs/mdx (+19 more)
 
 ### Community 44 - "@/page-templates/AppsFomogenPage.astro"
-Cohesion: 0.12
-Nodes (26): @/components/apps/fomogen/CoreFeatures.astro, @/components/apps/fomogen/FomoGenCTA.astro, @/components/apps/fomogen/FomoGenHero.astro, @/components/apps/fomogen/PricingMatrix.astro, fomoData, @/components/apps/fomogen/PricingSection.astro, @/components/apps/fomogen/SpeedBenefitSection.astro, @/components/apps/fomogen/TestimonialsSection.astro (+18 more)
+Cohesion: 0.10
+Nodes (30): @/components/apps/fomogen/CoreFeatures.astro, @/components/apps/fomogen/FomoGenCTA.astro, @/components/apps/fomogen/FomoGenHero.astro, @/components/apps/fomogen/PricingMatrix.astro, fomoData, @/components/apps/fomogen/PricingSection.astro, @/components/apps/fomogen/SpeedBenefitSection.astro, @/components/apps/fomogen/TestimonialsSection.astro (+22 more)
 
 ### Community 45 - "localize"
 Cohesion: 0.10
@@ -629,8 +637,8 @@ Cohesion: 0.09
 Nodes (22): Anti-Patterns, Bundle Size, Caching, Core Philosophy, Core Web Vitals Targets (2025), CSS, Images, JavaScript (+14 more)
 
 ### Community 48 - "Mobile Design Thinking"
-Cohesion: 0.09
-Nodes (23): 🚫 AI MOBILE DEFAULTS (FORBIDDEN LIST), Analysis for Every Gesture, 🧪 ANTI-MEMORIZATION TEST, Ask Yourself Before Every Solution, 🔍 COMPONENT DECOMPOSITION (MANDATORY), 📊 CONTEXT-BASED DECISION PROTOCOL, Decomposition Analysis for Every Screen, 🧠 DEEP MOBILE THINKING PROTOCOL (+15 more)
+Cohesion: 0.11
+Nodes (18): 🚫 AI MOBILE DEFAULTS (FORBIDDEN LIST), Analysis for Every Gesture, 🧪 ANTI-MEMORIZATION TEST, Ask Yourself Before Every Solution, 🔍 COMPONENT DECOMPOSITION (MANDATORY), 📊 CONTEXT-BASED DECISION PROTOCOL, Decomposition Analysis for Every Screen, 🧠 DEEP MOBILE THINKING PROTOCOL (+10 more)
 
 ### Community 49 - "Testing Patterns"
 Cohesion: 0.09
@@ -809,8 +817,8 @@ Cohesion: 0.12
 Nodes (15): 1. README Structure, 2. API Documentation Structure, 3. Code Comment Guidelines, 4. Changelog Template (Keep a Changelog), 5. Architecture Decision Record (ADR), 6. AI-Friendly Documentation (2025), 7. Structure Principles, Documentation Templates (+7 more)
 
 ### Community 93 - "Motion Graphics Reference"
-Cohesion: 0.06
-Nodes (35): 10. Quick Reference, 1. Lottie Animations, 2. GSAP (GreenSock), 3. SVG Animations, 4. 3D CSS Transforms, 5. Particle Effects, 6. Scroll-Driven Animations, 7. Performance Principles (+27 more)
+Cohesion: 0.12
+Nodes (16): 10. Quick Reference, 4. 3D CSS Transforms, 5. Particle Effects, 7. Performance Principles, 8. Motion Graphics Decision Tree, 9. Anti-Patterns, Common 3D Patterns, Core Properties (+8 more)
 
 ### Community 94 - "i18n & Localization"
 Cohesion: 0.12
@@ -837,8 +845,8 @@ Cohesion: 0.13
 Nodes (14): Antigravity Skills, Bước 1: Tạo thư mục, Bước 1: Tạo thư mục, Bước 2: Tạo file template, Bước 2: Tạo SKILL.md, Bước 3: Tạo SKILL.md, Cấu trúc thư mục kỹ năng, 📁 Cấu trúc và Phạm vi (+6 more)
 
 ### Community 100 - "Decision Trees & Context Templates"
-Cohesion: 0.05
-Nodes (39): 10. Complexity Estimation, 1. Master Decision Tree, 2. Audience Decision Tree, 3. Color Selection Decision Tree, 4. Typography Decision Tree, 5. E-commerce Guidelines {#e-commerce}, 6. SaaS Dashboard Guidelines {#saas}, 7. Landing Page Guidelines {#landing-page} (+31 more)
+Cohesion: 0.10
+Nodes (20): 1. Master Decision Tree, 2. Audience Decision Tree, 3. Color Selection Decision Tree, 4. Typography Decision Tree, 7. Landing Page Guidelines {#landing-page}, 8. Portfolio Guidelines {#portfolio}, Color Thinking:, Color Thinking: (+12 more)
 
 ### Community 101 - "Mobile Game Development"
 Cohesion: 0.13
@@ -941,7 +949,7 @@ Cohesion: 0.17
 Nodes (11): API Security Testing, Authentication Testing, Authorization Testing, BOLA/IDOR Testing, GraphQL Security, Input Validation Testing, JWT Testing, OWASP API Security Top 10 (+3 more)
 
 ### Community 127 - "frontend-design/SKILL.md"
-Cohesion: 0.29
+Cohesion: 0.15
 Nodes (6): Design Workflow, Guidelines Source, How It Works, Related Skills, Usage, Web Interface Guidelines
 
 ### Community 128 - "1. Core UX Laws"
@@ -973,8 +981,8 @@ Cohesion: 0.17
 Nodes (11): 1. Mindful Guard — Meilleure note globale ⚡ Premier choix, 2. AppBlock — Idéal pour le blocage basé sur la localisation, 3. Freedom — Idéal pour bloquer simultanément le téléphone et l'ordinateur portable, 4. One Sec — Idéal pour développer la prise de conscience (pas pour un blocage strict), 5. Bien-être numérique — Excellent point de départ gratuit (avec une mise en garde majeure), Comment bloquer réellement Instagram sur Android (étape par étape), Comparatif rapide, En résumé (+3 more)
 
 ### Community 135 - "UX Psychology Reference"
-Cohesion: 0.12
-Nodes (17): 2. Emotional Design (Don Norman), 3. Trust Building System, 4. Cognitive Load Management, 5. Persuasive Design (Ethical), 7. Emotion Color Mapping, 8. Psychology Checklist, Before Launch, Designing for Each Level (+9 more)
+Cohesion: 0.18
+Nodes (11): 2. Emotional Design (Don Norman), 3. Trust Building System, 7. Emotion Color Mapping, 8. Psychology Checklist, Before Launch, Designing for Each Level, Three Levels of Processing, Trust-Building CSS Patterns (+3 more)
 
 ### Community 136 - "i18n_checker.py"
 Cohesion: 0.29
@@ -1058,7 +1066,7 @@ Nodes (8): check_page(), find_pages(), is_page_file(), main(), Path, Check if th
 
 ### Community 156 - "Vulnerability Scanner"
 Cohesion: 0.22
-Nodes (9): 10. Anti-Patterns, 4. Attack Surface Mapping, 7. Scanning Methodology, Phase-Based Approach, Prioritization Matrix, 📋 Reference Files, 🔧 Runtime Scripts, Vulnerability Scanner (+1 more)
+Nodes (9): 10. Anti-Patterns, 5. Risk Prioritization, 7. Scanning Methodology, CVSS + Context, Phase-Based Approach, Prioritization Decision Tree, 📋 Reference Files, 🔧 Runtime Scripts (+1 more)
 
 ### Community 157 - "/preview - Preview Management"
 Cohesion: 0.22
@@ -1745,72 +1753,72 @@ Cohesion: 0.29
 Nodes (6): Die eine Methode, die wirklich greift — und ihr Preis, Fazit, Kann ein App-Blocker wirklich unlöschbar sein?, So entfernen Sie einen App-Blocker, in dem Sie feststecken, Wie der Accessibility-Trick tatsächlich funktioniert, Worauf Sie bei einem Blocker wirklich achten sollten
 
 ### Community 351 - "de/how-to-stop-sleeping-through-your-alarm-android.md"
-Cohesion: 0.25
-Nodes (7): Der einfachste Weg, alle fünf umzusetzen, Lösung 1: Dafür sorgen, dass der Alarm überhaupt losgeht — zeitgenaue Alarme, Lösung 2: Laut genug, um durchzudringen, Lösung 3: Die Ein-Tipp-Aus-Taste entfernen, Lösung 4: Den Schlummer-Kreislauf beenden, Lösung 5: Die körperlichen Umgehungen schließen — Lautstärke und Power-Taste, Warum du ihn verschläfst
+Cohesion: 0.40
+Nodes (5): List Pattern Questioning, Navigation Pattern Questioning, 🎯 PATTERN QUESTIONING MATRIX, State Pattern Questioning, UI Pattern Questioning
 
 ### Community 352 - "en/app-blocker-cannot-be-uninstalled-android.mdx"
 Cohesion: 0.29
 Nodes (6): Bottom line, Can an app blocker really be impossible to uninstall?, How the accessibility trick actually works, How to remove an app blocker you're stuck with, The one method that genuinely works, and its cost, What to actually look for in a blocker
 
 ### Community 353 - "en/how-to-stop-sleeping-through-your-alarm-android.md"
-Cohesion: 0.25
-Nodes (7): Fix 1: Make the alarm actually fire — exact-time alarms, Fix 2: Make it loud enough to break through, Fix 3: Remove the one-tap off button, Fix 4: Kill the snooze loop, Fix 5: Close the physical dodges — volume and power button, The simplest way to apply all five, Why you sleep through it
+Cohesion: 0.50
+Nodes (4): 10. Quick Reference, Contrast Ratios, Dark Mode Backgrounds, Text on Dark
 
 ### Community 354 - "fr/app-blocker-cannot-be-uninstalled-android.mdx"
 Cohesion: 0.29
 Nodes (6): Ce qu'il faut réellement chercher dans un bloqueur, Comment fonctionne réellement l'astuce de l'accessibilité, Comment retirer un bloqueur dans lequel vous êtes coincé, En résumé, La seule méthode qui fonctionne vraiment, et son coût, Un bloqueur peut-il vraiment être impossible à désinstaller ?
 
 ### Community 355 - "fr/how-to-stop-sleeping-through-your-alarm-android.md"
-Cohesion: 0.25
-Nodes (7): La façon la plus simple d'appliquer les cinq, Pourquoi vous dormez malgré lui, Solution 1 : faire en sorte que l'alarme se déclenche vraiment — alarmes à l'heure exacte, Solution 2 : assez fort pour percer, Solution 3 : supprimer le bouton d'arrêt d'un seul geste, Solution 4 : briser la boucle de la répétition, Solution 5 : fermer les échappatoires physiques — volume et bouton d'alimentation
+Cohesion: 0.50
+Nodes (4): 2. OLED Considerations, Battery Savings with OLED, How OLED Differs, True Black vs Near Black
 
 ### Community 356 - "2. Font Pairing Principles"
 Cohesion: 0.18
 Nodes (10): Con qué números empezar, El límite diario integrado de Instagram, y lo que no hace, En resumen, La pieza que falta: el límite por sesión, Las cifras contra las que compite un tope diario, Paso a paso: poner los dos límites en Android, Por qué la fuerza de voluntad no puede con esto sola, Por qué no basta con un límite diario (+2 more)
 
 ### Community 357 - "de/alarm-app-that-makes-you-do-pushups-android.md"
-Cohesion: 0.33
-Nodes (5): Datenschutz: Die Kamera bleibt auf deinem Telefon, Es heißt nicht Liegestütze oder nichts, Probier es aus, So funktioniert Ariselys KI-Liegestütz-Wecker, Warum eine körperliche Mission jeden anderen „harten Wecker“ schlägt
+Cohesion: 0.20
+Nodes (9): Alle 10 Missionen und für wen sie sind, Ausprobieren, Ehrliche Einordnung, Mehrere Missionen verketten, Missions-Wecker gegen normalen Wecker, Privatsphäre: Die Kamera bleibt auf deinem Telefon, So funktioniert die KI-Liegestütz-Mission, Warum eine Aufgabe die Schlummertaste schlägt (+1 more)
 
 ### Community 358 - "de/alarm-clock-with-missions-to-turn-off.md"
-Cohesion: 0.29
-Nodes (6): Das Problem mit der Schlummertaste, Die 10 Missionen in Arisely, Mehrere Missionen verketten, Missions-Wecker vs. normaler Wecker, Probier einen Missions-Wecker, Warum eine Aufgabe wirkt
+Cohesion: 0.17
+Nodes (11): Alarm Clock Xtreme — los mejores acertijos gratuitos, Alarmy — la opción por defecto, AMdroid — los apagados más originales, Antes de culpar a la app, Arisely — la misión de flexiones verificada por cámara, Cómo elegir, Las 5 funciones que deciden si te levantas, Las 6 opciones principales, comparadas (+3 more)
 
 ### Community 359 - "de/why-android-alarms-dont-go-off-exact-alarms.md"
-Cohesion: 0.33
-Nodes (5): Die Lösung: exakte Alarme, Ein Wecker, der auf allen dreien basiert, Eine Absicherung in den Android-Einstellungen, Was wirklich passiert, Zwei weitere Dinge, die einen Wecker zuverlässig machen
+Cohesion: 0.17
+Nodes (11): Ein Wecker, der all das umsetzt, Schnelle Diagnose, Teil 2: Der Wecker klingelte und du hast ihn verschlafen, Ursache 1: Der Alarm war nicht exakt, Ursache 2: Die Berechtigung für exakte Alarme ist verweigert, Ursache 3: Energieverwaltung des Herstellers, Ursache 4: Er klingelte, aber du hast ihn nicht gehört, Ursache 5: Zeitzone, Updates und die Uhr-App selbst (+3 more)
 
 ### Community 360 - "de/youtube-premium-alternatives-background-play.mdx"
 Cohesion: 0.33
 Nodes (5): Also einfach zahlen?, Das eine Problem, das keine davon löst, Fazit, Was die kostenlosen Alternativen tatsächlich ersetzen, Was die offiziellen Tarife kosten und enthalten
 
 ### Community 361 - "en/alarm-app-that-makes-you-do-pushups-android.md"
-Cohesion: 0.33
-Nodes (5): How Arisely's AI push-up alarm works, It's not push-ups or nothing, Privacy: the camera stays on your phone, Try it, Why a physical mission beats every other "hard alarm"
+Cohesion: 0.20
+Nodes (9): All 10 missions, and who each is for, Chain several missions together, Honest context, How the AI push-up mission works, Mission alarm vs standard alarm, Privacy: the camera stays on your phone, Try it, Why a physical mission beats every other "hard alarm" (+1 more)
 
 ### Community 362 - "en/alarm-clock-with-missions-to-turn-off.md"
-Cohesion: 0.29
-Nodes (6): Chain several missions together, Mission alarm vs standard alarm, The 10 missions in Arisely, The problem with the snooze button, Try a mission alarm, Why a task works
+Cohesion: 0.50
+Nodes (4): 6. Dynamic Color (Android), Fallback Colors, Material You, Supporting Dynamic Color
 
 ### Community 363 - "en/why-android-alarms-dont-go-off-exact-alarms.md"
-Cohesion: 0.33
-Nodes (5): A backstop in Android settings, An alarm built on all three, The fix: exact alarms, Two more things that make an alarm reliable, What's actually happening
+Cohesion: 0.17
+Nodes (11): A reliability checklist, An alarm built on all of this, Cause 1: The alarm was not exact, Cause 2: The exact alarm permission is denied, Cause 3: Manufacturer power management, Cause 4: It rang, but you could not hear it, Cause 5: Time zone, updates and the Clock app itself, Cause 6: You cleared the app from recents (+3 more)
 
 ### Community 364 - "en/youtube-premium-alternatives-background-play.mdx"
 Cohesion: 0.33
 Nodes (5): Bottom line, So should you just pay?, The one thing none of them solve, What the free alternatives actually replace, What the official tiers cost and include
 
 ### Community 365 - "fr/alarm-app-that-makes-you-do-pushups-android.md"
-Cohesion: 0.33
-Nodes (5): Ce n'est pas pompes ou rien, Comment fonctionne le réveil à pompes par IA d'Arisely, Confidentialité : la caméra reste sur votre téléphone, Essayez-la, Pourquoi une mission physique bat tout autre « réveil difficile »
+Cohesion: 0.20
+Nodes (9): Chaîner plusieurs missions, Comment fonctionne la mission pompes par IA, Confidentialité : la caméra reste sur votre téléphone, Essayer, Les 10 missions, et pour qui, Mise en contexte honnête, Pourquoi une mission physique bat tous les autres « réveils difficiles », Pourquoi une tâche bat la répétition (+1 more)
 
 ### Community 366 - "fr/alarm-clock-with-missions-to-turn-off.md"
-Cohesion: 0.29
-Nodes (6): Enchaîner plusieurs missions, Essayez un réveil à mission, Le problème du bouton répétition, Les 10 missions d'Arisely, Pourquoi une tâche fonctionne, Réveil à mission vs réveil classique
+Cohesion: 0.50
+Nodes (4): 7. Color Accessibility, Colorblind Considerations, Contrast Testing Tools, Sufficient Contrast
 
 ### Community 367 - "fr/why-android-alarms-dont-go-off-exact-alarms.md"
-Cohesion: 0.33
-Nodes (5): Ce qui se passe réellement, Deux autres éléments qui rendent un réveil fiable, La solution : les alarmes exactes, Un filet de sécurité dans les paramètres Android, Un réveil fondé sur les trois
+Cohesion: 0.17
+Nodes (11): Cause 1 : L'alarme n'était pas exacte, Cause 2 : L'autorisation d'alarmes exactes est refusée, Cause 3 : Gestion d'énergie du fabricant, Cause 4 : Elle a sonné, mais vous ne l'avez pas entendue, Cause 5 : Fuseau horaire, mises à jour et l'application Horloge elle-même, Cause 6 : Vous avez vidé l'application des récentes, Cause 7 : Mode économie d'énergie, Check-list de fiabilité (+3 more)
 
 ### Community 368 - "fr/youtube-premium-alternatives-background-play.mdx"
 Cohesion: 0.33
@@ -1829,16 +1837,16 @@ Cohesion: 0.16
 Nodes (13): @/components/common/Footer.astro, currentLang, currentYear, footerLinks, getFooterLinks(), @/components/home/ProductShowcase.astro, getProducts(), @/page-templates/AppsPage.astro (+5 more)
 
 ### Community 372 - "de/best-alarm-apps-for-heavy-sleepers-android-2026.md"
-Cohesion: 0.40
-Nodes (4): Die 5 Funktionen, die wirklich zählen, Für wen jede gedacht ist, Warum wir eine Missions-First-App empfehlen, Wie die wichtigsten Optionen abschneiden
+Cohesion: 0.17
+Nodes (11): Alarm Clock Xtreme – die besten kostenlosen Rätsel, Alarmy – die Standardwahl, AMdroid – die ungewöhnlichsten Abschalt-Aufgaben, Arisely – die kameragestützte Liegestütz-Mission, Bevor du die App verantwortlich machst, Die 5 Funktionen, die entscheiden, Die 6 wichtigsten Optionen im Vergleich, Google Uhr – wenn du nichts davon brauchst (+3 more)
 
 ### Community 373 - "en/best-alarm-apps-for-heavy-sleepers-android-2026.md"
-Cohesion: 0.40
-Nodes (4): How the main options compare, The 5 features that actually matter, Who each is for, Why we recommend a mission-first app
+Cohesion: 0.17
+Nodes (11): Alarm Clock Xtreme — best free puzzles at scale, Alarmy — the default pick, AMdroid — best for unusual dismissals, Arisely — the camera-verified push-up mission, Before you blame the app, Google Clock — when you don't need any of this, How to choose, Sleep as Android — best if you want sleep tracking (+3 more)
 
 ### Community 374 - "fr/best-alarm-apps-for-heavy-sleepers-android-2026.md"
-Cohesion: 0.40
-Nodes (4): Comment les principales options se comparent, Les 5 fonctionnalités qui comptent vraiment, Pourquoi nous recommandons une application « missions d'abord », À qui s'adresse chacune
+Cohesion: 0.17
+Nodes (11): Alarm Clock Xtreme — les meilleures énigmes gratuites, Alarmy — le choix par défaut, AMdroid — les désactivations les plus originales, Arisely — la mission pompes vérifiée par la caméra, Avant d'accuser l'application, Comment choisir, Horloge Google — quand rien de tout cela n'est nécessaire, Les 5 fonctions qui décident si vous vous levez (+3 more)
 
 ### Community 375 - "🚫 MOBILE ANTI-PATTERNS (NEVER DO THESE!)"
 Cohesion: 0.29
@@ -1860,9 +1868,13 @@ Nodes (10): A qué te enfrentas en realidad, Bloqueo a nivel de feed frente a bl
 Cohesion: 0.18
 Nodes (10): Alternativas a Opal para Android, comparadas, AppBlock (la mejor para reglas por lugar o wifi), Bienestar digital (gratis, ya integrado), Cómo elegir, Freedom (la mejor para móvil y ordenador juntos), Mindful Guard (la mejor alternativa gratis a Opal), One Sec (la mejor para fricción suave), Opal en Android: primero los datos (+2 more)
 
-### Community 381 - "4. Line Length Principles"
-Cohesion: 0.40
-Nodes (5): 3. What to Test at Each Level, Component Tests (RNTL / flutter_test), E2E Tests, Integration Tests, Unit Tests (Jest)
+### Community 380 - "9. Performance Principles"
+Cohesion: 0.67
+Nodes (3): 4. Attack Surface Mapping, Prioritization Matrix, What to Map
+
+### Community 381 - "1. Glassmorphism Principles"
+Cohesion: 0.17
+Nodes (11): Causa 1: La alarma no era exacta, Causa 2: El permiso de alarmas exactas está denegado, Causa 3: Gestión de energía del fabricante, Causa 4: Sonó, pero no la oíste, Causa 5: Zona horaria, actualizaciones y la propia app Reloj, Causa 6: Vaciaste la app de recientes, Causa 7: Modo de ahorro de batería, Diagnóstico rápido (+3 more)
 
 ### Community 382 - "5. Responsive Typography Principles"
 Cohesion: 0.22
@@ -1888,44 +1900,72 @@ Nodes (6): Cómo eliminar un bloqueador del que no puedas salir, Cómo funciona 
 Cohesion: 0.29
 Nodes (6): Método 1 — Deja el vídeo delante y pon la pantalla en negro (gratis, cualquier app), Método 2 — NewPipe (gratis, código abierto), Método 3 — YouTube Premium Lite (ahora con reproducción en segundo plano), ¿Por qué dejó de funcionar el truco de Firefox?, ¿Qué cambió en enero de 2026?, ¿Qué método deberías usar?
 
-### Community 388 - "5. Risk Prioritization"
-Cohesion: 0.67
-Nodes (3): 5. Risk Prioritization, CVSS + Context, Prioritization Decision Tree
+### Community 388 - "2. Neomorphism Principles"
+Cohesion: 0.20
+Nodes (9): Contexto honesto, Cómo funciona la misión de flexiones con IA, Despertador con misiones frente a despertador normal, Encadenar varias misiones, Las 10 misiones y para quién es cada una, Por qué una misión física gana a cualquier otro «despertador duro», Por qué una tarea gana al botón de posponer, Privacidad: la cámara no sale de tu móvil (+1 more)
 
 ### Community 392 - "2. Tab Bar Navigation"
-Cohesion: 0.50
-Nodes (4): 4. Palette Generation Principles, From a Single Color (HSL Method), Generating a Full Palette, Saturation Adjustments
+Cohesion: 0.22
+Nodes (8): Alarm Clock Xtreme (la mejor para acertijos gratis a gran escala), Alternativas a Alarmy comparadas, AMdroid (la mejor para apagados poco corrientes), Arisely (la mejor para un despertar físico), Cómo elegir, Lo que Alarmy hace bien (y por qué la gente se va), Reloj de Google (cuando no necesitas nada de esto), Sleep as Android (la mejor para seguimiento del sueño)
 
 ### Community 393 - "3. Stack Navigation"
-Cohesion: 0.50
-Nodes (4): 7. Accessibility Guidelines, Contrast Requirements (WCAG), How to Check Contrast, Safe Patterns
+Cohesion: 0.40
+Nodes (5): 5. E-commerce Guidelines {#e-commerce}, Color Thinking:, Key Principles (Not Fixed Rules), Layout Principles:, Psychology to Apply:
 
-### Community 394 - "6. Deep Linking"
-Cohesion: 0.50
-Nodes (4): Before PR, Before Release, 📝 MOBILE TESTING CHECKLIST, What to Skip (Consciously)
+### Community 394 - "4. Gradient Principles"
+Cohesion: 0.40
+Nodes (5): 6. SaaS Dashboard Guidelines {#saas}, Color Thinking:, Key Principles, Layout Principles:, Psychology to Apply:
 
 ### Community 395 - "_README.md"
 Cohesion: 0.50
 Nodes (3): Blog-first locale: only translated posts live here (Phase 1+)., Spanish (es) blog translations., Until a post exists for a slug, no /es/blog/<slug> route is built.
 
-### Community 396 - "4. Loading States Principles"
+### Community 396 - "1. Color Theory Fundamentals"
 Cohesion: 0.50
-Nodes (4): 10. Quick Reference, Line Height, Minimum Sizes, Typography Tokens
+Nodes (4): 1. Color Theory Fundamentals, Color Relationships, How to Choose a Scheme:, The Color Wheel
 
-### Community 397 - "5. Page Transitions Principles"
+### Community 397 - "6. Dark Mode Principles"
 Cohesion: 0.50
-Nodes (4): 3. Type Scale, Android Type Scale (Material 3), Creating Custom Scale, iOS Type Scale (Built-in)
+Nodes (4): 6. Dark Mode Principles, Adapting Colors for Dark Mode, Contrast in Dark Mode, Key Rules (No Fixed Codes)
 
-### Community 398 - "8. Feedback Animation Principles"
-Cohesion: 0.50
-Nodes (4): 5. Typography Accessibility, Contrast Requirements (WCAG), Line Height for Accessibility, Minimum Sizes
+### Community 398 - "5. Border Effects Principles"
+Cohesion: 0.40
+Nodes (5): 9. Pre-Design Checklists, Before Choosing Colors, Before Delivery, Before Finalizing Layout, Before Starting ANY Design
 
-### Community 399 - "9. Performance Principles"
+### Community 399 - "8. Modern CSS Techniques"
+Cohesion: 0.40
+Nodes (5): 1. Lottie Animations, Principles, Sources, What is Lottie?, When to Use Lottie
+
+### Community 400 - "9. Performance Principles"
+Cohesion: 0.40
+Nodes (5): 2. GSAP (GreenSock), Core Concepts, Principles, What Makes GSAP Different, When to Use GSAP
+
+### Community 401 - "4. Cognitive Load Management"
+Cohesion: 0.67
+Nodes (3): 4. Cognitive Load Management, Reduction Strategies, Three Types of Cognitive Load
+
+### Community 402 - "5. Persuasive Design (Ethical)"
+Cohesion: 0.67
+Nodes (3): 5. Persuasive Design (Ethical), Ethical Persuasion Techniques, Nudge Patterns
+
+### Community 403 - "8. Color Anti-Patterns"
+Cohesion: 0.40
+Nodes (5): 3. SVG Animations, Line Drawing Principles, Principles, Types of SVG Animation, When to Use SVG Animations
+
+### Community 404 - "9. Color System Checklist"
 Cohesion: 0.50
-Nodes (4): 6. Dark Mode Typography, Color Adjustments, Dark Mode Hierarchy, Weight in Dark Mode
+Nodes (4): 10. Complexity Estimation, Large Projects (Weeks), Medium Projects (Days), Quick Projects (Hours)
+
+### Community 405 - "6. Scroll-Driven Animations"
+Cohesion: 0.50
+Nodes (4): 6. Scroll-Driven Animations, Best Practices, Native CSS (Modern), Principles
+
+### Community 406 - "5. Semantic Colors"
+Cohesion: 0.50
+Nodes (4): 5. Semantic Colors, Consistent Meaning, Error State Colors, Semantic Color Rules
 
 ## Knowledge Gaps
-- **3460 isolated node(s):** `Colors`, `Colors`, `blogLastmod`, `$schema`, `style` (+3455 more)
+- **3511 isolated node(s):** `Colors`, `Colors`, `blogLastmod`, `$schema`, `style` (+3506 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **19 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -1936,10 +1976,10 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **Why does `Mobile Performance Reference` connect `Mobile Performance Reference` to `mobile-design/SKILL.md`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
-- **Why does `Frontend Design System` connect `Frontend Design System` to `9. Performance Principles`?**
+- **Why does `Frontend Design System` connect `Frontend Design System` to `frontend-design/SKILL.md`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `Colors`, `Colors`, `blogLastmod` to the rest of the system?**
-  _3460 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _3511 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `@/i18n/localize` be split into smaller, more focused modules?**
   _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
 - **Should `design_system.py` be split into smaller, more focused modules?**
