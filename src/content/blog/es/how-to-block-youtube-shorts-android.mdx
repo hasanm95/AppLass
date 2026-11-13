@@ -1,0 +1,140 @@
+---
+title: "Bloquear los Shorts de YouTube sin bloquear YouTube"
+description: "YouTube no tiene ninguna opción real para desactivar los Shorts. Pon tope al feed de Shorts en Android con un límite diario o por sesión, mientras los tutoriales y las suscripciones siguen funcionando."
+date: "2026-07-30"
+dateModified: "2026-11-13"
+author: "Equipo AppLass"
+excerpt: "YouTube no tiene ninguna opción que desactive de verdad los Shorts. Un límite a nivel de feed pone tope al feed de Shorts, diario o por sesión, mientras el vídeo largo sigue funcionando."
+tags: ["android", "youtube", "shorts", "concentración", "productividad"]
+category: "Aplicaciones Android"
+keywords: "desactivar shorts de youtube, quitar los shorts de youtube, bloquear shorts youtube android, ocultar sección shorts youtube, límite de tiempo shorts, bloquear shorts sin bloquear youtube"
+breadcrumbName: "Bloquear los Shorts de YouTube"
+sidebarApps:
+  - mindful-guard
+thumbnail: "../../../assets/blogs/block-youtube-shorts-android.png"
+featured: true
+faqs:
+  - question: "¿YouTube tiene alguna opción integrada para desactivar los Shorts?"
+    answer: "Ninguna de verdad. Los ajustes de la app de YouTube permiten ocultar la sección de Shorts de la página de inicio en algunas regiones, pero el reproductor y el feed de Shorts siguen siendo accesibles desde la búsqueda, las notificaciones y la pestaña de suscripciones, y Google ha quitado o movido ese interruptor más de una vez. Es un ajuste cosmético, no un bloqueo impuesto, así que no es fiable a largo plazo."
+  - question: "¿Por qué no sirve el temporizador de Bienestar digital para los Shorts?"
+    answer: "Bienestar digital solo puede limitar el tiempo de la app de YouTube entera, no del feed de Shorts que hay dentro. Poner un temporizador a YouTube bloquea los tutoriales y las suscripciones junto con los Shorts, y por eso la mayoría acaba ignorando el temporizador o quitándolo en una semana. Un bloqueador específico de Shorts es la única forma de apuntar al feed sin perder la app."
+  - question: "¿Bloquear los Shorts también evita que aparezcan en la búsqueda y en las notificaciones?"
+    answer: "Un bloqueador a nivel de feed actúa cuando se abre el reproductor de Shorts, no cuando se muestra una miniatura. Los Shorts pueden seguir apareciendo como resultados de búsqueda o como notificación, pero tocar uno con el límite activo topa con el bloqueo en lugar de abrir el reproductor. Ocultar la sección de la página de inicio no hace eso, y por eso ese interruptor resulta poco eficaz."
+  - question: "¿Bloquear los Shorts de YouTube afecta a YouTube Music o a una suscripción Premium?"
+    answer: "No. Un límite de Shorts apunta solo al feed de Shorts dentro de la app de YouTube. YouTube Music es una app aparte y no se ve afectada, y una suscripción Premium sigue funcionando con normalidad para la reproducción en segundo plano, las descargas y el vídeo largo sin anuncios."
+  - question: "¿La sección de Shorts vuelve tras actualizar la app de YouTube?"
+    answer: "A menudo sí. El interruptor de la sección de inicio se ha movido, renombrado y eliminado a lo largo de distintas versiones de YouTube, y las actualizaciones pueden restablecerlo. Este es el argumento práctico para imponer el límite desde fuera de la app: un límite de feed externo sigue funcionando pase lo que pase con los ajustes propios de YouTube."
+  - question: "¿En qué se diferencia un bloqueador de Shorts de tocar «No me interesa»?"
+    answer: "«No me interesa» es una señal de recomendación: pide al algoritmo que te muestre menos Shorts de ese tipo, y el algoritmo decide qué hacer con la petición. Un bloqueador es un mecanismo de cumplimiento: cuando alcanzas tu límite, el feed no se abre, sin importar lo que el sistema de recomendación quiera servirte."
+---
+
+import MindfulGuardCTA from "@/components/blog/MindfulGuardCTA.astro";
+
+**YouTube no tiene ninguna opción que apague de verdad los Shorts.** El interruptor que oculta la sección de
+Shorts de tu página de inicio es cosmético: el feed sigue estando a una búsqueda, una notificación o un
+enlace compartido de distancia, y Google ha movido o eliminado ese interruptor más de una vez entre
+versiones.
+
+Lo que sí funciona es un **límite a nivel de feed**: poner tope al propio feed de Shorts con un límite diario
+o por sesión y dejar el resto de YouTube en paz. Los tutoriales, las suscripciones, las listas de
+reproducción y el vídeo largo siguen funcionando exactamente igual. Esta guía lo configura en Android en unos
+dos minutos, sin root y sin VPN.
+
+---
+
+## Por qué «bloquea YouTube y ya» es un mal consejo
+
+Un bloqueador de app entera trata YouTube como un único interruptor de encendido y apagado. Si lo bloqueas
+durante las horas de concentración, también pierdes:
+
+- El tutorial que necesitabas para trabajar
+- Tus suscripciones y la cola de «ver más tarde»
+- Los pódcasts y el vídeo largo que elegiste ver
+
+Por eso los bloqueos de app entera en YouTube rara vez sobreviven más de unos días: el coste es demasiado
+alto, así que la gente desactiva el bloqueador la primera vez que necesita un vídeo de verdad. La solución no
+es renunciar a YouTube, sino apuntar al único feed de dentro que está construido para ser infinito.
+
+## Por qué no basta con ocultar la sección de Shorts
+
+El ajuste propio de YouTube oculta la fila de Shorts de tu página de inicio. No detiene el feed. Los Shorts
+te siguen llegando por:
+
+- **Resultados de búsqueda**, donde los Shorts aparecen junto al vídeo largo
+- **Notificaciones** de canales que publican Shorts
+- **Enlaces compartidos** por amigos, que abren el reproductor de Shorts directamente
+- **La pestaña de suscripciones**, que mezcla Shorts en el feed
+
+Ocultar una sección cambia lo que ves en una pantalla. No cambia lo que pasa cuando tocas un Short desde
+cualquier otro sitio, que es donde empiezan de verdad la mayoría de las sesiones de Shorts.
+
+## Lo que sí funciona: el bloqueo a nivel de feed
+
+Un **Reel Guard** es un bloqueador específico de Shorts. Detecta cuándo se abre el feed de Shorts —ya sea
+desde la sección de inicio, la búsqueda o un enlace compartido— y aplica ahí tu límite, mientras el resto de
+la app sigue funcionando. El Reel Guard de Mindful Guard hace esto con los Shorts de YouTube, los Reels de
+Instagram, el feed «Para ti» de TikTok, los Reels de Facebook y el Spotlight de Snapchat, cada uno con su
+propio límite independiente.
+
+Es el mismo enfoque a nivel de feed que cubrimos en nuestra
+[guía completa para bloquear Reels y Shorts en Android](/es/blog/how-to-block-reels-and-shorts-on-android-2026),
+aplicado a YouTube en concreto: apuntar al feed, no a la app.
+
+<MindfulGuardCTA campaign="how-to-block-youtube-shorts-android" />
+
+## Límite diario frente a límite por sesión
+
+Dos ajustes hacen el trabajo de verdad, y puedes usar uno o los dos:
+
+- **Límite diario**: un presupuesto total de Shorts al día (por ejemplo, 10 minutos). Cuando se gasta, los
+  Shorts quedan bloqueados hasta el día siguiente y el resto de YouTube sigue abierto.
+- **Límite por sesión**: un tope para cada rato concreto (por ejemplo, 3 minutos). Esto es lo que corta el
+  scroll antes de que se convierta en una sesión, porque el daño rara vez está en abrir Shorts una vez, sino
+  en la media hora que no planeabas perder.
+
+Pon un límite firme y no habrá nada con lo que negociar. Ningún botón de «añadir 5 minutos más» que tocar.
+
+## Paso a paso: bloquear los Shorts de YouTube en menos de dos minutos
+
+1. Instala **Mindful Guard** desde Play Store.
+2. Concede el permiso de **servicio de accesibilidad**: es lo que permite a la app detectar el feed de Shorts
+   en cuanto se abre, sin root y sin VPN.
+3. Abre **Reel Guard** y selecciona **Shorts de YouTube**.
+4. Pon un **límite diario**, un **límite por sesión** o ambos.
+5. Listo. El YouTube de vídeo largo sigue funcionando exactamente igual; solo los Shorts obedecen tu límite.
+
+<MindfulGuardCTA campaign="how-to-block-youtube-shorts-android" />
+
+## Los Shorts frente al resto de YouTube
+
+| Método | ¿YouTube sigue usable? | Cumplimiento | Configuración |
+|---|---|---|---|
+| **Reel Guard (límite a nivel de feed)** | ✅ Sí — solo se limitan los Shorts | Límite firme, sin salida | ~2 min |
+| Bloquear la app entera de YouTube | ❌ No — pierdes tutoriales, suscripciones, todo | Bloqueo firme durante la franja | ~1 min |
+| Ocultar la sección de Shorts (ajuste de YouTube) | ✅ Sí, de forma cosmética | Ninguno — siguen accesibles por búsqueda y notificaciones | ~30 s |
+| Temporizador de Bienestar digital | ❌ No — corta YouTube entero | Botón «+5 min» de un toque (débil) | ~1 min |
+
+Si además quieres recuperar batería mientras ves el contenido largo que conservas, mira nuestra guía sobre
+[reproducir YouTube con la pantalla apagada](/blog/youtube-screen-off-battery-hack) (en inglés) y el
+[truco de reproducción en segundo plano de 2026](/es/blog/youtube-background-play-2026-workaround), útiles
+una vez que los Shorts dejan de comerse el tiempo que preferirías dedicar a cualquiera de las dos cosas.
+
+## ¿Y los Shorts en el navegador?
+
+Si un límite solo vigila la app de YouTube, la puerta trasera es evidente: abres youtube.com en Chrome y la
+sección de Shorts vuelve a estar ahí. Cualquier bloqueador de feed que ignore el navegador solo está haciendo
+la mitad del trabajo.
+
+Reel Guard ahora alcanza el vídeo corto **también en la web**. En cuanto alcanzas tu límite de Shorts (o
+tienes activado Cero Reels), la superficie de Shorts queda bloqueada dentro de Chrome y otros navegadores
+además de en la app, bajo el mismo ajuste de Reel Guard. Funciona mediante el servicio de accesibilidad —sin
+trucos de DNS y sin VPN—, así que el YouTube de vídeo largo en el navegador sigue reproduciéndose mientras
+los Shorts siguen bloqueados en todas partes.
+
+## En resumen
+
+Los Shorts de YouTube no son motivo para renunciar a YouTube: son motivo para bloquear un feed concreto de
+dentro. Un límite a nivel de feed deja intactas tus suscripciones, tus tutoriales y tus hábitos de vídeo
+largo mientras pone un freno firme a la única parte de la app diseñada para ser infinita.
+
+<MindfulGuardCTA campaign="how-to-block-youtube-shorts-android" />

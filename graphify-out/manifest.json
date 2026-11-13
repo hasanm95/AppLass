@@ -3145,7 +3145,7 @@
     "semantic_hash": ""
   },
   "src/content/blog/es/_README.md": {
-    "mtime": 1794552101.6168149,
+    "mtime": 1794557657.585085,
     "ast_hash": "9931db66085d14ba1d8104fc327d0b95",
     "semantic_hash": ""
   },
@@ -3160,43 +3160,63 @@
     "semantic_hash": ""
   },
   "src/content/blog/es/app-blocker-cannot-be-uninstalled-android.mdx": {
-    "mtime": 1794553156.514277,
-    "ast_hash": "cc079068aefea794b79267ccbdcf00d9",
+    "mtime": 1794557657.5802095,
+    "ast_hash": "67ea257e586743853fa0f59a831f1c64",
     "semantic_hash": ""
   },
   "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx": {
-    "mtime": 1794552942.1607728,
+    "mtime": 1794557657.5807147,
     "ast_hash": "851ec9be1eb6da4bd3738ff24fa13262",
     "semantic_hash": ""
   },
   "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx": {
-    "mtime": 1794552826.844289,
-    "ast_hash": "087e4420f5625df1b1b4a0595ee8624a",
+    "mtime": 1794557657.5812533,
+    "ast_hash": "7f0d50733888678eff019655f501cacd",
     "semantic_hash": ""
   },
   "src/content/blog/es/how-to-block-instagram-reels-android.mdx": {
-    "mtime": 1794552873.4007668,
-    "ast_hash": "e71d1624cfdd8236f8b3cf791428c67c",
+    "mtime": 1794557657.5820408,
+    "ast_hash": "c98d7281600f3139b60048320cd59bd4",
     "semantic_hash": ""
   },
   "src/content/blog/es/how-to-block-reels-and-shorts-on-android-2026.mdx": {
-    "mtime": 1794553014.8872483,
-    "ast_hash": "e53b57620a3f39cfecd3acb6305312d6",
+    "mtime": 1794557657.5825665,
+    "ast_hash": "28ebd42983e82a6bb442d5143e30d959",
     "semantic_hash": ""
   },
   "src/content/blog/es/how-to-block-tiktok-feed-android.mdx": {
-    "mtime": 1794553092.6787455,
-    "ast_hash": "d6f3dc3a062ad213753276ce6db4dd36",
+    "mtime": 1794557657.583024,
+    "ast_hash": "777a7c818fb96cd129e7b7b804798830",
     "semantic_hash": ""
   },
   "src/content/blog/es/opal-alternatives-android.mdx": {
-    "mtime": 1794552726.8110843,
-    "ast_hash": "784c1ffbcc3e0a76b572eb225730ac44",
+    "mtime": 1794557657.5842352,
+    "ast_hash": "4f3ba92ae72b30531c7fbc6e6398a0ef",
     "semantic_hash": ""
   },
   "src/content/blog/es/youtube-background-play-2026-workaround.mdx": {
-    "mtime": 1794553225.637342,
-    "ast_hash": "01541313b32dfe505388a8d55f6e2fae",
+    "mtime": 1794557657.584678,
+    "ast_hash": "7effde4dcb2a88fb91c5e063831053e5",
+    "semantic_hash": ""
+  },
+  "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md": {
+    "mtime": 1794557657.5854812,
+    "ast_hash": "f788b6afb9eaaf0dcb704401e68c6c59",
+    "semantic_hash": ""
+  },
+  "src/content/blog/es/freedom-alternative-android.mdx": {
+    "mtime": 1794557657.5816596,
+    "ast_hash": "5c7fa7db47f1246cf50f94f386bec0e1",
+    "semantic_hash": ""
+  },
+  "src/content/blog/es/how-to-block-youtube-shorts-android.mdx": {
+    "mtime": 1794557657.5833972,
+    "ast_hash": "6024ebe626c974f9182d035df3d3dc4a",
+    "semantic_hash": ""
+  },
+  "src/content/blog/es/limit-reels-per-day-android.mdx": {
+    "mtime": 1794557657.5838597,
+    "ast_hash": "364351e6ae3ab5047ccd64eef8fa0e83",
     "semantic_hash": ""
   }
 }

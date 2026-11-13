@@ -4397,8 +4397,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_blog_appcallout",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 32,
+      "community_name": "@/lib/legal-registry",
       "norm_label": "@/components/blog/appcallout.astro"
     },
     {
@@ -4533,8 +4533,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_blog_mindfulguardcta",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 32,
+      "community_name": "@/lib/legal-registry",
       "norm_label": "mindfulguardcta.astro"
     },
     {
@@ -4544,8 +4544,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_components_blog_mindfulguardcta_href",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 32,
+      "community_name": "@/lib/legal-registry",
       "norm_label": "href"
     },
     {
@@ -4555,8 +4555,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "src_components_blog_mindfulguardcta_content",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 32,
+      "community_name": "@/lib/legal-registry",
       "norm_label": "content"
     },
     {
@@ -6356,8 +6356,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "src_lib_utils_playurl",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 32,
+      "community_name": "@/lib/legal-registry",
       "norm_label": "playurl()"
     },
     {
@@ -18673,8 +18673,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill",
-      "community": 127,
-      "community_name": "frontend-design/SKILL.md",
+      "community": 380,
+      "community_name": "9. Performance Principles",
       "norm_label": "frontend-design/skill.md"
     },
     {
@@ -19168,8 +19168,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 380,
+      "community_name": "9. Performance Principles",
       "norm_label": "animation-guide.md"
     },
     {
@@ -19278,8 +19278,8 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_3_micro_interaction_principles",
-      "community": 394,
-      "community_name": "6. Deep Linking",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "3. micro-interaction principles"
     },
     {
@@ -19289,8 +19289,8 @@
       "source_location": "L87",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_what_makes_good_micro_interactions",
-      "community": 394,
-      "community_name": "6. Deep Linking",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "what makes good micro-interactions"
     },
     {
@@ -19300,8 +19300,8 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_button_states",
-      "community": 394,
-      "community_name": "6. Deep Linking",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "button states"
     },
     {
@@ -19311,8 +19311,8 @@
       "source_location": "L107",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_principles",
-      "community": 394,
-      "community_name": "6. Deep Linking",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "principles"
     },
     {
@@ -19322,8 +19322,8 @@
       "source_location": "L116",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_4_loading_states_principles",
-      "community": 396,
-      "community_name": "4. Loading States Principles",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "4. loading states principles"
     },
     {
@@ -19333,8 +19333,8 @@
       "source_location": "L118",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_types_by_context",
-      "community": 396,
-      "community_name": "4. Loading States Principles",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "types by context"
     },
     {
@@ -19344,8 +19344,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_skeleton_screens",
-      "community": 396,
-      "community_name": "4. Loading States Principles",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "skeleton screens"
     },
     {
@@ -19355,8 +19355,8 @@
       "source_location": "L137",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_progress_indicators",
-      "community": 396,
-      "community_name": "4. Loading States Principles",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "progress indicators"
     },
     {
@@ -19366,8 +19366,8 @@
       "source_location": "L154",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_5_page_transitions_principles",
-      "community": 397,
-      "community_name": "5. Page Transitions Principles",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "5. page transitions principles"
     },
     {
@@ -19377,8 +19377,8 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_transition_strategy",
-      "community": 397,
-      "community_name": "5. Page Transitions Principles",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "transition strategy"
     },
     {
@@ -19388,8 +19388,8 @@
       "source_location": "L165",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_common_patterns",
-      "community": 397,
-      "community_name": "5. Page Transitions Principles",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "common patterns"
     },
     {
@@ -19399,8 +19399,8 @@
       "source_location": "L174",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_direction_matching",
-      "community": 397,
-      "community_name": "5. Page Transitions Principles",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "direction matching"
     },
     {
@@ -19410,8 +19410,8 @@
       "source_location": "L186",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_6_scroll_animation_principles",
-      "community": 392,
-      "community_name": "2. Tab Bar Navigation",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "6. scroll animation principles"
     },
     {
@@ -19421,8 +19421,8 @@
       "source_location": "L188",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_progressive_reveal",
-      "community": 392,
-      "community_name": "2. Tab Bar Navigation",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "progressive reveal"
     },
     {
@@ -19432,8 +19432,8 @@
       "source_location": "L198",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_trigger_points",
-      "community": 392,
-      "community_name": "2. Tab Bar Navigation",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "trigger points"
     },
     {
@@ -19443,8 +19443,8 @@
       "source_location": "L207",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_animation_properties",
-      "community": 392,
-      "community_name": "2. Tab Bar Navigation",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "animation properties"
     },
     {
@@ -19454,8 +19454,8 @@
       "source_location": "L214",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_performance",
-      "community": 392,
-      "community_name": "2. Tab Bar Navigation",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "performance"
     },
     {
@@ -19498,8 +19498,8 @@
       "source_location": "L242",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_8_feedback_animation_principles",
-      "community": 398,
-      "community_name": "8. Feedback Animation Principles",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "8. feedback animation principles"
     },
     {
@@ -19509,8 +19509,8 @@
       "source_location": "L244",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_success_states",
-      "community": 398,
-      "community_name": "8. Feedback Animation Principles",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "success states"
     },
     {
@@ -19520,8 +19520,8 @@
       "source_location": "L254",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_error_states",
-      "community": 398,
-      "community_name": "8. Feedback Animation Principles",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "error states"
     },
     {
@@ -19531,8 +19531,8 @@
       "source_location": "L264",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_timing",
-      "community": 398,
-      "community_name": "8. Feedback Animation Principles",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "timing"
     },
     {
@@ -19542,8 +19542,8 @@
       "source_location": "L272",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_9_performance_principles",
-      "community": 399,
-      "community_name": "9. Performance Principles",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "9. performance principles"
     },
     {
@@ -19553,8 +19553,8 @@
       "source_location": "L274",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_what_s_cheap_to_animate",
-      "community": 399,
-      "community_name": "9. Performance Principles",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "what's cheap to animate"
     },
     {
@@ -19564,8 +19564,8 @@
       "source_location": "L289",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_optimization_strategies",
-      "community": 399,
-      "community_name": "9. Performance Principles",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "optimization strategies"
     },
     {
@@ -19575,8 +19575,8 @@
       "source_location": "L296",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_respecting_user_preferences",
-      "community": 399,
-      "community_name": "9. Performance Principles",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "respecting user preferences"
     },
     {
@@ -19608,8 +19608,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 380,
+      "community_name": "9. Performance Principles",
       "norm_label": "color-system.md"
     },
     {
@@ -19707,8 +19707,8 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_3_color_psychology_meaning_selection",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 384,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "3. color psychology - meaning & selection"
     },
     {
@@ -19718,8 +19718,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_how_to_choose_based_on_context",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 384,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "how to choose based on context"
     },
     {
@@ -19729,8 +19729,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_emotional_associations_for_decision_making",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 384,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "emotional associations (for decision making)"
     },
     {
@@ -19740,8 +19740,8 @@
       "source_location": "L115",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_selection_process",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 384,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "selection process:"
     },
     {
@@ -19751,8 +19751,8 @@
       "source_location": "L124",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_4_palette_generation_principles",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 392,
+      "community_name": "2. Tab Bar Navigation",
       "norm_label": "4. palette generation principles"
     },
     {
@@ -19762,8 +19762,8 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_from_a_single_color_hsl_method",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 392,
+      "community_name": "2. Tab Bar Navigation",
       "norm_label": "from a single color (hsl method)"
     },
     {
@@ -19773,8 +19773,8 @@
       "source_location": "L151",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_generating_a_full_palette",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 392,
+      "community_name": "2. Tab Bar Navigation",
       "norm_label": "generating a full palette"
     },
     {
@@ -19784,8 +19784,8 @@
       "source_location": "L169",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_saturation_adjustments",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 392,
+      "community_name": "2. Tab Bar Navigation",
       "norm_label": "saturation adjustments"
     },
     {
@@ -19861,8 +19861,8 @@
       "source_location": "L256",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_7_accessibility_guidelines",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 393,
+      "community_name": "3. Stack Navigation",
       "norm_label": "7. accessibility guidelines"
     },
     {
@@ -19872,8 +19872,8 @@
       "source_location": "L258",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_contrast_requirements_wcag",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 393,
+      "community_name": "3. Stack Navigation",
       "norm_label": "contrast requirements (wcag)"
     },
     {
@@ -19883,8 +19883,8 @@
       "source_location": "L265",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_how_to_check_contrast",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 393,
+      "community_name": "3. Stack Navigation",
       "norm_label": "how to check contrast"
     },
     {
@@ -19894,8 +19894,8 @@
       "source_location": "L271",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_safe_patterns",
-      "community": 27,
-      "community_name": "Color System Reference",
+      "community": 393,
+      "community_name": "3. Stack Navigation",
       "norm_label": "safe patterns"
     },
     {
@@ -19949,8 +19949,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees",
-      "community": 127,
-      "community_name": "frontend-design/SKILL.md",
+      "community": 380,
+      "community_name": "9. Performance Principles",
       "norm_label": "frontend-design/decision-trees.md"
     },
     {
@@ -20389,8 +20389,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics",
-      "community": 127,
-      "community_name": "frontend-design/SKILL.md",
+      "community": 380,
+      "community_name": "9. Performance Principles",
       "norm_label": "motion-graphics.md"
     },
     {
@@ -20785,8 +20785,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_typography_system",
-      "community": 12,
-      "community_name": "Typography System Reference",
+      "community": 380,
+      "community_name": "9. Performance Principles",
       "norm_label": "typography-system.md"
     },
     {
@@ -21247,8 +21247,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_ux_psychology",
-      "community": 127,
-      "community_name": "frontend-design/SKILL.md",
+      "community": 380,
+      "community_name": "9. Performance Principles",
       "norm_label": "ux-psychology.md"
     },
     {
@@ -21709,8 +21709,8 @@
       "source_location": "L919",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_ux_psychology_4_cognitive_load_management",
-      "community": 263,
-      "community_name": "4. Cognitive Load Management",
+      "community": 135,
+      "community_name": "UX Psychology Reference",
       "norm_label": "4. cognitive load management"
     },
     {
@@ -21720,8 +21720,8 @@
       "source_location": "L921",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_ux_psychology_three_types_of_cognitive_load",
-      "community": 263,
-      "community_name": "4. Cognitive Load Management",
+      "community": 135,
+      "community_name": "UX Psychology Reference",
       "norm_label": "three types of cognitive load"
     },
     {
@@ -21731,8 +21731,8 @@
       "source_location": "L929",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_ux_psychology_reduction_strategies",
-      "community": 263,
-      "community_name": "4. Cognitive Load Management",
+      "community": 135,
+      "community_name": "UX Psychology Reference",
       "norm_label": "reduction strategies"
     },
     {
@@ -21742,8 +21742,8 @@
       "source_location": "L1018",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_ux_psychology_5_persuasive_design_ethical",
-      "community": 264,
-      "community_name": "5. Persuasive Design (Ethical)",
+      "community": 135,
+      "community_name": "UX Psychology Reference",
       "norm_label": "5. persuasive design (ethical)"
     },
     {
@@ -21753,8 +21753,8 @@
       "source_location": "L1020",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_ux_psychology_ethical_persuasion_techniques",
-      "community": 264,
-      "community_name": "5. Persuasive Design (Ethical)",
+      "community": 135,
+      "community_name": "UX Psychology Reference",
       "norm_label": "ethical persuasion techniques"
     },
     {
@@ -21764,8 +21764,8 @@
       "source_location": "L1030",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_ux_psychology_nudge_patterns",
-      "community": 264,
-      "community_name": "5. Persuasive Design (Ethical)",
+      "community": 135,
+      "community_name": "UX Psychology Reference",
       "norm_label": "nudge patterns"
     },
     {
@@ -21863,8 +21863,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects",
-      "community": 127,
-      "community_name": "frontend-design/SKILL.md",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "visual-effects.md"
     },
     {
@@ -21940,8 +21940,8 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_2_neomorphism_principles",
-      "community": 384,
-      "community_name": "8. Hierarchy Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "2. neomorphism principles"
     },
     {
@@ -21951,8 +21951,8 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_what_makes_neomorphism_work",
-      "community": 384,
-      "community_name": "8. Hierarchy Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "what makes neomorphism work"
     },
     {
@@ -21962,8 +21962,8 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_the_pattern",
-      "community": 384,
-      "community_name": "8. Hierarchy Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "the pattern"
     },
     {
@@ -21973,8 +21973,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_accessibility_warning",
-      "community": 384,
-      "community_name": "8. Hierarchy Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "accessibility warning"
     },
     {
@@ -21984,8 +21984,8 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_when_to_use",
-      "community": 384,
-      "community_name": "8. Hierarchy Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "when to use"
     },
     {
@@ -21995,8 +21995,8 @@
       "source_location": "L104",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_3_shadow_hierarchy_principles",
-      "community": 356,
-      "community_name": "2. Font Pairing Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "3. shadow hierarchy principles"
     },
     {
@@ -22006,8 +22006,8 @@
       "source_location": "L106",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_concept_shadows_indicate_elevation",
-      "community": 356,
-      "community_name": "2. Font Pairing Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "concept: shadows indicate elevation"
     },
     {
@@ -22017,8 +22017,8 @@
       "source_location": "L117",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_shadow_properties_to_adjust",
-      "community": 356,
-      "community_name": "2. Font Pairing Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "shadow properties to adjust"
     },
     {
@@ -22028,8 +22028,8 @@
       "source_location": "L128",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_principles_for_natural_shadows",
-      "community": 356,
-      "community_name": "2. Font Pairing Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "principles for natural shadows"
     },
     {
@@ -22039,8 +22039,8 @@
       "source_location": "L135",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_dark_mode_shadows",
-      "community": 356,
-      "community_name": "2. Font Pairing Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "dark mode shadows"
     },
     {
@@ -22050,8 +22050,8 @@
       "source_location": "L143",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_4_gradient_principles",
-      "community": 369,
-      "community_name": "Development Decision Process",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "4. gradient principles"
     },
     {
@@ -22061,8 +22061,8 @@
       "source_location": "L145",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_types_and_when_to_use",
-      "community": 369,
-      "community_name": "Development Decision Process",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "types and when to use"
     },
     {
@@ -22072,8 +22072,8 @@
       "source_location": "L153",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_creating_harmonious_gradients",
-      "community": 369,
-      "community_name": "Development Decision Process",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "creating harmonious gradients"
     },
     {
@@ -22083,8 +22083,8 @@
       "source_location": "L163",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_gradient_syntax_pattern",
-      "community": 369,
-      "community_name": "Development Decision Process",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "gradient syntax pattern"
     },
     {
@@ -22094,8 +22094,8 @@
       "source_location": "L178",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_mesh_gradients",
-      "community": 369,
-      "community_name": "Development Decision Process",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "mesh gradients"
     },
     {
@@ -22149,8 +22149,8 @@
       "source_location": "L224",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_6_glow_effects_principles",
-      "community": 400,
-      "community_name": "6. Glow Effects Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "6. glow effects principles"
     },
     {
@@ -22160,8 +22160,8 @@
       "source_location": "L226",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_text_glow",
-      "community": 400,
-      "community_name": "6. Glow Effects Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "text glow"
     },
     {
@@ -22171,8 +22171,8 @@
       "source_location": "L238",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_element_glow",
-      "community": 400,
-      "community_name": "6. Glow Effects Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "element glow"
     },
     {
@@ -22182,8 +22182,8 @@
       "source_location": "L249",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_pulsing_glow_animation",
-      "community": 400,
-      "community_name": "6. Glow Effects Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "pulsing glow animation"
     },
     {
@@ -22226,8 +22226,8 @@
       "source_location": "L299",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_8_modern_css_techniques",
-      "community": 380,
-      "community_name": "9. Performance Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "8. modern css techniques"
     },
     {
@@ -22237,8 +22237,8 @@
       "source_location": "L301",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_container_queries_concept",
-      "community": 380,
-      "community_name": "9. Performance Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "container queries (concept)"
     },
     {
@@ -22248,8 +22248,8 @@
       "source_location": "L310",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_has_selector_concept",
-      "community": 380,
-      "community_name": "9. Performance Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": ":has() selector (concept)"
     },
     {
@@ -22259,8 +22259,8 @@
       "source_location": "L319",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_scroll_driven_animations_concept",
-      "community": 380,
-      "community_name": "9. Performance Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "scroll-driven animations (concept)"
     },
     {
@@ -22270,8 +22270,8 @@
       "source_location": "L331",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_9_performance_principles",
-      "community": 381,
-      "community_name": "4. Line Length Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "9. performance principles"
     },
     {
@@ -22281,8 +22281,8 @@
       "source_location": "L333",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_gpu_accelerated_properties",
-      "community": 381,
-      "community_name": "4. Line Length Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "gpu-accelerated properties"
     },
     {
@@ -22292,8 +22292,8 @@
       "source_location": "L347",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_will_change_usage",
-      "community": 381,
-      "community_name": "4. Line Length Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "will-change usage"
     },
     {
@@ -22303,8 +22303,8 @@
       "source_location": "L358",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_reduced_motion",
-      "community": 381,
-      "community_name": "4. Line Length Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "reduced motion"
     },
     {
@@ -27099,8 +27099,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_2_oled_considerations",
-      "community": 402,
-      "community_name": "2. OLED Considerations",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "2. oled considerations"
     },
     {
@@ -27110,8 +27110,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_how_oled_differs",
-      "community": 402,
-      "community_name": "2. OLED Considerations",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "how oled differs"
     },
     {
@@ -27121,8 +27121,8 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_battery_savings_with_oled",
-      "community": 402,
-      "community_name": "2. OLED Considerations",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "battery savings with oled"
     },
     {
@@ -27132,8 +27132,8 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_true_black_vs_near_black",
-      "community": 402,
-      "community_name": "2. OLED Considerations",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "true black vs near black"
     },
     {
@@ -27275,8 +27275,8 @@
       "source_location": "L240",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_6_dynamic_color_android",
-      "community": 403,
-      "community_name": "6. Dynamic Color (Android)",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "6. dynamic color (android)"
     },
     {
@@ -27286,8 +27286,8 @@
       "source_location": "L242",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_material_you",
-      "community": 403,
-      "community_name": "6. Dynamic Color (Android)",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "material you"
     },
     {
@@ -27297,8 +27297,8 @@
       "source_location": "L257",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_supporting_dynamic_color",
-      "community": 403,
-      "community_name": "6. Dynamic Color (Android)",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "supporting dynamic color"
     },
     {
@@ -27308,8 +27308,8 @@
       "source_location": "L270",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_fallback_colors",
-      "community": 403,
-      "community_name": "6. Dynamic Color (Android)",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "fallback colors"
     },
     {
@@ -27319,8 +27319,8 @@
       "source_location": "L287",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_7_color_accessibility",
-      "community": 404,
-      "community_name": "7. Color Accessibility",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "7. color accessibility"
     },
     {
@@ -27330,8 +27330,8 @@
       "source_location": "L289",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_colorblind_considerations",
-      "community": 404,
-      "community_name": "7. Color Accessibility",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "colorblind considerations"
     },
     {
@@ -27341,8 +27341,8 @@
       "source_location": "L307",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_contrast_testing_tools",
-      "community": 404,
-      "community_name": "7. Color Accessibility",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "contrast testing tools"
     },
     {
@@ -27352,8 +27352,8 @@
       "source_location": "L318",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_sufficient_contrast",
-      "community": 404,
-      "community_name": "7. Color Accessibility",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "sufficient contrast"
     },
     {
@@ -27363,8 +27363,8 @@
       "source_location": "L337",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_8_color_anti_patterns",
-      "community": 405,
-      "community_name": "8. Color Anti-Patterns",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "8. color anti-patterns"
     },
     {
@@ -27374,8 +27374,8 @@
       "source_location": "L339",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_common_mistakes",
-      "community": 405,
-      "community_name": "8. Color Anti-Patterns",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "\u274c common mistakes"
     },
     {
@@ -27385,8 +27385,8 @@
       "source_location": "L350",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_ai_color_mistakes",
-      "community": 405,
-      "community_name": "8. Color Anti-Patterns",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "\u274c ai color mistakes"
     },
     {
@@ -27396,8 +27396,8 @@
       "source_location": "L368",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_9_color_system_checklist",
-      "community": 406,
-      "community_name": "9. Color System Checklist",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "9. color system checklist"
     },
     {
@@ -27407,8 +27407,8 @@
       "source_location": "L370",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_before_choosing_colors",
-      "community": 406,
-      "community_name": "9. Color System Checklist",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "before choosing colors"
     },
     {
@@ -27418,8 +27418,8 @@
       "source_location": "L378",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_before_release",
-      "community": 406,
-      "community_name": "9. Color System Checklist",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "before release"
     },
     {
@@ -27429,8 +27429,8 @@
       "source_location": "L389",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_10_quick_reference",
-      "community": 401,
-      "community_name": "10. Quick Reference",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "10. quick reference"
     },
     {
@@ -27440,8 +27440,8 @@
       "source_location": "L391",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_dark_mode_backgrounds",
-      "community": 401,
-      "community_name": "10. Quick Reference",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "dark mode backgrounds"
     },
     {
@@ -27451,8 +27451,8 @@
       "source_location": "L401",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_text_on_dark",
-      "community": 401,
-      "community_name": "10. Quick Reference",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "text on dark"
     },
     {
@@ -27462,8 +27462,8 @@
       "source_location": "L409",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_contrast_ratios",
-      "community": 401,
-      "community_name": "10. Quick Reference",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "contrast ratios"
     },
     {
@@ -27726,8 +27726,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_pattern_questioning_matrix",
-      "community": 393,
-      "community_name": "3. Stack Navigation",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "\ud83c\udfaf pattern questioning matrix"
     },
     {
@@ -27737,8 +27737,8 @@
       "source_location": "L131",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_navigation_pattern_questioning",
-      "community": 393,
-      "community_name": "3. Stack Navigation",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "navigation pattern questioning"
     },
     {
@@ -27748,8 +27748,8 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_state_pattern_questioning",
-      "community": 393,
-      "community_name": "3. Stack Navigation",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "state pattern questioning"
     },
     {
@@ -27759,8 +27759,8 @@
       "source_location": "L149",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_list_pattern_questioning",
-      "community": 393,
-      "community_name": "3. Stack Navigation",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "list pattern questioning"
     },
     {
@@ -27770,8 +27770,8 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_ui_pattern_questioning",
-      "community": 393,
-      "community_name": "3. Stack Navigation",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "ui pattern questioning"
     },
     {
@@ -28914,8 +28914,8 @@
       "source_location": "L114",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_testing_3_what_to_test_at_each_level",
-      "community": 23,
-      "community_name": "Mobile Testing Patterns",
+      "community": 381,
+      "community_name": "4. Line Length Principles",
       "norm_label": "3. what to test at each level"
     },
     {
@@ -28925,8 +28925,8 @@
       "source_location": "L116",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_testing_unit_tests_jest",
-      "community": 23,
-      "community_name": "Mobile Testing Patterns",
+      "community": 381,
+      "community_name": "4. Line Length Principles",
       "norm_label": "unit tests (jest)"
     },
     {
@@ -28936,8 +28936,8 @@
       "source_location": "L133",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_testing_component_tests_rntl_flutter_test",
-      "community": 23,
-      "community_name": "Mobile Testing Patterns",
+      "community": 381,
+      "community_name": "4. Line Length Principles",
       "norm_label": "component tests (rntl / flutter_test)"
     },
     {
@@ -28947,8 +28947,8 @@
       "source_location": "L150",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_testing_integration_tests",
-      "community": 23,
-      "community_name": "Mobile Testing Patterns",
+      "community": 381,
+      "community_name": "4. Line Length Principles",
       "norm_label": "integration tests"
     },
     {
@@ -28958,8 +28958,8 @@
       "source_location": "L166",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_testing_e2e_tests",
-      "community": 23,
-      "community_name": "Mobile Testing Patterns",
+      "community": 381,
+      "community_name": "4. Line Length Principles",
       "norm_label": "e2e tests"
     },
     {
@@ -29134,8 +29134,8 @@
       "source_location": "L322",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_testing_mobile_testing_checklist",
-      "community": 23,
-      "community_name": "Mobile Testing Patterns",
+      "community": 394,
+      "community_name": "6. Deep Linking",
       "norm_label": "\ud83d\udcdd mobile testing checklist"
     },
     {
@@ -29145,8 +29145,8 @@
       "source_location": "L324",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_testing_before_pr",
-      "community": 23,
-      "community_name": "Mobile Testing Patterns",
+      "community": 394,
+      "community_name": "6. Deep Linking",
       "norm_label": "before pr"
     },
     {
@@ -29156,8 +29156,8 @@
       "source_location": "L331",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_testing_before_release",
-      "community": 23,
-      "community_name": "Mobile Testing Patterns",
+      "community": 394,
+      "community_name": "6. Deep Linking",
       "norm_label": "before release"
     },
     {
@@ -29167,8 +29167,8 @@
       "source_location": "L340",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_testing_what_to_skip_consciously",
-      "community": 23,
-      "community_name": "Mobile Testing Patterns",
+      "community": 394,
+      "community_name": "6. Deep Linking",
       "norm_label": "what to skip (consciously)"
     },
     {
@@ -29299,8 +29299,8 @@
       "source_location": "L101",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_3_type_scale",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 397,
+      "community_name": "5. Page Transitions Principles",
       "norm_label": "3. type scale"
     },
     {
@@ -29310,8 +29310,8 @@
       "source_location": "L103",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_ios_type_scale_built_in",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 397,
+      "community_name": "5. Page Transitions Principles",
       "norm_label": "ios type scale (built-in)"
     },
     {
@@ -29321,8 +29321,8 @@
       "source_location": "L119",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_android_type_scale_material_3",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 397,
+      "community_name": "5. Page Transitions Principles",
       "norm_label": "android type scale (material 3)"
     },
     {
@@ -29332,8 +29332,8 @@
       "source_location": "L139",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_creating_custom_scale",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 397,
+      "community_name": "5. Page Transitions Principles",
       "norm_label": "creating custom scale"
     },
     {
@@ -29387,8 +29387,8 @@
       "source_location": "L216",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_5_typography_accessibility",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 398,
+      "community_name": "8. Feedback Animation Principles",
       "norm_label": "5. typography accessibility"
     },
     {
@@ -29398,8 +29398,8 @@
       "source_location": "L218",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_minimum_sizes",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 398,
+      "community_name": "8. Feedback Animation Principles",
       "norm_label": "minimum sizes"
     },
     {
@@ -29409,8 +29409,8 @@
       "source_location": "L228",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_contrast_requirements_wcag",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 398,
+      "community_name": "8. Feedback Animation Principles",
       "norm_label": "contrast requirements (wcag)"
     },
     {
@@ -29420,8 +29420,8 @@
       "source_location": "L242",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_line_height_for_accessibility",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 398,
+      "community_name": "8. Feedback Animation Principles",
       "norm_label": "line height for accessibility"
     },
     {
@@ -29431,8 +29431,8 @@
       "source_location": "L260",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_6_dark_mode_typography",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 399,
+      "community_name": "9. Performance Principles",
       "norm_label": "6. dark mode typography"
     },
     {
@@ -29442,8 +29442,8 @@
       "source_location": "L262",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_color_adjustments",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 399,
+      "community_name": "9. Performance Principles",
       "norm_label": "color adjustments"
     },
     {
@@ -29453,8 +29453,8 @@
       "source_location": "L275",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_dark_mode_hierarchy",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 399,
+      "community_name": "9. Performance Principles",
       "norm_label": "dark mode hierarchy"
     },
     {
@@ -29464,8 +29464,8 @@
       "source_location": "L284",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_weight_in_dark_mode",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 399,
+      "community_name": "9. Performance Principles",
       "norm_label": "weight in dark mode"
     },
     {
@@ -29574,8 +29574,8 @@
       "source_location": "L390",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_10_quick_reference",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 396,
+      "community_name": "4. Loading States Principles",
       "norm_label": "10. quick reference"
     },
     {
@@ -29585,8 +29585,8 @@
       "source_location": "L392",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_typography_tokens",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 396,
+      "community_name": "4. Loading States Principles",
       "norm_label": "typography tokens"
     },
     {
@@ -29596,8 +29596,8 @@
       "source_location": "L414",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_minimum_sizes_414",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 396,
+      "community_name": "4. Loading States Principles",
       "norm_label": "minimum sizes"
     },
     {
@@ -29607,8 +29607,8 @@
       "source_location": "L423",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_typography_line_height",
-      "community": 15,
-      "community_name": "Mobile Typography Reference",
+      "community": 396,
+      "community_name": "4. Loading States Principles",
       "norm_label": "line height"
     },
     {
@@ -49841,6 +49841,215 @@
       "norm_label": "until a post exists for a slug, no /es/blog/<slug> route is built."
     },
     {
+      "label": "es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "es/android-digital-wellbeing-vs-third-party-focus-apps.md"
+    },
+    {
+      "label": "Lo que el Bienestar digital s\u00ed hace bien",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_lo_que_el_bienestar_digital_s\u00ed_hace_bien",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "lo que el bienestar digital si hace bien"
+    },
+    {
+      "label": "D\u00f3nde se queda corto el Bienestar digital",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_d\u00f3nde_se_queda_corto_el_bienestar_digital",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "donde se queda corto el bienestar digital"
+    },
+    {
+      "label": "El problema de \u00abIgnorar por hoy\u00bb",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_el_problema_de_ignorar_por_hoy",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "el problema de \u00abignorar por hoy\u00bb"
+    },
+    {
+      "label": "L\u00edmites de tiempo sin horarios",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_l\u00edmites_de_tiempo_sin_horarios",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "limites de tiempo sin horarios"
+    },
+    {
+      "label": "Las notificaciones siguen llegando",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_las_notificaciones_siguen_llegando",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "las notificaciones siguen llegando"
+    },
+    {
+      "label": "Sin bloqueo firme",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L82",
+      "_origin": "ast",
+      "id": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_sin_bloqueo_firme",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "sin bloqueo firme"
+    },
+    {
+      "label": "Datos y privacidad",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_datos_y_privacidad",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "datos y privacidad"
+    },
+    {
+      "label": "C\u00f3mo llena Mindful Guard ese hueco",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_c\u00f3mo_llena_mindful_guard_ese_hueco",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "como llena mindful guard ese hueco"
+    },
+    {
+      "label": "Bloqueos firmes por horario",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L102",
+      "_origin": "ast",
+      "id": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_bloqueos_firmes_por_horario",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "bloqueos firmes por horario"
+    },
+    {
+      "label": "Sin bot\u00f3n de salida",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_sin_bot\u00f3n_de_salida",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "sin boton de salida"
+    },
+    {
+      "label": "Supresi\u00f3n de notificaciones",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L112",
+      "_origin": "ast",
+      "id": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_supresi\u00f3n_de_notificaciones",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "supresion de notificaciones"
+    },
+    {
+      "label": "Arquitectura sin telemetr\u00eda",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L116",
+      "_origin": "ast",
+      "id": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_arquitectura_sin_telemetr\u00eda",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "arquitectura sin telemetria"
+    },
+    {
+      "label": "Varios perfiles de horario",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L120",
+      "_origin": "ast",
+      "id": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_varios_perfiles_de_horario",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "varios perfiles de horario"
+    },
+    {
+      "label": "Modo Estricto",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L124",
+      "_origin": "ast",
+      "id": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_modo_estricto",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "modo estricto"
+    },
+    {
+      "label": "Bloqueo de sitios web",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L128",
+      "_origin": "ast",
+      "id": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_bloqueo_de_sitios_web",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "bloqueo de sitios web"
+    },
+    {
+      "label": "Comparaci\u00f3n directa",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L134",
+      "_origin": "ast",
+      "id": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_comparaci\u00f3n_directa",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "comparacion directa"
+    },
+    {
+      "label": "\u00bfCu\u00e1l deber\u00edas usar?",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L158",
+      "_origin": "ast",
+      "id": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_cu\u00e1l_deber\u00edas_usar",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "\u00bfcual deberias usar?"
+    },
+    {
+      "label": "La conclusi\u00f3n honesta",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L183",
+      "_origin": "ast",
+      "id": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_la_conclusi\u00f3n_honesta",
+      "community": 263,
+      "community_name": "4. Cognitive Load Management",
+      "norm_label": "la conclusion honesta"
+    },
+    {
       "label": "es/app-blocker-cannot-be-uninstalled-android.mdx",
       "file_type": "document",
       "source_file": "src/content/blog/es/app-blocker-cannot-be-uninstalled-android.mdx",
@@ -49899,7 +50108,7 @@
       "label": "C\u00f3mo eliminar un bloqueador del que no puedas salir",
       "file_type": "document",
       "source_file": "src/content/blog/es/app-blocker-cannot-be-uninstalled-android.mdx",
-      "source_location": "L129",
+      "source_location": "L128",
       "_origin": "ast",
       "id": "src_content_blog_es_app_blocker_cannot_be_uninstalled_android_c\u00f3mo_eliminar_un_bloqueador_del_que_no_puedas_salir",
       "community": 386,
@@ -49910,7 +50119,7 @@
       "label": "En resumen",
       "file_type": "document",
       "source_file": "src/content/blog/es/app-blocker-cannot-be-uninstalled-android.mdx",
-      "source_location": "L152",
+      "source_location": "L151",
       "_origin": "ast",
       "id": "src_content_blog_es_app_blocker_cannot_be_uninstalled_android_en_resumen",
       "community": 386,
@@ -50182,6 +50391,138 @@
       "norm_label": "en resumen"
     },
     {
+      "label": "es/freedom-alternative-android.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/freedom-alternative-android.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_es_freedom_alternative_android",
+      "community": 264,
+      "community_name": "5. Persuasive Design (Ethical)",
+      "norm_label": "es/freedom-alternative-android.mdx"
+    },
+    {
+      "label": "Veredicto r\u00e1pido",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/freedom-alternative-android.mdx",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "src_content_blog_es_freedom_alternative_android_veredicto_r\u00e1pido",
+      "community": 264,
+      "community_name": "5. Persuasive Design (Ethical)",
+      "norm_label": "veredicto rapido"
+    },
+    {
+      "label": "\u00bfFreedom funciona en Android?",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/freedom-alternative-android.mdx",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "src_content_blog_es_freedom_alternative_android_freedom_funciona_en_android",
+      "community": 264,
+      "community_name": "5. Persuasive Design (Ethical)",
+      "norm_label": "\u00bffreedom funciona en android?"
+    },
+    {
+      "label": "D\u00f3nde te cuesta algo la app de Freedom para Android",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/freedom-alternative-android.mdx",
+      "source_location": "L76",
+      "_origin": "ast",
+      "id": "src_content_blog_es_freedom_alternative_android_d\u00f3nde_te_cuesta_algo_la_app_de_freedom_para_android",
+      "community": 264,
+      "community_name": "5. Persuasive Design (Ethical)",
+      "norm_label": "donde te cuesta algo la app de freedom para android"
+    },
+    {
+      "label": "Precios de Freedom, a fecha de 2026",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/freedom-alternative-android.mdx",
+      "source_location": "L95",
+      "_origin": "ast",
+      "id": "src_content_blog_es_freedom_alternative_android_precios_de_freedom_a_fecha_de_2026",
+      "community": 264,
+      "community_name": "5. Persuasive Design (Ethical)",
+      "norm_label": "precios de freedom, a fecha de 2026"
+    },
+    {
+      "label": "Una alternativa nativa y sin conexi\u00f3n, hecha solo para Android",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/freedom-alternative-android.mdx",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "src_content_blog_es_freedom_alternative_android_una_alternativa_nativa_y_sin_conexi\u00f3n_hecha_solo_para_android",
+      "community": 264,
+      "community_name": "5. Persuasive Design (Ethical)",
+      "norm_label": "una alternativa nativa y sin conexion, hecha solo para android"
+    },
+    {
+      "label": "Freedom frente a Mindful Guard, cara a cara",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/freedom-alternative-android.mdx",
+      "source_location": "L142",
+      "_origin": "ast",
+      "id": "src_content_blog_es_freedom_alternative_android_freedom_frente_a_mindful_guard_cara_a_cara",
+      "community": 264,
+      "community_name": "5. Persuasive Design (Ethical)",
+      "norm_label": "freedom frente a mindful guard, cara a cara"
+    },
+    {
+      "label": "Las otras alternativas a Freedom, en breve",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/freedom-alternative-android.mdx",
+      "source_location": "L158",
+      "_origin": "ast",
+      "id": "src_content_blog_es_freedom_alternative_android_las_otras_alternativas_a_freedom_en_breve",
+      "community": 264,
+      "community_name": "5. Persuasive Design (Ethical)",
+      "norm_label": "las otras alternativas a freedom, en breve"
+    },
+    {
+      "label": "En qu\u00e9 es Freedom genuinamente mejor",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/freedom-alternative-android.mdx",
+      "source_location": "L178",
+      "_origin": "ast",
+      "id": "src_content_blog_es_freedom_alternative_android_en_qu\u00e9_es_freedom_genuinamente_mejor",
+      "community": 264,
+      "community_name": "5. Persuasive Design (Ethical)",
+      "norm_label": "en que es freedom genuinamente mejor"
+    },
+    {
+      "label": "Sobre el precio: la comparaci\u00f3n que la gente hace mal",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/freedom-alternative-android.mdx",
+      "source_location": "L193",
+      "_origin": "ast",
+      "id": "src_content_blog_es_freedom_alternative_android_sobre_el_precio_la_comparaci\u00f3n_que_la_gente_hace_mal",
+      "community": 264,
+      "community_name": "5. Persuasive Design (Ethical)",
+      "norm_label": "sobre el precio: la comparacion que la gente hace mal"
+    },
+    {
+      "label": "Qui\u00e9n deber\u00eda elegir qu\u00e9",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/freedom-alternative-android.mdx",
+      "source_location": "L209",
+      "_origin": "ast",
+      "id": "src_content_blog_es_freedom_alternative_android_qui\u00e9n_deber\u00eda_elegir_qu\u00e9",
+      "community": 264,
+      "community_name": "5. Persuasive Design (Ethical)",
+      "norm_label": "quien deberia elegir que"
+    },
+    {
+      "label": "En resumen",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/freedom-alternative-android.mdx",
+      "source_location": "L229",
+      "_origin": "ast",
+      "id": "src_content_blog_es_freedom_alternative_android_en_resumen",
+      "community": 264,
+      "community_name": "5. Persuasive Design (Ethical)",
+      "norm_label": "en resumen"
+    },
+    {
       "label": "es/how-to-block-instagram-reels-android.mdx",
       "file_type": "document",
       "source_file": "src/content/blog/es/how-to-block-instagram-reels-android.mdx",
@@ -50251,7 +50592,7 @@
       "label": "\u00bfY los Reels en el navegador?",
       "file_type": "document",
       "source_file": "src/content/blog/es/how-to-block-instagram-reels-android.mdx",
-      "source_location": "L112",
+      "source_location": "L111",
       "_origin": "ast",
       "id": "src_content_blog_es_how_to_block_instagram_reels_android_y_los_reels_en_el_navegador",
       "community": 383,
@@ -50262,7 +50603,7 @@
       "label": "En resumen",
       "file_type": "document",
       "source_file": "src/content/blog/es/how-to-block-instagram-reels-android.mdx",
-      "source_location": "L123",
+      "source_location": "L122",
       "_origin": "ast",
       "id": "src_content_blog_es_how_to_block_instagram_reels_android_en_resumen",
       "community": 383,
@@ -50487,6 +50828,226 @@
       "id": "src_content_blog_es_how_to_block_tiktok_feed_android_en_resumen",
       "community": 378,
       "community_name": "5. Page Transitions Principles",
+      "norm_label": "en resumen"
+    },
+    {
+      "label": "es/how-to-block-youtube-shorts-android.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_youtube_shorts_android",
+      "community": 369,
+      "community_name": "Development Decision Process",
+      "norm_label": "es/how-to-block-youtube-shorts-android.mdx"
+    },
+    {
+      "label": "Por qu\u00e9 \u00abbloquea YouTube y ya\u00bb es un mal consejo",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_youtube_shorts_android_por_qu\u00e9_bloquea_youtube_y_ya_es_un_mal_consejo",
+      "community": 369,
+      "community_name": "Development Decision Process",
+      "norm_label": "por que \u00abbloquea youtube y ya\u00bb es un mal consejo"
+    },
+    {
+      "label": "Por qu\u00e9 no basta con ocultar la secci\u00f3n de Shorts",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_youtube_shorts_android_por_qu\u00e9_no_basta_con_ocultar_la_secci\u00f3n_de_shorts",
+      "community": 369,
+      "community_name": "Development Decision Process",
+      "norm_label": "por que no basta con ocultar la seccion de shorts"
+    },
+    {
+      "label": "Lo que s\u00ed funciona: el bloqueo a nivel de feed",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_youtube_shorts_android_lo_que_s\u00ed_funciona_el_bloqueo_a_nivel_de_feed",
+      "community": 369,
+      "community_name": "Development Decision Process",
+      "norm_label": "lo que si funciona: el bloqueo a nivel de feed"
+    },
+    {
+      "label": "L\u00edmite diario frente a l\u00edmite por sesi\u00f3n",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L85",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_youtube_shorts_android_l\u00edmite_diario_frente_a_l\u00edmite_por_sesi\u00f3n",
+      "community": 369,
+      "community_name": "Development Decision Process",
+      "norm_label": "limite diario frente a limite por sesion"
+    },
+    {
+      "label": "Paso a paso: bloquear los Shorts de YouTube en menos de dos minutos",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_youtube_shorts_android_paso_a_paso_bloquear_los_shorts_de_youtube_en_menos_de_dos_minutos",
+      "community": 369,
+      "community_name": "Development Decision Process",
+      "norm_label": "paso a paso: bloquear los shorts de youtube en menos de dos minutos"
+    },
+    {
+      "label": "Los Shorts frente al resto de YouTube",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_youtube_shorts_android_los_shorts_frente_al_resto_de_youtube",
+      "community": 369,
+      "community_name": "Development Decision Process",
+      "norm_label": "los shorts frente al resto de youtube"
+    },
+    {
+      "label": "\u00bfY los Shorts en el navegador?",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L122",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_youtube_shorts_android_y_los_shorts_en_el_navegador",
+      "community": 369,
+      "community_name": "Development Decision Process",
+      "norm_label": "\u00bfy los shorts en el navegador?"
+    },
+    {
+      "label": "En resumen",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L134",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_youtube_shorts_android_en_resumen",
+      "community": 369,
+      "community_name": "Development Decision Process",
+      "norm_label": "en resumen"
+    },
+    {
+      "label": "es/limit-reels-per-day-android.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/limit-reels-per-day-android.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_es_limit_reels_per_day_android",
+      "community": 356,
+      "community_name": "2. Font Pairing Principles",
+      "norm_label": "es/limit-reels-per-day-android.mdx"
+    },
+    {
+      "label": "Las cifras contra las que compite un tope diario",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/limit-reels-per-day-android.mdx",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "src_content_blog_es_limit_reels_per_day_android_las_cifras_contra_las_que_compite_un_tope_diario",
+      "community": 356,
+      "community_name": "2. Font Pairing Principles",
+      "norm_label": "las cifras contra las que compite un tope diario"
+    },
+    {
+      "label": "Por qu\u00e9 no basta con un l\u00edmite diario",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/limit-reels-per-day-android.mdx",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "src_content_blog_es_limit_reels_per_day_android_por_qu\u00e9_no_basta_con_un_l\u00edmite_diario",
+      "community": 356,
+      "community_name": "2. Font Pairing Principles",
+      "norm_label": "por que no basta con un limite diario"
+    },
+    {
+      "label": "El l\u00edmite diario integrado de Instagram, y lo que no hace",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/limit-reels-per-day-android.mdx",
+      "source_location": "L92",
+      "_origin": "ast",
+      "id": "src_content_blog_es_limit_reels_per_day_android_el_l\u00edmite_diario_integrado_de_instagram_y_lo_que_no_hace",
+      "community": 356,
+      "community_name": "2. Font Pairing Principles",
+      "norm_label": "el limite diario integrado de instagram, y lo que no hace"
+    },
+    {
+      "label": "La pieza que falta: el l\u00edmite por sesi\u00f3n",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/limit-reels-per-day-android.mdx",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "src_content_blog_es_limit_reels_per_day_android_la_pieza_que_falta_el_l\u00edmite_por_sesi\u00f3n",
+      "community": 356,
+      "community_name": "2. Font Pairing Principles",
+      "norm_label": "la pieza que falta: el limite por sesion"
+    },
+    {
+      "label": "Por qu\u00e9 la fuerza de voluntad no puede con esto sola",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/limit-reels-per-day-android.mdx",
+      "source_location": "L127",
+      "_origin": "ast",
+      "id": "src_content_blog_es_limit_reels_per_day_android_por_qu\u00e9_la_fuerza_de_voluntad_no_puede_con_esto_sola",
+      "community": 356,
+      "community_name": "2. Font Pairing Principles",
+      "norm_label": "por que la fuerza de voluntad no puede con esto sola"
+    },
+    {
+      "label": "Con qu\u00e9 n\u00fameros empezar",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/limit-reels-per-day-android.mdx",
+      "source_location": "L137",
+      "_origin": "ast",
+      "id": "src_content_blog_es_limit_reels_per_day_android_con_qu\u00e9_n\u00fameros_empezar",
+      "community": 356,
+      "community_name": "2. Font Pairing Principles",
+      "norm_label": "con que numeros empezar"
+    },
+    {
+      "label": "Paso a paso: poner los dos l\u00edmites en Android",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/limit-reels-per-day-android.mdx",
+      "source_location": "L154",
+      "_origin": "ast",
+      "id": "src_content_blog_es_limit_reels_per_day_android_paso_a_paso_poner_los_dos_l\u00edmites_en_android",
+      "community": 356,
+      "community_name": "2. Font Pairing Principles",
+      "norm_label": "paso a paso: poner los dos limites en android"
+    },
+    {
+      "label": "Tres cosas que hacen que un l\u00edmite de Reels aguante de verdad",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/limit-reels-per-day-android.mdx",
+      "source_location": "L169",
+      "_origin": "ast",
+      "id": "src_content_blog_es_limit_reels_per_day_android_tres_cosas_que_hacen_que_un_l\u00edmite_de_reels_aguante_de_verdad",
+      "community": 356,
+      "community_name": "2. Font Pairing Principles",
+      "norm_label": "tres cosas que hacen que un limite de reels aguante de verdad"
+    },
+    {
+      "label": "Solo diario frente a diario + sesi\u00f3n frente a las opciones integradas",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/limit-reels-per-day-android.mdx",
+      "source_location": "L188",
+      "_origin": "ast",
+      "id": "src_content_blog_es_limit_reels_per_day_android_solo_diario_frente_a_diario_sesi\u00f3n_frente_a_las_opciones_integradas",
+      "community": 356,
+      "community_name": "2. Font Pairing Principles",
+      "norm_label": "solo diario frente a diario + sesion frente a las opciones integradas"
+    },
+    {
+      "label": "En resumen",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/limit-reels-per-day-android.mdx",
+      "source_location": "L212",
+      "_origin": "ast",
+      "id": "src_content_blog_es_limit_reels_per_day_android_en_resumen",
+      "community": 356,
+      "community_name": "2. Font Pairing Principles",
       "norm_label": "en resumen"
     },
     {
@@ -110725,8 +111286,206 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L134",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps",
+      "target": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_comparaci\u00f3n_directa",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L158",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps",
+      "target": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_cu\u00e1l_deber\u00edas_usar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L96",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps",
+      "target": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_c\u00f3mo_llena_mindful_guard_ese_hueco",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps",
+      "target": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_d\u00f3nde_se_queda_corto_el_bienestar_digital",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L183",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps",
+      "target": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_la_conclusi\u00f3n_honesta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps",
+      "target": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_lo_que_el_bienestar_digital_s\u00ed_hace_bien",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_d\u00f3nde_se_queda_corto_el_bienestar_digital",
+      "target": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_datos_y_privacidad",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_d\u00f3nde_se_queda_corto_el_bienestar_digital",
+      "target": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_el_problema_de_ignorar_por_hoy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_d\u00f3nde_se_queda_corto_el_bienestar_digital",
+      "target": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_las_notificaciones_siguen_llegando",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_d\u00f3nde_se_queda_corto_el_bienestar_digital",
+      "target": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_l\u00edmites_de_tiempo_sin_horarios",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_d\u00f3nde_se_queda_corto_el_bienestar_digital",
+      "target": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_sin_bloqueo_firme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L116",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_c\u00f3mo_llena_mindful_guard_ese_hueco",
+      "target": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_arquitectura_sin_telemetr\u00eda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L128",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_c\u00f3mo_llena_mindful_guard_ese_hueco",
+      "target": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_bloqueo_de_sitios_web",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L102",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_c\u00f3mo_llena_mindful_guard_ese_hueco",
+      "target": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_bloqueos_firmes_por_horario",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L124",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_c\u00f3mo_llena_mindful_guard_ese_hueco",
+      "target": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_modo_estricto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L108",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_c\u00f3mo_llena_mindful_guard_ese_hueco",
+      "target": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_sin_bot\u00f3n_de_salida",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_c\u00f3mo_llena_mindful_guard_ese_hueco",
+      "target": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_supresi\u00f3n_de_notificaciones",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md",
+      "source_location": "L120",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_c\u00f3mo_llena_mindful_guard_ese_hueco",
+      "target": "src_content_blog_es_android_digital_wellbeing_vs_third_party_focus_apps_varios_perfiles_de_horario",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/es/app-blocker-cannot-be-uninstalled-android.mdx",
-      "source_location": "L129",
+      "source_location": "L128",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_es_app_blocker_cannot_be_uninstalled_android",
@@ -110759,7 +111518,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/es/app-blocker-cannot-be-uninstalled-android.mdx",
-      "source_location": "L152",
+      "source_location": "L151",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_es_app_blocker_cannot_be_uninstalled_android",
@@ -111033,6 +111792,127 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/freedom-alternative-android.mdx",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_freedom_alternative_android",
+      "target": "src_content_blog_es_freedom_alternative_android_d\u00f3nde_te_cuesta_algo_la_app_de_freedom_para_android",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/freedom-alternative-android.mdx",
+      "source_location": "L178",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_freedom_alternative_android",
+      "target": "src_content_blog_es_freedom_alternative_android_en_qu\u00e9_es_freedom_genuinamente_mejor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/freedom-alternative-android.mdx",
+      "source_location": "L229",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_freedom_alternative_android",
+      "target": "src_content_blog_es_freedom_alternative_android_en_resumen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/freedom-alternative-android.mdx",
+      "source_location": "L142",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_freedom_alternative_android",
+      "target": "src_content_blog_es_freedom_alternative_android_freedom_frente_a_mindful_guard_cara_a_cara",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/freedom-alternative-android.mdx",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_freedom_alternative_android",
+      "target": "src_content_blog_es_freedom_alternative_android_freedom_funciona_en_android",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/freedom-alternative-android.mdx",
+      "source_location": "L158",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_freedom_alternative_android",
+      "target": "src_content_blog_es_freedom_alternative_android_las_otras_alternativas_a_freedom_en_breve",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/freedom-alternative-android.mdx",
+      "source_location": "L209",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_freedom_alternative_android",
+      "target": "src_content_blog_es_freedom_alternative_android_qui\u00e9n_deber\u00eda_elegir_qu\u00e9",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/freedom-alternative-android.mdx",
+      "source_location": "L193",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_freedom_alternative_android",
+      "target": "src_content_blog_es_freedom_alternative_android_sobre_el_precio_la_comparaci\u00f3n_que_la_gente_hace_mal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/freedom-alternative-android.mdx",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_freedom_alternative_android",
+      "target": "src_content_blog_es_freedom_alternative_android_una_alternativa_nativa_y_sin_conexi\u00f3n_hecha_solo_para_android",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/freedom-alternative-android.mdx",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_freedom_alternative_android",
+      "target": "src_content_blog_es_freedom_alternative_android_veredicto_r\u00e1pido",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/freedom-alternative-android.mdx",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_freedom_alternative_android_d\u00f3nde_te_cuesta_algo_la_app_de_freedom_para_android",
+      "target": "src_content_blog_es_freedom_alternative_android_precios_de_freedom_a_fecha_de_2026",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/es/how-to-block-instagram-reels-android.mdx",
       "source_location": "L57",
       "weight": 1.0,
@@ -111056,7 +111936,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/es/how-to-block-instagram-reels-android.mdx",
-      "source_location": "L123",
+      "source_location": "L122",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_es_how_to_block_instagram_reels_android",
@@ -111100,7 +111980,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/es/how-to-block-instagram-reels-android.mdx",
-      "source_location": "L112",
+      "source_location": "L111",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_es_how_to_block_instagram_reels_android",
@@ -111303,6 +112183,204 @@
       "_origin": "ast",
       "source": "src_content_blog_es_how_to_block_tiktok_feed_android",
       "target": "src_content_blog_es_how_to_block_tiktok_feed_android_y_tiktok_en_el_navegador",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L134",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_es_how_to_block_youtube_shorts_android_en_resumen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_es_how_to_block_youtube_shorts_android_lo_que_s\u00ed_funciona_el_bloqueo_a_nivel_de_feed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L108",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_es_how_to_block_youtube_shorts_android_los_shorts_frente_al_resto_de_youtube",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_es_how_to_block_youtube_shorts_android_l\u00edmite_diario_frente_a_l\u00edmite_por_sesi\u00f3n",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L97",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_es_how_to_block_youtube_shorts_android_paso_a_paso_bloquear_los_shorts_de_youtube_en_menos_de_dos_minutos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_es_how_to_block_youtube_shorts_android_por_qu\u00e9_bloquea_youtube_y_ya_es_un_mal_consejo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_es_how_to_block_youtube_shorts_android_por_qu\u00e9_no_basta_con_ocultar_la_secci\u00f3n_de_shorts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-youtube-shorts-android.mdx",
+      "source_location": "L122",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_youtube_shorts_android",
+      "target": "src_content_blog_es_how_to_block_youtube_shorts_android_y_los_shorts_en_el_navegador",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/limit-reels-per-day-android.mdx",
+      "source_location": "L137",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_limit_reels_per_day_android",
+      "target": "src_content_blog_es_limit_reels_per_day_android_con_qu\u00e9_n\u00fameros_empezar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/limit-reels-per-day-android.mdx",
+      "source_location": "L92",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_limit_reels_per_day_android",
+      "target": "src_content_blog_es_limit_reels_per_day_android_el_l\u00edmite_diario_integrado_de_instagram_y_lo_que_no_hace",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/limit-reels-per-day-android.mdx",
+      "source_location": "L212",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_limit_reels_per_day_android",
+      "target": "src_content_blog_es_limit_reels_per_day_android_en_resumen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/limit-reels-per-day-android.mdx",
+      "source_location": "L108",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_limit_reels_per_day_android",
+      "target": "src_content_blog_es_limit_reels_per_day_android_la_pieza_que_falta_el_l\u00edmite_por_sesi\u00f3n",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/limit-reels-per-day-android.mdx",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_limit_reels_per_day_android",
+      "target": "src_content_blog_es_limit_reels_per_day_android_las_cifras_contra_las_que_compite_un_tope_diario",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/limit-reels-per-day-android.mdx",
+      "source_location": "L154",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_limit_reels_per_day_android",
+      "target": "src_content_blog_es_limit_reels_per_day_android_paso_a_paso_poner_los_dos_l\u00edmites_en_android",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/limit-reels-per-day-android.mdx",
+      "source_location": "L127",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_limit_reels_per_day_android",
+      "target": "src_content_blog_es_limit_reels_per_day_android_por_qu\u00e9_la_fuerza_de_voluntad_no_puede_con_esto_sola",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/limit-reels-per-day-android.mdx",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_limit_reels_per_day_android",
+      "target": "src_content_blog_es_limit_reels_per_day_android_por_qu\u00e9_no_basta_con_un_l\u00edmite_diario",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/limit-reels-per-day-android.mdx",
+      "source_location": "L188",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_limit_reels_per_day_android",
+      "target": "src_content_blog_es_limit_reels_per_day_android_solo_diario_frente_a_diario_sesi\u00f3n_frente_a_las_opciones_integradas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/limit-reels-per-day-android.mdx",
+      "source_location": "L169",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_limit_reels_per_day_android",
+      "target": "src_content_blog_es_limit_reels_per_day_android_tres_cosas_que_hacen_que_un_l\u00edmite_de_reels_aguante_de_verdad",
       "confidence_score": 1.0
     },
     {
@@ -115542,5 +116620,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "2d2b8610ee5f26545b386b82fe309a53c3b85aac"
+  "built_at_commit": "a1f7463f20e6be471ec48f2212b138af7c36bac5"
 }

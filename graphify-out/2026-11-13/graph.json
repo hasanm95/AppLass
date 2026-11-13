@@ -18673,8 +18673,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_skill",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "frontend-design/skill.md"
     },
     {
@@ -19168,8 +19168,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 13,
+      "community_name": "Animation Guidelines Reference",
       "norm_label": "animation-guide.md"
     },
     {
@@ -19278,8 +19278,8 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_3_micro_interaction_principles",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 394,
+      "community_name": "6. Deep Linking",
       "norm_label": "3. micro-interaction principles"
     },
     {
@@ -19289,8 +19289,8 @@
       "source_location": "L87",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_what_makes_good_micro_interactions",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 394,
+      "community_name": "6. Deep Linking",
       "norm_label": "what makes good micro-interactions"
     },
     {
@@ -19300,8 +19300,8 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_button_states",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 394,
+      "community_name": "6. Deep Linking",
       "norm_label": "button states"
     },
     {
@@ -19311,8 +19311,8 @@
       "source_location": "L107",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_principles",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 394,
+      "community_name": "6. Deep Linking",
       "norm_label": "principles"
     },
     {
@@ -19322,8 +19322,8 @@
       "source_location": "L116",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_4_loading_states_principles",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 396,
+      "community_name": "4. Loading States Principles",
       "norm_label": "4. loading states principles"
     },
     {
@@ -19333,8 +19333,8 @@
       "source_location": "L118",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_types_by_context",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 396,
+      "community_name": "4. Loading States Principles",
       "norm_label": "types by context"
     },
     {
@@ -19344,8 +19344,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_skeleton_screens",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 396,
+      "community_name": "4. Loading States Principles",
       "norm_label": "skeleton screens"
     },
     {
@@ -19355,8 +19355,8 @@
       "source_location": "L137",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_progress_indicators",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 396,
+      "community_name": "4. Loading States Principles",
       "norm_label": "progress indicators"
     },
     {
@@ -19366,8 +19366,8 @@
       "source_location": "L154",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_5_page_transitions_principles",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 397,
+      "community_name": "5. Page Transitions Principles",
       "norm_label": "5. page transitions principles"
     },
     {
@@ -19377,8 +19377,8 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_transition_strategy",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 397,
+      "community_name": "5. Page Transitions Principles",
       "norm_label": "transition strategy"
     },
     {
@@ -19388,8 +19388,8 @@
       "source_location": "L165",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_common_patterns",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 397,
+      "community_name": "5. Page Transitions Principles",
       "norm_label": "common patterns"
     },
     {
@@ -19399,8 +19399,8 @@
       "source_location": "L174",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_direction_matching",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 397,
+      "community_name": "5. Page Transitions Principles",
       "norm_label": "direction matching"
     },
     {
@@ -19410,8 +19410,8 @@
       "source_location": "L186",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_6_scroll_animation_principles",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 392,
+      "community_name": "2. Tab Bar Navigation",
       "norm_label": "6. scroll animation principles"
     },
     {
@@ -19421,8 +19421,8 @@
       "source_location": "L188",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_progressive_reveal",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 392,
+      "community_name": "2. Tab Bar Navigation",
       "norm_label": "progressive reveal"
     },
     {
@@ -19432,8 +19432,8 @@
       "source_location": "L198",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_trigger_points",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 392,
+      "community_name": "2. Tab Bar Navigation",
       "norm_label": "trigger points"
     },
     {
@@ -19443,8 +19443,8 @@
       "source_location": "L207",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_animation_properties",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 392,
+      "community_name": "2. Tab Bar Navigation",
       "norm_label": "animation properties"
     },
     {
@@ -19454,8 +19454,8 @@
       "source_location": "L214",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_performance",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 392,
+      "community_name": "2. Tab Bar Navigation",
       "norm_label": "performance"
     },
     {
@@ -19498,8 +19498,8 @@
       "source_location": "L242",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_8_feedback_animation_principles",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 398,
+      "community_name": "8. Feedback Animation Principles",
       "norm_label": "8. feedback animation principles"
     },
     {
@@ -19509,8 +19509,8 @@
       "source_location": "L244",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_success_states",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 398,
+      "community_name": "8. Feedback Animation Principles",
       "norm_label": "success states"
     },
     {
@@ -19520,8 +19520,8 @@
       "source_location": "L254",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_error_states",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 398,
+      "community_name": "8. Feedback Animation Principles",
       "norm_label": "error states"
     },
     {
@@ -19531,8 +19531,8 @@
       "source_location": "L264",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_timing",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 398,
+      "community_name": "8. Feedback Animation Principles",
       "norm_label": "timing"
     },
     {
@@ -19542,8 +19542,8 @@
       "source_location": "L272",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_9_performance_principles",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 399,
+      "community_name": "9. Performance Principles",
       "norm_label": "9. performance principles"
     },
     {
@@ -19553,8 +19553,8 @@
       "source_location": "L274",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_what_s_cheap_to_animate",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 399,
+      "community_name": "9. Performance Principles",
       "norm_label": "what's cheap to animate"
     },
     {
@@ -19564,8 +19564,8 @@
       "source_location": "L289",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_optimization_strategies",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 399,
+      "community_name": "9. Performance Principles",
       "norm_label": "optimization strategies"
     },
     {
@@ -19575,8 +19575,8 @@
       "source_location": "L296",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_animation_guide_respecting_user_preferences",
-      "community": 13,
-      "community_name": "Animation Guidelines Reference",
+      "community": 399,
+      "community_name": "9. Performance Principles",
       "norm_label": "respecting user preferences"
     },
     {
@@ -19949,8 +19949,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_decision_trees",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "frontend-design/decision-trees.md"
     },
     {
@@ -20389,8 +20389,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "motion-graphics.md"
     },
     {
@@ -20411,8 +20411,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_1_lottie_animations",
-      "community": 378,
-      "community_name": "5. Page Transitions Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "1. lottie animations"
     },
     {
@@ -20422,8 +20422,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_what_is_lottie",
-      "community": 378,
-      "community_name": "5. Page Transitions Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "what is lottie?"
     },
     {
@@ -20433,8 +20433,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use_lottie",
-      "community": 378,
-      "community_name": "5. Page Transitions Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "when to use lottie"
     },
     {
@@ -20444,8 +20444,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles",
-      "community": 378,
-      "community_name": "5. Page Transitions Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "principles"
     },
     {
@@ -20455,8 +20455,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_sources",
-      "community": 378,
-      "community_name": "5. Page Transitions Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "sources"
     },
     {
@@ -20466,8 +20466,8 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_2_gsap_greensock",
-      "community": 379,
-      "community_name": "8. Feedback Animation Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "2. gsap (greensock)"
     },
     {
@@ -20477,8 +20477,8 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_what_makes_gsap_different",
-      "community": 379,
-      "community_name": "8. Feedback Animation Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "what makes gsap different"
     },
     {
@@ -20488,8 +20488,8 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_core_concepts",
-      "community": 379,
-      "community_name": "8. Feedback Animation Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "core concepts"
     },
     {
@@ -20499,8 +20499,8 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use_gsap",
-      "community": 379,
-      "community_name": "8. Feedback Animation Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "when to use gsap"
     },
     {
@@ -20510,8 +20510,8 @@
       "source_location": "L77",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_77",
-      "community": 379,
-      "community_name": "8. Feedback Animation Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "principles"
     },
     {
@@ -20521,8 +20521,8 @@
       "source_location": "L86",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_3_svg_animations",
-      "community": 382,
-      "community_name": "5. Responsive Typography Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "3. svg animations"
     },
     {
@@ -20532,8 +20532,8 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_types_of_svg_animation",
-      "community": 382,
-      "community_name": "5. Responsive Typography Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "types of svg animation"
     },
     {
@@ -20543,8 +20543,8 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_line_drawing_principles",
-      "community": 382,
-      "community_name": "5. Responsive Typography Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "line drawing principles"
     },
     {
@@ -20554,8 +20554,8 @@
       "source_location": "L107",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use_svg_animations",
-      "community": 382,
-      "community_name": "5. Responsive Typography Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "when to use svg animations"
     },
     {
@@ -20565,8 +20565,8 @@
       "source_location": "L116",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_116",
-      "community": 382,
-      "community_name": "5. Responsive Typography Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "principles"
     },
     {
@@ -20576,8 +20576,8 @@
       "source_location": "L125",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_4_3d_css_transforms",
-      "community": 386,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "4. 3d css transforms"
     },
     {
@@ -20587,8 +20587,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_core_properties",
-      "community": 386,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "core properties"
     },
     {
@@ -20598,8 +20598,8 @@
       "source_location": "L138",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_common_3d_patterns",
-      "community": 386,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "common 3d patterns"
     },
     {
@@ -20609,8 +20609,8 @@
       "source_location": "L147",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_147",
-      "community": 386,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "principles"
     },
     {
@@ -20620,8 +20620,8 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_5_particle_effects",
-      "community": 383,
-      "community_name": "6. Weight and Emphasis Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "5. particle effects"
     },
     {
@@ -20631,8 +20631,8 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_types_of_particle_systems",
-      "community": 383,
-      "community_name": "6. Weight and Emphasis Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "types of particle systems"
     },
     {
@@ -20642,8 +20642,8 @@
       "source_location": "L168",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_libraries",
-      "community": 383,
-      "community_name": "6. Weight and Emphasis Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "libraries"
     },
     {
@@ -20653,8 +20653,8 @@
       "source_location": "L177",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_177",
-      "community": 383,
-      "community_name": "6. Weight and Emphasis Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "principles"
     },
     {
@@ -20664,8 +20664,8 @@
       "source_location": "L185",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use",
-      "community": 383,
-      "community_name": "6. Weight and Emphasis Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "when to use"
     },
     {
@@ -21247,8 +21247,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_ux_psychology",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "ux-psychology.md"
     },
     {
@@ -21863,8 +21863,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 127,
+      "community_name": "frontend-design/SKILL.md",
       "norm_label": "visual-effects.md"
     },
     {
@@ -21885,8 +21885,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_1_glassmorphism_principles",
-      "community": 334,
-      "community_name": "4. Attack Surface Mapping",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "1. glassmorphism principles"
     },
     {
@@ -21896,8 +21896,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_what_makes_glassmorphism_work",
-      "community": 334,
-      "community_name": "4. Attack Surface Mapping",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "what makes glassmorphism work"
     },
     {
@@ -21907,8 +21907,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_the_pattern_customize_values",
-      "community": 334,
-      "community_name": "4. Attack Surface Mapping",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "the pattern (customize values)"
     },
     {
@@ -21918,8 +21918,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_when_to_use_glassmorphism",
-      "community": 334,
-      "community_name": "4. Attack Surface Mapping",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "when to use glassmorphism"
     },
     {
@@ -21929,8 +21929,8 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_when_not_to_use",
-      "community": 334,
-      "community_name": "4. Attack Surface Mapping",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "when not to use"
     },
     {
@@ -22149,8 +22149,8 @@
       "source_location": "L224",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_6_glow_effects_principles",
-      "community": 10,
-      "community_name": "Visual Effects Reference",
+      "community": 400,
+      "community_name": "6. Glow Effects Principles",
       "norm_label": "6. glow effects principles"
     },
     {
@@ -22160,8 +22160,8 @@
       "source_location": "L226",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_text_glow",
-      "community": 10,
-      "community_name": "Visual Effects Reference",
+      "community": 400,
+      "community_name": "6. Glow Effects Principles",
       "norm_label": "text glow"
     },
     {
@@ -22171,8 +22171,8 @@
       "source_location": "L238",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_element_glow",
-      "community": 10,
-      "community_name": "Visual Effects Reference",
+      "community": 400,
+      "community_name": "6. Glow Effects Principles",
       "norm_label": "element glow"
     },
     {
@@ -22182,8 +22182,8 @@
       "source_location": "L249",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_pulsing_glow_animation",
-      "community": 10,
-      "community_name": "Visual Effects Reference",
+      "community": 400,
+      "community_name": "6. Glow Effects Principles",
       "norm_label": "pulsing glow animation"
     },
     {
@@ -27099,8 +27099,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_2_oled_considerations",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 402,
+      "community_name": "2. OLED Considerations",
       "norm_label": "2. oled considerations"
     },
     {
@@ -27110,8 +27110,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_how_oled_differs",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 402,
+      "community_name": "2. OLED Considerations",
       "norm_label": "how oled differs"
     },
     {
@@ -27121,8 +27121,8 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_battery_savings_with_oled",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 402,
+      "community_name": "2. OLED Considerations",
       "norm_label": "battery savings with oled"
     },
     {
@@ -27132,8 +27132,8 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_true_black_vs_near_black",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 402,
+      "community_name": "2. OLED Considerations",
       "norm_label": "true black vs near black"
     },
     {
@@ -27275,8 +27275,8 @@
       "source_location": "L240",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_6_dynamic_color_android",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 403,
+      "community_name": "6. Dynamic Color (Android)",
       "norm_label": "6. dynamic color (android)"
     },
     {
@@ -27286,8 +27286,8 @@
       "source_location": "L242",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_material_you",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 403,
+      "community_name": "6. Dynamic Color (Android)",
       "norm_label": "material you"
     },
     {
@@ -27297,8 +27297,8 @@
       "source_location": "L257",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_supporting_dynamic_color",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 403,
+      "community_name": "6. Dynamic Color (Android)",
       "norm_label": "supporting dynamic color"
     },
     {
@@ -27308,8 +27308,8 @@
       "source_location": "L270",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_fallback_colors",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 403,
+      "community_name": "6. Dynamic Color (Android)",
       "norm_label": "fallback colors"
     },
     {
@@ -27319,8 +27319,8 @@
       "source_location": "L287",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_7_color_accessibility",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 404,
+      "community_name": "7. Color Accessibility",
       "norm_label": "7. color accessibility"
     },
     {
@@ -27330,8 +27330,8 @@
       "source_location": "L289",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_colorblind_considerations",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 404,
+      "community_name": "7. Color Accessibility",
       "norm_label": "colorblind considerations"
     },
     {
@@ -27341,8 +27341,8 @@
       "source_location": "L307",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_contrast_testing_tools",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 404,
+      "community_name": "7. Color Accessibility",
       "norm_label": "contrast testing tools"
     },
     {
@@ -27352,8 +27352,8 @@
       "source_location": "L318",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_sufficient_contrast",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 404,
+      "community_name": "7. Color Accessibility",
       "norm_label": "sufficient contrast"
     },
     {
@@ -27363,8 +27363,8 @@
       "source_location": "L337",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_8_color_anti_patterns",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 405,
+      "community_name": "8. Color Anti-Patterns",
       "norm_label": "8. color anti-patterns"
     },
     {
@@ -27374,8 +27374,8 @@
       "source_location": "L339",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_common_mistakes",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 405,
+      "community_name": "8. Color Anti-Patterns",
       "norm_label": "\u274c common mistakes"
     },
     {
@@ -27385,8 +27385,8 @@
       "source_location": "L350",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_ai_color_mistakes",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 405,
+      "community_name": "8. Color Anti-Patterns",
       "norm_label": "\u274c ai color mistakes"
     },
     {
@@ -27396,8 +27396,8 @@
       "source_location": "L368",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_9_color_system_checklist",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 406,
+      "community_name": "9. Color System Checklist",
       "norm_label": "9. color system checklist"
     },
     {
@@ -27407,8 +27407,8 @@
       "source_location": "L370",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_before_choosing_colors",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 406,
+      "community_name": "9. Color System Checklist",
       "norm_label": "before choosing colors"
     },
     {
@@ -27418,8 +27418,8 @@
       "source_location": "L378",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_before_release",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 406,
+      "community_name": "9. Color System Checklist",
       "norm_label": "before release"
     },
     {
@@ -27429,8 +27429,8 @@
       "source_location": "L389",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_10_quick_reference",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 401,
+      "community_name": "10. Quick Reference",
       "norm_label": "10. quick reference"
     },
     {
@@ -27440,8 +27440,8 @@
       "source_location": "L391",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_dark_mode_backgrounds",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 401,
+      "community_name": "10. Quick Reference",
       "norm_label": "dark mode backgrounds"
     },
     {
@@ -27451,8 +27451,8 @@
       "source_location": "L401",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_text_on_dark",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 401,
+      "community_name": "10. Quick Reference",
       "norm_label": "text on dark"
     },
     {
@@ -27462,8 +27462,8 @@
       "source_location": "L409",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_contrast_ratios",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 401,
+      "community_name": "10. Quick Reference",
       "norm_label": "contrast ratios"
     },
     {
@@ -27726,8 +27726,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_pattern_questioning_matrix",
-      "community": 48,
-      "community_name": "Mobile Design Thinking",
+      "community": 393,
+      "community_name": "3. Stack Navigation",
       "norm_label": "\ud83c\udfaf pattern questioning matrix"
     },
     {
@@ -27737,8 +27737,8 @@
       "source_location": "L131",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_navigation_pattern_questioning",
-      "community": 48,
-      "community_name": "Mobile Design Thinking",
+      "community": 393,
+      "community_name": "3. Stack Navigation",
       "norm_label": "navigation pattern questioning"
     },
     {
@@ -27748,8 +27748,8 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_state_pattern_questioning",
-      "community": 48,
-      "community_name": "Mobile Design Thinking",
+      "community": 393,
+      "community_name": "3. Stack Navigation",
       "norm_label": "state pattern questioning"
     },
     {
@@ -27759,8 +27759,8 @@
       "source_location": "L149",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_list_pattern_questioning",
-      "community": 48,
-      "community_name": "Mobile Design Thinking",
+      "community": 393,
+      "community_name": "3. Stack Navigation",
       "norm_label": "list pattern questioning"
     },
     {
@@ -27770,8 +27770,8 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_ui_pattern_questioning",
-      "community": 48,
-      "community_name": "Mobile Design Thinking",
+      "community": 393,
+      "community_name": "3. Stack Navigation",
       "norm_label": "ui pattern questioning"
     },
     {
@@ -27935,8 +27935,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_2_tab_bar_navigation",
-      "community": 392,
-      "community_name": "2. Tab Bar Navigation",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "2. tab bar navigation"
     },
     {
@@ -27946,8 +27946,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_when_to_use",
-      "community": 392,
-      "community_name": "2. Tab Bar Navigation",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "when to use"
     },
     {
@@ -27957,8 +27957,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_tab_bar_best_practices",
-      "community": 392,
-      "community_name": "2. Tab Bar Navigation",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "tab bar best practices"
     },
     {
@@ -27968,8 +27968,8 @@
       "source_location": "L73",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_tab_state_preservation",
-      "community": 392,
-      "community_name": "2. Tab Bar Navigation",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "tab state preservation"
     },
     {
@@ -27979,8 +27979,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_3_stack_navigation",
-      "community": 393,
-      "community_name": "3. Stack Navigation",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "3. stack navigation"
     },
     {
@@ -27990,8 +27990,8 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_core_concepts",
-      "community": 393,
-      "community_name": "3. Stack Navigation",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "core concepts"
     },
     {
@@ -28001,8 +28001,8 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_stack_navigation_patterns",
-      "community": 393,
-      "community_name": "3. Stack Navigation",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "stack navigation patterns"
     },
     {
@@ -28012,8 +28012,8 @@
       "source_location": "L117",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_back_button_handling",
-      "community": 393,
-      "community_name": "3. Stack Navigation",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "back button handling"
     },
     {
@@ -28100,8 +28100,8 @@
       "source_location": "L228",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_6_deep_linking",
-      "community": 394,
-      "community_name": "6. Deep Linking",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "6. deep linking"
     },
     {
@@ -28111,8 +28111,8 @@
       "source_location": "L230",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_why_deep_links_from_day_one",
-      "community": 394,
-      "community_name": "6. Deep Linking",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "why deep links from day one"
     },
     {
@@ -28122,8 +28122,8 @@
       "source_location": "L248",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_url_structure",
-      "community": 394,
-      "community_name": "6. Deep Linking",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "url structure"
     },
     {
@@ -28133,8 +28133,8 @@
       "source_location": "L266",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_deep_link_navigation_rules",
-      "community": 394,
-      "community_name": "6. Deep Linking",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "deep link navigation rules"
     },
     {
@@ -28254,8 +28254,8 @@
       "source_location": "L428",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_10_navigation_checklist",
-      "community": 387,
-      "community_name": "10. Navigation Checklist",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "10. navigation checklist"
     },
     {
@@ -28265,8 +28265,8 @@
       "source_location": "L430",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_before_navigation_architecture",
-      "community": 387,
-      "community_name": "10. Navigation Checklist",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "before navigation architecture"
     },
     {
@@ -28276,8 +28276,8 @@
       "source_location": "L438",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_before_every_screen",
-      "community": 387,
-      "community_name": "10. Navigation Checklist",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "before every screen"
     },
     {
@@ -28287,8 +28287,8 @@
       "source_location": "L446",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_before_release",
-      "community": 387,
-      "community_name": "10. Navigation Checklist",
+      "community": 21,
+      "community_name": "Mobile Navigation Reference",
       "norm_label": "before release"
     },
     {
@@ -49839,6 +49839,853 @@
       "community": 395,
       "community_name": "_README.md",
       "norm_label": "until a post exists for a slug, no /es/blog/<slug> route is built."
+    },
+    {
+      "label": "es/app-blocker-cannot-be-uninstalled-android.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/app-blocker-cannot-be-uninstalled-android.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_es_app_blocker_cannot_be_uninstalled_android",
+      "community": 386,
+      "community_name": "4. 3D CSS Transforms",
+      "norm_label": "es/app-blocker-cannot-be-uninstalled-android.mdx"
+    },
+    {
+      "label": "\u00bfPuede un bloqueador ser de verdad imposible de desinstalar?",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/app-blocker-cannot-be-uninstalled-android.mdx",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "src_content_blog_es_app_blocker_cannot_be_uninstalled_android_puede_un_bloqueador_ser_de_verdad_imposible_de_desinstalar",
+      "community": 386,
+      "community_name": "4. 3D CSS Transforms",
+      "norm_label": "\u00bfpuede un bloqueador ser de verdad imposible de desinstalar?"
+    },
+    {
+      "label": "C\u00f3mo funciona realmente el truco de la accesibilidad",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/app-blocker-cannot-be-uninstalled-android.mdx",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "src_content_blog_es_app_blocker_cannot_be_uninstalled_android_c\u00f3mo_funciona_realmente_el_truco_de_la_accesibilidad",
+      "community": 386,
+      "community_name": "4. 3D CSS Transforms",
+      "norm_label": "como funciona realmente el truco de la accesibilidad"
+    },
+    {
+      "label": "El \u00fanico m\u00e9todo que funciona de verdad, y lo que cuesta",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/app-blocker-cannot-be-uninstalled-android.mdx",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "src_content_blog_es_app_blocker_cannot_be_uninstalled_android_el_\u00fanico_m\u00e9todo_que_funciona_de_verdad_y_lo_que_cuesta",
+      "community": 386,
+      "community_name": "4. 3D CSS Transforms",
+      "norm_label": "el unico metodo que funciona de verdad, y lo que cuesta"
+    },
+    {
+      "label": "Qu\u00e9 buscar realmente en un bloqueador",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/app-blocker-cannot-be-uninstalled-android.mdx",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "src_content_blog_es_app_blocker_cannot_be_uninstalled_android_qu\u00e9_buscar_realmente_en_un_bloqueador",
+      "community": 386,
+      "community_name": "4. 3D CSS Transforms",
+      "norm_label": "que buscar realmente en un bloqueador"
+    },
+    {
+      "label": "C\u00f3mo eliminar un bloqueador del que no puedas salir",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/app-blocker-cannot-be-uninstalled-android.mdx",
+      "source_location": "L129",
+      "_origin": "ast",
+      "id": "src_content_blog_es_app_blocker_cannot_be_uninstalled_android_c\u00f3mo_eliminar_un_bloqueador_del_que_no_puedas_salir",
+      "community": 386,
+      "community_name": "4. 3D CSS Transforms",
+      "norm_label": "como eliminar un bloqueador del que no puedas salir"
+    },
+    {
+      "label": "En resumen",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/app-blocker-cannot-be-uninstalled-android.mdx",
+      "source_location": "L152",
+      "_origin": "ast",
+      "id": "src_content_blog_es_app_blocker_cannot_be_uninstalled_android_en_resumen",
+      "community": 386,
+      "community_name": "4. 3D CSS Transforms",
+      "norm_label": "en resumen"
+    },
+    {
+      "label": "es/best-app-to-block-social-media-on-android-in-2026.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
+      "norm_label": "es/best-app-to-block-social-media-on-android-in-2026.mdx"
+    },
+    {
+      "label": "Por qu\u00e9 fallan casi todos los bloqueadores de redes sociales en Android",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_por_qu\u00e9_fallan_casi_todos_los_bloqueadores_de_redes_sociales_en_android",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
+      "norm_label": "por que fallan casi todos los bloqueadores de redes sociales en android"
+    },
+    {
+      "label": "Las mejores apps para bloquear redes sociales en Android en 2026",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_las_mejores_apps_para_bloquear_redes_sociales_en_android_en_2026",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
+      "norm_label": "las mejores apps para bloquear redes sociales en android en 2026"
+    },
+    {
+      "label": "1. Mindful Guard \u2014 La mejor en conjunto \u26a1 Nuestra elecci\u00f3n",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_1_mindful_guard_la_mejor_en_conjunto_nuestra_elecci\u00f3n",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
+      "norm_label": "1. mindful guard \u2014 la mejor en conjunto \u26a1 nuestra eleccion"
+    },
+    {
+      "label": "2. AppBlock \u2014 La mejor para bloqueos por ubicaci\u00f3n",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx",
+      "source_location": "L106",
+      "_origin": "ast",
+      "id": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_2_appblock_la_mejor_para_bloqueos_por_ubicaci\u00f3n",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
+      "norm_label": "2. appblock \u2014 la mejor para bloqueos por ubicacion"
+    },
+    {
+      "label": "3. Freedom \u2014 La mejor para bloquear m\u00f3vil y port\u00e1til a la vez",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx",
+      "source_location": "L122",
+      "_origin": "ast",
+      "id": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_3_freedom_la_mejor_para_bloquear_m\u00f3vil_y_port\u00e1til_a_la_vez",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
+      "norm_label": "3. freedom \u2014 la mejor para bloquear movil y portatil a la vez"
+    },
+    {
+      "label": "4. One Sec \u2014 La mejor para tomar conciencia (no para bloquear en firme)",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx",
+      "source_location": "L138",
+      "_origin": "ast",
+      "id": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_4_one_sec_la_mejor_para_tomar_conciencia_no_para_bloquear_en_firme",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
+      "norm_label": "4. one sec \u2014 la mejor para tomar conciencia (no para bloquear en firme)"
+    },
+    {
+      "label": "5. Bienestar digital \u2014 El mejor punto de partida gratis (con una pega enorme)",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx",
+      "source_location": "L154",
+      "_origin": "ast",
+      "id": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_5_bienestar_digital_el_mejor_punto_de_partida_gratis_con_una_pega_enorme",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
+      "norm_label": "5. bienestar digital \u2014 el mejor punto de partida gratis (con una pega enorme)"
+    },
+    {
+      "label": "Comparativa r\u00e1pida",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx",
+      "source_location": "L173",
+      "_origin": "ast",
+      "id": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_comparativa_r\u00e1pida",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
+      "norm_label": "comparativa rapida"
+    },
+    {
+      "label": "C\u00f3mo bloquear Instagram en Android de verdad (paso a paso)",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx",
+      "source_location": "L185",
+      "_origin": "ast",
+      "id": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_c\u00f3mo_bloquear_instagram_en_android_de_verdad_paso_a_paso",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
+      "norm_label": "como bloquear instagram en android de verdad (paso a paso)"
+    },
+    {
+      "label": "\u00bfY bloquear TikTok en concreto?",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx",
+      "source_location": "L203",
+      "_origin": "ast",
+      "id": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_y_bloquear_tiktok_en_concreto",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
+      "norm_label": "\u00bfy bloquear tiktok en concreto?"
+    },
+    {
+      "label": "En resumen",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx",
+      "source_location": "L215",
+      "_origin": "ast",
+      "id": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_en_resumen",
+      "community": 257,
+      "community_name": "4. 3D CSS Transforms",
+      "norm_label": "en resumen"
+    },
+    {
+      "label": "es/best-free-reels-shorts-blockers-android-2026.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026",
+      "community": 334,
+      "community_name": "4. Attack Surface Mapping",
+      "norm_label": "es/best-free-reels-shorts-blockers-android-2026.mdx"
+    },
+    {
+      "label": "C\u00f3mo hemos comparado estas apps",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_c\u00f3mo_hemos_comparado_estas_apps",
+      "community": 334,
+      "community_name": "4. Attack Surface Mapping",
+      "norm_label": "como hemos comparado estas apps"
+    },
+    {
+      "label": "Bloqueadores gratuitos de Reels y Shorts, comparados",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
+      "source_location": "L68",
+      "_origin": "ast",
+      "id": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_bloqueadores_gratuitos_de_reels_y_shorts_comparados",
+      "community": 334,
+      "community_name": "4. Attack Surface Mapping",
+      "norm_label": "bloqueadores gratuitos de reels y shorts, comparados"
+    },
+    {
+      "label": "NoScroll \u2014 la opci\u00f3n m\u00e1s consolidada",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_noscroll_la_opci\u00f3n_m\u00e1s_consolidada",
+      "community": 334,
+      "community_name": "4. Attack Surface Mapping",
+      "norm_label": "noscroll \u2014 la opcion mas consolidada"
+    },
+    {
+      "label": "ScrollGuard \u2014 la cobertura m\u00e1s amplia",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
+      "source_location": "L100",
+      "_origin": "ast",
+      "id": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_scrollguard_la_cobertura_m\u00e1s_amplia",
+      "community": 334,
+      "community_name": "4. Attack Surface Mapping",
+      "norm_label": "scrollguard \u2014 la cobertura mas amplia"
+    },
+    {
+      "label": "StopScroll \u2014 la mejor valorada, con l\u00edmite diario integrado",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
+      "source_location": "L116",
+      "_origin": "ast",
+      "id": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_stopscroll_la_mejor_valorada_con_l\u00edmite_diario_integrado",
+      "community": 334,
+      "community_name": "4. Attack Surface Mapping",
+      "norm_label": "stopscroll \u2014 la mejor valorada, con limite diario integrado"
+    },
+    {
+      "label": "Shortstop \u2014 la m\u00e1s ligera, y gratis de verdad",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
+      "source_location": "L131",
+      "_origin": "ast",
+      "id": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_shortstop_la_m\u00e1s_ligera_y_gratis_de_verdad",
+      "community": 334,
+      "community_name": "4. Attack Surface Mapping",
+      "norm_label": "shortstop \u2014 la mas ligera, y gratis de verdad"
+    },
+    {
+      "label": "MindfulGuard \u2014 l\u00edmite diario y por sesi\u00f3n a la vez",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
+      "source_location": "L150",
+      "_origin": "ast",
+      "id": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_mindfulguard_l\u00edmite_diario_y_por_sesi\u00f3n_a_la_vez",
+      "community": 334,
+      "community_name": "4. Attack Surface Mapping",
+      "norm_label": "mindfulguard \u2014 limite diario y por sesion a la vez"
+    },
+    {
+      "label": "C\u00f3mo elegir",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
+      "source_location": "L178",
+      "_origin": "ast",
+      "id": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_c\u00f3mo_elegir",
+      "community": 334,
+      "community_name": "4. Attack Surface Mapping",
+      "norm_label": "como elegir"
+    },
+    {
+      "label": "\u00bfY los bloqueadores de marca conocida?",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
+      "source_location": "L199",
+      "_origin": "ast",
+      "id": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_y_los_bloqueadores_de_marca_conocida",
+      "community": 334,
+      "community_name": "4. Attack Surface Mapping",
+      "norm_label": "\u00bfy los bloqueadores de marca conocida?"
+    },
+    {
+      "label": "Una cosa que comprobar antes de instalar cualquiera de estas",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
+      "source_location": "L212",
+      "_origin": "ast",
+      "id": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_una_cosa_que_comprobar_antes_de_instalar_cualquiera_de_estas",
+      "community": 334,
+      "community_name": "4. Attack Surface Mapping",
+      "norm_label": "una cosa que comprobar antes de instalar cualquiera de estas"
+    },
+    {
+      "label": "En resumen",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
+      "source_location": "L226",
+      "_origin": "ast",
+      "id": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_en_resumen",
+      "community": 334,
+      "community_name": "4. Attack Surface Mapping",
+      "norm_label": "en resumen"
+    },
+    {
+      "label": "es/how-to-block-instagram-reels-android.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_instagram_reels_android",
+      "community": 383,
+      "community_name": "6. Weight and Emphasis Principles",
+      "norm_label": "es/how-to-block-instagram-reels-android.mdx"
+    },
+    {
+      "label": "Por qu\u00e9 no existe un \u00abapagado\u00bb real para los Reels",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_instagram_reels_android_por_qu\u00e9_no_existe_un_apagado_real_para_los_reels",
+      "community": 383,
+      "community_name": "6. Weight and Emphasis Principles",
+      "norm_label": "por que no existe un \u00abapagado\u00bb real para los reels"
+    },
+    {
+      "label": "Bloquear la app entera frente a bloquear solo los Reels",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_instagram_reels_android_bloquear_la_app_entera_frente_a_bloquear_solo_los_reels",
+      "community": 383,
+      "community_name": "6. Weight and Emphasis Principles",
+      "norm_label": "bloquear la app entera frente a bloquear solo los reels"
+    },
+    {
+      "label": "L\u00edmite diario frente a l\u00edmite por sesi\u00f3n",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_instagram_reels_android_l\u00edmite_diario_frente_a_l\u00edmite_por_sesi\u00f3n",
+      "community": 383,
+      "community_name": "6. Weight and Emphasis Principles",
+      "norm_label": "limite diario frente a limite por sesion"
+    },
+    {
+      "label": "Paso a paso: bloquear los Reels de Instagram en menos de dos minutos",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_instagram_reels_android_paso_a_paso_bloquear_los_reels_de_instagram_en_menos_de_dos_minutos",
+      "community": 383,
+      "community_name": "6. Weight and Emphasis Principles",
+      "norm_label": "paso a paso: bloquear los reels de instagram en menos de dos minutos"
+    },
+    {
+      "label": "El l\u00edmite solo de Reels frente a las alternativas",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_instagram_reels_android_el_l\u00edmite_solo_de_reels_frente_a_las_alternativas",
+      "community": 383,
+      "community_name": "6. Weight and Emphasis Principles",
+      "norm_label": "el limite solo de reels frente a las alternativas"
+    },
+    {
+      "label": "\u00bfY los Reels en el navegador?",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L112",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_instagram_reels_android_y_los_reels_en_el_navegador",
+      "community": 383,
+      "community_name": "6. Weight and Emphasis Principles",
+      "norm_label": "\u00bfy los reels en el navegador?"
+    },
+    {
+      "label": "En resumen",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L123",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_instagram_reels_android_en_resumen",
+      "community": 383,
+      "community_name": "6. Weight and Emphasis Principles",
+      "norm_label": "en resumen"
+    },
+    {
+      "label": "es/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026",
+      "community": 382,
+      "community_name": "5. Responsive Typography Principles",
+      "norm_label": "es/how-to-block-reels-and-shorts-on-android-2026.mdx"
+    },
+    {
+      "label": "Por qu\u00e9 bloquear Reels y Shorts es m\u00e1s dif\u00edcil que bloquear una app",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026_por_qu\u00e9_bloquear_reels_y_shorts_es_m\u00e1s_dif\u00edcil_que_bloquear_una_app",
+      "community": 382,
+      "community_name": "5. Responsive Typography Principles",
+      "norm_label": "por que bloquear reels y shorts es mas dificil que bloquear una app"
+    },
+    {
+      "label": "Las tres formas de bloquear el v\u00eddeo corto en Android",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026_las_tres_formas_de_bloquear_el_v\u00eddeo_corto_en_android",
+      "community": 382,
+      "community_name": "5. Responsive Typography Principles",
+      "norm_label": "las tres formas de bloquear el video corto en android"
+    },
+    {
+      "label": "C\u00f3mo funcionan de verdad los l\u00edmites diarios y por sesi\u00f3n",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L81",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026_c\u00f3mo_funcionan_de_verdad_los_l\u00edmites_diarios_y_por_sesi\u00f3n",
+      "community": 382,
+      "community_name": "5. Responsive Typography Principles",
+      "norm_label": "como funcionan de verdad los limites diarios y por sesion"
+    },
+    {
+      "label": "Plataforma por plataforma",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026_plataforma_por_plataforma",
+      "community": 382,
+      "community_name": "5. Responsive Typography Principles",
+      "norm_label": "plataforma por plataforma"
+    },
+    {
+      "label": "Paso a paso: configurar Reel Guard en menos de dos minutos",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L120",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026_paso_a_paso_configurar_reel_guard_en_menos_de_dos_minutos",
+      "community": 382,
+      "community_name": "5. Responsive Typography Principles",
+      "norm_label": "paso a paso: configurar reel guard en menos de dos minutos"
+    },
+    {
+      "label": "Comparativa r\u00e1pida",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L132",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026_comparativa_r\u00e1pida",
+      "community": 382,
+      "community_name": "5. Responsive Typography Principles",
+      "norm_label": "comparativa rapida"
+    },
+    {
+      "label": "Las apps no son la \u00fanica superficie: el navegador tambi\u00e9n cuenta",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L141",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026_las_apps_no_son_la_\u00fanica_superficie_el_navegador_tambi\u00e9n_cuenta",
+      "community": 382,
+      "community_name": "5. Responsive Typography Principles",
+      "norm_label": "las apps no son la unica superficie: el navegador tambien cuenta"
+    },
+    {
+      "label": "En resumen",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L153",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026_en_resumen",
+      "community": 382,
+      "community_name": "5. Responsive Typography Principles",
+      "norm_label": "en resumen"
+    },
+    {
+      "label": "es/how-to-block-tiktok-feed-android.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-tiktok-feed-android.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_tiktok_feed_android",
+      "community": 378,
+      "community_name": "5. Page Transitions Principles",
+      "norm_label": "es/how-to-block-tiktok-feed-android.mdx"
+    },
+    {
+      "label": "A qu\u00e9 te enfrentas en realidad",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-tiktok-feed-android.mdx",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_tiktok_feed_android_a_qu\u00e9_te_enfrentas_en_realidad",
+      "community": 378,
+      "community_name": "5. Page Transitions Principles",
+      "norm_label": "a que te enfrentas en realidad"
+    },
+    {
+      "label": "Por qu\u00e9 TikTok es el feed m\u00e1s dif\u00edcil de autorregular",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-tiktok-feed-android.mdx",
+      "source_location": "L76",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_tiktok_feed_android_por_qu\u00e9_tiktok_es_el_feed_m\u00e1s_dif\u00edcil_de_autorregular",
+      "community": 378,
+      "community_name": "5. Page Transitions Principles",
+      "norm_label": "por que tiktok es el feed mas dificil de autorregular"
+    },
+    {
+      "label": "Los ajustes de tiempo de uso de TikTok, y lo que no hacen",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-tiktok-feed-android.mdx",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_tiktok_feed_android_los_ajustes_de_tiempo_de_uso_de_tiktok_y_lo_que_no_hacen",
+      "community": 378,
+      "community_name": "5. Page Transitions Principles",
+      "norm_label": "los ajustes de tiempo de uso de tiktok, y lo que no hacen"
+    },
+    {
+      "label": "Por qu\u00e9 el feed \u00abSiguiendo\u00bb no es una soluci\u00f3n",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-tiktok-feed-android.mdx",
+      "source_location": "L114",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_tiktok_feed_android_por_qu\u00e9_el_feed_siguiendo_no_es_una_soluci\u00f3n",
+      "community": 378,
+      "community_name": "5. Page Transitions Principles",
+      "norm_label": "por que el feed \u00absiguiendo\u00bb no es una solucion"
+    },
+    {
+      "label": "Bloqueo a nivel de feed frente a bloqueo de la app entera",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-tiktok-feed-android.mdx",
+      "source_location": "L123",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_tiktok_feed_android_bloqueo_a_nivel_de_feed_frente_a_bloqueo_de_la_app_entera",
+      "community": 378,
+      "community_name": "5. Page Transitions Principles",
+      "norm_label": "bloqueo a nivel de feed frente a bloqueo de la app entera"
+    },
+    {
+      "label": "L\u00edmite diario frente a l\u00edmite por sesi\u00f3n en TikTok",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-tiktok-feed-android.mdx",
+      "source_location": "L137",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_tiktok_feed_android_l\u00edmite_diario_frente_a_l\u00edmite_por_sesi\u00f3n_en_tiktok",
+      "community": 378,
+      "community_name": "5. Page Transitions Principles",
+      "norm_label": "limite diario frente a limite por sesion en tiktok"
+    },
+    {
+      "label": "Paso a paso: bloquear el feed de TikTok en menos de dos minutos",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-tiktok-feed-android.mdx",
+      "source_location": "L153",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_tiktok_feed_android_paso_a_paso_bloquear_el_feed_de_tiktok_en_menos_de_dos_minutos",
+      "community": 378,
+      "community_name": "5. Page Transitions Principles",
+      "norm_label": "paso a paso: bloquear el feed de tiktok en menos de dos minutos"
+    },
+    {
+      "label": "El l\u00edmite del feed de TikTok frente a las alternativas",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-tiktok-feed-android.mdx",
+      "source_location": "L167",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_tiktok_feed_android_el_l\u00edmite_del_feed_de_tiktok_frente_a_las_alternativas",
+      "community": 378,
+      "community_name": "5. Page Transitions Principles",
+      "norm_label": "el limite del feed de tiktok frente a las alternativas"
+    },
+    {
+      "label": "\u00bfY TikTok en el navegador?",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-tiktok-feed-android.mdx",
+      "source_location": "L190",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_tiktok_feed_android_y_tiktok_en_el_navegador",
+      "community": 378,
+      "community_name": "5. Page Transitions Principles",
+      "norm_label": "\u00bfy tiktok en el navegador?"
+    },
+    {
+      "label": "En resumen",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/how-to-block-tiktok-feed-android.mdx",
+      "source_location": "L201",
+      "_origin": "ast",
+      "id": "src_content_blog_es_how_to_block_tiktok_feed_android_en_resumen",
+      "community": 378,
+      "community_name": "5. Page Transitions Principles",
+      "norm_label": "en resumen"
+    },
+    {
+      "label": "es/opal-alternatives-android.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/opal-alternatives-android.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_es_opal_alternatives_android",
+      "community": 379,
+      "community_name": "8. Feedback Animation Principles",
+      "norm_label": "es/opal-alternatives-android.mdx"
+    },
+    {
+      "label": "Opal en Android: primero los datos",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/opal-alternatives-android.mdx",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "src_content_blog_es_opal_alternatives_android_opal_en_android_primero_los_datos",
+      "community": 379,
+      "community_name": "8. Feedback Animation Principles",
+      "norm_label": "opal en android: primero los datos"
+    },
+    {
+      "label": "Alternativas a Opal para Android, comparadas",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/opal-alternatives-android.mdx",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "src_content_blog_es_opal_alternatives_android_alternativas_a_opal_para_android_comparadas",
+      "community": 379,
+      "community_name": "8. Feedback Animation Principles",
+      "norm_label": "alternativas a opal para android, comparadas"
+    },
+    {
+      "label": "Mindful Guard (la mejor alternativa gratis a Opal)",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/opal-alternatives-android.mdx",
+      "source_location": "L81",
+      "_origin": "ast",
+      "id": "src_content_blog_es_opal_alternatives_android_mindful_guard_la_mejor_alternativa_gratis_a_opal",
+      "community": 379,
+      "community_name": "8. Feedback Animation Principles",
+      "norm_label": "mindful guard (la mejor alternativa gratis a opal)"
+    },
+    {
+      "label": "AppBlock (la mejor para reglas por lugar o wifi)",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/opal-alternatives-android.mdx",
+      "source_location": "L110",
+      "_origin": "ast",
+      "id": "src_content_blog_es_opal_alternatives_android_appblock_la_mejor_para_reglas_por_lugar_o_wifi",
+      "community": 379,
+      "community_name": "8. Feedback Animation Principles",
+      "norm_label": "appblock (la mejor para reglas por lugar o wifi)"
+    },
+    {
+      "label": "Freedom (la mejor para m\u00f3vil y ordenador juntos)",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/opal-alternatives-android.mdx",
+      "source_location": "L123",
+      "_origin": "ast",
+      "id": "src_content_blog_es_opal_alternatives_android_freedom_la_mejor_para_m\u00f3vil_y_ordenador_juntos",
+      "community": 379,
+      "community_name": "8. Feedback Animation Principles",
+      "norm_label": "freedom (la mejor para movil y ordenador juntos)"
+    },
+    {
+      "label": "One Sec (la mejor para fricci\u00f3n suave)",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/opal-alternatives-android.mdx",
+      "source_location": "L134",
+      "_origin": "ast",
+      "id": "src_content_blog_es_opal_alternatives_android_one_sec_la_mejor_para_fricci\u00f3n_suave",
+      "community": 379,
+      "community_name": "8. Feedback Animation Principles",
+      "norm_label": "one sec (la mejor para friccion suave)"
+    },
+    {
+      "label": "Bienestar digital (gratis, ya integrado)",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/opal-alternatives-android.mdx",
+      "source_location": "L143",
+      "_origin": "ast",
+      "id": "src_content_blog_es_opal_alternatives_android_bienestar_digital_gratis_ya_integrado",
+      "community": 379,
+      "community_name": "8. Feedback Animation Principles",
+      "norm_label": "bienestar digital (gratis, ya integrado)"
+    },
+    {
+      "label": "Stay Focused (la mejor para presupuestos diarios)",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/opal-alternatives-android.mdx",
+      "source_location": "L151",
+      "_origin": "ast",
+      "id": "src_content_blog_es_opal_alternatives_android_stay_focused_la_mejor_para_presupuestos_diarios",
+      "community": 379,
+      "community_name": "8. Feedback Animation Principles",
+      "norm_label": "stay focused (la mejor para presupuestos diarios)"
+    },
+    {
+      "label": "Opal vs AppBlock vs Mindful Guard",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/opal-alternatives-android.mdx",
+      "source_location": "L159",
+      "_origin": "ast",
+      "id": "src_content_blog_es_opal_alternatives_android_opal_vs_appblock_vs_mindful_guard",
+      "community": 379,
+      "community_name": "8. Feedback Animation Principles",
+      "norm_label": "opal vs appblock vs mindful guard"
+    },
+    {
+      "label": "C\u00f3mo elegir",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/opal-alternatives-android.mdx",
+      "source_location": "L177",
+      "_origin": "ast",
+      "id": "src_content_blog_es_opal_alternatives_android_c\u00f3mo_elegir",
+      "community": 379,
+      "community_name": "8. Feedback Animation Principles",
+      "norm_label": "como elegir"
+    },
+    {
+      "label": "es/youtube-background-play-2026-workaround.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/youtube-background-play-2026-workaround.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_es_youtube_background_play_2026_workaround",
+      "community": 387,
+      "community_name": "10. Navigation Checklist",
+      "norm_label": "es/youtube-background-play-2026-workaround.mdx"
+    },
+    {
+      "label": "\u00bfQu\u00e9 cambi\u00f3 en enero de 2026?",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/youtube-background-play-2026-workaround.mdx",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "src_content_blog_es_youtube_background_play_2026_workaround_qu\u00e9_cambi\u00f3_en_enero_de_2026",
+      "community": 387,
+      "community_name": "10. Navigation Checklist",
+      "norm_label": "\u00bfque cambio en enero de 2026?"
+    },
+    {
+      "label": "\u00bfPor qu\u00e9 dej\u00f3 de funcionar el truco de Firefox?",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/youtube-background-play-2026-workaround.mdx",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "src_content_blog_es_youtube_background_play_2026_workaround_por_qu\u00e9_dej\u00f3_de_funcionar_el_truco_de_firefox",
+      "community": 387,
+      "community_name": "10. Navigation Checklist",
+      "norm_label": "\u00bfpor que dejo de funcionar el truco de firefox?"
+    },
+    {
+      "label": "M\u00e9todo 1 \u2014 Deja el v\u00eddeo delante y pon la pantalla en negro (gratis, cualquier app)",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/youtube-background-play-2026-workaround.mdx",
+      "source_location": "L105",
+      "_origin": "ast",
+      "id": "src_content_blog_es_youtube_background_play_2026_workaround_m\u00e9todo_1_deja_el_v\u00eddeo_delante_y_pon_la_pantalla_en_negro_gratis_cualquier_app",
+      "community": 387,
+      "community_name": "10. Navigation Checklist",
+      "norm_label": "metodo 1 \u2014 deja el video delante y pon la pantalla en negro (gratis, cualquier app)"
+    },
+    {
+      "label": "M\u00e9todo 2 \u2014 NewPipe (gratis, c\u00f3digo abierto)",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/youtube-background-play-2026-workaround.mdx",
+      "source_location": "L134",
+      "_origin": "ast",
+      "id": "src_content_blog_es_youtube_background_play_2026_workaround_m\u00e9todo_2_newpipe_gratis_c\u00f3digo_abierto",
+      "community": 387,
+      "community_name": "10. Navigation Checklist",
+      "norm_label": "metodo 2 \u2014 newpipe (gratis, codigo abierto)"
+    },
+    {
+      "label": "M\u00e9todo 3 \u2014 YouTube Premium Lite (ahora con reproducci\u00f3n en segundo plano)",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/youtube-background-play-2026-workaround.mdx",
+      "source_location": "L159",
+      "_origin": "ast",
+      "id": "src_content_blog_es_youtube_background_play_2026_workaround_m\u00e9todo_3_youtube_premium_lite_ahora_con_reproducci\u00f3n_en_segundo_plano",
+      "community": 387,
+      "community_name": "10. Navigation Checklist",
+      "norm_label": "metodo 3 \u2014 youtube premium lite (ahora con reproduccion en segundo plano)"
+    },
+    {
+      "label": "\u00bfQu\u00e9 m\u00e9todo deber\u00edas usar?",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/youtube-background-play-2026-workaround.mdx",
+      "source_location": "L181",
+      "_origin": "ast",
+      "id": "src_content_blog_es_youtube_background_play_2026_workaround_qu\u00e9_m\u00e9todo_deber\u00edas_usar",
+      "community": 387,
+      "community_name": "10. Navigation Checklist",
+      "norm_label": "\u00bfque metodo deberias usar?"
     },
     {
       "label": "fr/add-low-stock-alerts-shopify.md",
@@ -109878,6 +110725,765 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/app-blocker-cannot-be-uninstalled-android.mdx",
+      "source_location": "L129",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_app_blocker_cannot_be_uninstalled_android",
+      "target": "src_content_blog_es_app_blocker_cannot_be_uninstalled_android_c\u00f3mo_eliminar_un_bloqueador_del_que_no_puedas_salir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/app-blocker-cannot-be-uninstalled-android.mdx",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_app_blocker_cannot_be_uninstalled_android",
+      "target": "src_content_blog_es_app_blocker_cannot_be_uninstalled_android_c\u00f3mo_funciona_realmente_el_truco_de_la_accesibilidad",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/app-blocker-cannot-be-uninstalled-android.mdx",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_app_blocker_cannot_be_uninstalled_android",
+      "target": "src_content_blog_es_app_blocker_cannot_be_uninstalled_android_el_\u00fanico_m\u00e9todo_que_funciona_de_verdad_y_lo_que_cuesta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/app-blocker-cannot-be-uninstalled-android.mdx",
+      "source_location": "L152",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_app_blocker_cannot_be_uninstalled_android",
+      "target": "src_content_blog_es_app_blocker_cannot_be_uninstalled_android_en_resumen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/app-blocker-cannot-be-uninstalled-android.mdx",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_app_blocker_cannot_be_uninstalled_android",
+      "target": "src_content_blog_es_app_blocker_cannot_be_uninstalled_android_puede_un_bloqueador_ser_de_verdad_imposible_de_desinstalar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/app-blocker-cannot-be-uninstalled-android.mdx",
+      "source_location": "L96",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_app_blocker_cannot_be_uninstalled_android",
+      "target": "src_content_blog_es_app_blocker_cannot_be_uninstalled_android_qu\u00e9_buscar_realmente_en_un_bloqueador",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx",
+      "source_location": "L173",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026",
+      "target": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_comparativa_r\u00e1pida",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx",
+      "source_location": "L185",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026",
+      "target": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_c\u00f3mo_bloquear_instagram_en_android_de_verdad_paso_a_paso",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx",
+      "source_location": "L215",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026",
+      "target": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_en_resumen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026",
+      "target": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_las_mejores_apps_para_bloquear_redes_sociales_en_android_en_2026",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026",
+      "target": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_por_qu\u00e9_fallan_casi_todos_los_bloqueadores_de_redes_sociales_en_android",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx",
+      "source_location": "L203",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026",
+      "target": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_y_bloquear_tiktok_en_concreto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_las_mejores_apps_para_bloquear_redes_sociales_en_android_en_2026",
+      "target": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_1_mindful_guard_la_mejor_en_conjunto_nuestra_elecci\u00f3n",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_las_mejores_apps_para_bloquear_redes_sociales_en_android_en_2026",
+      "target": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_2_appblock_la_mejor_para_bloqueos_por_ubicaci\u00f3n",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx",
+      "source_location": "L122",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_las_mejores_apps_para_bloquear_redes_sociales_en_android_en_2026",
+      "target": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_3_freedom_la_mejor_para_bloquear_m\u00f3vil_y_port\u00e1til_a_la_vez",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx",
+      "source_location": "L138",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_las_mejores_apps_para_bloquear_redes_sociales_en_android_en_2026",
+      "target": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_4_one_sec_la_mejor_para_tomar_conciencia_no_para_bloquear_en_firme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx",
+      "source_location": "L154",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_las_mejores_apps_para_bloquear_redes_sociales_en_android_en_2026",
+      "target": "src_content_blog_es_best_app_to_block_social_media_on_android_in_2026_5_bienestar_digital_el_mejor_punto_de_partida_gratis_con_una_pega_enorme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026",
+      "target": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_bloqueadores_gratuitos_de_reels_y_shorts_comparados",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
+      "source_location": "L178",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026",
+      "target": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_c\u00f3mo_elegir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026",
+      "target": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_c\u00f3mo_hemos_comparado_estas_apps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
+      "source_location": "L226",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026",
+      "target": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_en_resumen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
+      "source_location": "L150",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026",
+      "target": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_mindfulguard_l\u00edmite_diario_y_por_sesi\u00f3n_a_la_vez",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026",
+      "target": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_noscroll_la_opci\u00f3n_m\u00e1s_consolidada",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026",
+      "target": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_scrollguard_la_cobertura_m\u00e1s_amplia",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
+      "source_location": "L131",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026",
+      "target": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_shortstop_la_m\u00e1s_ligera_y_gratis_de_verdad",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
+      "source_location": "L116",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026",
+      "target": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_stopscroll_la_mejor_valorada_con_l\u00edmite_diario_integrado",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
+      "source_location": "L212",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026",
+      "target": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_una_cosa_que_comprobar_antes_de_instalar_cualquiera_de_estas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
+      "source_location": "L199",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026",
+      "target": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_y_los_bloqueadores_de_marca_conocida",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_es_how_to_block_instagram_reels_android_bloquear_la_app_entera_frente_a_bloquear_solo_los_reels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_es_how_to_block_instagram_reels_android_el_l\u00edmite_solo_de_reels_frente_a_las_alternativas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L123",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_es_how_to_block_instagram_reels_android_en_resumen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_es_how_to_block_instagram_reels_android_l\u00edmite_diario_frente_a_l\u00edmite_por_sesi\u00f3n",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_es_how_to_block_instagram_reels_android_paso_a_paso_bloquear_los_reels_de_instagram_en_menos_de_dos_minutos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_es_how_to_block_instagram_reels_android_por_qu\u00e9_no_existe_un_apagado_real_para_los_reels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-instagram-reels-android.mdx",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_instagram_reels_android",
+      "target": "src_content_blog_es_how_to_block_instagram_reels_android_y_los_reels_en_el_navegador",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L132",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026",
+      "target": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026_comparativa_r\u00e1pida",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026",
+      "target": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026_c\u00f3mo_funcionan_de_verdad_los_l\u00edmites_diarios_y_por_sesi\u00f3n",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L153",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026",
+      "target": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026_en_resumen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L141",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026",
+      "target": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026_las_apps_no_son_la_\u00fanica_superficie_el_navegador_tambi\u00e9n_cuenta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026",
+      "target": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026_las_tres_formas_de_bloquear_el_v\u00eddeo_corto_en_android",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L120",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026",
+      "target": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026_paso_a_paso_configurar_reel_guard_en_menos_de_dos_minutos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L97",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026",
+      "target": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026_plataforma_por_plataforma",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-reels-and-shorts-on-android-2026.mdx",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026",
+      "target": "src_content_blog_es_how_to_block_reels_and_shorts_on_android_2026_por_qu\u00e9_bloquear_reels_y_shorts_es_m\u00e1s_dif\u00edcil_que_bloquear_una_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-tiktok-feed-android.mdx",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_tiktok_feed_android",
+      "target": "src_content_blog_es_how_to_block_tiktok_feed_android_a_qu\u00e9_te_enfrentas_en_realidad",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-tiktok-feed-android.mdx",
+      "source_location": "L123",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_tiktok_feed_android",
+      "target": "src_content_blog_es_how_to_block_tiktok_feed_android_bloqueo_a_nivel_de_feed_frente_a_bloqueo_de_la_app_entera",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-tiktok-feed-android.mdx",
+      "source_location": "L167",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_tiktok_feed_android",
+      "target": "src_content_blog_es_how_to_block_tiktok_feed_android_el_l\u00edmite_del_feed_de_tiktok_frente_a_las_alternativas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-tiktok-feed-android.mdx",
+      "source_location": "L201",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_tiktok_feed_android",
+      "target": "src_content_blog_es_how_to_block_tiktok_feed_android_en_resumen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-tiktok-feed-android.mdx",
+      "source_location": "L96",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_tiktok_feed_android",
+      "target": "src_content_blog_es_how_to_block_tiktok_feed_android_los_ajustes_de_tiempo_de_uso_de_tiktok_y_lo_que_no_hacen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-tiktok-feed-android.mdx",
+      "source_location": "L137",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_tiktok_feed_android",
+      "target": "src_content_blog_es_how_to_block_tiktok_feed_android_l\u00edmite_diario_frente_a_l\u00edmite_por_sesi\u00f3n_en_tiktok",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-tiktok-feed-android.mdx",
+      "source_location": "L153",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_tiktok_feed_android",
+      "target": "src_content_blog_es_how_to_block_tiktok_feed_android_paso_a_paso_bloquear_el_feed_de_tiktok_en_menos_de_dos_minutos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-tiktok-feed-android.mdx",
+      "source_location": "L114",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_tiktok_feed_android",
+      "target": "src_content_blog_es_how_to_block_tiktok_feed_android_por_qu\u00e9_el_feed_siguiendo_no_es_una_soluci\u00f3n",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-tiktok-feed-android.mdx",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_tiktok_feed_android",
+      "target": "src_content_blog_es_how_to_block_tiktok_feed_android_por_qu\u00e9_tiktok_es_el_feed_m\u00e1s_dif\u00edcil_de_autorregular",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/how-to-block-tiktok-feed-android.mdx",
+      "source_location": "L190",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_how_to_block_tiktok_feed_android",
+      "target": "src_content_blog_es_how_to_block_tiktok_feed_android_y_tiktok_en_el_navegador",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/opal-alternatives-android.mdx",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_opal_alternatives_android",
+      "target": "src_content_blog_es_opal_alternatives_android_alternativas_a_opal_para_android_comparadas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/opal-alternatives-android.mdx",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_opal_alternatives_android",
+      "target": "src_content_blog_es_opal_alternatives_android_appblock_la_mejor_para_reglas_por_lugar_o_wifi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/opal-alternatives-android.mdx",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_opal_alternatives_android",
+      "target": "src_content_blog_es_opal_alternatives_android_bienestar_digital_gratis_ya_integrado",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/opal-alternatives-android.mdx",
+      "source_location": "L177",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_opal_alternatives_android",
+      "target": "src_content_blog_es_opal_alternatives_android_c\u00f3mo_elegir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/opal-alternatives-android.mdx",
+      "source_location": "L123",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_opal_alternatives_android",
+      "target": "src_content_blog_es_opal_alternatives_android_freedom_la_mejor_para_m\u00f3vil_y_ordenador_juntos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/opal-alternatives-android.mdx",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_opal_alternatives_android",
+      "target": "src_content_blog_es_opal_alternatives_android_mindful_guard_la_mejor_alternativa_gratis_a_opal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/opal-alternatives-android.mdx",
+      "source_location": "L134",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_opal_alternatives_android",
+      "target": "src_content_blog_es_opal_alternatives_android_one_sec_la_mejor_para_fricci\u00f3n_suave",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/opal-alternatives-android.mdx",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_opal_alternatives_android",
+      "target": "src_content_blog_es_opal_alternatives_android_opal_en_android_primero_los_datos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/opal-alternatives-android.mdx",
+      "source_location": "L159",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_opal_alternatives_android",
+      "target": "src_content_blog_es_opal_alternatives_android_opal_vs_appblock_vs_mindful_guard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/opal-alternatives-android.mdx",
+      "source_location": "L151",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_opal_alternatives_android",
+      "target": "src_content_blog_es_opal_alternatives_android_stay_focused_la_mejor_para_presupuestos_diarios",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/youtube-background-play-2026-workaround.mdx",
+      "source_location": "L105",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_youtube_background_play_2026_workaround",
+      "target": "src_content_blog_es_youtube_background_play_2026_workaround_m\u00e9todo_1_deja_el_v\u00eddeo_delante_y_pon_la_pantalla_en_negro_gratis_cualquier_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/youtube-background-play-2026-workaround.mdx",
+      "source_location": "L134",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_youtube_background_play_2026_workaround",
+      "target": "src_content_blog_es_youtube_background_play_2026_workaround_m\u00e9todo_2_newpipe_gratis_c\u00f3digo_abierto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/youtube-background-play-2026-workaround.mdx",
+      "source_location": "L159",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_youtube_background_play_2026_workaround",
+      "target": "src_content_blog_es_youtube_background_play_2026_workaround_m\u00e9todo_3_youtube_premium_lite_ahora_con_reproducci\u00f3n_en_segundo_plano",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/youtube-background-play-2026-workaround.mdx",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_youtube_background_play_2026_workaround",
+      "target": "src_content_blog_es_youtube_background_play_2026_workaround_por_qu\u00e9_dej\u00f3_de_funcionar_el_truco_de_firefox",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/youtube-background-play-2026-workaround.mdx",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_youtube_background_play_2026_workaround",
+      "target": "src_content_blog_es_youtube_background_play_2026_workaround_qu\u00e9_cambi\u00f3_en_enero_de_2026",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/youtube-background-play-2026-workaround.mdx",
+      "source_location": "L181",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_youtube_background_play_2026_workaround",
+      "target": "src_content_blog_es_youtube_background_play_2026_workaround_qu\u00e9_m\u00e9todo_deber\u00edas_usar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/fr/add-low-stock-alerts-shopify.md",
       "source_location": "L110",
       "weight": 1.0,
@@ -113936,5 +115542,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d500029407d4d67c9a6a31b66cf8b67a821f52ca"
+  "built_at_commit": "2d2b8610ee5f26545b386b82fe309a53c3b85aac"
 }
