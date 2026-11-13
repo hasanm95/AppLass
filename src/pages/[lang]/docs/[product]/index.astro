@@ -4,7 +4,7 @@ import DocsProductPage from "@/page-templates/DocsProductPage.astro";
 
 export async function getStaticPaths() {
   const products = ['fomogen', 'mindful-guard', 'screenveil'];
-  const nonDefaultLocales = i18nConfig.locales.filter(
+  const nonDefaultLocales = i18nConfig.uiLocales.filter(
     (l) => l !== i18nConfig.defaultLocale
   );
   

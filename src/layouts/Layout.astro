@@ -45,7 +45,10 @@ const {
   ogType = "website",
   articleMeta,
   breadcrumbs,
-  availableLocales = i18nConfig.locales,
+  // Static pages exist only for the fully-translated UI locales, so default
+  // hreflang to those. Content pages (blog, docs, compare, legal) pass their
+  // real translated set, which may include content-only locales like `es`.
+  availableLocales = i18nConfig.uiLocales,
 } = Astro.props;
 
 // Get language from URL if not explicitly provided

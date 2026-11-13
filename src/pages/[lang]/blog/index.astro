@@ -1,12 +1,25 @@
 ---
 import { i18nConfig } from "@/i18n/config";
+import { getBlogPosts } from "@/lib/blog";
 import BlogIndexPage from "@/page-templates/BlogIndexPage.astro";
 
 export async function getStaticPaths() {
   const nonDefaultLocales = i18nConfig.locales.filter(
     (l) => l !== i18nConfig.defaultLocale
   );
-  return nonDefaultLocales.map((lang) => ({ params: { lang } }));
+
+  // Full-UI locales always get a blog index. A content-only locale (e.g. es)
+  // gets one only once it actually has posts, so we never ship an empty
+  // localized blog landing under its URL.
+  const paths = await Promise.all(
+    nonDefaultLocales.map(async (lang) => {
+      const isUiLocale = (i18nConfig.uiLocales as readonly string[]).includes(lang);
+      const hasPosts = isUiLocale || (await getBlogPosts(lang)).length > 0;
+      return hasPosts ? { params: { lang } } : null;
+    })
+  );
+
+  return paths.filter((p): p is { params: { lang: string } } => p !== null);
 }
 
 const { lang } = Astro.params;

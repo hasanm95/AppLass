@@ -3,7 +3,9 @@ import NotFoundPage from "@/page-templates/NotFoundPage.astro";
 import { i18nConfig } from "@/i18n/config";
 
 export function getStaticPaths() {
-  return i18nConfig.locales.map((lang) => ({
+  // Content-only locales (e.g. es) have no translated 404 shell yet, so only
+  // build the localized 404 for full-UI locales.
+  return i18nConfig.uiLocales.map((lang) => ({
     params: { lang },
   }));
 }
