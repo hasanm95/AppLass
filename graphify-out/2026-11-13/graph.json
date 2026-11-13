@@ -4201,8 +4201,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "astro_assets",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "astro:assets"
     },
     {
@@ -4281,8 +4281,8 @@
       "_origin": "ast",
       "source_location": "L1",
       "id": "src_i18n_localize",
-      "community": 45,
-      "community_name": "localize",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "@/i18n/localize"
     },
     {
@@ -4397,8 +4397,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_blog_appcallout",
-      "community": 62,
-      "community_name": "@/page-templates/BlogPostPage.astro",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "@/components/blog/appcallout.astro"
     },
     {
@@ -4421,8 +4421,8 @@
       "_origin": "ast",
       "source_location": "L1",
       "id": "src_lib_utils",
-      "community": 62,
-      "community_name": "@/page-templates/BlogPostPage.astro",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "utils.ts"
     },
     {
@@ -4432,8 +4432,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_blog_ariselycta",
-      "community": 45,
-      "community_name": "localize",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "ariselycta.astro"
     },
     {
@@ -4443,8 +4443,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "src_components_blog_ariselycta_referrer",
-      "community": 45,
-      "community_name": "localize",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "referrer"
     },
     {
@@ -4454,8 +4454,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "src_components_blog_ariselycta_content",
-      "community": 45,
-      "community_name": "localize",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "content"
     },
     {
@@ -4489,8 +4489,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_blog_carttimecta",
-      "community": 45,
-      "community_name": "localize",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "carttimecta.astro"
     },
     {
@@ -4500,8 +4500,8 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "src_components_blog_carttimecta_content",
-      "community": 45,
-      "community_name": "localize",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "content"
     },
     {
@@ -4511,8 +4511,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_blog_fomogencta",
-      "community": 45,
-      "community_name": "localize",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "fomogencta.astro"
     },
     {
@@ -4522,8 +4522,8 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "src_components_blog_fomogencta_content",
-      "community": 45,
-      "community_name": "localize",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "content"
     },
     {
@@ -4533,8 +4533,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_blog_mindfulguardcta",
-      "community": 62,
-      "community_name": "@/page-templates/BlogPostPage.astro",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "mindfulguardcta.astro"
     },
     {
@@ -4544,8 +4544,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_components_blog_mindfulguardcta_href",
-      "community": 62,
-      "community_name": "@/page-templates/BlogPostPage.astro",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "href"
     },
     {
@@ -4555,8 +4555,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "src_components_blog_mindfulguardcta_content",
-      "community": 62,
-      "community_name": "@/page-templates/BlogPostPage.astro",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "content"
     },
     {
@@ -4578,8 +4578,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_blog_screenveilcta",
-      "community": 45,
-      "community_name": "localize",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "screenveilcta.astro"
     },
     {
@@ -4589,8 +4589,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_components_blog_screenveilcta_content",
-      "community": 45,
-      "community_name": "localize",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "content"
     },
     {
@@ -4660,8 +4660,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_common_footer",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "@/components/common/footer.astro"
     },
     {
@@ -4671,8 +4671,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_components_common_footer_currentlang",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "currentlang"
     },
     {
@@ -4682,8 +4682,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "src_components_common_footer_currentyear",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "currentyear"
     },
     {
@@ -4693,8 +4693,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_components_common_footer_getfooterlinks",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "getfooterlinks()"
     },
     {
@@ -4704,8 +4704,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "src_components_common_footer_footerlinks",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "footerlinks"
     },
     {
@@ -4715,8 +4715,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_logo_png",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "@/assets/logo.png"
     },
     {
@@ -4797,8 +4797,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_common_subpagehero",
-      "community": 62,
-      "community_name": "@/page-templates/BlogPostPage.astro",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "@/components/common/subpagehero.astro"
     },
     {
@@ -4809,8 +4809,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_compare_comparefooter",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "@/components/compare/comparefooter.astro"
     },
     {
@@ -4820,8 +4820,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_components_ui_link_button",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "../ui/link-button"
     },
     {
@@ -4832,8 +4832,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_compare_comparehero",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "@/components/compare/comparehero.astro"
     },
     {
@@ -4844,8 +4844,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_compare_comparetestimonial",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "@/components/compare/comparetestimonial.astro"
     },
     {
@@ -4856,8 +4856,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_compare_comparisonmatrix",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "@/components/compare/comparisonmatrix.astro"
     },
     {
@@ -4868,8 +4868,8 @@
       "_origin": "ast",
       "source_location": "L1",
       "id": "src_lib_compare",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "@/lib/compare"
     },
     {
@@ -4880,8 +4880,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_compare_technicaldebt",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "@/components/compare/technicaldebt.astro"
     },
     {
@@ -4892,8 +4892,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_compare_valuehighlights",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "@/components/compare/valuehighlights.astro"
     },
     {
@@ -4903,8 +4903,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_components_compare_valuehighlights_cards",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "cards"
     },
     {
@@ -5071,8 +5071,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_docs_content_mindful_guard_mindfulguarddocspage",
-      "community": 45,
-      "community_name": "localize",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "../components/docs-content/mindful-guard/mindfulguarddocspage.astro"
     },
     {
@@ -5095,8 +5095,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_docs_content_screenveil_screenveildocspage",
-      "community": 45,
-      "community_name": "localize",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "../components/docs-content/screenveil/screenveildocspage.astro"
     },
     {
@@ -5165,8 +5165,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_home_foundersmoat",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 32,
+      "community_name": "@/lib/legal-registry",
       "norm_label": "@/components/home/foundersmoat.astro"
     },
     {
@@ -5177,8 +5177,8 @@
       "_origin": "ast",
       "source_location": "L1",
       "id": "src_constants_home_data",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 32,
+      "community_name": "@/lib/legal-registry",
       "norm_label": "@/constants/home-data"
     },
     {
@@ -5201,8 +5201,8 @@
       "_origin": "ast",
       "source_location": "L1",
       "id": "src_components_i18n_localize",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "localize.tsx"
     },
     {
@@ -5224,8 +5224,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_home_productshowcase",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "@/components/home/productshowcase.astro"
     },
     {
@@ -5235,8 +5235,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_fomogen_feature_png",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "@/assets/apps/fomogen-feature.png"
     },
     {
@@ -5246,8 +5246,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_mindful_guard_feature_png",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "@/assets/apps/mindful-guard-feature.png"
     },
     {
@@ -5257,8 +5257,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_screenveil_feature_png",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "@/assets/apps/screenveil-feature.png"
     },
     {
@@ -5268,8 +5268,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_arisely_feature_png",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "@/assets/apps/arisely-feature.png"
     },
     {
@@ -5280,8 +5280,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_home_socialproof",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "@/components/home/socialproof.astro"
     },
     {
@@ -5337,8 +5337,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_home_testimonials",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 32,
+      "community_name": "@/lib/legal-registry",
       "norm_label": "@/components/home/testimonials.astro"
     },
     {
@@ -5348,8 +5348,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_components_i18n_localize_localizeprops",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "localizeprops"
     },
     {
@@ -5359,8 +5359,8 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "src_components_i18n_localize_localize",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "localize()"
     },
     {
@@ -5489,8 +5489,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_ui_link_button",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "@/components/ui/link-button"
     },
     {
@@ -5500,8 +5500,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_components_ui_link_button_linkbuttonvariants",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "linkbuttonvariants"
     },
     {
@@ -5511,8 +5511,8 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "src_components_ui_link_button_linkbuttonprops",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "linkbuttonprops"
     },
     {
@@ -5522,8 +5522,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "src_components_ui_link_button_linkbutton",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "linkbutton"
     },
     {
@@ -5655,8 +5655,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_constants_home_data_getsolutions",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 32,
+      "community_name": "@/lib/legal-registry",
       "norm_label": "getsolutions()"
     },
     {
@@ -5666,8 +5666,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "src_constants_home_data_getproducts",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "getproducts()"
     },
     {
@@ -5677,8 +5677,8 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "src_constants_home_data_pillar",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 32,
+      "community_name": "@/lib/legal-registry",
       "norm_label": "pillar"
     },
     {
@@ -5688,8 +5688,8 @@
       "source_location": "L118",
       "_origin": "ast",
       "id": "src_constants_home_data_gettestimonials",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 32,
+      "community_name": "@/lib/legal-registry",
       "norm_label": "gettestimonials()"
     },
     {
@@ -5699,8 +5699,8 @@
       "source_location": "L163",
       "_origin": "ast",
       "id": "src_constants_home_data_getaboutpillars",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 32,
+      "community_name": "@/lib/legal-registry",
       "norm_label": "getaboutpillars()"
     },
     {
@@ -5710,8 +5710,8 @@
       "source_location": "L194",
       "_origin": "ast",
       "id": "src_constants_home_data_gethomepillars",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 32,
+      "community_name": "@/lib/legal-registry",
       "norm_label": "gethomepillars()"
     },
     {
@@ -5899,8 +5899,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_hooks_useparallax",
-      "community": 62,
-      "community_name": "@/page-templates/BlogPostPage.astro",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "useparallax.ts"
     },
     {
@@ -5910,8 +5910,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_hooks_useparallax_parallaxlayer",
-      "community": 62,
-      "community_name": "@/page-templates/BlogPostPage.astro",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "parallaxlayer"
     },
     {
@@ -5921,8 +5921,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "src_hooks_useparallax_useparallax",
-      "community": 62,
-      "community_name": "@/page-templates/BlogPostPage.astro",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "useparallax()"
     },
     {
@@ -5940,7 +5940,7 @@
       "label": "Locale",
       "file_type": "code",
       "source_file": "src/i18n/config.ts",
-      "source_location": "L7",
+      "source_location": "L15",
       "_origin": "ast",
       "id": "src_i18n_config_locale",
       "community": 80,
@@ -5951,7 +5951,7 @@
       "label": "localeMeta",
       "file_type": "code",
       "source_file": "src/i18n/config.ts",
-      "source_location": "L9",
+      "source_location": "L17",
       "_origin": "ast",
       "id": "src_i18n_config_localemeta",
       "community": 80,
@@ -5962,7 +5962,7 @@
       "label": "isRtl()",
       "file_type": "code",
       "source_file": "src/i18n/config.ts",
-      "source_location": "L18",
+      "source_location": "L27",
       "_origin": "ast",
       "id": "src_i18n_config_isrtl",
       "community": 80,
@@ -6021,8 +6021,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "src_i18n_localize_localize",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 32,
+      "community_name": "@/lib/legal-registry",
       "norm_label": "localize()"
     },
     {
@@ -6133,8 +6133,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_lib_blog_blogpath",
-      "community": 62,
-      "community_name": "@/page-templates/BlogPostPage.astro",
+      "community": 39,
+      "community_name": "@/components/common/Section.astro",
       "norm_label": "blogpath()"
     },
     {
@@ -6199,8 +6199,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_lib_compare_comparisonfeature",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "comparisonfeature"
     },
     {
@@ -6210,8 +6210,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "src_lib_compare_comparisondata",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "comparisondata"
     },
     {
@@ -6221,8 +6221,8 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "src_lib_compare_comparisons",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "comparisons"
     },
     {
@@ -6232,8 +6232,8 @@
       "source_location": "L159",
       "_origin": "ast",
       "id": "src_lib_compare_getcomparisonbyslug",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "getcomparisonbyslug()"
     },
     {
@@ -6356,8 +6356,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "src_lib_utils_playurl",
-      "community": 62,
-      "community_name": "@/page-templates/BlogPostPage.astro",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "playurl()"
     },
     {
@@ -6367,8 +6367,8 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "src_lib_utils_rafthrottle",
-      "community": 62,
-      "community_name": "@/page-templates/BlogPostPage.astro",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "rafthrottle()"
     },
     {
@@ -6379,8 +6379,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_aboutpage",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 32,
+      "community_name": "@/lib/legal-registry",
       "norm_label": "@/page-templates/aboutpage.astro"
     },
     {
@@ -6615,8 +6615,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_appspage",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "@/page-templates/appspage.astro"
     },
     {
@@ -6773,8 +6773,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_comparedetailpage",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "@/page-templates/comparedetailpage.astro"
     },
     {
@@ -6844,8 +6844,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_docsproductpage",
-      "community": 45,
-      "community_name": "localize",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "@/page-templates/docsproductpage.astro"
     },
     {
@@ -6855,8 +6855,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "src_page_templates_docsproductpage_contents",
-      "community": 45,
-      "community_name": "localize",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "contents"
     },
     {
@@ -6866,8 +6866,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "src_page_templates_docsproductpage_productmeta",
-      "community": 45,
-      "community_name": "localize",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "productmeta"
     },
     {
@@ -6890,8 +6890,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_homepage",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "@/page-templates/homepage.astro"
     },
     {
@@ -6901,8 +6901,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "src_page_templates_homepage_meta",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "meta"
     },
     {
@@ -6969,8 +6969,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_about_index",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 32,
+      "community_name": "@/lib/legal-registry",
       "norm_label": "[lang]/about/index.astro"
     },
     {
@@ -6980,8 +6980,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_about_index_getstaticpaths",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 32,
+      "community_name": "@/lib/legal-registry",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7057,8 +7057,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_apps_index",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "[lang]/apps/index.astro"
     },
     {
@@ -7068,8 +7068,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_apps_index_getstaticpaths",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7153,7 +7153,7 @@
       "label": "getStaticPaths()",
       "file_type": "code",
       "source_file": "src/pages/[lang]/blog/index.astro",
-      "source_location": "L5",
+      "source_location": "L6",
       "_origin": "ast",
       "id": "src_pages_lang_blog_index_getstaticpaths",
       "community": 62,
@@ -7167,8 +7167,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_compare_slug",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "[lang]/compare/[slug].astro"
     },
     {
@@ -7178,8 +7178,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_pages_lang_compare_slug_getstaticpaths",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7255,8 +7255,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_docs_product_index",
-      "community": 45,
-      "community_name": "localize",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "[product]/index.astro"
     },
     {
@@ -7266,8 +7266,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_docs_product_index_getstaticpaths",
-      "community": 45,
-      "community_name": "localize",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7365,8 +7365,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_about_index",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 32,
+      "community_name": "@/lib/legal-registry",
       "norm_label": "pages/about/index.astro"
     },
     {
@@ -7409,8 +7409,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_apps_index",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "pages/apps/index.astro"
     },
     {
@@ -7475,8 +7475,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_compare_slug",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "pages/compare/[slug].astro"
     },
     {
@@ -7486,8 +7486,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_compare_slug_getstaticpaths",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7563,8 +7563,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_fomogen_index",
-      "community": 45,
-      "community_name": "localize",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "docs/fomogen/index.astro"
     },
     {
@@ -7662,8 +7662,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_mindful_guard_index",
-      "community": 45,
-      "community_name": "localize",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "docs/mindful-guard/index.astro"
     },
     {
@@ -7695,8 +7695,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_screenveil_index",
-      "community": 45,
-      "community_name": "localize",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "docs/screenveil/index.astro"
     },
     {
@@ -7717,8 +7717,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_index",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "pages/index.astro"
     },
     {
@@ -19608,8 +19608,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system",
-      "community": 257,
-      "community_name": "4. 3D CSS Transforms",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "color-system.md"
     },
     {
@@ -19707,8 +19707,8 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_3_color_psychology_meaning_selection",
-      "community": 375,
-      "community_name": "\ud83d\udeab MOBILE ANTI-PATTERNS (NEVER DO THESE!)",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "3. color psychology - meaning & selection"
     },
     {
@@ -19718,8 +19718,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_how_to_choose_based_on_context",
-      "community": 375,
-      "community_name": "\ud83d\udeab MOBILE ANTI-PATTERNS (NEVER DO THESE!)",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "how to choose based on context"
     },
     {
@@ -19729,8 +19729,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_emotional_associations_for_decision_making",
-      "community": 375,
-      "community_name": "\ud83d\udeab MOBILE ANTI-PATTERNS (NEVER DO THESE!)",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "emotional associations (for decision making)"
     },
     {
@@ -19740,8 +19740,8 @@
       "source_location": "L115",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_selection_process",
-      "community": 375,
-      "community_name": "\ud83d\udeab MOBILE ANTI-PATTERNS (NEVER DO THESE!)",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "selection process:"
     },
     {
@@ -19751,8 +19751,8 @@
       "source_location": "L124",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_4_palette_generation_principles",
-      "community": 376,
-      "community_name": "3. Micro-Interaction Principles",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "4. palette generation principles"
     },
     {
@@ -19762,8 +19762,8 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_from_a_single_color_hsl_method",
-      "community": 376,
-      "community_name": "3. Micro-Interaction Principles",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "from a single color (hsl method)"
     },
     {
@@ -19773,8 +19773,8 @@
       "source_location": "L151",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_generating_a_full_palette",
-      "community": 376,
-      "community_name": "3. Micro-Interaction Principles",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "generating a full palette"
     },
     {
@@ -19784,8 +19784,8 @@
       "source_location": "L169",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_saturation_adjustments",
-      "community": 376,
-      "community_name": "3. Micro-Interaction Principles",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "saturation adjustments"
     },
     {
@@ -19817,8 +19817,8 @@
       "source_location": "L226",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_6_dark_mode_principles",
-      "community": 377,
-      "community_name": "4. Loading States Principles",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "6. dark mode principles"
     },
     {
@@ -19828,8 +19828,8 @@
       "source_location": "L228",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_key_rules_no_fixed_codes",
-      "community": 377,
-      "community_name": "4. Loading States Principles",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "key rules (no fixed codes)"
     },
     {
@@ -19839,8 +19839,8 @@
       "source_location": "L235",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_contrast_in_dark_mode",
-      "community": 377,
-      "community_name": "4. Loading States Principles",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "contrast in dark mode"
     },
     {
@@ -19850,8 +19850,8 @@
       "source_location": "L245",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_adapting_colors_for_dark_mode",
-      "community": 377,
-      "community_name": "4. Loading States Principles",
+      "community": 27,
+      "community_name": "Color System Reference",
       "norm_label": "adapting colors for dark mode"
     },
     {
@@ -20411,8 +20411,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_1_lottie_animations",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 378,
+      "community_name": "5. Page Transitions Principles",
       "norm_label": "1. lottie animations"
     },
     {
@@ -20422,8 +20422,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_what_is_lottie",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 378,
+      "community_name": "5. Page Transitions Principles",
       "norm_label": "what is lottie?"
     },
     {
@@ -20433,8 +20433,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use_lottie",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 378,
+      "community_name": "5. Page Transitions Principles",
       "norm_label": "when to use lottie"
     },
     {
@@ -20444,8 +20444,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 378,
+      "community_name": "5. Page Transitions Principles",
       "norm_label": "principles"
     },
     {
@@ -20455,8 +20455,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_sources",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 378,
+      "community_name": "5. Page Transitions Principles",
       "norm_label": "sources"
     },
     {
@@ -20466,8 +20466,8 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_2_gsap_greensock",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 379,
+      "community_name": "8. Feedback Animation Principles",
       "norm_label": "2. gsap (greensock)"
     },
     {
@@ -20477,8 +20477,8 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_what_makes_gsap_different",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 379,
+      "community_name": "8. Feedback Animation Principles",
       "norm_label": "what makes gsap different"
     },
     {
@@ -20488,8 +20488,8 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_core_concepts",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 379,
+      "community_name": "8. Feedback Animation Principles",
       "norm_label": "core concepts"
     },
     {
@@ -20499,8 +20499,8 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use_gsap",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 379,
+      "community_name": "8. Feedback Animation Principles",
       "norm_label": "when to use gsap"
     },
     {
@@ -20510,8 +20510,8 @@
       "source_location": "L77",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_77",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 379,
+      "community_name": "8. Feedback Animation Principles",
       "norm_label": "principles"
     },
     {
@@ -20521,8 +20521,8 @@
       "source_location": "L86",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_3_svg_animations",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 382,
+      "community_name": "5. Responsive Typography Principles",
       "norm_label": "3. svg animations"
     },
     {
@@ -20532,8 +20532,8 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_types_of_svg_animation",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 382,
+      "community_name": "5. Responsive Typography Principles",
       "norm_label": "types of svg animation"
     },
     {
@@ -20543,8 +20543,8 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_line_drawing_principles",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 382,
+      "community_name": "5. Responsive Typography Principles",
       "norm_label": "line drawing principles"
     },
     {
@@ -20554,8 +20554,8 @@
       "source_location": "L107",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use_svg_animations",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 382,
+      "community_name": "5. Responsive Typography Principles",
       "norm_label": "when to use svg animations"
     },
     {
@@ -20565,8 +20565,8 @@
       "source_location": "L116",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_116",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 382,
+      "community_name": "5. Responsive Typography Principles",
       "norm_label": "principles"
     },
     {
@@ -20576,8 +20576,8 @@
       "source_location": "L125",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_4_3d_css_transforms",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 386,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "4. 3d css transforms"
     },
     {
@@ -20587,8 +20587,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_core_properties",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 386,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "core properties"
     },
     {
@@ -20598,8 +20598,8 @@
       "source_location": "L138",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_common_3d_patterns",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 386,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "common 3d patterns"
     },
     {
@@ -20609,8 +20609,8 @@
       "source_location": "L147",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_147",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 386,
+      "community_name": "4. 3D CSS Transforms",
       "norm_label": "principles"
     },
     {
@@ -20620,8 +20620,8 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_5_particle_effects",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 383,
+      "community_name": "6. Weight and Emphasis Principles",
       "norm_label": "5. particle effects"
     },
     {
@@ -20631,8 +20631,8 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_types_of_particle_systems",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 383,
+      "community_name": "6. Weight and Emphasis Principles",
       "norm_label": "types of particle systems"
     },
     {
@@ -20642,8 +20642,8 @@
       "source_location": "L168",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_libraries",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 383,
+      "community_name": "6. Weight and Emphasis Principles",
       "norm_label": "libraries"
     },
     {
@@ -20653,8 +20653,8 @@
       "source_location": "L177",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_177",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 383,
+      "community_name": "6. Weight and Emphasis Principles",
       "norm_label": "principles"
     },
     {
@@ -20664,8 +20664,8 @@
       "source_location": "L185",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 383,
+      "community_name": "6. Weight and Emphasis Principles",
       "norm_label": "when to use"
     },
     {
@@ -21940,8 +21940,8 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_2_neomorphism_principles",
-      "community": 10,
-      "community_name": "Visual Effects Reference",
+      "community": 384,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "2. neomorphism principles"
     },
     {
@@ -21951,8 +21951,8 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_what_makes_neomorphism_work",
-      "community": 10,
-      "community_name": "Visual Effects Reference",
+      "community": 384,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "what makes neomorphism work"
     },
     {
@@ -21962,8 +21962,8 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_the_pattern",
-      "community": 10,
-      "community_name": "Visual Effects Reference",
+      "community": 384,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "the pattern"
     },
     {
@@ -21973,8 +21973,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_accessibility_warning",
-      "community": 10,
-      "community_name": "Visual Effects Reference",
+      "community": 384,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "accessibility warning"
     },
     {
@@ -21984,8 +21984,8 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_when_to_use",
-      "community": 10,
-      "community_name": "Visual Effects Reference",
+      "community": 384,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "when to use"
     },
     {
@@ -22105,8 +22105,8 @@
       "source_location": "L190",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_5_border_effects_principles",
-      "community": 378,
-      "community_name": "5. Page Transitions Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "5. border effects principles"
     },
     {
@@ -22116,8 +22116,8 @@
       "source_location": "L192",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_gradient_borders",
-      "community": 378,
-      "community_name": "5. Page Transitions Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "gradient borders"
     },
     {
@@ -22127,8 +22127,8 @@
       "source_location": "L201",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_animated_borders",
-      "community": 378,
-      "community_name": "5. Page Transitions Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "animated borders"
     },
     {
@@ -22138,8 +22138,8 @@
       "source_location": "L210",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_glow_borders",
-      "community": 378,
-      "community_name": "5. Page Transitions Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "glow borders"
     },
     {
@@ -22149,8 +22149,8 @@
       "source_location": "L224",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_6_glow_effects_principles",
-      "community": 379,
-      "community_name": "8. Feedback Animation Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "6. glow effects principles"
     },
     {
@@ -22160,8 +22160,8 @@
       "source_location": "L226",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_text_glow",
-      "community": 379,
-      "community_name": "8. Feedback Animation Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "text glow"
     },
     {
@@ -22171,8 +22171,8 @@
       "source_location": "L238",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_element_glow",
-      "community": 379,
-      "community_name": "8. Feedback Animation Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "element glow"
     },
     {
@@ -22182,8 +22182,8 @@
       "source_location": "L249",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_visual_effects_pulsing_glow_animation",
-      "community": 379,
-      "community_name": "8. Feedback Animation Principles",
+      "community": 10,
+      "community_name": "Visual Effects Reference",
       "norm_label": "pulsing glow animation"
     },
     {
@@ -27726,8 +27726,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_pattern_questioning_matrix",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "\ud83c\udfaf pattern questioning matrix"
     },
     {
@@ -27737,8 +27737,8 @@
       "source_location": "L131",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_navigation_pattern_questioning",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "navigation pattern questioning"
     },
     {
@@ -27748,8 +27748,8 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_state_pattern_questioning",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "state pattern questioning"
     },
     {
@@ -27759,8 +27759,8 @@
       "source_location": "L149",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_list_pattern_questioning",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "list pattern questioning"
     },
     {
@@ -27770,8 +27770,8 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_design_thinking_ui_pattern_questioning",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 48,
+      "community_name": "Mobile Design Thinking",
       "norm_label": "ui pattern questioning"
     },
     {
@@ -27935,8 +27935,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_2_tab_bar_navigation",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 392,
+      "community_name": "2. Tab Bar Navigation",
       "norm_label": "2. tab bar navigation"
     },
     {
@@ -27946,8 +27946,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_when_to_use",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 392,
+      "community_name": "2. Tab Bar Navigation",
       "norm_label": "when to use"
     },
     {
@@ -27957,8 +27957,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_tab_bar_best_practices",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 392,
+      "community_name": "2. Tab Bar Navigation",
       "norm_label": "tab bar best practices"
     },
     {
@@ -27968,8 +27968,8 @@
       "source_location": "L73",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_tab_state_preservation",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 392,
+      "community_name": "2. Tab Bar Navigation",
       "norm_label": "tab state preservation"
     },
     {
@@ -27979,8 +27979,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_3_stack_navigation",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 393,
+      "community_name": "3. Stack Navigation",
       "norm_label": "3. stack navigation"
     },
     {
@@ -27990,8 +27990,8 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_core_concepts",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 393,
+      "community_name": "3. Stack Navigation",
       "norm_label": "core concepts"
     },
     {
@@ -28001,8 +28001,8 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_stack_navigation_patterns",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 393,
+      "community_name": "3. Stack Navigation",
       "norm_label": "stack navigation patterns"
     },
     {
@@ -28012,8 +28012,8 @@
       "source_location": "L117",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_back_button_handling",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 393,
+      "community_name": "3. Stack Navigation",
       "norm_label": "back button handling"
     },
     {
@@ -28100,8 +28100,8 @@
       "source_location": "L228",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_6_deep_linking",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 394,
+      "community_name": "6. Deep Linking",
       "norm_label": "6. deep linking"
     },
     {
@@ -28111,8 +28111,8 @@
       "source_location": "L230",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_why_deep_links_from_day_one",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 394,
+      "community_name": "6. Deep Linking",
       "norm_label": "why deep links from day one"
     },
     {
@@ -28122,8 +28122,8 @@
       "source_location": "L248",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_url_structure",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 394,
+      "community_name": "6. Deep Linking",
       "norm_label": "url structure"
     },
     {
@@ -28133,8 +28133,8 @@
       "source_location": "L266",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_deep_link_navigation_rules",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 394,
+      "community_name": "6. Deep Linking",
       "norm_label": "deep link navigation rules"
     },
     {
@@ -28254,8 +28254,8 @@
       "source_location": "L428",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_10_navigation_checklist",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 387,
+      "community_name": "10. Navigation Checklist",
       "norm_label": "10. navigation checklist"
     },
     {
@@ -28265,8 +28265,8 @@
       "source_location": "L430",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_before_navigation_architecture",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 387,
+      "community_name": "10. Navigation Checklist",
       "norm_label": "before navigation architecture"
     },
     {
@@ -28276,8 +28276,8 @@
       "source_location": "L438",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_before_every_screen",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 387,
+      "community_name": "10. Navigation Checklist",
       "norm_label": "before every screen"
     },
     {
@@ -28287,8 +28287,8 @@
       "source_location": "L446",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_navigation_before_release",
-      "community": 21,
-      "community_name": "Mobile Navigation Reference",
+      "community": 387,
+      "community_name": "10. Navigation Checklist",
       "norm_label": "before release"
     },
     {
@@ -28914,8 +28914,8 @@
       "source_location": "L114",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_testing_3_what_to_test_at_each_level",
-      "community": 371,
-      "community_name": "1. Modular Scale Principles",
+      "community": 23,
+      "community_name": "Mobile Testing Patterns",
       "norm_label": "3. what to test at each level"
     },
     {
@@ -28925,8 +28925,8 @@
       "source_location": "L116",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_testing_unit_tests_jest",
-      "community": 371,
-      "community_name": "1. Modular Scale Principles",
+      "community": 23,
+      "community_name": "Mobile Testing Patterns",
       "norm_label": "unit tests (jest)"
     },
     {
@@ -28936,8 +28936,8 @@
       "source_location": "L133",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_testing_component_tests_rntl_flutter_test",
-      "community": 371,
-      "community_name": "1. Modular Scale Principles",
+      "community": 23,
+      "community_name": "Mobile Testing Patterns",
       "norm_label": "component tests (rntl / flutter_test)"
     },
     {
@@ -28947,8 +28947,8 @@
       "source_location": "L150",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_testing_integration_tests",
-      "community": 371,
-      "community_name": "1. Modular Scale Principles",
+      "community": 23,
+      "community_name": "Mobile Testing Patterns",
       "norm_label": "integration tests"
     },
     {
@@ -28958,8 +28958,8 @@
       "source_location": "L166",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_testing_e2e_tests",
-      "community": 371,
-      "community_name": "1. Modular Scale Principles",
+      "community": 23,
+      "community_name": "Mobile Testing Patterns",
       "norm_label": "e2e tests"
     },
     {
@@ -29002,8 +29002,8 @@
       "source_location": "L214",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_testing_5_offline_network_testing",
-      "community": 383,
-      "community_name": "6. Weight and Emphasis Principles",
+      "community": 23,
+      "community_name": "Mobile Testing Patterns",
       "norm_label": "5. offline & network testing"
     },
     {
@@ -29013,8 +29013,8 @@
       "source_location": "L216",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_testing_offline_scenarios_to_test",
-      "community": 383,
-      "community_name": "6. Weight and Emphasis Principles",
+      "community": 23,
+      "community_name": "Mobile Testing Patterns",
       "norm_label": "offline scenarios to test"
     },
     {
@@ -29024,8 +29024,8 @@
       "source_location": "L226",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_testing_how_to_test_network_conditions",
-      "community": 383,
-      "community_name": "6. Weight and Emphasis Principles",
+      "community": 23,
+      "community_name": "Mobile Testing Patterns",
       "norm_label": "how to test network conditions"
     },
     {
@@ -29035,8 +29035,8 @@
       "source_location": "L239",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_testing_6_performance_testing",
-      "community": 384,
-      "community_name": "8. Hierarchy Principles",
+      "community": 23,
+      "community_name": "Mobile Testing Patterns",
       "norm_label": "6. performance testing"
     },
     {
@@ -29046,8 +29046,8 @@
       "source_location": "L241",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_testing_what_to_measure",
-      "community": 384,
-      "community_name": "8. Hierarchy Principles",
+      "community": 23,
+      "community_name": "Mobile Testing Patterns",
       "norm_label": "what to measure"
     },
     {
@@ -29057,8 +29057,8 @@
       "source_location": "L251",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_testing_when_to_performance_test",
-      "community": 384,
-      "community_name": "8. Hierarchy Principles",
+      "community": 23,
+      "community_name": "Mobile Testing Patterns",
       "norm_label": "when to performance test"
     },
     {
@@ -29134,8 +29134,8 @@
       "source_location": "L322",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_testing_mobile_testing_checklist",
-      "community": 382,
-      "community_name": "5. Responsive Typography Principles",
+      "community": 23,
+      "community_name": "Mobile Testing Patterns",
       "norm_label": "\ud83d\udcdd mobile testing checklist"
     },
     {
@@ -29145,8 +29145,8 @@
       "source_location": "L324",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_testing_before_pr",
-      "community": 382,
-      "community_name": "5. Responsive Typography Principles",
+      "community": 23,
+      "community_name": "Mobile Testing Patterns",
       "norm_label": "before pr"
     },
     {
@@ -29156,8 +29156,8 @@
       "source_location": "L331",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_testing_before_release",
-      "community": 382,
-      "community_name": "5. Responsive Typography Principles",
+      "community": 23,
+      "community_name": "Mobile Testing Patterns",
       "norm_label": "before release"
     },
     {
@@ -29167,8 +29167,8 @@
       "source_location": "L340",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_testing_what_to_skip_consciously",
-      "community": 382,
-      "community_name": "5. Responsive Typography Principles",
+      "community": 23,
+      "community_name": "Mobile Testing Patterns",
       "norm_label": "what to skip (consciously)"
     },
     {
@@ -42262,6 +42262,83 @@
       "norm_label": "fazit"
     },
     {
+      "label": "de/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_de_fall_asleep_to_audio_without_screen_light_android",
+      "community": 375,
+      "community_name": "\ud83d\udeab MOBILE ANTI-PATTERNS (NEVER DO THESE!)",
+      "norm_label": "de/fall-asleep-to-audio-without-screen-light-android.mdx"
+    },
+    {
+      "label": "Warum den Bildschirm dunkel halten?",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "src_content_blog_de_fall_asleep_to_audio_without_screen_light_android_warum_den_bildschirm_dunkel_halten",
+      "community": 375,
+      "community_name": "\ud83d\udeab MOBILE ANTI-PATTERNS (NEVER DO THESE!)",
+      "norm_label": "warum den bildschirm dunkel halten?"
+    },
+    {
+      "label": "Schritt 1: Stellen Sie in der App einen Sleep-Timer ein",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "src_content_blog_de_fall_asleep_to_audio_without_screen_light_android_schritt_1_stellen_sie_in_der_app_einen_sleep_timer_ein",
+      "community": 375,
+      "community_name": "\ud83d\udeab MOBILE ANTI-PATTERNS (NEVER DO THESE!)",
+      "norm_label": "schritt 1: stellen sie in der app einen sleep-timer ein"
+    },
+    {
+      "label": "Schritt 2: Schalten Sie den Bildschirm komplett schwarz",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L68",
+      "_origin": "ast",
+      "id": "src_content_blog_de_fall_asleep_to_audio_without_screen_light_android_schritt_2_schalten_sie_den_bildschirm_komplett_schwarz",
+      "community": 375,
+      "community_name": "\ud83d\udeab MOBILE ANTI-PATTERNS (NEVER DO THESE!)",
+      "norm_label": "schritt 2: schalten sie den bildschirm komplett schwarz"
+    },
+    {
+      "label": "Schritt 3: Sorgen Sie daf\u00fcr, dass es aufh\u00f6rt",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L94",
+      "_origin": "ast",
+      "id": "src_content_blog_de_fall_asleep_to_audio_without_screen_light_android_schritt_3_sorgen_sie_daf\u00fcr_dass_es_aufh\u00f6rt",
+      "community": 375,
+      "community_name": "\ud83d\udeab MOBILE ANTI-PATTERNS (NEVER DO THESE!)",
+      "norm_label": "schritt 3: sorgen sie dafur, dass es aufhort"
+    },
+    {
+      "label": "Schritt 4: Richten Sie den Schlafenszeitmodus drumherum ein",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L105",
+      "_origin": "ast",
+      "id": "src_content_blog_de_fall_asleep_to_audio_without_screen_light_android_schritt_4_richten_sie_den_schlafenszeitmodus_drumherum_ein",
+      "community": 375,
+      "community_name": "\ud83d\udeab MOBILE ANTI-PATTERNS (NEVER DO THESE!)",
+      "norm_label": "schritt 4: richten sie den schlafenszeitmodus drumherum ein"
+    },
+    {
+      "label": "Ihr Setup zum Zuh\u00f6ren vor dem Schlafen",
+      "file_type": "document",
+      "source_file": "src/content/blog/de/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L113",
+      "_origin": "ast",
+      "id": "src_content_blog_de_fall_asleep_to_audio_without_screen_light_android_ihr_setup_zum_zuh\u00f6ren_vor_dem_schlafen",
+      "community": 375,
+      "community_name": "\ud83d\udeab MOBILE ANTI-PATTERNS (NEVER DO THESE!)",
+      "norm_label": "ihr setup zum zuhoren vor dem schlafen"
+    },
+    {
       "label": "de/free-shipping-bar-shopify.md",
       "file_type": "document",
       "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
@@ -46706,6 +46783,83 @@
       "norm_label": "bottom line"
     },
     {
+      "label": "en/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_en_fall_asleep_to_audio_without_screen_light_android",
+      "community": 376,
+      "community_name": "3. Micro-Interaction Principles",
+      "norm_label": "en/fall-asleep-to-audio-without-screen-light-android.mdx"
+    },
+    {
+      "label": "Why keep the screen dark?",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "src_content_blog_en_fall_asleep_to_audio_without_screen_light_android_why_keep_the_screen_dark",
+      "community": 376,
+      "community_name": "3. Micro-Interaction Principles",
+      "norm_label": "why keep the screen dark?"
+    },
+    {
+      "label": "Step 1: Set a sleep timer in the app",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "src_content_blog_en_fall_asleep_to_audio_without_screen_light_android_step_1_set_a_sleep_timer_in_the_app",
+      "community": 376,
+      "community_name": "3. Micro-Interaction Principles",
+      "norm_label": "step 1: set a sleep timer in the app"
+    },
+    {
+      "label": "Step 2: Turn the screen fully black",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "src_content_blog_en_fall_asleep_to_audio_without_screen_light_android_step_2_turn_the_screen_fully_black",
+      "community": 376,
+      "community_name": "3. Micro-Interaction Principles",
+      "norm_label": "step 2: turn the screen fully black"
+    },
+    {
+      "label": "Step 3: Make sure it stops",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "src_content_blog_en_fall_asleep_to_audio_without_screen_light_android_step_3_make_sure_it_stops",
+      "community": 376,
+      "community_name": "3. Micro-Interaction Principles",
+      "norm_label": "step 3: make sure it stops"
+    },
+    {
+      "label": "Step 4: Set up Bedtime mode around it",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "src_content_blog_en_fall_asleep_to_audio_without_screen_light_android_step_4_set_up_bedtime_mode_around_it",
+      "community": 376,
+      "community_name": "3. Micro-Interaction Principles",
+      "norm_label": "step 4: set up bedtime mode around it"
+    },
+    {
+      "label": "Your bedtime listening setup",
+      "file_type": "document",
+      "source_file": "src/content/blog/en/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L103",
+      "_origin": "ast",
+      "id": "src_content_blog_en_fall_asleep_to_audio_without_screen_light_android_your_bedtime_listening_setup",
+      "community": 376,
+      "community_name": "3. Micro-Interaction Principles",
+      "norm_label": "your bedtime listening setup"
+    },
+    {
       "label": "en/free-shipping-bar-shopify.md",
       "file_type": "document",
       "source_file": "src/content/blog/en/free-shipping-bar-shopify.md",
@@ -49643,6 +49797,50 @@
       "norm_label": "privacy as a foundation"
     },
     {
+      "label": "_README.md",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/_README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_es_readme",
+      "community": 395,
+      "community_name": "_README.md",
+      "norm_label": "_readme.md"
+    },
+    {
+      "label": "Spanish (es) blog translations.",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/_README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_es_readme_spanish_es_blog_translations",
+      "community": 395,
+      "community_name": "_README.md",
+      "norm_label": "spanish (es) blog translations."
+    },
+    {
+      "label": "Blog-first locale: only translated posts live here (Phase 1+).",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/_README.md",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "src_content_blog_es_readme_blog_first_locale_only_translated_posts_live_here_phase_1",
+      "community": 395,
+      "community_name": "_README.md",
+      "norm_label": "blog-first locale: only translated posts live here (phase 1+)."
+    },
+    {
+      "label": "Until a post exists for a slug, no /es/blog/<slug> route is built.",
+      "file_type": "document",
+      "source_file": "src/content/blog/es/_README.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "src_content_blog_es_readme_until_a_post_exists_for_a_slug_no_es_blog_slug_route_is_built",
+      "community": 395,
+      "community_name": "_README.md",
+      "norm_label": "until a post exists for a slug, no /es/blog/<slug> route is built."
+    },
+    {
       "label": "fr/add-low-stock-alerts-shopify.md",
       "file_type": "document",
       "source_file": "src/content/blog/fr/add-low-stock-alerts-shopify.md",
@@ -51170,6 +51368,83 @@
       "community": 316,
       "community_name": "4. Animation Performance (Both Platforms)",
       "norm_label": "en resume"
+    },
+    {
+      "label": "fr/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_fall_asleep_to_audio_without_screen_light_android",
+      "community": 377,
+      "community_name": "4. Loading States Principles",
+      "norm_label": "fr/fall-asleep-to-audio-without-screen-light-android.mdx"
+    },
+    {
+      "label": "Pourquoi garder l'\u00e9cran noir ?",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_fall_asleep_to_audio_without_screen_light_android_pourquoi_garder_l_\u00e9cran_noir",
+      "community": 377,
+      "community_name": "4. Loading States Principles",
+      "norm_label": "pourquoi garder l'ecran noir ?"
+    },
+    {
+      "label": "\u00c9tape 1 : r\u00e9glez une minuterie de sommeil dans l'application",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_fall_asleep_to_audio_without_screen_light_android_\u00e9tape_1_r\u00e9glez_une_minuterie_de_sommeil_dans_l_application",
+      "community": 377,
+      "community_name": "4. Loading States Principles",
+      "norm_label": "etape 1 : reglez une minuterie de sommeil dans l'application"
+    },
+    {
+      "label": "\u00c9tape 2 : passez l'\u00e9cran enti\u00e8rement au noir",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L68",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_fall_asleep_to_audio_without_screen_light_android_\u00e9tape_2_passez_l_\u00e9cran_enti\u00e8rement_au_noir",
+      "community": 377,
+      "community_name": "4. Loading States Principles",
+      "norm_label": "etape 2 : passez l'ecran entierement au noir"
+    },
+    {
+      "label": "\u00c9tape 3 : assurez-vous que \u00e7a s'arr\u00eate",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L94",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_fall_asleep_to_audio_without_screen_light_android_\u00e9tape_3_assurez_vous_que_\u00e7a_s_arr\u00eate",
+      "community": 377,
+      "community_name": "4. Loading States Principles",
+      "norm_label": "etape 3 : assurez-vous que ca s'arrete"
+    },
+    {
+      "label": "\u00c9tape 4 : configurez le mode Coucher autour",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L104",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_fall_asleep_to_audio_without_screen_light_android_\u00e9tape_4_configurez_le_mode_coucher_autour",
+      "community": 377,
+      "community_name": "4. Loading States Principles",
+      "norm_label": "etape 4 : configurez le mode coucher autour"
+    },
+    {
+      "label": "Votre configuration d'\u00e9coute au coucher",
+      "file_type": "document",
+      "source_file": "src/content/blog/fr/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L112",
+      "_origin": "ast",
+      "id": "src_content_blog_fr_fall_asleep_to_audio_without_screen_light_android_votre_configuration_d_\u00e9coute_au_coucher",
+      "community": 377,
+      "community_name": "4. Loading States Principles",
+      "norm_label": "votre configuration d'ecoute au coucher"
     },
     {
       "label": "fr/free-shipping-bar-shopify.md",
@@ -62474,6 +62749,18 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/pages/[lang]/blog/index.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_lang_blog_index",
+      "target": "src_lib_blog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/pages/[lang]/blog/[slug].astro",
       "source_location": "L3",
       "weight": 1.0,
@@ -63261,7 +63548,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/i18n/config.ts",
-      "source_location": "L18",
+      "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_i18n_config",
@@ -63272,7 +63559,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/i18n/config.ts",
-      "source_location": "L7",
+      "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_i18n_config",
@@ -63283,7 +63570,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/i18n/config.ts",
-      "source_location": "L9",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_i18n_config",
@@ -68033,6 +68320,30 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/pages/[lang]/blog/index.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_lang_blog_index",
+      "target": "src_lib_blog_getblogposts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/[lang]/blog/index.astro",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_pages_lang_blog_index_getstaticpaths",
+      "target": "src_lib_blog_getblogposts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/pages/[lang]/blog/[slug].astro",
       "source_location": "L3",
       "weight": 1.0,
@@ -68889,7 +69200,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/[lang]/blog/index.astro",
-      "source_location": "L3",
+      "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_pages_lang_blog_index",
@@ -69475,7 +69786,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/[lang]/blog/index.astro",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_pages_lang_blog_index",
@@ -102813,6 +103124,72 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L113",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_fall_asleep_to_audio_without_screen_light_android",
+      "target": "src_content_blog_de_fall_asleep_to_audio_without_screen_light_android_ihr_setup_zum_zuh\u00f6ren_vor_dem_schlafen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_fall_asleep_to_audio_without_screen_light_android",
+      "target": "src_content_blog_de_fall_asleep_to_audio_without_screen_light_android_schritt_1_stellen_sie_in_der_app_einen_sleep_timer_ein",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_fall_asleep_to_audio_without_screen_light_android",
+      "target": "src_content_blog_de_fall_asleep_to_audio_without_screen_light_android_schritt_2_schalten_sie_den_bildschirm_komplett_schwarz",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_fall_asleep_to_audio_without_screen_light_android",
+      "target": "src_content_blog_de_fall_asleep_to_audio_without_screen_light_android_schritt_3_sorgen_sie_daf\u00fcr_dass_es_aufh\u00f6rt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L105",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_fall_asleep_to_audio_without_screen_light_android",
+      "target": "src_content_blog_de_fall_asleep_to_audio_without_screen_light_android_schritt_4_richten_sie_den_schlafenszeitmodus_drumherum_ein",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/de/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_de_fall_asleep_to_audio_without_screen_light_android",
+      "target": "src_content_blog_de_fall_asleep_to_audio_without_screen_light_android_warum_den_bildschirm_dunkel_halten",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/de/free-shipping-bar-shopify.md",
       "source_location": "L130",
       "weight": 1.0,
@@ -106784,6 +107161,72 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_fall_asleep_to_audio_without_screen_light_android",
+      "target": "src_content_blog_en_fall_asleep_to_audio_without_screen_light_android_step_1_set_a_sleep_timer_in_the_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_fall_asleep_to_audio_without_screen_light_android",
+      "target": "src_content_blog_en_fall_asleep_to_audio_without_screen_light_android_step_2_turn_the_screen_fully_black",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_fall_asleep_to_audio_without_screen_light_android",
+      "target": "src_content_blog_en_fall_asleep_to_audio_without_screen_light_android_step_3_make_sure_it_stops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L96",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_fall_asleep_to_audio_without_screen_light_android",
+      "target": "src_content_blog_en_fall_asleep_to_audio_without_screen_light_android_step_4_set_up_bedtime_mode_around_it",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_fall_asleep_to_audio_without_screen_light_android",
+      "target": "src_content_blog_en_fall_asleep_to_audio_without_screen_light_android_why_keep_the_screen_dark",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/en/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L103",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_en_fall_asleep_to_audio_without_screen_light_android",
+      "target": "src_content_blog_en_fall_asleep_to_audio_without_screen_light_android_your_bedtime_listening_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/en/free-shipping-bar-shopify.md",
       "source_location": "L130",
       "weight": 1.0,
@@ -109402,6 +109845,39 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/_README.md",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_readme",
+      "target": "src_content_blog_es_readme_blog_first_locale_only_translated_posts_live_here_phase_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/_README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_readme",
+      "target": "src_content_blog_es_readme_spanish_es_blog_translations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/es/_README.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_es_readme",
+      "target": "src_content_blog_es_readme_until_a_post_exists_for_a_slug_no_es_blog_slug_route_is_built",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/content/blog/fr/add-low-stock-alerts-shopify.md",
       "source_location": "L110",
       "weight": 1.0,
@@ -110772,6 +111248,72 @@
       "_origin": "ast",
       "source": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_comment_faire_une_d\u00e9tox_dopamine_de_son_t\u00e9l\u00e9phone_le_plan_de_7_jours",
       "target": "src_content_blog_fr_dopamine_detox_phone_7_day_reset_jours_6_7_observez_ce_qui_a_chang\u00e9",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_fall_asleep_to_audio_without_screen_light_android",
+      "target": "src_content_blog_fr_fall_asleep_to_audio_without_screen_light_android_pourquoi_garder_l_\u00e9cran_noir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_fall_asleep_to_audio_without_screen_light_android",
+      "target": "src_content_blog_fr_fall_asleep_to_audio_without_screen_light_android_votre_configuration_d_\u00e9coute_au_coucher",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_fall_asleep_to_audio_without_screen_light_android",
+      "target": "src_content_blog_fr_fall_asleep_to_audio_without_screen_light_android_\u00e9tape_1_r\u00e9glez_une_minuterie_de_sommeil_dans_l_application",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_fall_asleep_to_audio_without_screen_light_android",
+      "target": "src_content_blog_fr_fall_asleep_to_audio_without_screen_light_android_\u00e9tape_2_passez_l_\u00e9cran_enti\u00e8rement_au_noir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_fall_asleep_to_audio_without_screen_light_android",
+      "target": "src_content_blog_fr_fall_asleep_to_audio_without_screen_light_android_\u00e9tape_3_assurez_vous_que_\u00e7a_s_arr\u00eate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/fr/fall-asleep-to-audio-without-screen-light-android.mdx",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_content_blog_fr_fall_asleep_to_audio_without_screen_light_android",
+      "target": "src_content_blog_fr_fall_asleep_to_audio_without_screen_light_android_\u00e9tape_4_configurez_le_mode_coucher_autour",
       "confidence_score": 1.0
     },
     {
@@ -113394,5 +113936,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "b7995cf7354fe3923125766add85053ccbfcc562"
+  "built_at_commit": "d500029407d4d67c9a6a31b66cf8b67a821f52ca"
 }

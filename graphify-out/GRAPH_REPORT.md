@@ -1,16 +1,16 @@
 # Graph Report - AppLass  (2026-11-13)
 
 ## Corpus Check
-- 513 files · ~2,390,893 words
+- 521 files · ~2,409,521 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4934 nodes · 5364 edges · 396 communities (377 shown, 19 thin omitted)
+- 5011 nodes · 5433 edges · 407 communities (388 shown, 19 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.61)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d5000294`
+- Built from commit: `2d2b8610`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -271,6 +271,7 @@
 - Context Discovery
 - ORM Selection (2025)
 - 10. Complexity Estimation
+- 4. 3D CSS Transforms
 - crc-32
 - @tailwindcss/typography
 - Editorial Workflows
@@ -402,6 +403,17 @@
 - 3. Stack Navigation
 - 6. Deep Linking
 - _README.md
+- 4. Loading States Principles
+- 5. Page Transitions Principles
+- 8. Feedback Animation Principles
+- 9. Performance Principles
+- 6. Glow Effects Principles
+- 10. Quick Reference
+- 2. OLED Considerations
+- 6. Dynamic Color (Android)
+- 7. Color Accessibility
+- 8. Color Anti-Patterns
+- 9. Color System Checklist
 
 ## God Nodes (most connected - your core abstractions)
 1. `@/i18n/localize` - 79 edges
@@ -430,7 +442,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (396 total, 19 thin omitted)
+## Communities (407 total, 19 thin omitted)
 
 ### Community 0 - "@/i18n/localize"
 Cohesion: 0.11
@@ -473,8 +485,8 @@ Cohesion: 0.05
 Nodes (44): 10. iOS Checklist, 1. Human Interface Guidelines Philosophy, 2. iOS Typography, 3. iOS Color System, 4. iOS Layout & Spacing, 5. iOS Navigation Patterns, 6. iOS Components, 7. iOS Specific Patterns (+36 more)
 
 ### Community 10 - "Visual Effects Reference"
-Cohesion: 0.14
-Nodes (14): 10. Effect Selection Checklist, 5. Border Effects Principles, 6. Glow Effects Principles, 7. Overlay Techniques, Animated Borders, Anti-Patterns, Colored Overlay, Element Glow (+6 more)
+Cohesion: 0.13
+Nodes (15): 10. Effect Selection Checklist, 1. Glassmorphism Principles, 5. Border Effects Principles, 7. Overlay Techniques, Animated Borders, Anti-Patterns, Colored Overlay, Glow Borders (+7 more)
 
 ### Community 11 - "Mobile Backend Patterns"
 Cohesion: 0.05
@@ -485,12 +497,12 @@ Cohesion: 0.05
 Nodes (41): 10. Typography Selection Checklist, 1. Modular Scale Principles, 2. Font Pairing Principles, 3. Line Height Principles, 4. Line Length Principles, 5. Responsive Typography Principles, 6. Weight and Emphasis Principles, 7. Letter Spacing (Tracking) (+33 more)
 
 ### Community 13 - "Animation Guidelines Reference"
-Cohesion: 0.05
-Nodes (39): 10. Animation Decision Checklist, 1. Duration Principles, 2. Easing Principles, 3. Micro-Interaction Principles, 4. Loading States Principles, 5. Page Transitions Principles, 6. Scroll Animation Principles, 7. Hover Effects Principles (+31 more)
+Cohesion: 0.13
+Nodes (14): 10. Animation Decision Checklist, 1. Duration Principles, 2. Easing Principles, 7. Hover Effects Principles, Animation Guidelines Reference, Anti-Patterns, Choosing Duration, Duration Ranges by Purpose (+6 more)
 
 ### Community 14 - "Mobile Color System Reference"
-Cohesion: 0.05
-Nodes (38): 10. Quick Reference, 1. Mobile Color Fundamentals, 2. OLED Considerations, 3. Dark Mode Design, 4. Outdoor Visibility, 5. Semantic Colors, 6. Dynamic Color (Android), 7. Color Accessibility (+30 more)
+Cohesion: 0.12
+Nodes (16): 1. Mobile Color Fundamentals, 3. Dark Mode Design, 4. Outdoor Visibility, 5. Semantic Colors, Color Inversion Rules, Consistent Meaning, Dark Mode Benefits, Dark Mode Color Strategy (+8 more)
 
 ### Community 15 - "Mobile Typography Reference"
 Cohesion: 0.05
@@ -517,8 +529,8 @@ Cohesion: 0.06
 Nodes (35): 🔴 AGENT BOUNDARY ENFORCEMENT (CRITICAL), Agent Chaining with Context, Agent States, Available Agents, Best Practices, 🔴 CHECKPOINT 1: Plan Verification (MANDATORY), 🔴 CHECKPOINT 2: Project Type Routing, 🔴 Checkpoint Summary (CRITICAL) (+27 more)
 
 ### Community 21 - "Mobile Navigation Reference"
-Cohesion: 0.11
-Nodes (19): 1. Navigation Selection Decision Tree, 4. Drawer Navigation, 5. Modal Navigation, 7. Navigation State Persistence, 8. Transition Animations, 9. Navigation Anti-Patterns, ❌ AI Navigation Mistakes, Custom Transitions (+11 more)
+Cohesion: 0.06
+Nodes (35): 10. Navigation Checklist, 1. Navigation Selection Decision Tree, 2. Tab Bar Navigation, 3. Stack Navigation, 4. Drawer Navigation, 5. Modal Navigation, 6. Deep Linking, 7. Navigation State Persistence (+27 more)
 
 ### Community 22 - "Tailwind CSS Patterns (v4 - 2025)"
 Cohesion: 0.06
@@ -625,8 +637,8 @@ Cohesion: 0.09
 Nodes (22): Anti-Patterns, Bundle Size, Caching, Core Philosophy, Core Web Vitals Targets (2025), CSS, Images, JavaScript (+14 more)
 
 ### Community 48 - "Mobile Design Thinking"
-Cohesion: 0.09
-Nodes (23): 🚫 AI MOBILE DEFAULTS (FORBIDDEN LIST), Analysis for Every Gesture, 🧪 ANTI-MEMORIZATION TEST, Ask Yourself Before Every Solution, 🔍 COMPONENT DECOMPOSITION (MANDATORY), 📊 CONTEXT-BASED DECISION PROTOCOL, Decomposition Analysis for Every Screen, 🧠 DEEP MOBILE THINKING PROTOCOL (+15 more)
+Cohesion: 0.11
+Nodes (18): 🚫 AI MOBILE DEFAULTS (FORBIDDEN LIST), Analysis for Every Gesture, 🧪 ANTI-MEMORIZATION TEST, Ask Yourself Before Every Solution, 🔍 COMPONENT DECOMPOSITION (MANDATORY), 📊 CONTEXT-BASED DECISION PROTOCOL, Decomposition Analysis for Every Screen, 🧠 DEEP MOBILE THINKING PROTOCOL (+10 more)
 
 ### Community 49 - "Testing Patterns"
 Cohesion: 0.09
@@ -805,8 +817,8 @@ Cohesion: 0.12
 Nodes (15): 1. README Structure, 2. API Documentation Structure, 3. Code Comment Guidelines, 4. Changelog Template (Keep a Changelog), 5. Architecture Decision Record (ADR), 6. AI-Friendly Documentation (2025), 7. Structure Principles, Documentation Templates (+7 more)
 
 ### Community 93 - "Motion Graphics Reference"
-Cohesion: 0.18
-Nodes (11): 10. Quick Reference, 6. Scroll-Driven Animations, 7. Performance Principles, 8. Motion Graphics Decision Tree, 9. Anti-Patterns, Best Practices, GPU vs CPU Animation, Motion Graphics Reference (+3 more)
+Cohesion: 0.06
+Nodes (35): 10. Quick Reference, 1. Lottie Animations, 2. GSAP (GreenSock), 3. SVG Animations, 4. 3D CSS Transforms, 5. Particle Effects, 6. Scroll-Driven Animations, 7. Performance Principles (+27 more)
 
 ### Community 94 - "i18n & Localization"
 Cohesion: 0.12
@@ -937,7 +949,7 @@ Cohesion: 0.17
 Nodes (11): API Security Testing, Authentication Testing, Authorization Testing, BOLA/IDOR Testing, GraphQL Security, Input Validation Testing, JWT Testing, OWASP API Security Top 10 (+3 more)
 
 ### Community 127 - "frontend-design/SKILL.md"
-Cohesion: 0.29
+Cohesion: 0.18
 Nodes (6): Design Workflow, Guidelines Source, How It Works, Related Skills, Usage, Web Interface Guidelines
 
 ### Community 128 - "1. Core UX Laws"
@@ -1448,6 +1460,10 @@ Nodes (3): Comparison, Decision Tree, ORM Selection (2025)
 Cohesion: 0.29
 Nodes (6): Das Datenschutzproblem, Die Akkuentladung, Die Logikmatrix, Die „Willenskraft“-Falle, Meine abschließende Empfehlung, Warum die Architektur entscheidend ist
 
+### Community 257 - "4. 3D CSS Transforms"
+Cohesion: 0.17
+Nodes (11): 1. Mindful Guard — La mejor en conjunto ⚡ Nuestra elección, 2. AppBlock — La mejor para bloqueos por ubicación, 3. Freedom — La mejor para bloquear móvil y portátil a la vez, 4. One Sec — La mejor para tomar conciencia (no para bloquear en firme), 5. Bienestar digital — El mejor punto de partida gratis (con una pega enorme), Comparativa rápida, Cómo bloquear Instagram en Android de verdad (paso a paso), En resumen (+3 more)
+
 ### Community 260 - "Editorial Workflows"
 Cohesion: 0.50
 Nodes (4): Draft → Review → Publish Cycle, Editorial Workflows, Preview APIs, Roles and Permissions
@@ -1669,8 +1685,8 @@ Cohesion: 0.20
 Nodes (9): En résumé, Et les applications qui annoncent une « réservation souple » ?, Le minuteur face aux alternatives, Mettre en place un minuteur de panier sur Shopify, Quand il vous faut une vraie réservation : les commandes provisoires, Quatre règles pour un minuteur honnête, Que fait alors réellement un minuteur de panier ?, Quelle durée choisir pour un minuteur de panier Shopify ? (+1 more)
 
 ### Community 334 - "4. Attack Surface Mapping"
-Cohesion: 0.40
-Nodes (5): 1. Glassmorphism Principles, The Pattern (Customize Values), What Makes Glassmorphism Work, When NOT to Use, When to Use Glassmorphism
+Cohesion: 0.17
+Nodes (11): Bloqueadores gratuitos de Reels y Shorts, comparados, Cómo elegir, Cómo hemos comparado estas apps, En resumen, MindfulGuard — límite diario y por sesión a la vez, NoScroll — la opción más consolidada, ScrollGuard — la cobertura más amplia, Shortstop — la más ligera, y gratis de verdad (+3 more)
 
 ### Community 335 - "de/alarmy-alternatives-android.mdx"
 Cohesion: 0.22
@@ -1845,12 +1861,12 @@ Cohesion: 0.29
 Nodes (6): Pourquoi garder l'écran noir ?, Votre configuration d'écoute au coucher, Étape 1 : réglez une minuterie de sommeil dans l'application, Étape 2 : passez l'écran entièrement au noir, Étape 3 : assurez-vous que ça s'arrête, Étape 4 : configurez le mode Coucher autour
 
 ### Community 378 - "5. Page Transitions Principles"
-Cohesion: 0.40
-Nodes (5): 1. Lottie Animations, Principles, Sources, What is Lottie?, When to Use Lottie
+Cohesion: 0.18
+Nodes (10): A qué te enfrentas en realidad, Bloqueo a nivel de feed frente a bloqueo de la app entera, El límite del feed de TikTok frente a las alternativas, En resumen, Los ajustes de tiempo de uso de TikTok, y lo que no hacen, Límite diario frente a límite por sesión en TikTok, Paso a paso: bloquear el feed de TikTok en menos de dos minutos, Por qué el feed «Siguiendo» no es una solución (+2 more)
 
 ### Community 379 - "8. Feedback Animation Principles"
-Cohesion: 0.40
-Nodes (5): 2. GSAP (GreenSock), Core Concepts, Principles, What Makes GSAP Different, When to Use GSAP
+Cohesion: 0.18
+Nodes (10): Alternativas a Opal para Android, comparadas, AppBlock (la mejor para reglas por lugar o wifi), Bienestar digital (gratis, ya integrado), Cómo elegir, Freedom (la mejor para móvil y ordenador juntos), Mindful Guard (la mejor alternativa gratis a Opal), One Sec (la mejor para fricción suave), Opal en Android: primero los datos (+2 more)
 
 ### Community 380 - "9. Performance Principles"
 Cohesion: 0.50
@@ -1861,12 +1877,12 @@ Cohesion: 0.50
 Nodes (4): 9. Performance Principles, GPU-Accelerated Properties, Reduced Motion, will-change Usage
 
 ### Community 382 - "5. Responsive Typography Principles"
-Cohesion: 0.40
-Nodes (5): 3. SVG Animations, Line Drawing Principles, Principles, Types of SVG Animation, When to Use SVG Animations
+Cohesion: 0.22
+Nodes (8): Comparativa rápida, Cómo funcionan de verdad los límites diarios y por sesión, En resumen, Las apps no son la única superficie: el navegador también cuenta, Las tres formas de bloquear el vídeo corto en Android, Paso a paso: configurar Reel Guard en menos de dos minutos, Plataforma por plataforma, Por qué bloquear Reels y Shorts es más difícil que bloquear una app
 
 ### Community 383 - "6. Weight and Emphasis Principles"
-Cohesion: 0.40
-Nodes (5): 5. Particle Effects, Libraries, Principles, Types of Particle Systems, When to Use
+Cohesion: 0.25
+Nodes (7): Bloquear la app entera frente a bloquear solo los Reels, El límite solo de Reels frente a las alternativas, En resumen, Límite diario frente a límite por sesión, Paso a paso: bloquear los Reels de Instagram en menos de dos minutos, Por qué no existe un «apagado» real para los Reels, ¿Y los Reels en el navegador?
 
 ### Community 384 - "8. Hierarchy Principles"
 Cohesion: 0.40
@@ -1877,35 +1893,79 @@ Cohesion: 0.67
 Nodes (3): 9. Cloud Security Considerations, Cloud-Specific Checks, Shared Responsibility
 
 ### Community 386 - "4. 3D CSS Transforms"
-Cohesion: 0.50
-Nodes (4): 4. 3D CSS Transforms, Common 3D Patterns, Core Properties, Principles
+Cohesion: 0.29
+Nodes (6): Cómo eliminar un bloqueador del que no puedas salir, Cómo funciona realmente el truco de la accesibilidad, El único método que funciona de verdad, y lo que cuesta, En resumen, ¿Puede un bloqueador ser de verdad imposible de desinstalar?, Qué buscar realmente en un bloqueador
 
 ### Community 387 - "10. Navigation Checklist"
-Cohesion: 0.50
-Nodes (4): 10. Navigation Checklist, Before Every Screen, Before Navigation Architecture, Before Release
+Cohesion: 0.29
+Nodes (6): Método 1 — Deja el vídeo delante y pon la pantalla en negro (gratis, cualquier app), Método 2 — NewPipe (gratis, código abierto), Método 3 — YouTube Premium Lite (ahora con reproducción en segundo plano), ¿Por qué dejó de funcionar el truco de Firefox?, ¿Qué cambió en enero de 2026?, ¿Qué método deberías usar?
 
 ### Community 388 - "5. Risk Prioritization"
 Cohesion: 0.67
 Nodes (3): 5. Risk Prioritization, CVSS + Context, Prioritization Decision Tree
 
 ### Community 392 - "2. Tab Bar Navigation"
-Cohesion: 0.50
-Nodes (4): 2. Tab Bar Navigation, Tab Bar Best Practices, Tab State Preservation, When to Use
+Cohesion: 0.40
+Nodes (5): 6. Scroll Animation Principles, Animation Properties, Performance, Progressive Reveal, Trigger Points
 
 ### Community 393 - "3. Stack Navigation"
-Cohesion: 0.50
-Nodes (4): 3. Stack Navigation, Back Button Handling, Core Concepts, Stack Navigation Patterns
+Cohesion: 0.40
+Nodes (5): List Pattern Questioning, Navigation Pattern Questioning, 🎯 PATTERN QUESTIONING MATRIX, State Pattern Questioning, UI Pattern Questioning
 
 ### Community 394 - "6. Deep Linking"
 Cohesion: 0.50
-Nodes (4): 6. Deep Linking, Deep Link Navigation Rules, URL Structure, Why Deep Links from Day One
+Nodes (4): 3. Micro-Interaction Principles, Button States, Principles, What Makes Good Micro-Interactions
 
 ### Community 395 - "_README.md"
 Cohesion: 0.50
 Nodes (3): Blog-first locale: only translated posts live here (Phase 1+)., Spanish (es) blog translations., Until a post exists for a slug, no /es/blog/<slug> route is built.
 
+### Community 396 - "4. Loading States Principles"
+Cohesion: 0.50
+Nodes (4): 4. Loading States Principles, Progress Indicators, Skeleton Screens, Types by Context
+
+### Community 397 - "5. Page Transitions Principles"
+Cohesion: 0.50
+Nodes (4): 5. Page Transitions Principles, Common Patterns, Direction Matching, Transition Strategy
+
+### Community 398 - "8. Feedback Animation Principles"
+Cohesion: 0.50
+Nodes (4): 8. Feedback Animation Principles, Error States, Success States, Timing
+
+### Community 399 - "9. Performance Principles"
+Cohesion: 0.50
+Nodes (4): 9. Performance Principles, Optimization Strategies, Respecting User Preferences, What's Cheap to Animate
+
+### Community 400 - "6. Glow Effects Principles"
+Cohesion: 0.50
+Nodes (4): 6. Glow Effects Principles, Element Glow, Pulsing Glow Animation, Text Glow
+
+### Community 401 - "10. Quick Reference"
+Cohesion: 0.50
+Nodes (4): 10. Quick Reference, Contrast Ratios, Dark Mode Backgrounds, Text on Dark
+
+### Community 402 - "2. OLED Considerations"
+Cohesion: 0.50
+Nodes (4): 2. OLED Considerations, Battery Savings with OLED, How OLED Differs, True Black vs Near Black
+
+### Community 403 - "6. Dynamic Color (Android)"
+Cohesion: 0.50
+Nodes (4): 6. Dynamic Color (Android), Fallback Colors, Material You, Supporting Dynamic Color
+
+### Community 404 - "7. Color Accessibility"
+Cohesion: 0.50
+Nodes (4): 7. Color Accessibility, Colorblind Considerations, Contrast Testing Tools, Sufficient Contrast
+
+### Community 405 - "8. Color Anti-Patterns"
+Cohesion: 0.67
+Nodes (3): 8. Color Anti-Patterns, ❌ AI Color Mistakes, ❌ Common Mistakes
+
+### Community 406 - "9. Color System Checklist"
+Cohesion: 0.67
+Nodes (3): 9. Color System Checklist, Before Choosing Colors, Before Release
+
 ## Knowledge Gaps
-- **3348 isolated node(s):** `Colors`, `Colors`, `blogLastmod`, `$schema`, `style` (+3343 more)
+- **3416 isolated node(s):** `Colors`, `Colors`, `blogLastmod`, `$schema`, `style` (+3411 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **19 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -1916,10 +1976,10 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **Why does `Mobile Performance Reference` connect `Mobile Performance Reference` to `mobile-design/SKILL.md`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
-- **Why does `Frontend Design System` connect `Frontend Design System` to `4. 3D CSS Transforms`?**
+- **Why does `Frontend Design System` connect `Frontend Design System` to `frontend-design/SKILL.md`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `Colors`, `Colors`, `blogLastmod` to the rest of the system?**
-  _3348 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _3416 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `@/i18n/localize` be split into smaller, more focused modules?**
   _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
 - **Should `design_system.py` be split into smaller, more focused modules?**
