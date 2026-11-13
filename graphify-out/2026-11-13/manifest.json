@@ -290,23 +290,23 @@
     "semantic_hash": ""
   },
   "src/components/common/Footer.astro": {
-    "mtime": 1793155506.9739177,
-    "ast_hash": "a72d828db052460dce222cc04a188d3d",
+    "mtime": 1794566970.280785,
+    "ast_hash": "f023c3bb925872ebaa3054f47e6b327e",
     "semantic_hash": ""
   },
   "src/components/common/LanguageToggle.astro": {
-    "mtime": 1785824108.8899732,
-    "ast_hash": "db0ff7c6a0be7e6d508292b6f195c1e7",
+    "mtime": 1794567113.1125648,
+    "ast_hash": "acf6d12cd60e3bfe9c4e7ed65b3d069e",
     "semantic_hash": ""
   },
   "src/components/common/MobileMenuToggle.astro": {
-    "mtime": 1778958942.373794,
-    "ast_hash": "e26652efb122c12c53218ee54d0e9eb1",
+    "mtime": 1794567039.2115154,
+    "ast_hash": "92396a67f5eb7265433b2d3065ffe7fe",
     "semantic_hash": ""
   },
   "src/components/common/Navbar.astro": {
-    "mtime": 1785824108.8902006,
-    "ast_hash": "b39a4fbe7c3ef01a85aa2224e2c43cb1",
+    "mtime": 1794566970.2748146,
+    "ast_hash": "0ee9780f3cede849b5ec3bf8bd30feb4",
     "semantic_hash": ""
   },
   "src/components/common/Section.astro": {
@@ -580,7 +580,7 @@
     "semantic_hash": ""
   },
   "src/i18n/locales/en.json": {
-    "mtime": 1794559751.5655968,
+    "mtime": 1794566744.7494678,
     "ast_hash": "70b439e7fcbc6a761af904b5213c14bb",
     "semantic_hash": ""
   },
@@ -595,8 +595,8 @@
     "semantic_hash": ""
   },
   "src/i18n/utils.ts": {
-    "mtime": 1777185979.7399678,
-    "ast_hash": "b287b9575a32b55f5e3f137c12c8742b",
+    "mtime": 1794566948.6516843,
+    "ast_hash": "b4fcb51c9ec8bb32498a458d32049fdf",
     "semantic_hash": ""
   },
   "src/layouts/DocsLayout.astro": {
@@ -605,8 +605,8 @@
     "semantic_hash": ""
   },
   "src/layouts/Layout.astro": {
-    "mtime": 1794552069.4327366,
-    "ast_hash": "ef11cf44e23b4fd290884041bc96a998",
+    "mtime": 1794566978.3425305,
+    "ast_hash": "1b95d4edadb6586a29409decc6714545",
     "semantic_hash": ""
   },
   "src/lib/blog.ts": {
@@ -670,8 +670,8 @@
     "semantic_hash": ""
   },
   "src/page-templates/BlogPostPage.astro": {
-    "mtime": 1794269321.8720431,
-    "ast_hash": "00d5c6d89d42ef9d30e3598ca5e5eefc",
+    "mtime": 1794566993.514222,
+    "ast_hash": "a5b7c4222870ad9ad0829881c13c273a",
     "semantic_hash": ""
   },
   "src/page-templates/CompareDetailPage.astro": {
@@ -3187,6 +3187,26 @@
   "src/content/blog/es/limit-reels-per-day-android.mdx": {
     "mtime": 1794557657.5838597,
     "ast_hash": "364351e6ae3ab5047ccd64eef8fa0e83",
+    "semantic_hash": ""
+  },
+  "src/content/blog/es/alarm-app-that-makes-you-do-pushups-android.md": {
+    "mtime": 1794566559.9739156,
+    "ast_hash": "042007aaa504b6d332966dc6155a0b3b",
+    "semantic_hash": ""
+  },
+  "src/content/blog/es/alarmy-alternatives-android.mdx": {
+    "mtime": 1794566617.376833,
+    "ast_hash": "c9173411128239403eb22d6d77bc46d1",
+    "semantic_hash": ""
+  },
+  "src/content/blog/es/best-alarm-apps-for-heavy-sleepers-android-2026.md": {
+    "mtime": 1794566501.910997,
+    "ast_hash": "80e8aba0f006670a0e1bd4b8cce9113d",
+    "semantic_hash": ""
+  },
+  "src/content/blog/es/why-android-alarms-dont-go-off-exact-alarms.md": {
+    "mtime": 1794566424.137304,
+    "ast_hash": "891047dd21f843fad42c69586b4dd754",
     "semantic_hash": ""
   }
 }

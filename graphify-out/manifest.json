@@ -290,23 +290,23 @@
     "semantic_hash": ""
   },
   "src/components/common/Footer.astro": {
-    "mtime": 1793155506.9739177,
-    "ast_hash": "a72d828db052460dce222cc04a188d3d",
+    "mtime": 1794566970.280785,
+    "ast_hash": "f023c3bb925872ebaa3054f47e6b327e",
     "semantic_hash": ""
   },
   "src/components/common/LanguageToggle.astro": {
-    "mtime": 1785824108.8899732,
-    "ast_hash": "db0ff7c6a0be7e6d508292b6f195c1e7",
+    "mtime": 1794567113.1125648,
+    "ast_hash": "acf6d12cd60e3bfe9c4e7ed65b3d069e",
     "semantic_hash": ""
   },
   "src/components/common/MobileMenuToggle.astro": {
-    "mtime": 1778958942.373794,
-    "ast_hash": "e26652efb122c12c53218ee54d0e9eb1",
+    "mtime": 1794567039.2115154,
+    "ast_hash": "92396a67f5eb7265433b2d3065ffe7fe",
     "semantic_hash": ""
   },
   "src/components/common/Navbar.astro": {
-    "mtime": 1785824108.8902006,
-    "ast_hash": "b39a4fbe7c3ef01a85aa2224e2c43cb1",
+    "mtime": 1794566970.2748146,
+    "ast_hash": "0ee9780f3cede849b5ec3bf8bd30feb4",
     "semantic_hash": ""
   },
   "src/components/common/Section.astro": {
@@ -580,7 +580,7 @@
     "semantic_hash": ""
   },
   "src/i18n/locales/en.json": {
-    "mtime": 1794559751.5655968,
+    "mtime": 1794566744.7494678,
     "ast_hash": "70b439e7fcbc6a761af904b5213c14bb",
     "semantic_hash": ""
   },
@@ -595,8 +595,8 @@
     "semantic_hash": ""
   },
   "src/i18n/utils.ts": {
-    "mtime": 1777185979.7399678,
-    "ast_hash": "b287b9575a32b55f5e3f137c12c8742b",
+    "mtime": 1794566948.6516843,
+    "ast_hash": "b4fcb51c9ec8bb32498a458d32049fdf",
     "semantic_hash": ""
   },
   "src/layouts/DocsLayout.astro": {
@@ -605,8 +605,8 @@
     "semantic_hash": ""
   },
   "src/layouts/Layout.astro": {
-    "mtime": 1794552069.4327366,
-    "ast_hash": "ef11cf44e23b4fd290884041bc96a998",
+    "mtime": 1794566978.3425305,
+    "ast_hash": "1b95d4edadb6586a29409decc6714545",
     "semantic_hash": ""
   },
   "src/lib/blog.ts": {
@@ -670,8 +670,8 @@
     "semantic_hash": ""
   },
   "src/page-templates/BlogPostPage.astro": {
-    "mtime": 1794269321.8720431,
-    "ast_hash": "00d5c6d89d42ef9d30e3598ca5e5eefc",
+    "mtime": 1794566993.514222,
+    "ast_hash": "a5b7c4222870ad9ad0829881c13c273a",
     "semantic_hash": ""
   },
   "src/page-templates/CompareDetailPage.astro": {
@@ -2660,8 +2660,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/de/best-free-reels-shorts-blockers-android-2026.mdx": {
-    "mtime": 1794047202.7224724,
-    "ast_hash": "8fdf8311d41f2dc51d3f9c53d4f904cd",
+    "mtime": 1794567842.468619,
+    "ast_hash": "fdc368058c1a872dbb91b7eed5ec53ad",
     "semantic_hash": ""
   },
   "src/content/blog/de/does-dark-mode-save-battery-amoled.mdx": {
@@ -2740,8 +2740,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/en/best-free-reels-shorts-blockers-android-2026.mdx": {
-    "mtime": 1794046549.421019,
-    "ast_hash": "13645bfb92ce6e3be4d9cfd3356d2bc0",
+    "mtime": 1794567717.7598193,
+    "ast_hash": "0c936efa7e44850d7726c8244aed82d8",
     "semantic_hash": ""
   },
   "src/content/blog/en/does-dark-mode-save-battery-amoled.mdx": {
@@ -2820,8 +2820,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/best-free-reels-shorts-blockers-android-2026.mdx": {
-    "mtime": 1794047219.4740937,
-    "ast_hash": "807a23b15f823f72809494c55c552ed6",
+    "mtime": 1794567997.1080458,
+    "ast_hash": "3d1440a886932867924c5778e556eedd",
     "semantic_hash": ""
   },
   "src/content/blog/fr/does-dark-mode-save-battery-amoled.mdx": {
@@ -3140,8 +3140,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx": {
-    "mtime": 1794557657.5812533,
-    "ast_hash": "7f0d50733888678eff019655f501cacd",
+    "mtime": 1794567782.8191116,
+    "ast_hash": "8083ad9d4f22bb3d70fdf89fa8622611",
     "semantic_hash": ""
   },
   "src/content/blog/es/how-to-block-instagram-reels-android.mdx": {

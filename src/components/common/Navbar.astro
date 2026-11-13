@@ -1,6 +1,6 @@
 ---
 import { cn } from "@/lib/utils";
-import { getLangFromUrl, localePath } from "@/i18n/utils";
+import { getLangFromUrl, chromePath } from "@/i18n/utils";
 import { localize } from "@/i18n/localize";
 
 // Import the interactive islands
@@ -57,7 +57,7 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
       <div class="flex items-center gap-6">
         <a
           id="navbar-logo"
-          href={localePath(currentLang, '/')}
+          href={chromePath(currentLang, '/')}
           class="group flex items-center gap-2 px-2"
         >
           <Image
@@ -97,19 +97,19 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
       {/* Navigation Links (Desktop) */}
       {!hasCustomBranding && (
         <div class="hidden items-center gap-10 md:flex">
-          <a href={localePath(currentLang, '/')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
+          <a href={chromePath(currentLang, '/')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
             {localize("Home")}
           </a>
-          <a href={localePath(currentLang, '/about')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
+          <a href={chromePath(currentLang, '/about')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
             {localize("About")}
           </a>
-          <a href={localePath(currentLang, '/apps')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
+          <a href={chromePath(currentLang, '/apps')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
             {localize("Ecosystem")}
           </a>
-          <a href={localePath(currentLang, '/docs')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
+          <a href={chromePath(currentLang, '/docs')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
             {localize("Docs")}
           </a>
-          <a href={localePath(currentLang, '/blog')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
+          <a href={chromePath(currentLang, '/blog')} class={cn("py-1 text-sm font-bold transition-all", isDark ? "text-slate-400 hover:text-white" : "text-slate-600 hover:text-slate-900")}>
             {localize("Logic Lab")}
           </a>
         </div>
@@ -126,7 +126,7 @@ const customCTAHtml = hasCustomCTA ? await Astro.slots.render('customCTA') : und
           ) : (
             <a 
               id="nav-cta" 
-              href={localePath(currentLang, '/about')}
+              href={chromePath(currentLang, '/about')}
               class={cn(
                 "inline-flex h-10 items-center justify-center rounded-xl px-6 text-sm font-semibold transition-all",
                 isDark

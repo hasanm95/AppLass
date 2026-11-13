@@ -4397,8 +4397,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_blog_appcallout",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "@/components/blog/appcallout.astro"
     },
     {
@@ -4421,8 +4421,8 @@
       "_origin": "ast",
       "source_location": "L1",
       "id": "src_lib_utils",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "utils.ts"
     },
     {
@@ -4533,8 +4533,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_blog_mindfulguardcta",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "mindfulguardcta.astro"
     },
     {
@@ -4544,8 +4544,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_components_blog_mindfulguardcta_href",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "href"
     },
     {
@@ -4555,8 +4555,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "src_components_blog_mindfulguardcta_content",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "content"
     },
     {
@@ -4660,8 +4660,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_common_footer",
-      "community": 371,
-      "community_name": "1. Modular Scale Principles",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "@/components/common/footer.astro"
     },
     {
@@ -4671,8 +4671,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_components_common_footer_currentlang",
-      "community": 371,
-      "community_name": "1. Modular Scale Principles",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "currentlang"
     },
     {
@@ -4682,8 +4682,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "src_components_common_footer_currentyear",
-      "community": 371,
-      "community_name": "1. Modular Scale Principles",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "currentyear"
     },
     {
@@ -4693,8 +4693,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_components_common_footer_getfooterlinks",
-      "community": 371,
-      "community_name": "1. Modular Scale Principles",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "getfooterlinks()"
     },
     {
@@ -4704,8 +4704,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "src_components_common_footer_footerlinks",
-      "community": 371,
-      "community_name": "1. Modular Scale Principles",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "footerlinks"
     },
     {
@@ -4715,8 +4715,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_logo_png",
-      "community": 371,
-      "community_name": "1. Modular Scale Principles",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "@/assets/logo.png"
     },
     {
@@ -4738,19 +4738,30 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_common_languagetoggle",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "./languagetoggle.astro"
+    },
+    {
+      "label": "list",
+      "file_type": "code",
+      "source_file": "src/components/common/LanguageToggle.astro",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "src_components_common_languagetoggle_list",
+      "community": 45,
+      "community_name": "localize",
+      "norm_label": "list"
     },
     {
       "label": "connectedCallback()",
       "file_type": "code",
       "source_file": "src/components/common/LanguageToggle.astro",
-      "source_location": "L117",
+      "source_location": "L120",
       "_origin": "ast",
       "id": "src_components_common_languagetoggle_connectedcallback",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "connectedcallback()"
     },
     {
@@ -4761,8 +4772,8 @@
       "_origin": "ast",
       "source_location": "L1",
       "id": "src_i18n_config",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "@/i18n/config"
     },
     {
@@ -4797,8 +4808,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_common_subpagehero",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "@/components/common/subpagehero.astro"
     },
     {
@@ -4809,8 +4820,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_compare_comparefooter",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "@/components/compare/comparefooter.astro"
     },
     {
@@ -4820,8 +4831,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_components_ui_link_button",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "../ui/link-button"
     },
     {
@@ -4832,8 +4843,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_compare_comparehero",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "@/components/compare/comparehero.astro"
     },
     {
@@ -4844,8 +4855,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_compare_comparetestimonial",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "@/components/compare/comparetestimonial.astro"
     },
     {
@@ -4856,8 +4867,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_compare_comparisonmatrix",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "@/components/compare/comparisonmatrix.astro"
     },
     {
@@ -4868,8 +4879,8 @@
       "_origin": "ast",
       "source_location": "L1",
       "id": "src_lib_compare",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "@/lib/compare"
     },
     {
@@ -4880,8 +4891,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_compare_technicaldebt",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "@/components/compare/technicaldebt.astro"
     },
     {
@@ -4892,8 +4903,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_compare_valuehighlights",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "@/components/compare/valuehighlights.astro"
     },
     {
@@ -4903,8 +4914,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_components_compare_valuehighlights_cards",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "cards"
     },
     {
@@ -5165,8 +5176,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_home_foundersmoat",
-      "community": 32,
-      "community_name": "@/lib/legal-registry",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "@/components/home/foundersmoat.astro"
     },
     {
@@ -5177,8 +5188,8 @@
       "_origin": "ast",
       "source_location": "L1",
       "id": "src_constants_home_data",
-      "community": 32,
-      "community_name": "@/lib/legal-registry",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "@/constants/home-data"
     },
     {
@@ -5201,8 +5212,8 @@
       "_origin": "ast",
       "source_location": "L1",
       "id": "src_components_i18n_localize",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "localize.tsx"
     },
     {
@@ -5280,8 +5291,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_home_socialproof",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "@/components/home/socialproof.astro"
     },
     {
@@ -5292,8 +5303,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_home_solutionssection",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "@/components/home/solutionssection.astro"
     },
     {
@@ -5303,8 +5314,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "src_components_home_solutionssection_icons",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "icons"
     },
     {
@@ -5314,8 +5325,8 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "src_components_home_solutionssection_lang",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "lang"
     },
     {
@@ -5325,8 +5336,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "src_components_home_solutionssection_solutionsdata",
-      "community": 282,
-      "community_name": "9. Cloud Security Considerations",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "solutionsdata"
     },
     {
@@ -5337,8 +5348,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_home_testimonials",
-      "community": 32,
-      "community_name": "@/lib/legal-registry",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "@/components/home/testimonials.astro"
     },
     {
@@ -5348,8 +5359,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_components_i18n_localize_localizeprops",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "localizeprops"
     },
     {
@@ -5359,8 +5370,8 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "src_components_i18n_localize_localize",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "localize()"
     },
     {
@@ -5489,8 +5500,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_ui_link_button",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "@/components/ui/link-button"
     },
     {
@@ -5500,8 +5511,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_components_ui_link_button_linkbuttonvariants",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "linkbuttonvariants"
     },
     {
@@ -5511,8 +5522,8 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "src_components_ui_link_button_linkbuttonprops",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "linkbuttonprops"
     },
     {
@@ -5522,8 +5533,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "src_components_ui_link_button_linkbutton",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "linkbutton"
     },
     {
@@ -5567,8 +5578,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_constants_arisely_data",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "@/constants/arisely-data"
     },
     {
@@ -5578,8 +5589,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_constants_arisely_data_ariselyplayurl",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "ariselyplayurl()"
     },
     {
@@ -5589,8 +5600,8 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "src_constants_arisely_data_getariselydata",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "getariselydata()"
     },
     {
@@ -5600,8 +5611,8 @@
       "source_location": "L202",
       "_origin": "ast",
       "id": "src_constants_arisely_data_getariselyschema",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "getariselyschema()"
     },
     {
@@ -5655,8 +5666,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_constants_home_data_getsolutions",
-      "community": 32,
-      "community_name": "@/lib/legal-registry",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "getsolutions()"
     },
     {
@@ -5677,8 +5688,8 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "src_constants_home_data_pillar",
-      "community": 32,
-      "community_name": "@/lib/legal-registry",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "pillar"
     },
     {
@@ -5688,8 +5699,8 @@
       "source_location": "L118",
       "_origin": "ast",
       "id": "src_constants_home_data_gettestimonials",
-      "community": 32,
-      "community_name": "@/lib/legal-registry",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "gettestimonials()"
     },
     {
@@ -5699,8 +5710,8 @@
       "source_location": "L163",
       "_origin": "ast",
       "id": "src_constants_home_data_getaboutpillars",
-      "community": 32,
-      "community_name": "@/lib/legal-registry",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "getaboutpillars()"
     },
     {
@@ -5710,8 +5721,8 @@
       "source_location": "L194",
       "_origin": "ast",
       "id": "src_constants_home_data_gethomepillars",
-      "community": 32,
-      "community_name": "@/lib/legal-registry",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "gethomepillars()"
     },
     {
@@ -5778,8 +5789,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_constants_screenveil_data",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 39,
+      "community_name": "@/components/common/Section.astro",
       "norm_label": "@/constants/screenveil-data"
     },
     {
@@ -5789,8 +5800,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_constants_screenveil_data_screenveilplayurl",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 39,
+      "community_name": "@/components/common/Section.astro",
       "norm_label": "screenveilplayurl()"
     },
     {
@@ -5800,8 +5811,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "src_constants_screenveil_data_getscreenveildata",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 39,
+      "community_name": "@/components/common/Section.astro",
       "norm_label": "getscreenveildata()"
     },
     {
@@ -5811,8 +5822,8 @@
       "source_location": "L151",
       "_origin": "ast",
       "id": "src_constants_screenveil_data_getscreenveilschema",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 39,
+      "community_name": "@/components/common/Section.astro",
       "norm_label": "getscreenveilschema()"
     },
     {
@@ -5822,8 +5833,8 @@
       "source_location": "L178",
       "_origin": "ast",
       "id": "src_constants_screenveil_data_screenveil_schema",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 39,
+      "community_name": "@/components/common/Section.astro",
       "norm_label": "screenveil_schema"
     },
     {
@@ -5899,8 +5910,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_hooks_useparallax",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "useparallax.ts"
     },
     {
@@ -5910,8 +5921,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_hooks_useparallax_parallaxlayer",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "parallaxlayer"
     },
     {
@@ -5921,8 +5932,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "src_hooks_useparallax_useparallax",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "useparallax()"
     },
     {
@@ -5932,8 +5943,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_i18n_config_i18nconfig",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "i18nconfig"
     },
     {
@@ -5943,8 +5954,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "src_i18n_config_locale",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "locale"
     },
     {
@@ -5954,8 +5965,8 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "src_i18n_config_localemeta",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "localemeta"
     },
     {
@@ -5965,8 +5976,8 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "src_i18n_config_isrtl",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 19,
+      "community_name": "@/page-templates/AppsMindfulGuardPage.astro",
       "norm_label": "isrtl()"
     },
     {
@@ -5977,8 +5988,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_i18n_index",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "@/i18n"
     },
     {
@@ -5988,8 +5999,8 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "src_i18n_index_localemodules",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "localemodules"
     },
     {
@@ -5999,8 +6010,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "src_i18n_index_resources",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "resources"
     },
     {
@@ -6010,8 +6021,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "src_i18n_index_setlocale",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "setlocale()"
     },
     {
@@ -6021,15 +6032,26 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "src_i18n_localize_localize",
-      "community": 32,
-      "community_name": "@/lib/legal-registry",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "localize()"
+    },
+    {
+      "label": "chromePath()",
+      "file_type": "code",
+      "source_file": "src/i18n/utils.ts",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "src_i18n_utils_chromepath",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
+      "norm_label": "chromepath()"
     },
     {
       "label": "getLangFromUrl()",
       "file_type": "code",
       "source_file": "src/i18n/utils.ts",
-      "source_location": "L3",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "src_i18n_utils_getlangfromurl",
       "community": 282,
@@ -6040,7 +6062,7 @@
       "label": "localePath()",
       "file_type": "code",
       "source_file": "src/i18n/utils.ts",
-      "source_location": "L20",
+      "source_location": "L45",
       "_origin": "ast",
       "id": "src_i18n_utils_localepath",
       "community": 282,
@@ -6051,7 +6073,7 @@
       "label": "useTranslations()",
       "file_type": "code",
       "source_file": "src/i18n/utils.ts",
-      "source_location": "L32",
+      "source_location": "L57",
       "_origin": "ast",
       "id": "src_i18n_utils_usetranslations",
       "community": 282,
@@ -6078,8 +6100,8 @@
       "_origin": "ast",
       "source_location": "L1",
       "id": "src_layouts_layout",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 19,
+      "community_name": "@/page-templates/AppsMindfulGuardPage.astro",
       "norm_label": "../layouts/layout.astro"
     },
     {
@@ -6089,8 +6111,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_i18n_utils",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 19,
+      "community_name": "@/page-templates/AppsMindfulGuardPage.astro",
       "norm_label": "../i18n/utils"
     },
     {
@@ -6100,8 +6122,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_globals_css",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 19,
+      "community_name": "@/page-templates/AppsMindfulGuardPage.astro",
       "norm_label": "../globals.css"
     },
     {
@@ -6111,8 +6133,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_fonts_css",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 19,
+      "community_name": "@/page-templates/AppsMindfulGuardPage.astro",
       "norm_label": "../fonts.css"
     },
     {
@@ -6122,8 +6144,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_tw_animate_css",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 19,
+      "community_name": "@/page-templates/AppsMindfulGuardPage.astro",
       "norm_label": "../tw-animate.css"
     },
     {
@@ -6133,8 +6155,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_lib_blog_blogpath",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 62,
+      "community_name": "@/page-templates/BlogPostPage.astro",
       "norm_label": "blogpath()"
     },
     {
@@ -6199,8 +6221,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_lib_compare_comparisonfeature",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "comparisonfeature"
     },
     {
@@ -6210,8 +6232,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "src_lib_compare_comparisondata",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "comparisondata"
     },
     {
@@ -6221,8 +6243,8 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "src_lib_compare_comparisons",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "comparisons"
     },
     {
@@ -6232,8 +6254,8 @@
       "source_location": "L159",
       "_origin": "ast",
       "id": "src_lib_compare_getcomparisonbyslug",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "getcomparisonbyslug()"
     },
     {
@@ -6267,8 +6289,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_lib_lastupdated",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "@/lib/lastupdated"
     },
     {
@@ -6278,8 +6300,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_lib_lastupdated_root",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "root"
     },
     {
@@ -6289,8 +6311,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_lib_lastupdated_cache",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "cache"
     },
     {
@@ -6300,8 +6322,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "src_lib_lastupdated_commitdate",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "commitdate()"
     },
     {
@@ -6311,8 +6333,8 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "src_lib_lastupdated_lastupdatedfor",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "lastupdatedfor()"
     },
     {
@@ -6356,8 +6378,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "src_lib_utils_playurl",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "playurl()"
     },
     {
@@ -6367,8 +6389,8 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "src_lib_utils_rafthrottle",
-      "community": 44,
-      "community_name": "@/page-templates/AppsFomogenPage.astro",
+      "community": 370,
+      "community_name": "6. Scroll Animation Principles",
       "norm_label": "rafthrottle()"
     },
     {
@@ -6379,8 +6401,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_aboutpage",
-      "community": 32,
-      "community_name": "@/lib/legal-registry",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "@/page-templates/aboutpage.astro"
     },
     {
@@ -6391,8 +6413,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_appsariselypage",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "@/page-templates/appsariselypage.astro"
     },
     {
@@ -6402,8 +6424,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_arisely_icon_png",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "@/assets/apps/arisely/icon.png"
     },
     {
@@ -6413,8 +6435,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_arisely_store_1_png",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "@/assets/apps/arisely/store-1.png"
     },
     {
@@ -6424,8 +6446,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_arisely_store_2_png",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "@/assets/apps/arisely/store-2.png"
     },
     {
@@ -6435,8 +6457,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_arisely_store_3_png",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "@/assets/apps/arisely/store-3.png"
     },
     {
@@ -6446,8 +6468,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_arisely_store_4_png",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "@/assets/apps/arisely/store-4.png"
     },
     {
@@ -6457,8 +6479,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_arisely_store_5_png",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "@/assets/apps/arisely/store-5.png"
     },
     {
@@ -6468,8 +6490,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_arisely_store_6_png",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "@/assets/apps/arisely/store-6.png"
     },
     {
@@ -6479,8 +6501,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_arisely_store_7_png",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "@/assets/apps/arisely/store-7.png"
     },
     {
@@ -6490,8 +6512,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_arisely_screen_permissions_jpg",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "@/assets/apps/arisely/screen-permissions.jpg"
     },
     {
@@ -6514,8 +6536,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_appsfomogenpricingpage",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "@/page-templates/appsfomogenpricingpage.astro"
     },
     {
@@ -6525,8 +6547,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "src_page_templates_appsfomogenpricingpage_meta",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "meta"
     },
     {
@@ -6627,8 +6649,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_appsscreenveilpage",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 39,
+      "community_name": "@/components/common/Section.astro",
       "norm_label": "@/page-templates/appsscreenveilpage.astro"
     },
     {
@@ -6638,8 +6660,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_screenveil_icon_png",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 39,
+      "community_name": "@/components/common/Section.astro",
       "norm_label": "@/assets/apps/screenveil/icon.png"
     },
     {
@@ -6649,8 +6671,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_screenveil_screen_off_jpg",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 39,
+      "community_name": "@/components/common/Section.astro",
       "norm_label": "@/assets/apps/screenveil/screen-off.jpg"
     },
     {
@@ -6660,8 +6682,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_screenveil_public_jpg",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 39,
+      "community_name": "@/components/common/Section.astro",
       "norm_label": "@/assets/apps/screenveil/public.jpg"
     },
     {
@@ -6671,8 +6693,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_screenveil_sleep_jpg",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 39,
+      "community_name": "@/components/common/Section.astro",
       "norm_label": "@/assets/apps/screenveil/sleep.jpg"
     },
     {
@@ -6682,8 +6704,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_screenveil_pocket_jpg",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 39,
+      "community_name": "@/components/common/Section.astro",
       "norm_label": "@/assets/apps/screenveil/pocket.jpg"
     },
     {
@@ -6693,8 +6715,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_screenveil_one_tap_jpg",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 39,
+      "community_name": "@/components/common/Section.astro",
       "norm_label": "@/assets/apps/screenveil/one-tap.jpg"
     },
     {
@@ -6704,8 +6726,8 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_hasanm025_practices_applass_src_assets_apps_screenveil_tap_back_jpg",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 39,
+      "community_name": "@/components/common/Section.astro",
       "norm_label": "@/assets/apps/screenveil/tap-back.jpg"
     },
     {
@@ -6773,8 +6795,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_comparedetailpage",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "@/page-templates/comparedetailpage.astro"
     },
     {
@@ -6785,8 +6807,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_comparepage",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "@/page-templates/comparepage.astro"
     },
     {
@@ -6797,8 +6819,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_digitalwellnesspage",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "@/page-templates/digitalwellnesspage.astro"
     },
     {
@@ -6821,8 +6843,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_docshubpage",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "@/page-templates/docshubpage.astro"
     },
     {
@@ -6832,8 +6854,8 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "src_page_templates_docshubpage_meta",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "meta"
     },
     {
@@ -6878,8 +6900,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_ecommerceguidepage",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 62,
+      "community_name": "@/page-templates/BlogPostPage.astro",
       "norm_label": "@/page-templates/ecommerceguidepage.astro"
     },
     {
@@ -6890,8 +6912,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_homepage",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "@/page-templates/homepage.astro"
     },
     {
@@ -6901,8 +6923,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "src_page_templates_homepage_meta",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "meta"
     },
     {
@@ -6913,8 +6935,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_legalpage",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 32,
+      "community_name": "@/lib/legal-registry",
       "norm_label": "@/page-templates/legalpage.astro"
     },
     {
@@ -6925,8 +6947,8 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_page_templates_notfoundpage",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "@/page-templates/notfoundpage.astro"
     },
     {
@@ -6936,8 +6958,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_404",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "pages/404.astro"
     },
     {
@@ -6947,8 +6969,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_404",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "[lang]/404.astro"
     },
     {
@@ -6958,8 +6980,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_404_getstaticpaths",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -6969,8 +6991,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_about_index",
-      "community": 32,
-      "community_name": "@/lib/legal-registry",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "[lang]/about/index.astro"
     },
     {
@@ -6980,8 +7002,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_about_index_getstaticpaths",
-      "community": 32,
-      "community_name": "@/lib/legal-registry",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -6991,8 +7013,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_apps_arisely_index",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "[lang]/apps/arisely/index.astro"
     },
     {
@@ -7002,8 +7024,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_apps_arisely_index_getstaticpaths",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7035,8 +7057,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_apps_fomogen_pricing_index",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "[lang]/apps/fomogen/pricing/index.astro"
     },
     {
@@ -7046,8 +7068,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_apps_fomogen_pricing_index_getstaticpaths",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7101,8 +7123,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_apps_screenveil_index",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 39,
+      "community_name": "@/components/common/Section.astro",
       "norm_label": "[lang]/apps/screenveil/index.astro"
     },
     {
@@ -7112,8 +7134,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_apps_screenveil_index_getstaticpaths",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 39,
+      "community_name": "@/components/common/Section.astro",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7167,8 +7189,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_compare_slug",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "[lang]/compare/[slug].astro"
     },
     {
@@ -7178,8 +7200,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_pages_lang_compare_slug_getstaticpaths",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7189,8 +7211,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_compare_index",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "[lang]/compare/index.astro"
     },
     {
@@ -7200,8 +7222,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_compare_index_getstaticpaths",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7211,8 +7233,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_digital_wellness_2026_guide_index",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "[lang]/digital-wellness-2026-guide/index.astro"
     },
     {
@@ -7222,8 +7244,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_digital_wellness_2026_guide_index_getstaticpaths",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7255,8 +7277,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_docs_product_index",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "[product]/index.astro"
     },
     {
@@ -7266,8 +7288,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_docs_product_index_getstaticpaths",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 45,
+      "community_name": "localize",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7277,8 +7299,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_docs_index",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "[lang]/docs/index.astro"
     },
     {
@@ -7288,8 +7310,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_docs_index_getstaticpaths",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7299,8 +7321,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_ecommerce_performance_2026_benchmarks_index",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 62,
+      "community_name": "@/page-templates/BlogPostPage.astro",
       "norm_label": "[lang]/ecommerce-performance-2026-benchmarks/index.astro"
     },
     {
@@ -7310,8 +7332,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_ecommerce_performance_2026_benchmarks_index_getstaticpaths",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 62,
+      "community_name": "@/page-templates/BlogPostPage.astro",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7321,8 +7343,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_lang_index",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "[lang]/index.astro"
     },
     {
@@ -7332,8 +7354,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_lang_index_getstaticpaths",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7365,8 +7387,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_about_index",
-      "community": 32,
-      "community_name": "@/lib/legal-registry",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "pages/about/index.astro"
     },
     {
@@ -7376,8 +7398,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_apps_arisely_index",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 80,
+      "community_name": "@/page-templates/CompareDetailPage.astro",
       "norm_label": "pages/apps/arisely/index.astro"
     },
     {
@@ -7398,8 +7420,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_apps_fomogen_pricing_index",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "pages/apps/fomogen/pricing/index.astro"
     },
     {
@@ -7431,8 +7453,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_apps_screenveil_index",
-      "community": 313,
-      "community_name": "3. Mobile API Optimization",
+      "community": 39,
+      "community_name": "@/components/common/Section.astro",
       "norm_label": "pages/apps/screenveil/index.astro"
     },
     {
@@ -7475,8 +7497,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_compare_slug",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "pages/compare/[slug].astro"
     },
     {
@@ -7486,8 +7508,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_pages_compare_slug_getstaticpaths",
-      "community": 370,
-      "community_name": "6. Scroll Animation Principles",
+      "community": 44,
+      "community_name": "@/page-templates/AppsFomogenPage.astro",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -7497,8 +7519,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_compare_index",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "pages/compare/index.astro"
     },
     {
@@ -7508,8 +7530,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_digital_wellness_2026_guide_index",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 282,
+      "community_name": "9. Cloud Security Considerations",
       "norm_label": "pages/digital-wellness-2026-guide/index.astro"
     },
     {
@@ -7651,8 +7673,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_docs_index",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 313,
+      "community_name": "3. Mobile API Optimization",
       "norm_label": "pages/docs/index.astro"
     },
     {
@@ -7706,8 +7728,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_ecommerce_performance_2026_benchmarks_index",
-      "community": 39,
-      "community_name": "@/components/common/Section.astro",
+      "community": 62,
+      "community_name": "@/page-templates/BlogPostPage.astro",
       "norm_label": "pages/ecommerce-performance-2026-benchmarks/index.astro"
     },
     {
@@ -7717,8 +7739,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_pages_index",
-      "community": 80,
-      "community_name": "@/page-templates/CompareDetailPage.astro",
+      "community": 371,
+      "community_name": "1. Modular Scale Principles",
       "norm_label": "pages/index.astro"
     },
     {
@@ -19630,8 +19652,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_1_color_theory_fundamentals",
-      "community": 396,
-      "community_name": "1. Color Theory Fundamentals",
+      "community": 380,
+      "community_name": "9. Performance Principles",
       "norm_label": "1. color theory fundamentals"
     },
     {
@@ -19641,8 +19663,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_the_color_wheel",
-      "community": 396,
-      "community_name": "1. Color Theory Fundamentals",
+      "community": 380,
+      "community_name": "9. Performance Principles",
       "norm_label": "the color wheel"
     },
     {
@@ -19652,8 +19674,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_color_relationships",
-      "community": 396,
-      "community_name": "1. Color Theory Fundamentals",
+      "community": 380,
+      "community_name": "9. Performance Principles",
       "norm_label": "color relationships"
     },
     {
@@ -19663,8 +19685,8 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_how_to_choose_a_scheme",
-      "community": 396,
-      "community_name": "1. Color Theory Fundamentals",
+      "community": 380,
+      "community_name": "9. Performance Principles",
       "norm_label": "how to choose a scheme:"
     },
     {
@@ -19707,8 +19729,8 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_3_color_psychology_meaning_selection",
-      "community": 384,
-      "community_name": "8. Hierarchy Principles",
+      "community": 396,
+      "community_name": "1. Color Theory Fundamentals",
       "norm_label": "3. color psychology - meaning & selection"
     },
     {
@@ -19718,8 +19740,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_how_to_choose_based_on_context",
-      "community": 384,
-      "community_name": "8. Hierarchy Principles",
+      "community": 396,
+      "community_name": "1. Color Theory Fundamentals",
       "norm_label": "how to choose based on context"
     },
     {
@@ -19729,8 +19751,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_emotional_associations_for_decision_making",
-      "community": 384,
-      "community_name": "8. Hierarchy Principles",
+      "community": 396,
+      "community_name": "1. Color Theory Fundamentals",
       "norm_label": "emotional associations (for decision making)"
     },
     {
@@ -19740,8 +19762,8 @@
       "source_location": "L115",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_color_system_selection_process",
-      "community": 384,
-      "community_name": "8. Hierarchy Principles",
+      "community": 396,
+      "community_name": "1. Color Theory Fundamentals",
       "norm_label": "selection process:"
     },
     {
@@ -20411,8 +20433,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_1_lottie_animations",
-      "community": 399,
-      "community_name": "8. Modern CSS Techniques",
+      "community": 400,
+      "community_name": "9. Performance Principles",
       "norm_label": "1. lottie animations"
     },
     {
@@ -20422,8 +20444,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_what_is_lottie",
-      "community": 399,
-      "community_name": "8. Modern CSS Techniques",
+      "community": 400,
+      "community_name": "9. Performance Principles",
       "norm_label": "what is lottie?"
     },
     {
@@ -20433,8 +20455,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use_lottie",
-      "community": 399,
-      "community_name": "8. Modern CSS Techniques",
+      "community": 400,
+      "community_name": "9. Performance Principles",
       "norm_label": "when to use lottie"
     },
     {
@@ -20444,8 +20466,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles",
-      "community": 399,
-      "community_name": "8. Modern CSS Techniques",
+      "community": 400,
+      "community_name": "9. Performance Principles",
       "norm_label": "principles"
     },
     {
@@ -20455,8 +20477,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_sources",
-      "community": 399,
-      "community_name": "8. Modern CSS Techniques",
+      "community": 400,
+      "community_name": "9. Performance Principles",
       "norm_label": "sources"
     },
     {
@@ -20466,8 +20488,8 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_2_gsap_greensock",
-      "community": 400,
-      "community_name": "9. Performance Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "2. gsap (greensock)"
     },
     {
@@ -20477,8 +20499,8 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_what_makes_gsap_different",
-      "community": 400,
-      "community_name": "9. Performance Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "what makes gsap different"
     },
     {
@@ -20488,8 +20510,8 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_core_concepts",
-      "community": 400,
-      "community_name": "9. Performance Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "core concepts"
     },
     {
@@ -20499,8 +20521,8 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use_gsap",
-      "community": 400,
-      "community_name": "9. Performance Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "when to use gsap"
     },
     {
@@ -20510,8 +20532,8 @@
       "source_location": "L77",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_77",
-      "community": 400,
-      "community_name": "9. Performance Principles",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "principles"
     },
     {
@@ -20576,8 +20598,8 @@
       "source_location": "L125",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_4_3d_css_transforms",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 399,
+      "community_name": "8. Modern CSS Techniques",
       "norm_label": "4. 3d css transforms"
     },
     {
@@ -20587,8 +20609,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_core_properties",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 399,
+      "community_name": "8. Modern CSS Techniques",
       "norm_label": "core properties"
     },
     {
@@ -20598,8 +20620,8 @@
       "source_location": "L138",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_common_3d_patterns",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 399,
+      "community_name": "8. Modern CSS Techniques",
       "norm_label": "common 3d patterns"
     },
     {
@@ -20609,8 +20631,8 @@
       "source_location": "L147",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_147",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 399,
+      "community_name": "8. Modern CSS Techniques",
       "norm_label": "principles"
     },
     {
@@ -20620,8 +20642,8 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_5_particle_effects",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 384,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "5. particle effects"
     },
     {
@@ -20631,8 +20653,8 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_types_of_particle_systems",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 384,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "types of particle systems"
     },
     {
@@ -20642,8 +20664,8 @@
       "source_location": "L168",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_libraries",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 384,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "libraries"
     },
     {
@@ -20653,8 +20675,8 @@
       "source_location": "L177",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_177",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 384,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "principles"
     },
     {
@@ -20664,8 +20686,8 @@
       "source_location": "L185",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_when_to_use",
-      "community": 93,
-      "community_name": "Motion Graphics Reference",
+      "community": 384,
+      "community_name": "8. Hierarchy Principles",
       "norm_label": "when to use"
     },
     {
@@ -20675,8 +20697,8 @@
       "source_location": "L195",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_6_scroll_driven_animations",
-      "community": 405,
-      "community_name": "6. Scroll-Driven Animations",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "6. scroll-driven animations"
     },
     {
@@ -20686,8 +20708,8 @@
       "source_location": "L197",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_native_css_modern",
-      "community": 405,
-      "community_name": "6. Scroll-Driven Animations",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "native css (modern)"
     },
     {
@@ -20697,8 +20719,8 @@
       "source_location": "L207",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_principles_207",
-      "community": 405,
-      "community_name": "6. Scroll-Driven Animations",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "principles"
     },
     {
@@ -20708,8 +20730,8 @@
       "source_location": "L216",
       "_origin": "ast",
       "id": "agent_skills_frontend_design_motion_graphics_best_practices",
-      "community": 405,
-      "community_name": "6. Scroll-Driven Animations",
+      "community": 93,
+      "community_name": "Motion Graphics Reference",
       "norm_label": "best practices"
     },
     {
@@ -27231,8 +27253,8 @@
       "source_location": "L193",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_5_semantic_colors",
-      "community": 406,
-      "community_name": "5. Semantic Colors",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "5. semantic colors"
     },
     {
@@ -27242,8 +27264,8 @@
       "source_location": "L195",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_consistent_meaning",
-      "community": 406,
-      "community_name": "5. Semantic Colors",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "consistent meaning"
     },
     {
@@ -27253,8 +27275,8 @@
       "source_location": "L204",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_semantic_color_rules",
-      "community": 406,
-      "community_name": "5. Semantic Colors",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "semantic color rules"
     },
     {
@@ -27264,8 +27286,8 @@
       "source_location": "L220",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_error_state_colors",
-      "community": 406,
-      "community_name": "5. Semantic Colors",
+      "community": 14,
+      "community_name": "Mobile Color System Reference",
       "norm_label": "error state colors"
     },
     {
@@ -27363,8 +27385,8 @@
       "source_location": "L337",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_8_color_anti_patterns",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 406,
+      "community_name": "5. Semantic Colors",
       "norm_label": "8. color anti-patterns"
     },
     {
@@ -27374,8 +27396,8 @@
       "source_location": "L339",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_common_mistakes",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 406,
+      "community_name": "5. Semantic Colors",
       "norm_label": "\u274c common mistakes"
     },
     {
@@ -27385,8 +27407,8 @@
       "source_location": "L350",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_ai_color_mistakes",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 406,
+      "community_name": "5. Semantic Colors",
       "norm_label": "\u274c ai color mistakes"
     },
     {
@@ -27396,8 +27418,8 @@
       "source_location": "L368",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_9_color_system_checklist",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 407,
+      "community_name": "9. Color System Checklist",
       "norm_label": "9. color system checklist"
     },
     {
@@ -27407,8 +27429,8 @@
       "source_location": "L370",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_before_choosing_colors",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 407,
+      "community_name": "9. Color System Checklist",
       "norm_label": "before choosing colors"
     },
     {
@@ -27418,8 +27440,8 @@
       "source_location": "L378",
       "_origin": "ast",
       "id": "agent_skills_mobile_design_mobile_color_system_before_release",
-      "community": 14,
-      "community_name": "Mobile Color System Reference",
+      "community": 407,
+      "community_name": "9. Color System Checklist",
       "norm_label": "before release"
     },
     {
@@ -36460,8 +36482,8 @@
       "source_location": "L100",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_4_attack_surface_mapping",
-      "community": 380,
-      "community_name": "9. Performance Principles",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "4. attack surface mapping"
     },
     {
@@ -36471,8 +36493,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_what_to_map",
-      "community": 380,
-      "community_name": "9. Performance Principles",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "what to map"
     },
     {
@@ -36482,8 +36504,8 @@
       "source_location": "L111",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_prioritization_matrix",
-      "community": 380,
-      "community_name": "9. Performance Principles",
+      "community": 156,
+      "community_name": "Vulnerability Scanner",
       "norm_label": "prioritization matrix"
     },
     {
@@ -36493,8 +36515,8 @@
       "source_location": "L124",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_5_risk_prioritization",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 405,
+      "community_name": "6. Scroll-Driven Animations",
       "norm_label": "5. risk prioritization"
     },
     {
@@ -36504,8 +36526,8 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_cvss_context",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 405,
+      "community_name": "6. Scroll-Driven Animations",
       "norm_label": "cvss + context"
     },
     {
@@ -36515,8 +36537,8 @@
       "source_location": "L135",
       "_origin": "ast",
       "id": "agent_skills_vulnerability_scanner_skill_prioritization_decision_tree",
-      "community": 156,
-      "community_name": "Vulnerability Scanner",
+      "community": 405,
+      "community_name": "6. Scroll-Driven Animations",
       "norm_label": "prioritization decision tree"
     },
     {
@@ -41833,21 +41855,21 @@
       "norm_label": "stopscroll \u2014 beste bewertung, mit eingebautem tageslimit"
     },
     {
-      "label": "Shortstop \u2014 die schlankeste, und wirklich kostenlos",
+      "label": "Shortstop \u2014 die schlankeste",
       "file_type": "document",
       "source_file": "src/content/blog/de/best-free-reels-shorts-blockers-android-2026.mdx",
       "source_location": "L132",
       "_origin": "ast",
-      "id": "src_content_blog_de_best_free_reels_shorts_blockers_android_2026_shortstop_die_schlankeste_und_wirklich_kostenlos",
+      "id": "src_content_blog_de_best_free_reels_shorts_blockers_android_2026_shortstop_die_schlankeste",
       "community": 319,
       "community_name": "1. Color Theory Fundamentals",
-      "norm_label": "shortstop \u2014 die schlankeste, und wirklich kostenlos"
+      "norm_label": "shortstop \u2014 die schlankeste"
     },
     {
       "label": "MindfulGuard \u2014 Tages- und Sitzungslimit gemeinsam",
       "file_type": "document",
       "source_file": "src/content/blog/de/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L152",
+      "source_location": "L153",
       "_origin": "ast",
       "id": "src_content_blog_de_best_free_reels_shorts_blockers_android_2026_mindfulguard_tages_und_sitzungslimit_gemeinsam",
       "community": 319,
@@ -41858,7 +41880,7 @@
       "label": "Wie Sie w\u00e4hlen",
       "file_type": "document",
       "source_file": "src/content/blog/de/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L181",
+      "source_location": "L182",
       "_origin": "ast",
       "id": "src_content_blog_de_best_free_reels_shorts_blockers_android_2026_wie_sie_w\u00e4hlen",
       "community": 319,
@@ -41869,7 +41891,7 @@
       "label": "Und die gro\u00dfen Namen unter den Blockern?",
       "file_type": "document",
       "source_file": "src/content/blog/de/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L203",
+      "source_location": "L204",
       "_origin": "ast",
       "id": "src_content_blog_de_best_free_reels_shorts_blockers_android_2026_und_die_grossen_namen_unter_den_blockern",
       "community": 319,
@@ -41880,7 +41902,7 @@
       "label": "Eines sollten Sie vor jeder Installation pr\u00fcfen",
       "file_type": "document",
       "source_file": "src/content/blog/de/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L216",
+      "source_location": "L217",
       "_origin": "ast",
       "id": "src_content_blog_de_best_free_reels_shorts_blockers_android_2026_eines_sollten_sie_vor_jeder_installation_pr\u00fcfen",
       "community": 319,
@@ -41891,7 +41913,7 @@
       "label": "Fazit",
       "file_type": "document",
       "source_file": "src/content/blog/de/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L231",
+      "source_location": "L232",
       "_origin": "ast",
       "id": "src_content_blog_de_best_free_reels_shorts_blockers_android_2026_fazit",
       "community": 319,
@@ -46376,21 +46398,21 @@
       "norm_label": "stopscroll \u2014 highest rating, built-in daily limit"
     },
     {
-      "label": "Shortstop \u2014 the leanest, and genuinely free",
+      "label": "Shortstop \u2014 the leanest",
       "file_type": "document",
       "source_file": "src/content/blog/en/best-free-reels-shorts-blockers-android-2026.mdx",
       "source_location": "L130",
       "_origin": "ast",
-      "id": "src_content_blog_en_best_free_reels_shorts_blockers_android_2026_shortstop_the_leanest_and_genuinely_free",
+      "id": "src_content_blog_en_best_free_reels_shorts_blockers_android_2026_shortstop_the_leanest",
       "community": 320,
       "community_name": "3. Dark Mode Design",
-      "norm_label": "shortstop \u2014 the leanest, and genuinely free"
+      "norm_label": "shortstop \u2014 the leanest"
     },
     {
       "label": "MindfulGuard \u2014 daily and per-session limits together",
       "file_type": "document",
       "source_file": "src/content/blog/en/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L149",
+      "source_location": "L151",
       "_origin": "ast",
       "id": "src_content_blog_en_best_free_reels_shorts_blockers_android_2026_mindfulguard_daily_and_per_session_limits_together",
       "community": 320,
@@ -46401,7 +46423,7 @@
       "label": "How to choose",
       "file_type": "document",
       "source_file": "src/content/blog/en/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L176",
+      "source_location": "L178",
       "_origin": "ast",
       "id": "src_content_blog_en_best_free_reels_shorts_blockers_android_2026_how_to_choose",
       "community": 320,
@@ -46412,7 +46434,7 @@
       "label": "What about the big-name blockers?",
       "file_type": "document",
       "source_file": "src/content/blog/en/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L197",
+      "source_location": "L199",
       "_origin": "ast",
       "id": "src_content_blog_en_best_free_reels_shorts_blockers_android_2026_what_about_the_big_name_blockers",
       "community": 320,
@@ -46423,7 +46445,7 @@
       "label": "One thing to check before you install any of these",
       "file_type": "document",
       "source_file": "src/content/blog/en/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L210",
+      "source_location": "L212",
       "_origin": "ast",
       "id": "src_content_blog_en_best_free_reels_shorts_blockers_android_2026_one_thing_to_check_before_you_install_any_of_these",
       "community": 320,
@@ -46434,7 +46456,7 @@
       "label": "Bottom line",
       "file_type": "document",
       "source_file": "src/content/blog/en/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L224",
+      "source_location": "L226",
       "_origin": "ast",
       "id": "src_content_blog_en_best_free_reels_shorts_blockers_android_2026_bottom_line",
       "community": 320,
@@ -50710,21 +50732,21 @@
       "norm_label": "stopscroll \u2014 la mejor valorada, con limite diario integrado"
     },
     {
-      "label": "Shortstop \u2014 la m\u00e1s ligera, y gratis de verdad",
+      "label": "Shortstop \u2014 la m\u00e1s ligera",
       "file_type": "document",
       "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
       "source_location": "L131",
       "_origin": "ast",
-      "id": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_shortstop_la_m\u00e1s_ligera_y_gratis_de_verdad",
+      "id": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_shortstop_la_m\u00e1s_ligera",
       "community": 334,
       "community_name": "4. Attack Surface Mapping",
-      "norm_label": "shortstop \u2014 la mas ligera, y gratis de verdad"
+      "norm_label": "shortstop \u2014 la mas ligera"
     },
     {
       "label": "MindfulGuard \u2014 l\u00edmite diario y por sesi\u00f3n a la vez",
       "file_type": "document",
       "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L150",
+      "source_location": "L152",
       "_origin": "ast",
       "id": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_mindfulguard_l\u00edmite_diario_y_por_sesi\u00f3n_a_la_vez",
       "community": 334,
@@ -50735,7 +50757,7 @@
       "label": "C\u00f3mo elegir",
       "file_type": "document",
       "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L178",
+      "source_location": "L180",
       "_origin": "ast",
       "id": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_c\u00f3mo_elegir",
       "community": 334,
@@ -50746,7 +50768,7 @@
       "label": "\u00bfY los bloqueadores de marca conocida?",
       "file_type": "document",
       "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L199",
+      "source_location": "L201",
       "_origin": "ast",
       "id": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_y_los_bloqueadores_de_marca_conocida",
       "community": 334,
@@ -50757,7 +50779,7 @@
       "label": "Una cosa que comprobar antes de instalar cualquiera de estas",
       "file_type": "document",
       "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L212",
+      "source_location": "L214",
       "_origin": "ast",
       "id": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_una_cosa_que_comprobar_antes_de_instalar_cualquiera_de_estas",
       "community": 334,
@@ -50768,7 +50790,7 @@
       "label": "En resumen",
       "file_type": "document",
       "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L226",
+      "source_location": "L228",
       "_origin": "ast",
       "id": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_en_resumen",
       "community": 334,
@@ -52844,21 +52866,21 @@
       "norm_label": "stopscroll \u2014 la meilleure note, avec limite quotidienne integree"
     },
     {
-      "label": "Shortstop \u2014 la plus l\u00e9g\u00e8re, et r\u00e9ellement gratuite",
+      "label": "Shortstop \u2014 la plus l\u00e9g\u00e8re",
       "file_type": "document",
       "source_file": "src/content/blog/fr/best-free-reels-shorts-blockers-android-2026.mdx",
       "source_location": "L134",
       "_origin": "ast",
-      "id": "src_content_blog_fr_best_free_reels_shorts_blockers_android_2026_shortstop_la_plus_l\u00e9g\u00e8re_et_r\u00e9ellement_gratuite",
+      "id": "src_content_blog_fr_best_free_reels_shorts_blockers_android_2026_shortstop_la_plus_l\u00e9g\u00e8re",
       "community": 321,
       "community_name": "7. Accessibility Guidelines",
-      "norm_label": "shortstop \u2014 la plus legere, et reellement gratuite"
+      "norm_label": "shortstop \u2014 la plus legere"
     },
     {
       "label": "MindfulGuard \u2014 limites quotidienne et par session ensemble",
       "file_type": "document",
       "source_file": "src/content/blog/fr/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L154",
+      "source_location": "L156",
       "_origin": "ast",
       "id": "src_content_blog_fr_best_free_reels_shorts_blockers_android_2026_mindfulguard_limites_quotidienne_et_par_session_ensemble",
       "community": 321,
@@ -52869,7 +52891,7 @@
       "label": "Comment choisir",
       "file_type": "document",
       "source_file": "src/content/blog/fr/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L184",
+      "source_location": "L186",
       "_origin": "ast",
       "id": "src_content_blog_fr_best_free_reels_shorts_blockers_android_2026_comment_choisir",
       "community": 321,
@@ -52880,7 +52902,7 @@
       "label": "Et les grands noms du blocage ?",
       "file_type": "document",
       "source_file": "src/content/blog/fr/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L206",
+      "source_location": "L208",
       "_origin": "ast",
       "id": "src_content_blog_fr_best_free_reels_shorts_blockers_android_2026_et_les_grands_noms_du_blocage",
       "community": 321,
@@ -52891,7 +52913,7 @@
       "label": "\u00c0 v\u00e9rifier avant d'installer l'une de ces applications",
       "file_type": "document",
       "source_file": "src/content/blog/fr/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L219",
+      "source_location": "L221",
       "_origin": "ast",
       "id": "src_content_blog_fr_best_free_reels_shorts_blockers_android_2026_\u00e0_v\u00e9rifier_avant_d_installer_l_une_de_ces_applications",
       "community": 321,
@@ -52902,7 +52924,7 @@
       "label": "En r\u00e9sum\u00e9",
       "file_type": "document",
       "source_file": "src/content/blog/fr/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L234",
+      "source_location": "L236",
       "_origin": "ast",
       "id": "src_content_blog_fr_best_free_reels_shorts_blockers_android_2026_en_r\u00e9sum\u00e9",
       "community": 321,
@@ -64182,7 +64204,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/i18n/utils.ts",
-      "source_location": "L3",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_i18n_utils",
+      "target": "src_i18n_utils_chromepath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/utils.ts",
+      "source_location": "L28",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_i18n_utils",
@@ -64193,7 +64226,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/i18n/utils.ts",
-      "source_location": "L20",
+      "source_location": "L45",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_i18n_utils",
@@ -64204,7 +64237,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/i18n/utils.ts",
-      "source_location": "L32",
+      "source_location": "L57",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_i18n_utils",
@@ -65395,7 +65428,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_common_footer_getfooterlinks",
-      "target": "src_i18n_utils_localepath"
+      "target": "src_i18n_utils_chromepath"
     },
     {
       "relation": "imports_from",
@@ -65413,11 +65446,22 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/common/LanguageToggle.astro",
-      "source_location": "L117",
+      "source_location": "L120",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_common_languagetoggle",
       "target": "src_components_common_languagetoggle_connectedcallback",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/common/LanguageToggle.astro",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_common_languagetoggle",
+      "target": "src_components_common_languagetoggle_list",
       "confidence_score": 1.0
     },
     {
@@ -65995,7 +66039,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_common_navbar",
-      "target": "src_i18n_utils_getlangfromurl",
+      "target": "src_i18n_utils_chromepath",
       "confidence_score": 1.0
     },
     {
@@ -66007,7 +66051,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_common_navbar",
-      "target": "src_i18n_utils_localepath",
+      "target": "src_i18n_utils_getlangfromurl",
       "confidence_score": 1.0
     },
     {
@@ -69856,6 +69900,30 @@
       "_origin": "ast",
       "source": "src_pages_legal_screenveil_terms_index",
       "target": "src_i18n_localize_localize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/utils.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_i18n_utils_chromepath",
+      "target": "src_i18n_utils_localepath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/page-templates/BlogPostPage.astro",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_page_templates_blogpostpage",
+      "target": "src_i18n_utils_chromepath",
       "confidence_score": 1.0
     },
     {
@@ -104643,7 +104711,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/de/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L216",
+      "source_location": "L217",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_de_best_free_reels_shorts_blockers_android_2026",
@@ -104654,7 +104722,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/de/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L231",
+      "source_location": "L232",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_de_best_free_reels_shorts_blockers_android_2026",
@@ -104676,7 +104744,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/de/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L152",
+      "source_location": "L153",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_de_best_free_reels_shorts_blockers_android_2026",
@@ -104713,7 +104781,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_de_best_free_reels_shorts_blockers_android_2026",
-      "target": "src_content_blog_de_best_free_reels_shorts_blockers_android_2026_shortstop_die_schlankeste_und_wirklich_kostenlos",
+      "target": "src_content_blog_de_best_free_reels_shorts_blockers_android_2026_shortstop_die_schlankeste",
       "confidence_score": 1.0
     },
     {
@@ -104731,7 +104799,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/de/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L203",
+      "source_location": "L204",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_de_best_free_reels_shorts_blockers_android_2026",
@@ -104742,7 +104810,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/de/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L181",
+      "source_location": "L182",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_de_best_free_reels_shorts_blockers_android_2026",
@@ -108724,7 +108792,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/en/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L224",
+      "source_location": "L226",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_en_best_free_reels_shorts_blockers_android_2026",
@@ -108746,7 +108814,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/en/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L176",
+      "source_location": "L178",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_en_best_free_reels_shorts_blockers_android_2026",
@@ -108768,7 +108836,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/en/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L149",
+      "source_location": "L151",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_en_best_free_reels_shorts_blockers_android_2026",
@@ -108790,7 +108858,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/en/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L210",
+      "source_location": "L212",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_en_best_free_reels_shorts_blockers_android_2026",
@@ -108816,7 +108884,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_en_best_free_reels_shorts_blockers_android_2026",
-      "target": "src_content_blog_en_best_free_reels_shorts_blockers_android_2026_shortstop_the_leanest_and_genuinely_free",
+      "target": "src_content_blog_en_best_free_reels_shorts_blockers_android_2026_shortstop_the_leanest",
       "confidence_score": 1.0
     },
     {
@@ -108834,7 +108902,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/en/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L197",
+      "source_location": "L199",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_en_best_free_reels_shorts_blockers_android_2026",
@@ -112618,7 +112686,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L178",
+      "source_location": "L180",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026",
@@ -112640,7 +112708,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L226",
+      "source_location": "L228",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026",
@@ -112651,7 +112719,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L150",
+      "source_location": "L152",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026",
@@ -112688,7 +112756,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026",
-      "target": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_shortstop_la_m\u00e1s_ligera_y_gratis_de_verdad",
+      "target": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026_shortstop_la_m\u00e1s_ligera",
       "confidence_score": 1.0
     },
     {
@@ -112706,7 +112774,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L212",
+      "source_location": "L214",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026",
@@ -112717,7 +112785,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L199",
+      "source_location": "L201",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_es_best_free_reels_shorts_blockers_android_2026",
@@ -114543,7 +114611,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/fr/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L184",
+      "source_location": "L186",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_fr_best_free_reels_shorts_blockers_android_2026",
@@ -114565,7 +114633,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/fr/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L234",
+      "source_location": "L236",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_fr_best_free_reels_shorts_blockers_android_2026",
@@ -114576,7 +114644,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/fr/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L206",
+      "source_location": "L208",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_fr_best_free_reels_shorts_blockers_android_2026",
@@ -114587,7 +114655,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/fr/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L154",
+      "source_location": "L156",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_fr_best_free_reels_shorts_blockers_android_2026",
@@ -114635,7 +114703,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_fr_best_free_reels_shorts_blockers_android_2026",
-      "target": "src_content_blog_fr_best_free_reels_shorts_blockers_android_2026_shortstop_la_plus_l\u00e9g\u00e8re_et_r\u00e9ellement_gratuite",
+      "target": "src_content_blog_fr_best_free_reels_shorts_blockers_android_2026_shortstop_la_plus_l\u00e9g\u00e8re",
       "confidence_score": 1.0
     },
     {
@@ -114653,7 +114721,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/blog/fr/best-free-reels-shorts-blockers-android-2026.mdx",
-      "source_location": "L219",
+      "source_location": "L221",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_blog_fr_best_free_reels_shorts_blockers_android_2026",
@@ -117720,5 +117788,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "9d7085c566f30ddb9642ba178cde9dcfb60b1956"
+  "built_at_commit": "d32309140867bd1edc354174b0912e73a6393673"
 }

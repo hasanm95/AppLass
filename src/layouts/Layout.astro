@@ -1,5 +1,5 @@
 ---
-import { getLangFromUrl, localePath } from '../i18n/utils';
+import { getLangFromUrl, localePath, chromePath } from '../i18n/utils';
 import '../globals.css';
 import '../fonts.css';
 import '../tw-animate.css';
@@ -91,7 +91,7 @@ const alternateOgLocales = availableLocales
 const defaultBreadcrumbs = [
   {
     name: localize("Home"),
-    item: `https://applass.com${localePath(documentLang, '/')}`
+    item: `https://applass.com${chromePath(documentLang, '/')}`
   }
 ];
 

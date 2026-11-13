@@ -1,16 +1,16 @@
 # Graph Report - AppLass  (2026-11-13)
 
 ## Corpus Check
-- 519 files · ~2,426,492 words
+- 523 files · ~2,436,534 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5068 nodes · 5492 edges · 405 communities (386 shown, 19 thin omitted)
+- 5113 nodes · 5535 edges · 408 communities (389 shown, 19 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.61)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `9d7085c5`
+- Built from commit: `d3230914`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -366,6 +366,7 @@
 - fr/how-to-stop-sleeping-through-your-alarm-android.md
 - 2. Font Pairing Principles
 - de/alarm-app-that-makes-you-do-pushups-android.md
+- de/alarm-clock-with-missions-to-turn-off.md
 - de/why-android-alarms-dont-go-off-exact-alarms.md
 - de/youtube-premium-alternatives-background-play.mdx
 - en/alarm-app-that-makes-you-do-pushups-android.md
@@ -411,6 +412,9 @@
 - 5. Persuasive Design (Ethical)
 - 8. Color Anti-Patterns
 - 9. Color System Checklist
+- 6. Scroll-Driven Animations
+- 5. Semantic Colors
+- 9. Color System Checklist
 
 ## God Nodes (most connected - your core abstractions)
 1. `@/i18n/localize` - 79 edges
@@ -419,8 +423,8 @@
 4. `@/page-templates/AppsAriselyPage.astro` - 33 edges
 5. `@/page-templates/AppsScreenveilPage.astro` - 31 edges
 6. `@/components/common/Section.astro` - 30 edges
-7. `@/page-templates/AppsMindfulGuardPage.astro` - 30 edges
-8. `@/i18n/utils` - 29 edges
+7. `@/i18n/utils` - 30 edges
+8. `@/page-templates/AppsMindfulGuardPage.astro` - 30 edges
 9. `../layouts/Layout.astro` - 29 edges
 10. `@/components/common/Navbar.astro` - 27 edges
 
@@ -429,17 +433,17 @@
   .agent/.shared/ui-ux-pro-max/scripts/design_system.py → .agent/.shared/ui-ux-pro-max/scripts/core.py
 - `getFooterLinks()` --calls--> `localize()`  [EXTRACTED]
   src/components/common/Footer.astro → src/i18n/localize.ts
-- `getFooterLinks()` --calls--> `localePath()`  [EXTRACTED]
-  src/components/common/Footer.astro → src/i18n/utils.ts
 - `getAriselyData()` --calls--> `localize()`  [EXTRACTED]
   src/constants/arisely-data.ts → src/i18n/localize.ts
 - `getFaqRegistry()` --calls--> `localize()`  [EXTRACTED]
   src/constants/faq-registry.ts → src/i18n/localize.ts
+- `getFomoGenData()` --calls--> `localize()`  [EXTRACTED]
+  src/constants/fomogen-data.ts → src/i18n/localize.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (405 total, 19 thin omitted)
+## Communities (408 total, 19 thin omitted)
 
 ### Community 0 - "@/i18n/localize"
 Cohesion: 0.11
@@ -482,8 +486,8 @@ Cohesion: 0.05
 Nodes (44): 10. iOS Checklist, 1. Human Interface Guidelines Philosophy, 2. iOS Typography, 3. iOS Color System, 4. iOS Layout & Spacing, 5. iOS Navigation Patterns, 6. iOS Components, 7. iOS Specific Patterns (+36 more)
 
 ### Community 10 - "Visual Effects Reference"
-Cohesion: 0.20
-Nodes (10): 10. Effect Selection Checklist, 6. Glow Effects Principles, 7. Overlay Techniques, Anti-Patterns, Colored Overlay, Element Glow, Gradient Overlay on Images, Pulsing Glow Animation (+2 more)
+Cohesion: 0.05
+Nodes (42): 10. Effect Selection Checklist, 1. Glassmorphism Principles, 2. Neomorphism Principles, 3. Shadow Hierarchy Principles, 4. Gradient Principles, 5. Border Effects Principles, 6. Glow Effects Principles, 7. Overlay Techniques (+34 more)
 
 ### Community 11 - "Mobile Backend Patterns"
 Cohesion: 0.05
@@ -518,8 +522,8 @@ Cohesion: 0.05
 Nodes (35): Audience-Specific (137-139), Competitor & Comparison (11-13), Content Formats (97-109), Content & SEO (1-10), Contents, Developer & Technical (133-136), Email Marketing (45-53), Events & Speaking (65-72) (+27 more)
 
 ### Community 19 - "@/page-templates/AppsMindfulGuardPage.astro"
-Cohesion: 0.16
-Nodes (12): @/constants/mindful-guard-data, getMindfulGuardData(), getMindfulGuardSchema(), MINDFUL_GUARD_SCHEMA, mindfulGuardPlayUrl(), @/page-templates/AppsMindfulGuardPage.astro, @/assets/apps/mindful-guard/home.jpg, @/assets/apps/mindful-guard/icon.png (+4 more)
+Cohesion: 0.12
+Nodes (18): @/constants/mindful-guard-data, getMindfulGuardData(), getMindfulGuardSchema(), MINDFUL_GUARD_SCHEMA, mindfulGuardPlayUrl(), isRtl(), ../layouts/Layout.astro, @/page-templates/AppsMindfulGuardPage.astro (+10 more)
 
 ### Community 20 - "Orchestrator - Native Multi-Agent Coordination"
 Cohesion: 0.06
@@ -550,8 +554,8 @@ Cohesion: 0.07
 Nodes (29): API Development, API Style Selection, Architecture, Backend Development Architect, Common Anti-Patterns You Avoid, 🛑 CRITICAL: CLARIFY BEFORE CODING (MANDATORY), Database & Data, Database Selection (2025) (+21 more)
 
 ### Community 27 - "Color System Reference"
-Cohesion: 0.14
-Nodes (14): 2. The 60-30-10 Rule, 4. Palette Generation Principles, 5. Context-Based Selection Guide, 8. Color Selection Checklist, 9. Anti-Patterns to Avoid, Color System Reference, Distribution Principle, ✅ DO: (+6 more)
+Cohesion: 0.11
+Nodes (18): 2. The 60-30-10 Rule, 4. Palette Generation Principles, 5. Context-Based Selection Guide, 7. Accessibility Guidelines, 8. Color Selection Checklist, 9. Anti-Patterns to Avoid, Color System Reference, Contrast Requirements (WCAG) (+10 more)
 
 ### Community 28 - "Mobile Design System"
 Cohesion: 0.07
@@ -570,8 +574,8 @@ Cohesion: 0.07
 Nodes (27): 10. Anti-Patterns, 1. MITRE ATT&CK Phases, 2. Reconnaissance Principles, 3. Initial Access Vectors, 4. Privilege Escalation Principles, 5. Defense Evasion Principles, 6. Lateral Movement Principles, 7. Active Directory Attacks (+19 more)
 
 ### Community 32 - "@/lib/legal-registry"
-Cohesion: 0.07
-Nodes (28): @/components/home/FoundersMoat.astro, @/components/home/Testimonials.astro, @/components/legal/AriselyPrivacy.astro, @/components/legal/AriselyTerms.astro, @/components/legal/FomogenPrivacy.astro, @/components/legal/FomogenTerms.astro, @/components/legal/MindfulGuardPrivacy.astro, @/components/legal/MindfulGuardTerms.astro (+20 more)
+Cohesion: 0.09
+Nodes (19): @/components/legal/AriselyPrivacy.astro, @/components/legal/AriselyTerms.astro, @/components/legal/FomogenPrivacy.astro, @/components/legal/FomogenTerms.astro, @/components/legal/MindfulGuardPrivacy.astro, @/components/legal/MindfulGuardTerms.astro, @/components/legal/ScreenveilPrivacy.astro, @/components/legal/ScreenveilTerms.astro (+11 more)
 
 ### Community 33 - "Database Architect"
 Cohesion: 0.07
@@ -598,8 +602,8 @@ Cohesion: 0.08
 Nodes (25): 1. Modular Skill Loading Protocol, 2. Enforcement Protocol, ⚠️ AGENT ROUTING CHECKLIST (MANDATORY BEFORE EVERY CODE/DESIGN RESPONSE), Agents & Skills, Auto-Selection Protocol, 🧹 Clean Code (Global Mandatory), CRITICAL: AGENT & SKILL PROTOCOL (START HERE), 📁 File Dependency Awareness (+17 more)
 
 ### Community 39 - "@/components/common/Section.astro"
-Cohesion: 0.08
-Nodes (29): @/components/common/FAQRegistrySection.astro, @/components/common/FAQSchema.astro, schema, @/components/home/AnswerNuggets.astro, @/constants/arisely-data, ariselyPlayUrl(), getAriselyData(), getAriselySchema() (+21 more)
+Cohesion: 0.12
+Nodes (20): @/components/common/FAQRegistrySection.astro, @/components/common/FAQSchema.astro, schema, @/components/home/AnswerNuggets.astro, @/constants/faq-registry, FAQRegistryKey, getFaqRegistry(), @/constants/screenveil-data (+12 more)
 
 ### Community 40 - "Debugger - Root Cause Analysis Expert"
 Cohesion: 0.08
@@ -618,12 +622,12 @@ Cohesion: 0.07
 Nodes (27): @astrojs/mdx, @astrojs/react, @astrojs/sitemap, class-variance-authority, i18next, dependencies, astro, @astrojs/mdx (+19 more)
 
 ### Community 44 - "@/page-templates/AppsFomogenPage.astro"
-Cohesion: 0.10
-Nodes (30): @/components/apps/fomogen/CoreFeatures.astro, @/components/apps/fomogen/FomoGenCTA.astro, @/components/apps/fomogen/FomoGenHero.astro, @/components/apps/fomogen/PricingMatrix.astro, fomoData, @/components/apps/fomogen/PricingSection.astro, @/components/apps/fomogen/SpeedBenefitSection.astro, @/components/apps/fomogen/TestimonialsSection.astro (+22 more)
+Cohesion: 0.08
+Nodes (40): @/components/apps/fomogen/CoreFeatures.astro, @/components/apps/fomogen/FomoGenCTA.astro, @/components/apps/fomogen/FomoGenHero.astro, @/components/apps/fomogen/PricingMatrix.astro, fomoData, @/components/apps/fomogen/PricingSection.astro, @/components/apps/fomogen/SpeedBenefitSection.astro, @/components/apps/fomogen/TestimonialsSection.astro (+32 more)
 
 ### Community 45 - "localize"
-Cohesion: 0.10
-Nodes (15): @/components/docs-content/fomogen/configuration/ConfigurationPage.astro, ../../../../components/docs-content/fomogen/countdown-timers/CountdownTimersPage.astro, ../../../../components/docs-content/fomogen/exit-intent/ExitIntentPage.astro, ../../../../components/docs-content/fomogen/faq/FAQPage.astro, ../../../../components/docs-content/fomogen/progress-indicators/ProgressIndicatorsPage.astro, ../../../../components/docs-content/fomogen/purchase-notifications/PurchaseNotificationsPage.astro, ../../../../components/docs-content/fomogen/social-proof-badges/SocialProofBadgesPage.astro, ../../../../components/docs-content/fomogen/sticky-cart/StickyCartPage.astro (+7 more)
+Cohesion: 0.06
+Nodes (22): ./LanguageToggle.astro, list, @/components/docs-content/fomogen/configuration/ConfigurationPage.astro, ../../../../components/docs-content/fomogen/countdown-timers/CountdownTimersPage.astro, ../../../../components/docs-content/fomogen/exit-intent/ExitIntentPage.astro, ../../../../components/docs-content/fomogen/faq/FAQPage.astro, ../../../../components/docs-content/fomogen/progress-indicators/ProgressIndicatorsPage.astro, ../../../../components/docs-content/fomogen/purchase-notifications/PurchaseNotificationsPage.astro (+14 more)
 
 ### Community 46 - "Game Audio Principles"
 Cohesion: 0.08
@@ -690,8 +694,8 @@ Cohesion: 0.10
 Nodes (20): 1. Process Management Principles, 2. Monitoring Principles, 3. Log Management Principles, 4. Scaling Decisions, 5. Health Check Principles, 6. Security Principles, 7. Troubleshooting Priority, 8. Anti-Patterns (+12 more)
 
 ### Community 62 - "@/page-templates/BlogPostPage.astro"
-Cohesion: 0.17
-Nodes (16): @/components/blog/BlogCard.astro, @/components/blog/ReadingProgressBar.astro, @/components/blog/ShareArticle.astro, @/lib/blog, getBlogCategories(), getBlogPostBySlug(), getBlogPosts(), localesForPost() (+8 more)
+Cohesion: 0.13
+Nodes (18): @/components/blog/BlogCard.astro, @/components/blog/ReadingProgressBar.astro, @/components/blog/ShareArticle.astro, @/lib/blog, blogPath(), getBlogCategories(), getBlogPostBySlug(), getBlogPosts() (+10 more)
 
 ### Community 63 - "The 2026 Benchmarks by Niche"
 Cohesion: 0.10
@@ -762,8 +766,8 @@ Cohesion: 0.11
 Nodes (17): Antigravity Built-in Agents, Available Agents, Best Practices, Key Benefits, Native Agent Invocation, Native Parallel Agents, Orchestration Patterns, Overview (+9 more)
 
 ### Community 80 - "@/page-templates/CompareDetailPage.astro"
-Cohesion: 0.08
-Nodes (26): ./LanguageToggle.astro, @/components/home/SocialProof.astro, LocalizeProps, @/i18n/config, i18nConfig, isRtl(), Locale, localeMeta (+18 more)
+Cohesion: 0.09
+Nodes (21): @/components/common/SubpageHero.astro, @/constants/arisely-data, ariselyPlayUrl(), getAriselyData(), getAriselySchema(), @/lib/lastUpdated, cache, commitDate() (+13 more)
 
 ### Community 81 - "Game Developer Agent"
 Cohesion: 0.12
@@ -814,8 +818,8 @@ Cohesion: 0.12
 Nodes (15): 1. README Structure, 2. API Documentation Structure, 3. Code Comment Guidelines, 4. Changelog Template (Keep a Changelog), 5. Architecture Decision Record (ADR), 6. AI-Friendly Documentation (2025), 7. Structure Principles, Documentation Templates (+7 more)
 
 ### Community 93 - "Motion Graphics Reference"
-Cohesion: 0.06
-Nodes (35): 10. Quick Reference, 1. Lottie Animations, 2. GSAP (GreenSock), 3. SVG Animations, 4. 3D CSS Transforms, 5. Particle Effects, 6. Scroll-Driven Animations, 7. Performance Principles (+27 more)
+Cohesion: 0.12
+Nodes (16): 10. Quick Reference, 1. Lottie Animations, 6. Scroll-Driven Animations, 7. Performance Principles, 8. Motion Graphics Decision Tree, 9. Anti-Patterns, Best Practices, GPU vs CPU Animation (+8 more)
 
 ### Community 94 - "i18n & Localization"
 Cohesion: 0.12
@@ -842,8 +846,8 @@ Cohesion: 0.13
 Nodes (14): Antigravity Skills, Bước 1: Tạo thư mục, Bước 1: Tạo thư mục, Bước 2: Tạo file template, Bước 2: Tạo SKILL.md, Bước 3: Tạo SKILL.md, Cấu trúc thư mục kỹ năng, 📁 Cấu trúc và Phạm vi (+6 more)
 
 ### Community 100 - "Decision Trees & Context Templates"
-Cohesion: 0.05
-Nodes (39): 10. Complexity Estimation, 1. Master Decision Tree, 2. Audience Decision Tree, 3. Color Selection Decision Tree, 4. Typography Decision Tree, 5. E-commerce Guidelines {#e-commerce}, 6. SaaS Dashboard Guidelines {#saas}, 7. Landing Page Guidelines {#landing-page} (+31 more)
+Cohesion: 0.10
+Nodes (20): 1. Master Decision Tree, 2. Audience Decision Tree, 3. Color Selection Decision Tree, 4. Typography Decision Tree, 7. Landing Page Guidelines {#landing-page}, 8. Portfolio Guidelines {#portfolio}, Color Thinking:, Color Thinking: (+12 more)
 
 ### Community 101 - "Mobile Game Development"
 Cohesion: 0.13
@@ -946,7 +950,7 @@ Cohesion: 0.17
 Nodes (11): API Security Testing, Authentication Testing, Authorization Testing, BOLA/IDOR Testing, GraphQL Security, Input Validation Testing, JWT Testing, OWASP API Security Top 10 (+3 more)
 
 ### Community 127 - "frontend-design/SKILL.md"
-Cohesion: 0.29
+Cohesion: 0.15
 Nodes (6): Design Workflow, Guidelines Source, How It Works, Related Skills, Usage, Web Interface Guidelines
 
 ### Community 128 - "1. Core UX Laws"
@@ -1063,7 +1067,7 @@ Nodes (8): check_page(), find_pages(), is_page_file(), main(), Path, Check if th
 
 ### Community 156 - "Vulnerability Scanner"
 Cohesion: 0.22
-Nodes (9): 10. Anti-Patterns, 5. Risk Prioritization, 7. Scanning Methodology, CVSS + Context, Phase-Based Approach, Prioritization Decision Tree, 📋 Reference Files, 🔧 Runtime Scripts (+1 more)
+Nodes (9): 10. Anti-Patterns, 4. Attack Surface Mapping, 7. Scanning Methodology, Phase-Based Approach, Prioritization Matrix, 📋 Reference Files, 🔧 Runtime Scripts, Vulnerability Scanner (+1 more)
 
 ### Community 157 - "/preview - Preview Management"
 Cohesion: 0.22
@@ -1534,8 +1538,8 @@ Cohesion: 0.33
 Nodes (5): Das Zero-Telemetry-Manifest, Datenschutz als Fundament, Holen Sie sich Ihre neuronale Architektur zurück, Warum Datenschutz gleich Performance ist, Was Analytics wirklich kostet
 
 ### Community 282 - "9. Cloud Security Considerations"
-Cohesion: 0.10
-Nodes (28): content, referrer, content, content, content, ./MobileMenuToggle.astro, @/components/common/Navbar.astro, ../components/docs-content/DocsHubPage.astro (+20 more)
+Cohesion: 0.09
+Nodes (33): content, referrer, content, content, content, @/components/common/Footer.astro, currentLang, currentYear (+25 more)
 
 ### Community 284 - "@astrojs/check"
 Cohesion: 0.67
@@ -1598,8 +1602,8 @@ Cohesion: 0.25
 Nodes (7): Blocage de toute l'application ou blocage des seuls Reels, Et les Reels dans le navigateur ?, L'essentiel, Limite quotidienne ou limite par session pour les Reels, Limite Reels uniquement face aux alternatives, Pas à pas : bloquer les Reels Instagram en moins de deux minutes, Pourquoi il n'existe pas de vrai bouton « désactiver » pour les Reels
 
 ### Community 313 - "3. Mobile API Optimization"
-Cohesion: 0.15
-Nodes (13): @/constants/screenveil-data, getScreenveilData(), getScreenveilSchema(), SCREENVEIL_SCHEMA, screenveilPlayUrl(), @/page-templates/AppsScreenveilPage.astro, @/assets/apps/screenveil/icon.png, @/assets/apps/screenveil/one-tap.jpg (+5 more)
+Cohesion: 0.16
+Nodes (8): @/i18n, localeModules, resources, setLocale(), @/page-templates/AppsFomogenPricingPage.astro, meta, @/page-templates/DocsHubPage.astro, meta
 
 ### Community 314 - "8. Security for Mobile"
 Cohesion: 0.14
@@ -1777,6 +1781,10 @@ Nodes (10): Con qué números empezar, El límite diario integrado de Instagram,
 Cohesion: 0.20
 Nodes (9): Alle 10 Missionen und für wen sie sind, Ausprobieren, Ehrliche Einordnung, Mehrere Missionen verketten, Missions-Wecker gegen normalen Wecker, Privatsphäre: Die Kamera bleibt auf deinem Telefon, So funktioniert die KI-Liegestütz-Mission, Warum eine Aufgabe die Schlummertaste schlägt (+1 more)
 
+### Community 358 - "de/alarm-clock-with-missions-to-turn-off.md"
+Cohesion: 0.17
+Nodes (11): Alarm Clock Xtreme — los mejores acertijos gratuitos, Alarmy — la opción por defecto, AMdroid — los apagados más originales, Antes de culpar a la app, Arisely — la misión de flexiones verificada por cámara, Cómo elegir, Las 5 funciones que deciden si te levantas, Las 6 opciones principales, comparadas (+3 more)
+
 ### Community 359 - "de/why-android-alarms-dont-go-off-exact-alarms.md"
 Cohesion: 0.17
 Nodes (11): Ein Wecker, der all das umsetzt, Schnelle Diagnose, Teil 2: Der Wecker klingelte und du hast ihn verschlafen, Ursache 1: Der Alarm war nicht exakt, Ursache 2: Die Berechtigung für exakte Alarme ist verweigert, Ursache 3: Energieverwaltung des Herstellers, Ursache 4: Er klingelte, aber du hast ihn nicht gehört, Ursache 5: Zeitzone, Updates und die Uhr-App selbst (+3 more)
@@ -1822,12 +1830,12 @@ Cohesion: 0.22
 Nodes (8): En resumen, Lo que sí funciona: el bloqueo a nivel de feed, Los Shorts frente al resto de YouTube, Límite diario frente a límite por sesión, Paso a paso: bloquear los Shorts de YouTube en menos de dos minutos, Por qué «bloquea YouTube y ya» es un mal consejo, Por qué no basta con ocultar la sección de Shorts, ¿Y los Shorts en el navegador?
 
 ### Community 370 - "6. Scroll Animation Principles"
-Cohesion: 0.13
-Nodes (18): @/components/compare/CompareFooter.astro, @/components/compare/CompareHero.astro, @/components/compare/CompareTestimonial.astro, @/components/compare/ComparisonMatrix.astro, @/components/compare/TechnicalDebt.astro, @/components/compare/ValueHighlights.astro, cards, @/components/ui/link-button (+10 more)
+Cohesion: 0.27
+Nodes (7): @/components/blog/AppCallout.astro, content, href, ParallaxLayer, useParallax(), playUrl(), rafThrottle()
 
 ### Community 371 - "1. Modular Scale Principles"
-Cohesion: 0.16
-Nodes (13): @/components/common/Footer.astro, currentLang, currentYear, footerLinks, getFooterLinks(), @/components/home/ProductShowcase.astro, getProducts(), @/page-templates/AppsPage.astro (+5 more)
+Cohesion: 0.11
+Nodes (24): @/components/home/FoundersMoat.astro, @/components/home/ProductShowcase.astro, @/components/home/SocialProof.astro, @/components/home/SolutionsSection.astro, ICONS, lang, solutionsData, @/components/home/Testimonials.astro (+16 more)
 
 ### Community 372 - "de/best-alarm-apps-for-heavy-sleepers-android-2026.md"
 Cohesion: 0.17
@@ -1862,12 +1870,12 @@ Cohesion: 0.18
 Nodes (10): Alternativas a Opal para Android, comparadas, AppBlock (la mejor para reglas por lugar o wifi), Bienestar digital (gratis, ya integrado), Cómo elegir, Freedom (la mejor para móvil y ordenador juntos), Mindful Guard (la mejor alternativa gratis a Opal), One Sec (la mejor para fricción suave), Opal en Android: primero los datos (+2 more)
 
 ### Community 380 - "9. Performance Principles"
-Cohesion: 0.67
-Nodes (3): 4. Attack Surface Mapping, Prioritization Matrix, What to Map
+Cohesion: 0.50
+Nodes (4): 1. Color Theory Fundamentals, Color Relationships, How to Choose a Scheme:, The Color Wheel
 
 ### Community 381 - "1. Glassmorphism Principles"
-Cohesion: 0.40
-Nodes (5): 1. Glassmorphism Principles, The Pattern (Customize Values), What Makes Glassmorphism Work, When NOT to Use, When to Use Glassmorphism
+Cohesion: 0.17
+Nodes (11): Causa 1: La alarma no era exacta, Causa 2: El permiso de alarmas exactas está denegado, Causa 3: Gestión de energía del fabricante, Causa 4: Sonó, pero no la oíste, Causa 5: Zona horaria, actualizaciones y la propia app Reloj, Causa 6: Vaciaste la app de recientes, Causa 7: Modo de ahorro de batería, Diagnóstico rápido (+3 more)
 
 ### Community 382 - "5. Responsive Typography Principles"
 Cohesion: 0.22
@@ -1878,8 +1886,8 @@ Cohesion: 0.25
 Nodes (7): Bloquear la app entera frente a bloquear solo los Reels, El límite solo de Reels frente a las alternativas, En resumen, Límite diario frente a límite por sesión, Paso a paso: bloquear los Reels de Instagram en menos de dos minutos, Por qué no existe un «apagado» real para los Reels, ¿Y los Reels en el navegador?
 
 ### Community 384 - "8. Hierarchy Principles"
-Cohesion: 0.50
-Nodes (4): 3. Color Psychology - Meaning & Selection, Emotional Associations (For Decision Making), How to Choose Based on Context, Selection Process:
+Cohesion: 0.40
+Nodes (5): 5. Particle Effects, Libraries, Principles, Types of Particle Systems, When to Use
 
 ### Community 385 - "3. Stack Navigation"
 Cohesion: 0.67
@@ -1894,20 +1902,20 @@ Cohesion: 0.29
 Nodes (6): Método 1 — Deja el vídeo delante y pon la pantalla en negro (gratis, cualquier app), Método 2 — NewPipe (gratis, código abierto), Método 3 — YouTube Premium Lite (ahora con reproducción en segundo plano), ¿Por qué dejó de funcionar el truco de Firefox?, ¿Qué cambió en enero de 2026?, ¿Qué método deberías usar?
 
 ### Community 388 - "2. Neomorphism Principles"
-Cohesion: 0.40
-Nodes (5): 2. Neomorphism Principles, Accessibility Warning, The Pattern, What Makes Neomorphism Work, When to Use
+Cohesion: 0.20
+Nodes (9): Contexto honesto, Cómo funciona la misión de flexiones con IA, Despertador con misiones frente a despertador normal, Encadenar varias misiones, Las 10 misiones y para quién es cada una, Por qué una misión física gana a cualquier otro «despertador duro», Por qué una tarea gana al botón de posponer, Privacidad: la cámara no sale de tu móvil (+1 more)
 
 ### Community 392 - "2. Tab Bar Navigation"
-Cohesion: 0.40
-Nodes (5): 3. Shadow Hierarchy Principles, Concept: Shadows Indicate Elevation, Dark Mode Shadows, Principles for Natural Shadows, Shadow Properties to Adjust
+Cohesion: 0.22
+Nodes (8): Alarm Clock Xtreme (la mejor para acertijos gratis a gran escala), Alternativas a Alarmy comparadas, AMdroid (la mejor para apagados poco corrientes), Arisely (la mejor para un despertar físico), Cómo elegir, Lo que Alarmy hace bien (y por qué la gente se va), Reloj de Google (cuando no necesitas nada de esto), Sleep as Android (la mejor para seguimiento del sueño)
 
 ### Community 393 - "3. Stack Navigation"
-Cohesion: 0.50
-Nodes (4): 7. Accessibility Guidelines, Contrast Requirements (WCAG), How to Check Contrast, Safe Patterns
+Cohesion: 0.40
+Nodes (5): 5. E-commerce Guidelines {#e-commerce}, Color Thinking:, Key Principles (Not Fixed Rules), Layout Principles:, Psychology to Apply:
 
 ### Community 394 - "4. Gradient Principles"
 Cohesion: 0.40
-Nodes (5): 4. Gradient Principles, Creating Harmonious Gradients, Gradient Syntax Pattern, Mesh Gradients, Types and When to Use
+Nodes (5): 6. SaaS Dashboard Guidelines {#saas}, Color Thinking:, Key Principles, Layout Principles:, Psychology to Apply:
 
 ### Community 395 - "_README.md"
 Cohesion: 0.50
@@ -1915,23 +1923,23 @@ Nodes (3): Blog-first locale: only translated posts live here (Phase 1+)., Spani
 
 ### Community 396 - "1. Color Theory Fundamentals"
 Cohesion: 0.50
-Nodes (4): 1. Color Theory Fundamentals, Color Relationships, How to Choose a Scheme:, The Color Wheel
+Nodes (4): 3. Color Psychology - Meaning & Selection, Emotional Associations (For Decision Making), How to Choose Based on Context, Selection Process:
 
 ### Community 397 - "6. Dark Mode Principles"
 Cohesion: 0.50
 Nodes (4): 6. Dark Mode Principles, Adapting Colors for Dark Mode, Contrast in Dark Mode, Key Rules (No Fixed Codes)
 
 ### Community 398 - "5. Border Effects Principles"
-Cohesion: 0.50
-Nodes (4): 5. Border Effects Principles, Animated Borders, Glow Borders, Gradient Borders
+Cohesion: 0.40
+Nodes (5): 9. Pre-Design Checklists, Before Choosing Colors, Before Delivery, Before Finalizing Layout, Before Starting ANY Design
 
 ### Community 399 - "8. Modern CSS Techniques"
 Cohesion: 0.50
-Nodes (4): 8. Modern CSS Techniques, Container Queries (Concept), :has() Selector (Concept), Scroll-Driven Animations (Concept)
+Nodes (4): 4. 3D CSS Transforms, Common 3D Patterns, Core Properties, Principles
 
 ### Community 400 - "9. Performance Principles"
-Cohesion: 0.50
-Nodes (4): 9. Performance Principles, GPU-Accelerated Properties, Reduced Motion, will-change Usage
+Cohesion: 0.40
+Nodes (5): 2. GSAP (GreenSock), Core Concepts, Principles, What Makes GSAP Different, When to Use GSAP
 
 ### Community 401 - "4. Cognitive Load Management"
 Cohesion: 0.67
@@ -1942,29 +1950,41 @@ Cohesion: 0.67
 Nodes (3): 5. Persuasive Design (Ethical), Ethical Persuasion Techniques, Nudge Patterns
 
 ### Community 403 - "8. Color Anti-Patterns"
+Cohesion: 0.40
+Nodes (5): 3. SVG Animations, Line Drawing Principles, Principles, Types of SVG Animation, When to Use SVG Animations
+
+### Community 404 - "9. Color System Checklist"
+Cohesion: 0.50
+Nodes (4): 10. Complexity Estimation, Large Projects (Weeks), Medium Projects (Days), Quick Projects (Hours)
+
+### Community 405 - "6. Scroll-Driven Animations"
+Cohesion: 0.67
+Nodes (3): 5. Risk Prioritization, CVSS + Context, Prioritization Decision Tree
+
+### Community 406 - "5. Semantic Colors"
 Cohesion: 0.67
 Nodes (3): 8. Color Anti-Patterns, ❌ AI Color Mistakes, ❌ Common Mistakes
 
-### Community 404 - "9. Color System Checklist"
+### Community 407 - "9. Color System Checklist"
 Cohesion: 0.67
 Nodes (3): 9. Color System Checklist, Before Choosing Colors, Before Release
 
 ## Knowledge Gaps
-- **3472 isolated node(s):** `Colors`, `Colors`, `blogLastmod`, `$schema`, `style` (+3467 more)
+- **3512 isolated node(s):** `Colors`, `Colors`, `blogLastmod`, `$schema`, `style` (+3507 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **19 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
+- **Why does `Visual Effects Reference` connect `Visual Effects Reference` to `frontend-design/SKILL.md`?**
+  _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **Why does `Touch Psychology Reference` connect `Touch Psychology Reference` to `mobile-design/SKILL.md`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **Why does `Mobile Performance Reference` connect `Mobile Performance Reference` to `mobile-design/SKILL.md`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
-- **Why does `Frontend Design System` connect `Frontend Design System` to `de/alarm-clock-with-missions-to-turn-off.md`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `Colors`, `Colors`, `blogLastmod` to the rest of the system?**
-  _3472 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _3512 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `@/i18n/localize` be split into smaller, more focused modules?**
   _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
 - **Should `design_system.py` be split into smaller, more focused modules?**

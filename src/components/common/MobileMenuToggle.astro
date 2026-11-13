@@ -1,5 +1,5 @@
 ---
-import { localePath } from "@/i18n/utils";
+import { chromePath } from "@/i18n/utils";
 import { localize } from "@/i18n/localize";
 
 interface Props {
@@ -37,19 +37,19 @@ const { isDark, currentLang, hasCustomBranding, customCTAHtml } = Astro.props;
     <div class="flex flex-col gap-8">
       {!hasCustomBranding && (
         <>
-          <a href={localePath(currentLang, '/')} class:list={["mobile-nav-link text-4xl font-black tracking-tighter transition-all hover:translate-x-2 block", isDark ? "text-white" : "text-slate-900"]}>
+          <a href={chromePath(currentLang, '/')} class:list={["mobile-nav-link text-4xl font-black tracking-tighter transition-all hover:translate-x-2 block", isDark ? "text-white" : "text-slate-900"]}>
             {localize("Home")}
           </a>
-          <a href={localePath(currentLang, '/about')} class:list={["mobile-nav-link text-4xl font-black tracking-tighter transition-all hover:translate-x-2 block", isDark ? "text-white" : "text-slate-900"]}>
+          <a href={chromePath(currentLang, '/about')} class:list={["mobile-nav-link text-4xl font-black tracking-tighter transition-all hover:translate-x-2 block", isDark ? "text-white" : "text-slate-900"]}>
             {localize("About")}
           </a>
-          <a href={localePath(currentLang, '/apps')} class:list={["mobile-nav-link text-4xl font-black tracking-tighter transition-all hover:translate-x-2 block", isDark ? "text-white" : "text-slate-900"]}>
+          <a href={chromePath(currentLang, '/apps')} class:list={["mobile-nav-link text-4xl font-black tracking-tighter transition-all hover:translate-x-2 block", isDark ? "text-white" : "text-slate-900"]}>
             {localize("Ecosystem")}
           </a>
-          <a href={localePath(currentLang, '/docs')} class:list={["mobile-nav-link text-4xl font-black tracking-tighter transition-all hover:translate-x-2 block", isDark ? "text-white" : "text-slate-900"]}>
+          <a href={chromePath(currentLang, '/docs')} class:list={["mobile-nav-link text-4xl font-black tracking-tighter transition-all hover:translate-x-2 block", isDark ? "text-white" : "text-slate-900"]}>
             {localize("Docs")}
           </a>
-          <a href={localePath(currentLang, '/blog')} class:list={["mobile-nav-link text-4xl font-black tracking-tighter transition-all hover:translate-x-2 block", isDark ? "text-white" : "text-slate-900"]}>
+          <a href={chromePath(currentLang, '/blog')} class:list={["mobile-nav-link text-4xl font-black tracking-tighter transition-all hover:translate-x-2 block", isDark ? "text-white" : "text-slate-900"]}>
             {localize("Logic Lab")}
           </a>
         </>
@@ -60,7 +60,7 @@ const { isDark, currentLang, hasCustomBranding, customCTAHtml } = Astro.props;
           <div class="mobile-nav-link w-full [&>button]:w-full [&>a]:w-full" set:html={customCTAHtml} />
         ) : (
           <a
-            href={localePath(currentLang, '/about')}
+            href={chromePath(currentLang, '/about')}
             class:list={[
               "mobile-nav-link inline-flex h-14 w-full items-center justify-center rounded-2xl text-lg font-bold transition-all",
               isDark
