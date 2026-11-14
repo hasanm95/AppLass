@@ -38,6 +38,10 @@ export interface MarkdownBlogPost {
   category: string;
   author: string;
   excerpt: string;
+  // Meta description / JSON-LD description. Written for the SERP snippet, which is a
+  // different job from `excerpt` (the teaser on the blog index card). Falls back to
+  // excerpt when a post has none.
+  description?: string;
   thumbnail: { src: string; width: number; height: number; format: string } | string;
   content: string;
   featured?: boolean;
@@ -47,6 +51,11 @@ export interface MarkdownBlogPost {
   keywords?: string;
   tags?: string[];
   breadcrumbName?: string;
+  howTo?: {
+    name?: string;
+    totalTime?: string;
+    steps: { name: string; text: string }[];
+  };
   sidebarApps?: string[];
   ogImage?: string;
 }
@@ -64,6 +73,7 @@ export async function getBlogPosts(lang: string = "en"): Promise<MarkdownBlogPos
       category: post.data.category,
       author: post.data.author,
       excerpt: post.data.excerpt,
+      description: post.data.description,
       thumbnail: post.data.thumbnail || "",
       featured: post.data.featured || false,
       faqs: post.data.faqs || [],
@@ -72,6 +82,7 @@ export async function getBlogPosts(lang: string = "en"): Promise<MarkdownBlogPos
       keywords: post.data.keywords,
       tags: post.data.tags || [],
       breadcrumbName: post.data.breadcrumbName,
+      howTo: post.data.howTo,
       sidebarApps: post.data.sidebarApps || [],
       ogImage: post.data.ogImage,
     } as MarkdownBlogPost;
@@ -101,6 +112,7 @@ export async function getBlogPostBySlug(slug: string, lang: string = "en"): Prom
       category: entry.data.category,
       author: entry.data.author,
       excerpt: entry.data.excerpt,
+      description: entry.data.description,
       thumbnail: entry.data.thumbnail || "",
       featured: entry.data.featured || false,
       faqs: entry.data.faqs || [],
@@ -109,6 +121,7 @@ export async function getBlogPostBySlug(slug: string, lang: string = "en"): Prom
       keywords: entry.data.keywords,
       tags: entry.data.tags || [],
       breadcrumbName: entry.data.breadcrumbName,
+      howTo: entry.data.howTo,
       sidebarApps: entry.data.sidebarApps || [],
       ogImage: entry.data.ogImage,
     } as MarkdownBlogPost;
