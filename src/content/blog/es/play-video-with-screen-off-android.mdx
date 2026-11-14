@@ -1,0 +1,113 @@
+---
+title: "Cómo reproducir vídeo con la pantalla apagada en Android (2026)"
+description: "Casi todas las apps de vídeo se paran al bloquear el teléfono. Por qué ocurre, qué aplicaciones tienen su propio modo en segundo plano o solo audio, y cómo mantener cualquier vídeo —clases, cursos, streams— sonando con una pantalla negra."
+date: "2026-11-14"
+dateModified: "2026-11-14"
+author: "Equipo AppLass"
+excerpt: "Bloqueas el teléfono y casi todos los vídeos se paran. Mira primero si la aplicación tiene su propia opción de segundo plano o solo audio; si no la tiene, déjala abierta detrás de una capa negra, que mantiene el vídeo sonando mientras la pantalla no muestra nada."
+tags: ["android", "pantalla apagada", "segundo plano", "clases", "batería"]
+category: "Aplicaciones Android"
+keywords: "reproducir vídeo con la pantalla apagada android, ver vídeo con pantalla apagada, mantener el vídeo sonando con la pantalla apagada, vlc reproducir con pantalla apagada, escuchar una clase con la pantalla apagada, reproducción de vídeo en segundo plano android, screenveil"
+breadcrumbName: "Vídeo con la pantalla apagada"
+sidebarApps:
+  - screenveil
+featured: false
+faqs:
+  - question: "¿Cómo reproduzco un vídeo con la pantalla apagada en Android?"
+    answer: "Comprueba primero si la aplicación tiene reproducción en segundo plano o un modo solo audio. Si no, deja la aplicación abierta y cubre la pantalla con una capa negra como ScreenVeil. Para Android la aplicación sigue en pantalla, así que el vídeo continúa mientras la pantalla muestra negro puro e ignora los toques."
+  - question: "¿Por qué se para mi vídeo al bloquear el teléfono?"
+    answer: "Al bloquear el teléfono, Android manda la aplicación de vídeo a segundo plano. Muchas aplicaciones de vídeo, de navegador y de cursos pausan la reproducción en ese momento, salvo que estén hechas para seguir en segundo plano. El vídeo no está roto: la aplicación simplemente se detiene cuando deja de estar en pantalla."
+  - question: "¿VLC puede reproducir vídeo con la pantalla apagada?"
+    answer: "VLC para Android puede mantener el sonido en segundo plano, y puedes abrir o compartir un vídeo con VLC y reproducirlo como audio. Eso funciona con los archivos y enlaces que VLC puede abrir, no con vídeos dentro de otras aplicaciones, como las plataformas de cursos."
+  - question: "¿Una capa negra ahorra batería?"
+    answer: "En pantallas AMOLED y OLED, sí: un píxel negro puro está apagado, así que la pantalla consume menos que mostrando el vídeo. En pantallas LCD la retroiluminación sigue encendida, así que el ahorro es pequeño. El vídeo se sigue descargando, por lo que no ahorra datos móviles."
+  - question: "¿Los toques en el bolsillo pausan el vídeo?"
+    answer: "Con ScreenVeil no. Mientras la pantalla negra está activa, los toques quedan bloqueados hasta que desbloqueas a propósito, así que un bolsillo o una manga no pueden pausar, saltar ni cerrar el vídeo."
+---
+
+import ScreenVeilCTA from "@/components/blog/ScreenVeilCTA.astro";
+
+**Bloquea el teléfono y casi todos los vídeos dejan de reproducirse.** Android manda la aplicación a
+segundo plano, y muchas aplicaciones de vídeo, de navegador y de cursos se pausan ahí. Comprueba primero
+si la tuya tiene su propia opción de segundo plano o solo audio. Si no la tiene, deja la aplicación
+abierta y pon la pantalla en negro: el vídeo sigue, tú no ves nada y los toques se ignoran.
+
+## Por qué se paran los vídeos al apagar la pantalla
+
+Cuando pulsas el botón de encendido, Android mueve a segundo plano lo que hubiera en pantalla. Algunas
+aplicaciones siguen reproduciendo ahí, porque sus desarrolladores lo implementaron. Muchas no, porque
+están pensadas para ver, no para escuchar. Los usuarios de la app de Plex para Android, por ejemplo,
+llevan tiempo pidiendo en su foro una reproducción con la pantalla apagada que la aplicación no ofrece
+([foro de Plex](https://forums.plex.tv/t/screen-off-video-play-on-android-app/905303)).
+
+En un escritorio no importa. Sí importa paseando, en el autobús, cocinando o en el gimnasio: justo
+cuando querrías oír una clase, una charla o un vídeo largo en vez de mirarlo.
+
+## Paso 1: mira las opciones de la propia aplicación
+
+| Aplicación | Opción integrada |
+|---|---|
+| YouTube | Reproducción en segundo plano con YouTube Premium |
+| VLC | Mantiene el sonido en segundo plano; abre o comparte un vídeo y reprodúcelo como audio ([Trusted Reviews](https://www.trustedreviews.com/news/use-trick-play-youtube-audio-phone-screen-off-3966982)) |
+| Twitch | Ajuste de audio en segundo plano y modo Solo audio en la app |
+| Apps de cursos y clases | Variable; busca segundo plano, solo audio o audio descargable |
+| Navegadores móviles | Normalmente se pausan al bloquear la pantalla |
+
+Si tu aplicación tiene alguna de estas opciones, úsala. Para YouTube en concreto, mira
+[reproducir YouTube en segundo plano en 2026](/es/blog/youtube-background-play-2026-workaround).
+
+## Paso 2: mantén cualquier aplicación sonando con una pantalla negra
+
+Cuando la aplicación no tiene opción de segundo plano, no bloquees el teléfono. Una capa negra dibuja
+una capa de negro puro sobre la pantalla mientras la aplicación de debajo sigue abierta. Para Android,
+la app de vídeo sigue en pantalla, así que continúa reproduciendo. Con
+[ScreenVeil](/apps/screenveil):
+
+1. Instala ScreenVeil y toca **Start Service**.
+2. Concede el permiso de **"mostrar sobre otras aplicaciones"** cuando Android lo pida. Es el único que
+   necesita.
+3. Abre tu vídeo y ponlo en marcha.
+4. Toca el botón flotante de ScreenVeil, o su acceso directo en los ajustes rápidos. La pantalla se
+   vuelve negra y el vídeo sigue.
+5. Para volver, toca la pantalla y pulsa desbloquear.
+
+Mientras la pantalla está en negro los toques quedan bloqueados, así que tu bolsillo no puede pausar ni
+saltar nada. El modo bolsillo también puede poner la pantalla en negro por su cuenta cuando el teléfono
+entra en el bolsillo.
+
+<ScreenVeilCTA />
+
+## Batería y datos: qué esperar
+
+| Método | Consumo de pantalla | Datos móviles |
+|---|---|---|
+| Verlo normalmente | El más alto | Vídeo completo |
+| Modo solo audio de la app | La pantalla puede estar apagada | Mucho menores |
+| Capa negra (AMOLED/OLED) | Mucho menor | Vídeo completo |
+| Capa negra (LCD) | Ahorro pequeño | Vídeo completo |
+
+En pantallas **AMOLED y OLED**, un píxel negro puro está apagado, así que una capa negra consume mucha
+menos energía de pantalla que un vídeo iluminado. En pantallas **LCD** la retroiluminación sigue
+encendida. Para los detalles, mira
+[¿el modo oscuro ahorra batería en OLED?](/blog/does-dark-mode-save-battery-amoled) (en inglés)
+
+## Ejemplo: escuchar clases grabadas
+
+Las clases son el motivo más habitual para buscar esto: las aplicaciones de cursos y los campus
+virtuales casi nunca reproducen en segundo plano, pero una segunda escucha de la clase de la semana
+pasada encaja perfectamente en un trayecto.
+
+- **Acelera un poco.** Muchos reproductores permiten 1,25× o 1,5×; el habla se sigue entendiendo.
+- **Usa el audio para repasar, no para la primera vez.** Las clases cargadas de diapositivas,
+  ecuaciones o código es mejor verlas una vez y luego repetirlas de oído.
+- **Apunta marcas de tiempo.** Cuando algo encaje, anota el minuto para encontrar la diapositiva
+  después.
+- **Usa auriculares en público.**
+
+## En resumen
+
+Si una aplicación tiene reproducción en segundo plano o un modo solo audio, úsalo. Si no lo tiene, deja
+la aplicación abierta y pon la pantalla en negro: el vídeo sigue, nada se ilumina y los toques
+accidentales no pueden detenerlo.
+
+<ScreenVeilCTA />
