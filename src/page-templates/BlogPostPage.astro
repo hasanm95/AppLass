@@ -6,6 +6,7 @@ import AppCallout from "@/components/blog/AppCallout.astro";
 import ShareArticle from "@/components/blog/ShareArticle.astro";
 import ReadingProgressBar from "@/components/blog/ReadingProgressBar.astro";
 import FAQSchema from "@/components/common/FAQSchema.astro";
+import HowToSchema from "@/components/common/HowToSchema.astro";
 import { localize } from "@/i18n/localize";
 import { getBlogPostBySlug, localesForPost } from "@/lib/blog";
 import { i18nConfig } from "@/i18n/config";
@@ -78,6 +79,10 @@ const jsonLd = {
   },
 };
 
+const pageUrl = lang === "en"
+  ? `${SITE}/blog/${slug}`
+  : `${SITE}/${lang}/blog/${slug}`;
+
 const ogImageUrl = post.ogImage || imageUrl;
 
 // Built from localePath rather than a per-locale branch, so a new locale gets
@@ -134,6 +139,15 @@ const normalizedSidebarApps = (post.sidebarApps && post.sidebarApps.length > 0
   {post.faqs && post.faqs.length > 0 && (
     <FAQSchema
       items={post.faqs as { question: string; answer: string }[]}
+    />
+  )}
+  {post.howTo && (
+    <HowToSchema
+      steps={post.howTo.steps}
+      name={post.howTo.name || post.title}
+      totalTime={post.howTo.totalTime}
+      description={description}
+      pageUrl={pageUrl}
     />
   )}
   <ReadingProgressBar />

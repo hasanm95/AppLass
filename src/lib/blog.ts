@@ -51,6 +51,11 @@ export interface MarkdownBlogPost {
   keywords?: string;
   tags?: string[];
   breadcrumbName?: string;
+  howTo?: {
+    name?: string;
+    totalTime?: string;
+    steps: { name: string; text: string }[];
+  };
   sidebarApps?: string[];
   ogImage?: string;
 }
@@ -77,6 +82,7 @@ export async function getBlogPosts(lang: string = "en"): Promise<MarkdownBlogPos
       keywords: post.data.keywords,
       tags: post.data.tags || [],
       breadcrumbName: post.data.breadcrumbName,
+      howTo: post.data.howTo,
       sidebarApps: post.data.sidebarApps || [],
       ogImage: post.data.ogImage,
     } as MarkdownBlogPost;
@@ -115,6 +121,7 @@ export async function getBlogPostBySlug(slug: string, lang: string = "en"): Prom
       keywords: entry.data.keywords,
       tags: entry.data.tags || [],
       breadcrumbName: entry.data.breadcrumbName,
+      howTo: entry.data.howTo,
       sidebarApps: entry.data.sidebarApps || [],
       ogImage: entry.data.ogImage,
     } as MarkdownBlogPost;
