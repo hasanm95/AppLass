@@ -1,0 +1,228 @@
+---
+title: "Bloquer des sites web sur Android (2026) : 5 méthodes comparées"
+description: "Chrome pour Android n'a aucun réglage pour bloquer un site. Voici les cinq méthodes qui marchent — DNS privé, Family Link, un bloqueur VPN, le fichier hosts et un bloqueur via l'accessibilité — et ce que chacune vous coûte."
+date: "2026-11-14"
+dateModified: "2026-11-14"
+author: "Équipe AppLass"
+excerpt: "Il n'existe aucun bouton « bloquer ce site » dans Chrome pour Android. Restent le DNS privé, Family Link, un bloqueur VPN, le fichier hosts avec root, ou un bloqueur d'applications passant par l'accessibilité. Chacun sacrifie quelque chose de différent."
+tags: ["android", "chrome", "bloquer un site", "concentration", "vie privée"]
+category: "Android Apps"
+keywords: "bloquer des sites web sur android, bloquer un site sur chrome android, bloquer un site sans root, bloqueur de site android sans vpn, comment bloquer un site internet sur téléphone, bloquer un site web sur mobile, interdire un site sur android, bloquer certains sites android"
+breadcrumbName: "Bloquer des sites web"
+sidebarApps:
+  - mindful-guard
+featured: false
+howTo:
+  name: "Bloquer un site web sur Android, sans VPN ni root"
+  totalTime: "PT3M"
+  steps:
+    - name: "Installer un bloqueur qui agit dans le navigateur"
+      text: "Installez Mindful Guard depuis le Play Store. L'application bloque les sites via le service d'accessibilité d'Android plutôt que par un VPN, donc rien ne passe par un tunnel."
+    - name: "Autoriser le service d'accessibilité"
+      text: "Autorisez le service d'accessibilité quand l'application le demande. C'est ce qui lui permet de voir qu'un domaine bloqué s'est chargé dans un onglet."
+    - name: "Ouvrir un blocage et aller dans l'onglet Site web"
+      text: "Ouvrez une session de concentration ou un planning hebdomadaire et passez à l'onglet Site web. Le site de chaque application bloquée y figure déjà et reste activé : bloquer l'application Instagram bloque aussi instagram.com."
+    - name: "Ajouter vos propres domaines"
+      text: "Saisissez tout domaine supplémentaire à bloquer. Il est enregistré dans votre bibliothèque, et la fois suivante il suffit de l'activer."
+    - name: "Lancer le blocage et le tester"
+      text: "Lancez le blocage puis ouvrez un des sites bloqués dans Chrome. L'onglet est redirigé vers une page blanche et le Pause Screen apparaît, vous restez donc dans le navigateur au lieu d'être renvoyé à l'écran d'accueil."
+faqs:
+  - question: "Comment bloquer un site web sur Android ?"
+    answer: "Chrome pour Android ne sait pas le faire seul, il reste donc cinq approches : un DNS privé filtrant dans les Paramètres, Google Family Link sur le téléphone d'un enfant, un bloqueur basé sur un VPN, le fichier hosts si le téléphone est rooté, ou un bloqueur d'applications passant par le service d'accessibilité. Seule la dernière ne demande ni root ni VPN."
+  - question: "Peut-on bloquer des sites dans Chrome sur Android sans application ?"
+    answer: "Oui, avec le DNS privé. Paramètres → Réseau et Internet → DNS privé, puis saisissez le nom d'hôte d'un résolveur filtrant comme NextDNS. Cela filtre toutes les applications et tous les navigateurs de l'appareil, ne coûte pas de batterie et ne demande pas de root. Le hic : c'est un réglage ordinaire que vous pouvez désactiver en cinq secondes."
+  - question: "Comment bloquer des sites sur Android sans VPN ?"
+    answer: "Le DNS privé et les bloqueurs via l'accessibilité fonctionnent tous deux sans VPN. Pour la vie privée, la différence compte : un bloqueur VPN fait passer tout votre trafic par son propre tunnel, où il voit chaque requête, alors que le DNS privé n'envoie que des résolutions de noms et qu'un bloqueur via l'accessibilité lit la barre d'adresse sur votre appareil sans rien transmettre."
+  - question: "Existe-t-il un bloqueur de sites impossible à désinstaller sur Android ?"
+    answer: "Non. Aucune application du Play Store ne peut empêcher sa propre désinstallation : Android a retiré cette capacité aux applications ordinaires en 2016. Ce que certains bloqueurs ajoutent, c'est de la friction. Le mode strict de Mindful Guard vous renvoie des écrans Infos sur l'appli, Accessibilité et désinstallation pendant une session, et sortir plus tôt coûte 20 minutes d'attente. C'est un engagement, pas un verrou."
+  - question: "Bloquer une application bloque-t-il aussi son site web ?"
+    answer: "Pas par défaut, et c'est l'écart qui fait échouer la plupart des blocages. Un minuteur sur l'application Instagram ne change rien à instagram.com dans Chrome. Mindful Guard active donc d'office le site de chaque application bloquée, pour que les deux aillent toujours ensemble."
+  - question: "Peut-on bloquer un site seulement à certaines heures ?"
+    answer: "Oui. Un planning hebdomadaire bloque les mêmes sites et applications aux heures que vous choisissez, par exemple de 9 h à 17 h en semaine, et lève le blocage automatiquement ensuite. Le DNS privé et le fichier hosts ne connaissent pas les horaires : ils sont actifs ou non jusqu'à ce que vous les changiez."
+  - question: "Pourquoi un bloqueur de sites a-t-il besoin du service d'accessibilité ?"
+    answer: "Parce que lire la barre d'adresse d'une autre application est précisément ce à quoi servent les API d'accessibilité. C'est une permission large : vérifiez avant de l'accorder que l'application fonctionne sans compte, qu'elle n'a pas d'accès réseau et ce que déclare sa section Sécurité des données sur Google Play."
+---
+
+import MindfulGuardCTA from "@/components/blog/MindfulGuardCTA.astro";
+
+**Chrome pour Android n'a aucun réglage qui bloque un site web.** Il existe cinq contournements : un
+**DNS privé** filtrant, **Google Family Link** sur le téléphone d'un enfant, un **bloqueur basé sur
+un VPN**, le **fichier hosts** si le téléphone est rooté, ou un **bloqueur d'applications passant par
+le service d'accessibilité**. Seul le dernier ne demande ni root ni VPN.
+
+Celui qui vous convient dépend de ce que vous acceptez de céder : votre trafic, votre root, la
+possibilité de revenir en arrière — ou presque rien.
+
+## Pourquoi Chrome sur Android ne bloque pas les sites tout seul
+
+Sur un ordinateur, on installe une extension et l'affaire est réglée. Chrome pour Android ne gère pas
+les extensions et n'embarque aucun réglage de blocage de site. Sa seule protection au niveau des
+pages est Safe Browsing, qui avertit des sites dangereux — pas de ceux que vous ne voulez simplement
+pas ouvrir à 23 h.
+
+Android n'a pas non plus de liste de blocage d'URL au niveau du système. Chaque méthode ci-dessous
+contourne donc le manque par un angle différent : le réseau, le compte, l'appareil ou l'écran.
+
+## Les cinq méthodes, comparées
+
+| Méthode | Root ? | VPN ? | Couvre | Domaine par domaine | Difficulté pour annuler |
+|---|---|---|---|---|---|
+| **Bloqueur via accessibilité** | Non | Non | Tous les navigateurs | Oui, par domaine | Difficile pendant une session stricte |
+| **DNS privé** | Non | Non | Tout l'appareil | Oui, via la liste du résolveur | ~5 secondes dans les Paramètres |
+| **Bloqueur VPN** | Non | **Oui** | Tout l'appareil | Oui | Facile, on coupe le VPN |
+| **Family Link** | Non | Non | **Chrome seulement** | Oui | L'enfant non, le parent oui |
+| **Fichier hosts** | **Oui** | Non | Tout l'appareil | Oui | Exige à nouveau le root |
+
+---
+
+## Méthode 1 : le DNS privé (gratuit, sans root, sans application)
+
+Android intègre un réglage qui envoie chaque résolution de nom de l'appareil au résolveur de votre
+choix. Pointez-le vers un résolveur filtrant et les sites de sa liste cessent de se résoudre partout
+à la fois — Chrome, Firefox, le navigateur intégré d'Instagram, tout.
+
+1. Ouvrez **Paramètres → Réseau et Internet → DNS privé**.
+2. Choisissez **Nom d'hôte du fournisseur de DNS privé**.
+3. Saisissez le nom d'hôte fourni par votre service de filtrage, chez NextDNS sous la forme
+   `votreid.dns.nextdns.io`.
+4. Ajoutez les sites à bloquer dans la liste de blocage de ce service.
+
+**Ce que ça coûte :** c'est un réglage Android ordinaire, que vous désactivez en cinq secondes.
+Excellent contre l'habitude, inutile contre l'intention. La méthode ignore aussi les horaires — pas
+de « bloqué seulement entre 9 h et 17 h » — et ne distingue pas l'application Instagram de
+instagram.com, puisque au niveau DNS les deux sont identiques.
+
+**Idéal pour :** filtrer tous les téléphones d'un foyer, ou des catégories que vous ne voulez jamais
+voir sur l'appareil.
+
+## Méthode 2 : Google Family Link (téléphone d'un enfant)
+
+Si le téléphone appartient à un enfant avec un compte Google supervisé, Family Link filtre les sites
+depuis le téléphone du parent, et l'enfant ne peut pas revenir en arrière.
+
+La limite qu'on oublie : **le filtre de sites de Family Link s'applique à Chrome, pas aux navigateurs
+tiers.** Que l'enfant installe Firefox ou Samsung Internet et le filtre n'est tout simplement plus
+là. La réponse habituelle consiste à bloquer aussi les autres navigateurs en tant qu'applications —
+ça marche, mais ça devient un jeu du chat et de la souris.
+
+**Idéal pour :** les parents, comme une couche parmi d'autres — pas pour limiter son propre téléphone.
+
+## Méthode 3 : un bloqueur basé sur un VPN
+
+Plusieurs bloqueurs font passer votre trafic par un tunnel VPN local et rejettent les requêtes vers
+les domaines bloqués. Ça fonctionne, sans root, et ça couvre toutes les applications.
+
+**Ce que ça coûte :** Android n'autorise qu'un VPN à la fois, ce qui entre en conflit avec un VPN que
+vous utilisez vraiment pour la vie privée ou le travail. Surtout, vous donnez à une application une
+vue sur tout votre trafic réseau — échange étrange pour un outil de concentration. La gestion
+agressive de la batterie sur certains Samsung, Xiaomi et OnePlus coupe en plus les VPN en arrière-plan,
+et le blocage s'arrête sans bruit.
+
+**Idéal pour :** ceux qui font déjà confiance à un éditeur précis et n'utilisent pas de VPN par
+ailleurs.
+
+## Méthode 4 : le fichier hosts (root uniquement)
+
+La méthode classique : rediriger les domaines bloqués vers `127.0.0.1` dans `/etc/hosts` et ils ne se
+résolvent jamais. Sur Android moderne, ce fichier n'est pas modifiable sans **root**, et rooter un
+téléphone pour bloquer un site casse les applications bancaires, annule la garantie et affaiblit le
+modèle de sécurité de l'appareil.
+
+Les applications qui promettent « un blocage hosts sans root » font généralement tourner un VPN local
+et modifient *son* fichier hosts — vous revoilà à la méthode 3, avec un détour.
+
+**Idéal pour :** presque personne en 2026.
+
+## Méthode 5 : un bloqueur via l'accessibilité (sans root, sans VPN)
+
+L'approche la plus récente lit la barre d'adresse plutôt que le réseau. Dès qu'un domaine bloqué se
+charge dans un navigateur, le bloqueur le remarque et agit — pas de tunnel, pas de résolveur, rien ne
+quitte l'appareil.
+
+[Mindful Guard](/fr/apps/mindful-guard) fonctionne ainsi :
+
+1. Installez Mindful Guard depuis le Play Store.
+2. Autorisez le **service d'accessibilité**. C'est ce qui lui permet de voir qu'un domaine bloqué
+   s'est chargé dans un onglet.
+3. Ouvrez une **session de concentration** ou un **planning hebdomadaire** et passez à l'onglet
+   **Site web**. Le site de chaque application bloquée y figure déjà et reste activé — bloquer
+   l'application Instagram bloque aussi instagram.com, parce qu'un blocage qui ne couvre que l'un des
+   deux n'en est pas un.
+4. Ajoutez vos propres domaines. Saisi une fois, un domaine rejoint votre bibliothèque ; la fois
+   suivante vous l'activez d'un geste.
+5. Lancez le blocage et testez-le. L'onglet bloqué est redirigé vers une page blanche et le
+   **Pause Screen** apparaît, vous restez donc dans le navigateur au lieu d'être renvoyé à l'accueil.
+
+**Ce que ça coûte :** la permission d'accessibilité est large et mérite d'être prise au sérieux —
+voir [pourquoi un bloqueur en a besoin](#pourquoi-un-bloqueur-de-sites-a-t-il-besoin-du-service-daccessibilité)
+plus bas. En échange : contrôle par domaine, horaires, couverture dans tous les navigateurs, et pas de
+VPN.
+
+L'offre gratuite couvre le site de chaque application bloquée plus un domaine personnalisé ; Premium
+lève la limite.
+
+<MindfulGuardCTA lang="fr" campaign="how-to-block-websites-on-android-chrome" />
+
+---
+
+## Bloquer l'application sans le site, c'est un demi-blocage
+
+C'est le mode d'échec qu'il faut nommer, parce que presque tout le monde le rencontre.
+
+Vous mettez un minuteur sur l'application Instagram. Le minuteur expire. Trente secondes plus tard
+vous lisez instagram.com dans Chrome, et le blocage n'a rien obtenu d'autre qu'une étape
+supplémentaire. Même chose pour facebook.com, x.com, reddit.com, youtube.com et toute application dont
+le site est un substitut complet.
+
+Le Bien-être numérique d'Android ne peut pas combler cet écart : il compte du temps d'application et
+ne sait rien des URL. Tout plan de blocage qui ne couvre que les applications a un trou en forme de
+navigateur. C'est pour ça que les sites des applications sont présélectionnés et verrouillés plutôt
+que proposés en option.
+
+## Quelle méthode choisir ?
+
+| Votre situation | Méthode |
+|---|---|
+| Un site doit disparaître de votre téléphone, à heures fixes | Bloqueur via accessibilité |
+| Une catégorie doit disparaître de tous les appareils du foyer | DNS privé sur chaque téléphone, ou au routeur |
+| C'est le téléphone d'un enfant | Family Link, plus DNS privé pour le trou hors Chrome |
+| Vous utilisez déjà un VPN de confiance | DNS privé, pas un second VPN |
+| Vous avez rooté le téléphone il y a des années | Fichier hosts |
+| Vous coupez sans cesse le blocage | Un bloqueur avec [mode strict](/fr/blog/app-blocker-cannot-be-uninstalled-android) |
+
+## Peut-on rendre un bloqueur impossible à supprimer ?
+
+Non — et méfiez-vous de tout ce qui prétend le contraire. Android a retiré aux applications la
+capacité d'empêcher leur propre désinstallation en 2016. Tout « bloqueur indéboulonnable » est en
+réalité une couche de friction : il rend le contournement lent et délibéré au lieu de réflexe.
+
+Cela vaut quand même la peine. Vingt minutes d'attente suffisent le plus souvent à faire passer
+l'envie qui a déclenché le geste — c'est tout le mécanisme. Ce n'est pas un verrou, et un outil qui se
+fait passer pour tel vous pousse à lui faire confiance au mauvais moment. La version honnête est dans
+[les bloqueurs impossibles à désinstaller](/fr/blog/app-blocker-cannot-be-uninstalled-android).
+
+## Pourquoi un bloqueur de sites a-t-il besoin du service d'accessibilité ?
+
+Parce que voir quelle page une autre application a chargée est exactement ce à quoi servent les API
+d'accessibilité d'Android — les mêmes qu'utilise un lecteur d'écran. Il n'existe pas de permission
+plus étroite qui ferait le travail.
+
+Elle est large : appliquez donc le test évident avant de l'accorder. L'application exige-t-elle un
+compte ? A-t-elle un accès réseau ? Que déclare sa section **Sécurité des données** sur Google Play ?
+Un outil de concentration qui lit votre barre d'adresse ne devrait rien transmettre, et vous devriez
+pouvoir le vérifier plutôt que le croire — c'est l'argument pour
+[un bloqueur sans aucune télémétrie](/fr/blog/zero-telemetry-blocker).
+
+## En résumé
+
+Chrome pour Android ne peut pas bloquer un site : choisissez donc le compromis qui vous convient. Le
+**DNS privé** est gratuit et couvre tout l'appareil, mais il est à cinq secondes d'être désactivé.
+**Family Link** convient au téléphone d'un enfant et s'arrête à Chrome. Un **bloqueur VPN** vous coûte
+votre place de VPN et montre tout votre trafic à un éditeur. Le **fichier hosts** vous coûte le root.
+Un **bloqueur via l'accessibilité** vous coûte une permission large et rend en échange un blocage par
+domaine et par horaire, dans tous les navigateurs.
+
+Quel que soit votre choix, bloquez l'application et son site ensemble — sinon vous avez construit un
+ralentisseur et vous l'appelez un mur.
+
+<MindfulGuardCTA lang="fr" campaign="how-to-block-websites-on-android-chrome" />

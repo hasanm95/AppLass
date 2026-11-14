@@ -6,6 +6,7 @@ import AppCallout from "@/components/blog/AppCallout.astro";
 import ShareArticle from "@/components/blog/ShareArticle.astro";
 import ReadingProgressBar from "@/components/blog/ReadingProgressBar.astro";
 import FAQSchema from "@/components/common/FAQSchema.astro";
+import HowToSchema from "@/components/common/HowToSchema.astro";
 import { localize } from "@/i18n/localize";
 import { getBlogPostBySlug, localesForPost } from "@/lib/blog";
 import { i18nConfig } from "@/i18n/config";
@@ -31,7 +32,9 @@ if (!post || !post.entry) {
 const { Content } = await render(post.entry);
 
 const title = `${post.title} | AppLass Blog`;
-const description = post.excerpt;
+// `description` is written for the SERP snippet; `excerpt` is the blog-card teaser.
+// Prefer the former and fall back to the latter, so a post without one still has a meta description.
+const description = post.description || post.excerpt;
 
 // Never earlier than publication — an unrevised post was last modified when it shipped.
 const lastModified = post.dateModified || post.date;
@@ -48,7 +51,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   headline: post.title,
-  description: post.excerpt,
+  description,
   image: imageUrl,
   datePublished: post.date,
   dateModified: lastModified,
@@ -75,6 +78,10 @@ const jsonLd = {
       : `https://applass.com/${lang}/blog/${slug}`,
   },
 };
+
+const pageUrl = lang === "en"
+  ? `${SITE}/blog/${slug}`
+  : `${SITE}/${lang}/blog/${slug}`;
 
 const ogImageUrl = post.ogImage || imageUrl;
 
@@ -132,6 +139,15 @@ const normalizedSidebarApps = (post.sidebarApps && post.sidebarApps.length > 0
   {post.faqs && post.faqs.length > 0 && (
     <FAQSchema
       items={post.faqs as { question: string; answer: string }[]}
+    />
+  )}
+  {post.howTo && (
+    <HowToSchema
+      steps={post.howTo.steps}
+      name={post.howTo.name || post.title}
+      totalTime={post.howTo.totalTime}
+      description={description}
+      pageUrl={pageUrl}
     />
   )}
   <ReadingProgressBar />

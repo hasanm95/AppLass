@@ -1,0 +1,215 @@
+---
+title: "How to Block Websites on Android (2026): 5 Methods Compared"
+description: "Chrome for Android has no setting to block a website. Here are the five methods that work — Private DNS, Family Link, a VPN blocker, the hosts file and an accessibility-based blocker — what each one costs you, and which to pick."
+date: "2026-11-14"
+dateModified: "2026-11-14"
+author: "AppLass Team"
+excerpt: "There is no block-this-site button in Chrome for Android. Your options are Private DNS, Family Link, a VPN-based blocker, the hosts file with root, or an app blocker that works through the accessibility service. Each trades something different away."
+tags: ["android", "chrome", "website blocker", "focus", "privacy"]
+category: "Android Apps"
+keywords: "how to block websites on android, block websites on chrome android, block websites android without vpn, website blocker android no root, how to block a website on my phone, website blocker that can't be uninstalled, block a site on android chrome, android block website without app"
+breadcrumbName: "Block Websites on Android"
+sidebarApps:
+  - mindful-guard
+featured: false
+howTo:
+  name: "How to block a website on Android without a VPN or root"
+  totalTime: "PT3M"
+  steps:
+    - name: "Install a blocker that works in the browser"
+      text: "Install Mindful Guard from the Play Store. It blocks sites through Android's accessibility service rather than a VPN, so nothing is routed through a tunnel."
+    - name: "Allow the Accessibility Service"
+      text: "Allow the Accessibility Service when asked. This is what lets the app see that a blocked domain has loaded in a browser tab."
+    - name: "Open a block and switch to the Website tab"
+      text: "Open a focus session or a weekly schedule and switch to the Website tab. Every blocked app's own site is already there and locked on, so blocking the Instagram app also blocks instagram.com."
+    - name: "Add your own domains"
+      text: "Type any extra domain you want blocked, such as news.ycombinator.com or a shopping site. It is saved to your library, so next time you only toggle it on."
+    - name: "Start the block and test it"
+      text: "Start the block, then open one of the blocked sites in Chrome. The tab is redirected to a blank page and the Pause Screen appears, so you stay in the browser instead of being thrown to the home screen."
+faqs:
+  - question: "How do I block a website on Android?"
+    answer: "Chrome for Android has no built-in site blocking, so you need one of five approaches: set a filtering Private DNS in Settings, use Google Family Link on a child's phone, install a VPN-based blocker, edit the hosts file if your phone is rooted, or use an app blocker that works through the accessibility service. The last one is the only one that needs neither root nor a VPN."
+  - question: "Can I block websites in Chrome on Android without an app?"
+    answer: "Yes, with Private DNS. Settings → Network & internet → Private DNS, then enter the hostname of a filtering resolver such as NextDNS. It filters every app and browser on the device, costs no battery and needs no root. The catch is that it is a normal setting you can switch off in about five seconds, so it stops a habit rather than a determined bypass."
+  - question: "How do I block websites on Android without a VPN?"
+    answer: "Private DNS and accessibility-based blockers both work without a VPN. The difference matters for privacy: a VPN blocker routes all your traffic through its own tunnel, where it can see every request, while Private DNS only sends domain lookups to a resolver and an accessibility-based blocker reads the URL bar on your own device and sends nothing anywhere."
+  - question: "Is there a website blocker for Android that can't be uninstalled?"
+    answer: "No app on the Play Store can truly prevent its own uninstall — Android removed that capability for normal apps in 2016. What some blockers do is add friction: Mindful Guard's Strict Mode sends you back from its App Info, Accessibility and uninstall screens while a session runs, and leaving early costs a 20-minute wait. That is a commitment device, not a lock."
+  - question: "Does blocking an app also block its website?"
+    answer: "Not by default, and that gap is the most common way a block fails. An app timer on Instagram does nothing about instagram.com in Chrome. Mindful Guard pre-selects and locks on each blocked app's own site for exactly this reason, so the two always move together."
+  - question: "Can I block a website only during certain hours?"
+    answer: "Yes. A weekly schedule blocks the same sites and apps during the hours you choose, for example 9:00 to 17:00 on weekdays, and lifts automatically afterwards. Private DNS and the hosts file are all-or-nothing by comparison: they are either on or off until you change them."
+  - question: "Why does a website blocker need the accessibility service?"
+    answer: "Because reading the address bar of another app is exactly what the accessibility APIs are for. It is a broad permission and worth taking seriously: check that the app has no network access, no account and nothing in Google Play's Data safety section before you grant it."
+---
+
+import MindfulGuardCTA from "@/components/blog/MindfulGuardCTA.astro";
+
+**Chrome for Android has no setting that blocks a website.** There are five ways around that: a
+filtering **Private DNS**, **Google Family Link** on a child's phone, a **VPN-based blocker**, the
+**hosts file** if your phone is rooted, or an **app blocker that works through the accessibility
+service**. Only the last one needs neither root nor a VPN.
+
+Which you want depends on what you are willing to give up — your traffic, your root status, your
+ability to change the setting back, or nothing much at all.
+
+## Why Chrome on Android can't block sites by itself
+
+On a desktop you install an extension and the problem is solved. Chrome for Android does not support
+extensions, and it ships no block-a-site setting of its own. Its only site-level protection is Safe
+Browsing, which warns about dangerous pages — not about pages you simply don't want to open at 11pm.
+
+Android has no system-level URL blocklist either. So every method below works around the gap from a
+different direction: the network, the account, the device, or the screen.
+
+## The five methods, compared
+
+| Method | Root? | VPN? | Covers | Per-site control | How hard to undo |
+|---|---|---|---|---|---|
+| **Accessibility blocker** | No | No | Every browser | Yes, per domain | Hard during a strict session |
+| **Private DNS** | No | No | Whole device | Yes, via the resolver's list | ~5 seconds in Settings |
+| **VPN blocker** | No | **Yes** | Whole device | Yes | Easy, disconnect the VPN |
+| **Family Link** | No | No | **Chrome only** | Yes | Child can't; parent can |
+| **Hosts file** | **Yes** | No | Whole device | Yes | Needs root access again |
+
+---
+
+## Method 1: Private DNS (free, no root, no app)
+
+Android has a built-in setting that sends every domain lookup on the device to a resolver you choose.
+Point it at a filtering resolver and the sites on its blocklist stop resolving everywhere at once —
+Chrome, Firefox, Instagram's in-app browser, all of it.
+
+1. Open **Settings → Network & internet → Private DNS**.
+2. Choose **Private DNS provider hostname**.
+3. Enter the hostname your filtering service gives you, for example a NextDNS configuration in the
+   form `yourid.dns.nextdns.io`.
+4. Add the sites you want blocked to that service's denylist.
+
+**What it costs you:** it is a normal Android setting, so you can turn it off in about five seconds.
+That makes it excellent against habit and useless against intent. It is also all-or-nothing in time —
+there is no "block this between 9 and 5" — and it cannot distinguish the Instagram app from
+instagram.com, because at the DNS layer they look identical.
+
+**Best for:** filtering a whole household's phones, or blocking categories you never want on the
+device at all.
+
+## Method 2: Google Family Link (a child's phone)
+
+If the phone belongs to a child with a supervised Google account, Family Link can filter sites from
+the parent's phone and the child cannot change it back.
+
+The limit people miss: **the Family Link site filter applies to Chrome, not to third-party browsers.**
+Install Firefox or Samsung Internet and the filter is simply absent. The usual answer is to also block
+the other browsers as apps, which works but turns into whack-a-mole.
+
+**Best for:** parents, as one layer of several — not for limiting your own phone.
+
+## Method 3: A VPN-based blocker
+
+Several blockers route your traffic through a local VPN tunnel and drop requests to blocked domains.
+It works, it needs no root, and it covers every app.
+
+**What it costs you:** Android allows one VPN at a time, so this conflicts with a VPN you actually use
+for privacy or work. More importantly, you are handing one app a view of all your network traffic —
+which is a strange trade to make for a focus tool. Aggressive battery management on some Samsung,
+Xiaomi and OnePlus devices also kills background VPNs, and the block quietly stops.
+
+**Best for:** people who already trust a specific vendor and don't otherwise use a VPN.
+
+## Method 4: The hosts file (root only)
+
+The classic method: map blocked domains to `127.0.0.1` in `/etc/hosts` and they never resolve. On
+modern Android that file is not writable without **root**, and rooting a phone to block a website
+breaks your banking apps, voids warranties and weakens the device's security model.
+
+Apps that advertise "hosts file blocking without root" are generally running a local VPN and editing
+*its* hosts file, which puts you back in Method 3 with extra steps.
+
+**Best for:** almost nobody in 2026.
+
+## Method 5: An accessibility-based blocker (no root, no VPN)
+
+The newest approach reads the address bar rather than the network. When a blocked domain loads in any
+browser, the blocker notices and acts on it — no tunnel, no resolver, nothing leaving the device.
+
+[Mindful Guard](/apps/mindful-guard) works this way:
+
+1. Install Mindful Guard from the Play Store.
+2. Allow the **Accessibility Service** when asked. This is what lets it see that a blocked domain has
+   loaded in a tab.
+3. Open a **focus session** or a **weekly schedule** and switch to the **Website** tab. Every blocked
+   app's own site is already there and locked on — blocking the Instagram app also blocks
+   instagram.com, because a block that covers one and not the other is not a block.
+4. Add your own domains. Type one once and it is saved to your library; next time you just toggle it.
+5. Start the block and test it. The blocked tab is redirected to a blank page and the **Pause Screen**
+   appears, so you stay in the browser rather than being thrown out to the home screen.
+
+**What it costs you:** the accessibility permission is broad, and you should treat that seriously —
+see [why a blocker needs it](#why-does-a-website-blocker-need-the-accessibility-service) below. In
+exchange you get per-domain control, per-schedule timing, coverage in every browser, and no VPN.
+
+The free plan covers every blocked app's own site plus one custom domain; Premium removes the cap.
+
+<MindfulGuardCTA campaign="how-to-block-websites-on-android-chrome" />
+
+---
+
+## Blocking the app without the website is half a block
+
+This is the failure mode worth naming, because it is the one almost everyone hits.
+
+You put a timer on the Instagram app. The timer runs out. Thirty seconds later you are reading
+instagram.com in Chrome, and the block has achieved nothing except an extra step. The same is true of
+facebook.com, x.com, reddit.com, youtube.com and every other app whose website is a complete
+substitute for it.
+
+Android's own Digital Wellbeing cannot close this gap — it counts app time and knows nothing about
+URLs. Any blocking plan that only covers apps has a browser-shaped hole in it. That is why the app
+sites are pre-selected and locked rather than offered as an option.
+
+## Which method should you use?
+
+| Your situation | Method |
+|---|---|
+| You want a site gone from your own phone, on a schedule | Accessibility blocker |
+| You want a category gone from every device in the house | Private DNS on each phone, or at the router |
+| It's a child's phone | Family Link, plus Private DNS for the non-Chrome gap |
+| You already run a VPN you trust | Private DNS, not a second VPN |
+| You rooted the phone years ago and like it that way | Hosts file |
+| You keep switching the block off | A blocker with [Strict Mode](/blog/app-blocker-cannot-be-uninstalled-android) |
+
+## Can a website blocker be made impossible to remove?
+
+No — and be wary of anything that claims otherwise. Android removed an app's ability to prevent its
+own uninstall in 2016, so every "unremovable blocker" is really a friction layer: it makes the bypass
+slow and deliberate rather than reflexive.
+
+That is still worth having. A 20-minute wait is long enough for the urge that started it to pass,
+which is the entire mechanism. What it is not is a lock, and a tool that pretends to be one is setting
+you up to trust it at the wrong moment. The honest version of this is in
+[app blockers that can't be uninstalled](/blog/app-blocker-cannot-be-uninstalled-android).
+
+## Why does a website blocker need the accessibility service?
+
+Because seeing which page another app has loaded is exactly what Android's accessibility APIs are
+for — the same APIs a screen reader uses. There is no narrower permission that would do the job.
+
+It is a broad permission, so apply the obvious test before granting it to anything: does the app need
+an account? Does it have network access? What does its Google Play **Data safety** section declare?
+A focus tool that reads your address bar should be sending nothing anywhere, and you should be able
+to verify that rather than take it on faith — the argument for
+[a blocker with no telemetry at all](/blog/zero-telemetry-blocker).
+
+## The bottom line
+
+Chrome for Android cannot block a website, so pick the trade you prefer. **Private DNS** is free and
+system-wide but five seconds from being switched off. **Family Link** is right for a child's phone and
+stops at Chrome. A **VPN blocker** costs you your VPN slot and shows one vendor all your traffic. The
+**hosts file** costs you root. An **accessibility-based blocker** costs you a broad permission and
+gives back per-domain, per-schedule blocking in every browser.
+
+Whichever you choose, block the app and its website together — or you have built a speed bump and
+called it a wall.
+
+<MindfulGuardCTA campaign="how-to-block-websites-on-android-chrome" />

@@ -155,7 +155,7 @@
     "semantic_hash": ""
   },
   "astro.config.mjs": {
-    "mtime": 1794552063.5961316,
+    "mtime": 1794571400.8981204,
     "ast_hash": "a0396719374e73ba4f8ed6b0a69b28c0",
     "semantic_hash": ""
   },
@@ -290,22 +290,22 @@
     "semantic_hash": ""
   },
   "src/components/common/Footer.astro": {
-    "mtime": 1794566970.280785,
+    "mtime": 1794571400.946083,
     "ast_hash": "f023c3bb925872ebaa3054f47e6b327e",
     "semantic_hash": ""
   },
   "src/components/common/LanguageToggle.astro": {
-    "mtime": 1794567113.1125648,
+    "mtime": 1794571400.946502,
     "ast_hash": "acf6d12cd60e3bfe9c4e7ed65b3d069e",
     "semantic_hash": ""
   },
   "src/components/common/MobileMenuToggle.astro": {
-    "mtime": 1794567039.2115154,
+    "mtime": 1794571400.9470758,
     "ast_hash": "92396a67f5eb7265433b2d3065ffe7fe",
     "semantic_hash": ""
   },
   "src/components/common/Navbar.astro": {
-    "mtime": 1794566970.2748146,
+    "mtime": 1794571400.9480429,
     "ast_hash": "0ee9780f3cede849b5ec3bf8bd30feb4",
     "semantic_hash": ""
   },
@@ -570,7 +570,7 @@
     "semantic_hash": ""
   },
   "src/i18n/config.ts": {
-    "mtime": 1794552060.8805077,
+    "mtime": 1794571400.9637122,
     "ast_hash": "b32326b667212a5e1a911ee5b7f7c473",
     "semantic_hash": ""
   },
@@ -580,7 +580,7 @@
     "semantic_hash": ""
   },
   "src/i18n/locales/en.json": {
-    "mtime": 1794566744.7494678,
+    "mtime": 1794649254.087442,
     "ast_hash": "70b439e7fcbc6a761af904b5213c14bb",
     "semantic_hash": ""
   },
@@ -595,7 +595,7 @@
     "semantic_hash": ""
   },
   "src/i18n/utils.ts": {
-    "mtime": 1794566948.6516843,
+    "mtime": 1794571400.9652953,
     "ast_hash": "b4fcb51c9ec8bb32498a458d32049fdf",
     "semantic_hash": ""
   },
@@ -605,13 +605,13 @@
     "semantic_hash": ""
   },
   "src/layouts/Layout.astro": {
-    "mtime": 1794566978.3425305,
+    "mtime": 1794571400.965715,
     "ast_hash": "1b95d4edadb6586a29409decc6714545",
     "semantic_hash": ""
   },
   "src/lib/blog.ts": {
-    "mtime": 1785824108.911655,
-    "ast_hash": "1fbb87741c2c4209ae7b3914bda29e1a",
+    "mtime": 1794649104.7769568,
+    "ast_hash": "38115aa7a3f6474be34f6bcb9c32a3df",
     "semantic_hash": ""
   },
   "src/lib/compare.ts": {
@@ -670,8 +670,8 @@
     "semantic_hash": ""
   },
   "src/page-templates/BlogPostPage.astro": {
-    "mtime": 1794566993.514222,
-    "ast_hash": "a5b7c4222870ad9ad0829881c13c273a",
+    "mtime": 1794649104.7773576,
+    "ast_hash": "a689703925cbc3f407bc7cd38936484b",
     "semantic_hash": ""
   },
   "src/page-templates/CompareDetailPage.astro": {
@@ -730,32 +730,32 @@
     "semantic_hash": ""
   },
   "src/pages/[lang]/about/index.astro": {
-    "mtime": 1794552081.6543963,
+    "mtime": 1794571400.9672136,
     "ast_hash": "e959e342987aaf0aee0a5511ae5c0532",
     "semantic_hash": ""
   },
   "src/pages/[lang]/apps/fomogen/index.astro": {
-    "mtime": 1794552081.6920345,
+    "mtime": 1794571400.9679005,
     "ast_hash": "af206be3f9c3a8147d64e45eaee6a645",
     "semantic_hash": ""
   },
   "src/pages/[lang]/apps/fomogen/pricing/index.astro": {
-    "mtime": 1794552081.6948304,
+    "mtime": 1794571400.9681993,
     "ast_hash": "5c2efcb07770964090f385c9c22937a6",
     "semantic_hash": ""
   },
   "src/pages/[lang]/apps/index.astro": {
-    "mtime": 1794552081.6809785,
+    "mtime": 1794571400.9685237,
     "ast_hash": "0a1fd44a53255cf1b408b782ef11c0ee",
     "semantic_hash": ""
   },
   "src/pages/[lang]/apps/mindful-guard/index.astro": {
-    "mtime": 1794552081.6866798,
+    "mtime": 1794571400.9689283,
     "ast_hash": "39140569416e4584f077b82da1a0b4e6",
     "semantic_hash": ""
   },
   "src/pages/[lang]/apps/screenveil/index.astro": {
-    "mtime": 1794552081.689362,
+    "mtime": 1794571400.9693067,
     "ast_hash": "18685a70a1185e45073c893d2273c8b2",
     "semantic_hash": ""
   },
@@ -765,52 +765,52 @@
     "semantic_hash": ""
   },
   "src/pages/[lang]/blog/index.astro": {
-    "mtime": 1794552091.9339645,
+    "mtime": 1794571400.9697964,
     "ast_hash": "e6c599c82056bc559abea911b800f7b9",
     "semantic_hash": ""
   },
   "src/pages/[lang]/compare/[slug].astro": {
-    "mtime": 1794552081.668943,
+    "mtime": 1794571400.9701045,
     "ast_hash": "7d52d6746e6bb346aa9377ad52fdf586",
     "semantic_hash": ""
   },
   "src/pages/[lang]/compare/index.astro": {
-    "mtime": 1794552081.666211,
+    "mtime": 1794571400.9704258,
     "ast_hash": "49dd1fcb97e1461fddcb4f1449ec39f9",
     "semantic_hash": ""
   },
   "src/pages/[lang]/digital-wellness-2026-guide/index.astro": {
-    "mtime": 1794552081.6746664,
+    "mtime": 1794571400.9710565,
     "ast_hash": "f746bca9ace79293441d0b638647821b",
     "semantic_hash": ""
   },
   "src/pages/[lang]/docs/[product]/[slug].astro": {
-    "mtime": 1794552081.6606205,
+    "mtime": 1794571400.9714265,
     "ast_hash": "c7000d27d2b29ef573b32c032fa126b2",
     "semantic_hash": ""
   },
   "src/pages/[lang]/docs/[product]/index.astro": {
-    "mtime": 1794552081.6634922,
+    "mtime": 1794571400.9722126,
     "ast_hash": "4498783c06f9f8f135f901176528dd6e",
     "semantic_hash": ""
   },
   "src/pages/[lang]/docs/index.astro": {
-    "mtime": 1794552081.6573772,
+    "mtime": 1794571400.9724517,
     "ast_hash": "306a49eab50e3a25e7b3b7ac2f230802",
     "semantic_hash": ""
   },
   "src/pages/[lang]/ecommerce-performance-2026-benchmarks/index.astro": {
-    "mtime": 1794552081.6717007,
+    "mtime": 1794571400.9727802,
     "ast_hash": "2e9774323d8abde42c7723c1b3caf5b0",
     "semantic_hash": ""
   },
   "src/pages/[lang]/index.astro": {
-    "mtime": 1794552081.65097,
+    "mtime": 1794571400.9730651,
     "ast_hash": "a56defbfafa62af0184b062fd6bc8dd7",
     "semantic_hash": ""
   },
   "src/pages/[lang]/legal/[product]/[type].astro": {
-    "mtime": 1794552081.6779852,
+    "mtime": 1794571400.9733596,
     "ast_hash": "13f4ec20889eff002c34424c9a5505e6",
     "semantic_hash": ""
   },
@@ -1820,13 +1820,13 @@
     "semantic_hash": ""
   },
   "src/content/blog/en/android-digital-wellbeing-vs-third-party-focus-apps.md": {
-    "mtime": 1794046577.3063712,
-    "ast_hash": "99a08f7c3308b56f77e7128fa02ac647",
+    "mtime": 1794649207.255904,
+    "ast_hash": "71136e727190f0186a8819a63bca37b6",
     "semantic_hash": ""
   },
   "src/content/blog/en/best-app-to-block-social-media-on-android-in-2026.mdx": {
-    "mtime": 1794046831.2371466,
-    "ast_hash": "c486be412d6dfc04e84e306a368c2376",
+    "mtime": 1794648979.5936606,
+    "ast_hash": "bbb13c890747a103757152498f4dcbd6",
     "semantic_hash": ""
   },
   "src/content/blog/en/best-social-proof-apps-shopify-2026.md": {
@@ -1850,13 +1850,13 @@
     "semantic_hash": ""
   },
   "src/content/blog/en/how-to-block-reels-and-shorts-on-android-2026.mdx": {
-    "mtime": 1794046736.5388324,
-    "ast_hash": "dfd178f2ade901261912df5fa6978278",
+    "mtime": 1794648918.15892,
+    "ast_hash": "a72bf4dc1ec18f8b18b42a84ffed9520",
     "semantic_hash": ""
   },
   "src/content/blog/en/how-to-block-social-media-on-android-during-work-hours.md": {
-    "mtime": 1794046786.5075102,
-    "ast_hash": "8a29d97babee19084fee1d9b237da4e8",
+    "mtime": 1794649151.6445086,
+    "ast_hash": "a5600690e265002e09f5d6b6d697a38f",
     "semantic_hash": ""
   },
   "src/content/blog/en/logic-comparison-matrix.md": {
@@ -1875,8 +1875,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/en/opal-alternatives-android.mdx": {
-    "mtime": 1794046469.8997426,
-    "ast_hash": "037055dad1aaa3b29d054d93311f6a8e",
+    "mtime": 1794649028.9349978,
+    "ast_hash": "3050d58b1d6c5b2936046228706ccc5e",
     "semantic_hash": ""
   },
   "src/content/blog/en/psychology-of-fomo-marketing.md": {
@@ -1910,8 +1910,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/en/youtube-background-play-2026-workaround.mdx": {
-    "mtime": 1794269321.7887871,
-    "ast_hash": "ec5db738c9fc68a0bdfb64ca9fafe905",
+    "mtime": 1794648564.0669284,
+    "ast_hash": "2caa01c3246058f67233cefb5e60f1ee",
     "semantic_hash": ""
   },
   "src/content/blog/en/youtube-screen-off-battery-hack.md": {
@@ -1920,8 +1920,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/en/zero-telemetry-blocker.md": {
-    "mtime": 1785824108.9048212,
-    "ast_hash": "8224c7c22bb02c412dd133f5409e8888",
+    "mtime": 1794649207.2572632,
+    "ast_hash": "ca3bc55ed8ad6f3b36a9dbf87d72fa73",
     "semantic_hash": ""
   },
   "src/content/blog/fr/add-low-stock-alerts-shopify.md": {
@@ -1930,13 +1930,13 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/android-digital-wellbeing-vs-third-party-focus-apps.md": {
-    "mtime": 1794047263.2499456,
-    "ast_hash": "7fcab126a2fc6af585176460db5a3812",
+    "mtime": 1794649207.2567692,
+    "ast_hash": "8c03a9037eb4dc8ab9bc762530238fd0",
     "semantic_hash": ""
   },
   "src/content/blog/fr/best-app-to-block-social-media-on-android-in-2026.mdx": {
-    "mtime": 1794047568.28125,
-    "ast_hash": "04d98264bd9a99d431394704f850ab7f",
+    "mtime": 1794648979.594281,
+    "ast_hash": "b8610defa2c5ceeac7cbfc977bdd4359",
     "semantic_hash": ""
   },
   "src/content/blog/fr/best-social-proof-apps-shopify-2026.md": {
@@ -1960,8 +1960,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/how-to-block-social-media-on-android-during-work-hours.md": {
-    "mtime": 1794047500.9079971,
-    "ast_hash": "9c048614f83ea7ac0bda96bea6e37c31",
+    "mtime": 1794649151.6454632,
+    "ast_hash": "549f7da331c728938cf400bae79e7fc0",
     "semantic_hash": ""
   },
   "src/content/blog/fr/logic-comparison-matrix.md": {
@@ -1980,8 +1980,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/opal-alternatives-android.mdx": {
-    "mtime": 1794047098.398028,
-    "ast_hash": "100a4c7a8924befbdeb3353ed897ce81",
+    "mtime": 1794649054.5686898,
+    "ast_hash": "c0d189e0381844e0cf4ae23acebb0bd1",
     "semantic_hash": ""
   },
   "src/content/blog/fr/psychology-of-fomo-marketing.md": {
@@ -2015,8 +2015,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/youtube-background-play-2026-workaround.mdx": {
-    "mtime": 1793155506.992646,
-    "ast_hash": "1faae8f9ce254df8ae0d620351949db0",
+    "mtime": 1794648733.3935804,
+    "ast_hash": "d4af84beafbfcad3a4bc40f41074c808",
     "semantic_hash": ""
   },
   "src/content/blog/fr/youtube-screen-off-battery-hack.md": {
@@ -2025,8 +2025,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/zero-telemetry-blocker.md": {
-    "mtime": 1785824108.908981,
-    "ast_hash": "4583ee01687f236bdb70833c24f01b83",
+    "mtime": 1794649207.2576296,
+    "ast_hash": "9b9db354465f47c7bc6cfc2492b98cec",
     "semantic_hash": ""
   },
   "public/apple-touch-icon.png": {
@@ -2390,13 +2390,13 @@
     "semantic_hash": ""
   },
   "src/pages/[lang]/404.astro": {
-    "mtime": 1794552174.1507833,
+    "mtime": 1794571400.9669101,
     "ast_hash": "3b2266191ffc1a753abcecc758f1b389",
     "semantic_hash": ""
   },
   "src/content/blog/fr/how-to-block-reels-and-shorts-on-android-2026.mdx": {
-    "mtime": 1794047409.1237042,
-    "ast_hash": "686f8f680feaec40cb1d103f0ca638f0",
+    "mtime": 1794648898.3359456,
+    "ast_hash": "44bd40d1274ea238a9d65a8311f639af",
     "semantic_hash": ""
   },
   "scripts/validate-i18n.ts": {
@@ -2420,23 +2420,23 @@
     "semantic_hash": ""
   },
   "src/content/blog/de/android-digital-wellbeing-vs-third-party-focus-apps.md": {
-    "mtime": 1794047248.1723523,
-    "ast_hash": "bd66bbe278d3e725f1dd8a21877cea5f",
+    "mtime": 1794649207.2563422,
+    "ast_hash": "9eddc63499107b0fcfe06815e8b284f6",
     "semantic_hash": ""
   },
   "src/content/blog/de/best-app-to-block-social-media-on-android-in-2026.mdx": {
-    "mtime": 1794047540.0114477,
-    "ast_hash": "0a1ab4d70804b670c408ac40d6386baf",
+    "mtime": 1794648979.593997,
+    "ast_hash": "c89af71473a1822b557ed26e21307602",
     "semantic_hash": ""
   },
   "src/content/blog/de/how-to-block-reels-and-shorts-on-android-2026.mdx": {
-    "mtime": 1794047387.1361208,
-    "ast_hash": "c8ccd699db445935d6ac83092feca12d",
+    "mtime": 1794648898.335673,
+    "ast_hash": "0cdcc7594dbb0d2afe6eede0b5e49c4c",
     "semantic_hash": ""
   },
   "src/content/blog/de/how-to-block-social-media-on-android-during-work-hours.md": {
-    "mtime": 1794047483.8027189,
-    "ast_hash": "ef7f130c8225e4fa436bbe84cea1eeb6",
+    "mtime": 1794649151.6450248,
+    "ast_hash": "1b79287e4986cf5615a8f371f4d5122d",
     "semantic_hash": ""
   },
   "src/content/blog/de/logic-comparison-matrix.md": {
@@ -2450,8 +2450,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/de/opal-alternatives-android.mdx": {
-    "mtime": 1794047080.4160995,
-    "ast_hash": "b22817cdebb489e4de20ab20678fff22",
+    "mtime": 1794649028.935616,
+    "ast_hash": "2857cd3a3abec403e726016c28786df3",
     "semantic_hash": ""
   },
   "src/content/blog/de/reclaim-focus-story.md": {
@@ -2465,8 +2465,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/de/youtube-background-play-2026-workaround.mdx": {
-    "mtime": 1793155506.9823391,
-    "ast_hash": "b47c5e066e1301df1fd74b681c3d7c13",
+    "mtime": 1794648663.9618022,
+    "ast_hash": "aa4d91e68186a21ee1adf3e2f24c2fba",
     "semantic_hash": ""
   },
   "src/content/blog/de/youtube-screen-off-battery-hack.md": {
@@ -2475,8 +2475,8 @@
     "semantic_hash": ""
   },
   "src/content/blog/de/zero-telemetry-blocker.md": {
-    "mtime": 1785824108.9019945,
-    "ast_hash": "1c3990a1cee08cc8943fb3e1c2fcd896",
+    "mtime": 1794649207.2574425,
+    "ast_hash": "b030e596927a1dff688c55dff22ef1bd",
     "semantic_hash": ""
   },
   "src/content/blog/de/add-low-stock-alerts-shopify.md": {
@@ -2530,33 +2530,33 @@
     "semantic_hash": ""
   },
   "src/content/blog/de/how-to-block-instagram-reels-android.mdx": {
-    "mtime": 1794047369.3567693,
-    "ast_hash": "8c82b5586bb78dbc44ea3bbf75102b40",
+    "mtime": 1794648875.69116,
+    "ast_hash": "3bf2560e9b00856bda17ec641c5c172e",
     "semantic_hash": ""
   },
   "src/content/blog/de/how-to-block-youtube-shorts-android.mdx": {
-    "mtime": 1794047375.6907578,
-    "ast_hash": "23d343c07b5632bbe30975e32062cc18",
+    "mtime": 1794648875.692202,
+    "ast_hash": "6505cc8c325693399ca55086f3d247d4",
     "semantic_hash": ""
   },
   "src/content/blog/en/how-to-block-instagram-reels-android.mdx": {
-    "mtime": 1794046718.4687996,
-    "ast_hash": "b21a7463e496fa9ad6446bf3f2b083b3",
+    "mtime": 1794648875.6908154,
+    "ast_hash": "5efdf6c5d073ad40dde796957d243c79",
     "semantic_hash": ""
   },
   "src/content/blog/en/how-to-block-youtube-shorts-android.mdx": {
-    "mtime": 1794046724.020174,
-    "ast_hash": "04c48cbc60547ada1bad1547f8f48b54",
+    "mtime": 1794648875.691898,
+    "ast_hash": "9410d36708a7bf6deca6c6e4954c3d36",
     "semantic_hash": ""
   },
   "src/content/blog/fr/how-to-block-instagram-reels-android.mdx": {
-    "mtime": 1794047392.849095,
-    "ast_hash": "2c6b60732eca9713f9e85968a785cde4",
+    "mtime": 1794648875.6914778,
+    "ast_hash": "79d312e84379adaf2eebfec0e3b4e2b2",
     "semantic_hash": ""
   },
   "src/content/blog/fr/how-to-block-youtube-shorts-android.mdx": {
-    "mtime": 1794047398.3048644,
-    "ast_hash": "6a1df57d00168e7904cdd97b0453e9a8",
+    "mtime": 1794648875.6923964,
+    "ast_hash": "eba8b9b918a5eff65cb7890059f54cb1",
     "semantic_hash": ""
   },
   "src/assets/blogs/block-instagram-reels-android.png": {
@@ -2600,12 +2600,12 @@
     "semantic_hash": ""
   },
   "src/page-templates/AppsAriselyPage.astro": {
-    "mtime": 1794559657.162947,
+    "mtime": 1794571400.9660368,
     "ast_hash": "34a953c4376044d5c4f71a31fb54901a",
     "semantic_hash": ""
   },
   "src/pages/[lang]/apps/arisely/index.astro": {
-    "mtime": 1794552081.6839724,
+    "mtime": 1794571400.9675512,
     "ast_hash": "d615b27f81bb9fcd90fd47b17f1f00fd",
     "semantic_hash": ""
   },
@@ -2635,18 +2635,18 @@
     "semantic_hash": ""
   },
   "src/content/blog/de/alarm-app-that-makes-you-do-pushups-android.md": {
-    "mtime": 1794560639.3887587,
+    "mtime": 1794571400.9489934,
     "ast_hash": "46408221f0ae545011b5fffd5e02ddd6",
     "semantic_hash": ""
   },
   "src/content/blog/de/alarmy-alternatives-android.mdx": {
-    "mtime": 1794559639.1163027,
+    "mtime": 1794571400.9499142,
     "ast_hash": "acd92eb8188506a981f61a1c9128b1ab",
     "semantic_hash": ""
   },
   "src/content/blog/de/app-blocker-cannot-be-uninstalled-android.mdx": {
-    "mtime": 1794047281.7577808,
-    "ast_hash": "a71de6ac0f911b2423da5fc8cf8aaa12",
+    "mtime": 1794649207.2546775,
+    "ast_hash": "430cebb4702e2b8ee7faa6eb0c7bfabe",
     "semantic_hash": ""
   },
   "src/content/blog/de/arisely-alarm-clock-for-heavy-sleepers.md": {
@@ -2655,18 +2655,18 @@
     "semantic_hash": ""
   },
   "src/content/blog/de/best-alarm-apps-for-heavy-sleepers-android-2026.md": {
-    "mtime": 1794560639.388411,
+    "mtime": 1794571400.9504538,
     "ast_hash": "93e4061b97cf1fafc2b890b2407a103a",
     "semantic_hash": ""
   },
   "src/content/blog/de/best-free-reels-shorts-blockers-android-2026.mdx": {
-    "mtime": 1794567842.468619,
-    "ast_hash": "fdc368058c1a872dbb91b7eed5ec53ad",
+    "mtime": 1794649253.6144836,
+    "ast_hash": "3fc5f584037d8c26a7b27382bda215f9",
     "semantic_hash": ""
   },
   "src/content/blog/de/does-dark-mode-save-battery-amoled.mdx": {
-    "mtime": 1793155506.978915,
-    "ast_hash": "7863ae3890432a8d55490a08b90c31f5",
+    "mtime": 1794649207.254235,
+    "ast_hash": "a575fee1491c942d34ad80f58e2a5533",
     "semantic_hash": ""
   },
   "src/content/blog/de/dopamine-detox-phone-7-day-reset.mdx": {
@@ -2705,7 +2705,7 @@
     "semantic_hash": ""
   },
   "src/content/blog/de/why-android-alarms-dont-go-off-exact-alarms.md": {
-    "mtime": 1794560639.3877292,
+    "mtime": 1794571400.952138,
     "ast_hash": "e3f3823f037c31ea257c0c487ec52d47",
     "semantic_hash": ""
   },
@@ -2715,18 +2715,18 @@
     "semantic_hash": ""
   },
   "src/content/blog/en/alarm-app-that-makes-you-do-pushups-android.md": {
-    "mtime": 1794559495.347167,
+    "mtime": 1794571400.9525146,
     "ast_hash": "65de5a57f51fb0c2f96a352b5e3664e4",
     "semantic_hash": ""
   },
   "src/content/blog/en/alarmy-alternatives-android.mdx": {
-    "mtime": 1794559643.2982092,
+    "mtime": 1794571400.9528725,
     "ast_hash": "e040db4742e5d6950db2379f2c7db1e5",
     "semantic_hash": ""
   },
   "src/content/blog/en/app-blocker-cannot-be-uninstalled-android.mdx": {
-    "mtime": 1794046593.4663599,
-    "ast_hash": "a4a8feae6ab21292e1ebda20668edad5",
+    "mtime": 1794649207.2550402,
+    "ast_hash": "fd804a3ac6adf60c7ef310a4f364ba91",
     "semantic_hash": ""
   },
   "src/content/blog/en/arisely-alarm-clock-for-heavy-sleepers.md": {
@@ -2735,18 +2735,18 @@
     "semantic_hash": ""
   },
   "src/content/blog/en/best-alarm-apps-for-heavy-sleepers-android-2026.md": {
-    "mtime": 1794559435.9317648,
+    "mtime": 1794571400.9533362,
     "ast_hash": "67497cfcd294b94165a8063ba73aed31",
     "semantic_hash": ""
   },
   "src/content/blog/en/best-free-reels-shorts-blockers-android-2026.mdx": {
-    "mtime": 1794567717.7598193,
-    "ast_hash": "0c936efa7e44850d7726c8244aed82d8",
+    "mtime": 1794649253.6139846,
+    "ast_hash": "7c76e1b37db5b2f06c20b75c40b4d0d6",
     "semantic_hash": ""
   },
   "src/content/blog/en/does-dark-mode-save-battery-amoled.mdx": {
-    "mtime": 1793155506.984331,
-    "ast_hash": "a4c71f5bfa394aeac72e440c686757fb",
+    "mtime": 1794649207.253977,
+    "ast_hash": "ef2e6027ea755b58b494c59d1707b956",
     "semantic_hash": ""
   },
   "src/content/blog/en/dopamine-detox-phone-7-day-reset.mdx": {
@@ -2785,7 +2785,7 @@
     "semantic_hash": ""
   },
   "src/content/blog/en/why-android-alarms-dont-go-off-exact-alarms.md": {
-    "mtime": 1794559588.2144468,
+    "mtime": 1794571400.954579,
     "ast_hash": "2bde3fc1590e9612b6aa4c52e6a604be",
     "semantic_hash": ""
   },
@@ -2795,18 +2795,18 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/alarm-app-that-makes-you-do-pushups-android.md": {
-    "mtime": 1794560461.9754114,
+    "mtime": 1794571400.9611492,
     "ast_hash": "159a93c5463863d67a3509724d0d6f2c",
     "semantic_hash": ""
   },
   "src/content/blog/fr/alarmy-alternatives-android.mdx": {
-    "mtime": 1794559639.1363757,
+    "mtime": 1794571400.9616175,
     "ast_hash": "19cc424b6cc70afb7f1821dbdf087bae",
     "semantic_hash": ""
   },
   "src/content/blog/fr/app-blocker-cannot-be-uninstalled-android.mdx": {
-    "mtime": 1794047288.1599321,
-    "ast_hash": "8786006b90dab7b4a7b34e1b1c1fde9b",
+    "mtime": 1794649207.2552853,
+    "ast_hash": "271814739a6215a6f2d73bcff7d81e95",
     "semantic_hash": ""
   },
   "src/content/blog/fr/arisely-alarm-clock-for-heavy-sleepers.md": {
@@ -2815,18 +2815,18 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/best-alarm-apps-for-heavy-sleepers-android-2026.md": {
-    "mtime": 1794560398.9861236,
+    "mtime": 1794571400.962015,
     "ast_hash": "bbfc40ce0da45cce3578be873a30d64b",
     "semantic_hash": ""
   },
   "src/content/blog/fr/best-free-reels-shorts-blockers-android-2026.mdx": {
-    "mtime": 1794567997.1080458,
-    "ast_hash": "3d1440a886932867924c5778e556eedd",
+    "mtime": 1794649253.6148968,
+    "ast_hash": "166a44c37b6f812c9b52001e4d465feb",
     "semantic_hash": ""
   },
   "src/content/blog/fr/does-dark-mode-save-battery-amoled.mdx": {
-    "mtime": 1793155506.9891567,
-    "ast_hash": "cd12a65dead0f1e8c382e23b4d2d7369",
+    "mtime": 1794649207.2544656,
+    "ast_hash": "9979bc040930d67036379334aa1f982b",
     "semantic_hash": ""
   },
   "src/content/blog/fr/dopamine-detox-phone-7-day-reset.mdx": {
@@ -2865,7 +2865,7 @@
     "semantic_hash": ""
   },
   "src/content/blog/fr/why-android-alarms-dont-go-off-exact-alarms.md": {
-    "mtime": 1794560539.595974,
+    "mtime": 1794571400.9632432,
     "ast_hash": "96ad7ec25985ec7c7bfd762e664a4888",
     "semantic_hash": ""
   },
@@ -3100,7 +3100,7 @@
     "semantic_hash": ""
   },
   "src/i18n/locales/es.json": {
-    "mtime": 1794552133.8849149,
+    "mtime": 1794571400.9649684,
     "ast_hash": "be00fbc1fbaf257b875c5288bd944464",
     "semantic_hash": ""
   },
@@ -3115,7 +3115,7 @@
     "semantic_hash": ""
   },
   "src/content/blog/es/_README.md": {
-    "mtime": 1794557657.585085,
+    "mtime": 1794571400.9549327,
     "ast_hash": "9931db66085d14ba1d8104fc327d0b95",
     "semantic_hash": ""
   },
@@ -3130,83 +3130,128 @@
     "semantic_hash": ""
   },
   "src/content/blog/es/app-blocker-cannot-be-uninstalled-android.mdx": {
-    "mtime": 1794557657.5802095,
-    "ast_hash": "67ea257e586743853fa0f59a831f1c64",
+    "mtime": 1794649207.2555213,
+    "ast_hash": "035cd0ed7c250ed6ef7e2b16cd1a5114",
     "semantic_hash": ""
   },
   "src/content/blog/es/best-app-to-block-social-media-on-android-in-2026.mdx": {
-    "mtime": 1794557657.5807147,
-    "ast_hash": "851ec9be1eb6da4bd3738ff24fa13262",
+    "mtime": 1794648979.5944805,
+    "ast_hash": "45672544de7ceca0b6c23b4648f573e0",
     "semantic_hash": ""
   },
   "src/content/blog/es/best-free-reels-shorts-blockers-android-2026.mdx": {
-    "mtime": 1794567782.8191116,
-    "ast_hash": "8083ad9d4f22bb3d70fdf89fa8622611",
+    "mtime": 1794649253.6152036,
+    "ast_hash": "24cef1d6e3b52569c45af4c734bf3b3c",
     "semantic_hash": ""
   },
   "src/content/blog/es/how-to-block-instagram-reels-android.mdx": {
-    "mtime": 1794557657.5820408,
-    "ast_hash": "c98d7281600f3139b60048320cd59bd4",
+    "mtime": 1794648875.6917048,
+    "ast_hash": "5851f210aa1a1b5c6452b97627eca62d",
     "semantic_hash": ""
   },
   "src/content/blog/es/how-to-block-reels-and-shorts-on-android-2026.mdx": {
-    "mtime": 1794557657.5825665,
-    "ast_hash": "28ebd42983e82a6bb442d5143e30d959",
+    "mtime": 1794648898.3361862,
+    "ast_hash": "e03b4a1809207f37edc87f78b4504580",
     "semantic_hash": ""
   },
   "src/content/blog/es/how-to-block-tiktok-feed-android.mdx": {
-    "mtime": 1794557657.583024,
+    "mtime": 1794571400.9592366,
     "ast_hash": "777a7c818fb96cd129e7b7b804798830",
     "semantic_hash": ""
   },
   "src/content/blog/es/opal-alternatives-android.mdx": {
-    "mtime": 1794557657.5842352,
-    "ast_hash": "4f3ba92ae72b30531c7fbc6e6398a0ef",
+    "mtime": 1794649054.569047,
+    "ast_hash": "6b3702adcc45eff475c7679ed7137b05",
     "semantic_hash": ""
   },
   "src/content/blog/es/youtube-background-play-2026-workaround.mdx": {
-    "mtime": 1794557657.584678,
-    "ast_hash": "7effde4dcb2a88fb91c5e063831053e5",
+    "mtime": 1794648733.358912,
+    "ast_hash": "44c657f4ed0d3283d01c586a7662155d",
     "semantic_hash": ""
   },
   "src/content/blog/es/android-digital-wellbeing-vs-third-party-focus-apps.md": {
-    "mtime": 1794557657.5854812,
-    "ast_hash": "f788b6afb9eaaf0dcb704401e68c6c59",
+    "mtime": 1794649207.2570877,
+    "ast_hash": "c58ebdf7c590976ab960f3696953dd1d",
     "semantic_hash": ""
   },
   "src/content/blog/es/freedom-alternative-android.mdx": {
-    "mtime": 1794557657.5816596,
+    "mtime": 1794571400.9581165,
     "ast_hash": "5c7fa7db47f1246cf50f94f386bec0e1",
     "semantic_hash": ""
   },
   "src/content/blog/es/how-to-block-youtube-shorts-android.mdx": {
-    "mtime": 1794557657.5833972,
-    "ast_hash": "6024ebe626c974f9182d035df3d3dc4a",
+    "mtime": 1794648875.6925955,
+    "ast_hash": "6152d3a741db7d06bea42efa5971a55d",
     "semantic_hash": ""
   },
   "src/content/blog/es/limit-reels-per-day-android.mdx": {
-    "mtime": 1794557657.5838597,
+    "mtime": 1794571400.959779,
     "ast_hash": "364351e6ae3ab5047ccd64eef8fa0e83",
     "semantic_hash": ""
   },
   "src/content/blog/es/alarm-app-that-makes-you-do-pushups-android.md": {
-    "mtime": 1794566559.9739156,
+    "mtime": 1794571400.9553096,
     "ast_hash": "042007aaa504b6d332966dc6155a0b3b",
     "semantic_hash": ""
   },
   "src/content/blog/es/alarmy-alternatives-android.mdx": {
-    "mtime": 1794566617.376833,
+    "mtime": 1794571400.9559352,
     "ast_hash": "c9173411128239403eb22d6d77bc46d1",
     "semantic_hash": ""
   },
   "src/content/blog/es/best-alarm-apps-for-heavy-sleepers-android-2026.md": {
-    "mtime": 1794566501.910997,
+    "mtime": 1794571400.9570048,
     "ast_hash": "80e8aba0f006670a0e1bd4b8cce9113d",
     "semantic_hash": ""
   },
   "src/content/blog/es/why-android-alarms-dont-go-off-exact-alarms.md": {
-    "mtime": 1794566424.137304,
+    "mtime": 1794571400.9603505,
     "ast_hash": "891047dd21f843fad42c69586b4dd754",
+    "semantic_hash": ""
+  },
+  "docs/seo-plan-2026-11-features-and-i18n.md": {
+    "mtime": 1794648128.3295286,
+    "ast_hash": "75a1ef538c9ae506a8c4447c1520ef07",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/best-app-blocker-for-studying-android.mdx": {
+    "mtime": 1794647579.0227787,
+    "ast_hash": "9281747adbab3ae1c228410d44d1a84c",
+    "semantic_hash": ""
+  },
+  "src/content/blog/de/sleep-inertia-why-you-wake-up-groggy.mdx": {
+    "mtime": 1794571400.9517813,
+    "ast_hash": "4ea4cb0be42b82060f08138cf4965a04",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/best-app-blocker-for-studying-android.mdx": {
+    "mtime": 1794647579.023136,
+    "ast_hash": "aefb1b0e1d806cfd64845cd653458d6c",
+    "semantic_hash": ""
+  },
+  "src/content/blog/en/sleep-inertia-why-you-wake-up-groggy.mdx": {
+    "mtime": 1794571400.9541826,
+    "ast_hash": "60d68f51038d637bd753234f081cfe60",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/best-app-blocker-for-studying-android.mdx": {
+    "mtime": 1794647579.0237145,
+    "ast_hash": "6a6b962f6137e9c95d9df1d13fc55482",
+    "semantic_hash": ""
+  },
+  "src/content/blog/fr/sleep-inertia-why-you-wake-up-groggy.mdx": {
+    "mtime": 1794571400.9628468,
+    "ast_hash": "7f445bf2ae4c8344da6d93d243d06905",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/best-app-blocker-for-studying-android.png": {
+    "mtime": 1794647579.022416,
+    "ast_hash": "0cff3339cb47083f354c4dac31241296",
+    "semantic_hash": ""
+  },
+  "src/assets/blogs/sleep-inertia-why-you-wake-up-groggy.png": {
+    "mtime": 1794570050.4681976,
+    "ast_hash": "82eb6090f6e4de2b4e209632a23a690a",
     "semantic_hash": ""
   }
 }

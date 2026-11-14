@@ -1,0 +1,225 @@
+---
+title: "Webseiten auf Android blockieren (2026): 5 Methoden im Vergleich"
+description: "Chrome für Android hat keine Einstellung, um eine Webseite zu sperren. Diese fünf Methoden funktionieren – Privates DNS, Family Link, ein VPN-Blocker, die hosts-Datei und ein Blocker über die Bedienungshilfen – und das kostet Sie jede davon."
+date: "2026-11-14"
+dateModified: "2026-11-14"
+author: "AppLass-Team"
+excerpt: "In Chrome für Android gibt es keinen Knopf, um eine Seite zu sperren. Bleiben: Privates DNS, Family Link, ein VPN-Blocker, die hosts-Datei mit Root, oder ein App-Blocker über die Bedienungshilfen. Jede Variante gibt etwas anderes auf."
+tags: ["android", "chrome", "webseiten sperren", "fokus", "privatsphäre"]
+category: "Android Apps"
+keywords: "webseiten blockieren android, webseiten sperren android, seiten in chrome sperren android, webseite blockieren ohne root, website blocker android ohne vpn, webseite auf dem handy sperren, bestimmte seiten sperren android, internetseiten blockieren android"
+breadcrumbName: "Webseiten blockieren"
+sidebarApps:
+  - mindful-guard
+featured: false
+howTo:
+  name: "Eine Webseite auf Android sperren – ohne VPN und ohne Root"
+  totalTime: "PT3M"
+  steps:
+    - name: "Blocker installieren, der im Browser wirkt"
+      text: "Installieren Sie Mindful Guard aus dem Play Store. Die App sperrt Seiten über die Bedienungshilfen von Android statt über ein VPN, es wird also nichts durch einen Tunnel geleitet."
+    - name: "Bedienungshilfen-Dienst erlauben"
+      text: "Erlauben Sie den Bedienungshilfen-Dienst, wenn Sie gefragt werden. Darüber erkennt die App, dass eine gesperrte Domain in einem Browser-Tab geladen wurde."
+    - name: "Sperre öffnen und zum Tab Website wechseln"
+      text: "Öffnen Sie eine Fokus-Sitzung oder einen Wochenplan und wechseln Sie zum Tab Website. Die eigene Seite jeder gesperrten App ist bereits dort und fest aktiviert: Wer die Instagram-App sperrt, sperrt auch instagram.com."
+    - name: "Eigene Domains ergänzen"
+      text: "Tippen Sie jede weitere Domain ein, die gesperrt sein soll. Sie wird in Ihrer Bibliothek gespeichert, beim nächsten Mal schalten Sie sie nur noch an."
+    - name: "Sperre starten und testen"
+      text: "Starten Sie die Sperre und öffnen Sie eine der gesperrten Seiten in Chrome. Der Tab wird auf eine leere Seite umgeleitet und der Pause-Screen erscheint, Sie bleiben also im Browser statt auf dem Startbildschirm zu landen."
+faqs:
+  - question: "Wie blockiere ich eine Webseite auf Android?"
+    answer: "Chrome für Android kann das nicht selbst, also bleiben fünf Wege: ein filterndes Privates DNS in den Einstellungen, Google Family Link auf dem Handy eines Kindes, ein VPN-basierter Blocker, die hosts-Datei bei gerootetem Gerät, oder ein App-Blocker über die Bedienungshilfen. Nur der letzte Weg braucht weder Root noch VPN."
+  - question: "Kann ich in Chrome auf Android Seiten ohne App sperren?"
+    answer: "Ja, mit Privatem DNS. Einstellungen → Netzwerk und Internet → Privates DNS, dann den Hostnamen eines filternden Resolvers wie NextDNS eintragen. Das filtert jede App und jeden Browser auf dem Gerät, kostet keinen Akku und braucht kein Root. Der Haken: Es ist eine normale Einstellung, die Sie in fünf Sekunden wieder ausschalten können."
+  - question: "Wie sperre ich Webseiten auf Android ohne VPN?"
+    answer: "Privates DNS und Blocker über die Bedienungshilfen funktionieren beide ohne VPN. Für die Privatsphäre ist der Unterschied groß: Ein VPN-Blocker leitet den gesamten Datenverkehr durch seinen eigenen Tunnel und sieht dort jede Anfrage, während Privates DNS nur Namensauflösungen an einen Resolver schickt und ein Blocker über die Bedienungshilfen die Adressleiste auf Ihrem Gerät liest und nichts versendet."
+  - question: "Gibt es einen Website-Blocker für Android, der sich nicht deinstallieren lässt?"
+    answer: "Nein. Keine App aus dem Play Store kann ihre eigene Deinstallation verhindern – Android hat das normalen Apps 2016 entzogen. Was manche Blocker bieten, ist Reibung: Der strikte Modus von Mindful Guard schickt Sie während einer Sitzung von App-Info, Bedienungshilfen und Deinstallationsbildschirm zurück, und früher aussteigen kostet 20 Minuten Wartezeit. Das ist eine Selbstbindung, kein Schloss."
+  - question: "Sperrt das Blockieren einer App auch deren Webseite?"
+    answer: "Standardmäßig nicht, und genau diese Lücke lässt die meisten Sperren scheitern. Ein App-Timer auf Instagram ändert nichts an instagram.com in Chrome. Mindful Guard aktiviert die eigene Seite jeder gesperrten App deshalb fest mit, damit beides immer zusammen gilt."
+  - question: "Kann ich eine Webseite nur zu bestimmten Zeiten sperren?"
+    answer: "Ja. Ein Wochenplan sperrt dieselben Seiten und Apps in den Stunden, die Sie festlegen, etwa werktags von 9 bis 17 Uhr, und hebt die Sperre danach automatisch auf. Privates DNS und die hosts-Datei kennen das nicht: Sie sind an oder aus, bis Sie es ändern."
+  - question: "Warum braucht ein Website-Blocker die Bedienungshilfen?"
+    answer: "Weil das Auslesen der Adressleiste einer anderen App genau das ist, wofür die Bedienungshilfen-APIs da sind. Es ist eine weitreichende Berechtigung: Prüfen Sie vorher, ob die App ohne Konto auskommt, ob sie Netzwerkzugriff hat und was im Abschnitt Datensicherheit bei Google Play steht."
+---
+
+import MindfulGuardCTA from "@/components/blog/MindfulGuardCTA.astro";
+
+**Chrome für Android hat keine Einstellung, die eine Webseite sperrt.** Es gibt fünf Wege darum
+herum: ein filterndes **Privates DNS**, **Google Family Link** auf dem Handy eines Kindes, ein
+**VPN-basierter Blocker**, die **hosts-Datei** bei gerootetem Gerät, oder ein **App-Blocker über die
+Bedienungshilfen**. Nur der letzte braucht weder Root noch VPN.
+
+Welcher für Sie passt, hängt davon ab, was Sie aufgeben wollen: Ihren Datenverkehr, Ihren
+Root-Status, die Möglichkeit, die Einstellung zurückzudrehen – oder fast nichts.
+
+## Warum Chrome auf Android Seiten nicht selbst sperrt
+
+Am Desktop installiert man eine Erweiterung und die Sache ist erledigt. Chrome für Android
+unterstützt keine Erweiterungen und bringt keine eigene Einstellung zum Sperren einzelner Seiten mit.
+Der einzige Schutz auf Seitenebene ist Safe Browsing, und das warnt vor gefährlichen Seiten – nicht
+vor Seiten, die Sie um 23 Uhr einfach nicht öffnen wollen.
+
+Eine systemweite URL-Sperrliste hat Android ebenfalls nicht. Jede Methode unten umgeht die Lücke
+deshalb aus einer anderen Richtung: über das Netzwerk, das Konto, das Gerät oder den Bildschirm.
+
+## Die fünf Methoden im Vergleich
+
+| Methode | Root? | VPN? | Deckt ab | Einzelne Domains | Wie leicht rückgängig |
+|---|---|---|---|---|---|
+| **Blocker über Bedienungshilfen** | Nein | Nein | Jeden Browser | Ja, pro Domain | Schwer während einer strikten Sitzung |
+| **Privates DNS** | Nein | Nein | Ganzes Gerät | Ja, über die Liste des Resolvers | ~5 Sekunden in den Einstellungen |
+| **VPN-Blocker** | Nein | **Ja** | Ganzes Gerät | Ja | Leicht, VPN trennen |
+| **Family Link** | Nein | Nein | **Nur Chrome** | Ja | Kind nicht, Eltern schon |
+| **hosts-Datei** | **Ja** | Nein | Ganzes Gerät | Ja | Braucht wieder Root |
+
+---
+
+## Methode 1: Privates DNS (kostenlos, ohne Root, ohne App)
+
+Android hat eine eingebaute Einstellung, die jede Namensauflösung des Geräts an einen Resolver Ihrer
+Wahl schickt. Richten Sie sie auf einen filternden Resolver, lösen die Seiten auf dessen Sperrliste
+überall gleichzeitig nicht mehr auf – Chrome, Firefox, der In-App-Browser von Instagram, alles.
+
+1. Öffnen Sie **Einstellungen → Netzwerk und Internet → Privates DNS**.
+2. Wählen Sie **Hostname des privaten DNS-Anbieters**.
+3. Tragen Sie den Hostnamen Ihres Filterdienstes ein, bei NextDNS etwa in der Form
+   `ihreid.dns.nextdns.io`.
+4. Pflegen Sie die zu sperrenden Seiten in der Sperrliste dieses Dienstes.
+
+**Was es kostet:** Es ist eine normale Android-Einstellung, die Sie in etwa fünf Sekunden wieder
+ausschalten. Gegen Gewohnheit hervorragend, gegen Absicht wirkungslos. Außerdem kennt die Methode
+keine Zeiten – ein „nur zwischen 9 und 17 Uhr" gibt es nicht – und sie kann die Instagram-App nicht
+von instagram.com unterscheiden, weil beides auf DNS-Ebene gleich aussieht.
+
+**Gut für:** alle Handys eines Haushalts filtern, oder Kategorien, die auf dem Gerät nie etwas zu
+suchen haben.
+
+## Methode 2: Google Family Link (Handy eines Kindes)
+
+Gehört das Handy einem Kind mit betreutem Google-Konto, kann Family Link Seiten vom Elterngerät aus
+filtern, und das Kind kann es nicht zurückdrehen.
+
+Die Grenze, die oft übersehen wird: **Der Seitenfilter von Family Link gilt für Chrome, nicht für
+Browser anderer Anbieter.** Installiert das Kind Firefox oder Samsung Internet, ist der Filter
+schlicht nicht da. Die übliche Antwort ist, die anderen Browser zusätzlich als Apps zu sperren – das
+funktioniert, wird aber schnell zum Katz-und-Maus-Spiel.
+
+**Gut für:** Eltern, als eine Schicht von mehreren – nicht, um das eigene Handy zu begrenzen.
+
+## Methode 3: Ein VPN-basierter Blocker
+
+Mehrere Blocker leiten den Datenverkehr durch einen lokalen VPN-Tunnel und verwerfen Anfragen an
+gesperrte Domains. Das funktioniert, braucht kein Root und deckt jede App ab.
+
+**Was es kostet:** Android erlaubt nur ein VPN gleichzeitig, das kollidiert also mit einem VPN, das
+Sie für Privatsphäre oder Arbeit nutzen. Vor allem aber geben Sie einer App Einblick in Ihren
+gesamten Netzwerkverkehr – ein seltsamer Tausch für ein Fokus-Werkzeug. Aggressives
+Akku-Management auf manchen Samsung-, Xiaomi- und OnePlus-Geräten beendet Hintergrund-VPNs
+zusätzlich, und die Sperre hört still auf zu wirken.
+
+**Gut für:** alle, die einem bestimmten Anbieter ohnehin vertrauen und sonst kein VPN nutzen.
+
+## Methode 4: Die hosts-Datei (nur mit Root)
+
+Der Klassiker: gesperrte Domains in `/etc/hosts` auf `127.0.0.1` umbiegen, dann lösen sie nie auf. Auf
+modernem Android ist diese Datei ohne **Root** nicht beschreibbar, und ein Handy zu rooten, um eine
+Webseite zu sperren, zerschießt Banking-Apps, kostet Garantie und schwächt das Sicherheitsmodell des
+Geräts.
+
+Apps, die „hosts-Sperre ohne Root" versprechen, betreiben in aller Regel ein lokales VPN und
+bearbeiten *dessen* hosts-Datei – damit sind Sie wieder bei Methode 3, nur mit Umweg.
+
+**Gut für:** 2026 fast niemanden.
+
+## Methode 5: Ein Blocker über die Bedienungshilfen (ohne Root, ohne VPN)
+
+Der neueste Ansatz liest die Adressleiste statt des Netzwerks. Lädt eine gesperrte Domain in
+irgendeinem Browser, bemerkt der Blocker das und greift ein – kein Tunnel, kein Resolver, nichts
+verlässt das Gerät.
+
+[Mindful Guard](/de/apps/mindful-guard) arbeitet so:
+
+1. Installieren Sie Mindful Guard aus dem Play Store.
+2. Erlauben Sie den **Bedienungshilfen-Dienst**. Darüber erkennt die App, dass eine gesperrte Domain
+   in einem Tab geladen wurde.
+3. Öffnen Sie eine **Fokus-Sitzung** oder einen **Wochenplan** und wechseln Sie zum Tab **Website**.
+   Die eigene Seite jeder gesperrten App ist bereits dort und fest aktiviert – wer die Instagram-App
+   sperrt, sperrt auch instagram.com, denn eine Sperre, die nur eines von beidem erfasst, ist keine.
+4. Ergänzen Sie eigene Domains. Einmal eingetippt, landen sie in Ihrer Bibliothek; beim nächsten Mal
+   schalten Sie sie nur noch an.
+5. Starten Sie die Sperre und testen Sie sie. Der gesperrte Tab wird auf eine leere Seite umgeleitet
+   und der **Pause-Screen** erscheint, Sie bleiben also im Browser statt auf dem Startbildschirm.
+
+**Was es kostet:** Die Bedienungshilfen-Berechtigung ist weitreichend, und das sollten Sie ernst
+nehmen – siehe [warum ein Blocker sie braucht](#warum-braucht-ein-website-blocker-die-bedienungshilfen)
+weiter unten. Dafür bekommen Sie Kontrolle pro Domain, Zeitpläne, Abdeckung in jedem Browser und kein
+VPN.
+
+Der kostenlose Tarif deckt die eigene Seite jeder gesperrten App plus eine eigene Domain ab; Premium
+hebt die Grenze auf.
+
+<MindfulGuardCTA lang="de" campaign="how-to-block-websites-on-android-chrome" />
+
+---
+
+## Die App zu sperren und die Webseite nicht ist eine halbe Sperre
+
+Das ist der Fehler, der benannt gehört, weil fast alle ihn machen.
+
+Sie setzen einen Timer auf die Instagram-App. Der Timer läuft ab. Dreißig Sekunden später lesen Sie
+instagram.com in Chrome, und die Sperre hat nichts erreicht außer einem zusätzlichen Schritt. Dasselbe
+gilt für facebook.com, x.com, reddit.com, youtube.com und jede andere App, deren Webseite sie
+vollständig ersetzt.
+
+Das Digital Wellbeing von Android kann diese Lücke nicht schließen – es zählt App-Zeit und weiß
+nichts über URLs. Jeder Sperrplan, der nur Apps erfasst, hat ein browserförmiges Loch. Deshalb sind
+die App-Seiten fest vorausgewählt und nicht bloß ein Angebot.
+
+## Welche Methode passt zu Ihnen?
+
+| Ihre Lage | Methode |
+|---|---|
+| Eine Seite soll vom eigenen Handy verschwinden, zu festen Zeiten | Blocker über Bedienungshilfen |
+| Eine Kategorie soll von allen Geräten im Haushalt verschwinden | Privates DNS auf jedem Handy oder am Router |
+| Es ist das Handy eines Kindes | Family Link, plus Privates DNS für die Lücke außerhalb von Chrome |
+| Sie nutzen bereits ein VPN, dem Sie vertrauen | Privates DNS, kein zweites VPN |
+| Sie haben das Handy vor Jahren gerootet und mögen das so | hosts-Datei |
+| Sie schalten die Sperre immer wieder ab | Ein Blocker mit [striktem Modus](/de/blog/app-blocker-cannot-be-uninstalled-android) |
+
+## Lässt sich ein Website-Blocker unentfernbar machen?
+
+Nein – und seien Sie misstrauisch, wenn etwas anderes behauptet wird. Android hat Apps 2016 die
+Möglichkeit genommen, ihre eigene Deinstallation zu verhindern. Jeder „unlöschbare Blocker" ist in
+Wahrheit eine Reibungsschicht: Er macht die Umgehung langsam und bewusst statt reflexhaft.
+
+Das ist trotzdem etwas wert. 20 Minuten Wartezeit reichen meistens, damit der Impuls vorbeigeht – das
+ist der ganze Mechanismus. Ein Schloss ist es nicht, und ein Werkzeug, das sich als eines ausgibt,
+lässt Sie im falschen Moment darauf vertrauen. Die ehrliche Fassung steht in
+[App-Blocker, die sich nicht deinstallieren lassen](/de/blog/app-blocker-cannot-be-uninstalled-android).
+
+## Warum braucht ein Website-Blocker die Bedienungshilfen?
+
+Weil zu sehen, welche Seite eine andere App geladen hat, genau das ist, wofür die
+Bedienungshilfen-APIs gedacht sind – dieselben APIs, die ein Screenreader nutzt. Eine engere
+Berechtigung, die diese Aufgabe erfüllen würde, gibt es nicht.
+
+Sie ist weitreichend, also wenden Sie den naheliegenden Test an, bevor Sie sie vergeben: Braucht die
+App ein Konto? Hat sie Netzwerkzugriff? Was steht im Abschnitt **Datensicherheit** bei Google Play?
+Ein Fokus-Werkzeug, das Ihre Adressleiste liest, sollte nichts versenden, und Sie sollten das prüfen
+können statt es zu glauben – das Argument für
+[einen Blocker ganz ohne Telemetrie](/de/blog/zero-telemetry-blocker).
+
+## Fazit
+
+Chrome für Android kann keine Webseite sperren, also wählen Sie den Tausch, der Ihnen lieber ist.
+**Privates DNS** ist kostenlos und systemweit, aber fünf Sekunden vom Ausschalten entfernt.
+**Family Link** passt für das Handy eines Kindes und endet bei Chrome. Ein **VPN-Blocker** kostet
+Ihren VPN-Platz und zeigt einem Anbieter Ihren gesamten Verkehr. Die **hosts-Datei** kostet Root. Ein
+**Blocker über die Bedienungshilfen** kostet eine weitreichende Berechtigung und gibt dafür Sperren
+pro Domain und pro Zeitplan in jedem Browser zurück.
+
+Was immer Sie wählen: Sperren Sie App und Webseite zusammen – sonst haben Sie eine Bodenschwelle
+gebaut und nennen sie Mauer.
+
+<MindfulGuardCTA lang="de" campaign="how-to-block-websites-on-android-chrome" />
