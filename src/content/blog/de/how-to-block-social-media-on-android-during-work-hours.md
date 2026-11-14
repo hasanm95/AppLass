@@ -1,9 +1,10 @@
 ---
-title: "Soziale Medien auf Android nur während der Arbeitszeit blockieren"
+title: "Soziale Medien auf Android während der Arbeitszeit blockieren (2026)"
 date: "2026-04-24"
-dateModified: "2026-10-24"
+dateModified: "2026-11-14"
 category: "Android-Apps"
-keywords: "soziale medien blockieren android, zeitgesteuerter app blocker android, apps während der arbeitszeit blockieren, mindful guard android"
+keywords: "soziale medien blockieren android, zeitgesteuerter app blocker android, apps während der arbeitszeit blockieren, app blocker zeitplan android, instagram während der arbeit sperren, bildschirmzeit arbeitszeit android, mindful guard android"
+description: "Die Timer von Digital Wellbeing haben einen „Heute ignorieren“-Button. Ein Wochenplan nicht – Instagram öffnet zwischen 9 und 17 Uhr einfach nicht. In fünf Minuten eingerichtet, samt der drei Lücken, die ein Plan allein offen lässt."
 author: "AppLass-Team"
 excerpt: "Soziale Medien dauerhaft zu löschen hält nie. Was wirklich funktioniert, ist zeitgesteuertes Blockieren: Apps sperren sich während der Arbeitszeit selbst und geben sich danach automatisch wieder frei. So richten Sie es in unter 5 Minuten ein."
 thumbnail: "../../../assets/blogs/block-social-media-work-hours-android.png"

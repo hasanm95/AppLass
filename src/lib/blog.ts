@@ -38,6 +38,10 @@ export interface MarkdownBlogPost {
   category: string;
   author: string;
   excerpt: string;
+  // Meta description / JSON-LD description. Written for the SERP snippet, which is a
+  // different job from `excerpt` (the teaser on the blog index card). Falls back to
+  // excerpt when a post has none.
+  description?: string;
   thumbnail: { src: string; width: number; height: number; format: string } | string;
   content: string;
   featured?: boolean;
@@ -64,6 +68,7 @@ export async function getBlogPosts(lang: string = "en"): Promise<MarkdownBlogPos
       category: post.data.category,
       author: post.data.author,
       excerpt: post.data.excerpt,
+      description: post.data.description,
       thumbnail: post.data.thumbnail || "",
       featured: post.data.featured || false,
       faqs: post.data.faqs || [],
@@ -101,6 +106,7 @@ export async function getBlogPostBySlug(slug: string, lang: string = "en"): Prom
       category: entry.data.category,
       author: entry.data.author,
       excerpt: entry.data.excerpt,
+      description: entry.data.description,
       thumbnail: entry.data.thumbnail || "",
       featured: entry.data.featured || false,
       faqs: entry.data.faqs || [],

@@ -1,11 +1,12 @@
 ---
 title: "La Télémétrie est une Distraction : Le Cas pour une Productivité Zéro-Données"
 date: "2026-01-26"
-dateModified: "2026-05-19"
+dateModified: "2026-11-14"
 category: "Applications Android"
 keywords: "bloqueur application sans télémétrie, application concentration hors ligne android, outils productivité confidentialité, mindful guard android"
 author: "Équipe AppLass"
 excerpt: "La plupart des outils de productivité suivent chacun de vos mouvements. Nous défendons l'idée que la vraie concentration est impossible sans une confidentialité absolue et une architecture offline-first."
+description: "« Zero telemetry » signifie que l'application n'a aucun serveur où envoyer quoi que ce soit : pas de compte, pas de SDK d'analytics, pas de rapport de plantage. Ce que le terme garantit vraiment, comment le vérifier vous-même sur Google Play, et pourquoi cela compte pour une application qui voit chaque écran que vous ouvrez."
 faqs:
   - question: "Que signifie « zéro télémétrie » pour une application de concentration ?"
     answer: "Zéro télémétrie signifie que l'application n'envoie aucune donnée d'utilisation nulle part. Tout le traitement se fait sur l'appareil, il n'y a aucun SDK d'analyse dans le code et aucun transfert en arrière-plan ne rapporte vos habitudes à un serveur. Vos données ne peuvent être ni divulguées ni revendues, puisqu'elles ne quittent jamais le téléphone."
