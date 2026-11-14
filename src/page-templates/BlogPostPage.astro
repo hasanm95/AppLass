@@ -31,7 +31,9 @@ if (!post || !post.entry) {
 const { Content } = await render(post.entry);
 
 const title = `${post.title} | AppLass Blog`;
-const description = post.excerpt;
+// `description` is written for the SERP snippet; `excerpt` is the blog-card teaser.
+// Prefer the former and fall back to the latter, so a post without one still has a meta description.
+const description = post.description || post.excerpt;
 
 // Never earlier than publication — an unrevised post was last modified when it shipped.
 const lastModified = post.dateModified || post.date;
@@ -48,7 +50,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   headline: post.title,
-  description: post.excerpt,
+  description,
   image: imageUrl,
   datePublished: post.date,
   dateModified: lastModified,
