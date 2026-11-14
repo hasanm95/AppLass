@@ -1,10 +1,10 @@
 ---
-title: "Opal consomme-t-il de la batterie ? Ce qui coûte vraiment (2026)"
-description: "Non — pas plus que les autres bloqueurs. La question vient de l'époque VPN d'Opal, close en 2022. Voici ce que chaque méthode de blocage coûte réellement en batterie, et comment vérifier votre propre téléphone en trente secondes."
+title: "Opal consomme-t-il de la batterie ? La technique dit non, les utilisateurs disent oui"
+description: "Le mécanisme de blocage d'Opal n'est pas gourmand, pourtant des utilisateurs Reddit rapportent une consommation nette et l'IA de Google répond désormais oui. Les deux peuvent être vrais. Ce que coûte chaque méthode, d'où viennent ces retours, et comment trancher sur votre téléphone."
 date: "2026-11-14"
 dateModified: "2026-11-14"
 author: "Équipe AppLass"
-excerpt: "Opal a abandonné son VPN local en 2022 et utilise aujourd'hui l'API Temps d'écran d'Apple sur iOS et le service d'accessibilité sur Android. Ni l'un ni l'autre n'est gourmand. Si quelque chose vide votre téléphone, Réglages → Batterie vous le nomme en trente secondes."
+excerpt: "Le mécanisme qu'utilise Opal est peu coûteux, mais des retours de première main sur une vraie consommation existent et méritent une réponse plutôt qu'un haussement d'épaules. Un mécanisme peu coûteux mal implémenté coûte quand même. Votre écran de batterie tranche en trente secondes."
 tags: ["opal", "batterie", "android", "ios", "bloqueur d'applications"]
 category: "Android Apps"
 keywords: "opal consomme de la batterie, opal batterie, opal vide la batterie, opal mauvais pour la batterie, bloqueur d'applications consommation batterie, service accessibilité batterie, bloqueur vpn batterie"
@@ -26,7 +26,7 @@ howTo:
       text: "Sur presque tous les téléphones, l'écran est le premier consommateur. Si le bloqueur n'en représente qu'une fraction, ce n'est pas lui le problème."
 faqs:
   - question: "Opal consomme-t-il beaucoup de batterie ?"
-    answer: "Pas plus que les autres bloqueurs. Opal utilisait un VPN local sur iOS jusqu'en 2022, puis est passé à l'API Temps d'écran d'Apple. Sur Android, sa fiche Play indique un blocage via l'API AccessibilityService, le mécanisme qu'utilisent la plupart des bloqueurs Android, et qui n'est pas gourmand."
+    answer: "Le mécanisme ne devrait pas. Opal a quitté son VPN local en 2022 et utilise aujourd'hui l'API Temps d'écran d'Apple sur iOS et l'API AccessibilityService sur Android, aucune des deux n'étant gourmande. Mais les retours de première main sur une consommation nette sont assez fréquents pour que l'IA de Google réponde oui en les citant. Un mécanisme peu coûteux mal implémenté coûte quand même : vérifiez votre propre écran de batterie."
   - question: "Pourquoi pense-t-on qu'Opal vide la batterie ?"
     answer: "Parce que c'était une inquiétude fondée. Jusqu'en 2022, Opal faisait tourner un VPN local sur iOS, et les bloqueurs VPN coûtent réellement de la batterie, car le tunnel reste ouvert et le trafic est inspecté. Cette architecture a disparu, la question lui a survécu."
   - question: "Les bloqueurs d'applications consomment-ils de la batterie en général ?"
@@ -41,12 +41,39 @@ faqs:
 
 import MindfulGuardCTA from "@/components/blog/MindfulGuardCTA.astro";
 
-**Non — pas plus que les autres bloqueurs d'applications.** Opal a fait tourner un VPN local sur iOS
-jusqu'en 2022, puis est passé à l'API Temps d'écran d'Apple. Sur Android, sa
-[fiche Play](https://play.google.com/store/apps/details?id=com.withopal.opal) indique un blocage via
-l'**API AccessibilityService**. Aucun de ces deux mécanismes n'est gourmand en batterie.
+**La technique dit non. Beaucoup d'utilisateurs disent oui. Les deux peuvent être vrais, et seul
+votre écran de batterie tranche pour votre téléphone.**
 
-La question reste bonne, cependant, parce que la réponse était différente autrefois.
+Opal a fait tourner un VPN local sur iOS jusqu'en 2022, puis est passé à l'API Temps d'écran d'Apple.
+Sur Android, sa
+[fiche Play](https://play.google.com/store/apps/details?id=com.withopal.opal) indique un blocage via
+l'**API AccessibilityService**. Aucun de ces deux mécanismes ne *devrait* être gourmand.
+
+Mais cherchez cette question et l'IA de Google répond désormais **« Oui, Opal peut provoquer une
+consommation notable »**, à partir de fils Reddit où c'est exactement ce qui est rapporté. Écarter ces
+retours parce que l'architecture semble peu coûteuse serait une erreur : cette page les prend donc au
+sérieux d'abord.
+
+## Ce que rapportent réellement les utilisateurs
+
+Le fil le plus cité est un test de deux semaines publié sur r/nosurf, au verdict sans détour :
+
+> « Ça vide la batterie de façon notable. Ce qui tourne en arrière-plan pour surveiller les
+> applications est gourmand. »
+
+C'est une expérience de première main, et cela mérite mieux qu'un haussement d'épaules. Deux choses
+l'expliquent sans donner tort à personne :
+
+- **L'implémentation, pas le mécanisme.** L'API d'accessibilité délivre des événements à faible coût,
+  mais ce que l'application *fait* à chaque événement lui appartient. Un bloqueur qui se réveille,
+  interroge les statistiques d'usage et reconstruit son état à chaque changement de fenêtre coûte bien
+  plus qu'un bloqueur qui filtre tôt et se rendort.
+- **L'optimiseur de batterie qui riposte.** La gestion agressive de l'énergie sur Samsung, Xiaomi et
+  OnePlus tue et relance sans cesse les applications en arrière-plan. Le cycle de redémarrage consomme
+  lui-même, et il est imputé à l'application relancée.
+
+La version honnête est donc plus étroite que « non » ou « oui » : **le mécanisme n'impose pas de coût
+en batterie, et certains utilisateurs en subissent un quand même.**
 
 ## D'où vient cette question
 
@@ -117,10 +144,13 @@ Trois explications couvrent généralement le cas :
 
 ## En résumé
 
-Opal n'a pas de problème de batterie, et n'en a plus depuis 2022. Les bloqueurs basés sur
-l'accessibilité n'en ont pas non plus, en tant que catégorie.
+L'architecture qu'utilise Opal aujourd'hui n'impose pas de coût en batterie, et les bloqueurs basés
+sur l'accessibilité sont peu coûteux en tant que catégorie. Ce n'est pas pour autant la promesse que
+votre téléphone ira bien : des utilisateurs rapportent l'inverse, assez souvent pour que les moteurs
+de recherche ouvrent là-dessus, et les différences d'implémentation sont une vraie explication plutôt
+qu'une excuse.
 
-Si votre téléphone meurt trop tôt, la liste de la batterie vous dira qui en est responsable, et ce
-sera très probablement l'écran. Vérifier prend trente secondes et vaut mieux que deviner.
+C'est pourquoi la réponse n'est pas une affirmation. C'est une vérification de trente secondes sur
+votre propre appareil, où l'écran sera presque certainement en tête de liste.
 
 <MindfulGuardCTA lang="fr" campaign="does-opal-drain-battery" />

@@ -65,23 +65,34 @@ pulled from that post. It is neither now: it is live, measured, and it is the si
 citation. Worth an explicit decision about what that page should say, rather than leaving it to
 accumulate.
 
-## Three findings that change existing content
+## Three findings, and what was done about them
 
-**1. The battery post contradicts the AI Overview, and the AI Overview has user reports.**
+**1. The battery post contradicted the AI Overview and ignored its evidence — now fixed.**
 For `does opal drain battery`, Google answers **"Yes, Opal can cause notable battery drain"**, citing
 Reddit r/nosurf: *"It drains battery noticeably. Whatever it's running in the background to monitor
-your apps is hungry."* The new P5 post argues the opposite from the mechanism — accessibility-based
-blocking is cheap. Both can be true (a cheap mechanism badly implemented still drains), but P5
-currently does not acknowledge the reports at all, and Google already shows our own snippet —
-*"Does Opal drain battery? Not in any way that sets it apart"* — directly beneath an AI Overview
-saying yes. **P5 needs to engage with the Reddit reports rather than talk past them.**
+your apps is hungry."* P5 originally argued the opposite purely from the mechanism and never
+mentioned the reports, while our own snippet — *"Not in any way that sets it apart"* — sat directly
+beneath an AI Overview saying yes.
 
-**2. The Opal pricing picture is less murky than P3 says.** Google's AI Overview states Opal Pro as
-**$19.99/month, $99.99/year, $399 lifetime**, citing Habit Doom and Opal.so — internally consistent,
-and consistent with the "~$99.99/year, $399 lifetime" figure. P3's table reports a competitor blog
-as saying "$19.99/year", which looks like a monthly figure misread as annual in a search summary.
-**The conflicting-prices table in P3 should be re-checked against the sources directly** before it
-ships; the honest-uncertainty framing may be overstated.
+Rewritten in all four locales to lead with the tension rather than one side of it: the mechanism
+does not require a battery cost, users report one anyway, and both can be true because
+implementation differs and aggressive battery optimisers cause restart churn that gets attributed to
+the app. The resolution is the thirty-second check on your own device, which was always the
+strongest part of the post.
+
+**2. The Opal pricing picture was not murky at all, and P3 was wrong twice.** Checked against
+[Opal's own pricing page](https://opalapp.com/pricing) on 2026-11-14: Pro is **$19.99/month or
+$99.99/year** (shown as about $8.29/month), with a lifetime option. Published plainly, easy to find.
+P3's "nobody agrees on the price" framing came from stacking up secondary sources that were copying
+each other, and one of its figures was a monthly price misread as annual.
+
+Worse, P3 said the free plan includes **one** blocking rule. Opal's page says **three**, plus app
+blocking, basic timers and soundscapes, and today's Opal Score, across iOS, Android and Mac. The
+paid line is **Hard Mode** — "No way out. You can't turn Opal off."
+
+Both corrected in all four locales, and the post now makes the better argument it had available:
+the price is published, and most pages answering this question are wrong because they copy each
+other rather than the source.
 
 **3. Reddit is the dominant source in this category.** It is cited in the AI Overview for five of
 the eighteen questions, more than any publisher. For `does opal drain battery`,
