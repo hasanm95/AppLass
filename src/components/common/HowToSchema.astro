@@ -1,0 +1,40 @@
+---
+/**
+ * HowTo JSON-LD for posts that answer a "how to ..." query.
+ *
+ * Google retired the HowTo *rich result* in September 2023, so this does not put
+ * anything extra on the SERP. It is here because 82% of the question-query
+ * impressions this site earns start with "how to", and the markup is what lets an
+ * answer engine lift the steps as an ordered list rather than guessing at prose.
+ * It also keeps the page a valid schema.org document for anything else parsing it.
+ */
+interface Props {
+  steps: readonly { name: string; text: string }[];
+  /** Falls back to the post title. */
+  name: string;
+  /** ISO 8601 duration, e.g. PT2M. */
+  totalTime?: string;
+  /** Absolute URL of the post, used to anchor each step. */
+  pageUrl: string;
+  description?: string;
+}
+
+const { steps, name, totalTime, pageUrl, description } = Astro.props;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name,
+  ...(description ? { description } : {}),
+  ...(totalTime ? { totalTime } : {}),
+  step: steps.map((step, i) => ({
+    "@type": "HowToStep",
+    position: i + 1,
+    name: step.name,
+    text: step.text,
+    url: `${pageUrl}#step-${i + 1}`,
+  })),
+};
+---
+
+<script is:inline type="application/ld+json" set:html={JSON.stringify(schema)} />
