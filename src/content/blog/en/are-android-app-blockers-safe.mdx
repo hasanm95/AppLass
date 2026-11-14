@@ -1,0 +1,156 @@
+---
+title: "Are Android App Blockers Safe? What the Accessibility Permission Grants"
+description: "Every Android blocker asks for the accessibility service, and it is a genuinely broad permission. Here is exactly what it grants, why no blocker can avoid it, and four checks that tell you whether a specific app deserves it."
+date: "2026-11-14"
+dateModified: "2026-11-14"
+author: "AppLass Team"
+excerpt: "The accessibility service lets an app read what is on your screen. That is the only mechanism Android offers for blocking, so every blocker asks for it. Whether a given app deserves it comes down to four things you can check in about a minute."
+tags: ["android", "privacy", "app blocker", "accessibility", "security"]
+category: "Android Apps"
+keywords: "are app blockers safe, is an app blocker safe, app blocker accessibility permission, why does an app blocker need accessibility, is the accessibility service safe android, app blocker privacy, are focus apps safe, accessibility permission risk android"
+breadcrumbName: "Are App Blockers Safe?"
+sidebarApps:
+  - mindful-guard
+featured: false
+howTo:
+  name: "How to check whether an Android app blocker deserves the accessibility permission"
+  totalTime: "PT2M"
+  steps:
+    - name: "Read the Data safety section on Google Play"
+      text: "Scroll to Data safety on the app's Play listing. Look for what it says is collected and shared. \"No data collected\" is the answer you want; a list of collected identifiers from a focus app is not."
+    - name: "Open the permission list"
+      text: "On the same listing, expand See more under permissions. A blocker needs the accessibility service and little else. Contacts, location, SMS or call logs have nothing to do with blocking apps."
+    - name: "Check whether it demands an account"
+      text: "An app that requires a sign-up has a server, and a server is somewhere your data can go. A blocker that works offline with no account has far less surface area for anything to leak through."
+    - name: "Check whether it needs network access at all"
+      text: "Turn off its network access in Settings and use it for a day. A local blocker keeps working. One that stops, or nags, is doing something over the network you should understand before granting it the screen."
+faqs:
+  - question: "Are Android app blockers safe?"
+    answer: "The mechanism is safe; individual apps vary. Every blocker needs the accessibility service, which can read what is on your screen, so the real question is what a given app does with that access. Check its Data safety declaration, its permission list, whether it demands an account, and whether it needs network access at all."
+  - question: "Why does an app blocker need the accessibility permission?"
+    answer: "Because it is the only mechanism Android offers. To notice that Instagram opened, or that a blocked domain loaded in a browser tab, an app has to be able to see what is on screen. Android has no narrower permission for this, which is why every blocker on the Play Store asks for the same thing."
+  - question: "What can an app with the accessibility service actually see?"
+    answer: "A lot. It can read the content of windows, observe what you type and tap, and perform actions on your behalf. That is what makes screen readers possible, and it is also why the permission is worth taking seriously rather than tapping through."
+  - question: "Is the accessibility service a security risk?"
+    answer: "It is a powerful permission that malware has abused, which is why Android warns you before granting it. It is not inherently dangerous — the same APIs power legitimate accessibility tools used by millions. The risk lives in the app you grant it to, not in the mechanism."
+  - question: "How do I know if a specific blocker is trustworthy?"
+    answer: "Four signals, in order of usefulness: what Google Play's Data safety section declares, what other permissions it requests, whether it forces you to create an account, and whether it still works with network access turned off. An app that collects nothing, needs no account and works offline has very little room to misbehave."
+  - question: "Is a blocker without an account safer than one with?"
+    answer: "Generally yes, because an account implies a server, and a server is a place your data can be stored and breached. It is not a guarantee of anything, but it removes a whole category of risk rather than asking you to trust how it is managed."
+  - question: "Can I use an app blocker without the accessibility permission?"
+    answer: "Only by giving up most of what a blocker does. Android's own Digital Wellbeing works without it but cannot block websites and has no concept of a feed. VPN-based blockers avoid accessibility but route all your traffic through a tunnel instead, which is a larger ask, not a smaller one."
+---
+
+import MindfulGuardCTA from "@/components/blog/MindfulGuardCTA.astro";
+
+**The mechanism is safe. Individual apps vary, and you can tell them apart in about a minute.**
+
+Every app blocker on Android asks for the **accessibility service**, because it is the only thing
+Android offers that can notice an app opening. That permission is genuinely broad — it can read
+what is on your screen. So "is this blocker safe" is a real question, not paranoia.
+
+It is also an answerable one.
+
+## What the accessibility service actually grants
+
+Android is unusually blunt about this in its own warning dialogue, and the warning is accurate. An
+app with the accessibility service can:
+
+- **Read the content of windows** — the text on screen in other apps, including what is in the
+  address bar
+- **Observe your actions** — taps, typing, navigation
+- **Perform actions on your behalf** — press buttons, navigate, go back
+
+This is what makes screen readers possible for blind and low-vision users. It is also, obviously,
+what makes it worth a second's thought before granting.
+
+Malware has abused it, which is why Android shows that warning at all and why newer Android versions
+have made the grant flow deliberately awkward.
+
+## Why every blocker needs it anyway
+
+To stop you opening Instagram, an app must know you opened Instagram. To redirect a blocked site, it
+must see that the site loaded in a tab.
+
+Android provides **no narrower permission for either**. There is no "tell me which app is in the
+foreground, and nothing else" API available to ordinary apps. So the options are:
+
+| Approach | Permission needed | What it costs you |
+|---|---|---|
+| **Accessibility service** | Broad: can read the screen | Trust in one app, locally |
+| **VPN-based** | Routes all network traffic | Trust in one app, with all your traffic |
+| **Digital Wellbeing** | None, it is the OS | Cannot block websites or feeds |
+
+Notice the middle row. People sometimes avoid accessibility by choosing a VPN-based blocker, which
+is a **larger** ask, not a smaller one — it moves the trust from "what is on my screen" to "every
+request my phone makes".
+
+## Four checks that actually tell you something
+
+Do these on the Play listing before you install, not after.
+
+**1. Read the Data safety section.** Scroll down on the Play listing. You want **"No data
+collected."** A focus app that declares it collects device identifiers, usage data or your email is
+telling you there is a server, and a reason it wants to reach it.
+
+**2. Expand the permission list.** A blocker needs accessibility and very little else. **Contacts,
+location, SMS and call logs have nothing to do with blocking apps.** Their presence is not proof of
+anything bad, but it is a question the developer should have answered somewhere.
+
+**3. Does it force you to create an account?** An account means a server, and a server is a place
+data can sit and be breached. "No account required" is a structural reduction in risk, not a
+marketing line.
+
+**4. Turn off its network access and use it for a day.** Settings → Apps → the app → Mobile data &
+Wi-Fi → off. A genuinely local blocker keeps working perfectly. One that breaks, or starts nagging,
+is doing something over the network that you should understand before you hand it your screen.
+
+That fourth check is the strongest one, because it does not depend on believing anybody's
+declaration.
+
+## What "safe" cannot mean
+
+Being straight about the limits of all this:
+
+- **A Data safety declaration is self-reported.** Google does not audit it. It is a statement of
+  intent that carries Play Store consequences if false, which is better than nothing and less than
+  proof.
+- **Nobody can prove a negative.** No app can demonstrate it has never sent anything. The best it
+  can do is have no server to send to, and let you verify that by cutting its network.
+- **Open source helps, but only if someone reads it.** Published code that nobody audits is a
+  stronger signal of intent than of safety.
+
+So the realistic goal is not certainty. It is reducing how much you have to trust: an app that
+collects nothing, needs no account and works with its network off has very little room to misbehave,
+whatever its intentions.
+
+## Where we stand
+
+[Mindful Guard](/apps/mindful-guard) needs the accessibility service, like every blocker does. What
+we did with the rest is the part we can be judged on: **no account, no ads, works entirely offline,
+and Google Play's Data safety section lists no data collected.**
+
+Run the fourth check on it. Turn off its network access and use it for a week — nothing changes,
+because there is nothing on the other end. The longer argument for building it that way is in
+[the case for zero telemetry](/blog/zero-telemetry-blocker).
+
+<MindfulGuardCTA campaign="are-android-app-blockers-safe" />
+
+## Red flags worth walking away from
+
+- Permissions with no relationship to blocking: contacts, SMS, call logs, precise location
+- A mandatory account for a feature that is obviously local
+- A Data safety section that declares collection the app never explains
+- Pressure to grant **Device admin**, which is a separate and much heavier permission than
+  accessibility
+- Breaking when you turn its network off
+
+## The bottom line
+
+Every Android blocker needs the same broad permission, so "it uses accessibility" tells you nothing
+about a specific app. What tells you something is the Data safety declaration, the other permissions,
+whether it demands an account, and whether it survives losing network access.
+
+Four checks, about a minute, and most of the question answered.
+
+<MindfulGuardCTA campaign="are-android-app-blockers-safe" />
