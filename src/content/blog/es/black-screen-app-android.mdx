@@ -1,0 +1,113 @@
+---
+title: "App de pantalla negra para Android: apagar la pantalla sin bloquear"
+description: "Android no puede apagar la pantalla sin bloquear, y bloquear pausa muchas aplicaciones. Una app de pantalla negra cubre el display con negro puro mientras la aplicación de debajo sigue funcionando. Cómo funcionan, qué mirar y cómo configurarla."
+date: "2026-11-14"
+dateModified: "2026-11-14"
+author: "Equipo AppLass"
+excerpt: "Una app de pantalla negra dibuja una capa de negro puro sobre la pantalla, así que parece apagada mientras la aplicación de debajo sigue reproduciéndose y los toques quedan bloqueados. Busca que no necesite root, que bloquee toques, que se desbloquee con intención y que pida los mínimos permisos."
+tags: ["android", "pantalla negra", "pantalla apagada", "amoled", "batería"]
+category: "Aplicaciones Android"
+keywords: "app de pantalla negra android, apagar la pantalla sin bloquear android, app para apagar la pantalla android, pantalla en negro android app, capa negra sobre la pantalla android, app pantalla negra sin root, screenveil"
+breadcrumbName: "App de pantalla negra"
+sidebarApps:
+  - screenveil
+featured: false
+faqs:
+  - question: "¿Cómo apago la pantalla sin bloquear el teléfono Android?"
+    answer: "Android no lo permite por sí solo: apagar la pantalla y bloquear el teléfono son la misma acción. La vuelta habitual es una app de pantalla negra, que dibuja una capa de negro puro sobre la pantalla mientras el teléfono sigue desbloqueado y la aplicación de debajo sigue funcionando."
+  - question: "¿Qué hace una app de pantalla negra?"
+    answer: "Cubre la pantalla con negro puro y bloquea los toques, de modo que parece apagada aunque el teléfono siga despierto. Como la aplicación de debajo nunca pasa a segundo plano, el vídeo, la clase o el audio continúan sin interrupción."
+  - question: "¿Una app de pantalla negra ahorra batería?"
+    answer: "En pantallas AMOLED y OLED, sí: los píxeles negros están apagados, así que el ahorro es notable, sobre todo si venías de un brillo alto. En pantallas LCD la retroiluminación sigue encendida detrás del negro y el ahorro es pequeño."
+  - question: "¿Las apps de pantalla negra necesitan root?"
+    answer: "Las de tipo capa, no: solo necesitan el permiso de mostrarse sobre otras aplicaciones. Las que apagan de verdad la retroiluminación sí requieren root, y por eso son mucho menos habituales."
+  - question: "¿Es seguro usar una app de pantalla negra?"
+    answer: "Una capa solo necesita el permiso de «mostrar sobre otras aplicaciones». Desconfía de las que piden accesibilidad, administración del dispositivo o acceso a la red sin motivo, y revisa la sección de seguridad de los datos en su ficha de Google Play antes de instalarlas."
+---
+
+import ScreenVeilCTA from "@/components/blog/ScreenVeilCTA.astro";
+
+**Una app de pantalla negra hace que tu pantalla parezca apagada mientras el teléfono sigue
+desbloqueado.** Dibuja una capa de negro puro sobre todo, así que el vídeo, la clase o la aplicación de
+debajo siguen funcionando, y bloquea los toques hasta que desbloqueas a propósito. Es la vuelta a algo
+que Android no sabe hacer por su cuenta: apagar la pantalla sin bloquear.
+
+## Por qué no basta con pulsar el botón de encendido
+
+En Android, apagar la pantalla y bloquear el teléfono son la misma acción. En cuanto el teléfono se
+bloquea, la aplicación que estaba en pantalla pasa a segundo plano, y muchas aplicaciones se pausan ahí.
+YouTube sin Premium es el caso más conocido; los navegadores, las apps de cursos y muchos reproductores
+de vídeo hacen lo mismo.
+
+Una app de pantalla negra mantiene el teléfono desbloqueado y la aplicación delante. Para Android no ha
+cambiado nada: simplemente tú no lo ves.
+
+## Para qué se usan las apps de pantalla negra
+
+- **Escuchar vídeos** —clases, pódcast con vídeo, charlas largas— paseando o en el trayecto.
+- **Dormirse** con algo sonando y sin una pantalla iluminada.
+- **Llevar el teléfono en el bolsillo** sin que los toques pausen ni salten nada.
+- **Ocultar la pantalla** mientras siguen una grabación, una descarga o una app de navegación.
+- **Ahorrar batería** en teléfonos AMOLED mientras suena audio.
+
+## Qué mirar
+
+| Característica | Por qué importa |
+|---|---|
+| **Sin root** | Funciona en cualquier teléfono, sin modificarlo |
+| **Bloqueo de toques** | Evita que un bolsillo o una manga toquen la app de debajo |
+| **Desbloqueo fácil y deliberado** | Puedes volver rápido, pero no por accidente |
+| **Arranque rápido** | Un botón flotante o un acceso directo, para que sea un solo toque |
+| **Negro puro** | En AMOLED, los píxeles de negro real están apagados |
+| **Pocos permisos** | Una capa solo necesita «mostrar sobre otras aplicaciones» |
+| **Extras que vayas a usar** | Reloj sobre negro, temporizador de sueño, modo bolsillo |
+
+**Tus opciones principales:**
+
+- **Apps de capa** (sin root), como ScreenVeil o Blackr: dibujan negro sobre cualquier aplicación. En
+  pantallas LCD la retroiluminación sigue encendida.
+- **Apps de retroiluminación** (solo con root), como Screen Backlight Off, que apagan la
+  retroiluminación en sí
+  ([XDA](https://forum.xda-developers.com/t/app-2-3-root-screen-backlight-off-xda-exclusive-free-version.3037380/post-59031010)).
+- **El modo en segundo plano de la propia aplicación**, como YouTube Premium o la reproducción de audio
+  de VLC: solo sirve para esa aplicación. Para YouTube, mira
+  [reproducir YouTube en segundo plano en 2026](/es/blog/youtube-background-play-2026-workaround).
+
+## Cómo usar una app de pantalla negra (ScreenVeil)
+
+[ScreenVeil](/apps/screenveil) es una capa de pantalla negra para Android:
+
+1. Instala ScreenVeil y toca **Start Service**.
+2. Concede el permiso de **"mostrar sobre otras aplicaciones"** cuando Android lo pida. Es el único que
+   necesita.
+3. Abre la aplicación que quieras mantener en marcha y ponla en funcionamiento.
+4. Toca el botón flotante de ScreenVeil o su acceso directo en los ajustes rápidos. La pantalla se
+   vuelve negra.
+5. Para volver, toca la pantalla y pulsa desbloquear. Con el desbloqueo biométrico activado, solo tu
+   huella levanta la pantalla negra.
+
+ScreenVeil tiene además un **modo atenuado** (un brillo muy bajo en lugar de negro total), un
+**temporizador de sueño**, un **modo bolsillo** que pone la pantalla en negro cuando el teléfono entra
+en el bolsillo, y un **reloj con la fecha** opcional sobre el negro.
+
+<ScreenVeilCTA />
+
+## Batería: qué esperar
+
+| Tipo de pantalla | App de pantalla negra | Ahorro |
+|---|---|---|
+| AMOLED / OLED | Los píxeles negros están apagados | Grande, sobre todo con brillo alto |
+| LCD | La retroiluminación sigue encendida tras el negro | Pequeño |
+
+Cuanto más brillante estuviera la pantalla y más tiempo la mantengas en negro, más ahorras en AMOLED.
+Para los detalles, mira
+[¿el modo oscuro ahorra batería en OLED?](/blog/does-dark-mode-save-battery-amoled) (en inglés)
+
+## En resumen
+
+Android no puede apagar la pantalla sin bloquear, y bloquear detiene muchas aplicaciones. Una app de
+pantalla negra cubre ese hueco: la pantalla parece apagada, la aplicación sigue funcionando y los toques
+quedan bloqueados. Elige una que no necesite root, que bloquee los toques y que solo pida «mostrar sobre
+otras aplicaciones».
+
+<ScreenVeilCTA />
