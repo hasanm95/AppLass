@@ -725,3 +725,189 @@ posts**, with 31 `/es/blog/...` routes built.
 
 If merging slips past 2026-11-14, re-run the date bump before merging — the whole point of it is
 that the sitemap's `lastmod` matches the day the post actually goes live.
+
+---
+
+## Appendix C — Phase 3: new blogs for AI answers and search (2026-11-14)
+
+Input: a second GSC export filtered to question queries
+(`+^(what|how|when|why|who|which|where|can|is|are|do|does)\s`), same window, 2026-08-11 →
+2026-11-10. **Every post below gets its own branch**, named in the table.
+
+### C.1 The number that sets the strategy
+
+| | Question queries | Whole site |
+| --- | --- | --- |
+| Queries | 420 | — |
+| Impressions | 6,791 | 108,683 |
+| Clicks | **10** | 860 |
+| CTR | **0.15%** | 0.79% |
+
+Strip out the one outlier (`how to fix youtube background play…`, 4,323 impressions, 0 clicks,
+already addressed by U1) and it is still **419 queries, 2,468 impressions, 10 clicks, 0.41%** —
+about half the site average. Question queries convert far worse than the rest of the site.
+
+That is the AI Overview signature: the question gets answered in the SERP and nobody clicks
+through. It is not a reason to skip these queries. It is the reason to write for **citation**
+rather than for the click — be the source the answer is built from, and take the brand impression
+plus the minority of readers who do click for depth.
+
+**82% of question impressions are "how to":**
+
+| Lead word | Queries | Impressions |
+| --- | --- | --- |
+| how | 154 | 5,584 |
+| is | 75 | 624 |
+| does | 17 | 185 |
+| what | 40 | 91 |
+| when | 50 | 70 |
+| can | 23 | 55 |
+| why | 15 | 37 |
+
+### C.2 Technical state — better than expected, with one real gap
+
+| Check | State |
+| --- | --- |
+| AI crawlers in robots.txt | **Open.** `User-agent: *` / `Allow: /`, only `/api/` disallowed. GPTBot, PerplexityBot, ClaudeBot, Google-Extended all permitted |
+| `llms.txt` | **Exists** at `public/llms.txt`, 51 lines, with an "Answer Nuggets" Q&A block |
+| `BlogPosting` + `BreadcrumbList` + `Organization` | Emitted on every post |
+| `FAQPage` with `Question`/`Answer` | Emitted; 40 of 44 EN posts carry `faqs` |
+| `SoftwareApplication` + `Offer` | Emitted |
+| **`HowTo` schema** | **Absent from every page on the site** |
+
+The `HowTo` gap is the one worth fixing. 82% of question impressions are "how to", nearly every
+post carries a numbered step list in its body, and none of it is marked up. The content collection
+has no steps field, so this needs an optional `howTo` frontmatter array (name + ordered steps)
+rendered as `HowTo` JSON-LD in `BlogPostPage.astro`, backfilled onto the step-list posts. Treat it
+as a sibling of the `description` fix in Phase 1: one small code change that changes how every
+how-to page is read.
+
+Two caveats worth stating rather than discovering later. `llms.txt` is not consumed by any major
+AI system today — keep it current because it is cheap, not because it is doing work. And the
+Princeton GEO study that underpins the "cite sources, add statistics" advice was run on Perplexity;
+treat the effect sizes as directional.
+
+### C.2b What shipping the HowTo change actually found
+
+Implemented on `feat/howto-schema`: an optional `howTo` frontmatter block
+(`name?`, `totalTime?`, `steps[]`), exposed through `lib/blog.ts`, emitted by a new
+`HowToSchema.astro`, and backfilled onto **28 files** — 7 slugs × 4 locales — by extracting each
+locale's own numbered list from its body, so the markup and the visible steps cannot drift apart.
+
+Two things worth recording.
+
+**Google retired the HowTo rich result in September 2023.** This adds nothing to the SERP. It is
+worth doing because the markup is what lets an answer engine lift steps as an ordered list instead
+of inferring them from prose, and because 82% of the question impressions here are "how to" — but
+nobody should expect a visible Google feature from it.
+
+**The backfill picked the wrong list on one post, and it was the dangerous one.**
+`app-blocker-cannot-be-uninstalled-android` has two numbered lists: a criteria checklist and a
+walkthrough for removing a blocker you are stuck with — revoke accessibility, deactivate device
+admin, boot into safe mode, `adb uninstall`, factory reset. The extractor took the longer one, which
+would have published a machine-readable, step-by-step guide to defeating your own app blocker, and
+served it to answer engines for `how to remove app blocker` — a query this site already ranks
+position 5.8 for, and one reached by people blocking gambling and porn (see §C.5).
+
+`howTo` was removed from that post in all four locales. Neither of its lists is a procedure the page
+should be marked up for, and the prose stays as the author wrote it; what is declined is the
+markup that would make a bypass walkthrough the page's canonical "how to". A check in the build
+verification now asserts no emitted `HowTo` block contains those steps.
+
+The general rule this implies: **a HowTo block is an editorial decision, not an extraction job.**
+Any future backfill needs the same per-post check.
+
+### C.3 The question clusters, by size
+
+| Cluster | Impressions | Positions | Clicks | Covered today? |
+| --- | --- | --- | --- | --- |
+| How to block social media (android / phone / apps) | ~850 | 8.3–27.4 | 4 | Partly, Android-only |
+| Is Opal free (11+ phrasings) | ~520 | 7.3–10.3 | 0 | One line in the Opal hub |
+| How to remove / disable an app blocker | ~115 | 5.8–8.2 | 0 | One page, no product answer |
+| Does Opal drain battery | 113 | 3.2–3.5 | 0 | One FAQ entry |
+| Is Opal on Android / does it work there | 57 | 7.7–9.7 | 0 | One line |
+| What is zero telemetry | 27 | 5.0 | 0 | A product post, not a definition |
+| Is Digital Wellbeing accurate | 22 | 7.7 | 0 | No |
+| Can I block Shorts without blocking YouTube | 14 | 5.6 | 0 | Yes — title matches exactly, still 0 clicks |
+| Why digital detox doesn't work | 11 | 82.8 | 0 | No |
+| Is [blocker app] safe | 10 | 4.0 | 1 | No |
+
+### C.4 New posts — one branch each
+
+Every post is written to the same extraction contract, because that is what gets quoted:
+a 40–60 word direct answer in the first paragraph; H2s phrased as the query; a comparison table;
+cited statistics with dates; an FAQ block; `howTo` frontmatter where there are steps; a visible
+"last updated". English first, then es/de/fr.
+
+**Tier A — proven demand, zero clicks**
+
+| # | Slug | Branch | Primary question | Impr |
+| --- | --- | --- | --- | --- |
+| P1 | `how-to-block-websites-on-android-chrome` | `content/block-websites-android` | How do I block websites on Android? | new intent |
+| P2 | `strict-mode-app-blocker-android` | `content/strict-mode-blocker` | How do I stop myself disabling my own app blocker? | ~115 |
+| P3 | `is-opal-free` | `content/is-opal-free` | Is Opal free? | ~520 |
+| P4 | `how-to-block-social-media-on-your-phone` | `content/block-social-media-phone` | How do I block social media on my phone? | ~850 |
+| P5 | `does-opal-drain-battery` | `content/opal-battery` | Does Opal drain battery? | 113 |
+| P6 | `opal-on-android-what-works` | `content/opal-on-android` | Is Opal available on Android? | 57 |
+
+P1 and P2 are the two that make the feature release legible to search; nothing on the site targets
+website blocking today, and the Strict Mode cluster sits at position 5.8–8.2 with zero clicks and
+no product answer. P3–P6 are the Opal spokes: a single hub currently absorbs ~1,200 impressions of
+question traffic and converts none of it, because a page titled "best alternatives" does not look
+like the answer to "is Opal free".
+
+**Tier B — clusters the question export surfaced that the earlier plan missed**
+
+| # | Slug | Branch | Why |
+| --- | --- | --- | --- |
+| P7 | `are-android-app-blockers-safe` | `content/app-blocker-safety` | `is shortstop app safe` sits at position 4.0 and earned one of the ten clicks in the whole export. Every blocker asks for the Accessibility Service, every user wonders what that grants, and no vendor wants to explain it. Answering it honestly is a trust asset and a citation magnet — and it is the natural home for the zero-telemetry argument |
+| P8 | `why-digital-detox-doesnt-work` | `content/why-digital-detox-fails` | Position 82.8 on a question the site should own. Contrarian, citable, and the strongest shareable candidate in the set; pairs with `the-logic-of-focus` |
+
+**Not new posts — fold into what exists**
+
+- `what is zero telemetry` (27 impr, pos 5.0) and `zero telemetry` (130 impr, pos 4.1): add a
+  40–60 word definition block to the top of `zero-telemetry-blocker` rather than a second page.
+- `is digital wellbeing accurate` (22 impr, pos 7.7): a dedicated H2 in
+  `android-digital-wellbeing-vs-third-party-focus-apps`.
+- `can i block youtube shorts without blocking youtube` (14 impr, pos 5.6, 0 clicks): the existing
+  title already matches the query exactly, so this is an extraction problem, not a coverage one —
+  it needs the direct-answer block, not a new post.
+
+### C.5 One topic to decide on before writing
+
+The export contains a recovery-adjacent cluster: `what porn blocker apps work on android that i
+can't easily remove myself?` (7 impressions, **position 1.1**), `how to delete betblocker app on
+android` and `how to remove betblocker app on android` (position 1.0), `how to uninstall stay
+focused app in strict mode` (position 1.0).
+
+These are people using blockers against compulsion, and the site already ranks first for them
+largely by accident. P2 would deepen that. The asymmetry matters: writing *"how to set up a block
+you cannot talk yourself out of"* helps them, while writing *"how to remove your gambling
+blocker"* is a how-to for relapse. P2 must serve the first and must not serve the second — it can
+explain honestly that Safe Mode and a factory reset exist without turning that into a walkthrough,
+and it should point to real support (GamCare, Gamblers Anonymous) where the context is gambling.
+Worth agreeing before drafting, not after.
+
+### C.6 Order
+
+1. **The `HowTo` schema change** (§C.2) — one code change, benefits every post that follows.
+2. **P1, P2** — the feature posts, and the ones the §5.2 insertions link into.
+3. **P4** — the pillar; it is the largest single cluster.
+4. **P3, P5, P6** — the Opal spokes; cheapest writing, highest commercial intent.
+5. **P7, P8** — trust and thought leadership.
+6. The three fold-ins from §C.4.
+
+### C.7 How to tell whether it worked
+
+Clicks are the wrong primary metric here; half these queries will never produce one. Track instead:
+
+| Signal | Baseline | Target |
+| --- | --- | --- |
+| Question-query impressions | 6,791 | 15,000 |
+| Question-query CTR, excluding the YouTube outlier | 0.41% | 1.0% |
+| Clicks on the Opal question cluster | 0 | 30 |
+| Strict Mode cluster average position | 5.8–8.2 | ≤3 |
+| Cited in an AI answer for the 20 priority questions | unmeasured | measure monthly by hand, ChatGPT / Perplexity / Google AI Overview |
+
+The last row has no baseline because nobody has checked. Run it once by hand before P1 ships, so
+there is something to compare against.
