@@ -1,11 +1,12 @@
 ---
 title: "Bienestar digital de Android frente a apps de concentración externas: comparación honesta"
 date: "2026-05-07"
-dateModified: "2026-11-13"
+dateModified: "2026-11-14"
 category: "Aplicaciones Android"
 keywords: "bienestar digital android, bienestar digital vs bloqueador de apps, modo concentración android, limitar apps android, bienestar digital no funciona"
 author: "Equipo AppLass"
 excerpt: "El Bienestar digital integrado de Android suena bien sobre el papel. Pero después de años intentando usarlo como herramienta seria de concentración, casi todo el mundo acaba abandonándolo en silencio. Este es un análisis honesto de dónde se queda corto y de qué llena ese hueco."
+description: "Bienestar digital cuenta el tiempo pero no sostiene un bloqueo: «Ignorar por hoy» está a un toque. Dónde aciertan sus números, dónde no, y qué hace un bloqueador de terceros que él no puede."
 thumbnail: "../../../assets/blogs/digital-wellbeing-vs-focus-apps-android.png"
 featured: false
 sidebarApps:

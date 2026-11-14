@@ -1,11 +1,12 @@
 ---
 title: "Android Digital Wellbeing vs. Fokus-Apps von Drittanbietern: ein ehrlicher Vergleich"
 date: "2026-05-07"
-dateModified: "2026-10-24"
+dateModified: "2026-11-14"
 category: "Android-Apps"
 keywords: "android digital wellbeing, digital wellbeing vs app blocker, nativer android fokusmodus, mindful guard android"
 author: "AppLass-Team"
 excerpt: "Das in Android integrierte Digital Wellbeing klingt auf dem Papier gut. Doch nach Jahren des Versuchs, es als ernsthaftes Fokus-Werkzeug zu nutzen, geben die meisten Menschen still auf. Hier eine ehrliche Analyse seiner Schwächen — und dessen, was die Lücke wirklich füllt."
+description: "Digital Wellbeing zählt die Zeit, hält aber keine Sperre – „Heute ignorieren“ ist ein Tipp entfernt. Wo seine Zahlen stimmen, wo nicht, und was ein Drittanbieter-Blocker kann, was es nicht kann."
 thumbnail: "../../../assets/blogs/digital-wellbeing-vs-focus-apps-android.png"
 featured: false
 sidebarApps:
