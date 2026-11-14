@@ -1,0 +1,95 @@
+---
+title: "Twitch en segundo plano en Android: escuchar con la pantalla apagada"
+description: "Los streams de Twitch se paran o siguen sonando según un ajuste. Así se mantiene el audio de un stream con la pantalla apagada en Android, y qué hacer cuando aun así se corta."
+date: "2026-11-14"
+dateModified: "2026-11-14"
+author: "Equipo AppLass"
+excerpt: "Revisa primero el ajuste de audio en segundo plano de la app de Twitch y su opción Solo audio. Si el stream sigue parándose al bloquear el teléfono, déjalo abierto detrás de una pantalla negra que bloquee los toques."
+tags: ["android", "twitch", "pantalla apagada", "audio en segundo plano", "batería"]
+category: "Aplicaciones Android"
+keywords: "twitch en segundo plano android, twitch solo audio, escuchar twitch con la pantalla apagada, twitch audio en segundo plano, twitch audio only android, mantener twitch sonando pantalla apagada, screenveil"
+breadcrumbName: "Twitch en segundo plano"
+sidebarApps:
+  - screenveil
+thumbnail: "../../../assets/blogs/listen-to-twitch-with-screen-off-android.png"
+featured: false
+faqs:
+  - question: "¿Cómo activo el audio en segundo plano de Twitch en Android?"
+    answer: "Se activa dentro de la app de Twitch. Busca en las preferencias de tu cuenta el ajuste que controla el audio en segundo plano y ponlo para que siga sonando. En los ajustes del reproductor de un stream también está la opción Solo audio, que quita el vídeo. Los nombres de los menús cambian entre versiones."
+  - question: "¿Por qué se para mi stream de Twitch al bloquear el teléfono?"
+    answer: "Normalmente porque el audio en segundo plano está desactivado en la app de Twitch, o porque estás viéndolo en un navegador móvil, que suele pausar al bloquear la pantalla. Los ahorros de batería de algunos teléfonos también pueden detener aplicaciones en segundo plano."
+  - question: "¿Cómo mantengo Twitch sonando si el ajuste de segundo plano no funciona?"
+    answer: "Deja el stream abierto y pon la pantalla en negro en lugar de bloquearla. Una capa negra como ScreenVeil cubre la pantalla con negro puro mientras el stream sigue sonando debajo, y bloquea los toques hasta que desbloqueas a propósito."
+  - question: "¿El modo Solo audio ahorra datos?"
+    answer: "Sí. Solo audio se salta el vídeo, así que consume muchos menos datos móviles que ver el stream. Una capa negra ahorra energía de pantalla en teléfonos AMOLED, pero el vídeo se sigue descargando, así que no ahorra datos."
+  - question: "¿Puedo seguir leyendo el chat con la pantalla en negro?"
+    answer: "No mientras esté en negro. Desbloquea para mirar el chat y vuelve a poner la pantalla en negro con el botón flotante o con el acceso directo de ajustes rápidos."
+---
+
+import ScreenVeilCTA from "@/components/blog/ScreenVeilCTA.astro";
+
+**Empieza por los ajustes de la propia app de Twitch.** Activa el audio en segundo plano en tus
+preferencias y usa **Solo audio** en el reproductor si lo único que quieres es el sonido. Si el stream
+sigue parándose al bloquear el teléfono, o lo estás viendo en un navegador, déjalo abierto detrás de una
+pantalla negra que bloquee los toques.
+
+## Por qué se paran los streams al apagar la pantalla
+
+Cuando bloqueas un teléfono Android, la aplicación que estaba en pantalla pasa a segundo plano. Lo que
+ocurre después depende de la aplicación:
+
+- **La app de Twitch** sigue sonando solo si su ajuste de audio en segundo plano lo permite.
+- **Un navegador móvil** suele pausar el vídeo en cuanto se bloquea la pantalla.
+- **Los ahorros de batería** de algunos teléfonos Samsung, Xiaomi y OnePlus pueden detener aplicaciones
+  en segundo plano.
+
+## Paso 1: activa el audio en segundo plano y Solo audio en Twitch
+
+1. Abre Twitch, toca tu foto de perfil y ve a los **ajustes de cuenta → preferencias**.
+2. Busca el ajuste de **audio en segundo plano** y ponlo para que siga sonando (siempre, o con
+   auriculares).
+3. Dentro de un stream, abre los **ajustes del reproductor (la rueda)** y elige **Solo audio** si no
+   necesitas la imagen. También consume muchos menos datos móviles.
+
+Los nombres de los menús cambian entre versiones, así que busca la opción más parecida si la tuya no
+coincide.
+
+## Paso 2: si aun así se para, pon la pantalla en negro
+
+Si el stream se sigue pausando, o lo ves en un navegador, no bloquees el teléfono. Deja el stream
+abierto y cubre la pantalla de negro. Con [ScreenVeil](/apps/screenveil):
+
+1. Instala ScreenVeil, toca **Start Service** y concede el permiso de **"mostrar sobre otras
+   aplicaciones"**. Es el único que necesita.
+2. Abre el stream y déjalo reproduciéndose.
+3. Toca el botón flotante de ScreenVeil o su acceso directo en los ajustes rápidos. La pantalla se
+   vuelve negra; el stream sigue sonando.
+4. Para mirar el chat, toca la pantalla y pulsa desbloquear.
+
+Los toques quedan bloqueados mientras la pantalla está en negro, así que tu bolsillo no puede tocar un
+clip, un anuncio ni el botón de atrás. El modo bolsillo también puede poner la pantalla en negro por su
+cuenta cuando el teléfono entra en el bolsillo.
+
+<ScreenVeilCTA />
+
+## Batería y datos
+
+| Método | Consumo de pantalla | Datos móviles |
+|---|---|---|
+| Verlo normalmente | El más alto | Los más altos |
+| Solo audio en Twitch | La pantalla puede estar apagada | Mucho menores |
+| Capa negra (AMOLED) | Mucho menor | Igual que verlo |
+| Capa negra (LCD) | Ahorro pequeño | Igual que verlo |
+
+En pantallas AMOLED y OLED un píxel negro puro está apagado, así que una capa negra consume mucha menos
+energía de pantalla que un stream iluminado. En LCD la retroiluminación sigue encendida. Para streams
+largos con datos móviles, Solo audio es la mejor opción cuando te sirve.
+
+## En resumen
+
+Activa primero el audio en segundo plano y usa Solo audio en la app de Twitch. Cuando eso no basta, deja
+el stream abierto detrás de una pantalla negra: el audio sigue, nada se ilumina y los toques accidentales
+no pueden interrumpirlo. Para YouTube, mira
+[reproducir YouTube en segundo plano en 2026](/es/blog/youtube-background-play-2026-workaround).
+
+<ScreenVeilCTA />
