@@ -1,0 +1,111 @@
+---
+title: "Is Opal on Android? Yes — and Here's What's Different (2026)"
+description: "Opal has been on Google Play since mid-2025. It needs Android 10, blocks through the accessibility service rather than a Screen Time API, and that one difference explains most of what works differently from the iPhone version."
+date: "2026-11-14"
+dateModified: "2026-11-14"
+author: "AppLass Team"
+excerpt: "Yes, Opal is on Android — 500K+ downloads, Android 10 or newer. Because Android has no equivalent of Apple's Screen Time API, it blocks through the accessibility service, which makes blocking slightly less absolute than on an iPhone."
+tags: ["opal", "android", "app blocker", "screen time"]
+category: "Android Apps"
+keywords: "is opal available on android, is opal on android, does opal work on android, opal android, opal for android, opal android app, opal screen time android, opal android vs iphone"
+breadcrumbName: "Opal on Android"
+sidebarApps:
+  - mindful-guard
+featured: false
+faqs:
+  - question: "Is Opal available on Android?"
+    answer: "Yes. Opal launched on Google Play in mid-2025 as Opal Screen Time Limit & Timer, by Opal: The Focus Company, and has 500K+ downloads. It requires Android 10 or newer."
+  - question: "Does Opal work as well on Android as on iPhone?"
+    answer: "Nearly, with one structural difference. iOS gives Apple's Screen Time API to apps like Opal, which blocks at the system level. Android has no equivalent, so Opal uses the AccessibilityService API instead. That works, but it makes blocking slightly less absolute than on an iPhone."
+  - question: "What Android version does Opal need?"
+    answer: "Android 10 or newer, according to its Google Play listing. On Android 14 and above it blocks apps through the AccessibilityService API."
+  - question: "Is the Android version of Opal free?"
+    answer: "It is a free download with the same free tier as iOS: one blocking rule, basic timers and your daily Opal Score. The locked session you cannot end early is part of Opal Pro. Reviews report that ads were removed from the Android free tier in June 2026."
+  - question: "Does Opal collect my data on Android?"
+    answer: "Its Google Play listing states \"Your data never leaves your device.\" That is the developer's own declaration in the Data safety section rather than an independent audit, which is true of every app's Data safety entry."
+  - question: "Is this the same Opal as the camera or the travel card?"
+    answer: "No. Several unrelated products are called Opal — a webcam, the Sydney public transport card, and others. The focus app is Opal Screen Time Limit & Timer by Opal: The Focus Company. If you are searching for alternatives and getting odd results, that is usually why."
+---
+
+import MindfulGuardCTA from "@/components/blog/MindfulGuardCTA.astro";
+
+**Yes. Opal has been on Google Play since mid-2025**, as Opal Screen Time Limit & Timer by Opal: The
+Focus Company, with 500K+ downloads. It needs **Android 10 or newer**.
+
+The useful question is not whether it exists but what is different about it, and nearly all of that
+traces back to one thing: Android has no equivalent of Apple's Screen Time API.
+
+## The facts, from the Play listing
+
+| | Opal on Android |
+|---|---|
+| Available since | Mid-2025 |
+| Downloads | 500K+ |
+| Minimum Android version | Android 10 |
+| How it blocks | AccessibilityService API (on Android 14+) |
+| Data | "Your data never leaves your device," per the listing |
+| Price | Free download, limited free tier; Pro by subscription |
+| In-app purchases | $2.99 to $79.99 per item |
+
+Checked against the [Google Play listing](https://play.google.com/store/apps/details?id=com.withopal.opal)
+in October 2026. The Data safety line is the developer's own declaration, as it is for every app, not
+an independent audit.
+
+## The one real difference from the iPhone version
+
+On iOS, Apple gives focus apps the **Screen Time API**. Blocking happens at the system level, and the
+app you blocked simply does not open.
+
+Android has nothing equivalent. Every blocker on the platform — Opal, AppBlock,
+[Mindful Guard](/apps/mindful-guard), all of them — falls back to the **AccessibilityService API**,
+which watches for a blocked app coming to the foreground and reacts. It works well. It is also
+slightly less absolute, because it is reacting rather than preventing.
+
+This is a platform constraint, not an Opal flaw. Judging an Android blocker by whether it feels as
+hard as iOS is judging it by something no Android app can deliver.
+
+## What that means day to day
+
+- **Blocking is a beat slower.** The app opens for a fraction of a second before the block screen
+  takes over. Every accessibility-based blocker does this.
+- **The permission is broad.** The accessibility service can see what is on screen. That is the price
+  of the only mechanism Android offers, and it is worth checking what an app does with it — see
+  [why a blocker needs that permission](/blog/how-to-block-websites-on-android-chrome).
+- **Battery is not the issue.** Accessibility-based blocking is cheap; the worry comes from Opal's
+  pre-2022 VPN era. Full version in [does Opal drain battery](/blog/does-opal-drain-battery).
+- **Updates can break and fix things.** Reviews reported a mid-2026 issue where newly installed apps
+  were not blocked until the phone restarted, apparently fixed in the 15 July 2026 release. Worth
+  knowing as a category risk rather than an Opal-specific one.
+
+## Is the Android version worth it?
+
+Depends entirely on the free tier, because that is what you get before you decide. One blocking rule,
+basic timers, your daily score — and the locked session that cannot be ended early is Pro. The
+pricing picture is genuinely murky, which is why it has
+[its own page](/blog/is-opal-free).
+
+If Opal's polish and streaks appeal and one rule covers your problem, it is a reasonable choice. If
+you want scheduling, feed-level limits or a no-override block without paying, the comparison against
+AppBlock, Freedom and Mindful Guard is in
+[the best Opal alternatives for Android](/blog/opal-alternatives-android).
+
+<MindfulGuardCTA campaign="opal-on-android-what-works" />
+
+## Which Opal are you looking for?
+
+Several unrelated products share the name, which is why searches in this space return strange
+results: a **webcam**, the Sydney **public transport card**, and various others.
+
+The focus app is **Opal Screen Time Limit & Timer**, by **Opal: The Focus Company**. If you arrived
+here looking for one of the others, this is not it.
+
+## The bottom line
+
+Opal is on Android, it is real, and it works. The one structural difference — accessibility service
+instead of a Screen Time API — applies to every Android blocker equally, so it is not a reason to
+pick one over another.
+
+What should decide it is the free tier and the price, and on the price nobody publishing a confident
+number agrees with anyone else.
+
+<MindfulGuardCTA campaign="opal-on-android-what-works" />

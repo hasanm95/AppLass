@@ -27,6 +27,19 @@ const blog = defineCollection({
       question: z.string(),
       answer: z.string()
     })).optional().default([]),
+    // Steps for HowTo JSON-LD. The body already carries the numbered list a reader
+    // sees; this is the machine-readable copy of it, because nothing can reliably
+    // parse prose steps back out of rendered MDX. Keep the two in sync.
+    howTo: z.object({
+      // Defaults to the post title when omitted.
+      name: z.string().optional(),
+      // ISO 8601 duration, e.g. PT2M. schema.org wants this shape, not "2 minutes".
+      totalTime: z.string().regex(/^PT(?:\d+H)?(?:\d+M)?(?:\d+S)?$/, 'must be an ISO 8601 duration, e.g. PT2M').optional(),
+      steps: z.array(z.object({
+        name: z.string(),
+        text: z.string(),
+      })).min(2, 'a HowTo needs at least two steps'),
+    }).optional(),
     breadcrumbName: z.string().optional(),
     sidebarApps: z.array(z.string()).optional().default([]),
   }).strict(),

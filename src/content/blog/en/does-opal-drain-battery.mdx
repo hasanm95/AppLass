@@ -1,0 +1,121 @@
+---
+title: "Does Opal Drain Battery? What Actually Costs You Power (2026)"
+description: "No — not in any way that sets it apart from other blockers. The question comes from Opal's VPN era, which ended in 2022. Here's what each blocking method really costs in battery, and how to check your own phone in thirty seconds."
+date: "2026-11-14"
+dateModified: "2026-11-14"
+author: "AppLass Team"
+excerpt: "Opal dropped its local VPN in 2022 and now uses Apple's Screen Time API on iOS and Android's accessibility service on Android. Neither is battery-hungry. If something is draining your phone, Settings → Battery will name it in thirty seconds."
+tags: ["opal", "battery", "android", "ios", "app blocker"]
+category: "Android Apps"
+keywords: "does opal drain battery, does opal app drain battery, opal battery drain, is opal bad for battery, app blocker battery drain, accessibility service battery drain, vpn blocker battery"
+breadcrumbName: "Does Opal Drain Battery?"
+sidebarApps:
+  - mindful-guard
+featured: false
+howTo:
+  name: "How to check whether an app blocker is draining your battery"
+  totalTime: "PT1M"
+  steps:
+    - name: "Open your battery usage list"
+      text: "On Android, Settings → Battery → Battery usage. On iPhone, Settings → Battery, then scroll to the per-app list."
+    - name: "Switch the view to the last 24 hours or 7 days"
+      text: "A single hour tells you nothing. A day or a week shows whether an app is a steady cost or a one-off spike."
+    - name: "Find the blocker in the list"
+      text: "An accessibility-based blocker normally sits well down the list, below the screen, your browser and your messaging apps. If it is near the top, that is worth investigating."
+    - name: "Compare against the screen itself"
+      text: "On almost every phone, Display is the largest single consumer. If the blocker is a fraction of it, the blocker is not your problem."
+faqs:
+  - question: "Does Opal drain battery?"
+    answer: "Not in any way that sets it apart from other blockers. Opal used a local VPN on iOS until 2022 and then moved to Apple's Screen Time API. On Android its Play listing says it uses the AccessibilityService API, the same mechanism most Android blockers use, which is not a battery-heavy approach."
+  - question: "Why do people think Opal drains battery?"
+    answer: "Because it used to be a plausible worry. Until 2022 Opal ran a local VPN on iOS, and VPN-based blockers do carry a real battery cost because they keep a tunnel alive and inspect traffic. That architecture is gone, but the question outlived it."
+  - question: "Do app blockers drain battery in general?"
+    answer: "It depends entirely on the method. VPN-based blockers cost the most, because the tunnel runs continuously. Accessibility-based blockers cost little, because they react to events the system already generates. DNS filtering and simple timers cost almost nothing."
+  - question: "How do I check if an app is draining my battery?"
+    answer: "Android: Settings → Battery → Battery usage, set to the last 24 hours or 7 days. iPhone: Settings → Battery. Look at where the app sits relative to Display, which is the largest consumer on nearly every phone. If the blocker is a small fraction of the screen, it is not your problem."
+  - question: "What actually drains a phone battery?"
+    answer: "The screen, usually by a wide margin, followed by cellular data on a weak signal, GPS, and video. A focus app that reacts to app launches is not in the same category. The irony is that a blocker that cuts your screen time saves more power than it costs."
+  - question: "Does the accessibility service drain battery?"
+    answer: "Not meaningfully by itself. The accessibility APIs deliver events the system is already producing, so a well-built blocker is idle most of the time. A badly built one that polls constantly can cost more, which is why the battery list is worth a look after installing anything new."
+---
+
+import MindfulGuardCTA from "@/components/blog/MindfulGuardCTA.astro";
+
+**No — not in any way that sets it apart from other app blockers.** Opal ran a local VPN on iOS
+until 2022, then moved to Apple's Screen Time API. On Android, its
+[Play listing](https://play.google.com/store/apps/details?id=com.withopal.opal) says it blocks through
+the **AccessibilityService API**. Neither of those is a battery-hungry mechanism.
+
+The question is a good one, though, because it used to have a different answer.
+
+## Why this question exists
+
+Until 2022, Opal on iOS worked by running a **local VPN**. That is a genuine battery cost: the tunnel
+stays alive, traffic is inspected, and the radio gets less idle time. People noticed, wrote about it,
+and the worry outlived the architecture by four years.
+
+It is also why "does *this* blocker drain battery" is worth asking about any blocker — the answer
+depends on the method, not the brand.
+
+## What each blocking method costs
+
+| Method | Battery cost | Why |
+|---|---|---|
+| **VPN-based** | Medium to high | A tunnel runs continuously and inspects traffic |
+| **Accessibility-based** | Low | Reacts to events the system already emits |
+| **DNS filtering** | Negligible | One lookup per domain, no persistent process |
+| **Built-in timers** | Negligible | The OS was already counting |
+
+Opal on Android is in the second row. So is [Mindful Guard](/apps/mindful-guard), AppBlock, and most
+of the category. [Freedom](/blog/freedom-alternative-android) uses the first on mobile, which is the
+trade-off it makes for covering every app at the network layer.
+
+## Check your own phone in thirty seconds
+
+Do not take anyone's word for this, including ours. Your phone already knows.
+
+1. **Android:** Settings → Battery → **Battery usage**. **iPhone:** Settings → **Battery**.
+2. Set the range to the **last 24 hours or 7 days**. A single hour tells you nothing.
+3. Find the blocker in the list.
+4. Compare it against **Display**.
+
+On nearly every phone, the screen is the largest single consumer by a wide margin. If a blocker is a
+small fraction of it, the blocker is not what is draining your battery. If it is sitting near the
+top, that is worth investigating — and that applies to any app, not just a blocker.
+
+## What is actually draining your battery
+
+In rough order, on most phones:
+
+- **The screen**, especially at high brightness. We went through the measured numbers in
+  [does dark mode save battery on OLED](/blog/does-dark-mode-save-battery-amoled).
+- **Cellular data on a weak signal**, where the radio ramps up to stay connected.
+- **GPS and location**, when something is using it continuously.
+- **Video**, which combines the screen, the radio and the decoder.
+
+A focus app that reacts when you open Instagram is not in this category. There is an irony worth
+naming: a blocker that genuinely reduces your screen time **saves** more power than it spends.
+
+<MindfulGuardCTA campaign="does-opal-drain-battery" />
+
+## If a blocker really is draining your phone
+
+Three things usually explain it:
+
+- **It is VPN-based and the tunnel never sleeps.** Switching to an accessibility-based blocker
+  removes the cost entirely.
+- **It is badly built and polls constantly** instead of waiting for events. The battery list will
+  show this clearly.
+- **Your phone's battery optimiser is fighting it** — repeatedly killing and restarting the app,
+  which costs more than leaving it alone. Exempting the blocker from battery optimisation often
+  *lowers* its usage.
+
+## The bottom line
+
+Opal does not have a battery problem, and has not had one since 2022. Neither does any
+accessibility-based blocker, as a category.
+
+If your phone is dying early, the battery list will tell you what is responsible, and it is very
+likely the screen. Checking takes thirty seconds and beats guessing.
+
+<MindfulGuardCTA campaign="does-opal-drain-battery" />
