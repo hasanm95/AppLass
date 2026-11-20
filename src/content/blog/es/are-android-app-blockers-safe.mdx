@@ -1,0 +1,160 @@
+---
+title: "¿Son seguros los bloqueadores de apps de Android? Qué permite la accesibilidad"
+description: "Todo bloqueador de Android pide el servicio de accesibilidad, un permiso realmente amplio. Esto es lo que concede exactamente, por qué ningún bloqueador puede evitarlo, y cuatro comprobaciones que dicen si una app lo merece."
+date: "2026-11-14"
+dateModified: "2026-11-14"
+author: "Equipo AppLass"
+excerpt: "El servicio de accesibilidad permite a una app leer lo que hay en tu pantalla. Es el único mecanismo que Android ofrece para bloquear, así que todos los bloqueadores lo piden. Si una app concreta lo merece se reduce a cuatro cosas comprobables en un minuto."
+tags: ["android", "privacidad", "bloqueador de apps", "accesibilidad", "seguridad"]
+category: "Aplicaciones Android"
+keywords: "son seguros los bloqueadores de apps, bloqueador de apps seguridad, permiso de accesibilidad bloqueador, por qué un bloqueador pide accesibilidad, es seguro el servicio de accesibilidad android, bloqueador de apps privacidad, riesgo accesibilidad android"
+breadcrumbName: "¿Son seguros los bloqueadores?"
+sidebarApps:
+  - mindful-guard
+featured: false
+howTo:
+  name: "Cómo comprobar si un bloqueador de Android merece el permiso de accesibilidad"
+  totalTime: "PT2M"
+  steps:
+    - name: "Lee la sección Seguridad de los datos en Google Play"
+      text: "Baja hasta Seguridad de los datos en la ficha de Play. Mira qué declara como recopilado y compartido. «No se recopilan datos» es la respuesta que quieres; una lista de identificadores recopilados por una app de concentración no lo es."
+    - name: "Abre la lista de permisos"
+      text: "En la misma ficha, despliega Ver más bajo los permisos. Un bloqueador necesita la accesibilidad y poco más. Contactos, ubicación, SMS o registro de llamadas no tienen nada que ver con bloquear aplicaciones."
+    - name: "Comprueba si exige una cuenta"
+      text: "Una app que obliga a registrarse tiene un servidor, y un servidor es un sitio al que pueden ir tus datos. Un bloqueador que funciona sin conexión y sin cuenta ofrece mucha menos superficie de exposición."
+    - name: "Comprueba si necesita acceso a la red"
+      text: "Quítale el acceso a la red en Ajustes y úsalo un día. Un bloqueador realmente local sigue funcionando. Uno que se para, o que empieza a insistir, está haciendo algo por la red que deberías entender antes de darle tu pantalla."
+faqs:
+  - question: "¿Son seguros los bloqueadores de apps de Android?"
+    answer: "El mecanismo es seguro; las aplicaciones varían. Todo bloqueador necesita el servicio de accesibilidad, que puede leer lo que hay en pantalla, así que la pregunta real es qué hace con ese acceso una app concreta. Revisa su declaración de Seguridad de los datos, su lista de permisos, si exige cuenta y si necesita red."
+  - question: "¿Por qué un bloqueador necesita el permiso de accesibilidad?"
+    answer: "Porque es el único mecanismo que ofrece Android. Para detectar que se ha abierto Instagram, o que un dominio bloqueado se ha cargado en una pestaña, una app tiene que poder ver qué hay en pantalla. Android no tiene un permiso más estrecho para esto, y por eso todos los bloqueadores del Play Store piden lo mismo."
+  - question: "¿Qué puede ver realmente una app con el servicio de accesibilidad?"
+    answer: "Mucho. Puede leer el contenido de las ventanas, observar lo que escribes y tocas, y realizar acciones en tu nombre. Eso es lo que hace posibles los lectores de pantalla, y también por lo que conviene tomarse el permiso en serio en vez de tocarlo sin mirar."
+  - question: "¿El servicio de accesibilidad es un riesgo de seguridad?"
+    answer: "Es un permiso potente del que ha abusado el malware, y por eso Android avisa antes de concederlo. No es peligroso de por sí: las mismas API dan vida a herramientas de accesibilidad legítimas que usan millones de personas. El riesgo está en la app a la que se lo das, no en el mecanismo."
+  - question: "¿Cómo sé si un bloqueador concreto es de fiar?"
+    answer: "Cuatro señales, por utilidad: qué declara la sección Seguridad de los datos de Google Play, qué otros permisos pide, si te obliga a crear una cuenta, y si sigue funcionando con la red desactivada. Una app que no recopila nada, no necesita cuenta y funciona sin conexión tiene muy poco margen para portarse mal."
+  - question: "¿Es más seguro un bloqueador sin cuenta que uno con cuenta?"
+    answer: "Por lo general sí, porque una cuenta implica un servidor, y un servidor es un sitio donde los datos pueden guardarse y filtrarse. No es una garantía, pero elimina una categoría entera de riesgo en lugar de pedirte que confíes en cómo se gestiona."
+  - question: "¿Puedo usar un bloqueador sin el permiso de accesibilidad?"
+    answer: "Solo renunciando a casi todo lo que hace un bloqueador. El Bienestar digital de Android funciona sin él, pero no puede bloquear webs y no entiende de feeds. Los bloqueadores con VPN evitan la accesibilidad, pero enrutan todo tu tráfico por un túnel, que es una petición mayor, no menor."
+---
+
+import MindfulGuardCTA from "@/components/blog/MindfulGuardCTA.astro";
+
+**El mecanismo es seguro. Las aplicaciones varían, y se pueden distinguir en más o menos un
+minuto.**
+
+Todo bloqueador de Android pide el **servicio de accesibilidad**, porque es lo único que Android
+ofrece capaz de detectar que una app se abre. Ese permiso es realmente amplio: puede leer lo que hay
+en tu pantalla. Así que «¿es seguro este bloqueador?» es una pregunta legítima, no paranoia.
+
+Y además tiene respuesta.
+
+## Qué concede realmente el servicio de accesibilidad
+
+Android es inusualmente claro en su propio aviso, y el aviso es exacto. Una app con el servicio de
+accesibilidad puede:
+
+- **Leer el contenido de las ventanas**: el texto en pantalla de otras aplicaciones, incluido lo que
+  hay en la barra de direcciones
+- **Observar tus acciones**: toques, escritura, navegación
+- **Realizar acciones en tu nombre**: pulsar botones, navegar, volver atrás
+
+Eso es lo que hace posibles los lectores de pantalla para personas ciegas y con baja visión. Y es,
+obviamente, lo que merece un segundo de reflexión antes de concederlo.
+
+El malware ha abusado de ello, y por eso Android muestra ese aviso y las versiones recientes han
+hecho el proceso deliberadamente incómodo.
+
+## Por qué todos los bloqueadores lo necesitan igualmente
+
+Para impedir que abras Instagram, una app tiene que saber que has abierto Instagram. Para redirigir
+una web bloqueada, tiene que ver que la web se ha cargado en una pestaña.
+
+Android **no ofrece un permiso más estrecho** para ninguna de las dos cosas. No existe una API de
+«dime solo qué app está en primer plano» disponible para aplicaciones normales. Así que las opciones
+son:
+
+| Enfoque | Permiso necesario | Lo que te cuesta |
+|---|---|---|
+| **Servicio de accesibilidad** | Amplio: puede leer la pantalla | Confiar en una app, en local |
+| **Basado en VPN** | Enruta todo el tráfico de red | Confiar en una app, con todo tu tráfico |
+| **Bienestar digital** | Ninguno, es el sistema | No puede bloquear webs ni feeds |
+
+Fíjate en la fila del medio. Hay quien evita la accesibilidad eligiendo un bloqueador con VPN, que es
+una petición **mayor**, no menor: la confianza pasa de «lo que hay en mi pantalla» a «cada petición
+que hace mi teléfono».
+
+## Cuatro comprobaciones que sí dicen algo
+
+Hazlas en la ficha de Play antes de instalar, no después.
+
+**1. Lee la sección Seguridad de los datos.** Baja en la ficha de Play. Quieres ver **«No se
+recopilan datos»**. Una app de concentración que declara recopilar identificadores del dispositivo,
+datos de uso o tu correo te está diciendo que hay un servidor y un motivo para llegar a él.
+
+**2. Despliega la lista de permisos.** Un bloqueador necesita la accesibilidad y muy poco más.
+**Contactos, ubicación, SMS y registro de llamadas no tienen nada que ver con bloquear
+aplicaciones.** Su presencia no prueba nada malo, pero es una pregunta que el desarrollador debería
+haber respondido en alguna parte.
+
+**3. ¿Te obliga a crear una cuenta?** Una cuenta implica un servidor, y un servidor es un sitio donde
+los datos pueden residir y filtrarse. «Sin cuenta» es una reducción estructural del riesgo, no una
+frase de marketing.
+
+**4. Quítale el acceso a la red y úsalo un día.** Ajustes → Aplicaciones → la app → Datos móviles y
+Wi-Fi → desactivado. Un bloqueador realmente local sigue funcionando perfectamente. Uno que se rompe,
+o que empieza a insistir, está haciendo algo por la red que deberías entender antes de entregarle tu
+pantalla.
+
+Esa cuarta comprobación es la más fuerte, porque no depende de creerse la declaración de nadie.
+
+## Qué no puede significar «seguro»
+
+Siendo claros sobre los límites de todo esto:
+
+- **La declaración de Seguridad de los datos es autodeclarada.** Google no la audita. Es una
+  declaración de intenciones con consecuencias en el Play Store si es falsa: mejor que nada y menos
+  que una prueba.
+- **Nadie puede demostrar un negativo.** Ninguna app puede demostrar que nunca ha enviado nada. Lo
+  máximo que puede hacer es no tener servidor al que enviar, y dejarte comprobarlo cortándole la red.
+- **El código abierto ayuda, pero solo si alguien lo lee.** Código publicado que nadie audita es más
+  una señal de intención que de seguridad.
+
+Así que el objetivo realista no es la certeza. Es reducir cuánto hay que confiar: una app que no
+recopila nada, no necesita cuenta y funciona con la red cortada tiene muy poco margen para portarse
+mal, sean cuales sean sus intenciones.
+
+## Dónde estamos nosotros
+
+[Mindful Guard](/apps/mindful-guard) necesita el servicio de accesibilidad, como todos los
+bloqueadores. Lo que sí se nos puede juzgar es el resto: **sin cuenta, sin anuncios, funciona
+totalmente sin conexión, y la sección Seguridad de los datos de Google Play no declara datos
+recopilados.**
+
+Hazle la cuarta comprobación. Córtale el acceso a la red y úsalo una semana: no cambia nada, porque
+al otro lado no hay nada. El argumento largo de por qué lo construimos así está en
+[la telemetría es una distracción](/blog/zero-telemetry-blocker) (en inglés).
+
+<MindfulGuardCTA campaign="are-android-app-blockers-safe" />
+
+## Señales de alarma para seguir de largo
+
+- Permisos sin relación con el bloqueo: contactos, SMS, registro de llamadas, ubicación precisa
+- Una cuenta obligatoria para una función claramente local
+- Una sección de Seguridad de los datos que declara una recopilación que la app nunca explica
+- Presión para conceder **administrador del dispositivo**, un permiso aparte y mucho más pesado que
+  la accesibilidad
+- Que la app se rompa cuando le cortas la red
+
+## En resumen
+
+Todos los bloqueadores de Android necesitan el mismo permiso amplio, así que «usa accesibilidad» no
+te dice nada sobre una app concreta. Lo que sí dice algo es la declaración de Seguridad de los datos,
+los demás permisos, si exige cuenta, y si sobrevive a perder el acceso a la red.
+
+Cuatro comprobaciones, más o menos un minuto, y la pregunta queda respondida en su mayor parte.
+
+<MindfulGuardCTA campaign="are-android-app-blockers-safe" />

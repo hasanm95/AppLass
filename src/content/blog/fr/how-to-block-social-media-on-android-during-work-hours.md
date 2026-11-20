@@ -1,9 +1,10 @@
 ---
-title: "Comment Bloquer les Réseaux Sociaux sur Android Pendant les Heures de Travail Uniquement"
+title: "Bloquer les réseaux sociaux sur Android pendant les heures de travail (2026)"
 date: "2026-04-24"
-dateModified: "2026-10-24"
+dateModified: "2026-11-14"
 category: "Applications Android"
-keywords: "bloquer réseaux sociaux android, planifier bloqueur applications, bloquer applications heures de travail, mindful guard android"
+keywords: "bloquer réseaux sociaux android, planifier bloqueur applications, bloquer applications heures de travail, bloqueur d'applications programmé android, bloquer instagram pendant le travail, application pour limiter les reseaux sociaux, mindful guard android"
+description: "Les minuteurs de Bien-être numérique ont un bouton « Ignorer pour aujourd'hui ». Un planning hebdomadaire, non — Instagram ne s'ouvre tout simplement pas de 9 h à 17 h. Mise en place en cinq minutes, et les trois failles qu'un planning seul laisse ouvertes."
 author: "AppLass Team"
 excerpt: "Supprimer définitivement les réseaux sociaux ne fonctionne jamais vraiment. La solution qui marche vraiment, c'est le blocage programmé — les applications se verrouillent automatiquement pendant vos heures de travail et se débloquent toutes seules quand c'est fini. Voici comment le configurer en moins de 5 minutes."
 thumbnail: "../../../assets/blogs/block-social-media-work-hours-android.png"
