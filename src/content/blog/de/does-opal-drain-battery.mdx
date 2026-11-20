@@ -1,0 +1,121 @@
+---
+title: "Verbraucht Opal viel Akku? Was wirklich Strom kostet (2026)"
+description: "Nein – jedenfalls nicht anders als andere Blocker. Die Frage stammt aus Opals VPN-Zeit, die 2022 endete. Was jede Sperrmethode wirklich an Akku kostet und wie Sie Ihr eigenes Handy in dreißig Sekunden prüfen."
+date: "2026-11-14"
+dateModified: "2026-11-14"
+author: "AppLass-Team"
+excerpt: "Opal hat sein lokales VPN 2022 abgelegt und nutzt heute auf iOS Apples Screen-Time-API und auf Android die Bedienungshilfen. Beides ist nicht akkuhungrig. Wenn etwas Ihr Handy leersaugt, nennt es Einstellungen → Akku in dreißig Sekunden."
+tags: ["opal", "akku", "android", "ios", "app blocker"]
+category: "Android Apps"
+keywords: "verbraucht opal akku, opal akkuverbrauch, opal akku leer, ist opal schlecht für den akku, app blocker akkuverbrauch, bedienungshilfen akkuverbrauch, vpn blocker akku"
+breadcrumbName: "Opal und der Akku"
+sidebarApps:
+  - mindful-guard
+featured: false
+howTo:
+  name: "Prüfen, ob ein App-Blocker den Akku leersaugt"
+  totalTime: "PT1M"
+  steps:
+    - name: "Die Akkunutzung öffnen"
+      text: "Auf Android: Einstellungen → Akku → Akkunutzung. Auf dem iPhone: Einstellungen → Batterie, dann zur Liste pro App scrollen."
+    - name: "Auf 24 Stunden oder 7 Tage umstellen"
+      text: "Eine einzelne Stunde sagt nichts. Ein Tag oder eine Woche zeigt, ob eine App dauerhaft kostet oder nur einen Ausreißer hatte."
+    - name: "Den Blocker in der Liste suchen"
+      text: "Ein Blocker über die Bedienungshilfen steht normalerweise weit unten, hinter Display, Browser und Messenger. Steht er oben, lohnt sich ein genauerer Blick."
+    - name: "Mit dem Display vergleichen"
+      text: "Auf fast jedem Handy ist das Display der größte Einzelverbraucher. Wenn der Blocker nur ein Bruchteil davon ist, liegt es nicht am Blocker."
+faqs:
+  - question: "Verbraucht Opal viel Akku?"
+    answer: "Nicht anders als andere Blocker. Opal nutzte bis 2022 auf iOS ein lokales VPN und wechselte dann zu Apples Screen-Time-API. Auf Android sperrt es laut Play-Eintrag über die AccessibilityService-API, dieselbe Technik wie die meisten Android-Blocker, und die ist nicht akkuhungrig."
+  - question: "Warum glauben Leute, Opal verbrauche viel Akku?"
+    answer: "Weil es früher eine berechtigte Sorge war. Bis 2022 lief auf iOS ein lokales VPN, und VPN-basierte Blocker kosten wirklich Akku, weil ein Tunnel dauerhaft offen bleibt und Datenverkehr geprüft wird. Diese Architektur ist weg, die Frage hat sie überlebt."
+  - question: "Verbrauchen App-Blocker generell viel Akku?"
+    answer: "Das hängt komplett an der Methode. VPN-basierte Blocker kosten am meisten, weil der Tunnel dauerhaft läuft. Blocker über die Bedienungshilfen kosten wenig, weil sie auf Ereignisse reagieren, die das System ohnehin erzeugt. DNS-Filter und einfache Timer kosten fast nichts."
+  - question: "Wie prüfe ich, ob eine App meinen Akku leersaugt?"
+    answer: "Android: Einstellungen → Akku → Akkunutzung, auf die letzten 24 Stunden oder 7 Tage stellen. iPhone: Einstellungen → Batterie. Schauen Sie, wo die App im Verhältnis zum Display steht, dem größten Verbraucher auf fast jedem Handy."
+  - question: "Was verbraucht wirklich den Akku?"
+    answer: "Das Display, meist mit deutlichem Abstand, dann Mobilfunk bei schwachem Empfang, GPS und Video. Eine Fokus-App, die auf App-Starts reagiert, spielt in einer anderen Liga. Die Ironie: Ein Blocker, der Ihre Bildschirmzeit senkt, spart mehr Strom, als er kostet."
+  - question: "Verbrauchen die Bedienungshilfen Akku?"
+    answer: "Für sich genommen kaum. Die Bedienungshilfen liefern Ereignisse, die das System ohnehin erzeugt, ein gut gebauter Blocker ist also die meiste Zeit untätig. Ein schlecht gebauter, der dauernd nachfragt, kostet mehr – deshalb lohnt der Blick in die Akkuliste nach jeder Neuinstallation."
+---
+
+import MindfulGuardCTA from "@/components/blog/MindfulGuardCTA.astro";
+
+**Nein – jedenfalls nicht anders als andere App-Blocker.** Opal betrieb bis 2022 auf iOS ein lokales
+VPN und wechselte dann zu Apples Screen-Time-API. Auf Android sperrt es laut
+[Play-Eintrag](https://play.google.com/store/apps/details?id=com.withopal.opal) über die
+**AccessibilityService-API**. Keine dieser beiden Techniken ist akkuhungrig.
+
+Die Frage ist trotzdem berechtigt, denn früher lautete die Antwort anders.
+
+## Woher die Frage kommt
+
+Bis 2022 arbeitete Opal auf iOS mit einem **lokalen VPN**. Das kostet wirklich Akku: Der Tunnel
+bleibt offen, Datenverkehr wird geprüft, und das Funkmodul kommt seltener zur Ruhe. Das fiel auf,
+wurde aufgeschrieben, und die Sorge hat die Architektur um vier Jahre überlebt.
+
+Deshalb ist „verbraucht *dieser* Blocker Akku" bei jedem Blocker eine sinnvolle Frage – die Antwort
+hängt an der Methode, nicht an der Marke.
+
+## Was die Sperrmethoden kosten
+
+| Methode | Akkukosten | Warum |
+|---|---|---|
+| **VPN-basiert** | Mittel bis hoch | Ein Tunnel läuft dauerhaft und prüft Datenverkehr |
+| **Über Bedienungshilfen** | Gering | Reagiert auf Ereignisse, die das System ohnehin sendet |
+| **DNS-Filter** | Vernachlässigbar | Eine Abfrage pro Domain, kein dauerhafter Prozess |
+| **Eingebaute Timer** | Vernachlässigbar | Das System zählt sowieso mit |
+
+Opal auf Android steht in der zweiten Zeile. Ebenso [Mindful Guard](/de/apps/mindful-guard), AppBlock
+und der Großteil der Kategorie. [Freedom](/de/blog/freedom-alternative-android) nutzt auf dem Handy
+die erste – der Kompromiss dafür, alle Apps auf Netzwerkebene zu erfassen.
+
+## Prüfen Sie Ihr Handy in dreißig Sekunden
+
+Glauben Sie das niemandem, auch uns nicht. Ihr Handy weiß es bereits.
+
+1. **Android:** Einstellungen → Akku → **Akkunutzung**. **iPhone:** Einstellungen → **Batterie**.
+2. Auf die **letzten 24 Stunden oder 7 Tage** stellen. Eine einzelne Stunde sagt nichts.
+3. Den Blocker in der Liste suchen.
+4. Mit **Display** vergleichen.
+
+Auf fast jedem Handy ist der Bildschirm der größte Einzelverbraucher, mit Abstand. Ist ein Blocker
+nur ein Bruchteil davon, liegt es nicht an ihm. Steht er weit oben, lohnt sich ein genauerer Blick –
+und das gilt für jede App, nicht nur für Blocker.
+
+## Was wirklich Ihren Akku leert
+
+Grob in dieser Reihenfolge, auf den meisten Handys:
+
+- **Das Display**, besonders bei hoher Helligkeit. Die gemessenen Zahlen stehen in
+  [Spart Dark Mode Akku auf OLED?](/de/blog/does-dark-mode-save-battery-amoled).
+- **Mobilfunk bei schwachem Empfang**, wo das Funkmodul hochdreht, um verbunden zu bleiben.
+- **GPS und Standort**, wenn etwas dauerhaft darauf zugreift.
+- **Video**, das Display, Funk und Decoder zugleich beansprucht.
+
+Eine Fokus-App, die reagiert, wenn Sie Instagram öffnen, gehört nicht in diese Liga. Und die Ironie
+gehört dazu: Ein Blocker, der Ihre Bildschirmzeit wirklich senkt, **spart** mehr Strom, als er
+verbraucht.
+
+<MindfulGuardCTA lang="de" campaign="does-opal-drain-battery" />
+
+## Wenn ein Blocker wirklich Akku frisst
+
+Meist erklären das drei Dinge:
+
+- **Er ist VPN-basiert und der Tunnel schläft nie.** Ein Wechsel zu einem Blocker über die
+  Bedienungshilfen entfernt die Kosten vollständig.
+- **Er ist schlecht gebaut und fragt dauernd nach**, statt auf Ereignisse zu warten. Die Akkuliste
+  zeigt das deutlich.
+- **Die Akkuoptimierung Ihres Handys bekämpft ihn** – beendet und startet ihn immer wieder, was mehr
+  kostet, als ihn in Ruhe zu lassen. Ihn von der Optimierung auszunehmen senkt den Verbrauch oft.
+
+## Fazit
+
+Opal hat kein Akkuproblem, und hat seit 2022 keines mehr. Blocker über die Bedienungshilfen haben als
+Kategorie ebenfalls keines.
+
+Wenn Ihr Handy zu früh schlappmacht, sagt Ihnen die Akkuliste, wer dafür verantwortlich ist – sehr
+wahrscheinlich der Bildschirm. Das Nachsehen dauert dreißig Sekunden und schlägt jedes Raten.
+
+<MindfulGuardCTA lang="de" campaign="does-opal-drain-battery" />
